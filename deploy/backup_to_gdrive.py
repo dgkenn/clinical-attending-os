@@ -97,14 +97,40 @@ def main() -> None:
     print(f"local : {local}")
     print(f"        newest attempt {local_newest or '(none)'}, {local_count} attempts")
 
-    # --- staleness guard: compare against whatever is already on Drive ---
-    with tempfile.TemporaryDirectory() as td:
-        remote_copy = Path(td) / "remote_latest.db"
-        got = subprocess.run(
-            [rclone, "copyto", REMOTE_LATEST, str(remote_copy), "--quiet"],
-            capture_output=True, text=True, timeout=300,
+    # --- is the remote itself reachable? ---
+    # This check must happen BEFORE any judgement about the remote FILE. An
+    # unconfigured remote, an expired token or a network blip makes the
+    # download below fail, and treating that failure as "no backup exists yet"
+    # would silently skip the staleness guard and let an older local DB
+    # overwrite a good backup. Absence of evidence is not evidence of absence.
+    probe = subprocess.run([rclone, "lsd", "gdrive:", "--max-depth", "1"],
+                           capture_output=True, text=True, timeout=120)
+    if probe.returncode != 0:
+        sys.exit(
+            "Cannot reach the 'gdrive:' remote — refusing to run.\n"
+            f"rclone said: {(probe.stderr or probe.stdout).strip()[:400]}\n\n"
+            "If you have not configured it yet:\n"
+            "  rclone config   # n) new remote -> name it exactly 'gdrive' -> type 'drive'\n"
         )
-        if got.returncode == 0 and remote_copy.exists():
+
+    # --- staleness guard: compare against whatever is already on Drive ---
+    listing = subprocess.run([rclone, "lsf", REMOTE_LATEST],
+                             capture_output=True, text=True, timeout=120)
+    remote_exists = listing.returncode == 0 and listing.stdout.strip() != ""
+
+    if remote_exists:
+        with tempfile.TemporaryDirectory() as td:
+            remote_copy = Path(td) / "remote_latest.db"
+            got = subprocess.run(
+                [rclone, "copyto", REMOTE_LATEST, str(remote_copy)],
+                capture_output=True, text=True, timeout=300,
+            )
+            if got.returncode != 0 or not remote_copy.exists():
+                sys.exit(
+                    "Remote backup exists but could not be downloaded for comparison — "
+                    "refusing to overwrite it blindly.\n"
+                    f"rclone said: {(got.stderr or got.stdout).strip()[:400]}"
+                )
             remote_newest = _newest_attempt(remote_copy)
             remote_count = _attempt_count(remote_copy)
             print(f"remote: {REMOTE_LATEST}")
@@ -117,8 +143,8 @@ def main() -> None:
                     f"  rclone copyto {REMOTE_LATEST} \"{local}\"\n"
                     "or re-run with --force if you are certain the local copy is right."
                 )
-        else:
-            print(f"remote: {REMOTE_LATEST} (not present yet — first backup)")
+    else:
+        print(f"remote: {REMOTE_LATEST} (confirmed absent — this is the first backup)")
 
     if args.dry_run:
         print("\n--dry-run: would rotate latest -> prev, then upload local DB.")
