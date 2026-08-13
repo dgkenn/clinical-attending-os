@@ -9,9 +9,15 @@ Contains no secrets — it tells Claude where to *find* the tokens locally.
 
 ```
 I'm setting up my medical tutor backend (Clinical Attending OS) on a new computer.
-The full, verified transfer guide is in the repo at TRANSFER_TO_NEW_MACHINE.md —
-read it first, then execute Option B (local install with the index pulled from
-Hugging Face). Ask me before anything destructive or anything that publishes.
+
+FASTEST PATH: run `.\setup_new_machine.ps1` from the repo root. It does the whole
+install end to end — venv, dependencies, .env, index download, progress restore,
+cache rebuild, tests — and prints the Claude Desktop config at the end. It is
+idempotent, so re-run it after any failure. It will ask for my Hugging Face token
+once. Watch its output and tell me if any step warns or fails.
+
+If the script fails in a way you can't resolve, fall back to the manual sequence:
+read TRANSFER_TO_NEW_MACHINE.md and execute Option B. Background below either way.
 
 WHAT THIS IS
 A retrieval + memory backend for an intern-medicine / ICU / anesthesiology tutor.
