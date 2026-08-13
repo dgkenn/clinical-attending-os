@@ -12,6 +12,7 @@ from .curriculum import load_curriculum, _band_for_unit
 from .follow_up import answer_follow_up
 from .retrieval import hybrid_search, retrieval_confidence
 from .schemas import (
+    AddConfusablePairRequest,
     AnswerRequest,
     AnswerResponse,
     CA1CoverageResponse,
@@ -20,11 +21,18 @@ from .schemas import (
     FollowUpRequest,
     FollowUpResponse,
     HealthResponse,
+    KnowledgePointInput,
+    LogMissedTopicRequest,
     MarkTopicRequest,
     OkResponse,
     SetDefaultPhaseResponse,
+    SetIllnessScriptRequest,
+    SetMedicineWeightRequest,
     SourceCoverageResponse,
     StudentDashboardResponse,
+    SubmitAnswerFSRSRequest,
+    SubmitDosingAnswerRequest,
+    SubmitKnowledgePointsRequest,
     SystemInstructionsResponse,
     TeachingModeRequest,
     TeachingModeResponse,
@@ -59,6 +67,34 @@ from .tutor_engine import (
     is_basics_exam_query,
     record_evaluated_answer,
     start_session,
+)
+# Parity layer: import the SAME plain functions the MCP server (src/mcp_server.py)
+# registers as tools, so Claude (via MCP) and ChatGPT (via these HTTP routes) drive
+# identical code paths against the identical SQLite state — no divergent logic to
+# keep in sync, no risk of the two front ends disagreeing about what happened.
+from .mcp_endpoints import (
+    get_session_state as _get_session_state,
+    get_next_topic as _get_next_topic,
+    submit_answer as _submit_answer_fsrs,
+    get_mastery_gates as _get_mastery_gates,
+    get_mastery_map as _get_mastery_map,
+    get_progress as _get_discipline_progress,
+    set_medicine_weight_tool as _set_medicine_weight_tool,
+    get_kp_to_study as _get_kp_to_study,
+)
+from .mcp_server import (
+    submit_knowledge_points as _submit_knowledge_points,
+    get_knowledge_points as _get_knowledge_points,
+    get_due_knowledge_points as _get_due_knowledge_points,
+    get_knowledge_gaps as _get_knowledge_gaps,
+    log_missed_topic as _log_missed_topic,
+    get_illness_script as _get_illness_script,
+    set_illness_script as _set_illness_script,
+    get_contrastive_case as _get_contrastive_case,
+    add_confusable_pair as _add_confusable_pair,
+    get_dosing_drill as _get_dosing_drill,
+    submit_dosing_answer as _submit_dosing_answer,
+    get_due_dosing_drills as _get_due_dosing_drills,
 )
 
 api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
@@ -123,18 +159,24 @@ def health() -> HealthResponse:
     )
 
 
-@app.post("/tutor", response_model=TutorResponse, dependencies=[Depends(require_api_key)], operation_id="tutor", include_in_schema=False)
+@app.post("/tutor", response_model=TutorResponse, dependencies=[Depends(require_api_key)], operation_id="answer_from_clinical_sources")
 def tutor(req: TutorRequest) -> TutorResponse:
+    """Grounded answer to a mid-lesson follow-up question. Mirrors the MCP tool
+    `answer_from_clinical_sources` exactly (same answer_query() call)."""
     return answer_query(req.query, req.mode, req.session_id)
 
 
-@app.post("/start_session", response_model=StartSessionResponse, dependencies=[Depends(require_api_key)], operation_id="startSession", include_in_schema=False)
+@app.post("/start_session", response_model=StartSessionResponse, dependencies=[Depends(require_api_key)], operation_id="start_study_session")
 def start(req: StartSessionRequest) -> dict:
+    """Mirrors the MCP tool `start_study_session` exactly (same start_session() call)."""
     return start_session(req.duration_minutes, req.mode, req.focus_topic, req.training_phase)
 
 
-@app.post("/answer", response_model=AnswerResponse, dependencies=[Depends(require_api_key)], operation_id="answerLegacy", include_in_schema=False)
+@app.post("/answer", response_model=AnswerResponse, dependencies=[Depends(require_api_key)], operation_id="submit_study_answer")
 def answer(req: AnswerRequest) -> dict:
+    """Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()
+    call). Use alongside /submit_answer_fsrs (MCP tool `submit_answer`) — the FSRS/mastery
+    engine — just like Claude calls both submit_study_answer and submit_answer."""
     if req.result:
         return record_evaluated_answer(
             session_id=req.session_id,
@@ -297,3 +339,129 @@ def search(req: SearchRequest) -> SearchResponse:
         max_results=req.max_results,
     )
     return SearchResponse(query=req.query, retrieval_confidence=retrieval_confidence(results), insufficient_context=insufficient, results=results)
+
+
+# ---------------------------------------------------------------------------
+# Parity endpoints — same functions the MCP server exposes as tools (imported
+# above from mcp_endpoints/mcp_server), just wrapped as HTTP routes so the
+# Custom GPT connector has the same capabilities as Claude's MCP connector.
+# ---------------------------------------------------------------------------
+
+@app.get("/session_state", dependencies=[Depends(require_api_key)], operation_id="get_session_state")
+def session_state() -> dict:
+    return _get_session_state()
+
+
+@app.get("/next_topic", dependencies=[Depends(require_api_key)], operation_id="get_next_topic")
+def next_topic(session_id: str | None = None) -> dict:
+    return _get_next_topic(session_id)
+
+
+@app.post("/submit_answer_fsrs", dependencies=[Depends(require_api_key)], operation_id="submit_answer")
+def submit_answer_fsrs(req: SubmitAnswerFSRSRequest) -> dict:
+    return _submit_answer_fsrs(
+        topic=req.topic,
+        user_answer=req.user_answer,
+        is_correct=req.is_correct,
+        confidence_reported=req.confidence_reported,
+        teach_back_quality=req.teach_back_quality,
+        mistake_type=req.mistake_type,
+        subtopic=req.subtopic,
+        transfer_success=req.transfer_success,
+        bloom_level=req.bloom_level,
+        session_id=req.session_id,
+    )
+
+
+@app.get("/mastery_gates", dependencies=[Depends(require_api_key)], operation_id="get_mastery_gates")
+def mastery_gates() -> dict:
+    return _get_mastery_gates()
+
+
+@app.get("/mastery_map", dependencies=[Depends(require_api_key)], operation_id="get_mastery_map")
+def mastery_map() -> dict:
+    return _get_mastery_map()
+
+
+@app.get("/discipline_progress", dependencies=[Depends(require_api_key)], operation_id="get_progress")
+def discipline_progress() -> dict:
+    """Medicine/ICU/anesthesia % breakdown — the MCP tool `get_progress`. Distinct
+    from GET /progress (operation_id getProgress), which reports curriculum-unit
+    band completion; both exist, ask for whichever you need."""
+    return _get_discipline_progress()
+
+
+@app.post("/medicine_weight", dependencies=[Depends(require_api_key)], operation_id="set_medicine_weight")
+def medicine_weight(req: SetMedicineWeightRequest) -> dict:
+    return _set_medicine_weight_tool(req.weight)
+
+
+@app.get("/kp_to_study", dependencies=[Depends(require_api_key)], operation_id="get_kp_to_study")
+def kp_to_study(limit: int = 10, discipline: str = "", topic: str = "", format: str = "") -> list:
+    return _get_kp_to_study(limit=limit, discipline=discipline, topic=topic, format=format)
+
+
+@app.post("/knowledge_points/submit", dependencies=[Depends(require_api_key)], operation_id="submit_knowledge_points")
+def knowledge_points_submit(req: SubmitKnowledgePointsRequest) -> dict:
+    return _submit_knowledge_points(req.topic, [p.model_dump() for p in req.points])
+
+
+@app.get("/knowledge_points", dependencies=[Depends(require_api_key)], operation_id="get_knowledge_points")
+def knowledge_points_get(topic: str = "", status: str = "", due_only: bool = False) -> dict:
+    return _get_knowledge_points(topic=topic, status=status, due_only=due_only)
+
+
+@app.get("/knowledge_points/due", dependencies=[Depends(require_api_key)], operation_id="get_due_knowledge_points")
+def knowledge_points_due(limit: int = 25, car: bool = False) -> dict:
+    return _get_due_knowledge_points(limit=limit, car=car)
+
+
+@app.get("/knowledge_gaps", dependencies=[Depends(require_api_key)], operation_id="get_knowledge_gaps")
+def knowledge_gaps(topic: str = "", status: str = "open") -> dict:
+    return _get_knowledge_gaps(topic=topic, status=status)
+
+
+@app.post("/log_missed_topic", dependencies=[Depends(require_api_key)], operation_id="log_missed_topic")
+def log_missed_topic_endpoint(req: LogMissedTopicRequest) -> dict:
+    return _log_missed_topic(req.topic, req.subtopic, req.gap_note, req.mistake_type)
+
+
+@app.get("/illness_script", dependencies=[Depends(require_api_key)], operation_id="get_illness_script")
+def illness_script_get(topic: str) -> dict:
+    return _get_illness_script(topic)
+
+
+@app.post("/illness_script", dependencies=[Depends(require_api_key)], operation_id="set_illness_script")
+def illness_script_set(req: SetIllnessScriptRequest) -> dict:
+    return _set_illness_script(
+        req.topic, req.enabling_conditions, req.pathophysiology, req.time_course,
+        req.key_features, req.consequence_if_missed, req.discipline, req.source,
+    )
+
+
+@app.get("/contrastive_case", dependencies=[Depends(require_api_key)], operation_id="get_contrastive_case")
+def contrastive_case(topic: str) -> dict:
+    return _get_contrastive_case(topic)
+
+
+@app.post("/confusable_pair", dependencies=[Depends(require_api_key)], operation_id="add_confusable_pair")
+def confusable_pair(req: AddConfusablePairRequest) -> dict:
+    return _add_confusable_pair(req.topic_a, req.topic_b, req.discriminator)
+
+
+@app.get("/dosing_drill", dependencies=[Depends(require_api_key)], operation_id="get_dosing_drill")
+def dosing_drill(category: str = "", discipline: str = "", drug: str = "", mode: str = "auto") -> dict:
+    return _get_dosing_drill(category=category, discipline=discipline, drug=drug, mode=mode)
+
+
+@app.post("/dosing_drill/submit", dependencies=[Depends(require_api_key)], operation_id="submit_dosing_answer")
+def dosing_drill_submit(req: SubmitDosingAnswerRequest) -> dict:
+    return _submit_dosing_answer(
+        drug=req.drug, is_correct=req.is_correct, confidence=req.confidence,
+        calc_type=req.calc_type, mode=req.mode,
+    )
+
+
+@app.get("/dosing_drill/due", dependencies=[Depends(require_api_key)], operation_id="get_due_dosing_drills")
+def dosing_drill_due(limit: int = 10) -> dict:
+    return _get_due_dosing_drills(limit=limit)

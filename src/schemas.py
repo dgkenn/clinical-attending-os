@@ -358,3 +358,72 @@ class ProgressResponse(BaseModel):
     pct_complete: float
     by_band: dict[str, dict[str, int]]
     weakest_topics: list[dict[str, Any]] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
+# Parity endpoints — mirror the MCP tool surface (src/mcp_endpoints.py,
+# src/mcp_server.py) over HTTP for the Custom GPT connector. Field names and
+# defaults match the corresponding MCP tool signature exactly so the two
+# front ends (Claude via MCP, ChatGPT via these HTTP actions) stay behaviorally
+# identical — see CUSTOM_GPT_INSTRUCTIONS.md / CLAUDE_PROJECT_INSTRUCTIONS.md.
+# ---------------------------------------------------------------------------
+
+class SubmitAnswerFSRSRequest(BaseModel):
+    topic: str
+    user_answer: str
+    is_correct: bool
+    confidence_reported: int = 3
+    teach_back_quality: float = 0.5
+    mistake_type: MistakeType = "other"
+    subtopic: str = ""
+    transfer_success: bool = False
+    bloom_level: str = ""
+    session_id: str | None = None
+
+
+class KnowledgePointInput(BaseModel):
+    point: str
+    correct: bool
+    confidence: int | None = None
+    mistake_type: MistakeType = "other"
+
+
+class SubmitKnowledgePointsRequest(BaseModel):
+    topic: str
+    points: list[KnowledgePointInput] = Field(default_factory=list)
+
+
+class SetMedicineWeightRequest(BaseModel):
+    weight: float = 0.8
+
+
+class LogMissedTopicRequest(BaseModel):
+    topic: str
+    subtopic: str = ""
+    gap_note: str = ""
+    mistake_type: MistakeType = "other"
+
+
+class SetIllnessScriptRequest(BaseModel):
+    topic: str
+    enabling_conditions: str = ""
+    pathophysiology: str = ""
+    time_course: str = ""
+    key_features: str = ""
+    consequence_if_missed: str = ""
+    discipline: str = ""
+    source: str = ""
+
+
+class AddConfusablePairRequest(BaseModel):
+    topic_a: str
+    topic_b: str
+    discriminator: str = ""
+
+
+class SubmitDosingAnswerRequest(BaseModel):
+    drug: str
+    is_correct: bool
+    confidence: int = 3
+    calc_type: str = ""
+    mode: str = "recall"

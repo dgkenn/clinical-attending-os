@@ -42,6 +42,138 @@
         }
       }
     },
+    "/tutor": {
+      "post": {
+        "summary": "Tutor",
+        "description": "Grounded answer to a mid-lesson follow-up question. Mirrors the MCP tool\n`answer_from_clinical_sources` exactly (same answer_query() call).",
+        "operationId": "answer_from_clinical_sources",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TutorRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TutorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/start_session": {
+      "post": {
+        "summary": "Start",
+        "description": "Mirrors the MCP tool `start_study_session` exactly (same start_session() call).",
+        "operationId": "start_study_session",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartSessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StartSessionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/answer": {
+      "post": {
+        "summary": "Answer",
+        "description": "Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()\ncall). Use alongside /submit_answer_fsrs (MCP tool `submit_answer`) \u2014 the FSRS/mastery\nengine \u2014 just like Claude calls both submit_study_answer and submit_answer.",
+        "operationId": "submit_study_answer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnswerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnswerResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
     "/submit_answer": {
       "post": {
         "summary": "Submit Answer",
@@ -594,10 +726,974 @@
           }
         ]
       }
+    },
+    "/session_state": {
+      "get": {
+        "summary": "Session State",
+        "operationId": "get_session_state",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Session State"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/next_topic": {
+      "get": {
+        "summary": "Next Topic",
+        "operationId": "get_next_topic",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Next Topic"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/submit_answer_fsrs": {
+      "post": {
+        "summary": "Submit Answer Fsrs",
+        "operationId": "submit_answer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmitAnswerFSRSRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Submit Answer"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/mastery_gates": {
+      "get": {
+        "summary": "Mastery Gates",
+        "operationId": "get_mastery_gates",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Mastery Gates"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/mastery_map": {
+      "get": {
+        "summary": "Mastery Map",
+        "operationId": "get_mastery_map",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Mastery Map"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/discipline_progress": {
+      "get": {
+        "summary": "Discipline Progress",
+        "description": "Medicine/ICU/anesthesia % breakdown \u2014 the MCP tool `get_progress`. Distinct\nfrom GET /progress (operation_id getProgress), which reports curriculum-unit\nband completion; both exist, ask for whichever you need.",
+        "operationId": "get_progress",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Progress"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/medicine_weight": {
+      "post": {
+        "summary": "Medicine Weight",
+        "operationId": "set_medicine_weight",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetMedicineWeightRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Set Medicine Weight"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/kp_to_study": {
+      "get": {
+        "summary": "Kp To Study",
+        "operationId": "get_kp_to_study",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 10,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "discipline",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Discipline"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Topic"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Format"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {},
+                  "title": "Response Get Kp To Study"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledge_points/submit": {
+      "post": {
+        "summary": "Knowledge Points Submit",
+        "operationId": "submit_knowledge_points",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmitKnowledgePointsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Submit Knowledge Points"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/knowledge_points": {
+      "get": {
+        "summary": "Knowledge Points Get",
+        "operationId": "get_knowledge_points",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Topic"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Status"
+            }
+          },
+          {
+            "name": "due_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Due Only"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Knowledge Points"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledge_points/due": {
+      "get": {
+        "summary": "Knowledge Points Due",
+        "operationId": "get_due_knowledge_points",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 25,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "car",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Car"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Due Knowledge Points"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/knowledge_gaps": {
+      "get": {
+        "summary": "Knowledge Gaps",
+        "operationId": "get_knowledge_gaps",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Topic"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "open",
+              "title": "Status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Knowledge Gaps"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/log_missed_topic": {
+      "post": {
+        "summary": "Log Missed Topic Endpoint",
+        "operationId": "log_missed_topic",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogMissedTopicRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Log Missed Topic"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/illness_script": {
+      "get": {
+        "summary": "Illness Script Get",
+        "operationId": "get_illness_script",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Topic"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Illness Script"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Illness Script Set",
+        "operationId": "set_illness_script",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetIllnessScriptRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Set Illness Script"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contrastive_case": {
+      "get": {
+        "summary": "Contrastive Case",
+        "operationId": "get_contrastive_case",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Topic"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Contrastive Case"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/confusable_pair": {
+      "post": {
+        "summary": "Confusable Pair",
+        "operationId": "add_confusable_pair",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddConfusablePairRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Add Confusable Pair"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/dosing_drill": {
+      "get": {
+        "summary": "Dosing Drill",
+        "operationId": "get_dosing_drill",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Category"
+            }
+          },
+          {
+            "name": "discipline",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Discipline"
+            }
+          },
+          {
+            "name": "drug",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Drug"
+            }
+          },
+          {
+            "name": "mode",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "auto",
+              "title": "Mode"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Dosing Drill"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dosing_drill/submit": {
+      "post": {
+        "summary": "Dosing Drill Submit",
+        "operationId": "submit_dosing_answer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubmitDosingAnswerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Submit Dosing Answer"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/dosing_drill/due": {
+      "get": {
+        "summary": "Dosing Drill Due",
+        "operationId": "get_due_dosing_drills",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 10,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Due Dosing Drills"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AddConfusablePairRequest": {
+        "properties": {
+          "topic_a": {
+            "type": "string",
+            "title": "Topic A"
+          },
+          "topic_b": {
+            "type": "string",
+            "title": "Topic B"
+          },
+          "discriminator": {
+            "type": "string",
+            "title": "Discriminator",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic_a",
+          "topic_b"
+        ],
+        "title": "AddConfusablePairRequest"
+      },
       "AnswerRequest": {
         "properties": {
           "session_id": {
@@ -1206,6 +2302,104 @@
         ],
         "title": "HealthResponse"
       },
+      "KnowledgePointInput": {
+        "properties": {
+          "point": {
+            "type": "string",
+            "title": "Point"
+          },
+          "correct": {
+            "type": "boolean",
+            "title": "Correct"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "mistake_type": {
+            "type": "string",
+            "enum": [
+              "recall",
+              "mechanism",
+              "prioritization",
+              "drug_dosing",
+              "monitoring",
+              "crisis_algorithm",
+              "oral_boards_framing",
+              "oral_presentation",
+              "incomplete_answer",
+              "overconfident_wrong",
+              "failure_to_escalate",
+              "differential_too_narrow",
+              "pretest_unstudied",
+              "critique_caught",
+              "critique_missed",
+              "other"
+            ],
+            "title": "Mistake Type",
+            "default": "other"
+          }
+        },
+        "type": "object",
+        "required": [
+          "point",
+          "correct"
+        ],
+        "title": "KnowledgePointInput"
+      },
+      "LogMissedTopicRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic",
+            "default": ""
+          },
+          "gap_note": {
+            "type": "string",
+            "title": "Gap Note",
+            "default": ""
+          },
+          "mistake_type": {
+            "type": "string",
+            "enum": [
+              "recall",
+              "mechanism",
+              "prioritization",
+              "drug_dosing",
+              "monitoring",
+              "crisis_algorithm",
+              "oral_boards_framing",
+              "oral_presentation",
+              "incomplete_answer",
+              "overconfident_wrong",
+              "failure_to_escalate",
+              "differential_too_narrow",
+              "pretest_unstudied",
+              "critique_caught",
+              "critique_missed",
+              "other"
+            ],
+            "title": "Mistake Type",
+            "default": "other"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "LogMissedTopicRequest"
+      },
       "MarkTopicRequest": {
         "properties": {
           "topic": {
@@ -1467,6 +2661,65 @@
         ],
         "title": "SetDefaultPhaseResponse"
       },
+      "SetIllnessScriptRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "enabling_conditions": {
+            "type": "string",
+            "title": "Enabling Conditions",
+            "default": ""
+          },
+          "pathophysiology": {
+            "type": "string",
+            "title": "Pathophysiology",
+            "default": ""
+          },
+          "time_course": {
+            "type": "string",
+            "title": "Time Course",
+            "default": ""
+          },
+          "key_features": {
+            "type": "string",
+            "title": "Key Features",
+            "default": ""
+          },
+          "consequence_if_missed": {
+            "type": "string",
+            "title": "Consequence If Missed",
+            "default": ""
+          },
+          "discipline": {
+            "type": "string",
+            "title": "Discipline",
+            "default": ""
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "SetIllnessScriptRequest"
+      },
+      "SetMedicineWeightRequest": {
+        "properties": {
+          "weight": {
+            "type": "number",
+            "title": "Weight",
+            "default": 0.8
+          }
+        },
+        "type": "object",
+        "title": "SetMedicineWeightRequest"
+      },
       "SourceChunk": {
         "properties": {
           "text": {
@@ -1649,6 +2902,98 @@
         ],
         "title": "SourceCoverageSummary"
       },
+      "StartSessionRequest": {
+        "properties": {
+          "duration_minutes": {
+            "type": "integer",
+            "title": "Duration Minutes",
+            "default": 20
+          },
+          "mode": {
+            "type": "string",
+            "title": "Mode",
+            "default": "default"
+          },
+          "training_phase": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Training Phase"
+          },
+          "focus_topic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Focus Topic"
+          }
+        },
+        "type": "object",
+        "title": "StartSessionRequest"
+      },
+      "StartSessionResponse": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "title": "Session Id"
+          },
+          "training_phase": {
+            "type": "string",
+            "title": "Training Phase",
+            "default": "intern_year"
+          },
+          "plan": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Plan"
+          },
+          "rationale": {
+            "type": "string",
+            "title": "Rationale"
+          },
+          "first_question": {
+            "type": "string",
+            "title": "First Question"
+          },
+          "retrieval_confidence": {
+            "type": "string",
+            "title": "Retrieval Confidence",
+            "default": "low"
+          },
+          "insufficient_context": {
+            "type": "boolean",
+            "title": "Insufficient Context",
+            "default": false
+          },
+          "source_snippets": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Source Snippets"
+          }
+        },
+        "type": "object",
+        "required": [
+          "session_id",
+          "plan",
+          "rationale",
+          "first_question"
+        ],
+        "title": "StartSessionResponse"
+      },
       "StudentDashboardResponse": {
         "properties": {
           "summary": {
@@ -1668,6 +3013,141 @@
         },
         "type": "object",
         "title": "StudentDashboardResponse"
+      },
+      "SubmitAnswerFSRSRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "user_answer": {
+            "type": "string",
+            "title": "User Answer"
+          },
+          "is_correct": {
+            "type": "boolean",
+            "title": "Is Correct"
+          },
+          "confidence_reported": {
+            "type": "integer",
+            "title": "Confidence Reported",
+            "default": 3
+          },
+          "teach_back_quality": {
+            "type": "number",
+            "title": "Teach Back Quality",
+            "default": 0.5
+          },
+          "mistake_type": {
+            "type": "string",
+            "enum": [
+              "recall",
+              "mechanism",
+              "prioritization",
+              "drug_dosing",
+              "monitoring",
+              "crisis_algorithm",
+              "oral_boards_framing",
+              "oral_presentation",
+              "incomplete_answer",
+              "overconfident_wrong",
+              "failure_to_escalate",
+              "differential_too_narrow",
+              "pretest_unstudied",
+              "critique_caught",
+              "critique_missed",
+              "other"
+            ],
+            "title": "Mistake Type",
+            "default": "other"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic",
+            "default": ""
+          },
+          "transfer_success": {
+            "type": "boolean",
+            "title": "Transfer Success",
+            "default": false
+          },
+          "bloom_level": {
+            "type": "string",
+            "title": "Bloom Level",
+            "default": ""
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "user_answer",
+          "is_correct"
+        ],
+        "title": "SubmitAnswerFSRSRequest"
+      },
+      "SubmitDosingAnswerRequest": {
+        "properties": {
+          "drug": {
+            "type": "string",
+            "title": "Drug"
+          },
+          "is_correct": {
+            "type": "boolean",
+            "title": "Is Correct"
+          },
+          "confidence": {
+            "type": "integer",
+            "title": "Confidence",
+            "default": 3
+          },
+          "calc_type": {
+            "type": "string",
+            "title": "Calc Type",
+            "default": ""
+          },
+          "mode": {
+            "type": "string",
+            "title": "Mode",
+            "default": "recall"
+          }
+        },
+        "type": "object",
+        "required": [
+          "drug",
+          "is_correct"
+        ],
+        "title": "SubmitDosingAnswerRequest"
+      },
+      "SubmitKnowledgePointsRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "points": {
+            "items": {
+              "$ref": "#/components/schemas/KnowledgePointInput"
+            },
+            "type": "array",
+            "title": "Points"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "SubmitKnowledgePointsRequest"
       },
       "SystemInstructionsResponse": {
         "properties": {
@@ -1779,6 +3259,109 @@
         "type": "object",
         "title": "TopicSummary"
       },
+      "TutorRequest": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "intern_teach",
+              "cross_cover",
+              "ICU_teach",
+              "admission_plan",
+              "wards_rounding",
+              "rapid_response",
+              "anesthesia_transition",
+              "anesthesia_boards",
+              "anesthesia_pimp",
+              "teach",
+              "pimp",
+              "oral_boards",
+              "rapid_review",
+              "drug",
+              "crisis",
+              "OR_prep",
+              "physiology",
+              "missed_topic_review",
+              "session_start",
+              "mixed",
+              "default"
+            ],
+            "title": "Mode",
+            "default": "teach"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "query"
+        ],
+        "title": "TutorRequest"
+      },
+      "TutorResponse": {
+        "properties": {
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
+          "follow_up": {
+            "type": "string",
+            "title": "Follow Up",
+            "default": ""
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "mode": {
+            "type": "string",
+            "title": "Mode",
+            "default": "teach"
+          },
+          "retrieval_confidence": {
+            "type": "string",
+            "title": "Retrieval Confidence",
+            "default": "low"
+          },
+          "insufficient_context": {
+            "type": "boolean",
+            "title": "Insufficient Context",
+            "default": false
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "answer"
+        ],
+        "title": "TutorResponse"
+      },
       "ValidationError": {
         "properties": {
           "loc": {
@@ -1802,6 +3385,13 @@
           "type": {
             "type": "string",
             "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
           }
         },
         "type": "object",
