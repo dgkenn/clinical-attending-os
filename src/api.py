@@ -136,11 +136,88 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Clinical Attending OS", version="0.2.0", lifespan=lifespan)
 
 
+# Response shapes for the parity endpoints, which return plain dicts built at
+# runtime rather than Pydantic models. FastAPI can only emit `{"type":"object"}`
+# for those, and ChatGPT's Actions validator rejects that with "object schema
+# missing properties". Declaring response_model= instead would make FastAPI
+# FILTER the payload down to the declared fields, silently dropping data — so
+# the shapes are documented here and patched into the schema only, leaving
+# serialization untouched. Keys mirror the returning functions in
+# mcp_endpoints.py / mcp_server.py; `additionalProperties` stays true so an
+# undocumented key is never a lie.
+_S = {"type": "string"}
+_I = {"type": "integer"}
+_N = {"type": "number"}
+_B = {"type": "boolean"}
+_O = {"type": "object"}
+_A = {"type": "array", "items": {"type": "object"}}
+_AS = {"type": "array", "items": {"type": "string"}}
+
+_RESPONSE_SHAPES: dict[str, dict] = {
+    "get_session_state": {
+        "fsrs_due_today": _A, "weak_topics": _A, "mastery_matrix": _O, "load": _O,
+        "due_knowledge_points": _A, "due_knowledge_points_count": _I,
+        "open_knowledge_gaps": _A, "open_knowledge_gaps_count": _I,
+        "phase": _S, "progress_pct": _N, "total_attempts": _I,
+        "days_since_last_session": _I, "hours_since_last_session": _N,
+        "attempts_today": _I, "session_id": _S,
+    },
+    "get_next_topic": {
+        "topic": _S, "domain": _S, "discipline": _S, "is_critical_care": _B,
+        "priority_tier": _I, "category": _S, "subtopics": _AS, "open_gaps": _AS,
+        "reason": _S, "retrieval_query": _S, "suggested_phase": _S, "is_nested": _B,
+        "new_items_today": _I, "daily_new_item_cap": _I, "message": _S,
+    },
+    "submit_answer": {
+        "ok": _B, "next_review_date": _S, "mastery_updated": _B,
+        "level_achieved": _S, "mastery_score": _N, "status": _S,
+        "strategy_for_next": _S, "confidence_calibration": _S, "error": _S,
+    },
+    "get_mastery_map": {
+        "total_curriculum_topics": _I, "topics_studied": _I, "coverage_pct": _N,
+        "mastery_levels": _O, "knowledge_points": _O, "by_discipline": _O,
+        "by_domain": _A, "critical_care": _O, "on_call_approaches": _O,
+        "weakest_domains": _AS, "untouched_count": _I, "next_suggested_domain": _S,
+    },
+    "get_progress": {
+        "intern_medicine_pct": _N, "icu_pct": _N, "anesthesia_pct": _N,
+        "overall_pct": _N, "hours_studied": _N, "total_attempts": _I,
+        "accuracy_overall": _N,
+    },
+    "set_medicine_weight": {"ok": _B, "medicine_weight": _N, "anesthesia_weight": _N},
+    "submit_knowledge_points": {
+        "ok": _B, "recorded": _I, "points": _A, "weak_or_learning": _AS,
+    },
+    "get_knowledge_points": {
+        "points": _A, "count": _I, "weak_count": _I, "overconfident": _AS,
+    },
+    "get_due_knowledge_points": {"due_points": _A, "count": _I},
+    "log_missed_topic": {"ok": _B, "topic": _S, "gap_logged": _B},
+    "get_illness_script": {"found": _B, "script": _O},
+    "set_illness_script": {"ok": _B, "topic": _S},
+    "get_contrastive_case": {"topic": _S, "confusables": _A, "count": _I},
+    "add_confusable_pair": {"ok": _B},
+    "get_dosing_drill": {
+        "drug": _S, "mode": _S, "context": _S, "question": _S, "answer": _S,
+        "anchor": _S, "units": _S, "source": _S, "explanation": _S,
+        "scenario_text": _S, "given": _O, "tolerance": _N, "worked_steps": _AS,
+        "calc_type": _S, "error": _S,
+    },
+    "submit_dosing_answer": {
+        "ok": _B, "topic": _S, "point": _S, "status": _S,
+        "consecutive_correct": _I, "interval_days": _I, "next_review_date": _S,
+        "error": _S,
+    },
+    "get_due_dosing_drills": {"due_dosing_points": _A, "count": _I},
+}
+
+
 def _custom_openapi() -> dict:
     """Serve the OpenAPI schema with a `servers` entry pointing at the public
-    base URL. Without this, FastAPI emits no `servers` block and a Custom GPT
-    that imported the schema from /openapi.json has no idea what host to call,
-    so every action fails. Mirrors the committed openapi.json."""
+    base URL, and with concrete response shapes for the dict-returning parity
+    endpoints. Without `servers`, a Custom GPT that imported the schema has no
+    idea what host to call; without response `properties`, ChatGPT's Actions
+    validator refuses the import. Mirrors the committed openapi.json."""
     if app.openapi_schema:
         return app.openapi_schema
     from fastapi.openapi.utils import get_openapi
@@ -150,6 +227,29 @@ def _custom_openapi() -> dict:
     )
     if settings.public_base_url:
         schema["servers"] = [{"url": settings.public_base_url}]
+
+    for path_item in schema.get("paths", {}).values():
+        for operation in path_item.values():
+            if not isinstance(operation, dict):
+                continue
+            shape = _RESPONSE_SHAPES.get(operation.get("operationId", ""))
+            if not shape:
+                continue
+            media = (
+                operation.get("responses", {})
+                .get("200", {})
+                .get("content", {})
+                .get("application/json", {})
+            )
+            # Only fill in the empty `{"type": "object"}` FastAPI emits for an
+            # undeclared dict return — never clobber a real generated schema.
+            if media.get("schema", {}).get("type") == "object" and "properties" not in media.get("schema", {}):
+                media["schema"] = {
+                    "type": "object",
+                    "properties": shape,
+                    "additionalProperties": True,
+                }
+
     app.openapi_schema = schema
     return schema
 

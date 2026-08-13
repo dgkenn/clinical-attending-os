@@ -455,9 +455,67 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Get Session State"
+                  "properties": {
+                    "fsrs_due_today": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "weak_topics": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "mastery_matrix": {
+                      "type": "object"
+                    },
+                    "load": {
+                      "type": "object"
+                    },
+                    "due_knowledge_points": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "due_knowledge_points_count": {
+                      "type": "integer"
+                    },
+                    "open_knowledge_gaps": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "open_knowledge_gaps_count": {
+                      "type": "integer"
+                    },
+                    "phase": {
+                      "type": "string"
+                    },
+                    "progress_pct": {
+                      "type": "number"
+                    },
+                    "total_attempts": {
+                      "type": "integer"
+                    },
+                    "days_since_last_session": {
+                      "type": "integer"
+                    },
+                    "hours_since_last_session": {
+                      "type": "number"
+                    },
+                    "attempts_today": {
+                      "type": "integer"
+                    },
+                    "session_id": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -504,8 +562,60 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Next Topic"
+                  "properties": {
+                    "topic": {
+                      "type": "string"
+                    },
+                    "domain": {
+                      "type": "string"
+                    },
+                    "discipline": {
+                      "type": "string"
+                    },
+                    "is_critical_care": {
+                      "type": "boolean"
+                    },
+                    "priority_tier": {
+                      "type": "integer"
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "subtopics": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "open_gaps": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "retrieval_query": {
+                      "type": "string"
+                    },
+                    "suggested_phase": {
+                      "type": "string"
+                    },
+                    "is_nested": {
+                      "type": "boolean"
+                    },
+                    "new_items_today": {
+                      "type": "integer"
+                    },
+                    "daily_new_item_cap": {
+                      "type": "integer"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -543,9 +653,37 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Submit Answer"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "next_review_date": {
+                      "type": "string"
+                    },
+                    "mastery_updated": {
+                      "type": "boolean"
+                    },
+                    "level_achieved": {
+                      "type": "string"
+                    },
+                    "mastery_score": {
+                      "type": "number"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "strategy_for_next": {
+                      "type": "string"
+                    },
+                    "confidence_calibration": {
+                      "type": "string"
+                    },
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -578,9 +716,52 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Get Mastery Map"
+                  "properties": {
+                    "total_curriculum_topics": {
+                      "type": "integer"
+                    },
+                    "topics_studied": {
+                      "type": "integer"
+                    },
+                    "coverage_pct": {
+                      "type": "number"
+                    },
+                    "mastery_levels": {
+                      "type": "object"
+                    },
+                    "knowledge_points": {
+                      "type": "object"
+                    },
+                    "by_discipline": {
+                      "type": "object"
+                    },
+                    "by_domain": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "critical_care": {
+                      "type": "object"
+                    },
+                    "on_call_approaches": {
+                      "type": "object"
+                    },
+                    "weakest_domains": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "untouched_count": {
+                      "type": "integer"
+                    },
+                    "next_suggested_domain": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -604,9 +785,31 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Get Progress"
+                  "properties": {
+                    "intern_medicine_pct": {
+                      "type": "number"
+                    },
+                    "icu_pct": {
+                      "type": "number"
+                    },
+                    "anesthesia_pct": {
+                      "type": "number"
+                    },
+                    "overall_pct": {
+                      "type": "number"
+                    },
+                    "hours_studied": {
+                      "type": "number"
+                    },
+                    "total_attempts": {
+                      "type": "integer"
+                    },
+                    "accuracy_overall": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -639,9 +842,19 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Set Medicine Weight"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "medicine_weight": {
+                      "type": "number"
+                    },
+                    "anesthesia_weight": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -761,9 +974,28 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Submit Knowledge Points"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "recorded": {
+                      "type": "integer"
+                    },
+                    "points": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "weak_or_learning": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -834,8 +1066,27 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Knowledge Points"
+                  "properties": {
+                    "points": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "weak_count": {
+                      "type": "integer"
+                    },
+                    "overconfident": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -891,8 +1142,18 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Due Knowledge Points"
+                  "properties": {
+                    "due_points": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -930,9 +1191,19 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Log Missed Topic"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "topic": {
+                      "type": "string"
+                    },
+                    "gap_logged": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -982,8 +1253,15 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Illness Script"
+                  "properties": {
+                    "found": {
+                      "type": "boolean"
+                    },
+                    "script": {
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1025,8 +1303,15 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Set Illness Script"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "topic": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1071,8 +1356,21 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Contrastive Case"
+                  "properties": {
+                    "topic": {
+                      "type": "string"
+                    },
+                    "confusables": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1110,9 +1408,13 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Add Confusable Pair"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1193,8 +1495,57 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Dosing Drill"
+                  "properties": {
+                    "drug": {
+                      "type": "string"
+                    },
+                    "mode": {
+                      "type": "string"
+                    },
+                    "context": {
+                      "type": "string"
+                    },
+                    "question": {
+                      "type": "string"
+                    },
+                    "answer": {
+                      "type": "string"
+                    },
+                    "anchor": {
+                      "type": "string"
+                    },
+                    "units": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "type": "string"
+                    },
+                    "scenario_text": {
+                      "type": "string"
+                    },
+                    "given": {
+                      "type": "object"
+                    },
+                    "tolerance": {
+                      "type": "number"
+                    },
+                    "worked_steps": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "calc_type": {
+                      "type": "string"
+                    },
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1232,9 +1583,34 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
                   "type": "object",
-                  "title": "Response Submit Dosing Answer"
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "topic": {
+                      "type": "string"
+                    },
+                    "point": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "consecutive_correct": {
+                      "type": "integer"
+                    },
+                    "interval_days": {
+                      "type": "integer"
+                    },
+                    "next_review_date": {
+                      "type": "string"
+                    },
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
@@ -1285,8 +1661,18 @@
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Due Dosing Drills"
+                  "properties": {
+                    "due_dosing_points": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "count": {
+                      "type": "integer"
+                    }
+                  },
+                  "additionalProperties": true
                 }
               }
             }
