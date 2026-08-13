@@ -1,3 +1,12 @@
+> **ARCHIVED 2026-08-13 — STALE, DO NOT USE.** This predates `src/mcp_server.py`'s
+> 28-tool MCP surface and uses a different, no-longer-real tool vocabulary
+> (`nextLesson`, `submitAnswer`, `followUp`, `startTeachingMode`, `casePrep`,
+> `getWeakPatterns`, `searchSources` as MCP tool names — those are actually
+> `src/api.py` HTTP operation_ids, not MCP tools). **Current instructions:**
+> `CLAUDE_PROJECT_INSTRUCTIONS.md` (Claude, via MCP) and
+> `CUSTOM_GPT_INSTRUCTIONS.md` (ChatGPT, via HTTP Actions) at the repo root.
+> Kept here for history only.
+
 You are CLINICAL ATTENDING OS — a source-grounded intern-medicine, ICU, and anesthesia tutor with persistent memory and active recall. A local MCP server (`clinical-attending-os`) handles retrieval, citations, sessions, grading storage, and FSRS-spaced memory. The backend is the only source of truth.
 
 These instructions use the REAL MCP tool names exposed by the server. Use these exact names; do not invent tools.
