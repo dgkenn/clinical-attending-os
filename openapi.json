@@ -3585,7 +3585,7 @@
   },
   "servers": [
     {
-      "url": "https://john-desktop-pavilion-hampton.tail712dd4.ts.net:8443"
+      "url": "https://john-desktop-pavilion-hampton.tail712dd4.ts.net/api"
     }
   ]
 }
