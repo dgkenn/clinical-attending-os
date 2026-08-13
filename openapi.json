@@ -24,24 +24,6 @@
         }
       }
     },
-    "/health": {
-      "get": {
-        "summary": "Health",
-        "operationId": "health",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HealthResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/tutor": {
       "post": {
         "summary": "Tutor",
@@ -174,49 +156,6 @@
         ]
       }
     },
-    "/submit_answer": {
-      "post": {
-        "summary": "Submit Answer",
-        "operationId": "submitAnswer",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AnswerRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AnswerResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
     "/due_reviews": {
       "get": {
         "summary": "Due Reviews",
@@ -233,75 +172,6 @@
                   },
                   "type": "array",
                   "title": "Response Getduereviews"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/student_dashboard": {
-      "get": {
-        "summary": "Student Dashboard",
-        "operationId": "getStudentDashboard",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/StudentDashboardResponse"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/ca1_coverage": {
-      "get": {
-        "summary": "Ca1 Coverage",
-        "operationId": "getCA1Coverage",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CA1CoverageResponse"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/source_coverage": {
-      "get": {
-        "summary": "Source Coverage",
-        "operationId": "getSourceCoverage",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SourceCoverageResponse"
                 }
               }
             }
@@ -345,158 +215,6 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/mark_weak": {
-      "post": {
-        "summary": "Weak",
-        "operationId": "markWeak",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MarkTopicRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/OkResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/set_default_phase": {
-      "post": {
-        "summary": "Set Default Phase",
-        "operationId": "setDefaultPhase",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SetDefaultPhaseRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SetDefaultPhaseResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/next_lesson": {
-      "post": {
-        "summary": "Next Lesson",
-        "operationId": "nextLesson",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NextLessonRequest"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/NextLessonResponse"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
-    "/progress": {
-      "get": {
-        "summary": "Progress",
-        "operationId": "getProgress",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProgressResponse"
                 }
               }
             }
@@ -850,31 +568,6 @@
         ]
       }
     },
-    "/mastery_gates": {
-      "get": {
-        "summary": "Mastery Gates",
-        "operationId": "get_mastery_gates",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "additionalProperties": true,
-                  "type": "object",
-                  "title": "Response Get Mastery Gates"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ]
-      }
-    },
     "/mastery_map": {
       "get": {
         "summary": "Mastery Map",
@@ -1200,63 +893,6 @@
                   "type": "object",
                   "additionalProperties": true,
                   "title": "Response Get Due Knowledge Points"
-                }
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/knowledge_gaps": {
-      "get": {
-        "summary": "Knowledge Gaps",
-        "operationId": "get_knowledge_gaps",
-        "security": [
-          {
-            "APIKeyHeader": []
-          }
-        ],
-        "parameters": [
-          {
-            "name": "topic",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "",
-              "title": "Topic"
-            }
-          },
-          {
-            "name": "status",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "open",
-              "title": "Status"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "additionalProperties": true,
-                  "title": "Response Get Knowledge Gaps"
                 }
               }
             }
@@ -1932,71 +1568,6 @@
         ],
         "title": "AnswerResponse"
       },
-      "CA1CoverageResponse": {
-        "properties": {
-          "source": {
-            "type": "string",
-            "title": "Source",
-            "default": "Stanford CA-1"
-          },
-          "granularity": {
-            "type": "string",
-            "title": "Granularity",
-            "default": "fact"
-          },
-          "total_topics": {
-            "type": "integer",
-            "title": "Total Topics",
-            "default": 0
-          },
-          "total_facts": {
-            "type": "integer",
-            "title": "Total Facts",
-            "default": 0
-          },
-          "covered_topics": {
-            "type": "integer",
-            "title": "Covered Topics",
-            "default": 0
-          },
-          "remaining_topics": {
-            "type": "integer",
-            "title": "Remaining Topics",
-            "default": 0
-          },
-          "covered_facts": {
-            "type": "integer",
-            "title": "Covered Facts",
-            "default": 0
-          },
-          "remaining_facts": {
-            "type": "integer",
-            "title": "Remaining Facts",
-            "default": 0
-          },
-          "coverage_percent": {
-            "type": "number",
-            "title": "Coverage Percent",
-            "default": 0.0
-          },
-          "next_targets": {
-            "items": {
-              "$ref": "#/components/schemas/CoverageTarget"
-            },
-            "type": "array",
-            "title": "Next Targets"
-          },
-          "targets": {
-            "items": {
-              "$ref": "#/components/schemas/CoverageTarget"
-            },
-            "type": "array",
-            "title": "Targets"
-          }
-        },
-        "type": "object",
-        "title": "CA1CoverageResponse"
-      },
       "CasePrepRequest": {
         "properties": {
           "case_stem": {
@@ -2065,74 +1636,6 @@
           "why"
         ],
         "title": "CasePrepTopic"
-      },
-      "CoverageTarget": {
-        "properties": {
-          "target_id": {
-            "type": "string",
-            "title": "Target Id",
-            "default": ""
-          },
-          "topic": {
-            "type": "string",
-            "title": "Topic",
-            "default": ""
-          },
-          "subtopic": {
-            "type": "string",
-            "title": "Subtopic",
-            "default": ""
-          },
-          "fact": {
-            "type": "string",
-            "title": "Fact",
-            "default": ""
-          },
-          "page": {
-            "anyOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Page"
-          },
-          "status": {
-            "type": "string",
-            "title": "Status",
-            "default": "new"
-          },
-          "mastery_score": {
-            "type": "number",
-            "title": "Mastery Score",
-            "default": 0.0
-          },
-          "times_seen": {
-            "type": "integer",
-            "title": "Times Seen",
-            "default": 0
-          },
-          "next_review_date": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Next Review Date"
-          },
-          "covered": {
-            "type": "boolean",
-            "title": "Covered",
-            "default": false
-          }
-        },
-        "type": "object",
-        "title": "CoverageTarget"
       },
       "FollowUpAnswerSentence": {
         "properties": {
@@ -2274,34 +1777,6 @@
         "type": "object",
         "title": "HTTPValidationError"
       },
-      "HealthResponse": {
-        "properties": {
-          "ok": {
-            "type": "boolean",
-            "title": "Ok"
-          },
-          "service": {
-            "type": "string",
-            "title": "Service"
-          },
-          "backend_mode": {
-            "type": "string",
-            "title": "Backend Mode"
-          },
-          "free_local_mode": {
-            "type": "boolean",
-            "title": "Free Local Mode"
-          }
-        },
-        "type": "object",
-        "required": [
-          "ok",
-          "service",
-          "backend_mode",
-          "free_local_mode"
-        ],
-        "title": "HealthResponse"
-      },
       "KnowledgePointInput": {
         "properties": {
           "point": {
@@ -2418,39 +1893,6 @@
         ],
         "title": "MarkTopicRequest"
       },
-      "NextLessonRequest": {
-        "properties": {
-          "session": {
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Session"
-          },
-          "voice_mode": {
-            "type": "boolean",
-            "title": "Voice Mode",
-            "default": true
-          }
-        },
-        "type": "object",
-        "title": "NextLessonRequest"
-      },
-      "NextLessonResponse": {
-        "properties": {
-          "lesson": {
-            "$ref": "#/components/schemas/VoiceLesson"
-          },
-          "session": {
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Session"
-          }
-        },
-        "type": "object",
-        "required": [
-          "lesson"
-        ],
-        "title": "NextLessonResponse"
-      },
       "OkResponse": {
         "properties": {
           "ok": {
@@ -2466,48 +1908,6 @@
         },
         "type": "object",
         "title": "OkResponse"
-      },
-      "ProgressResponse": {
-        "properties": {
-          "n_units": {
-            "type": "integer",
-            "title": "N Units"
-          },
-          "n_completed": {
-            "type": "integer",
-            "title": "N Completed"
-          },
-          "pct_complete": {
-            "type": "number",
-            "title": "Pct Complete"
-          },
-          "by_band": {
-            "additionalProperties": {
-              "additionalProperties": {
-                "type": "integer"
-              },
-              "type": "object"
-            },
-            "type": "object",
-            "title": "By Band"
-          },
-          "weakest_topics": {
-            "items": {
-              "additionalProperties": true,
-              "type": "object"
-            },
-            "type": "array",
-            "title": "Weakest Topics"
-          }
-        },
-        "type": "object",
-        "required": [
-          "n_units",
-          "n_completed",
-          "pct_complete",
-          "by_band"
-        ],
-        "title": "ProgressResponse"
       },
       "SearchRequest": {
         "properties": {
@@ -2623,43 +2023,6 @@
           "results"
         ],
         "title": "SearchResponse"
-      },
-      "SetDefaultPhaseRequest": {
-        "properties": {
-          "default_training_phase": {
-            "type": "string",
-            "enum": [
-              "intern_year",
-              "ICU",
-              "anesthesia_transition",
-              "anesthesia_boards"
-            ],
-            "title": "Default Training Phase"
-          }
-        },
-        "type": "object",
-        "required": [
-          "default_training_phase"
-        ],
-        "title": "SetDefaultPhaseRequest"
-      },
-      "SetDefaultPhaseResponse": {
-        "properties": {
-          "ok": {
-            "type": "boolean",
-            "title": "Ok",
-            "default": true
-          },
-          "default_training_phase": {
-            "type": "string",
-            "title": "Default Training Phase"
-          }
-        },
-        "type": "object",
-        "required": [
-          "default_training_phase"
-        ],
-        "title": "SetDefaultPhaseResponse"
       },
       "SetIllnessScriptRequest": {
         "properties": {
@@ -2844,64 +2207,6 @@
         ],
         "title": "SourceChunk"
       },
-      "SourceCoverageResponse": {
-        "properties": {
-          "granularity": {
-            "type": "string",
-            "title": "Granularity",
-            "default": "fact"
-          },
-          "source_summaries": {
-            "items": {
-              "$ref": "#/components/schemas/SourceCoverageSummary"
-            },
-            "type": "array",
-            "title": "Source Summaries"
-          },
-          "next_targets": {
-            "items": {
-              "$ref": "#/components/schemas/CoverageTarget"
-            },
-            "type": "array",
-            "title": "Next Targets"
-          }
-        },
-        "type": "object",
-        "title": "SourceCoverageResponse"
-      },
-      "SourceCoverageSummary": {
-        "properties": {
-          "source": {
-            "type": "string",
-            "title": "Source"
-          },
-          "total_facts": {
-            "type": "integer",
-            "title": "Total Facts",
-            "default": 0
-          },
-          "covered_facts": {
-            "type": "integer",
-            "title": "Covered Facts",
-            "default": 0
-          },
-          "remaining_facts": {
-            "type": "integer",
-            "title": "Remaining Facts",
-            "default": 0
-          },
-          "coverage_percent": {
-            "type": "number",
-            "title": "Coverage Percent",
-            "default": 0.0
-          }
-        },
-        "type": "object",
-        "required": [
-          "source"
-        ],
-        "title": "SourceCoverageSummary"
-      },
       "StartSessionRequest": {
         "properties": {
           "duration_minutes": {
@@ -2993,26 +2298,6 @@
           "first_question"
         ],
         "title": "StartSessionResponse"
-      },
-      "StudentDashboardResponse": {
-        "properties": {
-          "summary": {
-            "items": {
-              "$ref": "#/components/schemas/TopicSummary"
-            },
-            "type": "array",
-            "title": "Summary"
-          },
-          "weakest_topics": {
-            "items": {
-              "$ref": "#/components/schemas/WeakTopic"
-            },
-            "type": "array",
-            "title": "Weakest Topics"
-          }
-        },
-        "type": "object",
-        "title": "StudentDashboardResponse"
       },
       "SubmitAnswerFSRSRequest": {
         "properties": {
@@ -3232,33 +2517,6 @@
         "title": "TeachingModeResponse",
         "description": "Prot\u00e9g\u00e9-mode scaffolding: the GPT plays a confused MS3 asking probing\nquestions while the user teaches the topic. Source-grounded so the GPT's\nquestions stay anchored in real material."
       },
-      "TopicSummary": {
-        "properties": {
-          "status": {
-            "type": "string",
-            "title": "Status",
-            "default": ""
-          },
-          "n": {
-            "type": "integer",
-            "title": "N",
-            "default": 0
-          },
-          "avg_mastery": {
-            "anyOf": [
-              {
-                "type": "number"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Avg Mastery"
-          }
-        },
-        "type": "object",
-        "title": "TopicSummary"
-      },
       "TutorRequest": {
         "properties": {
           "query": {
@@ -3402,74 +2660,6 @@
         ],
         "title": "ValidationError"
       },
-      "VoiceLesson": {
-        "properties": {
-          "unit_id": {
-            "type": "string",
-            "title": "Unit Id"
-          },
-          "phase": {
-            "type": "string",
-            "title": "Phase"
-          },
-          "topic": {
-            "type": "string",
-            "title": "Topic"
-          },
-          "question": {
-            "type": "string",
-            "title": "Question"
-          },
-          "expected_answer_short": {
-            "type": "string",
-            "title": "Expected Answer Short"
-          },
-          "mini_teach": {
-            "type": "string",
-            "title": "Mini Teach"
-          },
-          "teachback_prompt": {
-            "type": "string",
-            "title": "Teachback Prompt"
-          },
-          "citation": {
-            "type": "string",
-            "title": "Citation"
-          },
-          "book": {
-            "type": "string",
-            "title": "Book"
-          },
-          "page": {
-            "type": "integer",
-            "title": "Page",
-            "default": 0
-          },
-          "relevance_hook": {
-            "type": "string",
-            "title": "Relevance Hook",
-            "default": ""
-          },
-          "confidence_check": {
-            "type": "string",
-            "title": "Confidence Check",
-            "default": ""
-          }
-        },
-        "type": "object",
-        "required": [
-          "unit_id",
-          "phase",
-          "topic",
-          "question",
-          "expected_answer_short",
-          "mini_teach",
-          "teachback_prompt",
-          "citation",
-          "book"
-        ],
-        "title": "VoiceLesson"
-      },
       "WeakPatternEntry": {
         "properties": {
           "topic": {
@@ -3533,46 +2723,6 @@
         },
         "type": "object",
         "title": "WeakPatternsResponse"
-      },
-      "WeakTopic": {
-        "properties": {
-          "topic": {
-            "type": "string",
-            "title": "Topic"
-          },
-          "subtopic": {
-            "type": "string",
-            "title": "Subtopic",
-            "default": ""
-          },
-          "mastery_score": {
-            "anyOf": [
-              {
-                "type": "number"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Mastery Score"
-          },
-          "next_review_date": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Next Review Date"
-          }
-        },
-        "type": "object",
-        "required": [
-          "topic"
-        ],
-        "title": "WeakTopic"
       }
     },
     "securitySchemes": {

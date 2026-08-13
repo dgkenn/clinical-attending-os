@@ -170,7 +170,7 @@ def system_instructions() -> SystemInstructionsResponse:
     return SystemInstructionsResponse(version=version, instructions=text)
 
 
-@app.get("/health", response_model=HealthResponse, operation_id="health")
+@app.get("/health", response_model=HealthResponse, operation_id="health", include_in_schema=False)
 def health() -> HealthResponse:
     return HealthResponse(
         ok=True,
@@ -219,7 +219,7 @@ def answer(req: AnswerRequest) -> dict:
     return evaluate_user_answer(req.question, req.user_answer, ideal, req.topic, req.subtopic or "", req.session_id)
 
 
-@app.post("/submit_answer", response_model=AnswerResponse, dependencies=[Depends(require_api_key)], operation_id="submitAnswer")
+@app.post("/submit_answer", response_model=AnswerResponse, dependencies=[Depends(require_api_key)], operation_id="submitAnswer", include_in_schema=False)
 def submit_answer(req: AnswerRequest) -> dict:
     if not req.result:
         raise HTTPException(status_code=400, detail="submit_answer requires Custom GPT-provided result and mistake_type.")
@@ -247,17 +247,17 @@ def due_reviews() -> list[dict]:
     return get_due_reviews()
 
 
-@app.get("/student_dashboard", response_model=StudentDashboardResponse, dependencies=[Depends(require_api_key)], operation_id="getStudentDashboard")
+@app.get("/student_dashboard", response_model=StudentDashboardResponse, dependencies=[Depends(require_api_key)], operation_id="getStudentDashboard", include_in_schema=False)
 def student_dashboard() -> dict:
     return get_student_dashboard()
 
 
-@app.get("/ca1_coverage", response_model=CA1CoverageResponse, dependencies=[Depends(require_api_key)], operation_id="getCA1Coverage")
+@app.get("/ca1_coverage", response_model=CA1CoverageResponse, dependencies=[Depends(require_api_key)], operation_id="getCA1Coverage", include_in_schema=False)
 def ca1_coverage() -> dict:
     return get_ca1_coverage()
 
 
-@app.get("/source_coverage", response_model=SourceCoverageResponse, dependencies=[Depends(require_api_key)], operation_id="getSourceCoverage")
+@app.get("/source_coverage", response_model=SourceCoverageResponse, dependencies=[Depends(require_api_key)], operation_id="getSourceCoverage", include_in_schema=False)
 def source_coverage() -> dict:
     return get_source_coverage()
 
@@ -268,26 +268,26 @@ def mastered(req: MarkTopicRequest) -> OkResponse:
     return OkResponse(ok=True)
 
 
-@app.post("/mark_weak", response_model=OkResponse, dependencies=[Depends(require_api_key)], operation_id="markWeak")
+@app.post("/mark_weak", response_model=OkResponse, dependencies=[Depends(require_api_key)], operation_id="markWeak", include_in_schema=False)
 def weak(req: MarkTopicRequest) -> OkResponse:
     mark_topic_weak(req.topic, req.subtopic)
     return OkResponse(ok=True)
 
 
-@app.post("/set_default_phase", response_model=SetDefaultPhaseResponse, dependencies=[Depends(require_api_key)], operation_id="setDefaultPhase")
+@app.post("/set_default_phase", response_model=SetDefaultPhaseResponse, dependencies=[Depends(require_api_key)], operation_id="setDefaultPhase", include_in_schema=False)
 def set_default_phase(req: SetDefaultPhaseRequest) -> SetDefaultPhaseResponse:
     set_default_training_phase(req.default_training_phase)
     return SetDefaultPhaseResponse(ok=True, default_training_phase=req.default_training_phase)
 
 
-@app.post("/next_lesson", response_model=NextLessonResponse, dependencies=[Depends(require_api_key)], operation_id="nextLesson")
+@app.post("/next_lesson", response_model=NextLessonResponse, dependencies=[Depends(require_api_key)], operation_id="nextLesson", include_in_schema=False)
 def next_lesson(req: NextLessonRequest) -> NextLessonResponse:
     session = req.session or start_voice_session()
     lesson, new_session = runner_next_lesson(session)
     return NextLessonResponse(lesson=lesson, session=new_session)
 
 
-@app.get("/progress", response_model=ProgressResponse, dependencies=[Depends(require_api_key)], operation_id="getProgress")
+@app.get("/progress", response_model=ProgressResponse, dependencies=[Depends(require_api_key)], operation_id="getProgress", include_in_schema=False)
 def progress() -> ProgressResponse:
     initialize_database()
     curriculum = load_curriculum()
@@ -394,7 +394,7 @@ def submit_answer_fsrs(req: SubmitAnswerFSRSRequest) -> dict:
     )
 
 
-@app.get("/mastery_gates", dependencies=[Depends(require_api_key)], operation_id="get_mastery_gates")
+@app.get("/mastery_gates", dependencies=[Depends(require_api_key)], operation_id="get_mastery_gates", include_in_schema=False)
 def mastery_gates() -> dict:
     return _get_mastery_gates()
 
@@ -437,7 +437,7 @@ def knowledge_points_due(limit: int = 25, car: bool = False) -> dict:
     return _get_due_knowledge_points(limit=limit, car=car)
 
 
-@app.get("/knowledge_gaps", dependencies=[Depends(require_api_key)], operation_id="get_knowledge_gaps")
+@app.get("/knowledge_gaps", dependencies=[Depends(require_api_key)], operation_id="get_knowledge_gaps", include_in_schema=False)
 def knowledge_gaps(topic: str = "", status: str = "open") -> dict:
     return _get_knowledge_gaps(topic=topic, status=status)
 

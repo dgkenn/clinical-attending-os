@@ -37,35 +37,37 @@ out of sync. Where the action's `operationId` differs from the MCP tool name
 | `start_study_session` | `start_study_session` | POST /start_session |
 | `submit_study_answer` | `submit_study_answer` | POST /answer |
 | `getDueReviews` | `get_due_reviews` | GET /due_reviews |
-| `getStudentDashboard` | `get_student_dashboard` | GET /student_dashboard |
 | `log_missed_topic` | `log_missed_topic` | POST /log_missed_topic |
 | `submit_knowledge_points` | `submit_knowledge_points` | POST /knowledge_points/submit |
 | `get_knowledge_points` | `get_knowledge_points` | GET /knowledge_points |
 | `get_due_knowledge_points` | `get_due_knowledge_points` | GET /knowledge_points/due |
-| `get_knowledge_gaps` | `get_knowledge_gaps` | GET /knowledge_gaps |
 | `get_illness_script` | `get_illness_script` | GET /illness_script |
 | `set_illness_script` | `set_illness_script` | POST /illness_script |
 | `get_contrastive_case` | `get_contrastive_case` | GET /contrastive_case |
 | `add_confusable_pair` | `add_confusable_pair` | POST /confusable_pair |
 | `markMastered` | `mark_topic_mastered` | POST /mark_mastered |
-| `markWeak` | (no direct MCP equivalent; auxiliary) | POST /mark_weak |
-| `setDefaultPhase` | `set_default_training_phase` | POST /set_default_phase |
 | `get_session_state` | `get_session_state` | GET /session_state |
 | `get_next_topic` | `get_next_topic` | GET /next_topic |
 | `submit_answer` | `submit_answer` | POST /submit_answer_fsrs |
-| `get_mastery_gates` | `get_mastery_gates` | GET /mastery_gates |
 | `get_progress` | `get_progress` (medicine/ICU/anesthesia %) | GET /discipline_progress |
-| `getProgress` | (curriculum-unit band completion — different from `get_progress` above) | GET /progress |
 | `get_mastery_map` | `get_mastery_map` | GET /mastery_map |
 | `set_medicine_weight` | `set_medicine_weight` | POST /medicine_weight |
 | `get_dosing_drill` | `get_dosing_drill` | GET /dosing_drill |
 | `submit_dosing_answer` | `submit_dosing_answer` | POST /dosing_drill/submit |
 | `get_due_dosing_drills` | `get_due_dosing_drills` | GET /dosing_drill/due |
 | `get_kp_to_study` | `get_kp_to_study` | GET /kp_to_study |
-| `casePrep`, `startTeachingMode`, `followUp`, `getWeakPatterns`, `getCA1Coverage`, `getSourceCoverage` | same names on the Claude side | see relevant sections below |
+| `casePrep`, `startTeachingMode`, `followUp`, `getWeakPatterns` | same names on the Claude side | see relevant sections below |
 
 Everywhere below, the text says "call `toolName`" using these exact
 `operationId`s — that's the literal Action name you'll see offered.
+
+**ChatGPT caps an Action schema at 30 operations**, and the backend exposes more
+routes than that. Legacy/duplicate ones (`health`, `nextLesson`, `submitAnswer`,
+`getStudentDashboard`, `getProgress`, `get_mastery_gates`, `get_knowledge_gaps`,
+`markWeak`, `setDefaultPhase`, `getCA1Coverage`, `getSourceCoverage`) are marked
+`include_in_schema=False` in `src/api.py` so the served spec stays at 29. They
+still work over HTTP and are all still available to Claude via MCP — they are
+just not offered to the GPT. If you add an operation, one must come out.
 
 ---
 
@@ -376,13 +378,12 @@ the chosen mode where the action accepts one (e.g. `searchSources`,
 ## Other actions
 - `answer_from_clinical_sources` — for my mid-lesson "why/what-if" questions; answer
   fully from sources, then return to the lesson with the next question.
-- `getStudentDashboard`, `get_mastery_gates`, `getProgress` (curriculum bands),
-  `get_progress` (discipline %) — when I ask how I'm doing, or every ~10 items.
+- `get_mastery_map` and `get_progress` (discipline %) — when I ask how I'm doing,
+  or every ~10 items.
 - `submit_knowledge_points` / `get_knowledge_points` / `get_due_knowledge_points` —
   record and resurface atomic facts (per-point confidence + independent schedule).
 - `markMastered` / `log_missed_topic` — master a topic's points, or log a
   single missed fact via `gap_note`.
-- `get_knowledge_gaps` — legacy alias for not-yet-mastered points.
 - `get_illness_script` / `set_illness_script` — the 5-field expert model of a diagnosis.
 - `get_contrastive_case` / `add_confusable_pair` — entities a topic is confused with +
   the discriminating feature, for contrastive cases.
@@ -393,7 +394,6 @@ the chosen mode where the action accepts one (e.g. `searchSources`,
 - `startTeachingMode` — protégé mode (see below).
 - `followUp` — mid-lesson clarification questions (alternative path to
   `answer_from_clinical_sources`).
-- `set_default_training_phase` — if I change my training stage.
 
 ## Protégé mode (the user teaches you)
 When I say "let me teach you about X" / "I'll explain Y" / "quiz me on teaching Z":
