@@ -1,0 +1,708 @@
+[
+  {
+    "id": "heart-rhythm-devices-d1",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "What is the threshold current in cardiac pacing and what determines demand vs fixed pacing mode?",
+    "answer": "Threshold current is the lowest current through the electrode that can depolarize the myocardium (usually <2 mA); demand mode senses spontaneous electrical activity and suppresses output, while fixed (asynchronous) mode ignores intrinsic activity.",
+    "rationale": "Sensing threshold adjustment allows the pacemaker to function in demand mode, preventing competitive pacing that could trigger arrhythmias.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 700
+      }
+    ],
+    "confusable_with": "AV sequential pacing (coordinates atrial and ventricular pacing, different from single-chamber demand)"
+  },
+  {
+    "id": "heart-rhythm-devices-d2",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "What is the key perioperative consideration for anesthetic agents in patients with existing pacemakers?",
+    "answer": "All anesthetic agents (including volatile agents) have been safely used; volatile agents have no significant effect on pacing electrode thresholds.",
+    "rationale": "Pacemaker function is determined by the electrode-myocardium interface, not by systemic anesthetic pharmacology, so agent choice is not restricted by pacemaker presence alone.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 702
+      }
+    ],
+    "confusable_with": "needing to reprogram the pacemaker for every general anesthetic (only required if electrocautery interference is anticipated)"
+  },
+  {
+    "id": "heart-rhythm-devices-d3",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "GDMT should be optimized before implanting an ICD or CRT device for what reason?",
+    "answer": "GDMT may improve LVEF sufficiently that device criteria are no longer met, avoiding unnecessary implantation.",
+    "rationale": "ICD/CRT seminal RCTs were conducted in patients failing optimized medical therapy; LVEF can improve with GDMT, so reassessment before implant prevents unnecessary procedures.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2022 Heart Failure",
+        "page": 57
+      }
+    ],
+    "confusable_with": "implanting devices urgently regardless of current LVEF trajectory"
+  },
+  {
+    "id": "heart-rhythm-devices-d4",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "What does the APAF-CRT trial demonstrate about AV node ablation (AVNA) with conventional RV pacing versus CRT in patients with AF and HF?",
+    "answer": "AVNA with CRT (not conventional RV pacing) is preferred in AF patients with HF; APAF-CRT showed HR of 0.26 for all-cause mortality favoring AVNA + CRT, stopped early.",
+    "rationale": "CRT provides biventricular pacing and prevents the detrimental effects of RV-only pacing on LV function in patients requiring pacing after AVNA.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation",
+        "page": 96
+      }
+    ],
+    "confusable_with": "AVNA with conventional RV pacing (worsens LV synchrony and HF outcomes)"
+  },
+  {
+    "id": "heart-rhythm-devices-d5",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "Torsades de pointes associated with cardiac pauses is best treated with which pacing intervention?",
+    "answer": "Cardiac pacing can be effective for pause-dependent torsades de pointes; isoproterenol infusion is an alternative when bradycardia drives recurrent pause-dependent episodes.",
+    "rationale": "Pause-dependent torsades occurs when QTc prolongation is exacerbated by bradycardia; increasing heart rate with pacing or isoproterenol shortens the QT and prevents the pause trigger.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "immediate defibrillation (not effective for pause-dependent TdP prevention; pacing addresses the trigger)"
+  },
+  {
+    "id": "heart-rhythm-devices-d6",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "What is AV sequential pacing and why is it physiologically advantageous over ventricular-only pacing?",
+    "answer": "AV sequential pacing coordinates atrial and ventricular contractions, preserving the atrial kick (up to 20-30% of cardiac output); ventricular-only pacing loses this contribution.",
+    "rationale": "Atrial contraction just before ventricular systole augments LV filling and cardiac output, particularly important in diastolic dysfunction or low cardiac reserve.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 700
+      }
+    ],
+    "confusable_with": "VVI pacing (single-chamber ventricular demand; loses atrial contribution to CO)"
+  },
+  {
+    "id": "heart-rhythm-devices-d7",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "medicine",
+    "stem": "What interventions are most appropriate for perioperative ventricular fibrillation?",
+    "answer": "Immediate defibrillation; beta-blockers post-MI reduce incidence of post-MI VF; antiarrhythmic therapy (amiodarone) may be required for refractory cases.",
+    "rationale": "VF is treated with defibrillation as definitive therapy; prophylactic beta-blockade post-MI reduces VF incidence by preventing sympathetically mediated arrhythmia triggers.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "synchronized cardioversion (used for VT with pulse, not VF)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Heart Rhythm Devices: Pacemakers, ICDs, CRT",
+    "discipline": "medicine",
+    "enabling_conditions": "Symptomatic bradycardia, complete heart block, HFrEF with LBBB (LVEF<=35%), prior aborted SCD, sustained VT/VF",
+    "pathophysiology": "Bradyarrhythmias: sinus node or AV conduction failure requires backup pacing; SCD prevention: ICD detects and terminates VF/VT; CRT corrects LV dyssynchrony from LBBB to improve cardiac efficiency",
+    "time_course": "Bradycardia: acute or chronic; ICD/CRT indications typically chronic (LVEF <=35% on optimized GDMT x 3 months)",
+    "key_features": "Symptomatic bradycardia/syncope for pacemaker; LVEF <=35% + NYHA II-III + LBBB QRS >=150ms for CRT; prior VF/VT or high-risk cardiomyopathy for ICD",
+    "consequence_if_missed": "Syncope and trauma from unpaced bradycardia; SCD from undetected VF; worsening HF from LV dyssynchrony without CRT"
+  },
+  {
+    "id": "hemolytic-anemias-d1",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What are the three mechanistic categories of immune hemolytic anemias?",
+    "answer": "Autoimmune, alloimmune, and drug-induced hemolytic anemias.",
+    "rationale": "Each category has unique etiologies and pathophysiology; autoimmune involves self-antibodies against RBC antigens, alloimmune involves donor-recipient incompatibility, and drug-induced involves drug-antibody-RBC interactions.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 2
+      }
+    ],
+    "confusable_with": "direct vs indirect Coombs test (laboratory test distinguishing bound vs unbound antibodies, not the mechanism category)"
+  },
+  {
+    "id": "hemolytic-anemias-d2",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Complete complement activation on the RBC surface leads to what end-result causing intravascular hemolysis?",
+    "answer": "Formation of the membrane attack complex (MAC), which lyses the RBC directly, causing intravascular hemolysis.",
+    "rationale": "The terminal complement pathway assembles the MAC (C5b-9) on the RBC surface, punching holes in the membrane and causing direct intravascular lysis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 9
+      }
+    ],
+    "confusable_with": "extravascular hemolysis (RBC phagocytosis by macrophages in spleen/liver, without MAC formation)"
+  },
+  {
+    "id": "hemolytic-anemias-d3",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What anti-cancer drugs are common culprits in drug-induced immune hemolytic anemia?",
+    "answer": "Fludarabine, platinum compounds (cisplatin, oxaliplatin), and immune checkpoint inhibitors.",
+    "rationale": "These drugs can induce warm autoimmune hemolytic anemia or hapten/immune complex mechanisms by altering RBC antigenicity or triggering autoimmune responses.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 7
+      }
+    ],
+    "confusable_with": "non-immune drug-induced hemolysis (G6PD deficiency triggered by oxidative drugs)"
+  },
+  {
+    "id": "hemolytic-anemias-d4",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Why is crossmatching crucial in hemolytic anemia management prior to blood transfusion?",
+    "answer": "Crossmatching tests compatibility of donor blood with recipient serum to prevent acute hemolytic transfusion reactions and hemolytic disease of the newborn.",
+    "rationale": "Alloimmune antibodies from prior transfusions or pregnancy can cause catastrophic hemolytic transfusion reactions if incompatible blood is transfused.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 10
+      }
+    ],
+    "confusable_with": "type and screen alone (less rigorous; crossmatch is the definitive compatibility test)"
+  },
+  {
+    "id": "hemolytic-anemias-d5",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "The Donath-Landsteiner biphasic hemolysin test is used for which rare hemolytic anemia, and what is its clinical limitation?",
+    "answer": "Used to detect paroxysmal cold hemoglobinuria (PCH); the antibody binds at cold temperatures and activates complement on warming (biphasic hemolysin); the test is time-consuming, resource-intensive, and has low sensitivity.",
+    "rationale": "PCH involves a complement-activating IgG antibody that fixes to RBCs in the cold and lyses them upon rewarming; the biphasic nature reflects this thermal dependence.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 11
+      }
+    ],
+    "confusable_with": "cold agglutinin disease (IgM mediated, different antibody class and mechanism)"
+  },
+  {
+    "id": "hemolytic-anemias-d6",
+    "topic": "Hemolytic anemias: overview and approach",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What multidisciplinary approach is recommended for managing complex immune hemolytic anemias?",
+    "answer": "Collaboration among hematologists, immunologists, and the broader interprofessional team to interpret laboratory findings, diagnose autoimmune processes, and devise individualized treatment plans.",
+    "rationale": "Immune hemolytic anemias have complex pathophysiology, overlapping lab findings, and require specialist input for diagnosis and management of underlying autoimmune conditions.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemolytic anemias  overview and approach",
+        "page": 14
+      }
+    ],
+    "confusable_with": "managing purely as anemia without identifying the immune mechanism (misses treatable underlying cause)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hemolytic anemias: overview and approach",
+    "discipline": "medicine",
+    "enabling_conditions": "Autoimmune disease (SLE, CLL), recent transfusion, cancer therapy, cold exposure, pregnancy",
+    "pathophysiology": "Antibody or complement-mediated RBC destruction via: (1) MAC-mediated intravascular hemolysis; (2) opsonization and extravascular phagocytosis; mechanism depends on antibody class (IgG vs IgM) and complement activation",
+    "time_course": "Acute hemolysis with rapid hemoglobin drop; chronic with compensatory reticulocytosis",
+    "key_features": "Anemia, elevated LDH, low haptoglobin, elevated indirect bilirubin, reticulocytosis; positive Coombs test in immune hemolysis",
+    "consequence_if_missed": "Life-threatening anemia, hemoglobinuria, renal failure; incompatible transfusion causing acute hemolytic transfusion reaction"
+  },
+  {
+    "id": "hemophilia-ab-d1",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What is the most common inherited secondary hemostasis defect and its X-linked epidemiology?",
+    "answer": "Hemophilia A (factor VIII deficiency) is the most common inherited secondary hemostasis defect; X-linked, affecting approximately 1:10,000 males.",
+    "rationale": "Factor VIII is encoded on the X chromosome; males are hemizygous and therefore fully express the deficiency phenotype.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1180
+      }
+    ],
+    "confusable_with": "Hemophilia B (factor IX deficiency, also X-linked but less common, ~1:30,000)"
+  },
+  {
+    "id": "hemophilia-ab-d2",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "How does disease severity in hemophilia relate to factor activity levels?",
+    "answer": "Severity is inversely related to factor activity: severe <1% (spontaneous bleeds), moderate 1-5% (bleed with minor trauma), mild 5-40% (bleed with major trauma/surgery).",
+    "rationale": "Factor activity determines how much thrombin generation is possible; below 1%, spontaneous hemarthrosis and life-threatening bleeds occur without provocation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1180
+      }
+    ],
+    "confusable_with": "platelet disorders (factor deficiency is a secondary hemostasis problem; platelet disorders cause primary hemostasis failure)"
+  },
+  {
+    "id": "hemophilia-ab-d3",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What coagulation labs characterize hemophilia B (factor IX deficiency)?",
+    "answer": "Prolonged aPTT, normal PT, and normal platelet count, indicating isolated intrinsic pathway (factor IX) disruption.",
+    "rationale": "Factor IX participates in the intrinsic coagulation pathway; its deficiency prolongs aPTT without affecting the extrinsic (PT) or platelet-dependent pathways.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemophilia A and B",
+        "page": 5
+      }
+    ],
+    "confusable_with": "hemophilia A (same lab pattern -- differentiation requires specific factor activity assays)"
+  },
+  {
+    "id": "hemophilia-ab-d4",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Why must factor IX levels be rechecked in suspected hemophilia B during pregnancy or stress?",
+    "answer": "Pregnancy and physiologic stress can falsely elevate factor IX activity levels, potentially missing a mild hemophilia B diagnosis; levels should be rechecked once these conditions resolve.",
+    "rationale": "Factor IX is an acute phase reactant that rises with physiologic stress, normalizing levels transiently and masking mild deficiency.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemophilia A and B",
+        "page": 5
+      }
+    ],
+    "confusable_with": "factor VIII (not an acute phase reactant; levels are not falsely elevated in the same way)"
+  },
+  {
+    "id": "hemophilia-ab-d5",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What novel treatment strategies are being developed for hemophilia beyond factor replacement?",
+    "answer": "Gene therapy (introducing exogenous DNA to produce missing coagulation factor) and cellular therapy (gene-modified cells reintroduced into patients); aim to provide durable factor production.",
+    "rationale": "Gene therapy could provide permanent cure by enabling the patient's own cells to produce sufficient factor VIII or IX, eliminating need for repeated infusions.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemophilia A and B",
+        "page": 8
+      }
+    ],
+    "confusable_with": "emicizumab (bispecific antibody mimicking factor VIII cofactor activity; not gene therapy)"
+  },
+  {
+    "id": "hemophilia-ab-d6",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What historic milestone did Judith Graham Pool achieve for hemophilia treatment in 1964?",
+    "answer": "Pool extracted cryoprecipitate from plasma containing high concentrations of coagulation factors, enabling more effective and concentrated factor replacement therapy.",
+    "rationale": "Cryoprecipitate provided the first practical concentrated source of factor VIII, transforming hemophilia care before recombinant factor products became available.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemophilia A and B",
+        "page": 9
+      }
+    ],
+    "confusable_with": "lyophilized factor concentrates (later development; cryoprecipitate was the first concentration step)"
+  },
+  {
+    "id": "hemophilia-ab-d7",
+    "topic": "Hemophilia A and B",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "The protein C system regulates coagulation by inhibiting which essential cofactors?",
+    "answer": "Protein C inhibits cofactors Va and VIIIa; after binding thrombomodulin on endothelial cells, thrombin activates protein C, downregulating the coagulation cascade.",
+    "rationale": "The thrombomodulin-thrombin-protein C system is a key anticoagulant pathway that limits coagulation by degrading the essential cofactors (Va and VIIIa) in the intrinsic and common pathways.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 442
+      }
+    ],
+    "confusable_with": "antithrombin III (inhibits thrombin and factor Xa directly, not via cofactor degradation)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hemophilia A and B",
+    "discipline": "medicine",
+    "enabling_conditions": "Male sex, family history (X-linked recessive); hemophilia A ~1:10,000 males, hemophilia B ~1:30,000",
+    "pathophysiology": "Deficiency of factor VIII (A) or IX (B) impairs intrinsic pathway thrombin generation; primary platelet plug forms normally but fibrin clot is inadequate",
+    "time_course": "Severe: spontaneous hemarthrosis in infancy; moderate/mild: bleeding with trauma or surgery; inhibitor development complicates ~30% of severe hemophilia A",
+    "key_features": "Hemarthrosis, deep tissue bleeds, hematuria; prolonged aPTT, normal PT, normal platelets; confirmed by specific factor activity assay",
+    "consequence_if_missed": "Life-threatening bleeds (intracranial, retroperitoneal); joint destruction from recurrent hemarthrosis; surgical hemorrhage without factor replacement"
+  },
+  {
+    "id": "hit-d1",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What is the immune mechanism underlying HIT?",
+    "answer": "Patients produce heparin-dependent antibodies against platelet factor 4 (PF4)-heparin complexes; these antibodies agglutinate platelets, cause thrombocytopenia, and trigger thromboembolism.",
+    "rationale": "Anti-PF4/heparin IgG antibodies bind platelet surface FcgRIIa receptors, causing platelet activation, aggregation, and paradoxical thrombosis despite thrombocytopenia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "heparin-associated thrombocytopenia type I (HAT -- non-immune, mild, transient, no thrombosis risk)"
+  },
+  {
+    "id": "hit-d2",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "A patient with remote HIT history requires cardiopulmonary bypass. Under what condition may heparin be used?",
+    "answer": "If HIT history is remote and PF4/heparin antibodies can no longer be detected, heparin may safely be used for CPB; if significant antibody titers persist, alternative anticoagulants must be used.",
+    "rationale": "Anti-PF4/heparin antibodies are transient; once undetectable, re-exposure to heparin does not carry the same immune-mediated thrombocytopenia risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "assuming all remote HIT history absolutely contraindicates heparin (antibody testing can guide decision)"
+  },
+  {
+    "id": "hit-d3",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "When significant HIT antibody titers are detected and heparin must be avoided, what anticoagulation alternatives are recommended?",
+    "answer": "Direct thrombin inhibitors (argatroban, bivalirudin) or direct oral anticoagulants (DOACs such as rivaroxaban) are acceptable alternatives; DOACs are listed in current guidelines.",
+    "rationale": "Non-heparin anticoagulants are required when HIT antibodies are present because any heparin exposure can trigger further platelet activation and thrombosis.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "warfarin alone (dangerous in acute HIT -- can precipitate venous limb gangrene due to protein C depletion)"
+  },
+  {
+    "id": "hit-d4",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "HIT is paradoxically thrombotic rather than hemorrhagic. Why does thrombosis occur despite low platelet counts?",
+    "answer": "Anti-PF4/heparin antibodies activate platelets, causing release of procoagulant microparticles and thrombin generation; the net effect is a hypercoagulable, prothrombotic state despite thrombocytopenia.",
+    "rationale": "Platelet activation and consumption drives thrombin generation disproportionate to the platelet count; arterial and venous thromboses are the primary clinical danger, not bleeding.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "ITP (immune destruction of platelets without activation; bleeding is the main risk, not thrombosis)"
+  },
+  {
+    "id": "hit-d5",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What are the five phases of HIT described by the American Society of Hematology?",
+    "answer": "Suspected HIT, confirmed HIT (lab-positive), acute HIT (platelet recovery in progress), subacute HIT A (antibody positive, platelet recovered), and subacute HIT B (antibody negative).",
+    "rationale": "The phase-based classification guides anticoagulation decisions; non-heparin anticoagulation intensity varies across phases depending on antibody status and platelet count.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Heparin induced thrombocytopenia (HIT)",
+        "page": 6
+      }
+    ],
+    "confusable_with": "HIT types I and II (older classification; replaced by the 5-phase system)"
+  },
+  {
+    "id": "hit-d6",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "What other thrombocytopenic conditions should be on the differential when considering a HIT diagnosis?",
+    "answer": "DIC, drug-induced thrombocytopenia, hemolytic-uremic syndrome, ITP, TTP, and transfusion reactions.",
+    "rationale": "Multiple conditions cause thrombocytopenia in hospitalized patients; the 4Ts scoring system helps estimate pre-test probability of HIT before laboratory confirmation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Heparin induced thrombocytopenia (HIT)",
+        "page": 6
+      }
+    ],
+    "confusable_with": "assuming thrombocytopenia in heparin-exposed patients is automatically HIT (pre-test probability assessment is required)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Heparin-induced thrombocytopenia (HIT)",
+    "discipline": "medicine",
+    "enabling_conditions": "Heparin exposure (any dose, any route); UFH > LMWH risk; surgical > medical patients",
+    "pathophysiology": "IgG antibodies against PF4-heparin complex activate platelets via FcgRIIa receptors causing platelet consumption, microparticle release, and massive thrombin generation",
+    "time_course": "Platelet fall begins 5-10 days after first heparin exposure (or within hours if re-exposed); thrombosis can occur before platelet nadir",
+    "key_features": "Platelet drop >50% from baseline, onset 5-10 days post-heparin, new thrombosis; 4Ts score >=4 suggests moderate/high probability; positive PF4-ELISA confirmed by SRA",
+    "consequence_if_missed": "Life-threatening arterial or venous thrombosis while continuing heparin; limb ischemia, PE, stroke"
+  },
+  {
+    "id": "hcc-d1",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What is the primary pathogenic mechanism by which hepatitis B virus (HBV) causes HCC?",
+    "answer": "Integration of HBV genome into the host genome, particularly into telomerase reverse transcriptase (TERT) promoter sites, causing mutations that account for approximately 60% of HBV-associated HCC cases.",
+    "rationale": "HBV is the leading cause of HCC worldwide; viral genome integration disrupts tumor suppressor genes and activates oncogenes via insertional mutagenesis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 6
+      }
+    ],
+    "confusable_with": "HCV-associated HCC (primarily through cirrhosis and chronic inflammation, not direct genome integration)"
+  },
+  {
+    "id": "hcc-d2",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "NAFLD is now a leading cause of HCC. What fraction of HCC occurs without background cirrhosis in NAFLD patients?",
+    "answer": "Approximately 13% of NAFLD-associated HCC occurs without background cirrhosis; the incidence of HCC is expected to increase 122% in the United States by 2030 due to obesity and diabetes.",
+    "rationale": "NAFLD can progress to HCC through non-cirrhotic pathways involving lipotoxicity, oxidative stress, and inflammatory cytokine dysregulation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 3
+      }
+    ],
+    "confusable_with": "all HCC requiring cirrhosis (NAFLD can cause HCC without cirrhosis)"
+  },
+  {
+    "id": "hcc-d3",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What are the major complications of advanced HCC, and which complication is immediately life-threatening?",
+    "answer": "Complications include hepatic encephalopathy, portal vein thrombosis, ascites, variceal bleeding, obstructive jaundice, and pyogenic abscess; intraperitoneal bleeding from HCC rupture is immediately life-threatening (requires emergent angiography/embolization).",
+    "rationale": "Spontaneous rupture of HCC causes massive intraperitoneal hemorrhage with hemodynamic collapse; it is a surgical emergency with high mortality.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 9
+      }
+    ],
+    "confusable_with": "variceal bleeding (also life-threatening but endoscopically manageable; HCC rupture requires embolization)"
+  },
+  {
+    "id": "hcc-d4",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What are the Milan criteria for liver transplantation in HCC and their associated survival outcomes?",
+    "answer": "Single lesion <=5 cm or up to 3 lesions each <=3 cm, no vascular invasion, no extrahepatic spread; meeting Milan criteria yields 60-80% 5-year and 50% 10-year post-transplant survival with <15% HCC recurrence.",
+    "rationale": "Milan criteria were developed to identify patients with biologically favorable HCC where transplantation provides curative intent; they remain the benchmark for transplant listing.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 8
+      }
+    ],
+    "confusable_with": "UCSF criteria (slightly expanded criteria also used by some centers)"
+  },
+  {
+    "id": "hcc-d5",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What is the sensitivity of serum AFP for HCC diagnosis and why is it limited?",
+    "answer": "AFP sensitivity is limited (~40-60% for small HCC); about 40% of small HCCs do not secrete AFP; early non-cirrhotic HCC can have normal AFP.",
+    "rationale": "AFP elevation is not specific to HCC (also elevated in HBV/HCV, pregnancy, germ cell tumors) and not universal; LI-RADS scoring on multiphasic CT/MRI is the current standard for HCC diagnosis.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 5
+      }
+    ],
+    "confusable_with": "AFP as a definitive diagnostic test for HCC (it is a screening adjunct, not diagnostic alone)"
+  },
+  {
+    "id": "hcc-d6",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What is the first-line systemic therapy for advanced HCC not amenable to resection or transplant, and what is the second-line option?",
+    "answer": "First-line: sorafenib (multikinase inhibitor); second-line after sorafenib failure: regorafenib; other options include cabozantinib, ramucirumab, and nivolumab (PD-1 checkpoint inhibitor).",
+    "rationale": "Sorafenib inhibits tumor angiogenesis and cell proliferation; regorafenib is FDA-approved for sorafenib-refractory HCC based on RESORCE trial survival benefit.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatocellular Carcinoma (HCC)",
+        "page": 8
+      }
+    ],
+    "confusable_with": "regorafenib as first-line (it is specifically second-line post-sorafenib failure)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hepatocellular Carcinoma (HCC)",
+    "discipline": "medicine",
+    "enabling_conditions": "Cirrhosis (any cause), chronic HBV (even without cirrhosis), NAFLD, alcohol, aflatoxin exposure",
+    "pathophysiology": "Chronic hepatocyte injury and regeneration drive oncogenic mutations; HBV genome integration, HCV-induced inflammation, and lipotoxicity/oxidative stress are key mechanisms",
+    "time_course": "Years to decades from liver disease onset; median survival <6-12 months for advanced unresectable HCC without treatment",
+    "key_features": "RUQ pain, weight loss, worsening ascites, rising AFP, arterial enhancement with washout on multiphasic CT (LI-RADS 5)",
+    "consequence_if_missed": "Progression beyond transplant criteria (Milan); rupture with fatal intraperitoneal hemorrhage; missed curative window"
+  },
+  {
+    "id": "hrs-d1",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What is the pathophysiologic sequence leading from cirrhosis to hepatorenal syndrome?",
+    "answer": "Portal hypertension stimulates NO and prostaglandin release causing splanchnic vasodilation, reducing effective arterial blood volume (EABV), activating RAAS/ADH/SNS, which causes renal vasoconstriction and HRS.",
+    "rationale": "Splanchnic vasodilation in cirrhosis creates a relative hypovolemia; the compensatory neurohormonal activation leads to renal vasoconstriction out of proportion to actual kidney damage.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 97
+      }
+    ],
+    "confusable_with": "ATN (structural tubular injury; HRS has normal kidney histology and responds to liver improvement)"
+  },
+  {
+    "id": "hrs-d2",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What are the two diagnostic AKI criteria thresholds that define HRS-AKI in cirrhosis?",
+    "answer": "sCr increase >=0.3 mg/dL within 48 hours OR sCr >1.5x baseline within 7 days (or urine output <0.5 mL/kg/h for >=6 hours), in the setting of advanced hepatic failure with ascites, after excluding other causes.",
+    "rationale": "HRS-AKI uses KDIGO AKI criteria adapted for cirrhosis; its diagnosis requires exclusion of hypovolemia, nephrotoxins, intrinsic renal disease, and obstructive causes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 97
+      }
+    ],
+    "confusable_with": "prerenal AKI (responds to volume; HRS-AKI does not respond to 2 days of albumin and vasopressors)"
+  },
+  {
+    "id": "hrs-d3",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "How do HRS type 1 (HRS-AKI) and type 2 (HRS-CKD) differ in temporal evolution and prognosis?",
+    "answer": "HRS-AKI: rapid acute kidney function deterioration (days); very poor prognosis (median transplant-free survival ~28 days). HRS-CKD: slower progression over weeks to months; better prognosis than HRS-AKI but worse than non-HRS cirrhosis.",
+    "rationale": "The two forms reflect different underlying physiologic stress and trajectories; HRS-AKI is typically triggered by an acute precipitant (SBP, bleeding) while HRS-CKD reflects progressive circulatory failure.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatorenal Syndrome (HRS)",
+        "page": 6
+      }
+    ],
+    "confusable_with": "HRS stage 1A vs 1B (substages of HRS-AKI based on creatinine magnitude, not the same as HRS type 1 vs 2)"
+  },
+  {
+    "id": "hrs-d4",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "What is the standard pharmacologic treatment for HRS-AKI?",
+    "answer": "Vasoconstrictor (terlipressin or norepinephrine) plus IV albumin (1 g/kg on day 1, then 20-40 g/day); treatment targets reversal of splanchnic vasodilation.",
+    "rationale": "Vasoconstrictors counteract pathologic splanchnic vasodilation, restoring renal perfusion; albumin expands effective arterial blood volume and has additional anti-inflammatory effects.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatorenal Syndrome (HRS)",
+        "page": 7
+      }
+    ],
+    "confusable_with": "IV fluids alone (not sufficient in HRS; may worsen ascites without improving renal perfusion)"
+  },
+  {
+    "id": "hrs-d5",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "Why does transplanting a normal kidney into a patient with untreated HRS reverse the renal failure?",
+    "answer": "Because HRS is hemodynamically mediated with normal kidney histology; renal failure is functional (vasoconstriction), not structural, and reverses when liver function is restored.",
+    "rationale": "The seminal clinical observation that kidneys from HRS patients function normally in recipients without liver disease confirmed the purely hemodynamic nature of HRS.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatorenal Syndrome (HRS)",
+        "page": 3
+      }
+    ],
+    "confusable_with": "intrinsic renal disease (structural kidney damage does not reverse with liver transplantation)"
+  },
+  {
+    "id": "hrs-d6",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "discipline": "medicine",
+    "stem": "TIPS placement is a therapeutic option for refractory ascites in cirrhosis. What are the potential complications limiting its use?",
+    "answer": "TIPS can transiently reduce abdominal distension and restore hemodynamic stability; major complications include hepatic encephalopathy (new or worsening) and heart failure exacerbation.",
+    "rationale": "TIPS reduces portal pressure by shunting blood directly to systemic circulation, increasing cardiac preload and potentially precipitating hepatic encephalopathy from reduced hepatic clearance of ammonia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 533
+      }
+    ],
+    "confusable_with": "paracentesis (treats ascites symptomatically but does not address portal hypertension as definitively as TIPS)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hepatorenal Syndrome (HRS)",
+    "discipline": "medicine",
+    "enabling_conditions": "Advanced cirrhosis with portal hypertension and ascites; precipitants: SBP, GI bleed, large paracentesis without albumin, nephrotoxins",
+    "pathophysiology": "Extreme splanchnic vasodilation reduces EABV, triggering RAAS/ADH/SNS activation causing severe renal vasoconstriction; kidney histology is normal",
+    "time_course": "HRS-AKI: rapid deterioration over days; median transplant-free survival 28 days. HRS-CKD: slower over weeks to months",
+    "key_features": "Rising creatinine, oliguria, low urine sodium (<20 mEq/L), normal urinalysis, no response to volume expansion with albumin, in setting of advanced cirrhosis",
+    "consequence_if_missed": "Progression to multiorgan failure; death without liver transplantation; ICU admission with RRT as bridge"
+  }
+]

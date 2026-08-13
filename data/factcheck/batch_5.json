@@ -1,0 +1,997 @@
+[
+  {
+    "id": "curated-phase6_rare_diagnoses_013",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds antibody subtypes & seronegative APS"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_014",
+    "verdict": "KEEP",
+    "reason": "Corpus weak (0.74); unit adds multi-organ thrombosis diagnosis & triple therapy"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_015",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds AML association & neutrophilic dermatosis criteria"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_016",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds 2-8 wk drug latency & RUCAM scoring"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_017",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds IVIG 2g/kg + aspirin dosing & CAA monitoring"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_018",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds catecholamine surge & apical ballooning mechanism"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_019",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds allergic ACS mast-cell mechanism — rare & high-value"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_020",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds prolactin pathway & bromocriptine context"
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_021",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds multinucleated giant cell biopsy + transplant bridge"
+  },
+  {
+    "id": "curated-phase6_id_unit_0",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds major/minor criteria & definite/possible classification"
+  },
+  {
+    "id": "curated-phase6_id_unit_1",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds vegetation >10mm surgery threshold + antibiotic duration"
+  },
+  {
+    "id": "curated-phase6_id_unit_2",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds type I vs II + finger test + OR within 12h"
+  },
+  {
+    "id": "curated-phase6_id_unit_3",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds TSST-1 vs SPE mechanism + clindamycin adjunct"
+  },
+  {
+    "id": "curated-phase6_id_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds Weil disease triad + LADR pulmonary hemorrhage"
+  },
+  {
+    "id": "curated-phase6_id_unit_5",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit correctly positions artemisinins first + quinine as fallback; accurate"
+  },
+  {
+    "id": "curated-phase6_id_unit_6",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds plasma leakage criteria + WHO dengue classification"
+  },
+  {
+    "id": "curated-phase6_id_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds AV block grading + IV ceftriaxone for 3rd-degree"
+  },
+  {
+    "id": "curated-phase6_id_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds urine Ag for Legionella + azithro vs FQ choice"
+  },
+  {
+    "id": "curated-phase6_id_unit_9",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds RT-QuIC CSF test + periodic sharp waves on EEG"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_010",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds major/minor criteria & definite/possible classification"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_011",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds vegetation >10mm surgery threshold + antibiotic duration"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_012",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds type I vs II + finger test + OR within 12h"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_013",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds TSST-1 vs SPE mechanism + clindamycin adjunct"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_014",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds Weil disease triad + LADR pulmonary hemorrhage"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_015",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit correctly positions artemisinins first + quinine as fallback; accurate"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_016",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds plasma leakage criteria + WHO dengue classification"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_017",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds AV block grading + IV ceftriaxone for 3rd-degree"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_018",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds urine Ag for Legionella + azithro vs FQ choice"
+  },
+  {
+    "id": "curated-phase6_infectious_disease_019",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds RT-QuIC CSF test + periodic sharp waves on EEG"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_0",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds Cairo-Bishop criteria + rasburicase vs allopurinol"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_1",
+    "verdict": "FLAG",
+    "reason": "Rasburicase mentioned without G6PD deficiency contraindication — omission creates patient safety risk"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_2",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds ABO incompatibility + DIC + pink plasma recognition"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_3",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds TRALI=hypoxia+infiltrates vs FNHTR=fever-no-hypoxia"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds VEGF pathway + gastric cancer + plasma exchange futility"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_5",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.63); unit adds NSCLC/SCLC causes + stent vs radiation decision"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_6",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds dexa 10mg IV + MRI within 24h + surgical threshold"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds pericardiodesis vs pericardiocentesis + cytology yield"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds MASCC score + ANC<500 definition + pip-tazo vs cefepime"
+  },
+  {
+    "id": "curated-phase6_hemo_unit_9",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.67); unit adds ISTH DIC score + FFP vs cryo for fibrinogen <100"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_010",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds Cairo-Bishop criteria + rasburicase vs allopurinol"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_011",
+    "verdict": "FLAG",
+    "reason": "Rasburicase mentioned without G6PD deficiency contraindication — omission creates patient safety risk"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_012",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds ABO incompatibility + DIC + pink plasma recognition"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_013",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds TRALI=hypoxia+infiltrates vs FNHTR=fever-no-hypoxia"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_014",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds VEGF pathway + gastric cancer + plasma exchange futility"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_015",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.63); unit adds NSCLC/SCLC causes + stent vs radiation decision"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_016",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds dexa 10mg IV + MRI within 24h + surgical threshold"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_017",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds pericardiodesis vs pericardiocentesis + cytology yield"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_018",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds MASCC score + ANC<500 definition + pip-tazo vs cefepime"
+  },
+  {
+    "id": "curated-phase6_hemato_oncology_019",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.67); unit adds ISTH DIC score + FFP vs cryo for fibrinogen <100"
+  },
+  {
+    "id": "curated-phase6_tox_unit_0",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.45); unit adds DUMBELS mnemonic + atropine titration + 2-PAM timing"
+  },
+  {
+    "id": "curated-phase6_tox_unit_1",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.57); unit adds physostigmine indication + TCA contraindication nuance"
+  },
+  {
+    "id": "curated-phase6_tox_unit_2",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds Hunter criteria + cyproheptadine dosing + linezolid trigger"
+  },
+  {
+    "id": "curated-phase6_tox_unit_3",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds NMS vs SS distinction + dantrolene + bromocriptine dosing"
+  },
+  {
+    "id": "curated-phase6_tox_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds Na-channel blockade (cocaine) + phentolamine use"
+  },
+  {
+    "id": "curated-phase6_tox_unit_5",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds NMDA antagonism (PCP) vs serotonin agonism (LSD)"
+  },
+  {
+    "id": "curated-phase6_tox_unit_6",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds CIWA-Ar + phenobarbital loading for refractory benzo WD"
+  },
+  {
+    "id": "curated-phase6_tox_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.52); unit adds K2/bath salts toxidrome + supportive management"
+  },
+  {
+    "id": "curated-phase6_tox_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.54); unit adds glycine-antagonism + opisthotonus + benzo management"
+  },
+  {
+    "id": "curated-phase6_tox_unit_9",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.61); unit adds BIG-IV vs heptavalent antitoxin distinction + BSAP"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_010",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.45); unit adds DUMBELS mnemonic + atropine titration + 2-PAM timing"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_011",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.57); unit adds physostigmine indication + TCA contraindication nuance"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_012",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds Hunter criteria + cyproheptadine dosing + linezolid trigger"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_013",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds NMS vs SS distinction + dantrolene + bromocriptine dosing"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_014",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds Na-channel blockade (cocaine) + phentolamine use"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_015",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds NMDA antagonism (PCP) vs serotonin agonism (LSD)"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_016",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds CIWA-Ar + phenobarbital loading for refractory benzo WD"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_017",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.52); unit adds K2/bath salts toxidrome + supportive management"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_018",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.54); unit adds glycine-antagonism + opisthotonus + benzo management"
+  },
+  {
+    "id": "curated-phase6_advanced_toxicology_019",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.61); unit adds BIG-IV vs heptavalent antitoxin distinction + BSAP"
+  },
+  {
+    "id": "curated-phase6_edge_unit_0",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.73); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase6_edge_unit_1",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds bubble-contrast echo + Valsalva maneuver for PFO"
+  },
+  {
+    "id": "curated-phase6_edge_unit_2",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds autoregulation failure + FLAIR MRI + BP reduction"
+  },
+  {
+    "id": "curated-phase6_edge_unit_3",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.68); unit adds thunderclap + vasospasm on CTA + CCB treatment"
+  },
+  {
+    "id": "curated-phase6_edge_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds BSA thresholds (<10% SJS, >30% TEN) + SCORTEN"
+  },
+  {
+    "id": "curated-phase6_edge_unit_5",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); rare MS triad not well-covered; unit correctly distinguishes from cholangitis Charcot"
+  },
+  {
+    "id": "curated-phase6_edge_unit_6",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.66); unit adds warning-leak SAH concept + LP xanthochromia"
+  },
+  {
+    "id": "curated-phase6_edge_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds TTE/TEE sensitivity + tricuspid valve IVDA association"
+  },
+  {
+    "id": "curated-phase6_edge_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds acute adrenal crisis risk + emergency hydrocortisone"
+  },
+  {
+    "id": "curated-phase6_edge_unit_9",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit correctly states antibiotic avoidance in STEC-HUS; key safety teaching"
+  },
+  {
+    "id": "curated-phase6_edge_cases_010",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.73); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase6_edge_cases_011",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds bubble-contrast echo + Valsalva maneuver for PFO"
+  },
+  {
+    "id": "curated-phase6_edge_cases_012",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds autoregulation failure + FLAIR MRI + BP reduction"
+  },
+  {
+    "id": "curated-phase6_edge_cases_013",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.68); unit adds thunderclap + vasospasm on CTA + CCB treatment"
+  },
+  {
+    "id": "curated-phase6_edge_cases_014",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds BSA thresholds (<10% SJS, >30% TEN) + SCORTEN"
+  },
+  {
+    "id": "curated-phase6_edge_cases_015",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); rare MS triad not well-covered; unit correctly distinguishes from cholangitis Charcot"
+  },
+  {
+    "id": "curated-phase6_edge_cases_016",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.66); unit adds warning-leak SAH concept + LP xanthochromia"
+  },
+  {
+    "id": "curated-phase6_edge_cases_017",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds TTE/TEE sensitivity + tricuspid valve IVDA association"
+  },
+  {
+    "id": "curated-phase6_edge_cases_018",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds acute adrenal crisis risk + emergency hydrocortisone"
+  },
+  {
+    "id": "curated-phase6_edge_cases_019",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit correctly states antibiotic avoidance in STEC-HUS; key safety teaching"
+  },
+  {
+    "id": "curated-phase5_acls_unit_22",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.58); unit adds 6-link AHA chain for OHCA"
+  },
+  {
+    "id": "curated-phase5_acls_unit_23",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds no-flow/low-flow concept for prognostication"
+  },
+  {
+    "id": "curated-phase5_acls_unit_24",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.62); unit adds biphasic vs monophasic + energy selection"
+  },
+  {
+    "id": "curated-phase5_acls_unit_25",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.64); unit adds 100-120/min rate, 2-in depth, CCF >60%"
+  },
+  {
+    "id": "curated-phase5_acls_unit_26",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.53); unit adds pregnancy/obesity/LVAD resuscitation approach"
+  },
+  {
+    "id": "curated-phase5_acls_unit_27",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds bystander AED step-by-step"
+  },
+  {
+    "id": "curated-phase5_acls_unit_28",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds IO vs IV hierarchy in arrest"
+  },
+  {
+    "id": "curated-phase5_acls_unit_29",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds dynamic hyperinflation + prolonged I:E in asthma arrest"
+  },
+  {
+    "id": "curated-phase5_acls_unit_30",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.62); unit adds transfusion trigger & pRBC in sickle cell arrest"
+  },
+  {
+    "id": "curated-phase5_acls_unit_31",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds vasopressor + source control in PEA from sepsis"
+  },
+  {
+    "id": "curated-phase5_acls_unit_32",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.67); unit adds termination-of-resuscitation rules"
+  },
+  {
+    "id": "curated-phase5_acls_unit_33",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.59); unit adds 2-min cycle epinephrine/amiodarone spacing"
+  },
+  {
+    "id": "curated-phase5_acls_unit_34",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.53); unit adds evidence base + facilitator role"
+  },
+  {
+    "id": "curated-phase5_acls_unit_35",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds CT brain + cath lab decision post-ROSC"
+  },
+  {
+    "id": "curated-phase5_acls_unit_36",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.66); unit adds <30°C ECPR threshold and rewarming rate"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_33",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds ≥3 P morphologies + COPD/Mg/verapamil approach"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_34",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds focal vs macro-reentrant distinction"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_35",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds digitalis toxicity + AVNRT overlap"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_36",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds SCN5A + type 1 pattern + ICD criteria"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_37",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds benign vs malignant early repol distinction"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_38",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds ischemia-triggered VF/AVB mechanism"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_39",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.79); unit adds bidirectional VT + Digibind Fab dosing"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_40",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds pulmonary/thyroid/hepatic monitoring approach"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_41",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds Bazett vs Fridericia + channel mechanisms"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_42",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds Nav/Kv channel specificity + proarrhythmia classes"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_43",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.81); unit adds SVT/AFL/AF success rates + complication rates"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_44",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds freeze-thaw mechanism + pulmonary vein isolation"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_45",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.66); unit adds primary vs secondary prevention EF thresholds"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_46",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds sick sinus + AV block degree criteria"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_47",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.66); unit adds LBBB + EF<35% + NYHA III-IV CRT criteria"
+  },
+  {
+    "id": "curated-phase5_shock_unit_19",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds cytokine cascade and endothelial barrier detail"
+  },
+  {
+    "id": "curated-phase5_shock_unit_20",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers source control (score 0.83)"
+  },
+  {
+    "id": "curated-phase5_shock_unit_21",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers SSC guidelines well (score 0.83)"
+  },
+  {
+    "id": "curated-phase5_shock_unit_22",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers RV failure in sepsis (score 0.83)"
+  },
+  {
+    "id": "curated-phase5_shock_unit_23",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.81); unit adds SMART/SALT-ED balanced crystalloid data"
+  },
+  {
+    "id": "curated-phase5_shock_unit_24",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds IM epi 0.3-0.5mg thigh + epinephrine drip escalation"
+  },
+  {
+    "id": "curated-phase5_shock_unit_25",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds IgE vs complement-mediated distinction"
+  },
+  {
+    "id": "curated-phase5_shock_unit_26",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.67); unit adds 2-hit model + donor leukocyte Ab mechanism"
+  },
+  {
+    "id": "curated-phase5_shock_unit_27",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds ScvO2 vs SvO2 +lactate clearance interpretation"
+  },
+  {
+    "id": "curated-phase5_shock_unit_28",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds NICE-SUGAR 140-180 target + intensive insulin harm"
+  },
+  {
+    "id": "curated-phase5_shock_unit_29",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.81); unit adds immunoparalysis + IL-7/GM-CSF immunotherapy concept"
+  },
+  {
+    "id": "curated-phase5_shock_unit_30",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds norepinephrine-first taper + VP discontinuation criteria"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_20",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds Pplat <30 + driving pressure <15 targets"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_21",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.59); unit adds 6mL/kg IBW ARDSnet + sex-based formula"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_22",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds 40cmH2O/40s approach + ART trial context"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_23",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds RV afterload + CO2 vasodilation + pH target detail"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_24",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.58); unit adds RASS -2 to 0 target + ACURASYS cisatracurium"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_25",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.60); unit adds flow starvation vs double-trigger patterns"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_26",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.59); unit adds cuff pressure 20-30cmH2O + right mainstem recognition"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_27",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.63); unit adds early vs late evidence (TracMan) + PDT technique"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_28",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.68); unit adds EPAP + NIV bridge approach post-SBT failure"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_29",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds OPTIFLOW trial + flow rates + RAPP index"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_30",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.74); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_16",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.77); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_17",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.63); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_18",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.72); unit adds milrinone vs dobutamine HFpEF diastolic distinction"
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_19",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds catecholamine surge & apical ballooning mechanism"
+  },
+  {
+    "id": "curated-phase5_mcs_unit_16",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.55); unit adds ACT targets, HIT risk, circuit thrombosis"
+  },
+  {
+    "id": "curated-phase5_mcs_unit_17",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.62); unit adds RVAD bridge + RV optimization approach"
+  },
+  {
+    "id": "curated-phase5_echo_unit_18",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds GLS normal -17 to -20% + subclinical dysfunction"
+  },
+  {
+    "id": "curated-phase5_echo_unit_19",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.77); unit adds TAPSE + S-prime + RV/LV ratio"
+  },
+  {
+    "id": "curated-phase5_acls_unit_37",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.75); unit adds Osborn wave temperature correlation"
+  },
+  {
+    "id": "curated-phase5_acls_unit_38",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.73); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_acls_unit_39",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.64); unit adds ALPS trial no-mortality-benefit context"
+  },
+  {
+    "id": "curated-phase5_acls_unit_40",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers bicarb in arrest well (score 0.85)"
+  },
+  {
+    "id": "curated-phase5_acls_unit_41",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds <5-min perimortem C-section + left uterine displacement"
+  },
+  {
+    "id": "curated-phase5_acls_unit_42",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.64); unit adds trauma vs cardiac cause and pre-hospital time context"
+  },
+  {
+    "id": "curated-phase5_acls_unit_43",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.71); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_acls_unit_44",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.61); unit adds early shock vs drug-first debate and AHA 2020 context"
+  },
+  {
+    "id": "curated-phase5_acls_unit_45",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.61); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_56",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.60); unit adds LQTS genotype-specific triggers + QTc >450ms concern"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_57",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds laryngoscopy bradycardia + succinylcholine VT"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_58",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers new-onset AF workup (score 0.82)"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_59",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.67); unit adds transplant-heart contraindication + bronchospasm"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_60",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.61); unit adds channel downregulation + upregulation mechanism"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_61",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds digoxin therapeutic range + HF-specific target"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_62",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds slow acetylator risk + ANA/anti-histone monitoring"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_63",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds Valsalva mechanism + COPD association"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_64",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds vasodepressor vs cardioinhibitory subtypes"
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_65",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds HCM/CPVT/LQTS red flags + workup algorithm"
+  },
+  {
+    "id": "curated-phase5_shock_unit_38",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds metformin (type B) + thiamine deficiency"
+  },
+  {
+    "id": "curated-phase5_shock_unit_39",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.65); unit adds reversible biventricular dysfunction + TNF mechanism"
+  },
+  {
+    "id": "curated-phase5_shock_unit_40",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds cosyntropin stim + hydrocortisone 200mg/day"
+  },
+  {
+    "id": "curated-phase5_shock_unit_41",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds triglyceride >110 diagnostic threshold + fat-free diet"
+  },
+  {
+    "id": "curated-phase5_shock_unit_42",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds vasodilatory physiology + terlipressin context"
+  },
+  {
+    "id": "curated-phase5_shock_unit_43",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.71); unit adds vasopressin + hydrocortisone + methylene blue cascade"
+  },
+  {
+    "id": "curated-phase5_shock_unit_44",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.61); unit adds PLUS/CRISTAL/ALBUMIN trials 2024 context"
+  },
+  {
+    "id": "curated-phase5_shock_unit_45",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds MAP 50-65 pre-OR + TBI exception for higher target"
+  },
+  {
+    "id": "curated-phase5_shock_unit_46",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds iNOS overexpression + methylene blue as NOS inhibitor"
+  },
+  {
+    "id": "curated-phase5_shock_unit_47",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.78); unit adds mesenteric vasoconstriction + lactate gap marker"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_40",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.76); unit adds COPD/NMD/obesity-specific weaning adjustments"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_41",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.57); unit adds post-extubation laryngospasm mechanism + CPAP treatment"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_42",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.78); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_43",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.64); unit adds HOB 30-45° + oral CHX + subglottic suctioning bundle"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_44",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.62); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_45",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.53); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_46",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.70); unit adds BVM vs NIV vs surgical airway decision"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_47",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.68); unit adds auto-PEEP risk + I:E 2:1 to 4:1 context"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_48",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus covers ARDS fluid strategy (score 0.82)"
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_49",
+    "verdict": "KEEP",
+    "reason": "Corpus does not well-cover topic (score 0.53); unit adds intern-level value"
+  },
+  {
+    "id": "curated-phase5_misc_unit_0",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.81); unit adds PA rupture, catheter knotting, and RBBB risk"
+  },
+  {
+    "id": "curated-phase5_misc_unit_1",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.64); unit adds esophageal capture thresholds vs transcutaneous"
+  },
+  {
+    "id": "curated-phase5_misc_unit_2",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.62); unit adds early inflation / late deflation errors + trigger modes"
+  },
+  {
+    "id": "curated-phase5_misc_unit_3",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.81); unit adds Beck triad + pulsus >10mmHg + RA collapse on echo"
+  },
+  {
+    "id": "curated-phase5_misc_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.62); unit adds GLS -10% vs -17% and E/e ratio in HFpEF"
+  },
+  {
+    "id": "curated-phase5_misc_unit_5",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.74); unit adds 2.1cm + >50% collapse → 3mmHg RAP formula"
+  },
+  {
+    "id": "curated-phase5_misc_unit_6",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.80); unit adds septal bounce + respirophasic variation + annulus reversus"
+  },
+  {
+    "id": "curated-phase5_misc_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.82); unit adds type 2 MI demand-ischemia mechanism"
+  },
+  {
+    "id": "curated-phase5_misc_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.69); unit adds dobutamine arrhythmia + esmolol reversal"
+  },
+  {
+    "id": "curated-phase5_misc_unit_9",
+    "verdict": "KEEP",
+    "reason": "Corpus partial (0.73); unit adds DVI + EOA + pannus vs thrombus distinction"
+  }
+]

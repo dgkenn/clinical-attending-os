@@ -1,0 +1,554 @@
+{
+  "Hyperkalemia": {
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1886,
+        "text": "Section: Treatment of Hyperkalemia. (occasionally elevation) → an ECG that resembles a sine wave, before progressing to ventricular fibrillation and asystole. Contractility may be relatively well preserved until late in the course of progressive hyperkalemia. Hypocalcemia, hyponatremia, and acidosis accentuate the cardiac effects of hyperkalemia. FIGURE 49–7 Electrocardiographic effects of hyperkalemia. Electrocardiographic changes characteristically progress from symmetrically peaked T waves, often with a shortened QT interval, to widening of the QRS complex, prolongation of the P–R interval,"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1219,
+        "text": "The goal for decreasing blood glucose in ketoacidosis should be 100 mg/dL/h or less or 10%/h or less with an intravenous insulin infusion starting at 0.1 units/kg/h. DKA patients may be resistant to insulin, and the insulin infusion rate may need to be increased if glucose concentrations do not decrease. As glucose moves intracellularly, so does potassium. Although this can quickly lead to a critical level of hypokalemia if not corrected, overaggressive potassium replacement can lead to equally life- threatening hyperkalemia. Potassium and blood glucose should be monitored frequently during tr"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 333,
+        "text": "Section: Children are particularly susceptible to profound bradycardia following. neuromuscular junction, it also stimulates all ACh receptors. The cardiovascular actions of succinylcholine are therefore very complex. Stimulation of nicotinic receptors in parasympathetic and sympathetic ganglia and muscarinic receptors in the sinoatrial node of the heart can increase or decrease blood pressure and heart rate. Low doses of succinylcholine can produce negative chronotropic and inotropic effects, but higher doses usually increase heart rate and contractility and elevate circulating catecholamine "
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1458,
+        "text": "Section: Children are more susceptible than adults to cardiac arrhythmias,. biotransformation and reliably behave as intermediate-acting muscle relaxants. Children are more susceptible than adults to cardiac arrhythmias, hyperkalemia, rhabdomyolysis, myoglobinemia, masseter spasm, and malignant hyperthermia (see Chapter 52) associated with succinylcholine. When a child experiences cardiac arrest following administration of succinylcholine, immediate treatment for hyperkalemia should be instituted. Prolonged resuscitative efforts (potentially including cardiopulmonary bypass) may be required. T"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1846,
+        "text": "Symptomatic hypocalcemia is a medical emergency and should be treated immediately with intravenous calcium chloride (3–5 mL of a 10% solution) or calcium gluconate (10–20 mL of a 10% solution)"
+      },
+      {
+        "book": "Stanford CA-1",
+        "page": 85,
+        "text": "Section: Differential Diagnosis. Differential Diagnosis Neuroleptic Malignant Syndrome More common in patients receiving antidopaminergic agents or in withdrawal from dopamine agents as in Parkinson’s, usually develops over days rather than minutes to hours Thyroid Storm* Usually associated with hypokalemia fever, tachypnea, tachycardia, metabolic acidosis HR, BP, but normal EtCO2 and Temp e.g. ecstasy, cocaine, amphetamines, PCP, LSD Serotonin Syndrome associated drugs interactions MAOIs + merperidine or MAOIs+ SSRIs Iatrogenic Hyperthermia Hypercarbia from CO2 insufflation for laparoscopy "
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1222,
+        "text": "Section: Lispro (short-acting) insulin or insulin analogue each morning and whose blood glucose. Lispro (short-acting) insulin or insulin analogue each morning and whose blood glucose is at least 150 mg/dL would receive 15 units (half the normal 30-unit morning dose) of NPH subcutaneously before surgery along with an infusion of 5% dextrose solution (1.5 mL/kg/h). Absorption of subcutaneous or intramuscular insulin depends on tissue blood flow, however, and can be unpredictable during surgery. Intraoperative hyperglycemia (>180 mg/dL) may be treated with boluses of intravenous regular insulin."
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1125,
+        "text": "Section: Patients who are undergoing retroperitoneal lymph node dissection and who have. Patients with a history of cardiac arrhythmias and those with a pacemaker or implantable cardioverter defibrillator (ICD) may be at risk for developing arrhythmias induced by shock waves during extracorporeal shock wave lithotripsy (ESWL). Shock waves can damage the internal components of pacemaker and ICD devices. Patients who are undergoing retroperitoneal lymph node dissection and who have received bleomycin preoperatively are at increased risk for developing postoperative pulmonary insufficiency. These"
+      }
+    ]
+  },
+  "Diabetic Ketoacidosis (DKA)": {
+    "domain": "Internal medicine: endocrinology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1928,
+        "text": "Section: B. Increased Endogenous Nonvolatile Acid Production. these acids. B. Increased Endogenous Nonvolatile Acid Production Severe tissue hypoxia following hypoxemia, hypoperfusion (ischemia), or an inability to utilize oxygen (cyanide poisoning) can result in lactic acidosis. Lactic acid is the end product of the anaerobic metabolism of glucose (glycolysis) and can rapidly accumulate under these conditions. Decreased utilization of lactate by the liver and, to a lesser extent, by the kidneys is less commonly responsible for lactic acidosis; causes include hypoperfusion, alcoholism, and liv"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 431,
+        "text": "Section: Chapter 22 Acid–Base Balance and Blood Gas Analysis. Chapter 22 Acid–Base Balance and Blood Gas Analysis unless eliminated by ventilation, can worsen any intracel- lular and extracellular acidosis. A common approach is to administer a small dose of sodium bicarbonate and then repeat the pH measurement and monitor hemodynamics to determine the impact of treatment. Metabolic Alkalosis Metabolic alkalosis is present when the pH is higher than 7.45 because of the gain of bicarbonate ions or loss of hydrogen ions. The loss of hydrogen ions is usually from the gastrointestinal tract or the "
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1218,
+        "text": "Section: There are three life-threatening acute complications of diabetes and its treatment—. TABLE 35–2 Diagnosis and classification of diabetes mellitus. There are three life-threatening acute complications of diabetes and its treatment— diabetic ketoacidosis (DKA), hyperosmolar nonketotic coma, and hypoglycemia—in addition to other acute medical problems (such as sepsis) in which the presence of diabetes makes treatment more difficult. Decreased insulin activity allows the catabolism of free fatty acids into ketone bodies (acetoacetate and β-hydroxybutyrate), some of which are weak acids (s"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 430,
+        "text": "Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT lactate among body tissues. The liver metabolizes approxi- mately 60% of lactate produced, with the kidneys metabo- lizing 30%. A small amount of lactate is converted back to glucose via gluconeogenesis. Causes of an elevated lactate can be divided into those related to tissue hypoxia or sys- temic hypoperfusion, or etiologies not related to hypoperfu- sion.12 (Box 22.4). Nonanion Gap Metabolic acidosis with a normal anion gap occurs when chloride repl"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1931,
+        "text": "Section: Specific therapy for diabetic ketoacidosis includes replacement of the existing fluid. Alternate buffers that do not produce CO2, such as Carbicarb or tromethamine (THAM), may be theoretically preferable but are unproven clinically. Specific therapy for diabetic ketoacidosis includes replacement of the existing fluid deficit resulting from a hyperglycemic osmotic diuresis first, as well as insulin, potassium, phosphate, and magnesium. The treatment of lactic acidosis should be directed first at restoring adequate oxygenation and tissue perfusion. Alkalinization of the urine with NaHCO"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2250,
+        "text": "clinical pharmacology of, 147f, 155t, 159–161 contraindications, 161 description of, 599 drug interactions, 161 effects on organ systems cardiovascular, 160 cerebral, 160 hepatic, 160 neuromuscular, 160 renal, 160 respiratory, 160 electroencephalographic effects of, 599 epinephrine and, 161 history of, 3 partition coefficient of, 145t pediatric uses of, 910t physical properties of, 159 toxicity of, 160–161 vaporizer, 59 Section: Desipramine, 1101t. Desipramine, 1101t Section: Desmopressin (DDAVP), 475, 734, 906t, 1166. Desmopressin (DDAVP), 475, 734, 906t, 1166 Section: Dexamethasone (Decadron"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1882,
+        "text": "Section: Potassium chloride is the preferred potassium salt when a metabolic alkalosis is. correct the entire potassium deficit. Because of potassium’s irritative effect on peripheral veins, peripheral intravenous replacement should not exceed 8 mEq/h. More rapid intravenous potassium replacement (10–20 mEq/h) requires central venous administration and close ECG monitoring. Intravenous replacement should generally not exceed 240 mEq/d. Dextrose-containing solutions should be avoided in cases of hypokalemia because the resulting hyperglycemia and secondary insulin secretion may worsen the low p"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 385,
+        "text": "Section: 2. DKA is most often the result of inappropriate insulin. 368 Acid-Base Disorders 2. DKA is most often the result of inappropriate insulin dosing, but some patients have a concurrent illness, most commonly an infection. 3. The hallmark of DKA is the combination of hypergly­ cemia, a serum bicarbonate below 20 mEq/L, and an ele­ vated anion gap. The blood glucose is usually above 250 mg/ dL, but it may be lower or even normal in about 20% of cases (22). 4. The increase in ketoacids should produce an elevated anion gap; however, this is variable, and the anion gap can be normal in DKA ("
+      }
+    ]
+  },
+  "Septic Shock": {
+    "domain": "Internal medicine: ICU & critical care",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 66,
+        "text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Christopher Schenk I N I T I A L M A N A G E M E N T C O N T I N U E D 3) Vasopressors: target a mean arterial pressure (MAP) of >65mmHg (NEJM 2014;370:1583) (see Vasopressors for full details) NOTE: permissive hypotension (MAP goal >60) reduces vasopressor use and may be appropriate in select patients (JAMA 2020;323:938). Norepinephrine (“levo”): first choice vasopressor Vasopressin (“vaso”): add when NE at 5-15mcg/min to kidney function. Not titrated, on or off at 0.04U/min (NEJM 2008;358:877) Epinephrine (“epi”): recommended whe"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 718,
+        "text": "Section: Hernodynarnic Drugs. Hernodynarnic Drugs 2. The diagnosis is established by the serum thiocyanate level. Normal levels are below 10 rng/L, and levels above 100 mg/L are associated with clinical toxicity (24). 3. Thiocyanate intoxication can be treated by hemodialysis. V. NOREPINEPHRINE Norepinephrine is a vasopressor that promotes vasoconstric­ tion more readily than dopamine. A. Actions 1. Norepinephrine is a prominent a-receptor agonist and a mild ׷,-receptor agon.ist. The overall effect is widespread systemic vasoconstriction with variable effects on cardiac output (25). 2. The vas"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 764,
+        "text": "Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE beyond what is needed can be harmful. In the Fluid and Catheter Treatment Trial (FACTT), which included patients with acute lung injury (mostly caused by pneu- monia or sepsis), patients in the “conservative fluid” (i.e., minimal use of fluids) management group had improved lung function; improved central nervous system (CNS) function; and a decreased need for sedation, mechanical ventilation, and intensive care when compared with a liberal fluid group without increased complications such as organ fai"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2155,
+        "text": "Section: Antibiotic treatment usually is initiated before pathogens are identified but only after. complications such as ARDS, kidney failure, gastrointestinal bleeding, and DIC. Antibiotic treatment usually is initiated before pathogens are identified but only after adequate cultures are obtained (commonly, blood, urine, wounds, and sputum). Pending the results of cultures and tests of antibiotic sensitivity, combination therapy with two or more antibiotics is generally indicated. The choice depends on which organisms are seen with the greatest frequency in one’s medical center. Additional di"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 543,
+        "text": "Section: TABLE 33.3 Early Goal-Directed Therapy of Septic Shock. 526 Inflammation and Infection in the ICU within 6 hours after the therapy is started. The major features of this approach are described next. TABLE 33.3 Early Goal-Directed Therapy of Septic Shock Hemodynamic Goals 1 . Central venous pressure (CVP): a. 8-1 2 mm Hg in spontaneously breathing patients b. 12-15 mm Hg in ventilator-dependent patients 2. Mean arterial pressure 2'. 65 mm Hg 3. Urine output 2'. 0.5 mUkg/hr 4. 02 saturation in central venous blood (Scv02) 2'. 70% Management Protocol 1 . Infuse fluids to achieve the desi"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 765,
+        "text": "Section: Chapter 41 Critical Care Medicine. Chapter 41 Critical Care Medicine saturation. This difference depends partially on cardiac output. A lower Scvo2 (i.e., <50%) indicates greater oxy- gen extraction, usually because of lower cardiac output. Slower flow through the capillary beds in low cardiac output states allows more time for tissues to extract oxygen from the blood. In contrast, higher Scvo2 (i.e., >65%) would imply either higher cardiac output (e.g., distributive shock) or inability for tissues to extract oxy- gen from the blood (e.g., mitochondrial dysfunction in sepsis). Scvo2 i"
+      },
+      {
+        "book": "Stanford CA-1",
+        "page": 35,
+        "text": "Section: Blood Pressure Measurement. Blood Pressure Measurement Non-Invasive Blood Pressure (NIBP) – Oscillometric BP determination: oscillations in pressure are detected through the cuff as it deflates. – MAP is measured as the largest oscillation; it is the most accurate number produced by NIBP. – SBP and DBP are calculated by proprietary algorithms in the machine. – Inaccurate in conditions with variable pulse pressure (e.g. atrial fibrillation) and noncompliant arteries (severe PVD) – Readings may be affected by external pressure on cuff (e.g. surgeon leaning on arm, moving arm for positio"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 67,
+        "text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Cassandra Fiorino β1 β2 D PVR SVR 5+ 2+ V1 -/ 4+ 2+ (+) 1+ Dopamine (low) 1+ 2+ -/ Dopamine (med) 1+ 2+ 2+ Dopamine (high) 2+ 2+ 2+ 4+ 3+ 2+ 1- -/ (+) 3+ 2+ 1- PDE inhibitor 3+ 3+ V A S O P R E S S O R S & I N O T R O P E S (Circulation 2008;118:1047) Side effects Norepinephrine (NE) “Levo” α1 > β1 agonist: SVR, CO Reflex brady from vasodilation can negate HR from chronotropy Septic shock (1st) Cardiogenic shock (1st) Hypovolemic shock (1st) Arrhythmia, ↑LVOT Digital ischemia Initial: 2-12mcg/min PIV: <10mcg/min Max: 35-100mc"
+      }
+    ]
+  },
+  "ARDS": {
+    "domain": "Internal medicine: ICU & critical care",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2130,
+        "text": "Section: Increases in pulmonary blood flow that exceed the capacity of the pulmonary. pulmonary capillaries and secondarily increases Pc′. Pulmonary venous hypertension may result from left ventricular failure, mitral stenosis, or left atrial obstruction. Increases in pulmonary blood flow that exceed the capacity of the pulmonary vasculature will also raise Pc′. Marked increases in pulmonary blood flow can be the result of large left-to-right cardiac or peripheral shunts, hypervolemia (fluid overload), or extremes of anemia or exercise. Management of cardiogenic pulmonary edema involves decrea"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 874,
+        "text": "Section: Restrictive Pulmonary Disease. and secretions, absence of significant hypercapnia and acidosis, and absence of respiratory depression due to residual anesthetic agents. Patients with an FEV1 below 50% may require a period of postoperative ventilation, particularly following upper abdominal and thoracic operations. Restrictive Pulmonary Disease Restrictive pulmonary diseases are characterized by decreased lung compliance. Lung volumes are typically reduced, with preservation of normal expiratory flow rates. Thus, both FEV1 and FVC are reduced, but the FEV1/FVC ratio is normal. Restrict"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2130,
+        "text": "Permeability edema is seen with acute lung injury (PaO2:FiO2 ratio ≤300) and is often associated with sepsis, trauma, and pulmonary aspiration; when severe (PaO2:FiO2 ratio <200), it is referred to as acute respiratory distress syndrome (ARDS)"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2176,
+        "text": "Section: O2 toxicity is attributed to the intracellular generation of highly reactive O2. Prolonged exposure to high concentrations of O2 may damage the lungs. Toxicity is dependent both on the partial pressure of O2 in the inspired gas and the duration of exposure. Alveolar rather than arterial O2 tension is most important in the development of O2 toxicity. Although 100% O2 for up to 10 to 20 h is generally considered safe, concentrations greater than 50% to 60% are undesirable for longer periods as they may lead to pulmonary toxicity. O2 toxicity is attributed to the intracellular generation"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2215,
+        "text": "Section: Acinus, 720. Acinus, 720 Acquired immunodeficiency syndrome (AIDS), 1227 Action potentials, 260, 261f Activated charcoal, 1356 Activated clotting time (ACT), 453, 474, 733 Activated partial thromboplastin time (aPTT), 733 Activated protein C, 828, 829f Active humidifiers, 62 Acupuncture, 1133 Acute adrenal insufficiency, 769 Acute angle-closure glaucoma, 231 Acute aortic regurgitation, 425 Acute flaccid paralysis (AFP), 646 Acute gastrointestinal hemorrhage, 1353 Acute hepatitis drug-induced, 739–741 intraoperative considerations, 741 viral, 735 Acute herpes zoster/postherpetic neural"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 380,
+        "text": "Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT peak airway pressure can also be caused by decreases in lung or chest wall compliance. If peak airway pressure is increased and simultaneously positive end-expiratory pressure (PEEP) is increased, this may signify a tension pneumothorax, especially if associated with arterial hypotension. In this circumstance the hypotension is caused by high intrathoracic pressure impeding venous return. The mechanical ventilator can be set to produce a brief pause at"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 766,
+        "text": "Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE lung-protective (ARDSnet) ventilation to prevent ventila- tor-associated lung injury (i.e., barotrauma, volutrauma, and atelectrauma). The central tenets of lung-protective ventilation include lower tidal volumes (i.e., 6 mL/kg of ideal body weight), limited plateau pressure (i.e., <30 cmH2O), using higher positive end-expiratory pressure (PEEP), and accepting lower PaO2 and higher PaCO2 Such distinctions help to direct appropriate treatment and supportive care. However, multiple processes can occur s"
+      },
+      {
+        "book": "Stanford CA-1",
+        "page": 52,
+        "text": "Section: Transfusion-Related Acute Lung. Transfusion-Related Acute Lung Injury (TRALI) Occurs 4-6 hours after transfusion Due to plasma-containing products (platelets and FFP > pRBCs) - usually donor antibodies reacting to recipient leukocytes Incidence: 1:1100 (but likely under-reported) Mortality 5-10% - Leading cause of transfusion-related mortality Signs & symptoms – Dyspnea, hypoxemia, hypotension, fever, pulmonary edema Diagnosis of exclusion – First rule out sepsis, volume overload, and cardiogenic pulmonary edema – Supportive care, similar to ARDS (O2, mechanical ventilation, tidal vol"
+      }
+    ]
+  },
+  "Atrial Fibrillation": {
+    "domain": "Internal medicine: cardiology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 785,
+        "text": "Section: Stenting Procedures. conversation” with the patient to monitor the neurological status. Some studies also suggest that when compared with general anesthesia, regional anesthesia results in more stable hemodynamics, but outcomes appear similar. Regional anesthesia for carotid surgery requires the cooperation of the surgeon and patient. Stenting Procedures These procedures are usually performed in awake, minimally sedated patients. Good intravenous access and invasive arterial pressure monitoring will be required. The operator will often want to communicate with the patient during the p"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1992,
+        "text": "Section: Both European and North American MH registries have been established to help. halothane-caffeine contracture test will require that a fresh biopsy specimen of living skeletal muscle be exposed to a caffeine, halothane, or combination caffeine–halothane bath. The halothane–caffeine contracture test may have a 10% to 20% false-positive rate, but the false-negative rate is close to zero. Very few centers worldwide perform this test. Genetic testing of patients and first-degree relatives is the more common and much more convenient current approach. Both European and North American MH regi"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2122,
+        "text": "Section: The patient appears to be in a hypermetabolic state manifested by excessive. The patient appears to be in a hypermetabolic state manifested by excessive adrenergic activity, fever, and a worsening mental status. The absence of major metabolic acidosis and lack of exposure to a known triggering agent exclude malignant hyperthermia (see Chapter 52). Other possibilities include a transfusion reaction, sepsis, or an undiagnosed pheochromocytoma. The sequence of events makes the first two unlikely, and the decreasing prominence of hypertension (now replaced with relative hypotension) and i"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 666,
+        "text": "Section: Anesthetic Management. mild to moderate symptoms. Patients with a history of emboli and those at high risk (age older than 40 years; a large atrium with chronic atrial fibrillation) are usually anticoagulated. Anesthetic Management A. Objectives The principal hemodynamic goals are to maintain a sinus rhythm (if present preoperatively) and to avoid tachycardia, large increases in cardiac output, and both hypovolemia and fluid overload by judicious administration of intravenous fluids. B. Monitoring Invasive hemodynamic monitoring is often used for major surgical procedures, particularl"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 787,
+        "text": "Section: What are the minimum monitors and anesthetic equipment required?. immediately afterward to confirm the new rhythm. Preoperative laboratory values should be within normal limits because metabolic disorders, particularly electrolyte and acid–base abnormalities, may contribute to the arrhythmia. If not corrected preoperatively, they can reinitiate the tachycardia following cardioversion. An antiarrhythmic agent is often started in patients with atrial fibrillation 1 to 2 days prior to the procedure to help maintain normal sinus rhythm. Patients with atrial fibrillation of longer than a f"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 653,
+        "text": "Section: The ACC/AHA guidelines recommend anticoagulant therapy in patients with long-. FIGURE 21–4 Posterior view of principal electrophysiological mechanisms of atrial fibrillation. A: Focal activation. The initiating focus (indicated by the dot) often lies within the region of the pulmonary veins. The resulting wavelets represent fibrillatory conduction, as in multiple-wavelet reentry. B: Multiple-wavelet reentry. Wavelets (arrows) randomly reenter tissue previously activated by the same or another wavelet. The routes the wavelets travel vary. ICV, inferior vena cava; LA, left atrium; PV, p"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 786,
+        "text": "Section: Although the procedure is usually performed by cardiologists, the need for. Although the procedure is usually performed by cardiologists, the need for immediate cardioversion may arise in the operating room, ICU, or during cardiopulmonary resuscitation. Anesthesiologists must therefore be familiar with the technique. Following deep sedation or light general anesthesia, DC shock is applied by either self-adhesive pads or 8to 13-cm paddles. Larger paddles help reduce any shock-induced myocardial necrosis by distributing the current over a wider area. The energy output should be kept at "
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2078,
+        "text": "Section: RECOMMENDED RESUSCITATION AND POST–. than in the general adult as pregnant patients are more prone to hypoxia (and oxygen consumption is 30% above normal in a pregnant patient). Fetal monitoring should not be attempted during CPR. At the start of the arrest, if the patient is beyond the second half of the pregnancy, local resources for a cesarean section should be immediately summoned. If ROSC is not achieved even after left uterine displacement or in the setting of nonsurvivable trauma, a resuscitative hysterostomy (perimortem cesarean delivery) should be attempted within 5 min of th"
+      }
+    ]
+  },
+  "Upper GI Bleed": {
+    "domain": "Internal medicine: gastroenterology & hepatology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 70,
+        "text": "Section: Upper GI Bleeding. Upper GI Bleeding May Saito A C U T E U P P E R GI B L E E D (AJG 2021;116:5; Annals 2019;171:805; NEJM 2016;374:2367) Definition: bleeding proximal to ligament of Treitz S/Sx: hematemesis, melena (on exam: +LR 25; JAMA 2012;307:1072), hematochezia if brisk, BUN/Cr >30 (+LR 7.5; JAMA 2012;307:1072), especially >35 (100% Sp; J Clin Gastro 1990;12:500). Clots in stool make UGIB less likely (+LR 0.05) Risk Stratification and Triage: High-Risk Features in UGIB: hypotension, tachycardia, coagulopathy (INR > 1.5), Hgb <10, AMS, syncope, age > 65, liver dx, CHF, Risk score"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2156,
+        "text": "Section: Clinical trials of naloxone, fibronectin, inhibitors of the coagulation cascade, and. mg/dL. In patients with hypotension that is refractory to norepinephrine plus epinephrine, vasopressin may be administered to improve blood pressure. Severe acidosis may decrease the efficacy of inotropes and should therefore be corrected (pH >7.20) with bicarbonate or THAM infusion in patients with refractory hypotension. “Renal” doses of dopamine or fenoldopam may increase urinary output and reassure clinicians, but they do not improve or protect kidney function or patient outcomes. Clinical trials"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2157,
+        "text": "Section: Both interventional endoscopy and interventional arteriography can be used. may be due to stress, alcohol, aspirin, nonsteroidal anti-inflammatory drugs, and corticosteroids. Less common causes of upper gastrointestinal bleeding include angiodysplasia, erosive esophagitis, Mallory–Weiss tear, gastric tumor, and aortoenteric fistula. Both interventional endoscopy and interventional arteriography can be used therapeutically to find and stop bleeding from peptic ulcers (gastric or duodenal). Surgery (or, increasingly, interventional radiology) is generally indicated for severe hemorrhage"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1174,
+        "text": "Section: Prehepatic (increased bilirubin production). Prehepatic (increased bilirubin production) Resorption of hematomas Hemolytic anemia transfusion Senescent red cell breakdown Hemolytic reactions Hepatic (hepatocellular dysfunction) Preexisting liver disease Ischemic or hypoxemic injury Gilbert syndrome Intrahepatic cholestasis Posthepatic (biliary obstruction) Postoperative cholecystitis Postoperative pancreatitis Retained common bile duct stone Bile duct injury Hepatic Cirrhosis Liver cirrhosis may result in portal hypertension, bleeding varices, and major organ dysfunction. The major ca"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1477,
+        "text": "Section: Thus, elective (particularly outpatient) procedures should be deferred until the. and central apnea for up to 24 h. In fact, even full-term infants can experience rare apneic spells following general anesthesia. Risk factors for postanesthetic apnea include a low gestational age at birth, anemia (<30%), hypothermia, sepsis, and neurological abnormalities. The risk of postanesthetic apnea may be decreased by intravenous administration of caffeine (10 mg/kg) or aminophylline. Thus, elective (particularly outpatient) procedures should be deferred until the preterm infant reaches the age "
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 71,
+        "text": "Section: Lower GI Bleeding. Lower GI Bleeding May Saito A C U T E L O W E R GI B L E E D (NEJM 2017;376:1054; Gut 2019;68:776) Definition: distal to ligament of Treitz S/Sx: hematochezia (maroon or bright red blood, blood clots; Note: BRBPR can be seen in brisk UGIB); rarely melena (requires blood spend 14hr in GI tract); BUN/Cr typically <20 w/ normal renal fxn Risk stratification: Risk scores: ABC score predicts 30d mortality (Gut 2021; 70:707); Oakland score <8 may predict safe discharge (JAMA 2020;3:e209630, Lancet 2017;2:635) Assessment/Management: See Figure 1 in AJG 2023;118:208 for flo"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1211,
+        "text": "Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in antecubital veins and used in conjunction with rapid infusion devices. Most centers place a large-bore central venous catheter. Efforts to minimize the risk of hypothermia should include the use of flui"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 95,
+        "text": "Section: End Stage Liver Disease. End Stage Liver Disease Margot Manning H E P A T I C E N C E P H A L O P A T H Y (HE) (NEJM 2016;375:1660; AASLD: Hepatology 2014;60:715) Pathophysiology: NH3  neurotoxic effects, abnl neurotransmission, GABA- & BDZ- like neurotransmitters & altered glutaminergic inputs  excitatory transmission. In ALF, acute NH3  cerebral edema Diagnosis: clinical. Serum NH3 should not be used to screen for HE. NH3 does not add diagnostic or prognostic value in CLD (JHM 2017;12:659). Only helpful in ALF (predicts mortality). Trend via exam findings (see grades). Exclu"
+      }
+    ]
+  },
+  "AKI Management": {
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99,
+        "text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou D E F I N I N G AKI (KDIGO 2012 Guidelines) Diagnostic Tips Serum Cr approximates GFR at steady state only (unable to estimate GFR w/ ∆Cr): must assume GFR <10 if ∆Cr > 1 mg/dL/day Drugs can impair Cr excretion without ∆GFR (BUN remains stable): trimethoprim (in Bactrim), H2 blockers (cimetidine), dronaderone BUN out of proportion to Cr: pre/post-renal, UGIB, steroids. Cr out of proportion to BUN: rhabdo, AIN, TMP-SMX, vanc,  nutrition S T E P W I S E W O R K U P 1) History/exam: vitals (HTN/HoTN), volume status, exposures (contras"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 528,
+        "text": "Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS conserve sodium and restore intravascular fluid volume in response to decreased renal blood flow. The decreased renal blood flow most likely reflects an acute decrease in intravascular fluid volume or decreased cardiac output. Other causes of decreased renal blood flow are sepsis, liver failure, and congestive heart failure.12 The initial management of patients with perioperative oliguria is influenced by their risk for the development of acute renal failure. A brisk diuresis in response to an i"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 100,
+        "text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs/ACEi/ARBs. Avoid glucose and contrast. No evidence of benefit for empiric diuretics in oliguria (JAMA 2002;288:2547). If large volume resuscitation or critically ill, generally LR > NS (NEJM 2018;378:819; NEJM 2018;378:829) 2. Renally dose meds: use Lexicomp for help dosing by GFR (note: GFR calcu"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1106,
+        "text": "Section: Acute Kidney Failure. Acute Kidney Failure This syndrome is a rapid deterioration in kidney function that results in the retention of nitrogenous waste products (azotemia). These substances, many of which behave as toxins, are byproducts of protein and amino acid metabolism. Impaired kidney metabolic activity may contribute to widespread organ dysfunction (see Chapter 30). Kidney failure can be classified as prerenal, renal, and postrenal, depending on its cause(s), and the initial therapeutic approach varies accordingly (see Figure 31–1 and Table 31–4). Prerenal kidney failure result"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2145,
+        "text": "Section: Renal replacement therapy may be employed to treat or prevent uremic. glomerular filtration rate or measured creatinine clearance. Renal replacement therapy may be employed to treat or prevent uremic complications (see Table 31–7). A double-lumen catheter placed in the internal jugular, subclavian, or femoral vein is usually used. The high morbidity and mortality rates associated with AKI would seem to argue for early dialysis, but dialysis does not appear to hasten recovery and may aggravate kidney injury if hypotension occurs or too much fluid is removed. Because of concern that int"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2139,
+        "text": "Section: Patients with paroxysmal supraventricular tachycardia whose ejection fraction is. amiodarone (150 mg intravenous bolus over 10 min). Synchronized cardioversion may be used in patients with ventricular tachycardia and a pulse. Patients with stable narrow-complex supraventricular tachycardia should be treated with amiodarone. Patients with paroxysmal supraventricular tachycardia whose ejection fraction is preserved should be treated with a calcium channel blocker, a β-blocker, or direct current (DC) cardioversion. Unstable hypotensive patients should be cardioverted. Patients with ectop"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 103,
+        "text": "Section: Dialysis & Transplant. Dialysis & Transplant Beth Gay O V E R V I E W (NEJM 2022;386(10):964) Diffusion: concentration gradient drives small molecules (e.g. urea, creatinine) across selectively permeable membrane Convection: hydrostatic pressure forces medium-weight molecules across membrane Ultrafiltration (UF): volume removal, removal of plasma water by hydrostatic pressure I M P O R T A N T C O N S I D E R A T I O N S Timing: controversial, most recent studies suggest no benefit to early RRT ELAIN (JAMA 2016;315:2190): early RRTduration RRT, LOS/mortality IDEAL-ICU (NEJM 2018;379"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2144,
+        "text": "Section: Pathogenesis of AKI. Pathogenesis of AKI The sensitivity of the kidneys to injury may be explained by their very high metabolic rate and ability to concentrate potentially toxic substances. The pathogenesis of AKI is complex and probably has both a vascular endothelial and a renal epithelial (tubular) basis. Inadequate oxygen delivery to the kidney is the likely triggering event, leading to afferent arteriolar constriction, decreased glomerular permeability, increased vascular permeability, altered coagulation, inflammation, leukocyte activation, direct epithelial cell injury, and tub"
+      }
+    ]
+  },
+  "STEMI": {
+    "domain": "Internal medicine: cardiology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1562,
+        "text": "Section: Anesthesia providers planning neuraxial procedures should consult closely with the. recommended for patients taking dabigatran with a creatinine clearance of less than 30 mL/min. • Catheters should be removed 6 hours before resuming dabigatran therapy. In the event of dosing a patient with dabigatran in the presence of an indwelling catheter, 34 to 36 hours should elapse before catheter removal. Thrombin clotting time assays can be used to detect the effects of dabigatran. Likewise, factor Xa inhibitors can be assessed through assays of factor Xa inhibition. Anesthesia providers plann"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2138,
+        "text": "Section: Treatment. with only a slow and incomplete return of contractility can be observed. This phenomenon of “stunning” can contribute to ventricular dysfunction following AMI. Relief of the ischemia in these areas can restore contractile function, albeit not immediately. Stunning may be observed following aortic cross-clamping during cardiopulmonary bypass as a reduced cardiac output upon attempted separation from bypass (see Chapter 22). When severe hypokinesis or akinesis is observed in the setting of severe chronic ischemia, the myocardium in these noninfarcted but poorly contractile ar"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 237,
+        "text": "Section: IV. ADJUNCTS TO REPERFUSION THERAPY. 220 Critical Care Cardiology a. If the symptom duration is less than 3 hours, th.rom­ bolytic therapy is recommended (because lytic therapy is most effective in this time period) wuess interhospi­ tal h·cmsfer will not delay reperfusion therapy by more than one hour. b. If the symptom duration is longer than 3 hours, inter­ hospital transfer for angioplasty is recommended. The total door-to-balloon time, including the transfer time, should be close to 90 minutes to achieve the optimal benefit of angioplasty. IV. ADJUNCTS TO REPERFUSION THERAPY Anti"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2137,
+        "text": "Section: Acute Myocardial Infarction. Acute Myocardial Infarction Acute myocardial infarction (AMI) is a dreaded complication of ischemic heart disease, with an overall mortality rate of 25%. More than one-half of these deaths occur shortly after onset, usually due to arrhythmias (ventricular fibrillation). With recent advances in interventional cardiology, the in-hospital mortality rate has been reduced to less than 10%. Diagnosis of AMI can be made with combinations of increased troponin concentrations in blood, electrocardiogram findings, and clinical history. Perioperative diagnosis can be"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2137,
+        "text": "AMIs are divided into those associated with ST-segment elevation (STEMI) and those that are not associated with ST-segment elevation (NSTEMI)"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 599,
+        "text": "Section: Supply. (20%), electrical activity (1%), volume work (15%), and pressure work (64%). The myocardium usually extracts 65% of the oxygen in arterial blood, compared with 25% in most other tissues. Coronary sinus oxygen saturation is usually 30%. Therefore, the myocardium (unlike other tissues) cannot compensate for reductions in blood flow by extracting more oxygen from hemoglobin. Any increases in myocardial metabolic demand must be met by an increase in coronary blood flow. Table 20–7 lists the most important factors in myocardial oxygen demand and supply. Note that the heart rate and"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2334,
+        "text": "Section: Strong ion difference (SID), 1194, 1195, 1195f. Strong ion difference (SID), 1194, 1195, 1195f ST-segment elevation myocardial infarction (STEMI), 1340 Subarachnoid hemorrhage (SAH), 614–615, 615t Subdural hematoma, 625, 835 Subdural space, 971 Subgluteal sciatic block, 1048f Subluxation, 1089 Subparaneural block, 1049 Substance abuse, 188, 636, 636t Substance P, 285, 288, 1079–1080 Substantia gelatinosa, 1077 acetylcholinesterase inhibitors’ effect on, 220 in acidosis, 1206 characteristics of, 206t chemical structure of, 200f in children, 912 contraindications for, 652, 1181 descript"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 722,
+        "text": "Section: D. Urinary Output. inflated slowly. Whenever the catheter wedges with less than 1.5 mL of air in the balloon, it should be withdrawn farther. D. Urinary Output Once the patient is anesthetized, an indwelling urinary catheter is inserted to monitor the output. Bladder temperature is often monitored as a measure of core temperature but may not track core temperature well with reduced urinary flow. The sudden appearance of reddish urine may indicate excessive red cell hemolysis caused by CPB or a transfusion reaction. E. Temperature Multiple temperature monitors are usually placed once t"
+      }
+    ]
+  },
+  "Hyponatremia": {
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1867,
+        "text": "Section: Potentiate action of AVP. Potentiate action of AVP AVP analogues 1AVP, arginine vasopressin; CNS, central nervous system; MDMA, 3,4-methylenedioxy-N-methamphetamine; NSAIDs, nonsteroidal anti-inflammatory drugs; SIADH, syndrome of inappropriate secretion of antidiuretic hormone; SSRIs, selective serotonin reuptake inhibitors. Adapted with permission from Buffington MA, Abreo K. Hyponatremia: A review. J Intens Care Med. 2016 May;31(4):223-236. Cerebral salt wasting (CSW) is a syndrome of inappropriate renal sodium wasting and hyponatremia with polyuria and hypovolemia that may be seen"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1865,
+        "text": "Section: Congestive heart failure. Congestive heart failure Nephrotic syndrome Hyponatremia & Low Total Body Sodium Progressive losses of both sodium and water eventually lead to extracellular volume depletion. As the intravascular volume deficit approaches 5% to 10%, nonosmotic ADH secretion is activated (see earlier discussion). With further volume depletion, the stimuli for nonosmotic ADH release overcome any hyponatremia-induced suppression of ADH, and preservation of circulatory volume takes place at the expense of plasma osmolality. Fluid losses resulting in hyponatremia may be renal or "
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 107,
+        "text": "Section: Sodium Disorders. Sodium Disorders Sam Eley H Y P O N A T R E M I A : free water excess relative to serum sodium (JAMA 2022:328(3):280-291) S/Sx: often asymptomatic; can present with AMS, HA, N/V, weakness, seizures, signs of increased ICP Workup: H&P: symptoms, etiology, chronicity, new meds, endocrine ROS, volume status, surg w/ irrigation (prostate/bladder/uterine) Studies: Obtain prior to treatment Serum: BMP, Osm. Consider uric acid, TSH, AM cortisol. Urine: UA, Osm, Na, uric acid. Determine if ADH is present (UOsm >100**). Can approx UOsm from UA: last 2 digits of SG x 30 (e.g.,"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1864,
+        "text": "Section: Hyponatremia invariably reflects water retention from either an absolute increase in. Adapted with permission from Rose RD. Clinical Physiology of Acid-Base and Electrolyte Disorders, 3rd ed. New York, NY: McGraw Hill; 1989. Hyponatremia invariably reflects water retention from either an absolute increase in TBW or a loss of sodium in relative excess to loss of water. The kidneys’ normal capacity to produce dilute urine with an osmolality as low as 40 mOsm/kg (specific gravity 1.001) allows them to excrete over 10 L of free water per day if necessary. Because of this tremendous reserv"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 553,
+        "text": "Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease (confusion, seizures, coma), 3% hypertonic saline should be used cautiously. A risk of over-rapid correction of serum sodium levels is osmotic demyelination syndrome. Central Diabetes Insipidus Central DI is characterized by decreased ADH production resulting in polyuria, hypernatremia, hypokalemia, and dehydration. Perioperatively, it is important to moni- tor urine output and serum electrolytes and attempt to maintain euvolemia. Administration of preoperat"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1845,
+        "text": "Section: CHAPTER 49. CHAPTER 49 Management of Patients with Fluid & Electrolyte Disturbances KEY CONCEPTS Osmotic pressure is generally dependent only on the number of nondiffusible solute particles. This is because the average kinetic energy of particles in solution is similar regardless of their mass. Potassium is the most important determinant of intracellular osmotic pressure, whereas sodium is the most important determinant of extracellular osmotic pressure. Fluid exchange between the intracellular and interstitial spaces is governed by the osmotic forces created by differences in nondiff"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1131,
+        "text": "and the pressure of the irrigation fluid. Pulmonary edema can readily result from the absorption of large amounts of irrigation fluid, particularly in patients with limited cardiac reserve. The hypotonicity of these fluids also results in acute hyponatremia and hypoosmolality, which can lead to serious neurological manifestations. Symptoms of hyponatremia usually do not develop until the serum sodium concentration decreases below 120 mEq/L. Marked hypotonicity in plasma ([Na+] <100 mEq/L) may also result in acute intravascular hemolysis. Toxicity may also arise from absorption of the solutes i"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1865,
+        "text": "Hyponatremia with Normal Total Body Sodium Hyponatremia in the absence of edema or hypovolemia may be seen with glucocorticoid insufficiency, hypothyroidism, drug therapy, and the syndrome of inappropriate antidiuretic hormone secretion (SIADH, also referred to as"
+      }
+    ]
+  },
+  "Hypertensive Emergency": {
+    "domain": "General internal medicine, preventive care & geriatrics",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 38,
+        "text": "Section: Severe Asymp. HTN & Emergency. Severe Asymp. HTN & Emergency Andrea Martinez D E F I N I T I O N S, T R I A G E, A N D M A N A G E M E N T: see Outpatient CV Health for workup (NEJM 2019;381:1843; HTN 2024) Severe asymptomatic HTN (HTN urgency): SBP ≥180 or DBP≥120 w/o evidence of end-organ damage (may have mild headache) Assess adherence to prior rx before aggressively up-titrating regimen to avoid overcorrection of BPs & hypotension Assess causes before tx; commonly due to pain, anxiety, urine retention, meds (e.g. steroids), OSA, nausea, withdrawal, etc. Hypertensive emergency: SBP"
+      },
+      {
+        "book": "Intern Notes / Survival Guide",
+        "page": 16,
+        "text": "Section: UA, BMP, CBC, peripheral smear based on hx/exam. • Assess for end organ damage: o Ask about AMS, headache, chest pain, SOB, lightheadedness, hematuria o Exam including neuro exam with fundoscopy o Consider checking trop, EKG, CXR, CTA chest, CT head, UA, BMP, CBC, peripheral smear based on hx/exam • Hypertensive Emergency: • ICU admission, aline, use a titratable gtt (cardene, esmolol) o Choice of tx agent & BP goal varies based on specific scenario!! o In general: lower MAP by ~ 25% in first hour, & then (if stable) to 160/100 mm Hg by ~6 hours, w/ cautious return to normal BP over n"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 412,
+        "text": "Section: Effects on Organ Systems. enzymes, and its metabolites are inactive. Clearance of fenoldopam remains unaltered despite the presence of kidney or hepatic failure, and no dosage adjustments are necessary for these patients. Effects on Organ Systems Fenoldopam decreases systolic and diastolic blood pressure. Heart rate typically increases. Low initial doses (0.03–0.1 mcg/kg/min) titrated slowly have been associated with less reflex tachycardia than higher doses. Tachycardia decreases over time but remains substantial at higher doses. Fenoldopam can lead to rises in intraocular pressure a"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 546,
+        "text": "Section: Physiological Responses to Airway Instrumentation. Physiological Responses to Airway Instrumentation Laryngoscopy and tracheal intubation violate the patient’s protective airway reflexes and predictably lead to hypertension and tachycardia when performed under “light” planes of general anesthesia. The insertion of an LMA is typically associated with less hemodynamic change. Hemodynamic changes can be attenuated by intravenous administration of propofol, lidocaine, opioids, or β-blockers, or deeper planes of inhalation anesthesia shortly before laryngoscopy. Hypotensive agents, includi"
+      },
+      {
+        "book": "Intern Notes / Survival Guide",
+        "page": 12,
+        "text": "Section: HYPERTENSION. • Acuity: New or existing issue ? • Machine or manual ? Request a manual reading and in both arms. • Ensure right cuff size: Smaller cuffs falsely elevate BP, larger cuffs falsely underestimate BP • Is patient in pain, anxious, agitated, have urinary retention or constipation ? • Does patient have any red ﬂag symptoms such as chest pain, SOB, headache, N/V, lightheadedness/dizziness ? #2. Information from records / sign out: • Trend the blood pressure to see acute vs. chronic • Check medication regimen for BP and see MAR if a dose was missed. • Review home medications, c"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 406,
+        "text": "Section: Antihypertensive agents are critically important for managing hypertensive emergencies. perioperatively should be followed (see Chapter 14). β-Blockers (esmolol, metoprolol, and others) were previously discussed for the treatment of transient perioperative hypertension and are routinely used during anesthesia. This chapter discusses antihypertensive agents other than adrenergic antagonists that are used perioperatively. Antihypertensive agents are critically important for managing hypertensive emergencies (blood pressure >180/120 mm Hg) with signs of organ injury (eg, encephalopathy)."
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 408,
+        "text": "Section: Thiocyanate is slowly cleared by the kidney. Accumulation of large amounts of. thiosulfate (150 mg/kg over 15 min) or 3% sodium nitrite (5 mg/kg over 5 min), which oxidizes hemoglobin to methemoglobin. A methemoglobin concentration of 10% to 20% is the aim of nitrite administration. Caution should be exercised when inducing methemoglobinemia in patients experiencing cyanide toxicity secondary to combustion because carboxyhemoglobinemia from carbon monoxide poisoning might also be present. Additionally, hydroxocobalamin combines with cyanide to form cyanocobalamin (vitamin B12) and lik"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1422,
+        "text": "Section: Invasive arterial and central venous monitoring are indicated in patients with severe. Invasive arterial and central venous monitoring are indicated in patients with severe hypertension, pulmonary edema, refractory oliguria, or a combination of these; in such patients, an intravenous vasodilator infusion may be necessary. Definitive treatment of preeclampsia is delivery of the fetus and placenta. Anesthetic Management Standard anesthetic practices may be used for patients with mild preeclampsia. Spinal and epidural anesthesia are associated with similar decreases in arterial blood pre"
+      }
+    ]
+  },
+  "Adrenal Crisis": {
+    "domain": "Internal medicine: endocrinology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1236,
+        "text": "Section: Anesthetic Considerations. menstrual irregularity, hypertension, and mental status changes. Anesthetic Considerations Patients with Cushing syndrome may be volume overloaded and have hypokalemic metabolic alkalosis resulting from the mineralocorticoid activity of glucocorticoids. These abnormalities should be corrected preoperatively in the manner previously described. Patients with osteoporosis are at risk for fracture during positioning. If the cause of Cushing syndrome is exogenous glucocorticoids, the patient’s adrenal glands may not be able to respond to perioperative stresses, a"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 185,
+        "text": "Section: Adrenal Insufficiency. Adrenal Insufficiency Unyime Eyobio E T I O L O G Y (Lancet 2014;383:2152; NEJM 2009;360:2328) Primary AI (Addison’s disease): all adrenal hormones  ACTH. Lesion localizes to bilateral adrenal glands Causes: autoimmune (80-90% cases in developed countries; anti-21-hydroxylase Ab+ in 86%, autoimmune polyglandular syndromes) >> infection (TB, HIV, CMV, meningococcus, histo > all fungi except Candida; most common cause worldwide), bilateral adrenal hemorrhage (infection, DIC, APLAS), infiltration (hemochromatosis, primary amyloidosis), malignancy (mets), genetic"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1865,
+        "text": "Section: Congestive heart failure. Congestive heart failure Nephrotic syndrome Hyponatremia & Low Total Body Sodium Progressive losses of both sodium and water eventually lead to extracellular volume depletion. As the intravascular volume deficit approaches 5% to 10%, nonosmotic ADH secretion is activated (see earlier discussion). With further volume depletion, the stimuli for nonosmotic ADH release overcome any hyponatremia-induced suppression of ADH, and preservation of circulatory volume takes place at the expense of plasma osmolality. Fluid losses resulting in hyponatremia may be renal or "
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 551,
+        "text": "Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease tumors, when hormonally active, can produce and release large amounts of catecholamines and metanephrines. The signs and symptoms of hormonally active pheo- chromocytomas and paragangliomas are caused by sympathetic nervous system hyperactivity. The classic triad includes paroxysmal headaches (hypertension), tachycardia, and diaphoresis. Other common symptoms include heat intolerance, weight loss, chest discomfort, nausea and vomiting, orthostatic hypotensio"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1867,
+        "text": "Section: Potentiate action of AVP. Potentiate action of AVP AVP analogues 1AVP, arginine vasopressin; CNS, central nervous system; MDMA, 3,4-methylenedioxy-N-methamphetamine; NSAIDs, nonsteroidal anti-inflammatory drugs; SIADH, syndrome of inappropriate secretion of antidiuretic hormone; SSRIs, selective serotonin reuptake inhibitors. Adapted with permission from Buffington MA, Abreo K. Hyponatremia: A review. J Intens Care Med. 2016 May;31(4):223-236. Cerebral salt wasting (CSW) is a syndrome of inappropriate renal sodium wasting and hyponatremia with polyuria and hypovolemia that may be seen"
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 552,
+        "text": "Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS surgical procedures, epidural analgesia can help manage perioperative pain. When placing an epidural in patients with pheochromocytomas and paragangliomas, consider giving premedication to reduce anxiety, avoiding epi- nephrine in the test dose, and running low-concentration local anesthetic intraoperatively to avoid significant vasodilation and sympathectomy-induced hemodynamic lability. Multiple common perioperative medications have the potential to trigger catecholamine surges. Anesthesia pro"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1863,
+        "text": "Section: Note that this method ignores any coexisting isotonic fluid deficits, which, if. 5300 mL over 48 hours, or 110 mL/h. Note that this method ignores any coexisting isotonic fluid deficits, which, if present, should be replaced with an isotonic solution. Anesthetic Considerations Hypernatremia has been demonstrated to increase the minimum alveolar concentration for inhalation anesthetics in animal studies, but its clinical significance is more closely related to the associated fluid deficits. Hypovolemia accentuates any vasodilation or cardiac depression from anesthetic agents and predis"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1865,
+        "text": "Hyponatremia with Normal Total Body Sodium Hyponatremia in the absence of edema or hypovolemia may be seen with glucocorticoid insufficiency, hypothyroidism, drug therapy, and the syndrome of inappropriate antidiuretic hormone secretion (SIADH, also referred to as"
+      }
+    ]
+  },
+  "Acute Decompensated Heart Failure": {
+    "domain": "Internal medicine: cardiology",
+    "insuff": false,
+    "chunks": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 26,
+        "text": "Section: Amanda Jowell. Amanda Jowell I N P A T I E N T A C U T E D E C O M P E N S A T E D H E A R T F A I L U R E (ADHF) Admission orders: tele, 2g Na restricted diet, daily standing weights, strict I/Os, DVT ppx SDU Admission: EF <25%, NTproBNP ≥ 2,500, arrhythmia-induced HF. Black & Latinx pts w/ HF are less likely to be admitted to cardiology services, contributing to racial inequities in HF outcomes (Circ Heart Fail 2019;12:e006214). Avoid: CCB (esp. non-dihydropyridines), NSAIDs, flecainide Check NT-proBNP (& weight) on admission and at discharge ADHF unlikely if NT-proBNP <300 (NPV 98%"
+      },
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 94,
+        "text": "Section: End Stage Liver Disease. End Stage Liver Disease Margot Manning A S C I T E S (AASLD: Hepatology 2021; 74(2):1014)) Most common cirrhosis complication (50% in 10 years); development of ascites  15% 1y mortality, 44% 5y mortality Pathophys: portal hypertension (>12 mmHg) NO, prostaglandins, glucagon  splanchnic arterial vasodilation  intravascular volume and SVR  RAAS, ADH  Na & water retention. Severity of dilutional hypoNa (from ADH secretion) ∝  survival Diagnosis: Ultrasound to visualize. Dx para indicated for ALL patients with cirrhosis and ascites presenting to the hosp"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 201,
+        "text": "Section: 4. Limited Role for Diuretics. 1 84 Disorders or Circulatory Flow c. Mechanical cardiac support is indicated if myocardial function is expected to improve spontaneously (as oc­ curs in the early period following cardiopulmonary bypass surgery), or when a corrective procedure (e.g., angioplasty) is planned. A description of the support devices is beyond the scope of this text. 4. Limited Role for Diuretics a. Diuretics should be used cautiously in acute heart fail­ ure because intravenous furosemide can cause a 15 to 20% drop in cardiac output in this situation (16,17). The ex­ pected "
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 198,
+        "text": "Section: Acute Heart Failure(s). 1 0 Acute Heart Failure(s) 1 8 1 lnotropes Pulmonary Capillary Wedge Pressure (mm Hg) FIGURE 12.3. Cardiac perfonnance curves for the normal and failing left venh·icle. The point on the lower curve represents decompensated heart failure. 1. High Blood Pressure Decompensated heart failure with elevated blood pres­ sure is a familiar condition in the early period after car­ diopulmonary bypass surgery. Profile: High PCWP /Low CO/High BP Treatment: Vasodilator therapy with nitroprusside or ni­ troglycerin. If the PCWP remains above 20 mm Hg, add diuretic therapy w"
+      },
+      {
+        "book": "Marino ICU Book",
+        "page": 205,
+        "text": "Section: 14. Chatte1jee K, De Marco T. Role of nonglycosiclic inotropic agents:. 1 88 Disorders of Circulatory Flow 14. Chatte1jee K, De Marco T. Role of nonglycosiclic inotropic agents: inclications, ethics, and limitations. Med Clin N Am 2003; 87:391-418. 15. Samuels LE, Darze ES. Management of acute cardiogenic shock. Cardiol Clin 2003; 21:43-49. 16. Kiely J, Kelly DT, Taylor DR, Pitt B. The role of furosemide in the treatment of left ventricular dysfw1Ction associated with acute myocardial infarction. Circulation 1973; 58:581-587. 17. Mond H, Hw1t D, Sloman G. Haemodynamic effects of fruse"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 603,
+        "text": "Section: Sympathetic activation increases the release of norepinephrine from nerve endings in. Sympathetic activation increases the release of norepinephrine from nerve endings in the heart and secretion of epinephrine from the adrenal glands into the circulation. Although enhanced sympathetic outflow can initially maintain cardiac output by increasing heart rate and contractility, worsening ventricular function elicits increasing degrees of vasoconstriction in an effort to maintain arterial blood pressure. The associated increase in afterload, however, reduces cardiac output and exacerbates v"
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 767,
+        "text": "Section: Patients are routinely scheduled for LVAD placement as elective procedures. Such. devices (LVADs), as they do not qualify for heart transplantation. Moreover, there are insufficient donor hearts available to meet the needs of the heart failure population. Perioperative management concerns of the LVAD patient are similar to those of the heart failure patient as both procedures are surgical interventions to treat heart failure. Patients are routinely scheduled for LVAD placement as elective procedures. Such patients are frequently managed with home milrinone inotropic therapy and often "
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1232,
+        "text": "Section: Anesthetic Considerations. Anesthetic Considerations In patients with hypercalcemia due to hyperparathyroidism, hydration with normal saline and diuresis facilitated by furosemide will usually decrease serum calcium to acceptable values (<14 mg/dL, 7 mEq/L, or 3.5 mmol/L). More aggressive therapy with the intravenous bisphosphonates pamidronate (Aredia) or etidronate (Didronel) may be necessary for patients with hypercalcemia of malignancy. Plicamycin (Mithramycin), glucocorticoids, calcitonin, or dialysis may be necessary when intravenous bisphosphonates are not sufficient or are con"
+      }
+    ]
+  }
+}

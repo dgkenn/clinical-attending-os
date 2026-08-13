@@ -1,0 +1,175 @@
+import json
+
+kps = []
+dom_em = 'Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)'
+dom_id = 'Internal medicine: infectious disease (sepsis & septic shock, pneumonia, UTI/pyelonephritis, cellulitis & necrotizing infections, endocarditis, meningitis, C. diff, HIV, antimicrobial selection & stewardship)'
+dom_pulm = 'Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)'
+dom_neuro = 'Internal medicine: neurology (ischemic & hemorrhagic stroke, seizures & status epilepticus, altered mental status & delirium, headache, neuromuscular weakness, spinal cord syndromes)'
+dis = 'medicine'
+
+# ============================================================
+# [64] Antimicrobial Selection: Beta-Lactams
+# ============================================================
+t = 'Antimicrobial Selection: Beta-Lactams'
+kps += [
+  {
+    'id': 'antimicrobial-beta-lactams-1',
+    'topic': t, 'domain': dom_id, 'discipline': dis,
+    'stem': 'What is the core principle of Antimicrobial Stewardship (AMS)?',
+    'answer': 'AMS refers to optimal selection, dosing, and duration of antimicrobial treatment resulting in the best clinical outcome with minimal side effects to patients and minimal impact on subsequent resistance.',
+    'rationale': 'Inappropriate antimicrobial use drives resistance, Clostridioides difficile overgrowth, and adverse drug effects; stewardship optimizes the risk-benefit ratio.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 1}],
+    'confusable_with': 'De-escalation alone — one component of stewardship; full AMS includes selection, dose optimization, and duration'
+  },
+  {
+    'id': 'antimicrobial-beta-lactams-2',
+    'topic': t, 'domain': dom_id, 'discipline': dis,
+    'stem': 'When is combination antibiotic therapy (2+ agents) typically initiated for bloodstream infections?',
+    'answer': 'Combination therapy pending culture/sensitivity results is generally indicated; choice depends on the most frequent organisms at one\'s medical center. Blood cultures should be obtained before starting antibiotics.',
+    'rationale': 'Empiric broad-spectrum coverage with 2+ agents provides synergy against polymicrobial sepsis and covers potential resistant organisms before susceptibilities return.',
+    'bloom': 'apply',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 2155}],
+    'confusable_with': 'Definitive monotherapy after cultures — de-escalation to narrowest effective agent once sensitivities known'
+  },
+  {
+    'id': 'antimicrobial-beta-lactams-3',
+    'topic': t, 'domain': dom_id, 'discipline': dis,
+    'stem': 'Aminoglycosides are used with beta-lactams against what organisms, and what is the primary nephrotoxicity prevention strategy?',
+    'answer': 'Aminoglycosides are effective against gram-negative bacteria and selected gram-positives when combined with beta-lactams. To prevent nephrotoxicity: use once-daily (extended-interval) dosing, monitor drug levels, and avoid volume depletion.',
+    'rationale': 'Aminoglycosides accumulate in renal tubular cells; once-daily dosing exploits concentration-dependent killing while allowing cellular drug efflux during the trough period.',
+    'bloom': 'apply',
+    'source': [{'book': 'Society Guideline: Guideline   KDIGO 2012 AKI', 'page': 64}],
+    'confusable_with': 'Vancomycin nephrotoxicity — also requires level monitoring; mechanism differs (tubular obstruction vs aminoglycoside tubular accumulation)'
+  },
+  {
+    'id': 'antimicrobial-beta-lactams-4',
+    'topic': t, 'domain': dom_id, 'discipline': dis,
+    'stem': 'For necrotizing fasciitis empiric coverage, what antibiotic combination addresses all organism classes?',
+    'answer': 'Carbapenem (imipenem/meropenem/ertapenem) OR piperacillin-tazobactam PLUS vancomycin or daptomycin (for MRSA coverage) PLUS clindamycin (for toxin inhibition); broad coverage of gram-positive, gram-negative, and anaerobic organisms required.',
+    'rationale': 'NF is polymicrobial; carbapenems cover gram-negatives and anaerobes; vancomycin/daptomycin covers MRSA; clindamycin inhibits toxin synthesis in streptococcal and clostridial species.',
+    'bloom': 'apply',
+    'source': [{'book': 'StatPearls', 'page': 11}],
+    'confusable_with': 'Cellulitis regimen — narrower spectrum (gram-positives only); NF requires broader empiric coverage'
+  },
+  {
+    'id': 'antimicrobial-beta-lactams-5',
+    'topic': t, 'domain': dom_id, 'discipline': dis,
+    'stem': 'In patients with cUTI, what patient-specific considerations should guide empiric antibiotic selection beyond susceptibility patterns?',
+    'answer': 'Risk of allergic reaction, drug contraindications, and drug-drug interactions must be evaluated to prevent undesirable adverse events (good practice statement, IDSA 2025).',
+    'rationale': 'Individual patient factors may prohibit first-line agents; beta-lactam allergy is common and cross-reactivity between penicillins and cephalosporins must be assessed.',
+    'bloom': 'apply',
+    'source': [{'book': 'Society Guideline: Guideline   IDSA 2025 Complicated UTI Executive Summary', 'page': 7}],
+    'confusable_with': 'Local antibiogram alone — necessary but not sufficient; patient-specific factors must also guide selection'
+  },
+]
+
+# ============================================================
+# [65] Appendicitis
+# ============================================================
+t = 'Appendicitis'
+kps += [
+  {
+    'id': 'appendicitis-1',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Appendicitis during pregnancy poses special management challenges. Why is the diagnosis more difficult and what must be considered?',
+    'answer': 'The gravid uterus displaces the appendix superiorly and laterally, altering pain location; moreover, surgery poses fetal risk. Right-sided abdominal pain in pregnancy must include appendicitis in the differential regardless of pain location.',
+    'rationale': 'By the third trimester, the appendix may be at the level of the right upper quadrant; classic RLQ McBurney point tenderness may be absent.',
+    'bloom': 'analyze',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 1438}],
+    'confusable_with': 'Placental abruption, ovarian torsion — also cause acute abdominal pain in pregnancy'
+  },
+  {
+    'id': 'appendicitis-2',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'In critically ill patients, which intraabdominal condition can develop without prior surgery and resembles appendicitis?',
+    'answer': 'Acalculous cholecystitis develops in critically ill patients without gallstones, resembling other intraabdominal infections; appendicitis, diverticulitis, and perforated ulcer also occur de novo in ICU patients.',
+    'rationale': 'Critical illness impairs splanchnic perfusion; ischemic necrosis of the gallbladder wall (acalculous cholecystitis) and stress ulcer perforation are ICU-specific risks.',
+    'bloom': 'recall',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 2152}],
+    'confusable_with': 'Calculous cholecystitis — requires gallstones; acalculous is a distinct ICU complication'
+  },
+  {
+    'id': 'appendicitis-3',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Nitrous oxide must be avoided in patients with bowel obstruction or suspected intestinal pathology. Why?',
+    'answer': 'N2O is 35 times more soluble than nitrogen in blood, and diffuses into air-containing cavities faster than nitrogen is absorbed; a 100-mL pneumothorax breathing 50% N2O will expand significantly.',
+    'rationale': 'Gas-filled bowel loops in obstruction will expand when N2O diffuses in faster than nitrogen diffuses out, worsening distension, ischemia, and perforation risk.',
+    'bloom': 'analyze',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 260}],
+    'confusable_with': 'Contraindication only for pneumothorax — N2O is contraindicated in ANY air-containing closed space (pneumothorax, bowel obstruction, middle ear surgery, pneumocephalus)'
+  },
+  {
+    'id': 'appendicitis-4',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Persistent hyponatremia, hyperglycemia, and metabolic acidosis in a neonate with abdominal distension and bloody stools indicate what diagnosis?',
+    'answer': 'Necrotizing enterocolitis (NEC) with necrotic bowel; these lab findings indicate advanced disease requiring surgical evaluation (intestinal perforation).',
+    'rationale': 'NEC causes intestinal wall ischemia and bacterial translocation; metabolic derangements reflect systemic sepsis from necrotic bowel.',
+    'bloom': 'apply',
+    'source': [{'book': 'StatPearls', 'page': 11}],
+    'confusable_with': 'Hirschsprung disease — also presents with bowel obstruction in neonates but lacks the ischemic/infectious features of NEC'
+  },
+]
+
+kps.append({
+    '_type': 'illness_script',
+    'topic': 'Appendicitis',
+    'discipline': 'medicine',
+    'enabling_conditions': 'Any age but peak 10-30 years; obstruction of appendiceal lumen by fecalith, lymphoid hyperplasia (after viral illness), or foreign body',
+    'pathophysiology': 'Luminal obstruction causes bacterial overgrowth, mucosal ischemia, transmural inflammation, and ultimately perforation with peritonitis',
+    'time_course': 'Periumbilical pain migrates to RLQ (McBurney point) over 12-24 hours; perforation risk increases significantly after 48-72 hours',
+    'key_features': 'Migration of pain to RLQ; anorexia; nausea/vomiting; fever; McBurney tenderness; Rovsing sign; psoas sign; leukocytosis; CT confirmation (Sn 94%, Sp 95%)',
+    'consequence_if_missed': 'Perforation with generalized peritonitis, abscess, sepsis; mortality <1% simple but rises significantly with perforation in elderly'
+})
+
+# ============================================================
+# [66] Asthma: Acute Severe and Status Asthmaticus
+# ============================================================
+t = 'Asthma: Acute Severe and Status Asthmaticus'
+kps += [
+  {
+    'id': 'asthma-acute-1',
+    'topic': t, 'domain': dom_pulm, 'discipline': dis,
+    'stem': 'What is Asthma-COPD Overlap (ACO) and what is the exacerbation rate compared to asthma or COPD alone?',
+    'answer': 'ACO is a continuum of airflow obstruction combining features of both asthma and COPD. Exacerbation rates in ACO are 4-5 times higher than in asthma or COPD alone; ACO patients also have more ED visits and hospitalizations.',
+    'rationale': 'ACO combines eosinophilic airway inflammation (asthma) with fixed structural obstruction (COPD), amplifying exacerbation susceptibility and reducing treatment response.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 3}],
+    'confusable_with': 'Pure asthma — ACO has an additional fixed component; reversibility testing distinguishes'
+  },
+  {
+    'id': 'asthma-acute-2',
+    'topic': t, 'domain': dom_pulm, 'discipline': dis,
+    'stem': 'What non-pharmacological intervention most slows FEV1 decline in ACO and pure COPD?',
+    'answer': 'Smoking cessation is the most effective non-pharmacological intervention to reduce the rate of FEV1 decline in COPD and ACO.',
+    'rationale': 'Tobacco use is the primary driver of COPD progression; cessation is the only intervention proven to reduce the accelerated FEV1 loss in smokers.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 4}],
+    'confusable_with': 'Pulmonary rehabilitation — improves exercise tolerance and symptoms but does not halt FEV1 decline'
+  },
+  {
+    'id': 'asthma-acute-3',
+    'topic': t, 'domain': dom_pulm, 'discipline': dis,
+    'stem': 'GINA guidelines now recommend what as an alternative to SABA alone as the reliever inhaler in asthma?',
+    'answer': 'Low-dose ICS/formoterol (e.g., budesonide 80-160 mcg / formoterol 4.5 mcg) is now recommended by GINA as a preferred reliever, replacing SABA monotherapy in persistent asthma.',
+    'rationale': 'ICS/formoterol provides bronchodilation AND anti-inflammatory treatment with each reliever dose, reducing exacerbations more effectively than SABA alone.',
+    'bloom': 'apply',
+    'source': [{'book': 'StatPearls', 'page': 12}],
+    'confusable_with': 'LABA alone (e.g., salmeterol) — not for use as reliever; associated with increased asthma mortality as monotherapy'
+  },
+  {
+    'id': 'asthma-acute-4',
+    'topic': t, 'domain': dom_pulm, 'discipline': dis,
+    'stem': 'What biologic therapies target severe eosinophilic asthma, and what cytokine do mepolizumab and reslizumab target?',
+    'answer': 'Mepolizumab and reslizumab target IL-5 (anti-IL-5 monoclonal antibodies); benralizumab targets the IL-5 receptor alpha-subunit; dupilumab targets the IL-4 receptor alpha-subunit. All reduce exacerbations in severe eosinophilic asthma.',
+    'rationale': 'IL-5 is the key eosinophil growth and survival factor; blocking IL-5 or its receptor reduces airway eosinophilia and exacerbation frequency.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 13}],
+    'confusable_with': 'Omalizumab — targets IgE (anti-IgE), not IL-5; used in allergic asthma, not pure eosinophilic'
+  },
+]
+
+print('Batch 10 KPs:', len(kps))
+with open('data/_kp_part2_batch10.json', 'w', encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print('Written.')

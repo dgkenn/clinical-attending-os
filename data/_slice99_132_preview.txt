@@ -1,0 +1,824 @@
+=== 99: Adrenal insufficiency & thyroid emergencies ===
+domain: General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)
+discipline: medicine
+category: topic
+  chunk 0: book=MGH Housestaff Manual page=3
+    text: Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphyla
+  chunk 1: book=Morgan & Mikhail page=2122
+    text: Section: The patient appears to be in a hypermetabolic state manifested by excessive. The patient appears to be in a hypermetabolic state manifested by excessive adrenergic activity, fever, and a worsening mental status. The absence of major metabolic acidosis and lack of exposure to a known triggering agent exclude malignant hyperthermia (see Chapter 52). Other possibilities include a transfusion
+  chunk 2: book=Morgan & Mikhail page=1042
+    text: Multiple organ systems are involved in myotonic dystrophy, as evidenced by presenile cataracts, premature frontal baldness, hypersomnolence with sleep apnea, and endocrine dysfunction leading to pancreatic, adrenal, thyroid, and gonadal insufficiency
+  chunk 3: book=Morgan & Mikhail page=1042
+    text: Section: Multiple organ systems are involved in myotonic dystrophy, as evidenced by. is the principal early manifestation; muscle weakness and atrophy become more prominent as the disease progresses. This weakness and atrophy usually affect cranial muscles (orbicularis oculi and oris, masseter, and sternocleidomastoid) and, in contrast to most myopathies, distal muscles more than proximal muscles.
+  chunk 4: book=Morgan & Mikhail page=1229
+    text: Section: C. Postoperative. and decreased intravascular volume. In this circumstance, ketamine or etomidate can be recommended for induction of anesthesia. The possibility of coexistent primary adrenal insufficiency should be considered in cases of refractory hypotension. Other potential coexisting conditions include hypoglycemia, anemia, hyponatremia, difficulty during intubation because of a larg
+  chunk 5: book=StatPearls: StatPearls   Adrenal Crisis page=4
+    text: Section: Significant emotional distress [19]. erial, mycobacterial, fungal, parasitic, or viral, eg, COVID-19, infections [19] [21] Trauma, pregnancy, childbirth, surgery, exposure to extreme hot or cold weather, or other stressful situations Significant emotional distress [19] Strenuous physical activity [22] Nonadherence to glucocorticoid replacement therapy [23] Abrupt cessation of chronic gluc
+  chunk 6: book=Miller/Baby Miller page=550
+    text: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS of an aldosterone antagonist (e.g., spironolactone) or restricting sodium intake. Hypokalemia is associated with increased myocardial excitability and an increased risk of arrhythmias.36 Careful potassium repletion may be required to restore intracellular and extracellular potas- sium balance. Gluco
+  chunk 7: book=Miller/Baby Miller page=551
+    text: Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease tumors, when hormonally active, can produce and release large amounts of catecholamines and metanephrines. The signs and symptoms of hormonally active pheo- chromocytomas and paragangliomas are caused by sympathetic nervous system hyperactivity. The classic tria
+  chunk 8: book=Miller/Baby Miller page=548
+    text: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS respiratory rate, and oxygen consumption. Thyroid hor- mones are also essential for normal growth and brain development. Thyroid disorders include hypothyroidism, hyperthy- roidism, thyroid inflammation (thyroiditis), and thyroid enlargement (goiter), all of which may have implications for anestheti
+  chunk 9: book=MGH Housestaff Manual page=185
+    text: Section: Adrenal Insufficiency. Adrenal Insufficiency Unyime Eyobio E T I O L O G Y (Lancet 2014;383:2152; NEJM 2009;360:2328) Primary AI (Addison’s disease): all adrenal hormones  ACTH. Lesion localizes to bilateral adrenal glands Causes: autoimmune (80-90% cases in developed countries; anti-21-hydroxylase Ab+ in 86%, autoimmune polyglandular syndromes) >> infection (TB, HIV, CMV, meningococcu
+
+=== 100: Anorectal Sources of Bleeding ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=2157
+    text: Section: Both interventional endoscopy and interventional arteriography can be used. may be due to stress, alcohol, aspirin, nonsteroidal anti-inflammatory drugs, and corticosteroids. Less common causes of upper gastrointestinal bleeding include angiodysplasia, erosive esophagitis, Mallory–Weiss tear, gastric tumor, and aortoenteric fistula. Both interventional endoscopy and interventional arterio
+  chunk 1: book=Morgan & Mikhail page=2157
+    text: Lower Gastrointestinal Bleeding Common causes of lower gastrointestinal bleeding include diverticular disease, angiodysplasia, neoplasms, inflammatory bowel disease, ischemic colitis, infectious colitis, and anorectal disease (hemorrhoids, fissure, fistula)
+  chunk 2: book=Morgan & Mikhail page=1335
+    text: Section: Communication among the trauma team is essential during DCS. The surgeon must. surgery (DCS). This surgical intervention is intended to stop hemorrhage and limit gastrointestinal contamination of the abdominal compartment. After making a midline incision, the surgeon quickly searches for sources of bleeding through a quadrant-by- quadrant examination. Definitive repair of complex injuries
+  chunk 3: book=Morgan & Mikhail page=1351
+    text: The surgeon now indicates that the sources for bleeding—a ruptured spleen and lacerated kidney—are controlled
+  chunk 4: book=Morgan & Mikhail page=1351
+    text: Section: What technology is available for more closely tailoring blood component. collapse; cardiopulmonary resuscitation (CPR) is not useful in blood loss scenarios. Blood products are administered through a rapid infusion device in a 1:1:1 ratio. An increased end-tidal carbon dioxide tracing is now observed, and the surgeon notes the aorta is now firmer. The noninvasive blood pressure cuff shows
+  chunk 5: book=Morgan & Mikhail page=1335
+    text: After making a midline incision, the surgeon quickly searches for sources of bleeding through a quadrant-byquadrant examination
+  chunk 6: book=Miller/Baby Miller page=448
+    text: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT importance. Unfortunately, assessment of bleeding risk continues to be a challenge, and the optimal methods for preoperative evaluation remain controversial. Although routine preoperative coagulation testing of all surgical patients may seem prudent, such 
+  chunk 7: book=Miller/Baby Miller page=443
+    text: Section: Chapter 23 Hemostasis. Chapter 23 Hemostasis rFVIIa. Factor XI deficiency, known as hemophilia C or Rosenthal syndrome (prevalence: 1 in 1,000,000), is char- acterized by isolated prolongation in aPTT and variable bleeding severity. Factor XI activity levels, however, do not correlate well with bleeding risk.5 Most individuals do not experience spontaneous bleeding, hemarthrosis, or muscl
+  chunk 8: book=Miller/Baby Miller page=643
+    text: Section: Chapter 34 Pediatrics. Chapter 34 Pediatrics see Chapter 25). The estimated blood volume (EBV) is dependent on the age of the child and hematocrit (Hct): MABL = EBV × (Patient Hct – minimum acceptable Hct)/patient Hct Initial treatment for blood loss is to maintain intra- vascular volume by administering crystalloid or colloid solution. When the Hct reaches the threshold, red blood cells 
+  chunk 9: book=Miller/Baby Miller page=813
+    text: It is important to be vigilant for occult sources of bleeding and intervene early
+
+=== 101: Aortic Diseases ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=774
+    text: Section: Aortic Aneurysms. Aortic Aneurysms Aneurysms more commonly occur in the abdominal than in the thoracic aorta. The vast majority of aortic aneurysms are due to atherosclerosis; cystic medial necrosis is also an important cause of thoracic aortic aneurysms. Syphilitic aneurysms characteristically involve the ascending aorta. Other etiologies include various connective tissue diseases and tr
+  chunk 1: book=Morgan & Mikhail page=676
+    text: Section: AORTIC REGURGITATION. AORTIC REGURGITATION Preoperative Considerations Aortic regurgitation usually develops slowly and is progressive (chronic), but it can also develop quickly (acute). Chronic aortic regurgitation may be caused by abnormalities of the aortic valve, the aortic root, or both. Abnormalities in the valve are usually congenital (bicuspid valve) or due to rheumatic fever. Dis
+  chunk 2: book=Morgan & Mikhail page=174
+    text: Diagnosis of structural diseases of the heart, such as valvular heart disease, shunts, aortic diseases
+  chunk 3: book=Morgan & Mikhail page=676
+    text: Diseases affecting the ascending aorta cause regurgitation by dilating the aortic annulus; they include syphilis, annuloaortic ectasia, cystic medial necrosis (with or without Marfan syndrome), ankylosing spondylitis, rheumatoid and psoriatic arthritis, and a variety of other
+  chunk 4: book=Morgan & Mikhail page=769
+    text: Section: PERICARDIAL DISEASE. PERICARDIAL DISEASE The parietal pericardium is a fibrous membrane surrounding the heart, to which it normally is not adherent. The pericardium encompasses a relatively fixed intrapericardiac volume that includes a small volume of pericardial fluid (20–50 mL in adults), in addition to the heart and blood. As a result, the pericardium normally limits acute dilation of 
+  chunk 5: book=Morgan & Mikhail page=1508
+    text: Section: How should this patient be evaluated for the risk of perioperative morbidity?. subtrochanteric fracture of the femur. How should this patient be evaluated for the risk of perioperative morbidity? Anesthetic risk correlates much better with the presence of coexisting disease than chronological age. Therefore, preanesthetic evaluation should concentrate on the identification of age-related 
+  chunk 6: book=Morgan & Mikhail page=774
+    text: Other etiologies include various connective tissue diseases and trauma
+  chunk 7: book=Morgan & Mikhail page=174
+    text: Section: Various echocardiographic modalities are employed perioperatively by. systolic and diastolic heart failure, valvular abnormalities, hypovolemia, and pericardial tamponade • Estimation of hemodynamic parameters, such as SV, CO, and intracavitary pressures • Diagnosis of structural diseases of the heart, such as valvular heart disease, shunts, aortic diseases • Guiding surgical intervention
+  chunk 8: book=Morgan & Mikhail page=1495
+    text: Section: An optimal preoperative assessment provides the care team with the information. An optimal preoperative assessment provides the care team with the information needed to identify patients at greater risk for adverse outcomes and enact strategies to mitigate those risks where possible. Moreover, such assessment permits realistic discussions of likely patient outcomes when considering surgic
+  chunk 9: book=Morgan & Mikhail page=663
+    text: Section: When advanced imaging procedures are performed, they generally address the. obviate the need for cardiac catheterization, unless there are concerns about CAD. When advanced imaging procedures are performed, they generally address the following questions: • Which valvular abnormality is most important hemodynamically? • What is the severity of an identified lesion? • What degree of ventric
+
+=== 102: Aortic Regurgitation ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=677
+    text: Section: Acute aortic regurgitation typically presents as the sudden onset of pulmonary. Acute aortic regurgitation typically presents as the sudden onset of pulmonary edema and hypotension, whereas chronic regurgitation ultimately manifests as congestive heart failure. Symptoms are generally nil or minimal in the chronic form when the regurgitant volume remains under 40% of stroke volume but beco
+  chunk 1: book=Morgan & Mikhail page=676
+    text: Section: AORTIC REGURGITATION. AORTIC REGURGITATION Preoperative Considerations Aortic regurgitation usually develops slowly and is progressive (chronic), but it can also develop quickly (acute). Chronic aortic regurgitation may be caused by abnormalities of the aortic valve, the aortic root, or both. Abnormalities in the valve are usually congenital (bicuspid valve) or due to rheumatic fever. Dis
+  chunk 2: book=Morgan & Mikhail page=678
+    text: Section: NY: McGraw Hill; 2010.). very wide pulse pressure. Pulsus bisferiens may also be present in patients with moderate to severe aortic insufficiency and is thought to result from the rapid ejection of a large stroke volume. Color-flow Doppler TEE is invaluable in quantitating the severity of the regurgitation and guiding therapeutic interventions (Figure 21–11). FIGURE 21–11 Transesophageal 
+  chunk 3: book=Morgan & Mikhail page=774
+    text: Section: Aortic Aneurysms. Aortic Aneurysms Aneurysms more commonly occur in the abdominal than in the thoracic aorta. The vast majority of aortic aneurysms are due to atherosclerosis; cystic medial necrosis is also an important cause of thoracic aortic aneurysms. Syphilitic aneurysms characteristically involve the ascending aorta. Other etiologies include various connective tissue diseases and tr
+  chunk 4: book=Morgan & Mikhail page=673
+    text: Section: Pathophysiology. stenosis. Valvular aortic stenosis is typically congenital, rheumatic, or degenerative. Abnormalities in the number of cusps (most commonly a bicuspid valve) or their architecture produce turbulence that traumatizes the valve and eventually leads to stenosis. Rheumatic aortic stenosis is rarely isolated; it is more commonly associated with aortic regurgitation or mitral v
+  chunk 5: book=Morgan & Mikhail page=776
+    text: Section: Surgery Involving the Aortic Arch. On the other hand, bradycardia worsens aortic regurgitation and should be avoided. The arterial inflow cannula for CPB is placed in a femoral artery for patients with dissections. In the event that sternotomy may rupture an aneurysm, prior establishment of partial CPB (using the femoral artery and femoral vein) should be considered. Surgery Involving the
+  chunk 6: book=Morgan & Mikhail page=408
+    text: Section: Thiocyanate is slowly cleared by the kidney. Accumulation of large amounts of. thiosulfate (150 mg/kg over 15 min) or 3% sodium nitrite (5 mg/kg over 5 min), which oxidizes hemoglobin to methemoglobin. A methemoglobin concentration of 10% to 20% is the aim of nitrite administration. Caution should be exercised when inducing methemoglobinemia in patients experiencing cyanide toxicity secon
+  chunk 7: book=Morgan & Mikhail page=2344
+    text: Section: VACTERL, 926. physiological anatomy, 852 placental exchange, 852–853 respiratory gas exchange, 853–854 uterine blood flow, 851 uteroplacental blood flow, 855 v waves, 91, 353 VACTERL, 926 Vacuum system, in medical gas systems, 13 Vagal stimulation, 553 Vaginal birth after cesarean (VBAC), 871, 885 Vagus nerve, 308, 502, 798f Valproic acid, 627t, 1102t Valvular aortic stenosis, 422 Valvula
+  chunk 8: book=Morgan & Mikhail page=183
+    text: Section: Transesophageal Echocardiography. New York, NY: McGraw Hill; 2011.). FIGURE 5–35 The color flow Doppler image of the midesophageal aortic valve long-axis view demonstrates measurement of the vena contracta of aortic regurgitation. The vena contracta represents the smallest diameter of the regurgitant jet at the level of the aortic valve. A vena contracta of 6.2 mm grades the aortic regurg
+  chunk 9: book=Morgan & Mikhail page=727
+    text: Section: 1. Assessment of valvular function—. FIGURE 22–4 Transesophageal echocardiogram at the lower esophageal/transgastric level looking up at the left ventricle at the level of the papillary muscles. 1. Assessment of valvular function— Valvular morphology can be assessed by multiplane and three-dimensional TEE. Pressure gradients, area and severity of stenosis, and severity of valvular regurgi
+
+=== 103: Aortic Stenosis ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=347
+    text: Section: Metabolism & Excretion. Metabolism & Excretion Pancuronium is metabolized (deacetylated) by the liver to a limited degree. Its metabolic products have some neuromuscular blocking activity. Excretion is primarily renal (40%), though some of the drug is cleared by the bile (10%). Not surprisingly, elimination of pancuronium is slowed and neuromuscular blockade is prolonged by kidney failure
+  chunk 1: book=Morgan & Mikhail page=181
+    text: Section: Cardiac Anesthesia & Transesophageal Echocardiography. New York, NY: McGraw Hill; 2011.). FIGURE 5–33 The time-velocity interval (TVI) of the aortic valve is calculated using continuous-wave Doppler, while pulsed-wave Doppler is useful for measurements at lower blood velocities. This continuous-wave Doppler has been aligned parallel to that aortic valve flow as imaged using the deep trans
+  chunk 2: book=Morgan & Mikhail page=180
+    text: Section: Echocardiography. Anesth Analg. 1999 Oct;89(4):870-884.). performing a comprehensive intraoperative multiplane transesophageal echocardiography examination; recommendations of the American Society of Echocardiography Council for Intraoperative Echocardiography and the Society for Cardiovascular Anesthesiologists Task Force for Certification in Perioperative Transesophageal Echocardiograph
+  chunk 3: book=Morgan & Mikhail page=133
+    text: Section: ARTERIAL BLOOD PRESSURE. ARTERIAL BLOOD PRESSURE The rhythmic contraction of the left ventricle, ejecting blood into the arterial tree, results in pulsatile arterial pressures. The peak left ventricular end-systolic pressure (in the absence of aortic valve stenosis) approximates the systolic arterial blood pressure (SBP); the lowest arterial pressure during diastolic relaxation is the dia
+  chunk 4: book=Morgan & Mikhail page=580
+    text: Section: Sympathetic nervous system activity normally has the most important effect on. concentration during systole. Contractility can be altered by neural, humoral, or pharmacological influences. Sympathetic nervous system activity normally has the most important effect on contractility. Sympathetic fibers innervate atrial and ventricular muscle, as well as nodal tissues. In addition to its posi
+  chunk 5: book=Morgan & Mikhail page=604
+    text: Section: Ventricular Hypertrophy. Ventricular Hypertrophy Ventricular hypertrophy can occur with or without dilation, depending on the type of stress imposed on the ventricle. When the heart is subjected to either pressure or volume overload, the initial response is to increase sarcomere length and optimally overlap actin and myosin. With time, ventricular muscle mass begins to increase in respons
+  chunk 6: book=Morgan & Mikhail page=618
+    text: Section: The ACC/AHA Task Force Report guidelines state that the patient’s medical history. arrhythmias, stroke, and thromboembolism are the most common diagnoses in patients with preexisting cardiovascular disease. The relatively high prevalence of cardiovascular disorders in surgical patients has given rise to attempts to define cardiac risk or the likelihood of intraoperative or postoperative f
+  chunk 7: book=Morgan & Mikhail page=56
+    text: Section: Attempts to wrap conventional endotracheal tubes with foil should be avoided. This. device because protection is specific to the type of laser. Some ophthalmologic lasers and vascular mapping lasers have such a short focal length that protective eyewear is not needed. For other devices, protective goggles should be worn by personnel at all times during laser use, and eye protection in the
+  chunk 8: book=Morgan & Mikhail page=578
+    text: Section: Factors affecting ventricular compliance can be separated into those related to. FIGURE 20–6 Normal and abnormal ventricular compliance. Factors affecting ventricular compliance can be separated into those related to the rate of relaxation (early diastolic compliance) and passive stiffness of the ventricles (late diastolic compliance). Left ventricular hypertrophy (from hypertension or ao
+  chunk 9: book=Morgan & Mikhail page=600
+    text: Section: Moreover, although volatile anesthetics decrease myocardial contractility, at moderate. injury; these effects are mediated by the activation of ATP-sensitive K+ (KATP) channels. Some evidence also suggests that volatile anesthetics enhance recovery of the “stunned” myocardium (hypocontractile, but recoverable, myocardium after ischemia). Moreover, although volatile anesthetics decrease my
+
+=== 104: Aspiration Pneumonia and Pneumonitis ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=438
+    text: Section: Naloxone reverses the agonist activity associated with endogenous or exogenous. increase in respiratory rate. Doxapram is not a specific reversal agent and should not replace standard supportive therapy (ie, mechanical ventilation). Naloxone reverses the agonist activity associated with endogenous or exogenous opioid compounds. Flumazenil is useful in the reversal of benzodiazepine sedati
+  chunk 1: book=Morgan & Mikhail page=875
+    text: Section: B. Intraoperative Management. failure may also require treatment. Large pleural effusions usually require drainage before anesthesia. Similarly, massive abdominal distention should be relieved by nasogastric suction or drainage of ascites. Persistent hypoxemia may require mechanical ventilation. B. Intraoperative Management Selection of anesthetic agents should be tailored to each patient
+  chunk 2: book=Morgan & Mikhail page=874
+    text: Section: Restrictive Pulmonary Disease. and secretions, absence of significant hypercapnia and acidosis, and absence of respiratory depression due to residual anesthetic agents. Patients with an FEV1 below 50% may require a period of postoperative ventilation, particularly following upper abdominal and thoracic operations. Restrictive Pulmonary Disease Restrictive pulmonary diseases are characteri
+  chunk 3: book=Morgan & Mikhail page=874
+    text: ACUTE INTRINSIC PULMONARY DISORDERS Acute intrinsic pulmonary disorders include pulmonary edema (including the acute respiratory distress syndrome [ARDS]), infectious pneumonia, and aspiration pneumonitis
+  chunk 4: book=Stanford CA-1 page=74
+    text: Section: Pulmonary Aspiration. Pulmonary Aspiration – Follow NPO guidelines for routine elective cases – Use metoclopramide, H2-blockers, and antacids in high-risk patients – Consider awake, regional anesthetic (e.g. spinal or epidural for c-sections) – Consider awake, upright intubation and/or RSI – If present, leave NGT to suction – Apply cricoid pressure until ETT position confirmed • Although 
+  chunk 5: book=Miller/Baby Miller page=545
+    text: Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease is during this interval that the complete loss of airway reflexes occur and pulmonary aspiration risk is the high- est. If a difficult intubation is anticipated on preoperative airway evaluation, an awake intubation may be indicated over an RSII. With RSII, achi
+  chunk 6: book=StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis page=5
+    text: Section: During the physical examination, cognitive assessment should. a is polymicrobial, with aerobic gram-negative bacilli as the predominant pathogens and aerobic gram-positive organisms as the second most common cause. [1] Inconsistent definitions and diagnostic practices have posed challenges in delineating a clear clinical profile of patients with aspiration pneumonia. The overlap of aspira
+  chunk 7: book=StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis page=12
+    text: cause readmission rates. Aspiration pneumonia is identified as an independent risk factor for these outcomes, although the lack of robust data prevents specific predictions relating to aspiration pneumonia. [9] Older adults aged over 80 with pneumonia and those with aspiration pneumonia exhibited higher mortality rates, elevated sodium levels, and poorer renal function compared to age-matched cont
+  chunk 8: book=StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis page=2
+    text: Section: Cerebrovascular disease, known as post-stroke pneumonia. iggered by entering bacteria-rich oropharyngeal fluids into the lower respiratory tract. The aspirated fluid may contain oropharyngeal secretions, particulate matter, or gastric content. Aspiration pneumonia manifests across various clinical contexts and primarily affects older adults. It poses significant risks of morbidity and mor
+  chunk 9: book=MGH Housestaff Manual page=117
+    text: Section: Infectious Disease. Infectious Disease HAP/VAP & Aspiration Pneumonia Cassandra Fiorino H O S P I T A L-A C Q U I R E D A N D V E N T I L A T O R-A S S O C I A T E D P N E U M O N I A (IDSA/ATS: CID 2016;63:e61) Hospital-acquired pneumonia (HAP) Pneumonia that develops ≥48h after admission Ventilator-associated pneumonia (VAP)*** Pneumonia that develops ≥48h after endotracheal intubation 
+
+=== 105: Asthma: Chronic Management ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=886
+    text: Section: Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with. Cox J, Jablons D. Operative and perioperative pulmonary emboli. Thorac Surg Clin. 2015;15:289. Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with asthma or chronic obstructive pulmonary disease. Hosp Med Clin. 2017;6:437. Gallart L, Canet J. Post-operative pulmonary complications: under
+  chunk 1: book=Morgan & Mikhail page=872
+    text: Section: A. Preoperative Management. A. Preoperative Management Patients with COPD should be optimized prior to elective surgical procedures in the same way as patients with asthma (see earlier discussion). They should be questioned about recent changes in dyspnea, sputum, and wheezing. Patients with an FEV1 less than 50% of predicted (1.2–1.5 L) usually have dyspnea on exertion, whereas those wit
+  chunk 2: book=Morgan & Mikhail page=2322
+    text: Section: Pseudohypoparathyroidism, 1184. Pseudohypoparathyroidism, 1184 Psoas compartment block. See Posterior lumbar plexus block Psychiatric disorders, 633–636 bipolar disease, 635 case discussion on, 637–638 depression, 633–635 neuroleptic malignant syndrome, 635–636 schizophrenia, 635 substance abuse, 636 Psychological dependence, 1105 Pudendal nerve block, 869–870, 1118–1119, 1119f Pulmonary 
+  chunk 3: book=Morgan & Mikhail page=467
+    text: Section: Gradual titration of flumazenil is usually accomplished by intravenous administration of. Gradual titration of flumazenil is usually accomplished by intravenous administration of 0.2 mg/min until reaching the desired degree of reversal. The usual total dose is 0.6 to 1.0 mg. Because of flumazenil’s rapid hepatic clearance, repeat doses may be required after 1 to 2 h to avoid re-sedation a
+  chunk 4: book=Morgan & Mikhail page=928
+    text: Section: Gastroesophageal reflux is treated surgically when the esophagitis is refractory to. Gastroesophageal reflux is treated surgically when the esophagitis is refractory to medical management or results in complications such as stricture, recurrent pulmonary aspiration, or a Barrett esophagus (columnar epithelium). A variety of antireflux operations may be performed (Nissen, Belsey, Hill, or 
+  chunk 5: book=Morgan & Mikhail page=2126
+    text: Section: Scope. nosocomial infections. Systemic pooling of blood and transudation of fluid into tissues result in relative hypovolemia in patients with sepsis. The range of conditions that specialists in critical care medicine must address is extraordinarily broad. Many frequent concerns of the intensivist are covered in other chapters and will not be discussed here to avoid duplication. Therefore
+  chunk 6: book=Morgan & Mikhail page=479
+    text: Section: B. Pulmonary Issues. fact that a patient is scheduled to undergo elective surgery does not change the indications for testing to diagnose coronary artery disease. B. Pulmonary Issues Perioperative pulmonary complications, most notably postoperative respiratory depression and respiratory failure, are vexing problems associated with obesity and obstructive sleep apnea. A guideline developed
+  chunk 7: book=Morgan & Mikhail page=2303
+    text: general anesthesia, 880–882 regional anesthesia, 878–879 combined spinal–epidural analgesia, 857, 879–880 general anesthesia, 877, 877t general approach, 867–868 labor/vaginal delivery pain pathways, 868 parenteral agents, 868–869 psychological/nonpharmacological techniques, 868 pudendal nerve block, 869–870 regional anesthetic techniques combined spinal and epidural analgesia, 876–877 epidural op
+  chunk 8: book=Morgan & Mikhail page=2278
+    text: Section: Intravenous bisphosphonates, 766. benzodiazepines, 169–171 case discussion on, 178–179 etomidate, 174–175 ketamine, 171–174 propofol, 175–177 Intravenous bisphosphonates, 766 Intravenous fluid therapy, 1215–1218, 1302 Intravenous heparin, 299 Intravenous immune globulin, 643t Intravenous regional anesthesia, 820, 1033f Intravenous regional block, 1123 Intrinsic asthma, 540 Intrinsic posit
+  chunk 9: book=Miller/Baby Miller page=503
+    text: Section: Chapter 27 Chronic Pulmonary Disease. Chapter 27 Chronic Pulmonary Disease required when anesthetizing patients after step 3. A his- tory of severe or life-threatening exacerbations, requiring endotracheal intubation or admission to intensive care, is indicative of patients at increased risk of major pulmo- nary complications. Peak expiratory flow (PEF) rate is a simple and useful measure
+
+=== 106: Asthma: Diagnosis ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=878
+    text: Section: The net effect is an increase in (. pulmonary vasculature, causing reflex and humoral vasoconstriction. Localized or generalized reflex bronchoconstriction further increases areas with low ( ) ratios. The net effect is an increase in ( ) mismatch and hypoxemia. The affected area loses its surfactant within hours and may become atelectatic within 24 to 48 h. Pulmonary infarction occurs if 
+  chunk 1: book=Morgan & Mikhail page=2135
+    text: Section: After smoke inhalation, a direct mucosal injury may result in edema, inflammation,. disease. Combustion of synthetic materials may produce toxic gases such as carbon monoxide, hydrogen cyanide, hydrogen sulfide, hydrogen chloride, ammonia, chlorine, benzene, and aldehydes. When these gases react with water in the airways, they can produce hydrochloric, acetic, formic, and sulfuric acids. 
+  chunk 2: book=Morgan & Mikhail page=2136
+    text: Section: Cyanide toxicity may occur after fires that contain synthetic materials, particularly. Cyanide toxicity may occur after fires that contain synthetic materials, particularly those containing polyurethane. After cyanide is inhaled or absorbed through mucosal surfaces and skin, it binds the cytochrome enzymes and inhibits cellular production of adenosine triphosphate (ATP). Patients present 
+  chunk 3: book=Morgan & Mikhail page=886
+    text: Section: Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with. Cox J, Jablons D. Operative and perioperative pulmonary emboli. Thorac Surg Clin. 2015;15:289. Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with asthma or chronic obstructive pulmonary disease. Hosp Med Clin. 2017;6:437. Gallart L, Canet J. Post-operative pulmonary complications: under
+  chunk 4: book=Morgan & Mikhail page=2322
+    text: Section: Pseudohypoparathyroidism, 1184. Pseudohypoparathyroidism, 1184 Psoas compartment block. See Posterior lumbar plexus block Psychiatric disorders, 633–636 bipolar disease, 635 case discussion on, 637–638 depression, 633–635 neuroleptic malignant syndrome, 635–636 schizophrenia, 635 substance abuse, 636 Psychological dependence, 1105 Pudendal nerve block, 869–870, 1118–1119, 1119f Pulmonary 
+  chunk 5: book=Morgan & Mikhail page=1461
+    text: with fever, cough, or sore throat—of a viral upper respiratory tract infection (URI). Attempts should be made to differentiate between an infectious cause of rhinorrhea and an allergic or vasomotor cause. A viral infection within 2 to 4 weeks before general anesthesia and endotracheal intubation places the child at increased risk for perioperative pulmonary complications, including wheezing (10-fo
+  chunk 6: book=Morgan & Mikhail page=1482
+    text: Section: Anesthetic Considerations. alkalosis by excreting sodium bicarbonate in the urine. Later, as hyponatremia and dehydration worsen, the kidneys must conserve sodium even at the expense of hydrogen ion excretion (paradoxic aciduria). Correction of the volume and ion deficits and metabolic alkalosis is an indication for hydration with a sodium chloride (rather than lactated Ringer’s) solution
+  chunk 7: book=Stanford CA-1 page=79
+    text: Section: Latex Allergy. Latex Allergy • Obtain a careful history: – Healthcare workers (frequent exposure) – Children with spina bifida (multiple prior medical procedures/exposures) – Urogenital abnormalities (h/o multiple urogenital catheters) – Food allergies (tropical fruits [mango, kiwi, avocado, passion fruit, bananas], fig, chestnut) • Establish a latex-free environment: – Schedule patient a
+  chunk 8: book=MGH Housestaff Manual page=226
+    text: Section: Primary Care. Primary Care HEENT Concerns Sahar Shahamatdar C H R O N I C C O U G H (AFP 2017;96:575; NEJM 2016;375:1544) Time course: acute (≤3w) vs. subacute (3-8w) vs. chronic (>8w) Common causes: upper airway cough syndrome (UACS), asthma, GERD; these three account for 90% (18-62% pts have combo) General approach: 1) History (smoking, URI, ACEi use, GERD sx); remove possible offending
+  chunk 9: book=Marino ICU Book page=297
+    text: Section: REFERENCES. 280 Common Pulmonary Disorders 1. Shim CS, Williams MH. Evaluation of the severity of asthma: patients versus physicians. Am J Med 1980; 68:11-13. 2. Nunn AJ, Gregg I. New regression equations for predicting peak expiratory flow in adults. Br Med J 1989; 298:1068-1070. 3. National Asthma Education and Prevention Program Expert Panel Report 2. Guidelines for the diagnosis and m
+
+=== 107: Atrial Fibrillation ===
+domain: Internal Medicine
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=396
+    text: Section: TABLE 14–3 Pharmacology of β-blockers.1. receptors (Table 14–3). Theoretically, a selective β1-blocker would have less of an inhibitory effect on β2-receptors and, therefore, might be preferred in patients with chronic obstructive lung disease or peripheral vascular disease. Patients with peripheral vascular disease could potentially have a decrease in blood flow if β2- receptors, which d
+  chunk 1: book=Morgan & Mikhail page=474
+    text: Section: CHAPTER 18. CHAPTER 18 Preoperative Assessment, Premedication, & Perioperative Documentation KEY CONCEPTS The cornerstones of an effective preoperative or preprocedure evaluation are the history and physical examination, which should include a complete and up-to- date listing of all medications taken by the patient in the recent past, all pertinent allergies, and responses and reactions t
+  chunk 2: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=92
+    text: Section: 9.2. Management of AF in Patients With HF. e92 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 9.2. Management of AF in Patients With HF Recommendations for Management of AF in Patients With HF* Referenced studies that support the recommendations are summarized in the Online Data Supplement. 1. In patients who present with a new diagnosis of HFrEF and AF, arrhythmia
+  chunk 3: book=MGH Housestaff Manual page=13
+    text: Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang A T R I A L F I B R I L L A T I O N Epidemiology (Heart Rhythm 2012;9:632) RF: age, obesity, HTN, smoking, EtOH, DM, previous MI, HF, OSA Recurs in majority of cases due to secondary precipitant (surgery, infection, MI, thyrotoxicosis, acute alcohol, PE) Often co-exists with atrial flutter (Circ Arrythmia EP 2009;2:39
+  chunk 4: book=MGH Housestaff Manual page=14
+    text: Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver disease (cirrhosis or Bili 2x ULN or AST/ALT/AlkPhos 3x ULN); stroke; bleeding history; labile INR (<60% i
+  chunk 5: book=Stanford CA-1 page=35
+    text: Section: Blood Pressure Measurement. Blood Pressure Measurement Non-Invasive Blood Pressure (NIBP) – Oscillometric BP determination: oscillations in pressure are detected through the cuff as it deflates. – MAP is measured as the largest oscillation; it is the most accurate number produced by NIBP. – SBP and DBP are calculated by proprietary algorithms in the machine. – Inaccurate in conditions wit
+  chunk 6: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=102
+    text: Section: 10.9. Prevention and Treatment of AF After. e102 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 10.9. Prevention and Treatment of AF After Cardiac Surgery 10.9.1. Prevention of AF After Cardiac Surgery Recommendations for Prevention of AF After Cardiac Surgery Referenced studies that support the recommendations are summarized in the Online Data Supplement. 1. In pa
+  chunk 7: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=93
+    text: Section: 2. Multiple RCTs in HFrEF have shown that in patients. e93 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation postcatheter ablation was associated with signifi- cant improvement in the mortality rate and HF hos- pitalization in patients with AF and HFrEF.2 2. Multiple RCTs in HFrEF have shown that in patients with symptoms due to AF, ablation improves symp- toms and QO
+  chunk 8: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=77
+    text: Section: CI, 1.03-4.81]). Low-dose amiodarone is more effec-. e77 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation be well-tolerated. A Cochrane database meta-analysis of randomized studies5 reported sotalol to be associated with an increase in all-cause mortality (RR, 2.23 [95% CI, 1.03-4.81]). Low-dose amiodarone is more effec- tive than sotalol and Class IC agents for main
+  chunk 9: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=81
+    text: Section: 3. The PITP strategy—a high dose of a class IC agent. e81 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 3. The PITP strategy—a high dose of a class IC agent (flecainide 200-300 mg or propafenone 450-600 mg, with an atrioventricular nodal blocker)—can be considered for patients who experience infrequent episodes of symptomatic AF and do not prefer chronic antiarrhy
+
+=== 108: Autoimmune hemolytic anemia (AIHA) ===
+domain: Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever)
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=3
+    text: exhibits features of both warm and cold antibody-mediated hemolysis. Paroxysmal cold hemoglobinuria is an acquired hemolytic anemia characterized by an IgG autoantibody that activates complement at cold temperatures, leading to intravascular hemolysis upon rewarming, accompanied by hemoglobinuria (see Table 1. Common Secondary Conditions Associated With Various Autoimmune Hemolytic Anemias). [1] A
+  chunk 1: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=2
+    text: Section: Etiology and Epidemiology. sults and patient-specific factors. Collaborate with multidisciplinary healthcare providers, including hematologists and immunologists, to interpret complex laboratory findings in immune hemolytic anemias. Immune hemolytic anemias are disorders characterized by the immune system targeting and destroying red blood cells (RBCs). These conditions are classified bas
+  chunk 2: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=1
+    text: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK606096 URL: https://www.ncbi.nlm.nih.gov/books/NBK606096/ Topic: Autoimmune hemolytic anemia (AIHA) Article Title: Autoimmune hemolytic anemia (AIHA) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls P
+  chunk 3: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=6
+    text: Section: Mixed Autoimmune Hemolytic Anemia. known as the P antigen)—a polysaccharide antigen on the RBC surface. [35] These antibodies are polyclonal, derived from multiple B-cell clones, and predominantly of the IgG class. [36] Unlike cold agglutinins, which are typically IgM antibodies that induce RBC agglutination, these antibodies do not cause agglutination but instead bind to RBCs below norma
+  chunk 4: book=MGH Housestaff Manual page=137
+    text: Section: Pancytopenia & Anemia. Pancytopenia & Anemia Ellen Kendall I R O N D E F I C I E N C Y A N E M I A (NEJM 2015;372:1832; Blood 2019;133:30) Etiology: loss due to chronic bleeding (PUD/UGIB [BUN w/o Cr], LGIB/CRC, menses, parasites, intravascular hemolysis), demand (Epo, pregnancy, blood donation), intake (malnutrition) or absorption (Crohn’s, pH [e.g. PPI], post-gastrectomy, Celiac)
+  chunk 5: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=13
+    text: Section: Enhancing Healthcare Team Outcomes. erventions. Identifying whether the condition involves warm or cold antibody-mediated mechanisms in AIHA influences treatment selection. Warm AIHA, characterized by IgG-mediated hemolysis, typically responds well to initial treatment with glucocorticoids and rituximab, particularly in symptomatic patients. [3] Conversely, cold AIHA, involving IgM antibo
+  chunk 6: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=8
+    text: Section: Lactate Dehydrogenase. tus and newborn, maternal sensitization in an RhD-negative individual occurs due to previous exposure to the Rh antigen, either through transfusion with Rh-positive RBCs or pregnancy with an Rh-positive offspring. Consequently, Rh hemolytic disease of the newborn generally does not occur in the first pregnancy in the absence of a transfusion history. Immunologically
+  chunk 7: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=1
+    text: Source: StatPearls NCBI Bookshelf NBK ID: NBK606096 URL: https://www.ncbi.nlm.nih.gov/books/NBK606096/ Topic: Autoimmune hemolytic anemia (AIHA) Article Title: Autoimmune hemolytic anemia (AIHA) License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  chunk 8: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=7
+    text: Section: Alloimmune Hemolytic Anemia. ather than the parent drug itself may be responsible, complicating diagnosis. This anemia can be categorized by different mechanisms, including drug-dependent reactions and alteration of RBC surface antigens. In drug-dependent reactions, the drug binds to RBCs and becomes part of the antigen-antibody complex, remaining firmly bound to the membrane or causing i
+  chunk 9: book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA) page=11
+    text: Section: Osmotic Fragility Test. ates upon warming, a characteristic known as "biphasic hemolysin." However, this testing method can be time-consuming, resource-intensive, and prone to inaccuracies due to the low sensitivity. [52] Results may only show positivity for high-titer antibodies during a brief period around the hemolytic episode. Therefore, a negative outcome in a patient with a convinci
+
+=== 109: Bradyarrhythmias and Conduction Disease ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=696
+    text: Section: Carotid sinus hypersensitivity. Carotid sinus hypersensitivity Postural hypotension Autonomic dysfunction Sustained Valsalva maneuver Cerebrovascular disease Marked hypocapnia How do bradyarrhythmias commonly arise? Bradyarrhythmias may arise from either SA node dysfunction or abnormal AV conduction of the cardiac impulse. A delay or block of the impulse can occur anywhere between the SA 
+  chunk 1: book=Morgan & Mikhail page=699
+    text: Section: What is appropriate management for this patient?. life-threatening bradyarrhythmias (third-degree AV block). Intracardiac electrocardiographic recordings would be necessary to confirm the site of the conduction delay. What is appropriate management for this patient? Cardiac evaluation is required because of the symptomatic bifascicular block. However, hip fractures must be repaired prompt
+  chunk 2: book=Miller/Baby Miller page=915
+    text: Section: Caloric needs, estimate of, 747t. Caloric needs, estimate of, 747t CAM-ICU. See Confusion Assessment Method for the ICU (CAM-ICU) Cancer, recurrence and morbidity, 100 Cancer pain, palliative care for, 844, Cannula-based ophthalmic regional anesthesia, 550, 551f Capillaries, recruitment of, 56 Capillary hydrostatic pressure, 437 Capnography, 356, 360f–361f Carbaminohemoglobin, 401–402 Car
+  chunk 3: book=StatPearls: StatPearls   Syncope  Evaluation and Management page=2
+    text: Section: The causes of syncope may be classified as follows:. d represents 1% to 3.5% of all emergency department visits and 6% of all hospital admissions in the United States. [1] [2] This large number of emergency department visits and admissions reflects the varied etiologies of syncope, from benign to life-threatening, and the high degree of diagnostic uncertainty associated with this manifest
+  chunk 4: book=MGH Housestaff Manual page=15
+    text: Section: QTc Prolongation. QTc Prolongation Erika Kaske D E F I N I T I O N (Circ 2009; 119: e241) QT interval correlates with repolarization time of ventricles Normal: ≤460ms; Borderline (adult): 460-479ms (female), 450-459ms (male) Measure from beginning of QRS to end of T wave in a lead with T wave > 2mm (best in II, V5), define end point using tangent from peak of steepest slope to isoelectric
+  chunk 5: book=MGH Housestaff Manual page=31
+    text: Section: Cardiac Devices: PPM, ICD, & CRT. Cardiac Devices: PPM, ICD, & CRT Elaine Fletcher P E R M A N E N T P A C E M A K E R S (PPM), I M P L A N T A B L E C A R D I O V E R T E R-D E F I B R I L L A T O R S (ICD), & C A R D I A C R E S Y N C H R O N I Z A T I O N T H E R A P Y (CRT) Types: single chamber (RA or RV lead), dual chamber (RA + RV leads), biventricular (RV + coronary sinus ± RA lea
+  chunk 6: book=Miller/Baby Miller page=222
+    text: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT encountered in preoperative evaluation, organized by organ system. Many conditions are addressed by evidence- based clinical practice guidelines from anesthesiology and other specialties. However, substantial clinical judgment is still required to determin
+  chunk 7: book=Stanford CA-1 page=82
+    text: Section: Plasma pseudocholinesterase. Plasma pseudocholinesterase metabolism & RBC esterase (hydrolysis at ester linkage) (i before –caine) *AmIde anesthetics have 2 I’s Liver metabolism: Aromatic hydroxylation, N- dealkylation, Amide hydrolysis *methylparaben preservative is metabolized to p-Aminobenzoic acid (PABA), which can induce allergic- type reactions in a small percentage of patients Rout
+  chunk 8: book=Miller/Baby Miller page=102
+    text: Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY review on perioperative β-blockade from the American College of Cardiology/American Heart Association (ACC/ AHA) states that although perioperative continuation of β-blockade started 1 day or less before noncardiac sur- gery in high-risk patients prevents nonfatal myocardial infarctions, it increases the rate o
+  chunk 9: book=Stanford CA-1 page=58
+    text: Section: Electrolyte Abnormalities. Electrolyte Abnormalities Cardiac Action Potentials Phase Name SA Node Fiber Ventricular Muscle Fiber Rapid Upstroke Slow inward ICa Fast inward INa Early Rapid Repolarization Inactivation of INa Start Outward IK Outward IK = Slow Inward ICa Final Rapid Repolarization Outward IK Outward IK > Inward ICa Diastolic Depolarization/ Resting Potential Slow inward ICa 
+
+=== 110: CKD: Complications — Anemia ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=Society Guideline: Guideline   KDIGO 2024 CKD page=90
+    text: Section: Chapter 3: Delaying CKD progression and managing. Chapter 3: Delaying CKD progression and managing its complications 3.1 CKD treatment and risk modiﬁcation Practice Point 3.1.1: Treat people with CKD with a comprehensive treatment strategy to reduce risks of progression of CKD and its associated complications (Figure 17). Risk factors associated with CKD progression, CVD, and other CKD co
+  chunk 1: book=Society Guideline: Guideline   KDIGO 2024 CKD page=140
+    text: Section: Chapter 5: Optimal models of care. Chapter 5: Optimal models of care 5.1 Referral to specialist kidney care services Early identiﬁcation and referral to specialist kidney care ser- vices for people with CKD has the potential to reverse, delay, or prevent progression of disease and is a key focus of in- ternational initiatives in the context of the global “epidemic” of kidney disease. The 
+  chunk 2: book=Society Guideline: Guideline   KDIGO 2024 CKD page=87
+    text: Section: Discussion of risk should also consider the individual. referral wait times, particularly for high-risk individuals. In other clinical settings with relatively scarce access to nephrology care, these thresholds should be adjusted to ensure that wait times are acceptable for local standards.421 Discussion of risk should also consider the individual person, their comorbidities, and their ri
+  chunk 3: book=Society Guideline: Guideline   KDIGO 2024 CKD page=41
+    text: 2.2 Risk prediction in people with CKD Recommendation 2.2.1: In people with CKD G3–G5, we recommend using an externally validated risk equation to estimate the absolute risk of kidney failure (1A). Practice Point 2.2.1: A 5-year kidney failure risk of 3%–5% can be used to determine need for nephrology referral in addition to criteria based on eGFR or urine ACR, and other clinical considerations. P
+  chunk 4: book=MGH Housestaff Manual page=102
+    text: Section: Chronic Kidney Disease. Chronic Kidney Disease Natalia Sutherland CKD definition: GFR <60mL/min OR kidney damage (albuminuria ≥30mg/d for ≥3mo (JAMA 2015;313: 837) Estimating GFR: 2021 CKD-EPI (NEJM 2021;385:1737) (race omitted). Race in eGFR calc can lead to undertreatment and transplant inequity for Black pts (NEJM 2020;383:874) Role for Cystatin C: protein excreted by cells, less affec
+  chunk 5: book=Society Guideline: Guideline   KDIGO 2024 CKD page=91
+    text: Section: This practice point calls out the need for a comprehensive. This practice point calls out the need for a comprehensive and integrated approach to lifestyle modiﬁcation and recog- nizes that in some circumstances, there is value in referring people to professionals or programs with expertise in lifestyle modiﬁcation. We also appreciate that different healthcare systems and regions will hav
+  chunk 6: book=Society Guideline: Guideline   KDIGO 2024 CKD page=146
+    text: Section: Practice Point 5.3.1: Enable access to a patient-centered. 5.3 Team-based integrated care Practice Point 5.3.1: Enable access to a patient-centered multidisciplinary care team consisting of dietary coun- seling, medication management, education, and counseling about different KRT modalities, transplant options, dialysis access surgery, and ethical, psychological, and social care for peopl
+  chunk 7: book=StatPearls: StatPearls   CKD  Complications — Anemia page=2
+    text: for patients with chronic kidney disease–mineral bone disorder, integrating expertise for a holistic approach to the treatment. Access free multiple choice questions on this topic. Identify serum imbalances of calcium, phosphorous, parathyroid hormone, and vitamin D in patients with chronic kidney disease–mineral bone disorder. Assess fracture risks and cardiovascular complications associated with
+  chunk 8: book=MGH Housestaff Manual page=3
+    text: Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphyla
+  chunk 9: book=StatPearls: StatPearls   CKD  Complications — Anemia page=1
+    text: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK560742 URL: https://www.ncbi.nlm.nih.gov/books/NBK560742/ Topic: CKD: Complications — Anemia Article Title: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL):
+
+=== 111: CKD: Complications — Cardiovascular and Metabolic ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=Society Guideline: Guideline   KDIGO 2024 CKD page=191
+    text: Section: Pitt B, Filippatos G, Agarwal R, et al. Cardiovascular events with. 533. Bakris GL, Agarwal R, Anker SD, et al. Effect of ﬁnerenone on chronic kidney disease outcomes in type 2 diabetes. N Engl J Med. 2020;383:2219–2229. 534. Pitt B, Filippatos G, Agarwal R, et al. Cardiovascular events with ﬁnerenone in kidney disease and type 2 diabetes. N Engl J Med. 2021;385:2252–2263. 535. Agarwal R,
+  chunk 1: book=Society Guideline: Guideline   KDIGO 2024 CKD page=94
+    text: Section: A low-protein intake (<0.8 g/kg body weight/d) reduces. A low-protein intake (<0.8 g/kg body weight/d) reduces uremia and uremic toxin generation and improves kidney hemodynamics by constricting the glomerular afferent arte- rioles and lowering intraglomerular pressure.458,474,475 Low- protein diets and very low–protein diets have been used for almost a century as a strategy to reduce cli
+  chunk 2: book=Society Guideline: Guideline   KDIGO 2024 CKD page=194
+    text: Section: Mediterranean diet supplemented with nuts on metabolic syndrome. people with diabetes. Am Heart J. 2018;198:135–144. 688. McNeil JJ, Wolfe R, Woods RL, et al. Effect of aspirin on cardiovascular events and bleeding in the healthy elderly. N Engl J Med. 2018;379: 1509–1518. 689. Gaziano JM, Brotons C, Coppolecchia R, et al. Use of aspirin to reduce risk of initial vascular events in patien
+  chunk 3: book=Society Guideline: Guideline   KDIGO 2024 CKD page=146
+    text: Section: Practice Point 5.3.1: Enable access to a patient-centered. 5.3 Team-based integrated care Practice Point 5.3.1: Enable access to a patient-centered multidisciplinary care team consisting of dietary coun- seling, medication management, education, and counseling about different KRT modalities, transplant options, dialysis access surgery, and ethical, psychological, and social care for peopl
+  chunk 4: book=Society Guideline: Guideline   KDIGO 2024 CKD page=107
+    text: Section: As GFR decreases, the kidney’s ability to excrete hydrogen. cardiovascular beneﬁt that do not require dose adjustment in include liraglutide, semaglutide (injectable), and dulaglutide.23 3.10 Metabolic acidosis As GFR decreases, the kidney’s ability to excrete hydrogen ions and generate bicarbonate decreases, resulting in the development of chronic metabolic acidosis. acidosis is observat
+  chunk 5: book=Society Guideline: Guideline   KDIGO 2024 CKD page=194
+    text: Section: Sabatine MS, Leiter LA, Wiviott SD, et al. Cardiovascular safety and. 675. Sabatine MS, Leiter LA, Wiviott SD, et al. Cardiovascular safety and efﬁcacy of the PCSK9 inhibitor evolocumab in patients with and without diabetes and the effect of evolocumab on glycaemia and risk of new-onset diabetes: prespeciﬁed analysis of the randomised controlled trial. Lancet Diabetes Endocrinol. 2017;5:9
+  chunk 6: book=Miller/Baby Miller page=917
+    text: Section: Index. renal excretion of, 617 resuscitation, 820 supraglottic airway devices, 281 thermoregulation in, 623 tracheal extubation in, 285 transfusion therapy for, 618 unexpected difcult airway in, 284, 284f video laryngoscopes for, 271t, 283 Chlorhexidine, alcohol and, in spinal anesthesia, 302 chemical structures of, 145f local anesthetic, 153 for spinal anesthesia, 300, 306 Chlorthalidon
+  chunk 7: book=StatPearls: StatPearls   Metabolic Acidosis  Approach and Anion Gap page=11
+    text: Section: Differential Diagnosis. anion gap closure occurs. Treatment does not begin with bicarbonate, even when acidosis is present. Potassium repletion and volume restoration remain essential components of therapy. Euglycemia must be achieved before correction is considered complete. Alcoholic ketoacidosis requires thiamine supplementation and correction of electrolyte imbalances, along with volu
+  chunk 8: book=StatPearls: StatPearls   CKD  Complications — Anemia page=1
+    text: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK560742 URL: https://www.ncbi.nlm.nih.gov/books/NBK560742/ Topic: CKD: Complications — Anemia Article Title: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL):
+  chunk 9: book=StatPearls page=19
+    text: ocial engagement, and in children, transplantation supports normal growth, neurodevelopment, and long-term health. Importantly, advances in living donor LT (LDLT) have further expanded access and improved outcomes. When LDLT was first introduced, its results were inferior to those of deceased donor LT. [89] However, LDLT has since been proven to significantly reduce mortality by shortening waiting
+
+=== 112: CKD: Definition, Staging, and Progression ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls: StatPearls   CKD  Definition, Staging, and Progression page=1
+    text: Source: StatPearls NCBI Bookshelf NBK ID: NBK560742 URL: https://www.ncbi.nlm.nih.gov/books/NBK560742/ Topic: CKD: Definition, Staging, and Progression Article Title: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  chunk 1: book=Society Guideline: Guideline   KDIGO 2024 CKD page=20
+    text: Section: Introduction, qualifying statements, and key concepts. Introduction, qualifying statements, and key concepts This 2024 update of the KDIGO Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Dis- ease (CKD)1 is an evidence-based guideline that provides recommendations and practice points for clinical management activities. The past 10 years have provided new ho
+  chunk 2: book=Society Guideline: Guideline   KDIGO 2024 CKD page=5
+    text: Section: S259. Table 38. Management strategies for common symptoms in CKD Table 39. List of validated assessment tools for malnutrition Table 40. Key features of existing CKD care models Table 41. Indications for the initiation of dialysis Table 42. Studies examining the timing of dialysis in people with CKD Table 43. People with kidney failure who receive comprehensive conservative care Table 44.
+  chunk 3: book=Society Guideline: Guideline   KDIGO 2024 CKD page=54
+    text: Section: Chapter 1: Evaluation of CKD. Chapter 1: Evaluation of CKD 1.1 Detection and evaluation of CKD Both decreased GFR and increased albuminuria or other markers of kidney damage are often silent and not apparent to the person at risk of CKD or the healthcare provider unless laboratory tests are performed. The cause of the decreased GFR or increased albuminuria may also not be apparent. In the
+  chunk 4: book=StatPearls: StatPearls   CKD  Definition, Staging, and Progression page=1
+    text: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) Preeti Patel
+  chunk 5: book=Society Guideline: Guideline   KDIGO 2024 CKD page=24
+    text: Section: Use of a simple algorithm such as that shown above in. Use of a simple algorithm such as that shown above in settings such as primary care, cardiology, and endocrinology could signiﬁcantly improve the early identiﬁcation and treatment of CKD (Figure 3).28 There are no current evidence-based recommendations regarding the frequency of screening in people at risk of CKD. In the setting of di
+  chunk 6: book=Society Guideline: Guideline   KDIGO 2024 CKD page=188
+    text: Section: Lambers Heerspink HJ, Gansevoort RT. Albuminuria is an appropriate. 392. Lambers Heerspink HJ, Gansevoort RT. Albuminuria is an appropriate therapeutic target in patients with CKD: the pro view. Clin J Am Soc Nephrol. 2015;10:1079–1088. 393. Fuhrman DY, Schneider MF, Dell KM, et al. Albuminuria, proteinuria, and renal disease progression in children with CKD. Clin J Am Soc Nephrol. 2017;1
+  chunk 7: book=Society Guideline: Guideline   KDIGO 2024 CKD page=29
+    text: Section: Summary of relative and absolute risks relevant to CKD. Summary of relative and absolute risks relevant to CKD from meta-analysis of large multinational population studies in the CKD Prognosis Consortium (CKD-PC) Outcomes relevant to CKD, and the prognostic importance of CKD categories The most highly evaluated endpoints in epidemiological studies have been all-cause mortality, cardiovasc
+  chunk 8: book=Society Guideline: Guideline   KDIGO 2024 CKD page=83
+    text: Section: However, changes in albuminuria within an individual have. However, changes in albuminuria within an individual have substantial variability, with large ﬂuctuations expected given that the 95% CI around repeat testing is approximately 50%. For this reason, the Work Group has deﬁned a doubling in albuminuria or more as exceeding the expected variability and warranting evaluation if replica
+  chunk 9: book=MGH Housestaff Manual page=102
+    text: Section: Chronic Kidney Disease. Chronic Kidney Disease Natalia Sutherland CKD definition: GFR <60mL/min OR kidney damage (albuminuria ≥30mg/d for ≥3mo (JAMA 2015;313: 837) Estimating GFR: 2021 CKD-EPI (NEJM 2021;385:1737) (race omitted). Race in eGFR calc can lead to undertreatment and transplant inequity for Black pts (NEJM 2020;383:874) Role for Cystatin C: protein excreted by cells, less affec
+
+=== 113: CKD: Etiology and Workup ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=MGH Housestaff Manual page=99
+    text: Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou D E F I N I N G AKI (KDIGO 2012 Guidelines) Diagnostic Tips Serum Cr approximates GFR at steady state only (unable to estimate GFR w/ ∆Cr): must assume GFR <10 if ∆Cr > 1 mg/dL/day Drugs can impair Cr excretion without ∆GFR (BUN remains stable): trimethoprim (in Bactrim), H2 blockers (cimetidine), dronaderone BUN out of proportion to Cr:
+  chunk 1: book=MGH Housestaff Manual page=106
+    text: Section: Acid-Base Disorders. Acid-Base Disorders Saaket Agrawal M A N A G E M E N T O F A C I D-B A S E D I S O R D E R S : treat the underlying cause! Metabolic acidosis: In BICAR-ICU (Lancet 2018;392:31), pts with metabolic acidosis (pH <7.2) tx w/ IV HCO3 for goal pH >7.3 had no ∆ in overall mortality but RRT initiation. A subset of pts w/ AKIN stages 2-3 had improved mortality at 28d For pH 
+  chunk 2: book=Society Guideline: Guideline   KDIGO 2024 CKD page=22
+    text: Section: Deﬁnition and classiﬁcation of CKD. Deﬁnition and classiﬁcation of CKD Deﬁning CKD. CKD is deﬁned as abnormalities of kidney structure or function, present for a minimum of 3 months, with implications for health (Table 1).1 Classifying CKD. CKD is classiﬁed based on Cause, GFR category (G1–G5), and Albuminuria category (A1–A3), abbreviated as components of the classiﬁcation system are eac
+  chunk 3: book=StatPearls: StatPearls   CKD  Etiology and Workup page=1
+    text: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) Preeti Patel
+  chunk 4: book=Society Guideline: Guideline   KDIGO 2024 CKD page=54
+    text: Section: Chapter 1: Evaluation of CKD. Chapter 1: Evaluation of CKD 1.1 Detection and evaluation of CKD Both decreased GFR and increased albuminuria or other markers of kidney damage are often silent and not apparent to the person at risk of CKD or the healthcare provider unless laboratory tests are performed. The cause of the decreased GFR or increased albuminuria may also not be apparent. In the
+  chunk 5: book=Society Guideline: Guideline   KDIGO 2024 CKD page=93
+    text: Section: Recommendation 3.3.1.1: We suggest maintaining a. 3.3.1 Protein intake Recommendation 3.3.1.1: We suggest maintaining a protein intake of 0.8 g/kg body weight/d in adults with CKD G3–G5 (2C). Practice Point 3.3.1.1: Avoid high protein intake (>1.3 g/kg body weight/d) in adults with CKD at risk of progression. Practice Point 3.3.1.2: In adults with CKD who are willing and able, and who are
+  chunk 6: book=Society Guideline: Guideline   KDIGO 2024 CKD page=189
+    text: Section: Zhu P, Herrington WG, Haynes R, et al. Conventional and genetic. 441. Zhu P, Herrington WG, Haynes R, et al. Conventional and genetic evidence on the association between adiposity and CKD. J Am Soc Nephrol. 2021;32:127–137. 442. LOOK AHEAD Research Group. Effect of a long-term behavioural weight loss intervention on nephropathy in overweight or obese adults with type 2 diabetes: a seconda
+  chunk 7: book=Society Guideline: Guideline   KDIGO 2024 CKD page=83
+    text: Section: However, changes in albuminuria within an individual have. However, changes in albuminuria within an individual have substantial variability, with large ﬂuctuations expected given that the 95% CI around repeat testing is approximately 50%. For this reason, the Work Group has deﬁned a doubling in albuminuria or more as exceeding the expected variability and warranting evaluation if replica
+  chunk 8: book=MGH Housestaff Manual page=102
+    text: Section: Chronic Kidney Disease. Chronic Kidney Disease Natalia Sutherland CKD definition: GFR <60mL/min OR kidney damage (albuminuria ≥30mg/d for ≥3mo (JAMA 2015;313: 837) Estimating GFR: 2021 CKD-EPI (NEJM 2021;385:1737) (race omitted). Race in eGFR calc can lead to undertreatment and transplant inequity for Black pts (NEJM 2020;383:874) Role for Cystatin C: protein excreted by cells, less affec
+  chunk 9: book=Society Guideline: Guideline   KDIGO 2024 CKD page=148
+    text: Section: Standardized educational topics should cover 3 main. to individual needs, circumstances, and resources, see text for details. Standardized educational topics should cover 3 main subject areas: knowledge about CKD, knowledge about treatment to slow progression and complications of CKD, and knowledge about the kidney failure management options. Educational material should be written and exp
+
+=== 114: COPD: Diagnosis and Classification ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=153
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 142 49. Stein BD, Bautista A, Schumock GT, et al. The validity of International Classification of Diseases, Ninth Revision, Clinical Modification diagnosis codes for identifying patients hospitalized for COPD exacerbations. Chest 2012; 141(1): 87-93 https://pubmed.ncbi.nlm.nih.gov/21757568. 50. Jensen HH
+  chunk 1: book=Miller/Baby Miller page=784
+    text: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Obstructive Sleep Apnea and Chronic Obstructive Pulmonary Disease (also see Chapters 48 and 27) Preventing postoperative pulmonary complications (PPCs) is an important goal in the perioperative period. PPCs are dangerous to the patient and costly to the health system, adding an average of $25,000+ per epi
+  chunk 2: book=StatPearls: StatPearls   Asthma  Diagnosis page=1
+    text: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK559281 URL: https://www.ncbi.nlm.nih.gov/books/NBK559281/ Topic: Asthma: Diagnosis Article Title: Asthma: Diagnosis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [
+  chunk 3: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=167
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 156 405. Kishi K, Gurney JW, Schroeder DR, Scanlon PD, Swensen SJ, Jett JR. The correlation of emphysema or airway obstruction with the risk of lung cancer: a matched case-controlled study. Eur Respir J 2002; 19(6): 1093-8 https://pubmed.ncbi.nlm.nih.gov/12108862. 406. Wilson DO, Weissfeld JL, Balkan A, 
+  chunk 4: book=StatPearls: StatPearls   Angioedema  classification & management page=8
+    text: Section: Increases exceeding 10% are considered significant. [28]. see StatPearls' companion resource, " Nail Clubbing ," for further information. Intermittent symptoms consistent with asthma, in addition to wheezing observed during physical examination, strongly indicate asthma. Confirming the diagnosis involves the exclusion of alternative diagnoses and a demonstration of variable airflow limita
+  chunk 5: book=Morgan & Mikhail page=869
+    text: Section: COPD is the most common pulmonary disorder encountered in adult anesthetic. COPD is the most common pulmonary disorder encountered in adult anesthetic practice, and its prevalence increases with age. The disorder is strongly associated with cigarette smoking and has a male predominance. COPD is currently defined as a disease state characterized by airflow limitation that is not fully reve
+  chunk 6: book=StatPearls: StatPearls   Asthma  Chronic Management page=3
+    text: Section: Wheezing with exercise. room cannot directly report these symptoms. Instead, clinicians must monitor for a sudden acute rise in peak inspiratory pressures, changes in end-tidal carbon dioxide, and decreasing oxygen saturation. In addition, clinicians must distinguish between bronchospasm and anaphylaxis, which presents with additional symptoms such as hypotension, flushing, rash, or angio
+  chunk 7: book=Morgan & Mikhail page=886
+    text: Section: Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with. Cox J, Jablons D. Operative and perioperative pulmonary emboli. Thorac Surg Clin. 2015;15:289. Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with asthma or chronic obstructive pulmonary disease. Hosp Med Clin. 2017;6:437. Gallart L, Canet J. Post-operative pulmonary complications: under
+  chunk 8: book=Morgan & Mikhail page=2166
+    text: Section: TABLE 58–1 Classification of hypoxia.1. increased concentrations of oxygen is relatively free of complications. TABLE 58–1 Classification of hypoxia.1 Supplemental oxygen is indicated for adults, children, and infants (older than 1 month) when PaO2 is less than 60 mm Hg (8 kPa) or SaO2 or SpO2 is less than 90% while breathing room air. In neonates, therapy is recommended if PaO2 is less t
+  chunk 9: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=165
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 154 358. Schermer TR, Robberts B, Crockett AJ, et al. Should the diagnosis of COPD be based on a single spirometry test? NPJ Prim Care Respir Med 2016; 26: 16059 https://pubmed.ncbi.nlm.nih.gov/27684728. 359. Albert P, Agusti A, Edwards L, et al. Bronchodilator responsiveness as a phenotypic characterist
+
+=== 115: COPD: Stable Management ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=886
+    text: Section: Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with. Cox J, Jablons D. Operative and perioperative pulmonary emboli. Thorac Surg Clin. 2015;15:289. Duong TN, Zeki AA, Louie S. Medical management of hospitalized patients with asthma or chronic obstructive pulmonary disease. Hosp Med Clin. 2017;6:437. Gallart L, Canet J. Post-operative pulmonary complications: under
+  chunk 1: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=198
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 187 1142. Beghe B, Verduri A, Roca M, Fabbri LM. Exacerbation of respiratory symptoms in COPD patients may not be exacerbations of COPD. Eur Respir J 2013; 41(4): 993-5 https://pubmed.ncbi.nlm.nih.gov/23543648. 1143. Stolz D, Breidthardt T, Christ-Crain M, et al. Use of B-type natriuretic peptide in the 
+  chunk 2: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=165
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 154 358. Schermer TR, Robberts B, Crockett AJ, et al. Should the diagnosis of COPD be based on a single spirometry test? NPJ Prim Care Respir Med 2016; 26: 16059 https://pubmed.ncbi.nlm.nih.gov/27684728. 359. Albert P, Agusti A, Edwards L, et al. Bronchodilator responsiveness as a phenotypic characterist
+  chunk 3: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=163
+    text: Section: Dharmage S, Agusti A. Personal communication. 2022:. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 152 306. Dharmage S, Agusti A. Personal communication. 2022: 307. Stolz D, Mkorombindo T, Schumann DM, et al. Towards the elimination of chronic obstructive pulmonary disease: a Lancet Commission. Lancet 2022; 400(10356): 921-72 https://pubmed
+  chunk 4: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=177
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 166 643. Wilson ME, Dobler CC, Morrow AS, et al. Association of Home Noninvasive Positive Pressure Ventilation With Clinical Outcomes in Chronic Obstructive Pulmonary Disease: A Systematic Review and Meta-analysis. JAMA 2020; 323(5): 455- 65 https://pubmed.ncbi.nlm.nih.gov/32016309. 644. Murphy PB, Rehal
+  chunk 5: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=164
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 153 332. Attaway AH, Welch N, Hatipoglu U, Zein JG, Dasarathy S. Muscle loss contributes to higher morbidity and mortality in COPD: An analysis of national trends. Respirology 2021; 26(1): 62-71 https://pubmed.ncbi.nlm.nih.gov/32542761. 333. Rutten EP, Calverley PM, Casaburi R, et al. Changes in body com
+  chunk 6: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=183
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 172 788. McKay SE, Howie CA, Thomson AH, Whiting B, Addis GJ. Value of theophylline treatment in patients handicapped by chronic obstructive lung disease. Thorax 1993; 48(3): 227-32 https://pubmed.ncbi.nlm.nih.gov/8497820. 789. Moxham J. Aminophylline and the respiratory muscles: an alternative view. Cli
+  chunk 7: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=202
+    text: Section: Pracice Guidelines. Chest 2012; 141((2 Suppl)): e195S-226S. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 191 1234. Kahn S, Lim W, Dunn A, et al. American College of Chest Physicians. Prevention of VTE in nonsurgical patients: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Pr
+  chunk 8: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=178
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 167 666. Marciniuk DD, Goodridge D, Hernandez P, et al. Managing dyspnea in patients with advanced chronic obstructive pulmonary disease: a Canadian Thoracic Society clinical practice guideline. Can Respir J 2011; 18(2): 69-78 https://pubmed.ncbi.nlm.nih.gov/21499589. 667. Vieira PJ, Chiappa AM, Cipriano
+  chunk 9: book=Society Guideline: Guideline   GOLD 2024 COPD Full Report page=189
+    text: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 178 929. McElvaney NG, Burdon J, Holmes M, et al. Long-term efficacy and safety of alpha1 proteinase inhibitor treatment for emphysema caused by severe alpha1 antitrypsin deficiency: an open-label extension trial (RAPID-OLE). Lancet Respir Med 2017; 5(1): 51-60 https://pubmed.ncbi.nlm.nih.gov/27916480. 9
+
+=== 116: Cardiac Imaging Interpretation ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=645
+    text: Section: B. Exercise Electrocardiography. with intraoperative and postoperative ischemia. Holter monitoring showing no ischemic episodes has an excellent negative predictive value for postoperative cardiac complications. B. Exercise Electrocardiography The usefulness of this test without associated cardiac imaging is limited in patients with baseline ST-segment abnormalities and those who are unab
+  chunk 1: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation page=23
+    text: e23 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation and right ventricular (RV) pressure. Left ventricular ejection fraction (LVEF) impacts decisions for anti- arrhythmic drug therapy and whether to prioritize other rhythm control therapies, including catheter ablation. Additionally, strain imaging may suggest an underlying infiltrative cardiomyopathy, such as amyloidosis.1 E
+  chunk 2: book=MGH Housestaff Manual page=49
+    text: Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interpretation of Chest Imaging Sanjeethan Baksh C H E S T X-R A Y Systematic approach to CXR (ABCDEF approach): 1. (A)ssess technical quality and (A)irways: Rotation: ensure spinous process bisect btwn medial end of clavicles Lung volumes: adequate inspiratory effort is 9-10 posterior ribs Penetration: good when vertebral bodies visibl
+  chunk 3: book=MGH Housestaff Manual page=3
+    text: Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphyla
+  chunk 4: book=Miller/Baby Miller page=409
+    text: Section: Chapter 21 Point-of-Care Ultrasound. Chapter 21 Point-of-Care Ultrasound The ultrasound machine must be set up properly before any examination. Once the appropriate transducer is selected, the user should then select the appropriate “examination type” or “examination mode.” The ultra- sound machine will send out and interpret sound waves differently in different examination modes. For ins
+  chunk 5: book=Miller/Baby Miller page=410
+    text: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT Fig. 21.1 Transducer movements. Four basic probe movements are used in POCUS image acquisition. These movements should be performed sequentially rather than simultaneously to optimize images with a systematic approach. (A) Sliding is relocation of the foot
+  chunk 6: book=Miller/Baby Miller page=912
+    text: Section: Anesthetic breathing circuits, 238. Anesthetic breathing circuits, 238 circle breathing systems, 239, 239f circle system function, 242 Mapleson breathing systems, 243, Anesthetic breathing circuits, anesthesia workstation, 238 Anesthetic circuit, inhaled anesthetics, Anesthetic drugs choices, trauma bay and, 771 increasing age and, 48 interactions, 42, 43f–45f intraocular pressure and, 54
+  chunk 7: book=Miller/Baby Miller page=411
+    text: Section: Chapter 21 Point-of-Care Ultrasound. Chapter 21 Point-of-Care Ultrasound (leading to a “D-shaped” LV), this may indicate RV pres- sure or volume overload (Fig. 21.5). In this case the oper- ator should attempt to obtain views of the RV in other views to confirm the finding or consider follow-up with a formal transthoracic echocardiogram or CT angiogram if there is concern for pulmonary em
+  chunk 8: book=Curated Units page=0
+    text: Peak E velocity (early diastolic filling rate) and peak A velocity (atrial contraction contribution). E/A ratio: normal 1-2, E/A >2 = restrictive filling (rapid passive filling, stiff ventricle). E/A <1 (E/A ratio <1) = impaired relaxation (slow early filling, dependent on atrial kick). Reversal of E/A to <1 = diastolic dysfunction pattern consistent with impaired relaxation. E/A ratio most impact
+  chunk 9: book=StatPearls page=6
+    text: replace PSG for definitive diagnosis. When an underlying cardiopulmonary disorder is suspected, chest radiography and electrocardiography are recommended. A cardiac evaluation, including echocardiography, is particularly important before surgical intervention in children with severe OSA. Emerging evidence indicates that specific inflammatory biomarkers, including kallikrein-1, uromodulin, urocorti
+
+=== 117: Cardiac Rehabilitation and Secondary Prevention ===
+domain: Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=1
+    text: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK537196 URL: https://www.ncbi.nlm.nih.gov/books/NBK537196/ Topic: Cardiac Rehabilitation and Secondary Prevention Article Title: Cardiac Rehabilitation License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls 
+  chunk 1: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=2
+    text: ers to deliver effective cardiac rehabilitation programs to all eligible individuals and improve cardiovascular health outcomes. Access free multiple choice questions on this topic. Identify patient populations that are eligible for and may benefit from cardiac rehabilitation. Select the most appropriate cardiac rehabilitation program and delivery model based on participants' needs and clinical co
+  chunk 2: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=6
+    text: Section: Enhancing Healthcare Team Outcomes. research on cardiac rehabilitation for patients with congenital heart disease remains limited, highlighting the need for randomized clinical trials in adult and pediatric populations to establish specific guidelines based on current evidence. [25] Enhancing Healthcare Team Outcomes Despite strong evidence supporting the benefits of cardiac rehabilitatio
+  chunk 3: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=5
+    text: Section: Clinical Significance. pted, allowing patients to begin cardiovascular rehabilitation before the procedure. However, some studies suggest better tolerance of the postsurgical pathway. Beyond exercise and physical activity, all phases of cardiac rehabilitation focus on managing medical conditions and cardiovascular risk factors, optimizing nutrition, promoting smoking cessation, and reduci
+  chunk 4: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=3
+    text: Section: Anatomy and Physiology. Anatomy and Physiology The heart consists of 4 chambers—2 atria and 2 ventricles—enclosed within the pericardial sac. This sac comprises multiple layers—the fibrous, parietal, and visceral (epicardium) pericardium. Between the parietal and visceral layers, up to 50 mL of fluid provides lubrication. The heart consists of 3 layers—the epicardium, myocardium, and endo
+  chunk 5: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=4
+    text: Section: Clinicians, particularly specialists such as cardiologists, surgeons, and physiatrists. e participation in exercise [14] The equipment required for cardiac rehabilitation varies by phase. In the early postdischarge phase (approximately 1 week), patients may attend a facility with exercise bicycles, treadmills, strength equipment, and telemetry for monitoring, typically lasting 2 weeks to 
+  chunk 6: book=StatPearls: StatPearls   Acute Spinal Cord Injury & Syndromes page=13
+    text: Section: Infections such as urinary tract infections, pneumonia, and bacteremia. ed or corrected Respiratory failure: High cervical-level injury involving the phrenic nerve (C3 to C5) may lead to prolonged mechanical ventilation Bradycardia: This can lead to cardiac arrest, for which patients may require atropine or permanent electrical pacing Infections such as urinary tract infections, pneumonia
+  chunk 7: book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure page=8
+    text: Section: 1.5. Class of Recommendation and Level of Evidence. 1.5. Class of Recommendation and Level of Evidence indicates the strength of recommendation, encompassing the esti- mated magnitude and certainty of beneﬁt in proportion to risk. The Level of Evidence (LOE) rates the quality of scientiﬁc evidence supporting the intervention on the basis of the type, quantity, and consistency of data from
+  chunk 8: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=1
+    text: Source: StatPearls NCBI Bookshelf NBK ID: NBK537196 URL: https://www.ncbi.nlm.nih.gov/books/NBK537196/ Topic: Cardiac Rehabilitation and Secondary Prevention Article Title: Cardiac Rehabilitation License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  chunk 9: book=StatPearls: StatPearls   Cardiac Rehabilitation and Secondary Prevention page=2
+    text: [1] [2] Cardiac rehabilitation is a complex, interprofessional intervention recommended for individuals with chronic cardiac conditions, such as ischemic heart disease and congestive heart failure, and for those recovering from a recent myocardial infarction and procedures
+
+=== 118: Coagulation Abnormalities in Liver Disease ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=1171
+    text: Section: TABLE 33–5 Coagulation test abnormalities.1. than 1.5. This INR reflects liver dysfunction but not the degree of coagulopathy. If protein C, protein S, and antithrombin 3 are more depressed than the coagulation factors, the patient may have normal clotting or even be hypercoagulable. The INR was designed to reflect warfarin activity, not liver function. This is of great clinical importanc
+  chunk 1: book=Morgan & Mikhail page=1185
+    text: Section: TABLE 34–1 Coagulation test abnormalities.1. dysfunction, the anticoagulant factors (protein C, antithrombin, and tissue factor pathway inhibitor) are also reduced and may balance out any effect of a prolonged PT. This may be confirmed by assessing thrombin generation in the presence of endothelial-produced thrombomodulin. Adequate thrombin production requires an adequate number of functi
+  chunk 2: book=Morgan & Mikhail page=1178
+    text: Section: How are coagulation tests helpful in evaluating inadequate hemostasis?. in patients with severe liver disease and during the anhepatic phase of liver transplantation. The disorder may occasionally be encountered in patients with carcinoma of the prostate. Diagnosis is often difficult but is suggested by a bleeding diathesis with a low fibrinogen level but relatively normal coagulation tes
+  chunk 3: book=Morgan & Mikhail page=1168
+    text: Section: LIVER TESTS. FIGURE 33–6 The biliary system. (Modified with permission from Guyton AC. Textbook of Medical Physiology. 7th ed. Philadelphia, PA: WB Saunders; 1986.) Bilirubin is primarily the end product of hemoglobin metabolism, and it is formed from the degradation of the heme ring in Kupffer cells. Bilirubin is then released into the blood, where it readily binds to albumin. Hepatic up
+  chunk 4: book=Morgan & Mikhail page=1213
+    text: Section: What problems are encountered postoperatively?. phase. Fibrinolysis can be detected by point-of-care viscoelastic coagulation analysis. ε-Aminocaproic acid or tranexamic acid, which inhibit the formation of plasmin, may be indicated in those instances but should not be used prophylactically. What problems are encountered postoperatively? Patients often have an uncomplicated postoperative 
+  chunk 5: book=Morgan & Mikhail page=1206
+    text: Section: The immediate availability of intraoperative continuous venovenous hemodialysis. The immediate availability of intraoperative continuous venovenous hemodialysis (CVVHD) may be very helpful for volume and electrolyte management in patients with marginal or no kidney function. In patients with significant electrolyte abnormalities, serum sodium and potassium can be closely managed by adjust
+  chunk 6: book=Morgan & Mikhail page=1185
+    text: Thromboelastography (TEG), rotational thromboelastometry (ROTEM), and Sonoclot viscoelastic coagulation testing technologies are the optimal methods of demonstrating the global state of the coagulation system at a specific moment in time in any patient with liver disease
+  chunk 7: book=Morgan & Mikhail page=1171
+    text: Because only 20% to 30% of normal factor activity is required for normal coagulation, prolongation of the PT usually reflects either severe liver disease or vitamin K deficiency
+  chunk 8: book=Morgan & Mikhail page=1185
+    text: In fact, more recently it has been shown that an increased von Willebrand factor (vWF) in liver disease may result in activated platelets allowing normal or increased coagulation despite a much lower platelet count
+  chunk 9: book=Morgan & Mikhail page=1189
+    text: Section: If a patient with acute hepatitis must undergo an emergency operation, the. (AST), except in alcoholic hepatitis, where the reverse occurs. Bilirubin and alkaline phosphatase are usually only moderately elevated, except with the cholestatic variant of hepatitis. The PT is the best indicator of hepatic synthetic function. Persistent prolongation of the PT (INR ≥1.5) following administratio
+
+=== 119: Colonic Angiodysplasia & Vascular Lesions ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=MGH Housestaff Manual page=70
+    text: Section: Upper GI Bleeding. Upper GI Bleeding May Saito A C U T E U P P E R GI B L E E D (AJG 2021;116:5; Annals 2019;171:805; NEJM 2016;374:2367) Definition: bleeding proximal to ligament of Treitz S/Sx: hematemesis, melena (on exam: +LR 25; JAMA 2012;307:1072), hematochezia if brisk, BUN/Cr >30 (+LR 7.5; JAMA 2012;307:1072), especially >35 (100% Sp; J Clin Gastro 1990;12:500). Clots in stool mak
+  chunk 1: book=Morgan & Mikhail page=687
+    text: Section: Large increases in pulmonary blood flow produce pulmonary vascular congestion. bidirectional shunt of equal opposing magnitudes. Large increases in pulmonary blood flow produce pulmonary vascular congestion and increase extravascular lung water. The latter interferes with gas exchange, decreases lung compliance, and increases the work of breathing. Left atrial distention also compresses t
+  chunk 2: book=StatPearls: StatPearls   Large Bowel Obstruction (LBO) page=2
+    text: upon presentation. Depending on the etiology of the obstruction, an individual may show symptoms before the acute presentation. Recognizing the signs and symptoms of large bowel obstruction is critical to provide prompt resuscitation and diagnosis to limit morbidity and improve outcomes. [1] [2] [3] In some cases, an obstruction is the first clinical sign of colorectal carcinoma, particularly left
+  chunk 3: book=Morgan & Mikhail page=1423
+    text: Section: HEART DISEASE. treat intraoperative hypertension. Because magnesium potentiates muscle relaxants, doses of nondepolarizing muscle relaxants should be reduced in patients receiving magnesium therapy and should be guided by a peripheral nerve stimulator. The patient with suspected magnesium toxicity, manifested by hyporeflexia, excessive sedation, blurred vision, respiratory compromise, and
+  chunk 4: book=Curated Units page=0
+    text: Angiodysplasia: small submucosal vascular malformations, right colon predominance. Risk: advanced age, aortic stenosis, renal failure (uremic toxins damage vessels). Presents with chronic GI bleeding (may cause iron-deficiency anemia, obscure GI bleed if small). Diagnosis: colonoscopy (appears as spider-web vessels, cherry-red lesions) or capsule endoscopy. Endoscopic hemostasis: argon plasma coag
+  chunk 5: book=Morgan & Mikhail page=980
+    text: Section: Specific lesions include skull fractures, subdural and epidural hematomas, brain. well with the severity of injury and outcome. A GCS score of 8 or less on admission is associated with approximately 35% mortality. Evidence of greater than a 5-mm midline shift (on imaging) and ventricular compression on imaging are associated with substantially worse outcomes. TABLE 27–2 Glasgow coma scale
+  chunk 6: book=Morgan & Mikhail page=2157
+    text: Section: Both interventional endoscopy and interventional arteriography can be used. may be due to stress, alcohol, aspirin, nonsteroidal anti-inflammatory drugs, and corticosteroids. Less common causes of upper gastrointestinal bleeding include angiodysplasia, erosive esophagitis, Mallory–Weiss tear, gastric tumor, and aortoenteric fistula. Both interventional endoscopy and interventional arterio
+  chunk 7: book=Morgan & Mikhail page=761
+    text: Section: Induction of Anesthesia. Induction of Anesthesia A. Hemodynamic Anesthetic Goals 1. Obstructive lesions— Anesthetic management should strive to avoid hypovolemia, bradycardia, tachycardia, and myocardial depression. The optimal heart rate should be selected according to age; slow rates decrease cardiac output, whereas fast rates may impair ventricular filling. Mild cardiac depression may 
+  chunk 8: book=Morgan & Mikhail page=967
+    text: Section: Anesthetic techniques must be modified in the pre​sence of intracranial hypertension and. Anesthetic techniques must be modified in the pre​sence of intracranial hypertension and marginal cerebral perfusion. In addition, many neuro​surgical procedures require patient positions (eg, sitting, prone) that further complicate management. This chapter applies the principles developed in Chapter
+  chunk 9: book=Morgan & Mikhail page=1801
+    text: Section: Spinal Cord Stimulation. competes with that from the smaller pain fibers. An alternative theory proposes that at high rates of stimulation, TENS causes conduction block in small afferent pain fibers. With conventional TENS, electrodes are applied to the same dermatome as the pain and are stimulated periodically by direct current from a generator (usually for 30 min several times a day). A
+
+=== 120: Complicated Parapneumonic Effusion and Empyema ===
+domain: Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)
+discipline: medicine
+category: topic
+  chunk 0: book=MGH Housestaff Manual page=116
+    text: Section: Infectious Disease. Infectious Disease Community Acquired Pneumonia Cassandra Fiorino & Katherine Rich C O M M U N I T Y A C Q U I R E D P N E U M O N I A (CAP) (AJRCCM 2019;200:45) Definition: PNA acquired in the community, including patients from nursing homes, dialysis, or with outpatient clinic exposure Diagnosis: new infiltrate on chest imaging AND s/sx (e.g. fever, cough, leukocytos
+  chunk 1: book=MGH Housestaff Manual page=261
+    text: Section: Max Quinn. Max Quinn I N D I C A T I O N S Diagnostic: to establish etiology of ≥1cm pleural effusion visualized by US (not necessary for small effusions w/ probable alternative dx) pleural effusions are visible on CXR when >200mL of fluid is present (i.e. lower sensitivity) Therapeutic: large effusions  resp compromise or sx (e.g., dyspnea), hemothorax, empyema, complicated parapneumoni
+  chunk 2: book=Morgan & Mikhail page=918
+    text: Section: Bronchopleural Fistula. diseased lung should be frequently suctioned during the procedure to decrease the likelihood of contaminating the healthy lung. Bronchopleural Fistula Bronchopleural fistulas occur following lung resection (usually pneumonectomy), rupture of a pulmonary abscess into a pleural cavity, pulmonary barotrauma, or spontaneous rupture of bullae. The majority of patients a
+  chunk 3: book=MGH Housestaff Manual page=263
+    text: Section: Fluid Analysis. Fluid Analysis Maggie Selesky L U M B A R P U N C T U R E I N T E R P R E T A T I O N (cm H2O) Predominant cell Protein (mg/dL) Further CSF Testing 9–18 0–5 50–75 15–40 Bacterial meningitis 20–50 <100 to >10k >80% PMN <40 100–1000 Cx, Gram stain Viral meningitis (Enteroviruses, HSV, VZV, arboviruses) 9–20 50–1000 Lymph; early echovirus/HSV can have 80% PMN >45; low in LCM 
+  chunk 4: book=Curated Units page=0
+    text: Parapneumonic effusion = pleural fluid with bacterial CAP but sterile (not empyema). Incidence 20-40% of hospitalized CAP. Fluid characteristics: pH 7.0-7.20, glucose >60, LDH variable, negative cultures. Uncomplicated effusions: usually resolve with antibiotic therapy, no drainage needed. Complicated: pH <7.0, glucose <60, high LDH (risk of progression to empyema); consider drainage if recurrent 
+  chunk 5: book=MGH Housestaff Manual page=261
+    text: lower sensitivity) Therapeutic: large effusions  resp compromise or sx (e.g., dyspnea), hemothorax, empyema, complicated parapneumonic effusion Relative Contraindications: no absolute (Chest 2013;144:456) Consider reversing coagulopathy (INR >1.5, recent LMWH) or thrombocytopenia (plt <50k), but no
+  chunk 6: book=Miller/Baby Miller page=417
+    text: Section: Chapter 21 Point-of-Care Ultrasound. Chapter 21 Point-of-Care Ultrasound semi recumbent patient the operator should place the probe in the midaxillary line with the indicator notch pointed toward the patient’s head. The operator may need to move the probe to a more posterior position (where it is wedged between the patient and the bed) to visualize smaller pleural effusions. In both posit
+  chunk 7: book=Stanford CA-1 page=32
+    text: Section: Strategies for Opioid Use. Strategies for Opioid Use • For a standard GETA induction, use fentanyl to blunt the stimulation and subsequent hemodynamic effects caused by DL and intubation • Fyi: esmolol is a reasonable alternative • For brief, intense stimulation (e.g. retrobulbar block, Mayfield head pins, rigid bronchoscopy), consider a bolus of short-acting opioid like alfentanil or rem
+  chunk 8: book=Intern Notes / Survival Guide page=83
+    text: Section: Pancreatic Fistula, SLE . • 1. Effusion Protein / Serum Protein < 0.5 • 2. Effusion LDH / Serum LDH < 0.6 • 3. Effusion LDH <200 • Etiology: • Transudate: CHF, Kidney Dz, Cirrhosis • Exudate: Parapneumonic (>1,000 WBC), Empyema (>100,000 WBC) + positive gram stain of pleural fluid, TB, PE, CA, RA, Esophageal rupture, Pancreatic Fistula, SLE  • CURB 65: 30-day mortality, outpatient vs in
+  chunk 9: book=StatPearls: StatPearls   Chronic Pancreatitis page=10
+    text: chronic pancreatitis. Many individuals with chronic pancreatitis experience a diminished quality of life due to the high rates of complications associated with the condition. A longitudinal study conducted between 1997 and 2019, which followed 161 patients who underwent operative management for chronic pain or local complications, found that long-term survival rates were generally favorable. [39] 
+
+=== 121: Crohn's Disease: Diagnosis & Classification ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=4
+    text: Section: An endoscopy (colonoscopy) must be done at some point which will reveal:. produce clinical findings indistinguishable from idiopathic ulcerative colitis, microbiologic studies for bacterial infection and parasitic infestation should be included in the initial evaluation. [10] [11] Radiologic examinations are not critical for the diagnosis but may be useful. Patients with longstanding ulce
+  chunk 1: book=Miller/Baby Miller page=554
+    text: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS postoperatively. Other common premedications include benzodiazepines (anxiolysis), antihistamines, and ondan- setron (antiserotonin). Intraoperative management aims to minimize anxiety, noxious stimuli, hypercapnia, and hypothermia, all of which may stimulate vasoactive substance release. Hypo- tens
+  chunk 2: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=2
+    text: istory of the disease (8% to 14% of patients). A first-degree relative of a patient with ulcerative colitis has a four times higher risk of developing the disease. Additionally, ulcerative colitis has a higher incidence in Jewish populations than other ethnicities. Although there is little evidence to support this, it has been postulated that alterations in the composition of the gut microbiota an
+  chunk 3: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=4
+    text: In addition to P-ANCA, anti-saccharomyces cerevisiae antibodies (ASCA) are found in both Crohn disease and ulcerative colitis but are more prevalent in Crohn disease; therefore, testing for both P-ANCA and ASCA has some utility in distinguishing
+  chunk 4: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=5
+    text: uppository or enema, is usually appropriate for isolated distal disease (proctitis); however, a rectal application is usually used in combination with systemic therapy to help target the distal colon and, therefore, decrease tenesmus. [6] [12] [13] First-line treatment is sulfasalazine and 5-aminosalicylates, given orally or rectally, which have a remission rate of about 50%. Glucocorticoids, oral
+  chunk 5: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=6
+    text: Section: Mild: Fewer than four rectal bleeding episodes per day. The severity of ulcerative colitis is graded from mild to severe depending upon rectal bleeding: Mild: Fewer than four rectal bleeding episodes per day Moderate: More than four rectal bleeding episodes per day Severe: More than four rectal bleeding episodes per day, and the patient has systemic features of an illness combined with hy
+  chunk 6: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=2
+    text: Compared to Crohn disease, ulcerative colitis has a greater prevalence in adults
+  chunk 7: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=2
+    text: When considering the pediatric population, however, ulcerative colitis is less prevalent than Crohn disease
+  chunk 8: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=2
+    text: Appendectomy before the age of twenty is associated with a decreased incidence of ulcerative colitis, whereas the opposite is true for Crohn disease
+  chunk 9: book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Classification page=4
+    text: P-ANCA is also found in a small number of patients with Crohn disease
+
+=== 122: Dementia: recognition, evaluation & inpatient management ===
+domain: General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls page=1
+    text: Source: StatPearls NCBI Bookshelf NBK ID: NBK570594 URL: https://www.ncbi.nlm.nih.gov/books/NBK570594/ Topic: Dementia: recognition, evaluation & inpatient management Article Title: Differentiating Delirium Versus Dementia in Older Adults License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  chunk 1: book=Morgan & Mikhail page=1705
+    text: cases, after a diagnosis is made, conservative measures are prescribed, and the patient responds successfully. In others, referral to a pain medicine specialist for evaluation and treatment improves outcomes and conserves health care resources, and in some, surgery will be indicated. In still other situations, pain persists, and patients develop chronic pain, the cause of which remains obscure aft
+  chunk 2: book=Miller/Baby Miller page=736
+    text: Section: Section V THE RECOVERY PERIOD. Section V THE RECOVERY PERIOD agitation in children is between 2 and 4 years. Unlike delirium, emergence agitation typically resolves quickly and is followed by uneventful recovery. In contrast to children, the incidence of emergence agitation in adults is estimated to only be between 3% and 5%. In children emergence agitation is most frequently associated w
+  chunk 3: book=Miller/Baby Miller page=241
+    text: Section: Chapter 13 Preoperative Evaluation. Chapter 13 Preoperative Evaluation better tolerance of a stressful event. Prehabilitation pro- grams typically focus on several goals: (1) improved physical fitness, (2) dietary interventions to counteract the catabolic state and support anabolism with exercise, (3) antistress interventions to foster resilience and self- efficacy, and (4) cessation of a
+  chunk 4: book=StatPearls: StatPearls   Spinal Cord Compression  Non Traumatic page=11
+    text: Section: Deterrence and Patient Education. on of untreated spinal cord compression from any source is an irreversible neurologic deficit, including paralysis, gait impairment, sensory loss, urinary and fecal incontinence, or retention. Surgical complications following spinal cord decompression are variable but include iatrogenic spinal cord or nerve root injury, durotomy with subsequent cerebrospi
+  chunk 5: book=Miller/Baby Miller page=219
+    text: Section: High-quality anesthesia care begins with the preoperative. High-quality anesthesia care begins with the preoperative evaluation. The goals of preoperative evaluation include understanding the proposed surgery, assessing the risk of coexisting medical conditions, deciding whether additional testing is needed to prepare the patient for the procedure, discussing options for anesthesia care, 
+  chunk 6: book=StatPearls: StatPearls   Acute Pancreatitis page=19
+    text: Section: Pearls and Other Issues. tions early. Counseling should be tailored to the specific etiology and individual risk factors. Patients with alcohol-related pancreatitis should abstain from alcohol, with referrals to addiction medicine or behavioral health services offered when appropriate. Smoking cessation should also be addressed, as tobacco worsens pancreatic injury. Nutrition counseling i
+  chunk 7: book=StatPearls: StatPearls   Approach to Anaphylaxis page=5
+    text: ant reduction in visual input to the brain. Diagnosis is clinical and rests on 3 key elements: the presence of complex visual hallucinations, documented visual impairment, and the absence of psychiatric or cognitive disease. A detailed and empathetic history is essential, as patients may be reluctant to disclose hallucinations. Ophthalmologic evaluation helps identify the underlying cause of visio
+  chunk 8: book=Stanford CA-1 page=88
+    text: Section: Ordering Extra Equipment. Ordering Extra Equipment • Pre-op navigator → Pre-op eval → Equipment • Equipment requests placed by 10 pm for first cases or 90 minutes ahead of time for subsequent cases will be seen by anesthesia techs and equipment will be ready in the OR for your AM setup Device Management • Patients with PPMs and AICDs present unique management challenges • Important questi
+  chunk 9: book=Miller/Baby Miller page=896
+    text: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE sleep disordered breathing. Can Respir J. 2011;18(1):25–47. 37. Chung F, Liao P, Yegneswaran B, Shapiro CM, Kang W. Postoperative changes in sleep-disordered breathing and sleep architecture in patients with obstructive sleep apnea. Anesthesiology. 2014;120(2):287–298. 38. Chung F, Liao P, Elsaid H, Shapi
+
+=== 123: Diabetic Kidney Disease ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=1107
+    text: Section: The course of intrinsic acute kidney failure varies widely, but oliguria typically. The course of intrinsic acute kidney failure varies widely, but oliguria typically lasts for 2 weeks and is followed by a diuretic phase marked by a progressive increase in urinary output. This diuretic phase often results in very large urinary outputs and is usually absent in nonoliguric kidney failure. K
+  chunk 1: book=Morgan & Mikhail page=1107
+    text: Chronic Kidney Disease The most common causes of chronic kidney disease (CKD) are hypertensive nephrosclerosis, diabetic nephropathy, chronic glomerulonephritis, and polycystic kidney disease
+  chunk 2: book=Morgan & Mikhail page=2250
+    text: clinical pharmacology of, 147f, 155t, 159–161 contraindications, 161 description of, 599 drug interactions, 161 effects on organ systems cardiovascular, 160 cerebral, 160 hepatic, 160 neuromuscular, 160 renal, 160 respiratory, 160 electroencephalographic effects of, 599 epinephrine and, 161 history of, 3 partition coefficient of, 145t pediatric uses of, 910t physical properties of, 159 toxicity of
+  chunk 3: book=Morgan & Mikhail page=1221
+    text: Section: Lack of sweating. Lack of sweating 1Normal heart rate variability during voluntary deep breathing (6 breaths/min) should be >10 beats/min. Diabetic kidney dysfunction is manifested first by proteinuria and later by elevated serum creatinine. By these criteria, most patients with type 1 diabetes have evidence of kidney disease by 30 years of age. Chronic hyperglycemia leads to glycosylatio
+  chunk 4: book=Morgan & Mikhail page=1928
+    text: Section: B. Increased Endogenous Nonvolatile Acid Production. these acids. B. Increased Endogenous Nonvolatile Acid Production Severe tissue hypoxia following hypoxemia, hypoperfusion (ischemia), or an inability to utilize oxygen (cyanide poisoning) can result in lactic acidosis. Lactic acid is the end product of the anaerobic metabolism of glucose (glycolysis) and can rapidly accumulate under the
+  chunk 5: book=Morgan & Mikhail page=1895
+    text: Section: Hyperphosphatemia is generally treated with phosphate-binding antacids such as. Hyperphosphatemia is generally treated with phosphate-binding antacids such as aluminum hydroxide or aluminum carbonate. Anesthetic Considerations Although specific interactions between hyperphosphatemia and anesthesia have not been described, kidney function should be assessed, and hypocalcemia should be excl
+  chunk 6: book=Morgan & Mikhail page=1882
+    text: Section: Potassium chloride is the preferred potassium salt when a metabolic alkalosis is. correct the entire potassium deficit. Because of potassium’s irritative effect on peripheral veins, peripheral intravenous replacement should not exceed 8 mEq/h. More rapid intravenous potassium replacement (10–20 mEq/h) requires central venous administration and close ECG monitoring. Intravenous replacement
+  chunk 7: book=Morgan & Mikhail page=1223
+    text: Section: When administering an intravenous insulin infusion to surgical patients, adding some. A reasonable target for the intraoperative maintenance of blood glucose is less than 180 mg/dL and greater than 85 mg/dL. When administering an intravenous insulin infusion to surgical patients, adding some (eg, 20 mEq) KCl to each liter of maintenance fluid may be useful as insulin causes an intracellul
+  chunk 8: book=Morgan & Mikhail page=315
+    text: patients with reduced creatinine clearance and in others who are dependent upon renal prostaglandin release for vasodilation to avoid hemodynamically mediated acute kidney injury (eg, patients with hypovolemia, heart failure, cirrhosis, diabetic nephropathy, or hypercalcemia)
+  chunk 9: book=Morgan & Mikhail page=1221
+    text: Diabetic kidney dysfunction is manifested first by proteinuria and later by elevated serum creatinine
+
+=== 124: Diabetic Macrovascular Complications & CV Risk Reduction ===
+domain: Internal medicine: endocrinology (diabetes & inpatient glucose, DKA & HHS, thyroid disorders & storm, adrenal insufficiency, calcium disorders, pituitary)
+discipline: medicine
+category: topic
+  chunk 0: book=Miller/Baby Miller page=605
+    text: Section: Chapter 33 Obstetrics. Chapter 33 Obstetrics a nonpregnant patient because of decreased oxygen reserve (decreased FRC) and increased oxygen uptake (increased metabolic rate). For these reasons, the admin- istration of supplemental oxygen, or “preoxygenation,” before general anesthesia is critical for patient safety. The pregnant patient should breathe oxygen for 3 min- utes before any ant
+  chunk 1: book=Miller/Baby Miller page=674
+    text: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS is metabolized in the liver to norketamine, which is an active metabolite.24 Benzodiazepines (Also See Chapter 8) Benzodiazepines should be used with caution in the elderly because of their observed tendency to cause and/or worsen delirium. If administered, their doses should be significantly reduce
+  chunk 2: book=Miller/Baby Miller page=114
+    text: Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  chunk 3: book=Morgan & Mikhail page=466
+    text: Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  chunk 4: book=Morgan & Mikhail page=1490
+    text: Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  chunk 5: book=Morgan & Mikhail page=1826
+    text: Section: E. α2-Agonist Therapy. associated with decreased adrenergic stimulation. Intravenous esmolol reduces the requirement of volatile anesthetic agents and decreases minimum alveolar concentration values; it has also been shown to reduce postoperative pain intensity, opioid consumption, and PONV. A positive protein balance has been reported in critically ill patients when β-blockade is combine
+  chunk 6: book=Morgan & Mikhail page=352
+    text: Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  chunk 7: book=Stanford CA-1 page=23
+    text: Section: Alpha-2 agonists. Alpha-2 agonists Chronic meth use Local anesthestics ethanol ingestion Increasing age for patients >1 year of age pregnancy Severe anemia (Hb < 5) Inhibition of catecholamine reuptake (amphetamines, ephedrine, L- dopa, TCA) ethanol abuse First months of life for infants <6mo of age related to red hair More MAC Definitions MACAwake (a.k.a. MAC-Aware) – MAC necessary to pr
+  chunk 8: book=Morgan & Mikhail page=1211
+    text: Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in an
+  chunk 9: book=Morgan & Mikhail page=2098
+    text: Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+
+=== 125: Diabetic Microvascular Complications ===
+domain: Internal medicine: endocrinology (diabetes & inpatient glucose, DKA & HHS, thyroid disorders & storm, adrenal insufficiency, calcium disorders, pituitary)
+discipline: medicine
+category: topic
+  chunk 0: book=Society Guideline: Guideline   JNC7 2003 Hypertension Full Report page=52
+    text: Section: Diabetes and Hypertension. Diabetes and Hypertension The combined unadjusted prevalence of total dia- betes and impaired fasting glucose in those over age 20 is 14.4 percent and is the leading cause of blindness, ESRD, and nontraumatic amputa- tions.161–165 Type 2 diabetes comprises >90 per- cent of diabetes in the United States and is associ- ated with a 70–80 percent chance of premature
+  chunk 1: book=Society Guideline: Guideline   JNC7 2003 Hypertension Full Report page=91
+    text: Section: 165. Bakris GL, Williams M, Dworkin L, Elliott WJ,. 165. Bakris GL, Williams M, Dworkin L, Elliott WJ, Epstein M, Toto R, et al. Preserving renal func- tion in adults with hypertension and diabetes: A consensus approach. National Kidney Foundation Hypertension and Diabetes Executive Committees Working Group. Am J Kidney Dis 2000;36:646-61. PR 166. Haffner SM, Lehto S, Ronnemaa T, Pyorala 
+  chunk 2: book=Society Guideline: Guideline   JNC7 2003 Hypertension Full Report page=53
+    text: With respect to microvascular complications, the ADA has recommended both ACEIs and ARBs for use in type 2 diabetic patients with CKD because these agents delay the deterioration in GFR and the worsening of albuminuria.88,164,171,181 BBs
+  chunk 3: book=StatPearls: StatPearls   Type 1 Diabetes Mellitus page=10
+    text: Section: Differential Diagnosis. tial evaluation and diabetes visit, the diabetes care team should continue to provide T1D education and support while assessing the patient's insulin regimen and blood glucose control. Regular visits with the endocrinologist, diabetes educator, nurse practitioner, dietitian, and, if necessary, mental health professionals ensure comprehensive education and care aime
+  chunk 4: book=Society Guideline: Guideline   JNC7 2003 Hypertension Full Report page=53
+    text: Section: Special Situations in Hypertension Management. Special Situations in Hypertension Management ACEI added on to conventional therapy showed a reduction in combined MI, stroke, and CVD death of about 25 percent and a reduction in stroke by about 33 percent compared to placebo plus conventional therapy. With respect to microvascular complications, the ADA has recom- mended both ACEIs and ARBs
+  chunk 5: book=Miller/Baby Miller page=546
+    text: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS Several different techniques may confirm a diagnosis of diabetes (Box 29.1). Classic symptoms of hyperglyce- mia include polyuria, polydipsia, weight loss, and blurred vision. As a surrogate for end-organ complications, each diagnostic criterion reflects the glycemic threshold observed for the risk 
+  chunk 6: book=Society Guideline: Guideline   JNC7 2003 Hypertension Full Report page=90
+    text: Section: 145. The Capricorn Investigators. Effect of carvedilol. 145. The Capricorn Investigators. Effect of carvedilol on outcome after myocardial infarction in patients with left-ventricular dysfunction: The CAPRICORN randomised trial. Lancet 2001;357:1385-90. RA 146. Pitt B, Remme W, Zannad F, Neaton J, Martinez F, Roniker B, et al. Eplerenone, a selective aldosterone blocker, in patients with 
+  chunk 7: book=Morgan & Mikhail page=1220
+    text: Section: Anesthetic Considerations. Anesthetic Considerations A. Preoperative Abnormally elevated hemoglobin A1c concentrations identify patients with poor long- term control of blood glucose. These patients are more likely to have hyperglycemia on the day of surgery and have an increased risk of complications, adverse outcomes, and increased costs. The perioperative morbidity of patients with dia
+  chunk 8: book=Morgan & Mikhail page=1218
+    text: Section: There are three life-threatening acute complications of diabetes and its treatment—. TABLE 35–2 Diagnosis and classification of diabetes mellitus. There are three life-threatening acute complications of diabetes and its treatment— diabetic ketoacidosis (DKA), hyperosmolar nonketotic coma, and hypoglycemia—in addition to other acute medical problems (such as sepsis) in which the presence o
+  chunk 9: book=Morgan & Mikhail page=315
+    text: Section: GABAPENTIN & PREGABALIN. patients with reduced creatinine clearance and in others who are dependent upon renal prostaglandin release for vasodilation to avoid hemodynamically mediated acute kidney injury (eg, patients with hypovolemia, heart failure, cirrhosis, diabetic nephropathy, or hypercalcemia). GABAPENTIN & PREGABALIN Gabapentin was introduced as an antiepileptic agent but was sere
+
+=== 126: Diabetic ketoacidosis & hyperosmolar hyperglycemic state ===
+domain: General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)
+discipline: medicine
+category: topic
+  chunk 0: book=StatPearls: StatPearls   Adrenal Crisis page=10
+    text: [5] Differential diagnoses that should also be considered include: Shock Cardiogenic Obstructive Distributive Hypovolemic Septic Cardiac Acute myocardial infarction Acute myocardial infarction Endocrine Thyrotoxicosis Diabetic ketoacidosis Hyperosmolar hyperglycemic state Myxedema coma Pituitary adenoma Diabetic ketoacidosis Hyperosmolar
+  chunk 1: book=Morgan & Mikhail page=1931
+    text: Section: Specific therapy for diabetic ketoacidosis includes replacement of the existing fluid. Alternate buffers that do not produce CO2, such as Carbicarb or tromethamine (THAM), may be theoretically preferable but are unproven clinically. Specific therapy for diabetic ketoacidosis includes replacement of the existing fluid deficit resulting from a hyperglycemic osmotic diuresis first, as well a
+  chunk 2: book=Morgan & Mikhail page=1931
+    text: Specific therapy for diabetic ketoacidosis includes replacement of the existing fluid deficit resulting from a hyperglycemic osmotic diuresis first, as well as insulin, potassium, phosphate, and magnesium
+  chunk 3: book=Morgan & Mikhail page=1218
+    text: There are three life-threatening acute complications of diabetes and its treatment— diabetic ketoacidosis (DKA), hyperosmolar nonketotic coma, and hypoglycemia—in addition to other acute medical problems (such as sepsis) in which the presence of diabetes makes treatment
+  chunk 4: book=Morgan & Mikhail page=2001
+    text: Metabolic complications Hepatic dysfunction Hyperosmolar coma Diabetic ketoacidosis Excessive carbon dioxide production Hypoglycemia (due to interruption of infusion) Metabolic acidosis or alkalosis Fat embolism syndrome Vitamin D, K, or B12 deficiency Essential fatty acid deficiency Hypervitaminosis
+  chunk 5: book=Morgan & Mikhail page=1928
+    text: Section: B. Increased Endogenous Nonvolatile Acid Production. these acids. B. Increased Endogenous Nonvolatile Acid Production Severe tissue hypoxia following hypoxemia, hypoperfusion (ischemia), or an inability to utilize oxygen (cyanide poisoning) can result in lactic acidosis. Lactic acid is the end product of the anaerobic metabolism of glucose (glycolysis) and can rapidly accumulate under the
+  chunk 6: book=StatPearls: StatPearls   Adrenal Crisis page=10
+    text: Section: Differential Diagnosis. eroids is advisable. [69] This approach helps prevent abrupt discontinuation and enables a smoother transition to lower doses. The necessity for mineralocorticoid replacement should be assessed individually and in consultation with an endocrinologist. Mineralocorticoid replacement is unnecessary if the glucocorticoid doses administered to patients exceed 50 mg. [70
+  chunk 7: book=Morgan & Mikhail page=1218
+    text: Section: There are three life-threatening acute complications of diabetes and its treatment—. TABLE 35–2 Diagnosis and classification of diabetes mellitus. There are three life-threatening acute complications of diabetes and its treatment— diabetic ketoacidosis (DKA), hyperosmolar nonketotic coma, and hypoglycemia—in addition to other acute medical problems (such as sepsis) in which the presence o
+  chunk 8: book=Morgan & Mikhail page=2001
+    text: Section: Metabolic complications. Metabolic complications Hepatic dysfunction Hyperosmolar coma Diabetic ketoacidosis Excessive carbon dioxide production Hypoglycemia (due to interruption of infusion) Metabolic acidosis or alkalosis Fat embolism syndrome Vitamin D, K, or B12 deficiency Essential fatty acid deficiency Hypervitaminosis A Hypervitaminosis D Overfeeding with excess amounts of glucose 
+  chunk 9: book=StatPearls: StatPearls   Diabetic Ketoacidosis (DKA) page=11
+    text: Section: Differential Diagnosis. angements associated with DKA and any underlying etiologies. Addressing both aspects ensures stabilization of the patient’s condition and reduces the risk of recurrence or complications. Differential Diagnosis DKA has a diverse presentation, and this is why several other common pathologies may mimic this diagnosis. The following differential diagnoses should be con
+
+=== 127: Dialysis: Hemodialysis Principles and Access ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=MGH Housestaff Manual page=103
+    text: Section: Dialysis & Transplant. Dialysis & Transplant Beth Gay O V E R V I E W (NEJM 2022;386(10):964) Diffusion: concentration gradient drives small molecules (e.g. urea, creatinine) across selectively permeable membrane Convection: hydrostatic pressure forces medium-weight molecules across membrane Ultrafiltration (UF): volume removal, removal of plasma water by hydrostatic pressure I M P O R T 
+  chunk 1: book=StatPearls: StatPearls   Dialysis  CRRT in the ICU page=4
+    text: Section: Technique or Treatment. successful AVF creation. [6] [10] The Society of Vascular Surgery recommends placing access as distal in the upper extremity as possible to preserve future central access while giving preference to the non-dominant arm. [5] Dialysis fistula creation of choice is radiocephalic fistula, brachiocephalic fistula, transposed brachiobasilic fistula, and then loop arterio
+  chunk 2: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=1
+    text: Source: StatPearls NCBI Bookshelf NBK ID: NBK559085 URL: https://www.ncbi.nlm.nih.gov/books/NBK559085/ Topic: Dialysis: Hemodialysis Principles and Access Article Title: Dialysis Fistula License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  chunk 3: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=3
+    text: omerular filtration rate of less than 30 ml/min) or have an imminent need for maintenance dialysis at the time of initial assessment
+  chunk 4: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=8
+    text: You are not required to obtain permission to distribute this article, provided that you credit the author and journal
+  chunk 5: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=1
+    text: Access free multiple choice questions on this topic
+  chunk 6: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=4
+    text: An arteriotomy is made, and the artery is flushed with heparinized saline
+  chunk 7: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=8
+    text: Pulsation: Place the tips of the fingers lightly over the fistula
+  chunk 8: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=8
+    text: These findings should be promptly reported to a physician
+  chunk 9: book=StatPearls: StatPearls   Dialysis  Hemodialysis Principles and Access page=8
+    text: Click here for a simplified version
+
+=== 128: Disseminated intravascular coagulation (DIC) ===
+domain: Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=1177
+    text: Section: What hemostatic defects are likely to be present in this patient?. plasmin degrades fibrin and fibrinogen, as well as other coagulation factors. Urokinase (found in urine) and streptokinase (a product of bacteria) are also potent activators of plasminogen to plasmin. The action of tPA is localized because (1) it is absorbed into the fibrin clot, (2) it activates plasminogen more effective
+  chunk 1: book=Morgan & Mikhail page=1416
+    text: Section: Active bleeding or hemodynamic instability requires immediate cesarean section. may rarely be allowed to deliver vaginally if the bleeding is mild. Active bleeding or hemodynamic instability requires immediate cesarean section under general anesthesia. The patient should have two large-bore intravenous catheters in place; intravascular volume deficits must be replaced, and blood must be a
+  chunk 2: book=Morgan & Mikhail page=1149
+    text: Section: B. Monitoring. epidural anesthesia have been utilized. All general anesthetic agents have been employed without any apparent detrimental effect on graft function. Cisatracurium may be the muscle relaxant of choice as it is not dependent upon renal excretion for elimination. With careful neuromuscular monitoring, other relaxants can be used safely. B. Monitoring A urinary catheter is place
+  chunk 3: book=Morgan & Mikhail page=1129
+    text: perforation, sepsis, hypothermia, and disseminated intravascular coagulation (DIC)
+  chunk 4: book=Morgan & Mikhail page=1149
+    text: The differential diagnosis of hypotension following TURP should always include (1) hemorrhage, (2) TURP syndrome, (3) bladder perforation, (4) myocardial infarction or ischemia, (5) septicemia, and (6) disseminated intravascular coagulation (DIC)
+  chunk 5: book=Morgan & Mikhail page=1988
+    text: If the patient survives the initial presentation, acute kidney failure and disseminated intravascular coagulation (DIC) can rapidly ensue
+  chunk 6: book=Morgan & Mikhail page=2154
+    text: Laboratory evidence of disseminated intravascular coagulation (DIC) is often present but is rarely associated with bleeding
+  chunk 7: book=Morgan & Mikhail page=1416
+    text: The coagulopathy is thought to be due to activation of circulating plasminogen (fibrinolysis) and the release of tissue thromboplastins that precipitate disseminated intravascular coagulation (DIC)
+  chunk 8: book=Morgan & Mikhail page=1129
+    text: Section: Intraoperative Considerations. perforation, sepsis, hypothermia, and disseminated intravascular coagulation (DIC). A blood type and screen (see Chapter 51) is adequate for most patients, though crossmatched blood should be available for anemic patients and for patients with a large prostate in which extensive resection is contemplated. Prostatic bleeding can be difficult to control throug
+  chunk 9: book=Morgan & Mikhail page=1988
+    text: Section: Hyperphosphatemia. Laboratory testing typically reveals mixed metabolic and respiratory acidosis with a marked base deficit, hyperkalemia, hypermagnesemia, and reduced mixed-venous oxygen saturation. Some case reports describe isolated respiratory acidosis early in the course of an episode of MH. Serum ionized calcium concentration is variable: It may initially increase and then later dec
+
+=== 129: Drug Dosing in Renal Impairment ===
+domain: Internal medicine: nephrology, fluids & electrolytes
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=1105
+    text: Section: Curare (d-Tubocurarine). be used with few problems in patients with severe kidney disease. Curare (d-Tubocurarine) Elimination of d-tubocurarine is dependent on both kidney and biliary excretion; 40% to 60% of a dose of curare is normally excreted in urine. Increasingly prolonged effects are observed following repeated doses in patients with decreased kidney function. Smaller doses and lo
+  chunk 1: book=Morgan & Mikhail page=2280
+    text: Section: Ketamine. absorption of, 172 in asthmatic patients, 542 biotransformation of, 172 cardiac tamponade uses of, 484 cerebral physiology effects of, 592t in cesarean section, 882 contraindications for, 248 delirium treated with, 944 depression treated with, 633 description of, 171–174, 340, 433, 595, 596f, 686, 764, 1244 distribution of, 172 doses of, 172t, 478–479 drug interactions, 174 effe
+  chunk 2: book=Society Guideline: Guideline   KDIGO 2012 AKI page=65
+    text: Section: When feasible in patients with normal and stable kidney. When feasible in patients with normal and stable kidney function, once-daily (often referred to as extended-interval) dosing of aminoglycosides should be used to limit amino- glycoside nephrotoxicity. The pharmacokinetic and pharma- codynamic properties of aminoglycosides favor high dosing strategies with extended intervals between 
+  chunk 3: book=Society Guideline page=67
+    text: Section: 229. Lin GL, McGinley JP, Drysdale SB, et al: Epidemiology and. e1129 and institutional outbreak management of seasonal influen- zaa. Clin Infect Dis 2019; 68:895–902 229. Lin GL, McGinley JP, Drysdale SB, et al: Epidemiology and immune pathogenesis of viral sepsis. Front Immunol 2018; 9:2147 230. Gonçalves-Pereira J, Póvoa P: Antibiotics in critically ill patients: A systematic review of
+  chunk 4: book=Miller/Baby Miller page=454
+    text: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT still necessary. There are no antidotes for any of the DTIs, so reversal depends on their clearance. All DTIs will interfere with the INR, but argatroban has the greatest effect, which can complicate the transition to long-term warfarin anticoagulation. Di
+  chunk 5: book=Miller/Baby Miller page=675
+    text: Section: Chapter 35 Geriatrics. Chapter 35 Geriatrics changes in the geriatric patient. Of note, opioids that depend on renal clearance are best avoided, namely meperidine and morphine, both of which are converted to active metabolites (normeperidine, morphine-6-glucu- ronide, and morphine-3-glucuronide, respectively) that are excreted by the kidneys and may accumulate.21 26 Meperidine may contrib
+  chunk 6: book=MGH Housestaff Manual page=14
+    text: Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver disease (cirrhosis or Bili 2x ULN or AST/ALT/AlkPhos 3x ULN); stroke; bleeding history; labile INR (<60% i
+  chunk 7: book=Society Guideline: Guideline   KDIGO 2012 AKI page=66
+    text: Section: Cmin level obtained at either 12, 18, or 24 hours after the. greater than the MIC of the infecting organism. Many investigators recommend at least one or at least a weekly Cmin level obtained at either 12, 18, or 24 hours after the aminoglycoside dose.267–270 The Cmin level should be below the limits of detection of the assay (o1 mg/ml) at these time intervals. aminoglycoside levels with 
+  chunk 8: book=Society Guideline: Guideline   KDIGO 2024 CKD page=195
+    text: advanced chronic kidney disease]. Kardiologiia. 2020;60:1322 [in Russian]. 718. Fox KA, Piccini JP, Wojdyla D, et al. Prevention of stroke and systemic embolism with rivaroxaban compared with warfarin in patients with non-valvular atrial ﬁbrillation and moderate renal impairment. Eur Heart J. 2011;32:2387–2394. 719. Hijazi Z, Hohnloser SH, Oldgren J, et al. Efﬁcacy and safety of dabigatran compare
+  chunk 9: book=Miller/Baby Miller page=458
+    text: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT There are no direct reversal agents for intravenous DTIs; however, their half-lives are relatively short, so time and supportive medical care are often sufficient to manage their anticoagulant effect in acute clinical situations. For DOACs, several novel r
+
+=== 130: Drug-Induced Liver Injury (DILI) ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=263
+    text: Section: Postoperative hepatic dysfunction has several causes: viral hepatitis, impaired. exposure to barbiturates. Postoperative hepatic dysfunction has several causes: viral hepatitis, impaired hepatic perfusion, preexisting liver disease, hepatocyte hypoxia, sepsis, hemolysis, benign postoperative intrahepatic cholestasis, and drug-induced hepatitis. “Halothane hepatitis” is extremely rare. Pat
+  chunk 1: book=StatPearls: StatPearls   Acute Liver Failure (ALF) page=8
+    text: ers. Some of these disorders can overlap with acute causes but are often associated with more chronic hepatitis or nonhepatic causes, examples of which include smoldering inflammation from autoimmune disorders, hemochromatosis, Wilson disease, and drug-induced liver injury. Serum transaminases : Aminotransferase elevation, including AST, also called serum glutamic-oxaloacetic transaminase (SGOT), 
+  chunk 2: book=MGH Housestaff Manual page=91
+    text: Section: Alcohol-Related Liver Disease. Alcohol-Related Liver Disease Enoch Chung A L C O H O L-R E L A T E D L I V E R D I S E A S E (ALD) (AASLD: Hepatology 2020;71:308; ACG: AJG 2024;119:30) Risk factors: sex (F>M), pattern (daily ± binge), obesity, DM2, genetics (e.g. PNPLA3, α-1 antitrypsin, TM6SF2, MBOAT7), smoking, comorbid HCV/MASLD/etc.; coffee risk. Harmful drinking: Men: ≥3 drinks/d 
+  chunk 3: book=MGH Housestaff Manual page=89
+    text: Section: Acute Liver Injury & Failure. Acute Liver Injury & Failure Lauren Smith Presentation: fatigue, lethargy, anorexia, n/v, RUQ pain, pruritis, ± jaundice  ascites, confusion in ALF (and may progress to coma) Initial diagnostics: CBC w/ diff, CMP, PT/INR, fibrinogen, LDH, T&S, lactate, ABG, arterial ammonia, FSBG, hCG, HIV, APAP, blood/ urine tox screen, PETH, viral/autoimmune serologies (as
+  chunk 4: book=StatPearls: StatPearls   Acute Liver Failure (ALF) page=18
+    text: Section: Pearls and Other Issues. sk of spreading the infection. The risk of contracting HBV and HCV infection can be decreased by avoiding IV drug use and safe sex practices. Accidental toxic ingestion of acetaminophen by children can be reduced with safe storage practices out of reach from children and utilizing packaging that utilizes childproof safety precautions. Also, in adults, unintentiona
+  chunk 5: book=MGH Housestaff Manual page=155
+    text: Section: Hematopoietic Stem Cell Transplantation. Hematopoietic Stem Cell Transplantation Lucy Gao N O N-I N F E C T I O U S C O M P L I C A T I O N S: immune-mediated organ damage, toxic effects of chemo, or immunosuppression Q U I C K R E F E R E N C E: MG H E L L U C I D (day -8 conditioning to day +30 engraftment) Monitor S/Sx DDx fever DDx abdominal pain DDx dyspnea/hypoxemia • Chemo toxicity
+  chunk 6: book=StatPearls: StatPearls   Acute Liver Failure (ALF) page=7
+    text: ruling them out. When evaluating patients with ALF, differentiating between acute and chronic hepatitis is essential. Laboratory studies including aspartate aminotransferase (AST), alanine aminotransferase (ALT), alkaline phosphatase, gamma-glutamyl transferase (GGT), lactate dehydrogenase, bilirubin, international normalized ratio (INR), and albumin determine the normal functioning of the liver a
+  chunk 7: book=StatPearls page=5
+    text: Section: Differential Diagnosis. 2, an engineered fibroblast growth factor 19 analog. Drugs in phase 3 trials include lanifibranor, dapagliflozin, empagliflozin, aramchol, and resmetirom. [23] While vitamin E and pioglitazone have completed phase 4 trials, the FDA has not approved them for treating NAFLD. [23] Bariatric surgery is a treatment option for patients with obesity. Bariatric surgery has
+  chunk 8: book=MGH Housestaff Manual page=92
+    text: Section: Enoch Chung. Enoch Chung D E FI N I T I O N S (Hepatology 2023;78:1966) Metabolic Dysfunction Associated Steatotic Liver Disease (MASLD): presence of hepatic steatosis (imaging or bx) w/o 2° cause (includes NASH) Metabolic dysfunction-associated steatohepatitis (MASH): hepatic steatosis and inflammation with hepatocyte injury ± fibrosis Metabolic and alcohol related/associated liver disea
+  chunk 9: book=StatPearls page=5
+    text: Differential Diagnosis The differential diagnosis of NAFLD comprises various causes of liver injury, including: Alcoholic liver disease α1-Antitrypsin deficiency Autoimmune liver disease Drug-induced liver injury Viral hepatitis A through E The prognosis of patients with NAFLD
+
+=== 131: Esophageal Variceal Bleeding ===
+domain: Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)
+discipline: medicine
+category: topic
+  chunk 0: book=Morgan & Mikhail page=1535
+    text: via the creation of a transjugular intrahepatic portosystemic shunt (TIPS) are frequently hypovolemic with profound ascites and are at risk of esophageal variceal bleeding and aspiration
+  chunk 1: book=Morgan & Mikhail page=1203
+    text: Section: Hypotensive anesthesia should be avoided because of its potentially deleterious. Doppler or TEE probe in a patient with esophageal variceal disease. Hypotensive anesthesia should be avoided because of its potentially deleterious effects on liver function. Administration of antifibrinolytics, such as ε-aminocaproic acid or tranexamic acid, may reduce operative blood loss, especially if fib
+  chunk 2: book=Morgan & Mikhail page=1174
+    text: Section: Prehepatic (increased bilirubin production). Prehepatic (increased bilirubin production) Resorption of hematomas Hemolytic anemia transfusion Senescent red cell breakdown Hemolytic reactions Hepatic (hepatocellular dysfunction) Preexisting liver disease Ischemic or hypoxemic injury Gilbert syndrome Intrahepatic cholestasis Posthepatic (biliary obstruction) Postoperative cholecystitis Post
+  chunk 3: book=Morgan & Mikhail page=1535
+    text: Section: Children and some adults (ie, those who are claustrophobic, developmentally. inducing ventricular fibrillation. During testing, deeper levels of sedation are required, as the defibrillation shock can be frightening and very uncomfortable. Likewise, anesthesia staff are called upon to provide anesthesia for cardioversion of patients in atrial fibrillation. These patients usually have assoc
+  chunk 4: book=MGH Housestaff Manual page=95
+    text: Section: End Stage Liver Disease. End Stage Liver Disease Margot Manning H E P A T I C E N C E P H A L O P A T H Y (HE) (NEJM 2016;375:1660; AASLD: Hepatology 2014;60:715) Pathophysiology: NH3  neurotoxic effects, abnl neurotransmission, GABA- & BDZ- like neurotransmitters & altered glutaminergic inputs  excitatory transmission. In ALF, acute NH3  cerebral edema Diagnosis: clinical. Serum N
+  chunk 5: book=MGH Housestaff Manual page=70
+    text: Section: Upper GI Bleeding. Upper GI Bleeding May Saito A C U T E U P P E R GI B L E E D (AJG 2021;116:5; Annals 2019;171:805; NEJM 2016;374:2367) Definition: bleeding proximal to ligament of Treitz S/Sx: hematemesis, melena (on exam: +LR 25; JAMA 2012;307:1072), hematochezia if brisk, BUN/Cr >30 (+LR 7.5; JAMA 2012;307:1072), especially >35 (100% Sp; J Clin Gastro 1990;12:500). Clots in stool mak
+  chunk 6: book=StatPearls: StatPearls   Lower GI Bleed  Evaluation & Management page=9
+    text: Section: Differential Diagnosis. ctomy eliminates collateral venous flow and prevents future gastric variceal bleeding secondary to splenic vein thrombosis. [22] Secondary Prophylaxis Nonselective beta-blockers in combination with endoscopy evaluation therapy (EVL or cyanoacrylate injection) are recommended as first-line therapy to prevent rebleeding in patients who recover from GOV1 hemorrhage. [
+  chunk 7: book=StatPearls: StatPearls   Lower GI Bleed  Evaluation & Management page=5
+    text: Section: Treatment / Management. of fibrosis and to ascertain etiology in cirrhotic patients with negative laboratory workup. Treatment / Management The optimal management of gastric varices remains unclear due to the lack of high-quality large clinical trials. However, there is consensus that the management of GOV1 varices is similar to that of esophageal varices. Nevertheless, based on the 2016 
+  chunk 8: book=StatPearls: StatPearls   Lower GI Bleed  Evaluation & Management page=4
+    text: Section: Elevated jugular venous pulse (right-sided heart failure). tory rate, and oxygen saturation should be performed on all patients at baseline. A focused systemic examination evaluating clinical signs specifically related to cirrhosis and portal hypertension should be performed as described below . Elevated jugular venous pulse (right-sided heart failure) Pleural effusion (hepatohydrothorax)
+  chunk 9: book=MGH Housestaff Manual page=93
+    text: Section: End Stage Liver Disease. End Stage Liver Disease Enoch Chung D E F I N I T I O N S Cirrhosis: irreversible fibrosis and formation of regenerative nodules that distorts hepatic architecture and vasculature Compensated: no ascites, encephalopathy, jaundice, or GI bleeding. May have nonbleeding varices. Usually asx Decompensated: ascites, HE, jaundice, SBP, Hepatopulmonary syndrome, variceal

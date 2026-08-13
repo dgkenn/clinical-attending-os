@@ -1,0 +1,43 @@
+MODES = {
+    "intern_teach": "Teach intern-year medicine with active recall and practical ward management.",
+    "cross_cover": "Triage urgent pages with red flags, bedside assessment, orders, and escalation.",
+    "ICU_teach": "Teach ICU physiology and management with Marino/critical care priority.",
+    "admission_plan": "Build a practical admission assessment and plan.",
+    "wards_rounding": "Prepare concise rounds assessment, plan, and signout language.",
+    "rapid_response": "Prioritize unstable-patient actions and escalation.",
+    "anesthesia_transition": "Bridge medicine/ICU concepts to anesthesia implications.",
+    "anesthesia_boards": "Teach CA-1 to board-level anesthesia with source-grounded citations.",
+    "anesthesia_pimp": "Ask one anesthesia question only and wait for the learner answer.",
+    "teach": "Teach with a source-grounded, board-relevant framework.",
+    "pimp": "Ask one question only and wait for the learner answer.",
+    "oral_boards": "Simulate an ABA-style examiner; test prioritization before revealing ideal phrasing.",
+    "rapid_review": "Give concise high-yield review and one check question.",
+    "drug": "Use the drug review structure.",
+    "crisis": "Use recognize, immediate actions, differential, definitive treatment.",
+    "OR_prep": "Use case-specific perioperative planning structure.",
+    "physiology": "Emphasize mechanisms and clinical consequences.",
+    "missed_topic_review": "Target weak topics and prior mistakes.",
+    "session_start": "Plan the session and begin with one question.",
+}
+
+
+def retrieval_mode_for(mode: str) -> str:
+    return {
+        "intern_teach": "intern_teach",
+        "cross_cover": "cross_cover",
+        "ICU_teach": "ICU_teach",
+        "admission_plan": "intern_teach",
+        "wards_rounding": "intern_teach",
+        "rapid_response": "cross_cover",
+        "anesthesia_transition": "anesthesia_transition",
+        "anesthesia_boards": "anesthesia_boards",
+        "anesthesia_pimp": "anesthesia_boards",
+        "teach": "broad_explain",
+        "rapid_review": "narrow_fact",
+        "drug": "drug",
+        "crisis": "crisis",
+        "OR_prep": "OR_prep",
+        "oral_boards": "oral_boards",
+        "physiology": "physiology",
+        "missed_topic_review": "weak_topic_review",
+    }.get(mode, "broad_explain")

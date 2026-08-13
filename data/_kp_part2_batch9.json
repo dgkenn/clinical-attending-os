@@ -1,0 +1,212 @@
+[
+  {
+    "id": "anaphylaxis-allergen-longterm-1",
+    "topic": "Anaphylaxis: allergen identification & long-term management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "Allergen immunotherapy for allergic asthma: what is the benefit and what is the main risk?",
+    "answer": "Immunotherapy can reduce short-term asthma symptoms; however, there is a moderate increase in risk of local and systemic reactions including anaphylaxis. A 3-year course (sublingual or subcutaneous) is effective.",
+    "rationale": "Desensitization protocols expose patients to increasing allergen doses; even small doses can trigger IgE-mediated reactions, requiring epinephrine availability during administration.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "Allergen avoidance — prevents symptoms but does not confer long-term immune tolerance"
+  },
+  {
+    "id": "anaphylaxis-allergen-longterm-2",
+    "topic": "Anaphylaxis: allergen identification & long-term management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "Epinephrine management of systemic reactions during allergen immunotherapy: after a systemic reaction, should immunotherapy be continued?",
+    "answer": "The physician should re-visit benefit vs. risk of continuing immunotherapy after systemic reactions; epinephrine is the mainstay treatment for anaphylaxis during desensitization.",
+    "rationale": "Systemic reactions indicate the dose exceeded the patient's tolerance threshold; dose reduction or protocol modification may allow continuation in selected patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "Stopping immunotherapy permanently — sometimes appropriate, but dose adjustment allows continuation in many"
+  },
+  {
+    "id": "anaphylaxis-allergen-longterm-3",
+    "topic": "Anaphylaxis: allergen identification & long-term management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "After perioperative anaphylaxis, what is the mechanism for treating airway edema before definitive airway management?",
+    "answer": "IV dexamethasone (0.25-0.5 mg/kg) may prevent edema formation; nebulized racemic epinephrine (0.25-0.5 mL of 2.25% solution in 2.5 mL NS) is an effective treatment for upper airway edema.",
+    "rationale": "Glucocorticoids stabilize vascular endothelium and reduce inflammatory cytokines; nebulized epinephrine causes local vasoconstriction reducing mucosal swelling.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1475
+      }
+    ],
+    "confusable_with": "Systemic epinephrine dose for anaphylaxis — 0.3-0.5 mg IM for hemodynamic collapse, different from nebulized airway dose"
+  },
+  {
+    "id": "anaphylaxis-allergen-longterm-4",
+    "topic": "Anaphylaxis: allergen identification & long-term management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "Anaphylaxis: what type of immunoglobulin triggers the reaction and what is the basic mechanism?",
+    "answer": "Anaphylaxis is an exaggerated IgE-mediated response to an allergen; IgE on mast cells/basophils crosslinks with allergen, triggering degranulation and release of histamine, tryptase, and other mediators causing systemic vasodilation and bronchospasm.",
+    "rationale": "IgE-allergen crosslinking activates FcepsilonRI signaling cascades on mast cells; histamine and other mediators cause the multisystem response (pulmonary, CV, GI, dermal).",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2036
+      }
+    ],
+    "confusable_with": "Anaphylactoid reactions — same clinical picture without prior sensitization; not IgE-mediated (e.g., contrast dye, aspirin)"
+  },
+  {
+    "id": "anaphylaxis-diagnosis-management-1",
+    "topic": "Anaphylaxis: diagnosis & acute management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "Acute epiglottitis in a child progresses to complete airway obstruction. What sequence of events characterizes the progression?",
+    "answer": "Sore throat progresses rapidly to dysphagia and complete airway obstruction; it is a bacterial infection (most commonly H. influenzae type B) requiring emergency airway management.",
+    "rationale": "Epiglottic edema can completely occlude the supraglottic airway within hours; awake intubation or tracheotomy may be necessary if airway cannot be secured.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1483
+      }
+    ],
+    "confusable_with": "Angioedema — also causes supraglottic obstruction but is non-infectious; different treatment"
+  },
+  {
+    "id": "anaphylaxis-diagnosis-management-2",
+    "topic": "Anaphylaxis: diagnosis & acute management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What is the differential diagnosis of intraoperative MH-like presentation that includes serotonin syndrome and thyroid storm?",
+    "answer": "Differential: MH (volatile/succinylcholine trigger, rising EtCO2, metabolic acidosis, muscle rigidity); serotonin syndrome (MAOIs + meperidine or SSRIs, clonus/hyperreflexia, normal EtCO2); thyroid storm (hypokalemia, fever, tachycardia, metabolic acidosis, normal EtCO2/temp); NMS (antidopaminergic drugs, develops over days).",
+    "rationale": "Each has a distinct trigger and time course; EtCO2 and temperature progression distinguish MH (both rise markedly) from other syndromes.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 85
+      }
+    ],
+    "confusable_with": "Sepsis — also fever and hemodynamic instability but not triggered by anesthetic agents"
+  },
+  {
+    "id": "anaphylaxis-diagnosis-management-3",
+    "topic": "Anaphylaxis: diagnosis & acute management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "In HAE (hereditary angioedema) with F12 gene mutation, what triggers should be eliminated as part of long-term management?",
+    "answer": "Eliminate: estrogen-containing oral contraceptives, hormonal replacement therapy, and ACE inhibitors. These trigger or worsen bradykinin-mediated angioedema episodes.",
+    "rationale": "Estrogens upregulate plasma prekallikrein and factor XII; ACE inhibitors reduce bradykinin degradation — both increase bradykinin levels and angioedema frequency.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "ACE inhibitor-induced angioedema (acquired) — bradykinin-mediated like HAE; treated similarly but does not require C1 inhibitor"
+  },
+  {
+    "id": "anaphylaxis-diagnosis-management-4",
+    "topic": "Anaphylaxis: diagnosis & acute management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "A latex-allergic patient needs an emergency surgery. What specific steps minimize latex exposure in the OR?",
+    "answer": "Schedule first case of the day; establish latex-free environment (latex-free gloves and supplies); remove tops of multi-dose vials (contain latex); have cart of latex-free alternatives available; avoid rubber-containing equipment.",
+    "rationale": "Latex protein aerosolizes from glove powder and persists in OR air for hours; first case of the day minimizes cumulative exposure. Patients with spina bifida, urogenital anomalies, or food allergies to tropical fruits are highest risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 79
+      }
+    ],
+    "confusable_with": "Latex-safe but not latex-free environment — insufficient for high-risk patients with known severe latex allergy"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Anaphylaxis (IgE-mediated)",
+    "topic_b": "Anaphylactoid reaction",
+    "discriminator": "Anaphylaxis: requires prior sensitization, IgE-mediated mast cell degranulation. Anaphylactoid: clinically identical but direct mast cell activation without prior IgE sensitization (contrast dye, aspirin, vancomycin red-man syndrome). Treatment is the same — epinephrine first-line."
+  },
+  {
+    "id": "angioedema-classification-1",
+    "topic": "Angioedema: classification & management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What defines angioedema clinically and how does it differ from urticaria?",
+    "answer": "Angioedema: non-pitting edema involving subcutaneous tissues from marked vasodilation and increased vascular permeability. Urticaria: well-circumscribed skin wheals (raised, erythematous borders, blanched centers, intensely pruritic). Angioedema is deeper; urticaria is superficial.",
+    "rationale": "Both result from mast cell mediator release; urticaria involves superficial dermis while angioedema involves deeper dermis and subcutaneous tissue.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2035
+      }
+    ],
+    "confusable_with": "Cellulitis — also deep tissue swelling but warm, painful, and not episodic or pruritic"
+  },
+  {
+    "id": "angioedema-classification-2",
+    "topic": "Angioedema: classification & management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What is first-line long-term prophylaxis for hereditary angioedema (HAE)?",
+    "answer": "C1 Inhibitor replacement is first-line long-term prophylaxis for HAE; androgens (danazol) are used as second-line agents.",
+    "rationale": "HAE results from C1 inhibitor deficiency causing unregulated kallikrein-bradykinin activation; exogenous C1 inhibitor restores the regulatory brake.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "Allergic angioedema prevention — antihistamines and avoidance of allergens; C1 inhibitor is irrelevant"
+  },
+  {
+    "id": "angioedema-classification-3",
+    "topic": "Angioedema: classification & management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "Fatalities related to asthma highlight what missed opportunities in management?",
+    "answer": "Fatalities highlight missed opportunities in recognizing disease severity and failing to escalate therapy; continual patient education and routine symptom control assessment are critical for successful long-term management.",
+    "rationale": "Most asthma deaths are preventable; under-recognition of severity and delayed step-up therapy are the primary failures in fatal asthma.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 1
+      }
+    ],
+    "confusable_with": "COPD exacerbation mortality — different pathophysiology but similar theme of under-treatment"
+  },
+  {
+    "id": "angioedema-classification-4",
+    "topic": "Angioedema: classification & management",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "A patient with suspected angioedema presents with airway compromise. What is the management priority difference between allergic vs HAE-related angioedema?",
+    "answer": "Allergic: epinephrine + antihistamines + steroids + airway management. HAE (bradykinin-mediated): C1 inhibitor replacement (or icatibant/kallikrein inhibitor) — epinephrine/steroids/antihistamines are less effective for HAE.",
+    "rationale": "HAE is bradykinin-mediated, not histamine-mediated; therapies targeting histamine pathways do not reliably abort HAE attacks, and delay of specific therapy risks airway loss.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2036
+      }
+    ],
+    "confusable_with": "ACE inhibitor-induced angioedema — also bradykinin-mediated; managed by stopping ACE-I and C1 inhibitor/FFP if severe"
+  }
+]

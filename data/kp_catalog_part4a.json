@@ -1,0 +1,1824 @@
+[
+  {
+    "id": "shock-1",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "A patient in the ICU has a serum lactate of 4.8 mEq/L. What is the prognostic significance of this value?",
+    "answer": "Lactate ≥4 mEq/L strongly correlates with increased mortality in severe sepsis",
+    "rationale": "Hyperlactatemia reflects tissue hypoperfusion and anaerobic metabolism; a threshold of 4 mEq/L marks a critical prognostic boundary in severe sepsis.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 153
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "shock-2",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "A patient with hypotension and altered mental status is rapidly assessed at the bedside. Which three clinical criteria comprise the quick organ-failure screening score used in sepsis?",
+    "answer": "qSOFA: altered mental status (GCS <15) + respiratory rate ≥22 + systolic BP ≤100 mmHg",
+    "rationale": "qSOFA identifies patients at risk of poor outcomes from sepsis outside the ICU using only bedside clinical parameters without laboratory data.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2162
+      }
+    ],
+    "confusable_with": "SOFA score (requires labs)"
+  },
+  {
+    "id": "shock-3",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "In a trauma patient requiring large-volume resuscitation, what metabolic complication is more likely with normal saline compared to a balanced crystalloid?",
+    "answer": "Hyperchloremic metabolic acidosis; balanced crystalloids (e.g., Plasma-Lyte A) reduce this risk",
+    "rationale": "Normal saline contains 154 mEq/L chloride, far above plasma levels; large volumes cause a dilutional, hyperchloremic non-anion-gap metabolic acidosis.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 467
+      }
+    ],
+    "confusable_with": "Anion-gap metabolic acidosis from lactic acidosis"
+  },
+  {
+    "id": "shock-4",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "Guidelines for fluid therapy in septic shock recommend a specific crystalloid type. Which fluid is preferred and why?",
+    "answer": "Balanced crystalloids (e.g., Plasma-Lyte, lactated Ringer's) are preferred over normal saline to reduce hyperchloremic acidosis and potential renal harm",
+    "rationale": "Sepsis guidelines endorse balanced crystalloids; high-chloride saline is associated with worse outcomes including increased risk of AKI and need for RRT.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 71
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "shock-5",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "An ICU patient develops worsening metabolic acidosis with an elevated anion gap. Which category of acid-base disturbance does lactic acidosis fall under?",
+    "answer": "Organic acidosis (high anion-gap metabolic acidosis); lactate is an organic acid",
+    "rationale": "Organic acidoses are caused by accumulation of organic acids such as lactate (from hypoperfusion) or ketones; they raise the anion gap by displacing bicarbonate.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 394
+      }
+    ],
+    "confusable_with": "Hyperchloremic (non-anion-gap) metabolic acidosis"
+  },
+  {
+    "id": "shock-6",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "Which RCT compared saline versus balanced crystalloid in trauma resuscitation, and what was its primary finding?",
+    "answer": "Saline vs Plasma-Lyte A RCT (Miller/Baby Miller); balanced crystalloid reduced hyperchloremia and metabolic acidosis compared to normal saline",
+    "rationale": "Randomized evidence supports that Plasma-Lyte A reduces chloride load and associated acidosis in trauma resuscitation relative to 0.9% saline.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 467
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "shock-7",
+    "topic": "Shock: Classification & Pathophysiology",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "A septic patient with AKI is receiving IV fluids. What does current guideline evidence say about fluid type selection and the risk of requiring renal replacement therapy?",
+    "answer": "Balanced crystalloids over normal saline are recommended; normal saline is associated with higher risk of AKI and need for RRT",
+    "rationale": "High chloride loads from normal saline cause renal vasoconstriction and may worsen AKI, increasing dialysis requirements in septic patients.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 71
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Shock: Classification & Pathophysiology",
+    "discipline": "ICU & critical care",
+    "enabling_conditions": "Infection, trauma, hemorrhage, cardiac dysfunction, distributive vasodilation (sepsis, anaphylaxis, neurogenic)",
+    "pathophysiology": "Inadequate oxygen delivery to tissues → anaerobic metabolism → lactate accumulation → organ dysfunction; classified as distributive (septic/anaphylactic), cardiogenic, hypovolemic, or obstructive",
+    "time_course": "Can develop within minutes (hemorrhagic, anaphylactic) to hours (septic); mortality escalates with delay in treatment",
+    "key_features": "Hypotension, tachycardia, altered mental status, oliguria, hyperlactatemia (≥4 mEq/L = severe); qSOFA ≥2 flags septic shock",
+    "consequence_if_missed": "Irreversible multi-organ failure, ARDS, AKI, coagulopathy, death"
+  },
+  {
+    "id": "ssti-1",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "A patient presents with a fluctuant, tender skin nodule consistent with a community-acquired abscess. What is the primary treatment?",
+    "answer": "Incision and drainage (I&D); it is the primary treatment for purulent staphylococcal infections (abscesses, furuncles, carbuncles)",
+    "rationale": "I&D achieves source control by draining pus; antibiotics alone cannot penetrate the necrotic core of an abscess and are adjunctive, not primary therapy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Cellulitis (no fluctuance; antibiotics primary)"
+  },
+  {
+    "id": "ssti-2",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "When selecting adjunctive antibiotic therapy for a skin abscess in the MRSA era, what pathogen coverage is required unless cultures specifically show streptococci alone?",
+    "answer": "Antibiotic therapy must cover both S. aureus (including MRSA) and streptococci unless cultures yield streptococci alone",
+    "rationale": "Purulent SSTIs are predominantly caused by S. aureus; empiric coverage must include MRSA-active agents unless culture data permits de-escalation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 13
+      }
+    ],
+    "confusable_with": "Non-purulent SSTI (streptococcal coverage alone may suffice)"
+  },
+  {
+    "id": "ssti-3",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "A patient has a third recurrent skin abscess in one year. Beyond S. aureus decolonization, what three underlying structural conditions should be excluded?",
+    "answer": "Search for pilonidal cyst, hidradenitis suppurativa, or retained foreign material",
+    "rationale": "Recurrent abscesses often indicate an underlying anatomic nidus; addressing the nidus is essential to prevent further recurrence.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ssti-4",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "What is the IDSA's definition distinguishing cellulitis from erysipelas in terms of skin layer involvement?",
+    "answer": "Both refer to diffuse, superficial, spreading skin infections; erysipelas involves the upper dermis/superficial lymphatics (often with sharp demarcation), cellulitis involves deeper dermis and subcutaneous tissue",
+    "rationale": "IDSA 2014 clarifies that 'cellulitis' is not an appropriate term for all cutaneous inflammation; superficial spreading infections should be distinguished from deeper infections by depth of involvement.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 15
+      }
+    ],
+    "confusable_with": "Purulent SSTI (abscess has pus pocket requiring drainage)"
+  },
+  {
+    "id": "ssti-5",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "For a patient with an uncomplicated furuncle that does not require I&D, what is the appropriate initial management?",
+    "answer": "Warm compresses and monitoring; small furuncles may resolve spontaneously; I&D when fluctuant",
+    "rationale": "Early furuncles without fluctuance can be managed conservatively; spontaneous rupture and drainage may occur with warm compresses alone.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Carbuncle (multiple interconnected furuncles; more likely to need I&D and antibiotics)"
+  },
+  {
+    "id": "ssti-6",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "What antibiotic class is first-line for outpatient treatment of a purulent SSTI caused by community-acquired MRSA?",
+    "answer": "Trimethoprim-sulfamethoxazole (TMP-SMX) or doxycycline; both are active against community-acquired MRSA for outpatient SSTIs",
+    "rationale": "CA-MRSA strains typically retain susceptibility to TMP-SMX and tetracyclines, making these agents first-line for non-severe outpatient purulent SSTI.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Hospital-acquired MRSA (may require vancomycin)"
+  },
+  {
+    "id": "ssti-7",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "A patient has been treated for two previous abscesses in the groin/axillary region with recurrent painful nodules and sinus tracts. What chronic inflammatory condition should be suspected?",
+    "answer": "Hidradenitis suppurativa; recurrent nodules with sinus tracts in apocrine gland-bearing areas (axillary, inguinal, perineal) indicate this condition",
+    "rationale": "Hidradenitis suppurativa is a chronic inflammatory follicular disease; IDSA guidelines specifically list it as a cause of recurrent abscesses to be excluded.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "IDSA 2014 SSTI",
+        "page": 6
+      }
+    ],
+    "confusable_with": "Recurrent MRSA furunculosis"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Skin Abscesses & Purulent SSTI",
+    "discipline": "Infectious disease",
+    "enabling_conditions": "Skin breaks/trauma, nasal colonization with S. aureus, immunosuppression, diabetes, contact sports, household crowding, IV drug use",
+    "pathophysiology": "S. aureus (often MRSA) inoculates dermis/subcutaneous tissue → neutrophil recruitment → pus formation → fluctuant abscess/furuncle/carbuncle",
+    "time_course": "Days; rapid progression in immunosuppressed or with virulent strains",
+    "key_features": "Fluctuant, tender, erythematous nodule with central purulence; may have surrounding cellulitis; systemic signs (fever, leukocytosis) in severe cases",
+    "consequence_if_missed": "Extension to deep soft tissue (necrotizing fasciitis), bacteremia, septic emboli, inadequate drainage leads to recurrence"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Purulent SSTI (abscess)",
+    "topic_b": "Non-purulent SSTI (cellulitis)",
+    "discriminator": "Abscess has fluctuance and purulent collection requiring I&D; cellulitis is diffuse, non-fluctuant, spreading erythema without pus — I&D is contraindicated; antibiotic coverage differs (abscess targets MRSA, cellulitis targets streptococci)"
+  },
+  {
+    "id": "se-1",
+    "topic": "Status Epilepticus (SE): Diagnosis & Initial Management",
+    "domain": "Internal medicine: neurology",
+    "discipline": "Neurology",
+    "stem": "A patient presents with new-onset refractory status epilepticus with no identifiable cause after initial workup. What specific syndrome does this represent and what infectious serologies are ordered in ALL patients regardless of immune status?",
+    "answer": "New Onset Refractory Status Epilepticus (NORSE); HIV-1/2 serology is ordered in all NORSE patients",
+    "rationale": "NORSE is a clinical presentation requiring an extensive etiologic search; HIV is included in universal testing because CNS HIV complications can cause refractory SE.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls NBK567765",
+        "page": 1
+      }
+    ],
+    "confusable_with": "FIRES (Febrile Infection-Related Epilepsy Syndrome) — a subset of NORSE with preceding febrile illness"
+  },
+  {
+    "id": "se-2",
+    "topic": "Status Epilepticus (SE): Diagnosis & Initial Management",
+    "domain": "Internal medicine: neurology",
+    "discipline": "Neurology",
+    "stem": "In an immunocompromised patient with new-onset refractory status epilepticus, which three opportunistic infection serologies beyond routine HIV testing are indicated?",
+    "answer": "IgG Cryptococcus, IgM/IgG Histoplasma, IgG Toxoplasma",
+    "rationale": "Immunocompromised patients are at risk for fungal and parasitic CNS infections that can present as NORSE; these serologies guide targeted antifungal or antiparasitic therapy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls NBK567765",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "se-3",
+    "topic": "Status Epilepticus (SE): Diagnosis & Initial Management",
+    "domain": "Internal medicine: neurology",
+    "discipline": "Neurology",
+    "stem": "During the NORSE workup, what viral pathogen is specifically evaluated via stool specimens?",
+    "answer": "Adenovirus; stool specimens are collected for adenovirus detection in NORSE workup",
+    "rationale": "Adenovirus can cause encephalitis and refractory SE; stool is the appropriate specimen because adenovirus sheds in GI mucosa and may not be detected in CSF.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls NBK567765",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "se-4",
+    "topic": "Status Epilepticus (SE): Diagnosis & Initial Management",
+    "domain": "Internal medicine: neurology",
+    "discipline": "Neurology",
+    "stem": "What defines 'refractory' status epilepticus as opposed to SE that fails only first-line benzodiazepines?",
+    "answer": "Refractory SE: seizures continue despite adequate benzodiazepine PLUS second-line AED (e.g., levetiracetam, fosphenytoin, valproate); NORSE is new-onset refractory SE without clear etiology",
+    "rationale": "The refractory designation indicates failure of at least two appropriate medications from different drug classes, marking a distinct severity tier requiring ICU-level care and broader etiology search.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls NBK567765",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Super-refractory SE (continues ≥24h after general anesthesia)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "New Onset Refractory Status Epilepticus (NORSE)",
+    "discipline": "Neurology",
+    "enabling_conditions": "Previously healthy individuals, often young adults; no prior epilepsy; may follow febrile illness (FIRES subtype); autoimmune encephalitis, CNS infection, paraneoplastic syndrome are common etiologies",
+    "pathophysiology": "Unknown etiology in ~50% after full workup; autoimmune (anti-NMDAR, anti-LGI1, etc.) or infectious CNS inflammation causes hyperexcitability refractory to standard AEDs",
+    "time_course": "Acute onset; refractory course requiring ICU anesthesia (midazolam/propofol/ketamine infusions) over days to weeks",
+    "key_features": "New-onset SE in previously epilepsy-free patient, failing ≥2 AEDs; universal HIV testing; immunocompromised: add Cryptococcus/Histoplasma/Toxoplasma; stool for adenovirus",
+    "consequence_if_missed": "Prolonged SE causes irreversible hippocampal injury, neuronal death, long-term epilepsy, cognitive impairment, death"
+  },
+  {
+    "id": "hst-1",
+    "topic": "The Hs and Ts of Cardiac Arrest",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "Emergency & acute care",
+    "stem": "During targeted temperature management after cardiac arrest, by what percentage does the metabolic rate decrease for each 1°C reduction in temperature?",
+    "answer": "Metabolic rate decreases 8% per 1°C decrease in temperature",
+    "rationale": "Therapeutic hypothermia reduces cerebral and myocardial oxygen demand by 8% per degree, providing organ protection during reduced perfusion states.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 64
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hst-2",
+    "topic": "The Hs and Ts of Cardiac Arrest",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "Emergency & acute care",
+    "stem": "In a patient with cardiac arrest, hypothermia confers myocardial protection through what primary mechanism?",
+    "answer": "Reduces myocardial oxygen demand by decreasing metabolic rate (~8% per °C)",
+    "rationale": "Lower metabolic rate means less ATP consumption and less ischemic injury during the low-flow state of cardiac arrest and resuscitation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 64
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hst-3",
+    "topic": "The Hs and Ts of Cardiac Arrest",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "Emergency & acute care",
+    "stem": "A patient in cardiac arrest has no return of spontaneous circulation despite appropriate ACLS. Acute massive pulmonary embolism is suspected. What hemodynamic mechanism causes cardiac arrest in massive PE?",
+    "answer": "Acute right ventricular failure from massive increase in pulmonary vascular resistance → obstructive shock → cardiac arrest",
+    "rationale": "Massive PE creates acute obstruction of pulmonary blood flow, dramatically increasing RV afterload, causing RV failure, impaired LV filling, and ultimately cardiac arrest.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 386
+      }
+    ],
+    "confusable_with": "Tension pneumothorax (also obstructive; distinguished by breath sounds and tracheal deviation)"
+  },
+  {
+    "id": "hst-4",
+    "topic": "The Hs and Ts of Cardiac Arrest",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "Emergency & acute care",
+    "stem": "Pulmonary embolism is listed as one of the reversible 'T' causes of cardiac arrest. What acute physiologic change in alveolar dead space does PE produce?",
+    "answer": "PE causes an acute increase in alveolar dead space (ventilated but unperfused alveoli) in the affected lung segments",
+    "rationale": "Obstruction of pulmonary arterial flow to ventilated alveoli converts them to dead space, impairing CO2 elimination and worsening ventilation-perfusion mismatch.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 386
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hst-5",
+    "topic": "The Hs and Ts of Cardiac Arrest",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "Emergency & acute care",
+    "stem": "In the context of the reversible causes of cardiac arrest (Hs and Ts), what is the rationale for performing therapeutic hypothermia specifically as a treatment after return of spontaneous circulation?",
+    "answer": "Post-cardiac arrest hypothermia reduces cerebral and myocardial O2 demand (~8% per °C) during reperfusion, limiting ischemia-reperfusion injury and improving neurological outcomes",
+    "rationale": "After ROSC, the metabolic rate reduction from cooling provides a window of reduced oxygen demand that helps neurons and myocytes survive the reperfusion phase.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 64
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "uti-1",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "A routine urine culture from a 65-year-old non-pregnant woman without urinary symptoms grows ≥10^5 CFU/mL of E. coli. What is the appropriate management?",
+    "answer": "No treatment; asymptomatic bacteriuria should NOT be treated in non-pregnant women without planned urological procedures",
+    "rationale": "Treating asymptomatic bacteriuria causes antibiotic resistance, adverse drug effects, and C. difficile without clinical benefit in non-pregnant, non-surgical patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 119
+      }
+    ],
+    "confusable_with": "Symptomatic UTI (requires treatment)"
+  },
+  {
+    "id": "uti-2",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "In which two patient populations should asymptomatic bacteriuria (≥10^5 CFU/mL without symptoms) be treated with antibiotics?",
+    "answer": "Pregnant women and patients about to undergo urological procedures",
+    "rationale": "Pregnant women are at high risk of progression to pyelonephritis and preterm labor; pre-procedural bacteriuria risks seeding a surgical site or causing urosepsis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 119
+      }
+    ],
+    "confusable_with": "Asymptomatic bacteriuria in elderly/catheterized patients (do NOT treat)"
+  },
+  {
+    "id": "uti-3",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "What is urosepsis and which anatomical level of UTI is more likely to cause it?",
+    "answer": "Urosepsis = sepsis originating from a UTI; upper tract UTI (pyelonephritis) is more likely to cause urosepsis than lower tract (cystitis)",
+    "rationale": "Upper tract infection involves the renal parenchyma and has direct access to the bloodstream via renal vasculature, making bacteremia and sepsis far more likely than with bladder-limited infection.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "uti-4",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "List four risk factors that increase the risk of urosepsis from a UTI.",
+    "answer": "Urinary tract obstruction, urinary catheters, neurogenic bladder, pregnancy, men >50 years, diabetes",
+    "rationale": "These conditions impair host defense mechanisms (urine flow, immune function) or introduce pathogens, converting a local infection into a systemic one.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "uti-5",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "What distinguishes a complicated UTI from an uncomplicated UTI according to current guidelines?",
+    "answer": "Complicated UTI is accompanied by symptoms suggesting infection extending beyond the bladder (upper tract involvement: fever, flank pain, rigors) or structural/functional abnormalities",
+    "rationale": "Upper tract involvement or host factors (obstruction, immunosuppression, pregnancy, urologic abnormalities) elevate infection complexity and alter management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "IDSA 2025 Complicated UTI",
+        "page": 6
+      }
+    ],
+    "confusable_with": "Uncomplicated UTI (dysuria, frequency, urgency only, no systemic features)"
+  },
+  {
+    "id": "uti-6",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "What are the diagnostic criteria for catheter-associated UTI (CAUTI) with respect to timing of catheter use?",
+    "answer": "CAUTI requires that a urinary catheter was in place or removed within the 48 hours preceding symptom onset",
+    "rationale": "The 48-hour window captures device-related infections while excluding infections that arise too remotely from the catheter to be causally attributed to it.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls Shock",
+        "page": 12
+      }
+    ],
+    "confusable_with": "Community-acquired UTI (no recent catheter use)"
+  },
+  {
+    "id": "uti-7",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "Infectious disease",
+    "stem": "A patient with dysuria and frequency has a urine culture growing 10^5 CFU/mL. She is not pregnant, has no fever, and has no structural urologic abnormality. How should this infection be classified?",
+    "answer": "Uncomplicated cystitis (lower tract UTI); treat with short-course antibiotics (nitrofurantoin, TMP-SMX, or fosfomycin)",
+    "rationale": "Uncomplicated cystitis in a healthy non-pregnant woman with normal anatomy is managed with short-course oral therapy; no imaging or upper tract workup is needed.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "IDSA 2025 Complicated UTI",
+        "page": 6
+      }
+    ],
+    "confusable_with": "Pyelonephritis (requires longer course; IV antibiotics if severe)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Uncomplicated UTI & Cystitis",
+    "discipline": "Infectious disease",
+    "enabling_conditions": "Female anatomy (short urethra), sexual activity, diabetes, prior UTI, spermicide use, post-menopausal estrogen deficiency",
+    "pathophysiology": "Uropathogens (E. coli ~80%) ascend urethra to bladder → mucosal inflammation and epithelial invasion → dysuria, frequency, urgency; no upper tract or systemic involvement in uncomplicated cystitis",
+    "time_course": "Symptoms develop over hours to 1-2 days; respond to short-course antibiotics (3-7 days)",
+    "key_features": "Dysuria, frequency, urgency, suprapubic discomfort; pyuria ± bacteriuria on UA; NO fever/flank pain/rigors (would indicate upper tract); asymptomatic bacteriuria ≥10^5 CFU/mL NOT treated unless pregnant or pre-procedure",
+    "consequence_if_missed": "Untreated UTI in pregnancy → pyelonephritis, preterm labor; ascending infection → pyelonephritis/urosepsis in any patient"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Uncomplicated UTI",
+    "topic_b": "Complicated UTI",
+    "discriminator": "Uncomplicated: healthy non-pregnant woman, lower tract symptoms only (dysuria/frequency), normal anatomy — short-course oral antibiotics. Complicated: systemic signs (fever, rigors, flank pain = upper tract) OR structural/functional abnormality OR host factor (pregnancy, immunosuppression, obstruction, catheter, men) — longer course, broader spectrum, may need IV therapy"
+  },
+  {
+    "id": "vasopressor-1",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "A patient with cardiogenic shock has low cardiac output and low blood pressure. Which vasoactive agent is classically used in this setting because of its combined cardiac and vasoconstrictive effects at intermediate-to-high doses?",
+    "answer": "Dopamine at intermediate-to-high doses provides both cardiac stimulation and vasoconstriction; classically used in cardiogenic shock",
+    "rationale": "At higher doses, dopamine activates alpha-1 receptors (vasoconstriction) in addition to beta-1 receptors (inotropy), making it useful when both reduced CO and low SVR contribute to hypotension.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 710
+      }
+    ],
+    "confusable_with": "Dobutamine (pure inotrope, can drop BP; not first choice in severe hypotension)"
+  },
+  {
+    "id": "vasopressor-2",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "A patient in the ICU requires inotropic support. Dobutamine is started. What adverse hemodynamic effect must be monitored closely?",
+    "answer": "Hypotension; dobutamine can increase BP via inotropy but also causes vasodilation, and may drop blood pressure, especially if preload is inadequate",
+    "rationale": "Dobutamine's beta-2 agonist activity causes peripheral vasodilation; in vasodilatory states or hypovolemia, this can worsen hypotension despite increased cardiac output.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 200
+      }
+    ],
+    "confusable_with": "Milrinone (phosphodiesterase inhibitor; also causes hypotension, especially in renal failure)"
+  },
+  {
+    "id": "vasopressor-3",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "Compared to dobutamine, what is the key hemodynamic disadvantage of milrinone that limits its use in ICU patients with hypotension?",
+    "answer": "Milrinone can cause significant hypotension due to vasodilation (PDE-III inhibition reduces SVR); unlike dobutamine, it has no vasoconstrictive mechanism",
+    "rationale": "Milrinone's mechanism (increased cAMP via PDE-III inhibition) produces inotropy and vasodilation; the vasodilation is often excessive in critically ill patients with already low SVR.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 200
+      }
+    ],
+    "confusable_with": "Dobutamine (also vasodilates but less so; less hypotension risk)"
+  },
+  {
+    "id": "vasopressor-4",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "Vasopressin is added to norepinephrine in a patient with refractory vasodilatory shock. In what two specific clinical settings is IV vasopressin most established as a treatment for refractory hypotension?",
+    "answer": "Vasoplegia after cardiac surgery and vasodilatory shock in the ICU (septic shock refractory to catecholamines)",
+    "rationale": "Vasodilatory states deplete endogenous vasopressin; exogenous vasopressin (V1 receptor agonist) restores vascular tone independent of adrenergic receptors.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 467
+      }
+    ],
+    "confusable_with": "Desmopressin (DDAVP) — used for diabetes insipidus/hemostasis, not vasopressor support"
+  },
+  {
+    "id": "vasopressor-5",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "What is the primary concern with using dobutamine in a patient with known coronary artery disease and cardiogenic shock?",
+    "answer": "Dobutamine increases myocardial O2 demand; in CAD, this can worsen ischemia or precipitate arrhythmias",
+    "rationale": "Dobutamine's positive chronotropic and inotropic effects increase heart rate and contractility, raising O2 consumption at a time when coronary perfusion is already compromised.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 200
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "vasopressor-6",
+    "topic": "Vasopressors",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "ICU & critical care",
+    "stem": "In the ICU, for which hemodynamic profile is norepinephrine preferred over dopamine as the first-line vasopressor in septic shock?",
+    "answer": "Norepinephrine is preferred in septic shock (low SVR, distributive); dopamine is associated with higher arrhythmia rates and increased mortality vs norepinephrine in septic shock",
+    "rationale": "Guidelines (Surviving Sepsis) recommend norepinephrine as first-line vasopressor in septic shock based on RCT evidence showing less arrhythmia and potentially better outcomes than dopamine.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 710
+      }
+    ],
+    "confusable_with": "Cardiogenic shock (dopamine/dobutamine combination more applicable)"
+  },
+  {
+    "id": "aspiration-1",
+    "topic": "Aspiration: Prevention and Management",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "A patient aspirates gastric contents intraoperatively and develops hypoxemia. What is the mainstay of respiratory management?",
+    "answer": "Positive-pressure ventilation is the mainstay; intubation with PEEP if hypoxic",
+    "rationale": "Aspiration causes alveolar flooding and atelectasis; positive-pressure ventilation with PEEP recruits alveoli, improves oxygenation, and maintains functional residual capacity.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 471
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aspiration-2",
+    "topic": "Aspiration: Prevention and Management",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "A patient aspirates a significant amount of particulate matter (food). In addition to standard positive-pressure ventilation, what bronchoscopic intervention may be required?",
+    "answer": "Bronchoscopy with pulmonary lavage for particulate matter aspiration to remove obstructing debris",
+    "rationale": "Solid particulate matter can obstruct airways causing lobar collapse; bronchoscopic clearance restores airway patency and prevents post-obstructive pneumonia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 471
+      }
+    ],
+    "confusable_with": "Liquid aspiration pneumonitis (bronchoscopy generally not indicated; supportive care)"
+  },
+  {
+    "id": "aspiration-3",
+    "topic": "Aspiration: Prevention and Management",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What is aspiration's significance in obstetric anesthesia from a medicolegal closed-claims perspective?",
+    "answer": "Aspiration is a leading cause of anesthesia-related obstetric mortality based on closed claims data",
+    "rationale": "Obstetric patients have delayed gastric emptying, increased abdominal pressure, and reduced lower esophageal sphincter tone, making aspiration a disproportionate cause of anesthetic death in this population.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2019
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aspiration-4",
+    "topic": "Aspiration: Prevention and Management",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What is the leading cause of pregnancy-related death in 2017 data, and where does aspiration rank among direct obstetric causes?",
+    "answer": "Cardiovascular disease is the leading cause (14%); infection/sepsis (13%) and cardiomyopathy are also top causes; aspiration is a key direct anesthetic/obstetric cause highlighted in closed claims",
+    "rationale": "Modern obstetric mortality is dominated by indirect causes (cardiovascular, cardiomyopathy); aspiration remains a preventable direct cause of anesthetic obstetric mortality.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1383
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aspiration-5",
+    "topic": "Aspiration: Prevention and Management",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "Which intraoperative technique is the primary preventive strategy against aspiration in patients with full stomach or aspiration risk?",
+    "answer": "Rapid sequence induction (RSI) with cricoid pressure and avoidance of positive-pressure bag-mask ventilation before intubation",
+    "rationale": "RSI minimizes the interval between loss of protective airway reflexes and cuff inflation, preventing passive regurgitation from entering the trachea.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2019
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Aspiration Pneumonitis/Pneumonia",
+    "discipline": "Airway management",
+    "enabling_conditions": "Full stomach (emergency surgery, delayed gastric emptying, obesity, pregnancy), altered consciousness, GERD, impaired airway reflexes, bag-mask ventilation without airway protection",
+    "pathophysiology": "Gastric acid → chemical pneumonitis (Mendelson syndrome) — immediate inflammatory response to acid; particulate matter → obstruction + bacterial pneumonia with delayed onset",
+    "time_course": "Chemical pneumonitis within hours; bacterial pneumonia 24-72h later; ARDS possible within 24-48h if large volume",
+    "key_features": "Hypoxemia, bronchospasm, bilateral infiltrates; particulate aspiration may cause lobar collapse; obstetric = leading cause of anesthetic mortality in closed claims",
+    "consequence_if_missed": "Progressive ARDS, respiratory failure requiring prolonged mechanical ventilation, death; especially devastating in obstetric patients"
+  },
+  {
+    "id": "comms-1",
+    "topic": "Communication Skills & Difficult Conversations",
+    "domain": "Patient safety, ethics, professionalism & quality",
+    "discipline": "Patient safety",
+    "stem": "Which ACGME core competency domain specifically encompasses communication skills as a required entrustable professional activity (EPA) in anesthesiology?",
+    "answer": "Interpersonal and communication skills is one of the core ACGME competencies and an EPA in anesthesiology training",
+    "rationale": "Anesthesiology EPAs require demonstrated competency in communication with patients, families, and the care team as a distinct, assessable professional skill.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 36
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "comms-2",
+    "topic": "Communication Skills & Difficult Conversations",
+    "domain": "Patient safety, ethics, professionalism & quality",
+    "discipline": "Patient safety",
+    "stem": "Palliative care teams use a holistic framework when discussing goals of care with critically ill patients. What four domains does the biopsychosocial-spiritual approach address?",
+    "answer": "Biological (symptom assessment and treatment), psychological (psychosocial issues), social (family/support system), and spiritual (spiritual/existential concerns)",
+    "rationale": "Goals-of-care conversations require addressing all four domains to align treatment with the patient's values and achieve meaningful quality of life.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 866
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "comms-3",
+    "topic": "Communication Skills & Difficult Conversations",
+    "domain": "Patient safety, ethics, professionalism & quality",
+    "discipline": "Patient safety",
+    "stem": "Historical management of critically ill delirious patients included mechanical restraints and heavy sedation. Why are these approaches now considered harmful?",
+    "answer": "Mechanical restraints are inhumane unless absolutely necessary; sedatives and paralytics used historically were associated with adverse consequences including prolonged delirium, ICU weakness, and psychological trauma",
+    "rationale": "Modern evidence shows restraints and heavy sedation worsen delirium, prolong ICU stays, cause post-traumatic stress, and increase mortality; non-pharmacologic and light-sedation approaches are preferred.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2158
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "comms-4",
+    "topic": "Communication Skills & Difficult Conversations",
+    "domain": "Patient safety, ethics, professionalism & quality",
+    "discipline": "Patient safety",
+    "stem": "When discussing ICU care with families, what is the role of palliative care teams beyond symptom management?",
+    "answer": "Palliative care teams discuss goals of care, assess psychosocial and spiritual issues, and ensure patient values guide treatment decisions — not solely end-of-life care",
+    "rationale": "Palliative care is appropriate alongside curative treatment; early integration improves quality of life, reduces futile interventions, and supports family decision-making.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 866
+      }
+    ],
+    "confusable_with": "Hospice care (exclusively end-of-life; palliative care is not)"
+  },
+  {
+    "id": "comms-5",
+    "topic": "Communication Skills & Difficult Conversations",
+    "domain": "Patient safety, ethics, professionalism & quality",
+    "discipline": "Patient safety",
+    "stem": "A critically ill ICU patient is agitated and being considered for restraints. What ethical principle should guide this decision?",
+    "answer": "Restraints should be used only when absolutely necessary (patient safety); restraints are inhumane as a routine intervention and should follow least-restrictive principles with documentation",
+    "rationale": "Ethical principles of autonomy, beneficence, and non-maleficence require exhausting all de-escalation strategies before restraints; restraints carry physical and psychological harms.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2158
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "surgurgency-1",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "In the ACC/AHA perioperative cardiac assessment algorithm, what is Step 1 before any further risk stratification?",
+    "answer": "Determine the urgency of surgery; emergency surgery proceeds immediately with risk modification applied perioperatively",
+    "rationale": "Urgency overrides all other risk stratification steps; in life-threatening emergencies, the patient proceeds to the OR with intraoperative and postoperative risk reduction strategies.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 622
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "surgurgency-2",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "What are the three core goals of a preoperative evaluation according to standard perioperative medicine principles?",
+    "answer": "Understand the proposed surgery, assess the patient's medical risk, and determine whether additional preoperative testing or optimization is needed",
+    "rationale": "Preoperative evaluation is not primarily for 'clearance' but for identifying modifiable risk, optimizing the patient, and informing shared decision-making.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 219
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "surgurgency-3",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "What MACE risk threshold distinguishes 'low risk' from 'elevated risk' procedures for perioperative cardiac risk?",
+    "answer": "Low risk: MACE <1%; elevated risk: MACE ≥1%",
+    "rationale": "This threshold from ACC/AHA guidelines determines whether further cardiac testing (stress testing, cardiology consultation) is warranted before elective surgery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 223
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "surgurgency-4",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "A patient on warfarin with INR 1.8 requires urgent surgery for a ruptured appendectomy. What blood product is most appropriate for rapid anticoagulation reversal?",
+    "answer": "Fresh frozen plasma (FFP) is most appropriate for warfarin reversal in urgent surgery with INR 1.8",
+    "rationale": "FFP contains all vitamin K-dependent clotting factors; in urgent surgery it provides immediate reversal of warfarin effect, unlike vitamin K which requires 12-24 hours.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 50
+      }
+    ],
+    "confusable_with": "4-factor PCC (faster and preferred when available; FFP requires large volumes)"
+  },
+  {
+    "id": "surgurgency-5",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "How does 'urgent' surgery differ from 'emergency' surgery in the context of perioperative risk communication to patients?",
+    "answer": "Emergency surgery = immediate threat to life/limb requiring OR within hours (no time for optimization); urgent surgery = serious condition requiring surgery within 24-48h (limited optimization possible); elective = can be deferred for full optimization",
+    "rationale": "The urgency classification determines how much preoperative evaluation and optimization is feasible; this must be communicated to patients when discussing risk-benefit ratio.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 622
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "surgurgency-6",
+    "topic": "Emergency vs urgent vs elective surgery risk communication",
+    "domain": "Preoperative evaluation & perioperative medicine",
+    "discipline": "Preoperative evaluation",
+    "stem": "A patient asks about the risk of a major cardiac event from their upcoming surgery. The estimated MACE is 0.6%. How should this risk be categorized?",
+    "answer": "Low risk (MACE <1%); generally does not require further cardiac testing before proceeding with elective surgery",
+    "rationale": "ACC/AHA guidelines specify that low-risk procedures (MACE <1%) can proceed without additional cardiac evaluation if functional capacity is adequate.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 223
+      }
+    ],
+    "confusable_with": "Elevated risk (MACE ≥1%) where stress testing or cardiology consultation may be needed"
+  },
+  {
+    "id": "opioid-steward-1",
+    "topic": "Opioid Stewardship and Prescribing Guidelines",
+    "domain": "Pain medicine",
+    "discipline": "Pain medicine",
+    "stem": "A patient with severe COPD has FEV1 <50% of predicted and is scheduled for upper abdominal surgery. What specific postoperative respiratory risk is elevated, and what may be required?",
+    "answer": "High risk of postoperative respiratory failure; may require postoperative mechanical ventilation, particularly after upper abdominal or thoracic surgery",
+    "rationale": "FEV1 <50% indicates severely reduced respiratory reserve; upper abdominal surgery causes diaphragmatic splinting and reduces FRC, which can precipitate ventilatory failure in already-compromised patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 874
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "opioid-steward-2",
+    "topic": "Opioid Stewardship and Prescribing Guidelines",
+    "domain": "Pain medicine",
+    "discipline": "Pain medicine",
+    "stem": "Why does upper abdominal or thoracic surgery pose a disproportionately higher respiratory risk than lower extremity surgery in patients with reduced pulmonary reserve?",
+    "answer": "Upper abdominal/thoracic surgery impairs diaphragmatic excursion and reduces FRC; splinting from pain further compromises an already marginal FEV1",
+    "rationale": "Proximity of the incision to the diaphragm causes reflex inhibition and pain-limited breathing, requiring greater respiratory reserve to avoid postoperative ventilatory failure.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 874
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "opioid-steward-3",
+    "topic": "Opioid Stewardship and Prescribing Guidelines",
+    "domain": "Pain medicine",
+    "discipline": "Pain medicine",
+    "stem": "In a patient with FEV1 <50% requiring post-surgical opioids, what respiratory risk does opioid administration add beyond the surgical respiratory risk?",
+    "answer": "Opioids cause dose-dependent respiratory depression, reducing respiratory rate and tidal volume; in patients with FEV1 <50%, this can precipitate hypercapnic respiratory failure requiring mechanical ventilation",
+    "rationale": "Patients with severely reduced pulmonary reserve have minimal margin for opioid-induced respiratory depression; multimodal analgesia and minimizing opioid doses are essential for stewardship.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 874
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-1",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What bedside test predicts post-extubation stridor in mechanically ventilated ICU patients, and what does a positive test indicate?",
+    "answer": "The cuff-leak test: deflate ETT cuff and measure air leak around tube; absence of a cuff leak (positive test) predicts post-extubation stridor due to subglottic edema",
+    "rationale": "If no air leaks around the deflated cuff, significant laryngeal/subglottic edema is present; these patients are at risk for stridor and reintubation after extubation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 364
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-2",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What tidal volume and vital capacity criteria must be met to demonstrate adequate failure-to-oxygenate parameters before extubation?",
+    "answer": "Tidal volume >5 cc/kg AND vital capacity >15 cc/kg; SpO2 >90% with FiO2 <0.4",
+    "rationale": "These parameters confirm adequate spontaneous tidal breathing and respiratory reserve; combined with oxygenation criteria, they reduce the risk of extubation failure.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 70
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-3",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What is the minimum inspiratory force (MIF/NIF) threshold required for adequate spontaneous ventilation before extubation?",
+    "answer": "MIF more negative than −20 cmH2O (i.e., MIF ≤ −20 cmH2O) is required for adequate spontaneous breathing",
+    "rationale": "A more negative MIF reflects greater diaphragmatic and accessory muscle strength; values less negative than −20 cmH2O indicate insufficient respiratory muscle reserve for unassisted ventilation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 770
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-4",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "A mechanically ventilated patient has PaCO2 of 65 mmHg with pH 7.25 despite optimization. What should be the next step rather than extubation?",
+    "answer": "Continue mechanical ventilation; extubation is contraindicated with progressive hypercapnia (PaCO2 >60 with severe acidemia) or worsening hypoxemia",
+    "rationale": "MGH extubation criteria include PaCO2 <60 as a threshold; respiratory acidosis with pH <7.30 indicates inadequate ventilatory reserve for spontaneous breathing.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 57
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-5",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What is auto-PEEP, how is it measured, and what causes it?",
+    "answer": "Auto-PEEP = end-expiratory pressure minus set PEEP; measured by end-expiratory hold maneuver; caused by incomplete alveolar emptying (air trapping) due to high RR, high tidal volume, or obstructive disease",
+    "rationale": "Air trapping increases end-expiratory alveolar pressure above set PEEP, causing dynamic hyperinflation which increases work of breathing and can cause hemodynamic compromise.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 58
+      }
+    ],
+    "confusable_with": "Set PEEP (intentional therapeutic pressure; auto-PEEP is unintentional)"
+  },
+  {
+    "id": "stridor-6",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What additional extubation parameters (beyond oxygenation) confirm readiness for ventilator weaning according to the Stanford extubation checklist?",
+    "answer": "Neuromuscular blockade reversed; respiratory rate 6-30 breaths/min; EtCO2 <50-60 mmHg; tidal volume >5 cc/kg; vital capacity >15 cc/kg",
+    "rationale": "Residual NMB impairs respiratory muscle function; rate and EtCO2 confirm adequate ventilation without excessive work or CO2 retention.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 70
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "stridor-7",
+    "topic": "Post-extubation stridor and airway edema",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What proportion of perioperative difficult airway closed claims occur at the time of extubation, and what do current ASA guidelines fail to address?",
+    "answer": "12% of perioperative difficult airway closed claims occur at extubation; ASA difficult airway guidelines have NOT reduced extubation injury claims",
+    "rationale": "Extubation is a high-risk phase often underprotocolized; unlike intubation, no standardized ASA algorithm has demonstrably reduced extubation-related morbidity.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 69
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "trach-1",
+    "topic": "Tracheostomy management and perioperative considerations",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "In a patient with head and neck cancer requiring surgical resection, what factor primarily determines the timing of tracheostomy?",
+    "answer": "The extent of the head and neck surgery determines tracheostomy timing; more extensive resections involving the airway or requiring large reconstructions require tracheostomy",
+    "rationale": "Extensive resection, flap reconstruction, or anticipated postoperative airway edema from surgical trauma mandates tracheostomy to secure a long-term protected airway.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1277
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "trach-2",
+    "topic": "Tracheostomy management and perioperative considerations",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "What percentage of perioperative difficult airway complications in closed claims occur specifically at the time of extubation?",
+    "answer": "12% of perioperative difficult airway closed claims occur at extubation",
+    "rationale": "Extubation is an underrecognized high-risk phase; post-extubation edema, laryngospasm, and failed re-intubation contribute significantly to airway morbidity.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 69
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "trach-3",
+    "topic": "Tracheostomy management and perioperative considerations",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "Despite the existence of ASA difficult airway guidelines, what aspect of airway management do they fail to address adequately based on claims data?",
+    "answer": "ASA difficult airway guidelines have NOT reduced extubation injury closed claims; extubation-related injuries remain an unaddressed gap",
+    "rationale": "Guidelines historically focused on intubation strategies; extubation planning (including tracheostomy timing and post-extubation monitoring) requires institutional protocols beyond published guidelines.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 69
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "trach-4",
+    "topic": "Tracheostomy management and perioperative considerations",
+    "domain": "Airway management",
+    "discipline": "Airway management",
+    "stem": "For a patient with a fresh tracheostomy in the first 72 hours post-procedure, what is the primary concern if accidental decannulation occurs?",
+    "answer": "The tracheostomy tract is not yet mature; blind reinsertion risks creation of a false passage; oral or nasal intubation is safer if the patient cannot be immediately re-cannulated",
+    "rationale": "Tracheostomy tracts take at least 5-7 days to mature; premature dislodgment before maturation constitutes an airway emergency requiring skilled management.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1277
+      }
+    ],
+    "confusable_with": "Established tracheostomy (>7 days mature; can be re-cannulated at bedside)"
+  },
+  {
+    "id": "aki-def-1",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What are the three diagnostic criteria for AKI according to KDIGO 2012?",
+    "answer": "Serum Cr rise ≥0.3 mg/dL within 48 hours; OR serum Cr rise ≥1.5× baseline within 7 days; OR urine output <0.5 mL/kg/h for ≥6 hours",
+    "rationale": "KDIGO 2012 standardized AKI diagnosis by providing time-anchored absolute and relative creatinine thresholds plus a urine output criterion, any one of which is sufficient.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "KDIGO 2012 AKI",
+        "page": 22
+      }
+    ],
+    "confusable_with": "CKD (chronic; defined by >3 months of abnormal kidney function)"
+  },
+  {
+    "id": "aki-def-2",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "When a patient meets both creatinine and urine output criteria for AKI but at different KDIGO stages, how should the AKI stage be assigned?",
+    "answer": "Stage according to the worst (highest) criterion — whichever criterion yields the more severe stage is used",
+    "rationale": "KDIGO staging uses the most severe criterion to ensure AKI severity is not underestimated; this allows appropriate escalation of management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "KDIGO 2012 AKI",
+        "page": 24
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-def-3",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What is the KDIGO classification framework that distinguishes acute from subacute and chronic kidney disease?",
+    "answer": "NKD (no kidney disease), AKD (acute kidney disease: <3 months), CKD (chronic kidney disease: ≥3 months); AKI is a subset of AKD",
+    "rationale": "KDIGO created the AKD category to capture kidney injury persisting 7-90 days, bridging the gap between AKI resolution and CKD diagnosis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "KDIGO 2012 AKI",
+        "page": 37
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-def-4",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "Which two drugs increase serum creatinine without actually reducing GFR, and why is this clinically important?",
+    "answer": "Trimethoprim (in Bactrim) and H2-blockers (especially cimetidine) block tubular creatinine secretion, raising sCr without true GFR reduction",
+    "rationale": "Misinterpreting drug-induced Cr elevation as AKI leads to unnecessary workup and inappropriate fluid administration; recognizing these drug effects prevents diagnostic error.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99
+      }
+    ],
+    "confusable_with": "True AKI (with actual GFR decline)"
+  },
+  {
+    "id": "aki-def-5",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "A patient's serum creatinine rises by 1.5 mg/dL in 24 hours. What does this rapid rise imply about GFR?",
+    "answer": "A ΔCr >1 mg/dL/day implies GFR <10 mL/min; creatinine only approximates GFR at steady state",
+    "rationale": "Creatinine accumulates rapidly (>1 mg/dL/day) only when GFR is severely impaired; the non-steady-state rise reflects near-complete loss of filtration, not just a mild reduction.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-def-6",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What is the urine output threshold in the KDIGO AKI definition and over what minimum time frame must oliguria persist?",
+    "answer": "Urine output <0.5 mL/kg/h for ≥6 hours constitutes the oliguria criterion for AKI",
+    "rationale": "The 6-hour time window is long enough to confirm sustained oliguria rather than transient causes; it standardizes AKI detection in ICU populations where continuous urine monitoring is available.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls AKI",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-def-7",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What metabolic consequences result from AKI, beyond impaired creatinine clearance?",
+    "answer": "Accumulation of water, sodium, other metabolic waste products (urea, potassium, acid); electrolyte imbalances (hyperkalemia, hyperphosphatemia, metabolic acidosis)",
+    "rationale": "The kidney's role in water, electrolyte, and acid-base homeostasis means AKI disrupts all these simultaneously, creating a multi-system emergency.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls AKI",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-def-8",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What specific patient population and clinical setting are identified as having a high frequency of contrast-induced AKI?",
+    "answer": "Contrast-induced AKI is frequent in both ambulatory AND hospitalized patients; risk is highest in pre-existing CKD, diabetes, and volume depletion",
+    "rationale": "Contrast nephropathy is not limited to hospitalized patients; outpatient imaging procedures also cause significant AKI, particularly in those with reduced baseline GFR.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "KDIGO 2012 AKI",
+        "page": 72
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "AKI: Definition, Staging, and Epidemiology",
+    "discipline": "Nephrology",
+    "enabling_conditions": "Hypovolemia, sepsis, nephrotoxins (aminoglycosides, NSAIDs, contrast, vancomycin), cardiac dysfunction, urinary obstruction, major surgery",
+    "pathophysiology": "Prerenal: ↓ renal perfusion → tubular ischemia → ATN if prolonged; intrinsic: direct tubular/glomerular injury; postrenal: obstruction → back-pressure → GFR reduction",
+    "time_course": "Hours to days; creatinine lags 24-48h behind injury (not steady-state); oliguria may precede Cr rise",
+    "key_features": "KDIGO: Cr ≥0.3 mg/dL in 48h or ≥1.5× baseline in 7d or UO <0.5 mL/kg/h ×6h; ΔCr >1 mg/dL/day → GFR <10; trimethoprim/cimetidine raise Cr without true AKI",
+    "consequence_if_missed": "Fluid overload, hyperkalemia, severe metabolic acidosis, uremia, need for emergent RRT, increased ICU mortality"
+  },
+  {
+    "id": "aki-mgmt-1",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What is the foundational principle of AKI management summarized by the MGH Housestaff Manual for fluid administration?",
+    "answer": "'A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer' — optimize hemodynamics to euvolemia; avoid both volume depletion AND fluid overload",
+    "rationale": "Both hypovolemia (prerenal ischemia) and fluid overload (venous congestion reducing renal perfusion pressure) worsen AKI; euvolemia is the therapeutic target.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-mgmt-2",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "Which four nephrotoxic medications or classes should be stopped or avoided in AKI?",
+    "answer": "NSAIDs, ACE inhibitors, ARBs, high-glucose fluids; avoid iodinated contrast; stop aminoglycosides if possible",
+    "rationale": "NSAIDs/ACEi/ARBs reduce intraglomerular pressure and impair autoregulation; contrast and aminoglycosides are directly tubulotoxic; minimizing nephrotoxin exposure limits further injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-mgmt-3",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "A patient with AKI has decreased renal blood flow from hypovolemia. What renal compensatory mechanism activates to preserve intravascular volume?",
+    "answer": "The kidney conserves sodium (activates RAAS → aldosterone → Na+ reabsorption) to restore intravascular volume in hypovolemic states",
+    "rationale": "Low renal blood flow triggers juxtaglomerular renin release → angiotensin II → aldosterone, increasing tubular sodium reabsorption as an adaptive homeostatic response.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 528
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-mgmt-4",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "In hepatorenal syndrome (HRS) complicating AKI, what is the starting dose of terlipressin and how is it escalated?",
+    "answer": "Terlipressin started at 1 mg IV q6h; escalated to 2 mg IV q6h if inadequate response",
+    "rationale": "Terlipressin (vasopressin analogue) reduces splanchnic vasodilation in cirrhosis, improving effective arterial blood volume and reversing the functional renal vasoconstriction of HRS.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls HRS",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Vasopressin for septic shock (different dose, indication, and route titration)"
+  },
+  {
+    "id": "aki-mgmt-5",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "In hepatorenal syndrome, why is albumin administered alongside vasoconstrictors (e.g., terlipressin)?",
+    "answer": "Albumin improves effective arterial blood volume via both oncotic (volume expansion) and non-oncotic (anti-inflammatory, antioxidant) mechanisms",
+    "rationale": "In cirrhosis, oncotic deficit from hypoalbuminemia worsens splanchnic pooling; albumin's non-oncotic effects (binding vasoactive substances, reducing oxidative stress) provide additional benefit.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls HRS",
+        "page": 8
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-mgmt-6",
+    "topic": "AKI: Management and Renal Replacement Therapy Indications",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What are the emergent indications for renal replacement therapy (RRT) in AKI — the classic AEIOU mnemonic?",
+    "answer": "Acidosis (severe metabolic, pH <7.1-7.2 unresponsive to bicarbonate), Electrolytes (hyperkalemia refractory to medical management), Intoxication (dialyzable toxins), Overload (fluid overload refractory to diuretics), Uremia (encephalopathy, pericarditis, bleeding)",
+    "rationale": "These five life-threatening complications of AKI require immediate extracorporeal clearance when conservative management fails; urgency of initiation depends on severity and trajectory.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 99
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-pre-1",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "In oliguric prerenal azotemia, what is the expected fractional excretion of sodium (FENa)?",
+    "answer": "FENa <1% in oliguric prerenal azotemia, indicating avid sodium reabsorption by intact tubules",
+    "rationale": "In prerenal states, tubular function is intact; the kidney maximally reabsorbs sodium in response to decreased perfusion, producing highly concentrated urine with very low urinary sodium.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2142
+      }
+    ],
+    "confusable_with": "Intrinsic AKI (FENa >3% in oliguric ATN due to tubular damage)"
+  },
+  {
+    "id": "aki-pre-2",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "In oliguric intrinsic (intrarenal) AKI from acute tubular necrosis, what is the expected FENa?",
+    "answer": "FENa >3% in oliguric intrinsic AKI; damaged tubules cannot reabsorb sodium, producing urine with high sodium content",
+    "rationale": "ATN causes tubular injury that abolishes the sodium reabsorptive capacity, so sodium spills into the urine despite oliguria — the opposite pattern from prerenal AKI.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2142
+      }
+    ],
+    "confusable_with": "Prerenal AKI (FENa <1%; tubules intact)"
+  },
+  {
+    "id": "aki-pre-3",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What FENa range is indeterminate and may represent either non-oliguric AKI or an intermediate state?",
+    "answer": "FENa 1-3% is indeterminate and may represent nonoliguric AKI or mixed prerenal/intrinsic etiologies",
+    "rationale": "The intermediate range lacks the discriminatory value of clear-cut <1% (prerenal) or >3% (intrinsic) results, requiring clinical integration with the full clinical picture.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2142
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-pre-4",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What is the formula for the Renal Failure Index (RFI) and how does its interpretation compare to FENa?",
+    "answer": "RFI = urinary Na / (urine creatinine / plasma creatinine); interpretation parallels FENa: <1 = prerenal, >1 = intrinsic AKI",
+    "rationale": "RFI avoids the need to measure urine creatinine separately from plasma creatinine by combining them into one ratio; it reflects the same tubular sodium-handling physiology as FENa.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2142
+      }
+    ],
+    "confusable_with": "FENa calculation (FENa = [urine Na × plasma Cr] / [plasma Na × urine Cr] × 100)"
+  },
+  {
+    "id": "aki-pre-5",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "What anatomical criterion must be met for postrenal obstruction to cause azotemia and oliguria/anuria?",
+    "answer": "Bilateral obstruction is usually required (or unilateral obstruction in a solitary kidney); unilateral obstruction with a normal contralateral kidney typically does not cause azotemia",
+    "rationale": "The contralateral kidney can compensate for unilateral obstruction; only when both kidneys are obstructed (or there is a functional/anatomic single kidney) does GFR fall enough to cause azotemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2141
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "aki-pre-6",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "Complete bilateral ureteral obstruction produces what clinical pattern?",
+    "answer": "Complete bilateral obstruction → AKI with oliguria or anuria; anuria should prompt evaluation for complete obstruction or vascular catastrophe",
+    "rationale": "Anuria (vs oliguria) suggests complete obstruction or bilateral renal infarction; partial obstruction may cause polyuria due to impaired concentrating ability.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2141
+      }
+    ],
+    "confusable_with": "Prerenal oliguria (responds to fluids; anuria usually does not)"
+  },
+  {
+    "id": "aki-pre-7",
+    "topic": "AKI: Prerenal Azotemia",
+    "domain": "Internal medicine: nephrology",
+    "discipline": "Nephrology",
+    "stem": "A patient with oliguria (UO <0.5 mL/kg/h) has a FENa of 0.5%. What is the most likely AKI category and initial management step?",
+    "answer": "Prerenal azotemia (FENa <1%); initial management is judicious IV fluid resuscitation to restore renal perfusion",
+    "rationale": "Low FENa with intact tubular function indicates inadequate renal perfusion; cautious volume repletion is appropriate unless the patient is fluid overloaded.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2142
+      }
+    ],
+    "confusable_with": "Intrinsic AKI (fluids do not reverse ATN)"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Prerenal AKI",
+    "topic_b": "Intrinsic AKI (ATN)",
+    "discriminator": "Prerenal: FENa <1%, RFI <1, concentrated urine (osmolality >500), intact tubular function, responds to fluid resuscitation. Intrinsic ATN: FENa >3%, RFI >1, dilute urine (osmolality ~300), muddy-brown granular casts, tubular damage does NOT respond to fluids alone"
+  },
+  {
+    "id": "acidbase-1",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "What is a chemical buffer and what property makes it most effective?",
+    "answer": "A buffer is a weak acid plus its conjugate base that minimizes [H+] changes by accepting or donating protons; most efficient when the solution's pH is near the buffer's equilibrium (pKa)",
+    "rationale": "At pH near pKa, significant amounts of both the acid and conjugate base form are present, allowing the buffer to resist pH changes in either direction.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1911
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "acidbase-2",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "Define respiratory acidosis and describe the primary change in the Henderson-Hasselbalch equilibrium.",
+    "answer": "Respiratory acidosis = primary ↑PaCO2 → ↑[H+] → ↓pH; CO2 + H2O ⇌ H2CO3 ⇌ H+ + HCO3−; equilibrium shifts right, increasing H+ and HCO3−",
+    "rationale": "CO2 retention forces the carbonic acid equilibrium rightward, producing more H+ (acidosis); renal compensation (HCO3− retention) partially restores pH over 2-5 days.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1922
+      }
+    ],
+    "confusable_with": "Metabolic alkalosis (also ↑HCO3− but primary disturbance is metabolic, not respiratory)"
+  },
+  {
+    "id": "acidbase-3",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "List four pulmonary causes of respiratory acidosis (hypercapnia).",
+    "answer": "Pleural effusion, airway obstruction, severe asthma, COPD, pulmonary edema, pulmonary embolism, interstitial lung disease",
+    "rationale": "All these conditions impair alveolar ventilation (by obstruction, V/Q mismatch, or reduced compliance), reducing CO2 elimination and causing hypercapnia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1923
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "acidbase-4",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "What two non-pulmonary causes of respiratory acidosis are frequently encountered in the perioperative and ICU setting?",
+    "answer": "Large caloric loads (carbohydrate overfeeding increases CO2 production) and malignant hyperthermia (massive increase in metabolic rate → CO2 production)",
+    "rationale": "These causes are easily missed because the lungs are not primarily diseased; high CO2 production exceeds ventilatory capacity to clear it, causing hypercapnia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1923
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "acidbase-5",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "Describe what defines metabolic acidosis in terms of the expected acid-base compensation.",
+    "answer": "Metabolic acidosis: primary ↓[HCO3−] below expected compensation level (i.e., HCO3− falls more than predicted by respiratory compensation alone)",
+    "rationale": "Metabolic acidosis is defined by a primary reduction in serum bicarbonate; respiratory compensation (hyperventilation, ↓PaCO2) is expected but insufficient to fully normalize pH.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1941
+      }
+    ],
+    "confusable_with": "Respiratory alkalosis with metabolic compensation (HCO3− also falls, but secondary)"
+  },
+  {
+    "id": "acidbase-6",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "What is the treatment of metabolic alkalosis in the classic saline-responsive example?",
+    "answer": "IV KCl + saline (normal saline) administration corrects saline-responsive metabolic alkalosis by replacing chloride deficit and restoring volume",
+    "rationale": "Saline-responsive alkalosis (contraction alkalosis, vomiting) is driven by chloride depletion and volume contraction; chloride replacement allows renal bicarbonate excretion and corrects pH.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1942
+      }
+    ],
+    "confusable_with": "Saline-resistant metabolic alkalosis (primary hyperaldosteronism, Bartter/Gitelman syndromes — requires different treatment)"
+  },
+  {
+    "id": "acidbase-7",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "A mechanically ventilated patient develops a rising EtCO2 with increasing rigidity and hyperthermia after succinylcholine. What acid-base disorder is developing and what is the mechanism?",
+    "answer": "Respiratory and metabolic acidosis from malignant hyperthermia; massive ↑CO2 production from uncontrolled skeletal muscle metabolism exceeds ventilatory CO2 clearance",
+    "rationale": "Malignant hyperthermia is listed as a cause of respiratory acidosis via excess CO2 production; concurrently, lactic acidosis develops from anaerobic muscle metabolism.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1923
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "acidbase-8",
+    "topic": "Acid-base disorders",
+    "domain": "General internal medicine",
+    "discipline": "General internal medicine",
+    "stem": "In the bicarbonate-CO2 buffering system, what happens to the equilibrium when a patient hyperventilates to compensate for metabolic acidosis?",
+    "answer": "↓PaCO2 from hyperventilation drives the equilibrium: CO2 + H2O ← H2CO3 ← H+ + HCO3−; leftward shift reduces [H+] and partially corrects pH",
+    "rationale": "The body 'blows off' CO2 to reduce the carbonic acid pool, shifting the equilibrium to consume excess H+ — the fundamental mechanism of respiratory compensation for metabolic acidosis.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1922
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-1",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "What is the leading cause of hospital admission in adults over 65 years of age?",
+    "answer": "Acute decompensated heart failure (ADHF) is the leading cause of hospitalization in adults >65 years old",
+    "rationale": "The high prevalence of underlying HF combined with triggers such as fluid overload, ischemia, arrhythmia, and medication non-adherence drive frequent hospitalizations in the elderly.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 190
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-2",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "How is ADHF classified by anatomical and physiological criteria?",
+    "answer": "By side of heart (left vs right heart failure) and phase of cardiac cycle (systolic = reduced EF vs diastolic = preserved EF)",
+    "rationale": "This classification guides therapy: left-sided systolic (HFrEF) benefits from afterload reduction and neurohormonal blockade; right-sided failure requires RV-specific management; diastolic (HFpEF) requires rate control and diuresis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 190
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-3",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "In severe ADHF requiring ICU admission, how are vasoactive drugs administered, and why?",
+    "answer": "Given by continuous IV infusion titrated to hemodynamic measurements (cardiac output, filling pressures, SVR)",
+    "rationale": "Vasoactive agents have narrow therapeutic windows and rapid hemodynamic effects; continuous infusion with titration to invasive hemodynamic parameters allows precise individualized dosing.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 197
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-4",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "In early compensated heart failure, what sympathetic mechanism initially maintains cardiac output?",
+    "answer": "Norepinephrine release from enhanced sympathetic outflow initially maintains cardiac output by increasing heart rate and contractility",
+    "rationale": "Sympathetic activation is a short-term compensatory mechanism; chronic sympathetic excess (elevated NE levels) later worsens outcomes via catecholamine cardiotoxicity and neurohormonal activation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 603
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-5",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "What defines ACC/AHA Stage A heart failure?",
+    "answer": "Stage A: patients at risk for HF (no structural cardiac disease, no symptoms) — primary prevention stage; e.g., hypertension, diabetes, family history",
+    "rationale": "Stage A represents the highest-yield prevention opportunity; interventions targeting Stage A risk factors (BP control, diabetes management) prevent progression to structural disease.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "ACC AHA 2022 HF",
+        "page": 30
+      }
+    ],
+    "confusable_with": "Stage B (structural disease present but no symptoms)"
+  },
+  {
+    "id": "adhf-6",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "What are the 1-year, 3-year, and 5-year survival rates after cardiac transplantation?",
+    "answer": "1-year: 90.3%; 3-year: 84.7%; 5-year: 79.6%; conditional survival approaches 15 years",
+    "rationale": "Cardiac transplant outcomes have improved markedly; these figures are used in shared decision-making for patients with end-stage HF considering listing.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "ACC AHA 2022 HF",
+        "page": 79
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "adhf-7",
+    "topic": "Acute Decompensated Heart Failure",
+    "domain": "Internal medicine: cardiology",
+    "discipline": "Cardiology",
+    "stem": "A patient with ADHF has preserved ejection fraction (HFpEF). How does the pathophysiology differ from HFrEF and how does this affect treatment?",
+    "answer": "HFpEF: systolic function intact but impaired diastolic relaxation → elevated filling pressures; treatment targets congestion (diuresis) and rate control; neurohormonal blockade less proven than in HFrEF",
+    "rationale": "HFpEF's underlying mechanism (impaired LV relaxation/compliance) differs fundamentally from systolic failure; treatments proven in HFrEF (ACEi, beta-blockers) have limited mortality benefit in HFpEF.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 190
+      }
+    ],
+    "confusable_with": "HFrEF (systolic dysfunction; EF <40%; neurohormonal blockade is cornerstone)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Acute Decompensated Heart Failure",
+    "discipline": "Cardiology",
+    "enabling_conditions": "Pre-existing HF (HFrEF or HFpEF), triggers: medication non-adherence (diuretics, salt), dietary indiscretion (sodium), ACS, uncontrolled hypertension, new arrhythmia (AF), infection, anemia",
+    "pathophysiology": "Increased LV filling pressures → pulmonary venous congestion → pulmonary edema; reduced CO → sympathetic activation (NE release maintains CO initially) → peripheral vasoconstriction, fluid retention; viscous cycle of worsening congestion",
+    "time_course": "Hours to days; may be gradual (fluid accumulation) or acute (flash pulmonary edema from hypertensive crisis/acute MR/ACS)",
+    "key_features": "Dyspnea, orthopnea, PND, peripheral edema, elevated JVP, S3 gallop, bilateral crackles; leading cause of admission >65y; classified by side (L/R) and phase (systolic/diastolic); IV vasoactive agents for severe decompensation",
+    "consequence_if_missed": "Respiratory failure requiring intubation, cardiogenic shock, arrhythmia, end-organ damage (AKI, hepatic congestion), death"
+  }
+]

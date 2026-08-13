@@ -1,0 +1,61 @@
+# Large PDF sources (user-acquired, often copyrighted)
+data/phase*_sources/*.pdf
+
+# Python virtual environments
+venv/
+env/
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.local
+*.local.json
+
+# Data files (large downloads)
+*.csv.gz
+*.parquet
+*.zarr
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Vector store (1.5 GB, lives on external D: via junction) — never commit
+storage/chroma/
+storage/sample_chroma/
+
+# Persistent student state + backups (runtime data)
+storage/sqlite/
+storage/logs/
+storage/checkpoints/
+*.bak
+*.db
+
+# Transient eval outputs
+eval_*.json
+
+# HF deploy token (never commit)
+deploy/hf/.hf_token
+deploy/hf/.mcp_token
+
+# Regenerable curriculum caches (large)
+storage/curriculum/lesson_cache.json
+storage/curriculum/cloze_cards.jsonl

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "interscalene-block-d1",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "What surgical procedures is an interscalene block indicated for?",
+    "answer": "Procedures involving the shoulder and upper arm (e.g., rotator cuff repair, shoulder arthroplasty, proximal humerus surgery); it is NOT appropriate for surgery at or distal to the elbow (C8-T1 are often spared).",
+    "rationale": "Interscalene block primarily anesthetizes C5-C7 roots; the ulnar nerve (C8-T1) is frequently spared, making this approach unsuitable for surgeries requiring complete hand/distal arm anesthesia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1621
+      }
+    ],
+    "confusable_with": "supraclavicular block (covers more of plexus including C8-T1)"
+  },
+  {
+    "id": "interscalene-block-d2",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "What is the most common and virtually universal side effect of interscalene block?",
+    "answer": "Ipsilateral phrenic nerve blockade occurs in nearly 100% of nerve-stimulator-guided techniques (less with certain low-volume ultrasound techniques), causing 25% reduction in ipsilateral hemidiaphragm function.",
+    "rationale": "The phrenic nerve (C3-C5) lies in proximity to the brachial plexus at the interscalene level; local anesthetic spread inevitably blocks it, limiting use in patients with severe contralateral pulmonary disease.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1623
+      }
+    ],
+    "confusable_with": "recurrent laryngeal nerve palsy (also possible but less frequent)"
+  },
+  {
+    "id": "interscalene-block-d3",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "What are absolute contraindications to interscalene block?",
+    "answer": "Local infection at injection site, severe coagulopathy, local anesthetic allergy, patient refusal; bilateral interscalene blocks are absolutely contraindicated due to bilateral phrenic nerve palsy risk causing respiratory failure.",
+    "rationale": "Bilateral phrenic blockade eliminates bilateral diaphragmatic function; even unilateral block is relatively contraindicated in patients with severe contralateral phrenic palsy or severe pulmonary disease.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1623
+      }
+    ],
+    "confusable_with": "supraclavicular contraindications (similar set)"
+  },
+  {
+    "id": "interscalene-block-d4",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "Where anatomically is the interscalene block performed, and what needle technique is used?",
+    "answer": "The brachial plexus passes between anterior and middle scalene muscles at the level of the cricoid cartilage/C6 vertebra; a high-frequency linear ultrasound transducer is placed perpendicular to the muscle course (short axis), and an in-plane needle technique is used.",
+    "rationale": "Short-axis imaging shows the nerve roots as hypoechoic circles between the scalene muscles; in-plane technique allows needle visualization throughout the approach.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1624
+      }
+    ],
+    "confusable_with": "supraclavicular block (subclavian perivascular space)"
+  },
+  {
+    "id": "interscalene-block-d5",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "Supraclavicular block shares what risk with interscalene block, and what additional complication is unique to the supraclavicular approach?",
+    "answer": "Both share ipsilateral phrenic nerve palsy risk (~50% with supraclavicular); supraclavicular uniquely adds pneumothorax risk and subclavian artery puncture risk due to proximity of the lung apex.",
+    "rationale": "The supraclavicular block targets plexus at the 'choke point' before divisions separate; its proximity to the lung apex creates pneumothorax risk not present with interscalene.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1628
+      }
+    ],
+    "confusable_with": "interscalene block complications"
+  },
+  {
+    "id": "interscalene-block-d6",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "What is the key advantage of regional anesthesia beyond analgesia that makes peripheral nerve blocks broadly beneficial?",
+    "answer": "Regional anesthesia reduces: stress response, systemic analgesic requirements, opioid-related side effects, general anesthesia requirements, and possibly the development of chronic postoperative pain.",
+    "rationale": "These benefits extend beyond pain control to influence recovery, opioid use, and long-term outcomes, justifying regional anesthesia even when general anesthesia is feasible.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1608
+      }
+    ],
+    "confusable_with": "analgesia-only benefit"
+  },
+  {
+    "id": "interscalene-block-d7",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional anesthesia, neuraxial techniques & peripheral nerve blocks",
+    "discipline": "anesthesia",
+    "stem": "What nerve root is most reliably blocked with the interscalene approach, and which root is most commonly missed?",
+    "answer": "C5-C7 are most densely and reliably blocked; C8 and T1 (ulnar nerve distribution) are usually spared — procedures requiring ring finger/little finger anesthesia cannot rely on interscalene block alone.",
+    "rationale": "The interscalene groove targets the plexus at roots/trunks level; C8-T1 roots are more caudal and deeper, often missed by injections at the C5-C7 level.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1621
+      }
+    ],
+    "confusable_with": "axillary block (covers C8-T1 reliably)"
+  },
+  {
+    "id": "iabp-d1",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "Where is the IABP balloon positioned in the aorta?",
+    "answer": "The balloon is positioned in the descending aorta just distal to the left subclavian artery; this maximizes coronary and cerebrovascular perfusion augmentation while avoiding subclavian and renal artery obstruction.",
+    "rationale": "Positioning too high risks subclavian artery occlusion; too low risks celiac/renal artery obstruction; proper position augments diastolic filling of coronary ostia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "LVAD positioning"
+  },
+  {
+    "id": "iabp-d2",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "IABP inflation must be timed to what event on the aortic pressure tracing?",
+    "answer": "The balloon inflates just after the dicrotic notch (indicating aortic valve closure) to augment diastolic blood pressure and coronary blood flow; early inflation (before valve closure) increases afterload.",
+    "rationale": "The dicrotic notch marks aortic valve closure and end of systole; inflation at this point capitalizes on the diastolic period when coronary filling occurs without impeding systolic ejection.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "inflation triggered by ECG R-wave (systolic)"
+  },
+  {
+    "id": "iabp-d3",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "IABP balloon deflation must be timed to what event, and what is the hemodynamic consequence of correct timing?",
+    "answer": "Deflation just prior to LV ejection (onset of systole); correct deflation creates a vacuum in the aorta, reducing LV afterload and decreasing the systolic pressure required for ejection.",
+    "rationale": "Rapid deflation at end-diastole creates a pressure sink that the LV ejects against, reducing myocardial O2 demand while maintaining perfusion pressure.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "late deflation (increases afterload)"
+  },
+  {
+    "id": "iabp-d4",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "What two hemodynamic effects does IABP produce, and how do these benefit ischemic myocardium?",
+    "answer": "(1) Diastolic augmentation: increased diastolic pressure improves coronary perfusion pressure; (2) systolic unloading: pre-ejection deflation reduces LV afterload, decreasing myocardial O2 demand.",
+    "rationale": "Improving the O2 supply/demand ratio is the core mechanism benefiting ischemic myocardium; IABP is therefore most valuable in patients with significant coronary artery disease.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "inotrope effects (increase demand)"
+  },
+  {
+    "id": "iabp-d5",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "When IABP and other drug therapies fail to support cardiac function after CPB, what next level of mechanical support is considered?",
+    "answer": "Left ventricular assist device (LVAD) or right ventricular assist device (RVAD) for refractory pump failure; LVAD/RVAD provide continuous flow support independent of intrinsic cardiac function.",
+    "rationale": "IABP requires native cardiac rhythm and some ejection to be effective; VAD devices bypass failing ventricles with mechanical pumps, providing definitive support.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "ECMO (veno-arterial, different indication)"
+  },
+  {
+    "id": "iabp-d6",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiothoracic & vascular anesthesia",
+    "discipline": "anesthesia",
+    "stem": "After IABP balloon augmentation, what characteristic changes are visible on the intra-aortic pressure tracing?",
+    "answer": "Lower end-diastolic pressures after balloon augmentation (vacuum from deflation) and a slightly lower systolic pressure in the following beat (reduced afterload from prior deflation).",
+    "rationale": "These pressure changes confirm correct IABP timing and function; absence of diastolic augmentation indicates poor timing or positioning; absence of systolic unloading indicates late deflation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "intrinsic aortic pressure waveform without IABP"
+  },
+  {
+    "id": "intracranial-aneurysm-d1",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "What are the two primary goals of anesthetic management during surgical clipping of an intracranial aneurysm?",
+    "answer": "(1) Prevent sudden increases in systemic arterial pressure that increase transmural pressure and risk rupture/rebleeding; (2) facilitate brain relaxation to provide surgical exposure while avoiding cerebral ischemia.",
+    "rationale": "Aneurysm rupture during surgery carries catastrophic mortality; controlled hypotension or adenosine-induced cardiac standstill may be used during clip application to reduce rupture risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 567
+      }
+    ],
+    "confusable_with": "endovascular coiling (different access, similar goals)"
+  },
+  {
+    "id": "intracranial-aneurysm-d2",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "How does decreasing mean arterial blood pressure reduce risk of aneurysm rupture during surgery?",
+    "answer": "Reducing MAP decreases transmural tension across the aneurysm wall (transmural pressure = MAP - ICP); lower wall tension makes rupture less likely and facilitates precise surgical clipping.",
+    "rationale": "Laplace's law: wall tension = pressure x radius; reducing MAP directly reduces the distending force on the aneurysm dome.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": "reducing CPP (dangerous if taken too far)"
+  },
+  {
+    "id": "intracranial-aneurysm-d3",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "What are the major complications of aneurysmal SAH relevant to anesthetic management?",
+    "answer": "Rebleeding, vasospasm and delayed cerebral ischemia (DCI), hydrocephalus, elevated ICP, seizures, and cardiac complications (ECG changes, wall motion abnormalities from catecholamine surge).",
+    "rationale": "Cardiac complications occur in up to 25% of SAH due to massive catecholamine release injuring myocardium; ECG changes may mimic MI but represent neurogenic injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Subarachnoid Hemorrhage (SAH)",
+        "page": 12
+      }
+    ],
+    "confusable_with": "primary myocardial infarction"
+  },
+  {
+    "id": "intracranial-aneurysm-d4",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "What is the role of intraarterial pressure monitoring in aneurysm surgery?",
+    "answer": "Continuous intraarterial monitoring allows beat-to-beat detection of pressure spikes during laryngoscopy, pin placement, and incision, and enables immediate treatment to prevent rupture; also allows controlled hypotension during clip application.",
+    "rationale": "Moment-to-moment pressure control is essential when transmural pressure changes of even brief duration can rupture an unclipped aneurysm.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": "NIBP monitoring (insufficient frequency)"
+  },
+  {
+    "id": "intracranial-aneurysm-d5",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "After aneurysm clipping, why might some patients require continued intubation rather than immediate extubation?",
+    "answer": "Patients with severe SAH-related neurological injury (high Hunt-Hess grade), cerebral edema, vasospasm, or hemodynamic instability should remain intubated for neurological monitoring and airway protection.",
+    "rationale": "The severity of the initial bleed and perioperative course predict post-clipping neurological status; early extubation is only appropriate for patients with good neurological function and stable hemodynamics.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 984
+      }
+    ],
+    "confusable_with": "routine extubation after craniotomy"
+  },
+  {
+    "id": "intracranial-aneurysm-d6",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "Why do short-to-medium-term outcomes appear similar between surgical clipping and endovascular coiling for intracranial aneurysms?",
+    "answer": "Randomized trials (ISAT) showed comparable outcomes for suitable aneurysms; endovascular coiling may have better short-term morbidity but higher re-treatment rates; surgical clipping has more durable exclusion.",
+    "rationale": "The equipoise between approaches drives case-by-case selection based on aneurysm morphology, location, patient factors, and institutional expertise.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 567
+      }
+    ],
+    "confusable_with": "no difference in all aneurysm types"
+  },
+  {
+    "id": "intracranial-hypertension-d1",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "Osmotic therapy (e.g., mannitol) reduces ICP through what mechanism?",
+    "answer": "Osmotic agents create an osmotic gradient across the intact blood-brain barrier, drawing free water from brain parenchyma into the intravascular compartment, reducing brain volume and ICP.",
+    "rationale": "Mannitol is effective only when the BBB is intact in the region being treated; areas with disrupted BBB (e.g., contusion) may paradoxically accumulate mannitol and worsen edema.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 558
+      }
+    ],
+    "confusable_with": "loop diuretics (different mechanism, renal fluid loss)"
+  },
+  {
+    "id": "intracranial-hypertension-d2",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "The blood-brain barrier can be disrupted by what conditions, potentially worsening vasogenic cerebral edema?",
+    "answer": "BBB disruption occurs with hypertensive crisis, trauma, infection, arterial hypoxemia, severe hypercapnia, tumors, and sustained seizure activity.",
+    "rationale": "Disrupted BBB allows protein-rich fluid to accumulate in brain interstitium; each additional insult compounds edema and ICP elevation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 558
+      }
+    ],
+    "confusable_with": "cytotoxic edema (intracellular, BBB intact)"
+  },
+  {
+    "id": "intracranial-hypertension-d3",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "In head trauma management, what is the initial imaging/clinical basis for choosing operative versus medical management?",
+    "answer": "Choice between operative and medical management is based on radiographic findings (CT: hematoma location, size, midline shift, herniation) and clinical findings (GCS, focal deficits, ICP measurement).",
+    "rationale": "Surgical thresholds (e.g., EDH > 30 mL, midline shift > 5 mm in SDH, open depressed skull fracture) are specific; many patients are managed medically with ICP monitoring.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 983
+      }
+    ],
+    "confusable_with": "surgical decision based on symptomatology alone"
+  },
+  {
+    "id": "intracranial-hypertension-d4",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "What anesthetic agents are preferred for intracranial neurosurgery because they reduce cerebral metabolic rate more than cerebral blood flow?",
+    "answer": "Propofol and etomidate reduce CMRO2 proportionally more than CBF, preserving or improving cerebral metabolic/flow coupling; they reduce ICP while maintaining adequate perfusion.",
+    "rationale": "Agents that reduce CMRO2 more than CBF improve the cerebral oxygen supply/demand ratio; this differs from ketamine (increases CMRO2 and CBF, typically avoided in elevated ICP).",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 783
+      }
+    ],
+    "confusable_with": "ketamine (increases ICP)"
+  },
+  {
+    "id": "intracranial-hypertension-d5",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia & neuromonitoring",
+    "discipline": "anesthesia",
+    "stem": "What are the key medical interventions for acutely elevated ICP in the perioperative setting?",
+    "answer": "Head-up positioning (30 degrees), osmotherapy (mannitol or hypertonic saline), controlled ventilation to target normocarbia or mild hypocarbia (PaCO2 35-40 mmHg), sedation/analgesia, and treatment of fever.",
+    "rationale": "Each intervention reduces one component of the Monro-Kellie doctrine (brain volume, CSF, or blood volume); combined use provides additive ICP reduction.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 558
+      }
+    ],
+    "confusable_with": "aggressive hyperventilation (causes ischemia)"
+  }
+]

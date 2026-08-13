@@ -1,0 +1,2846 @@
+[
+  {
+    "id": "phase4_unit_700",
+    "text": "Acetaminophen Toxicity. Normal dose: <3-4 g/day; toxic dose: >7-10 g/day (depends on chronic use, liver disease, fasting) 4 stages: (1) 0-24h asymptomatic (2) 24-72h RUQ pain, nausea, transaminitis (3) 72-96h ALT >3000, INR elevation (4) >96h liver failure if untreated N-acetylcysteine (NAC) first-line antidote: loading 150 mg/kg IV over 15 min, then 50 mg/kg over 4h, then 100 mg/kg over 16h Use Rumack-Matthew nomogram if single acute ingestion with known time; treat if ALT >1000 or INR >1.5 Activated charcoal within 4h of ingestion if massive overdose; monitor transaminases, INR, bilirubin, glucose",
+    "metadata": {
+      "topic": "Acetaminophen Toxicity",
+      "topic_tags": [
+        "toxicology",
+        "acetaminophen",
+        "toxicity"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_701",
+    "text": "Opioid Overdose Management. Classic triad: respiratory depression, altered mental status, miosis; death from apnea within minutes to hours Naloxone (Narcan) first-line: 0.4-2 mg IV/IM/IN q2-3min until response (max 10 mg); works within 1-2 min Duration of naloxone only 30-90 min; opioid overdose may outlast naloxone → redose q20-60min or continuous infusion Fentanyl patches/xylazine require higher naloxone doses; assess for multiple substances (polysubstance common) Post-reversal care: admit to ICU with continuous monitoring, supplemental O2, monitor for acute respiratory distress syndrome",
+    "metadata": {
+      "topic": "Opioid Overdose Management",
+      "topic_tags": [
+        "toxicology",
+        "opioid",
+        "overdose"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_702",
+    "text": "Alcohol Withdrawal Syndrome. Mild (6-12h): tremor, diaphoresis, tachycardia, anxiety, no hallucinations Moderate (12-24h): hallucinosis (hallucinate while alert), autonomic hyperactivity, no seizures Severe (12-48h): seizures (generalized tonic-clonic), autonomic instability, delirium tremens (hallucinations + confusion + vitals unstable) Benzodiazepines first-line: lorazepam 2-4 mg IV q5-10min until calm, or chlordiazepoxide 50-100 mg q1-4h PO for mild; use CIWA-Ar score Thiamine 100 mg IV/IM before dextrose (prevent Wernicke encephalopathy); magnesium 2 g q6h; folic acid 1 mg daily",
+    "metadata": {
+      "topic": "Alcohol Withdrawal Syndrome",
+      "topic_tags": [
+        "toxicology",
+        "alcohol",
+        "withdrawal"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_703",
+    "text": "Benzodiazepine Overdose. Symptoms: altered mental status, respiratory depression, hypotension, ataxia, decreased reflexes Flumazenil (Romazicon) is DANGEROUS in chronic users (precipitate seizure); reserved for iatrogenic acute overdose Flumazenil dose: 0.2 mg IV over 30s, then 0.1 mg q1min up to 1 mg total if no response Supportive care (airway management, fluids, monitor) is safer than flumazenil in most cases Watch for redosing in long-acting benzos; some metabolites active (diazepam → desmethyldiazepam → oxazepam)",
+    "metadata": {
+      "topic": "Benzodiazepine Overdose",
+      "topic_tags": [
+        "toxicology",
+        "benzodiazepine",
+        "overdose"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_704",
+    "text": "Cocaine & Amphetamine Toxicity. Sympathomimetic effects: hypertension, tachycardia, hyperthermia, agitation, seizures, arrhythmias (including coronary vasospasm → MI) Cocaine: acute onset (peaks in min), tachyphylaxis; amphetamines: delayed onset, prolonged effect Hypertensive emergency: phentolamine (alpha blocker) 5-15 mg IV, or nitroglycerin 0.3-0.6 mg SL; avoid pure beta-blockers (unopposed alpha) Seizures: benzodiazepines (lorazepam 2-4 mg IV); hyperthermia: aggressive cooling (evaporative, cold fluids) MI risk with cocaine: ECG mandatory; troponin; treat as ACS (consider PCI); avoid ergotamines, norepinephrine (worsen vasospasm)",
+    "metadata": {
+      "topic": "Cocaine & Amphetamine Toxicity",
+      "topic_tags": [
+        "toxicology",
+        "cocaine",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_705",
+    "text": "Aspirin (Salicylate) Toxicity. Early: tinnitus, altered mental status, hyperventilation (respiratory alkalosis), fever Late: pulmonary edema, altered mental status worsens, metabolic acidosis supervenes Salicylate level >300 mg/dL (chronic: >60 mg/dL) is severe; pH-dependent: alkaline urine prevents renal reabsorption Management: sodium bicarbonate to alkalinize urine (target pH 7.5-8.5); aggressive IV fluids; hemodialysis if severe (level >80 mg/dL chronic, or level + AMS + pulm edema) Avoid NSAIDs; supportive care; monitor electrolytes (hypokalemia from alkalosis)",
+    "metadata": {
+      "topic": "Aspirin (Salicylate) Toxicity",
+      "topic_tags": [
+        "toxicology",
+        "aspirin",
+        "(salicylate)"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_706",
+    "text": "Organophosphate & Carbamate Poisoning. Cholinergic crisis from irreversible acetylcholinesterase inhibition; miosis, muscle fasciculations, bronchospasm, altered mental status SLUDGE mnemonic: Salivation, Lacrimation, Urination, Defecation, GI upset, Emesis Atropine first-line (2-5 mg IV q5-10min until atropinization: dry mouth, pupil dilation); pralidoxime (2-PAM) 1-2 g IV over 15-30s Avoid depolarizing paralytics; use non-depolarizing agents if intubation needed Decontamination: remove clothing, wash skin; supportive care, monitor for days (recrudescence possible)",
+    "metadata": {
+      "topic": "Organophosphate & Carbamate Poisoning",
+      "topic_tags": [
+        "toxicology",
+        "organophosphate",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_707",
+    "text": "Anticholinergic Toxidrome. Sources: antihistamines, antispasmodics, antidepressants, antiparkinsonian drugs, plants (belladonna, datura) Classic: 'hot as a hare, dry as a bone, red as a beet, mad as a hatter, blind as a bat' Mydriasis, tachycardia, hypertension, hyperthermia, agitation, hallucinations, seizures, altered mental status Physostigmine (anticholinesterase) 1-2 mg IV q30-60min if severe agitation/hallucinations or hyperthermia; atropine if bradycardia Avoid anticholinergic agents; benzodiazepines for agitation; cooling for hyperthermia",
+    "metadata": {
+      "topic": "Anticholinergic Toxidrome",
+      "topic_tags": [
+        "toxicology",
+        "anticholinergic",
+        "toxidrome"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_708",
+    "text": "Cholinergic Toxidrome. Opposite of anticholinergic: SLUDGE + bradycardia, bronchoconstriction, muscle fasciculations Causes: organophosphates, carbamates, physostigmine (if used for anticholinergic OD), mushrooms, pesticides Atropine first-line: titrate 2-5 mg IV q5-10min until bronchospasm resolves and HR normalizes Pralidoxime (2-PAM) for organophosphates within 24-48h of exposure (before 'aging' of phosphate-enzyme complex) Benzodiazepines for seizures; mechanical ventilation if respiratory failure",
+    "metadata": {
+      "topic": "Cholinergic Toxidrome",
+      "topic_tags": [
+        "toxicology",
+        "cholinergic",
+        "toxidrome"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_709",
+    "text": "Cyanide Poisoning. Inhibits cytochrome c oxidase → cellular hypoxia despite normal oxygen saturation; rapid onset (seconds to min) Symptoms: altered mental status, cardiovascular collapse, seizures, death within min to hours if untreated Hydroxocobalamin 5 g IV (safer than sodium nitrite): forms cyanocobalamin (excreted in urine) Sodium nitrite (10 mL 3% IV) + sodium thiosulfate (50 mL 25% IV) is older regimen; higher toxicity risk Supportive care: 100% O2, CPR, IV fluids; poison control contact",
+    "metadata": {
+      "topic": "Cyanide Poisoning",
+      "topic_tags": [
+        "toxicology",
+        "cyanide",
+        "poisoning"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_710",
+    "text": "Ethylene Glycol & Methanol Poisoning. Ethylene glycol: sweet taste, metabolites → oxalate (kidney stones, AKI); methanol: metabolism → formic acid (blindness) Early: CNS depression, altered mental status; metabolites cause high AG metabolic acidosis + osmotic gap Fomepizole 15 mg/kg IV loading (inhibits alcohol dehydrogenase), then 10 mg/kg q12h x2, then 15 mg/kg q12h until level <20 mg/dL Hemodialysis if severe acidosis, renal failure, or level >20 mg/dL (ethylene glycol) or >5 mg/dL (methanol) Thiamine (ethylene glycol) and folinic acid (methanol) as adjuncts; ethanol 1 g/kg also inhibits alcohol dehydrogenase",
+    "metadata": {
+      "topic": "Ethylene Glycol & Methanol Poisoning",
+      "topic_tags": [
+        "toxicology",
+        "ethylene",
+        "glycol"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_711",
+    "text": "Iron Toxicity. Phases: (1) 30min-2h GI hemorrhage, shock (2) 2-12h apparent recovery (3) 4-24h metabolic acidosis, shock (4) >1 week GI strictures Serum iron >400 mcg/dL is severe; compare to iron-binding capacity; ferritin not reliable in acute setting Deferoxamine 15 mg/kg/h IV (max 6 g/day): binds iron → orange urine (vin rosé); chelates free iron and tissue iron GI decontamination: whole bowel irrigation (polyethylene glycol) if massive ingestion visible on abdominal X-ray Supportive care: aggressive fluid resuscitation, monitor electrolytes, lactulose for GI decontamination",
+    "metadata": {
+      "topic": "Iron Toxicity",
+      "topic_tags": [
+        "toxicology",
+        "iron",
+        "toxicity"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_712",
+    "text": "Heavy Metal Poisoning (Lead, Mercury, Arsenic). Lead: chronic exposure → peripheral neuropathy, cognitive impairment, renal disease; acute → encephalopathy Mercury: tremor, gingivitis, nephropathy, CNS effects; chelation with DMSA or DMPS Arsenic: GI hemorrhage, peripheral neuropathy, skin changes; chelation with DMSA Chelation therapy: EDTA (calcium edetate), DMSA (succimer), DMPS (unithiol), penicillamine Supportive care, avoid mobilizing heavy metals (risk of increased toxicity); poison control consultation",
+    "metadata": {
+      "topic": "Heavy Metal Poisoning (Lead, Mercury, Arsenic)",
+      "topic_tags": [
+        "toxicology",
+        "heavy",
+        "metal"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_713",
+    "text": "Trauma Primary Survey (ABCDE). A: Airway with C-spine protection; clear airway, remove obstructions, consider intubation if GCS <8 B: Breathing; assess rate, bilateral breath sounds, tracheal deviation, JVD, open pneumothorax, tension pneumothorax C: Circulation; assess pulses (carotid, femoral), skin perfusion, control obvious hemorrhage D: Disability; GCS score, pupillary reactivity, focal neuro deficits E: Exposure; undress fully to assess injuries, prevent hypothermia with blankets",
+    "metadata": {
+      "topic": "Trauma Primary Survey (ABCDE)",
+      "topic_tags": [
+        "trauma",
+        "trauma",
+        "primary"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_714",
+    "text": "Hemorrhage Control & Massive Transfusion Protocol. Direct pressure for bleeding; tourniquet above knee/elbow if exsanguinating limb hemorrhage (mark time of application) Massive transfusion protocol (MTP) triggered by: 4+ units PRBCs in 1h, expected transfusion >10 units, or signs of shock Balanced ratio: PRBCs:FFP:platelets = 1:1:1 (massive transfusion); older 3:1 ratio favored dilutional coagulopathy TXA (tranexamic acid) 1 g IV bolus within 3h of injury if hemorrhagic shock (CRASH-2 trial); reduces mortality 1-2% Monitor coagulation studies, CBC, lactate; avoid hypothermia, acidosis (coagulopathy triad); permissive hypotension (SBP 80-100) until operative control",
+    "metadata": {
+      "topic": "Hemorrhage Control & Massive Transfusion Protocol",
+      "topic_tags": [
+        "trauma",
+        "hemorrhage",
+        "control"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_715",
+    "text": "Airway Management in Trauma. Rapid sequence intubation (RSI): preoxygenation, induction agent (etomidate 0.2-0.3 mg/kg), succinylcholine 1-1.5 mg/kg (or rocuronium 1.2 mg/kg), cricoid pressure Avoid hyperextension of neck if C-spine injury suspected; use video laryngoscope if available Surgical airway (cricothyrotomy) if laryngeal injury, complete airway obstruction, can't intubate/can't oxygenate Post-intubation: confirm tube placement (capnography, chest rise, bilateral breath sounds), obtain C-spine imaging",
+    "metadata": {
+      "topic": "Airway Management in Trauma",
+      "topic_tags": [
+        "trauma",
+        "airway",
+        "management"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_716",
+    "text": "Tension Pneumothorax Diagnosis & Treatment. Classic signs: JVD, tracheal deviation, hypotension, hypoxia, muffled breath sounds, hyperesonance to percussion Do NOT wait for X-ray; needle decompression first-line: 14-16 gauge needle at 2nd intercostal midclavicular line, then tube thoracostomy Tube thoracostomy (chest tube): 4th-5th intercostal midaxillary line, directed posterior/superior; size 28-40 Fr Complications: reexpansion pulmonary edema, persistent air leak, hemothorax, infection; monitor chest tube output",
+    "metadata": {
+      "topic": "Tension Pneumothorax Diagnosis & Treatment",
+      "topic_tags": [
+        "trauma",
+        "tension",
+        "pneumothorax"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_717",
+    "text": "Hemothorax Management. Unilateral opacity on CXR with shock suggests hemothorax; confirmation with ultrasound or CT Tube thoracostomy (same approach as pneumothorax); assess for ongoing bleeding (>1.5 L initial output, >200 mL/h persistent) Indications for OR (thoracotomy): >1.5 L initial output, >200 mL/h for 4h, or signs of exsanguination Monitor O2 sat, serial ABG; blood from tube can be autotransfused if sterile",
+    "metadata": {
+      "topic": "Hemothorax Management",
+      "topic_tags": [
+        "trauma",
+        "hemothorax",
+        "management"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_718",
+    "text": "Pericardial Tamponade. Beck's triad: JVD, muffled heart sounds, hypotension; high-risk with penetrating chest trauma Diagnosis: ultrasound (pericardial fluid), ECG (electrical alternans, low voltage, sinus tachycardia) Pericardiocentesis (subxiphoid approach, 18-20 G needle) acutely; only temporizing measure Definitive: surgical drainage (sternotomy or thoracotomy); trauma patients usually need OR",
+    "metadata": {
+      "topic": "Pericardial Tamponade",
+      "topic_tags": [
+        "trauma",
+        "pericardial",
+        "tamponade"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_719",
+    "text": "Flail Chest & Pulmonary Contusion. Flail chest: 2+ adjacent ribs broken in 2+ places; paradoxical motion (inward during inspiration) Management: aggressive pain control (thoracic epidural, intercostal blocks), incentive spirometry, aggressive pulmonary toilet Avoid rib fixation in most cases; internal fixation reserved for severe deformity or failed conservative management Pulmonary contusion: ARDS risk; monitor for respiratory decline, manage fluid conservatively",
+    "metadata": {
+      "topic": "Flail Chest & Pulmonary Contusion",
+      "topic_tags": [
+        "trauma",
+        "flail",
+        "chest"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_720",
+    "text": "Abdominal Trauma Assessment & Management. FAST exam: Free fluid in Morrison's pouch (RUQ), splenorenal recess (LUQ), pelvic cul-de-sac, pericardium Indications for OR: peritoneal signs, FAST positive + hemodynamic instability, evisceration, impalement Solid organ injuries (spleen, kidney): most amenable to non-operative management with observation if hemodynamically stable ICE scoring: grade injury severity; high-grade (IV-V) or hemodynamic instability warrant OR Serial abdominal exams, monitor lactate; repeat imaging if clinical deterioration",
+    "metadata": {
+      "topic": "Abdominal Trauma Assessment & Management",
+      "topic_tags": [
+        "trauma",
+        "abdominal",
+        "trauma"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_721",
+    "text": "Pelvic Fracture Management. Retroperitoneal hemorrhage from fracture fragments/vascular injury; high mortality (5-15%) if unstable Pelvic binder (sheet) immediately if unstable fracture pattern (open book, lateral compression II-III) Angiography + embolization vs. operative fixation based on hemodynamics, fracture pattern, orthopedic input Assess for bladder/urethral injury (blood at meatus, suprapubic exam); urinalysis",
+    "metadata": {
+      "topic": "Pelvic Fracture Management",
+      "topic_tags": [
+        "trauma",
+        "pelvic",
+        "fracture"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_722",
+    "text": "Spinal Cord Injury Management. Mechanism: high-speed motor vehicle collision, falls >10 ft, penetrating injury, high-impact blunt trauma NEXUS criteria: alert + no midline tenderness + no neurologic deficit + no intoxication + no painful distracting injury = can clear C-spine clinically Imaging: CT C-spine + thoracolumbar CT if mechanism warrants; MRI for cord signal/SCIWORA (spinal cord injury without radiographic abnormality) High-dose methylprednisolone within 8h: 30 mg/kg bolus, then 5.4 mg/kg/h x23h (NASCIS 3 trial); controversial due to infection risk Spinal shock: areflexia, hypotension, bradycardia (resolve in days-weeks); don't confuse with neurogenic shock",
+    "metadata": {
+      "topic": "Spinal Cord Injury Management",
+      "topic_tags": [
+        "trauma",
+        "spinal",
+        "cord"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_723",
+    "text": "Traumatic Brain Injury & Intracranial Monitoring. GCS score: predicts outcome; GCS 3-8 severe (consider intubation), 9-12 moderate, 13-15 mild CT head mandatory for GCS <15, focal neurologic deficit, loss of consciousness, mechanism with high risk ICP monitoring (EVD, parenchymal probe) if GCS ≤8 and abnormal CT; target ICP <20 mmHg Cerebral perfusion pressure (CPP) = MAP - ICP; maintain CPP 50-70 mmHg Head elevation 30°, normothermia, osmotic therapy (mannitol 0.25-1 g/kg IV, hypertonic saline 3% 250 mL IV), sedation, prevent hypoxemia/hypercapnia",
+    "metadata": {
+      "topic": "Traumatic Brain Injury & Intracranial Monitoring",
+      "topic_tags": [
+        "trauma",
+        "traumatic",
+        "brain"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_724",
+    "text": "Blast Injury Mechanism & Management. Primary: barotrauma (pneumothorax, hemothorax, pulmonary contusion, tympanic rupture) Secondary: fragmentation and flying objects (penetrating/blunt trauma) Tertiary: displacement of body (crush injuries, blunt trauma from being thrown) Quaternary: inhalation injury, thermal burns, crush syndrome (rhabdomyolysis, AKI) Manage as polytrauma; aggressive resuscitation, watch for compartment syndrome in crush injuries",
+    "metadata": {
+      "topic": "Blast Injury Mechanism & Management",
+      "topic_tags": [
+        "trauma",
+        "blast",
+        "injury"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_725",
+    "text": "Drowning & Submersion Injury Management. Cold water submersion (temp <15°C) can preserve neurologic function for extended periods (up to 1-2h) Initial management: rescue, CPR, warm core rewarming if profoundly hypothermic ECMO/extracorporeal rewarming if profound hypothermia with cardiac arrest (goal core temp 32°C before starting) Aspiration: chemical pneumonitis; monitor for ARDS; fresh water osmotic gradient → pulmonary edema Prognosis: poor with prolonged submersion (>5-10 min) without anoxic preservation",
+    "metadata": {
+      "topic": "Drowning & Submersion Injury Management",
+      "topic_tags": [
+        "trauma",
+        "drowning",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_726",
+    "text": "Central Venous Catheter (CVC) Placement & Complications. Indications: hemodynamic monitoring, vasopressor infusion, hyperalimentation, hemodialysis, transvenous pacing Sites: internal jugular (preferred), subclavian, femoral; ultrasound-guided to reduce complications Technique: Seldinger approach - find vein, insert needle, pass guidewire, dilate, pass catheter over wire Complications: pneumothorax, hemothorax, arterial puncture, thrombosis, infection (CLABSI), cardiac arrhythmia (malposition), perforation Care: sterile dressing, regular assessment for signs of infection; remove ASAP when no longer needed",
+    "metadata": {
+      "topic": "Central Venous Catheter (CVC) Placement & Complications",
+      "topic_tags": [
+        "procedures",
+        "central",
+        "venous"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_727",
+    "text": "Arterial Line Placement & Monitoring. Indications: beat-to-beat BP monitoring, frequent ABG sampling, vasopressor infusion Sites: radial (preferred), femoral, brachial, axillary; assess collateral circulation (Allen test for radial) Technique: cannulate artery over guidewire or direct stick; confirm with arterial waveform Waveform: systolic peak, dicrotic notch (aortic valve closure), diastolic pressure Complications: ischemia, thrombosis, pseudoaneurysm, infection; signs of ischemia warrant immediate removal",
+    "metadata": {
+      "topic": "Arterial Line Placement & Monitoring",
+      "topic_tags": [
+        "procedures",
+        "arterial",
+        "line"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_728",
+    "text": "Chest Tube Thoracostomy (Tube Thoracostomy). Indications: pneumothorax, hemothorax, empyema, malignant effusion, traumatic hemopneumothorax Technique: 4th-5th intercostal midaxillary line, blunt dissection through pleura, advance catheter posteriorly Tube sizes: 20-28 Fr (small bore, tunneled pigtail for effusions), 28-40 Fr (large bore for trauma) Management: water-seal drain, suction (20 cm H2O typical), monitor for air leak, output (blood, serous, chylous), crepitus Removal: when minimal output (<100-200 mL/day), no air leak, and chest X-ray shows lung expanded",
+    "metadata": {
+      "topic": "Chest Tube Thoracostomy (Tube Thoracostomy)",
+      "topic_tags": [
+        "procedures",
+        "chest",
+        "tube"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_729",
+    "text": "Pericardiocentesis & Pericardial Effusion Management. Indications: tamponade (urgent), significant effusion (echo), diagnostic (suspected infection, malignancy) Approach: subxiphoid (safest), parasternal, or apical under ultrasound guidance Technique: needle at 45° angle toward left shoulder, advance until fluid return, confirm with ultrasound Complications: myocardial/coronary perforation, arrhythmia, infection; withdraw slowly to avoid rapid hemodynamic shifts Catheter-based drainage if recurrent; definitive surgical drainage for malignancy or constrictive physiology",
+    "metadata": {
+      "topic": "Pericardiocentesis & Pericardial Effusion Management",
+      "topic_tags": [
+        "procedures",
+        "pericardiocentesis",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_730",
+    "text": "Transesophageal Echocardiography (TEE) in Critical Care. Indications: hemodynamic instability (assess volume status, cardiac function), suspected endocarditis, aortic disease, PE, intra-cardiac device issue Superior views to TTE: posterior structures (LA, pulmonary veins), aorta, right heart Probe insertion: positioned in esophagus, rotated/advanced to visualize cardiac structures Operator credentialing required; risks: esophageal perforation, aspiration, tooth damage Contraindications: esophageal pathology (stricture, mass), recent upper GI surgery, cervical spine trauma",
+    "metadata": {
+      "topic": "Transesophageal Echocardiography (TEE) in Critical Care",
+      "topic_tags": [
+        "procedures",
+        "transesophageal",
+        "echocardiography"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_731",
+    "text": "Lumbar Puncture (Spinal Tap) & CSF Interpretation. Indications: meningitis (fever + headache + neck stiffness), encephalitis, SAH, diagnose MS/GBS, intrathecal drug administration Technique: L3-L4 or L4-L5 interspace, needle at 45° angle toward cephalad; collect 4 tubes (cell count, glucose/protein, culture, Gram stain) Opening pressure: normal <25 cm H2O; elevated in meningitis, IIH, communicating hydrocephalus CSF analysis: WBC (lymphocytic vs. neutrophilic), glucose (low in bacterial, normal in viral), protein (elevated in bacterial/inflammatory) Contraindications: focal neurologic deficits, papilledema, signs of mass effect; do head CT first if suspect mass",
+    "metadata": {
+      "topic": "Lumbar Puncture (Spinal Tap) & CSF Interpretation",
+      "topic_tags": [
+        "procedures",
+        "lumbar",
+        "puncture"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_732",
+    "text": "Surgical Airway (Cricothyrotomy). Indication: can't intubate, can't oxygenate emergency; laryngeal injury, airway obstruction, massive facial trauma Anatomy: cricoid cartilage below thyroid cartilage; palpate midline notch between Adam's apple and cricoid Technique: 1-1.5 cm horizontal incision, spread with hemostat, insert 5-6 mm tracheostomy tube directed caudally Complications: tracheal stenosis (late), infection, tube malposition, tracheal perforation Conversion to tracheostomy within 24-48h recommended; emergency procedure only",
+    "metadata": {
+      "topic": "Surgical Airway (Cricothyrotomy)",
+      "topic_tags": [
+        "procedures",
+        "surgical",
+        "airway"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_733",
+    "text": "Resuscitative Thoracotomy (Clamshell). Indication: cardiopulmonary arrest from penetrating thoracic trauma with signs of life on-scene Technique: anterolateral incision L4-L5, open pericardium (anterior), cross-clamp descending aorta (compress anteriorly), massage heart Goals: restore coronary/cerebral perfusion, relieve tamponade, control hemorrhage, restore perfusing rhythm Outcomes: 5-15% survival if pulse return achieved; poor prognosis if no organized activity after intervention",
+    "metadata": {
+      "topic": "Resuscitative Thoracotomy (Clamshell)",
+      "topic_tags": [
+        "procedures",
+        "resuscitative",
+        "thoracotomy"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_734",
+    "text": "Resuscitative Laparotomy for Traumatic Hemorrhage. Indication: penetrating/blunt abdominal trauma with hemodynamic instability and peritoneal signs Technique: midline incision, rapid assessment (Kocher maneuver assess for aorta bleeding), control hemorrhage (packing, vessel ligation) Damage control: prioritize hemorrhage control > organ repair; damage control laparotomy may require re-exploration in 24-48h Avoid: major reconstructions in unstable patients; temporary closure (VAC, towel clip) until physiologic recovery",
+    "metadata": {
+      "topic": "Resuscitative Laparotomy for Traumatic Hemorrhage",
+      "topic_tags": [
+        "procedures",
+        "resuscitative",
+        "laparotomy"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_735",
+    "text": "Finger Thoracostomy (Emergency Decompression). Indication: tension pneumothorax if needle decompression unavailable/failed Technique: 4th-5th intercostal midaxillary line, finger sweep to ensure pleural entry, provides rapid decompression Temporizing measure; tube thoracostomy still needed for definitive management",
+    "metadata": {
+      "topic": "Finger Thoracostomy (Emergency Decompression)",
+      "topic_tags": [
+        "procedures",
+        "finger",
+        "thoracostomy"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_736",
+    "text": "Preeclampsia & Eclampsia Management. Preeclampsia: BP ≥140/90 (x2) + proteinuria (≥0.3 g/24h) or symptoms (headache, epigastric pain, visual change) Severe: BP ≥160/110, platelets <100k, creatinine >1.1, pulmonary edema, altered mental status, hemolysis Eclampsia: preeclampsia + seizures; HELLP: hemolysis + elevated LFTs + low platelets (subset of preeclampsia) Magnesium sulfate 4-6 g IV loading dose, then 1-2 g/h maintenance for seizure prophylaxis Antihypertensives: labetalol 20 mg IV q10min, hydralazine 5-10 mg IV, nifedipine ER; goal MAP reduction 15-25% in first hour",
+    "metadata": {
+      "topic": "Preeclampsia & Eclampsia Management",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "preeclampsia",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_737",
+    "text": "Acute Coronary Syndrome in Pregnancy. Incidence: rare (2-10 per 100,000 pregnancies); 3rd trimester and postpartum highest risk Causes: coronary dissection (spontaneous, SCAD; 20-30% of ACS in pregnancy), atherosclerosis, vasospasm, embolism Diagnosis: ECG, troponin, echocardiography; avoid radiation if possible (catheterization delayed if stable) Management: aspirin, beta-blockers, ACE inhibitors; PCI if indicated; thrombolytics avoided due to bleeding risk Delivery timing: vaginal delivery preferred; cesarean only if obstetric indication; anticoagulation during labor",
+    "metadata": {
+      "topic": "Acute Coronary Syndrome in Pregnancy",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "acute",
+        "coronary"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_738",
+    "text": "Peripartum Cardiomyopathy. Heart failure (EF <45%) in pregnancy or postpartum (within 5 months); incidence 1 in 1,400-4,000 pregnancies Risk factors: maternal age, multiparity, obesity, preeclampsia, black race Presentation: dyspnea, orthopnea, fatigue, edema; ECG shows nonspecific changes; echo confirms reduced EF Management: standard HF therapy (ACE-I/ARB, beta-blockers, diuretics); some agents avoid in pregnancy (ACE-I category D in 2nd/3rd trimester) Prognosis: 50% recover EF fully, 50% persistent cardiomyopathy; maternal mortality 1-7%; repeat pregnancy high risk",
+    "metadata": {
+      "topic": "Peripartum Cardiomyopathy",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "peripartum",
+        "cardiomyopathy"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_739",
+    "text": "Amniotic Fluid Embolism (AFE). Rare (1 in 30,000-40,000 deliveries) but high mortality (15-30%); occurs during labor/delivery/postpartum Pathophysiology: fetal material enters maternal circulation → anaphylactoid reaction, DIC, cardiovascular collapse Presentation: acute dyspnea, hypoxia, shock, seizures, cardiopulmonary arrest, bleeding (DIC) Diagnosis: clinical (no specific test); findings support (foam in pulmonary artery, elevated FDP, D-dimer, low fibrinogen) Management: aggressive resuscitation (100% O2, fluids, pressors), place on ECMO if available, transfusion protocol (FFP, cryoprecipitate)",
+    "metadata": {
+      "topic": "Amniotic Fluid Embolism (AFE)",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "amniotic",
+        "fluid"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_740",
+    "text": "Postpartum Hemorrhage Management. Definition: >500 mL vaginal delivery, >1000 mL cesarean delivery, or signs of hypovolemic shock Causes: uterine atony (80%), placental abnormalities (10%), laceration (5%), coagulopathy (5%) Management: fundal massage, oxytocin (Pitocin) 10 units IM/IV, ergotamine (methergine) 0.2 mg IM, misoprostol 800 mcg PO/rectally If bleeding persists: IV fluids, transfusion (RBC, FFP, platelets, cryoprecipitate), call anesthesia, transfer to OR Massive transfusion: balanced 1:1:1 ratio; consider TXA 1 g IV; uterine artery embolization or hysterectomy if refractory",
+    "metadata": {
+      "topic": "Postpartum Hemorrhage Management",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "postpartum",
+        "hemorrhage"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_741",
+    "text": "Retained Placenta Management. Normal: expulsion within 5-15 min; retained if >30 min without delivery Risk: placenta accreta/increta/percreta, abnormal placentation, previous uterine surgery Management: IV oxytocin, controlled cord traction, manual removal if incomplete separation Manual removal: anesthesia consent, empty bladder, explore uterine cavity; fingers separate placenta from uterus Complications: infection, DIC, hemorrhage; if imaging suggests morbidly adherent, proceed to hysterectomy",
+    "metadata": {
+      "topic": "Retained Placenta Management",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "retained",
+        "placenta"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_742",
+    "text": "Septic Abortion & Postpartum Sepsis. Risk: incomplete abortion, retained products of conception, intrauterine infection Presentation: fever, lower abdominal pain, vaginal discharge (foul), hemodynamic instability, altered mental status Diagnosis: clinical + pelvic ultrasound (evaluate for retained products), blood cultures, CBC, coagulation studies Management: broad-spectrum IV antibiotics (ceftriaxone, doxycycline, metronidazole), aggressive fluid resuscitation Definitive: uterine evacuation (D&C) if retained products; hysterectomy if perforated, necrotic, or refractory sepsis",
+    "metadata": {
+      "topic": "Septic Abortion & Postpartum Sepsis",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "septic",
+        "abortion"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_743",
+    "text": "Gestational Diabetes Acute Complications. Maternal: hyperglycemia → hypovolemia, osmotic diuresis, DKA (rare but dangerous in pregnancy) Fetal: hyperglycemia → fetal hyperinsulinemia → macrosomia, shoulder dystocia, neonatal hypoglycemia Management: tight glucose control (80-110 mg/dL fasting, <140 postprandial), insulin (avoid sulfonylureas in 3rd trimester) DKA in pregnancy: lower threshold for metabolic derangement (glucose 200-300 may have significant ketosis); aggressive IV fluids, insulin",
+    "metadata": {
+      "topic": "Gestational Diabetes Acute Complications",
+      "topic_tags": [
+        "obstetric_emergencies",
+        "gestational",
+        "diabetes"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "obstetric_emergencies",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_744",
+    "text": "Pediatric CPR & Resuscitation. Compression rate: 100-120/min (same as adults); compression depth: 1/3 AP diameter chest (2-2.4 inches for child, 1.5 inches for infant) Airway: smaller mouth, larger tongue proportionally; use straight blade for laryngoscopy; tube size = (age+16)/4 or visual estimate (pen size of pinky) Drugs: epinephrine 0.01 mg/kg IV/IO q3-5min (max 1 mg single dose), amiodarone 5 mg/kg IV (max 300 mg first dose) PALS: single rescuer starts with 30 compressions + 2 breaths (2015 guidelines recommend compression-only if untrained) Shockable rhythms (VF/pulseless VT): defibrillation 2-4 J/kg first dose, 4 J/kg subsequent; search for reversible causes",
+    "metadata": {
+      "topic": "Pediatric CPR & Resuscitation",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "cpr"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_745",
+    "text": "Pediatric Shock Classification & Management. Cardiogenic: low cardiac output (myocarditis, heart failure, arrhythmia); crackles, hepatomegaly, cool extremities Hypovolemic: hemorrhage, dehydration; tachycardia, decreased urine output, weak pulses Distributive (septic): fever + infection, tachycardia, bounding pulses initially, then deteriorate (cold sepsis) Management: age-appropriate fluid bolus (20 mL/kg isotonic saline), early antibiotics if septic, inotropes (epinephrine 0.1-1 mcg/kg/min) Peds shock: higher heart rates compensate earlier; normal BP maintained longer → be suspicious if HR abnormal",
+    "metadata": {
+      "topic": "Pediatric Shock Classification & Management",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "shock"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_746",
+    "text": "Pediatric Acute Respiratory Distress Syndrome (PARDS). Definition: Berlin criteria applied to kids (mild: 2-3 < PaO2/FiO2 <300; moderate: 1-2 < P/F <100; severe: P/F <100) Lung-protective ventilation: Vt 6-8 mL/kg ideal body weight, permissive hypercapnia (pH goal >7.20) PEEP titration: start 5-8 cm H2O, increase based on oxygenation needs; avoid high pressures (barotrauma risk) Prone positioning if moderate-severe; sedation + neuromuscular blockade if refractory hypoxemia Fluid conservative strategy: avoid volume overload (associated with worse outcomes)",
+    "metadata": {
+      "topic": "Pediatric Acute Respiratory Distress Syndrome (PARDS)",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "acute"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_747",
+    "text": "Pediatric Status Epilepticus Management. First-line: lorazepam 0.1 mg/kg IV (max 4 mg) or midazolam 0.1-0.2 mg/kg IM (max 10 mg) Second-line (if seizure ongoing 5 min): fosphenytoin 20 PE/kg IV, levetiracetam 20-30 mg/kg IV, valproate 20-40 mg/kg IV Third-line (refractory): anesthesia for intubation + sedative drips (propofol 1-3 mg/kg/h, pentobarbital 1-3 mg/kg/h, or midazolam 0.15 mg/kg/h) Investigate cause: glucose, electrolytes, toxicology, lumbar puncture (if meningitis suspected), neuroimaging",
+    "metadata": {
+      "topic": "Pediatric Status Epilepticus Management",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "status"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_748",
+    "text": "Pediatric Sepsis Recognition & Early Management. Recognition: fever/hypothermia + infection source + 2/4 SIRS (tachycardia, tachypnea, altered mental status/fever) Severe sepsis: sepsis + organ dysfunction (altered mental status, low urine output, low platelet, acidosis, hypoxemia) Septic shock: sepsis + hypotension unresponsive to fluids OR need for vasoactive agents Management: blood cultures, IV access, fluid bolus 20 mL/kg (repeat if needed), antibiotics <1h, vasopressors if hypotensive Dexamethasone controversial; may consider in meningococcemia or adrenal insufficiency",
+    "metadata": {
+      "topic": "Pediatric Sepsis Recognition & Early Management",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "sepsis"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_749",
+    "text": "Common Pediatric Poisonings & Management. Acetaminophen: <150 mg/kg = observe; 150-200 = consider NAC; >200 = treat with NAC Salicylate: kids metabolize differently than adults; lower levels more dangerous (Reye syndrome risk); treat if level >30 mg/dL chronic Tricyclic antidepressants: QRS widening, arrhythmias, seizures; sodium bicarbonate 1 mEq/kg IV Iron: chelate with deferoxamine if level >400; whole bowel irrigation Call poison control: 1-800-222-1222; activated charcoal if within 1h",
+    "metadata": {
+      "topic": "Common Pediatric Poisonings & Management",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "common",
+        "pediatric"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_750",
+    "text": "Pediatric Anaphylaxis Management. Epinephrine first-line: 0.01 mg/kg (0.01 mL/kg of 1:1000) IM to lateral thigh q5-15min as needed IV access: normal saline bolus 20 mL/kg, then repeat as needed for hypotension Antihistamines: diphenhydramine 1 mg/kg IV (max 50 mg), corticosteroids (methylprednisolone 1-2 mg/kg IV) Monitor: observe at least 4-6h for biphasic reaction; admit if severe or late reaction",
+    "metadata": {
+      "topic": "Pediatric Anaphylaxis Management",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "anaphylaxis"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_751",
+    "text": "Pediatric ICU Monitoring & Sedation. Vital signs interpretation: HR/RR/BP vary with age; use age-appropriate normal ranges Sedation: morphine 0.1-0.2 mg/kg IV, midazolam 0.1-0.2 mg/kg IV; avoid paralysis without sedation Nutrition: early enteral feeds if GI functional; higher protein needs (1.5-2 g/kg/day) Family-centered care: parents at bedside reduce child anxiety and parental stress",
+    "metadata": {
+      "topic": "Pediatric ICU Monitoring & Sedation",
+      "topic_tags": [
+        "pediatric_critical_care",
+        "pediatric",
+        "icu"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "pediatric_critical_care",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_752",
+    "text": "Delirium in Elderly: CAM-ICU Assessment. CAM-ICU: (1) acute onset + (2) inattention PLUS either (3) disorganized thinking OR (4) altered consciousness Hyperactive: agitation, tachycardia, aggression; hypoactive: lethargy, decreased verbal output (more dangerous, often missed) Causes: infection (UTI, pneumonia), medication (opioids, anticholinergics), metabolic, CNS events Prevention: early mobilization, sleep hygiene, reorientation, minimize sedation, optimize hearing/vision Management: treat underlying cause; avoid antipsychotics if possible (increased mortality in elderly)",
+    "metadata": {
+      "topic": "Delirium in Elderly: CAM-ICU Assessment",
+      "topic_tags": [
+        "geriatric_medicine",
+        "delirium",
+        "in"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "geriatric_medicine",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_753",
+    "text": "Polypharmacy in Elderly: Beers Criteria. Beers Criteria: medications to avoid in older adults (anticholinergics, NSAIDs, benzodiazepines, diphenhydramine) High-risk interactions: NSAIDs + ACE-I/ARB (hyperkalemia, renal dysfunction), warfarin + NSAIDs (GI bleed) Dosing: reduce doses of renally cleared drugs (creatinine clearance <30 mL/min); adjust for weight loss in elderly Deprescribing: regularly review medications, discontinue if not addressing active problem or causing side effects",
+    "metadata": {
+      "topic": "Polypharmacy in Elderly: Beers Criteria",
+      "topic_tags": [
+        "geriatric_medicine",
+        "polypharmacy",
+        "in"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "geriatric_medicine",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_754",
+    "text": "Frailty in Elderly & Risk Stratification. Fried Criteria: unintentional weight loss, exhaustion, low physical activity, slow gait speed, weak grip strength (3+ = frail) Frailty predicts: poor postoperative outcomes, falls, hospitalization, mortality Assessment: geriatric assessment tools (FSRS, Timed Up & Go), functional status at baseline Preoperative: optimize function, mobilize, correct anemia, manage comorbidities",
+    "metadata": {
+      "topic": "Frailty in Elderly & Risk Stratification",
+      "topic_tags": [
+        "geriatric_medicine",
+        "frailty",
+        "in"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "geriatric_medicine",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_755",
+    "text": "Resuscitation Decisions in Elderly. Prognosis of CPR: <5% survival to hospital discharge in very elderly; poor if post-arrest neurologic status DNACPR: discuss advance directives, assess goals of care, document patient/family wishes Factors favoring poor outcome: age >85, frailty, dementia, severe comorbidities, long down time Goals-of-care discussions: focus on quality of life, functional goals, not just survival",
+    "metadata": {
+      "topic": "Resuscitation Decisions in Elderly",
+      "topic_tags": [
+        "geriatric_medicine",
+        "resuscitation",
+        "decisions"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "geriatric_medicine",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_756",
+    "text": "Elder Abuse Recognition & Reporting. Types: physical, emotional, financial, neglect, sexual, self-neglect Signs: unexplained injuries, poor hygiene, caregiver controlling, frequent ER visits, medication non-compliance Mandatory reporting in many states; health care providers are reporters Assess: screen all elderly patients (Ask Sufficiency Question: 'Do you feel safe?') Intervention: documentation, safety planning, referral to adult protective services",
+    "metadata": {
+      "topic": "Elder Abuse Recognition & Reporting",
+      "topic_tags": [
+        "geriatric_medicine",
+        "elder",
+        "abuse"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "geriatric_medicine",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_757",
+    "text": "Breaking Bad News: SPIKES Framework. S (Setting): quiet, private, comfort items (tissue, water), sit at eye level, no interruptions, family present if desired P (Perception): ask what the patient/family already knows/understand before telling news I (Invitation): ask if patient wants to hear all details at once or gradually, who they want present K (Knowledge): deliver bad news clearly, use simple language, avoid jargon, pause for comprehension E (Emotions & Empathy): acknowledge patient's feelings ('I can see this is difficult'), offer support S (Summary & Support): summarize next steps, treatment options, offer resources (social work, chaplain)",
+    "metadata": {
+      "topic": "Breaking Bad News: SPIKES Framework",
+      "topic_tags": [
+        "communication_team_skills",
+        "breaking",
+        "bad"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "communication_team_skills",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_758",
+    "text": "Difficult Conversations with Patients & Families. Approach: empathetic, non-defensive, focus on shared goals (best care for patient) Listen: allow family to voice concerns without interrupting; validate feelings even if disagree Clarify: ensure understanding of medical situation, prognosis, treatment options, what patient wants When disagreement: offer second opinion, ethics consultation, palliative care referral Mitigate harm: if conflict unresolved, prioritize patient safety (don't withhold critical care)",
+    "metadata": {
+      "topic": "Difficult Conversations with Patients & Families",
+      "topic_tags": [
+        "communication_team_skills",
+        "difficult",
+        "conversations"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "communication_team_skills",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_759",
+    "text": "Team Dynamics During Resuscitation. Clear leadership: one person directs (clearly designate), others execute specific roles Closed-loop communication: acknowledge when hearing instructions, confirm actions completed Debriefing: brief team after resuscitation (what went well, what to improve) Crew resource management: junior staff should speak up if see error without hierarchy inhibiting communication",
+    "metadata": {
+      "topic": "Team Dynamics During Resuscitation",
+      "topic_tags": [
+        "communication_team_skills",
+        "team",
+        "dynamics"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "communication_team_skills",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_760",
+    "text": "Shared Decision-Making Model. Involves: physician discusses options, patient expresses values/preferences, together reach decision Requires: accurate prognostic information, patient decision aids, respect for autonomy Benefits: increases patient satisfaction, adherence, reduces unnecessary care Examples: whether to pursue aggressive care in metastatic cancer, timing of DNI/tracheostomy in prolonged illness",
+    "metadata": {
+      "topic": "Shared Decision-Making Model",
+      "topic_tags": [
+        "communication_team_skills",
+        "shared",
+        "decision-making"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "communication_team_skills",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_761",
+    "text": "Code Status & Goals-of-Care Conversations. Full Code (CPR): attempt cardiopulmonary resuscitation, intubation, ICU-level care DNR (Do Not Resuscitate): no CPR if cardiac arrest; may still pursue hospitalizations, ICU, other interventions DNI (Do Not Intubate): no mechanical ventilation; may accept other supports (vasopressors, dialysis) Comfort-focused: focus on symptom management, comfort, dignity; may include palliative sedation Timing: discuss early (before acute illness), update regularly as condition changes",
+    "metadata": {
+      "topic": "Code Status & Goals-of-Care Conversations",
+      "topic_tags": [
+        "communication_team_skills",
+        "code",
+        "status"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "communication_team_skills",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_762",
+    "text": "Root Cause Analysis & Adverse Event Investigation. RCA: systematic process to understand why error occurred, not to blame Five Whys: ask 'why' repeatedly to uncover system failures: Why did patient get wrong dose? Why was label unreadable? Fishbone diagram: brainstorm contributory factors (people, processes, equipment, environment, training) Process improvement: redesign systems to prevent recurrence (checklists, barriers, standardization) Reporting: culture of safety requires honest reporting without punishment (just culture)",
+    "metadata": {
+      "topic": "Root Cause Analysis & Adverse Event Investigation",
+      "topic_tags": [
+        "quality_safety",
+        "root",
+        "cause"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "quality_safety",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_763",
+    "text": "Medication Safety in ICU. High-alert medications: look-alike/sound-alike (HepARIN vs. HumaLOG), high-risk drugs (potassium, insulin, vasopressors) Strategies: use brand names, avoid abbreviations (don't write 'U' for units), double-check dosing, pharmacist verification Infusion pumps: smart pumps with dose error reduction systems (DERS) prevent programmed overdoses Labels: colored labels, font size, clear visibility; organizes by function not alphabetically",
+    "metadata": {
+      "topic": "Medication Safety in ICU",
+      "topic_tags": [
+        "quality_safety",
+        "medication",
+        "safety"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "quality_safety",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_764",
+    "text": "Prevention of Hospital-Acquired Infections (HAI). Hand hygiene: most important intervention; before/after patient contact, before clean procedure, after body fluid exposure Catheter-associated UTI (CAUTI): remove catheters ASAP, use sterile technique, minimize indwelling duration Central line-associated bloodstream infection (CLABSI): aseptic technique, sterile dressing, transparent dressing, remove ASAP Ventilator-associated pneumonia (VAP): head of bed 30-45°, daily oral care, sedation vacation, spontaneous breathing trials C. diff: contact precautions, avoid unnecessary antibiotics, alcohol-based hand sanitizers ineffective (wash hands)",
+    "metadata": {
+      "topic": "Prevention of Hospital-Acquired Infections (HAI)",
+      "topic_tags": [
+        "quality_safety",
+        "prevention",
+        "of"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "quality_safety",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_765",
+    "text": "Rapid Response Team (RRT) Activation. Criteria to call RRT: respiratory distress (RR >40 or <8), altered mental status, hypotension, severe pain Response: physician + nurse + respiratory therapist assess, stabilize, intervene (intubate, transfer to ICU) Benefit: prevent cardiopulmonary arrests on general wards, earlier ICU transfer Debrief: communicate with patient/family after intervention; RRT reviews cases for patterns",
+    "metadata": {
+      "topic": "Rapid Response Team (RRT) Activation",
+      "topic_tags": [
+        "quality_safety",
+        "rapid",
+        "response"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "quality_safety",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_766",
+    "text": "Palliative Care & Comfort-Focused Management. Goals: symptom relief, quality of life, support for patient/family, not curative Referral timing: early (at diagnosis of serious illness, not just end-of-life) Domains: pain control, dyspnea, nausea, fatigue, anxiety, depression, spiritual concerns Team approach: physician, nurse, social work, chaplain, palliative care specialist Parallel planning: can pursue curative AND palliative goals simultaneously",
+    "metadata": {
+      "topic": "Palliative Care & Comfort-Focused Management",
+      "topic_tags": [
+        "palliative_ethics",
+        "palliative",
+        "care"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_767",
+    "text": "Pain Management in Critical Illness. Assessment: ask patient, use pain scale (numeric rating 0-10), observe for nonverbal cues (grimacing, restlessness) Medications: morphine (first-line opioid), hydromorphone, fentanyl (faster onset); combine with adjuvants (acetaminophen, NSAIDs, muscle relaxants) Titration: increase doses incrementally based on response; concern for oversedation is NOT reason to withhold analgesia Tolerance: develop over time; NOT addiction (behavioral disorder); increase dose if needed",
+    "metadata": {
+      "topic": "Pain Management in Critical Illness",
+      "topic_tags": [
+        "palliative_ethics",
+        "pain",
+        "management"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_768",
+    "text": "Ethical Withdrawal & Withholding of Life Support. Legal equivalence: withholding (not starting ventilator) = withdrawing (stopping ventilator) ethically/legally Process: goals-of-care discussion, multidisciplinary agreement, patient/family understanding Approach: discontinue aggressive interventions, transition to comfort care (sedation, opioids for dyspnea) Extubation: patient may breathe spontaneously; place on comfort measures (oxygen if desired, secretion management) After death: allow family time with body, offer condolences, explain autopsy option",
+    "metadata": {
+      "topic": "Ethical Withdrawal & Withholding of Life Support",
+      "topic_tags": [
+        "palliative_ethics",
+        "ethical",
+        "withdrawal"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_769",
+    "text": "Medical Aid in Dying (MAID) & Physician-Assisted Suicide. Legal: available in Oregon, California, Washington, Colorado, Hawaii, Vermont, DC, and some other states Criteria: terminal illness (6 months prognosis), mental competence, persistent request, waiting periods Role: physician verifies diagnosis/prognosis, refers to psychiatrist, prescribes medication (lethal dose barbiturate) Patient administers: takes medication at home with family; dies within minutes to hours Controversy: ethical debate on autonomy vs. sanctity of life; varies by jurisdiction and personal values",
+    "metadata": {
+      "topic": "Medical Aid in Dying (MAID) & Physician-Assisted Suicide",
+      "topic_tags": [
+        "palliative_ethics",
+        "medical",
+        "aid"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_770",
+    "text": "Ethics Consultation & Conflict Resolution. Triggers: family/physician disagreement, decisions about life-sustaining treatment, resource allocation Process: ethics committee reviews case, hears from stakeholders, offers guidance (not binding) Framework: autonomy (respect patient wishes), beneficence (act in best interest), nonmaleficence (avoid harm), justice (fair allocation) Outcome: often achieves consensus; if impasse, consider second opinion, transfer of care, legal involvement",
+    "metadata": {
+      "topic": "Ethics Consultation & Conflict Resolution",
+      "topic_tags": [
+        "palliative_ethics",
+        "ethics",
+        "consultation"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_771",
+    "text": "Informed Consent & Capacity Assessment. Elements: patient understands diagnosis/prognosis, alternatives, risks/benefits, consequences of refusal Capacity: patient can understand information, appreciate its significance to own situation, reason through decision, communicate choice Assessment: may lack capacity due to sedation, delirium, psychiatric illness, dementia; test with focused questions Surrogate: if incapacitated, use surrogate decision-maker (spouse, adult child, healthcare proxy) Advance directive: living will/POLST (Physician Orders for Life-Sustaining Treatment) predefined wishes",
+    "metadata": {
+      "topic": "Informed Consent & Capacity Assessment",
+      "topic_tags": [
+        "palliative_ethics",
+        "informed",
+        "consent"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "palliative_ethics",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_772",
+    "text": "Effective Shift Handoff & Patient Sign-Out. IPASS mnemonic: Illness severity, Patient summary, Assessment/Action list, Situation awareness, Synthesis by receiver Format: SBAR (Situation, Background, Assessment, Recommendation) for concise communication Checklist: overnight plans, pending tests, medications to give, who to call with changes Verification: incoming physician repeats back key info to ensure understanding Documentation: sign-out recorded (verbal + written) for accountability",
+    "metadata": {
+      "topic": "Effective Shift Handoff & Patient Sign-Out",
+      "topic_tags": [
+        "administrative_career",
+        "effective",
+        "shift"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "administrative_career",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_773",
+    "text": "Recognizing & Preventing Physician Burnout. Burnout: emotional exhaustion, cynicism, reduced effectiveness; affects 40%+ of physicians Risk factors: excessive hours, administrative burden, sleep deprivation, moral injury, lack of control Prevention: set boundaries (work hours), hobby/exercise, social support, mindfulness, job satisfaction Resources: employee assistance programs (EAP), counseling, mentorship, peer support groups Institutional: reduce paperwork, improve staffing, support mental health, culture of wellness",
+    "metadata": {
+      "topic": "Recognizing & Preventing Physician Burnout",
+      "topic_tags": [
+        "administrative_career",
+        "recognizing",
+        "and"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "administrative_career",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_774",
+    "text": "Building Resilience & Professional Well-Being. Self-awareness: know your triggers, stressors, coping mechanisms Sleep: prioritize 7-8h nightly (essential for cognitive function, mood, immune function) Exercise: 30min/day moderate activity reduces depression/anxiety, improves mood Nutrition: regular meals, hydration, limit caffeine/alcohol Connection: maintain relationships, engage in community, meaningful activities outside medicine",
+    "metadata": {
+      "topic": "Building Resilience & Professional Well-Being",
+      "topic_tags": [
+        "administrative_career",
+        "building",
+        "resilience"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "administrative_career",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_775",
+    "text": "Career Development & Specialty Selection. Self-assessment: strengths/interests, values (autonomy, income, schedule, impact) Exploration: rotation in specialty, talk to mentors, attend conferences Timeline: early planning (intern year), revisit annually as interests evolve Subspecialties: fellowship training (2-5 years), boards certification, research opportunities Work-life balance: consider lifestyle factors (call burden, schedule, family needs) by specialty",
+    "metadata": {
+      "topic": "Career Development & Specialty Selection",
+      "topic_tags": [
+        "administrative_career",
+        "career",
+        "development"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base",
+      "book": "Phase 4 - Remaining Essentials",
+      "section": "administrative_career",
+      "created_at": "2026-06-04T20:26:51.590090",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_776",
+    "text": "Acetaminophen metabolism: therapeutic acetaminophen conjugated with sulfate/glucuronic acid; overdose exhausts conjugation → NAPQI (N-acetyl-p-benzoquinoneimine) accumulates → glutathione depletion → liver cell death. Chronically malnourished, alcoholic, and elderly at higher risk.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_777",
+    "text": "Toxidromes Quick Reference: Sympathomimetic (cocaine, amphetamine, pseudoephedrine): mydriasis, hypertension, tachycardia, hyperthermia. Anticholinergic (atropine, antihistamines): dry mouth, mydriasis, agitation, hyperthermia. Cholinergic (organophosphates, physostigmine): SLUDGE, miosis, bradycardia. Opioid (morphine, heroin): miosis, respiratory depression, hypothermia. Sedative (benzodiazepines, barbiturates): CNS depression, respiratory depression, hyporeflexia.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_778",
+    "text": "Carbon monoxide poisoning: colorless, odorless gas (combustion); binds hemoglobin with 200× affinity of oxygen → carboxyhemoglobin → tissue hypoxia. Symptoms: headache, confusion, syncope, cardiac arrhythmia, death. Diagnosis: carboxyhemoglobin level (normal <2%). Treatment: 100% oxygen (half-life 4-6 hours on room air, 1 hour on 100% O2, 30 min on hyperbaric oxygen 3 atm).",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_779",
+    "text": "Strychnine poisoning: blocks glycine inhibitory neurotransmitter → unopposed motor neuron firing → violent muscle contractions. Presentation: jaw clenching, opisthotonus (arched back), seizures, rhabdomyolysis. Treatment: benzodiazepines, neuromuscular blockade if intubated. Prognosis: 50% mortality historically; poor if seizures before treatment.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_780",
+    "text": "Warfarin/direct oral anticoagulant (DOAC) overdose: warfarin inhibits vitamin K-dependent clotting factors (II, VII, IX, X). Hemorrhage management: fresh frozen plasma (FFP) 10-15 mL/kg or prothrombin complex concentrate (PCC) 25-50 units/kg. Vitamin K1 5-10 mg slow IV (onset 12-24h, not immediate). Specific reversal agents: idarucizumab (Praxbind) for dabigatran, apixaban/rivaroxaban specific reversal agents.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_781",
+    "text": "Heparin-Induced Thrombocytopenia (HIT): paradoxical thrombosis despite anticoagulation; unfractionated heparin > low-molecular-weight heparin. HIT antibodies bind heparin-platelet factor 4 complex → platelet activation → thrombosis. Diagnosis: platelet count drop >50%, thrombotic event, timing (days 5-10). Management: stop heparin, switch to DTI (direct thrombin inhibitor: argatroban, dabigatran) or fondaparinux.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_782",
+    "text": "Serotonin syndrome: excessive serotonergic activity from SSRIs, MAOIs, tramadol, linezolid, dextromethorphan, tryptophan. Triad: mental status change (agitation, confusion), autonomic instability (tachycardia, hypertension, hyperthermia), neuromuscular abnormalities (myoclonus, hyperreflexia, clonus). Treatment: benzodiazepines, cooling, cyproheptadine (serotonin antagonist) 12 mg loading then 2-8 mg q6h.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_783",
+    "text": "Neuroleptic Malignant Syndrome (NMS): life-threatening reaction to antipsychotics (dopamine blockade). Tetrad: hyperthermia, muscle rigidity (lead pipe), altered mental status, autonomic dysfunction (labile BP/HR, diaphoresis). Treatment: stop offending agent, dantrolene 1 mg/kg IV q5-10min (max 10 mg/kg/day, reduces muscle metabolism), aggressive cooling, supportive care. Prognosis: 10% mortality if untreated, lower with dantrolene.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_784",
+    "text": "Malignant Hyperthermia (MH): genetic predisposition (ryanodine receptor mutation) → exposure to volatile anesthetics/succinylcholine → uncontrolled calcium release in muscle → hyperthermia, rhabdomyolysis, disseminated intravascular coagulation. Treatment: stop anesthetics, discontinue succinylcholine, dantrolene 2.5 mg/kg IV repeat q5min (max 10 mg/kg), aggressive cooling, monitor for complications (hyperkalemia, myoglobinuria).",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_785",
+    "text": "Heavy metal toxicity mechanisms: iron (oxidative stress via Fenton reaction), lead (neurotoxin, renal toxin), mercury (CNS effects), arsenic (arsenic trioxide → ARDS, dermatitis). Chelation strategy: iron (deferoxamine, deferasirox), lead/arsenic/mercury (DMSA, DMPS, EDTA). Timing critical: mobilizing metals can worsen toxicity; must antecedent to excretion.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_786",
+    "text": "Pesticide toxicity beyond organophosphates: carbamates (SLUDGE, seizures), pyrethroids (paresthesia, ataxia, tremor), neonicotinoids (nicotine-like, CNS effects). Treatment: symptom-focused; carbamates respond to atropine/2-PAM like organophosphates but shorter duration.",
+    "metadata": {
+      "topic": "Toxicology - Advanced Topics",
+      "topic_tags": [
+        "toxicology",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "toxicology",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_787",
+    "text": "Damage control orthopedics: unstable patient with multiple fractures → temporary stabilization (pelvic binder, traction splints, provisional fixation) avoiding prolonged OR time. Early total care reserved for physiologically stable patients. Principle: prioritize life-saving interventions (hemorrhage control, airway) over limb salvage initially.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_788",
+    "text": "Rhabdomyolysis: muscle breakdown → myoglobin release → acute kidney injury (tubular precipitation + direct toxicity). Sources: crush injury, prolonged immobilization, heat stress, statins, malignant hyperthermia. Management: aggressive IV hydration (goal urine output 200-300 mL/h), sodium bicarbonate (alkalinize urine prevents myoglobin precipitation), monitor CK, potassium, calcium.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_789",
+    "text": "FAST (Focused Assessment with Sonography for Trauma) extended: standard 4 views (Morrison's, splenorenal, pelvic, pericardium) + extended views (right paracolic, left paracolic, pelvic longitudinal, pericardial transverse) increases sensitivity. Fluid detection in Morrison's pouch indicates 0.5-1 L free fluid in non-obese patients.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_790",
+    "text": "Massive transfusion protocol activation: varies by institution but generally triggered by (1) transfusion of 4+ units RBC in 1h, (2) anticipated need for >10 units, or (3) shock physiology (lactate >2 mmol/L, base deficit <-6). Guidelines favor 1:1:1 ratio of RBC:FFP:platelets over traditional 3:1 due to improved outcomes in massive transfusion.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_791",
+    "text": "Mangled Extremity Severity Score (MESS): predicts need for amputation. Components: injury severity (low, medium, high, massive), limb ischemia (none, <6h, >6h), shock, age. Score >7 associated with amputation; <7 may be salvageable with aggressive intervention. Not absolute; functional prognosis and patient preference factor in.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_792",
+    "text": "Crush syndrome: entrapment with muscle injury → rhabdomyolysis → hyperkalemia (can cause cardiac arrest), acidosis, AKI. Risk after extraction: reperfusion injury from washout of metabolites. Management: pre-extraction IV fluids, monitor EKG for peaked T waves (hyperkalemia), calcium gluconate, insulin + glucose, sodium bicarbonate, prepare for hemodialysis.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_793",
+    "text": "Intra-abdominal Hypertension (IAH) & Abdominal Compartment Syndrome (ACS): IAH (>12 mmHg) reduces organ perfusion; ACS (>20 mmHg with organ dysfunction) requires intervention. Measurement: transurethral catheter pressure (gold standard), transurethral bladder pressure. Management: fluid resuscitation optimization, neuromuscular blockade, sedation, decompressive laparotomy if ACS.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_794",
+    "text": "Acute Traumatic Coagulopathy: trauma → tissue damage → massive transfusion → platelet loss and coagulation factor dilution → DIC. Earlier recognition (INR, PTT, platelet, fibrinogen) compared to traditional PT/PTT improves outcomes. Thrombelastography (TEG) or rotational thromboelastometry (ROTEM) guides transfusion in real-time.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_795",
+    "text": "Delayed hemorrhage in trauma: Day 3-7 post-injury from anastomotic failure, missed injuries, sepsis, mesenteric ischemia. Higher mortality (30-50%) than immediate hemorrhage. Management: vigilance with serial exams, imaging for suspicious findings, low threshold for re-exploration.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_796",
+    "text": "Necrotizing soft tissue infection post-trauma: rapid progression with systemic toxicity; high mortality (20-40%). Types: Type 1 (polymicrobial, most common), Type 2 (Group A Strep + Staph), Type 3 (marine/freshwater gram-negatives), Type 4 (fungal, rare). Treatment: antibiotics + immediate surgical debridement (may need multiple operations).",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_797",
+    "text": "Death from Hemorrhage - Temporal Distribution: '10-minute deaths' (exsanguination from massive hemorrhage), '1-hour deaths' (tension pneumothorax, tamponade, major vascular injury), '3-hour deaths' (head injury, spinal injury, organ injury with slower bleeding). Resuscitation most effective for 1-3 hour deaths; 10-minute deaths often unsalvageable.",
+    "metadata": {
+      "topic": "Trauma - Advanced Management",
+      "topic_tags": [
+        "trauma",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "trauma",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_798",
+    "text": "Resuscitative Endovascular Balloon Occlusion of the Aorta (REBOA): catheter-based aortic occlusion for non-compressible torso hemorrhage. Access: femoral artery, fluoroscopy (or bedside ultrasound blind), balloon positioned above/below aortic injury. Zone I (suprarenal) for intra-abdominal hemorrhage, Zone III (infrarenal) for lower extremity. Bridge to definitive OR control.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_799",
+    "text": "ECMO basics: VV (veno-venous) for respiratory failure, VA (veno-arterial) for cardiopulmonary failure. Cannulation: femoral, internal jugular, or central lines. Blood pump maintains flow 4-6 L/min, oxygenator exchanges gas, heater maintains temperature. Complications: bleeding, infection, circuit thrombosis, limb ischemia (femoral), neurologic injury. Support duration: days to weeks.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_800",
+    "text": "Resuscitative Cesarean Hysterotomy (perimortem C-section): pregnant cardiac arrest, perform C-section at scene/ED (improve maternal cardiac output by 50%, fetus >20 weeks gestation). Technique: midline incision, incise uterus vertically, deliver baby, clamp cord, deliver placenta. Continue CPR with gravid uterus off IVC.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_801",
+    "text": "Needle decompression failures: may occur due to (1) needle not reaching pleura, (2) clogging, (3) tension persists. Finger thoracotomy more reliable for traumatic tension pneumothorax; insert finger 4-5 cm into chest wall to verify pleural entry before proceeding.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_802",
+    "text": "Resuscitative laparotomy incision options: midline (fastest, most extensile access), left anterolateral (if need aortic cross-clamp), right subcostal (hepatic control, less common). Midline supraumbilical incision within 3 minutes for hemorrhage control is priority over cosmesis.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_803",
+    "text": "Clamshell (bilateral anterior thoracotomy): provides access to all mediastinal structures. Incision: bilateral anterolateral 4th-5th space with transverse sternal division. Advantage: better than left anterolateral alone for accessing right pleura/vessels. Resuscitative thoracotomy technique variation.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_804",
+    "text": "Finger sweep for airway obstruction: last-ditch effort if can't ventilate, can't intubate. Blind finger sweep only if foreign body visible or in suspected choking. Avoid in children (risk of impaction). Confirm relief before proceeding to other airway interventions.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_805",
+    "text": "Cricoid pressure (Sellick maneuver): applied during RSI to prevent aspiration; controversial—may impair visualization, can be incomplete occlu sion. Current evidence suggests selective use (recommend against routine); some favor gentle cricoid, then release if impairs view.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_806",
+    "text": "Bougie (gum-elastic bougie) for difficult intubation: 10 Fr bougie passed to trachea blindly or with partial visualization, then ETT railroaded over bougie. Reduces failed intubations in difficult anatomy. Confirm position with 'hold-up' (bougie catches at right mainstem bronchus ~27-30 cm).",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_807",
+    "text": "CPAP/BiPAP non-invasive ventilation: avoids intubation for respiratory distress if conscious, cooperative, and no airway concerns. Uses: pulmonary edema (CPAP reduces afterload), asthma/COPD exacerbation. Risk: delays intubation if patient tires; have intubation equipment ready.",
+    "metadata": {
+      "topic": "Procedures - Advanced Techniques",
+      "topic_tags": [
+        "procedures",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "procedures",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_808",
+    "text": "Patent ductus arteriosus (PDA) in premature infant: keep duct open (prostaglandin E1 0.05-0.1 mcg/kg/min) for cyanotic heart disease dependent on PDA (Tetralogy of Fallot, transposition). Closure (indomethacin, ibuprofen, or surgical ligation) for symptomatic left-to-right shunt (pulmonary edema, cardiomegaly).",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_809",
+    "text": "Hyperoxia test for cyanotic heart disease: place on 100% O2, measure PaO2. Cardiac cause (VSD, tetralogy) → PaO2 remains <100-150 mmHg. Pulmonary disease → PaO2 rises significantly. Not definitive but helps differentiation in newborn.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_810",
+    "text": "Pediatric septic shock early recognition: may present as hypothermia, poor perfusion without fever; lactate elevation (>2 mmol/L) predicts poor outcome. Fluid bolus 20 mL/kg within 1 hour, vasopressors if persistently hypotensive after fluids. Pediatric-specific corticosteroid consideration in refractory shock.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_811",
+    "text": "Drowning pathophysiology: aspiration → surfactant wash-out → atelectasis → ARDS. Fresh water aspiration → hypervolemia; salt water → hypernatremia. Treatment: aggressive ventilation management, PEEP, permissive hypercapnia. Consider ECMO for severe cases (may recover with prolonged resuscitation if cold-water immersion).",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_812",
+    "text": "Immunocompromised child with fever: hematologic malignancy, post-transplant, HIV. High risk for opportunistic infections (CMV, PCP, fungal). Empiric broad-spectrum antibiotics, fungal coverage if prolonged fever. Blood cultures, imaging (CXR, CT), invasive testing if localization unclear.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_813",
+    "text": "Meningococcemia in children: fulminant sepsis with petechial rash progressing to purpura, DIC, shock. Mortality 5-15%; survivors may have amputations (endotoxin-induced thrombosis). Treatment: ceftriaxone 2 g IV q12h (immediate, don't wait for LP), supportive care, consider dexamethasone 10 mg IV x4 days.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_814",
+    "text": "Pediatric pain assessment when nonverbal: use FLACC scale (Face, Legs, Activity, Cry, Consolability) for <3 years. Observe for physiologic signs: tachycardia, hypertension, diaphoresis, pupil dilation. Treat aggressively (undertreating common in PICU); opioid tolerance develops with continuous use.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_815",
+    "text": "Pediatric daily fluid requirements (Holliday-Segar): first 10 kg = 100 mL/kg, next 10 kg = 50 mL/kg, each kg >20 = 20 mL/kg. Add 10-50 mL/kg for insensible losses. Adjust for losses (diarrhea, vomiting), fevers, sepsis. Critically ill: often require 1.5-2× maintenance.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_816",
+    "text": "Pediatric RBC transfusion thresholds: stable patient Hgb 7-9 g/dL acceptable (similar to adults), critically ill/septic target Hgb >10 g/dL. Avoid excessive transfusion (increased mortality, immunosuppression). Packed RBCs 10 mL/kg increase Hgb ~3 g/dL.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_817",
+    "text": "Necrotizing enterocolitis (NEC) in premature: bowel ischemia + bacterial invasion → necrosis, perforation. Risk factors: prematurity, formula feeding (vs. breast milk), rapid feeding advancement. Signs: abdominal distention, blood in stool, pneumatosis intestinalis on X-ray. Treatment: stop feeds, antibiotics, supportive care; surgery if perforation.",
+    "metadata": {
+      "topic": "Pediatric Critical Care - Advanced",
+      "topic_tags": [
+        "pediatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "pediatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_818",
+    "text": "Orthostatic hypotension in elderly: drop >20 mmHg systolic or >10 mmHg diastolic within 3 min of standing. Causes: medications (beta-blockers, antihypertensives), autonomic dysfunction, hypovolemia, prolonged bedrest. Management: adequate hydration, compression stockings, slow position changes, midodrine (alpha-agonist) 5 mg TID, fludrocortisone 0.1-0.2 mg daily.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_819",
+    "text": "Urinary incontinence in elderly: stress (leak with Valsalva, cough), urge (sudden need to void, overactive bladder), overflow (retention with high residual), functional (unable to reach toilet). Different pharmacology: anticholinergics (tolterodine, oxybutynin) for urge, alpha-agonists (pseudoephedrine) for stress.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_820",
+    "text": "Dementia assessment: Mini-Cog (3-item recall + clock drawing, <3 min), Montreal Cognitive Assessment (MoCA), Mini-Mental State Exam (MMSE). Differentiate delirium (acute, reversible) from dementia (chronic, progressive). Investigate reversible causes: B12 deficiency, thyroid, normal pressure hydrocephalus, subdural hematoma.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_821",
+    "text": "Timed Up and Go (TUG) test: patient stands from chair, walks 10 feet, turns, walks back, sits. Time >12 seconds indicates high fall risk. Combined with other assessments (strength, balance, vision) to identify interventions (PT, home safety, assistive devices).",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_822",
+    "text": "Deprescribing strategy: (1) assess appropriateness (Beers Criteria, disease-specific guidelines), (2) engage patient in shared decision-making, (3) taper dose (gradual if long-term to avoid withdrawal), (4) monitor for withdrawal symptoms, (5) assess benefit after discontinuation.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_823",
+    "text": "Sarcopenia: age-related muscle loss and weakness; predictor of disability, falls, mortality. Screening: EWGSOP2 criteria (low muscle strength or quantity). Management: resistance training 2-3×/week, adequate protein (1.0-1.2 g/kg), vitamin D supplementation, treat underlying conditions.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_824",
+    "text": "Blood pressure targets in elderly: younger elderly (65-79) intensive control (SBP <130) beneficial; older elderly (>80) or frail, individualize target (may be 130-140 or higher if intolerant). Avoid rapid reduction (risk of stroke, AKI). Monitor for orthostasis with any antihypertensive adjustment.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_825",
+    "text": "AFib in elderly: common (5-10% prevalence >65 yo), increased stroke risk (2-3% per year without anticoagulation). Anticoagulation: DOAC preferred over warfarin (easier, faster); adjust dose for age/renal function. Rate control vs. rhythm control: rate control preferred in most (lenient target HR <110 acceptable unless symptomatic).",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_826",
+    "text": "Fall prevention multifactorial approach: (1) assess gait/balance, (2) review medications, (3) vision/hearing assessment, (4) home safety evaluation, (5) vitamin D supplementation, (6) PT/strengthening exercises, (7) balance training, (8) assistive devices. Reducing falls prevents fractures, hospitalization, mortality.",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_827",
+    "text": "Pressure ulcer (decubitus) prevention in immobile elderly: use support surfaces (gel mattress, air mattress), frequent turning (q2h at minimum), skin assessment (stage I = nonblanchable erythema), manage moisture/incontinence, optimize nutrition. Prevention easier than treatment (stage 3-4 difficult to heal).",
+    "metadata": {
+      "topic": "Geriatric Medicine - Advanced",
+      "topic_tags": [
+        "geriatric",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "geriatric",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_828",
+    "text": "Motivational interviewing (MI) for behavior change: collaborative conversation to elicit change talk. Techniques: open-ended questions, affirmations, reflections, summaries (OARS). Avoid confrontation; roll with resistance. Assess readiness to change; meet patient where they are (not your agenda).",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_829",
+    "text": "Family meeting facilitation: clarify goals (establish prognosis, understand values, decide on plan). Preparation: have clear information, identify decision-maker, arrange quiet space. Technique: open-ended questions, listen more than speak, address emotions, summarize and confirm understanding.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_830",
+    "text": "Psychological first aid for acute trauma/disaster: focus on safety, practical support, information provision. Techniques: establish calm, assess immediate needs, listen (don't probe), normalize responses, connect to resources. Distinguish from therapeutic counseling (not needed immediately).",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_831",
+    "text": "Addressing patient request for medically harmful intervention: 'I understand you want X, but that would cause harm. Instead, we can offer Y which achieves your goal safely.' Explain rationale, offer alternatives, respect autonomy within safe bounds.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_832",
+    "text": "Brief team huddles: <10 min daily, identify high-risk patients, communicate plan to all staff, identify resource needs. Improves safety culture, reduces errors. Structure: patient name, diagnosis, key concerns, plan for day.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_833",
+    "text": "De-escalating angry patient/family: stay calm, listen without defending, validate emotion ('I understand your frustration'), establish boundaries ('I want to help, but I need you to lower your voice'), involve security if threatening. Document threats.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_834",
+    "text": "Using medical interpreters: avoid family members (privacy, accuracy); use professional (phone/video) or in-person. Speak slowly, use simple words, avoid idioms. Address patient directly, not interpreter. Verify understanding by teach-back.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_835",
+    "text": "Disclosing medical error to patient: prompt disclosure (same day if possible), explain what happened, how it will be managed, what steps to prevent recurrence. Apologize for harm. Avoid defensive language. Documentation objective and factual.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_836",
+    "text": "Cultural competency in ICU: assess patient/family values, dietary restrictions, decision-making preferences (individual vs. family), spiritual needs. Ask 'What's important to you?' to guide care. Interpreter may be cultural broker; accommodate family presence if safe.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_837",
+    "text": "Advance directive conversation: introduce topic early (not in crisis). Explain living will (medical wishes), healthcare proxy (surrogate decision-maker), DNR/DNI. Explore values (quality vs. quantity of life, functional goals, fear of burden). Document clearly.",
+    "metadata": {
+      "topic": "Communication - Advanced Skills",
+      "topic_tags": [
+        "communication",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "communication",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_838",
+    "text": "HAI prevention bundle: hand hygiene, appropriate antibiotics (stewardship), insertion technique (sterile), device removal (ASAP), aseptic maintenance. Bundle approach (all elements together) more effective than single interventions. Measure & report metrics (CLABSI, CAUTI, SSI rates) publicly.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_839",
+    "text": "Antibiotic stewardship: narrow-spectrum agents for documented infection, step-down to oral, time-limited courses (avoid indefinite), therapeutic drug monitoring for aminoglycosides/vancomycin. Broad-spectrum empiric initially, de-escalate once culture results available. Improve resistance, reduce C. diff, save costs.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_840",
+    "text": "PDSA cycle (Plan-Do-Study-Act) for QI: small tests of change, rapid feedback, refine and scale. Example: implement central line checklist → audit compliance → identify barriers → revise → re-test. Rapid cycles (days/weeks) vs. lengthy project approvals.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_841",
+    "text": "Never events (serious safety events): retained surgical object, wrong-site surgery, wrong patient, CRBSI, CAUTI, bloodstream infection. Aim: zero tolerance. Prevention: checklists (WHO Surgical Safety Checklist), counts (instruments, sponges, needles), team communication.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_842",
+    "text": "Crew Resource Management (CRM) from aviation: team communication, hierarchy not absolute (junior can speak up), cross-checks, briefings/debriefings. Reduces errors in high-stakes environments. Training: team-based, focus on communication skills.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_843",
+    "text": "Incident reporting (near-miss and actual errors): confidential, non-punitive culture encourages reporting. Analysis: not blame-focused but system-focused. Actionable changes: design failures, training gaps, workflow improvements. Transparency: share lessons learned anonymously.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_844",
+    "text": "Patient safety metrics: culture surveys (Safety Attitudes Questionnaire), outcome metrics (mortality, readmissions), process metrics (compliance with bundles, timely antibiotics). Balanced scorecard approach (clinical + safety + efficiency).",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_845",
+    "text": "High-fidelity simulation training: develops crisis resource management, team communication, technical skills. Scenarios: sepsis recognition, massive transfusion, difficult airway. Benefits: safe practice, error recovery, team building. Debriefing critical (structured reflection on performance).",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_846",
+    "text": "RCA documentation: objective facts (what happened, when, to whom), contributing factors (system failures, human factors), not assigned blame. Recommendations: specific, actionable, addressed to owner. Follow-up: verify implementation, monitor for effectiveness.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_847",
+    "text": "Transparency in adverse events: communicate with patient/family (what happened, what will be done, prevention measures), offer support (chaplain, social work, counseling). Early disclosure and apology reduce litigation and improve trust.",
+    "metadata": {
+      "topic": "Quality & Safety - Advanced",
+      "topic_tags": [
+        "quality",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "quality",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_848",
+    "text": "Opioid dosing principles: start low (morphine 5-10 mg PO q4h or 2-4 mg IV), titrate q3-5 days by 25-50% increments until pain controlled. Equianalgesic dosing: morphine 30 mg PO = fentanyl 12.5 mcg/h patch = hydromorphone 7.5 mg PO. Watch for tolerance (requires dose escalation) vs. addiction (psychological dependence).",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_849",
+    "text": "Breakthrough pain: pain that exceeds baseline controlled pain; requires fast-acting opioid (short-acting morphine, liquid hydromorphone) in addition to long-acting agent (extended-release morphine, fentanyl patch). Dose: 10-20% of total daily opioid dose, q1-2h PRN.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_850",
+    "text": "Dyspnea management palliative: low-dose opioids (morphine 2-4 mg IV q1-2h), oxygen if hypoxic, fan (psychological benefit), anxiolytics (lorazepam) if anxiety component. Goal: comfort, not necessarily normalizing O2 sat. Position of comfort, minimize activity, speak calmly.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_851",
+    "text": "Nausea in palliative care: causes (opioid-induced most common, metabolic, increased ICP). Anti-emetics: ondansetron 4-8 mg IV (chemoreceptor), metoclopramide 5-10 mg PO q6h (motility, blocks dopamine), dexamethasone (raised ICP, brain mets). Constipation near-universal with opioids: stool softener + osmotic laxative (senna) scheduled (not PRN).",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_852",
+    "text": "Palliative sedation: intentional sedation to relieve intractable symptoms at end of life. Requires informed consent, documented refractory symptoms. Medications: propofol, midazolam, pentobarbital titrated to comfort. Family present, continue comfort measures (positioning, mouth care). Ethical but distinct from euthanasia.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_853",
+    "text": "Existential suffering: loss of meaning, identity, control; fear of dying, dying process. Interventions: chaplaincy, counseling, meaning-making conversations, spiritual practices. Recognize when it's beyond medical symptom management; address with interdisciplinary team.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_854",
+    "text": "Bereavement support: immediate (during hospitalization/after death), short-term (1-6 months), long-term (ongoing). Resources: support groups, counseling, educational materials. High-risk: sudden/traumatic death, complicated grief, prior losses, lack of social support.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_855",
+    "text": "Opioid-induced respiratory depression: risk increases with age, renal failure, COPD, concurrent sedatives. Monitoring: observe respiration rate, adequacy of ventilation. At end of life: controlled sedation may reduce consciousness → reduced respiratory drive (acceptable as goal is comfort). Document goals.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_856",
+    "text": "Advance care planning: proactive (not just in crisis); explore values, preferred place of death, goals for dying (dignity, family time, pain-free). Document: advance directive, healthcare proxy, POLST (Physician Orders for Life-Sustaining Treatment). Revisit periodically as preferences evolve.",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  },
+  {
+    "id": "phase4_unit_857",
+    "text": "Educating family on dying process: what to expect (breathing changes, consciousness, incontinence, temperature drops, sounds, final breaths). Normalize process, reduce fear, prepare for death. Allow family presence, private time, rituals (reading, prayer, music).",
+    "metadata": {
+      "topic": "Palliative Care - Advanced Management",
+      "topic_tags": [
+        "palliative",
+        "advanced",
+        "detailed"
+      ],
+      "library": "intern_year_medicine",
+      "source_name": "Phase 4 Knowledge Base - Expansion",
+      "book": "Phase 4 - Remaining Essentials (Advanced)",
+      "section": "palliative",
+      "created_at": "2026-06-04T20:28:47.519127",
+      "chunk_type": "fact"
+    }
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "topic": "Heart Failure Phenotypes - EF Classification",
+    "subtopic": "hf_phenotypes",
+    "content": "Heart failure classified by ejection fraction: HFrEF (reduced EF) = EF <40%, HFmrEF (mildly reduced) = EF 40-49%, HFpEF (preserved EF) = EF ≥50%. HFrEF typically systolic dysfunction (dilated chambers, reduced contractility); HFmrEF mixed; HFpEF typically diastolic dysfunction (stiff LV, impaired filling). ACE inhibitors/ARBs, beta-blockers, aldosterone antagonists proven mortality benefit in HFrEF. HFpEF limited pharmacotherapy options; focus on symptom relief, rate control, comorbidity management. Acute decompensation may occur in any phenotype; precipitants differ slightly (HFrEF: non-adherence, ischemia; HFpEF: HTN, AFib, renal failure).",
+    "tags": [
+      "heart_failure",
+      "hf_phenotypes",
+      "ejection_fraction"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Decompensated Heart Failure - Precipitants",
+    "subtopic": "adf_precipitants",
+    "content": "Common triggers: (1) Non-adherence to medications/fluid restriction; (2) Infection (UTI, pneumonia, endocarditis); (3) Acute coronary syndrome; (4) Uncontrolled hypertension; (5) Arrhythmia (AFib with RVR, VT); (6) Anemia; (7) Renal failure (decreased renal clearance); (8) Thyroid dysfunction; (9) Medications (NSAIDs, steroids, negative inotropes); (10) Pregnancy-related (peripartum cardiomyopathy). Identify precipitant to guide therapy; addressing underlying cause critical for success.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "precipitants"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Decompensated HF Presentation",
+    "subtopic": "adf_presentation",
+    "content": "Classic signs: dyspnea (exertional, orthopnea, PND), fatigue, lower extremity edema, weight gain (>2-3 lb/day suggests fluid retention). Physical exam: elevated JVD (>4 cm suggests elevated CVP), hepatomegaly (due to RV failure, hepatic congestion), hepatojugular reflex positive, pulmonary crackles (rales), S3 gallop (due to rapid ventricular filling), ascites (advanced). Dyspnea on exertion earliest symptom; progression to PND, orthopnea indicates worsening. Acute presentation: severe dyspnea at rest, orthopnea, pink frothy sputum (cardiogenic pulmonary edema), tachycardia, cool extremities (low cardiac output).",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "presentation"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "BNP & NT-proBNP in Heart Failure",
+    "subtopic": "adf_diagnostics",
+    "content": "B-type natriuretic peptide (BNP) & NT-proBNP (N-terminal fragment) = neurohormone markers released from ventricular myocytes in response to stretch. Elevated in HF decompensation, but NOT diagnostic (elevated in renal failure, sepsis, PE, AFib, LVH). Cutoffs: BNP >400 pg/mL or NT-proBNP >900 pg/mL suggest HF; lower values make HF unlikely (good negative predictive value). Serial BNP trends guide therapy: decreasing BNP with diuretics = good response. Resistance to diuretics + persistently elevated BNP = ongoing decompensation, need therapy escalation.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "bnp",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Echocardiography in Acute HF",
+    "subtopic": "adf_diagnostics",
+    "content": "Echo: measure EF (Simpson method, visual estimate), chamber sizes (LV, LA, RV dimensions), diastolic dysfunction parameters (E/A ratio, E/e', LA pressure). Valvular disease assessment (MR, TR common in HF). RV function assessment (TAPSE, S' velocity). Pericardial effusion, tamponade physiology. Global longitudinal strain (GLS) emerging marker of systolic dysfunction (more sensitive than EF alone for ischemic disease). Serial echo useful post-admission to assess response to therapy.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "echocardiography"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Diuretic Therapy in Acute Decompensated HF",
+    "subtopic": "adf_treatment",
+    "content": "First-line: IV loop diuretics (furosemide, torsemide, bumetanide). Dosing: start 40-120 mg IV bolus depending on baseline renal function + diuretic dose at home. Goal: negative fluid balance 0.5-1.0 L/day. Monitor: daily weight, I&Os, creatinine, electrolytes (K, Cl, Mg), urine output. Titration: if inadequate response after 30-60 min, increase dose by 50-100%. Resistance (no urine output despite high diuretic): try higher dose, more frequent dosing (q6h), or continuous infusion. Addition of second agent (thiazide, aldosterone antagonist) may overcome resistance. Watch for: volume depletion (worsening renal function, hypotension), electrolyte abnormalities (hypokalemia, hyponatremia, hypomagnesemia).",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "diuretics"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Vasodilators in Acute HF (Nitroglycerin, Nitroprusside)",
+    "subtopic": "adf_treatment",
+    "content": "IV vasodilators for acute afterload reduction: (1) Nitroglycerin: 10-200 mcg/min IV infusion, primarily venodilator (reduces preload) + arterial vasodilation at higher doses. Benefit: rapid relief dyspnea in pulmonary edema. Tolerance develops after 12-24h (tachyphylaxis). (2) Nitroprusside: 0.3-10 mcg/kg/min IV, balanced arterial/venous vasodilation. More potent hypotensive effect; requires close monitoring (risk hypotension, AKI). Cyanide toxicity risk if >4 mcg/kg/min for >4h. Use: severe hypertensive emergency + pulmonary edema. Both agents require continuous hemodynamic monitoring, arterial line preferred.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "vasodilators"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "ACE Inhibitors & ARBs in Heart Failure",
+    "subtopic": "adf_treatment",
+    "content": "ACE inhibitors (lisinopril, enalapril) & ARBs (losartan, valsartan) proven mortality benefit in HFrEF (SOLVD trial: reduced mortality + hospitalizations). Mechanism: vasodilation, reduced aldosterone secretion, cardiac remodeling prevention. Dosing: start low (lisinopril 5 mg daily), titrate up as tolerated. Contraindications: acute AKI (SCr rise >30%), hyperkalemia (K >5.5), severe hypotension (SBP <90). Monitor: K, creatinine at baseline + 1-2 weeks, then as needed. Can continue even in acute decompensation (avoid in acute MI with cardiogenic shock until stabilized). ARNI (sacubitril/valsartan) newer option; superior to ACE inhibitor alone (PARADIGM trial).",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "ace_inhibitor",
+      "arb"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Beta-Blockers in Acute HF - Initiation & Safety",
+    "subtopic": "adf_treatment",
+    "content": "Beta-blockers (carvedilol, metoprolol succinate) reduce mortality + hospitalizations in HFrEF (COPERNICUS, MERIT-HF trials). Counter-intuitive: initiate during acute decompensation AFTER stabilization (once euvolemic, hemodynamically stable). Start low dose (carvedilol 3.125 mg daily), double every 1-2 weeks to target dose. Risk early: negative inotropic effect may worsen acute decompensation, hypotension. Contraindications: acute pulmonary edema, cardiogenic shock (until inotrope support), severe bradycardia (HR <50). Continue beta-blocker even in admitted with HF exacerbation; don't discontinue.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "beta_blockers"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Aldosterone Antagonists (Spironolactone, Eplerenone)",
+    "subtopic": "adf_treatment",
+    "content": "Spironolactone & eplerenone (potassium-sparing diuretics, aldosterone antagonists) reduce mortality in HFrEF with moderate-severe symptoms (RALES trial: 30% mortality reduction). Dosing: spironolactone 12.5-50 mg daily; eplerenone (selective aldosterone antagonist) 25-50 mg daily. Onset: slow (weeks to months for full effect); don't add for acute symptom relief. Key risk: hyperkalemia (especially if K >5.0 or renal dysfunction). Monitor K closely (baseline, 3 days, 1 week, then monthly). Caution: avoid combined with ACE inhibitor + loop diuretic at high doses (triple therapy = hyperkalemia risk). SGLT2 inhibitors (dapagliflozin, empagliflozin) emerging newer agents with mortality benefit, favorable side effect profile.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "aldosterone_antagonist"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Inotropes vs Inodilators in Acute HF",
+    "subtopic": "adf_advanced_therapy",
+    "content": "Inotropes (dobutamine, milrinone) increase contractility but risk tachycardia, ischemia, arrhythmia. Indication: HF with reduced cardiac output (SBP <90, signs of hypoperfusion), refractory to diuretics + vasodilators. Dobutamine = beta agonist, increases contractility + HR, mild vasodilation. Dose 2-20 mcg/kg/min. Milrinone = phosphodiesterase-3 inhibitor, inotrope + systemic vasodilator. Dose 0.25-0.75 mcg/kg/min. Both: TEMPORARY bridge only (days, not weeks). Monitor: ECG for ischemic changes, troponin for MI. Wean as cardiac output improves. Limited evidence for mortality benefit; may worsen outcomes if used long-term.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "inotropes"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "BiPAP/CPAP in Cardiogenic Pulmonary Edema",
+    "subtopic": "adf_respiratory_support",
+    "content": "Non-invasive positive pressure ventilation (NIPPV): bilevel positive airway pressure (BiPAP) or continuous PAP (CPAP) improves oxygenation in acute cardiogenic pulmonary edema by splinting open alveoli + reducing afterload. BiPAP: two pressure levels (IPAP/EPAP); patient cycles between (more comfortable). CPAP: single pressure level (simpler). Typical settings: CPAP 5-10 cmH2O OR BiPAP IPAP 12-20, EPAP 5 cmH2O. Benefit: reduces intubation rate (meta-analysis: ~50% reduction) + ICU stay. Avoid if: altered mental status, aspiration risk, hemodynamic instability. Contraindication: acute MI (may worsen ischemia by reducing preload). Prognosis: NIPPV allows time for IV medications to work.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "bipap",
+      "cpap"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Mechanical Circulatory Support in Acute HF",
+    "subtopic": "adf_advanced_therapy",
+    "content": "For cardiogenic shock refractory to medications: (1) Intra-aortic balloon pump (IABP): increases diastolic pressure (improves coronary perfusion), reduces afterload. Percutaneous via femoral artery; requires vascular surgery. Bridge to PCI/transplant. (2) Impella: axial flow pump (left ventricle → aorta), improves cardiac output more effectively than IABP. Newer, more invasive. (3) TandemHeart: extracorporeal centrifugal pump (left atrium → aorta). (4) ECMO: for combined cardiorespiratory failure, bridge to recovery/transplant. Indication: SBP <90 despite maximum medical therapy, signs tissue hypoperfusion (lactate, altered MS, oliguria). Role: bridge device (days-weeks), not definitive. Mortality high even with support; transplant evaluation necessary.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "mechanical_support"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Cardiogenic Shock - Definition & Management",
+    "subtopic": "adf_cardiogenic_shock",
+    "content": "Cardiogenic shock = low cardiac output state (MAP <65 mmHg OR SBP <90) despite adequate or elevated filling pressures, causing end-organ dysfunction (oliguria, altered MS, elevated lactate). Etiologies: acute MI, acute decompensation HF, myocarditis, stress cardiomyopathy. Presentation: hypotension, cool/clammy extremities, low urine output, altered mental status, elevated lactate. Diagnosis: CVP/PAOP >15 (elevated filling pressure), CI <2.2 L/min/m2 (low cardiac index). Management: (1) IV vasodilators + diuretics cautiously (high risk worsening hypotension); (2) Inotropes (dobutamine, milrinone) + vasopressors (norepinephrine); (3) Mechanical support (IABAP, Impella, ECMO) if refractory. PCI/revascularization if ACS underlying. Mortality 50%+ without mechanical support.",
+    "tags": [
+      "heart_failure",
+      "adf",
+      "cardiogenic_shock"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

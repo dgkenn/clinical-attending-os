@@ -1,0 +1,802 @@
+[
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypotension",
+    "subtopics": [
+      "Can't-miss differential: distributive (sepsis, anaphylaxis), hypovolemic (hemorrhage, dehydration), cardiogenic (MI, PE, tamponade), obstructive (tension pneumothorax)",
+      "Focused bedside assessment: vitals trend, mental status, skin perfusion, JVD, lung sounds, recent medications, fluid balance, bleeding sources",
+      "Initial stabilizing management: lay flat, IV access, cautious fluid bolus, hold antihypertensives, supplemental oxygen, call for help early",
+      "Targeted workup: CBC, BMP, lactate, blood cultures, ECG, portable CXR, bedside echo if available",
+      "Escalation triggers: SBP <90 unresponsive to 1-2L fluid, altered mental status, lactate >4, suspected MI/PE/tamponade, need for vasopressors"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Chest Pain",
+    "subtopics": [
+      "Can't-miss differential: ACS, aortic dissection, PE, tension pneumothorax, pericarditis/tamponade, esophageal rupture",
+      "Focused bedside assessment: character/radiation/onset, diaphoresis, BP both arms, pulse equality, lung sounds, JVD, leg swelling",
+      "Initial stabilizing management: supplemental oxygen if hypoxic, IV access, continuous monitoring, aspirin if ACS suspected, hold anticoagulants if dissection possible",
+      "Targeted workup: ECG immediately, troponin, BMP, CBC, D-dimer if PE risk, CXR, consider CT-A if dissection suspected",
+      "Escalation triggers: ST elevation, hemodynamic instability, suspected dissection or PE, persistent pain, new arrhythmia, oxygen requirement"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Dyspnea",
+    "subtopics": [
+      "Can't-miss differential: PE, flash pulmonary edema, pneumothorax, severe asthma/COPD exacerbation, anaphylaxis, airway obstruction",
+      "Focused bedside assessment: respiratory rate, SpO2, accessory muscle use, lung sounds, JVD, leg edema, recent medications, volume status",
+      "Initial stabilizing management: supplemental oxygen titrated to SpO2, upright positioning, IV access, bronchodilator if wheeze, diuresis if volume overloaded",
+      "Targeted workup: ABG or VBG, CXR, ECG, BNP, D-dimer if PE risk, CBC, BMP, peak flow if asthma",
+      "Escalation triggers: SpO2 <88% on high-flow O2, RR >30, inability to speak, impending respiratory failure, altered mental status, stridor"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypoxia and Desaturation",
+    "subtopics": [
+      "Can't-miss differential: PE, pneumothorax, aspiration, flash pulmonary edema, mucus plug, worsening pneumonia, opioid-induced hypoventilation",
+      "Focused bedside assessment: confirm with pulse ox probe repositioning, RR, breath sounds, mental status, secretions, pain meds recently given",
+      "Initial stabilizing management: supplemental oxygen titrated up stepwise, stimulate/reposition patient, suction if secretions, reverse opioids if hypoventilating",
+      "Targeted workup: ABG, CXR, ECG, D-dimer if PE risk, CBC, review medication administration record",
+      "Escalation triggers: SpO2 <88% despite high-flow O2, altered mentation, RR >30 or <8, suspected PE or pneumothorax, failure to respond to oxygen"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Tachycardia",
+    "subtopics": [
+      "Can't-miss differential: sepsis, PE, hypovolemia/hemorrhage, SVT, afib with RVR, VT, pain/anxiety, thyroid storm, anemia",
+      "Focused bedside assessment: hemodynamic stability, rhythm strip, pulse quality, volume status, temperature, pain level, medication list",
+      "Initial stabilizing management: IV access, continuous monitoring, treat reversible causes (pain, fever, hypovolemia), vagal maneuvers if stable SVT suspected",
+      "Targeted workup: ECG, CBC, BMP, troponin, TSH, blood cultures if febrile, consider echo if cardiogenic concern",
+      "Escalation triggers: HR >150 with hemodynamic instability, wide complex tachycardia, VT, hypotension, altered mentation, chest pain"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Bradycardia",
+    "subtopics": [
+      "Can't-miss differential: heart block (2nd/3rd degree), sick sinus, beta-blocker/calcium-channel-blocker toxicity, hyperkalemia, hypothyroidism, inferior MI, increased ICP",
+      "Focused bedside assessment: hemodynamic stability, symptoms (syncope, chest pain, dyspnea), medication list, rhythm strip, capillary refill",
+      "Initial stabilizing management: IV access, continuous monitoring, hold offending medications, atropine if symptomatic, prepare for transcutaneous pacing",
+      "Targeted workup: ECG (look for heart block/PR interval/Mobitz type), BMP (potassium), digoxin level, TSH, troponin",
+      "Escalation triggers: HR <40 or symptomatic bradycardia, high-degree heart block, hemodynamic compromise, no response to atropine"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Altered Mental Status",
+    "subtopics": [
+      "Can't-miss differential: hypoglycemia, hypoxia, sepsis, stroke/bleed, meningitis/encephalitis, opioid/benzo toxicity, hypercarbia, hepatic encephalopathy, postictal",
+      "Focused bedside assessment: glucose finger-stick immediately, GCS, focal neuro signs, temperature, pupil exam, medication list, recent procedures",
+      "Initial stabilizing management: glucose if hypoglycemic, oxygen, secure airway if unable to protect, hold sedating medications, IV access",
+      "Targeted workup: glucose, BMP, CBC, ammonia, blood cultures, ABG, urinalysis, CT head, LP if meningitis suspected",
+      "Escalation triggers: GCS <13, suspected stroke or bleed, meningismus, airway compromise, focal neuro deficit, seizure activity, failure to improve"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to the Unresponsive Patient",
+    "subtopics": [
+      "Can't-miss differential: cardiac arrest, respiratory failure, massive stroke, opioid overdose, severe hypoglycemia, status epilepticus, severe sepsis",
+      "Focused bedside assessment: call for help first, assess responsiveness and breathing, check pulse, finger-stick glucose, pupils, medication access nearby",
+      "Initial stabilizing management: activate rapid response or code immediately, airway positioning, rescue breathing if needed, naloxone if opioid overdose suspected",
+      "Targeted workup: point-of-care glucose, ABG, ECG, CT head after stabilization, toxicology screen, BMP",
+      "Escalation triggers: ANY unresponsive patient requires immediate rapid response/code activation — do not manage alone"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute GI Bleed",
+    "subtopics": [
+      "Can't-miss differential: upper (peptic ulcer, variceal, Mallory-Weiss, aortoenteric fistula) vs lower (diverticular, ischemic colitis, AVM, malignancy)",
+      "Focused bedside assessment: hemodynamic stability, orthostatics, stool/emesis character, abdominal exam, recent NSAIDs/anticoagulants, cirrhosis history",
+      "Initial stabilizing management: large-bore IV access x2, volume resuscitation, type and crossmatch, hold anticoagulants, NPO, consider PPI infusion",
+      "Targeted workup: CBC, BMP, coags, LFTs, type and screen/crossmatch, NG lavage if upper GI bleed suspected",
+      "Escalation triggers: hemodynamic instability, Hgb drop >2 acutely, bright red blood per rectum with hypotension, suspected variceal bleed, inability to stabilize"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hyperkalemia",
+    "subtopics": [
+      "Can't-miss differential: AKI/CKD, ACE-I/ARB/potassium-sparing diuretics, hemolysis/rhabdomyolysis, adrenal insufficiency, acidosis, massive tissue necrosis",
+      "Focused bedside assessment: ECG immediately (peaked T waves, wide QRS, sine wave), symptoms (weakness, palpitations), urine output, medication list",
+      "Initial stabilizing management: cardiac membrane stabilization with calcium if ECG changes, insulin/dextrose, sodium bicarbonate, kayexalate or patiromer, loop diuretic if not oliguric",
+      "Targeted workup: BMP (repeat), ECG serial, ABG if acidosis suspected, CBC, CK if rhabdomyolysis concern",
+      "Escalation triggers: K+ >6.5, any ECG changes (peaked T, PR prolongation, wide QRS), hemodynamic instability, oliguria/anuria, dialysis consideration"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypertensive Emergency",
+    "subtopics": [
+      "Can't-miss differential: end-organ damage (hypertensive encephalopathy, acute MI, aortic dissection, pulmonary edema, eclampsia, AKI, papilledema)",
+      "Focused bedside assessment: neurologic exam (headache, vision, focal deficits), fundoscopy if possible, both-arm BP, urine output, chest pain",
+      "Initial stabilizing management: IV access, continuous monitoring, IV antihypertensive titration (goal 10-20% reduction in first hour), avoid overcorrection",
+      "Targeted workup: BMP, CBC, urinalysis (casts), ECG, CXR, CT head if neuro symptoms, troponin",
+      "Escalation triggers: neurologic symptoms, suspected dissection, pulmonary edema, AKI, or any confirmed end-organ damage — call senior immediately"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypoglycemia",
+    "subtopics": [
+      "Can't-miss differential: excess insulin/sulfonylurea, missed meal, renal failure altering drug clearance, hepatic failure, sepsis, adrenal insufficiency, insulinoma",
+      "Focused bedside assessment: confirm glucose <70, mental status, ability to swallow safely, last meal timing, insulin administration record, symptoms",
+      "Initial stabilizing management: oral glucose if alert and able to swallow, IV dextrose bolus if impaired, glucagon if no IV access, recheck glucose in 15 minutes",
+      "Targeted workup: repeat glucose, BMP, review medication administration record, c-peptide/insulin level if spontaneous hypoglycemia",
+      "Escalation triggers: glucose <40, altered mental status, seizure, failure to respond to treatment, recurrent hypoglycemia, sulfonylurea ingestion requiring prolonged monitoring"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Anaphylaxis",
+    "subtopics": [
+      "Can't-miss differential: IgE-mediated allergy (drugs, food, latex, contrast), complement activation, exercise-induced, idiopathic; distinguish from vasovagal and angioedema",
+      "Focused bedside assessment: airway patency/stridor, urticaria/angioedema, wheezing, hemodynamics, recent exposures (antibiotics, contrast, blood products, foods)",
+      "Initial stabilizing management: epinephrine IM immediately (first-line), supine positioning with legs elevated, oxygen, IV access, diphenhydramine/steroids as adjuncts, stop offending agent",
+      "Targeted workup: clinical diagnosis primarily; tryptase level if uncertain; ECG if cardiogenic concern; no labs should delay epinephrine",
+      "Escalation triggers: stridor, refractory hypotension, airway edema, biphasic reaction risk — all require senior/ICU notification and extended monitoring"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Seizure",
+    "subtopics": [
+      "Can't-miss differential: epilepsy breakthrough, hypoglycemia, hyponatremia, alcohol withdrawal, CNS infection/bleed, drug toxicity/withdrawal, eclampsia, non-epileptic event",
+      "Focused bedside assessment: observe and time seizure, protect from injury, glucose finger-stick, post-ictal assessment, tongue/incontinence, medication history, recent alcohol",
+      "Initial stabilizing management: rescue positioning (lateral decubitus), IV/IM benzodiazepine if >5 minutes or recurrent, oxygen, glucose if hypoglycemic, protect airway",
+      "Targeted workup: glucose, BMP, AED levels if on antiepileptics, CBC, toxicology, CT head, LP after imaging if first seizure or fever",
+      "Escalation triggers: seizure >5 minutes, status epilepticus, failure to respond to benzodiazepine, first-time seizure, post-ictal focal deficit, airway compromise"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Focal Neurologic Deficit",
+    "subtopics": [
+      "Can't-miss differential: ischemic stroke, hemorrhagic stroke, Todd's paralysis, hypoglycemia mimicking stroke, MS relapse, subdural hematoma, hypertensive encephalopathy",
+      "Focused bedside assessment: time of last known well, glucose finger-stick, NIHSS or focused deficit assessment, BP, hemodynamics, medication list",
+      "Initial stabilizing management: activate stroke protocol, glucose if hypoglycemic, airway protection if needed, IV access, continuous monitoring, avoid hypotension",
+      "Targeted workup: STAT non-contrast CT head, glucose, BMP, CBC, coags, ECG, type and screen; CT-A if thrombectomy candidate",
+      "Escalation triggers: ANY new focal deficit requires immediate senior/neurology notification; time-sensitive for thrombolytics/thrombectomy (door-to-CT <25 min)"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Sepsis on the Wards",
+    "subtopics": [
+      "Can't-miss differential: pneumonia, UTI/urosepsis, abdominal source (cholangitis, bowel perf), skin/soft tissue, line infection, endocarditis, C. diff colitis",
+      "Focused bedside assessment: temperature, HR, RR, BP, mental status, source survey (lungs, abdomen, Foley, lines, skin), qSOFA score",
+      "Initial stabilizing management: IV access, blood cultures x2 before antibiotics, lactate, broad-spectrum antibiotics within 1 hour, IV fluid resuscitation",
+      "Targeted workup: CBC, BMP, LFTs, coags, lactate, blood/urine/sputum cultures, CXR, UA with culture, consider CT abdomen/pelvis",
+      "Escalation triggers: lactate >2, hypotension after fluids, AMS, organ dysfunction (AKI, elevated LFTs), need for vasopressors, SOFA score increase"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Respiratory Failure",
+    "subtopics": [
+      "Can't-miss differential: pneumonia with hypoxemia, ARDS, flash pulmonary edema, massive PE, pneumothorax, severe asthma/COPD, neuromuscular respiratory failure",
+      "Focused bedside assessment: RR, SpO2, accessory muscle use, mental status, lung sounds, volume status, ABG, recent trajectory",
+      "Initial stabilizing management: escalate oxygen delivery stepwise (NC → mask → NRB → HFNC/BiPAP), upright positioning, treat underlying cause, IV access",
+      "Targeted workup: ABG, CXR, ECG, BNP, D-dimer if PE risk, CBC, BMP, sputum culture, bedside echo",
+      "Escalation triggers: failure to maintain SpO2 >88% on high-flow O2, RR >30, altered mentation, PaCO2 rising, impending intubation — call senior/ICU immediately"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Aspiration Event",
+    "subtopics": [
+      "Can't-miss differential: aspiration pneumonitis (chemical), aspiration pneumonia (bacterial), airway obstruction by foreign body, witnessed vs silent aspiration",
+      "Focused bedside assessment: SpO2, RR, breath sounds (particularly right base), mental status, gag reflex, oral secretions, positioning at time of event",
+      "Initial stabilizing management: upright positioning, supplemental oxygen, suction oral secretions, NPO, monitoring; antibiotics only if signs of bacterial pneumonia",
+      "Targeted workup: CXR (right lower lobe infiltrate, may lag), ABG if hypoxic, CBC, consider bronchoscopy if large-volume or foreign body concern",
+      "Escalation triggers: severe hypoxia, inability to protect airway, progressive respiratory failure, hemodynamic instability, suspected large-volume aspiration"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Fever",
+    "subtopics": [
+      "Can't-miss differential: bacterial infection (line, UTI, pneumonia, wound), C. diff, drug fever, pulmonary embolism, transfusion reaction, malignant hyperthermia, endocarditis",
+      "Focused bedside assessment: temperature trend, HR, BP, source survey (lines, wounds, Foley, lungs, abdomen), recent procedures, antibiotic history, immunocompromised status",
+      "Initial stabilizing management: antipyretics for comfort, blood cultures before empiric antibiotics, IV access, fluid support if needed, remove/culture suspected infected lines",
+      "Targeted workup: CBC, BMP, blood cultures x2, UA with culture, CXR, C. diff if diarrhea, wound cultures if applicable",
+      "Escalation triggers: temperature >39.5 with hemodynamic instability, neutropenic fever, suspected endocarditis, meningismus, rapid clinical deterioration, immunocompromised host"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Oliguria and Low Urine Output",
+    "subtopics": [
+      "Can't-miss differential: prerenal (dehydration, hypotension, cardiorenal), intrinsic renal (ATN, contrast nephropathy, drug toxicity), postrenal (bladder outlet obstruction, Foley malfunction)",
+      "Focused bedside assessment: check Foley patency first (flush/irrigate), fluid balance, BP, JVD, lung sounds, bladder scan, medication list (nephrotoxins, diuretics)",
+      "Initial stabilizing management: flush or replace Foley if obstructed, fluid challenge if prerenal, hold nephrotoxins, optimize BP, avoid contrast",
+      "Targeted workup: BMP (creatinine trend), urinalysis with microscopy, urine sodium/osmolality, bladder scan, renal ultrasound if obstruction suspected",
+      "Escalation triggers: anuria, rising creatinine with K+ >6, pulmonary edema from fluid overload, suspected obstruction unrelieved, hemodynamic compromise"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Kidney Injury",
+    "subtopics": [
+      "Can't-miss differential: prerenal (volume depletion, cardiorenal), ATN (ischemia, contrast, aminoglycosides), obstruction, glomerulonephritis, interstitial nephritis, rhabdomyolysis",
+      "Focused bedside assessment: volume status, medication list (NSAIDs, ACE-I, nephrotoxins, contrast exposure), urine output trend, blood pressure, signs of obstruction",
+      "Initial stabilizing management: hold nephrotoxins, IV fluids if prerenal, relieve obstruction if present, hold potassium supplements, review dosing of renally-cleared drugs",
+      "Targeted workup: BMP (creatinine/BUN/electrolytes), urinalysis with microscopy (casts), fractional excretion of sodium, renal ultrasound, CBC, CK if rhabdomyolysis",
+      "Escalation triggers: K+ >6.5, pulmonary edema, anuria, creatinine doubling acutely, suspected glomerulonephritis or vasculitis, dialysis consideration"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hyponatremia",
+    "subtopics": [
+      "Can't-miss differential: SIADH, hypovolemic (diuretics, GI losses), hypervolemic (CHF, cirrhosis, nephrotic), hypothyroidism, adrenal insufficiency, psychogenic polydipsia",
+      "Focused bedside assessment: volume status (JVD, mucous membranes, edema), neurologic symptoms (headache, seizure, confusion), urine output, medication list",
+      "Initial stabilizing management: correct volume if hypovolemic, free water restrict if euvolemic/hypervolemic, avoid overcorrection (risk of osmotic demyelination syndrome)",
+      "Targeted workup: serum/urine sodium and osmolality, BMP, TSH, cortisol, urine sodium, spot urine osmolality",
+      "Escalation triggers: Na+ <120 or symptomatic (seizure, AMS, vomiting) requires urgent senior guidance on correction rate; severe symptoms need hypertonic saline"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypernatremia",
+    "subtopics": [
+      "Can't-miss differential: free water deficit (decreased intake, insensible losses), diabetes insipidus (central vs nephrogenic), osmotic diuresis, hypertonic saline/sodium bicarbonate administration",
+      "Focused bedside assessment: mental status, mucous membranes, skin turgor, urine output, fluid balance review, access to water, medications (lithium, demeclocycline)",
+      "Initial stabilizing management: ensure access to free water, IV hypotonic fluids if unable to drink, treat underlying cause, correct slowly (no faster than 8-10 mEq/24h)",
+      "Targeted workup: BMP (sodium trend), serum/urine osmolality, urine specific gravity, 24-hour fluid balance",
+      "Escalation triggers: Na+ >155 with AMS or seizure, suspected central DI, rapid rise, hemodynamic compromise, failure to correct with initial measures"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypokalemia",
+    "subtopics": [
+      "Can't-miss differential: GI losses (diarrhea, vomiting, NG suction), diuretics, hypomagnesemia, refeeding syndrome, alkalosis, insulin effect, Gitelman/Bartter syndrome",
+      "Focused bedside assessment: symptoms (weakness, cramps, palpitations), ECG (U waves, flattened T, prolonged QT), medication list, recent GI losses",
+      "Initial stabilizing management: oral repletion if mild and tolerating PO, IV repletion if moderate/severe or symptoms; always replete magnesium concurrently",
+      "Targeted workup: BMP (K+ and Mg2+), ECG, urine potassium/creatinine ratio if etiology unclear, ABG if alkalosis suspected",
+      "Escalation triggers: K+ <3.0 with ECG changes (VT, U waves), weakness affecting breathing, unable to replete adequately, associated arrhythmia"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hyperglycemia",
+    "subtopics": [
+      "Can't-miss differential: DKA, HHS, stress hyperglycemia, inadequate insulin dosing, infection/illness, steroid effect, TPN, new-onset diabetes",
+      "Focused bedside assessment: mental status, volume status (mucous membranes, turgor), Kussmaul breathing, fruity odor, glucose value, urine ketones, recent illness",
+      "Initial stabilizing management: IV fluids if volume depleted, insulin correction per protocol, hold oral hypoglycemics if acutely ill, frequent glucose monitoring",
+      "Targeted workup: glucose, BMP (anion gap, bicarbonate, potassium), serum/urine ketones, ABG if acidosis suspected, CBC, cultures if infection suspected",
+      "Escalation triggers: glucose >500, altered mental status, anion gap acidosis (DKA), pH <7.3, serum osmolality >320 (HHS), K+ abnormalities during insulin therapy"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Abdominal Pain",
+    "subtopics": [
+      "Can't-miss differential: bowel perforation, ischemic bowel, ruptured AAA, appendicitis, cholangitis, pancreatitis, ruptured ectopic pregnancy, obstruction",
+      "Focused bedside assessment: location/character/radiation/onset, peritoneal signs (guarding/rigidity/rebound), bowel sounds, last BM, vital signs, pregnancy status",
+      "Initial stabilizing management: IV access, NPO, IV fluid support, analgesic (morphine does not mask perforation), hold anticoagulants if surgical concern",
+      "Targeted workup: CBC, BMP, lipase, LFTs, lactate, UA, urine/serum HCG, upright CXR, CT abdomen/pelvis with contrast",
+      "Escalation triggers: peritoneal signs, hemodynamic instability, lactate elevation, rigid abdomen, free air on CXR, high suspicion for surgical emergency"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Nausea and Vomiting",
+    "subtopics": [
+      "Can't-miss differential: bowel obstruction, increased ICP, DKA, medication side effect, inferior MI, adrenal crisis, gastroenteritis, ileus",
+      "Focused bedside assessment: abdominal distension, bowel sounds, peritoneal signs, blood pressure (orthostatics), mental status, medication list, last bowel movement",
+      "Initial stabilizing management: antiemetics, IV fluid if dehydrated, NPO if obstruction possible, hold oral medications if not absorbing, position upright",
+      "Targeted workup: BMP, glucose, lipase, CBC, upright abdominal X-ray or CT if obstruction suspected, ECG if cardiac concern",
+      "Escalation triggers: peritoneal signs, bilious vomiting with obstruction, hemodynamic compromise, bloody emesis, AMS, suspected increased ICP"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Constipation",
+    "subtopics": [
+      "Can't-miss differential: opioid-induced, ileus, mechanical obstruction (tumor, volvulus, fecal impaction), hypothyroidism, hypokalemia, hypercalcemia, Ogilvie syndrome",
+      "Focused bedside assessment: last bowel movement, abdominal distension, bowel sounds, rectal exam (impaction), medication list, fluid intake",
+      "Initial stabilizing management: stool softeners and stimulant laxatives for opioid-induced; disimpaction if impacted; ensure adequate hydration; hold opioids if feasible",
+      "Targeted workup: BMP (K+, Ca2+), TSH if chronic, abdominal X-ray if distension or obstruction concern, consider CT if acute abdomen features",
+      "Escalation triggers: signs of obstruction (distension, absent bowel sounds, bilious vomiting), peritoneal signs, volvulus concern, failed disimpaction"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Diarrhea",
+    "subtopics": [
+      "Can't-miss differential: C. diff (recent antibiotics, hospitalized patient), infectious gastroenteritis, antibiotic-associated, tube feeding intolerance, ischemic colitis, overflow around impaction",
+      "Focused bedside assessment: frequency/volume/character (bloody vs watery), volume status, abdominal tenderness, temperature, antibiotic exposure, contact isolation status",
+      "Initial stabilizing management: contact precautions if C. diff suspected, fluid/electrolyte replacement, avoid antiperistaltics if infectious/bloody, send C. diff toxin before antibiotics",
+      "Targeted workup: C. diff PCR/toxin, stool cultures if immunocompromised or bloody, CBC, BMP, consider sigmoidoscopy if ischemic colitis concern",
+      "Escalation triggers: bloody diarrhea, hemodynamic instability, toxic megacolon (distension, fever, leukocytosis), severe hypokalemia, altered mental status"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Agitation",
+    "subtopics": [
+      "Can't-miss differential: delirium (infection, metabolic, hypoxia, pain), alcohol/benzo withdrawal, hypoglycemia, hypoxia, urinary retention, pain, medication effect, psychiatric emergency",
+      "Focused bedside assessment: glucose, SpO2, safety assessment, medication list, last void, pain assessment, orientation, recent medication changes",
+      "Initial stabilizing management: ensure patient safety, address reversible causes first (glucose, oxygen, pain, bladder), verbal de-escalation, low-dose antipsychotic or benzo for withdrawal",
+      "Targeted workup: glucose, BMP, CBC, urinalysis, ABG if hypoxic, bladder scan, ECG before antipsychotic use",
+      "Escalation triggers: violence risk, severe withdrawal (CIWA >15), unable to redirect with risk to patient/staff, suicidal ideation, physical restraint consideration"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Delirium in the Elderly",
+    "subtopics": [
+      "Can't-miss differential: infection (UTI, pneumonia), medications (anticholinergics, opioids, benzos, polypharmacy), metabolic (hyponatremia, hypoglycemia), urinary retention, pain, hypoxia, fecal impaction",
+      "Focused bedside assessment: CAM assessment, baseline cognitive status from family, medication reconciliation, glucose, SpO2, temperature, bladder scan, last bowel movement",
+      "Initial stabilizing management: treat reversible causes, reorientation strategies, maintain sleep-wake cycle, early mobilization, avoid physical restraints, minimize sedating medications",
+      "Targeted workup: CBC, BMP, urinalysis (with culture), CXR, medication review, thyroid function, B12 if subacute",
+      "Escalation triggers: acute-onset with focal neuro signs (stroke), fever with meningismus, hypoxia, hemodynamic instability, unable to control safely without chemical restraint"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Insomnia and Sleep Requests",
+    "subtopics": [
+      "Can't-miss differential: pain, anxiety, withdrawal, delirium prodrome, underlying sleep disorder, environmental disruption, medication effect, hypoxia/breathing disturbance",
+      "Focused bedside assessment: pain score, comfort assessment, medication list (steroids, stimulants), last sleep, SpO2, signs of early delirium, patient expectations",
+      "Initial stabilizing management: non-pharmacologic measures first (lighting, noise reduction, repositioning), treat pain if present, melatonin as first pharmacologic option, avoid benzos in elderly",
+      "Targeted workup: no routine labs required; assess SpO2 if snoring/apneic; review medication list for stimulating drugs",
+      "Escalation triggers: insomnia as prodrome of delirium or withdrawal, SpO2 drops during sleep, patient becoming agitated, inability to address safely"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Uncontrolled Pain",
+    "subtopics": [
+      "Can't-miss differential: undertreated acute pain, new pathology (MI, PE, bowel ischemia, fracture, cord compression), opioid tolerance, neuropathic pain, procedural pain",
+      "Focused bedside assessment: pain character/location/radiation/onset, vital signs, SpO2, neurologic exam if new deficit, compare to baseline, medication administration review",
+      "Initial stabilizing management: assess for new dangerous etiology first, multimodal analgesia (acetaminophen, NSAIDs if appropriate, opioid titration), patient positioning",
+      "Targeted workup: targeted to suspected new pathology (ECG for cardiac, imaging for fracture/obstruction); no routine labs for expected pain",
+      "Escalation triggers: new neurologic deficit (cord compression), hemodynamic instability suggesting serious cause, respiratory depression from opioids, pain from acute surgical emergency"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Headache",
+    "subtopics": [
+      "Can't-miss differential: subarachnoid hemorrhage (thunderclap), hypertensive emergency, meningitis/encephalitis, subdural hematoma, CNS mass, venous sinus thrombosis, tension/migraine",
+      "Focused bedside assessment: onset (thunderclap vs gradual), severity, meningismus, fever, focal neuro signs, BP, visual changes, recent trauma, immunosuppression",
+      "Initial stabilizing management: IV access, analgesics, antiemetics; do not delay CT for concern of LP in suspected SAH; check BP if hypertensive",
+      "Targeted workup: non-contrast CT head (then LP if CT negative and SAH suspected), BMP, CBC; MRI/MRV if venous thrombosis or subacute presentation",
+      "Escalation triggers: thunderclap onset, worst headache of life, fever with meningismus, focal deficit, papilledema, BP >180/120, immunocompromised — all require immediate senior notification"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Syncope and Near-Syncope",
+    "subtopics": [
+      "Can't-miss differential: cardiac arrhythmia (VT, bradycardia, SVT), structural cardiac (AS, HOCM, PE), vasovagal, orthostatic hypotension, hemorrhage, neurocardiogenic",
+      "Focused bedside assessment: witnessed account, prodrome, position at event, BP orthostatics, cardiac exam (murmur), neurologic exam, ECG immediately, volume status",
+      "Initial stabilizing management: supine positioning, IV access, continuous monitoring, IV fluids if orthostatic, hold cardiac medications if arrhythmia-related",
+      "Targeted workup: ECG, CBC, BMP, troponin, glucose, orthostatic BPs; echo if structural cardiac concern; telemetry monitoring",
+      "Escalation triggers: syncope with chest pain, exertional syncope, sustained arrhythmia, structural heart disease, Hgb drop, EF <35%, no clear benign etiology"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Palpitations",
+    "subtopics": [
+      "Can't-miss differential: SVT, afib/flutter, VT, PACs/PVCs (benign), hypokalemia/hypomagnesemia, hyperthyroidism, anemia, stimulant/drug effect, PE",
+      "Focused bedside assessment: hemodynamic stability, rhythm strip and ECG, electrolyte intake/diuretics, thyroid symptoms, caffeine/stimulants, symptom duration",
+      "Initial stabilizing management: continuous monitoring, IV access, correct electrolytes, vagal maneuvers if stable SVT, rate control if afib with RVR and stable",
+      "Targeted workup: ECG, BMP (K+/Mg2+), CBC, TSH, troponin if sustained, Holter if intermittent and resolved",
+      "Escalation triggers: hemodynamic instability, sustained VT, wide-complex tachycardia, syncope with palpitations, HR >150 with symptoms"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Asymptomatic Hypertension",
+    "subtopics": [
+      "Can't-miss differential: pain/discomfort, white-coat effect, missed medications, medication non-adherence, volume overload, sleep apnea; distinguish from hypertensive urgency/emergency",
+      "Focused bedside assessment: confirm reading (correct cuff size, both arms, patient relaxed), assess symptoms (headache, vision, chest pain, focal deficit), review medication list",
+      "Initial stabilizing management: reassurance and observation if truly asymptomatic, restart held medications if applicable, oral antihypertensive adjustment — avoid rapid reduction",
+      "Targeted workup: BMP, urinalysis (if concerned for end-organ damage), ECG; no labs needed if clearly asymptomatic and no recent change",
+      "Escalation triggers: any symptoms suggesting end-organ damage, BP >180/120 with headache or vision change, missed medications with urgent indication, new ST changes"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Urinary Retention",
+    "subtopics": [
+      "Can't-miss differential: BPH (most common in elderly men), anticholinergic medications, opioids, postoperative, fecal impaction, neurogenic bladder, pelvic mass",
+      "Focused bedside assessment: suprapubic distension/tenderness, bladder scan (>300-400 mL), medication list (anticholinergics, opioids), neurologic exam, rectal exam if impaction suspected",
+      "Initial stabilizing management: urethral catheterization for relief, collect UA at catheter insertion, document residual volume, review and hold offending medications",
+      "Targeted workup: BMP (creatinine to assess obstructive nephropathy), UA with culture, PSA if first presentation in men, renal ultrasound if prolonged obstruction",
+      "Escalation triggers: inability to catheterize (urethral obstruction), post-obstructive diuresis requiring careful monitoring, AKI from obstruction, neurogenic cause requiring urology"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hematuria",
+    "subtopics": [
+      "Can't-miss differential: UTI, urolithiasis, bladder/renal malignancy, anticoagulation complication, trauma, IgA nephropathy/glomerulonephritis, BPH, foley trauma",
+      "Focused bedside assessment: gross vs microscopic, catheter present (confirm no trauma), flank pain/colicky, hemodynamic stability, anticoagulation status, recent procedures",
+      "Initial stabilizing management: irrigate/replace Foley if clot obstruction, hold anticoagulants if supratherapeutic, ensure adequate hydration, three-way catheter irrigation if gross clots",
+      "Targeted workup: UA with microscopy, urine culture, BMP (creatinine), CBC (Hgb), coags if anticoagulated, renal ultrasound, urology consult for clot retention",
+      "Escalation triggers: hemodynamic instability from blood loss, inability to catheterize or clot retention causing obstruction, Hgb drop, supratherapeutic anticoagulation with active bleeding"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Suspected DVT and Limb Swelling",
+    "subtopics": [
+      "Can't-miss differential: DVT (proximal vs distal), cellulitis, lymphedema, venous insufficiency, Baker's cyst rupture, hematoma, CHF exacerbation",
+      "Focused bedside assessment: Wells score, asymmetric swelling, calf tenderness, warmth/erythema, recent immobility or surgery, catheter in affected limb, dyspnea (PE?)",
+      "Initial stabilizing management: elevate limb, avoid compressive dressings, anticoagulation if high pretest probability while awaiting imaging (unless contraindicated), assess for PE symptoms",
+      "Targeted workup: bilateral lower extremity venous doppler ultrasound, D-dimer if low probability, CBC, BMP, coags if anticoagulation planned",
+      "Escalation triggers: concurrent PE symptoms (dyspnea, tachycardia, hypoxia), phlegmasia (massive DVT with limb ischemia), bilateral DVT, contraindication to anticoagulation"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Rash",
+    "subtopics": [
+      "Can't-miss differential: drug reaction (Stevens-Johnson syndrome, TEN, DRESS), meningococcemia (petechiae/purpura), necrotizing fasciitis, anaphylaxis, thrombocytopenic purpura, vasculitis",
+      "Focused bedside assessment: distribution, morphology (petechiae/purpura, blistering, urticarial), mucosal involvement, fever, hemodynamic stability, medication list with timing, skin tenderness",
+      "Initial stabilizing management: stop suspected causative drug, supportive care; if anaphylaxis features activate protocol; dermatology consult early for blistering/mucosal involvement",
+      "Targeted workup: CBC (thrombocytopenia), BMP, blood cultures if febrile/purpuric, skin biopsy if diagnosis unclear, wound culture if infection suspected",
+      "Escalation triggers: purpura/petechiae with fever (meningococcemia), mucosal involvement (SJS/TEN), hemodynamic instability (anaphylaxis), rapidly spreading skin necrosis"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Supratherapeutic INR and Bleeding",
+    "subtopics": [
+      "Can't-miss differential: drug interaction (antibiotics, azoles, amiodarone), dietary change, hepatic dysfunction, malabsorption, intentional overdose, medication error",
+      "Focused bedside assessment: INR value, active bleeding sites (GI, urinary, intracranial, hemoptysis), hemodynamic stability, neurologic exam, medication changes",
+      "Initial stabilizing management: hold warfarin, vitamin K (IV for serious bleeding, oral for non-bleeding), 4-factor PCC or FFP for life-threatening bleeding, transfuse if hemodynamically unstable",
+      "Targeted workup: INR, CBC, BMP, type and crossmatch if actively bleeding, imaging directed by bleeding site (CT head for neuro symptoms)",
+      "Escalation triggers: any intracranial bleeding (CT head immediately), hemodynamic instability, INR >10, GI bleed with hemodynamic compromise, airway hemorrhage"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Acute Anemia and Falling Hemoglobin",
+    "subtopics": [
+      "Can't-miss differential: GI bleed (occult or overt), hemolysis (TTP, autoimmune, mechanical), dilutional, post-procedure blood loss, retroperitoneal hematoma, iatrogenic (phlebotomy)",
+      "Focused bedside assessment: hemodynamic stability, active bleeding sources, stool character, recent procedures, transfusion history, jaundice (hemolysis), abdominal exam",
+      "Initial stabilizing management: IV access, type and crossmatch, transfusion if symptomatic or hemodynamically unstable, hold anticoagulants if bleeding source identified",
+      "Targeted workup: CBC with differential, reticulocyte count, peripheral smear, LDH, haptoglobin, bilirubin (hemolysis screen), stool guaiac, coags",
+      "Escalation triggers: Hgb <7 with symptoms, hemodynamic compromise, active bleeding not controlled, evidence of hemolysis (TTP = emergency), rate of drop >2 g/dL acutely"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Thrombocytopenia",
+    "subtopics": [
+      "Can't-miss differential: HIT (heparin exposure), TTP (microangiopathic hemolytic anemia), ITP, drug-induced, DIC, sepsis-related, dilutional, splenic sequestration",
+      "Focused bedside assessment: bleeding manifestations (petechiae, purpura, mucosal), heparin exposure history, medication list, fever (TTP/DIC/sepsis), transfusion history",
+      "Initial stabilizing management: hold heparin immediately if HIT suspected, avoid platelet transfusion in TTP/HIT, transfuse platelets if <10k or active serious bleeding, steroids for ITP",
+      "Targeted workup: CBC with differential, peripheral smear (schistocytes for TTP/DIC), LDH, haptoglobin, coags (PT/PTT/fibrinogen for DIC), PF4 antibody for HIT",
+      "Escalation triggers: platelets <20k with bleeding, suspected TTP (hematologic emergency), DIC, HIT with thrombosis, intracranial hemorrhage concern"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypothermia",
+    "subtopics": [
+      "Can't-miss differential: environmental exposure, hypothyroidism (myxedema coma), sepsis in elderly, adrenal insufficiency, drug/alcohol intoxication, hypoglycemia",
+      "Focused bedside assessment: core temperature (rectal or esophageal), mental status, hemodynamics, ECG (Osborn J waves), glucose, rewarm-related arrhythmia risk",
+      "Initial stabilizing management: passive rewarming mild cases, active external rewarming moderate, active internal rewarming (warm IV fluids, warmed O2) for severe; handle gently to avoid VF",
+      "Targeted workup: core temperature, BMP, glucose, TSH, cortisol, CBC, coags, ECG, ABG, toxicology screen",
+      "Escalation triggers: core temp <32°C, hemodynamic instability, ventricular arrhythmia, suspected myxedema coma or adrenal crisis, severe hypothermia requiring internal rewarming"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hyperthermia",
+    "subtopics": [
+      "Can't-miss differential: heat stroke (exertional vs classic), serotonin syndrome, neuroleptic malignant syndrome, malignant hyperthermia, anticholinergic toxidrome, severe infection/sepsis",
+      "Focused bedside assessment: core temperature, mental status/rigidity (NMS vs SS), medication list (serotonergic drugs, antipsychotics, anesthetics), recent exertion, sweating vs anhidrosis",
+      "Initial stabilizing management: rapid external cooling, IV fluids, benzodiazepines for rigidity/agitation (serotonin syndrome), stop offending agent (NMS/SS), supportive care",
+      "Targeted workup: CBC, BMP, CK (rhabdomyolysis), LFTs, coags, toxicology, ABG, blood cultures",
+      "Escalation triggers: temperature >41°C, altered mental status, rhabdomyolysis, multiorgan dysfunction, suspected NMS or malignant hyperthermia — all require ICU-level care"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Alcohol Withdrawal",
+    "subtopics": [
+      "Can't-miss differential: DTs (delirium tremens), Wernicke encephalopathy, concurrent infection mimicking withdrawal, benzodiazepine withdrawal, hypoglycemia, seizure from other etiology",
+      "Focused bedside assessment: CIWA-Ar score, last drink timing, prior withdrawal seizure/DTs history, glucose, vital signs (tachycardia, hypertension, diaphoresis), thiamine status",
+      "Initial stabilizing management: thiamine before glucose (IV thiamine first), CIWA-guided benzodiazepine dosing, fluid and electrolyte repletion, folate and multivitamins",
+      "Targeted workup: BMP (electrolytes, glucose), CBC, LFTs, magnesium, phosphate, blood cultures if febrile, BAL if acute intoxication versus withdrawal unclear",
+      "Escalation triggers: CIWA >15, seizure, DTs (hallucinations, autonomic instability), temperature >38.5, benzo requirement escalating rapidly, suspected Wernicke (confusion + opthalmoplegia + ataxia)"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 1
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to the Fall",
+    "subtopics": [
+      "Can't-miss differential: syncope/cardiac event causing fall, hypoglycemia, stroke, orthostatic hypotension, medication effect (opioids, sedatives, antihypertensives), environmental hazard, seizure",
+      "Focused bedside assessment: circumstances of fall, prodrome (dizziness, palpitations, LOC), head/spine injury assessment, glucose, BP orthostatics, neurologic exam, gait assessment",
+      "Initial stabilizing management: c-spine precautions if head/neck trauma, wound care, glucose correction, hold sedating/offending medications, fall prevention measures (bed alarm, grip socks)",
+      "Targeted workup: glucose, ECG, CT head if LOC or head trauma, X-ray of painful areas (hip/wrist), orthostatic BPs, medication review",
+      "Escalation triggers: loss of consciousness, head trauma with AMS, suspected hip fracture, focal neuro deficit, syncope as mechanism, anticoagulated patient with head injury"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Capacity and the Refusing Patient",
+    "subtopics": [
+      "Can't-miss differential: delirium impairing decision-making, intoxication, unaddressed psychiatric condition, language/communication barrier, healthcare proxy confusion, misunderstanding of risks",
+      "Focused bedside assessment: four elements of capacity (understanding, appreciation, reasoning, communication of choice), mental status, presence of delirium, pain/distress affecting cognition",
+      "Initial stabilizing management: address reversible impairments (treat delirium, pain, language barriers), ensure patient has full information, document conversation; do not use force without legal authority",
+      "Targeted workup: cognitive assessment (glucose, delirium screen), review surrogate decision-maker documentation, involve social work and patient advocate",
+      "Escalation triggers: acute life-threatening refusal in patient with questionable capacity, need for emergency override, domestic abuse concern, psychiatric hold consideration — call senior and ethics immediately"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  },
+  {
+    "domain": "Internal medicine: on-call & cross-cover (approach to the acutely changing ward patient)",
+    "topic": "Approach to Hypomagnesemia and Hypophosphatemia",
+    "subtopics": [
+      "Can't-miss differential: hypomagnesemia (malnutrition, alcoholism, diarrhea, PPIs, diuretics, amphotericin), hypophosphatemia (refeeding syndrome, malabsorption, hyperparathyroidism, antacid use, DKA treatment)",
+      "Focused bedside assessment: neuromuscular symptoms (weakness, cramps, tetany, seizure), cardiac arrhythmia risk, respiratory muscle weakness, recent nutrition status, medication list",
+      "Initial stabilizing management: IV repletion if severe or symptomatic, oral supplementation if mild; replete magnesium before potassium if both low; cautious refeeding if refeeding syndrome",
+      "Targeted workup: BMP, magnesium, phosphate, calcium (hypoMg causes hypoCa), ECG if severe hypoMg or hypoK coexistent",
+      "Escalation triggers: phosphate <1.0 with weakness or respiratory compromise, magnesium <1.0 with arrhythmia or seizure, refeeding syndrome, severe electrolyte combination abnormalities"
+    ],
+    "high_yield": true,
+    "priority_tier": 1,
+    "discipline": "medicine",
+    "category": "presentation",
+    "is_critical_care": 0
+  }
+]

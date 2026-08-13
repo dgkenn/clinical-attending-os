@@ -1,0 +1,144 @@
+[
+  {
+    "topic": "Endocarditis - Modified Duke Criteria & Diagnosis",
+    "subtopic": "endocarditis_diagnosis",
+    "content": "Bacterial endocarditis (BE) = infection of heart valves (native or prosthetic). Mortality 15-30%. Risk factors: congenital heart disease, valve replacement, IV drug use, healthcare-associated procedures, prosthetic valve, previous BE. Causative organisms: Strep viridans (native valve), S. aureus (acute, IV drug use, prosthetic), Enterococcus, HACEK organisms (fastidious gram-negatives), culture-negative (~5-10%, previous antibiotics, fastidious organisms, fungi). Diagnosis: Modified Duke Criteria combines clinical/echo/microbiologic findings. Major criteria: positive blood culture (typical organism from 2 cultures, or S. aureus, HACEK from 1), echo findings (vegetation, paravalvular abscess, new dehiscence). Minor: fever, vascular phenomena (septic emboli, Janeway lesions), immunologic phenomena (Osler nodes, Roth spots, RF), echocardiographic findings (not major), predisposition. Diagnosis requires major + major, or major + 3 minor, or 3 minor.",
+    "tags": [
+      "endocarditis",
+      "modified_duke",
+      "bacteria",
+      "diagnosis",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_0",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Endocarditis - Management & Vegetation Size",
+    "subtopic": "endocarditis_management",
+    "content": "Management: blood cultures (before antibiotics), empiric antibiotics (vancomycin + gentamicin for streptococci/enterococci if renal function normal; adjust based on cultures), echo (TEE >TTE for sensitivity), assess for complications (abscess, septic emboli, new murmur, cardiac dysfunction). Vegetation size >10 mm associated with increased risk of septic emboli, stroke, mortality. Perioperative management: prosthetic valve endocarditis or large vegetation (>10 mm) + septic emboli \u2192 surgical consultation (vegetation removal, abscess drainage, valve replacement). Antibiotic duration: typically 4-6 weeks IV (streptococci shorter duration if sensitive). Outcome depends on organism (S. aureus worse prognosis), valve type (prosthetic endocarditis worse), renal function, comorbidities.",
+    "tags": [
+      "endocarditis",
+      "antibiotics",
+      "vegetation",
+      "surgery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_1",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Necrotizing Fasciitis - Classification & Surgical Emergency",
+    "subtopic": "nf_classification",
+    "content": "Necrotizing fasciitis (NF) = surgical emergency with rapidly progressive fascial necrosis + systemic toxicity. Type I (50%): polymicrobial (anaerobes + gram-negatives + streptococci). Type II (30%): Group A Streptococcus \u00b1 S. aureus (more common post-surgery). Type III (20%): vibrio/aeromonas (saltwater exposure). All types present with severe pain, systemic toxicity (high fever, hypotension, altered mental status), rapid progression. Classic signs: pain > exam findings, skin erythema/edema progressing to vesicles/crepitus, crepitus (gas, Type I most often). Mortality high (20-30%) even with treatment; increases substantially with delayed diagnosis/surgery. Diagnosis: clinical suspicion (pain, rapid progression, systemic toxicity); confirmatory imaging (CT shows fascial edema/necrosis, gas in fasciae) but don't delay surgery for imaging. Management: immediate surgical debridement (within hours), aggressive IV antibiotics (broad-spectrum covering anaerobes, gram-negatives, streptococci; vancomycin + piperacillin-tazobactam + clindamycin), supportive care.",
+    "tags": [
+      "necrotizing_fasciitis",
+      "surgical_emergency",
+      "polymicrobial",
+      "debridement",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_2",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Toxic Shock Syndrome - Streptococcal vs Staphylococcal",
+    "subtopic": "tss",
+    "content": "Toxic shock syndrome (TSS) = life-threatening illness caused by bacterial exotoxins. Streptococcal TSS (STSS): Group A Strep (GAS) produces streptococcal pyrogenic exotoxins (SPE A, B, C). Presents with fever, hypotension/shock, multi-organ failure, high mortality (30-70%). Risk factors: breach of mucous membranes (post-surgical, chickenpox, minor trauma). Staphylococcal TSS: S. aureus (TSST-1 toxin), historically associated with tampons, now non-menstrual cases common. Presentation: fever, rash (diffuse erythema, later desquamation), hypotension, multi-system involvement (GI, renal, liver, CNS, muscle). Both: fulminant sepsis, shock, multi-organ failure. Diagnosis: clinical + cultures (positive in 50-80% STSS, lower in STSS). Management: aggressive fluid resuscitation, vasopressors, broad-spectrum antibiotics (ceftriaxone/cefotaxime + vancomycin for STSS; for STSS add clindamycin which inhibits toxin production), source control (wound debridement, tampon removal), IVIG consideration for STSS.",
+    "tags": [
+      "toxic_shock",
+      "streptococcal",
+      "staphylococcal",
+      "septic_shock"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_3",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Leptospirosis - Biphasic Illness & Pulmonary Hemorrhage",
+    "subtopic": "leptospirosis",
+    "content": "Leptospirosis = zoonotic infection from spirochete Leptospira (contact with infected animal urine, soil, water). Biphasic illness: leptospiremic phase (days 1-7, fever, chills, myalgias, conjunctivitis without exudate - classic finding), then immune phase (days 7-14+, aseptic meningitis symptoms, rash). Most cases are mild (anicteric). Severe disease (Weil disease) = jaundice + renal failure + pulmonary hemorrhage; mortality 5-15%. Pulmonary involvement: pulmonary hemorrhage in 10-15% of cases (hemoptysis, respiratory failure), mechanism immune-mediated. Diagnosis: culture (difficult, positive early), PCR, serology (IgM/IgG). Management: supportive care, antibiotics (doxycycline early leptospiremic phase, or penicillin/ceftriaxone for severe disease). Mortality in pulmonary hemorrhage cases higher (30-50% if severe respiratory involvement).",
+    "tags": [
+      "leptospirosis",
+      "zoonotic",
+      "biphasic",
+      "pulmonary_hemorrhage"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_4",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Malaria - Falciparum Cerebral Malaria & Renal Failure",
+    "subtopic": "malaria_cerebral",
+    "content": "Malaria = parasitic infection from Plasmodium species (transmitted by Anopheles mosquito). Falciparum malaria most severe (mortality 1-5% treated, 20-50% untreated). Cerebral malaria: altered mental status, seizures, coma; causes 15-20% mortality even with treatment, significant morbidity (neurologic deficits, cognitive impairment). Mechanisms: sequestration of infected RBCs in brain microvasculature, endothelial dysfunction, lactate accumulation, cytokine activation. Acute kidney injury: 10-50% falciparum cases, associated with worse prognosis, requires dialysis. Diagnosis: thick/thin blood smear (parasite identification), rapid diagnostic tests (RDT, >95% sensitivity), PCR gold standard. Management: artemisinin derivatives (artemether IM/IV) most effective; quinine if artemisinin unavailable. Supportive: manage seizures, hypoglycemia, anemia, renal failure. Severe malaria: multi-organ involvement, acidosis, hypoglycemia, severe thrombocytopenia.",
+    "tags": [
+      "malaria",
+      "falciparum",
+      "cerebral",
+      "acute_kidney_injury"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_5",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Dengue Fever - Hemorrhagic Fever & Plasma Leakage Syndrome",
+    "subtopic": "dengue_hemorrhagic",
+    "content": "Dengue = viral infection (flavivirus) transmitted by Aedes mosquito. Classic dengue: fever, rash, myalgias, headache, usually self-limited. Dengue hemorrhagic fever (DHF)/dengue shock syndrome (DSS): severe disease with bleeding + plasma leakage. Pathophysiology: vascular permeability increases, RBCs hemoconcentrate, bleeding from mucosal surfaces, GI, intracranial. Risk: secondary infection (different serotype) stimulates strong immune response that paradoxically damages vessels. Signs: petechiae/purpura, mucosal bleeding, hemoglobin rising (hemoconcentration), low platelet count (<100k), thrombocytopenia severe in first week. DSS = DHF + shock (SBP<90, narrow pulse pressure). Diagnosis: serology (IgM), PCR, NS1 antigen (early). Management: supportive (fluid resuscitation cautious - avoid pulmonary edema from plasma leakage, IV fluids goal is hematocrit target, not volume), platelet transfusion for <20k or active bleeding, blood products for hemorrhage. Mortality <1% treated, >20% untreated DHF.",
+    "tags": [
+      "dengue",
+      "hemorrhagic_fever",
+      "plasma_leakage",
+      "arboviral"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_6",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Lyme Disease - Lyme Carditis & Neuroborreliosis",
+    "subtopic": "lyme_disease",
+    "content": "Lyme disease = infection from spirochete Borrelia burgdorferi (tick vector). Stage 1: erythema migrans (classic bull's-eye rash, but non-specific rash common). Stage 2: disseminated disease (weeks to months) = arthritis, carditis, neuroborreliosis. Lyme carditis: conduction abnormalities (AV block, 1st degree to complete heart block), myocarditis (rare), pericarditis. Heart block can be severe (30-60% of Lyme carditis hospitalized have high-degree AVB); resolves with antibiotics. Neuroborreliosis: meningitis (CSF pleocytosis with lymphocytic predominance), radiculoneuritis (pain, weakness), cranial nerve palsy (CN VII most common = Bell's palsy). Diagnosis: serology (2-tier testing: ELISA + Western blot), CSF analysis if meningitis (positive CSF antibodies). Management: early Lyme (Stage 1): oral doxycycline 100 mg BID \u00d7 14-21 days. Carditis/neuroborreliosis: IV ceftriaxone 2g daily \u00d7 14 days (meningitis) or \u00d7 14 days (carditis). AVB usually resolves with antibiotics; temporary pacing if severe.",
+    "tags": [
+      "lyme_disease",
+      "carditis",
+      "neuroborreliosis",
+      "tick_borne"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_7",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Atypical Pneumonias - Legionella, Mycoplasma, Chlamydia",
+    "subtopic": "atypical_pneumonia",
+    "content": "Atypical pneumonias = community-acquired pneumonia from organisms not easily cultured on standard media. Legionella pneumophila: water-associated (cooling towers, hot tubs), more severe CAP (high fever, GI symptoms, hyponatremia, elevated transaminases), ground glass opacities on CT. Mycoplasma pneumoniae: mild CAP, headache, myalgias, extrapulmonary (bullous myringitis, rash, neurologic), typically self-limited, cold agglutinins. Chlamydia pneumoniae: mild CAP, prolonged cough, usually mild/moderate severity. Diagnosis: PCR (most sensitive), serology, culture difficult. Imaging: atypical pneumonias often have CT findings disproportionate to clinical/X-ray findings. Management: macrolides (azithromycin) cover all three; fluoroquinolone (levofloxacin) also effective. Legionella may require higher dose/longer duration. Monitoring: Legionella can cause multi-organ dysfunction (renal failure, confusion), higher mortality if severe.",
+    "tags": [
+      "atypical_pneumonia",
+      "legionella",
+      "mycoplasma",
+      "chlamydia"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_8",
+    "created_at": "2026-06-04T22:18:17.032063"
+  },
+  {
+    "topic": "Prion Diseases - Creutzfeldt-Jakob Disease (CJD)",
+    "subtopic": "cjd_prion",
+    "content": "Prion diseases = neurodegenerative conditions from misfolded prion protein (PrPSc). CJD = rapidly progressive dementia + myoclonus + visual changes + cerebellar signs + pyramidal/extrapyramidal signs; median survival 6-12 months. Sporadic CJD (85%): median onset age 60s. Familial CJD (10%): PRNP gene mutation, earlier onset. Iatrogenic CJD: historical contaminated instruments/hormone therapy. Variant CJD (vCJD): BSE (mad cow disease) transmission, UK prevalence, younger patients (<55), longer survival (12-14 months), psychiatric symptoms early. Diagnosis: clinical + MRI (DWI/FLAIR shows cortical ribboning, basal ganglia changes), CSF (14-3-3 protein, tau elevation), EEG (periodic sharp-wave complexes). Management: supportive only (no cure), symptom management (seizures, myoclonus). Infection control: standard precautions (prions unusually resistant to standard disinfection), instruments require special decontamination. Mortality 100% within 1-2 years.",
+    "tags": [
+      "prion_disease",
+      "cjd",
+      "neurodegenerative",
+      "fatal"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase6_id_unit_9",
+    "created_at": "2026-06-04T22:18:17.032063"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "topic": "Breaking Bad News - SPIKES Framework",
+    "subtopic": "spikes_framework",
+    "content": "SPIKES = systematic approach to delivering bad news. S (Setting): private, no interruptions, sit down, allow time. P (Perception): ask what patient/family understands ('What have you heard?'). I (Invitation): ask what they want to know ('Would you like to know the results?'). K (Knowledge): deliver information clearly, avoid jargon, give time to absorb. E (Emotions): acknowledge emotional response, support (provide tissues, offer presence). S (Strategy/Summary): discuss next steps, treatment options, reassure ongoing support. Timing: allow silence, permit questions, offer follow-up meeting. Don't rush; expect tears/anger/disbelief. Avoid phrases like 'nothing more we can do' (there is always comfort care); instead 'We will focus on comfort and controlling symptoms.'",
+    "tags": [
+      "communication",
+      "bad_news",
+      "spikes"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_0",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Goals-of-Care Conversations - Prognosis Discussion",
+    "subtopic": "goals_of_care",
+    "content": "Goals-of-care = understanding patient values, what's important to them if condition worsens. Trigger: serious/progressive illness, admission to ICU, major decline in function. Approach: start with patient understanding of prognosis ('What do you understand about your condition?'), clarify medical facts (realistic time frame for serious illness), explore values ('What does quality of life mean to you?', 'What are you worried about?'). Then discuss realistic goals given prognosis (cure unlikely, focus on comfort; not all medical interventions may align with values). Document preferences (code status, mechanical ventilation, feeding tube, site of care). Revisit as condition changes. Avoid 'Do you want to be a DNR?' (too abrupt); instead 'If your heart were to stop, would you want us to do CPR?' then explore reasoning.",
+    "tags": [
+      "goals_of_care",
+      "conversation",
+      "communication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_1",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "DNR Orders - Code Status, Duration, Reversibility",
+    "subtopic": "dnr_orders",
+    "content": "DNR (Do Not Resuscitate) = specific instruction against CPR if cardiac arrest occurs. Variants: DNR/DNI (also no intubation), DNR/CMO (comfort measures only, no life-prolonging interventions). Duration: can be time-limited (e.g., trial period) or permanent. Reversible: can be changed if patient/surrogate changes mind. Scope: applies to CPR but NOT necessarily to other interventions (can be DNR but continue antibiotics, chemotherapy). Medical futility: if CPR unlikely to restore meaningful function (terminal illness, irreversible coma), physician can recommend DNR unilaterally but should discuss. Documentation: must be in chart, on arm band, on POLST form (portable). Triggers for discussion: admission to ICU, serious/terminal diagnosis, significant decline, patient request.",
+    "tags": [
+      "dnr",
+      "code_status",
+      "orders"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_2",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Shared Decision-Making - Integrating Patient Values & Medical Expertise",
+    "subtopic": "shared_decision_making",
+    "content": "Shared decision-making (SDM) = collaborative process. Steps: (1) establish that decision needed, (2) present options with pros/cons in plain language, (3) explore patient values/preferences, (4) support patient deliberation, (5) reach decision together. Requires: physician expertise (medical facts, evidence), patient expertise (values, life context, preferences). Avoids paternalism ('I recommend you get chemo, full stop') and consumerism ('Whatever you want, I'll do'). Example: advanced cancer, treatment options (comfort-focused, palliative chemo, hospice); explore what matters most to patient (time with family, symptom control, prolonging life), discuss realistic outcomes for each option, decide together. Improves satisfaction, adherence, outcomes. Takes time initially but saves time long-term (fewer regrets, fewer conflicts).",
+    "tags": [
+      "shared_decision_making",
+      "patient_autonomy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_3",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Palliative Pain Management - Opioid Dosing & Tolerance",
+    "subtopic": "palliative_pain",
+    "content": "Pain management in palliative care: focus on comfort, not rigid morphine equivalent guidelines. Approach: assess pain (location, character, severity 0-10), cause (treatable vs. not), psychosocial factors. Non-opioid: acetaminophen, NSAIDs (if not contraindicated), adjuvants (gabapentin for neuropathic, trazodone for anxiety-related). Opioid dosing: start low, titrate to effect. Long-acting (morphine ER, methadone, fentanyl patch) for baseline pain; short-acting (oxycodone IR, morphine liquid) for breakthrough/titration. Tolerance: as pain medication is continued, higher doses needed for same effect; NOT addiction (psychological dependence, compulsive use). Don't withhold opioids from dying patients (fear of addiction misplaced; focus on comfort). Monitor: constipation (universal with opioids, use laxatives prophylactically), nausea (antiemetics), confusion (consider lower dose/different agent).",
+    "tags": [
+      "pain_management",
+      "opioids",
+      "palliative"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_4",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Symptom Management - Dyspnea, Nausea, Constipation",
+    "subtopic": "symptom_management",
+    "content": "Dyspnea: oxygen if hypoxic (SpO2 <90%), fan for air movement, opioids (morphine 5-10 mg SC/IV relieves dyspnea sensation), anxiolytics (lorazepam if anxiety-driven), position upright. Pulmonary edema: diuretics (furosemide), morphine, monitor volume status. Nausea: antiemetics (metoclopramide, ondansetron, haloperidol), address cause (opioids = tolerance/dose reduction; constipation = bowel regimen). Constipation: universal with opioids, prevent with stool softeners + osmotic laxatives (docusate + senna, or MiraLAX) started at opioid initiation; can titrate dose. If severe: manual disimpaction rarely needed. Anorexia/cachexia: address underlying cause if possible (depression = antidepressants), optimize nutrition per patient wishes (not forced feeding; many prefer less/no food as comfort measures). Other symptoms: pain (opioids), cough (codeine, morphine), hiccups (baclofen, chlorpromazine), agitation (haloperidol, benzodiazepines).",
+    "tags": [
+      "symptoms",
+      "dyspnea",
+      "nausea",
+      "constipation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_5",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Withdrawing Life Support - Ethical Framework & Symptom Management",
+    "subtopic": "withdrawal_life_support",
+    "content": "Withdrawal of life support = discontinuing mechanical ventilation, pressors, dialysis, feeding tubes when pursuing comfort care. Ethical basis: patient autonomy (respects wishes), medical futility (if treatment not achieving goals), proportionality (burdens > benefits). Process: confirm goals of care, ensure comfort medications in place (morphine, lorazepam), prepare family for what to expect (breathing patterns change, color changes, body cooling), allow family presence, support with chaplaincy/social work. Medication: opioids titrated (goal: comfortable breathing, not rapid respiratory depression; 'titrate to comfort'), benzodiazepines (lorazepam SC for agitation/air hunger), anticholinergics (atropine/scopolamine patches to reduce secretions, though no evidence reduces distress). After extubation: patient may breathe spontaneously hours-days or stop breathing immediately; both normal. Do NOT hasten death; goal is comfort, not acceleration. Reassure family: patient receiving comfort, not being abandoned.",
+    "tags": [
+      "withdrawal",
+      "life_support",
+      "comfort_care"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_6",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Addressing Patient/Family Expectations - Hope vs. Realism",
+    "subtopic": "expectations",
+    "content": "Hope = forward-looking positive emotion. In advanced illness, maintain hope for comfort, meaning, time together (rather than cure). Realistic hope = acknowledging likelihood of death while hoping for good death. When family hopes for cure despite poor prognosis: listen, acknowledge (\"I understand you hope for improvement\"), gently provide medical reality (\"The cancer is not responding to treatment; lab values worsen daily\"), offer alternative hopes (\"We can hope for comfort, good days together, no pain\"). Avoid creating false hope (overstating survival odds, unnecessary tests), but don't extinguish hope entirely. Reframe: \"We won't be fighting the cancer anymore, but we will be fighting for your [loved one's] comfort and dignity.\" Allow time for processing; may take multiple conversations. Involve palliative care team early (not just when cure exhausted; palliative care can run concurrently with curative).",
+    "tags": [
+      "expectations",
+      "hope",
+      "communication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_7",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Physician Self-Care & Burnout Prevention",
+    "subtopic": "physician_wellbeing",
+    "content": "Burnout = emotional exhaustion, depersonalization, reduced sense of accomplishment. Causes: workload, lack of autonomy, administrative burden, moral distress (caring for very sick patients, difficult families, system failures). Signs: cynicism, detachment, decreased empathy, fatigue, using substances, depression. Prevention: set boundaries (limit email after hours, take days off), peer support (debrief with colleagues), reflect on meaning (why you became a doctor, patient stories that made difference), practice mindfulness/meditation, exercise, hobbies outside medicine, consider mentorship/coaching. Resources: employee assistance programs (EAP), physician wellness committees, mental health providers (therapy). Culture shift needed: normalize mental health conversations, reduce stigma, ensure adequate staffing/resources. Self-care NOT selfishness; taking care of yourself enables taking care of patients. Ask for help early if struggling; waiting makes it harder.",
+    "tags": [
+      "burnout",
+      "self_care",
+      "wellness"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_8",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Documentation of Conversations & Code Status",
+    "subtopic": "documentation",
+    "content": "Document: date/time, who present (patient, family, healthcare team), chief concern/reason for conversation, assessment (patient/family understanding of diagnosis/prognosis), patient values/wishes (in own words when possible), decision made (code status, goals of care, plan). Example: 'Patient and daughter discuss Mr. X's advanced COPD, prognosis ~3-6 months. Patient states \"I don't want machines to keep me alive. I want to be comfortable.\" Daughter agrees. Discussed CPR unlikely to work given age/illness. Code status set to DNR/DNI, goals of care = comfort/quality of life. Palliative care consult arranged. Plan: continue current medications, morphine prescribed for dyspnea, discuss hospice at next visit.' Clear documentation prevents miscommunication, legal protection, guides future care. Share with entire team (nursing, specialists); update periodically or if change in wishes.",
+    "tags": [
+      "documentation",
+      "code_status",
+      "records"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_9",
+    "created_at": "2026-06-05T00:30:00.615546"
+  }
+]

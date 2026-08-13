@@ -1,0 +1,206 @@
+[
+  {
+    "id": "icudelirium-1",
+    "topic": "ICU Delirium",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In the past, mechanically ventilated patients with delirium were treated how, and what was the paradigm shift?",
+    "answer": "Previously treated with mechanical restraint plus sedatives or paralytics; now evidence shows this worsened outcomes; current approach minimizes sedation and promotes early mobilization",
+    "rationale": "Physical restraint and heavy sedation worsen delirium through immobility and drug accumulation; ABCDEF bundle (awakening, breathing, coordination, delirium, early mobility, family) improves outcomes.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2158
+      }
+    ],
+    "confusable_with": "Deep sedation being protective against delirium"
+  },
+  {
+    "id": "icudelirium-2",
+    "topic": "ICU Delirium",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What is the distinction between emergence delirium and postoperative delirium?",
+    "answer": "Emergence delirium occurs acutely during recovery from anesthesia; postoperative delirium develops over hours to days postoperatively and is separate",
+    "rationale": "Emergence delirium is typically self-limited and resolves as anesthetics clear; postoperative delirium has distinct multifactorial causes and prolonged course.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 682
+      }
+    ],
+    "confusable_with": "Treating emergence delirium identically to postoperative delirium"
+  },
+  {
+    "id": "icudelirium-3",
+    "topic": "ICU Delirium",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What ICU complication can develop in more than 50% of brain-dead patients that leads to diabetes insipidus and adrenal insufficiency?",
+    "answer": "Pituitary failure occurs in more than 50% of brain-dead patients, causing diabetes insipidus and secondary adrenal insufficiency",
+    "rationale": "Pituitary ischemia/herniation in brain death abolishes ADH and ACTH secretion, producing DI and adrenal insufficiency complicating donor management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 641
+      }
+    ],
+    "confusable_with": "SIADH developing in brain death (opposite, DI is the typical finding)"
+  },
+  {
+    "id": "icudelirium-4",
+    "topic": "ICU Delirium",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What structures have been proposed to facilitate patient and family-centered care decisions in the ICU?",
+    "answer": "Family meetings, shared decision-making frameworks, and ICU care conferences facilitate patient and family-centered care",
+    "rationale": "ICU patients often lack decision-making capacity; structured family communication reduces conflict, improves end-of-life decision quality, and decreases family distress.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 775
+      }
+    ],
+    "confusable_with": "Physician unilateral decision-making as standard ICU practice"
+  },
+  {
+    "id": "icudelirium-5",
+    "topic": "ICU Delirium",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In older adult patients, what postoperative cognitive complication requires distinguishing from intraoperative awareness or substance withdrawal?",
+    "answer": "Postoperative delirium or cognitive dysfunction (POCD) in older adults must be distinguished from awareness, withdrawal, and other neurological events",
+    "rationale": "POCD and delirium are common in elderly after major surgery and anesthesia; misdiagnosis delays appropriate management and may worsen outcomes.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1543
+      }
+    ],
+    "confusable_with": "All post-op confusion in elderly being sedation residual"
+  },
+  {
+    "id": "icunutrep-1",
+    "topic": "ICU Nutrition: Enteral and Parenteral",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "Malnutrition in the perioperative period is associated with what complications?",
+    "answer": "Malnutrition increases infection rates, wound healing complications, and overall perioperative morbidity",
+    "rationale": "Protein and micronutrient deficits impair immune function, collagen synthesis, and muscle strength, all critical for surgical recovery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 542
+      }
+    ],
+    "confusable_with": "Malnutrition only affecting long-term outcomes, not perioperative complications"
+  },
+  {
+    "id": "icunutrep-2",
+    "topic": "ICU Nutrition: Enteral and Parenteral",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In critical illness, what nitrogen balance consideration drives ICU protein provision goals?",
+    "answer": "Critical illness causes catabolism with increased protein breakdown; ICU nutrition aims to provide adequate protein (1.2-2 g/kg/day) to limit muscle wasting",
+    "rationale": "Hypercatabolism in sepsis and trauma increases protein requirements; underfeeding protein causes muscle wasting, prolonged ventilation, and impaired immunity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2004
+      }
+    ],
+    "confusable_with": "Standard 0.8 g/kg/day protein adequate in critically ill patients"
+  },
+  {
+    "id": "icunutrep-3",
+    "topic": "ICU Nutrition: Enteral and Parenteral",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What is the preferred route for ICU nutrition if the gastrointestinal tract is functional?",
+    "answer": "Enteral nutrition is preferred over parenteral nutrition when the GI tract is functional; early enteral feeding reduces infectious complications",
+    "rationale": "Enteral nutrition maintains intestinal mucosal integrity, reduces bacterial translocation, and avoids catheter-related bloodstream infections of TPN.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2004
+      }
+    ],
+    "confusable_with": "TPN being equivalent or superior to enteral nutrition in all ICU patients"
+  },
+  {
+    "id": "icunutrep-4",
+    "topic": "ICU Nutrition: Enteral and Parenteral",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In postcardiac surgery ICU management, patients are generally extubated early to reduce what specific morbidity?",
+    "answer": "Early extubation after cardiac surgery decreases postoperative morbidity by reducing ventilator-associated pneumonia and ICU complications",
+    "rationale": "Prolonged intubation in cardiac surgical patients increases pulmonary infection risk and delays mobilization; fast-track cardiac protocols improve outcomes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 914
+      }
+    ],
+    "confusable_with": "Routine overnight intubation for all cardiac surgical patients"
+  },
+  {
+    "id": "icunutrprinciple-1",
+    "topic": "ICU Nutrition: Principles and Assessment",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What is the range of conditions that ICU specialists must address that extends beyond the classic surgical domain?",
+    "answer": "ICU practice addresses nosocomial infections, hemodynamic instability, respiratory failure, metabolic disorders, nutrition, and end-of-life care",
+    "rationale": "Critical care medicine requires cross-disciplinary expertise integrating surgery, internal medicine, pharmacology, and ethics.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2126
+      }
+    ],
+    "confusable_with": "ICU care being limited to immediate post-surgical management"
+  },
+  {
+    "id": "icunutrprinciple-2",
+    "topic": "ICU Nutrition: Principles and Assessment",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What postoperative pulmonary complication risk is particularly important in obese ICU patients or those with COPD?",
+    "answer": "Preventing postoperative pulmonary complications (PPCs) including atelectasis, pneumonia, and respiratory failure is critical in obese and COPD patients",
+    "rationale": "Reduced functional residual capacity, impaired mucociliary clearance, and diminished respiratory reserve make obese and COPD patients highly vulnerable to PPCs.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 784
+      }
+    ],
+    "confusable_with": "Cardiac complications being the dominant post-op risk in all patients"
+  },
+  {
+    "id": "icunutrprinciple-3",
+    "topic": "ICU Nutrition: Principles and Assessment",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In ICU patients with thyroid storm, why is aspirin avoided for temperature management?",
+    "answer": "Aspirin is not recommended in thyroid storm because it may displace thyroid hormone from plasma carrier proteins, worsening thyrotoxicosis",
+    "rationale": "Aspirin competes for thyroid hormone binding sites on thyroxine-binding globulin, increasing free T4/T3 levels and potentially exacerbating the storm.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2123
+      }
+    ],
+    "confusable_with": "Aspirin being safe for fever management in all ICU patients"
+  }
+]

@@ -1,0 +1,369 @@
+[
+  {
+    "id": "sle-org-1",
+    "topic": "SLE: organ manifestations & monitoring",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What features help distinguish idiopathic SLE organ manifestations from drug-induced lupus?",
+    "answer": "Idiopathic SLE more likely causes renal and neurologic involvement, severe hematologic abnormalities, chronic cutaneous disease; high-titer anti-dsDNA or anti-Smith; low complement; persistence after drug withdrawal",
+    "rationale": "DIL produces a milder syndrome; organ-threatening disease and these specific autoantibodies strongly favor idiopathic SLE.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Drug-induced lupus"
+  },
+  {
+    "id": "sle-org-2",
+    "topic": "SLE: organ manifestations & monitoring",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "In SLE patients receiving TNF inhibitors, what autoimmune complication may develop and how is it managed?",
+    "answer": "TNF inhibitors may induce autoantibody formation in up to 50% of SLE patients; clinical manifestations are usually mild; careful monitoring rather than avoidance is recommended",
+    "rationale": "TNF inhibitor-induced autoimmunity is typically less severe than idiopathic SLE; the risk-benefit ratio generally favors continued use with monitoring.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 8
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-org-3",
+    "topic": "SLE: organ manifestations & monitoring",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What are the major SLE-associated complications of lupus nephritis that require ongoing monitoring?",
+    "answer": "Hypertension (sometimes refractory), CKD, ESRD, increased thrombotic risk in nephrotic syndrome, depression",
+    "rationale": "Lupus nephritis causes progressive renal damage; nephrotic-range proteinuria creates thrombogenic state requiring anticoagulation consideration.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Lupus nephritis",
+        "page": 16
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-org-4",
+    "topic": "SLE: organ manifestations & monitoring",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What ECG finding reflects hypokalemia and correlates with arrhythmia risk requiring monitoring?",
+    "answer": "Progressive T-wave flattening, prominent U waves, increased P-wave amplitude, PR prolongation, ST-segment depression with worsening hypokalemia",
+    "rationale": "Hypokalemia reduces repolarizing K+ current causing characteristic ECG changes and increasing risk of ventricular arrhythmias.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1881
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-org-5",
+    "topic": "SLE: organ manifestations & monitoring",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What clinical and laboratory features suggest drug-induced SCLE resolving after treatment?",
+    "answer": "Clinical improvement within weeks-months after drug withdrawal; ANA often persists long after symptom resolution; characteristic cutaneous lesions in drug-induced SCLE develop within 1-5 weeks of drug exposure",
+    "rationale": "Autoantibody persistence despite clinical remission is a hallmark of drug-induced autoimmune syndromes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 7
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-tx-1",
+    "topic": "SLE: treatment principles",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the first-line treatment for all lupus nephritis patients unless contraindicated, and what monitoring is required?",
+    "answer": "Hydroxychloroquine initiated at baseline for all LN patients; requires regular ophthalmologic exams to monitor for retinal toxicity",
+    "rationale": "HCQ reduces LN flares, improves survival, and has anti-thrombotic effects; retinal toxicity is dose- and duration-dependent requiring surveillance.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Lupus nephritis",
+        "page": 11
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-tx-2",
+    "topic": "SLE: treatment principles",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What guides the specific treatment selection in lupus nephritis?",
+    "answer": "Treatment is primarily guided by histopathological class on renal biopsy",
+    "rationale": "ISN/RPS classification of LN on biopsy directs immunosuppressive intensity: class III/IV requires aggressive induction with cyclophosphamide or mycophenolate.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Lupus nephritis",
+        "page": 11
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-tx-3",
+    "topic": "SLE: treatment principles",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What treatment is used for arthralgia or arthritis in drug-induced SCLE (subacute cutaneous lupus)?",
+    "answer": "NSAIDs for arthralgia or arthritis in DIL/SCLE; principles from idiopathic SLE treatment applied to residual or bothersome manifestations",
+    "rationale": "NSAIDs provide symptomatic relief for musculoskeletal manifestations without systemic immunosuppression for mild DIL.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 7
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-tx-4",
+    "topic": "SLE: treatment principles",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What dual-action biologic targets BAFF and has shown effectiveness in Sjogren syndrome that may apply to SLE treatment?",
+    "answer": "Ianalumab: dual-action human monoclonal antibody targeting B lymphocytes expressing BAFF; shown effectiveness in Sjogren syndrome",
+    "rationale": "BAFF (B-cell activating factor) promotes autoreactive B-cell survival; targeting BAFF reduces pathogenic autoantibody production.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Lupus nephritis",
+        "page": 15
+      }
+    ],
+    "confusable_with": "Belimumab"
+  },
+  {
+    "id": "sle-tx-5",
+    "topic": "SLE: treatment principles",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What was the trend in deaths due to disease and infection in lupus nephritis over the study period?",
+    "answer": "Deaths due to disease declined by 44%; deaths due to infection decreased by 63% over the study period, reflecting improved management",
+    "rationale": "Better immunosuppressive regimens and infection prophylaxis have substantially reduced both LN-related and treatment-related mortality.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Lupus nephritis",
+        "page": 16
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sal-1",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the toxic dose threshold and mechanism of salicylate toxicity?",
+    "answer": "Toxic dose >150 mg/kg single dose or chronic high-dose use; mechanism: uncouples oxidative phosphorylation and stimulates the respiratory center",
+    "rationale": "Mitochondrial uncoupling causes metabolic acidosis; respiratory center stimulation causes hyperventilation and respiratory alkalosis early.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sal-2",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the classic mixed acid-base disorder in salicylate toxicity and what symptoms mark early vs late presentation?",
+    "answer": "Early: respiratory alkalosis (hyperventilation), tinnitus, altered mentation, hyperthermia; Late: mixed respiratory alkalosis + metabolic acidosis; noncardiogenic pulmonary edema in severe cases",
+    "rationale": "Salicylates stimulate respiratory center (alkalosis) and uncouple oxidative phosphorylation (metabolic acidosis); both may coexist.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Pure metabolic acidosis"
+  },
+  {
+    "id": "sal-3",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the mechanism and target of urine alkalinization in salicylate poisoning?",
+    "answer": "Sodium bicarbonate raises urine pH to 7.5-8.5; alkaline urine ionizes salicylate (charged form cannot be reabsorbed) -> enhanced renal elimination; monitor K+ closely",
+    "rationale": "Ion trapping: salicylate pKa ~3; alkaline urine keeps salicylate ionized in tubular lumen, preventing tubular reabsorption.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sal-4",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What are the indications for hemodialysis in salicylate toxicity?",
+    "answer": "Hemodialysis indicated if salicylate level >100 mg/dL, renal failure, severe CNS effects, pulmonary edema, or failure of urine alkalinization",
+    "rationale": "HD directly removes salicylate and corrects acid-base; indicated when elimination is impaired or toxicity is severe.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sal-5",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What management approach addresses the noncardiogenic pulmonary edema (ARDS-like) in moderate-severe salicylate toxicity?",
+    "answer": "Restrict free water, use hypertonic saline (3%) for alkalinization instead of normal saline, judicious diuretics; PEEP 5-10 cmH2O if intubated; monitor mixed venous O2",
+    "rationale": "Direct lung toxicity plus aggressive alkalinization fluid causes edema; hypertonic saline provides bicarbonate load without volume excess.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sal-6",
+    "topic": "Salicylate Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What initial gastrointestinal decontamination and alkalinization are recommended for salicylate toxicity?",
+    "answer": "Activated charcoal for GI decontamination; IV bicarbonate for serum and urine alkalinization (target serum pH 7.4-7.5, urine pH 7.5-8.5)",
+    "rationale": "Charcoal binds salicylate in gut preventing absorption; systemic alkalinization shifts salicylate into ionized non-lipid-soluble form reducing CNS penetration.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Metabolic Acidosis  Approach and Anion Gap",
+        "page": 11
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Salicylate Toxicity",
+    "discipline": "medicine",
+    "enabling_conditions": "Intentional overdose (aspirin >150 mg/kg) or chronic therapeutic dosing in elderly; concurrent serotonergic agents may require salicylate level testing",
+    "pathophysiology": "Uncouples mitochondrial oxidative phosphorylation -> metabolic acidosis; directly stimulates respiratory center -> respiratory alkalosis; both may coexist",
+    "time_course": "Early: tinnitus, hyperventilation, alkalosis within hours; late: metabolic acidosis, altered consciousness, pulmonary edema",
+    "key_features": "Tinnitus, hyperventilation, hyperthermia, mixed respiratory alkalosis + anion gap metabolic acidosis, altered mental status",
+    "consequence_if_missed": "CNS toxicity, noncardiogenic pulmonary edema, rhabdomyolysis, death; delay in alkalinization or HD markedly worsens prognosis"
+  },
+  {
+    "id": "siid-1",
+    "topic": "Secondary immunodeficiency & opportunistic infections",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the most prevalent secondary immunodeficiency worldwide?",
+    "answer": "HIV infection causing AIDS is the most prevalent secondary immunodeficiency; approximately 40.8 million people living with HIV globally",
+    "rationale": "HIV selectively destroys CD4+ T-helper cells, causing progressive cell-mediated immunodeficiency that enables opportunistic infections.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Immunodeficiency  primary antibody deficiencies",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "siid-2",
+    "topic": "Secondary immunodeficiency & opportunistic infections",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What bacteria are specifically associated with leukocyte adhesion deficiency syndrome?",
+    "answer": "Serratia and Burkholderia are particularly common opportunistic pathogens in leukocyte adhesion deficiency (LAD); diagnosed by nitroblue tetrazolium (NBT) or DCF test (actually NBT/DCF are for CGD); LAD itself diagnosed by flow cytometry",
+    "rationale": "LAD prevents neutrophil migration to sites of infection; Serratia and Burkholderia cause recurrent severe infections.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Immunodeficiency  primary antibody deficiencies",
+        "page": 4
+      }
+    ],
+    "confusable_with": "Chronic granulomatous disease"
+  },
+  {
+    "id": "siid-3",
+    "topic": "Secondary immunodeficiency & opportunistic infections",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What primary immunodeficiency presents in male infants around 5-6 months when maternal IgG disappears, with low levels of all immunoglobulins?",
+    "answer": "X-linked agammaglobulinemia (XLA): absent all immunoglobulins (IgG, IgA, IgM, IgD, IgE) in males at 5-6 months when maternal IgG wanes",
+    "rationale": "Bruton tyrosine kinase mutation blocks B-cell maturation; maternal IgG provides protection for the first months of life.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Immunodeficiency  primary antibody deficiencies",
+        "page": 10
+      }
+    ],
+    "confusable_with": "Common variable immunodeficiency"
+  },
+  {
+    "id": "siid-4",
+    "topic": "Secondary immunodeficiency & opportunistic infections",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What infections overlap epidemiologically with HIV and should prompt concurrent testing?",
+    "answer": "HIV shares epidemiologic pathways with STIs (hepatitis A, B, C; syphilis) and IV drug-associated infections (S. aureus, hepatitis C); also increased risk of N. meningitidis and influenza",
+    "rationale": "Shared transmission routes and immune compromise make co-infections common in HIV; screening for multiple infections is warranted.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 3
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "siid-5",
+    "topic": "Secondary immunodeficiency & opportunistic infections",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What treatment options offer potential cure for primary immunodeficiencies caused by gene mutations or missing enzymes?",
+    "answer": "Gene therapy and hematopoietic stem cell transplantation offer potential curative outcomes for primary immunodeficiencies",
+    "rationale": "Replacing the defective gene or reconstituting the immune system with donor HSCs can restore immune function in SCID and other primary immunodeficiencies.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Immunodeficiency  primary antibody deficiencies",
+        "page": 11
+      }
+    ],
+    "confusable_with": ""
+  }
+]

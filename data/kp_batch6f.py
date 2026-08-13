@@ -1,0 +1,85 @@
+import json
+
+kps = []
+
+# TOPIC 17: High Spinal & Total Spinal Anesthesia
+kps += [
+  {"id":"highspinal-1","topic":"High Spinal & Total Spinal Anesthesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What life-threatening event can result from excessive cephalad spread of intrathecal local anesthetic?",
+   "answer":"High or total spinal anesthesia causing phrenic and intercostal nerve paralysis, leading to apnea",
+   "rationale":"Cephalad spread above C3-C5 paralyzes the diaphragm (phrenic nerve), and intercostal blockade eliminates accessory breathing, causing complete respiratory failure.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":431}],"confusable_with":"Epidural anesthesia causing apnea (less common, lower risk of total spinal)"},
+  {"id":"highspinal-2","topic":"High Spinal & Total Spinal Anesthesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What measure can temporarily restore blood pressure during spinal anesthesia-induced hypotension before vasopressors take effect?",
+   "answer":"Autotransfusion (Trendelenburg position) can help restore blood pressure during spinal hypotension",
+   "rationale":"Placing the patient in Trendelenburg increases venous return and preload from the lower extremities, improving cardiac output temporarily.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1556}],"confusable_with":"Head-up position which worsens hypotension during high spinal"},
+  {"id":"highspinal-3","topic":"High Spinal & Total Spinal Anesthesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What vasopressor in small IV boluses of 50-100 mcg rapidly reverses peripheral vasodilation from spinal anesthesia?",
+   "answer":"Phenylephrine 50-100 mcg IV bolus rapidly reverses peripheral vasodilation caused by spinal anesthesia",
+   "rationale":"Phenylephrine is a pure alpha-1 agonist increasing SVR without direct cardiac stimulation, appropriate for anesthesia-induced vasodilatory hypotension.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":390}],"confusable_with":"Ephedrine (beta+alpha, preferred in obstetric spinal but not universally superior)"},
+  {"id":"highspinal-4","topic":"High Spinal & Total Spinal Anesthesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What are the most common serious complications claimed in regional anesthesia malpractice cases?",
+   "answer":"Death, permanent nerve injury, and permanent brain damage are the most commonly claimed serious outcomes in regional anesthesia malpractice",
+   "rationale":"Major neurological and cardiovascular events from total spinal, high spinal, or local anesthetic toxicity carry the highest malpractice liability.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1596}],"confusable_with":"Superficial infection being the most common claim (actually minor complications are more common but less costly)"},
+  {"id":"highspinal-5","topic":"High Spinal & Total Spinal Anesthesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What effect does lidocaine have on the ventilatory response to hypoxia that is relevant during high spinal?",
+   "answer":"Lidocaine depresses the ventilatory response to low PaO2 (hypoxic drive), potentially causing apnea",
+   "rationale":"Lidocaine blunts peripheral chemoreceptor sensitivity to hypoxia, compounding apnea risk during high spinal by reducing the hypoxic ventilatory response.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":431}],"confusable_with":"Lidocaine causing hyperventilation"},
+]
+
+# TOPIC 18: Humidification & Airway Management Equipment
+kps += [
+  {"id":"humid-1","topic":"Humidification & Airway Management Equipment","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What is the physiological function of the nasal cavity regarding inspired air?",
+   "answer":"The nasal cavity warms and humidifies air as it passes through before reaching the lower airways",
+   "rationale":"Turbinates provide a large mucosal surface area for heat and moisture exchange, conditioning inspired air to approximately body temperature and 100% relative humidity.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":278}],"confusable_with":"Trachea as the primary humidification site"},
+  {"id":"humid-2","topic":"Humidification & Airway Management Equipment","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"During fiber-optic intubation in a patient with a potentially difficult airway, what ventilation strategy is recommended?",
+   "answer":"Spontaneous ventilation should be maintained during fiber-optic intubation when ability to mask ventilate is uncertain",
+   "rationale":"Preserving spontaneous breathing ensures oxygenation continues even if the intubation attempt is prolonged or fails.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":308}],"confusable_with":"Inducing paralysis before fiber-optic intubation in all difficult airways"},
+  {"id":"humid-3","topic":"Humidification & Airway Management Equipment","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What difficulty in pediatric airway management arises from the STOP-BANG score in adults that is adapted for children?",
+   "answer":"STOP-BANG score greater than or equal to 3 is associated with increased risk of postoperative complications including OSA-related events",
+   "rationale":"Obstructive sleep apnea screening tools identify patients at risk for upper airway collapse and respiratory events post-extubation.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":698}],"confusable_with":"STOP-BANG being a pediatric-specific tool (it is an adult OSA screening tool)"},
+  {"id":"humid-4","topic":"Humidification & Airway Management Equipment","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What four items are recommended even in an emergency before performing a surgical airway such as cricothyrotomy?",
+   "answer":"Identify an assistant, place a shoulder roll to expose the trachea, direct a light source at the neck, and identify the cricothyroid membrane",
+   "rationale":"Even 20 seconds invested in setup dramatically reduces procedural failure by optimising visualisation and access to the airway.",
+   "bloom":"apply","source":[{"book":"Stanford CA-1","page":45}],"confusable_with":"Proceeding immediately without any preparation in CICO (worsens outcomes)"},
+]
+
+# TOPIC 19: Hyperbaric oxygen and special thoracic procedures
+kps += [
+  {"id":"hbo-1","topic":"Hyperbaric oxygen and special thoracic procedures","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"In a combined anteroposterior spinal procedure, what airway management technique supports the anterior component?",
+   "answer":"Double-lumen endotracheal tube used for the anterior component, with tube exchange possible for the posterior component",
+   "rationale":"Anterior thoracic spinal procedures require single-lung ventilation via DLT to access the vertebral column; the tube can then be exchanged for the posterior approach.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":588}],"confusable_with":"Single-lumen tube adequate for all combined spinal approaches"},
+  {"id":"hbo-2","topic":"Hyperbaric oxygen and special thoracic procedures","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"What analgesic principle applies to post-thoracotomy pain management: can a single analgesic technique block all pain afferents?",
+   "answer":"No single analgesic technique can block all multiple sensory afferents transmitting nociception after thoracotomy; multimodal approach required",
+   "rationale":"Thoracotomy pain involves somatic, visceral, and phrenic components requiring combination of regional, systemic, and neuraxial techniques.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":518}],"confusable_with":"Thoracic epidural alone providing complete post-thoracotomy analgesia"},
+  {"id":"hbo-3","topic":"Hyperbaric oxygen and special thoracic procedures","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"Obesity hypoventilation syndrome is defined by what two chronic respiratory features?",
+   "answer":"Chronic daytime hypoxemia (PaO2 <65 mmHg) and hypoventilation (elevated PaCO2) in an obese patient",
+   "rationale":"Unlike simple OSA with normal daytime gases, OHS involves persistent daytime respiratory failure from the combination of obesity-related mechanical disadvantage and blunted hypercapnic drive.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":508}],"confusable_with":"OSA (nocturnal desaturation only, normal daytime gases)"},
+  {"id":"hbo-4","topic":"Hyperbaric oxygen and special thoracic procedures","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"In a patient with limited exercise tolerance walking uphill, approximately how many METs does climbing one flight of stairs represent?",
+   "answer":"Walking up stairs represents approximately 4 METs; patients asymptomatic on flat ground but symptomatic on stairs have approximately 4 MET functional capacity",
+   "rationale":"MET estimation from activity history guides perioperative cardiac risk stratification; less than 4 METs indicates poor functional capacity.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":484}],"confusable_with":"1 MET for stair climbing (1 MET is rest metabolic equivalent)"},
+]
+
+print(f"Batch F: {len(kps)} entries")
+with open('C:/Users/Dean/anesthesia_attending/data/kp_batch6f_out.json','w',encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print("OK")

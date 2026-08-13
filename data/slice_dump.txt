@@ -1,0 +1,726 @@
+=== ITEM 0: NSAID and Opioid Alternatives — Adjuvant Pharmacology ===
+  CHUNK 0: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 1: book=Morgan & Mikhail, page=460
+  Section: Drug Interactions. Drug Interactions Aspirin decreases the protein binding of ketorolac, increasing the amount of active unbound drug. Ketorolac does not affect the minimum alveolar concentration of inhalation anesthetic agents, and its administration does not alter the hemodynamics of anesthetized patients. It decreases the postoperative requirement for opioid analgesics. Other NSAID Adj
+  CHUNK 2: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 3: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 4: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 5: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 6: book=Morgan & Mikhail, page=1826
+  Section: E. α2-Agonist Therapy. associated with decreased adrenergic stimulation. Intravenous esmolol reduces the requirement of volatile anesthetic agents and decreases minimum alveolar concentration values; it has also been shown to reduce postoperative pain intensity, opioid consumption, and PONV. A positive protein balance has been reported in critically ill patients when β-blockade is combine
+  CHUNK 7: book=Morgan & Mikhail, page=352
+  Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  CHUNK 8: book=Morgan & Mikhail, page=1211
+  Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in an
+  CHUNK 9: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+
+=== ITEM 1: Neurological disease in pregnancy ===
+  CHUNK 0: book=Morgan & Mikhail, page=781
+  Section: Pregnancy and Heart Disease. Pregnancy and Heart Disease Both acquired and congenital heart disease may present in pregnancy. Of all the developed countries, the United States has the highest maternal mortality rate, and cardiovascular disease is a major contributor. Peripartum cardiomyopathy, pulmonary hypertension, and ischemic heart disease are commonly acquired forms of cardiovascular
+  CHUNK 1: book=Morgan & Mikhail, page=1438
+  of a 0.5 mEq/mL 4.2% solution) should usually be given only for severe metabolic acidosis documented by blood gas measurements and when ventilation is adequate. It may also be administered during prolonged (>5 min) resuscitation—particularly if blood gas measurements are not readily available. The infusion rate should not exceed 1 mEq/kg/min to avoid hypertonicity and intracranial hemorrhage. As p
+  CHUNK 2: book=Morgan & Mikhail, page=2281
+  Section: Kidney Disease Improving Global Outcomes (KDIGO) classification, 681, 683t. circulation in, 663–664 Kidney Disease Improving Global Outcomes (KDIGO) classification, 681, 683t Kidney failure, 489, 688–693. See also Acute kidney injury acute, 688, 688t anesthesia maintenance, 692–693 cardiovascular manifestations of, 690 endocrine manifestations of, 691 fluid therapy, 693 gastrointestinal m
+  CHUNK 3: book=Morgan & Mikhail, page=781
+  By convention, a stroke is defined as a neurological deficit that lasts more than 24 h; its pathological correlate is typically focal infarction of the brain
+  CHUNK 4: book=Morgan & Mikhail, page=781
+  Transient ischemic attacks (TIAs), on the other hand, are neurological deficits that resolve within 24 h; they may be due to a low-flow state at a tightly stenotic lesion or to emboli that arise from an
+  CHUNK 5: book=Morgan & Mikhail, page=1035
+  Section: Women with myasthenia can experience increased weakness in the last trimester of. inspiratory pressure of less than –25 cm H2O (eg, –20 cm H2O), vital capacity less than 4 mL/kg, and pyridostigmine dose greater than 750 mg/d are predictive of the need for postoperative ventilation following thymectomy. Women with myasthenia can experience increased weakness in the last trimester of pregna
+  CHUNK 6: book=StatPearls, page=7
+  be similar to those with systemic lupus erythematosus and rheumatoid arthritis. [11] [30] [9] [31] [32] [14] [33] It is mentioned in a recent study which was published in 2019 that clinical practice guidelines or recommendations were not defined yet, and potential areas of intervention and a precise definition of undifferentiated connective tissue disease are still absent. This uncertainty regardi
+  CHUNK 7: book=Miller/Baby Miller, page=336
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT begin within 3 days of the procedure, and approximately two-thirds start within the first 48 hours. Spontaneous reso- lution usually occurs within 7 days in the majority of cases, but a minority of patients still have symptoms at 6 months. Conservative man
+  CHUNK 8: book=StatPearls: StatPearls   Rheumatoid arthritis  pathogenesis & diagnosis, page=5
+  9] A review of systems should also encompass endocrine abnormalities (heat intolerance, cold intolerance, fatigue, weight gain, weight loss, hot flashes, night sweats, palpitations, polyuria, polydipsia, diarrhea, constipation), genitourinary symptoms (dysuria, vaginal discharge, vaginal itching, vaginal dryness, or dyspareunia), and neurological symptoms (intellectual disability, visual field def
+  CHUNK 9: book=StatPearls: StatPearls   Antiphospholipid syndrome, page=5
+  Section: Cutaneous Involvement. arteries, from the aorta to small capillaries. The most common arterial manifestation of APS is transient ischemic events (TIEs) or ischemic stroke. The occurrence of TIEs or ischemic stroke in young patients without other risk factors for atherosclerosis should raise suspicion for APS. Other sites for arterial thrombosis may include retinal, brachial, coronary, mes
+
+=== ITEM 2: Neuromuscular Blocking Agents Pharmacology ===
+  CHUNK 0: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 1: book=Miller/Baby Miller, page=674
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS is metabolized in the liver to norketamine, which is an active metabolite.24 Benzodiazepines (Also See Chapter 8) Benzodiazepines should be used with caution in the elderly because of their observed tendency to cause and/or worsen delirium. If administered, their doses should be significantly reduce
+  CHUNK 2: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+  CHUNK 3: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 4: book=Morgan & Mikhail, page=2279
+  Section: Ischemic optic neuropathy (ION), 1269. premedication, 405 specialized studies, 404–405 treatment of β-adrenergic blocking agents, 398–399 calcium channel blockers, 399–400 combination therapy, 401 nitrates, 400–401 unstable angina, 397 Ischemic optic neuropathy (ION), 1269 Ischemic preconditioning, 151 Isobaric solution, 987 barbiturates versus, 594 biotransformation of, 159 cerebral phys
+  CHUNK 5: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 6: book=Morgan & Mikhail, page=352
+  Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  CHUNK 7: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 8: book=Morgan & Mikhail, page=204
+  ✓ Consider using the isolated forearm technique if intense paralysis is indicated. ✓ Choose potent inhalation agents rather than total intravenous anesthesia, if possible. ✓ Administer at least 0.5–0.7 minimum alveolar concentration (MAC) of the inhalation agent. ✓ Set an alarm for a low anesthetic gas concentration. ✓ Monitor anesthetic gas concentration during cardiopulmonary bypass from the byp
+  CHUNK 9: book=Miller/Baby Miller, page=725
+  Section: Chapter 39 Postanesthesia Recovery. Chapter 39 Postanesthesia Recovery Box 39.3 Factors Contributing to Postoperative Arterial Hypoxemia by Mechanism of Hypoxemia Right-to-Left Intrapulmonary Shunt or Ventilation- Perfusion Mismatch Atelectasis (with decreased functional residual capacity, e.g., postsurgical or from obesity) Pulmonary edema (e.g., from fluid overload, postobstructive edem
+
+=== ITEM 3: Neuromuscular Junction Physiology ===
+  CHUNK 0: book=Morgan & Mikhail, page=333
+  Section: Children are particularly susceptible to profound bradycardia following. neuromuscular junction, it also stimulates all ACh receptors. The cardiovascular actions of succinylcholine are therefore very complex. Stimulation of nicotinic receptors in parasympathetic and sympathetic ganglia and muscarinic receptors in the sinoatrial node of the heart can increase or decrease blood pressure and
+  CHUNK 1: book=Morgan & Mikhail, page=2298
+  Section: Becker, 649. differential diagnosis of, 640t drugs, 642t muscular dystrophies, 648–651 Becker, 649 Duchenne, 648–649 Duchenne/Becker, 648–650 facioscapulohumeral, 649 limb-girdle, 649 myotonic, 649 preoperative considerations, 648 myasthenia gravis, 640–645 anesthetic considerations, 644–645 women, 644–645 myotonias, 649, 651 paramyotonia congenita, 651 paraneoplastic neuromuscular syndro
+  CHUNK 2: book=Morgan & Mikhail, page=1446
+  Section: Increased ratio of body surface area to body weight. Increased ratio of body surface area to body weight Increased total body water content Noncompliant left ventricle Residual fetal circulation Difficult venous and arterial cannulation Relatively larger head and tongue Narrower nasal passages Anterior and cephalad larynx Relatively longer epiglottis Shorter trachea and neck More prominen
+  CHUNK 3: book=Stanford CA-1, page=73
+  Section: What is laryngospasm?. What is laryngospasm? – Closure of the true vocal cords (+/- the false vocal cords) from the action of laryngeal muscles →occlusion of the glottis/laryngeal inlet – Mediated by Superior Laryngeal Nerve – Consequences include hypoxia, hypercapnia, and negative pressure pulmonary edema (NPPE) Predisposing Factors – Stage 2 of anesthesia (excitement/delirium) – Light a
+  CHUNK 4: book=Miller/Baby Miller, page=120
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY and desflurane also produce trifluoroacetylated com- pounds, but substantially less, and therefore have esti- mated rates of hepatic failure less than 1/1,000,000, whereas sevoflurane does not produce trifluoroacety- lated by-products. Thus the modern volatile anesthet- ics have a substantially reduced incidenc
+  CHUNK 5: book=Miller/Baby Miller, page=930
+  Section: Nerve blocks. Nerve blocks characteristics, 334 preparation, 318 ultrasound, 320 Nerve fascicles, 320–321 Nerve bers, classication of, 144, Nerve injury, 311, 320 conduction local anesthetics (impact), 144 roots, illustration, 320f stimulation, 318 Nervous system aging, 648 changes, 581 Neural inertia, 102 Neuraxial analgesia (regional analgesia), 585 anticoagulants, 726 epidural admini
+  CHUNK 6: book=Miller/Baby Miller, page=399
+  Section: Chapter 20 Anesthetic Monitoring. Chapter 20 Anesthetic Monitoring relaxant is administered.34 Newer decision support displays incorporate the combined age-adjusted MAC calculations used in this study to alert providers that the anesthetic level may be associated with postoperative recall.35 36 Earlier clinical data suggested that a combination of low BIS, low blood pressure, and low MAC 
+  CHUNK 7: book=Miller/Baby Miller, page=104
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY Cholinesterase Inhibitors Anticholinesterase drugs impair the inactivation of ACh by the cholinesterase enzyme and sustain cholinergic agonism at nicotinic and muscarinic receptors. These drugs are used to reverse neuromuscular blockade (see Chapter 11) and to treat myasthenia gravis. The most prominent side ef
+  CHUNK 8: book=Miller/Baby Miller, page=120
+  However, decreased acetylcholine release from presynaptic nerve terminals at the neuromuscular junction may also contribute.63 The primary effect appears to be potentiation of neuromuscular blockade
+  CHUNK 9: book=Miller/Baby Miller, page=190
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY Succinic acid Plasma cholinesterase Plasma cholinesterase Fig. 11.4 The brief duration of action of succinylcholine is the result of its rapid hydrolysis in plasma by cholinesterase enzyme to inactive metabolites (succinylmonocholine has 1/20 to 1/80 the activity of succinylcholine at the neuromuscular junction
+
+=== ITEM 4: Neuromuscular monitoring ===
+  CHUNK 0: book=Stanford CA-1, page=37
+  Section: Blocking Agents. Blocking Agents NMBAs facilitate intubation, mechanical ventilation, and surgical relaxation There are two categories of NMBAs with distinct properties: Depolarizing (succinylcholine) Non-depolarizing (eg. rocuronium, vecuronium, cisatracurium) Postoperative residual paralysis occurs frequently. Monitoring of neuromuscular blockade and pharmacological reversal are standar
+  CHUNK 1: book=Stanford CA-1, page=60
+  Section: Contributing Factors. Contributing Factors – Hyperparathyroidism – Malignancy (esp lung, ENT, GU, GYN, multiple myeloma) – Immobilization – AKI – Drugs (thiazide diuretics, lithium) Signs & Symptoms – EKG changes (short QT) – Hypertension – Polyuria – Hydration (bolus crystalloid) + Lasix diuresis – Dialysis Anesthetic Considerations – Consider cancelling elective cases – Avoid acidosis (
+  CHUNK 2: book=Stanford CA-1, page=59
+  Section: Anesthetic Considerations. Anesthetic Considerations – Consider cancelling elective cases if K >5.5 – Avoid succinylcholine – EKG monitoring – Avoid hypoventilation (respiratory acidosis) – Treat acidosis – Monitor for increased sensitivity to neuromuscular blockers (mEq/L) pH 0.9% NaCl 5.5 Lactated Ringer’s Normosol, Plasma-Lyte - Classical teaching favors NS (no [K+]), but hyperchloremi
+  CHUNK 3: book=Stanford CA-1, page=38
+  Section: Nondepolarizing NMBA (cont.). Nondepolarizing NMBA (cont.) • Intubating doses ~2x ED95 – ED95 = average dose to achieve 95% suppression of twitch height in 50% of population • Larger intubating dose speeds onset time, lengthens duration • Priming dose: increase speed of onset – 10% of intubating dose 3-5 minutes prior (efficacy debatable) • Wide inter-individual response to nondepolarizin
+  CHUNK 4: book=Stanford CA-1, page=39
+  Section: Variability in NMBA Monitoring. Variability in NMBA Monitoring Variability in muscle blockade (most resistant ➔most sensitive): vocal cords > diaphragm > corrugator supercilii > abdominal muscles > adductor pollicis > pharyngeal muscles To assess deep blockade (i.e. ablate diaphragmatic movement intraop): monitor corrugator supercilii To assess return of function of pharyngeal muscles (i.
+  CHUNK 5: book=Miller/Baby Miller, page=197
+  Section: Chapter 11 Neuromuscular Blocking and Reversal Agents. Chapter 11 Neuromuscular Blocking and Reversal Agents shorten its onset of effect, is free of adverse cardiovas- cular effects. Short-Acting Nondepolarizing Neuromuscular Blocking Agent: Mivacurium Mivacurium (see Fig. 11.3) is a benzylisoquinolinium nondepolarizing NMBA with an ED95 of 80 μg/kg that has an onset of action of 2 to 3 m
+  CHUNK 6: book=Miller/Baby Miller, page=399
+  Section: Chapter 20 Anesthetic Monitoring. Chapter 20 Anesthetic Monitoring relaxant is administered.34 Newer decision support displays incorporate the combined age-adjusted MAC calculations used in this study to alert providers that the anesthetic level may be associated with postoperative recall.35 36 Earlier clinical data suggested that a combination of low BIS, low blood pressure, and low MAC 
+  CHUNK 7: book=Stanford CA-1, page=85
+  Section: Differential Diagnosis. Differential Diagnosis Neuroleptic Malignant Syndrome More common in patients receiving antidopaminergic agents or in withdrawal from dopamine agents as in Parkinson’s, usually develops over days rather than minutes to hours Thyroid Storm* Usually associated with hypokalemia fever, tachypnea, tachycardia, metabolic acidosis HR, BP, but normal EtCO2 and Temp e.g. 
+  CHUNK 8: book=Miller/Baby Miller, page=208
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY etal. Post-anaesthesia pulmonary com- plications after use of muscle relaxants (POPULAR): A multicentre, prospective observational study. Lancet Respir Med. 2019;7(2):129–140. 38. Murphy GS, Szokol JW, Marymont JH, Greenberg SB, Avram MJ, Vender JS. Residual neuromuscular blockade and critical respiratory even
+  CHUNK 9: book=Stanford CA-1, page=16
+  Section: Capnography Pearls. Capnography Pearls Both the number and tracing provide much physiologic information - Bronchospasm (upsloping trace) - Significant hypotension can be associated with a drop in EtCO2 - Pulmonary embolism (decreased EtCO2 but increased A-a gradient between ETCO2 and PaCO2) - Adequacy of CPR and indicator of ROSC (ETCO2 goal during CPR>10; if sudden increase in ETCO2, the
+
+=== ITEM 5: Neuropathic Pain Syndromes ===
+  CHUNK 0: book=Morgan & Mikhail, page=1703
+  Section: The evaluation of any patient with pain should include several key components,. The evaluation of any patient with pain should include several key components, including location, onset, and quality of pain; any alleviating or exacerbating factors; and a pain history, including previous therapies and changes in symptoms over time. Psychosocial evaluation is useful whenever medical evaluati
+  CHUNK 1: book=Morgan & Mikhail, page=463
+  Section: Dosage. cause nausea. The recommended initial loading dose is 1 mcg/kg intravenously over 10 min with a maintenance infusion rate of 0.2 to 0.7 mcg/kg/h. Dexmedetomidine has a rapid onset and terminal half-life of 2 h. The drug is metabolized in the liver, and its metabolites are eliminated in the urine. Dosage should be reduced in patients with liver or kidney disease. Drug Interactions 
+  CHUNK 2: book=Morgan & Mikhail, page=1726
+  Section: Peripheral mechanisms include spontaneous discharges, sensitization of receptors (to. nerves, dorsal root ganglia, nerve roots, or more central structures (Table 47–5). Peripheral mechanisms include spontaneous discharges, sensitization of receptors (to mechanical, thermal, and chemical stimuli), and upregulation of adrenergic receptors. Neural inflammation may also be present. Systemic a
+  CHUNK 3: book=Morgan & Mikhail, page=461
+  Section: Clinical Uses. catecholamines. There is also evidence that some of clonidine’s antihypertensive action may occur via binding to a nonadrenergic (imidazoline) receptor. In contrast, its analgesic effects, particularly in the spinal cord, are mediated entirely via preand possibly postsynaptic α2-adrenergic receptors that block nociceptive transmission. Clonidine also has local anesthetic ef
+  CHUNK 4: book=Morgan & Mikhail, page=463
+  These agents are also commonly used for the management of chronic (particularly neuropathic) pain syndromes
+  CHUNK 5: book=Morgan & Mikhail, page=2298
+  Section: Becker, 649. differential diagnosis of, 640t drugs, 642t muscular dystrophies, 648–651 Becker, 649 Duchenne, 648–649 Duchenne/Becker, 648–650 facioscapulohumeral, 649 limb-girdle, 649 myotonic, 649 preoperative considerations, 648 myasthenia gravis, 640–645 anesthetic considerations, 644–645 women, 644–645 myotonias, 649, 651 paramyotonia congenita, 651 paraneoplastic neuromuscular syndro
+  CHUNK 6: book=Morgan & Mikhail, page=472
+  Section: Kaye A, Ali S, Urman R. Perioperative analgesia: ever-changing technology and. postoperative nausea and vomiting: two concurrent, randomized, double-blind, placebo-controlled trials. Anesthesiology. 2017;126:268. Kaye A, Ali S, Urman R. Perioperative analgesia: ever-changing technology and pharmacology. Best Pract Res Clin Anaesthesiol. 2014;28:3. Kelly CJ, Walker RW. Perioperative pulmon
+  CHUNK 7: book=Miller/Baby Miller, page=825
+  Section: Chapter 44 Chronic Pain Management. Chapter 44 Chronic Pain Management The archetypal chronic pain syndrome thought to have an element of sympathetically mediated pain is complex regional pain syndrome (CRPS). This condition usually manifests with pain disproportionate to any incit- ing event in a distal extremity, usually after trauma or prolonged immobilization, such as from the use of 
+  CHUNK 8: book=Miller/Baby Miller, page=826
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE PSYCHOLOGICAL TREATMENT PILLAR: In the biopsychosocial model of chronic pain psycho- logical factors are considered not a reaction to pain, but part of a “bidirectional link.” Indeed, anxiety, mood disorders, and negative cognitive processes such as catastrophizing are noted to be among the strongest pred
+  CHUNK 9: book=Miller/Baby Miller, page=827
+  Section: Chapter 44 Chronic Pain Management. Chapter 44 Chronic Pain Management chronic pain. Currently, partly because of their varied legal status, there has not been sufficiently robust clinical research on the efficacy of cannabis and cannabinoids in the management of chronic, noncancer pain. Existing studies looking at a variety of patient populations and a variety of drug formulations have s
+
+=== ITEM 6: Neurophysiology ===
+  CHUNK 0: book=Morgan & Mikhail, page=934
+  Section: CHAPTER 26. CHAPTER 26 Neurophysiology & Anesthesia KEY CONCEPTS Cerebral perfusion pressure is the difference between mean arterial pressure and intracranial pressure (or central venous pressure, whichever is greater). The cerebral autoregulation curve is shifted to the right in patients with chronic arterial hypertension. The most important extrinsic influences on cerebral blood flow (C
+  CHUNK 1: book=Morgan & Mikhail, page=6
+  Section: SECTION III. 13 Anticholinergic Drugs 14 Adrenergic Agonists & Antagonists 15 Hypotensive Agents 16 Local Anesthetics 17 Adjuncts to Anesthesia SECTION III Anesthetic Management 18 Preoperative Assessment, Premedication, & Perioperative 19 Airway Management 20 Cardiovascular Physiology & Anesthesia 21 Anesthesia for Patients with Cardiovascular Disease 22 Anesthesia for Cardiovascular Sur
+  CHUNK 2: book=Morgan & Mikhail, page=2232
+  Section: Blood urea nitrogen (BUN), 682–683, 1215. anaphylactic reactions, 1226 febrile reactions, 1226 graft-versus-host disease, 1227 post-transfusion purpura, 1227 transfusion-related acute lung injury, 1226–1227 transfusion-related immunomodulation, 1227 urticarial reactions, 1226 normovolemic hemodilution, 1229 salvage/reinfusion, 1229 Blood urea nitrogen (BUN), 682–683, 1215 Blood urea nitro
+  CHUNK 3: book=Morgan & Mikhail, page=2298
+  Section: Becker, 649. differential diagnosis of, 640t drugs, 642t muscular dystrophies, 648–651 Becker, 649 Duchenne, 648–649 Duchenne/Becker, 648–650 facioscapulohumeral, 649 limb-girdle, 649 myotonic, 649 preoperative considerations, 648 myasthenia gravis, 640–645 anesthetic considerations, 644–645 women, 644–645 myotonias, 649, 651 paramyotonia congenita, 651 paraneoplastic neuromuscular syndro
+  CHUNK 4: book=Miller/Baby Miller, page=590
+  (Courtesy of Department of Neurophysiology, NYU Hospital for Joint Diseases.)
+  CHUNK 5: book=Miller/Baby Miller, page=745
+  This medication delivery technique is based on improved understanding of the neurophysiology of pain and the potential deleterious effects of postoperative pain
+  CHUNK 6: book=StatPearls: StatPearls   Approach to Anaphylaxis, page=23
+  [1] Ongoing/Recent Research Themes (as of recent literature) Low-vision rehabilitation trials where hallucination burden is a secondary endpoint (ARMD cohorts) Neurophysiology of visual cortex disinhibition (EEG/MEG/fMRI paradigms), exploring biomarkers of response to light or visual tasks
+  CHUNK 7: book=Miller/Baby Miller, page=591
+  Section: Chapter 32 Orthopedic Surgery. Chapter 32 Orthopedic Surgery After pedicle screw placement, the surgeon may request EMGs to determine if the screw is in close proximity to a nerve root, as this can result in neurologic deficits. An electric current is sent through the screw, and EMGs are measured distally. If a low milliampere (mA) current can stimulate the nerve root, then the screw is t
+  CHUNK 8: book=Miller/Baby Miller, page=745
+  Section: Chapter 40 Perioperative Pain Management. Chapter 40 Perioperative Pain Management intravenous (IV) infusions of analgesics such as ketamine and lidocaine are increasingly being used.39 A patient- controlled analgesia (PCA) mechanism can be delivered via oral, IV, subcutaneous (SC), epidural, and intrathecal routes and by peripheral nerve catheter (Tables 40.1 to 40.3). This medication de
+  CHUNK 9: book=Miller/Baby Miller, page=590
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS prone to ischemia, as their blood supply is dependent on watershed blood flow. Surgical intervention as a result of either direct contact or stretching may impair blood sup- ply and thus render the cord ischemic.23 Once a signifi- cant change in SSEPs or other monitor is noted, specific maneuvers sh
+
+=== ITEM 7: Neuroradiology & MRI Anesthesia ===
+  CHUNK 0: book=Miller/Baby Miller, page=707
+  Section: Chapter 38 Anesthesia for Procedures in Nonoperating Room Locations. IV Chapter 38 Anesthesia for Procedures in Nonoperating Room Locations opioids or benzodiazepines (or both). Dexmedetomidine is another useful drug, primarily in procedures lasting more than an hour. Because dexmedetomidine is less likely to cause respiratory depression compared with propofol, it is especially useful for
+  CHUNK 1: book=Miller/Baby Miller, page=702
+  Section: ANESTHESIA FOR. ANESTHESIA FOR PROCEDURES IN ROOM LOCATIONS Wilson Cui, Chanhung Z. Lee ELECTROCONVULSIVE THERAPY Electrically Induced Seizures Anesthesia Evaluation Psychotropic Medications Management of Anesthesia and Seizure Physiologic Responses to Seizure and Treatment Side Effects Procedures performed outside the operating room (OR) fall under the term nonoperating room anesthesia (
+  CHUNK 2: book=MGH Housestaff Manual, page=249
+  Section: Rachel E. Grenier & Eric L. Tung. Rachel E. Grenier & Eric L. Tung UGI series: barium swallow plus stomach, pylorus, and duodenal bulb  bariatric surgery pre-op eval SB follow-through: small bowel, terminal ileum, and proximal LB ± UGI series beforehand C A R D I O VA S C U L A R P R O T O C OL S V A S C X4-7115 | CA R D CT X4-7132 | C A R D MR X3-4457 DVT imaging: Compression ultrasound
+  CHUNK 3: book=MGH Housestaff Manual, page=121
+  Section: Infectious Disease. Infectious Disease Justine Enns C L I N I C A L M A N I F E S T A T I O N S Acute: <2wk of sx & absence of necrotic bone or sequestrum. Sx: localized, dull pain & diminished function, evidence of inflammation (fever/chills/night sweats/erythema). Patients may be afebrile Chronic: previously failed tx, >3wk sx, presence of bony sequestrum, persistent drainage or sinus t
+  CHUNK 4: book=MGH Housestaff Manual, page=230
+  Section: Primary Care. Primary Care Musculoskeletal Pain Joshua Ellis Incidence/Prognosis: 84% lifetime acute back pain, 50% sciatica (Mayo Clin Proc 2015;90:1699); 75-90% improve over 4 weeks PE: palpation of midline & paraspinal muscles, ROM spine/hip, LE strength/reflexes (L4-5 = foot dorsiflex; L5-S1 = foot plantarflex, ankle reflex), rectal tone (if c/f cauda equina), SLR/crossed SLR (pain ra
+  CHUNK 5: book=MGH Housestaff Manual, page=203
+  Section: Weakness & Neuromuscular Disease. Weakness & Neuromuscular Disease Pooja Menon C H A R A C T E R I Z A T I O N O F A P E R I P H E R A L P R O C E S S • Weakness: ask about function (rising from a chair, stairs, brushing hair, tripping while walking, opening jars, zippers/buttons) and onset/ tempo. Clarify vs. generalized fatigue or systemic symptoms (i.e. of anemia, infection, electrolyt
+  CHUNK 6: book=MGH Housestaff Manual, page=85
+  Section: Pancreatitis and Pancreatic Mass. Pancreatitis and Pancreatic Mass Hailey Harris E T I O L O G Y (NEJM 2014;317:1983) Gallstones/sludge (40-75%): #1 in female sex Alcohol (30%): #1 in male sex Hypertriglyceridemia (10%): #3; suspect if TG>1000 Anatomic: ampullary diverticula/stenosis, duodenal stricture, tumor, divisum, parasites, foreign body Post-ERCP: 4.5% of ECRP; rectal NSAIDs risk 
+  CHUNK 7: book=MGH Housestaff Manual, page=123
+  Section: Infectious Disease. Infectious Disease Meningitis & Encephalitis Justine Enns B A C T E R I A L M E N I N G I T I S Clinical Features History: 95% have ≥2 of: fever, neck stiffness, AMS, HA (NEJM 2004;351:1849). Lethargy, hypothermia may be common in elderly. Abd pain, peritonitis can be seen w/ VP shunts. Can also cause seizures, stroke (infectious vasculitis), hydrocephalus, CN deficits
+  CHUNK 8: book=MGH Housestaff Manual, page=23
+  Section: Non-Invasive Cardiac Testing. Non-Invasive Cardiac Testing Lucas Cofer Mechanism: Vasodilation via cAMP, detect ischemia by coronary steal (stenosed coronary arteries are unable to further dilate, creating a relative perfusion deficit in diseased vessels). Side effects: Wheezing, bradycardia, HoTN. Caution if ACTIVE bronchospasm, high grade AVB, SSS, severe AS Regadenoson (vs adenosine) h
+  CHUNK 9: book=MGH Housestaff Manual, page=148
+  Section: Acute Leukemia. Acute Leukemia Dan Ikeda G E N E R A L A D M I S S I O N A P P R O A C H History: sibling status (for donor search), family history (for inherited syndromes), and if pre/peri menopausal, obtain date of LMP Peripheral smear: anemia, thrombocytopenia, variable WBC, circulating blasts (“other cells”), Auer rods (indicates myeloid origin) Peripheral flow cytometry: Collect in 
+
+=== ITEM 8: Never Events in Anesthesia & Perioperative Care ===
+  CHUNK 0: book=Morgan & Mikhail, page=489
+  Section: What factors influence the likelihood of a malpractice suit?. patient on a chest radiograph after a thoracotomy, the doctrine of res ipsa loquitur would apply. Res ipsa loquitur could not be used in the case under discussion because the plaintiff would have to establish that cardiac arrest could not occur in the absence of negligence and that cardiac arrest could not have been due to some
+  CHUNK 1: book=Miller/Baby Miller, page=853
+  Section: Clinical anesthesia practice is often considered a model. Clinical anesthesia practice is often considered a model for quality and safety in medicine. In 1999 the Insti- tute of Medicine report, “To Err Is Human” specifically identified anesthesia as “an area in which very impres- sive improvements in safety have been made.”1 Such attention to a specialty comprising approximately 5% of U.
+  CHUNK 2: book=Miller/Baby Miller, page=49
+  Section: Chapter 3 Clinician Well-Being. Chapter 3 Clinician Well-Being individual process, with success related to the sustain- ability of one's choices. One size does not fit all. Adequate nutrition, hydration, exercise, and sleep are the cornerstones of self-care and fit into the “basics” level of the health professional wellness hierarchy (see Fig 3.2). Yet even these can prove difficult to ac
+  CHUNK 3: book=Miller/Baby Miller, page=552
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS surgical procedures, epidural analgesia can help manage perioperative pain. When placing an epidural in patients with pheochromocytomas and paragangliomas, consider giving premedication to reduce anxiety, avoiding epi- nephrine in the test dose, and running low-concentration local anesthetic intraop
+  CHUNK 4: book=Miller/Baby Miller, page=32
+  Section: Section I INTRODUCTION. Section I INTRODUCTION advances in patient safety are significant, clinical chal- lenges and complications still occur. Anesthesiology practices must maintain robust quality assessment and improvement programs to continue the leadership role of the specialty in advancing patient care. Many of the advances in perioperative care made by anesthesiologists have emphasi
+  CHUNK 5: book=Miller/Baby Miller, page=582
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 1. Gayer S, Zuleta J. Perioperative man- agement of the elderly undergo- ing eye surgery. Clin Geriatr Med. 2008;24(4):687–700. 2. Vann MA, Ogunnaike BO, Joshi GP. Sedation and anesthesia care for oph- thalmologic surgery during local/ regional anesthesia. Anesthesiology. 2007;107(3):502–508. 3. Che
+  CHUNK 6: book=Miller/Baby Miller, page=664
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 1. Andropoulos DB. Physiology and molec- ular biology of the developing circula- tion. In: Andropoulos DB, ed. Anesthesia for Congenital Heart Disease. 3rd ed. Oxford, UK: Wiley Blackwell; 2015: 2. Lerman J. Inhalation agents in pediat- ric anaesthesia—An update. Curr Opin Anaesthesiol. 2007;20:221–
+  CHUNK 7: book=Miller/Baby Miller, page=698
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS STOP-BANG score ≥3 were associated with an increased risk of postoperative complications.11 The ASA has also published practice guidelines for perioperative management of OSA. The ASA Task Force recommends that the following factors be considered when determining whether inpatient or outpatient care
+  CHUNK 8: book=Miller/Baby Miller, page=678
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS of cardiac, pulmonary, and renal systems should be per- formed at a minimum before any procedure. No specific preoperative studies are recommended solely on the basis of age. Providers should order laboratory, imag- ing, and other tests as required by the patient's medical conditions and the risks p
+  CHUNK 9: book=Miller/Baby Miller, page=748
+  Section: Section V THE RECOVERY PERIOD. Section V THE RECOVERY PERIOD Lidocaine, with its short half-life of 90 to 120 min- utes, is the local anesthetic of choice for continuous IV infusions for both intraoperative anesthetic and post- operative analgesia. However, caution must be used in patients with delayed elimination because of hepatic or renal insufficiency, which may cause drug accumulatio
+
+=== ITEM 9: Nitroglycerin & nitroprusside: vasodilators ===
+  CHUNK 0: book=Morgan & Mikhail, page=971
+  Because of their potentially deleterious effect on CBV and ICP, vasodilators (eg, nicardipine, nitroprusside, nitroglycerin, hydralazine) are avoided until the dura is opened
+  CHUNK 1: book=Morgan & Mikhail, page=893
+  Factors known to inhibit HPV (thereby increasing venous admixture) and thus worsen the right-to-left shunting include pulmonary hypertension; hypocapnia alkalosis; increased cardiac output and increased mixed venous PO2; hypothermia; vasodilators such as nitroglycerin, nitroprusside, and nitric
+  CHUNK 2: book=Morgan & Mikhail, page=783
+  Section: Intraoperative hypertension is common and generally necessitates the use of an. maintained at—or slightly above—the patient’s usual range. Propofol and etomidate are popular choices for induction because they reduce cerebral metabolic rate proportionately more than cerebral blood flow. Small doses of an opioid or β- adrenergic blocker can be used to blunt the hypertensive response to endo
+  CHUNK 3: book=Morgan & Mikhail, page=971
+  Section: Induction. Induction of anesthesia and endotracheal intubation are critical periods for patients with compromised intracranial pressure to volume relationships, particularly if there is an elevated ICP. Intracranial elastance can be improved by osmotic diuresis or by removal of small volumes of CSF via a ventriculostomy drain. The goal of any technique should be to induce anesthesia and i
+  CHUNK 4: book=Morgan & Mikhail, page=893
+  Section: ONE-LUNG VENTILATION. FIGURE 25–4 Paradoxical respiration in spontaneously breathing patients on their side. (Reproduced with permission from Tarhan S, Moffitt EA. Principles of thoracic anesthesia. Surg Clin North Am. 1973 Aug;53(4):813-826.) ONE-LUNG VENTILATION Intentional collapse of the lung on the operative side facilitates most thoracic procedures, but it complicates anesthetic man
+  CHUNK 5: book=Stanford CA-1, page=35
+  Section: Blood Pressure Measurement. Blood Pressure Measurement Non-Invasive Blood Pressure (NIBP) – Oscillometric BP determination: oscillations in pressure are detected through the cuff as it deflates. – MAP is measured as the largest oscillation; it is the most accurate number produced by NIBP. – SBP and DBP are calculated by proprietary algorithms in the machine. – Inaccurate in conditions wit
+  CHUNK 6: book=Morgan & Mikhail, page=410
+  Section: The beneficial effect of nitroglycerin in patients with coronary artery disease. • Any afterload reduction from arteriolar dilation will decrease both end-systolic pressure and oxygen demand. Of course, a fall in diastolic pressure may lower coronary perfusion pressure and actually decrease myocardial oxygen supply. • Nitroglycerin redistributes coronary blood flow to ischemic areas of th
+  CHUNK 7: book=Miller/Baby Miller, page=691
+  Treatment of pulmonary hypertension with nonselective vasodilators such as nitroglycerin and sodium nitroprusside can decrease SVR and result in systemic hypotension
+  CHUNK 8: book=Miller/Baby Miller, page=762
+  In hypertensive patients vasodilators (e.g., nitroglycerin or nitroprusside) may help to decrease afterload and preload and improve forward flow
+  CHUNK 9: book=MGH Housestaff Manual, page=19
+  Vasodilators (use cautiously) to decrease L to R shunt (nitroprusside or nitroglycerin) Papillary Muscle Rupture (leading to acute MR) 0.05% STEMIs, 0.01% Posteromedial (supplied by PDA, with inf
+
+=== ITEM 10: Nitrous oxide: pharmacology & toxicity ===
+  CHUNK 0: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 1: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 2: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+  CHUNK 3: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 4: book=Morgan & Mikhail, page=257
+  Section: Clinical Pharmacology of Inhalation Anesthetics. Clinical Pharmacology of Inhalation Anesthetics NITROUS OXIDE Physical Properties Nitrous oxide (N2O; laughing gas) is colorless and essentially odorless. Although nonexplosive and nonflammable, nitrous oxide is as capable as oxygen of supporting combustion. Unlike the potent volatile agents, nitrous oxide is a gas at room temperature and a
+  CHUNK 5: book=Morgan & Mikhail, page=1211
+  Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in an
+  CHUNK 6: book=Morgan & Mikhail, page=344
+  Section: Although dosage requirements do not significantly vary with age, atracurium may be. 20 min. An infusion of 5 to 10 mcg/kg/min can effectively replace intermittent boluses. Although dosage requirements do not significantly vary with age, atracurium may be shorter acting in children and infants than in adults. Atracurium is available as a solution of 10 mg/mL. It must be stored at 2°C to 8°
+  CHUNK 7: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 8: book=Morgan & Mikhail, page=1455
+  Section: The minimum alveolar concentration (MAC) for halogenated agents is greater. The minimum alveolar concentration (MAC) for halogenated agents is greater in infants than in neonates and adults (Table 42–4). In contrast to other agents, no increase in the MAC of sevoflurane can be demonstrated between neonates and infants. Nitrous oxide does not appear to reduce the MAC of desflurane or sevof
+  CHUNK 9: book=Morgan & Mikhail, page=240
+  Section: Isoflurane dilates coronary arteries but not nearly as potently as nitroglycerin or. anesthetics at short intervals, middle-aged obese women, and persons with a familial predisposition to halothane toxicity or a personal history of toxicity are considered to be at increased risk. Isoflurane dilates coronary arteries but not nearly as potently as nitroglycerin or adenosine. Dilation of nor
+
+=== ITEM 11: Non-depolarizing NMBs: mechanisms & pharmacokinetics ===
+  CHUNK 0: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 1: book=Morgan & Mikhail, page=284
+  Section: As previously mentioned, the combination of opioids and benzodiazepines markedly. prolongation and intensification of its effects. As previously mentioned, the combination of opioids and benzodiazepines markedly reduces arterial blood pressure and peripheral vascular resistance. This synergistic interaction has often been observed in patients undergoing cardiac surgery who received benzod
+  CHUNK 2: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 3: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 4: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 5: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+  CHUNK 6: book=Morgan & Mikhail, page=352
+  Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  CHUNK 7: book=Morgan & Mikhail, page=284
+  Benzodiazepines reduce the minimum alveolar concentration of volatile anesthetics by as much as 30%
+  CHUNK 8: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 9: book=Morgan & Mikhail, page=344
+  Section: Although dosage requirements do not significantly vary with age, atracurium may be. 20 min. An infusion of 5 to 10 mcg/kg/min can effectively replace intermittent boluses. Although dosage requirements do not significantly vary with age, atracurium may be shorter acting in children and infants than in adults. Atracurium is available as a solution of 10 mg/mL. It must be stored at 2°C to 8°
+
+=== ITEM 12: Non-obstetric surgery during pregnancy ===
+  CHUNK 0: book=Morgan & Mikhail, page=1438
+  of a 0.5 mEq/mL 4.2% solution) should usually be given only for severe metabolic acidosis documented by blood gas measurements and when ventilation is adequate. It may also be administered during prolonged (>5 min) resuscitation—particularly if blood gas measurements are not readily available. The infusion rate should not exceed 1 mEq/kg/min to avoid hypertonicity and intracranial hemorrhage. As p
+  CHUNK 1: book=Morgan & Mikhail, page=1440
+  Section: Are any special monitors indicated perioperatively?. anesthesiologist, and the type of surgery. Spinal anesthesia is usually satisfactory for open appendectomies, whereas general anesthesia is appropriate for laparoscopic procedures, including laparoscopic appendectomy. Are any special monitors indicated perioperatively? In addition to standard monitors, fetal heart rate and uterine activ
+  CHUNK 2: book=Morgan & Mikhail, page=438
+  Section: Naloxone reverses the agonist activity associated with endogenous or exogenous. increase in respiratory rate. Doxapram is not a specific reversal agent and should not replace standard supportive therapy (ie, mechanical ventilation). Naloxone reverses the agonist activity associated with endogenous or exogenous opioid compounds. Flumazenil is useful in the reversal of benzodiazepine sedati
+  CHUNK 3: book=Morgan & Mikhail, page=1438
+  Approximately 1% to 2% of pregnant patients require surgery during their pregnancy
+  CHUNK 4: book=Morgan & Mikhail, page=467
+  Section: Gradual titration of flumazenil is usually accomplished by intravenous administration of. Gradual titration of flumazenil is usually accomplished by intravenous administration of 0.2 mg/min until reaching the desired degree of reversal. The usual total dose is 0.6 to 1.0 mg. Because of flumazenil’s rapid hepatic clearance, repeat doses may be required after 1 to 2 h to avoid re-sedation a
+  CHUNK 5: book=Morgan & Mikhail, page=880
+  Section: B. Intraoperative Management. B. Intraoperative Management Vena cava filters are usually placed percutaneously under local anesthesia with sedation. Patients presenting for emergency pulmonary embolectomy are critically ill. They are usually already intubated but tolerate positive-pressure ventilation poorly. Inotropic support is usually necessary until they are placed on cardiopulmonary 
+  CHUNK 6: book=Morgan & Mikhail, page=1439
+  Section: When is the fetus most sensitive to teratogenic influences?. other nutrients across the uteroplacental circulation and promote intrauterine fetal asphyxia. The stress of the operative procedure and the underlying surgical disease process may also precipitate preterm labor, which often follows intraabdominal surgery near the uterus. Laparoscopy may be safely performed. Mild to moderate mat
+  CHUNK 7: book=Miller/Baby Miller, page=626
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS ANESTHESIA FOR NONOBSTETRIC SURGERY DURING PREGNANCY The overall incidence of nonobstetric surgery during pregnancy is 1% to 2%, with trauma, appendicitis, cholecystitis, and malignancy being the most frequent indications.112 In addition to management of hemody- namics and ventilation, taking into a
+  CHUNK 8: book=Stanford CA-1, page=92
+  Section: Selected 2017 SHC Dosing and Re-dosing Guidelines. Selected 2017 SHC Dosing and Re-dosing Guidelines Recommended Dose Re-dosing (hrs) <120kg2g >120kg3g Peds: 30mg/kg, max 2g Can bolus over 3 minutes** Give over 30 minutes <80kg – 1g 80-99kg1.25g 100-120kg1.5g >120kg2g Adult and Peds 15mg/kg Give over 30-60 minutes, or <10mg/min; whichever is longer) Can be given 60-120min prior to incisio
+  CHUNK 9: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation, page=148
+  Section: 11. Smith B, Genuardi MV, Koczo A, et al. Atrial arrhythmias are associated. e148 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 11. Smith B, Genuardi MV, Koczo A, et al. Atrial arrhythmias are associated with increased mortality in pulmonary arterial hypertension. Pulm Circ. 2018;8:2045894018790316. 12. Kamada H, Kaneyama J, Inoue YY, et al. Long term prognosis in
+
+=== ITEM 13: Nutritional assessment and optimization ===
+  CHUNK 0: book=Miller/Baby Miller, page=784
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Obstructive Sleep Apnea and Chronic Obstructive Pulmonary Disease (also see Chapters 48 and 27) Preventing postoperative pulmonary complications (PPCs) is an important goal in the perioperative period. PPCs are dangerous to the patient and costly to the health system, adding an average of $25,000+ per epi
+  CHUNK 1: book=StatPearls: StatPearls   Asthma  Diagnosis, page=19
+  y: Lung volume reduction surgery evaluation, bullectomy, or pretransplant surgical assessment. Pulmonary hypertension specialist: Indicated when echocardiographic findings suggest pulmonary hypertension disproportionate to COPD severity or when right heart catheterization is under consideration. Critical care and intensivist: AECOPD requiring care in the intensive care unit, invasive mechanical ve
+  CHUNK 2: book=StatPearls: StatPearls   Chemotherapy toxicities and monitoring, page=8
+  Section: Prehabilitation and Optimization. all relevant specialties. [34] Prehabilitation and Optimization Prehabilitation should commence once surgery is planned and continue throughout the recovery period. This approach enhances functional capacity and postoperative outcomes. [38] [39] Key modifiable factors to optimize: Nutrition Poor nutritional status is associated with worse HIPEC outcomes; 
+  CHUNK 3: book=Miller/Baby Miller, page=678
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS of cardiac, pulmonary, and renal systems should be per- formed at a minimum before any procedure. No specific preoperative studies are recommended solely on the basis of age. Providers should order laboratory, imag- ing, and other tests as required by the patient's medical conditions and the risks p
+  CHUNK 4: book=Miller/Baby Miller, page=777
+  Section: The practice of anesthesiology historically focused. The practice of anesthesiology historically focused on the care of an individual patient undergoing sur- gery. The specialty has an impressive track record for improving quality and safety in patient care (also see Chapter 46). Although anesthesia practice continues to evolve, patients undergoing major surgery still expe- rience adverse
+  CHUNK 5: book=Miller/Baby Miller, page=934
+  Section: Pediatric airway, 620. Pediatric airway, 620 Pediatric cardiac arrest algorithm, 821f Pediatric trauma, 788, 789b Pediatrics, injuries in, 789b PEEP. See Positive end-expiratory pressure (PEEP) Percutaneous coronary intervention (PCI), 687–688 Performance orientation, versus learning orientation, 16 Perfusion, inadequate, monitoring for, Periodic breathing, 67 Perioperative bleeding, 430 
+  CHUNK 6: book=Miller/Baby Miller, page=931
+  Section: Noninvasive cardiac output monitors,. Noninvasive cardiac output monitors, Noninvasive positive-pressure ventilation (NPPV), 704, 743b, Nonobstetric surgery, during pregnancy, 602 Nonoperating room anesthesia (NORA), 672, 678 anesthesia services, 679b care and equipment, standard of, 680 characteristics of, 679 communication, importance of, 679 Nonopioid analgesics, 802 Nonrapid eye movem
+  CHUNK 7: book=Miller/Baby Miller, page=787
+  Section: Chapter 42 Perioperative Medicine. Chapter 42 Perioperative Medicine Modifiable Condition Screening and Diagnostic Tools Interventions: Time Frame/Phase of Care Malnutrition, nutritional PONS, MST, MUST scores Preop: Immunonutrition (IMN) and oral nutrition supplementation (ONS) × ≥1 week In-hospital: Continuation of IMN and ONS, early feeding, total parental nutrition (TPN) when indicate
+  CHUNK 8: book=Morgan & Mikhail, page=1818
+  Section: Preoperative Risk Assessment & Optimization of. navigation apps are often utilized to help organize and coordinate the patient’s perioperative care continuum and to assess care quality and care team performance. We recommend this practice. Preoperative Risk Assessment & Optimization of Functional Status Reducing the likelihood of perioperative complications improves surgical recovery. Pre
+  CHUNK 9: book=Morgan & Mikhail, page=1501
+  Section: The neuroendocrine response to stress seems to be largely preserved or, at. lead to hypoglycemia and adverse outcomes. Anesthesia practitioners are advised to be aware of changing performance benchmarks related to this measure. The neuroendocrine response to stress seems to be largely preserved or, at most, only slightly decreased in healthy older adult patients. Aging is associated with 
+
+=== ITEM 14: Obesity in obstetric anesthesia ===
+  CHUNK 0: book=Stanford CA-1, page=73
+  Section: What is laryngospasm?. What is laryngospasm? – Closure of the true vocal cords (+/- the false vocal cords) from the action of laryngeal muscles →occlusion of the glottis/laryngeal inlet – Mediated by Superior Laryngeal Nerve – Consequences include hypoxia, hypercapnia, and negative pressure pulmonary edema (NPPE) Predisposing Factors – Stage 2 of anesthesia (excitement/delirium) – Light a
+  CHUNK 1: book=Miller/Baby Miller, page=339
+  Section: Chapter 17 Spinal, Epidural, and Caudal Anesthesia. Chapter 17 Spinal, Epidural, and Caudal Anesthesia Sympathetic blockade may also be relatively spared for the same reason, although cases are described with hypotension from partial sympathectomy. The treatment is symptomatic, and the catheter should be removed and resited. to 30 minutes after injection. With a subdural block, the motor 
+  CHUNK 2: book=Miller/Baby Miller, page=911
+  Section: Index. γ-Aminobutyric acid A (GABAA) receptors, 66 γ-Aminobutyric acid type-A receptors (GABAARs), 99, 109, 109f Aminosteroid compounds, 165 adult advanced cardiovascular life support, 819 in cardiopulmonary resuscitation, 818t Amnesia increase, dexmedetomidine, Amniotic uid embolism (AFE), 601 increase, dexmedetomidine, 77 patient-controlled analgesia, 721 Analgesics, sedatives and, 750
+  CHUNK 3: book=Miller/Baby Miller, page=931
+  Section: Noninvasive cardiac output monitors,. Noninvasive cardiac output monitors, Noninvasive positive-pressure ventilation (NPPV), 704, 743b, Nonobstetric surgery, during pregnancy, 602 Nonoperating room anesthesia (NORA), 672, 678 anesthesia services, 679b care and equipment, standard of, 680 characteristics of, 679 communication, importance of, 679 Nonopioid analgesics, 802 Nonrapid eye movem
+  CHUNK 4: book=Miller/Baby Miller, page=924
+  Section: Index. in epidural anesthesia, 307 for spinal anesthesia, 301 Hydrophilic opioids, for spinal anesthesia, 301 Hydrostatic driving forces, 57 Hydrostatic pressure, 437 Hydrostatic pulmonary edema, 57 Hydroxyethyl starches, 441 Hyperaldosteronism, 526 Hyperalgesia, 720 Hyperbaric solution, 297 Hypercapnia, 62 Hypercapnic respiratory failure, 743 Hypercapnic ventilatory response (HCVR), 66, 
+  CHUNK 5: book=Miller/Baby Miller, page=922
+  Section: Index. replacement solutions, 438 synthetic colloids, 441 Fluid balance, physiology of, 437 Flumazenil, chemical structure of, 116f FMEA. See Failure Mode Effects Analysis (FMEA) Followership, trauma and, 775b, 775 Fondaparinux, 429 Forearm block technique, 327f Foreign body, in airway, 555 Fospropofol, 113 Fractional saturation, 59 Fractured hip, 569 anesthetic technique for, 569 intraop
+  CHUNK 6: book=Miller/Baby Miller, page=915
+  Section: Caloric needs, estimate of, 747t. Caloric needs, estimate of, 747t CAM-ICU. See Confusion Assessment Method for the ICU (CAM-ICU) Cancer, recurrence and morbidity, 100 Cancer pain, palliative care for, 844, Cannula-based ophthalmic regional anesthesia, 550, 551f Capillaries, recruitment of, 56 Capillary hydrostatic pressure, 437 Capnography, 356, 360f–361f Carbaminohemoglobin, 401–402 Car
+  CHUNK 7: book=Miller/Baby Miller, page=916
+  Section: Central gas supply source, anesthesia. Central gas supply source, anesthesia workstation, 233 Central integration, 65 Central nervous system (CNS) in anesthetic monitoring, 374 barbiturates, impact, 114 benzodiazepines, 116 dexmedetomidine, impact, 122 etomidate, impact, 120 inhaled anesthetics, 92, 93f irritability, 405 local anesthetic toxicity, 151 neuraxial anesthesia effects on, keta
+  CHUNK 8: book=Miller/Baby Miller, page=926
+  Section: Ischemic preconditioning, by volatile. Ischemic preconditioning, by volatile anesthetics, 95–96 Isobaric solution, 297 Isobole, 43 Isourane, 83, 95–96 Isolated nonrheumatic aortic stenosis, Isoproterenol, 74 “Isoshunt” diagrams, 60 Jackson table, 344 Jaw relaxation, incomplete, 168 Joint Commission in root cause analysis, 836 Sentinel Event program, 837 sentinel events, 836b, 836 Junctio
+  CHUNK 9: book=Miller/Baby Miller, page=936
+  Section: Index. hypertensive disorders of, 596 intrauterine fetal hypoxia, avoidance, 602 multiple births, 595 multiple gestations, 595 nonobstetric surgery during, 602 pain pathways, 584f placenta accreta spectrum, 600, 601f placenta previa, 599 preeclampsia, 596–597, 597b preterm labor, prevention, 603 retained placenta, 600 teratogenic drugs, avoidance, 602 testing, 210 trauma in, 790 anatomy o
+
+=== ITEM 15: Obstetric Pain Management ===
+  CHUNK 0: book=Miller/Baby Miller, page=633
+  Section: Chapter 33 Obstetrics. Chapter 33 Obstetrics 25. Weibel S, Jelting Y, Afshari A, etal. analgesia with remifentanil versus alternative paren- teral methods for pain management in labour. Cochrane Database Syst Rev. 2017;4:Cd011989. 26. Marwah R, Hassan S, Carvalho JC, etal. Remifentanil versus fentanyl for intravenous patient-controlled labour analgesia: an observational study. Can J Ana
+  CHUNK 1: book=MGH Housestaff Manual, page=164
+  Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Pain Management Megan Marshall G E N E R A L A P P R O A C H T O P A I N M A N A G E M E N T (NEJM 2015;373:2549; Lancet 2011;377:2236; Fast Facts app for pearls) A comprehensive pain hx is essential to guiding therapy. Goal is to maximize level of functioning and quality of life. Step-wise approach to pain management: (WHO Guidel
+  CHUNK 2: book=Stanford CA-1, page=73
+  Section: What is laryngospasm?. What is laryngospasm? – Closure of the true vocal cords (+/- the false vocal cords) from the action of laryngeal muscles →occlusion of the glottis/laryngeal inlet – Mediated by Superior Laryngeal Nerve – Consequences include hypoxia, hypercapnia, and negative pressure pulmonary edema (NPPE) Predisposing Factors – Stage 2 of anesthesia (excitement/delirium) – Light a
+  CHUNK 3: book=Miller/Baby Miller, page=608
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS transmitted from afferent nerves innervating the vagina and perineum and results from distension, ischemia, and tissue injury of these areas as the fetus descends into the pelvis and delivers. These afferent impulses travel pri- marily via the pudendal nerve to dorsal root ganglia of levels S2–S4. N
+  CHUNK 4: book=Stanford CA-1, page=24
+  Section: Preventing Awareness. Preventing Awareness Consider administering an amnestic premedication Avoid or minimize muscle relaxants when able Choose potent inhalational agents rather than TIVA if possible -> use at least 0.5-0.7 MAC Monitor brain activity using BIS or SedLine if using TIVA Consider different treatment for hypotension other than decreasing anesthetic concentration Redose IV ane
+  CHUNK 5: book=Miller/Baby Miller, page=336
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT begin within 3 days of the procedure, and approximately two-thirds start within the first 48 hours. Spontaneous reso- lution usually occurs within 7 days in the majority of cases, but a minority of patients still have symptoms at 6 months. Conservative man
+  CHUNK 6: book=Miller/Baby Miller, page=28
+  Section: Section I INTRODUCTION. Section I INTRODUCTION Specialties (ABMS) (Box 1.1). The ABA establishes and maintains criteria for board certification in anesthesiol- ogy and for subspecialty certification or special quali- fications in the United States. Similar professional certification boards exist in many other countries. Currently, formal subspecialty certification is offered in anesthesio
+  CHUNK 7: book=Miller/Baby Miller, page=632
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 1. Kacmar RM, Gaiser R. Physiologic changes of pregnancy. In: Chestnut DH, Wong CA, Tsen LC, Ngan Kee WD, Beilin Y, Mhyre JM, Bateman BT, eds. Chestnut’s Obstetric Anesthesia: Princi- ples and Practice. 6th ed. Philadelphia: Elsevier; 2020:13–37. 2. Page SM, Rollins MD. Physiology and pharmacology o
+  CHUNK 8: book=Miller/Baby Miller, page=29
+  Section: Chapter 1 Scope of Anesthesia Practice. Chapter 1 Scope of Anesthesia Practice Year Founded American Society of Anesthesiologists (ASA) Advancing the practice and securing the future. Strategic pillars include advocacy, educational resources, leadership and professional development, member engagement, quality and practice advancement, research, and scientific discovery. International Anes
+  CHUNK 9: book=Miller/Baby Miller, page=314
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT The impact of neuraxial anesthesia and analgesia on perioperative morbidity and mortality is a challenging and ongoing matter of investigation. In brief, when com- pared with systemic opioid analgesia, epidural analgesia is superior and improves respirator
+
+=== ITEM 16: Obstetric hemorrhage: risk factors and classification ===
+  CHUNK 0: book=Morgan & Mikhail, page=1385
+  Section: This chapter focuses on the practice of obstetric anesthesia. Techniques for analgesia. This chapter focuses on the practice of obstetric anesthesia. Techniques for analgesia and anesthesia during labor, vaginal delivery, and cesarean section are presented. The chapter concludes with a review of neonatal resuscitation. ANESTHETIC RISK IN OBSTETRIC PATIENTS Although most women of childbear
+  CHUNK 1: book=Morgan & Mikhail, page=1416
+  Section: Active bleeding or hemodynamic instability requires immediate cesarean section. may rarely be allowed to deliver vaginally if the bleeding is mild. Active bleeding or hemodynamic instability requires immediate cesarean section under general anesthesia. The patient should have two large-bore intravenous catheters in place; intravascular volume deficits must be replaced, and blood must be a
+  CHUNK 2: book=Morgan & Mikhail, page=1415
+  Section: Shoulder dystocia, or impaction of a shoulder against the pubic symphysis,. possible because the extremity often withdraws as the labor progresses. Shoulder dystocia, or impaction of a shoulder against the pubic symphysis, complicates 0.2% to 2% of deliveries and is one of the major causes of birth injuries. Shoulder dystocias are often difficult to predict, and the most important risk fa
+  CHUNK 3: book=Morgan & Mikhail, page=993
+  Section: What is the function of these hormones?. What is the function of these hormones? ACTH stimulates the adrenal cortex to secrete glucocorticoids. Unlike the production of mineralocorticoids, the production of glucocorticoids is dependent on ACTH secretion. TSH accelerates the synthesis and release of thyroid hormone (thyroxine). Normal thyroid function is dependent on the production of TSH.
+  CHUNK 4: book=Morgan & Mikhail, page=1417
+  Section: PREMATURE RUPTURE OF MEMBRANES &. hemorrhage, fetal distress, loss of uterine tone, hypotension with occult bleeding into the abdomen, or a combination of these. Even when epidural anesthesia is employed for labor, uterine rupture is often heralded by the abrupt onset of continuous abdominal pain and hypotension. Treatment requires volume resuscitation and immediate laparotomy, usually un
+  CHUNK 5: book=Morgan & Mikhail, page=1418
+  Section: The use of regional anesthesia in patients with chorioamnionitis is controversial. mg/dL). Gram stain of amniotic fluid obtained by amniocentesis is helpful in ruling out infection. The use of regional anesthesia in patients with chorioamnionitis is controversial because of the theoretical risk of promoting the development of meningitis or epidural abscess. However, evidence suggests that
+  CHUNK 6: book=Morgan & Mikhail, page=1385
+  Risk factors include age greater than 34 years, non-White ethnicity, multiple pregnancies, history of hypertension, previous postpartum hemorrhage, and emergency cesarean delivery
+  CHUNK 7: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation, page=9
+  Section: 2.1.1. Prevalence, Incidence, Morbidity, and. e9 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation costs of $63 031, which is $27 896 more than individu- als without AF.5 Investigators examining public and pri- vate health insurer data estimated that in US dollars in 2016, AF accounted for $28.4 billion (95% CI, $24.6 billion–$33.8 billion) in health care spending.6 2
+  CHUNK 8: book=Miller/Baby Miller, page=623
+  Section: Chapter 33 Obstetrics. Chapter 33 Obstetrics placentae, and uterine rupture are the major causes of bleeding and uncontrolled hemorrhage during the third trimester and labor. PPH occurs in approximately 3% of deliveries in the United States and is most commonly the result of uterine atony. Common problems identi- fied with obstetric hemorrhages leading to significant morbidity and mortali
+  CHUNK 9: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation, page=124
+  Section: 16. Vinereanu D, Lopes RD, Bahit MC, et al. A multifaceted intervention to im-. e124 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 16. Vinereanu D, Lopes RD, Bahit MC, et al. A multifaceted intervention to im- prove treatment with oral anticoagulants in atrial fibrillation (IMPACT-AF): an international, cluster-randomised trial. Lancet. 2017;390:1737–1746. 6.1. Ri
+
+=== ITEM 17: Obstructive sleep apnea (OSA) — perioperative implications ===
+  CHUNK 0: book=Miller/Baby Miller, page=553
+  Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease (confusion, seizures, coma), 3% hypertonic saline should be used cautiously. A risk of over-rapid correction of serum sodium levels is osmotic demyelination syndrome. Central Diabetes Insipidus Central DI is characterized by decreased ADH production resulting in
+  CHUNK 1: book=Miller/Baby Miller, page=700
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS hospital operating rooms. ASC claims were more likely to be classified as medium severity than hospital operat- ing room claims and were more likely to involve dental damage or pain. However, ASC claims were less likely to involve death or respiratory or cardiac arrest, and mean indemnity payment wa
+  CHUNK 2: book=Miller/Baby Miller, page=508
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS Obesity Hypoventilation Syndrome Obesity hypoventilation syndrome (OHS) is defined by chronic daytime hypoxemia (Pao2 <65 mm Hg) and hypoventilation (Paco2 >45 mm Hg) in an obese patient without coexisting COPD. It results from an interaction of sleep-disordered breathing, decreased respiratory driv
+  CHUNK 3: book=Miller/Baby Miller, page=922
+  Section: Index. replacement solutions, 438 synthetic colloids, 441 Fluid balance, physiology of, 437 Flumazenil, chemical structure of, 116f FMEA. See Failure Mode Effects Analysis (FMEA) Followership, trauma and, 775b, 775 Fondaparinux, 429 Forearm block technique, 327f Foreign body, in airway, 555 Fospropofol, 113 Fractional saturation, 59 Fractured hip, 569 anesthetic technique for, 569 intraop
+  CHUNK 4: book=Miller/Baby Miller, page=932
+  Section: Index. analgesics, 803 as analgesics, 131 biased μ-receptor agonists, 138, 139f bolus front-end kinetics and, 127–128 bolus injection of, simulation of, 128 clinical application of, 137 clinical indications for, 137 clinical pharmacology of, 127 codeine as, 134 constant rate infusions of, clinical implications of, 128–129 context-sensitive half-time (CSHT), simulation, 129 developments fo
+  CHUNK 5: book=Miller/Baby Miller, page=582
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 1. Gayer S, Zuleta J. Perioperative man- agement of the elderly undergo- ing eye surgery. Clin Geriatr Med. 2008;24(4):687–700. 2. Vann MA, Ogunnaike BO, Joshi GP. Sedation and anesthesia care for oph- thalmologic surgery during local/ regional anesthesia. Anesthesiology. 2007;107(3):502–508. 3. Che
+  CHUNK 6: book=Miller/Baby Miller, page=938
+  Section: Renal changes, 582. Renal changes, 582 Renal compensation, mechanisms of, Renal cortical atrophy, 647 Renal disease, 420, 498, 665 drug clearance in, 500 preoperative evaluation, 206 Renal dysfunction, 509, 707b, 707 Renal effects of neuraxial anesthesia, 295 slowness of, 402 Renal excretion, 617 Renal failure factors, 509 implications of, 133 Renal function evaluation of, tests for, 501t
+  CHUNK 7: book=Miller/Baby Miller, page=506
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS OBSTRUCTIVE SLEEP APNEA (ALSO SEE CHAPTER 48) Clinical Presentation OSA affects approximately 4% of middle-aged men and 2% of middle-aged women.10 Obesity is the most impor- tant physical characteristic associated with OSA, though OSA may be present in patients with a normal body mass index (BMI) an
+  CHUNK 8: book=Miller/Baby Miller, page=888
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE be ruled out in OSA patients.65 66 The likelihood of res- piratory failure after surgery was more than 10-fold in patients with OHS with OSA compared with patients with OSA alone.67 Serum bicarbonate level of 28 mmol/L or more can indicate metabolic compensation for chronic hypercapnia and is a useful scr
+  CHUNK 9: book=Miller/Baby Miller, page=879
+  Section: Chapter. Human interest in sleep is as old as humanity itself, but the specialty of sleep medicine is less than 50 years old.1 The characterization of sleep into periods based on elec- troencephalography (EEG) and the presence or absence of rapid eye movements (REMs) did not occur until the 1950s. Early developments in the field included the original description of sleep apnea and the dev
+
+=== ITEM 18: Obturator and lateral femoral cutaneous nerve blocks ===
+  CHUNK 0: book=Morgan & Mikhail, page=1660
+  Section: FIGURE 46–46 Lateral femoral cutaneous nerve block positioning. FIGURE 46–46 Lateral femoral cutaneous nerve block positioning FIGURE 46–47 Lateral femoral cutaneous nerve block. N, lateral femoral cutaneous nerve. Obturator Nerve Block A block of the obturator nerve is usually required for complete anesthesia of the knee and is often performed in combination with femoral and sciatic nerv
+  CHUNK 1: book=Morgan & Mikhail, page=1662
+  Section: Posterior Lumbar Plexus (Psoas Compartment) Block. between the adductor brevis and adductor magnus muscles (Figure 46–49). Local anesthetic (8–10 mL) is injected between the muscle layers to anesthetize both branches of the nerve. FIGURE 46–49 Obturator nerve block. AON, anterior branch of the obturator nerve; FA, femoral artery; FV, femoral vein; PON, posterior branch of the obturator ne
+  CHUNK 2: book=Morgan & Mikhail, page=1657
+  Section: Infrainguinal Fascia Iliaca Block. FIGURE 46–43 Ultrasound probe orientation for suprainguinal and infrainguinal fascia iliaca blocks. Infrainguinal Fascia Iliaca Block The infrainguinal fascia iliaca block is similar to the landmark-based block. The femoral vessels and fascia iliaca are identified in the same manner as an ultrasound- guided femoral nerve block. The fascia is then traced 
+  CHUNK 3: book=Stanford CA-1, page=97
+  Section: Subspecialty Anesthesia:. Subspecialty Anesthesia: Basic Sciences – Primary modality for majority of peripheral nerve localization May be combined with other techniques PRN – High frequency sounds waves 1-20MHz – Hypoechoic: structures which sound waves pass through easily (appear dark) – Hyperechoic: structures which reflect sound waves (appear white) – Higher frequency transducer= high-
+  CHUNK 4: book=Morgan & Mikhail, page=1660
+  Obturator Nerve Block A block of the obturator nerve is usually required for complete anesthesia of the knee and is often performed in combination with femoral and sciatic nerve blocks for this purpose
+  CHUNK 5: book=Morgan & Mikhail, page=1663
+  Section: Figure 46–38). The posterior lumbar plexus blocks deposit local anesthetic within the. FIGURE 46–50 Lumbar plexus blocks provide anesthesia to the femoral, lateral femoral cutaneous, and obturator nerves. n., nerve. Lumbar nerve roots emerge from the vertebral foramina into the body of the psoas muscle and travel within the muscle compartment before exiting as terminal nerves (see Figure 
+  CHUNK 6: book=Morgan & Mikhail, page=2313
+  Section: Perioperative fluid therapy. Perioperative fluid therapy intraoperative fluid therapy, 1220–1221 replacing blood loss, 1220–1221 replacing redistributive/evaporative losses, 1221 normal maintenance requirements, 1218, 1218t preexisting deficits, 1218–1219 surgical fluid losses blood loss, 1219 third-space fluid loss, 1220 Perioperative hypothermia, 1147 Perioperative mortality, 1257 Perio
+  CHUNK 7: book=Miller/Baby Miller, page=351
+  Section: Chapter 18 Peripheral Nerve Blocks. Chapter 18 Peripheral Nerve Blocks exiting the pelvis under the inguinal ligament. Femoral nerve block is suitable for surgeries of the anterior thigh (e.g., quadriceps tendon surgery) and provides analgesia for hip, femur, and knee surgeries. The femoral nerve block is typically performed distal to the point at which the femoral nerve passes under the 
+  CHUNK 8: book=Morgan & Mikhail, page=2286
+  Section: Losartan, 393t. absorption of, 170 chemical structure of, 169f uses and doses of, 170t Losartan, 393t “Loss of resistance” technique, 992 Low back pain syndromes, 1088–1094 anatomy of, 1088–1089 arthritides, 1094 bacterial infections, 1094 buttock pain, 1089 cervical pain, 1093 congenital abnormalities, 1093 degenerative disc disease, 1089–1090 from facet syndrome, 1093 herniated/prolapse
+  CHUNK 9: book=Morgan & Mikhail, page=1673
+  Section: B. Popliteal Approach. FIGURE 46–60 Subgluteal sciatic nerve block. PFCN, posterior femoral cutaneous nerve; SN, sciatic nerve; red and blue circles outline the inferior gluteal artery and vein, respectively. The block needle is inserted just lateral to the ultrasound transducer near the greater trochanter. It is advanced through the field of the ultrasound beam until the tip is visible d
+
+=== ITEM 19: Oncology patients — perioperative management ===
+  CHUNK 0: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation, page=109
+  Section: AF and cancer are at an increased risk for major bleed-. e109 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation AF and cancer are at an increased risk for major bleed- ing.18 They also are commonly on antineoplastic agents, which may have important drug interactions with OACs.19 Thus, these factors should be carefully considered in determining indication and choice of
+  CHUNK 1: book=StatPearls, page=14
+  lin allergies or specific risk factors. Inappropriate antibiotic selection, particularly use of agents not aligned with current guidelines, compromises infection prevention effectiveness. In cancer patients undergoing extensive procedures with prolonged operative times, consideration of redosing during lengthy operations and appropriate timing of antibiotic discontinuation after surgery optimize p
+  CHUNK 2: book=StatPearls: StatPearls   Pheochromocytoma & Paraganglioma, page=19
+  Section: Pearls and Other Issues. eotide scans. Treatment varies based on tumor location and symptoms. Options are close observation, surgical removal, and radiation therapy. Removal of catecholamine-secreting tumors is standard. Without removal, patients are at risk for the consequences of dangerously high blood pressure, like stroke, arrhythmia, and heart attack. However, complete removal may be
+  CHUNK 3: book=StatPearls, page=13
+  Section: Transfusion Reactions and Febrile Nonhemolytic Reactions. inage, and localized edema [178] [179] [180] . Organ or space surgical site infection can involve any area of the body beyond skin, muscle, and surrounding tissue, including intra-abdominal cavities, joints, or other body compartments, with presentations potentially subtle initially and progressively severe with systemic manifestat
+  CHUNK 4: book=Stanford CA-1, page=53
+  Section: Alternative Strategies for Management of Blood Loss During Surgery. Alternative Strategies for Management of Blood Loss During Surgery Autologous transfusion Blood can be taken and self-donated if a patient’s Hct is >34 Should be taken 4-5 week prior to surgery Reduces the risk of infection and transfusion reactions Cell saver Blood that is shed during the operation is aspirated into a re
+  CHUNK 5: book=Miller/Baby Miller, page=102
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY review on perioperative β-blockade from the American College of Cardiology/American Heart Association (ACC/ AHA) states that although perioperative continuation of β-blockade started 1 day or less before noncardiac sur- gery in high-risk patients prevents nonfatal myocardial infarctions, it increases the rate o
+  CHUNK 6: book=Stanford CA-1, page=48
+  Section: Liberal vs. Restrictive Management. Liberal vs. Restrictive Management Consequences of Volume Overload • Increased mortality and length of ICU/hospital stay • Increased myocardial morbidity • Increased pulmonary, periorbital, and gut edema • Decreased hematocrit and albumin • Worsened wound healing/ increased anastomosis dehiscense due to edema Suggestions for Rational Fluid Management • 
+  CHUNK 7: book=Stanford CA-1, page=74
+  Section: Pulmonary Aspiration. Pulmonary Aspiration – Follow NPO guidelines for routine elective cases – Use metoclopramide, H2-blockers, and antacids in high-risk patients – Consider awake, regional anesthetic (e.g. spinal or epidural for c-sections) – Consider awake, upright intubation and/or RSI – If present, leave NGT to suction – Apply cricoid pressure until ETT position confirmed • Although 
+  CHUNK 8: book=Miller/Baby Miller, page=28
+  Section: Section I INTRODUCTION. Section I INTRODUCTION Specialties (ABMS) (Box 1.1). The ABA establishes and maintains criteria for board certification in anesthesiol- ogy and for subspecialty certification or special quali- fications in the United States. Similar professional certification boards exist in many other countries. Currently, formal subspecialty certification is offered in anesthesio
+  CHUNK 9: book=Stanford CA-1, page=69
+  Section: Extubation Criteria. Extubation Criteria Delayed Emergence Extubation Overview 12% of the closed claim cases with perioperative difficult airway were from the time of extubation ASA Practice Guidelines for Management of the Difficult Airway: has not decreased the number of claims arising from injury at extubation Incidence of respiratory complications may be higher with extubation than in
+
+=== ITEM 20: Opioid Pharmacology ===
+  CHUNK 0: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 1: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 2: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 3: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 4: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 5: book=Morgan & Mikhail, page=352
+  Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  CHUNK 6: book=Morgan & Mikhail, page=1211
+  Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in an
+  CHUNK 7: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+  CHUNK 8: book=Miller/Baby Miller, page=156
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY opioid treatment.22,23 Whether acute tolerance and OIH play important roles in the management of perioperative patients is somewhat controversial, in part because the data from animal and human studies are inconsistent.23,24 Current thinking suggests that both phenomena may coexist to some degree in certain per
+  CHUNK 9: book=Miller/Baby Miller, page=605
+  Section: Chapter 33 Obstetrics. Chapter 33 Obstetrics a nonpregnant patient because of decreased oxygen reserve (decreased FRC) and increased oxygen uptake (increased metabolic rate). For these reasons, the admin- istration of supplemental oxygen, or “preoxygenation,” before general anesthesia is critical for patient safety. The pregnant patient should breathe oxygen for 3 min- utes before any ant
+
+=== ITEM 21: Opioid Pharmacology — Receptor Physiology ===
+  CHUNK 0: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 1: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 2: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 3: book=Miller/Baby Miller, page=156
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY opioid treatment.22,23 Whether acute tolerance and OIH play important roles in the management of perioperative patients is somewhat controversial, in part because the data from animal and human studies are inconsistent.23,24 Current thinking suggests that both phenomena may coexist to some degree in certain per
+  CHUNK 4: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 5: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+  CHUNK 6: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 7: book=Miller/Baby Miller, page=164
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY comments]. Anesthesiology. 1992;76: 334–341. 10. Romberg R, Sarton E, Teppema L, Mat- thes HW, Kieffer BL, Dahan A. Com- parison of morphine-6-glucuronide and morphine on respiratory depressant and antinociceptive responses in wild type and mu-opioid receptor deficient mice. Br J Anaesth. 2003;91:862–870. 11. G
+  CHUNK 8: book=Morgan & Mikhail, page=390
+  Section: α2-AGONISTS. topically as a decongestant and a mydriatic agent. Small intravenous boluses of 50 to 100 mcg (0.5 to 1 mcg/kg) of phenylephrine rapidly reverse reductions in blood pressure caused by peripheral vasodilation (eg, spinal anesthesia) in adults. The duration of action is short, lasting approximately 15 min after administration of a single dose. Tachyphylaxis may occur with pheny
+  CHUNK 9: book=Miller/Baby Miller, page=124
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY studies comparing neuraxial anesthesia with volatile anesthesia report similar rates of cognitive dysfunc- tion at 3 months.82 84 However, studies comparing volatile anesthesia with intravenous anesthesia have found worse cognitive function with volatile anesthe- sia within 1 week. Overall, it remains difficult
+
+=== ITEM 22: Opioid Use Disorder (OUD) — Perioperative Management ===
+  CHUNK 0: book=Miller/Baby Miller, page=748
+  Section: Section V THE RECOVERY PERIOD. Section V THE RECOVERY PERIOD Lidocaine, with its short half-life of 90 to 120 min- utes, is the local anesthetic of choice for continuous IV infusions for both intraoperative anesthetic and post- operative analgesia. However, caution must be used in patients with delayed elimination because of hepatic or renal insufficiency, which may cause drug accumulatio
+  CHUNK 1: book=Morgan & Mikhail, page=1040
+  Section: AMYOTROPHIC LATERAL SCLEROSIS. anesthesia providers will usually encounter acute cases requiring airway management and mechanical ventilation in the emergency room or intensive care unit. In the operating room, NMBs, if used at all, must be carefully monitored. Perioperative use of anxiolytic and opioid medication must be administered with extreme caution and carefully monitored. AMYOTROP
+  CHUNK 2: book=Miller/Baby Miller, page=748
+  Perioperative Management of Buprenorphine In light of the opioid epidemic, an increasing number of patients are receiving medication-assisted treatment for opioid use disorder (OUD)
+  CHUNK 3: book=MGH Housestaff Manual, page=212
+  Section: Alcohol Use Disorder & Withdrawal. Alcohol Use Disorder & Withdrawal Alyssa Greenhouse S U B S T A N C E U S E - G E N E R A L P R I N C I P L E S Screening: Ask all primary care pts & inpatients about current and lifetime substance use. USPSTF recs screening for unhealthy use. EtOH: AUDIT-C screens for unhealthy use, CAGE detects dependence Other substances: “How many times in the past y
+  CHUNK 4: book=Miller/Baby Miller, page=162
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY OUD have focused on improved opioid stewardship (e.g., multimodal analgesia regimens to reduce opioid exposure and limited prescribing of opioids for use after hospital discharge, among others).76 A particular question of con- temporary interest is whether intraoperative opioid usage patterns influence the inci
+  CHUNK 5: book=Miller/Baby Miller, page=698
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS STOP-BANG score ≥3 were associated with an increased risk of postoperative complications.11 The ASA has also published practice guidelines for perioperative management of OSA. The ASA Task Force recommends that the following factors be considered when determining whether inpatient or outpatient care
+  CHUNK 6: book=Miller/Baby Miller, page=165
+  Section: Chapter 9 Opioids. Chapter 9 Opioids preliminary appraisal. Clin Pharmacoki- net. 1995;29:80–94. 48. Egan TD, Lemmens HJ, Fiset P, Hermann DJ, Muir KT, Stanski DR, Shafer SL. The pharmacokinetics of the new short- acting opioid remifentanil (GI87084B) in healthy adult male volunteers. Anesthe- siology. 1993;79:881–892. 49. Egan TD, Minto CF, Hermann DJ, Barr J, Muir KT, Shafer SL. Remifen
+  CHUNK 7: book=Miller/Baby Miller, page=160
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY need underlying the development of these drugs. Drugs in this category are used for the treatment of chronic pain and for the treatment of opioid addiction. These drugs cause some degree of competitive antagonism when administered in the presence of ongoing full agonist activity (e.g., when administered after m
+  CHUNK 8: book=Miller/Baby Miller, page=754
+  Section: Section V THE RECOVERY PERIOD. Section V THE RECOVERY PERIOD for acute postoperative pain manage- ment: A meta-analysis. Anesth Analg. 2005;100:757–773. 27. Chidambaran V, Ashton M, Martin LJ, Jegga AG. Systems biology-based approaches to summarize and iden- tify novel genes and pathways associ- ated with acute and chronic postsurgical pain. J Clin Anesth. 2020;62:109738. 28. Beverly A, K
+  CHUNK 9: book=MGH Housestaff Manual, page=213
+  Section: Alcohol Use Disorder & Withdrawal. Alcohol Use Disorder & Withdrawal Alyssa Greenhouse Treatments for Moderate-Severe AUD Psychosocial: See above. 12-step progs ↑ rate of continuous abstinence compared to other counseling methods (Cochrane Rev 2020) FDA approved first line: naltrexone, acamprosate; second line: disulfiram; data suggests disulfiram efficacy only if dosing is observed (JAMA
+
+=== ITEM 23: Opioid receptor pharmacology ===
+  CHUNK 0: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 1: book=Miller/Baby Miller, page=114
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY oxide, it is higher relative to MAC immobility (0.55 and 0.64 MAC, respectively).19 Similarly, MAC-amnesia is the concentration to prevent recall in 50% of a popula- tion. This value is not as well defined, but it is likely less than MAC-awake, and it is assumed that conscious recall is abolished at anesthetic 
+  CHUNK 2: book=Morgan & Mikhail, page=1490
+  Section: The principal pharmacodynamic change associated with aging is a reduced. prevent convenient generalizations. The principal pharmacodynamic change associated with aging is a reduced anesthetic requirement, represented by a reduced minimum alveolar concentration (MAC). Older adult patients display a lower dose requirement for propofol, etomidate, opioids, benzodiazepines, and barbiturates. 
+  CHUNK 3: book=Morgan & Mikhail, page=2098
+  Section: Care of the Patient. Care of the Patient EMERGENCE FROM GENERAL ANESTHESIA Emergence from general anesthesia is ideally characterized by smooth and gradual awakening in a controlled environment. However, problems such as airway obstruction, shivering, agitation, delirium, pain, nausea and vomiting, hypothermia, and autonomic lability are frequently encountered. Patients receiving spinal o
+  CHUNK 4: book=Morgan & Mikhail, page=737
+  Section: TCI device widely available in countries outside North America. During cardiac. doses of 5–7 mcg/kg) or remifentanil (0–1 mcg/kg bolus followed by 0.25–1 mcg/kg/min). Target-controlled infusion (TCI) employs software and hardware (computerized infusion pump) to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling. For propofol, the clinician 
+  CHUNK 5: book=Morgan & Mikhail, page=390
+  Section: α2-AGONISTS. topically as a decongestant and a mydriatic agent. Small intravenous boluses of 50 to 100 mcg (0.5 to 1 mcg/kg) of phenylephrine rapidly reverse reductions in blood pressure caused by peripheral vasodilation (eg, spinal anesthesia) in adults. The duration of action is short, lasting approximately 15 min after administration of a single dose. Tachyphylaxis may occur with pheny
+  CHUNK 6: book=Miller/Baby Miller, page=156
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY opioid treatment.22,23 Whether acute tolerance and OIH play important roles in the management of perioperative patients is somewhat controversial, in part because the data from animal and human studies are inconsistent.23,24 Current thinking suggests that both phenomena may coexist to some degree in certain per
+  CHUNK 7: book=Morgan & Mikhail, page=352
+  Section: Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects. liver blood flow, such as cimetidine, will limit hepatic drug metabolism. Antiparkinsonian drugs and tricyclic antidepressants have anticholinergic side effects that augment the sedation produced by scopolamine. Long-acting sedatives, such as benzodiazepines, can delay awakening. Does anesthetic techni
+  CHUNK 8: book=Morgan & Mikhail, page=1211
+  Section: What is adequate venous access for these procedures?. What is adequate venous access for these procedures? Bleeding is a recurring problem during each phase of liver transplantation. Adequate venous access is paramount in anesthetic management. Several large-bore (14-gauge or larger) intravenous catheters should be placed above the diaphragm. Specialized 8.5F catheters can be placed in an
+  CHUNK 9: book=Morgan & Mikhail, page=2275
+  Section: Ibutilide, 380t, 1301t. Ibutilide, 380t, 1301t Ileal conduit, 710 Imidazobenzodiazepine. See Flumazenil Imipenem, 907t Imipramine, 1101t Immunoglobulin E (IgE), 540, 1271f Immunoglobulin G (IgG) antibodies, 640 Immunomodulating nutrients, 1250 Immunomodulation, 152 Implantable cardioverter-defibrillators (ICDs), 412–413, 413, 953–954 Inamrinone, 472t, 473, 907t Incisura, 353 Indirect Coom
+
+=== ITEM 24: Opioid side effects & management ===
+  CHUNK 0: book=Morgan & Mikhail, page=1763
+  Section: Tapentadol (Nucynta), a μ-opioid receptor agonist that also has norepinephrine. opioid to maintain the same analgesic effect. Physical dependence manifests in opioid withdrawal symptoms when the opioid medication is abruptly discontinued or the dose is abruptly and significantly decreased. Psychological dependence, characterized by behavioral changes focusing on drug craving, is rare in c
+  CHUNK 1: book=Morgan & Mikhail, page=461
+  Section: Clinical Uses. catecholamines. There is also evidence that some of clonidine’s antihypertensive action may occur via binding to a nonadrenergic (imidazoline) receptor. In contrast, its analgesic effects, particularly in the spinal cord, are mediated entirely via preand possibly postsynaptic α2-adrenergic receptors that block nociceptive transmission. Clonidine also has local anesthetic ef
+  CHUNK 2: book=Morgan & Mikhail, page=466
+  Section: FLUMAZENIL. Naltrexone is also a pure opioid antagonist with a high affinity for the μ receptor, but it has a significantly longer half-life than naloxone. Naltrexone is used orally for maintenance treatment of addiction. Chapter 48 reviews the use of the peripherally acting opioid receptor antagonists alvimopan and methylnaltrexone in the management and prevention of postoperative ileus 
+  CHUNK 3: book=Morgan & Mikhail, page=458
+  Section: Amisulpride (5–10 mg IV) is a dopamine (D2) receptor antagonist that has. Amisulpride (5–10 mg IV) is a dopamine (D2) receptor antagonist that has antiemetic properties without apparent significant QT prolongation and with minimal increase in serum prolactin concentration. Dexamethasone (Decadron) in doses as small as 4 mg has been shown to be as effective as ondansetron in reducing the i
+  CHUNK 4: book=Morgan & Mikhail, page=1832
+  Section: 6. Opioids—Despite the increasing use of new, nonopioid analgesic medications. cardiovascular monitoring is frequently advocated for patients receiving intravenous lidocaine, and therefore its use is currently limited to settings such as the PACU, ICU, or a monitored hospital ward. However, several centers have developed and implemented perioperative protocols to safely use intravenous li
+  CHUNK 5: book=Morgan & Mikhail, page=310
+  Section: Unique among the commonly used opioids, meperidine has minor local anesthetic. painful stimuli. Infusion of large doses of (in particular) remifentanil during general anesthesia can produce acute tolerance, in which much larger than usual doses of opioids will be required for immediate, postoperative analgesia. Relatively large doses of opioids are required to render patients unconscious 
+  CHUNK 6: book=Morgan & Mikhail, page=1830
+  Section: POSTOPERATIVE PERIOD. POSTOPERATIVE PERIOD Immediate Postoperative Care A. Strategies to Minimize Postoperative Shivering The primary cause of postoperative shivering is perioperative hypothermia, though other, nonthermoregulatory mechanisms may be involved. Postoperative shivering can greatly increase oxygen consumption, catecholamine release, cardiac output, heart rate, blood pressure, 
+  CHUNK 7: book=Morgan & Mikhail, page=1822
+  Section: Epidural blockade using a solution of local anesthetic and low-dose opioid. Epidural blockade using a solution of local anesthetic and low-dose opioid provides better postoperative analgesia at rest and with movement than systemic opioids (Figure 48–4 and Table 48–2). By sparing opioid use and minimizing the incidence of systemic opioid-related side effects, epidural analgesia facilitates
+  CHUNK 8: book=Morgan & Mikhail, page=315
+  Section: GABAPENTIN & PREGABALIN. patients with reduced creatinine clearance and in others who are dependent upon renal prostaglandin release for vasodilation to avoid hemodynamically mediated acute kidney injury (eg, patients with hypovolemia, heart failure, cirrhosis, diabetic nephropathy, or hypercalcemia). GABAPENTIN & PREGABALIN Gabapentin was introduced as an antiepileptic agent but was sere
+  CHUNK 9: book=Morgan & Mikhail, page=915
+  Section: In the absence of an epidural catheter, intercostal, paravertebral, or erector spinae. that may reduce the need for parenteral opioids. If parenteral opioids are used alone, they are best administered via a patient-controlled analgesia device. In the absence of an epidural catheter, intercostal, paravertebral, or erector spinae nerve blocks with long-acting local anesthetics may facilitat
+
+=== ITEM 25: Oxygen and Carbon Dioxide Transport ===
+  CHUNK 0: book=Morgan & Mikhail, page=1366
+  Section: 3. Facilitated diffusion—Glucose enters the fetal circulation down the concentration. any other substance. 3. Facilitated diffusion—Glucose enters the fetal circulation down the concentration gradient (no energy is consumed) facilitated by a specific transporter molecule. 4. Active transport—Amino acids, vitamin B12, fatty acids, and some ions (calcium and phosphate) utilize this mechanis
+  CHUNK 1: book=Morgan & Mikhail, page=841
+  Section: Abnormal Ligands & Abnormal Forms of Hemoglobin. beneficial, its physiological importance normally seems minor. 2,3-DPG levels may, however, play an important compensatory role in patients with chronic anemia and may significantly affect the O2-carrying capacity of blood transfusions. Abnormal Ligands & Abnormal Forms of Hemoglobin Carbon monoxide, cyanide, sulfur monoxide, and hydrogen s
+  CHUNK 2: book=Morgan & Mikhail, page=837
+  Section: End-Tidal Carbon Dioxide Tension. presence of marked abnormalities (>30% venous admixture); even then, the gradient is relatively small (2–3 mm Hg). Moreover, small increases in the gradient appreciably increase CO2 output into alveoli with relatively normal . Even moderate to severe disturbances usually fail to appreciably alter arterial CO2 because of a reflex increase in ventilation fr
+  CHUNK 3: book=Miller/Baby Miller, page=84
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY of 37°C), and RQ is the respiratory quotient (the ratio of carbon dioxide production to oxygen consumption). For example, while breathing 100% oxygen (Fio2 = 1.0) at sea level (Pb = 760 mm Hg) and the Ph2o = 47 mm Hg with Paco2 = 40 mm Hg, the alveolar Po2 (Pao2) is calcu- lated as follows. RQ is usually assume
+  CHUNK 4: book=Miller/Baby Miller, page=429
+  Section: Chapter 22 Acid–Base Balance and Blood Gas Analysis. Chapter 22 Acid–Base Balance and Blood Gas Analysis indicates the need for increased ventilatory support. In patients with chronic respiratory acidosis the key approach is to avoid prolonged hyperventilation. The alkalosis from excessive ventilation and relative hypocapnia can result in central nervous system (CNS) irritability and card
+  CHUNK 5: book=Miller/Baby Miller, page=86
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY Unlike the oxyhemoglobin dissociation curve, the dis- sociation curve for carbon dioxide is essentially linear. New-onset hypercapnia (i.e., high Paco2) may be a sign of respiratory difficulty or oversedation with opioids. Although hypercapnia itself may not be dangerous, Paco2 values greater than 80 mm Hg that
+  CHUNK 6: book=Miller/Baby Miller, page=424
+  Section: The concentrations of hydrogen and bicarbonate ions in. The concentrations of hydrogen and bicarbonate ions in plasma must be precisely regulated to optimize enzyme activity, oxygen transport, and rates of chemical reactions within cells. Each day approximately 15,000 mmol of carbon dioxide (which can generate carbonic acid as it combines with water) and 50 to 100 mEq of nonvolatile acid 
+  CHUNK 7: book=Miller/Baby Miller, page=263
+  Section: Chapter 15 Anesthesia Delivery Systems. Chapter 15 Anesthesia Delivery Systems line. The primary functions of the breathing circuit are to deliver oxygen and other gases to the patient and to eliminate carbon dioxide (CO2). The breathing system must contain a low-resistance conduit for gas flow, a reservoir that can meet the patient’s inspiratory flow demand, and an expiratory port or val
+  CHUNK 8: book=Miller/Baby Miller, page=91
+  Section: Chapter 5 Clinical Cardiac and Pulmonary Physiology. Chapter 5 Clinical Cardiac and Pulmonary Physiology Disorders of Ventilatory Control Neonates with a history of prematurity and of post- conceptual age <60 weeks may have episodes of apnea after anesthesia. Likewise, sudden infant death syn- drome may be a result of immature ventilatory control systems. Ondine's curse, originally descri
+  CHUNK 9: book=Miller/Baby Miller, page=82
+  Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY in arterial blood (Pao2). An arbitrary definition of arterial hypoxemia (Pao2<60 mm Hg) is commonly used but not necessary. Occasionally, arterial hypoxemia is used to describe a Pao2 that is low relative to what might be expected based on the inspired oxygen concentration (Fio2). Arterial hypoxemia (which re
+
+=== ITEM 26: Pacemakers — Anesthetic Management ===
+  CHUNK 0: book=Morgan & Mikhail, page=702
+  Section: Which anesthetic agents are appropriate for patients with pacemakers?. Which anesthetic agents are appropriate for patients with pacemakers? All anesthetic agents have been safely used in patients who already have pacemakers. Even volatile agents seem to have no effect on pacing electrode thresholds. Local anesthesia with moderate to deep intravenous sedation is usually used for placement
+  CHUNK 1: book=Morgan & Mikhail, page=1537
+  Section: The patient is induced with etomidate, fentanyl, and succinylcholine, using rapid. measurement of blood gases, electrolytes, and coagulation parameters. Altered pharmacokinetics of anesthetic agents from liver failure should also be kept in mind. The patient is induced with etomidate, fentanyl, and succinylcholine, using rapid sequence induction; atraumatic intubation is accomplished unev
+  CHUNK 2: book=Morgan & Mikhail, page=1022
+  Section: What if the patient has a pacemaker?. What if the patient has a pacemaker? Patients with pacemakers may safely undergo electroconvulsive treatments, but a magnet should be readily available to convert the pacemaker to a fixed mode, if necessary. SUGGESTED READINGS Armstrong MJ, Okun MS. Diagnosis and treatment of Parkinson disease: a review. JAMA. 2020;323:548. Bao FP, Zhang HG, Zhu SM. A
+  CHUNK 3: book=Morgan & Mikhail, page=1535
+  Section: Children and some adults (ie, those who are claustrophobic, developmentally. inducing ventricular fibrillation. During testing, deeper levels of sedation are required, as the defibrillation shock can be frightening and very uncomfortable. Likewise, anesthesia staff are called upon to provide anesthesia for cardioversion of patients in atrial fibrillation. These patients usually have assoc
+  CHUNK 4: book=Morgan & Mikhail, page=1146
+  Section: Preoperative evaluation of the patient with renal carcinoma should focus on tumor. FIGURE 32–4 Mayo classification of venous thrombus invasion in renal cell carcinoma. Level I: Tumor thrombus is either at the entry of the renal vein or within the inferior vena cava (IVC) less than 2 cm from the confluence of the renal vein and the IVC. Level II: Thrombus extends within the IVC more than 2
+  CHUNK 5: book=Miller/Baby Miller, page=698
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS STOP-BANG score ≥3 were associated with an increased risk of postoperative complications.11 The ASA has also published practice guidelines for perioperative management of OSA. The ASA Task Force recommends that the following factors be considered when determining whether inpatient or outpatient care
+  CHUNK 6: book=Miller/Baby Miller, page=490
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS (see Box 26.4). Preinduction intraarterial pressure monitor- ing can speed the identification and treatment of hemo- dynamic changes and should be used for patients with significant aortic regurgitation. Anesthetics with minimal effects on SVR or cardiac function should be selected. DISTURBANCES OF 
+  CHUNK 7: book=Miller/Baby Miller, page=500
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 15. Slogoff S, Keats AS. Further observations on perioperative myocardial ischemia. Anesthesiology. 1986;65(5):539–542. 16. Wu M, Liang Y, Dai Z, Wang S. Perioper- ative dexmedetomidine reduces delirium after cardiac surgery: A meta-analysis of randomized controlled trials. J Clin Anesth. 2018;50(No
+  CHUNK 8: book=Miller/Baby Miller, page=914
+  Section: Index. buffer system, 401 as epidural additive, 307 Bier, August, 333–334 Bier block, 333 Biliary system, opioids and, 132 Biliary tract, disease of, 512 anesthesia, management of, 512 bile metabolism and secretion, 512 laparoscopic cholecystectomy in, 513 pathophysiology of, 512 Biophase, 32b, 39, 41f Biphasic waveform debrillators, 813 Bite injuries, 346 Bivalirudin, 429–430 Biventricu
+  CHUNK 9: book=Miller/Baby Miller, page=490
+  A suggested algorithm for perioperative management of transvenous pacemakers/ICDs is shown in Fig
+
+=== ITEM 27: Patient Autonomy & Advance Directives ===
+  CHUNK 0: book=Miller/Baby Miller, page=874
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Box 47.5 Perioperative Considerations for Palliative Care Patients Preoperative Considerations Look in chart for advance directive or documentation of code status Determine whether the patient needs a surrogate and, if so, who that person is If DNR or other limits on treatment are listed, clarify the pati
+  CHUNK 1: book=Miller/Baby Miller, page=878
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE 57. Association of periOperative Registered Nurses. AORN Position Statement on Perioperative Care of Patients with Do- Not-Resuscitate or Allow-Natural-Death Orders. http://www.aorn.org/guidelines/ 2014. Accessed May 26, 2021. 58. Burkle CM, Swetz KM, Armstrong MH, Keegan MT. Patient and doctor attitudes 
+  CHUNK 2: book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=103
+  Section: Palliative care—deﬁned as patientand family-centered. Palliative care—deﬁned as patientand family-centered care that optimizes health-related QOL by anticipating, preventing, and treating suffering—should be integrated into the care of all patients with HF (9). Palliative care includes high-quality communication, estimation of prognosis, anticipatory guidance, addressing uncertainty; shar
+  CHUNK 3: book=Miller/Baby Miller, page=873
+  Section: Chapter 47 Palliative Care. Chapter 47 Palliative Care an important part of a patient's decision regarding code status in the perioperative period. Time-Limited Trials A time-limited trial is “an agreement between clinicians and a patient/family to use certain medical therapies over a defined period to see if the patient improves or deteriorates according to agreed-on clinical outcomes.”4
+  CHUNK 4: book=Miller/Baby Miller, page=875
+  Section: Chapter 47 Palliative Care. Chapter 47 Palliative Care patients with a DNR order who present for surgery (Table 47.2). Importantly, a DNR order may be continued, com- pletely suspended, or partially suspended in defined ways to meet patient preferences. An essential part of the ASA guidelines includes discussion and documentation regard- ing whether, and when, the original DNR order will 
+  CHUNK 5: book=Miller/Baby Miller, page=866
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Palliative care teams assess and treat the patient's symptoms, discuss goals of care, and assess and treat the patient's and family's psychosocial issues. The palliative care team takes a biopsychosocial-spiritual approach to management and recognizes the interplay between these factors in improving overa
+  CHUNK 6: book=Miller/Baby Miller, page=876
+  Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE the care of the critically ill. Palliative care should not be reserved only for dying patients. Anesthesiologists should have a working knowledge of what palliative care and hospice offer, how the anesthetic care fits into the patient's overall course, and the legal and ethical issues surrounding perioper
+  CHUNK 7: book=Miller/Baby Miller, page=877
+  Section: Chapter 47 Palliative Care. Chapter 47 Palliative Care 17. Gebauer SL, Fine PG. Palliative medicine competencies for anesthesiologists. J Clin Anesth. 2014;26:429–431. 18. Kwok AC, Semel ME, Lipsitz SR, etal. The intensity and variation of surgical care at the end of life: A retrospective cohort study. Lancet. 2011;378:1408– 1413. 19. Value of the Professional Nurse in Pallia- tive Care.
+  CHUNK 8: book=Society Guideline, page=49
+  Section: Rationale. Patients with sepsis or septic shock are at high risk of multi-organ failure, long-term functional sequelae, and death. Some patients may accept any and all treat- ments for their condition, but others may consider limitations depending on prognosis, invasiveness of interventions, and predicted quality of life (QoL). A discussion of goals of care and prognosis is essen- tial to
+  CHUNK 9: book=Miller/Baby Miller, page=933
+  Section: PAC. See Pulmonary artery catheter. PAC. See Pulmonary artery catheter PACE technique. See Probe, Alert, Challenge, Emergency Action (PACE) technique Packed red blood cells (PRBCs), 448 transfusion of, 619 PaCO2. See Arterial carbon dioxide tension (PaCO2) PACU. See Postanesthesia care unit Paddle electrodes, proper placement, 813f, 813 acute. See Acute pain analgesic delivery systems, 72
+
+=== ITEM 28: Patient Positioning for Neurosurgery ===
+  CHUNK 0: book=Morgan & Mikhail, page=978
+  Section: The ability to rapidly provide controlled ventilation and general anesthesia for. amnesia. Sedation should be omitted, however, if the patient already has increased ICP. The ability to rapidly provide controlled ventilation and general anesthesia for emergency craniotomy is mandatory but is complicated by the platform and localizing frame that is attached to the patient’s head for the pro
+  CHUNK 1: book=Morgan & Mikhail, page=966
+  Section: CHAPTER 27. CHAPTER 27 Anesthesia for Neurosurgery KEY CONCEPTS Regardless of the cause, intracranial masses present symptoms and signs according to growth rate, location, and intracranial pressure. Slowly growing masses are frequently asymptomatic for long periods (despite relatively large size), whereas rapidly growing ones may present when the mass remains relatively small. Computed to
+  CHUNK 2: book=Stanford CA-1, page=70
+  Section: Causes of Failed Extubation. Causes of Failed Extubation Checklist prior to extubation (to help avoid failure) Failure to oxygenate TV >5cc/kg & VC > 15cc/kg SpO2 >90% with FiO2 < 0.4 Failure to ventilate Same TV parameters above NM Blockade appropriately reversed RR >6 & <30? No excessive hypercapnea (EtCO2 < 50s-60) clearance of pulmonary secretions Oropharynx suctioned? Intact gag refl
+  CHUNK 3: book=Miller/Baby Miller, page=368
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT is improved in the prone position with the abdomen hanging freely. The prone position has been used to improve respiratory function and mortality rate in patients with acute respiratory distress syndrome8(also see Chapter 41). Proper prone positioning of p
+  CHUNK 4: book=Miller/Baby Miller, page=370
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT BITE INJURIES Transcranial motor-evoked potentials (Tc-MEPs) are becoming more commonly used for both spine surgi- cal procedures and neurosurgical procedures (also see Chapter 32). Tc-MEPs involve contraction of the tem- poralis and masseter muscle, which
+  CHUNK 5: book=Miller/Baby Miller, page=374
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT 6. Warner ME, LaMaster LM, Thoem- ing AK, etal. Compartment syndrome in surgical patients. Anesthesiology. 2001;94(4):705–708. 7. Anema JG, Morey AF, McAninch JW, etal. Complications related to the high lithotomy position during urethral recon- struction
+  CHUNK 6: book=Miller/Baby Miller, page=911
+  Section: Index. γ-Aminobutyric acid A (GABAA) receptors, 66 γ-Aminobutyric acid type-A receptors (GABAARs), 99, 109, 109f Aminosteroid compounds, 165 adult advanced cardiovascular life support, 819 in cardiopulmonary resuscitation, 818t Amnesia increase, dexmedetomidine, Amniotic uid embolism (AFE), 601 increase, dexmedetomidine, 77 patient-controlled analgesia, 721 Analgesics, sedatives and, 750
+  CHUNK 7: book=Stanford CA-1, page=42
+  Section: Difficult Airway Algorithm. Difficult Airway Algorithm According to the ASA, "a difficult airway is defined as the clinical situation in which a conventionally trained anesthesiologist experiences difficulty with facemask ventilation of the upper airway, difficulty with tracheal intubation, or both. The difficult airway represents a complex interaction between patient factors, the clinica
+  CHUNK 8: book=Stanford CA-1, page=69
+  Section: Extubation Criteria. Extubation Criteria Delayed Emergence Extubation Overview 12% of the closed claim cases with perioperative difficult airway were from the time of extubation ASA Practice Guidelines for Management of the Difficult Airway: has not decreased the number of claims arising from injury at extubation Incidence of respiratory complications may be higher with extubation than in
+  CHUNK 9: book=Stanford CA-1, page=87
+  Section: Pre-operative Evaluation. Pre-operative Evaluation • A pre-op template can be found and downloaded at http://ether.stanford.edu/ ca1_new/ca1_preop_ne w1.html • Link includes a useful guide for chart review and how to assess relevant comorbidities Chart Review Pre-op Tips • Don’t forget to include other pertinent studies, such as PFTs, TTE or stress echo results, Holter or Zio patch result
+
+=== ITEM 29: Pediatric Neuroanesthesia ===
+  CHUNK 0: book=Morgan & Mikhail, page=28
+  Section: Safar have been pioneers in cardiopulmonary resuscitation, and anesthesiologists. The practice of anesthesia has changed dramatically since the days of John Snow. The modern anesthesiologist must be both a perioperative consultant and a deliverer of care to patients. In general, anesthesiologists are responsible for nearly all “noncutting” aspects of the patient’s medical care in the imme
+  CHUNK 1: book=Morgan & Mikhail, page=28
+  An increasing number of practitioners pursue subspecialty fellowships in anesthesia for cardiac surgery in adults (see Chapter 22); critical care (see Chapter 57); neuroanesthesia (see Chapter 27); obstetric anesthesia (see Chapter 41); pediatric anesthesia (see Chapter
+  CHUNK 2: book=Morgan & Mikhail, page=1541
+  Section: Major contraindications to neuraxial anesthesia include lack of consent,. Major contraindications to neuraxial anesthesia include lack of consent, coagulation abnormalities, severe hypovolemia, elevated intracranial pressure, and infection at the site of injection. For epidural anesthesia, a sudden loss of resistance (to injection of air or saline) is encountered as the needle passes thro
+  CHUNK 3: book=Morgan & Mikhail, page=2299
+  Section: Neurosurgery, 603–622. cerebral metabolism, 586 cerebrospinal fluid, 590–591 intracranial pressure, 591–592 Neurosurgery, 603–622 case discussion on, 619–621 craniotomy and anesthesia in for arteriovenous malformation, 617 for intracranial aneurysms, 614–617 for mass lesions, 605–607. See also Craniotomy, for mass lesions head trauma, 611–614 intracranial hypertension, 603–605 posterior f
+  CHUNK 4: book=Morgan & Mikhail, page=2334
+  Section: Strong ion difference (SID), 1194, 1195, 1195f. Strong ion difference (SID), 1194, 1195, 1195f ST-segment elevation myocardial infarction (STEMI), 1340 Subarachnoid hemorrhage (SAH), 614–615, 615t Subdural hematoma, 625, 835 Subdural space, 971 Subgluteal sciatic block, 1048f Subluxation, 1089 Subparaneural block, 1049 Substance abuse, 188, 636, 636t Substance P, 285, 288, 1079–1080 Subst
+  CHUNK 5: book=Morgan & Mikhail, page=2341
+  Section: TURP syndrome, 702–705. septicemia, 704 TURP syndrome, 702–705 manifestations of, 703t preoperative considerations, 702 surgical complications, 703t Transversus abdominis plane (TAP) block description of, 1063f–1064f, 1063–1064, 1098 pediatric anesthesia uses of, 921–922 Trauma anesthesia, 824 Trauma/emergency surgery abdominal, 842–845 airway, 824–825 breathing, 825–826 case discussion o
+  CHUNK 6: book=Miller/Baby Miller, page=31
+  are spent learning about all aspects of clinical anesthesia, including subspecialty experience in obstetric anesthesia, pediatric anesthesia, cardiothoracic anesthesia, neuroanesthesia, preoperative medicine, postanesthesia care, regional anesthesia, and pain management
+  CHUNK 7: book=Miller/Baby Miller, page=209
+  Soriano *This work was supported by the National Institutes of Health grant 1-R01 HD06 1136–01A1 (MEM) and the Boston Children's Hospital Endowed Chair in Pediatric Neuroanesthesia (SGS)
+  CHUNK 8: book=Miller/Baby Miller, page=647
+  Section: Chapter 34 Pediatrics. Chapter 34 Pediatrics physiologic changes in the parent, including syncope. The temperament of both the child and the parent should be considered before the suggestion of PPIA.28 A recent Cochrane review of nonpharmacologic interventions for assisting anesthetic induction in children concluded that PPIA is not useful. Other nonpharmacologic techniques, including low
+  CHUNK 9: book=Miller/Baby Miller, page=209
+  Section: A major concern within the specialty of anesthesiology. A major concern within the specialty of anesthesiology is the impact of general anesthesia and sedative drugs on neurodevelopment and cognition across the life span. Although definitive conclusions cannot be made, anesthesia providers should follow the progress of our knowledge regarding long-term effects of anesthesia on the develop
+
+=== ITEM 30: Perioperative Myocardial Infarction — Recognition & Management ===
+  CHUNK 0: book=Morgan & Mikhail, page=703
+  Section: ACCF/AHA guideline for the management of ST-elevation myocardial infarction,. Levine GN, Bates ER, Bittl JA, et al. 2016 ACC/AHA guideline focused update on duration of dual antiplatelet therapy in patients with coronary artery disease: a report of the American College of Cardiology/American Heart Association task force on clinical practice guidelines: an update of the 2011 ACCF/AHA/SCAI 
+  CHUNK 1: book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation, page=146
+  Section: 7. Rozen G, Elbaz-Greener G, Marai I, et al. Utilization and complications of. e146 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation 7. Rozen G, Elbaz-Greener G, Marai I, et al. Utilization and complications of catheter ablation for atrial fibrillation in patients with hypertrophic cardiomy- opathy. J Am Heart Assoc. 2020;9:e015721. 10.8. Adult Congenital Heart Disea
+  CHUNK 2: book=Morgan & Mikhail, page=398
+  Section: NEBIVOLOL. min. Total doses rarely exceed 0.15 mg/kg. Propranolol is supplied in 1-mL ampules containing 1 mg. Nebivolol is a newer generation β-blocker with a high affinity for β1-receptors. The drug is unique in its ability to cause direct vasodilation via its stimulatory effect on endothelial nitric oxide synthase. Carvedilol is a mixed βand α-blocker used in the management of chronic 
+  CHUNK 3: book=Morgan & Mikhail, page=622
+  FIGURE 21–1 Stepwise approach to perioperative cardiac assessment for coronary artery disease (CAD). Colors correspond to the following classes of recommendations: class I, green; class IIa, yellow; class IIb, orange; class III, red. Step 1: In patients scheduled for surgery with risk factors for or known CAD, determine the urgency of surgery. If an emergency, then determine the clinical risk fact
+  CHUNK 4: book=Morgan & Mikhail, page=617
+  Section: Cardiovascular diseases—particularly hypertensive, ischemic, congenital, and valvular. Cardiovascular diseases—particularly hypertensive, ischemic, congenital, and valvular heart disease—are among the medical illnesses most frequently encountered in anesthetic practice and are a major cause of perioperative morbidity and mortality. The neuroendocrine response to surgical stimulation and t
+  CHUNK 5: book=Morgan & Mikhail, page=619
+  Section: The following conditions are associated with increased risk:. The following conditions are associated with increased risk: • Ischemic heart disease (history of MI, evidence on electrocardiogram [ECG], chest • Congestive heart failure (dyspnea, pulmonary edema) • Cerebral vascular disease (stroke) • High-risk surgery (vascular, thoracic) • Diabetes mellitus • Preoperative creatinine greate
+  CHUNK 6: book=Morgan & Mikhail, page=414
+  Section: Which surgical procedures might benefit most from a controlled hypotensive. Which surgical procedures might benefit most from a controlled hypotensive technique? Controlled hypotension has been successfully used during cerebral aneurysm repair, brain tumor resection, total hip arthroplasty, radical neck dissection, radical cystectomy, major spine surgery, and other operations associated w
+  CHUNK 7: book=Morgan & Mikhail, page=631
+  Section: Serum electrolyte levels (K) should be determined in patients taking diuretics or. show evidence of ischemia, conduction abnormalities, an old infarction, or LVH or strain. A normal ECG does not exclude CAD or LVH. Similarly, a normal heart size on a chest radiograph does not exclude ventricular hypertrophy. Echocardiography is a sensitive test for LVH and can be used to evaluate ventricu
+  CHUNK 8: book=Morgan & Mikhail, page=699
+  Section: What is appropriate management for this patient?. life-threatening bradyarrhythmias (third-degree AV block). Intracardiac electrocardiographic recordings would be necessary to confirm the site of the conduction delay. What is appropriate management for this patient? Cardiac evaluation is required because of the symptomatic bifascicular block. However, hip fractures must be repaired prompt
+  CHUNK 9: book=Morgan & Mikhail, page=693
+  Section: Important side effects include nephrotoxicity, bone marrow suppression, hepatotoxicity,. and serious problem that limits the life of the transplant. Moreover, myocardial ischemia and infarction are almost always silent because of the denervation. Because of this, patients must undergo periodic evaluations, including angiography, for assessment of coronary atherosclerosis. Immunosuppressiv
+
+=== ITEM 31: Perioperative antibiotic prophylaxis ===
+  CHUNK 0: book=Morgan & Mikhail, page=1820
+  Section: Antibiotic Prophylaxis. medications are now commonly used. Because neuraxial anesthesia techniques are commonly employed, the appropriate timing of antithrombotic agents in these cases is critically important to minimize the risk of epidural hematoma. International recommendations on the management of anticoagulated patients receiving regional anesthesia are discussed in Chapter 45. Antib
+  CHUNK 1: book=Morgan & Mikhail, page=1820
+  Antibiotic Prophylaxis Appropriate selection and timing of preoperative antibiotic prophylaxis reduce the risk of surgical site infections
+  CHUNK 2: book=Morgan & Mikhail, page=1820
+  Much recent effort has focused on developing surgical and anesthetic techniques that reduce the surgical stress response, with the goal of lowering the risk of perioperative organ dysfunction and perioperative complications
+  CHUNK 3: book=Morgan & Mikhail, page=2152
+  Wounds are common sources of sepsis in postoperative and trauma patients; restricting antibiotic prophylaxis to the immediate perioperative time appears to decrease the incidence of postoperative infections
+  CHUNK 4: book=Stanford CA-1, page=92
+  Section: Selected 2017 SHC Dosing and Re-dosing Guidelines. Selected 2017 SHC Dosing and Re-dosing Guidelines Recommended Dose Re-dosing (hrs) <120kg2g >120kg3g Peds: 30mg/kg, max 2g Can bolus over 3 minutes** Give over 30 minutes <80kg – 1g 80-99kg1.25g 100-120kg1.5g >120kg2g Adult and Peds 15mg/kg Give over 30-60 minutes, or <10mg/min; whichever is longer) Can be given 60-120min prior to incisio
+  CHUNK 5: book=Stanford CA-1, page=91
+  Section: Why Antibiotics?. Why Antibiotics? In 1984 a study including 51 acute care hospitals in New York State found that surgical site infection (SSI) was the most common adverse surgical event (and the second most common adverse event overall). Perioperative antibiotic prophylaxis – administration of abx prior to surgery to prevent surgical site infections, but best practice also includes steri
+  CHUNK 6: book=Morgan & Mikhail, page=680
+  Section: Anesthetic Management. replacement of another valve. Anesthetic Management A. Objectives Hemodynamic goals should be directed primarily toward the underlying disorder. Hypovolemia and factors that increase right ventricular afterload, such as hypoxia and acidosis, should be avoided to maintain effective right ventricular stroke volume and left ventricular preload. Positive end-expiratory 
+  CHUNK 7: book=Morgan & Mikhail, page=1820
+  The stress response can adversely affect organ function and perioperative outcomes and may include induction of a catabolic state as well as a transient, but reversible, state of insulin resistance, characterized by decreased peripheral glucose uptake
+  CHUNK 8: book=Morgan & Mikhail, page=1820
+  It can be moderated by perioperative interventions, including maintenance of normothermia, neural blockade, and reduction in procedural invasiveness
+  CHUNK 9: book=Morgan & Mikhail, page=2030
+  Section: EYE INJURY. EYE INJURY A wide range of perioperative eye injuries from simple corneal abrasion to blindness have been reported. Corneal abrasion is by far the most common and transient eye injury. The ASA Closed Claims Project identified a small number of claims for abrasion, in which the cause was rarely identified (20%) and the incidence of permanent injury was low (16%). It also identi
+
+=== ITEM 32: Perioperative anticoagulation management ===
+  CHUNK 0: book=Stanford CA-1, page=53
+  Section: Alternative Strategies for Management of Blood Loss During Surgery. Alternative Strategies for Management of Blood Loss During Surgery Autologous transfusion Blood can be taken and self-donated if a patient’s Hct is >34 Should be taken 4-5 week prior to surgery Reduces the risk of infection and transfusion reactions Cell saver Blood that is shed during the operation is aspirated into a re
+  CHUNK 1: book=Miller/Baby Miller, page=242
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT Apr;127(4):275–280. doi:10.1016/j. amjmed.2013.11.014. Epub 2013 Dec 11. PMID: 24333200. 9. Fleisher LA, Fleischmann KE, Auerbach AD, etal. 2014 ACC/AHA guideline on perioperative cardiovascular evaluation and management of patients under- going noncardia
+  CHUNK 2: book=Miller/Baby Miller, page=226
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT Hypertension is a major cause of death worldwide and is a risk factor for cardiovascular disease, stroke, and end-stage renal disease. As a perioperative risk factor, hypertension is most significant when end-organ damage is present. There have been no hig
+  CHUNK 3: book=Miller/Baby Miller, page=456
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT PERIOPERATIVE MANAGEMENT OF ANTI- THROMBOTIC THERAPY The perioperative management of patients who require chronic anticoagulation or antiplatelet therapy involves balancing the risk of surgical bleeding against the risk of developing postoperative thromboe
+  CHUNK 4: book=Miller/Baby Miller, page=664
+  Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS 1. Andropoulos DB. Physiology and molec- ular biology of the developing circula- tion. In: Andropoulos DB, ed. Anesthesia for Congenital Heart Disease. 3rd ed. Oxford, UK: Wiley Blackwell; 2015: 2. Lerman J. Inhalation agents in pediat- ric anaesthesia—An update. Curr Opin Anaesthesiol. 2007;20:221–
+  CHUNK 5: book=Miller/Baby Miller, page=228
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT High bleeding risk procedures (30-day risk of major bleed >2%)a •Major surgery with extensive tissue injury •Cancer surgery, especially solid tumor resection •Major orthopedic surgery, including shoulder replacement surgery •Reconstructive plastic surg
+  CHUNK 6: book=Miller/Baby Miller, page=751
+  Section: Chapter 40 Perioperative Pain Management. Chapter 40 Perioperative Pain Management issue in anesthesia management. Traditionally, the inci- dence of spinal hematoma is estimated at approximately 1 in 150,000 for epidural block, with a less frequent inci- dence of 1 in 220,000 for spinal blocks.55 Low-molecular- weight heparin was used in Europe without significant problems before its intr
+  CHUNK 7: book=MGH Housestaff Manual, page=14
+  Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver disease (cirrhosis or Bili 2x ULN or AST/ALT/AlkPhos 3x ULN); stroke; bleeding history; labile INR (<60% i
+  CHUNK 8: book=Miller/Baby Miller, page=370
+  Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT BITE INJURIES Transcranial motor-evoked potentials (Tc-MEPs) are becoming more commonly used for both spine surgi- cal procedures and neurosurgical procedures (also see Chapter 32). Tc-MEPs involve contraction of the tem- poralis and masseter muscle, which
+  CHUNK 9: book=Miller/Baby Miller, page=229
+  Section: Chapter 13 Preoperative Evaluation. Chapter 13 Preoperative Evaluation as dual antiplatelet therapy (DAPT). Primary prevention is indicated in patients at higher risk of atherosclerotic cardiovascular disease but not at increased bleeding risk.27 Secondary prevention with antiplatelet agents may include patients with stable coronary artery disease, acute coronary syndromes, postcoronary a
+

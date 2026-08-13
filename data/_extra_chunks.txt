@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "<string>", line 11, in <module>
+  File "C:\Users\Dean\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\ue014' in position 108: character maps to <undefined>
+=== [44] Approach to Palpitations ===
+  CHUNK 0: StatPearls: StatPearls   Atrial Fibrillation and Atrial Flutter p7
+    Section: Complications associated with AF include the following: [30]. hs-CRP) and troponins have been implicated with adverse outcomes in AF patients. [29] Complications associated with AF include the following: [30] Thromboembolism including stroke New-onset heart failure or worsening of existing heart failure Acute myocardial infarction Hemodynamic instability leading to cardiogenic shock Sudde
+  CHUNK 1: StatPearls: StatPearls   Pheochromocytoma & Paraganglioma p17
+    portion, 65%, of individuals initially presenting with metastatic disease will experience recurrent metastatic disease. Those with metastatic disease exhibit a five-year survival rate ranging between 34% and 60%, with recurrence typically occurring around 5.5 years. Notably, 31% of individuals initially diagnosed with suspected benign disease may encounter recurrence, manifesting even 50 years aft
+  CHUNK 2: StatPearls: StatPearls   Sarcoidosis p6
+    Section: Enhancing Healthcare Team Outcomes. ea, chest pain, palpitations, syncope, visual disturbances, neurologic symptoms, or persistent fatigue. The early recognition of cardiac, ocular, neurologic, and progressive pulmonary sarcoidosis is essential to prevent irreversible organ damage. Smoking cessation and avoidance of environmental or occupational lung irritants should be encouraged. Patien
+  CHUNK 3: Stanford CA-1 p43
+    Section: STEP 1: Assess the Likelihood of Airway Management Problems. STEP 1: Assess the Likelihood of Airway Management Problems If at least 3 of the following predictors of difficult or impossible face mask ventilation are present, be wary… And of course… history of prior difficulty DIFFICULT Mask Ventilation • Mallampati III or IV • Mandibular protrusion decreased • Beard • Obesity (BMI >30 kg/
+  CHUNK 4: Stanford CA-1 p42
+    Section: Difficult Airway Algorithm. Difficult Airway Algorithm According to the ASA, "a difficult airway is defined as the clinical situation in which a conventionally trained anesthesiologist experiences difficulty with facemask ventilation of the upper airway, difficulty with tracheal intubation, or both. The difficult airway represents a complex interaction between patient factors, the clinica
+  CHUNK 5: MGH Housestaff Manual p49
+    Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interpretation of Chest Imaging Sanjeethan Baksh C H E S T X-R A Y Systematic approach to CXR (ABCDEF approach): 1. (A)ssess technical quality and (A)irways: Rotation: ensure spinous process bisect btwn medial end of clavicles Lung volumes: adequate inspiratory effort is 9-10 posterior ribs Penetration: good when vertebral bodies visibl
+  CHUNK 6: MGH Housestaff Manual p22
+    Section: Non-Invasive Cardiac Testing. Non-Invasive Cardiac Testing Lucas Cofer B A S I C S Non-invasive cardiac testing includes stress/functional and anatomic testing. The best approach to testing depends upon: 1) the clinical question being asked, 2) symptom (often chest pain) acuity, 3) baseline CVD risk/known CAD hx, and 4) patient-specific contraindications. R O L E O F N O NI N V A S I V E 
+  CHUNK 7: Stanford CA-1 p44
+    Section: STEP 4: Awake vs. Post-induction Algorithms. STEP 4: Awake vs. Post-induction Algorithms Awake Options Awake Intubation – key is topicalization • Non-invasive options: • Conventionally, fiberoptic intubation • Also consider laryngoscopy (direct, video) • Topicalize airway with local anesthetic or perform select nerve blocks • A fully-awake patient can tolerate a Glidescope if the airway i
+
+=== [50] ACLS & Cardiac Arrest ===
+  CHUNK 0: Morgan & Mikhail p2057
+    Section: Changes in drug recommendations are a notable reaffirmation of epinephrine. guidelines suggest that a lack of a PETco2 greater than 10 mm Hg after 20 min in an intubated patient is associated with reduced likelihood of ROSC. An exception to this determination applies to nonintubated patients, in whom a specific PETCO2 cutoff should not be used to aid in the decision to end resuscitative e
+  CHUNK 1: StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole) p7
+    Section: Compression-to-ventilation ratio in cardiac arrest. ary and secondary assessments. Cardiac arrest may be mistaken for respiratory arrest when a patient presents with agonal gasps instead of adequate respirations. Patients with true respiratory arrest rapidly develop cardiac arrest if adequate airway management is not provided immediately. Management of respiratory arrest involves both BLS
+  CHUNK 2: Miller/Baby Miller p834
+    Section: Cardiopulmonary resuscitation (CPR) was initially defined. Cardiopulmonary resuscitation (CPR) was initially defined over 50 years ago as the administration of mouth-to-mouth ventilation and closed chest cardiac compressions in a pulseless patient. Since that time, significant advances in CPR and cardiovascular life support have been made. Today, the early descriptions of CPR are termed b
+  CHUNK 3: Miller/Baby Miller p838
+    Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE be useful as a marker of CPR quality. Data from the AHA Get With the Guidelines Resuscitation registry show a higher likelihood of ROSC when CPR quality is moni- tored using either Petco2 or diastolic blood pressure.2 A prolonged reduction in Petco2 should not be used in isolation for prognostication, and
+  CHUNK 4: Miller/Baby Miller p614
+    Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS are commonly administered in doses similar to those used in the spinal portion of a CSE (e.g., 2.5 mg bupivacaine with 15 mcg fentanyl) to provide analgesic onset within minutes. This type of labor analgesia lasts about 60 to 90 minutes and is significantly less than that needed for cesarean deliver
+  CHUNK 5: Marino ICU Book p208
+    Section: Cardiac Arrest. Cardiac Arrest 1 9 1 sternum with the elbows locked and the arms straight. Each compression is a tluT1st delivered through the heel of the hands (one on top of the other) to depress the ster­ num 1.5 to 2 inches. When the compression is released, the sternum should be allowed to recoil completely be­ fore the next compression. 2. The rate of chest compressions should be at
+  CHUNK 6: StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole) p1
+    Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK613285 URL: https://www.ncbi.nlm.nih.gov/books/NBK613285/ Topic: ACLS: Non-Shockable Rhythms (PEA & Asystole) Article Title: Advanced Cardiac Life Support (ACLS) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): 
+  CHUNK 7: Marino ICU Book p208
+    ADVANCED LIFE SUPPORT Advanced life support (also called advanced cardiac life support or ACLS) includes measures for ventilatory support (intubation and mechanical ventilation), hemodynamic sup­ port (drugs) and cardiac rhythm support (defibrillation)
+
+=== [51] ACLS: Non-Shockable Rhythms (PEA & Asystole) ===
+  CHUNK 0: Society Guideline p78
+    Section: 552. McPeake J, Hirshberg EL, Christie LM, et al: Models of peer. 552. McPeake J, Hirshberg EL, Christie LM, et al: Models of peer support to remediate post-intensive care syndrome: A report developed by the society of critical care medicine thrive in- ternational peer support collaborative. Crit Care Med 2019; 47:e21–e27 553. Mikkelsen ME, Jackson JC, Hopkins RO, et al: Peer support as a
+  CHUNK 1: Miller/Baby Miller p843
+    Section: Chapter 45 Cardiopulmonary Resuscitation. Chapter 45 Cardiopulmonary Resuscitation 8 Hs 8 Ts Toxins (anaphylaxis/ Hydrogen ions (acidosis) Tension pneumothorax Thrombosis in coronary Thrombus in pulmonary Malignant hyperthermia QT interval prolongation Hypervagal response Pulmonary hypertension Table 45.2 Major Causes of Cardiovascular Collapse in the Perioperative Period rhythm (see Fig.
+  CHUNK 2: Miller/Baby Miller p467

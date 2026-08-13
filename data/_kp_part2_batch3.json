@@ -1,0 +1,467 @@
+[
+  {
+    "id": "ra-eam-1",
+    "topic": "RA: extra-articular manifestations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "A patient with inflammatory arthritis develops conjunctivitis, urethritis, and keratoderma blennorrhagicum; what extra-articular manifestations are present and what is the underlying process?",
+    "answer": "Ocular (conjunctivitis/uveitis), GU (urethritis/cervicitis), and skin (keratoderma blennorrhagicum, circinate balanitis) manifestations; part of the spondyloarthropathy spectrum (reactive arthritis)",
+    "rationale": "Spondyloarthropathies share extra-articular manifestations reflecting shared HLA-B27-associated mucosal inflammation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Reactive arthritis",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-eam-2",
+    "topic": "RA: extra-articular manifestations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What does a thorough physical examination in suspected inflammatory arthritis with extra-articular features assess beyond the joints?",
+    "answer": "Joint involvement, enthesitis, dactylitis, and extra-articular manifestations: eye (conjunctivitis/uveitis), skin (psoriasiform rash, keratoderma blennorrhagicum), nail changes, oral ulcers, and genital lesions",
+    "rationale": "Spondyloarthropathies are multisystem diseases; systematic extra-articular assessment guides diagnosis and monitors complications.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Reactive arthritis",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-eam-3",
+    "topic": "RA: extra-articular manifestations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What diagnostic tests may identify the causative pathogen in reactive arthritis, and what does a negative result mean?",
+    "answer": "Chlamydia trachomatis swabs or urine PCR; identifies pathogen in about half of cases; negative result does NOT exclude the diagnosis",
+    "rationale": "Reactive arthritis is a sterile joint process; pathogen detection from GU/GI sites supports diagnosis but absence doesn't rule it out.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Reactive arthritis",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-eam-4",
+    "topic": "RA: extra-articular manifestations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the role of HLA-B27 testing in diagnosing reactive arthritis?",
+    "answer": "HLA-B27 testing may support the diagnosis but is not required; absence does NOT rule out reactive arthritis",
+    "rationale": "HLA-B27 is associated with spondyloarthropathies but is neither sensitive nor specific enough to confirm or exclude diagnosis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Reactive arthritis",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-eam-5",
+    "topic": "RA: extra-articular manifestations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the definition of reactive arthritis as a disease entity?",
+    "answer": "Sterile inflammatory arthritis developing after GI or GU infection; presents with musculoskeletal and extra-articular manifestations (eyes, skin, GU tract)",
+    "rationale": "Reactive arthritis is triggered by infection at a distant mucosal site; joints are inflamed but sterile (no organism in synovial fluid).",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Reactive arthritis",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Septic arthritis"
+  },
+  {
+    "id": "ra-ttt-1",
+    "topic": "RA: treatment & treat-to-target strategy",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What pharmacologic strategy for AKI prevention in the postoperative period is NOT supported by evidence despite increasing urine output?",
+    "answer": "Low-dose dopamine increases urine output but is NOT renoprotective and is not recommended for prevention or treatment of AKI",
+    "rationale": "Dopamine-mediated renal vasodilation does not prevent tubular injury; it may mask oliguria without improving outcomes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 732
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-ttt-2",
+    "topic": "RA: treatment & treat-to-target strategy",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "In PACU oliguria workup, what readily reversible cause must be excluded first?",
+    "answer": "Urinary catheter obstruction or dislodgment (easily remedied); assess urine output <0.5 mL/kg/h for reversible causes before attributing to AKI",
+    "rationale": "Mechanical catheter problems mimic renal oliguria; exclusion prevents unnecessary interventions.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 732
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-ttt-3",
+    "topic": "RA: treatment & treat-to-target strategy",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What SGLT2 inhibitor role in HF was recently established by FDA approval?",
+    "answer": "SGLT2 inhibitors (SGLT2i) are the first glucose-lowering agents FDA-approved for treatment of HFrEF; ADA recommends as first-line for hyperglycemia in diabetics with HF or at high HF risk",
+    "rationale": "SGLT2i reduce cardiac preload, inflammation, and improve myocardial energetics beyond glycemic control.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2022 Heart Failure",
+        "page": 92
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "rse-1",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "How is refractory status epilepticus defined?",
+    "answer": "Failure to stop after 2 adequate first-line AND second-line agents",
+    "rationale": "Refractory SE reflects failure of standard treatment pathways (benzodiazepine then antiseizure drug), requiring third-line IV anesthetic agents.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Status epilepticus"
+  },
+  {
+    "id": "rse-2",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "How is super-refractory status epilepticus defined?",
+    "answer": "Seizures persisting despite adequate general anesthesia (e.g., propofol, midazolam, barbiturates) for >24 hours, or recurring on anesthetic weaning",
+    "rationale": "Super-refractory SE requires escalating and often multimodal suppressive therapy; duration of anesthesia distinguishes it from refractory SE.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Refractory SE"
+  },
+  {
+    "id": "rse-3",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "What are the first-line, second-line, and third-line treatment steps for convulsive status epilepticus?",
+    "answer": "First-line: lorazepam 0.1 mg/kg IV (max 4 mg, repeat once) or diazepam 0.3 mg/kg IV or intranasal midazolam 0.2 mg/kg; Second-line: fosphenytoin 20 PE/kg IV or levetiracetam 30-60 mg/kg IV; Third-line (refractory): IV anesthetic (propofol, midazolam, barbiturate)",
+    "rationale": "Sequential escalation addresses increasing seizure burden; benzodiazepines enhance GABA; second-line agents stabilize neuronal membranes; anesthetics suppress all cortical activity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "rse-4",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "Why is propofol useful in the critical care setting for refractory status epilepticus?",
+    "answer": "IV propofol infusions are useful for refractory SE due to its anticonvulsant properties (GABA-A positive modulation) and titratability",
+    "rationale": "Propofol provides rapid, controllable CNS suppression and can achieve burst suppression on EEG for refractory SE.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 138
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "rse-5",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "What is the definition of convulsive status epilepticus requiring emergency treatment?",
+    "answer": "Seizures >=5 minutes continuously OR >=2 seizures without return to baseline; treat as medical emergency",
+    "rationale": "Prolonged seizures cause excitotoxic neuronal injury; the 5-minute threshold is when pharmacoresistance begins to develop.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Prolonged seizure"
+  },
+  {
+    "id": "rse-6",
+    "topic": "Refractory & Super-Refractory Status Epilepticus",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "Why should etomidate be avoided in patients with known epilepsy?",
+    "answer": "Reports of seizure activity following etomidate; best avoided in patients with history of epilepsy",
+    "rationale": "Etomidate has pro-convulsant properties via GABA modulation and can lower seizure threshold.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 951
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-path-1",
+    "topic": "Rheumatoid arthritis: pathogenesis & diagnosis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "In a patient with psoriatic skin disease, when does arthritis typically develop relative to skin manifestations?",
+    "answer": "Skin disease precedes arthritis in 68%; coincides in 15%; arthritis precedes skin in 17% (making diagnosis harder, especially in childhood psoriatic arthritis)",
+    "rationale": "Knowing the temporal relationship guides diagnosis when skin findings are absent, requiring index of suspicion for psoriatic arthritis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Psoriatic arthritis",
+        "page": 4
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-path-2",
+    "topic": "Rheumatoid arthritis: pathogenesis & diagnosis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What classification criteria are used for psoriatic arthritis diagnosis?",
+    "answer": "Classification Criteria for Psoriatic Arthritis (CASPAR); also apply ACR/NPF 2018 treatment guidelines for active psoriatic arthritis",
+    "rationale": "CASPAR criteria require inflammatory articular disease plus at least 3 points from psoriasis, nail changes, negative RF, dactylitis, or juxta-articular new bone on imaging.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Psoriatic arthritis",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ra-path-3",
+    "topic": "Rheumatoid arthritis: pathogenesis & diagnosis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What serology pattern is seen in anti-dsDNA and anti-Smith antibodies and what does it indicate?",
+    "answer": "High-titer anti-dsDNA and anti-Smith antibodies are specific for idiopathic SLE; persistence despite drug withdrawal distinguishes SLE from drug-induced lupus",
+    "rationale": "Anti-dsDNA and anti-Smith are highly specific SLE markers; their presence with low complement and renal involvement confirms idiopathic SLE.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Drug-induced lupus"
+  },
+  {
+    "id": "ra-path-4",
+    "topic": "Rheumatoid arthritis: pathogenesis & diagnosis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What does RF (rheumatoid factor) represent immunologically and in which conditions is it found?",
+    "answer": "RF is IgM antibody against Fc gamma of IgG; found in RA (50-75%), Sjogren (60%+); NOT specific despite name - also in CTD, cryoglobulinemia, chronic infection",
+    "rationale": "RF lacks specificity for RA; seronegative RA exists; positive RF requires clinical context for interpretation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 179
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-ab-1",
+    "topic": "SLE: autoantibody profile and clinical associations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What are the two antiphospholipid antibody criteria required for APS diagnosis and what are the titer/timing requirements?",
+    "answer": "Detection of IgG or IgM anti-cardiolipin or anti-beta2GPI antibodies at moderate-to-high titers (>99th percentile) on 2+ occasions >=12 weeks apart by standard ELISA",
+    "rationale": "Persistent positivity over 12 weeks distinguishes true APS antibodies from transient infection-related antiphospholipid antibodies.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Antiphospholipid syndrome",
+        "page": 9
+      }
+    ],
+    "confusable_with": "Transient antiphospholipid antibodies"
+  },
+  {
+    "id": "sle-ab-2",
+    "topic": "SLE: autoantibody profile and clinical associations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What serologies are specific for idiopathic SLE but uncommonly seen in APS alone?",
+    "answer": "Anti-dsDNA, anti-Smith antibodies; low complement (hypocomplementemia); presence with renal involvement suggests SLE-associated APS",
+    "rationale": "APS itself does not typically cause hypocomplementemia; low complement plus these antibodies points to underlying SLE.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Antiphospholipid syndrome",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Primary APS"
+  },
+  {
+    "id": "sle-ab-3",
+    "topic": "SLE: autoantibody profile and clinical associations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the most important diagnostic clue distinguishing drug-induced lupus from idiopathic SLE?",
+    "answer": "Temporal relationship between drug exposure and symptom onset; symptoms appear after months-years of drug use; resolution after drug withdrawal distinguishes DIL from SLE",
+    "rationale": "DIL resolves when the offending drug is stopped; idiopathic SLE persists and progresses without immunosuppression.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 6
+      }
+    ],
+    "confusable_with": "Idiopathic SLE"
+  },
+  {
+    "id": "sle-ab-4",
+    "topic": "SLE: autoantibody profile and clinical associations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What skin eruption is strongly associated with anti-Ro/SSA antibodies in drug-induced and idiopathic SLE?",
+    "answer": "Subacute cutaneous lupus erythematosus (SCLE): photodistributed annular or psoriasiform rashes; associated with anti-Ro/SSA antibodies",
+    "rationale": "Anti-Ro/SSA mediates SCLE by targeting keratinocyte surface antigens exposed after UV radiation, triggering autoimmune skin injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-ab-5",
+    "topic": "SLE: autoantibody profile and clinical associations",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What features are uncommon in drug-induced lupus that help distinguish it from idiopathic SLE?",
+    "answer": "DIL rarely causes: renal or neurologic involvement, severe hematologic abnormalities, or chronic cutaneous disease; these features favor idiopathic SLE",
+    "rationale": "DIL produces a milder, predominantly musculoskeletal/constitutional syndrome; organ-threatening manifestations indicate idiopathic SLE.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Idiopathic SLE"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Drug-Induced Lupus",
+    "topic_b": "Idiopathic SLE",
+    "discriminator": "DIL: resolves on drug withdrawal, anti-histone antibodies, musculoskeletal dominant, no renal/neuro; SLE: persistent, anti-dsDNA/anti-Smith, multi-organ, hypocomplementemia"
+  },
+  {
+    "id": "sle-class-1",
+    "topic": "SLE: classification criteria & pathogenesis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "In a patient with SLE, what serologies in antiphospholipid syndrome indicate an increased risk of renal involvement?",
+    "answer": "APS with hypocomplementemia AND renal involvement suggests SLE overlap; hypocomplementemia is NOT typical in isolated APS",
+    "rationale": "SLE-associated APS combines thrombophilia with immune complex-mediated glomerular disease; isolated APS does not cause complement consumption.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Antiphospholipid syndrome",
+        "page": 8
+      }
+    ],
+    "confusable_with": "Primary APS"
+  },
+  {
+    "id": "sle-class-2",
+    "topic": "SLE: classification criteria & pathogenesis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What autoimmune processes lead to SLE pathogenesis including epigenetic changes?",
+    "answer": "Dysregulation via: drug haptens, nonspecific lymphocyte activation, impaired central tolerance, thymic abnormalities, checkpoint inhibition (CTLA-4, PD-1), NET formation, and DNA methylation defects -> immune dysregulation",
+    "rationale": "Multiple pathways converge on B- and T-cell dysregulation resulting in autoantibody production and complement activation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug induced lupus",
+        "page": 4
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-class-3",
+    "topic": "SLE: classification criteria & pathogenesis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "Which CTD-ILD subtype is the most clinically significant?",
+    "answer": "Systemic sclerosis (SSc)-ILD is the most clinically significant CTD-ILD subtype",
+    "rationale": "SSc-ILD causes rapid, progressive fibrosis and is a major cause of mortality in systemic sclerosis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Non IPF Interstitial Lung Diseases",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sle-class-4",
+    "topic": "SLE: classification criteria & pathogenesis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What does a positive ANA pattern suggest in the evaluation of rheumatologic disease?",
+    "answer": "Positive ANA pattern requires correlation with clinical presentation and specific antibody testing (anti-dsDNA, anti-Smith, anti-Ro/SSA, anti-La/SSB, etc.) to identify the specific connective tissue disease",
+    "rationale": "ANA is sensitive but not specific for SLE; pattern and titer guide further specific antibody testing.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 179
+      }
+    ],
+    "confusable_with": ""
+  }
+]

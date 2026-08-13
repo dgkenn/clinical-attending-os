@@ -1,0 +1,1388 @@
+[
+  {
+    "idx": 476,
+    "id": "curated-phase4_tox_unit_27",
+    "topic": "Pralidoxime (2-PAM) Protocol",
+    "score": 0.6025,
+    "corpus_text": "Section: Rachel E. Grenier & Eric L. Tung. Rachel E. Grenier & Eric L. Tung I N D I C A T I O N S F O R CT C O N T R A S T A D M I N I S T R A T I O N IV positive (I+): vast majority of studies more sensitive when given, particularly for infection, tumors, and vessel imaging IV negative (I-): urinar"
+  },
+  {
+    "idx": 477,
+    "id": "curated-phase4_tox_unit_28",
+    "topic": "Organophosphate Poisoning - Supportive Care",
+    "score": 0.6471,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 478,
+    "id": "curated-phase4_tox_unit_29",
+    "topic": "Heavy Metal Poisoning - Overview & Chelation Agents",
+    "score": 0.72,
+    "corpus_text": "Section: Constipation, IBS, & Colonic Disorders. Constipation, IBS, & Colonic Disorders Jennifer Kizza-Brown C O N S T I P A T I O N Symptoms: Dissatisfaction with defecation with at least 2 of the following: <3 BM per week, hard stools, straining, sensation of incomplete evacuation, sensation of an"
+  },
+  {
+    "idx": 479,
+    "id": "curated-phase4_tox_unit_30",
+    "topic": "Lead Poisoning & Chelation",
+    "score": 0.695,
+    "corpus_text": "Section: Acute Liver Injury & Failure. Acute Liver Injury & Failure Lauren Smith Presentation: fatigue, lethargy, anorexia, n/v, RUQ pain, pruritis, ± jaundice  ascites, confusion in ALF (and may progress to coma) Initial diagnostics: CBC w/ diff, CMP, PT/INR, fibrinogen, LDH, T&S, lactate, ABG, ar"
+  },
+  {
+    "idx": 480,
+    "id": "curated-phase4_tox_unit_31",
+    "topic": "Iron Overdose & Deferoxamine Therapy",
+    "score": 0.7521,
+    "corpus_text": "Section: Sickle Cell Disease. Sickle Cell Disease Tim Niyogusaba O V E R V I E W (JAMA 2022;328;570) Sickle Cell allele: autosomal recessive βglobin gene A->T (Glu6Val) missense mutation Sickle Cell Trait (SCT): heterozygous for HbS w/o aberrancy in partnered βglobin gene Sickle Cell Anemia (SCA): h"
+  },
+  {
+    "idx": 481,
+    "id": "curated-phase4_tox_unit_32",
+    "topic": "Salicylate Toxicity - Pathophysiology & Presentation",
+    "score": 0.7379,
+    "corpus_text": "Section: Catatonia, NMS, & Serotonin Syndrome. Catatonia, NMS, & Serotonin Syndrome Nicholas Daneshvari C A T A T O N I A Behavioral syndrome due to underlying condition that can occur in the context of many psychiatric, neuro, or medical dx; marked by inability to move or communicate despite full p"
+  },
+  {
+    "idx": 482,
+    "id": "curated-phase4_tox_unit_33",
+    "topic": "Salicylate Management - Urine Alkalinization",
+    "score": 0.6193,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 483,
+    "id": "curated-phase4_tox_unit_34",
+    "topic": "Salicylate Toxicity - Pulmonary Edema & ICU Care",
+    "score": 0.7646,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 484,
+    "id": "curated-phase4_trauma_unit_0",
+    "topic": "Trauma Primary Survey - ABCDE Approach",
+    "score": 0.586,
+    "corpus_text": "Section: Primary Care. Primary Care Musculoskeletal Pain Joshua Ellis K N E E P A I N (PCOI) History: trauma, acute vs chronic, association with activity, constitutional sx, swelling, stiffness, instability, popping, locking or catching sensation, sensory/motor changes, BMI, orthopedic or rheumatolo"
+  },
+  {
+    "idx": 485,
+    "id": "curated-phase4_trauma_unit_1",
+    "topic": "Airway Management in Trauma - C-Spine Precautions",
+    "score": 0.678,
+    "corpus_text": "Section: Altered Mental Status. Altered Mental Status Nupur Goel C A U S E S O F AMS AMS is any change in patient’s baseline mental status and can include obtundation/non-responsiveness, agitation, lethargy, disorientation, hypoactivity, hyperactivity, etc. Major categories include 1) Metabolic, 2) "
+  },
+  {
+    "idx": 486,
+    "id": "curated-phase4_trauma_unit_2",
+    "topic": "Hemorrhage Control - Direct Pressure & Tourniquets",
+    "score": 0.5683,
+    "corpus_text": "Section: Infectious Disease. Infectious Disease Infection Control Matthew Adan Resources: Infection Control websites on Sharepoint and Ellucid for the most up-to-date MGH policies and list of diseases/conditions requiring isolation. For additional support, work with unit-specific nursing leadership "
+  },
+  {
+    "idx": 487,
+    "id": "curated-phase4_trauma_unit_3",
+    "topic": "Fluid Resuscitation - Endpoints & Massive Transfusion Protocol",
+    "score": 0.7185,
+    "corpus_text": "Section: Transfusion Medicine. Transfusion Medicine Maggie Selesky T R A N S F U S I O N M O D I F I C A T I O N S Leukoreduction (LR): filters leukocytes to (1) HLA sensitization in chronically transfused pts / heme malignancies, bone marrow / kidney / heart / lung transplant candidates (not liver"
+  },
+  {
+    "idx": 488,
+    "id": "curated-phase4_trauma_unit_4",
+    "topic": "Trauma Secondary Survey - Systematic Examination",
+    "score": 0.557,
+    "corpus_text": "Section: Interpretation of Common Studies. Interpretation of Common Studies Rachel E. Grenier & Eric L. Tung Pneumoperitoneum (AJEM 2009;27:320) Upright: air beneath the diaphragm Left lateral decubitus: air overlying the liver Supine: insensitive exam U L T R A S O U N D Cholecystitis (AJR 2011;196"
+  },
+  {
+    "idx": 489,
+    "id": "curated-phase4_trauma_unit_5",
+    "topic": "Tension Pneumothorax - Recognition & Needle Decompression",
+    "score": 0.7437,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 490,
+    "id": "curated-phase4_trauma_unit_6",
+    "topic": "Tube Thoracostomy (Chest Tube) - Indications & Placement",
+    "score": 0.7472,
+    "corpus_text": "Section: Peri-Procedural Anticoagulation. Peri-Procedural Anticoagulation Beth Gay G E N E R A L A N T I P L A T E L E T & A N T I C O A G U L A T I O N G U I D E L I N E S F O R E L E C T I V E P R O C E D U R E S ASA: hold for 1 week prior if for primary prevention, continue if for secondary preve"
+  },
+  {
+    "idx": 491,
+    "id": "curated-phase4_trauma_unit_7",
+    "topic": "Flail Chest - Definition & Management",
+    "score": 0.77,
+    "corpus_text": "Section: Sickle Cell Disease. Sickle Cell Disease Tim Niyogusaba O V E R V I E W (JAMA 2022;328;570) Sickle Cell allele: autosomal recessive βglobin gene A->T (Glu6Val) missense mutation Sickle Cell Trait (SCT): heterozygous for HbS w/o aberrancy in partnered βglobin gene Sickle Cell Anemia (SCA): h"
+  },
+  {
+    "idx": 492,
+    "id": "curated-phase4_trauma_unit_8",
+    "topic": "Hemothorax - Diagnosis & Management",
+    "score": 0.6675,
+    "corpus_text": "Section: End Stage Liver Disease. End Stage Liver Disease Dan Fulop H E P A T O C E L L U L A R C A R C I N O M A (HCC) (AASLD: Hepatology 2023;78:1922) 2-4% risk per year. May be asx, lead to decompensation, and/or have sx related to mass effect (pain, early satiety, palpable mass) 1° prevention: H"
+  },
+  {
+    "idx": 493,
+    "id": "curated-phase4_trauma_unit_9",
+    "topic": "Cardiac Tamponade - Beck's Triad & Pericardiocentesis",
+    "score": 0.7565,
+    "corpus_text": "Section: Pericardial Disease. Pericardial Disease Sarah Ferreira C A R D I A C T A M P O N A D E Definition: hemodynamic insufficiency caused by impaired cardiac filling due to pericardial pressure due to effusion, leading to intracardiac chamber pressures & eventually equalization of diastolic pr"
+  },
+  {
+    "idx": 494,
+    "id": "curated-phase4_trauma_unit_10",
+    "topic": "FAST Exam (Focused Assessment with Sonography for Trauma)",
+    "score": 0.6494,
+    "corpus_text": "Section: CHEST PAIN. CHEST PAIN • Details of pain: Onset, site, nature. • Hemodynamic stability. • Associated symptoms. • Interventions already performed. • What is the patient being actively treated for? Is he being worked up for chest pain? #2. Information from chart: • Reason for admission and pe"
+  },
+  {
+    "idx": 495,
+    "id": "curated-phase4_trauma_unit_11",
+    "topic": "Exploratory Laparotomy Indications",
+    "score": 0.575,
+    "corpus_text": "Section: Outpatient CV Health. Outpatient CV Health Amanda Jowell Medical Management (HTN 2018;71:1261) When to Treat Stage II HTN or Stage I if: clinical CVD, DM2, CKD, or ASCVD ≥10% Target BP Choice of Agent First-line: thiazides (chlorthalidone may not be > HCTZ, SEs (JAMA IM 2020;180:542)), ACE"
+  },
+  {
+    "idx": 496,
+    "id": "curated-phase4_trauma_unit_12",
+    "topic": "Pelvic Fractures - Hemorrhage Risk & Massive Transfusion",
+    "score": 0.675,
+    "corpus_text": "Section: Transfusion Medicine. Transfusion Medicine Maggie Selesky T R A N S F U S I O N M O D I F I C A T I O N S Leukoreduction (LR): filters leukocytes to (1) HLA sensitization in chronically transfused pts / heme malignancies, bone marrow / kidney / heart / lung transplant candidates (not liver"
+  },
+  {
+    "idx": 497,
+    "id": "curated-phase4_trauma_unit_13",
+    "topic": "Pelvic Binder Application",
+    "score": 0.7008,
+    "corpus_text": "Section: Primary Care. Primary Care Immigrant & Refugee Health Alex Hoffner-Heinike & Esdras O. Rodriguez M E D I C A L E X A M I N A T I O N (CDC) Interpreter Services: In person - x66966, p27403 (M-F 7a-8p; S/Su 8a-6:30p) or via phone service [617-643-3344 Pin #1050]. Speak in short sentences & ma"
+  },
+  {
+    "idx": 498,
+    "id": "curated-phase4_trauma_unit_14",
+    "topic": "Crush Injury & Rhabdomyolysis - Pathophysiology",
+    "score": 0.7008,
+    "corpus_text": "Section: Dx: TP/Cr, SPEP/UPEP/SFLC, kidney bx if dx unclear. risk of AKI following contrast, likely lower than previously estimated (Ann Em Med 2017;69:577). In recent regression discontinuity analysis, no difference in kidney function at 6 months after contrast administration for CTPE in ED setting"
+  },
+  {
+    "idx": 499,
+    "id": "curated-phase4_trauma_unit_15",
+    "topic": "Rhabdomyolysis Management - Aggressive Hydration & Urine Alkalinization",
+    "score": 0.6777,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou D E F I N I N G AKI (KDIGO 2012 Guidelines) Diagnostic Tips Serum Cr approximates GFR at steady state only (unable to estimate GFR w/ ∆Cr): must assume GFR <10 if ∆Cr > 1 mg/dL/day Drugs can impair Cr excretion without ∆GFR (BUN remains sta"
+  },
+  {
+    "idx": 500,
+    "id": "curated-phase4_trauma_unit_16",
+    "topic": "Burn Classification - Depth & Total Body Surface Area (TBSA)",
+    "score": 0.5148,
+    "corpus_text": "Section: Primary Care. Primary Care Transgender Health Alex Hoffner-Heinike G E N E R A L C O N S I D E R A T I O N S (NEJM 2019;381:2451) Gender Terminology Gender identity: a person's sense of one’s gender; can be congruent with or differ from sex assigned at birth Transgender/trans: a person whos"
+  },
+  {
+    "idx": 501,
+    "id": "curated-phase4_trauma_unit_17",
+    "topic": "Parkland Formula - Fluid Resuscitation in Burns",
+    "score": 0.5781,
+    "corpus_text": "Section: Intraosseous Line. Intraosseous Line Max Quinn G E N E R A L C O N S I D E R A T I O N S (Video: NEJM 2014;370:e35) Anatomy: veins that drain medullary sinuses of bones; veins supported by bones do not collapse in patients in shock Indication: patients without available IV access with urgen"
+  },
+  {
+    "idx": 502,
+    "id": "curated-phase4_trauma_unit_18",
+    "topic": "Burn Management - Airway, Infection Prevention, Transfer",
+    "score": 0.6643,
+    "corpus_text": "Section: Danielle Larrow. Danielle Larrow E P I S T A X I S (N O S E B L E E D) Acute management: (UpToDate Epistaxis) 1. Have patient lean forward, pinch nostrils, and hold pressure for 20 min Guidance: pinch over the soft portion of the nose; do NOT lean head back or pinch bony part of nose; do NO"
+  },
+  {
+    "idx": 503,
+    "id": "curated-phase4_trauma_unit_19",
+    "topic": "Hypothermia - Stages & Recognition",
+    "score": 0.615,
+    "corpus_text": "Section: ACLS: Cardiac Arrest & TTM. ACLS: Cardiac Arrest & TTM Chris Schenck T A R G E T E D T E M P E R A T U R E M A N A G E M E N T A F T E R C A R D I A C A R R E S T Rationale: Fever is associated with worse neurological outcomes and neuronal damage due to inflammatory changes and biochemical "
+  },
+  {
+    "idx": 504,
+    "id": "curated-phase4_trauma_unit_20",
+    "topic": "Hypothermia Management - Rewarming Strategies",
+    "score": 0.5864,
+    "corpus_text": "Section: ACLS: Cardiac Arrest & TTM. ACLS: Cardiac Arrest & TTM Chris Schenck T A R G E T E D T E M P E R A T U R E M A N A G E M E N T A F T E R C A R D I A C A R R E S T Rationale: Fever is associated with worse neurological outcomes and neuronal damage due to inflammatory changes and biochemical "
+  },
+  {
+    "idx": 505,
+    "id": "curated-phase4_trauma_unit_21",
+    "topic": "Acute Surgical Abdomen - Overview",
+    "score": 0.7475,
+    "corpus_text": "Section: CONFUSION / AGITATION:. CONFUSION / AGITATION: Delirium - Maybe hyperactive or hypoactive: Fluctuating disturbance in attention, awareness and cognition that develops over a short period of time, representing a change from baseline, not explained by preexisting or evolving neurocognitive co"
+  },
+  {
+    "idx": 506,
+    "id": "curated-phase4_trauma_unit_22",
+    "topic": "Acute Appendicitis - Diagnosis & Management",
+    "score": 0.5514,
+    "corpus_text": "Section: Lower GI Bleeding. Lower GI Bleeding May Saito A C U T E L O W E R GI B L E E D (NEJM 2017;376:1054; Gut 2019;68:776) Definition: distal to ligament of Treitz S/Sx: hematochezia (maroon or bright red blood, blood clots; Note: BRBPR can be seen in brisk UGIB); rarely melena (requires blood s"
+  },
+  {
+    "idx": 507,
+    "id": "curated-phase4_trauma_unit_23",
+    "topic": "Bowel Obstruction - Presentation & Imaging",
+    "score": 0.7318,
+    "corpus_text": "Section: Pancreatitis and Pancreatic Mass. Pancreatitis and Pancreatic Mass Hailey Harris E T I O L O G Y (NEJM 2014;317:1983) Gallstones/sludge (40-75%): #1 in female sex Alcohol (30%): #1 in male sex Hypertriglyceridemia (10%): #3; suspect if TG>1000 Anatomic: ampullary diverticula/stenosis, duode"
+  },
+  {
+    "idx": 508,
+    "id": "curated-phase4_trauma_unit_24",
+    "topic": "Bowel Obstruction - Conservative vs. Surgical Management",
+    "score": 0.7675,
+    "corpus_text": "Section: Intestinal Disorders. Intestinal Disorders Quinten Dicken I L E U S A N D S M A L L B O W E L O B S T R U C T I O N (J Trauma Acute Care Surg. 2012;73:S362; J Trauma Acute Care Surg. 2015;79:661) Acute colonic pseudo-obstruction (Ogilvie’s): typically elderly, hospitalized pts. A/w severe i"
+  },
+  {
+    "idx": 509,
+    "id": "curated-phase4_trauma_unit_25",
+    "topic": "Perforated Viscus - Diagnosis & Urgent Management",
+    "score": 0.7392,
+    "corpus_text": "Section: ABDOMINAL PAIN. ABDOMINAL PAIN Very broad topic and beyond the scope of this manual. Here are some of things one should be extremely careful not to miss as cross cover / night ﬂoat. If you suspect the following, obtain surgical consult along with ongoing work up and consult as well: • Perit"
+  },
+  {
+    "idx": 510,
+    "id": "curated-phase4_proc_unit_0",
+    "topic": "Central Venous Catheter (CVC) - Indications",
+    "score": 0.7476,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: hemodynamic monitoring (CVP, CVO2); admin. of noxious meds (pressors, chemo, hypertonic solution, TPN); rapid large volume resuscitation (Cordis/MAC); inadequate peripheral access; HD/CVVH/pheresis; "
+  },
+  {
+    "idx": 511,
+    "id": "curated-phase4_proc_unit_1",
+    "topic": "CVC Placement - Technique (IJV) & Landmark Approach",
+    "score": 0.7825,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn **For subclavian or femoral vein access, please discuss with attending and ensure appropriate oversight prior to procedure!** S U B C L A V I A N V E I N (Video: NEJM 2007;357:e26) Positioning: place in Trendelenburg to engorge vein and consider placing "
+  },
+  {
+    "idx": 512,
+    "id": "curated-phase4_proc_unit_2",
+    "topic": "CVC Complications - Mechanical, Infectious, Thrombotic",
+    "score": 0.7728,
+    "corpus_text": "Section: Valvular Heart Disease. Valvular Heart Disease David Iskhakov A O R T I C S T E N O S I S Etiology: Aortic sclerosis (calcification of the valve; increasingly common with age), bicuspid valve (most common cause <70yo), rheumatic heart disease (leaflets fuse, often with concurrent MV disease"
+  },
+  {
+    "idx": 513,
+    "id": "curated-phase4_proc_unit_3",
+    "topic": "CVC Positioning & Line Care",
+    "score": 0.7254,
+    "corpus_text": "Section: Febrile Neutropenia. Febrile Neutropenia Lucy Gao D E F I N I T I O N S A N D E T I O L O G Y (J Oncol Pract 2019;15:19; NCCN Prevention and Treatment Guidelines) Definition: T ≥100.4 (≥1hr or oral >100.9) with ANC <500cells/mL or expected to decrease to <500 over the next 48h Functional ne"
+  },
+  {
+    "idx": 514,
+    "id": "curated-phase4_proc_unit_4",
+    "topic": "Arterial Line - Indications & Site Selection",
+    "score": 0.7888,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: hemodynamic monitoring (CVP, CVO2); admin. of noxious meds (pressors, chemo, hypertonic solution, TPN); rapid large volume resuscitation (Cordis/MAC); inadequate peripheral access; HD/CVVH/pheresis; "
+  },
+  {
+    "idx": 515,
+    "id": "curated-phase4_proc_unit_5",
+    "topic": "Arterial Line Placement Technique",
+    "score": 0.7675,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn **For subclavian or femoral vein access, please discuss with attending and ensure appropriate oversight prior to procedure!** S U B C L A V I A N V E I N (Video: NEJM 2007;357:e26) Positioning: place in Trendelenburg to engorge vein and consider placing "
+  },
+  {
+    "idx": 516,
+    "id": "curated-phase4_proc_unit_6",
+    "topic": "Arterial Waveform Interpretation",
+    "score": 0.5617,
+    "corpus_text": "Section: Arterial Line. Arterial Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: real-time BP monitoring (pressors, HTN emergency, CVA); frequent ABGs, softer indication for lab draws (≥3 per day) Locations: radial > femoral > dorsalis pedis > axillary; brachial not recommended"
+  },
+  {
+    "idx": 517,
+    "id": "curated-phase4_proc_unit_7",
+    "topic": "Arterial Line Complications & Contraindications",
+    "score": 0.7314,
+    "corpus_text": "Section: Pulmonary Artery Catheterization. Pulmonary Artery Catheterization Tom Sommers O V E R V I E W Indications: PA catheter (PAC) for tailored therapy; diagnose (1) etiology of shock (e.g. cardiogenic vs. distributive); (2) cardiogenic vs. non-cardiogenic pulm edema; (3) LV vs RV failure; (4) e"
+  },
+  {
+    "idx": 518,
+    "id": "curated-phase4_proc_unit_8",
+    "topic": "Pericardiocentesis - Technique & Approach",
+    "score": 0.54,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn **For subclavian or femoral vein access, please discuss with attending and ensure appropriate oversight prior to procedure!** S U B C L A V I A N V E I N (Video: NEJM 2007;357:e26) Positioning: place in Trendelenburg to engorge vein and consider placing "
+  },
+  {
+    "idx": 519,
+    "id": "curated-phase4_proc_unit_9",
+    "topic": "Pericardiocentesis - Complications & When NOT To Attempt",
+    "score": 0.7412,
+    "corpus_text": "Section: Pericardial Disease. Pericardial Disease Sarah Ferreira C A R D I A C T A M P O N A D E Definition: hemodynamic insufficiency caused by impaired cardiac filling due to pericardial pressure due to effusion, leading to intracardiac chamber pressures & eventually equalization of diastolic pr"
+  },
+  {
+    "idx": 520,
+    "id": "curated-phase4_proc_unit_10",
+    "topic": "Cricothyrotomy - Indications & Emergency Airway",
+    "score": 0.5308,
+    "corpus_text": "Section: 2. Invasive: intubation + mechanical ventilation. deliver some pressure, and this helps keep the alveoli open, and thus improves recruitement of alveoli and decreases work of breathing • Uses: Effective in treating decompensated COPD, CHF 2. Invasive: intubation + mechanical ventilation -In"
+  },
+  {
+    "idx": 521,
+    "id": "curated-phase4_proc_unit_11",
+    "topic": "Cricothyrotomy Technique - Rapid Execution",
+    "score": 0.5217,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: hemodynamic monitoring (CVP, CVO2); admin. of noxious meds (pressors, chemo, hypertonic solution, TPN); rapid large volume resuscitation (Cordis/MAC); inadequate peripheral access; HD/CVVH/pheresis; "
+  },
+  {
+    "idx": 522,
+    "id": "curated-phase4_proc_unit_12",
+    "topic": "Emergency Transvenous Pacing - Indications",
+    "score": 0.6467,
+    "corpus_text": "Section: ACLS: Defibrillation/Cardioversion/Pacing. ACLS: Defibrillation/Cardioversion/Pacing Daniel Restifo E X T E R N A L D E F I B R I L L A T I O N/C A R D I O V E R S I O N/T R A N S C U T A N E O U S P A C I N G About the device: the Zoll R Series is on all code carts & ICUs at MGH. This devi"
+  },
+  {
+    "idx": 523,
+    "id": "curated-phase4_proc_unit_13",
+    "topic": "Transvenous Pacing - Technique & Troubleshooting",
+    "score": 0.5775,
+    "corpus_text": "Section: Cardiology ASAP for possible transvenous pacing. Transfer to. o Other: hypothyroid, hypothermia, K derangement etc • Are they unstable or symptomatic (AMS, dizzy, chest pain, syncope)? o Follow ACLS guidelines (atropine 0.5-1mg IV) • Call an RRT or even code if you need help. • Place pacer "
+  },
+  {
+    "idx": 524,
+    "id": "curated-phase4_proc_unit_14",
+    "topic": "Point-of-Care Ultrasound (POCUS) - Basics",
+    "score": 0.6901,
+    "corpus_text": "Ultrasound Basics Max Quinn REMINDER: do not base clinical decisions on POCUS exams unless the exam and decisions are supported by a supervising provider"
+  },
+  {
+    "idx": 525,
+    "id": "curated-phase4_proc_unit_15",
+    "topic": "Ultrasound-Guided IV Access",
+    "score": 0.73,
+    "corpus_text": "Section: Ultrasound-Guided Peripheral IV. Ultrasound-Guided Peripheral IV Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: non-emergent access in a patient with difficult access. If emergent, obtain IO or central access Locations: forearm first; then AC, cephalic, basilic, brachial; "
+  },
+  {
+    "idx": 526,
+    "id": "curated-phase4_proc_unit_16",
+    "topic": "Ultrasound-Guided Regional Anesthesia",
+    "score": 0.5267,
+    "corpus_text": "Section: Chapter 18 Peripheral Nerve Blocks. Chapter 18 Peripheral Nerve Blocks rate of systemic absorption, epinephrine can reduce peak plasma levels of local anesthetic. Practitioners may also add perineural steroids (e.g., preservative-free dexametha- sone) to local anesthetics to prolong regiona"
+  },
+  {
+    "idx": 527,
+    "id": "curated-phase4_proc_unit_17",
+    "topic": "Paracentesis - Indications & Ascites Analysis",
+    "score": 0.7597,
+    "corpus_text": "Section: Daniel Restifo. Daniel Restifo Therapeutic paracentesis instructions a) Prepare Safe-T-Centesis kit: place catheter on needle, attach syringe, and prep tubing b) Use scalpel to make small superficial incision (enlarge PRN) c) Advance needle/catheter while pulling back on syringe until ascit"
+  },
+  {
+    "idx": 528,
+    "id": "curated-phase4_proc_unit_18",
+    "topic": "Spontaneous Bacterial Peritonitis (SBP) - Diagnosis & Treatment",
+    "score": 0.7825,
+    "corpus_text": "Section: Fluid Analysis. Fluid Analysis Maggie Selesky L U M B A R P U N C T U R E I N T E R P R E T A T I O N (cm H2O) Predominant cell Protein (mg/dL) Further CSF Testing 9–18 0–5 50–75 15–40 Bacterial meningitis 20–50 <100 to >10k >80% PMN <40 100–1000 Cx, Gram stain Viral meningitis (Enterovirus"
+  },
+  {
+    "idx": 529,
+    "id": "curated-phase4_proc_unit_19",
+    "topic": "Paracentesis - Technique & Complications",
+    "score": 0.7825,
+    "corpus_text": "Section: Daniel Restifo. Daniel Restifo Therapeutic paracentesis instructions a) Prepare Safe-T-Centesis kit: place catheter on needle, attach syringe, and prep tubing b) Use scalpel to make small superficial incision (enlarge PRN) c) Advance needle/catheter while pulling back on syringe until ascit"
+  },
+  {
+    "idx": 530,
+    "id": "curated-phase4_proc_unit_20",
+    "topic": "Thoracentesis - Indications & Pleural Fluid Analysis",
+    "score": 0.795,
+    "corpus_text": "Section: Max Quinn. Max Quinn I N D I C A T I O N S Diagnostic: to establish etiology of ≥1cm pleural effusion visualized by US (not necessary for small effusions w/ probable alternative dx) pleural effusions are visible on CXR when >200mL of fluid is present (i.e. lower sensitivity) Therapeutic: la"
+  },
+  {
+    "idx": 531,
+    "id": "curated-phase4_proc_unit_21",
+    "topic": "Thoracentesis - Technique & Complications",
+    "score": 0.63,
+    "corpus_text": "Section: Daniel Restifo. Daniel Restifo Therapeutic paracentesis instructions a) Prepare Safe-T-Centesis kit: place catheter on needle, attach syringe, and prep tubing b) Use scalpel to make small superficial incision (enlarge PRN) c) Advance needle/catheter while pulling back on syringe until ascit"
+  },
+  {
+    "idx": 532,
+    "id": "curated-phase4_obs_unit_0",
+    "topic": "Preeclampsia - Definition & Risk Factors",
+    "score": 0.739,
+    "corpus_text": "Section: Outpatient CV Health. Outpatient CV Health Amanda Jowell E P I D E M I O L O G Y O F C A R D I O V A S C U L A R D I S E A S E Overview: Leading cause of death in developed countries; CVD includes: CAD, CVA, PAD, aortic disease Risk Factors: Non-modifiable: Age (each decade confers 2x ↑ ris"
+  },
+  {
+    "idx": 533,
+    "id": "curated-phase4_obs_unit_1",
+    "topic": "Eclampsia - Seizures & Management",
+    "score": 0.7825,
+    "corpus_text": "Section: CNS Emergencies. CNS Emergencies Nupur Goel I N T R A C R A N I A L H E M O R R H A G E (ICH): epidural (EDH), subdural (SDH), subarachnoid (SAH), intraparenchymal (IPH) Causes: trauma (all), ruptured aneurysm/AVM (SAH, IPH), IPH also caused by HTN, cerebral amyloid, tumor (most common w/ m"
+  },
+  {
+    "idx": 534,
+    "id": "curated-phase4_obs_unit_2",
+    "topic": "Magnesium Sulfate Dosing & Toxicity",
+    "score": 0.6141,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs"
+  },
+  {
+    "idx": 535,
+    "id": "curated-phase4_obs_unit_3",
+    "topic": "Hypertension Management in Preeclampsia - Antihypertensive Choice",
+    "score": 0.5025,
+    "corpus_text": "Section: Right Ventricular Failure. Right Ventricular Failure Chris Schenck P A T H O P H Y S I O L O G Y Normal RV function: governed by systemic venous return, PA pressure, pericardial compliance, and native contractility of the RV free wall and interventricular septum (where RV and LV are “tether"
+  },
+  {
+    "idx": 536,
+    "id": "curated-phase4_obs_unit_4",
+    "topic": "HELLP Syndrome - Hemolysis, Elevated Liver Enzymes, Low Platelets",
+    "score": 0.6925,
+    "corpus_text": "Section: Liver Chemistry Tests. Liver Chemistry Tests Lauren Smith Upper Limit of Normal (ULN): ALT (IU/L): 33 (males), 25 (females); ALK-P: 115 (males), 100 (females) (ACG: AJG 2017;112:18) Hepatocellular markers: Released from hepatocytes in response to injury ALT: Expressed primarily in liver, mo"
+  },
+  {
+    "idx": 537,
+    "id": "curated-phase4_obs_unit_5",
+    "topic": "HELLP Management & Delivery",
+    "score": 0.5817,
+    "corpus_text": "Section: Potassium Disorders. Potassium Disorders Samuel Eley N O R M A L P O T A S S I U M H A N D L I N G/H O M E O S T A S I S (NEJM 2015;373:60) Ingested K+ absorbed in intestines  taken up and sequestered by liver/muscle cells via insulin & β2 receptors  Na-K ATPase 98% of K+ is intracellula"
+  },
+  {
+    "idx": 538,
+    "id": "curated-phase4_obs_unit_6",
+    "topic": "Gestational Diabetes Mellitus (GDM) - Screening & Diagnosis",
+    "score": 0.7162,
+    "corpus_text": "Section: Outpatient Type 2 Diabetes Mellitus. Outpatient Type 2 Diabetes Mellitus Adriana Saavedra-Simmons S C R E E N I N G (Diab Care 2024:47;S26) ADA recs: Begin at age ≥35 years, repeat q3y if normal. Repeat q1y if pre-DM. All adults at higher risk = 1) BMI ≥25 (≥23 in Asian- Americans) + RF (1s"
+  },
+  {
+    "idx": 539,
+    "id": "curated-phase4_obs_unit_7",
+    "topic": "GDM Management - Diet, Monitoring, Insulin",
+    "score": 0.7227,
+    "corpus_text": "Section: Outpatient Type 2 Diabetes Mellitus. Outpatient Type 2 Diabetes Mellitus Adriana Saavedra-Simmons S C R E E N I N G (Diab Care 2024:47;S26) ADA recs: Begin at age ≥35 years, repeat q3y if normal. Repeat q1y if pre-DM. All adults at higher risk = 1) BMI ≥25 (≥23 in Asian- Americans) + RF (1s"
+  },
+  {
+    "idx": 540,
+    "id": "curated-phase4_obs_unit_8",
+    "topic": "Placental Abruption - Presentation & Severity",
+    "score": 0.6204,
+    "corpus_text": "Section: Catatonia, NMS, & Serotonin Syndrome. Catatonia, NMS, & Serotonin Syndrome Nicholas Daneshvari C A T A T O N I A Behavioral syndrome due to underlying condition that can occur in the context of many psychiatric, neuro, or medical dx; marked by inability to move or communicate despite full p"
+  },
+  {
+    "idx": 541,
+    "id": "curated-phase4_obs_unit_9",
+    "topic": "Placental Abruption - Management & Delivery",
+    "score": 0.539,
+    "corpus_text": "Section: Potassium Disorders. Potassium Disorders Samuel Eley N O R M A L P O T A S S I U M H A N D L I N G/H O M E O S T A S I S (NEJM 2015;373:60) Ingested K+ absorbed in intestines  taken up and sequestered by liver/muscle cells via insulin & β2 receptors  Na-K ATPase 98% of K+ is intracellula"
+  },
+  {
+    "idx": 542,
+    "id": "curated-phase4_obs_unit_10",
+    "topic": "Placenta Previa - Definition & Management",
+    "score": 0.5372,
+    "corpus_text": "Section: Upper GI Bleeding. Upper GI Bleeding May Saito A C U T E U P P E R GI B L E E D (AJG 2021;116:5; Annals 2019;171:805; NEJM 2016;374:2367) Definition: bleeding proximal to ligament of Treitz S/Sx: hematemesis, melena (on exam: +LR 25; JAMA 2012;307:1072), hematochezia if brisk, BUN/Cr >30 (+"
+  },
+  {
+    "idx": 543,
+    "id": "curated-phase4_obs_unit_11",
+    "topic": "Amniotic Fluid Embolism (AFE) - Pathophysiology & Presentation",
+    "score": 0.5833,
+    "corpus_text": "Section: Catatonia, NMS, & Serotonin Syndrome. Catatonia, NMS, & Serotonin Syndrome Nicholas Daneshvari C A T A T O N I A Behavioral syndrome due to underlying condition that can occur in the context of many psychiatric, neuro, or medical dx; marked by inability to move or communicate despite full p"
+  },
+  {
+    "idx": 544,
+    "id": "curated-phase4_obs_unit_12",
+    "topic": "AFE Management - Resuscitation & Supportive Care",
+    "score": 0.5744,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care End of Life Care & Hospice Jade Connor E N D O F L I F E C A R E G EN E R A L P R I N C I PL E S The focus of EOL care is to enhance patient’s comfort, optimize symptom management, and ensure alignment with what matters most to pati"
+  },
+  {
+    "idx": 545,
+    "id": "curated-phase4_obs_unit_13",
+    "topic": "Peripartum Cardiomyopathy - Definition & Diagnosis",
+    "score": 0.5864,
+    "corpus_text": "Section: Hepatorenal Syndrome. Hepatorenal Syndrome Dan Fulop H E P A T OR EN A L S Y N D R O M E (HRS) (Clin Gastro Hep 2018;16:162; BMJ 2020;370:2687, NEJM 2023;388(8)e733, Gastro 2024;166:202) Pathophysiology: portal HTN  NO, prostaglandins  splanchnic vasodil.  EABV  RAAS, ADH, SNS  rena"
+  },
+  {
+    "idx": 546,
+    "id": "curated-phase4_obs_unit_14",
+    "topic": "Peripartum Cardiomyopathy Management",
+    "score": 0.7425,
+    "corpus_text": "Section: Heart Failure. Heart Failure Christian Andersen I N I T I A L W O R K U P - N E W H E A R T F A I L U R E D I A G N O S I S Clinical syndrome with signs/symptoms consistent with impaired cardiac function ± cardiomyopathy Echocardiography: TTE for all new presentations; obtain thereafter onl"
+  },
+  {
+    "idx": 547,
+    "id": "curated-phase4_obs_unit_15",
+    "topic": "Maternal Sepsis - Recognition in Pregnancy",
+    "score": 0.8258,
+    "corpus_text": "Section: • SOFA >>> SIRS. • SOFA >>> SIRS • SOFA >2 = sepsis • Calc SOFA: MD CALC, go to “evidence” to est FiO2. *PaO2: spO2 90% =~ 60mmHG paO2, 100% =~ 90mmHG • Sepsis: organ dysfunction (SOFA >/= 2) consequent to • Septic Shock: sepsis w/ hypotension requiring pressors for MAP >/= 65 and blood lac"
+  },
+  {
+    "idx": 548,
+    "id": "curated-phase4_obs_unit_16",
+    "topic": "Chorioamnionitis - Diagnosis & Treatment",
+    "score": 0.6025,
+    "corpus_text": "Section: Diagnosis (Cairo-Bishop criteria):. other: polycythemia vera, sickle cell, spherocytosis S/Sx: pulm (SOB, infiltrates) & CNS (blurry vision 2/2 retinal vein engorgement, HA, dizziness, ataxia, confusion, coma), fever, epistaxis  page Heme/Onc fellow & Clin Path resident for emergency visco"
+  },
+  {
+    "idx": 549,
+    "id": "curated-phase4_obs_unit_17",
+    "topic": "Postpartum Hemorrhage (PPH) - Definition & Etiology",
+    "score": 0.625,
+    "corpus_text": "Section: Thyroid Disorders & Male Hypogonadism. Thyroid Disorders & Male Hypogonadism Brenda Varriano & Bryan Holtzman H Y P E R T H Y R O I D I S M (Thyroid 2016; 26:1343) Definition: low TSH with high T3/T4 (primary) or high/normal TSH with high T3/T4 (secondary/central) Signs/symptoms: general ("
+  },
+  {
+    "idx": 550,
+    "id": "curated-phase4_obs_unit_18",
+    "topic": "Uterine Atony - Management",
+    "score": 0.5286,
+    "corpus_text": "Section: Primary Care. Primary Care Women’s Health Katherine M. Rich 2 ° A M E N O R R H E A (AFP 2019;100:39) Definition: cessation of regular menses for 3mo or cessation of irregular menses for 6mo] Hx: wt ∆, diet/exercise, hot flashes, galactorrhea, hirsutism, stress, systemic illness; Initial la"
+  },
+  {
+    "idx": 551,
+    "id": "curated-phase4_obs_unit_19",
+    "topic": "Retained Placenta - Diagnosis & Management",
+    "score": 0.5367,
+    "corpus_text": "Section: End Stage Liver Disease. End Stage Liver Disease Dan Fulop H E P A T O C E L L U L A R C A R C I N O M A (HCC) (AASLD: Hepatology 2023;78:1922) 2-4% risk per year. May be asx, lead to decompensation, and/or have sx related to mass effect (pain, early satiety, palpable mass) 1° prevention: H"
+  },
+  {
+    "idx": 552,
+    "id": "curated-phase4_obs_unit_20",
+    "topic": "Shoulder Dystocia - Recognition & Risk Factors",
+    "score": 0.6184,
+    "corpus_text": "Section: Biliary Disease. Biliary Disease Hailey Harris G A L L S T O N E D I S E A S E S (J Hep 2016;65:146) Cholelithiasis: presence of stones in GB (6% of M, 9% of F) Choledocholithiasis: stones in common bile duct - Sx: aSx (<20% develop clinical events), larger, multiple, older gallstones and F"
+  },
+  {
+    "idx": 553,
+    "id": "curated-phase4_obs_unit_21",
+    "topic": "Shoulder Dystocia Resolution - McRoberts Maneuver & Techniques",
+    "score": 0.5025,
+    "corpus_text": "Section: Miscellaneous Rheumatologic Diseases. Miscellaneous Rheumatologic Diseases Sofia Gearty P O L Y M Y A L G I A R H E U M A T I C A Inflammatory condition characterized by proximal muscle aches and AM stiffness. Exclusively in pts >50yrs, peak 70-80yrs, 2:1 F:M. Sx: abrupt onset symmetrical a"
+  },
+  {
+    "idx": 554,
+    "id": "curated-phase4_peds_unit_0",
+    "topic": "Pediatric Resuscitation - CPR Compression Depth & Rate",
+    "score": 0.5187,
+    "corpus_text": "Section: Intraosseous Line. Intraosseous Line Max Quinn G E N E R A L C O N S I D E R A T I O N S (Video: NEJM 2014;370:e35) Anatomy: veins that drain medullary sinuses of bones; veins supported by bones do not collapse in patients in shock Indication: patients without available IV access with urgen"
+  },
+  {
+    "idx": 555,
+    "id": "curated-phase4_peds_unit_1",
+    "topic": "Pediatric Airway - Anatomy & Differences",
+    "score": 0.5219,
+    "corpus_text": "Section: Primary Care. Primary Care Sleep Medicine Allen Hodge I N S O M N I A (PCOI) 35-50% of population; chronic insomnia >3mo. difficulty initiating or maintaining sleep and compromised daytime function (UTD) Hx: evaluate chronicity, stressors, effect on fxn/mood, # awakenings and triggers, slee"
+  },
+  {
+    "idx": 556,
+    "id": "curated-phase4_peds_unit_2",
+    "topic": "Pediatric RSI (Rapid Sequence Intubation)",
+    "score": 0.6591,
+    "corpus_text": "Section: Burns, hyperK, increased ICP, denervation, prolonged. esp if HD unstable, septic, reactive airway dz o Propofol: acts on GABA, 2 mg/kg, onset 15-45 sec, duration: 5 – 10 min, use in HD stable pts, reactive airway dz, status epilepticus. Drawbacks: hypotension, resp dep, pain on injection, v"
+  },
+  {
+    "idx": 557,
+    "id": "curated-phase4_peds_unit_3",
+    "topic": "Dehydration Assessment - Clinical Dehydration Scale",
+    "score": 0.7825,
+    "corpus_text": "Section: Geriatrics & Palliative Care Geriatric Assessment & Frailty. Geriatrics & Palliative Care Geriatric Assessment & Frailty Leanna Travis & Jade Connor G E N E R A L A P P R O A C H T O T H E C O M P R E H E N S I V E G E R I A T R I C A S S E S S M E N T Overview: The comprehensive geriatric "
+  },
+  {
+    "idx": 558,
+    "id": "curated-phase4_peds_unit_4",
+    "topic": "Oral vs. IV Rehydration in Children",
+    "score": 0.5303,
+    "corpus_text": "Section: Chapter 31 Ophthalmology and Otolaryngology. Chapter 31 Ophthalmology and Otolaryngology sympathetic response manifesting as hypertension and tachycardia. However, temporal reduction in brainstem firing to the superior laryngeal nerve eventually causes relaxation of the vocal cords. In smal"
+  },
+  {
+    "idx": 559,
+    "id": "curated-phase4_peds_unit_5",
+    "topic": "Pediatric Sepsis - SIRS Criteria Differ",
+    "score": 0.816,
+    "corpus_text": "Section: SEPSIS. #1. Initial interventions / work up for sepsis: Place on telemetry, vitals Q2H. Ensure access: 2 large bore IVs. Send lactate levels. IV ﬂuids (NS). 30 ml/kg. Usually 4 - 5 liters unless contra indicated (very low EF) Initiate empiric antibiotics (within 1 hour) with wide coverage a"
+  },
+  {
+    "idx": 560,
+    "id": "curated-phase4_peds_unit_6",
+    "topic": "Pediatric Shock - Types & Recognition",
+    "score": 0.6607,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Christopher Schenk O V E R V I E W Definitions: updated in 2016 by Sepsis Definitions Task Force (Sepsis-3) (JAMA 2016;315:801) Sepsis: life-threatening organ dysfunction (SOFA score ≥2) from dysregulated host response to infection Septi"
+  },
+  {
+    "idx": 561,
+    "id": "curated-phase4_peds_unit_7",
+    "topic": "Febrile Seizures - Definition, Prognosis, Workup",
+    "score": 0.7825,
+    "corpus_text": "Section: Stroke & TIA. Stroke & TIA Nupur Goel S Y M P T O M A T I C C A R O T I D S T E N O S I S SUSPECT WHEN: Carotid stenosis present on ipsilateral side H/o amaurosis fugax DIAGNOSTIC WORKUP: CTA vs. MRA head & neck, carotid US typically needed prior to carotid endarterectomy (CEA) ACUTE MANAGE"
+  },
+  {
+    "idx": 562,
+    "id": "curated-phase4_peds_unit_8",
+    "topic": "Status Epilepticus in Children - First/Second/Third-Line Therapy",
+    "score": 0.6367,
+    "corpus_text": "Section: H. Neurology/Psych. H. Neurology/Psych HINTS EXAM • “Head Impulse testing, Nystagmus, and a Test of Skew.” • To distinguish central vs peripheral causes Dix-Hallpike Maneuver • To test for BPPV • Place patient in lateral decubitus position, call NEURO • Pad and protect but do not immobilize"
+  },
+  {
+    "idx": 563,
+    "id": "curated-phase4_peds_unit_9",
+    "topic": "Epiglottitis vs Croup - Clinical Differentiation",
+    "score": 0.6479,
+    "corpus_text": "Section: Acute Leukemia. Acute Leukemia Dan Ikeda G E N E R A L A D M I S S I O N A P P R O A C H History: sibling status (for donor search), family history (for inherited syndromes), and if pre/peri menopausal, obtain date of LMP Peripheral smear: anemia, thrombocytopenia, variable WBC, circulating"
+  },
+  {
+    "idx": 564,
+    "id": "curated-phase4_peds_unit_10",
+    "topic": "Anaphylaxis in Children - Epinephrine IM Dosing",
+    "score": 0.6479,
+    "corpus_text": "Section: Effects preserved during acidosis and hypoxemia. • Norepinephrine (1st choice pressor in septic shock) • All around good pressor for septic & cardiogenic shock. • Receptors: A1>B1>B2. Mostly increased SVR and pulse • Dose range 0.01-3 µg/kg/min • Start at 5 mcg/min, titrate to MAP (usually "
+  },
+  {
+    "idx": 565,
+    "id": "curated-phase4_peds_unit_11",
+    "topic": "Accidental Ingestions - Antidotes & Management",
+    "score": 0.625,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care End of Life & Pronouncement Esdras O. Rodriguez A N T I C I P A T E D I N P A T I E N T D E A T H Involve family, chaplaincy (available 24/7), social work services, longitudinal providers (e.g. PCP, subspecialists) in/during EOL car"
+  },
+  {
+    "idx": 566,
+    "id": "curated-phase4_geri_unit_0",
+    "topic": "Atypical Presentations in Elderly - Silent MI, Falls, Sepsis",
+    "score": 0.8332,
+    "corpus_text": "Section: • SOFA >>> SIRS. • SOFA >>> SIRS • SOFA >2 = sepsis • Calc SOFA: MD CALC, go to “evidence” to est FiO2. *PaO2: spO2 90% =~ 60mmHG paO2, 100% =~ 90mmHG • Sepsis: organ dysfunction (SOFA >/= 2) consequent to • Septic Shock: sepsis w/ hypotension requiring pressors for MAP >/= 65 and blood lac"
+  },
+  {
+    "idx": 567,
+    "id": "curated-phase4_geri_unit_1",
+    "topic": "Polypharmacy & Drug Interactions - CYP450, Renal Clearance",
+    "score": 0.6062,
+    "corpus_text": "Section: Alcohol Use Disorder & Withdrawal. Alcohol Use Disorder & Withdrawal Alyssa Greenhouse Treatments for Moderate-Severe AUD Psychosocial: See above. 12-step progs ↑ rate of continuous abstinence compared to other counseling methods (Cochrane Rev 2020) FDA approved first line: naltrexone, acam"
+  },
+  {
+    "idx": 568,
+    "id": "curated-phase4_geri_unit_2",
+    "topic": "Delirium vs Dementia - CAM-ICU, Recognition, Causes",
+    "score": 0.6576,
+    "corpus_text": "Section: Richard Seeber. Richard Seeber M E N T A L S T A T U S: document daily if new AMS or worsening psychiatric sx (AFP 2009;80:809) P S Y C H O S I S W O R K U P A N D D I F F E R E N T I A L D I A G N O S I S Characteristics: delusions, thought/behavior disorganization, auditory > visual hallu"
+  },
+  {
+    "idx": 569,
+    "id": "curated-phase4_geri_unit_3",
+    "topic": "Falls in Elderly - Syncope, Orthostatic Hypotension, Arrhythmias",
+    "score": 0.7424,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Christopher Schenk I N I T I A L M A N A G E M E N T C O N T I N U E D 3) Vasopressors: target a mean arterial pressure (MAP) of >65mmHg (NEJM 2014;370:1583) (see Vasopressors for full details) NOTE: permissive hypotension (MAP goal >60) "
+  },
+  {
+    "idx": 570,
+    "id": "curated-phase4_geri_unit_4",
+    "topic": "Frailty Assessment - Physical Frailty Phenotype",
+    "score": 0.7825,
+    "corpus_text": "Section: Geriatrics & Palliative Care Geriatric Assessment & Frailty. Geriatrics & Palliative Care Geriatric Assessment & Frailty Leanna Travis & Jade Connor G E N E R A L A P P R O A C H T O T H E C O M P R E H E N S I V E G E R I A T R I C A S S E S S M E N T Overview: The comprehensive geriatric "
+  },
+  {
+    "idx": 571,
+    "id": "curated-phase4_geri_unit_5",
+    "topic": "Cognitive Impairment & Informed Consent - Decisional Capacity",
+    "score": 0.6325,
+    "corpus_text": "Section: Consent & Capacity. Consent & Capacity Erika Kaske T H R E E E L E M E N T S O F V A L I D I N F O R M E D C O N S E N T (Psychosomatics 1997;38:119; NEJM 2007;357:1834) 1. Relevant clinical information: at minimum: diagnosis, proposed intervention, its purpose, its basic risks/benefits, al"
+  },
+  {
+    "idx": 572,
+    "id": "curated-phase4_geri_unit_6",
+    "topic": "Advanced Directives - Living Wills, POLST, Healthcare Power of Attorney",
+    "score": 0.78,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Adv Care Planning & Code Status Kimberly DeBruler S ER I OU S I L L N E S S C O N V E R SA T I ON S MGH C ON T I N U U M P R OJ E C T When? Conversations can be planned or may happen spontaneously in any setting (NEJM 2014;370:2506)"
+  },
+  {
+    "idx": 573,
+    "id": "curated-phase4_geri_unit_7",
+    "topic": "Medication Deprescribing - Benzodiazepines, Anticholinergics, NSAIDs",
+    "score": 0.7208,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Polypharmacy & Elder Abuse Leanna Travis & Jade Connor P O L Y P H A R M A C Y: P R E S C R I B I N G A N D D E P R E S C R I B I N G M E D I C A T I O N S Medication Reconciliation: confirm meds w/ pt & family; ask about medication"
+  },
+  {
+    "idx": 574,
+    "id": "curated-phase4_geri_unit_8",
+    "topic": "Urinary Incontinence - Types & Management",
+    "score": 0.7575,
+    "corpus_text": "Section: Jason J. Lee & Graham Lieberman. Jason J. Lee & Graham Lieberman Who to call: page 11300 for Emergencies, Foleys, SPTs, & gross hematuria; page 10300 for other non-urgent inpatient consults Consults: note urine color in tube (bag urine appears darker due to volume) before consulting Urology"
+  },
+  {
+    "idx": 575,
+    "id": "curated-phase4_geri_unit_9",
+    "topic": "Pressure Ulcer Prevention & Staging",
+    "score": 0.7283,
+    "corpus_text": "Section: Nnenna Ezeh, Rebecca Gaffney, & Olivia Cohen. Nnenna Ezeh, Rebecca Gaffney, & Olivia Cohen Before Consulting Dermatology: upload photos of rash (ideally pre-treatment) to media tab of EPIC using Haiku If consulting for drug rash, note exact timing of rash development and administration of s"
+  },
+  {
+    "idx": 576,
+    "id": "curated-phase4_comm_unit_0",
+    "topic": "Breaking Bad News - SPIKES Framework",
+    "score": 0.6644,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou D E F I N I N G AKI (KDIGO 2012 Guidelines) Diagnostic Tips Serum Cr approximates GFR at steady state only (unable to estimate GFR w/ ∆Cr): must assume GFR <10 if ∆Cr > 1 mg/dL/day Drugs can impair Cr excretion without ∆GFR (BUN remains sta"
+  },
+  {
+    "idx": 577,
+    "id": "curated-phase4_comm_unit_1",
+    "topic": "Goals-of-Care Conversations - Prognosis Discussion",
+    "score": 0.7247,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Adv Care Planning & Code Status Kimberly DeBruler S ER I OU S I L L N E S S C O N V E R SA T I ON S MGH C ON T I N U U M P R OJ E C T When? Conversations can be planned or may happen spontaneously in any setting (NEJM 2014;370:2506)"
+  },
+  {
+    "idx": 578,
+    "id": "curated-phase4_comm_unit_2",
+    "topic": "DNR Orders - Code Status, Duration, Reversibility",
+    "score": 0.6211,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care End of Life Care & Hospice Jade Connor E N D O F L I F E C A R E G EN E R A L P R I N C I PL E S The focus of EOL care is to enhance patient’s comfort, optimize symptom management, and ensure alignment with what matters most to pati"
+  },
+  {
+    "idx": 579,
+    "id": "curated-phase4_comm_unit_3",
+    "topic": "Shared Decision-Making - Integrating Patient Values & Medical Expertise",
+    "score": 0.6189,
+    "corpus_text": "Section: Acute Kidney Injury (AKI). disease and NOT improvement of renal fx Acute Kidney Injury (AKI) • Abrupt increase in Cr in <48h of >/= 0.3 mg/dl OR Cr >/=50% OR • <0.5mL/kg/hr for >6h • DDX: prerenal, intrinsic, post-renal. Consult pocket med etc for • Initial eval: hx, volume status, RFP, UA,"
+  },
+  {
+    "idx": 580,
+    "id": "curated-phase4_comm_unit_4",
+    "topic": "Palliative Pain Management - Opioid Dosing & Tolerance",
+    "score": 0.7761,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Pain Management Megan Marshall IV 25-50mcg q15-30m prn <1 5-7 45m to 2+ hr Safer in renal and liver disease Consult pain and/or pall care 10-20 60-120 4-6 Safer in renal and liver disease PO 30-60 90-120 4-12 Methadone:* Beneficial "
+  },
+  {
+    "idx": 581,
+    "id": "curated-phase4_comm_unit_5",
+    "topic": "Symptom Management - Dyspnea, Nausea, Constipation",
+    "score": 0.7117,
+    "corpus_text": "Section: Other Substance Use. Other Substance Use Kristine Abo T O B A C C O (USPSTF: JAMA 2021;325:280, ATS: AJRCCM 2020;202:e5) Screening: Tobacco: 5A’s framework: Ask about use, Advise to quit, Assess readiness, Assist if ready, Arrange follow up. Treatment: Combination of counseling and medicati"
+  },
+  {
+    "idx": 582,
+    "id": "curated-phase4_comm_unit_6",
+    "topic": "Withdrawing Life Support - Ethical Framework & Symptom Management",
+    "score": 0.6823,
+    "corpus_text": "Section: Other Substance Use. Other Substance Use Kristine Abo T O B A C C O (USPSTF: JAMA 2021;325:280, ATS: AJRCCM 2020;202:e5) Screening: Tobacco: 5A’s framework: Ask about use, Advise to quit, Assess readiness, Assist if ready, Arrange follow up. Treatment: Combination of counseling and medicati"
+  },
+  {
+    "idx": 583,
+    "id": "curated-phase4_comm_unit_7",
+    "topic": "Addressing Patient/Family Expectations - Hope vs. Realism",
+    "score": 0.5576,
+    "corpus_text": "Section: Troubleshooting: All IV lines are blown!. Troubleshooting: All IV lines are blown! • Epi can be given via ETT!  give epi 2.5mg via ETT instead of 1mg IV • Ask RN to attempt PIV • Place an intraosseous line  takes < 1 min & gets fluid to heart in 3 sec • Ask resident to place central line "
+  },
+  {
+    "idx": 584,
+    "id": "curated-phase4_comm_unit_8",
+    "topic": "Physician Self-Care & Burnout Prevention",
+    "score": 0.5643,
+    "corpus_text": "Section: Primary Care. Primary Care Disability Competent Care Amanda Jowell & Lisa Lezzoni Authors Comments: Please note that this is an incredibly important and evolving field, which lacks substantial data, publications, and amplification of voices of individuals with disabilities. We write this pa"
+  },
+  {
+    "idx": 585,
+    "id": "curated-phase4_comm_unit_9",
+    "topic": "Documentation of Conversations & Code Status",
+    "score": 0.7338,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Adv Care Planning & Code Status Kimberly DeBruler S ER I OU S I L L N E S S C O N V E R SA T I ON S MGH C ON T I N U U M P R OJ E C T When? Conversations can be planned or may happen spontaneously in any setting (NEJM 2014;370:2506)"
+  },
+  {
+    "idx": 586,
+    "id": "curated-phase4_qual_unit_0",
+    "topic": "Patient Safety - Never Events & Serious Reportable Events",
+    "score": 0.5342,
+    "corpus_text": "Section: Able to manipulate info. higher the standard to refuse, and vice versa C R I T E R I A F O R D E T E R M I N I N G C A P A C I T Y (ALL must be met for pt to have capacity) (NEJM 2007;357:1834; NEJM 1988;319:1635) Approach in Physician’s Assessment Communicate a clear and consistent choice "
+  },
+  {
+    "idx": 587,
+    "id": "curated-phase4_qual_unit_1",
+    "topic": "Root Cause Analysis - 5 Whys & Fishbone Diagram",
+    "score": 0.5261,
+    "corpus_text": "Section: Infectious Disease. Infectious Disease Meningitis & Encephalitis Justine Enns B A C T E R I A L M E N I N G I T I S Clinical Features History: 95% have ≥2 of: fever, neck stiffness, AMS, HA (NEJM 2004;351:1849). Lethargy, hypothermia may be common in elderly. Abd pain, peritonitis can be se"
+  },
+  {
+    "idx": 588,
+    "id": "curated-phase4_qual_unit_2",
+    "topic": "Medical Error Disclosure & Sorry Laws",
+    "score": 0.7325,
+    "corpus_text": "Section: Mandatory Attending Notifications. Mandatory Attending Notifications • To ensure timely communication and patient safety the resident is required to immediately communicate directly (telephone or in person) with attending for any event listed below: • Emergency room consults that will be di"
+  },
+  {
+    "idx": 589,
+    "id": "curated-phase4_qual_unit_3",
+    "topic": "Infection Prevention - Hand Hygiene, Isolation Precautions",
+    "score": 0.75,
+    "corpus_text": "Section: Infectious Disease. Infectious Disease Infection Control Matthew Adan Resources: Infection Control websites on Sharepoint and Ellucid for the most up-to-date MGH policies and list of diseases/conditions requiring isolation. For additional support, work with unit-specific nursing leadership "
+  },
+  {
+    "idx": 590,
+    "id": "curated-phase4_qual_unit_4",
+    "topic": "CLABSI Prevention - Central Line-Associated Bloodstream Infection",
+    "score": 0.7164,
+    "corpus_text": "Section: Nutrition & Feeding. Nutrition & Feeding Shawna Bilton G E N E R A L A P P R O A C H (ACG: AJG 2016;111:315) 1) Assess nutritional status (Clin Nutr ESPEN 2018;26:13) Hx/Exam: dietary intake/tolerance, n/v/d, muscle/fat wasting, weight loss, functional capacity (grip strength, ADLs). Screen"
+  },
+  {
+    "idx": 591,
+    "id": "curated-phase4_qual_unit_5",
+    "topic": "Hospital-Acquired Complications - Falls, Pressure Ulcers, HAI",
+    "score": 0.7092,
+    "corpus_text": "Section: Geriatrics & Palliative Care. Geriatrics & Palliative Care Polypharmacy & Elder Abuse Leanna Travis & Jade Connor P O L Y P H A R M A C Y: P R E S C R I B I N G A N D D E P R E S C R I B I N G M E D I C A T I O N S Medication Reconciliation: confirm meds w/ pt & family; ask about medication"
+  },
+  {
+    "idx": 592,
+    "id": "curated-phase4_qual_unit_6",
+    "topic": "Rapid Response Teams (RRT) - Calling Criteria & Composition",
+    "score": 0.7566,
+    "corpus_text": "Section: Oncologic Emergencies. Oncologic Emergencies Joshua Gustine T U M O R L Y S I S S Y N D R O M E (NEJM 2011;364:1844; JCO 2008;26:2767) Pathophys: TLS 2/2 tx initiation or spontaneous in cancers w/ high turnover  release of intracellular metabolites (i.e. uric acid, K+, phos)  AKI (uric ac"
+  },
+  {
+    "idx": 593,
+    "id": "curated-phase4_qual_unit_7",
+    "topic": "Mortality & Morbidity (M&M) Conferences - Learning from Adverse Events",
+    "score": 0.6821,
+    "corpus_text": "Section: Coagulation Disorders. Coagulation Disorders Nicolas Trad H Y P E R C O A G U L A B L E S T A T E S (NEJM 2017;377:1177) (ASH 2023 Guidelines) Do not test at time of event or during anticoagulant therapy. If performed, should be >2 weeks following d/c of anticoagulation Testing includes: Fa"
+  },
+  {
+    "idx": 594,
+    "id": "curated-phase4_qual_unit_8",
+    "topic": "Quality Metrics - Mortality, Readmission, Patient Satisfaction, Length of Stay",
+    "score": 0.4901,
+    "corpus_text": "Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE It is easy to see how quality and safety do not always overlap. As an example, a process can always be made incrementally safer by installing an additional check or adding extra equipment. In anesthesia pra"
+  },
+  {
+    "idx": 595,
+    "id": "curated-phase4_qual_unit_9",
+    "topic": "Lean/Six Sigma - Process Improvement Methodologies",
+    "score": 0.6141,
+    "corpus_text": "Section: Danielle Larrow. Danielle Larrow E P I S T A X I S (N O S E B L E E D) Acute management: (UpToDate Epistaxis) 1. Have patient lean forward, pinch nostrils, and hold pressure for 20 min Guidance: pinch over the soft portion of the nose; do NOT lean head back or pinch bony part of nose; do NO"
+  },
+  {
+    "idx": 596,
+    "id": "curated-phase4_qual_unit_10",
+    "topic": "Documentation & Compliance - Accurate Coding, Fraud Prevention",
+    "score": 0.5275,
+    "corpus_text": "Section: Outpatient CV Health. Outpatient CV Health Amanda Jowell Medical Management (HTN 2018;71:1261) When to Treat Stage II HTN or Stage I if: clinical CVD, DM2, CKD, or ASCVD ≥10% Target BP Choice of Agent First-line: thiazides (chlorthalidone may not be > HCTZ, SEs (JAMA IM 2020;180:542)), ACE"
+  },
+  {
+    "idx": 597,
+    "id": "curated-phase5_acls_unit_0",
+    "topic": "BLS overview",
+    "score": 0.502,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 598,
+    "id": "curated-phase5_acls_unit_1",
+    "topic": "Ventricular fibrillation (VF)",
+    "score": 0.6292,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 599,
+    "id": "curated-phase5_acls_unit_2",
+    "topic": "Pulseless ventricular tachycardia (PVT)",
+    "score": 0.623,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 600,
+    "id": "curated-phase5_acls_unit_3",
+    "topic": "Asystole management",
+    "score": 0.5994,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 601,
+    "id": "curated-phase5_acls_unit_4",
+    "topic": "Pulseless electrical activity (PEA)",
+    "score": 0.5242,
+    "corpus_text": "Section: Cardiac Arrest. Cardiac Arrest 1 9 1 sternum with the elbows locked and the arms straight. Each compression is a tluT1st delivered through the heel of the hands (one on top of the other) to depress the ster­ num 1.5 to 2 inches. When the compression is released, the sternum should be allowe"
+  },
+  {
+    "idx": 602,
+    "id": "curated-phase5_acls_unit_5",
+    "topic": "Epinephrine in resuscitation",
+    "score": 0.502,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 603,
+    "id": "curated-phase5_acls_unit_6",
+    "topic": "Amiodarone dosing and indications",
+    "score": 0.5883,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs"
+  },
+  {
+    "idx": 604,
+    "id": "curated-phase5_acls_unit_7",
+    "topic": "Atropine in bradycardia",
+    "score": 0.63,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 605,
+    "id": "curated-phase5_acls_unit_8",
+    "topic": "Therapeutic hypothermia (TTM) indications",
+    "score": 0.5942,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 606,
+    "id": "curated-phase5_acls_unit_9",
+    "topic": "ROSC recognition and post-arrest care",
+    "score": 0.6248,
+    "corpus_text": "Section: ACLS: Cardiac Arrest & TTM. ACLS: Cardiac Arrest & TTM Chris Schenck Compress 2-2.4” deep, 100-120BPM, minimize interruptions & allow full recoil Without ETT: 30:2 compressions to mask vent With ETT:  compressors q2min, breaths q6-8s Call CODE BLUE (x6-3333, blue button on wall) Call for d"
+  },
+  {
+    "idx": 607,
+    "id": "curated-phase5_acls_unit_10",
+    "topic": "Prognostication after cardiac arrest",
+    "score": 0.5433,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 608,
+    "id": "curated-phase5_acls_unit_11",
+    "topic": "Pregnancy cardiac arrest",
+    "score": 0.5603,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 609,
+    "id": "curated-phase5_acls_unit_12",
+    "topic": "Hypothermia cardiac arrest",
+    "score": 0.5903,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 610,
+    "id": "curated-phase5_acls_unit_13",
+    "topic": "Cardiac arrest from pulmonary embolism",
+    "score": 0.5965,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Christina Shincovich T Y P E S O F ECMO (JACC 2014;63:2769) 1. Venoarterial (VA, replaces heart and lungs): primarily cardiogenic shock o Venous blood is removed, oxygenated, CO2 extracted, and reinfused in arterial system o Venous cannul"
+  },
+  {
+    "idx": 611,
+    "id": "curated-phase5_acls_unit_14",
+    "topic": "Cardiac arrest from tension pneumothorax",
+    "score": 0.6524,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 612,
+    "id": "curated-phase5_acls_unit_15",
+    "topic": "Poisoning-related cardiac arrest",
+    "score": 0.5903,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 613,
+    "id": "curated-phase5_acls_unit_16",
+    "topic": "Team dynamics during code blue",
+    "score": 0.6277,
+    "corpus_text": "Section: ACLS: Cardiac Arrest & TTM. ACLS: Cardiac Arrest & TTM Chris Schenck Compress 2-2.4” deep, 100-120BPM, minimize interruptions & allow full recoil Without ETT: 30:2 compressions to mask vent With ETT:  compressors q2min, breaths q6-8s Call CODE BLUE (x6-3333, blue button on wall) Call for d"
+  },
+  {
+    "idx": 614,
+    "id": "curated-phase5_acls_unit_17",
+    "topic": "When to stop resuscitation",
+    "score": 0.61,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs"
+  },
+  {
+    "idx": 615,
+    "id": "curated-phase5_acls_unit_18",
+    "topic": "Extracorporeal CPR (ECPR) indications",
+    "score": 0.5353,
+    "corpus_text": "Section: ACLS: Cardiac Arrest & TTM. ACLS: Cardiac Arrest & TTM Chris Schenck Compress 2-2.4” deep, 100-120BPM, minimize interruptions & allow full recoil Without ETT: 30:2 compressions to mask vent With ETT:  compressors q2min, breaths q6-8s Call CODE BLUE (x6-3333, blue button on wall) Call for d"
+  },
+  {
+    "idx": 616,
+    "id": "curated-phase5_acls_unit_19",
+    "topic": "ECPR technique and setup",
+    "score": 0.5,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 617,
+    "id": "curated-phase5_acls_unit_20",
+    "topic": "Sodium bicarbonate in arrest",
+    "score": 0.6205,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 618,
+    "id": "curated-phase5_acls_unit_21",
+    "topic": "Calcium in resuscitation",
+    "score": 0.5942,
+    "corpus_text": "Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALL"
+  },
+  {
+    "idx": 619,
+    "id": "curated-phase5_arrhythmia_unit_0",
+    "topic": "Bradycardia definition and causes",
+    "score": 0.7258,
+    "corpus_text": "Section: Andrea Martinez. Andrea Martinez O V E R V I E W Definition: transient (self-limited) loss of consciousness due to cerebral hypoperfusion that is associated with loss of postural tone, followed by complete spontaneous recovery; excludes metabolic causes (e.g. hypoglycemia, hypoxia, intoxica"
+  },
+  {
+    "idx": 620,
+    "id": "curated-phase5_arrhythmia_unit_1",
+    "topic": "Sinus bradycardia",
+    "score": 0.7739,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 621,
+    "id": "curated-phase5_arrhythmia_unit_2",
+    "topic": "First-degree AV block",
+    "score": 0.5518,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 622,
+    "id": "curated-phase5_arrhythmia_unit_3",
+    "topic": "Second-degree AV block Type I (Wenckebach)",
+    "score": 0.7263,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 623,
+    "id": "curated-phase5_arrhythmia_unit_4",
+    "topic": "Second-degree AV block Type II (Mobitz II)",
+    "score": 0.5275,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 624,
+    "id": "curated-phase5_arrhythmia_unit_5",
+    "topic": "Third-degree AV block (complete heart block)",
+    "score": 0.6019,
+    "corpus_text": "Section: Andrea Martinez. Andrea Martinez O V E R V I E W Definition: transient (self-limited) loss of consciousness due to cerebral hypoperfusion that is associated with loss of postural tone, followed by complete spontaneous recovery; excludes metabolic causes (e.g. hypoglycemia, hypoxia, intoxica"
+  },
+  {
+    "idx": 625,
+    "id": "curated-phase5_arrhythmia_unit_6",
+    "topic": "Sick sinus syndrome",
+    "score": 0.755,
+    "corpus_text": "Section: Andrea Martinez. Andrea Martinez O V E R V I E W Definition: transient (self-limited) loss of consciousness due to cerebral hypoperfusion that is associated with loss of postural tone, followed by complete spontaneous recovery; excludes metabolic causes (e.g. hypoglycemia, hypoxia, intoxica"
+  },
+  {
+    "idx": 626,
+    "id": "curated-phase5_arrhythmia_unit_7",
+    "topic": "Atropine mechanism and pharmacology",
+    "score": 0.618,
+    "corpus_text": "Section: Primary Care. Primary Care Sleep Medicine Allen Hodge I N S O M N I A (PCOI) 35-50% of population; chronic insomnia >3mo. difficulty initiating or maintaining sleep and compromised daytime function (UTD) Hx: evaluate chronicity, stressors, effect on fxn/mood, # awakenings and triggers, slee"
+  },
+  {
+    "idx": 627,
+    "id": "curated-phase5_arrhythmia_unit_8",
+    "topic": "Atropine paradox",
+    "score": 0.6617,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 628,
+    "id": "curated-phase5_arrhythmia_unit_9",
+    "topic": "Transcutaneous pacing indications",
+    "score": 0.7475,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 629,
+    "id": "curated-phase5_arrhythmia_unit_10",
+    "topic": "Transvenous pacing technique",
+    "score": 0.5423,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 630,
+    "id": "curated-phase5_arrhythmia_unit_11",
+    "topic": "Narrow complex tachycardia differential",
+    "score": 0.825,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 631,
+    "id": "curated-phase5_arrhythmia_unit_12",
+    "topic": "Supraventricular tachycardia (SVT) overview",
+    "score": 0.7794,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 632,
+    "id": "curated-phase5_arrhythmia_unit_13",
+    "topic": "AVNRT (AV nodal reentrant tachycardia)",
+    "score": 0.7718,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 633,
+    "id": "curated-phase5_arrhythmia_unit_14",
+    "topic": "AVRT and Wolff-Parkinson-White (WPW)",
+    "score": 0.7194,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs"
+  },
+  {
+    "idx": 634,
+    "id": "curated-phase5_arrhythmia_unit_15",
+    "topic": "Vagal maneuvers for SVT",
+    "score": 0.689,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 635,
+    "id": "curated-phase5_arrhythmia_unit_16",
+    "topic": "Adenosine for SVT",
+    "score": 0.783,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 636,
+    "id": "curated-phase5_arrhythmia_unit_17",
+    "topic": "Verapamil and diltiazem for SVT",
+    "score": 0.7225,
+    "corpus_text": "Section: B. Cardiology. B. Cardiology Basic EKG Interpretation X axis = time,10sec; 1 small box = 1mm = 40msec; 1big box = 5 small= 200msec Y axis =voltage; 1 small box = 1mm = 0.1mV; 1big box = 5 small= 0.5mV Rate: (# of R waves on 10 sec ECG) * 6; or (#R waves in two 3sec blocks) * 10 --or-- Count"
+  },
+  {
+    "idx": 637,
+    "id": "curated-phase5_arrhythmia_unit_18",
+    "topic": "Beta-blockers for SVT",
+    "score": 0.7831,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 638,
+    "id": "curated-phase5_arrhythmia_unit_19",
+    "topic": "Atrial fibrillation overview",
+    "score": 0.83,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 639,
+    "id": "curated-phase5_arrhythmia_unit_20",
+    "topic": "Atrial flutter",
+    "score": 0.7832,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 640,
+    "id": "curated-phase5_arrhythmia_unit_21",
+    "topic": "Anticoagulation in atrial fibrillation",
+    "score": 0.83,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 641,
+    "id": "curated-phase5_arrhythmia_unit_22",
+    "topic": "Rate control vs rhythm control in AF",
+    "score": 0.795,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang NOT used to guide decision making for HOCM or mitral stenosis (MS) with moderate severity or greater. HAS-BLED: risk stratification of bleeding risk w/ oral AC. HTN (SBP>160); abnl renal function (CrCl<50); liver diseas"
+  },
+  {
+    "idx": 642,
+    "id": "curated-phase5_arrhythmia_unit_23",
+    "topic": "Cardioversion for atrial fibrillation",
+    "score": 0.7777,
+    "corpus_text": "Section: Atrial Fibrillation & Flutter. Atrial Fibrillation & Flutter Yichi Zang A T R I A L F I B R I L L A T I O N Epidemiology (Heart Rhythm 2012;9:632) RF: age, obesity, HTN, smoking, EtOH, DM, previous MI, HF, OSA Recurs in majority of cases due to secondary precipitant (surgery, infection, MI,"
+  },
+  {
+    "idx": 643,
+    "id": "curated-phase5_arrhythmia_unit_24",
+    "topic": "Wide complex tachycardia differential",
+    "score": 0.8183,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 644,
+    "id": "curated-phase5_arrhythmia_unit_25",
+    "topic": "Ventricular tachycardia (VT) overview",
+    "score": 0.6439,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 645,
+    "id": "curated-phase5_arrhythmia_unit_26",
+    "topic": "Torsades de pointes",
+    "score": 0.6617,
+    "corpus_text": "Section: ARRHYTHMIAS / ACLS. ARRHYTHMIAS / ACLS • Hemodynamic stability. Vital signs? • Symptoms. Chest pain, LOC, SOB, fever? • Duration of arrhythmia: Constant / intermittent? #2. Information from chart / sign out: • Cardiac history: A.ﬁb / ﬂutter, SSS, CAD. • Check past EKGs / echos. • Current el"
+  },
+  {
+    "idx": 646,
+    "id": "curated-phase5_arrhythmia_unit_27",
+    "topic": "Long QT syndrome",
+    "score": 0.795,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 647,
+    "id": "curated-phase5_arrhythmia_unit_28",
+    "topic": "Brugada syndrome",
+    "score": 0.7506,
+    "corpus_text": "Section: Acute Kidney Injury. Acute Kidney Injury Roger Zou M A N A G E M E N T “A Euvolemic Kidney is a Happy Kidney; Fluids are NOT always the answer” 1. Optimize hemodynamics, avoid nephrotoxins: correct volume status – IVF and hold diuretics if hypovolemic, diuretics if hypervolemic. Stop NSAIDs"
+  },
+  {
+    "idx": 648,
+    "id": "curated-phase5_arrhythmia_unit_29",
+    "topic": "Class I antiarrhythmics (sodium channel blockers)",
+    "score": 0.7325,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 649,
+    "id": "curated-phase5_arrhythmia_unit_30",
+    "topic": "Class II antiarrhythmics (beta-blockers)",
+    "score": 0.7283,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 650,
+    "id": "curated-phase5_arrhythmia_unit_31",
+    "topic": "Class III antiarrhythmics (potassium channel blockers)",
+    "score": 0.735,
+    "corpus_text": "Section: Anti-Arrhythmic Medications. Anti-Arrhythmic Medications David Iskhakov *Renal dosing required Side effects, Contraindications (CI) Na+ channel blockade; conduction slowing; action potential; also has Class III action VT; AF, especially in accessory bypass tracts VT: 100mg q5min until tota"
+  },
+  {
+    "idx": 651,
+    "id": "curated-phase5_arrhythmia_unit_32",
+    "topic": "Class IV antiarrhythmics (calcium channel blockers)",
+    "score": 0.7371,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh Tox resident pager 21827 • Poison Control 1-800-222-1222 • MGH Lab Tox Screen Guru: Dr. Jim Flood Presenting Symptoms Diagnostic Workup Atropine, Benztropine, Mydriasis, hyperthermia, sweating, flushing, d"
+  },
+  {
+    "idx": 652,
+    "id": "curated-phase5_hemodynamic_unit_0",
+    "topic": "Central venous pressure (CVP) normal values",
+    "score": 0.515,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: hemodynamic monitoring (CVP, CVO2); admin. of noxious meds (pressors, chemo, hypertonic solution, TPN); rapid large volume resuscitation (Cordis/MAC); inadequate peripheral access; HD/CVVH/pheresis; "
+  },
+  {
+    "idx": 653,
+    "id": "curated-phase5_hemodynamic_unit_1",
+    "topic": "CVP waveform analysis",
+    "score": 0.515,
+    "corpus_text": "Section: Central Line. Central Line Max Quinn G E N E R A L C O N S I D E R A T I O N S Indications: hemodynamic monitoring (CVP, CVO2); admin. of noxious meds (pressors, chemo, hypertonic solution, TPN); rapid large volume resuscitation (Cordis/MAC); inadequate peripheral access; HD/CVVH/pheresis; "
+  },
+  {
+    "idx": 654,
+    "id": "curated-phase5_hemodynamic_unit_2",
+    "topic": "Swan-Ganz catheter overview",
+    "score": 0.735,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 655,
+    "id": "curated-phase5_hemodynamic_unit_3",
+    "topic": "PAWP (pulmonary artery wedge pressure)",
+    "score": 0.5467,
+    "corpus_text": "Section: Despite these changes in intravascular pressure, there is lit­. 1 14 Hemodynamic Monitoring creates phasic changes in intravascular pressure similar to the cenh·al venous pressure (CVP) tracing in Figure 8.1. Despite these changes in intravascular pressure, there is lit­ tle or no change in"
+  },
+  {
+    "idx": 656,
+    "id": "curated-phase5_hemodynamic_unit_4",
+    "topic": "Cardiac output measurement",
+    "score": 0.5376,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 657,
+    "id": "curated-phase5_hemodynamic_unit_5",
+    "topic": "Fick equation for cardiac output",
+    "score": 0.7625,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 658,
+    "id": "curated-phase5_hemodynamic_unit_6",
+    "topic": "SVR (systemic vascular resistance) calculation",
+    "score": 0.603,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 659,
+    "id": "curated-phase5_hemodynamic_unit_7",
+    "topic": "PVR (pulmonary vascular resistance) calculation",
+    "score": 0.6081,
+    "corpus_text": "Section: Right Ventricular Failure. Right Ventricular Failure Chris Schenck P A T H O P H Y S I O L O G Y Normal RV function: governed by systemic venous return, PA pressure, pericardial compliance, and native contractility of the RV free wall and interventricular septum (where RV and LV are “tether"
+  },
+  {
+    "idx": 660,
+    "id": "curated-phase5_hemodynamic_unit_8",
+    "topic": "Systemic vascular resistance in shock states",
+    "score": 0.7042,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  },
+  {
+    "idx": 661,
+    "id": "curated-phase5_hemodynamic_unit_9",
+    "topic": "Diastolic dysfunction patterns",
+    "score": 0.63,
+    "corpus_text": "Section: End Stage Liver Disease. End Stage Liver Disease Dan Fulop H E P A T O C E L L U L A R C A R C I N O M A (HCC) (AASLD: Hepatology 2023;78:1922) 2-4% risk per year. May be asx, lead to decompensation, and/or have sx related to mass effect (pain, early satiety, palpable mass) 1° prevention: H"
+  },
+  {
+    "idx": 662,
+    "id": "curated-phase5_hemodynamic_unit_10",
+    "topic": "Tamponade physiology",
+    "score": 0.7642,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 663,
+    "id": "curated-phase5_hemodynamic_unit_11",
+    "topic": "Constrictive pericarditis hemodynamics",
+    "score": 0.7533,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 664,
+    "id": "curated-phase5_hemodynamic_unit_12",
+    "topic": "Transthoracic echocardiography for hemodynamics",
+    "score": 0.705,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 665,
+    "id": "curated-phase5_hemodynamic_unit_13",
+    "topic": "Tissue Doppler for diastolic function",
+    "score": 0.6063,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 666,
+    "id": "curated-phase5_hemodynamic_unit_14",
+    "topic": "NICOM (non-invasive cardiac output monitoring)",
+    "score": 0.5357,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 667,
+    "id": "curated-phase5_hemodynamic_unit_15",
+    "topic": "Bioimpedance for hemodynamics",
+    "score": 0.795,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 668,
+    "id": "curated-phase5_shock_unit_0",
+    "topic": "Cardiogenic shock definition",
+    "score": 0.7469,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  },
+  {
+    "idx": 669,
+    "id": "curated-phase5_shock_unit_1",
+    "topic": "Cardiogenic shock from acute MI",
+    "score": 0.6656,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  },
+  {
+    "idx": 670,
+    "id": "curated-phase5_shock_unit_2",
+    "topic": "RV infarction physiology",
+    "score": 0.6521,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  },
+  {
+    "idx": 671,
+    "id": "curated-phase5_shock_unit_3",
+    "topic": "Mechanical complications of MI",
+    "score": 0.6717,
+    "corpus_text": "Section: Inpatient Heart Failure. Inpatient Heart Failure Amanda Jowell Diuretic plan: determine maintenance diuretic dose and provide specific instructions for taking additional rescue doses. Observe on maintenance dose and decide if needs K replacement HFmrEF (EF 40-49%): treat with diuretics & co"
+  },
+  {
+    "idx": 672,
+    "id": "curated-phase5_shock_unit_4",
+    "topic": "Management algorithm for cardiogenic shock",
+    "score": 0.6872,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  },
+  {
+    "idx": 673,
+    "id": "curated-phase5_shock_unit_5",
+    "topic": "Hypovolemic shock pathophysiology",
+    "score": 0.6561,
+    "corpus_text": "Section: Pulmonary & Critical Care. Pulmonary & Critical Care Kimberly DeBruler O V E R V I E W (NEJM 2013;369:1726) Definition: state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage Clinical manifestations: hypotension (SBP <90mmHg or "
+  }
+]

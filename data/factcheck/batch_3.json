@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "curated-phase4_tox_unit_27",
+    "verdict": "KEEP",
+    "reason": "Pralidoxime dosing and aging window accurate for pesticide OP poisoning at intern level. Infusion 500mg/h more standard than 1g/h — acceptable range."
+  },
+  {
+    "id": "curated-phase4_tox_unit_28",
+    "verdict": "KEEP",
+    "reason": "Accurate supportive care for OP poisoning; lorazepam doses, decontamination steps, ICU course all correct."
+  },
+  {
+    "id": "curated-phase4_tox_unit_29",
+    "verdict": "FIX",
+    "reason": "Penicillamine listed for iron is incorrect (deferoxamine is iron chelator); DMSA not used for acute iron OD.",
+    "corrected_text": "Heavy metals (lead, mercury, arsenic, iron, copper) cause multiorgan toxicity. Lead: encephalopathy, renal failure, abdominal pain. Mercury: tremor, psychological effects, renal failure. Arsenic: GI symptoms, peripheral neuropathy, cardiac arrhythmias. Iron: GI hemorrhage, metabolic acidosis, hepatotoxicity. Copper: hemolysis, hepatotoxicity. Chelation = binding agent that prevents metal reabsorption, enhancing renal or biliary excretion. Common agents: EDTA (calcium EDTA for lead), BAL (dimercaprol for arsenic/mercury/lead), DMSA (succimer, oral, lead/arsenic), penicillamine (copper — Wilson disease), deferoxamine (iron)."
+  },
+  {
+    "id": "curated-phase4_tox_unit_30",
+    "verdict": "KEEP",
+    "reason": "Lead chelation thresholds and agents accurate. CDC action level has been lowered (3.5 µg/dL) but chelation thresholds cited are correct."
+  },
+  {
+    "id": "curated-phase4_tox_unit_31",
+    "verdict": "DROP_INACCURATE",
+    "reason": "Deferoxamine 'increase to 125 mg/kg/h' is tenfold above safe max (~15 mg/kg/h); this is a dangerous dosing error."
+  },
+  {
+    "id": "curated-phase4_tox_unit_32",
+    "verdict": "KEEP",
+    "reason": "Salicylate pathophysiology and severity thresholds accurate; respiratory alkalosis + metabolic acidosis pattern correct."
+  },
+  {
+    "id": "curated-phase4_tox_unit_33",
+    "verdict": "KEEP",
+    "reason": "Urine alkalinization technique, KCl correction, and HD indications for salicylate toxicity are accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_34",
+    "verdict": "KEEP",
+    "reason": "Salicylate pulmonary edema management accurate; hypertonic saline mention is non-standard but framed as alternative in fluid overload."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_0",
+    "verdict": "KEEP",
+    "reason": "ABCDE primary survey content is standard ATLS teaching; activation thresholds and approach accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_1",
+    "verdict": "KEEP",
+    "reason": "C-spine precautions and RSI in trauma accurate; 'epidural placement' imprecise (intracranial is the concern) but key warning is correct."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_2",
+    "verdict": "KEEP",
+    "reason": "Hemorrhage control and tourniquet application technique accurate; 2-hour safe window is standard TCCC teaching."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_3",
+    "verdict": "KEEP",
+    "reason": "Damage control resuscitation, 1:1:1 MTP ratio, TXA timing, and urine output endpoints are accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_4",
+    "verdict": "KEEP",
+    "reason": "Trauma secondary survey approach accurate; HEADSHEADD mnemonic and systematic exam described correctly."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_5",
+    "verdict": "KEEP",
+    "reason": "Tension pneumothorax recognition and needle decompression approach are standard and accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_6",
+    "verdict": "KEEP",
+    "reason": "Tube thoracostomy technique, sizing, and removal criteria are accurate per standard teaching."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_7",
+    "verdict": "FIX",
+    "reason": "Flail chest definition wrong: requires ≥2 (not ≥3) adjacent ribs fractured in ≥2 places each.",
+    "corrected_text": "Flail chest = 2 or more consecutive ribs broken in 2 or more places (or sternal fractures producing a free-floating segment). Results in 'paradoxical' movement (segment moves inward on inspiration, outward on expiration). Pain severe, limiting respiratory effort; leads to hypoventilation, atelectasis, pneumonia. Risk of underlying pulmonary contusion. Management: adequate analgesia (epidural, intercostal blocks, or systemic analgesics), pulmonary hygiene (incentive spirometry, coughing, chest physiotherapy), supplemental O2 to maintain SpO2 >90%. Avoid excessive strapping (restricts movement, increases infection risk). Mechanical stabilization (taping, binders) not recommended. Surgical fixation reserved for severe cases with multiple flail segments. Prognosis generally good with supportive care; mortality from underlying lung injury, not flail chest itself."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_8",
+    "verdict": "FIX",
+    "reason": "Surgery threshold: '1500 mL/h initial output' is wrong — should be >1500 mL total initial drainage (not per hour).",
+    "corrected_text": "Hemothorax = blood in pleural space from trauma. Presentation: hypoxia, breath sound absence, dullness to percussion, shock if large. CXR shows opacification (may need decubitus or ultrasound to differentiate blood vs. air). FAST exam for fluid. Most hemothorax stops bleeding spontaneously; surgery needed if initial drainage >1500 mL OR ongoing bleeding >200 mL/h. Tube thoracostomy standard (see chest tube technique). Monitor output hourly. Massive hemothorax (>1500-2000 mL initial output): activate massive transfusion protocol, call surgery immediately. Complications: retained hemothorax (clotted blood limiting drainage), fibrothorax (adhesions). May need VATS (video-assisted thoracic surgery) for evacuation if retained."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_9",
+    "verdict": "FIX",
+    "reason": "Pericardiocentesis site described contradictorily ('5th intercostal space, subxiphoid'); standard approach is subxiphoid only.",
+    "corrected_text": "Cardiac tamponade = pericardial fluid compressing heart. Beck's triad: JVD, muffled heart sounds, hypotension. Additional signs: pulsus paradoxus (SBP drops >10 mmHg with inspiration), shock, clear lungs (differentiates from cardiogenic shock). Causes: penetrating trauma (knife, bullet), blunt trauma (rare but lethal), pericarditis with effusion. Diagnosis: bedside ultrasound (fluid around heart, RV/RA collapse). Pericardiocentesis: 18G needle at subxiphoid approach, angled 45° toward left shoulder. Insert until 'give' felt, withdraw fluid (even small amount improves pressure), send for analysis. Temporary measure; definitive = pericardial window or thoracotomy. CPR may be ongoing during pericardiocentesis."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_10",
+    "verdict": "KEEP",
+    "reason": "FAST exam technique, four views, and operative indications accurate; sensitivity/specificity figures are reasonable estimates."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_11",
+    "verdict": "KEEP",
+    "reason": "Laparotomy indications and damage control surgery approach are accurate per ATLS/standard surgical teaching."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_12",
+    "verdict": "KEEP",
+    "reason": "Pelvic fracture classification, hemorrhage risk, pelvic binder application, and MTP indications are accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_13",
+    "verdict": "KEEP",
+    "reason": "Pelvic binder application landmarks (ASIS/greater trochanters) and technique accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_14",
+    "verdict": "KEEP",
+    "reason": "Crush injury and rhabdomyolysis pathophysiology, CK elevation, myoglobinuria description accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_15",
+    "verdict": "KEEP",
+    "reason": "Rhabdomyolysis management: urine output target, bicarb alkalinization, electrolyte monitoring, dialysis indications accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_16",
+    "verdict": "DROP_INACCURATE",
+    "reason": "Critical error: 2nd degree burns described as 'painless' — they are painful (exposed nerve endings); 3rd degree burns are painless."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_17",
+    "verdict": "KEEP",
+    "reason": "Parkland formula calculation, half-dose timing, and urine output endpoints are accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_18",
+    "verdict": "KEEP",
+    "reason": "Burn airway management, topical antimicrobials, and transfer criteria are broadly accurate per ABA guidelines."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_19",
+    "verdict": "FIX",
+    "reason": "Hypothermia defined as '<32°C' is wrong — hypothermia is core temp <35°C; <32°C is moderate-severe range.",
+    "corrected_text": "Hypothermia = core temperature <35°C. Mild (32-35°C): shivering, confusion, lethargy. Moderate (28-32°C): amnesia, dysarthria, ataxia, slow pulse. Severe (<28°C): coma, no shivering, slow/weak pulse, may appear dead ('no one is dead until warm and dead'). Diagnosis: esophageal or core temperature probe (regular thermometer insufficient). Paradoxical undressing: confused patient removes clothing despite cold (thermoregulation malfunction). Afterdrop: core temperature continues to drop even after removal from cold environment."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_20",
+    "verdict": "FIX",
+    "reason": "Incorrect: 'do not give CPR unless core temp <30°C' — CPR should be started for hypothermic cardiac arrest regardless of temp.",
+    "corrected_text": "Mild hypothermia (32-35°C): passive external rewarming (blankets, warm environment). Moderate (28-32°C): active external rewarming (heat lamps, warm IV fluids, external heating pads) + active core rewarming. Severe (<28°C): extracorporeal rewarming (ECMO, cardiopulmonary bypass) preferred; achieves rapid core rewarming, maintains perfusion. Resuscitation: handle gently (arrhythmias risk, especially with jostling). Initiate CPR for pulseless patients regardless of temperature. Defibrillation may be deferred until core temp >30°C if initial shocks unsuccessful (guidelines vary). Continue CPR during rewarming; outcome depends on duration of exposure and ambient temperature. Medications (epinephrine, amiodarone) may be deferred or given at longer intervals until core temp >30°C. Prognosis: good for mild-moderate hypothermia with rewarming. Severe cases with prolonged submersion poor unless rapid ECMO access."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_21",
+    "verdict": "KEEP",
+    "reason": "Acute surgical abdomen causes, red flags, and diagnostic approach are accurate and appropriate for intern level."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_22",
+    "verdict": "KEEP",
+    "reason": "Appendicitis diagnosis and management accurate; McBurney's point location, CT sensitivity, antibiotics, and surgical management correct."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_23",
+    "verdict": "KEEP",
+    "reason": "Bowel obstruction causes, presentation, and imaging findings accurately described."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_24",
+    "verdict": "KEEP",
+    "reason": "Bowel obstruction conservative vs surgical management thresholds and approach are accurate."
+  },
+  {
+    "id": "curated-phase4_trauma_unit_25",
+    "verdict": "KEEP",
+    "reason": "Perforated viscus diagnosis, antibiotics, and surgical management are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_0",
+    "verdict": "KEEP",
+    "reason": "CVC indications, site options, and catheter types are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_1",
+    "verdict": "KEEP",
+    "reason": "IJV CVC technique, Seldinger steps, and ultrasound guidance described accurately."
+  },
+  {
+    "id": "curated-phase4_proc_unit_2",
+    "verdict": "KEEP",
+    "reason": "CVC mechanical, infectious, and thrombotic complications accurately described with prevention measures."
+  },
+  {
+    "id": "curated-phase4_proc_unit_3",
+    "verdict": "KEEP",
+    "reason": "CVC positioning, CVP waveform components, normal values, and line care are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_4",
+    "verdict": "KEEP",
+    "reason": "Arterial line indications, site selection, and Allen test interpretation are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_5",
+    "verdict": "KEEP",
+    "reason": "Arterial line placement technique (radial and femoral) and US guidance described accurately."
+  },
+  {
+    "id": "curated-phase4_proc_unit_6",
+    "verdict": "KEEP",
+    "reason": "Arterial waveform components, pulsus paradoxus, alternans, and anacrotic notch interpretation are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_7",
+    "verdict": "KEEP",
+    "reason": "Arterial line complications, contraindications, and removal criteria are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_8",
+    "verdict": "KEEP",
+    "reason": "Pericardiocentesis subxiphoid technique, guidewire/catheter approach, and fluid analysis described accurately."
+  },
+  {
+    "id": "curated-phase4_proc_unit_9",
+    "verdict": "KEEP",
+    "reason": "Pericardiocentesis contraindications (aortic dissection, loculated effusion) and complications are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_10",
+    "verdict": "KEEP",
+    "reason": "Cricothyrotomy indications (CICO), landmark anatomy (cricothyroid membrane), and urgency framing are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_11",
+    "verdict": "KEEP",
+    "reason": "Cricothyrotomy percutaneous and scalpel techniques, tube size (6.0-7.0), and post-procedure steps accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_12",
+    "verdict": "KEEP",
+    "reason": "Transvenous pacing indications (symptomatic bradycardia, complete heart block) are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_13",
+    "verdict": "KEEP",
+    "reason": "Transvenous pacing technique, threshold testing, and capture verification described accurately."
+  },
+  {
+    "id": "curated-phase4_proc_unit_14",
+    "verdict": "KEEP",
+    "reason": "POCUS basics, probe types, US physics (hyperechoic/hypoechoic/anechoic) are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_15",
+    "verdict": "KEEP",
+    "reason": "Ultrasound-guided IV technique, in-plane vs out-of-plane, and vessel identification accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_16",
+    "verdict": "KEEP",
+    "reason": "Ultrasound-guided regional anesthesia principles, nerve appearance, and complications accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_17",
+    "verdict": "KEEP",
+    "reason": "Paracentesis indications, SAAG interpretation, and SBP PMN threshold are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_18",
+    "verdict": "KEEP",
+    "reason": "SBP diagnosis, cefotaxime dosing, albumin supplementation protocol (1.5 g/kg day 1, 1 g/kg day 3) are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_19",
+    "verdict": "KEEP",
+    "reason": "Paracentesis technique, volume limit, and albumin replacement per liter removed are accurate."
+  },
+  {
+    "id": "curated-phase4_proc_unit_20",
+    "verdict": "FIX",
+    "reason": "Light's criteria listed incorrectly: absolute protein >3 g/dL is NOT a Light's criterion; correct is fluid/serum protein ratio >0.5.",
+    "corrected_text": "Thoracentesis = drainage of pleural fluid. Indications: (1) diagnostic (effusion of unclear etiology); (2) therapeutic (large effusion causing dyspnea or hypoxia). Pleural fluid analysis: cell count/differential, protein, glucose, LDH, pH, Gram stain, culture, cytology. Light's criteria (exudate if any one met): (1) fluid LDH >2/3 upper limit of normal serum LDH, (2) fluid/serum protein ratio >0.5, OR (3) fluid/serum LDH ratio >0.6. Causes of exudates: infection (pneumonia, empyema, TB), malignancy, pulmonary embolism, collagen-vascular disease. Transudates (congestive heart failure, cirrhosis, nephrotic syndrome) typically require only diuretics/treat underlying cause."
+  },
+  {
+    "id": "curated-phase4_proc_unit_21",
+    "verdict": "KEEP",
+    "reason": "Thoracentesis technique, volume limit (1200 mL), pneumothorax risk with US guidance, and re-expansion pulmonary edema management accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_0",
+    "verdict": "KEEP",
+    "reason": "Preeclampsia definition, proteinuria threshold, end-organ dysfunction criteria, and risk factors are accurate per ACOG."
+  },
+  {
+    "id": "curated-phase4_obs_unit_1",
+    "verdict": "KEEP",
+    "reason": "Eclampsia management: MgSO4 loading/maintenance doses and prevention efficacy are accurate per Magpie trial data."
+  },
+  {
+    "id": "curated-phase4_obs_unit_2",
+    "verdict": "KEEP",
+    "reason": "MgSO4 dosing and toxicity thresholds broadly accurate; DTR loss is an early/moderate warning sign (not severe) but teaching intent correct."
+  },
+  {
+    "id": "curated-phase4_obs_unit_3",
+    "verdict": "KEEP",
+    "reason": "Antihypertensive agents (labetalol, hydralazine, nifedipine), doses, and ACEi/ARB contraindication in pregnancy are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_4",
+    "verdict": "KEEP",
+    "reason": "HELLP diagnostic criteria (LDH, AST, platelet thresholds), complications, and mortality figures are accurate per Tennessee criteria."
+  },
+  {
+    "id": "curated-phase4_obs_unit_5",
+    "verdict": "KEEP",
+    "reason": "HELLP management (MgSO4, antihypertensives, platelet transfusion threshold, corticosteroids, delivery timing) are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_6",
+    "verdict": "KEEP",
+    "reason": "GDM screening protocol (50g challenge, 3h 100g OGTT, diagnostic thresholds) and risk factors are accurate per ACOG."
+  },
+  {
+    "id": "curated-phase4_obs_unit_7",
+    "verdict": "KEEP",
+    "reason": "GDM management: glucose targets, insulin types, metformin, glyburide concerns, and fetal monitoring are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_8",
+    "verdict": "KEEP",
+    "reason": "Placental abruption presentation, severity grading, risk factors, and complications (DIC, hemorrhagic shock) are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_9",
+    "verdict": "KEEP",
+    "reason": "Placental abruption management, MgSO4 for neuroprotection <34 weeks, MTP use, and DIC management accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_10",
+    "verdict": "KEEP",
+    "reason": "Placenta previa definition, diagnosis, pelvic rest, planned CS, and accreta comorbidity are accurately described."
+  },
+  {
+    "id": "curated-phase4_obs_unit_11",
+    "verdict": "KEEP",
+    "reason": "AFE pathophysiology, presentation, incidence, and mortality figures are accurate (older mortality figure varies with modern series)."
+  },
+  {
+    "id": "curated-phase4_obs_unit_12",
+    "verdict": "KEEP",
+    "reason": "AFE management (ACLS, vasopressors, blood products, ECMO) is accurate with appropriate caveats on limited evidence for adjuncts."
+  },
+  {
+    "id": "curated-phase4_obs_unit_13",
+    "verdict": "KEEP",
+    "reason": "Peripartum cardiomyopathy definition (timing, EF <45%), diagnosis, and prognosis are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_14",
+    "verdict": "KEEP",
+    "reason": "Peripartum cardiomyopathy medical management (ACEi postpartum, beta-blockers, anticoagulation for EF <35%) accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_15",
+    "verdict": "KEEP",
+    "reason": "Maternal sepsis recognition, atypical presentation in pregnancy, sources, and management principles are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_16",
+    "verdict": "KEEP",
+    "reason": "Chorioamnionitis diagnostic criteria and antibiotic regimen (ampicillin + gentamicin + clindamycin) are accurate per ACOG."
+  },
+  {
+    "id": "curated-phase4_obs_unit_17",
+    "verdict": "KEEP",
+    "reason": "PPH definition, 4Ts mnemonic, and risk factor distribution (60% atony) are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_18",
+    "verdict": "KEEP",
+    "reason": "Uterine atony management: oxytocin, methylergonovine contraindications, misoprostol, carboprost doses/intervals are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_19",
+    "verdict": "KEEP",
+    "reason": "Retained placenta management, oxytocin, manual removal technique, and accreta risk are accurately described."
+  },
+  {
+    "id": "curated-phase4_obs_unit_20",
+    "verdict": "KEEP",
+    "reason": "Shoulder dystocia definition, turtle sign, risk factors, and fetal complications are accurate."
+  },
+  {
+    "id": "curated-phase4_obs_unit_21",
+    "verdict": "KEEP",
+    "reason": "Shoulder dystocia McRoberts maneuver, suprapubic pressure, Zavanelli technique, and success rates are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_0",
+    "verdict": "KEEP",
+    "reason": "Pediatric CPR compression rates and depths are accurate. Defibrillation max 360 J applies to adults; pediatric max is 10 J/kg but not dangerous imprecision."
+  },
+  {
+    "id": "curated-phase4_peds_unit_1",
+    "verdict": "KEEP",
+    "reason": "Pediatric airway anatomy differences and ETT sizing formulas are clinically accurate for intern reference."
+  },
+  {
+    "id": "curated-phase4_peds_unit_2",
+    "verdict": "KEEP",
+    "reason": "Pediatric RSI induction and paralytic dosing, succinylcholine risks, and rocuronium alternative are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_3",
+    "verdict": "KEEP",
+    "reason": "Pediatric dehydration clinical assessment (5/10/15% stages, cap refill, skin turgor) is accurate per WHO guidelines."
+  },
+  {
+    "id": "curated-phase4_peds_unit_4",
+    "verdict": "KEEP",
+    "reason": "Oral vs IV rehydration approach, ORS composition, IV bolus volumes, and cerebral edema risk with dextrose are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_5",
+    "verdict": "KEEP",
+    "reason": "Pediatric SIRS criteria (age-dependent), sepsis recognition, fluid bolus, and antibiotic choice are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_6",
+    "verdict": "KEEP",
+    "reason": "Pediatric shock types, compensated vs decompensated (hypotension = late sign), and management approach are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_7",
+    "verdict": "KEEP",
+    "reason": "Febrile seizure definition, simple vs complex criteria, LP indications, and prophylaxis guidance are accurate per AAP."
+  },
+  {
+    "id": "curated-phase4_peds_unit_8",
+    "verdict": "KEEP",
+    "reason": "Pediatric status epilepticus first/second/third-line therapies and doses are accurate per current guidelines."
+  },
+  {
+    "id": "curated-phase4_peds_unit_9",
+    "verdict": "KEEP",
+    "reason": "Epiglottitis vs croup differentiation, X-ray signs (thumb/steeple), and management are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_10",
+    "verdict": "KEEP",
+    "reason": "Pediatric anaphylaxis epinephrine IM weight-based dosing, site, and repeat interval are accurate."
+  },
+  {
+    "id": "curated-phase4_peds_unit_11",
+    "verdict": "KEEP",
+    "reason": "Pediatric accidental ingestion antidotes, charcoal dosing, whole-bowel irrigation, and Poison Control number are accurate."
+  },
+  {
+    "id": "curated-phase4_geri_unit_0",
+    "verdict": "KEEP",
+    "reason": "Atypical elderly presentations (silent MI, afebrile sepsis, blunted peritoneal signs) are accurate and clinically important."
+  },
+  {
+    "id": "curated-phase4_geri_unit_1",
+    "verdict": "KEEP",
+    "reason": "Polypharmacy, triple-whammy AKI, common drug interactions, and Beers Criteria medications are accurately described."
+  },
+  {
+    "id": "curated-phase4_geri_unit_2",
+    "verdict": "FIX",
+    "reason": "CAM-ICU criteria stated incorrectly: requires feature 1 AND 2 AND (feature 3 OR 4), not 'any ≥3 of 4'.",
+    "corrected_text": "Delirium = acute confusion with fluctuating course, inattention, disorganized thinking. Onset hours-days. Causes: infection (UTI, pneumonia), medications (anticholinergics, benzodiazepines, opioids), metabolic (hypoxia, hypoglycemia, hyponatremia), CNS (stroke, bleeding, seizure). CAM-ICU: Confusion Assessment Method for ICU. Positive if: (1) Acute onset + fluctuating course AND (2) Inattention AND [(3) Altered level of consciousness OR (4) Disorganized thinking]. Dementia = chronic cognitive decline over years, insidious onset, memory loss primary. Delirium superimposed on dementia common (demented patients at high delirium risk). Management: treat underlying cause (UTI = antibiotics, hypoglycemia = glucose), avoid delirium-inducing drugs, reorient patient, mobilize early, maintain sleep/wake cycle."
+  },
+  {
+    "id": "curated-phase4_geri_unit_3",
+    "verdict": "KEEP",
+    "reason": "Falls etiology, orthostatic hypotension definition, assessment, and prevention strategies are accurate."
+  },
+  {
+    "id": "curated-phase4_geri_unit_4",
+    "verdict": "KEEP",
+    "reason": "Fried frailty phenotype criteria (≥3 of 5: weight loss, weakness, slow gait, low activity, exhaustion) are accurate."
+  },
+  {
+    "id": "curated-phase4_geri_unit_5",
+    "verdict": "KEEP",
+    "reason": "Informed consent elements, decisional capacity assessment, surrogate hierarchy, and POLST description are accurate."
+  },
+  {
+    "id": "curated-phase4_geri_unit_6",
+    "verdict": "KEEP",
+    "reason": "Advanced directives (living will, HCPOA, POLST, DNR), their differences, and portability are accurately described."
+  },
+  {
+    "id": "curated-phase4_geri_unit_7",
+    "verdict": "KEEP",
+    "reason": "Deprescribing targets (benzos, anticholinergics, NSAIDs, PPIs, statins) and taper guidance are accurate per Beers Criteria."
+  },
+  {
+    "id": "curated-phase4_geri_unit_8",
+    "verdict": "KEEP",
+    "reason": "Urinary incontinence types, management, catheter indications, and asymptomatic bacteriuria guidance are accurate."
+  },
+  {
+    "id": "curated-phase4_geri_unit_9",
+    "verdict": "KEEP",
+    "reason": "Pressure ulcer prevention, Braden scale, staging (1-4 + unstageable + SDTI), and wound management are accurate."
+  },
+  {
+    "id": "curated-phase4_comm_unit_0",
+    "verdict": "KEEP",
+    "reason": "SPIKES bad-news framework steps are accurately described with appropriate clinical communication guidance."
+  },
+  {
+    "id": "curated-phase4_comm_unit_1",
+    "verdict": "KEEP",
+    "reason": "Goals-of-care conversation framework, prognosis discussion approach, and documentation guidance are accurate."
+  },
+  {
+    "id": "curated-phase4_comm_unit_2",
+    "verdict": "KEEP",
+    "reason": "DNR/DNI/CMO scope, reversibility, and documentation requirements are accurately described."
+  },
+  {
+    "id": "curated-phase4_comm_unit_3",
+    "verdict": "KEEP",
+    "reason": "Shared decision-making steps and avoidance of paternalism/consumerism are accurately framed."
+  },
+  {
+    "id": "curated-phase4_comm_unit_4",
+    "verdict": "KEEP",
+    "reason": "Palliative opioid dosing principles, tolerance vs addiction distinction, and constipation prophylaxis are accurately described."
+  },
+  {
+    "id": "curated-phase4_comm_unit_5",
+    "verdict": "KEEP",
+    "reason": "Dyspnea, nausea, and constipation management in palliative care — medications and doses are clinically accurate."
+  },
+  {
+    "id": "curated-phase4_comm_unit_6",
+    "verdict": "KEEP",
+    "reason": "Life support withdrawal ethical framework, comfort medications, and family communication are accurately described."
+  },
+  {
+    "id": "curated-phase4_comm_unit_7",
+    "verdict": "KEEP",
+    "reason": "Reframing hope in advanced illness and maintaining realism are accurately and compassionately described."
+  },
+  {
+    "id": "curated-phase4_comm_unit_8",
+    "verdict": "KEEP",
+    "reason": "Physician burnout signs, causes, and prevention strategies are accurate and appropriate for intern wellness education."
+  },
+  {
+    "id": "curated-phase4_comm_unit_9",
+    "verdict": "KEEP",
+    "reason": "Documentation elements for goals-of-care conversations are accurate and clinically appropriate."
+  },
+  {
+    "id": "curated-phase4_qual_unit_0",
+    "verdict": "KEEP",
+    "reason": "Never events list and near-miss/reporting culture teaching are accurate at the intern quality improvement level."
+  },
+  {
+    "id": "curated-phase4_qual_unit_1",
+    "verdict": "KEEP",
+    "reason": "Root cause analysis, 5 Whys technique, and fishbone diagram are accurately described as QI tools."
+  },
+  {
+    "id": "curated-phase4_qual_unit_2",
+    "verdict": "KEEP",
+    "reason": "Medical error disclosure framework, sorry laws (approx 36 states), and process steps are accurate."
+  },
+  {
+    "id": "curated-phase4_qual_unit_3",
+    "verdict": "KEEP",
+    "reason": "Hand hygiene 5 moments, isolation precaution tiers (contact/droplet/airborne), and equipment decontamination are accurate."
+  },
+  {
+    "id": "curated-phase4_qual_unit_4",
+    "verdict": "KEEP",
+    "reason": "CLABSI prevention bundle (5 elements), dressing change intervals, and flushing protocol are accurate."
+  },
+  {
+    "id": "curated-phase4_qual_unit_5",
+    "verdict": "KEEP",
+    "reason": "Hospital-acquired complications overview, prevention strategies, and tracking methods are accurate."
+  },
+  {
+    "id": "curated-phase4_qual_unit_6",
+    "verdict": "KEEP",
+    "reason": "Rapid response team calling criteria, composition, and mortality reduction data are accurate at teaching level."
+  },
+  {
+    "id": "curated-phase4_qual_unit_7",
+    "verdict": "KEEP",
+    "reason": "M&M conference format, psychological safety principles, and learning objectives are accurately described."
+  },
+  {
+    "id": "curated-phase4_qual_unit_8",
+    "verdict": "KEEP",
+    "reason": "Quality metrics (RSMR, 30-day readmission, HCAHPS), CMS programs, and public reporting are accurately described."
+  },
+  {
+    "id": "curated-phase4_qual_unit_9",
+    "verdict": "KEEP",
+    "reason": "Lean/Six Sigma methodologies, PDSA cycles, DMAIC, and waste elimination principles are accurately described."
+  },
+  {
+    "id": "curated-phase4_qual_unit_10",
+    "verdict": "KEEP",
+    "reason": "Documentation, DRG coding, fraud definition, and compliance process are accurately described."
+  },
+  {
+    "id": "curated-phase5_acls_unit_0",
+    "verdict": "KEEP",
+    "reason": "BLS compression rate/depth and ACLS distinctions are accurate per 2020 AHA guidelines."
+  },
+  {
+    "id": "curated-phase5_acls_unit_1",
+    "verdict": "FIX",
+    "reason": "VF management conflates witnessed vs unwitnessed: witnessed → immediate defibrillate; unwitnessed/unknown → 2 min CPR then shock.",
+    "corrected_text": "VF is the most common initial rhythm in out-of-hospital cardiac arrest. Treatment: for witnessed arrest or in-hospital VF, immediate defibrillation is first priority. For unwitnessed out-of-hospital arrest, begin 2 minutes of high-quality CPR before defibrillating. After shock, immediately resume CPR for 2 minutes before reassessing rhythm. After ROSC, post-arrest care includes TTM and neurologic prognostication. VF deteriorates to asystole without intervention."
+  },
+  {
+    "id": "curated-phase5_acls_unit_2",
+    "verdict": "KEEP",
+    "reason": "Pulseless VT management, epinephrine timing, amiodarone doses, and H's/T's are accurate per 2020 AHA ACLS."
+  },
+  {
+    "id": "curated-phase5_acls_unit_3",
+    "verdict": "KEEP",
+    "reason": "Asystole management (CPR + epinephrine, no defibrillation, reversible causes) is accurate per ACLS guidelines."
+  },
+  {
+    "id": "curated-phase5_acls_unit_4",
+    "verdict": "KEEP",
+    "reason": "PEA definition, management (CPR + epinephrine), and reversible causes are accurate per ACLS."
+  },
+  {
+    "id": "curated-phase5_acls_unit_5",
+    "verdict": "KEEP",
+    "reason": "Epinephrine dosing (1 mg q3-5 min), evidence base, and ETT route caveat are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_6",
+    "verdict": "KEEP",
+    "reason": "Amiodarone VF/PVT dosing (300 mg then 150 mg), indications, and lidocaine comparison are accurate per ACLS."
+  },
+  {
+    "id": "curated-phase5_acls_unit_7",
+    "verdict": "KEEP",
+    "reason": "Atropine dosing for bradycardia, mechanism, infranodal ineffectiveness, and asystole guideline update are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_8",
+    "verdict": "FIX",
+    "reason": "TTM indication includes 'blunt trauma' which is not standard; TTM is for comatose adults after ROSC from cardiac arrest (any rhythm).",
+    "corrected_text": "Target temperature management (TTM) involves maintaining temperature at 32-36°C in comatose adults after return of spontaneous circulation (ROSC) from cardiac arrest (any initial rhythm). Goal is neuroprotection and reduction of cerebral metabolism. Cool for 24 hours, then slowly rewarm. Improves neurologic outcomes. Now called 'targeted temperature management' (any targeted temperature 32-36°C). Avoid hyperthermia (>37.5°C) in all post-arrest patients."
+  },
+  {
+    "id": "curated-phase5_acls_unit_9",
+    "verdict": "KEEP",
+    "reason": "Post-ROSC goals (oxygenation, BP target, TTM, cause treatment, 72h prognostication) are broadly accurate per ACLS."
+  },
+  {
+    "id": "curated-phase5_acls_unit_10",
+    "verdict": "KEEP",
+    "reason": "Post-cardiac arrest prognostication at 72h, using neurological exam, biomarkers, and neuroimaging is accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_11",
+    "verdict": "KEEP",
+    "reason": "Perimortem cesarean delivery timing (within 4 min), left uterine displacement, and pregnancy-specific causes are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_12",
+    "verdict": "KEEP",
+    "reason": "Hypothermia cardiac arrest management, ECMO preference, and 'warm and dead' principle are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_13",
+    "verdict": "KEEP",
+    "reason": "PE cardiac arrest management (CPR + epinephrine, alteplase 100 mg, ECPR) is accurate per ACLS 2020."
+  },
+  {
+    "id": "curated-phase5_acls_unit_14",
+    "verdict": "KEEP",
+    "reason": "Tension pneumothorax in cardiac arrest: needle decompression sites and followed by chest tube are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_15",
+    "verdict": "FIX",
+    "reason": "TCA toxicity listed as causing 'hyperkalemia' — incorrect; TCAs cause sodium channel block → wide QRS/hypotension, not hyperkalemia.",
+    "corrected_text": "Poisoning-related cardiac arrest varies by toxin. Classics: beta-blockers/calcium channel blockers (bradycardia, cardiogenic shock), tricyclic antidepressants (sodium channel block → wide QRS, hypotension, VT/VF), cyanide (tissue hypoxia despite normal O2), carbon monoxide (VF). Treatment is ACLS + specific antidotes: glucagon for beta-blockers, calcium for CCB, sodium bicarbonate for TCA (alkalinization narrows QRS), hydroxocobalamin for cyanide."
+  },
+  {
+    "id": "curated-phase5_acls_unit_16",
+    "verdict": "KEEP",
+    "reason": "Code blue team dynamics: compressor rotation, clear leader, closed-loop communication, and debriefing are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_17",
+    "verdict": "KEEP",
+    "reason": "Resuscitation termination criteria are reasonable and consistent with guidelines; special populations (hypothermia, drowning) noted."
+  },
+  {
+    "id": "curated-phase5_acls_unit_18",
+    "verdict": "KEEP",
+    "reason": "ECPR indications (cardiac etiology, witnessed, reversible cause, <60 min CPR) and patient selection are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_19",
+    "verdict": "KEEP",
+    "reason": "ECPR technique (VA-ECMO, femoral cannulation, continue CPR during setup) and outcomes data are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_20",
+    "verdict": "KEEP",
+    "reason": "Sodium bicarbonate indications (TCA, hyperkalemia, LAST), dose (1 mEq/kg), and monitoring are accurate."
+  },
+  {
+    "id": "curated-phase5_acls_unit_21",
+    "verdict": "FIX",
+    "reason": "Calcium chloride dose '2-4 mL of 10%' is too low; standard dose for hyperkalemia/CCB OD is 10 mL (1 g) of 10% solution.",
+    "corrected_text": "Give calcium gluconate 30 mL of 10% solution (3 g) IV, or calcium chloride 10 mL of 10% solution (1 g) IV, for: hyperkalemia (stabilizes myocardium), severe hypocalcemia (tetany, seizure risk), calcium channel blocker overdose (refractory shock). Calcium chloride delivers 3× more elemental calcium than gluconate per mL — prefer gluconate peripherally (less vesicant). Works rapidly on myocardial membrane. Repeat every 10-20 min as needed. Use central line if possible for calcium chloride (extravasation risk)."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_0",
+    "verdict": "KEEP",
+    "reason": "Bradycardia definition, causes, and indications for treatment are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_1",
+    "verdict": "KEEP",
+    "reason": "Sinus bradycardia definition, differential, and management approach are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_2",
+    "verdict": "KEEP",
+    "reason": "First-degree AV block PR interval criterion, benign prognosis, and monitoring guidance are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_3",
+    "verdict": "KEEP",
+    "reason": "Second-degree AV block Type I (Wenckebach) ECG pattern, prognosis, and management are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_4",
+    "verdict": "KEEP",
+    "reason": "Second-degree AV block Type II (Mobitz II) ECG pattern, infranodal location, and pacing indication are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_5",
+    "verdict": "KEEP",
+    "reason": "Third-degree AV block P-QRS dissociation, escape rhythm types, causes, and pacing indication are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_6",
+    "verdict": "KEEP",
+    "reason": "Sick sinus syndrome (brady-tachy), causes, and dual-chamber pacemaker therapy are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_7",
+    "verdict": "KEEP",
+    "reason": "Atropine mechanism, bradycardia dosing, anticholinergic effects, and infranodal ineffectiveness are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_8",
+    "verdict": "KEEP",
+    "reason": "Atropine paradox (low dose <0.5 mg can slow HR) is a valid and accurate clinical teaching point."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_9",
+    "verdict": "KEEP",
+    "reason": "Transcutaneous pacing indications, sedation requirement, and electrical/mechanical capture verification are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_10",
+    "verdict": "KEEP",
+    "reason": "Transvenous pacing catheter placement, capture threshold, and complications are accurately described."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_11",
+    "verdict": "KEEP",
+    "reason": "Narrow complex tachycardia differential and ECG classification are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_12",
+    "verdict": "KEEP",
+    "reason": "SVT overview, mechanism proportions (AVNRT/AVRT/AT), and initial treatment are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_13",
+    "verdict": "KEEP",
+    "reason": "AVNRT mechanism, ECG appearance, and treatment options are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_14",
+    "verdict": "KEEP",
+    "reason": "AVRT, WPW ECG features, and contraindication of beta-blockers/CCB in WPW-AF are accurately and critically described."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_15",
+    "verdict": "KEEP",
+    "reason": "Vagal maneuvers technique, contraindications, and 20-40% success rate are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_16",
+    "verdict": "KEEP",
+    "reason": "Adenosine doses (6 mg peripheral, 3 mg central), mechanism, side effects, and contraindications are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_17",
+    "verdict": "KEEP",
+    "reason": "Verapamil/diltiazem dosing and efficacy accurate; avoid in WPW and severe HF. Minor imprecision on 'paradoxical VT conduction' but safety message correct."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_18",
+    "verdict": "KEEP",
+    "reason": "Beta-blocker dosing for SVT and WPW contraindication are accurately described."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_19",
+    "verdict": "KEEP",
+    "reason": "Atrial fibrillation overview, causes, complications, and management options are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_20",
+    "verdict": "KEEP",
+    "reason": "Atrial flutter sawtooth rate, AV conduction ratios, and treatment are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_21",
+    "verdict": "KEEP",
+    "reason": "AF anticoagulation: CHA2DS2-VASc thresholds by sex, DOAC options, and acute AF anticoagulation approach are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_22",
+    "verdict": "KEEP",
+    "reason": "AF rate vs rhythm control (AFFIRM), rate goal, agents, and rhythm control drugs are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_23",
+    "verdict": "KEEP",
+    "reason": "AF cardioversion indications, anticoagulation before cardioversion, and success rate are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_24",
+    "verdict": "KEEP",
+    "reason": "Wide complex tachycardia differential, VT proportion (60-80%), and algorithmic approach are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_25",
+    "verdict": "KEEP",
+    "reason": "VT overview, causes, EPS/ICD indications, and acute treatment (amiodarone, lidocaine, cardioversion) are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_26",
+    "verdict": "KEEP",
+    "reason": "Torsades de pointes triggers, treatment (defibrillation, magnesium, QT correction), and pause-dependent approach are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_27",
+    "verdict": "KEEP",
+    "reason": "Long QT syndrome types, QTc thresholds by sex, type-specific triggers, and management are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_28",
+    "verdict": "KEEP",
+    "reason": "Brugada syndrome ECG pattern, VF risk, ICD indication, and provocative agents to avoid are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_29",
+    "verdict": "KEEP",
+    "reason": "Vaughan Williams Class I subclasses (Ia/Ib/Ic), agents, and APD effects are accurately classified."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_30",
+    "verdict": "KEEP",
+    "reason": "Class II antiarrhythmics (beta-blockers), agents, AV node effects, and clinical uses are accurate."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_31",
+    "verdict": "KEEP",
+    "reason": "Class III antiarrhythmics, amiodarone toxicity profile, and class members are accurately described."
+  },
+  {
+    "id": "curated-phase5_arrhythmia_unit_32",
+    "verdict": "KEEP",
+    "reason": "Class IV antiarrhythmics (CCB), AV node effects, contraindications in VT/WPW, and HF caution are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_0",
+    "verdict": "KEEP",
+    "reason": "CVP normal range (2-8 mmHg), elevated/low CVP significance, and measurement technique are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_1",
+    "verdict": "FIX",
+    "reason": "Tamponade CVP finding is wrong: shows absent/blunted y descent (impaired RV filling), NOT elevated x descent.",
+    "corrected_text": "Normal CVP trace: a (atrial contraction), c (ventricular contraction/tricuspid bulge), x (atrial relaxation), v (passive atrial filling), y (atrial emptying into RV). Prominent a wave (cannon a wave): simultaneous atrial-ventricular contraction in CHB or junctional rhythms. Absent a wave: atrial fibrillation. Tamponade: prominent x descent, absent or blunted y descent (pericardial fluid prevents diastolic RV filling). Constrictive pericarditis: prominent y descent, M/W-shaped waveform. Elevated CVP with equalization of diastolic pressures: tamponade or constrictive pericarditis."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_2",
+    "verdict": "KEEP",
+    "reason": "Swan-Ganz PAC measurements, normal pressures, SVR/PVR derivations, and controversy are accurately described."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_3",
+    "verdict": "KEEP",
+    "reason": "PAWP normal range, pulmonary edema threshold, and shock state interpretation are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_4",
+    "verdict": "KEEP",
+    "reason": "Thermodilution cardiac output method, normal CO/CI values, and continuous monitoring are accurately described."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_5",
+    "verdict": "KEEP",
+    "reason": "Fick equation for cardiac output, requirements, and clinical application (gold standard in low-flow) are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_6",
+    "verdict": "KEEP",
+    "reason": "SVR formula, normal range, and interpretation in shock states are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_7",
+    "verdict": "KEEP",
+    "reason": "PVR formula, normal range, and RV afterload significance are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_8",
+    "verdict": "KEEP",
+    "reason": "SVR patterns across shock states (cardiogenic, septic, hypovolemic, anaphylactic) are accurately described."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_9",
+    "verdict": "KEEP",
+    "reason": "Diastolic dysfunction patterns (impaired relaxation, pseudonormal, restrictive) are accurate teaching-level content."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_10",
+    "verdict": "KEEP",
+    "reason": "Tamponade hemodynamics (equalization, Beck's triad, pulsus paradoxus, echo findings) are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_11",
+    "verdict": "KEEP",
+    "reason": "Constrictive pericarditis hemodynamics (dip-plateau, prominent y descent, septal bounce) are accurately described."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_12",
+    "verdict": "KEEP",
+    "reason": "TTE hemodynamic assessments (EF, TR velocity Bernoulli equation, IVC CVP estimation) are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_13",
+    "verdict": "KEEP",
+    "reason": "Tissue Doppler E/e' ratio, E/A ratio, and diastolic function grading are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_14",
+    "verdict": "KEEP",
+    "reason": "NICOM bioreactance technology, limitations in low-flow states, and FDA approval are accurate."
+  },
+  {
+    "id": "curated-phase5_hemodynamic_unit_15",
+    "verdict": "KEEP",
+    "reason": "Bioimpedance hemodynamic monitoring principles, limitations, and clinical use are accurately described."
+  },
+  {
+    "id": "curated-phase5_shock_unit_0",
+    "verdict": "KEEP",
+    "reason": "Cardiogenic shock hemodynamic definition (CI <2.2, PAWP >18), causes, and mortality are accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_1",
+    "verdict": "KEEP",
+    "reason": "Cardiogenic shock from acute MI (anterior LAD, pathophysiology, PCI/IABP/Impella/ECMO) are accurately described."
+  },
+  {
+    "id": "curated-phase5_shock_unit_2",
+    "verdict": "KEEP",
+    "reason": "RV infarction physiology, fluid therapy priority, nitroglycerin contraindication, and V4R ECG finding are accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_3",
+    "verdict": "KEEP",
+    "reason": "Mechanical MI complications (MR, VSD, free wall rupture), echo findings, and management approach are accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_4",
+    "verdict": "KEEP",
+    "reason": "Cardiogenic shock management algorithm (preload/afterload/inotropes/revascularization/MCS) is accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_5",
+    "verdict": "KEEP",
+    "reason": "Hypovolemic shock hemodynamics (low preload/CO, high SVR) and clinical presentation are accurate."
+  }
+]

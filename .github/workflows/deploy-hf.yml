@@ -1,0 +1,34 @@
+name: Deploy tutor backend to Hugging Face Space
+
+# Laptop-free deploy loop: every push that touches backend code or data triggers
+# GitHub's runners to push the Space code + curriculum/KP/dosing data files to the
+# HF Space. GitHub does the publish (using the HF_TOKEN repo secret), so it never
+# depends on a local machine or the .bat. The 1.6GB Chroma corpus index is NOT
+# touched here — it lives in the private HF dataset and is only re-uploaded from a
+# machine with the local index (rare, corpus-change only). The Space re-downloads
+# the index from that dataset on every rebuild.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'data/**'
+      - 'deploy/hf/**'
+      - 'requirements.txt'
+  workflow_dispatch: {}   # lets you trigger a deploy manually from the GitHub UI/app
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deploy deps
+        run: pip install -q huggingface_hub
+      - name: Push code + data to HF Space (no index upload)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python deploy/hf/push_code_only.py

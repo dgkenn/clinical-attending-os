@@ -1,0 +1,246 @@
+[
+  {
+    "id": "interscalene-d1",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What surgical procedures is the interscalene brachial plexus block specifically indicated for, and which nerve roots does it target?",
+    "answer": "Interscalene block is indicated for shoulder and upper arm procedures; it targets nerve roots C5-C7 of the brachial plexus as they emerge between the anterior and middle scalene muscles at the level of the cricoid cartilage (C6 vertebra).",
+    "rationale": "C5-C7 roots provide sensory and motor innervation to the shoulder joint, rotator cuff, and proximal humerus; the interscalene groove is where these roots are most accessible for a single-injection technique.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1621
+      }
+    ],
+    "confusable_with": "supraclavicular block (more distal - shoulder through hand; targets all 4 roots of brachial plexus)"
+  },
+  {
+    "id": "interscalene-d2",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What is the most consistent complication of an interscalene brachial plexus block that must be discussed with every patient?",
+    "answer": "Ipsilateral phrenic nerve block (C3-C5) occurs in virtually 100% of patients with nerve stimulator technique and in the majority with ultrasound guidance; this causes hemidiaphragm paralysis and reduces ipsilateral lung function by approximately 25%.",
+    "rationale": "The phrenic nerve runs adjacent to the brachial plexus in the interscalene region; local anesthetic spread invariably affects it; this is clinically significant in patients with contralateral phrenic injury or pulmonary compromise.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1623
+      }
+    ],
+    "confusable_with": "pneumothorax (also a risk but less invariable; approximately 0.5-1%)"
+  },
+  {
+    "id": "interscalene-d3",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What are the absolute contraindications to an interscalene brachial plexus block?",
+    "answer": "Contraindications include local infection at the injection site, severe coagulopathy, local anesthetic allergy, patient refusal, and contralateral phrenic nerve palsy (relative contraindication - bilateral phrenic block would cause respiratory failure).",
+    "rationale": "Local infection risks seeding the brachial plexus; coagulopathy creates hematoma risk in the neck; phrenic nerve palsy on the contralateral side means ipsilateral hemidiaphragm paralysis from the block would eliminate all diaphragmatic function.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1623
+      }
+    ],
+    "confusable_with": "ipsilateral phrenic palsy (is an expected complication, not a contraindication)"
+  },
+  {
+    "id": "interscalene-d4",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "A suprascapular nerve block can supplement an incomplete brachial plexus block. What is the primary innervation provided by the suprascapular nerve?",
+    "answer": "The suprascapular nerve (from the upper trunk of the brachial plexus) provides the primary innervation to the glenohumeral joint, making it useful for shoulder pain management and as an adjunct to incomplete brachial plexus blocks.",
+    "rationale": "Approximately 70% of glenohumeral joint sensory innervation is from the suprascapular nerve; blocking it directly addresses shoulder pain with a smaller volume and less systemic LA absorption than a full plexus block.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1636
+      }
+    ],
+    "confusable_with": "axillary nerve block (innervates deltoid skin and joint capsule inferior portion, different territory)"
+  },
+  {
+    "id": "interscalene-d5",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Why do fascial plane blocks have advantages over conventional nerve blocks for shoulder anesthesia in some situations?",
+    "answer": "Fascial plane blocks allow a single injection to anesthetize multiple nerves or dermatomes that would require multiple separate injections with conventional nerve-specific techniques; they are useful with limited field access or as supplements to incomplete blocks.",
+    "rationale": "LA deposited into a fascial plane spreads along it to contact multiple nerve branches; this reduces total injection count and manipulation while achieving comparable coverage for procedures with broad innervation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1620
+      }
+    ],
+    "confusable_with": "field block (non-specific infiltration; fascial plane blocks target anatomically defined planes)"
+  },
+  {
+    "id": "interscalene-d6",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "For surgeries distal to the mid-humerus, which level of brachial plexus block is preferred over an interscalene approach and why?",
+    "answer": "Supraclavicular, infraclavicular, or axillary approaches are preferred for procedures distal to the mid-humerus because they target the more distal portions of the plexus including C8-T1, which are underrepresented in an interscalene block.",
+    "rationale": "Interscalene block reliably covers C5-C7 but poorly covers C8-T1 (ulnar nerve territory), making it inadequate for hand/forearm procedures that require complete plexus coverage.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1621
+      }
+    ],
+    "confusable_with": "interscalene for forearm surgery (inadequate - misses ulnar territory)"
+  },
+  {
+    "id": "interscalene-d7",
+    "topic": "Interscalene brachial plexus block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Ultrasound guidance for supraclavicular block may reduce phrenic nerve palsy incidence. What is the mechanism and what is the incidence with this approach?",
+    "answer": "Ultrasound allows precise LA placement near the target nerve roots with smaller volumes, reducing spread to adjacent phrenic nerve; despite this, nearly half of supraclavicular block patients still develop phrenic nerve palsy.",
+    "rationale": "The phrenic nerve runs close to the brachial plexus at the supraclavicular level; smaller volumes with ultrasound reduce but do not eliminate phrenic involvement, limiting use in patients with pulmonary compromise.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1628
+      }
+    ],
+    "confusable_with": "axillary block (does not cause phrenic nerve palsy - performed distal to phrenic nerve origin)"
+  },
+  {
+    "id": "iabp-d1",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "The IABP is positioned in the descending aorta. What is the anatomical landmark defining correct positioning?",
+    "answer": "The IABP balloon is ideally positioned in the descending aorta just distal to the left subclavian artery; this placement maximizes diastolic augmentation while avoiding obstruction of the subclavian and renal arteries.",
+    "rationale": "Placement too proximal risks left subclavian artery occlusion; too distal reduces diastolic augmentation effectiveness and risks renal artery occlusion; CXR confirms position at the 2nd-3rd intercostal space.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "incorrect proximal positioning (obstructs left subclavian artery, causes left arm ischemia)"
+  },
+  {
+    "id": "iabp-d2",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "The IABP inflates after the dicrotic notch on the aortic pressure tracing. What physiological event does the dicrotic notch mark, and why is this the correct timing?",
+    "answer": "The dicrotic notch marks aortic valve closure; IABP inflation just after this point augments diastolic blood pressure when the aortic valve is closed, maximizing coronary artery perfusion pressure during diastole.",
+    "rationale": "Coronary filling occurs primarily during diastole (when LV relaxes and aortic valve is closed); inflation at this point displaces blood retrograde toward the coronary ostia, increasing diastolic coronary perfusion.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "inflation at systole onset (would increase afterload rather than diastolic augmentation)"
+  },
+  {
+    "id": "iabp-d3",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "IABP deflation is timed just prior to left ventricular ejection. What hemodynamic effect does this achieve?",
+    "answer": "Balloon deflation just before LV ejection creates a sudden pressure drop in the aorta (reduced end-diastolic aortic pressure), effectively reducing LV afterload and allowing the failing LV to eject against lower resistance.",
+    "rationale": "The suction effect of rapid balloon deflation reduces the impedance to LV ejection, decreasing myocardial oxygen demand while increasing forward stroke volume.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "late deflation (increases afterload rather than reducing it)"
+  },
+  {
+    "id": "iabp-d4",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What is the net hemodynamic summary of IABP therapy: what two parameters increase and what decreases?",
+    "answer": "IABP increases diastolic augmentation (coronary perfusion pressure) and reduces end-diastolic aortic pressure (afterload/LV wall stress); the net result is increased coronary flow and decreased myocardial oxygen consumption.",
+    "rationale": "By augmenting diastole and unloading systole, IABP simultaneously improves myocardial oxygen supply (higher diastolic pressure) and reduces demand (lower afterload), making it ideal for ischemic cardiogenic shock.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "vasopressors (increase afterload, which worsens the failing LV)"
+  },
+  {
+    "id": "iabp-d5",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "If drug therapies fail to wean a patient from cardiopulmonary bypass, what mechanical support options are available in escalating order?",
+    "answer": "Escalating support: IABP first; then ventricular assist devices (LVAD for LV failure, RVAD for RV failure, or BiVAD for biventricular failure) for refractory pump failure.",
+    "rationale": "IABP provides modest hemodynamic support; when insufficient, VADs provide direct mechanical pumping to augment or replace ventricular output in patients who cannot be weaned from bypass.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "ECMO (venovenous for respiratory failure; venoarterial for cardiac failure - different configuration)"
+  },
+  {
+    "id": "iabp-d6",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What clinical scenario prompts placement of an IABP before or during cardiac surgery?",
+    "answer": "IABP is initiated when drug therapies fail to maintain adequate hemodynamics (ischemic cardiogenic shock, failure to wean from CPB, severe LV dysfunction) while the heart is rested on bypass or as a bridge to surgery.",
+    "rationale": "IABP provides mechanical circulatory assistance that pharmacologic agents cannot achieve; placing it before high-risk CABG in patients with critical LV dysfunction may reduce perioperative MI and allow wean from bypass.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 751
+      }
+    ],
+    "confusable_with": "IABP for isolated respiratory failure (wrong indication; IABP is purely a cardiac support device)"
+  },
+  {
+    "id": "iabp-d7",
+    "topic": "Intra-aortic Balloon Pump (IABP)",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Patients with intractable heart failure and severely reduced EF may also require an IABP as a bridge. What EF threshold and NYHA class defines this population?",
+    "answer": "Intractable heart failure defined as EF less than 20% and NYHA class IV; these patients may require IABP, LVAD, or transplantation as a bridge to definitive therapy.",
+    "rationale": "Stage D HF patients cannot maintain adequate perfusion with pharmacologic therapy alone; mechanical support maintains end-organ perfusion while awaiting definitive intervention.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 765
+      }
+    ],
+    "confusable_with": "patients with EF 30-35% on maximal GDMT (Stage C, may not yet need mechanical support)"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "IABP inflation timing",
+    "topic_b": "IABP deflation timing",
+    "discriminator": "Inflation at dicrotic notch (aortic valve closure) = augments DIASTOLIC pressure and coronary filling. Deflation just before LV ejection = reduces SYSTOLIC afterload. Wrong timing reverses both effects: late inflation increases afterload; early deflation reduces diastolic augmentation."
+  }
+]

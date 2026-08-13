@@ -1,0 +1,342 @@
+[
+  {
+    "id": "fire-1",
+    "topic": "Fire Safety in the OR",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What is the most common risk factor for a surgical fire in the operating room?",
+    "answer": "Open delivery of oxygen (the most common surgical fire risk factor)",
+    "rationale": "Oxygen enriches the environment making ignition far easier; open delivery near an ignition source is the classic setup for OR fire.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 32
+      }
+    ],
+    "confusable_with": "Electrocautery alone (ignition source but not the primary risk factor without oxidizer)"
+  },
+  {
+    "id": "fire-2",
+    "topic": "Fire Safety in the OR",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "In what surgical scenario is surgical fire most commonly reported?",
+    "answer": "Supplemental oxygen delivery with surgical site above the xiphoid (head, neck, or upper chest procedures)",
+    "rationale": "Oxygen accumulates under drapes near the face/airway, and electrocautery or laser provides the ignition source in a confined space.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 55
+      }
+    ],
+    "confusable_with": "Abdominal surgery (below xiphoid, lower risk)"
+  },
+  {
+    "id": "fire-3",
+    "topic": "Fire Safety in the OR",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What oxygen concentration threshold guides safe administration during procedures with open oxygen delivery near the surgical field?",
+    "answer": "Concentrations greater than 30% oxygen should be guided by clinical need and avoided when possible with open delivery above the xiphoid",
+    "rationale": "Oxygen enrichment above 30% dramatically increases combustibility of drapes, hair, and airway secretions near the surgical field.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 32
+      }
+    ],
+    "confusable_with": "100% FiO2 is always safe (incorrect; high FiO2 elevates fire risk significantly)"
+  },
+  {
+    "id": "fire-4",
+    "topic": "Fire Safety in the OR",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "Should conventional endotracheal tubes be wrapped with metallic foil to reduce laser ignition risk?",
+    "answer": "Wrapping conventional ETTs with foil should be avoided; laser-specific tubes are required instead",
+    "rationale": "Conventional foil wrapping provides inconsistent protection and the sharp foil edges can damage tissue; dedicated laser-resistant tubes are designed for this purpose.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 56
+      }
+    ],
+    "confusable_with": "Foil-wrapping as an acceptable laser precaution"
+  },
+  {
+    "id": "fire-5",
+    "topic": "Fire Safety in the OR",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What fire prevention principle is emphasized by the Anesthesia Patient Safety Foundation for OR fires?",
+    "answer": "Heavy emphasis on risks of open delivery of oxygen; educational video and online modules developed by APSF",
+    "rationale": "Education and behavioral change around oxygen delivery practices are the most effective primary prevention strategies for OR fires.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 53
+      }
+    ],
+    "confusable_with": "Focusing only on ignition sources (drapes, laser) without addressing the oxidizer"
+  },
+  {
+    "id": "fluidresus-1",
+    "topic": "Fluid Resuscitation and Fluid Balance",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "Excessive fluid administration in the perioperative period impairs what physiological processes?",
+    "answer": "Impairs oxygen transport, tissue healing, bowel function return; increases risk of surgical site infection",
+    "rationale": "Tissue edema from fluid overload reduces diffusion distance for oxygen, compromises gut motility, and creates a pro-infective tissue milieu.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1948
+      }
+    ],
+    "confusable_with": "Underresuscitation causing the same harms (both extremes are harmful)"
+  },
+  {
+    "id": "fluidresus-2",
+    "topic": "Fluid Resuscitation and Fluid Balance",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "In large-volume crystalloid administration, what metabolic acid-base disturbance can normal saline cause?",
+    "answer": "Hyperchloremic metabolic acidosis from large-volume normal saline",
+    "rationale": "NS has a chloride concentration of 154 mEq/L; large volumes cause chloride loading which reduces renal bicarbonate reabsorption producing non-anion-gap metabolic acidosis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 47
+      }
+    ],
+    "confusable_with": "Lactic acidosis (different etiology)"
+  },
+  {
+    "id": "fluidresus-3",
+    "topic": "Fluid Resuscitation and Fluid Balance",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "When hemodynamic monitoring is used to guide AKI prevention, what parameter is targeted per KDIGO guidelines?",
+    "answer": "Mean arterial pressure and volume status; adequate hemodynamic support to maintain renal perfusion pressure",
+    "rationale": "KDIGO recommendations emphasize maintaining adequate MAP and euvolemia to prevent renal hypoperfusion-mediated AKI.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2012 AKI",
+        "page": 40
+      }
+    ],
+    "confusable_with": "Targeting CVP as the sole fluid adequacy marker (now disfavored)"
+  },
+  {
+    "id": "fluidresus-4",
+    "topic": "Fluid Resuscitation and Fluid Balance",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What balanced crystalloid is preferred over normal saline in brain injury or when diluting packed red blood cells?",
+    "answer": "Normal saline is preferred in brain injury and for diluting pRBCs; balanced crystalloids (LR, Plasma-Lyte) preferred otherwise",
+    "rationale": "Hypotonicity risk with hypotonic solutions in cerebral edema and compatibility with pRBC transfusion favors NS in specific contexts.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 47
+      }
+    ],
+    "confusable_with": "LR for all situations including brain injury (incorrect due to slight hypotonicity)"
+  },
+  {
+    "id": "fluidresus-5",
+    "topic": "Fluid Resuscitation and Fluid Balance",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "Ultrasonography of the inferior vena cava in acute blood loss can reveal what sign of severe hypovolemia?",
+    "answer": "Nearly collapsed or incompletely filled IVC on ultrasonography indicates severe hypovolemia",
+    "rationale": "IVC collapsibility with respiration reflects low right atrial filling pressure and intravascular volume depletion.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1946
+      }
+    ],
+    "confusable_with": "Plethoric non-collapsing IVC (indicates fluid overload or elevated RAP)"
+  },
+  {
+    "id": "pedfluid-1",
+    "topic": "Fluid management in pediatrics",
+    "domain": "Pediatric anesthesia (neonatal physiology, congenital heart, pediatric airway, fluid/glucose management, regional in children)",
+    "discipline": "anesthesia",
+    "stem": "Using the Holliday-Segar formula, what is the maintenance fluid rate for a 25 kg child?",
+    "answer": "First 10 kg: 40 mL/h; next 10 kg: +20 mL/h (2 mL/kg/h); next 5 kg: +5 mL/h (1 mL/kg/h) = 65 mL/h total",
+    "rationale": "The 4-2-1 rule provides weight-based maintenance rates that match insensible and renal losses in children.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hemorrhagic Shock Classification & Management",
+        "page": 9
+      }
+    ],
+    "confusable_with": "Adult weight-based dosing applied directly to children"
+  },
+  {
+    "id": "pedfluid-2",
+    "topic": "Fluid management in pediatrics",
+    "domain": "Pediatric anesthesia (neonatal physiology, congenital heart, pediatric airway, fluid/glucose management, regional in children)",
+    "discipline": "anesthesia",
+    "stem": "In neonates with abdominal wall defects, what two fluid management principles apply?",
+    "answer": "Attention to fluid replacement and temperature management (both are critical in NEC and abdominal wall defect surgery)",
+    "rationale": "Exposed bowel causes large evaporative and third-space fluid losses and dramatic heat loss, requiring aggressive replacement.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 651
+      }
+    ],
+    "confusable_with": "Standard adult perioperative fluid protocols"
+  },
+  {
+    "id": "pedfluid-3",
+    "topic": "Fluid management in pediatrics",
+    "domain": "Pediatric anesthesia (neonatal physiology, congenital heart, pediatric airway, fluid/glucose management, regional in children)",
+    "discipline": "anesthesia",
+    "stem": "In a premature infant with respiratory distress syndrome, what complication of wide swings in oxygen tension can affect retinal vessels?",
+    "answer": "Retinopathy of prematurity from oxygen tension fluctuations in premature ventilated infants with RDS",
+    "rationale": "Hyperoxia followed by hypoxia drives VEGF-mediated abnormal retinal neovascularization in immature vessels.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 655
+      }
+    ],
+    "confusable_with": "Retinal artery occlusion (arterial, not proliferative)"
+  },
+  {
+    "id": "pedfluid-4",
+    "topic": "Fluid management in pediatrics",
+    "domain": "Pediatric anesthesia (neonatal physiology, congenital heart, pediatric airway, fluid/glucose management, regional in children)",
+    "discipline": "anesthesia",
+    "stem": "What is the maximum safe peripheral IV replacement rate for potassium in pediatric patients?",
+    "answer": "Peripheral IV potassium replacement should not exceed 8 mEq/h due to irritative effect on peripheral veins",
+    "rationale": "Higher rates cause pain, phlebitis, and risk of inadvertent hyperkalaemia; central access is needed for faster replacement.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1882
+      }
+    ],
+    "confusable_with": "No rate limit via peripheral IV (incorrect; can cause vein sclerosis and cardiac dysrhythmia)"
+  },
+  {
+    "id": "pedfluid-5",
+    "topic": "Fluid management in pediatrics",
+    "domain": "Pediatric anesthesia (neonatal physiology, congenital heart, pediatric airway, fluid/glucose management, regional in children)",
+    "discipline": "anesthesia",
+    "stem": "Why is awake endotracheal intubation virtually impossible in most pediatric patients with a difficult airway?",
+    "answer": "Lack of patient cooperation in most pediatric age groups makes awake endotracheal intubation virtually impossible",
+    "rationale": "Children cannot reliably cooperate with topical anaesthesia protocols, necessitating modified inhalational or intravenous induction strategies.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 645
+      }
+    ],
+    "confusable_with": "Awake fiberoptic intubation (feasible in cooperative adults, not typical pediatric patients)"
+  },
+  {
+    "id": "fbao-1",
+    "topic": "Foreign body airway obstruction",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "Aspiration or swallowing of a button battery presents what specific urgent risk?",
+    "answer": "Rapid and severe tissue burns from increased battery current/voltage, causing tissue necrosis requiring emergency removal",
+    "rationale": "Button batteries generate electrical current in moist tissue producing hydroxide radicals, causing liquefaction necrosis within hours.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1483
+      }
+    ],
+    "confusable_with": "Coin ingestion (usually can wait for elective removal)"
+  },
+  {
+    "id": "fbao-2",
+    "topic": "Foreign body airway obstruction",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "Even after initial surgical tracheostomy to secure an airway with laryngeal pathology, what intraoperative airway risk persists?",
+    "answer": "Intraoperative airway obstruction from surgical manipulation, foreign body, or hemorrhage can occur even after tracheostomy",
+    "rationale": "Tracheostomy secures the airway at rest but does not prevent dynamic obstruction from surgical complications during the procedure.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1270
+      }
+    ],
+    "confusable_with": "Tracheostomy guaranteeing a secure airway throughout surgery"
+  },
+  {
+    "id": "fbao-3",
+    "topic": "Foreign body airway obstruction",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What causes of upper airway obstruction must be evaluated before assuming a foreign body is the etiology?",
+    "answer": "Papillomas, tracheal stenosis, tumors, vocal cord dysfunction must be excluded by preoperative history and physical examination",
+    "rationale": "Multiple pathologies mimic foreign body obstruction; definitive diagnosis guides the safest airway management strategy.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1270
+      }
+    ],
+    "confusable_with": "Assuming all upper airway obstruction is a foreign body"
+  },
+  {
+    "id": "fbao-4",
+    "topic": "Foreign body airway obstruction",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What jaw-thrust maneuver step is described for opening the airway in an unconscious patient with possible foreign body obstruction?",
+    "answer": "Stand at both sides of the head, grasp the angles of the jaw, and lift to open the airway",
+    "rationale": "Jaw thrust opens the airway without neck extension and is the recommended maneuver in suspected cervical injury or unconscious patient.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2058
+      }
+    ],
+    "confusable_with": "Head-tilt chin-lift (contraindicated with potential cervical injury)"
+  },
+  {
+    "id": "fbao-5",
+    "topic": "Foreign body airway obstruction",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "Foreign body obstruction is listed under what category of causes of hypoxemia in the ICU setting?",
+    "answer": "Foreign body is an upper airway cause of hypoxemia (under airway obstruction category in ICU differential)",
+    "rationale": "Foreign body obstruction causes ventilatory failure by physical blockage of gas flow, distinct from V/Q mismatch or shunt etiologies.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1923
+      }
+    ],
+    "confusable_with": "Pulmonary embolism (vascular obstruction, not airway)"
+  }
+]

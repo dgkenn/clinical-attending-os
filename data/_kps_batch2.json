@@ -1,0 +1,1761 @@
+[
+  {
+    "id": "dpe-analgesia-d1",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "In the DPE technique, what is the sequence of needle and catheter placement?",
+    "answer": "Intrathecal drugs injected through the spinal needle -> spinal needle withdrawn -> epidural catheter placed through the epidural needle",
+    "rationale": "The spinal needle punctures the dura to deliver intrathecal drugs while the epidural catheter provides the route for ongoing labor analgesia or cesarean extension.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1401
+      }
+    ],
+    "confusable_with": "CSE technique"
+  },
+  {
+    "id": "dpe-analgesia-d2",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What advantage does adding a small local anesthetic dose to the intrathecal opioid confer in DPE?",
+    "answer": "Small intrathecal local anesthetic dose greatly potentiates opioid efficacy and significantly reduces total opioid requirements",
+    "rationale": "Synergy at spinal cord level between opioid receptor agonism and sodium channel blockade reduces the total dose of each agent needed.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1401
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "dpe-analgesia-d3",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the incidence of PDPH when a large epidural needle accidentally punctures the dura in a young parturient?",
+    "answer": "As high as 20-50% with a large epidural needle in a young pregnant woman",
+    "rationale": "Young age and female sex increase risk; large needle caliber (17-18 gauge) creates a larger dural defect than pencil-point spinal needles.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1600
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "dpe-analgesia-d4",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the definitive therapy for PDPH and what is its success rate?",
+    "answer": "Epidural blood patch is definitive therapy; single patch results in 90% initial improvement rate",
+    "rationale": "Autologous blood injected into the epidural space seals the dural defect and raises epidural pressure, eliminating the CSF leak.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 336
+      }
+    ],
+    "confusable_with": "Conservative treatment (recumbent positioning, caffeine, analgesics)"
+  },
+  {
+    "id": "dpe-analgesia-d5",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Why is the Tuohy needle preferred over straight epidural needles for epidural placement?",
+    "answer": "Blunt curved tip deflects the dura after traversing ligamentum flavum rather than penetrating it; straight Crawford needles have higher dural puncture incidence",
+    "rationale": "The 15-30 degree curve tip pushes the dura away mechanically, reducing accidental wet tap rates compared with cutting-tip designs.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1585
+      }
+    ],
+    "confusable_with": "Crawford needle (straight tip, higher PDPH rate)"
+  },
+  {
+    "id": "dpe-analgesia-d6",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What PDPH rate can be achieved with small-gauge pencil-point needles for obstetric spinal anesthesia?",
+    "answer": "As low as 3-4% with small-gauge pencil-point needles for cesarean delivery spinal anesthesia",
+    "rationale": "Atraumatic pencil-point tip spreads rather than cuts dural fibers, causing less CSF leakage after needle withdrawal.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1600
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "dpe-analgesia-d7",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What position promotes sacral spread when placing an epidural for second-stage vaginal delivery?",
+    "answer": "Sitting position promotes sacral spread of epidural local anesthetic",
+    "rationale": "Gravity directs solution caudally toward sacral nerve roots when the patient remains seated after epidural injection.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1394
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "dpe-analgesia-d8",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the key advantage of a functioning epidural catheter when urgent cesarean delivery becomes necessary?",
+    "answer": "Allows rapid extension to surgical anesthesia (T4 level), avoiding general anesthesia with its aspiration and difficult-airway risks in the parturient",
+    "rationale": "Epidural catheter can be dosed with alkalinized lidocaine or 3% chloroprocaine for rapid surgical-level block, bypassing GA risks.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1394
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Dural puncture epidural (DPE) analgesia",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Parturient requesting neuraxial analgesia; severe early labor pain; desire for rapid onset with ongoing epidural flexibility",
+    "pathophysiology": "Intentional dural puncture with spinal needle through epidural needle creates intrathecal drug delivery; epidural catheter provides ongoing dosing; microscopic hole may enhance epidural-to-intrathecal drug transfer",
+    "time_course": "Immediate onset (minutes) from intrathecal component; continuous analgesia via epidural catheter throughout labor",
+    "key_features": "Faster onset than plain epidural; PDPH risk from dural puncture; avoids CSE fetal bradycardia risk",
+    "consequence_if_missed": "Failure to recognize intravascular or intrathecal catheter misplacement can cause LAST or total spinal"
+  },
+  {
+    "id": "eclampsia-mgmt-d1",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the first-line agent for seizure management in eclampsia and what is the loading dose and infusion rate?",
+    "answer": "Magnesium sulfate first-line: 4-6 g IV bolus over 15-20 min loading dose, then 1-2 g/h maintenance infusion",
+    "rationale": "Magnesium prevents approximately 60% of seizures in preeclampsia by acting as an NMDA antagonist and reducing cerebral vasospasm.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Benzodiazepines (second-line only)"
+  },
+  {
+    "id": "eclampsia-mgmt-d2",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What therapeutic serum magnesium level is targeted in eclampsia management?",
+    "answer": "Therapeutic serum magnesium 1.7 to 3.5 mmol/L for eclampsia",
+    "rationale": "Below this range seizure prophylaxis is inadequate; above it, progressive toxicity (lost reflexes, respiratory depression, cardiac arrest) ensues.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypermagnesemia  Causes and Management",
+        "page": 3
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eclampsia-mgmt-d3",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What three clinical signs require stopping the magnesium infusion in eclampsia?",
+    "answer": "Stop magnesium if: urine output <80 mL in 4 hours, deep tendon reflexes absent, or respiratory rate <12/min",
+    "rationale": "These signs indicate impending magnesium toxicity; respiratory arrest and cardiac arrest follow at progressively higher serum levels.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypermagnesemia  Causes and Management",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eclampsia-mgmt-d4",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What BP threshold defines preeclampsia with severe features?",
+    "answer": "SBP >=160 mmHg or DBP >=110 mmHg on two occasions at least 4 hours apart",
+    "rationale": "Sustained severe hypertension at this level drives stroke risk; the 4-hour interval distinguishes episodic from sustained severe hypertension.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 621
+      }
+    ],
+    "confusable_with": "Preeclampsia without severe features"
+  },
+  {
+    "id": "eclampsia-mgmt-d5",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What proportion of preeclamptic patients develop eclamptic seizures?",
+    "answer": "Less than 2% of patients with preeclampsia develop eclamptic seizures",
+    "rationale": "Most preeclampsia does not progress to eclampsia; seizures may occur without antecedent warning symptoms.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 621
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eclampsia-mgmt-d6",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What essential laboratory monitoring is required during high-dose magnesium therapy for eclampsia?",
+    "answer": "Periodic serum magnesium levels plus renal function (urine output, BUN, creatinine, GFR) and electrolytes (K, Ca, Phos)",
+    "rationale": "Magnesium is renally cleared with a half-life of approximately 28 hours; reduced GFR prolongs half-life and escalates toxicity risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypermagnesemia  Causes and Management",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eclampsia-mgmt-d7",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "How does magnesium sulfate affect neuromuscular blocking agents, and what clinical implication does this have?",
+    "answer": "Magnesium significantly increases efficacy and prolongs duration of both depolarizing and non-depolarizing NMBAs; reduce NMB doses and monitor neuromuscular function carefully",
+    "rationale": "Magnesium competes with calcium at the neuromuscular junction, reducing acetylcholine release and decreasing motor end-plate sensitivity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 622
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eclampsia-mgmt-d8",
+    "topic": "Eclampsia management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the immediate management sequence after an eclamptic seizure begins?",
+    "answer": "Secure airway (lateral position, prevent aspiration) -> oxygen -> fetal monitoring -> magnesium sulfate loading dose",
+    "rationale": "Lateral positioning clears the airway; fetal monitoring detects bradycardia from maternal hemodynamic compromise during and after the seizure.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Eclampsia management",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Parturient with preeclampsia; hypertension; prior headache, visual changes, or epigastric pain",
+    "pathophysiology": "Eclampsia = preeclampsia + generalized tonic-clonic seizures; cerebral vasospasm and endothelial dysfunction lower seizure threshold",
+    "time_course": "May occur without warning antepartum, intrapartum, or postpartum",
+    "key_features": "Tonic-clonic seizures in preeclamptic patient; may lack prodrome; HELLP syndrome is a subset",
+    "consequence_if_missed": "Maternal stroke, aspiration, death; fetal hypoxia and acidosis from placental insufficiency during seizure"
+  },
+  {
+    "id": "anes-cerebral-physiology-d1",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Within what MAP range does cerebral autoregulation maintain constant CBF?",
+    "answer": "Cerebral autoregulation maintains constant CBF when MAP is between approximately 50-60 mmHg (lower limit) and 150-160 mmHg (upper limit)",
+    "rationale": "Outside this range CBF becomes pressure-passive; below the lower limit ischemia threatens, above the upper limit hyperemia and edema occur.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 935
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "anes-cerebral-physiology-d2",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What effect do volatile agents have on cerebral autoregulation, and is CO2 reactivity preserved?",
+    "answer": "Volatile agents cause dose-dependent depression of cerebral autoregulation; the CBF response to CO2 is generally retained with all volatile agents",
+    "rationale": "Volatile agents directly vasodilate cerebral vessels; CO2 reactivity is mediated via pH at arteriolar smooth muscle, a separate pathway.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 949
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "anes-cerebral-physiology-d3",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "How does timing of hyperventilation relative to halothane administration affect the CBF increase?",
+    "answer": "With halothane, hyperventilation must be initiated BEFORE administration to prevent halothane-induced CBF increases; post-halothane hyperventilation is less effective",
+    "rationale": "Halothane's vasodilatory effect on CBF is time-dependent; pretreatment with hypocapnia establishes vasoconstriction before the direct vasodilator effect begins.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 949
+      }
+    ],
+    "confusable_with": "Other volatile agents (timing less critical)"
+  },
+  {
+    "id": "anes-cerebral-physiology-d4",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the most effective method for brain protection during both focal and global ischemia?",
+    "answer": "Hypothermia is the most effective method for brain protection during focal and global ischemia",
+    "rationale": "Hypothermia reduces CMRO2 approximately 7% per 1 degree C, attenuating excitotoxicity, free radical production, and inflammation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 935
+      }
+    ],
+    "confusable_with": "Barbiturates (effective for focal but not global ischemia)"
+  },
+  {
+    "id": "anes-cerebral-physiology-d5",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Barbiturates provide neuroprotection in what type but NOT what type of cerebral ischemia?",
+    "answer": "Barbiturates provide neuroprotection from focal cerebral ischemia (stroke, retraction, temporary clips) but probably NOT from global cerebral ischemia (cardiac arrest)",
+    "rationale": "Barbiturates suppress electrical activity and reduce CMRO2, which is beneficial when some perfusion remains (focal) but not when global perfusion is absent.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 139
+      }
+    ],
+    "confusable_with": "Hypothermia (effective for both focal and global)"
+  },
+  {
+    "id": "anes-cerebral-physiology-d6",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are etomidate's EEG effects, and in what clinical setting can this be exploited therapeutically?",
+    "answer": "Etomidate causes excitatory EEG spikes more frequently than thiopental and may activate seizure foci; exploited in ECT to facilitate longer motor seizure activity",
+    "rationale": "Etomidate's combination of CMRO2 reduction with excitatory spike activity is paradoxical; the excitatory component is clinically useful in ECT.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 144
+      }
+    ],
+    "confusable_with": "Propofol (anticonvulsant properties)"
+  },
+  {
+    "id": "anes-cerebral-physiology-d7",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What cerebral effects does ketamine produce, and how can they be blunted?",
+    "answer": "Ketamine increases CBF and ICP; hypocapnia (hyperventilation) blunts these increases",
+    "rationale": "Ketamine is a sympathomimetic and direct cerebral vasodilator; concurrent hypocapnia-mediated vasoconstriction counteracts this effect.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 947
+      }
+    ],
+    "confusable_with": "Propofol (decreases CBF/ICP)"
+  },
+  {
+    "id": "anes-cerebral-physiology-d8",
+    "topic": "Effects of Anesthetic Agents on Cerebral Physiology",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "During CEA under general anesthesia, what neurophysiological monitoring is used and what intraoperative finding indicates need for shunt placement?",
+    "answer": "EEG monitoring; gross changes with carotid clamping indicate ischemia -> surgeon places vascular shunt for ipsilateral cerebral perfusion",
+    "rationale": "Carotid cross-clamping interrupts ipsilateral CBF; EEG slowing/amplitude reduction signals ischemia and guides surgical shunt decision.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 963
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d1",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "How does leakage current arise in OR electrical equipment, and what is the pathway that creates electrocution risk?",
+    "answer": "Leakage current arises in all electrical equipment from capacitive coupling; risk pathway: hot wire -> defective equipment -> patient -> ground contact -> neutral transformer",
+    "rationale": "Even with intact insulation, capacitive coupling between wires generates small leakage currents that can cause ventricular fibrillation if directed through the heart.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 44
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d2",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "How should the electrosurgery return electrode be positioned in patients with implanted cardiac devices?",
+    "answer": "Place return electrode as close to the surgical field and as far from the implanted cardiac device as practical",
+    "rationale": "This minimizes the current path through cardiac tissue, reducing the risk of pacemaker/ICD malfunction or inappropriate shock.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 49
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d3",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What oxygen monitoring alarm is mandatory on the anesthesia machine and at what threshold must it sound?",
+    "answer": "Low oxygen concentration alarm must sound within 30 seconds if inspired oxygen drops below a set limit that cannot be adjusted below 18%; galvanic cell O2 analyzer requires daily calibration",
+    "rationale": "The O2 analyzer is the last defense against delivering a hypoxic gas mixture; alarm is mandatory under ASA standards.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 266
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d4",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What are the ASA Standard II monitoring requirements during all anesthetics?",
+    "answer": "Continually evaluate oxygenation, ventilation, circulation, and temperature; required: FiO2 analyzer + alarm, pulse oximetry, capnography (expired Vt), and temperature monitoring",
+    "rationale": "These mandatory monitors detect the most common life-threatening intraoperative physiologic derangements.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 13
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d5",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What six items are confirmed during the pre-induction anesthesia time-out?",
+    "answer": "(1) monitors functional; (2) capnogram tracing present; (3) SpO2 measured; (4) flowmeter/ventilator settings working; (5) manual/ventilator switch set to manual; (6) vaporizer adequately filled",
+    "rationale": "The pre-induction checklist catches equipment failures before the patient is anesthetized and cannot report problems.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 276
+      }
+    ],
+    "confusable_with": "Surgical safety time-out (different purpose and content)"
+  },
+  {
+    "id": "electricity-safety-d6",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "In crew resource management (CRM), what specific communication structure is required to minimize error?",
+    "answer": "Communication must be closed-loop (two-way): clear sending AND receiving with feedback confirming understanding; not one-directional",
+    "rationale": "One-way communication without closed-loop confirmation is a common root cause of OR errors; feedback confirms messages are received and accurately understood.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 57
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electricity-safety-d7",
+    "topic": "Electricity, Safety, and Monitoring Principles",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "Why can high-frequency electrosurgical current cause burns even when the intended circuit path appears intact?",
+    "answer": "High-frequency current can complete circuit gaps via capacitances (without requiring recognized conductors); small contact-area current concentration produces burns",
+    "rationale": "Capacitive coupling bypasses insulators and air gaps at high frequencies, redirecting current to unintended grounding paths with potentially high current density.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 49
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electrolyte-cardiac-d1",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "Which electrolyte disturbances should be corrected before elective surgery because of arrhythmia risk?",
+    "answer": "Correct hypokalemia, hypophosphatemia, hypocalcemia, and hypomagnesemia before elective procedures; magnesium is administered preemptively in cardiac surgery for its antiarrhythmic properties",
+    "rationale": "These deficiencies lower arrhythmia threshold; magnesium has intrinsic antiarrhythmic and possible cerebral protective effects.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1900
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electrolyte-cardiac-d2",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "At what serum potassium level must hyperkalemia always be treated due to lethal cardiac risk?",
+    "answer": "Hyperkalemia exceeding 6 mEq/L should always be corrected",
+    "rationale": "Severe hyperkalemia causes peaked T-waves, QRS widening, sine-wave pattern, ventricular fibrillation or asystole.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1846
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electrolyte-cardiac-d3",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "What is the most effective initial treatment for symptomatic hypercalcemia?",
+    "answer": "Rehydration followed by brisk diuresis (urinary output 200-300 mL/h) using IV saline plus loop diuretic to accelerate calcium excretion",
+    "rationale": "Volume expansion dilutes serum calcium and increases GFR; loop diuretics block calcium reabsorption in the ascending loop of Henle.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1846
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electrolyte-cardiac-d4",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "How is symptomatic hypocalcemia treated emergently?",
+    "answer": "IV calcium chloride (3-5 mL of 10% solution) or calcium gluconate (10-20 mL of 10% solution) immediately",
+    "rationale": "Ionized hypocalcemia causes myocardial depression, QT prolongation, and tetany; calcium chloride provides 3x more ionized calcium per mL than gluconate.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1846
+      }
+    ],
+    "confusable_with": "Calcium gluconate vs. calcium chloride dosing"
+  },
+  {
+    "id": "electrolyte-cardiac-d5",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "Why is isolated hypomagnesemia corrected before elective procedures?",
+    "answer": "Isolated hypomagnesemia is corrected before elective procedures because of potential to cause arrhythmias",
+    "rationale": "Magnesium stabilizes cardiac membrane potential and inhibits arrhythmogenic triggered activity; deficiency particularly dangerous in cardiac surgery patients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1900
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "electrolyte-cardiac-d6",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "What cardiovascular effects have been associated with rapid acetate accumulation from large-volume balanced crystalloid infusion?",
+    "answer": "Rapid acetate accumulation has been associated with hypotension and decreased cardiac contractility",
+    "rationale": "Acetate is a vasodilator and negative inotrope at high plasma concentrations; metabolism to bicarbonate may also cause alkalosis affecting myocardial function.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 463
+      }
+    ],
+    "confusable_with": "Lactate (Ringer's lactate) - different metabolic handling"
+  },
+  {
+    "id": "electrolyte-cardiac-d7",
+    "topic": "Electrolyte Disturbances — Cardiac Effects",
+    "domain": "Critical care & ICU medicine (sepsis/shock, mechanical ventilation, AKI, electrolytes, hemodynamics, vasopressors, end-organ support)",
+    "discipline": "anesthesia",
+    "stem": "What cardiac rhythm intervention is contraindicated for ectopic or multifocal atrial tachycardia, and what treatments are appropriate?",
+    "answer": "DC cardioversion is contraindicated for ectopic or multifocal atrial tachycardia; treat with amiodarone or calcium channel blockers/beta-blockers",
+    "rationale": "MAT is driven by multiple ectopic foci (not re-entry), so cardioversion will not terminate it and may cause myocardial injury.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2139
+      }
+    ],
+    "confusable_with": "Paroxysmal SVT (cardioversion is appropriate)"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Hypomagnesemia",
+    "topic_b": "Hypocalcemia",
+    "discriminator": "Both cause arrhythmias and neuromuscular irritability; hypomagnesemia often secondarily causes hypokalemia and hypocalcemia; correcting magnesium may normalize calcium and potassium without direct replacement"
+  },
+  {
+    "id": "eol-ethics-d1",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What neurodestructive procedures may be useful in end-of-life palliative care for intractable pain?",
+    "answer": "Pituitary adenolysis and cordotomy may be useful in end-of-life palliative care for intractable pain",
+    "rationale": "When systemic opioids fail, ablative procedures interrupt pain pathways definitively; irreversibility is acceptable in terminal patients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1798
+      }
+    ],
+    "confusable_with": "Neurolytic blocks (temporary destruction with alcohol or phenol)"
+  },
+  {
+    "id": "eol-ethics-d2",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What agents are used for temporary neurolysis and what is the mechanism of each?",
+    "answer": "Ethyl alcohol 50-100% (extracts membrane phospholipids, precipitates lipoproteins) and phenol 6-12% (coagulates proteins) provide temporary nerve fiber destruction",
+    "rationale": "Neither agent is selective: both affect visceral, sensory, and motor fibers; alcohol causes pain on injection, phenol is painless initially.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1798
+      }
+    ],
+    "confusable_with": "Radiofrequency ablation (heat-based, not chemical)"
+  },
+  {
+    "id": "eol-ethics-d3",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "In critically ill patients near end of life, what problems have been associated with prolonged use of propofol and prolonged neuromuscular blockade?",
+    "answer": "Prolonged propofol: 'propofol infusion syndrome' (especially in children); prolonged NMBAs: critical illness myopathy",
+    "rationale": "Both complications worsen morbidity; propofol infusion syndrome causes metabolic acidosis, rhabdomyolysis, and cardiac failure; critical illness myopathy causes prolonged weakness.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2158
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eol-ethics-d4",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What improved sedation agent has replaced prolonged propofol and NMBAs in critically ill patients with fewer adverse consequences?",
+    "answer": "Dexmedetomidine is more effective for ICU sedation with fewer adverse consequences than prolonged propofol or NMBAs",
+    "rationale": "Dexmedetomidine is an alpha-2 agonist providing sedation without respiratory depression, less delirium, and preserved communicability with patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2158
+      }
+    ],
+    "confusable_with": "Midazolam or lorazepam (older sedatives with more delirium risk)"
+  },
+  {
+    "id": "eol-ethics-d5",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What is the key consideration in goals-of-care discussions for critically ill septic patients with significant comorbidities?",
+    "answer": "Discuss prognosis and which treatments are acceptable vs. not desired; account for chronic comorbidities in addition to acute sepsis; palliative care when sepsis is end-stage manifestation",
+    "rationale": "Patients differ in their acceptance of invasive interventions; advance directives and family discussions guide the balance between curative and comfort-focused care.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 50
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eol-ethics-d6",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "Why might neurolytic pain relief recur or be complicated by new pain after initial excellent results?",
+    "answer": "Original pain may recur OR new deafferentation or central pain may develop in a majority of patients within weeks to months of neurolytic procedures",
+    "rationale": "Deafferentation hypersensitivity occurs when sensory input is eliminated; central sensitization can create new neuropathic pain independent of the original source.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1798
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eol-ethics-d7",
+    "topic": "End-of-Life Care Ethics",
+    "domain": "Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness)",
+    "discipline": "anesthesia",
+    "stem": "What ethical principle applies when a patient with sepsis and poor prognosis desires limitations on invasive interventions?",
+    "answer": "Respect autonomy: goals-of-care discussion establishes which interventions are acceptable; advance care planning guides treatment limitations including withholding or withdrawing life-sustaining therapy",
+    "rationale": "Autonomy is a foundational bioethical principle; patients with decision-making capacity have the right to refuse any intervention regardless of prognosis.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 49
+      }
+    ],
+    "confusable_with": "Beneficence (doing good) vs. autonomy (patient's own values)"
+  },
+  {
+    "id": "endocrine-physiology-d1",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the differential diagnosis for intraoperative hyperthermia beyond malignant hyperthermia?",
+    "answer": "Neuroleptic malignant syndrome (develops over days, antidopaminergic drugs), thyroid storm (hypokalemia, tachycardia, metabolic acidosis, normal EtCO2), serotonin syndrome (MAOIs + meperidine/SSRIs), iatrogenic hyperthermia, CO2 insufflation",
+    "rationale": "NMS develops over days not minutes; thyroid storm lacks elevated EtCO2; serotonin syndrome has specific drug trigger; distinguishing guides treatment.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 85
+      }
+    ],
+    "confusable_with": "Malignant hyperthermia (elevated EtCO2, muscle rigidity, familial)"
+  },
+  {
+    "id": "endocrine-physiology-d2",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What are the thyroid disorders with implications for anesthetic management?",
+    "answer": "Hypothyroidism (bradycardia, weight gain, sensitivity to sedatives), hyperthyroidism (tachycardia, risk of thyroid storm), thyroiditis, and goiter (airway compression)",
+    "rationale": "Thyroid hormones regulate metabolic rate, cardiac output, and respiratory drive; perioperative thyroid dysfunction increases risk of cardiovascular complications.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 548
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "endocrine-physiology-d3",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What CNS targets do common IV anesthetic agents act on?",
+    "answer": "GABA-A receptors (propofol, barbiturates increase GABA binding; benzodiazepines increase GABA-receptor efficiency); NMDA receptors (ketamine - uncompetitive antagonist); Alpha-2 receptors (dexmedetomidine - inhibits NE release)",
+    "rationale": "Understanding receptor targets predicts drug interactions, reversal strategies, and selection for specific clinical contexts.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 25
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "endocrine-physiology-d4",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Dexmedetomidine loading doses can cause what cardiovascular effects, and who is at highest risk?",
+    "answer": "Loading doses (0.5-1 mcg/kg over 10 min) increase SVR and MAP from peripheral alpha-2 vasoconstriction, followed by reflex bradycardia; risk factors: older age, baseline MAP <70 mmHg, hypovolemia",
+    "rationale": "Peripheral alpha-2 receptor activation causes vasoconstriction; the reflex bradycardia can be severe in susceptible patients requiring dose adjustment.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 146
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "endocrine-physiology-d5",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the neuroprotective effect of dexmedetomidine in the setting of anesthetic-induced neurotoxicity in children?",
+    "answer": "Dexmedetomidine mitigates isoflurane-induced neuroapoptosis and behavioral impairment via cell survival signaling pathways at clinical doses (high doses can themselves induce neuroapoptosis)",
+    "rationale": "Dexmedetomidine activates pro-survival kinase pathways (Akt, ERK) that counter anesthetic-induced apoptosis in developing neurons.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 212
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "endocrine-physiology-d6",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What endocrine concern is unique to etomidate use in septic patients?",
+    "answer": "Etomidate inhibits adrenocortical synthesis (11-beta-hydroxylase) causing adrenocortical suppression; single-dose use in septic patients is controversial with ongoing risk-benefit debate",
+    "rationale": "Septic patients already have HPA axis dysfunction; etomidate-induced cortisol suppression may worsen stress response and potentially increase mortality risk.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 145
+      }
+    ],
+    "confusable_with": "Etomidate in non-septic patients (less clinical significance)"
+  },
+  {
+    "id": "endocrine-physiology-d7",
+    "topic": "Endocrine Physiology Relevant to Anesthesia",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the dantrolene treatment principle for malignant hyperthermia and which other hyperthermia syndromes does it also treat?",
+    "answer": "Dantrolene is first-line for MH; it can also treat thyroid storm and NMS (both listed as conditions dantrolene can treat)",
+    "rationale": "Dantrolene inhibits ryanodine receptor calcium release in skeletal muscle; hyperthermia in thyroid storm and NMS also involves muscle hypermetabolism that dantrolene can reduce.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 85
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "neurointerventional-d1",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary anesthetic goal in patients undergoing endovascular repair of cerebral aneurysms?",
+    "answer": "Prevent rupture/rebleeding and avoid factors promoting cerebral ischemia or vasospasm; use intraarterial pressure monitoring; avoid sudden BP increases with intubation or stimulation",
+    "rationale": "Aneurysm rupture risk increases with acute hypertension; adequate volume loading allows surgical anesthetic depth without excessive hypotension.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "neurointerventional-d2",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What vascular pathology presents with high-flow/low-resistance hemodynamics, and how is it treated endovascularly?",
+    "answer": "Arteriovenous malformations (AVMs) have high blood flow with low vascular resistance; endovascular embolization with coils, glues, and balloons in the hybrid OR or neurointerventional suite, followed by possible surgical excision",
+    "rationale": "AVMs steal blood from normal brain; high flow can rarely cause high-output cardiac failure; endovascular embolization reduces AVM size and vascularity before definitive treatment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 989
+      }
+    ],
+    "confusable_with": "Aneurysm (focal dilation, not arteriovenous shunting)"
+  },
+  {
+    "id": "neurointerventional-d3",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Why are calcium channel blockers, ARBs, and ACE inhibitors used cautiously when treating vasospasm after subarachnoid hemorrhage in the setting of endovascular repair?",
+    "answer": "These agents cause systemic vasodilation and reduce systemic vascular resistance, which may compromise cerebral perfusion pressure during vasospasm treatment",
+    "rationale": "In vasospasm, the brain depends on elevated MAP to maintain CBF through narrowed vessels; systemic vasodilation lowers CPP and worsens ischemia.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "neurointerventional-d4",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What monitoring and venous access principles apply to large skull base tumor resections in neuroradiology suites?",
+    "answer": "Intraarterial pressure monitoring, large-bore IV catheters for massive hemorrhage risk, precordial Doppler for venous air embolism, visual evoked potentials for optic nerve involvement",
+    "rationale": "Skull base tumors can hemorrhage massively and encroach on the optic nerve; monitoring anticipates the specific surgical risks.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 995
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "neurointerventional-d5",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "In interventional neuroradiology, what makes dexmedetomidine particularly useful compared with propofol for prolonged sedation cases?",
+    "answer": "Dexmedetomidine is less likely to cause respiratory depression than propofol, making it especially useful for patients with pulmonary hypertension or those requiring frequent mental status assessments",
+    "rationale": "In the neuroangio suite, preserved respiratory drive allows spontaneous ventilation and regular neuro checks without interrupting infusion.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 707
+      }
+    ],
+    "confusable_with": "Propofol (respiratory depression risk)"
+  },
+  {
+    "id": "neurointerventional-d6",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "AVM bleeding is most common in what age group and what are the other typical presentations?",
+    "answer": "AVM bleeding most common between age 10-30 years; other presentations include headache and seizures; combination of high flow with low resistance can rarely cause high-output cardiac failure",
+    "rationale": "AVMs progressively enlarge; their high-flow steal physiology explains the headache and seizure presentations before hemorrhage.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 989
+      }
+    ],
+    "confusable_with": "Aneurysm (peak rupture 40-60 years, more sudden onset)"
+  },
+  {
+    "id": "neurointerventional-d7",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Awake craniotomy is the norm for what procedures in neuroanesthesia?",
+    "answer": "Awake craniotomy is the norm for epilepsy surgery and commonly used for deep brain stimulation procedures",
+    "rationale": "Awake patients can provide real-time language, motor, and sensory feedback during cortical mapping, reducing resection of eloquent cortex.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1006
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Endovascular Neurosurgery: Neurointerventional Anesthesia",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Patient with cerebral aneurysm, AVM, or acute ischemic stroke in hybrid OR or angio suite; remote anesthesia location",
+    "pathophysiology": "Aneurysm: focal vessel wall weakness; AVM: arteriovenous shunting with high flow; both create risk of hemorrhage from hemodynamic changes",
+    "time_course": "Acute: hemorrhage can occur at any moment with hemodynamic instability; procedural time variable (1-6+ hours)",
+    "key_features": "Remote location from OR support; radiation exposure; need for hemodynamic precision; anticoagulation during procedure",
+    "consequence_if_missed": "Uncontrolled BP spike during aneurysm coiling -> rupture; vasospasm inadequately treated -> cerebral infarction"
+  },
+  {
+    "id": "eras-d1",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "What perioperative care model integrates multimodal analgesia, goal-directed fluid therapy, and early mobilization?",
+    "answer": "Enhanced Recovery After Surgery (ERAS) / enhanced recovery programs (ERPs) / fast-track surgery - coordinated multidisciplinary perioperative care programs",
+    "rationale": "ERAS bundles evidence-based practices that each individually reduce morbidity; combined implementation produces synergistic reduction in complications and length of stay.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1813
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eras-d2",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "How does ERAS address postoperative ileus through fluid management and analgesia strategies?",
+    "answer": "Goal-directed fluid therapy (neither excessive nor overly restricted); opioid-sparing multimodal analgesia shortens or prevents ileus; avoid/minimize nasogastric tubes",
+    "rationale": "Excessive and excessively restricted fluid therapy both increase ileus incidence; opioid-sparing regimens reduce ileus duration because opioids suppress GI motility.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1813
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eras-d3",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "When does a patient's initial contact with an ERAS program ideally occur?",
+    "answer": "Ideally at the time of the preoperative evaluation visit",
+    "rationale": "Pre-admission education about ERAS expectations (carbohydrate loading, early mobility, multimodal pain plan) improves patient compliance and outcomes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 475
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eras-d4",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "What is the evidence base for the ERAS recommendation against restricting carbohydrate/protein fluid intake more than 2 hours before anesthesia induction in healthy elective patients?",
+    "answer": "Strong evidence that nondiabetic patients drinking carbohydrate/protein fluids up to 2 hours before induction experience less perioperative nausea and dehydration than those fasted longer",
+    "rationale": "Carbohydrate loading reduces insulin resistance, attenuates catabolic response, and reduces nausea; the 2-hour gastric emptying time for clear fluids is well established.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 475
+      }
+    ],
+    "confusable_with": "NPO policy for solid food (6-8 hours)"
+  },
+  {
+    "id": "eras-d5",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "In ERAS protocols, what are the morphine metabolites that accumulate in renal failure and cause narcosis and ventilatory depression?",
+    "answer": "Morphine 3-glucuronide and morphine 6-glucuronide accumulate in kidney failure and are associated with narcosis and ventilatory depression",
+    "rationale": "Glucuronide metabolites are renally excreted; in renal failure they accumulate, prolonging and intensifying opioid effects beyond the expected drug duration.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 299
+      }
+    ],
+    "confusable_with": "Normeperidine (metabolite of meperidine, causes seizures)"
+  },
+  {
+    "id": "eras-d6",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "What opioid-sparing agents are included in multimodal analgesia as part of ERAS to minimize opioid-related side effects?",
+    "answer": "NSAIDs/COX inhibitors, acetaminophen, gabapentinoids (with growing caution about harm), ketamine, alpha-2 agonists, and regional/neuraxial techniques",
+    "rationale": "Each agent targets a different part of the pain pathway; combined use achieves better analgesia at lower doses of each, reducing side effects of any single agent.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 299
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "eras-d7",
+    "topic": "Enhanced Recovery After Surgery (ERAS)",
+    "domain": "Perioperative medicine (preoperative assessment, risk stratification, premedication, ERAS, fluid management, temperature, positioning, post-op care)",
+    "discipline": "anesthesia",
+    "stem": "What does the perioperative surgical home (PSH) model add to standard ERAS?",
+    "answer": "PSH provides coordinated, longitudinal, patient-centered care across the entire perioperative continuum from decision for surgery through recovery - patient's initial contact ideally at the preoperative evaluation",
+    "rationale": "The PSH extends ERAS principles from the preoperative period through post-discharge recovery, improving long-term outcomes beyond the hospitalization.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 475
+      }
+    ],
+    "confusable_with": "ERAS (procedure-specific, inpatient-focused)"
+  },
+  {
+    "id": "erac-d1",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the management sequence for venous air embolism (VAE) detected intraoperatively?",
+    "answer": "Stop cause (halt insufflation, occlude open veins, flood field with saline) -> Trendelenburg left-side-down position -> CPR/ACLS for circulatory collapse",
+    "rationale": "Left-side-down Trendelenburg keeps air in the apex of the right ventricle away from the pulmonary outflow, allowing blood to fill around it; CPR may dislodge the air bolus.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 850
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "erac-d2",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the mechanism and treatment of local anesthetic systemic toxicity (LAST)?",
+    "answer": "Local anesthetics block sodium channels throughout the body (brain, heart); treatment: lipid emulsion (20% intralipid), benzodiazepines for seizures, CPR if cardiac arrest",
+    "rationale": "Lipid emulsion acts as a lipid sink sequestering lipophilic local anesthetic away from cardiac sodium channels, rapidly reversing cardiovascular toxicity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 850
+      }
+    ],
+    "confusable_with": "High spinal (no seizures, sympathectomy predominates)"
+  },
+  {
+    "id": "erac-d3",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "In neuraxial anesthesia for cesarean, which regional technique provides a more rapid, predictable onset and denser block?",
+    "answer": "Spinal anesthesia provides more rapid, predictable onset and denser block than epidural; epidural allows better ongoing control of sensory level",
+    "rationale": "The smaller intrathecal dose ensures the drug acts on nerve roots directly in CSF without systemic absorption risk, producing more reliable block quality.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1404
+      }
+    ],
+    "confusable_with": "Epidural (slower onset but adjustable level)"
+  },
+  {
+    "id": "erac-d4",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What spinal opioid advantage does spinal anesthesia for cesarean delivery offer postoperatively?",
+    "answer": "Spinal anesthesia allows use of spinal opioids for postoperative pain relief (e.g., intrathecal morphine for 24-hour analgesia)",
+    "rationale": "Intrathecal morphine provides prolonged postoperative analgesia at very low doses (0.1-0.2 mg), reducing systemic opioid requirement after cesarean.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1404
+      }
+    ],
+    "confusable_with": "Epidural opioids (separate catheter technique)"
+  },
+  {
+    "id": "erac-d5",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the most common complication of neuraxial blockade for labor analgesia and what are the prophylactic measures?",
+    "answer": "Hypotension (decrease in SBP >20%) is the most common complication, occurring in approximately 14% of cases; prophylactic measures include left uterine displacement and IV hydration",
+    "rationale": "Sympathetic blockade reduces SVR; aortocaval compression by the gravid uterus compounds hypotension; left uterine displacement opens the vena cava.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 615
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "erac-d6",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "In comparison to CSE technique, what specific adverse events are more common with CSE but less common with DPE?",
+    "answer": "CSE has increased opioid-based pruritus, increased risk of uterine tachysystole, and greater incidence of fetal bradycardia after block placement compared to DPE",
+    "rationale": "Intrathecal opioids in CSE cause more systemic mu-receptor activation; rapid onset CSE analgesia may reflexively increase uterine tone causing fetal bradycardia.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 613
+      }
+    ],
+    "confusable_with": "DPE (fewer one-sided blocks, fewer catheter failures)"
+  },
+  {
+    "id": "erac-d7",
+    "topic": "Enhanced recovery after cesarean (ERAC)",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What pre-anesthesia step is essential before any cesarean delivery regardless of regional technique chosen?",
+    "answer": "Administration of a nonparticulate antacid within 30 minutes of anticipated surgery; must be prepared to administer general anesthetic at any time during the procedure",
+    "rationale": "All parturients are considered to have a full stomach; nonparticulate antacid (sodium citrate) neutralizes gastric pH without risk of aspiration injury if particulate antacid is aspirated.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1404
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-cesarean-d1",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What sensory level is required for epidural anesthesia for cesarean delivery, and how is patchy anesthesia treated before delivery?",
+    "answer": "T4 sensory level required; patchy anesthesia before delivery treated with IV ketamine 10-20 mg + midazolam 1-2 mg or 30% nitrous oxide",
+    "rationale": "T4 level blocks thoracic visceral afferents from the uterus; patchy block is supplemented with IV agents to avoid GA before delivery.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1406
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-cesarean-d2",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "For emergency cesarean, what agents provide rapid onset when dosed through an existing epidural catheter?",
+    "answer": "Alkalinized lidocaine or 3% chloroprocaine provides rapid-onset epidural anesthesia; alkalinizing agents increase the un-ionized fraction for faster nerve penetration",
+    "rationale": "Adding bicarbonate raises local anesthetic pH, increasing the un-ionized fraction that crosses nerve sheaths, shortening onset from >20 min to <5 min.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1402
+      }
+    ],
+    "confusable_with": "Bupivacaine (slower onset, not ideal for emergency)"
+  },
+  {
+    "id": "epidural-cesarean-d3",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What are the absolute contraindications to regional anesthesia for cesarean delivery?",
+    "answer": "Patient refusal, infection at injection site, coagulopathy, marked hypovolemia, and true allergy to local anesthetics",
+    "rationale": "These contraindications reflect situations where regional block is dangerous (bleeding into epidural space with coagulopathy, hemodynamic collapse with sympathectomy in hypovolemia).",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1393
+      }
+    ],
+    "confusable_with": "Relative contraindications (sepsis, prior back surgery)"
+  },
+  {
+    "id": "epidural-cesarean-d4",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What are the indications for emergency (crash) cesarean section requiring immediate general anesthesia?",
+    "answer": "Massive bleeding (placenta previa/accreta, abruption, uterine rupture), umbilical cord prolapse, severe fetal distress requiring immediate delivery",
+    "rationale": "When immediate delivery is required for maternal or fetal survival, general anesthesia (RSI) is faster than establishing new neuraxial block.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1412
+      }
+    ],
+    "confusable_with": "Urgent cesarean (some delay possible, neuraxial preferred)"
+  },
+  {
+    "id": "epidural-cesarean-d5",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "After delivery during cesarean, what supplemental analgesia can be added if a functioning epidural is in place?",
+    "answer": "After delivery, intravenous opioid supplementation may be used, provided excessive sedation and loss of consciousness are avoided",
+    "rationale": "Post-delivery, fetal considerations no longer limit maternal opioid dosing; systemic opioids can supplement regional block without risk to the neonate.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1406
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-cesarean-d6",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the advantage of continuous epidural anesthesia over single-shot spinal for cesarean delivery?",
+    "answer": "Continuous epidural allows better ongoing control of sensory level; spinal has faster, more predictable onset and denser block but fixed duration",
+    "rationale": "Epidural catheter allows supplemental dosing if block recedes or surgery is prolonged; spinal cannot be redosed once in place without second injection.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1404
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-cesarean-d7",
+    "topic": "Epidural anesthesia for cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the test dose before epidural activation and what does a positive result indicate?",
+    "answer": "3 mL test dose of local anesthetic with epinephrine 1:200,000; intravascular placement: tachycardia from epinephrine; subarachnoid placement: rapid dense block",
+    "rationale": "Epinephrine causes tachycardia within 30-60 seconds if injected intravascularly; inadvertent subarachnoid injection produces rapid spinal anesthesia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1397
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Emergency (crash) cesarean - general anesthesia",
+    "topic_b": "Urgent cesarean - neuraxial preferred",
+    "discriminator": "True crash = immediate delivery required for survival (cord prolapse, severe fetal distress, massive hemorrhage): GA with RSI; Urgent = some delay possible: extend existing epidural or place spinal"
+  },
+  {
+    "id": "epidural-pharma-d1",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What effect do opioids and benzodiazepines coadministered during epidural anesthesia have on blood pressure?",
+    "answer": "Combination of opioids and benzodiazepines markedly reduces arterial blood pressure and peripheral vascular resistance synergistically",
+    "rationale": "Both drug classes depress cardiovascular function; their combination produces more hypotension than either alone, particularly relevant during cardiac surgery.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 284
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-pharma-d2",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Benzodiazepines reduce the MAC of volatile anesthetics by what percentage?",
+    "answer": "Benzodiazepines reduce the minimum alveolar concentration of volatile anesthetics by as much as 30%",
+    "rationale": "Benzodiazepines potentiate GABA-A inhibition, providing synergistic sedation that reduces the volatile agent requirement to prevent movement.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 284
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-pharma-d3",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "In elderly patients, what pharmacodynamic change most affects epidural and neuraxial dosing?",
+    "answer": "Reduced anesthetic requirement (reduced MAC for volatile agents; lower dose requirements for propofol, etomidate, opioids, benzodiazepines, and barbiturates)",
+    "rationale": "Age-related reduction in neural density, reduced protein binding, and decreased CNS receptor density all contribute to enhanced drug sensitivity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-pharma-d4",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "How does chloroprocaine's pharmacokinetics make it uniquely useful in epidural anesthesia for neonates and infants?",
+    "answer": "Rapid plasma clearance of chloroprocaine allows its use as continuous epidural infusion in neonates/young infants without stepwise blood concentration buildup from repeat loading doses",
+    "rationale": "Chloroprocaine is an ester hydrolyzed rapidly by plasma cholinesterase; its short half-life prevents toxic accumulation in patients receiving repeat epidural doses.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 178
+      }
+    ],
+    "confusable_with": "Lidocaine (amino-amide, slower clearance)"
+  },
+  {
+    "id": "epidural-pharma-d5",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What is the MAC-awake value for volatile agents and what does it represent?",
+    "answer": "MAC-awake is approximately 0.4 MAC for volatile agents; the concentration preventing response to verbal/tactile stimulation in 50% of subjects (prevents recall at lower levels)",
+    "rationale": "MAC-awake is substantially below MAC (immobility threshold); awareness monitoring (BIS, SedLine) targets suppression above MAC-awake.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 114
+      }
+    ],
+    "confusable_with": "MAC (immobility endpoint, not awareness endpoint)"
+  },
+  {
+    "id": "epidural-pharma-d6",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Why do intraoperative hyperventilation and volatile/opioid agents cause postoperative apnea?",
+    "answer": "Intraoperative hyperventilation commonly causes postoperative apnea; volatile agents and opioids raise the apneic threshold (PaCO2 required to drive breathing), creating apnea when normocarbia returns",
+    "rationale": "The apneic threshold is the PaCO2 below which breathing ceases; if hyperventilation lowers PaCO2 below the raised threshold, apnea persists until PaCO2 rises.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 352
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-pharma-d7",
+    "topic": "Epidural anesthesia: pharmacology and dosing",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "For patients with epidural or spinal anesthesia during transport and recovery, what cardiovascular complication must be anticipated?",
+    "answer": "Decreases in blood pressure during transport or recovery; sympatholytic effects of major conduction blocks prevent compensatory reflex vasoconstriction when patients are moved or sit up",
+    "rationale": "Neuraxial sympathetic blockade inhibits peripheral vasoconstriction; positional changes reduce venous return without compensatory response, causing orthostatic hypotension.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2098
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-technique-d1",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What technique identifies entry into the epidural space during Tuohy needle placement?",
+    "answer": "Sudden loss of resistance (to injection of air or saline) as the needle passes through the ligamentum flavum and enters the epidural space",
+    "rationale": "The ligamentum flavum provides resistance to injection; the epidural space lacks resistance, producing the characteristic sudden loss of resistance.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1541
+      }
+    ],
+    "confusable_with": "Loss of resistance for subarachnoid (needle continues to freely flowing CSF)"
+  },
+  {
+    "id": "epidural-technique-d2",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "How can ultrasound guidance improve epidural placement success?",
+    "answer": "Neuraxial ultrasonography improves block efficacy by identifying skin-to-dura distance and reducing lumbar epidural block failure rate; useful for real-time guidance especially in pediatric patients (less ossification)",
+    "rationale": "Ultrasound identifies landmarks non-invasively; real-time guidance is more challenging in adults due to ossification but can visualize catheter tip and drug spread.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 333
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-technique-d3",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What neurological complication risk is higher with epidural anesthesia compared to spinal anesthesia?",
+    "answer": "Epidural (including CSE) anesthesia is associated with a more frequent rate of nerve injury compared with spinal anesthesia; neuraxial anesthesia in adults for perioperative use has higher neurological complication risk than in obstetric, pediatric, or chronic pain settings",
+    "rationale": "The epidural catheter passes through more tissue, increasing mechanical nerve injury risk; direct spinal cord injury risk from epidural needle is higher than with pencil-point spinal needle.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 335
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-technique-d4",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What is the natural history of PDPH and when does the epidural blood patch become necessary?",
+    "answer": "PDPH typically begins within 3 days (two-thirds within 48 hours); spontaneous resolution in 7 days for most; minority persist at 6 months; epidural blood patch is definitive therapy with 90% initial improvement",
+    "rationale": "Conservative measures (supine position, hydration, caffeine) suffice for most; blood patch indicated for severe or persistent headache that limits function.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 336
+      }
+    ],
+    "confusable_with": "Migraine headache (position-independent)"
+  },
+  {
+    "id": "epidural-technique-d5",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Why should neuraxial anesthesia be considered carefully in patients with preexisting spinal stenosis or neurologic disease?",
+    "answer": "Spinal stenosis is associated with increased nerve injury risk after neuraxial techniques; preexisting neurologic disease increases susceptibility to injury after neuraxial anesthesia (double-crush phenomenon)",
+    "rationale": "Compressed or diseased nerves are more vulnerable to additional ischemic or mechanical injury from needle placement, local anesthetic neurotoxicity, or pressure from catheter.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 320
+      }
+    ],
+    "confusable_with": "Chronic low back pain (not a contraindication without neurologic deficit)"
+  },
+  {
+    "id": "epidural-technique-d6",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "When placing a thoracic epidural, what anatomic feature limits the approach options compared to lumbar epidural?",
+    "answer": "Thoracic epidural is technically more difficult; the spinous processes angle steeply downward, so paramedian approach is often preferred; a segmental band of anesthesia at injected levels leaves above and below unblocked",
+    "rationale": "Thoracic spinous process angulation narrows the midline window; the paramedian approach bypasses this limitation and can achieve a segmental thoracic block.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1583
+      }
+    ],
+    "confusable_with": "Lumbar epidural (wider interspinous space, midline approach easier)"
+  },
+  {
+    "id": "epidural-technique-d7",
+    "topic": "Epidural anesthesia: technique",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What are the neurological warning signs that must immediately halt any neuraxial procedure?",
+    "answer": "Radicular pain or paresthesia occurring during any neuraxial procedure should warn the practitioner to stop and reposition the needle/catheter",
+    "rationale": "Paresthesia indicates contact with or injection into a nerve root; continuing risks direct neural trauma or intraneural injection causing permanent damage.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 335
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d1",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What sequence is suggested for epidural activation for first-stage labor analgesia?",
+    "answer": "1. Test dose (3 mL LA + epinephrine 1:200,000) for intravascular/subarachnoid placement; 2. Fractionate LA doses with opioids; 3. Confirm adequate analgesia before leaving patient",
+    "rationale": "Test dose identifies misplaced catheter before large drug volumes are injected; fractionated dosing minimizes the dose given if catheter is misplaced.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1397
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d2",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What are the major contraindications to neuraxial anesthesia for labor?",
+    "answer": "Lack of consent, coagulation abnormalities, severe hypovolemia, elevated intracranial pressure, infection at the site of injection",
+    "rationale": "Coagulopathy risks epidural hematoma; severe hypovolemia will worsen with sympathectomy; elevated ICP risks brainstem herniation if CSF is accessed.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1541
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d3",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the risk of double-crush neurologic injury in patients with preexisting peripheral neurologic disease undergoing neuraxial anesthesia?",
+    "answer": "Preexisting neurological disease (peripheral neuropathy, spinal stenosis) increases susceptibility to injury after neuraxial anesthesia; the double-crush phenomenon means compromised nerves are more vulnerable to additional insult",
+    "rationale": "A nerve already compressed or diseased has reduced reserve for additional ischemia, chemical, or mechanical injury from needle, catheter, or local anesthetic.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 320
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d4",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "In comparison of labor analgesia techniques, what are the advantages of DPE over CSE?",
+    "answer": "DPE has fewer one-sided blocks, fewer catheter failures, and compared with CSE, lower risk of opioid-based pruritus, uterine tachysystole, and fetal bradycardia",
+    "rationale": "DPE's intentional dural puncture allows epidural drugs to more reliably reach the intrathecal space while avoiding the high-dose intrathecal opioid bolus of CSE.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 613
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d5",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What percentage of maternal deaths are anesthesia-related according to US CDC data?",
+    "answer": "Only 0.4% of maternal deaths were anesthesia-related; leading causes are cardiovascular diseases, infection/sepsis, cardiomyopathy, hemorrhage, embolism, stroke",
+    "rationale": "Modern obstetric anesthesia practices have dramatically reduced anesthesia-attributable maternal mortality; non-anesthetic causes now dominate.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1383
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "epidural-labor-d6",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What saddle block technique can be achieved with hyperbaric spinal anesthesia and how is it produced?",
+    "answer": "Keep patient sitting for 3-5 minutes after hyperbaric injection so only lower lumbar and sacral nerves are blocked (saddle distribution for perineal anesthesia)",
+    "rationale": "Hyperbaric solution is denser than CSF and settles under gravity to the most dependent nerve roots in the sitting patient.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1582
+      }
+    ],
+    "confusable_with": "Full spinal (patient moved supine immediately, solution spreads cephalad)"
+  },
+  {
+    "id": "epidural-labor-d7",
+    "topic": "Epidural labor analgesia: technique and management",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What are the potential benefits of epidural analgesia for labor over systemic opioid analgesia regarding respiratory outcomes?",
+    "answer": "Epidural analgesia is superior to systemic opioid analgesia for pain control and improves respiratory outcomes in adults undergoing surgery; in obstetrics it avoids neonatal opioid-induced respiratory depression",
+    "rationale": "Systemic opioids cross the placenta and cause neonatal respiratory depression; epidural/neuraxial analgesia achieves equivalent or superior pain control without systemic drug transfer.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 314
+      }
+    ],
+    "confusable_with": ""
+  }
+]

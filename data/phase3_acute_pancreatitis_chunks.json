@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Acute Pancreatitis Definition & Diagnosis",
+    "subtopic": "pancreatitis_definition",
+    "content": "Acute pancreatitis = inflammation triggered by premature enzyme activation in pancreas. Diagnostic criteria: ≥2 of 3: (1) Abdominal pain consistent with pancreatitis (epigastric, radiating to back); (2) Serum amylase or lipase >3x ULN; (3) Characteristic imaging (CT, MRI, ultrasound). Amylase rises within 6-12h, peaks 48-72h, returns to normal 3-5 days. Lipase more specific, peaks 2-4 days. Lipase elevation lasts longer (up to 2 weeks). Serum levels correlate poorly with severity; normal lipase at 1 week doesn't rule out pancreatitis.",
+    "tags": [
+      "pancreatitis",
+      "acute",
+      "diagnosis"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Pancreatitis Etiology",
+    "subtopic": "pancreatitis_etiology",
+    "content": "Gallstones: 40-50% (obstruct ampulla, increase intraductal pressure). Alcohol: 35-45% (direct toxicity, ductal plugging). Hypertriglyceridemia (>1500 mg/dL): 1-5%. Post-ERCP: 5-10% (iatrogenic trauma). Medications (corticosteroids, azathioprine, sulfonamides, valproate, didanosine, pentamidine). Metabolic (hypercalcemia, hyperparathyroidism). Infectious (mumps, CMV, EBV, HBV, HIV). Autoimmune pancreatitis. Anatomic (divisum, annular pancreas, sphincter of Oddi dysfunction). Trauma. Idiopathic: 10-15%. In each patient, identify precipitant (guides prevention).",
+    "tags": [
+      "pancreatitis",
+      "etiology"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Severity Assessment in Acute Pancreatitis",
+    "subtopic": "pancreatitis_severity",
+    "content": "Mild pancreatitis: uncomplicated, isolated inflammation, mortality <1%. Moderate pancreatitis: SIRS present, no organ failure, mortality 1-5%. Severe pancreatitis: organ failure present (respiratory, cardiovascular, renal, other), mortality 10-30%. Scoring systems: (1) APACHE II: complex, many variables, score >8 = severe; (2) SIRS criteria ≥2: temperature, HR >90, RR >20, WBC abnormal; (3) Ranson criteria: 11 variables at presentation + 48h (mortality correlates with number met, 0-2 criteria = 1%, 6+ criteria = 40%). CT severity index (Balthazar grade + extent of necrosis) better for prognosis than enzyme levels. Modified Marshall Score: tracks organ failure during ICU stay.",
+    "tags": [
+      "pancreatitis",
+      "severity_assessment"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Pancreatitis Imaging - CT, Ultrasound, MRCP",
+    "subtopic": "pancreatitis_imaging",
+    "content": "Ultrasound: initial test (bedside, non-invasive), assess for gallstones, dilated ducts, free fluid. Not sensitive for parenchymal edema. CT (contrast-enhanced): gold standard for diagnosis + severity assessment. Shows pancreatic edema (swollen but normal enhancement = edema), necrosis (non-enhancing areas), fluid collections, ascites. Balthazar grades A (normal) to E (gas/extensive necrosis). MRCP: excellent for visualizing ductal system, identifying stone impaction, diagnosing autoimmune pancreatitis (duct beading). EUS: visualizes ampulla, stones <5 mm, tissue sampling. Timing: CT best delayed 72-96h (better shows necrosis). Early CT may underestimate necrosis.",
+    "tags": [
+      "pancreatitis",
+      "imaging",
+      "ct",
+      "ultrasound"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Pancreatitis Management - NPO, Fluids, Nutrition",
+    "subtopic": "pancreatitis_treatment",
+    "content": "Early phase: (1) NPO (nil per os); (2) IV fluid resuscitation (aggressive early, 1-2 L/h LR aiming for urine output 0.5-1 mL/kg/h, avoid overload); (3) Monitor: pain, vital signs, O2 sat, urine output, labs (amylase, lipase, glucose, calcium, albumin). Feeding: early enteral nutrition (within 24-48h) better than TPN (reduced infectious complications, maintain gut integrity). Nasal duodenal feeding preferred if tolerating fluids; if not, TPN acceptable (higher infection risk though). Once amylase/lipase peak + pain improves, start low-fat diet, transition to oral. Avoid: anticholinergics (no benefit), protease inhibitors (no benefit), antacids routinely.",
+    "tags": [
+      "pancreatitis",
+      "treatment",
+      "nutrition"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Antibiotics in Acute Pancreatitis - Selective Use",
+    "subtopic": "pancreatitis_treatment",
+    "content": "Prophylactic antibiotics: controversial, generally NOT recommended for mild-moderate pancreatitis without signs infection. Indicated for: (1) Necrotic pancreatitis (Balthazar grade D-E or >30% necrosis); (2) Clinical signs infection (fever, elevated WBC, dysfunction persisting >5-7 days). Agents: penetrate pancreatic necrosis well (carbapenems like meropenem, fluoroquinolones like levofloxacin). Duration: 7-14 days. Infected pancreatic necrosis: diagnosis challenging (fever + necrosis on CT + elevated inflammatory markers); FNA-guided culture may help. If confirmed, prolonged antibiotics + drainage/debridement needed.",
+    "tags": [
+      "pancreatitis",
+      "antibiotics",
+      "infection"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Complications of Acute Pancreatitis",
+    "subtopic": "pancreatitis_complications",
+    "content": "Local: pancreatic edema (swelling, usually resolves), necrosis (non-viable tissue, high infection risk), pseudocyst (encapsulated fluid, may need drainage if symptomatic/infected/compressing), abscess (bacterial infection of necrotic tissue, requires drainage ± antibiotics). Systemic: ARDS (from inflammation), AKI (hypotension, myoglobinuria), coagulopathy/DIC, hypocalcemia (saponification of fat, binds calcium), hyperglycemia (beta cell destruction), hepatic failure (rare). Infected necrosis: mortality 30-50% even with treatment. Complications mortality 30-50% vs mild <1%.",
+    "tags": [
+      "pancreatitis",
+      "complications"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "ERCP in Gallstone Pancreatitis with Obstruction",
+    "subtopic": "pancreatitis_treatment",
+    "content": "Gallstone pancreatitis: if uncomplicated (no cholangitis), observation often sufficient (stone passes spontaneously in 80%). Urgent ERCP (within 24-72h) indicated if: (1) Cholangitis signs (fever, RUQ pain, jaundice) — need stone extraction + sphincterotomy; (2) Persistent biliary obstruction (bilirubin >4, duct dilatation); (3) Severe pancreatitis thought due to large stone. ERCP carries 5-10% complication rate (pancreatitis, perforation, bleeding), so reserved for true indication. Timing: within 24h of symptom onset optimal for severe cholangitis. Mild pancreatitis + no obstruction: elective cholecystectomy after acute phase (prevents recurrent). High-risk surgical patients: temporary stent consideration instead of sphincterotomy.",
+    "tags": [
+      "pancreatitis",
+      "ercp",
+      "gallstone"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Hypertriglyceridemia-Induced Pancreatitis",
+    "subtopic": "pancreatitis_etiology",
+    "content": "Triglyceride levels >1500 mg/dL risk pancreatitis (>5000 = very high risk). Etiologies: familial hypertriglyceridemia, secondary to diabetes, alcohol use, medications (estrogens, thiazolidinediones, protease inhibitors). Presentation: similar to other pancreatitis. Diagnosis: elevated triglycerides + amylase/lipase elevation + abdominal pain. Key difference: amylase may be falsely low (lipemia interferes with assay), so lipase more reliable. Treatment: (1) Acute phase: NPO, fluids, IV heparin (enhances lipoprotein lipase activity, lowers triglycerides faster), control diabetes; (2) Long-term: fibrates (fenofibrate, gemfibrozil), omega-3 fatty acids, statins, lifestyle modification. Plasmapheresis if triglycerides >1500 (removes triglyceride-rich particles, effective but costly).",
+    "tags": [
+      "pancreatitis",
+      "hypertriglyceridemia"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

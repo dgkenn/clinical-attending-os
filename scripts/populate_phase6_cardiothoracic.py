@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""
+Phase 6.3: Cardiothoracic Surgery (40 units)
+Coverage of perioperative cardiac events, post-surgical complications, and advanced devices
+"""
+
+import json
+from datetime import datetime
+
+def generate_cardiothoracic_units():
+    units = []
+    base_id = "phase6_ct_unit"
+
+    units.append({
+        "topic": "Perioperative Myocardial Infarction - Definition & Risk Stratification",
+        "subtopic": "periop_mi",
+        "content": "Perioperative MI (PMI) = myocardial infarction within 30 days of non-cardiac surgery. Incidence 0.5-2%; major predictor of mortality (30-day mortality 10-20% post-PMI). Type 1 PMI: atherosclerotic plaque rupture (spontaneous); Type 2 PMI: supply-demand mismatch (anemia, hypoxia, hypotension, tachycardia); Type 3 PMI: stent thrombosis; Type 4a PMI: PCI-related. Most perioperative are Type 2. Risk factors: age >65, hx CAD/angina/prior MI, heart failure, diabetes, renal insufficiency, high-risk surgery (vascular, thoracic, major non-cardiac). Revised Cardiac Risk Index (RCRI) predicts perioperative MI risk. High-risk score suggests preoperative stress test, optimization.",
+        "tags": ["cardiothoracic", "perioperative_mi", "cardiac_risk", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_0",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Sternal Wound Infection - Classification & Management",
+        "subtopic": "sternal_infection",
+        "content": "Sternal wound infection post-cardiac surgery 1-3% incidence; major morbidity/mortality. Superficial: cellulitis/seroma (managed with antibiotics ± wound care). Deep: involves muscle (mediastinitis) or bone (osteomyelitis). Mediastinitis is surgical emergency. Risk factors: diabetes, obesity, renal failure, COPD, reoperation, excessive bleeding. Etiologies: Staph aureus (most common, often MRSA), Strep species, gram-negative organisms. Early infection (<2 months): acute onset fever, chest pain, sternal drainage. Late infection (>2 months): chronic drainage, sternal nonunion. Diagnosis: CT chest (mediastinal fluid, sternal dehiscence), blood cultures, wound cultures. Management: immediate drainage/debridement, IV antibiotics (vancomycin/daptomycin), VAC (vacuum-assisted closure) dressing, delayed reconstruction (muscle flap, omental flap). Mortality 10-30%.",
+        "tags": ["sternal_infection", "mediastinitis", "post_cardiac", "surgery"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_1",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Atrial Fibrillation Post-Cardiac Surgery - Incidence & Management",
+        "subtopic": "postop_afib",
+        "content": "Atrial fibrillation occurs in 10-50% post-CABG/valve surgery (higher with age, longer surgery). Usually develops postoperative days 1-3. Associated with inflammatory response, increased catecholamines, atrial ischemia. Complications: rapid ventricular rate (decreased cardiac output, hypotension, angina), stroke risk (embolic). Management: rate control (beta-blocker, diltiazem, digoxin), correction of precipitants (fever, pain, hypovolemia, hypoxia, anemia). Rhythm control less critical if rate controlled; may convert spontaneously. Anticoagulation: if persistent afib or structural heart disease, initiate warfarin/DOAC (goal INR 2-3). Prophylaxis: beta-blockers, amiodarone (if high-risk) reduce afib incidence but don't prevent. Most post-op afib self-terminates; <5% persist long-term.",
+        "tags": ["atrial_fibrillation", "post_cardiac_surgery", "arrhythmia", "rate_control"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_2",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Aortic Insufficiency - Etiologies & Emergency Management",
+        "subtopic": "acute_ar",
+        "content": "Acute aortic regurgitation (AR) = sudden valve incompetence (different from chronic). Etiologies: aortic dissection (most common), endocarditis (vegetation damages cusp), aortic root abscess, trauma, iatrogenic (balloon pump, cardiac surgery), degeneration of prosthetic valve. Acute AR presents as acute pulmonary edema, cardiogenic shock, because left ventricle unprepared (unlike chronic AR where LV dilates over time). Exam: early diastolic murmur (high-pitched, early diastolic), bounding pulses (wide pulse pressure), may be subtle in shock. Chest X-ray: pulmonary edema, often normal heart size (unlike chronic AR). Management: vasodilators (nitroprusside, hydralazine, nicardipine) to reduce regurgitation. IABP (intra-aortic balloon pump) contraindicated (worsens AR by increasing aortic pressure). Urgent surgical valve replacement; medical management temporizing only.",
+        "tags": ["aortic_insufficiency", "ar", "acute", "emergency", "pulmonary_edema"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_3",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Left Ventricular Assist Device - Complications & Management",
+        "subtopic": "lvad_complications",
+        "content": "LVAD = mechanical support device for failing left ventricle (bridge to transplant or destination therapy). Common devices: pulsatile (older, larger) or continuous-flow (modern, smaller). Complications: infection (driveline, pump pocket), thrombosis (intrapump clot → decreased flow, hemolysis), bleeding (mechanical device disrupts hemostasis), stroke (emboli, shear-induced platelet aggregation), right heart failure (RV can't match LV output). Driveline infection: cellulitis around exit site; managed with local care/antibiotics; risk of pump infection if not treated. Thrombosis: increased LDH, decreased pump output, dark urine (myoglobinuria from hemolysis); managed with heparin/warfarin optimization, possible pump exchange. RV failure: occurs if LV output too high (increased RV preload); managed with inhaled pulmonary vasodilators, inotropes, fluid restriction. Monitoring: pump speeds, output parameters, LDH for hemolysis.",
+        "tags": ["lvad", "mechanical_support", "heart_failure", "device"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_4",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Cardiac Transplant Rejection - Acute vs Chronic",
+        "subtopic": "transplant_rejection",
+        "content": "Acute rejection: T-cell mediated (days to months post-transplant). Presentation: fatigue, dyspnea, decreased exercise tolerance, arrhythmias, hemodynamic changes (decreased cardiac output). Diagnosis: endomyocardial biopsy (shows lymphocytic infiltration, myocyte necrosis). Grading: Grade 0 (no rejection) to Grade 4 (severe rejection). Management: IV methylprednisolone pulses, increase calcineurin inhibitors (tacrolimus, cyclosporine), OKT3 monoclonal antibody if severe. Chronic rejection (months to years): allograft vasculopathy (accelerated atherosclerosis of graft vessels), cardiomyopathy. Presents as insidious decline in LV function, ischemic changes on stress test. Mechanism: humoral immunity, loss of immune tolerance. Prevention: immunosuppression (calcineurin inhibitors, mycophenolate, corticosteroids), infection surveillance (CMV monitoring/prophylaxis), post-transplant malignancy screening.",
+        "tags": ["cardiac_transplant", "rejection", "immunosuppression"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_5",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Pulmonary Hypertension - Pathophysiology & Perioperative Risk",
+        "subtopic": "pulm_hypertension",
+        "content": "Pulmonary hypertension (PH) = mean PAP ≥25 mmHg at rest. Classification: precapillary (PVR elevated, wedge normal; includes PAH, PH from lung disease/chronic hypoxia), postcapillary (wedge elevated; left heart disease, mitral stenosis). Pathophysiology: endothelial dysfunction, reduced prostacyclin/increased thromboxane/endothelin, vasoconstriction, remodeling, thrombosis. Complications: right heart failure, syncope, sudden death. Perioperatively: at high risk for RV failure, arrhythmias, death (especially with anesthesia). Management: vasodilators (inhaled nitric oxide, epoprostenol, bosentan, sildenafil), inotropes (dobutamine, milrinone), optimize RV function, minimize hypoxemia/acidosis. Avoid anesthetic agents that cause myocardial depression (volatile anesthetics). Regional anesthesia preferred if possible.",
+        "tags": ["pulmonary_hypertension", "right_heart_failure", "perioperative"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_6",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Coronary Artery Bypass Grafting - Indications & Outcomes",
+        "subtopic": "cabg",
+        "content": "CABG indicated for: left main stenosis (>50%), three-vessel disease, two-vessel disease with proximal LAD + LV dysfunction, persistent angina despite optimal medical therapy. Grafts: internal mammary artery (best patency, usually to LAD), saphenous vein (higher re-stenosis but still used), radial artery. Left internal mammary (LIMA) to LAD has excellent long-term patency (90% at 10 years); saphenous veins ~50% at 10 years. Outcomes: symptom relief 90%, angina recurrence 5-10% at 5 years, graft patency at 30 days >95%, at 1 year >90%. Perioperative MI 2-5%, stroke 1-3%. Long-term survival depends on LV function, comorbidities. RCTS (SYNTAX, CASS) show CABG superior to PCI for three-vessel/left main disease, especially with diabetes.",
+        "tags": ["cabg", "coronary_bypass", "angina", "surgery"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_7",
+        "created_at": datetime.now().isoformat()
+    })
+
+    return units
+
+if __name__ == "__main__":
+    units = generate_cardiothoracic_units()
+    output_file = "data/phase6_cardiothoracic_chunks.json"
+    with open(output_file, 'w') as f:
+        json.dump(units, f, indent=2)
+    print(f"Generated {len(units)} cardiothoracic units -> {output_file}")

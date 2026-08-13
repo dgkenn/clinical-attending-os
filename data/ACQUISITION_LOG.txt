@@ -1,0 +1,126 @@
+PHASE 0 TASK 0.1: Medical Knowledge Base Source Acquisition
+=============================================================
+
+ACQUISITION STATUS (2026-06-04)
+==============================
+
+PHASE 1 SOURCES (2):
+--------------------
+1. AHA/ASA Stroke Guidelines 2024
+   - URL: https://www.stroke.org/en/professional-education/aha-asa-stroke-guidelines
+   - Status: FAILED (redirects to error page)
+   - Manual Acquisition: Visit https://www.stroke.org and navigate to professional education
+   - Format: PDF (typically free upon registration)
+
+2. IDSA Meningitis Guidelines
+   - URL: https://www.idsa.org/practice-guidelines
+   - Status: FAILED (Cloudflare challenge, requires JavaScript)
+   - Manual Acquisition: Visit https://www.idsa.org/practice-guidelines, search for meningitis
+   - Format: PDF (typically free, some require registration)
+
+PHASE 2 SOURCES (7):
+--------------------
+1. IDSA Pneumonia Guidelines 2023
+   - URL: https://www.idsa.org/practice-guidelines
+   - Status: FAILED (Cloudflare challenge)
+   - Manual Acquisition: Same as meningitis guidelines above
+   - Format: PDF
+
+2. NAEPP Asthma Guidelines 2024
+   - URL: https://www.naepp.asthma.edu
+   - Status: FAILED (host not resolvable)
+   - Manual Acquisition: Visit https://www.naepp.asthma.edu directly
+   - Format: PDF (free)
+
+3. GOLD COPD Guidelines 2024
+   - URL: https://goldcopd.org
+   - Status: DOWNLOADED (HTML redirect, not true PDF)
+   - Manual Acquisition: Visit https://goldcopd.org, download full report PDF
+   - Format: PDF (free, high-quality guidelines)
+
+4. AHA/ACC CAD Guidelines 2023
+   - URL: https://www.americanheart.org/professional
+   - Status: FAILED (redirects to error page)
+   - Manual Acquisition: Visit AHA website, search for CAD guidelines
+   - Format: PDF (may require AHA membership or free registration)
+
+5. CHEST PE/DVT Guidelines 2023
+   - URL: https://www.chestjournal.org
+   - Status: FAILED (Cloudflare challenge)
+   - Manual Acquisition: Visit CHEST journal, search guidelines section
+   - Format: PDF (may be paywalled, check institutional access)
+
+6. ADA Standards of Care 2024
+   - URL: https://diabetes.org/professionals/standards-of-care
+   - Status: DOWNLOADED (HTML redirect, not true PDF)
+   - Manual Acquisition: Visit https://diabetes.org/professionals/standards-of-care
+   - Format: PDF (free, updated annually)
+
+7. AACE Thyroid Guidelines 2016
+   - URL: https://www.aace.com/disease-state-resources/thyroid
+   - Status: DOWNLOADED (HTML redirect, not true PDF)
+   - Manual Acquisition: Visit https://www.aace.com and search guidelines section
+   - Format: PDF (free)
+
+PHASE 3 SOURCES (2):
+--------------------
+1. AASLD Cirrhosis Guidelines
+   - URL: https://www.aasld.org
+   - Status: DOWNLOADED (HTML redirect, not true PDF)
+   - Manual Acquisition: Visit https://www.aasld.org, search for cirrhosis guidelines
+   - Format: PDF (free, comprehensive)
+
+2. ASGE GI Bleeding Guidelines
+   - URL: https://www.asge.org
+   - Status: DOWNLOADED (HTML redirect, not true PDF)
+   - Manual Acquisition: Visit ASGE website, guidelines section
+   - Format: PDF (may require registration)
+
+HIGH-PRIORITY TEXTBOOKS (REQUIRED FOR KNOWLEDGE BASE):
+======================================================
+
+1. Washington Manual of Medical Therapeutics (11th Edition)
+   - Status: NOT ACQUIRED
+   - Recommended Source: Amazon, ThriftBooks, or local library
+   - Estimated Cost: $20-40 (used copies)
+   - Why: Gold-standard therapeutic reference; essential for Phase 1 calibration
+   - Action: User to acquire used copy or request library access
+
+2. Guyatt's Guide to the Medical Literature (Clinical Practice Guide Edition)
+   - Status: NOT ACQUIRED
+   - Recommended Source: BU/MGH institutional login (BMJ Learning)
+   - Estimated Cost: Free via institutional access
+   - Why: EBM framework validation; teaches critical appraisal methods
+   - Action: Access via dgkenn@bu.edu institutional credentials
+
+ALTERNATIVE HIGH-QUALITY SOURCES (RECOMMENDED):
+===============================================
+
+1. UpToDate (institutional access via MGH/BU)
+   - Comprehensive, EBM-graded medical reference
+   - Usually freely available through institution
+
+2. AHA/ACC/ESC Guideline Collections
+   - May be accessed directly through institution
+   - Highest level of evidence
+
+3. Cochrane Library
+   - Systematic reviews and meta-analyses
+   - Free access available through many institutions
+
+NEXT STEPS:
+===========
+
+Phase 0 Task 0.2 (deferred):
+- Once true PDFs are acquired/verified, proceed to OCR + text extraction pipeline
+- Set up directories for processed text (txt/, markdown/, structured/)
+- Begin Phase 1 ingestion (stroke, meningitis, basic emergency medicine)
+
+NOTES ON ACQUISITION DIFFICULTY:
+================================
+
+- Most major medical guideline websites use Cloudflare or bot-detection
+- Direct curl/wget downloads are blocked
+- Browser-based access (with JavaScript, cookies) required for many sources
+- Some organizations require registration but offer free PDFs
+- Institutional access often superior to direct downloads

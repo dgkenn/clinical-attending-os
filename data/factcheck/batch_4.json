@@ -1,0 +1,998 @@
+[
+  {
+    "id": "curated-phase5_shock_unit_6",
+    "verdict": "KEEP",
+    "reason": "High-yield ATLS shock classification; corpus match weak (score 0.72, off-topic)."
+  },
+  {
+    "id": "curated-phase5_shock_unit_7",
+    "verdict": "KEEP",
+    "reason": "Resuscitation endpoints accurate; EGDT mention dated but acceptable at intern level."
+  },
+  {
+    "id": "curated-phase5_shock_unit_8",
+    "verdict": "KEEP",
+    "reason": "Septic shock pathophysiology accurate; weak corpus match (off-topic). Good intern teaching."
+  },
+  {
+    "id": "curated-phase5_shock_unit_9",
+    "verdict": "FIX",
+    "reason": "CRITICAL: Labeled 'Sepsis-3' but uses outdated SIRS-based Sepsis-1/2 definition; Sepsis-3 uses SOFA≥2, eliminates 'severe sepsis'.",
+    "corrected_text": "Sepsis-3 (2016) definitions: Sepsis = life-threatening organ dysfunction (SOFA score ≥2) caused by a dysregulated host response to infection. Note: SIRS criteria are NOT part of Sepsis-3; 'severe sepsis' was eliminated as a category. Septic shock = sepsis + vasopressors required to maintain MAP ≥65 mmHg AND lactate >2 mmol/L despite adequate fluid resuscitation. qSOFA (altered mental status, SBP <100, RR ≥22): identifies high-risk patients outside ICU but does NOT replace SOFA for diagnosis."
+  },
+  {
+    "id": "curated-phase5_shock_unit_10",
+    "verdict": "KEEP",
+    "reason": "Anaphylaxis pathophysiology and treatment (IM epi 0.3-0.5 mg) accurate; low corpus match."
+  },
+  {
+    "id": "curated-phase5_shock_unit_11",
+    "verdict": "KEEP",
+    "reason": "Obstructive shock classification accurate; corpus match weak."
+  },
+  {
+    "id": "curated-phase5_shock_unit_12",
+    "verdict": "KEEP",
+    "reason": "Massive PE management (alteplase 100 mg) accurate; adds value to corpus."
+  },
+  {
+    "id": "curated-phase5_shock_unit_13",
+    "verdict": "KEEP",
+    "reason": "Tension pneumothorax recognition and needle decompression location accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_14",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection shock mechanisms and emergency management accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_15",
+    "verdict": "KEEP",
+    "reason": "Mixed shock pathophysiology accurate; useful ICU teaching concept."
+  },
+  {
+    "id": "curated-phase5_shock_unit_16",
+    "verdict": "KEEP",
+    "reason": "Lactate as prognostic marker: all values and thresholds accurate."
+  },
+  {
+    "id": "curated-phase5_shock_unit_17",
+    "verdict": "KEEP",
+    "reason": "Microcirculatory dysfunction in sepsis: accurate physiology; adds depth to ICU teaching."
+  },
+  {
+    "id": "curated-phase5_shock_unit_18",
+    "verdict": "KEEP",
+    "reason": "Refractory shock management ladder (epi, dobutamine, MCS, steroids) accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_0",
+    "verdict": "KEEP",
+    "reason": "Dopamine dose-dependent effects accurate per standard teaching; corpus match moderate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_1",
+    "verdict": "KEEP",
+    "reason": "Renal-dose dopamine debunking accurate and important intern teaching point."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_2",
+    "verdict": "KEEP",
+    "reason": "Dobutamine mechanism (beta-1 > beta-2) accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_3",
+    "verdict": "KEEP",
+    "reason": "Dobutamine dose range (2.5-20 mcg/kg/min) and indications accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_4",
+    "verdict": "KEEP",
+    "reason": "Milrinone mechanism (PDE3 inhibitor) accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_5",
+    "verdict": "KEEP",
+    "reason": "Milrinone loading/infusion doses accurate per standard references."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_6",
+    "verdict": "KEEP",
+    "reason": "Norepinephrine mechanism and first-line status accurate per Surviving Sepsis."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_7",
+    "verdict": "FLAG",
+    "reason": "NE upper dose 0.2 mcg/kg/min too low; corpus and literature cite up to 3 mcg/kg/min in refractory shock; FLAG."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_8",
+    "verdict": "KEEP",
+    "reason": "Epinephrine mechanism accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_9",
+    "verdict": "KEEP",
+    "reason": "Epinephrine doses (infusion and IM for anaphylaxis) accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_10",
+    "verdict": "KEEP",
+    "reason": "Phenylephrine (pure alpha-1) mechanism accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_11",
+    "verdict": "KEEP",
+    "reason": "Phenylephrine dose (0.5-1.4 mcg/kg/min; 200 mcg bolus) accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_12",
+    "verdict": "KEEP",
+    "reason": "Vasopressin mechanism and dose (0.03-0.04 U/min) accurate per corpus."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_13",
+    "verdict": "KEEP",
+    "reason": "Vasopressin limitations accurate; fixed dose 0.04 U/min supported by corpus."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_14",
+    "verdict": "KEEP",
+    "reason": "Levosimendan: FDA non-approval status and mechanism accurate."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_15",
+    "verdict": "KEEP",
+    "reason": "Hydrocortisone 50 mg q6h (200 mg/day) for refractory septic shock accurate per SSC 2021."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_16",
+    "verdict": "KEEP",
+    "reason": "Tachyphylaxis mechanisms accurate pharmacology."
+  },
+  {
+    "id": "curated-phase5_inotropes_unit_17",
+    "verdict": "KEEP",
+    "reason": "Multi-agent hemodynamic support strategy accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_0",
+    "verdict": "KEEP",
+    "reason": "VC-CMV: tidal volume 6-8 mL/kg IBW and Pplat <30 cmH2O accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_1",
+    "verdict": "KEEP",
+    "reason": "PC-CMV description accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_2",
+    "verdict": "KEEP",
+    "reason": "CPAP description and indications accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_3",
+    "verdict": "KEEP",
+    "reason": "BiPAP parameters (IPAP 12-20, EPAP 4-8 cmH2O) accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_4",
+    "verdict": "KEEP",
+    "reason": "PSV description and weaning role accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_5",
+    "verdict": "KEEP",
+    "reason": "HFOV description and limited evidence base accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_6",
+    "verdict": "KEEP",
+    "reason": "APRV description and pressure settings accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_7",
+    "verdict": "KEEP",
+    "reason": "Inverse ratio ventilation description accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_8",
+    "verdict": "KEEP",
+    "reason": "PEEP physiology and typical range accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_9",
+    "verdict": "KEEP",
+    "reason": "Auto-PEEP physiology, recognition, and treatment accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_10",
+    "verdict": "KEEP",
+    "reason": "ARDS management strategy accurate: Berlin definition, lung-protective ventilation, prone threshold."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_11",
+    "verdict": "KEEP",
+    "reason": "Driving pressure target <15 cmH2O accurate per Amato 2015 NEJM evidence."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_12",
+    "verdict": "KEEP",
+    "reason": "Prone positioning: 16h sessions, P/F <150 threshold accurate per PROSEVA trial."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_13",
+    "verdict": "KEEP",
+    "reason": "COPD ventilation strategy accurate (low RR, permissive hypercapnia, avoid auto-PEEP)."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_14",
+    "verdict": "KEEP",
+    "reason": "Asthma ventilation strategy accurate including ketamine recommendation."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_15",
+    "verdict": "FLAG",
+    "reason": "Obesity Pplat 35 cmH2O 'acceptable' unverified; standard goal <30; transpulmonary Pes context not provided."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_16",
+    "verdict": "KEEP",
+    "reason": "Permissive hypercapnia targets (PaCO2 >50-80, pH >7.20) and risks accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_17",
+    "verdict": "KEEP",
+    "reason": "SBT criteria and protocol accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_18",
+    "verdict": "KEEP",
+    "reason": "Weaning predictors (RSBI <100, MIP) and failure causes accurate."
+  },
+  {
+    "id": "curated-phase5_ventilation_unit_19",
+    "verdict": "KEEP",
+    "reason": "Structured weaning protocol (daily SBT readiness assessment) accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_0",
+    "verdict": "KEEP",
+    "reason": "IABP mechanism (diastolic inflation, pre-systolic deflation) accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_1",
+    "verdict": "KEEP",
+    "reason": "IABP indications, limitations (AI contraindication), and limitations accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_2",
+    "verdict": "KEEP",
+    "reason": "IABP complications list accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_3",
+    "verdict": "KEEP",
+    "reason": "Impella mechanism and flow rates accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_4",
+    "verdict": "KEEP",
+    "reason": "Impella indications and hemodynamic advantages accurately described."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_5",
+    "verdict": "KEEP",
+    "reason": "TandemHeart mechanism and cannulation strategy accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_6",
+    "verdict": "KEEP",
+    "reason": "ECMO types (VA vs VV) and distinctions accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_7",
+    "verdict": "KEEP",
+    "reason": "VA-ECMO indications and patient selection criteria accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_8",
+    "verdict": "KEEP",
+    "reason": "VV-ECMO indications (P/F <100) and EOLIA trial accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_9",
+    "verdict": "KEEP",
+    "reason": "ECMO cannulation strategies accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_10",
+    "verdict": "KEEP",
+    "reason": "ECMO anticoagulation target (ACT 180-200) within standard range; acceptable teaching value."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_11",
+    "verdict": "KEEP",
+    "reason": "ECMO complications list accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_12",
+    "verdict": "KEEP",
+    "reason": "ECPR indications and outcomes (within 60 min, 25% survival) accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_13",
+    "verdict": "KEEP",
+    "reason": "ECMO weaning strategy and monitoring targets accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_14",
+    "verdict": "KEEP",
+    "reason": "VAD overview, indications, and complications accurate."
+  },
+  {
+    "id": "curated-phase5_mcs_unit_15",
+    "verdict": "FIX",
+    "reason": "HVAD (listed alongside HeartMate 3) was recalled by Medtronic in 2021; remove HVAD reference.",
+    "corrected_text": "FDA-approved for patients ineligible for transplant with advanced HF (EF <25%, NYHA Class IV). Continuous-flow LVADs (HeartMate 3 (HVAD discontinued 2021)) offer better outcomes than pulsatile devices. Improves survival ~2 years and quality of life. Complications: infection (most common), stroke, bleeding, RV failure, hepatic congestion. Requires strict anticoagulation (warfarin + aspirin). Patient selection critical (compliance, support system, organ function). Median survival 5-7 years."
+  },
+  {
+    "id": "curated-phase5_echo_unit_0",
+    "verdict": "KEEP",
+    "reason": "TTE overview accurate; adds value as corpus match weak (score 0.759, off-topic)."
+  },
+  {
+    "id": "curated-phase5_echo_unit_1",
+    "verdict": "KEEP",
+    "reason": "TEE overview accurate; corpus match weak (0.601)."
+  },
+  {
+    "id": "curated-phase5_echo_unit_2",
+    "verdict": "KEEP",
+    "reason": "TEE indications accurate and comprehensive."
+  },
+  {
+    "id": "curated-phase5_echo_unit_3",
+    "verdict": "KEEP",
+    "reason": "EF classification thresholds accurate per ACC/AHA."
+  },
+  {
+    "id": "curated-phase5_echo_unit_4",
+    "verdict": "KEEP",
+    "reason": "Fractional shortening normal range (25-45%) accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_5",
+    "verdict": "KEEP",
+    "reason": "Coronary territory-to-wall motion mapping accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_6",
+    "verdict": "KEEP",
+    "reason": "E/A ratio diastolic function categories accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_7",
+    "verdict": "KEEP",
+    "reason": "Tissue Doppler E/e' ratio thresholds accurate per ASE/EACVI guidelines."
+  },
+  {
+    "id": "curated-phase5_echo_unit_8",
+    "verdict": "KEEP",
+    "reason": "Mitral valve assessment (MS critical area <1 cm2, MR grading) accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_9",
+    "verdict": "KEEP",
+    "reason": "Aortic valve assessment (AS critical area <1 cm2, mean gradient >40) accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_10",
+    "verdict": "KEEP",
+    "reason": "TR assessment and RVSP estimation formula accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_11",
+    "verdict": "KEEP",
+    "reason": "Echo findings in pulmonary hypertension accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_12",
+    "verdict": "KEEP",
+    "reason": "Pericardial effusion sizing and tamponade echo criteria accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_13",
+    "verdict": "KEEP",
+    "reason": "Acute MR etiologies and echo findings accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_14",
+    "verdict": "KEEP",
+    "reason": "Acute VSD pathophysiology and echo findings accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_15",
+    "verdict": "KEEP",
+    "reason": "Stress echocardiography performance characteristics accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_16",
+    "verdict": "KEEP",
+    "reason": "Echo CO calculation (LVOT VTI × area × HR) accurate."
+  },
+  {
+    "id": "curated-phase5_echo_unit_17",
+    "verdict": "KEEP",
+    "reason": "3D echocardiography capabilities accurately described."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_0",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection Stanford/DeBakey classification accurate; weak corpus match (0.xxx)."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_1",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection presentation features accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_2",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection imaging diagnosis accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_3",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection medical management (BB first, SBP <120, no vasodilator alone) accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_4",
+    "verdict": "KEEP",
+    "reason": "AAA definition and USPSTF screening criteria accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_5",
+    "verdict": "KEEP",
+    "reason": "AAA rupture classic triad and mortality accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_6",
+    "verdict": "KEEP",
+    "reason": "AMI etiology distribution accurate for teaching purposes."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_7",
+    "verdict": "KEEP",
+    "reason": "AMI clinical hallmark (pain out of proportion) accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_8",
+    "verdict": "KEEP",
+    "reason": "AMI management approach accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_9",
+    "verdict": "KEEP",
+    "reason": "Rutherford ALI classification accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_10",
+    "verdict": "KEEP",
+    "reason": "ALI 6 P's and immediate heparin bolus (80-100 IU/kg) accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_11",
+    "verdict": "KEEP",
+    "reason": "Vertebrobasilar anatomy accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_12",
+    "verdict": "KEEP",
+    "reason": "Vertebrobasilar clinical syndromes accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_13",
+    "verdict": "KEEP",
+    "reason": "Carotid disease prevalence and risk stratification accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_14",
+    "verdict": "KEEP",
+    "reason": "Perioperative stroke incidence and risk factors accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_15",
+    "verdict": "KEEP",
+    "reason": "CEA indications (NASCET criteria) and complication rates accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_16",
+    "verdict": "KEEP",
+    "reason": "TAA repair thresholds (5.5 cm general, 5.0 cm Marfan) accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_17",
+    "verdict": "KEEP",
+    "reason": "Arterial thromboembolism etiology distribution accurate."
+  },
+  {
+    "id": "curated-phase6_vasc_unit_18",
+    "verdict": "KEEP",
+    "reason": "VTE overview (Virchow triad, DVT vs PE) accurate."
+  },
+  {
+    "id": "curated-phase6_vascular_019",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_020",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_021",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_022",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_023",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_024",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_025",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_026",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_027",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_028",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_029",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_030",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_031",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_032",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_033",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_034",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_035",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_036",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_vascular_037",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_vasc_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_0",
+    "verdict": "KEEP",
+    "reason": "Epidural hematoma pathophysiology (MMA, biconvex CT, lucid interval) accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_1",
+    "verdict": "KEEP",
+    "reason": "Subdural hematoma (bridging veins, crescent CT, acute mortality 40-60%) accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_2",
+    "verdict": "KEEP",
+    "reason": "SAH etiology, presentation (thunderclap), and mortality accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_3",
+    "verdict": "KEEP",
+    "reason": "Hunt-Hess grading scale descriptions accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_4",
+    "verdict": "FIX",
+    "reason": "Nimodipine is ORAL only in US (60 mg PO q4h); 'IV/PO' misleading — no IV nimodipine in US.",
+    "corrected_text": "Rebleeding: 4-14% within first 24h, 20-30% within 30 days if aneurysm not secured. Higher risk with poor Hunt-Hess grade, large aneurysm, high BP. Prevented by early aneurysm securing (surgical clipping or endovascular coiling). Vasospasm: delayed cerebral ischemia in 30-50% patients, days 4-14. Prevention: nimodipine 60 mg PO q4h (oral only in US) (improves outcomes), triple-H therapy (hypertension 160-220 SBP, hypervolemia, hemodilution) controversial but attempted if vasospasm develops. Diagnosis of vasospasm: transcranial Doppler (MCA velocity >120 cm/s suggests spasm), angiography if diagnostic uncertainty. Treatment: hemodynamic augmentation, calcium channel blockers, angioplasty/papaverine injection if severe."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_5",
+    "verdict": "KEEP",
+    "reason": "Decompressive craniectomy indications accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_6",
+    "verdict": "KEEP",
+    "reason": "TBI severity by GCS (mild 13-15, moderate 9-12, severe 3-8) accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_7",
+    "verdict": "FIX",
+    "reason": "ASIA C error: motor preserved but <3/5 strength in majority (not >3/5); ASIA D is ≥3/5.",
+    "corrected_text": "ASIA Impairment Scale grades spinal cord injury severity: A (complete, no motor/sensory below level), B (incomplete, sensory but no motor preserved), C (incomplete, motor preserved but <3/5 strength in majority of key muscles below level), D (incomplete, motor preserved ≥3/5 strength in majority of key muscles below level), E (normal). Complete injuries have worse prognosis; incomplete have variable recovery. Mechanism: fall, motor vehicle accident, sports, penetrating trauma. Level: cervical (C1-C8) affects all 4 limbs; thoracic (T1-T12) affects legs + truncal control; lumbar (L1-L5) affects legs only; sacral (S1-S5) affects bowel/bladder/sexual function. Neurogenic shock (acute spinal cord injury >T6): hypotension + bradycardia from loss of sympathetic tone, treated with vasopressors + IV fluids."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_8",
+    "verdict": "FIX",
+    "reason": "High-dose methylprednisolone is NOT recommended for SCI per AANS/CNS 2013; text implies standard <8h.",
+    "corrected_text": "Acute SCI management: immobilization (cervical collar, log-roll precautions), high-dose methylprednisolone NOT recommended per AANS/CNS 2013 guidelines (benefit unproven, harms including pneumonia/sepsis). NASCIS III showed modest statistical benefit <8h but clinical significance questioned; no longer standard of care. Current focus: early imaging (CT/MRI to rule out instability), manage swelling (ICP monitoring if cord compression severe), prevent secondary injury (hypoxemia, hypotension, hypothermia). Bowel/bladder care: catheterization (straight vs indwelling), bowel regimen. Rehabilitation: early mobilization (prevent contractures), PT/OT. Prognosis: return of sensation/motor function most by 6 months; some improvement until 12-18 months. Complete injuries rarely recover meaningful function; incomplete have variable recovery (depends on location, extent, involvement of gray vs white matter)."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_9",
+    "verdict": "KEEP",
+    "reason": "Brain herniation syndromes (uncal, central) accurately described."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_10",
+    "verdict": "KEEP",
+    "reason": "ICP normal values, pathophysiology, and Monroe-Kellie doctrine accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_11",
+    "verdict": "KEEP",
+    "reason": "Posterior fossa mass and obstructive hydrocephalus mechanism accurate."
+  },
+  {
+    "id": "curated-phase6_neuro_unit_12",
+    "verdict": "KEEP",
+    "reason": "AVM hemorrhage risk (1-2%/year) accurate."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_013",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_014",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_015",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_016",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_017",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_018",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_019",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_020",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_021",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_022",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_023",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_024",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_neurosurgical_025",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_neuro_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_ct_unit_0",
+    "verdict": "KEEP",
+    "reason": "Perioperative MI definition and type classification accurate per Universal MI definition."
+  },
+  {
+    "id": "curated-phase6_ct_unit_1",
+    "verdict": "KEEP",
+    "reason": "Sternal wound infection classification and mediastinitis urgency accurate."
+  },
+  {
+    "id": "curated-phase6_ct_unit_2",
+    "verdict": "KEEP",
+    "reason": "Post-cardiac surgery AFib incidence (10-50%) and timing accurate."
+  },
+  {
+    "id": "curated-phase6_ct_unit_3",
+    "verdict": "KEEP",
+    "reason": "Acute AR etiologies and emergency presentation accurate."
+  },
+  {
+    "id": "curated-phase6_ct_unit_4",
+    "verdict": "KEEP",
+    "reason": "LVAD complication list accurate."
+  },
+  {
+    "id": "curated-phase6_ct_unit_5",
+    "verdict": "KEEP",
+    "reason": "Cardiac transplant rejection classification (ISHLT biopsy grading) accurate."
+  },
+  {
+    "id": "curated-phase6_ct_unit_6",
+    "verdict": "FLAG",
+    "reason": "PH defined as mPAP ≥25 mmHg (old definition); 2022 ESC/ERS updated threshold to >20 mmHg at rest."
+  },
+  {
+    "id": "curated-phase6_ct_unit_7",
+    "verdict": "KEEP",
+    "reason": "CABG indications (left main >50%, 3-vessel, 2-vessel+LAD+LVD) accurate."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_008",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_009",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_010",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_011",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_012",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_013",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_014",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_cardiothoracic_015",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_ct_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_0",
+    "verdict": "KEEP",
+    "reason": "Damage control surgery philosophy and indications accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_1",
+    "verdict": "KEEP",
+    "reason": "Penetrating vs blunt trauma management framework accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_2",
+    "verdict": "KEEP",
+    "reason": "Massive transfusion protocol (1:1:1 ratio) and definition accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_3",
+    "verdict": "KEEP",
+    "reason": "Blast injury classification (primary through quaternary) accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_4",
+    "verdict": "KEEP",
+    "reason": "Crush syndrome and rhabdomyolysis pathophysiology accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_5",
+    "verdict": "KEEP",
+    "reason": "Compartment syndrome clinical diagnosis and fasciotomy treatment accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_6",
+    "verdict": "KEEP",
+    "reason": "Burn classification, Rule of 9s, and Parkland formula (4 mL/kg/%BSA) accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_7",
+    "verdict": "KEEP",
+    "reason": "Hypothermia classification (mild 32-35C, moderate 28-32C, severe <28C) accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_8",
+    "verdict": "KEEP",
+    "reason": "Tension pneumothorax recognition and needle decompression accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_unit_9",
+    "verdict": "KEEP",
+    "reason": "Pericardial tamponade Beck's triad and management accurate."
+  },
+  {
+    "id": "curated-phase6_trauma_010",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_011",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_012",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_013",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_014",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_015",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_016",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_017",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_018",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_trauma_019",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of corresponding curated-phase6_trauma_unit_* record; same text, same topic."
+  },
+  {
+    "id": "curated-phase6_rare_unit_0",
+    "verdict": "FIX",
+    "reason": "TTP opening mortality stats error: '5% untreated vs <5% treated' should be '~90% untreated vs ~10-20% with PLEX'.",
+    "corrected_text": "TTP = microangiopathic hemolytic anemia + thrombocytopenia + neurologic symptoms (~90% mortality if untreated; <10-20% with prompt plasma exchange). Caused by ADAMTS13 deficiency (metalloproteinase that cleaves von Willebrand factor), leading to ultralarge vWF multimers, platelet aggregation, microthrombi. Classic pentad: hemolytic anemia, thrombocytopenia, renal dysfunction, fever, neurologic symptoms (not all required). Neurologic manifestations: confusion, headache, seizures, stroke, coma; fluctuating is characteristic. Diagnosis: low platelets, schistocytes on smear (fragmented RBCs), elevated LDH, low haptoglobin, normal PT/PTT, ADAMTS13 activity <10% (diagnostic). Management: immediate plasma exchange (urgent, replaces missing ADAMTS13, removes vWF multimers); avoid platelet transfusions (worsens thrombosis). Mortality 90% untreated."
+  },
+  {
+    "id": "curated-phase6_rare_unit_1",
+    "verdict": "KEEP",
+    "reason": "HUS vs TTP distinction accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_2",
+    "verdict": "KEEP",
+    "reason": "Antiphospholipid syndrome criteria and manifestations accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_3",
+    "verdict": "KEEP",
+    "reason": "CAPS definition (multi-organ thrombosis <1 week) and 50% mortality accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_4",
+    "verdict": "KEEP",
+    "reason": "Sweet's syndrome associations (hematologic malignancy, AML) accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_5",
+    "verdict": "KEEP",
+    "reason": "DRESS syndrome onset timing and culprit drugs accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_6",
+    "verdict": "KEEP",
+    "reason": "Kawasaki disease diagnostic criteria and demographics accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_7",
+    "verdict": "KEEP",
+    "reason": "Takotsubo cardiomyopathy pathophysiology and demographics accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_8",
+    "verdict": "KEEP",
+    "reason": "Kounis syndrome mechanism (mast cell-mediated coronary vasospasm) accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_9",
+    "verdict": "KEEP",
+    "reason": "Peripartum cardiomyopathy definition (EF <45%, timing window) accurate."
+  },
+  {
+    "id": "curated-phase6_rare_unit_10",
+    "verdict": "KEEP",
+    "reason": "Giant cell myocarditis aggressive course and prognosis accurate."
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_011",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of curated-phase6_rare_unit_0 (TTP); same text, same topic."
+  },
+  {
+    "id": "curated-phase6_rare_diagnoses_012",
+    "verdict": "DROP_DUP",
+    "reason": "Exact duplicate of curated-phase6_rare_unit_1 (HUS); same text, same topic."
+  }
+]

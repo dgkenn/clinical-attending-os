@@ -1,0 +1,95 @@
+[
+  {
+    "topic": "Status Epilepticus Definitions",
+    "subtopic": "status_definition",
+    "content": "Convulsive status epilepticus (CSE): recurrent seizures without return to baseline (≥5 min continuously OR ≥2 seizures with incomplete recovery) = medical emergency. Non-convulsive status (NCS): altered mental status ± subtle motor signs, may appear comatose; harder to recognize without EEG. Refractory status: failure to stop after 2 adequate first + second-line agents. Super-refractory: persists despite anesthesia-level sedation (e.g., propofol, midazolam drip). Mortality: 10-15% overall, higher if refractory (30-50%), highest if super-refractory (>50%). Early recognition + treatment critical; each hour delay increases mortality.",
+    "tags": [
+      "status_epilepticus",
+      "definition"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Etiologies of Status Epilepticus",
+    "subtopic": "status_etiology",
+    "content": "Non-adherence to anti-epileptic drugs (most common, 40-50%). Acute stroke (ischemic/hemorrhagic). Infection (meningitis, encephalitis). Metabolic (hypoglycemia, hyponatremia, hypocalcemia, uremia, hepatic encephalopathy). Drug withdrawal (alcohol, benzodiazepines). Trauma (head injury). Fever (febrile seizures <5y). Medications (stimulants, anesthetics withdrawal). Pregnancy/eclampsia. Idiopathic. In each case, identify + treat underlying cause (e.g., antibiotics for meningitis, glucose for hypoglycemia).",
+    "tags": [
+      "status_epilepticus",
+      "etiology"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "First-Line Treatment - Benzodiazepines",
+    "subtopic": "status_treatment",
+    "content": "Goal: stop seizures within minutes. IV benzodiazepines most effective first-line: (1) Lorazepam (Ativan): 4 mg IV bolus, repeat q2-5 min (max 8 mg); onset <1 min, duration 30-60 min. (2) Midazolam IM: 10 mg IM (if no IV access), onset 5-10 min. (3) Diazepam (Valium): 5-10 mg IV q5-10 min (max 30 mg); older, longer-acting, less preferred. Lorazepam preferred (balanced onset/offset). Efficacy: 60-80% seizures stop within 5 min of lorazepam. Monitor: respiratory depression (may need intubation), hypotension. Have equipment/drugs ready for airway management.",
+    "tags": [
+      "status_epilepticus",
+      "benzodiazepines"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Second-Line Antiepileptic Drugs (AEDs)",
+    "subtopic": "status_treatment",
+    "content": "If seizures persist >5 min after benzodiazepine: (1) Fosphenytoin (Cerebyx): 15-20 PE/kg IV (phenytoin equivalent) at 100-150 mg/min; onset 30-60 min, long half-life (24h). Loading: 20 PE/kg, then maintenance 5 mg/kg/day divided. Phenytoin (Dilantin): older formulation, IV irritating, slower replacement kinetics. (2) Levetiracetam (Keppra): 500-2000 mg IV q12h; onset 15-30 min, fewer drug interactions, well-tolerated. (3) Valproic acid: 20-40 mg/kg IV; onset 15-30 min, effective but risk hepatotoxicity (avoid in liver disease). (4) Lacosamide: 200 mg IV; limited experience. Any agent acceptable; no clear superiority. Combination (e.g., lorazepam + fosphenytoin + levetiracetam) sometimes used.",
+    "tags": [
+      "status_epilepticus",
+      "aeds",
+      "second_line"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Third-Line Treatment - Anesthetic Induction",
+    "subtopic": "status_treatment",
+    "content": "If seizures refractory after 2 adequate agents: induce anesthesia-level sedation. (1) Propofol: 1-2 mg/kg IV bolus, then 1-10 mg/kg/h infusion; onset <1 min, offset rapid upon cessation. Risk: propofol infusion syndrome (myopathy, hyperkalemia, metabolic acidosis, death) if high dose >4 mg/kg/h x >48h. (2) Midazolam: 0.1-0.2 mg/kg IV bolus, then 0.05-2 mg/kg/h infusion; offset slower. (3) Barbiturates (pentobarbital): loading 5-15 mg/kg, then maintenance; slow offset, risk hypotension. (4) Ketamine: 1-2 mg/kg IV bolus, then 0.5-2 mg/kg/h; preserves airway protective reflexes. Goal: burst suppression on EEG (bursts of activity separated by flat periods = maximal seizure suppression).",
+    "tags": [
+      "status_epilepticus",
+      "anesthesia",
+      "third_line"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Airway Management in Status Epilepticus",
+    "subtopic": "status_airway",
+    "content": "Rapid sequence intubation (RSI) indicated if: (1) Seizures ongoing (aspiration risk); (2) Altered mental status post-seizure; (3) Plan for anesthesia-level sedation. Medication sequence: (1) Pre-oxygenation (high-flow O2, target SpO2 >94%); (2) Induction agent (propofol, ketamine, etomidate depending on hemodynamics); (3) Paralytic (rocuronium, succinylcholine). Avoid thiopental (no longer available), phenytoin loading delays definitive treatment. Laryngoscopy: prepare for difficult airway (teeth clenching, tongue swelling post-seizure). Monitor: continuous pulse ox, ECG, capnography post-intubation. Confirm tube position (CXR after stabilized).",
+    "tags": [
+      "status_epilepticus",
+      "airway"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Continuous EEG Monitoring in Status Epilepticus",
+    "subtopic": "status_monitoring",
+    "content": "Continuous EEG essential for monitoring non-convulsive status (silent on clinical exam), assessing treatment efficacy, detecting breakthrough seizures. EEG findings: repetitive spikes, sharp waves, polyspikes. Ictal pattern: >1 Hz generalized spike-wave activity. Post-ictal suppression: flattening after seizure. Burst suppression: bursts of activity separated by periods of electrical silence (target of deep sedation). Discontinue sedation: periodic sedation interruption q24h to assess neurologic status, check for seizure recurrence. Wean anesthesia once seizure-free for 12-24h, then re-titrate if seizures resume.",
+    "tags": [
+      "status_epilepticus",
+      "eeg_monitoring"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Complications of Status Epilepticus",
+    "subtopic": "status_complications",
+    "content": "Metabolic: acidosis (lactic, metabolic), hyperkalemia (muscle breakdown), hyperthermia (neuronal activity heat). Cardiovascular: arrhythmias, MI risk. Rhabdomyolysis: muscle breakdown → myoglobinuria → AKI, hyperkalemia. DIC: from tissue factor release, trauma. Aspiration: from seizure activity, decreased consciousness. Sudden unexpected nocturnal death in epilepsy (SUDEP): rare (~1:1000 per year in epilepsy), mechanism unclear (autonomic dysrhythmia, apnea). Long-term: cognitive impairment, status post-ictal state (confusion, drowsiness). Monitor: CK (rhabdo), creatinine (AKI), K+, glucose, core temperature, troponin.",
+    "tags": [
+      "status_epilepticus",
+      "complications"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Seizure Prophylaxis Post-Status Epilepticus",
+    "subtopic": "status_maintenance",
+    "content": "Establish long-term seizure control: identify + treat underlying cause (infection, metabolic abnormality, withdrawal). Initiate maintenance AED (if not already on one): levetiracetam 500 mg PO/IV BID (often preferred, fewer interactions), phenytoin loading 15-20 mg/kg then maintenance, valproate, etc. Drug level monitoring: phenytoin target 10-20 mcg/mL, valproate target 50-100 mcg/mL. Adjust dosing for renal/hepatic function, drug interactions. Duration: minimum 7-14 days ICU monitoring to assess seizure control, then step-down sedation. Discharge planning: neurology follow-up, medication adherence counseling, safety precautions (no driving until seizure-free per state law), lifestyle modifications.",
+    "tags": [
+      "status_epilepticus",
+      "maintenance",
+      "prophylaxis"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

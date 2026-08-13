@@ -1,0 +1,998 @@
+[
+  {
+    "id": "curated-phase2_unit_0",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers STEMI criteria (score 0.782); same teaching content duplicated."
+  },
+  {
+    "id": "curated-phase2_unit_1",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers NSTEMI/UA distinction well (score 0.773)."
+  },
+  {
+    "id": "curated-phase2_unit_2",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers troponin kinetics and delta-rise algorithm (score 0.769)."
+  },
+  {
+    "id": "curated-phase2_unit_3",
+    "verdict": "KEEP",
+    "reason": "Adds detail on silent MI in diabetics/elderly with autonomic neuropathy not well-covered in corpus."
+  },
+  {
+    "id": "curated-phase2_unit_4",
+    "verdict": "KEEP",
+    "reason": "Corpus match was VTE section (off-topic). ACS vs non-ACS DDX structured summary adds value."
+  },
+  {
+    "id": "curated-phase2_unit_5",
+    "verdict": "KEEP",
+    "reason": "Specific TIMI component breakdown and risk thresholds add teaching value beyond corpus summary."
+  },
+  {
+    "id": "curated-phase2_unit_6",
+    "verdict": "KEEP",
+    "reason": "GRACE score components and risk thresholds not explicitly detailed in corpus ACS section."
+  },
+  {
+    "id": "curated-phase2_unit_7",
+    "verdict": "KEEP",
+    "reason": "Corpus match was cardiac cath section (off-topic). Initial ACS stabilization checklist adds value."
+  },
+  {
+    "id": "curated-phase2_unit_8",
+    "verdict": "KEEP",
+    "reason": "Corpus ECG section general; LAD localization detail (diagonal branch, septal Q waves) adds value."
+  },
+  {
+    "id": "curated-phase2_unit_9",
+    "verdict": "KEEP",
+    "reason": "RCA territory ECG pattern and RV infarction contraindications (nitrates/morphine) add clinical value."
+  },
+  {
+    "id": "curated-phase2_unit_10",
+    "verdict": "KEEP",
+    "reason": "Posterior lead placement (V7-V9) and LCx territory detail not explicitly in corpus ECG section."
+  },
+  {
+    "id": "curated-phase2_unit_11",
+    "verdict": "KEEP",
+    "reason": "Practical RV infarction management (fluid bolus, avoid nitrates/morphine, HR 60-80 target) adds value."
+  },
+  {
+    "id": "curated-phase2_unit_12",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers PCI vs fibrinolysis, door-to-balloon time, and contraindications well."
+  },
+  {
+    "id": "curated-phase2_unit_13",
+    "verdict": "KEEP",
+    "reason": "Corpus match was alcohol section (off-topic, score 0.615). Aspirin mechanism/dosing adds value."
+  },
+  {
+    "id": "curated-phase2_unit_14",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers P2Y12 inhibitors including loading doses and comparisons (score 0.781)."
+  },
+  {
+    "id": "curated-phase2_unit_15",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers DAPT duration and BMS vs DES distinction (score 0.769)."
+  },
+  {
+    "id": "curated-phase2_unit_16",
+    "verdict": "FIX",
+    "reason": "IV metoprolol dose stated as '25-50mg' is 10x too high; correct IV dose is 2.5-5mg q5min (Marino ICU Book confirms).",
+    "corrected_text": "Beta-blockers reduce mortality post-MI (15-20% relative risk reduction). Acute use: reduce cardiac work, heart rate, blood pressure. IV metoprolol 2.5-5mg IV q5min (max 3 doses / 15mg), then PO maintenance 25-50mg q6h (target HR 50-60). Esmolol for temporary control. Cautions: avoid if bradycardia <50, hypotension, AV block, decompensated heart failure, RV infarction (loss of RV chronotropic support). Continue long-term post-MI unless contraindicated. Cardioselective agents (metoprolol, atenolol) preferred over non-selective (propranolol)."
+  },
+  {
+    "id": "curated-phase2_unit_17",
+    "verdict": "KEEP",
+    "reason": "Specific timing (24-48h), dose titration, and ARB alternative for ACE-I intolerance add value."
+  },
+  {
+    "id": "curated-phase2_unit_18",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ACS section covers high-intensity statin initiation and LDL targets (score 0.791)."
+  },
+  {
+    "id": "curated-phase2_unit_19",
+    "verdict": "KEEP",
+    "reason": "PDE5 inhibitor interaction contraindication and RV infarction caution are high-yield safety pearls."
+  },
+  {
+    "id": "curated-phase2_unit_20",
+    "verdict": "KEEP",
+    "reason": "Corpus match was geriatric pain section (off-topic, score 0.605). Morphine caution in ACS adds value."
+  },
+  {
+    "id": "curated-phase2_unit_21",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual anticoagulation agents section covers UFH/LMWH in ACS comprehensively (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_22",
+    "verdict": "KEEP",
+    "reason": "Specific mechanism, dosing (abciximab 0.25mg/kg), and modern context (used less with newer P2Y12) add value."
+  },
+  {
+    "id": "curated-phase2_unit_23",
+    "verdict": "KEEP",
+    "reason": "Delineates limited/contraindicated role of CCBs in ACS vs chronic CAD management - teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_24",
+    "verdict": "KEEP",
+    "reason": "Eplerenone vs spironolactone dosing, EF <40% indication, and K+ monitoring adds specific clinical detail."
+  },
+  {
+    "id": "curated-phase2_unit_25",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual sepsis/shock section covers cardiogenic shock management comprehensively (score 0.799)."
+  },
+  {
+    "id": "curated-phase2_unit_26",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual MI complications section covers acute MR post-MI (score 0.736)."
+  },
+  {
+    "id": "curated-phase2_unit_27",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual MI complications section covers VSD post-MI including O2 saturation step-up (score 0.761)."
+  },
+  {
+    "id": "curated-phase2_unit_28",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual MI complications section covers free wall rupture and pseudoaneurysm (score 0.767)."
+  },
+  {
+    "id": "curated-phase2_unit_29",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual MI complications section covers conduction disturbances post-MI (score 0.782)."
+  },
+  {
+    "id": "curated-phase2_unit_30",
+    "verdict": "KEEP",
+    "reason": "ICD EF <35% threshold and amiodarone use for hemodynamically tolerated VT add specific teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_31",
+    "verdict": "KEEP",
+    "reason": "LV thrombus risk with anterior MI + akinesis and DOAC/warfarin prophylaxis indications add value."
+  },
+  {
+    "id": "curated-phase2_unit_32",
+    "verdict": "KEEP",
+    "reason": "Dressler's syndrome timing (weeks-months), colchicine use, and distinction from reinfarction add value."
+  },
+  {
+    "id": "curated-phase2_unit_33",
+    "verdict": "KEEP",
+    "reason": "Long-term RV recovery timeline and secondary TR development are teaching pearls not in corpus."
+  },
+  {
+    "id": "curated-phase2_unit_34",
+    "verdict": "DROP_DUP",
+    "reason": "MI complications section covers all three rupture mechanisms. Echo section also retrieved (score 0.755)."
+  },
+  {
+    "id": "curated-phase2_unit_35",
+    "verdict": "KEEP",
+    "reason": "Troponin reset timing (7-14 days) and how to use serial troponins to identify reinfarction is a key pearl."
+  },
+  {
+    "id": "curated-phase2_unit_36",
+    "verdict": "KEEP",
+    "reason": "Checklist format with ICD consideration timing (30 days post-MI) and echo at discharge adds clinical utility."
+  },
+  {
+    "id": "curated-phase2_unit_37",
+    "verdict": "KEEP",
+    "reason": "Rehabilitation phases (I/II/III), mortality reduction 20-30%, and specific components add structured value."
+  },
+  {
+    "id": "curated-phase2_unit_38",
+    "verdict": "KEEP",
+    "reason": "LDL <55 for very high risk, GLP-1/SGLT2i for diabetics, and exercise specifics add value over corpus summary."
+  },
+  {
+    "id": "curated-phase2_unit_39",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual anticoagulation agents section covers post-PCI anticoagulation and triple therapy (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_40",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual cardiac devices section covers ICD/CRT indications (score 0.739)."
+  },
+  {
+    "id": "curated-phase2_unit_41",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual non-invasive cardiac testing section covers stress and viability testing (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_42",
+    "verdict": "KEEP",
+    "reason": "Corpus match was geriatric/frailty section (off-topic, score 0.640). PHQ-9 screening and SSRI use add value."
+  },
+  {
+    "id": "curated-phase2_unit_43",
+    "verdict": "KEEP",
+    "reason": "50% DAPT adherence at 12 months statistic and visit schedule framework add unique teaching content."
+  },
+  {
+    "id": "curated-phase2_unit_44",
+    "verdict": "KEEP",
+    "reason": "Corpus match was mechanical vent (off-topic, 0.629). COPD pathophysiology and GOLD staging add value."
+  },
+  {
+    "id": "curated-phase2_unit_45",
+    "verdict": "KEEP",
+    "reason": "Corpus match was chronic cough section (partial, 0.672). Asthma phenotype classification adds value."
+  },
+  {
+    "id": "curated-phase2_unit_46",
+    "verdict": "KEEP",
+    "reason": "Corpus match was bronchiectasis (partial, 0.723). Infection triggers (50-75%) and presentation detail add value."
+  },
+  {
+    "id": "curated-phase2_unit_47",
+    "verdict": "KEEP",
+    "reason": "PEF percentage thresholds (>70%, 40-70%, <40%) and danger sign 'silent chest' add critical teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_48",
+    "verdict": "KEEP",
+    "reason": "LABA monotherapy safety warning in asthma (mortality risk) is a critical teaching point."
+  },
+  {
+    "id": "curated-phase2_unit_49",
+    "verdict": "KEEP",
+    "reason": "Specific dosing (prednisone 40-60mg vs methylprednisolone 125mg q6h), no-taper-if <2w adds value."
+  },
+  {
+    "id": "curated-phase2_unit_50",
+    "verdict": "KEEP",
+    "reason": "Mechanism (calcium antagonist), renal contraindication, and limited evidence context add value."
+  },
+  {
+    "id": "curated-phase2_unit_51",
+    "verdict": "KEEP",
+    "reason": "Omalizumab IgE range (30-700 IU/mL), anaphylaxis monitoring, and neuropsychiatric warning add value."
+  },
+  {
+    "id": "curated-phase2_unit_52",
+    "verdict": "KEEP",
+    "reason": "IPAP/EPAP specific settings (8-12/3-5 cmH2O) and pH <7.35 threshold for BiPAP add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_53",
+    "verdict": "KEEP",
+    "reason": "Corpus match was toxicology (off-topic, 0.649). Theophylline narrow window and smoking cessation interaction add value."
+  },
+  {
+    "id": "curated-phase2_unit_54",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual respiratory distress section covers intubation indications comprehensively (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_55",
+    "verdict": "KEEP",
+    "reason": "SpO2 88-92% vs 94-98% targets and Haldane effect mechanism add important teaching content."
+  },
+  {
+    "id": "curated-phase2_unit_56",
+    "verdict": "KEEP",
+    "reason": "Corpus match was SOB intern guide (off-topic, 0.589). Pulm rehab reducing readmissions 30-40% adds value."
+  },
+  {
+    "id": "curated-phase2_unit_57",
+    "verdict": "KEEP",
+    "reason": "RSV vaccine (AREXVY/ABRYSVO) inclusion and LAIV contraindication in COPD are current teaching pearls."
+  },
+  {
+    "id": "curated-phase2_unit_58",
+    "verdict": "KEEP",
+    "reason": "Structured differential for dyspnea (anaphylaxis, ACS, pneumothorax) adds high clinical utility."
+  },
+  {
+    "id": "curated-phase2_unit_59",
+    "verdict": "KEEP",
+    "reason": "Corpus match was DKA section (partial, 0.785). T1DM autoantibodies (anti-GAD, IA-2) and HLA add value."
+  },
+  {
+    "id": "curated-phase2_unit_60",
+    "verdict": "KEEP",
+    "reason": "C-peptide distinction and metabolic syndrome association add nuance beyond corpus summary."
+  },
+  {
+    "id": "curated-phase2_unit_61",
+    "verdict": "KEEP",
+    "reason": "50g OGCT ≥140 threshold, 3-hour OGTT criteria, and 50% T2DM risk postpartum add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_62",
+    "verdict": "KEEP",
+    "reason": "HbA1c limitations (hemolytic anemia, hemoglobin variants) and CGM mention add practical value."
+  },
+  {
+    "id": "curated-phase2_unit_63",
+    "verdict": "KEEP",
+    "reason": "Individualized targets (<7% vs <8% vs <6.5%) and shared decision-making guidance add clinical value."
+  },
+  {
+    "id": "curated-phase2_unit_64",
+    "verdict": "KEEP",
+    "reason": "Contrast hold 48h rationale and GFR <30 contraindication vs GFR 30-45 caution distinction add value."
+  },
+  {
+    "id": "curated-phase2_unit_65",
+    "verdict": "KEEP",
+    "reason": "Secondary failure (beta-cell exhaustion) concept and preference shift to SGLT2i/GLP-1 add teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_66",
+    "verdict": "KEEP",
+    "reason": "Euglycemic DKA risk in T1DM and GFR <20 contraindication are critical safety teaching points."
+  },
+  {
+    "id": "curated-phase2_unit_67",
+    "verdict": "KEEP",
+    "reason": "MEN-2 and medullary thyroid cancer contraindication (absolute) is a critical safety pearl."
+  },
+  {
+    "id": "curated-phase2_unit_68",
+    "verdict": "KEEP",
+    "reason": "Pioglitazone bladder cancer risk and rosiglitazone CV concerns add safety teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_69",
+    "verdict": "KEEP",
+    "reason": "50/50 basal-bolus split rule and premix insulin 70/30 format add practical prescribing value."
+  },
+  {
+    "id": "curated-phase2_unit_70",
+    "verdict": "KEEP",
+    "reason": "Rule of 15, glucagon 1mg IM for severe, and hypoglycemia unawareness mechanism add clinical value."
+  },
+  {
+    "id": "curated-phase2_unit_71",
+    "verdict": "KEEP",
+    "reason": "Kussmaul respirations, fruity breath mechanism, and 1-5% mortality if treated add teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_72",
+    "verdict": "FIX",
+    "reason": "When glucose <250mg/dL in DKA, must add dextrose to IV fluids (D5 0.45NS), not switch to 0.45 NS alone; insulin must continue to close anion gap.",
+    "corrected_text": "DKA treatment: (1) IV fluids: 0.9% NS 500-1000 mL/hr initially (aggressive hydration), switch to D5 0.45% NS once glucose <250 (add dextrose to maintain glucose 150-200 while continuing insulin to clear ketones). Total deficit typically 5-10L. (2) Insulin: bolus 0.1 units/kg IV, then 0.1 units/kg/hr continuous infusion (usually 5-10 units/hr), titrate to reduce glucose 50-75 mg/dL/hr. (3) Potassium: check baseline; likely total body deficit 3-5 mEq/kg despite normal/high serum K+ (shifts). Replete cautiously (K+ shift into cells with insulin = hypokalemia risk). (4) Bicarbonate: controversial, reserved for pH <6.9 (3 amps NaHCO3 in D5W). Monitor: glucose, electrolytes, ABG q1-2h initially, neuro checks. Switch to SC insulin once ketosis resolves (glucose <200, HCO3- >15, eating)."
+  },
+  {
+    "id": "curated-phase2_unit_73",
+    "verdict": "KEEP",
+    "reason": "HHS vs DKA osmolality threshold >320, slower glucose reduction target (25-50 mg/dL/hr) add value."
+  },
+  {
+    "id": "curated-phase2_unit_74",
+    "verdict": "KEEP",
+    "reason": "Inpatient glycemic target 140-180 and 'avoid hypoglycemia <70' rationale add practical teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_75",
+    "verdict": "KEEP",
+    "reason": "Corpus match AKI section (off-topic, 0.587). Retinopathy/nephropathy/neuropathy structured overview adds value."
+  },
+  {
+    "id": "curated-phase2_unit_76",
+    "verdict": "KEEP",
+    "reason": "Corpus match was ACS section (off-topic for diabetes complications). Adds specific CV complications teaching."
+  },
+  {
+    "id": "curated-phase2_unit_77",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers incidence, presentation, and mortality comprehensively (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_78",
+    "verdict": "KEEP",
+    "reason": "H. pylori 90% risk statistic and 2mm definition of ulcer vs erosion add teaching detail."
+  },
+  {
+    "id": "curated-phase2_unit_79",
+    "verdict": "KEEP",
+    "reason": "Portal pressure gradient >12mmHg threshold and 5-15% yearly risk in cirrhosis are specific teachable facts."
+  },
+  {
+    "id": "curated-phase2_unit_80",
+    "verdict": "KEEP",
+    "reason": "Boerhaave diagnosis (contrast esophagography) and mortality 10-30% even with surgery add high-yield content."
+  },
+  {
+    "id": "curated-phase2_unit_81",
+    "verdict": "KEEP",
+    "reason": "Portal hypertensive gastropathy distinction from varices and why banding is less effective adds value."
+  },
+  {
+    "id": "curated-phase2_unit_82",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers initial management including octreotide, PPI, and endoscopy timing (score 0.774)."
+  },
+  {
+    "id": "curated-phase2_unit_83",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers risk scores including Glasgow-Blatchford and AIMS65 (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_84",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers PPI dosing (80mg bolus + 8mg/hr) and H. pylori testing (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_85",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers octreotide and antibiotic use in variceal bleeding (score 0.784)."
+  },
+  {
+    "id": "curated-phase2_unit_86",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers endoscopic hemostasis techniques and success rates (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_87",
+    "verdict": "KEEP",
+    "reason": "Specific high-risk locations (posterior duodenal, gastric body/fundus) and surgical thresholds add value."
+  },
+  {
+    "id": "curated-phase2_unit_88",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers restrictive transfusion strategy and massive transfusion protocol (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_89",
+    "verdict": "KEEP",
+    "reason": "TIPS complications (40% shunt thrombosis by 1 year, 30% encephalopathy) and timing detail add value."
+  },
+  {
+    "id": "curated-phase2_unit_90",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB/LGIB section covers LGIB epidemiology and etiology distribution (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_91",
+    "verdict": "KEEP",
+    "reason": "Avoid colonoscopy during active diverticulitis inflammation (perforation risk) is a key safety pearl."
+  },
+  {
+    "id": "curated-phase2_unit_92",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual IBD section covers Crohn's vs UC distinction, extraintestinal manifestations, and biologics (score 0.782)."
+  },
+  {
+    "id": "curated-phase2_unit_93",
+    "verdict": "KEEP",
+    "reason": "Corpus match was stroke section (off-topic, 0.716). Aortic stenosis/renal failure association and right colon predominance add value."
+  },
+  {
+    "id": "curated-phase2_unit_94",
+    "verdict": "KEEP",
+    "reason": "Corpus match was IBD section (partial, 0.608). Thumbprinting sign, sparing of rectum (dual supply) are specific pearls."
+  },
+  {
+    "id": "curated-phase2_unit_95",
+    "verdict": "FIX",
+    "reason": "Per IDSA 2021 guidelines, vancomycin 125mg QID (not metronidazole) is first-line for non-severe CDI; metronidazole no longer recommended as first-line.",
+    "corrected_text": "C. difficile: leading cause antibiotic-associated colitis; toxins A/B damage mucosa, 5-10% develop toxic megacolon/perforation. Risk: antibiotics, age >65, immunosuppression, hospitalization. Presentation: watery diarrhea, abdominal pain, fever, leukocytosis, elevated creatinine. Diagnosis: stool PCR for toxin genes (most sensitive), or toxin enzyme immunoassay. Management: stop offending antibiotic if possible. Per IDSA 2021: vancomycin 125mg QID x 10 days first-line for non-severe AND severe CDI. Fidaxomicin 200mg BID x 10 days preferred for recurrent (lower relapse rate). Metronidazole no longer first-line (reserved for patients who cannot tolerate vancomycin/fidaxomicin). Severe: Cr >1.5x baseline, WBC >15k, hypotension, ICU. Avoid antiperistaltic agents (increase toxic megacolon risk)."
+  },
+  {
+    "id": "curated-phase2_unit_96",
+    "verdict": "KEEP",
+    "reason": "Dentate line distinction (internal=painless vs external=painful) and rubber-band ligation detail add clinical value."
+  },
+  {
+    "id": "curated-phase2_unit_97",
+    "verdict": "KEEP",
+    "reason": "Rule of 2s mnemonic, Meckel scan mechanism (pertechnetate binds gastric mucosa), and pediatric peak risk add value."
+  },
+  {
+    "id": "curated-phase2_unit_98",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual LGIB section covers colonoscopy indications, timing, and hemostasis techniques (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_99",
+    "verdict": "KEEP",
+    "reason": "Sensitivity 50-75% for small bowel, retained capsule risk if stricture, and angiography >2mL/min threshold add value."
+  },
+  {
+    "id": "curated-phase2_unit_100",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual UGIB section covers anticoagulation reversal including idarucizumab and andexanet (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_101",
+    "verdict": "KEEP",
+    "reason": "Corpus match was perioperative medicine (off-topic, 0.617). Delayed bleeding 3-7 days and hemoclip prevention add value."
+  },
+  {
+    "id": "curated-phase2_unit_102",
+    "verdict": "KEEP",
+    "reason": "Incidence/mortality comparison (2-10% treated vs 30% untreated) and triad components add value."
+  },
+  {
+    "id": "curated-phase2_unit_103",
+    "verdict": "DROP_INACCURATE",
+    "reason": "Wells PE criteria are fabricated: 'shock (3.5 if hypotensive, 1.5 if syncope)', 'atelectasis/CXR normal' are NOT real Wells criteria. Real criteria: DVT signs=3"
+  },
+  {
+    "id": "curated-phase2_unit_104",
+    "verdict": "KEEP",
+    "reason": "Age-adjusted D-dimer cutoff (age x10 ng/mL) and high sensitivity vs low specificity explanation add value."
+  },
+  {
+    "id": "curated-phase2_unit_105",
+    "verdict": "KEEP",
+    "reason": "Corpus match was rheumatology (off-topic, 0.718). Subsegmental PE management debate (NEJM 2024) adds current value."
+  },
+  {
+    "id": "curated-phase2_unit_106",
+    "verdict": "KEEP",
+    "reason": "S1Q3T3 only 10-15% incidence and absence of dyspnea not ruling out PE are key clinical pearls."
+  },
+  {
+    "id": "curated-phase2_unit_107",
+    "verdict": "KEEP",
+    "reason": "Troponin/BNP as prognostic (not diagnostic) in PE is a critical teaching distinction."
+  },
+  {
+    "id": "curated-phase2_unit_108",
+    "verdict": "KEEP",
+    "reason": "McConnell's sign (RV free wall hypokinesis with apical sparing) and RV/LV >0.9 add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_109",
+    "verdict": "KEEP",
+    "reason": "Mortality stratification (massive 30-50% vs submassive 5-10% vs stable <5%) adds teaching structure."
+  },
+  {
+    "id": "curated-phase2_unit_110",
+    "verdict": "KEEP",
+    "reason": "Indications for V/Q over CTPA (contrast allergy, renal insufficiency, pregnancy) add clinical decision value."
+  },
+  {
+    "id": "curated-phase2_unit_111",
+    "verdict": "KEEP",
+    "reason": "Management algorithm for incidental PE by level (main/lobar vs segmental vs subsegmental) adds decision value."
+  },
+  {
+    "id": "curated-phase2_unit_112",
+    "verdict": "KEEP",
+    "reason": "Corpus match was thyroid section (off-topic, 0.708). LMWH preferred over warfarin in pregnancy and thrombolysis threshold add value."
+  },
+  {
+    "id": "curated-phase2_unit_113",
+    "verdict": "KEEP",
+    "reason": "Post-thrombotic syndrome 20-50% and recurrent thrombosis risk without treatment add clinical context."
+  },
+  {
+    "id": "curated-phase2_unit_114",
+    "verdict": "KEEP",
+    "reason": "DVT Wells score (different from PE Wells), alternative diagnosis (-2) criterion, and specific risk % add value."
+  },
+  {
+    "id": "curated-phase2_unit_115",
+    "verdict": "KEEP",
+    "reason": "Corpus match was peripheral IV ultrasound (off-topic, 0.780). Technique and distal DVT follow-up timing add value."
+  },
+  {
+    "id": "curated-phase2_unit_116",
+    "verdict": "KEEP",
+    "reason": "Phlegmasia cerulea dolens as emergency presentation and 20% asymptomatic in hospitalized patients add value."
+  },
+  {
+    "id": "curated-phase2_unit_117",
+    "verdict": "KEEP",
+    "reason": "Saphenofemoral junction 5cm rule and anticoagulation decision tree for SVT add clinical utility."
+  },
+  {
+    "id": "curated-phase2_unit_118",
+    "verdict": "KEEP",
+    "reason": "Bilateral leg edema + dilated superficial veins as IVC thrombosis clue adds unique diagnostic value."
+  },
+  {
+    "id": "curated-phase2_unit_119",
+    "verdict": "KEEP",
+    "reason": "D-dimer after stopping anticoagulation as guide for extended therapy adds evidence-based teaching content."
+  },
+  {
+    "id": "curated-phase2_unit_120",
+    "verdict": "KEEP",
+    "reason": "CrCl <30 threshold for UFH preference and DOAC bridge timing (start immediately vs 5-7d) add value."
+  },
+  {
+    "id": "curated-phase2_unit_121",
+    "verdict": "KEEP",
+    "reason": "Monitoring comparison table and DOAC CrCl cutoffs (15-30 depending on agent) add prescribing value."
+  },
+  {
+    "id": "curated-phase2_unit_122",
+    "verdict": "KEEP",
+    "reason": "Retrievable filter 3-month removal window and permanent filter criteria add procedural decision value."
+  },
+  {
+    "id": "curated-phase2_unit_123",
+    "verdict": "KEEP",
+    "reason": "Corpus match was ICH section (off-topic, 0.715). CEAP classification and compression stocking evidence add value."
+  },
+  {
+    "id": "curated-phase2_unit_124",
+    "verdict": "KEEP",
+    "reason": "HAS-BLED components, annual risk thresholds, and strategies to reduce bleeding add clinical utility."
+  },
+  {
+    "id": "curated-phase2_unit_125",
+    "verdict": "KEEP",
+    "reason": "Idarucizumab vs andexanet distinction (apixaban/rivaroxaban vs dabigatran) is a key clinical decision point."
+  },
+  {
+    "id": "curated-phase2_unit_126",
+    "verdict": "KEEP",
+    "reason": "Timing: avoid acute phase and protein S not during warfarin are practical testing pearls."
+  },
+  {
+    "id": "curated-phase2_unit_127",
+    "verdict": "KEEP",
+    "reason": "HOKUSAI-VTE-C and SELECT-D trial references and DOAC evolution for cancer VTE add current evidence."
+  },
+  {
+    "id": "curated-phase2_unit_128",
+    "verdict": "KEEP",
+    "reason": "80-85% recurrence reduction with extended anticoagulation and occult malignancy workup add value."
+  },
+  {
+    "id": "curated-phase2_unit_129",
+    "verdict": "KEEP",
+    "reason": "Corpus match was MGH TOC (off-topic, 0.657). PERT multidisciplinary team composition and indication add value."
+  },
+  {
+    "id": "curated-phase2_unit_130",
+    "verdict": "KEEP",
+    "reason": "Padua/IMPROVE score mention, surgical duration differences (general 12d vs orthopedic 10-35d) add value."
+  },
+  {
+    "id": "curated-phase2_unit_131",
+    "verdict": "FIX",
+    "reason": "mPAP >25 mmHg is outdated; ESC 2022 updated pulmonary hypertension definition to mPAP >=20 mmHg (confirmed by corpus).",
+    "corrected_text": "Chronic thromboembolic pulmonary hypertension (CTEPH): occurs if PE clots not completely resolved, leading to chronic RV strain, dyspnea, RV failure. Incidence 0.1-4% after acute PE. Risk: large PE, recurrent PE, inadequate anticoagulation. Diagnosis: right heart catheterization (elevated mean PA pressure >=20 mmHg at rest per ESC 2022 updated definition), CT angiography (mosaic perfusion, webs/bands), ventilation-perfusion scan (mismatched defects). Management: lifelong anticoagulation, pulmonary vasodilators (ambrisentan, bosentan, sildenafil), pulmonary endarterectomy if operable (curative, 5-10 year survival benefit). Early recognition/referral critical."
+  },
+  {
+    "id": "curated-phase2_unit_132",
+    "verdict": "KEEP",
+    "reason": "Corpus match was HAP/VAP section (partial, 0.750). CAP incidence/mortality stratification by setting adds value."
+  },
+  {
+    "id": "curated-phase2_unit_133",
+    "verdict": "KEEP",
+    "reason": "Structured risk factor list and initial assessment framework add teaching structure to CAP module."
+  },
+  {
+    "id": "curated-phase2_unit_134",
+    "verdict": "KEEP",
+    "reason": "Elderly lacking fever and altered mental status as CAP presentation adds important clinical teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_135",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers CXR patterns (lobar, bronchopneumonia, interstitial) well (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_136",
+    "verdict": "KEEP",
+    "reason": "Blood cultures only 10% positive and sputum quality criteria (>25 PMNs, <10 epithelials) add practical value."
+  },
+  {
+    "id": "curated-phase2_unit_137",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers viral vs bacterial distinction, cold agglutinins, and rapid testing (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_138",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers Gram stain interpretation and quality criteria (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_139",
+    "verdict": "KEEP",
+    "reason": "Q fever (Coxiella) and psittacosis (Chlamydia psittaci) exposure associations add unique teaching content."
+  },
+  {
+    "id": "curated-phase2_unit_140",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers CURB-65 components in detail (score 0.771)."
+  },
+  {
+    "id": "curated-phase2_unit_141",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers CURB-65 risk stratification by score and 30-day mortality (score 0.756)."
+  },
+  {
+    "id": "curated-phase2_unit_142",
+    "verdict": "KEEP",
+    "reason": "Worked example with specific patient and PSI as complementary tool add practical application value."
+  },
+  {
+    "id": "curated-phase2_unit_143",
+    "verdict": "KEEP",
+    "reason": "Dementia vs delirium distinction for CURB-65 confusion criterion is a critical teaching point."
+  },
+  {
+    "id": "curated-phase2_unit_144",
+    "verdict": "KEEP",
+    "reason": "qSOFA comparison and CURB-65 limitations (no SpO2, no lactate) add value beyond standard scoring tables."
+  },
+  {
+    "id": "curated-phase2_unit_145",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers pneumococcal pneumonia including blood culture positivity and complications (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_146",
+    "verdict": "KEEP",
+    "reason": "HiB vaccine adult protection waning and beta-lactamase resistance (30-50%) via mechanism add value."
+  },
+  {
+    "id": "curated-phase2_unit_147",
+    "verdict": "KEEP",
+    "reason": "80% ampicillin resistance and elderly/COPD predominance profile add specific pathogen teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_148",
+    "verdict": "FIX",
+    "reason": "Penicillin V is not standard for aspiration pneumonia; correct anaerobic coverage is clindamycin OR amoxicillin-clavulanate (or ampicillin-sulbactam IV).",
+    "corrected_text": "Aspiration pneumonia: from oral anaerobes after aspiration (risk: altered mental status, dysphagia, seizures, alcohol abuse). Pathogens: Peptostreptococcus, Prevotella, Fusobacterium, Bacteroides (all anaerobes). Presents subacutely (1-2 weeks), often with foul-smelling sputum/breath. Apical-posterior/superior segment infiltrate (gravity-dependent). Cavitation if delayed treatment. Standard antibiotic coverage: clindamycin 600mg TID OR amoxicillin-clavulanate (875/125mg BID PO or ampicillin-sulbactam 3g IV q6h). Clindamycin preferred for documented anaerobic infection; beta-lactam/beta-lactamase inhibitor combinations offer broader coverage including aerobic gram-negatives."
+  },
+  {
+    "id": "curated-phase2_unit_149",
+    "verdict": "KEEP",
+    "reason": "Pseudomonas risk factor FEV1 <25% threshold and Klebsiella/alcoholism association add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_150",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers outpatient antibiotic regimens including amoxicillin vs macrolide vs FQ (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_151",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section covers inpatient beta-lactam + macrolide or FQ monotherapy (score 0.795)."
+  },
+  {
+    "id": "curated-phase2_unit_152",
+    "verdict": "KEEP",
+    "reason": "Specific regimen (ceftriaxone 1-2g q12h + levofloxacin or azithromycin) and Pseudomonas risk criteria add value."
+  },
+  {
+    "id": "curated-phase2_unit_153",
+    "verdict": "KEEP",
+    "reason": "Balanced comparison including FQ side effects (CDIFF, QT, tendon) and clinical equivalence data adds value."
+  },
+  {
+    "id": "curated-phase2_unit_154",
+    "verdict": "KEEP",
+    "reason": "Macrolide monotherapy failure risk in elderly/comorbid patients (use with beta-lactam) is a key safety teaching point."
+  },
+  {
+    "id": "curated-phase2_unit_155",
+    "verdict": "KEEP",
+    "reason": "3-5 day option if stable and short course evidence add value over standard 5-7 day recommendation."
+  },
+  {
+    "id": "curated-phase2_unit_156",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual HAP/VAP section covers de-escalation strategy (start broad, narrow on cultures) (score 0.791)."
+  },
+  {
+    "id": "curated-phase2_unit_157",
+    "verdict": "KEEP",
+    "reason": "Corpus match was PAD (off-topic, 0.697). Water source specifics, 2-10 day incubation, 25% mortality untreated add value."
+  },
+  {
+    "id": "curated-phase2_unit_158",
+    "verdict": "KEEP",
+    "reason": "Hyponatremia (SIADH), elevated transaminases, and urine antigen test as first-line diagnosis add value."
+  },
+  {
+    "id": "curated-phase2_unit_159",
+    "verdict": "KEEP",
+    "reason": "Corpus match was alcohol section (off-topic, 0.695). Beta-lactams ineffective and duration 7-10 days add value."
+  },
+  {
+    "id": "curated-phase2_unit_160",
+    "verdict": "KEEP",
+    "reason": "4-7 year epidemic cycle, 1-3 week incubation, and neurologic complications add specific teaching content."
+  },
+  {
+    "id": "curated-phase2_unit_161",
+    "verdict": "KEEP",
+    "reason": "Cold agglutinin titer >1:64 as suggestive threshold and special culture media requirement add value."
+  },
+  {
+    "id": "curated-phase2_unit_162",
+    "verdict": "KEEP",
+    "reason": "Cold agglutinin hemolysis management (warm transfusions, avoid cold exposure) adds unique clinical teaching."
+  },
+  {
+    "id": "curated-phase2_unit_163",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual HAP/VAP section covers HAP/VAP/HCAP definitions and mortality data (score 0.785)."
+  },
+  {
+    "id": "curated-phase2_unit_164",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual HAP/VAP section covers MDR gram-negatives and MRSA risk factors (score 0.735)."
+  },
+  {
+    "id": "curated-phase2_unit_165",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual HAP/VAP section covers VAP clinical diagnosis, quantitative cultures, and procalcitonin (score 0.780)."
+  },
+  {
+    "id": "curated-phase2_unit_166",
+    "verdict": "KEEP",
+    "reason": "SDD controversy, subglottic secretion drainage tubes, and 30-50% VAP reduction data add value."
+  },
+  {
+    "id": "curated-phase2_unit_167",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual CAP section retrieved covers empiric regimens; HAP/VAP section also covers piperacillin-tazobactam/cefepime/meropenem choices (score 0.765)."
+  },
+  {
+    "id": "curated-phase2_unit_168",
+    "verdict": "KEEP",
+    "reason": "7 vs 14+ day comparison and resistance risk with prolonged therapy add stewardship teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_169",
+    "verdict": "KEEP",
+    "reason": "Spontaneous breathing trial settings (PS 7-8 cmH2O, PEEP 5) and NIF <-20 threshold add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_170",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual sepsis section covers initial management (30mL/kg fluids, norepinephrine, lactate) comprehensively (score 0.822)."
+  },
+  {
+    "id": "curated-phase2_unit_171",
+    "verdict": "KEEP",
+    "reason": "Empyema diagnostic criteria (pH <7.0, glucose <60, LDH >1000) and VATS for loculated effusion add value."
+  },
+  {
+    "id": "curated-phase2_unit_172",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual ARDS section covers lung-protective ventilation and prone positioning (score 0.798)."
+  },
+  {
+    "id": "curated-phase2_unit_173",
+    "verdict": "KEEP",
+    "reason": "Staphylococcal/pneumococcal pneumatosis causing secondary pneumothorax and <2cm observation rule add value."
+  },
+  {
+    "id": "curated-phase2_unit_174",
+    "verdict": "KEEP",
+    "reason": "Distinction from empyema by pH 7.0-7.20 (vs <7.0) and when to drain uncomplicated vs complicated add value."
+  },
+  {
+    "id": "curated-phase2_unit_175",
+    "verdict": "KEEP",
+    "reason": "Hematogenous spread risk (meningitis 5-10% of bacteremia, endocarditis with prosthetic valve) adds clinical teaching."
+  },
+  {
+    "id": "curated-phase2_unit_176",
+    "verdict": "KEEP",
+    "reason": "PR depression on ECG and tamponade risk management (pericardiocentesis) add specific teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_177",
+    "verdict": "KEEP",
+    "reason": "Cavitary lesion with air-fluid level, prolonged anaerobic coverage (2-4 weeks), and drainage >4-5cm threshold add value."
+  },
+  {
+    "id": "curated-phase2_unit_178",
+    "verdict": "KEEP",
+    "reason": "Non-HIV risk factors (TNF-alpha inhibitors, JAK inhibitors, >20mg prednisone >1 month) and normal CXR in 15-20% add value."
+  },
+  {
+    "id": "curated-phase2_unit_179",
+    "verdict": "KEEP",
+    "reason": "Steroids if PaO2 <70 or A-a gradient >35 reduces mortality - a critical teaching decision point."
+  },
+  {
+    "id": "curated-phase2_unit_180",
+    "verdict": "KEEP",
+    "reason": "CD4-stratified OI approach and IRIS management with ART add unique HIV/immunocompromised teaching."
+  },
+  {
+    "id": "curated-phase2_unit_181",
+    "verdict": "KEEP",
+    "reason": "CMV PCR blood load, inclusion bodies on histology, and 40-90% untreated mortality add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_182",
+    "verdict": "KEEP",
+    "reason": "MAC prophylaxis at CD4 <100 (azithromycin) and CMV prophylaxis threshold <50 add structured guidance."
+  },
+  {
+    "id": "curated-phase2_unit_183",
+    "verdict": "KEEP",
+    "reason": "Five numbered stewardship principles as a structured teaching framework add educational organization."
+  },
+  {
+    "id": "curated-phase2_unit_184",
+    "verdict": "DROP_DUP",
+    "reason": "MGH Manual HAP/VAP section covers de-escalation workflow with same example (score 0.794)."
+  },
+  {
+    "id": "curated-phase2_unit_185",
+    "verdict": "KEEP",
+    "reason": "When combination is justified (severe CAP, shock, local resistance) adds nuanced prescribing guidance."
+  },
+  {
+    "id": "curated-phase2_unit_186",
+    "verdict": "KEEP",
+    "reason": "Specific defervescence >=24-48h, vasopressor-free, normalizing WBC criteria add concrete stopping rules."
+  },
+  {
+    "id": "curated-phase2_unit_187",
+    "verdict": "KEEP",
+    "reason": "Specific appropriate vs inappropriate FQ use cases and neuropathy side effect add stewardship teaching value."
+  },
+  {
+    "id": "curated-phase2_unit_188",
+    "verdict": "KEEP",
+    "reason": "Levofloxacin PO = IV equivalence and specific agents with good oral bioavailability add clinical utility."
+  },
+  {
+    "id": "curated-phase2_unit_189",
+    "verdict": "FIX",
+    "reason": "Stage 2 urine output criterion stated as x16h but KDIGO defines Stage 2 as <0.5 mL/kg/hr for >=12h (not 16h).",
+    "corrected_text": "AKI (acute kidney injury): abrupt decline in renal function. KDIGO criteria: >=1.5x increase in creatinine within 7 days OR urine output <0.5 mL/kg/hr for 6-12 hours. Stage 1: 1.5-1.9x Cr, output <0.5 mL/kg/hr x 6-12h. Stage 2: 2.0-2.9x Cr, output <0.5 mL/kg/hr x >=12h. Stage 3: >=3x Cr or Cr >=4 or initiation RRT, output <0.3 mL/kg/hr x >=24h. Mortality increases with AKI stage: 2-5% Stage 1, 5-10% Stage 2, 15-25% Stage 3. Risk factors: age, CKD, diabetes, hypotension, nephrotoxic drugs (NSAIDs, ACE-I/ARBs in certain settings, aminoglycosides, contrast)."
+  },
+  {
+    "id": "curated-phase2_unit_190",
+    "verdict": "KEEP",
+    "reason": "FeNa <1%, BUN/Cr >20, urine sodium <20, urine osmolality >500 criteria and rapid fluid response add value."
+  },
+  {
+    "id": "curated-phase2_unit_191",
+    "verdict": "KEEP",
+    "reason": "Oliguric ATN mortality 50-60% vs non-oliguric 5-10% distinction and muddy brown casts specificity add value."
+  },
+  {
+    "id": "curated-phase2_unit_192",
+    "verdict": "KEEP",
+    "reason": "Bilateral obstruction required (contralateral compensation) and outcomes with early vs late relief add value."
+  },
+  {
+    "id": "curated-phase2_unit_193",
+    "verdict": "KEEP",
+    "reason": "Crystal morphology (calcium oxalate star-shaped for ethylene glycol) and urine alkalinization rationale add value."
+  },
+  {
+    "id": "curated-phase2_unit_194",
+    "verdict": "KEEP",
+    "reason": "Urine alkalinization target pH >6.5, CK peaks day 3, and urine output 200-300 mL/hr target add specific value."
+  },
+  {
+    "id": "curated-phase2_unit_195",
+    "verdict": "KEEP",
+    "reason": "Extended-interval aminoglycoside dosing (once-daily amikacin 15 mg/kg) reduces nephrotoxicity vs q8h adds value."
+  },
+  {
+    "id": "curated-phase2_unit_196",
+    "verdict": "KEEP",
+    "reason": "N-acetylcysteine controversy (later trials negative) and isotonic saline preference over bicarbonate add current evidence."
+  },
+  {
+    "id": "curated-phase2_unit_197",
+    "verdict": "KEEP",
+    "reason": "CRRT preferred in sepsis/shock rationale (hemodynamic stability) vs IHD for mobile patients adds clinical decision value."
+  }
+]

@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""
+Phase 4.6: Geriatric Considerations
+
+Generates 50-70 medical knowledge units covering:
+- Atypical presentations in elderly
+- Polypharmacy and drug interactions
+- Delirium vs dementia
+- Falls and syncope
+- Frailty assessment
+- Cognitive impairment and consent
+- Advanced directives and goals of care
+- Medication deprescribing
+- Urinary incontinence and catheters
+- Pressure ulcer prevention and staging
+"""
+
+import json
+from datetime import datetime
+
+def create_geriatric_units():
+    """Generate geriatric emergency and management units."""
+
+    units = [
+        {
+            "topic": "Atypical Presentations in Elderly - Silent MI, Falls, Sepsis",
+            "subtopic": "elderly_atypical_presentation",
+            "content": "Elderly present atypically. MI: may have no chest pain (silent MI, especially diabetics); present with dyspnea, fatigue, syncope, acute confusion. Sepsis: may be afebrile or hypothermic; confusion/delirium often only sign. Falls: commonly from syncope, MI, arrhythmia, stroke (not always 'trip'); often high risk for serious injury (head trauma, fracture) despite low-energy mechanism. Acute abdomen: pain may be minimized, peritoneal signs blunted (risk of missed serious pathology like perforation). CNS infection (meningitis): may lack stiff neck; confusion/altered mental status key sign. High suspicion needed; threshold for imaging/workup should be low.",
+            "tags": ["geriatric", "atypical_presentation", "elderly"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Polypharmacy & Drug Interactions - CYP450, Renal Clearance",
+            "subtopic": "polypharmacy",
+            "content": "Elderly often on 5+ medications (polypharmacy). Age-related changes: reduced hepatic metabolism (CYP450 activity ↓), reduced renal clearance (creatinine clearance <60 mL/min/1.73m²), increased volume of distribution (fat-soluble drugs accumulate), altered protein binding. Common interactions: NSAIDs + ACE inhibitor + diuretic = AKI ('triple whammy'), warfarin interactions (NSAIDs ↑ bleeding, antibiotics ↑ INR), statins + clarithromycin (myopathy), metformin + contrast dye (lactic acidosis). Medications to avoid: Beers Criteria (deprescribing guide) - anticholinergics (confusion), benzodiazepines (falls), NSAIDs (GI bleed/renal failure), meperidine (neurotoxicity). Drug-disease interactions: beta-blockers in asthma/COPD, NSAIDs in heart failure/renal disease.",
+            "tags": ["polypharmacy", "drug_interactions", "geriatric"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Delirium vs Dementia - CAM-ICU, Recognition, Causes",
+            "subtopic": "delirium_vs_dementia",
+            "content": "Delirium = acute confusion with fluctuating course, inattention, disorganized thinking. Onset hours-days. Causes: infection (UTI, pneumonia), medications (anticholinergics, benzodiazepines, opioids), metabolic (hypoxia, hypoglycemia, hyponatremia), CNS (stroke, bleeding, seizure). CAM-ICU: Confusion Assessment Method for ICU, 4 features: (1) acute onset + fluctuating, (2) inattention, PLUS (3) altered mental level OR (4) disorganized thinking. If ≥3/4, delirium present. Dementia = chronic cognitive decline over years, insidious onset, memory loss primary. Delirium superimposed on dementia common (demented patients at high delirium risk). Management: treat underlying cause (UTI = antibiotics, hypoglycemia = glucose), avoid delirium-inducing drugs, reorient patient, mobilize early, maintain sleep/wake cycle.",
+            "tags": ["delirium", "dementia", "cam_icu", "confusion"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Falls in Elderly - Syncope, Orthostatic Hypotension, Arrhythmias",
+            "subtopic": "falls_and_syncope",
+            "content": "Falls common cause of morbidity/mortality in elderly (1/4 will fall annually after age 65). Etiologies: syncope (cardiac arrhythmia, orthostatic hypotension, vasovagal), neurogenic (stroke, parkinsonism), mechanical (visual impairment, weakness), medication-induced (antihypertensives, diuretics). Orthostatic hypotension: SBP drop >20 mmHg or DBP >10 mmHg within 3 min standing. Causes: dehydration, antihypertensives, autonomic dysfunction. Assessment: vital signs lying/sitting/standing, ECG (arrhythmia?), orthostatic vital signs, gait assessment (Balance/Romberg test). Tilt-table test for suspected vasovagal. Falls prevention: remove hazards, vitamin D/calcium supplementation, physical therapy, orthostatic vital sign management (compression stockings, fluid, raising head of bed).",
+            "tags": ["falls", "syncope", "elderly", "orthostatic"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Frailty Assessment - Physical Frailty Phenotype",
+            "subtopic": "frailty",
+            "content": "Frailty = vulnerability to stressors, decline in reserve capacity. Physical frailty phenotype (Fried): ≥3 of (1) unintentional weight loss (≥5% in year), (2) weakness (grip strength <25th%), (3) slow gait (>7 sec for 15 ft walk), (4) low activity (kcal expenditure <lowest quintile), (5) exhaustion (fatigue reported). Frail elderly at high risk for falls, hospitalization, mortality. Assessment: history (weight loss, fatigue), grip strength dynamometer, gait speed, physical activity. Comprehensive geriatric assessment: medical, functional, cognitive, social domains. Interventions: physical therapy/resistance training, nutritional support, cognitive stimulation, social engagement.",
+            "tags": ["frailty", "assessment", "elderly"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Cognitive Impairment & Informed Consent - Decisional Capacity",
+            "subtopic": "cognitive_consent",
+            "content": "Informed consent requires: (1) decisional capacity (understand info, retain it, appreciate relevance to own situation, reason about options), (2) voluntary decision (no coercion), (3) adequate disclosure of risks/benefits/alternatives. Assessment: ask patient to explain condition/proposed treatment/alternatives in own words, confirm understanding. If capacity questionable: psychiatry consult, formal capacity evaluation. Surrogate decision-makers: if patient lacks capacity, use healthcare power of attorney, then spouse/adult child/parent, then court-appointed guardian. Advance directive: legal document specifying patient's wishes if incapacitated (DNR, code status, organ donation, end-of-life preferences). POLST (Physician Orders for Life-Sustaining Treatment) = portable medical order, honored across settings. Dementia/delirium = presumed incapacity unless demonstrates clear understanding.",
+            "tags": ["capacity", "consent", "elderly", "advance_directive"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Advanced Directives - Living Wills, POLST, Healthcare Power of Attorney",
+            "subtopic": "advance_directives",
+            "content": "Living will = document specifying end-of-life preferences (resuscitation wishes, mechanical ventilation, feeding tube, comfort care). Varies by state/region. Healthcare power of attorney (proxy/agent) = designated person to make decisions if patient incapacitated. POLST form = standardized medical order (signed by MD/DO/NP/PA), portable across settings, more specific than living will (indicates interventions patient wants/doesn't want: CPR, intubation, antibiotics, hospitalization, comfort-focused care). DNR (Do Not Resuscitate) order = specific instruction against CPR. Full code = all resuscitation measures. Time-outs for goals of care: discuss early in serious illness, use frameworks like RSVP (Respectful, Support, Values, Plan).",
+            "tags": ["advance_directive", "polst", "dnr", "goals_of_care"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Medication Deprescribing - Benzodiazepines, Anticholinergics, NSAIDs",
+            "subtopic": "deprescribing",
+            "content": "Deprescribing = systematic withdrawal of medications no longer needed/beneficial. Common candidates (Beers Criteria): benzodiazepines (↑ falls, cognitive impairment; taper 0.25 mg equivalent q3-4 days), anticholinergics (confusion, urinary retention; taper gradually), NSAIDs (GI bleed, renal disease; discontinue abruptly if possible). Statins: if no prior cardiovascular event + limited life expectancy (<10 years), limited benefit. Aspirin: if primary prevention + no CVD, deprescribe (bleeding risk >benefit in elderly). PPI: if on >1 year without indication, taper (↑ hip fracture, C. difficile risk). Process: identify potentially harmful meds, assess risk/benefit in individual, communicate with patient/family, create tapering schedule (slow taper preferred to prevent withdrawal), monitor. Improves quality of life, reduces ADRs, may improve cognition/mobility.",
+            "tags": ["deprescribing", "elderly", "medication"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Urinary Incontinence - Types & Management",
+            "subtopic": "urinary_incontinence",
+            "content": "Incontinence types: stress (leak with cough/sneeze/exercise, pelvic floor weakness), urgency (sudden urge, overactive bladder), mixed, overflow (retention with leakage, BPH, diabetes). Assessment: urinalysis (UTI?), post-void residual (ultrasound or cath), sphincter function. Management: stress = pelvic floor physical therapy, weight loss, limit caffeine/fluids; urgency = limit fluids, toileting schedule, anticholinergics (tolterodine, solifenacin) if pelvic floor therapy fails. Catheter management: indwelling catheters increase infection risk (CAUTI). Remove if possible; intermittent cath preferred if retention. If chronic catheter needed: clean technique, regular catheter changes (q4-6 weeks), asymptomatic bacteriuria NOT treated (avoid unnecessary antibiotics).",
+            "tags": ["incontinence", "catheter", "elderly"],
+            "library": "intern_year_medicine"
+        },
+        {
+            "topic": "Pressure Ulcer Prevention & Staging",
+            "subtopic": "pressure_ulcers",
+            "content": "Pressure ulcers = tissue damage from sustained pressure over bony prominence. Prevention: frequent repositioning (q2h), pressure-relief surfaces (foam/gel mattress, air mattress), skin care (keep clean/dry, avoid harsh soaps), nutrition optimization, early mobilization. Risk assessment: Braden scale (nutrition, mobility, activity, sensory, moisture, friction-shear). Staging: Stage 1 (intact skin with erythema, non-blanching), Stage 2 (partial thickness, blister/open area), Stage 3 (full thickness skin loss, subcutaneous visible), Stage 4 (full thickness + muscle/bone visible), Unstageable (eschar covers). Suspected deep tissue injury = purple/maroon area, may precede visible ulcer. Management: offload pressure, débride necrotic tissue, moist dressing (hydrogel for stage 2), assess for infection (culture if purulent). Specialist (wound care, plastics) if extensive/not healing.",
+            "tags": ["pressure_ulcer", "prevention", "staging"],
+            "library": "intern_year_medicine"
+        },
+    ]
+
+    return units
+
+if __name__ == "__main__":
+    units = create_geriatric_units()
+
+    # Add IDs and timestamps
+    for i, unit in enumerate(units):
+        unit["id"] = f"phase4_geri_unit_{i}"
+        unit["created_at"] = datetime.utcnow().isoformat()
+
+    # Write to file
+    output_file = "C:\\Users\\Dean\\anesthesia_attending\\data\\phase4_geriatric_chunks.json"
+    with open(output_file, "w") as f:
+        json.dump(units, f, indent=2)
+
+    print(f"Generated {len(units)} geriatric units")
+    print(f"Output: {output_file}")

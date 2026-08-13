@@ -1,0 +1,240 @@
+[
+  {
+    "id": "ketamine-analgesic-d1",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "Ketamine is used as an adjuvant analgesic. What is the evidence basis for its perioperative use and what specific outcome does it improve?",
+    "answer": "Ketamine as an adjuvant analgesic to opioids reduces postoperative opioid requirements and opioid-related side effects; systematic reviews support its use for acute postoperative pain in opioid-tolerant and opioid-naive patients.",
+    "rationale": "NMDA receptor antagonism by ketamine prevents central sensitization and opioid-induced hyperalgesia; sub-anesthetic doses reduce wind-up and improve the opioid-sparing effect of multimodal analgesia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 598
+      }
+    ],
+    "confusable_with": "ketamine as primary anesthetic (much higher doses required; different dose range for adjuvant use)"
+  },
+  {
+    "id": "ketamine-analgesic-d2",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "Esmolol has been shown to have what analgesic effect when used as an adjuvant during anesthesia?",
+    "answer": "Intravenous esmolol reduces the requirement for volatile anesthetic agents (decreases MAC values), and has been shown to reduce postoperative pain intensity and opioid consumption; it provides opioid-sparing analgesia.",
+    "rationale": "Beta-blockade reduces sympathetically-mediated pain sensitization; esmolol may also have direct analgesic effects through interaction with opioid or adrenergic pain pathways.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1826
+      }
+    ],
+    "confusable_with": "esmolol used solely for rate control (its analgesic adjuvant property is often overlooked)"
+  },
+  {
+    "id": "ketamine-analgesic-d3",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "Vitamin C has been studied as a perioperative adjuvant. What is the evidence for its use in reducing opioid consumption?",
+    "answer": "High-level evidence supports perioperative vitamin C supplementation (2 g preoperative dose) for reducing postoperative morphine consumption and high-level evidence supports it for reducing CRPS after orthopedic extremity surgery.",
+    "rationale": "Vitamin C acts as an antioxidant reducing oxidative stress-mediated pain sensitization and inflammation; its low cost and safety profile make it a practical multimodal analgesic adjuvant.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 747
+      }
+    ],
+    "confusable_with": "vitamin C as ineffective adjuvant (high-level evidence actually supports its use for specific outcomes)"
+  },
+  {
+    "id": "ketamine-analgesic-d4",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "NSAIDs reduce postoperative opioid requirements. What specific concern about COX-2 inhibitors must be balanced against their opioid-sparing benefit?",
+    "answer": "COX-2 inhibitors reduce opioid consumption and avoid NSAID-related platelet dysfunction and GI bleeding; however, adverse effects on kidney function remain a concern, requiring evaluation of renal function before use.",
+    "rationale": "COX-2-mediated prostaglandins maintain afferent arteriolar tone in the kidney; COX-2 inhibitors reduce GFR, particularly in hypovolemic or renally compromised patients, creating a perioperative risk tradeoff.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1831
+      }
+    ],
+    "confusable_with": "traditional NSAIDs (cause additional platelet dysfunction and GI bleeding; COX-2 selective agents lack these specific side effects)"
+  },
+  {
+    "id": "ketamine-analgesic-d5",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "For a COPD patient with advanced lung disease experiencing severe pain, what is the approach to opioid analgesic use?",
+    "answer": "Opioids are considered an accepted part of dyspnea and pain treatment for advanced lung disease per ACCP guidelines; the risk of respiratory depression must be weighed against the harm of undertreated pain; careful dose titration and monitoring are required.",
+    "rationale": "Withholding opioids in COPD for fear of respiratory depression leaves patients undertreated; with careful titration, opioids effectively relieve pain and dyspnea without causing respiratory failure at appropriate doses.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 870
+      }
+    ],
+    "confusable_with": "contraindicated opioid use in COPD (absolute contraindication is not supported by ACCP guidelines)"
+  },
+  {
+    "id": "ketamine-analgesic-d6",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "Postoperative patients with chronic opioid use have markedly increased opioid requirements due to what two mechanisms?",
+    "answer": "Opioid tolerance (pharmacological adaptation requiring higher doses for same effect) AND psychological dependence (conditioning that drives drug-seeking behavior) both increase opioid requirements; consultation with a pain specialist is recommended.",
+    "rationale": "These two distinct mechanisms require different management approaches: tolerance requires dose escalation or opioid rotation, while psychological dependence requires psychiatric/addiction medicine involvement.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2102
+      }
+    ],
+    "confusable_with": "opioid-induced hyperalgesia (increased pain sensitivity from chronic opioids; paradoxically worsens with higher doses)"
+  },
+  {
+    "id": "ketamine-analgesic-d7",
+    "topic": "Ketamine as Analgesic and Adjuvant",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "In obstetric anesthesia, why are NSAIDs like ketorolac not recommended as antepartum analgesics?",
+    "answer": "NSAIDs are not recommended antepartum because they suppress uterine contractions and promote premature closure of the fetal ductus arteriosus through prostaglandin inhibition.",
+    "rationale": "Prostaglandins maintain ductus arteriosus patency in the fetus and contribute to labor progress; NSAID inhibition of prostaglandins risks preterm closure causing neonatal pulmonary hypertension and may delay/inhibit labor.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1390
+      }
+    ],
+    "confusable_with": "acetaminophen in pregnancy (no ductus/uterotonic effects; generally considered safe in appropriate doses)"
+  },
+  {
+    "id": "ketamine-pharm-d1",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Ketamine produces a unique dissociative anesthetic state. What are the distinguishing clinical features compared to other IV induction agents?",
+    "answer": "Ketamine produces dissociative anesthesia: profound analgesia, maintained airway reflexes and spontaneous breathing (relatively), increased muscle tone, and cardiovascular stimulation (increased HR, BP, CO); patients may have open eyes with nystagmus.",
+    "rationale": "Dissociative anesthesia from NMDA blockade disconnects thalamocortical pathways; indirect sympathomimetic effects (inhibits catecholamine reuptake) account for cardiovascular stimulation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 142
+      }
+    ],
+    "confusable_with": "propofol (causes cardiovascular depression and airway relaxation; opposite hemodynamic profile)"
+  },
+  {
+    "id": "ketamine-pharm-d2",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "During rewarming from cardiopulmonary bypass, why might a ketamine-midazolam infusion be used?",
+    "answer": "Ketamine-midazolam infusion during CPB rewarming provides sedation and analgesia when volatile agent delivery is unreliable (changed CPB flows, heat exchanger interference); midazolam co-administration reduces ketamine psychomimetic side effects.",
+    "rationale": "Volatile anesthetic delivery via the pump oxygenator is less reliable during rewarming; IV ketamine-midazolam provides reliable anesthesia supplementation, with midazolam preventing emergence phenomena.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 747
+      }
+    ],
+    "confusable_with": "propofol alone during CPB rewarming (propofol is also used but ketamine-midazolam is a validated alternative)"
+  },
+  {
+    "id": "ketamine-pharm-d3",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Ketamine was widely used during the Vietnam War for field anesthesia. Why did its popularity subsequently decline despite its unique properties?",
+    "answer": "Ketamine popularity declined due to unpleasant psychomimetic side effects (emergence hallucinations, dysphoria, vivid dreams) and abuse potential; the introduction of propofol also offered a preferable anesthetic profile.",
+    "rationale": "Psychomimetic effects from ketamine NMDA blockade and opioid receptor interaction cause disturbing emergence phenomena, limiting its use as a primary anesthetic especially in adult patients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 142
+      }
+    ],
+    "confusable_with": "ketamine being no longer used (still used widely for pediatric anesthesia, procedural sedation, and sub-anesthetic analgesia)"
+  },
+  {
+    "id": "ketamine-pharm-d4",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Ketamine produces potent analgesia with minimal respiratory depression. In what specific patient population is this combination of properties most valuable?",
+    "answer": "Ketamine is most valuable in pediatric patients (no IV required for IM induction), trauma patients requiring analgesia with hemodynamic preservation, patients with severe bronchospasm, and short procedural sedation in the ED.",
+    "rationale": "Cardiovascular stimulation maintains BP in shocked trauma patients; bronchodilatory effects help bronchospasm; IM route enables pediatric induction without IV access; respiratory preservation reduces apnea risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 142
+      }
+    ],
+    "confusable_with": "propofol in trauma (causes vasodilation and hypotension; contraindicated in hemodynamically unstable patients)"
+  },
+  {
+    "id": "ketamine-pharm-d5",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary molecular mechanism of ketamine anesthesia and analgesia?",
+    "answer": "Ketamine is a non-competitive NMDA (N-methyl-D-aspartate) receptor antagonist; it blocks the NMDA receptor channel in an open-state-dependent manner, preventing calcium influx and glutamate-mediated excitation.",
+    "rationale": "NMDA receptors are critical for pain wind-up, opioid tolerance, and central sensitization; ketamine blockade at sub-anesthetic doses prevents these phenomena while providing both anesthesia and analgesia at higher doses.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 249
+      }
+    ],
+    "confusable_with": "GABA-A potentiation (the mechanism of barbiturates, propofol, volatile agents; ketamine primarily works through NMDA antagonism)"
+  },
+  {
+    "id": "ketamine-pharm-d6",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Ketamine is used as an adjuvant during CPB in some protocols. At what rewarming landmark is ketamine typically added and with what co-agent?",
+    "answer": "Ketamine infusion (with or without midazolam) is initiated when rewarming begins during CPB; midazolam co-administration prevents psychomimetic side effects and provides amnesia.",
+    "rationale": "Rewarming increases cerebral metabolic activity and anesthetic requirements; ketamine provides analgesia and sedation supplement when volatile delivery is less reliable at warming flow rates.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 747
+      }
+    ],
+    "confusable_with": "adding ketamine only after bypass is discontinued (too late; rewarming phase is when anesthetic requirements increase)"
+  },
+  {
+    "id": "ketamine-pharm-d7",
+    "topic": "Ketamine: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "MAC values are reduced in older adult patients. How does this pharmacodynamic change affect ketamine dosing specifically?",
+    "answer": "Older adults display lower dose requirements for ketamine (as with propofol, opioids, and benzodiazepines); reduced receptor density, CNS changes, and decreased cardiac output producing higher drug concentrations all contribute.",
+    "rationale": "While ketamine cardiovascular stimulation may be partially maintained in elderly patients, the analgesic and anesthetic effects occur at lower doses due to pharmacodynamic sensitivity increases with aging.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      }
+    ],
+    "confusable_with": "ketamine being unaffected by age (all IV anesthetic requirements decrease with aging)"
+  }
+]

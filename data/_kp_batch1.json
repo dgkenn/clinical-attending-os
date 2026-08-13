@@ -1,0 +1,480 @@
+[
+  {
+    "id": "aspiration-prev-mgmt-1",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "A patient aspirates gastric contents intraoperatively and subsequently becomes hypoxic. What is the mainstay of therapy?",
+    "answer": "Positive-pressure ventilation (PPV); may require intubation + PEEP or noninvasive ventilation",
+    "rationale": "Aspiration-induced chemical pneumonitis impairs gas exchange; PPV recruits atelectatic alveoli and corrects hypoxemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 471
+      }
+    ],
+    "confusable_with": "antibiotics (not indicated empirically unless culture-positive)"
+  },
+  {
+    "id": "aspiration-prev-mgmt-2",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "After confirmed particulate aspiration, which additional procedure is indicated beyond PPV?",
+    "answer": "Bronchoscopy and pulmonary lavage for particulate removal",
+    "rationale": "Particulate matter causes mechanical obstruction and ongoing inflammation; bronchoscopic lavage removes debris that PPV alone cannot clear.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 471
+      }
+    ],
+    "confusable_with": "corticosteroids (not recommended after aspiration)"
+  },
+  {
+    "id": "aspiration-prev-mgmt-3",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What two gastric parameters define the threshold at which a patient is at high risk for aspiration pneumonitis?",
+    "answer": "Gastric volume >25 mL (0.4 mL/kg) AND gastric pH <2.5",
+    "rationale": "Large volumes of acidic gastric contents cause severe chemical pneumonitis (Mendelson syndrome) when aspirated.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 438
+      }
+    ],
+    "confusable_with": "volume alone (both volume AND pH thresholds must be met)"
+  },
+  {
+    "id": "aspiration-prev-mgmt-4",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "All obstetric patients are treated as having a full stomach. What anesthetic implication follows?",
+    "answer": "Prefer regional anesthesia; if general required, use RSI with cricoid pressure until ETT confirmed",
+    "rationale": "Progesterone-mediated lower esophageal sphincter relaxation and delayed gastric emptying elevate aspiration risk throughout pregnancy.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1383
+      }
+    ],
+    "confusable_with": "standard induction (inappropriate without RSI precautions in full-stomach patients)"
+  },
+  {
+    "id": "aspiration-prev-mgmt-5",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What does evidence show regarding routine metoclopramide, H2-blockers, or PPIs for aspiration prevention in elective cases?",
+    "answer": "No evidence supports routine use in elective cases; reserved for high-risk patients",
+    "rationale": "ASA guidelines confirm no morbidity/mortality benefit from routine pharmacologic aspiration prophylaxis in healthy patients undergoing elective procedures.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 74
+      }
+    ],
+    "confusable_with": "mandatory H2-blocker use (guideline-discordant for routine elective cases)"
+  },
+  {
+    "id": "aspiration-prev-mgmt-6",
+    "topic": "Aspiration: prevention and management",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What is the recommended maximum bag-mask ventilation pressure to minimize gastric insufflation?",
+    "answer": "Less than 20 cmH2O",
+    "rationale": "Mask pressures exceeding 20 cmH2O overcome the lower esophageal sphincter and force gas into the stomach, increasing regurgitation and aspiration risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 74
+      }
+    ],
+    "confusable_with": "30 cmH2O (the plateau pressure limit for lung protection, not mask ventilation)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Aspiration: prevention and management",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Full stomach (obstetric, emergency, gastroparesis, bowel obstruction), reduced consciousness, difficult airway",
+    "pathophysiology": "Gastric acid (pH<2.5) causes chemical pneumonitis; particles cause mechanical obstruction; both trigger inflammatory cascade and alveolar-capillary leak",
+    "time_course": "Immediate bronchospasm and laryngospasm; ARDS-like picture 2-6 hours later",
+    "key_features": "Wheezing, hypoxia, bilateral infiltrates on CXR; may be clinically silent at the time of aspiration event",
+    "consequence_if_missed": "Progressive ARDS, respiratory failure, death; significant fraction of anesthesia-related maternal mortality"
+  },
+  {
+    "id": "anca-vasculitis-1",
+    "topic": "ANCA-associated vasculitides: overview & ANCA testing",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What are the three main ANCA-associated vasculitides classified at the 2012 Chapel Hill Consensus Conference?",
+    "answer": "Granulomatosis with polyangiitis (GPA), microscopic polyangiitis (MPA), eosinophilic granulomatosis with polyangiitis (EGPA)",
+    "rationale": "These three small-vessel vasculitides share ANCA-mediated neutrophil activation and form the AAV group.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 2
+      }
+    ],
+    "confusable_with": "polyarteritis nodosa (medium-vessel, ANCA-negative)"
+  },
+  {
+    "id": "anca-vasculitis-2",
+    "topic": "ANCA-associated vasculitides: overview & ANCA testing",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "In microscopic polyangiitis, which ANCA target antigen is most commonly positive, and in what percentage?",
+    "answer": "Anti-MPO (myeloperoxidase) in approximately 70% of MPA patients",
+    "rationale": "MPO is the primary autoantigen in MPA; anti-PR3 accounts for ~20% and 10% are ANCA-negative.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Microscopic polyangiitis (MPA)",
+        "page": 3
+      }
+    ],
+    "confusable_with": "anti-PR3 (predominant in GPA, not MPA)"
+  },
+  {
+    "id": "anca-vasculitis-3",
+    "topic": "ANCA-associated vasculitides: overview & ANCA testing",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "ANCA serology is essential but not sufficient for AAV diagnosis. What other conditions produce positive ANCA?",
+    "answer": "SLE, Goodpasture syndrome, infective endocarditis, chronic hepatitis",
+    "rationale": "ANCA positivity is neither 100% sensitive nor specific; clinical, laboratory, and histologic correlation is required for definitive AAV diagnosis.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 6
+      }
+    ],
+    "confusable_with": "ANCA as a stand-alone diagnostic test (guideline-discordant)"
+  },
+  {
+    "id": "anca-vasculitis-4",
+    "topic": "ANCA-associated vasculitides: overview & ANCA testing",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What is double-positive antibody disease and how does it influence management?",
+    "answer": "Concurrent ANCA + anti-GBM antibodies; renal manifestations follow anti-GBM pattern, systemic features follow AAV pattern, requiring treatment addressing both",
+    "rationale": "10-50% of anti-GBM patients have detectable ANCA (usually anti-MPO); positive ANCA is thought to precede anti-GBM by exposing GBM epitopes.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "pure Goodpasture syndrome (lacks systemic ANCA-vasculitis features)"
+  },
+  {
+    "id": "anca-vasculitis-5",
+    "topic": "ANCA-associated vasculitides: overview & ANCA testing",
+    "domain": "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)",
+    "discipline": "medicine",
+    "stem": "What drug class is a recognized cause of ANCA-positive drug-induced vasculitis?",
+    "answer": "Anti-TNF-alpha therapy (for RA, ankylosing spondylitis)",
+    "rationale": "Drug-induced ANCA vasculitis can be triggered by anti-TNF agents; cessation of the offending drug is part of management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 4
+      }
+    ],
+    "confusable_with": "primary AAV (drug-induced form remits with drug cessation)"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "GPA (Granulomatosis with Polyangiitis)",
+    "topic_b": "MPA (Microscopic Polyangiitis)",
+    "discriminator": "GPA: anti-PR3/c-ANCA, granulomatous inflammation, upper respiratory tract + kidney; MPA: anti-MPO/p-ANCA, non-granulomatous, kidney + lung without upper-tract involvement"
+  },
+  {
+    "id": "ards-2-1",
+    "topic": "ARDS",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What is the Berlin definition severity classification of ARDS by PaO2/FiO2 ratio?",
+    "answer": "Mild: PaO2/FiO2 <=300; Moderate: <=200; Severe: <=100 mmHg",
+    "rationale": "The 2012 Berlin definition stratifies ARDS by P/F ratio to guide prognosis and ventilator management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 37
+      }
+    ],
+    "confusable_with": "cardiogenic pulmonary edema (elevated PAOP, responds to diuresis; ARDS is non-cardiogenic)"
+  },
+  {
+    "id": "ards-2-2",
+    "topic": "ARDS",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "Which single intervention has shown the greatest mortality benefit in ARDS?",
+    "answer": "Reduced tidal volumes (lung-protective ventilation, 6 mL/kg ideal body weight)",
+    "rationale": "The ARDSNet trial demonstrated that limiting Vt reduces volutrauma and barotrauma, producing the largest survival benefit of any ARDS intervention tested in RCTs.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2125
+      }
+    ],
+    "confusable_with": "corticosteroids (no consistent mortality benefit in ARDS)"
+  },
+  {
+    "id": "ards-2-3",
+    "topic": "ARDS",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What two mechanisms produce pulmonary edema, and which underlies ARDS?",
+    "answer": "Hydrostatic (cardiogenic) vs. increased alveolar-capillary permeability (non-cardiogenic); ARDS is permeability edema",
+    "rationale": "In ARDS, cytokine-mediated alveolar-capillary barrier disruption floods alveoli with protein-rich fluid independent of hydrostatic pressure.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2125
+      }
+    ],
+    "confusable_with": "cardiogenic pulmonary edema (hydrostatic, responds to preload reduction)"
+  },
+  {
+    "id": "ards-2-4",
+    "topic": "ARDS",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What plateau pressure limit is a key tenet of lung-protective ventilation in ARDS?",
+    "answer": "Plateau pressure <30 cmH2O",
+    "rationale": "Limiting plateau pressure reduces barotrauma; combined with low Vt (6 mL/kg IBW) and higher PEEP, this prevents ventilator-induced lung injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 766
+      }
+    ],
+    "confusable_with": "peak inspiratory pressure (plateau is end-inspiratory pause pressure, the true alveolar distension measure)"
+  },
+  {
+    "id": "ards-2-5",
+    "topic": "ARDS",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "Prolonged FiO2 >50-60% causes pulmonary toxicity via what mechanism?",
+    "answer": "Intracellular free radical generation (superoxide, hydroxyl ions, hydrogen peroxide) damaging alveolar epithelium",
+    "rationale": "High O2 tensions generate reactive oxygen species that are cytotoxic to lung cells, worsening the injury being treated.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2176
+      }
+    ],
+    "confusable_with": "100% O2 always harmful (short-term 100% O2 up to 10-20 hours is generally safe)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "ARDS",
+    "discipline": "medicine",
+    "enabling_conditions": "Sepsis, aspiration, pneumonia, trauma, pancreatitis, transfusion (TRALI)",
+    "pathophysiology": "Diffuse alveolar damage from cytokine-mediated alveolar-capillary permeability increase; protein-rich exudate floods alveoli; reduced surfactant; hyaline membranes",
+    "time_course": "Acute onset within 1 week of known clinical insult; bilateral infiltrates on CXR; not fully explained by cardiac failure",
+    "key_features": "Hypoxia (P/F <=300), bilateral CXR infiltrates, absent cardiogenic cause, requires positive pressure ventilation",
+    "consequence_if_missed": "Progressive hypoxic respiratory failure, multi-organ failure, death; severe ARDS mortality 30-40%"
+  },
+  {
+    "id": "ards-patho-1",
+    "topic": "ARDS: Pathophysiology and Management",
+    "domain": "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)",
+    "discipline": "medicine",
+    "stem": "A ventilated patient develops rising peak airway pressure simultaneous with rising PEEP and arterial hypotension. What must be excluded immediately?",
+    "answer": "Tension pneumothorax",
+    "rationale": "High intrathoracic pressure from tension pneumothorax impedes venous return causing hypotension; concurrent rise in both peak and plateau pressures indicates decreased compliance from pneumothorax.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 380
+      }
+    ],
+    "confusable_with": "bronchospasm (raises peak but not plateau; no hemodynamic collapse)"
+  },
+  {
+    "id": "ards-patho-2",
+    "topic": "ARDS: Pathophysiology and Management",
+    "domain": "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)",
+    "discipline": "medicine",
+    "stem": "Increased peak inspiratory pressure with normal plateau pressure during mechanical ventilation indicates what problem?",
+    "answer": "Increased airway resistance (bronchospasm, ETT obstruction/kinking, secretions) — not a compliance problem",
+    "rationale": "Plateau pressure reflects alveolar/parenchymal compliance; if only peak rises (not plateau), the problem is in the conducting airway.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 380
+      }
+    ],
+    "confusable_with": "decreased lung compliance (raises both peak AND plateau)"
+  },
+  {
+    "id": "ards-patho-3",
+    "topic": "ARDS: Pathophysiology and Management",
+    "domain": "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)",
+    "discipline": "medicine",
+    "stem": "What are the three forms of ventilator-induced lung injury that lung-protective ventilation aims to prevent?",
+    "answer": "Barotrauma (pressure-mediated), volutrauma (volume-mediated), atelectrauma (cyclic recruitment-derecruitment)",
+    "rationale": "Low Vt limits volutrauma; plateau pressure limit reduces barotrauma; adequate PEEP prevents atelectrauma from repeated alveolar collapse.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 766
+      }
+    ],
+    "confusable_with": "biotrauma (cytokine-mediated systemic injury — a fourth mechanism)"
+  },
+  {
+    "id": "ards-patho-4",
+    "topic": "ARDS: Pathophysiology and Management",
+    "domain": "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)",
+    "discipline": "medicine",
+    "stem": "In a surgical patient with active ARDS, what should guide intraoperative ventilation strategy?",
+    "answer": "Continue lung-protective ventilation: Vt 4-6 mL/kg IBW, PEEP, limit plateau pressure; permissive hypercapnia acceptable",
+    "rationale": "Anesthetic management of critically ill patients with acute pulmonary disorders should continue intensive care principles intraoperatively to avoid worsening VILI.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 875
+      }
+    ],
+    "confusable_with": "standard 8-10 mL/kg Vt (harmful in ARDS due to volutrauma)"
+  },
+  {
+    "id": "ards-patho-5",
+    "topic": "ARDS: Pathophysiology and Management",
+    "domain": "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)",
+    "discipline": "medicine",
+    "stem": "What preoperative aspiration precautions should be taken for high-risk patients to reduce ARDS from aspiration?",
+    "answer": "Metoclopramide + H2-blocker + antacid preop; awake or upright intubation or RSI; NGT to suction if present",
+    "rationale": "High-risk patients require pharmacologic and procedural strategies to reduce gastric volume and acidity, preventing the aspiration that precipitates chemical pneumonitis and ARDS.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 74
+      }
+    ],
+    "confusable_with": "routine elective patients (no evidence for pharmacologic prophylaxis in low-risk patients)"
+  },
+  {
+    "id": "abd-pelv-trauma-1",
+    "topic": "Abdominal & Pelvic Trauma",
+    "domain": "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)",
+    "discipline": "medicine",
+    "stem": "What is the goal of damage control surgery (DCS) for abdominal trauma?",
+    "answer": "Stop hemorrhage and limit GI contamination; defer definitive repair until patient is physiologically stabilized",
+    "rationale": "DCS prioritizes life-threatening bleeding control and GI contamination containment over anatomic repair, allowing resuscitation and physiologic normalization before definitive surgery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1335
+      }
+    ],
+    "confusable_with": "definitive repair (this is deferred until patient is more stable; hollow viscus disconnected, not repaired)"
+  },
+  {
+    "id": "abd-pelv-trauma-2",
+    "topic": "Abdominal & Pelvic Trauma",
+    "domain": "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)",
+    "discipline": "medicine",
+    "stem": "What vascular structures are primarily at risk in pelvic ring fractures causing life-threatening hemorrhage?",
+    "answer": "Superior gluteal artery (branches from internal iliac) plus inferior gluteal, rectal, obturator, and vesical arteries; venous injury common alongside arterial",
+    "rationale": "Pelvic ring fractures disrupt intrapelvic vasculature; hemorrhage from these vessels can fill the pelvic retroperitoneum rapidly and is a major cause of trauma mortality.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Abdominal & Pelvic Trauma",
+        "page": 2
+      }
+    ],
+    "confusable_with": "external iliac artery (less commonly injured in pelvic ring fractures)"
+  },
+  {
+    "id": "abd-pelv-trauma-3",
+    "topic": "Abdominal & Pelvic Trauma",
+    "domain": "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)",
+    "discipline": "medicine",
+    "stem": "What does a FAST exam detect in pelvic trauma, and what is its limitation?",
+    "answer": "Detects free fluid; cannot differentiate bowel contents from blood",
+    "rationale": "FAST is rapid bedside ultrasound identifying free peritoneal fluid, but it lacks specificity to distinguish hemorrhage from GI spillage, limiting diagnostic certainty.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Abdominal & Pelvic Trauma",
+        "page": 5
+      }
+    ],
+    "confusable_with": "CT scan (differentiates fluid types and identifies organ injuries; requires hemodynamic stability)"
+  },
+  {
+    "id": "abd-pelv-trauma-4",
+    "topic": "Abdominal & Pelvic Trauma",
+    "domain": "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)",
+    "discipline": "medicine",
+    "stem": "What monitoring tools guide targeted blood product resuscitation in pelvic trauma?",
+    "answer": "TEG (thromboelastography) or ROTEM (rotational thromboelastometry)",
+    "rationale": "Viscoelastic assays provide real-time assessment of the entire coagulation process, enabling goal-directed transfusion of specific blood components rather than empiric 1:1:1 ratios.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Abdominal & Pelvic Trauma",
+        "page": 5
+      }
+    ],
+    "confusable_with": "standard coagulation panel (PT/aPTT/fibrinogen — slower, less actionable in acute hemorrhage)"
+  },
+  {
+    "id": "abd-pelv-trauma-5",
+    "topic": "Abdominal & Pelvic Trauma",
+    "domain": "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)",
+    "discipline": "medicine",
+    "stem": "In a hemodynamically unstable patient with suspected pelvic fracture, what quick imaging study directs care without delaying resuscitation?",
+    "answer": "Pelvic X-ray (rapid, can identify pelvic ring disruption and guide intervention without CT)",
+    "rationale": "In unstable patients, a quick AP pelvic X-ray can identify life-threatening pelvic ring fractures and direct hemorrhage control (binder, IR, DCS) without the time delay of CT.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Abdominal & Pelvic Trauma",
+        "page": 5
+      }
+    ],
+    "confusable_with": "CT scan (requires hemodynamic stability; inappropriate if patient too unstable to leave trauma bay)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Abdominal & Pelvic Trauma",
+    "discipline": "medicine",
+    "enabling_conditions": "High-energy trauma (MVA, falls, crush); pelvic ring fractures; blunt or penetrating abdominal injury",
+    "pathophysiology": "Disruption of pelvic vasculature (particularly internal iliac branches) leads to retroperitoneal hematoma and hemorrhagic shock; hollow viscus injury causes peritoneal contamination",
+    "time_course": "Immediate hemorrhagic shock; peritonitis may develop over hours after viscus injury",
+    "key_features": "Hemodynamic instability, pelvic tenderness, free fluid on FAST, pelvic ring disruption on X-ray",
+    "consequence_if_missed": "Exsanguination from uncontrolled pelvic hemorrhage; delayed peritonitis from missed hollow viscus injury"
+  }
+]

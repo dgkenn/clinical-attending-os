@@ -1,0 +1,511 @@
+[
+  {
+    "id": "niv-1",
+    "topic": "Noninvasive Ventilation (NIV)",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "medicine",
+    "stem": "In which acute respiratory failure population is NIV preferred over intubation as first-line ventilatory support?",
+    "answer": "Patients with COPD exacerbation and acute respiratory failure; NIV preferred over invasive mechanical ventilation as initial mode",
+    "rationale": "NIV avoids complications of intubation (VAP, airway injury) and is associated with improved outcomes in hypercapnic respiratory failure from COPD.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   GOLD 2024 COPD Full Report",
+        "page": 121
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "niv-2",
+    "topic": "Noninvasive Ventilation (NIV)",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "medicine",
+    "stem": "What absolute contraindications prevent safe application of NIV?",
+    "answer": "Facial trauma or burns (impedes mask fitting); fixed upper airway obstruction; active vomiting (aspiration risk)",
+    "rationale": "These conditions prevent effective mask sealing or create unacceptable aspiration or airway compromise risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Noninvasive Ventilation (NIV)",
+        "page": 4
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "niv-3",
+    "topic": "Noninvasive Ventilation (NIV)",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "medicine",
+    "stem": "What complications are specifically associated with NIV that must be monitored?",
+    "answer": "Gastric insufflation and aspiration, facial skin breakdown, excessively high tidal volumes, patient discomfort (inability to eat or phonate)",
+    "rationale": "Positive pressure delivered by mask can cause gas swallowing, pressure injury, and volume-related lung injury if not carefully titrated.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 36
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "niv-4",
+    "topic": "Noninvasive Ventilation (NIV)",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "medicine",
+    "stem": "What clinical assessment determines when a patient on NIV requires escalation to endotracheal intubation?",
+    "answer": "Clinical deterioration, ventilatory failure despite NIV, or intolerance to therapy",
+    "rationale": "Failure to improve oxygenation or ventilation, worsening mental status, or inability to tolerate the mask are indications to proceed to definitive airway.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Noninvasive Ventilation (NIV)",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "niv-5",
+    "topic": "Noninvasive Ventilation (NIV)",
+    "domain": "Internal medicine: ICU & critical care",
+    "discipline": "medicine",
+    "stem": "What was the reported range of invasive mechanical ventilation use in early COVID-19 ICU admissions among COPD patients?",
+    "answer": "Wide variation: 2.3% to 33% in early reported rates of IMV in hospitalized COPD-COVID patients",
+    "rationale": "COPD increased risk of ICU admission in some studies but IMV use was heterogeneous across centers.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   GOLD 2024 COPD Full Report",
+        "page": 145
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pneu-sp-1",
+    "topic": "Pneumonia: Special Populations & Organisms",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What pathogen is a relatively common cause of both hospital-acquired and ventilator-associated pneumonia?",
+    "answer": "Staphylococcus aureus, particularly MRSA (methicillin-resistant S. aureus)",
+    "rationale": "MRSA colonizes the upper respiratory tract and is a frequent HAP/VAP pathogen requiring vancomycin or linezolid therapy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Pneumonia  Special Populations & Organisms",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pneu-sp-2",
+    "topic": "Pneumonia: Special Populations & Organisms",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What is the reported specificity of MRSA nasal swab testing in the context of S. aureus pneumonia workup?",
+    "answer": "MRSA nasal swab specificity of 96.1% to 99.2% for MRSA pneumonia",
+    "rationale": "High specificity supports use of nasal MRSA swab as a de-escalation tool; negative swab argues against MRSA pneumonia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Pneumonia  Special Populations & Organisms",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pneu-sp-3",
+    "topic": "Pneumonia: Special Populations & Organisms",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What interprofessional outcome does coordinated team care improve in staphylococcal pneumonia?",
+    "answer": "Care coordination among interprofessional team members improves outcomes in staphylococcal pneumonia (HAP/VAP)",
+    "rationale": "Complex HAP/VAP management requires antibiotic stewardship, respiratory therapy, infectious disease input, and nursing coordination.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Pneumonia  Special Populations & Organisms",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pm-dm-1",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What are the pathognomonic findings of dermatomyositis on physical examination?",
+    "answer": "V-neck sign, shawl rash, heliotrope rash; proximal muscle weakness (deltoids, hip flexors, neck flexors); mild muscle tenderness; distal strength preserved; DTRs normal",
+    "rationale": "DM has characteristic cutaneous findings plus proximal myopathy; distal sparing and preserved reflexes help distinguish from neuropathy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 4
+      }
+    ],
+    "confusable_with": "Polymyositis (no skin findings)"
+  },
+  {
+    "id": "pm-dm-2",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What autoantibody in dermatomyositis is associated with acute onset disease, V-neck sign, and shawl rash?",
+    "answer": "Anti-Mi2 (directed against helicase); associated with acute disease onset and classic cutaneous findings",
+    "rationale": "Anti-Mi2 targets nuclear helicase; this MSA predicts florid cutaneous DM with acute onset.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pm-dm-3",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "Which patient factors predict occult malignancy in inflammatory myopathy?",
+    "answer": "Male gender, older age at onset, presence of dysphagia, absence of interstitial lung disease",
+    "rationale": "DM is a paraneoplastic syndrome in a subset; these features identify patients warranting malignancy screening.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 5
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pm-dm-4",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What is the pathophysiology of vascular injury in dermatomyositis?",
+    "answer": "Complement factor C3 activation -> C3b/C4b deposition -> C3bNEO neoantigen -> C5b-C9 membrane attack complex deposits on muscle capillary endothelium -> vasculopathy",
+    "rationale": "DM is a complement-mediated vasculopathy; capillary loss causes perifascicular muscle ischemia rather than direct T-cell myocyte attack (unlike polymyositis).",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 3
+      }
+    ],
+    "confusable_with": "Polymyositis"
+  },
+  {
+    "id": "pm-dm-5",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What feature distinguishes inclusion body myositis from dermatomyositis on muscle biopsy and treatment response?",
+    "answer": "IBM shows characteristic inclusion bodies on biopsy and is refractory to corticosteroids (unlike DM/PM which respond)",
+    "rationale": "IBM is a degenerative myopathy with distinct pathology; immunosuppression does not alter its course.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 10
+      }
+    ],
+    "confusable_with": "Dermatomyositis"
+  },
+  {
+    "id": "pm-dm-6",
+    "topic": "Polymyositis & dermatomyositis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What are the most common drug causes of drug-induced myopathy that must be excluded before diagnosing DM/PM?",
+    "answer": "Statins, alcohol, penicillamine, colchicine, glucocorticoids, zidovudine, and antimalarials",
+    "rationale": "Drug-induced myopathy is reversible on withdrawal; these agents must be excluded before attributing weakness to idiopathic inflammatory myopathy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Polymyositis & dermatomyositis",
+        "page": 10
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Polymyositis & dermatomyositis",
+    "discipline": "medicine",
+    "enabling_conditions": "Adults 40-60; DM also in children; female predominance; environmental triggers (UV, myositis-associated viruses)",
+    "pathophysiology": "DM: complement-mediated capillary vasculopathy -> perifascicular ischemia; PM: CD8+ T-cell direct myocyte invasion",
+    "time_course": "Subacute weeks to months; acute onset in anti-Mi2 DM",
+    "key_features": "DM: heliotrope rash, Gottron papules, V-neck/shawl sign, proximal weakness, elevated CK/aldolase, myositis-specific antibodies; PM: no skin findings",
+    "consequence_if_missed": "ILD (anti-synthetase syndrome), cardiac involvement, occult malignancy, aspiration from pharyngeal weakness"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Dermatomyositis",
+    "topic_b": "Inclusion Body Myositis",
+    "discriminator": "DM: skin rash, complement vasculopathy, responds to steroids, paraneoplastic association; IBM: no rash, inclusion bodies on biopsy, distal + asymmetric weakness, steroid-refractory"
+  },
+  {
+    "id": "pca-1",
+    "topic": "Post-Cardiac Arrest Care",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What temperature range does ACLS recommend for TTM in patients who do not follow commands after ROSC?",
+    "answer": "32-36 degrees C; use controlled cooling devices; active cooling is supported by current guidelines",
+    "rationale": "TTM reduces ischemia-reperfusion brain injury after cardiac arrest by decreasing cerebral metabolic demand.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole)",
+        "page": 11
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pca-2",
+    "topic": "Post-Cardiac Arrest Care",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What are the four main components of comprehensive post-cardiac arrest care?",
+    "answer": "Hemodynamic support, mechanical ventilation, targeted temperature management, and identification/treatment of reversible SCA causes",
+    "rationale": "Ischemia-reperfusion injury from cardiac arrest affects multiple organ systems requiring simultaneous multi-system interventions.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole)",
+        "page": 10
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pca-3",
+    "topic": "Post-Cardiac Arrest Care",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the initial evaluation after ROSC to identify reversible causes of cardiac arrest?",
+    "answer": "Evaluate for possible SCA causes; initial assessment includes clinical evaluation for reversible etiologies (Hs and Ts)",
+    "rationale": "Treating the underlying cause prevents recurrent arrest; coronary angiography for suspected ACS, CT for structural causes.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 9
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pca-4",
+    "topic": "Post-Cardiac Arrest Care",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "How does survival rate change with each minute of delayed defibrillation in ventricular fibrillation?",
+    "answer": "Survival decreases approximately 10% per minute without defibrillation in VF; defibrillation within 3-5 minutes is ideal",
+    "rationale": "VF causes progressive global ischemia; early defibrillation restores perfusion before irreversible myocardial and cerebral injury occurs.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "pca-5",
+    "topic": "Post-Cardiac Arrest Care",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What ACLS monitoring parameters should be continuously assessed during CPR to improve performance?",
+    "answer": "Chest compression rate and depth, chest recoil, ventilation rate and force; accelerometer-equipped devices provide real-time feedback",
+    "rationale": "Real-time feedback corrects suboptimal CPR performance and improves ROSC rates.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole)",
+        "page": 9
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "psa-1",
+    "topic": "Psoriatic arthritis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What medications decrease progression of ankylosing spondylitis and related spondyloarthropathies including psoriatic arthritis?",
+    "answer": "Anti-TNF-alpha agents (infliximab, etanercept, adalimumab, golimumab) decrease progression when administered early",
+    "rationale": "TNF-alpha drives inflammation and structural joint damage in spondyloarthropathies; early biologic therapy halts radiographic progression.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1745
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "psa-2",
+    "topic": "Psoriatic arthritis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What infectious and malignant risks accompany anti-TNF therapy in spondyloarthropathies including psoriatic arthritis?",
+    "answer": "Increased risk of serious infection and development of lymphoma with anti-TNF agents",
+    "rationale": "TNF is required for granuloma maintenance and immune surveillance; blockade impairs defense against intracellular pathogens and may promote lymphoma.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1745
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "psa-3",
+    "topic": "Psoriatic arthritis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "Which cardiovascular structure is affected by psoriatic arthritis and related spondyloarthropathies via aortic annulus dilation?",
+    "answer": "Aortic valve (aortic regurgitation) from dilation of the aortic annulus",
+    "rationale": "Inflammation causes annuloaortic ectasia, disrupting coaptation of aortic valve leaflets and causing regurgitation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 676
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "psa-4",
+    "topic": "Psoriatic arthritis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "Unlike rheumatoid arthritis, which part of the spine is typically spared in RA but involved in psoriatic/reactive arthritis?",
+    "answer": "RA typically spares the spine except cervical zygapophyseal joints; psoriatic and reactive arthritis can involve the full spine with axial disease",
+    "rationale": "Spondyloarthropathies have characteristic sacroiliac joint and axial involvement; RA is a predominantly peripheral arthritis.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1745
+      }
+    ],
+    "confusable_with": "Rheumatoid arthritis"
+  },
+  {
+    "id": "psa-5",
+    "topic": "Psoriatic arthritis",
+    "domain": "Internal medicine: rheumatology, immunology & allergy",
+    "discipline": "medicine",
+    "stem": "What extraspinal features distinguish psoriatic arthritis and reactive arthritis from RA?",
+    "answer": "Extraspinal manifestations (skin psoriasis, eye inflammation, GU/GI features) are usually more prominent than spinal disease in psoriatic and reactive arthritis",
+    "rationale": "Spondyloarthropathies are multisystem diseases with characteristic extra-articular manifestations reflecting shared HLA-B27-associated inflammation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1745
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "qtc-1",
+    "topic": "QTc Prolongation & Torsades de Pointes",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What are the upper limits of normal QTc, and how is the QT interval measured?",
+    "answer": "Normal QTc <=460 ms; borderline: 460-479 ms (female), 450-459 ms (male); measure from QRS onset to end of T wave in lead with T wave >2 mm (best in II, V5)",
+    "rationale": "QTc correlates with ventricular repolarization time; prolongation increases risk of re-entrant arrhythmia (torsades de pointes).",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 15
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "qtc-2",
+    "topic": "QTc Prolongation & Torsades de Pointes",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the risk relationship between QTc prolongation and torsades de pointes?",
+    "answer": "QTc prolongation is a risk factor for torsades de pointes; this risk increases substantially with depressed LVEF",
+    "rationale": "Prolonged repolarization creates a vulnerable window for early afterdepolarizations that trigger the characteristic polymorphic VT of TdP.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypocalcemia  Causes and Management",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "qtc-3",
+    "topic": "QTc Prolongation & Torsades de Pointes",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "When does ibutilide-associated torsades de pointes typically occur, and who is at highest risk?",
+    "answer": "Most cases occur within 30 minutes of the last dose; rarely reported up to 2 hours later; risk increased with depressed LVEF",
+    "rationale": "Ibutilide's class III antiarrhythmic effect prolongs repolarization; systolic dysfunction amplifies TdP risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation",
+        "page": 83
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "qtc-4",
+    "topic": "QTc Prolongation & Torsades de Pointes",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What electrolyte disturbance must be corrected to reduce TdP risk, and what is the pathophysiology?",
+    "answer": "Hypokalemia: maintain K+ >=4 mEq/L; hypokalemia potentiates early afterdepolarizations by reducing outward K+ repolarizing current, further prolonging QT",
+    "rationale": "K+ current (IKr) is essential for phase 3 repolarization; hypokalemia blocks IKr and amplifies QT prolongation from any cause.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypocalcemia  Causes and Management",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "qtc-5",
+    "topic": "QTc Prolongation & Torsades de Pointes",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the concern with dronedarone in patients with advanced heart failure and AF?",
+    "answer": "Dronedarone had higher mortality in NYHA class III-IV HF patients with AF compared to placebo; not recommended in severe HF",
+    "rationale": "Dronedarone's negative inotropic and proarrhythmic effects are poorly tolerated in severely depressed cardiac function.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation",
+        "page": 79
+      }
+    ],
+    "confusable_with": "Amiodarone"
+  }
+]

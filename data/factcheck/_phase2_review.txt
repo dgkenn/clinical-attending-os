@@ -1,0 +1,69 @@
+=== curated-phase2_unit_198 | RRT Indications - When to Start and Relative Contraindicatio | score=0.768
+RRT indications (RIFLE/KDIGO based): (1) Refractory hyperkalemia (K+ >6.5 refractory to medical management). (2) Refractory pulmonary edema/fluid overload (oliguria, high fluid requirements). (3) Severe metabolic acidosis (pH <7.1 refractory). (4) Uremia symptoms (encephalopathy, pericarditis, bleeding). (5) Severe electrolyte abnormalities (hyponatremia, hypocalcemia unresponsive to treatment). Relative contraindications: hemodynamic instability (relative; CRRT preferred over intermittent), act
+
+=== curated-phase2_unit_199 | Hyperkalemia - EKG Changes and Treatment Algorithm | score=0.870
+Hyperkalemia: K+ >5.5 mEq/L. Symptoms: weakness, palpitations, syncope (rare until K+ >7). EKG changes (progressive): peaked T waves (K+ 5.5-6.5), prolonged PR/widened QRS (K+ 6.5-7.5), loss of P wave/bradycardia, sine wave (K+ >8, cardiac arrest imminent). Absent symptoms/EKG doesn't exclude danger (can progress rapidly). Management algorithm: (1) Calcium gluconate 10-20 mL of 10% IV bolus (cardiac membrane stabilization, no K+ lowering, 30-60 min duration). (2) Insulin 10 units IV + dextrose 2
+
+=== curated-phase2_unit_200 | Hyponatremia - Osmolality Assessment and SIADH | score=0.760
+Hyponatremia: Na+ <135 mEq/L. Classify by osmolality: hyperosmolar (hyperglycemia, mannitol, contrast), isosmolar (pseudohyponatremia from lipemia/proteinemia, now rare with direct Na+ measurement), hypoosmolar (true dilution). Hypoosmolar causes: SIADH (euvolemic, urine osmolality >100, urine Na+ >40), diuretics (hypovolemic, urine Na+ >20, low urine osmolality), heart failure/cirrhosis/nephrotic (hypervolemic). SIADH diagnosis: euvolemic hyponatremia, low serum osmolality (<280), high urine os
+
+=== curated-phase2_unit_201 | Symptomatic vs Asymptomatic Hyponatremia - Acute vs Chronic | score=0.720
+Symptomatic hyponatremia: nausea, headache, confusion, lethargy, seizures (Na+ <120), coma, death (if severe <110). Acute hyponatremia (<48h): cells haven't adapted, increased intracellular fluid volume -> cerebral edema risk at lower Na+ levels. Chronic hyponatremia (>48h): osmolytes extruded from cells, cerebral edema less likely even if Na+ very low. Correction rate critical: too-rapid correction (>12 mEq/L in 24h) risks central pontine myelinolysis (demyelination, locked-in syndrome, death).
+
+=== curated-phase2_unit_202 | Hyponatremia Treatment - 3% Saline, Fluid Restriction, Vapta | score=0.795
+3% hypertonic saline (NaCl 3%): reserved for symptomatic acute hyponatremia. Dosing: 1-2 mL/kg IV bolus (50-100 mL), repeat once after seizure cessation, then reassess. Calculate Na+ rise: change in Na+ = ([Na+ infused] - [Na+ serum]) / (total body water + 1). Example: 100 mL 3% saline (513 mEq/L) in 70 kg patient (TBW ~42L) = ~1 mEq/L rise. Fluid restriction: first-line for SIADH, restrict to 500-800 mL/day. Vaptans (tolvaptan, conivaptan): vasopressin antagonists, aquaretics (promote free wate
+
+=== curated-phase2_unit_203 | Hypernatremia - Causes and Free Water Deficit Calculation | score=0.731
+Hypernatremia: Na+ >145 mEq/L. Causes: insensible losses (diabetes insipidus, sweating, diarrhea, inadequate intake, hypertonic fluid administration. Diabetes insipidus (DI): central (pituitary damage/surgery, hypothyroidism, trauma, idiopathic) vs nephrogenic (congenital, lithium, hypercalcemia, CKD). Presentation: polyuria, polydipsia (if intact thirst), hypernatremia (if intake insufficient), hypertonicity symptoms (restlessness, confusion, lethargy). Free water deficit calculation: FWD (lite
+
+=== curated-phase2_unit_204 | Correction Rate Calculations - Avoiding Osmotic Demyelinatio | score=0.795
+Osmotic demyelination syndrome (ODS): central pontine + extrapontine myelinolysis from overly rapid Na+ correction (>12 mEq/L in 24h). Risk: chronic hyponatremia (cells adapted), rapid correction re-creates osmotic gradient = cellular dehydration -> demyelination. Symptoms: flaccid paralysis, locked-in appearance, death (acute), behavioral changes/movement disorders (delayed recovery phase). Prevention: limit correction to 4-8 mEq/L per 24h (chronic) or 10-12 mEq/L per 24h (acute symptomatic). M
+
+=== curated-phase2_unit_205 | Thyroid Physiology - TSH, T3, T4, Reverse T3 | score=0.707
+TSH (thyroid-stimulating hormone): pituitary hormone stimulating thyroid hormone production. Feedback: low T4 -> high TSH (stimulates production); high T4 -> low TSH (suppresses). T4 (thyroxine): inactive precursor, 99% protein-bound, half-life 7 days. T3 (triiodothyronine): active hormone, faster-acting, converted from T4 peripherally. Reverse T3: inactive metabolite, increased in illness/stress. Free T4/T3: unbound, biologically active (preferred to measure). TSH most sensitive screening test 
+
+=== curated-phase2_unit_206 | TSH as Screening Test - Strengths and Limitations | score=0.755
+TSH advantages: most sensitive for primary hypo/hyperthyroidism, inexpensive, standard screening. First-line test for suspected thyroid disease. Limitations: (1) central hypo/hyperthyroidism (pituitary/hypothalamus disease) = normal TSH despite abnormal free T4 (rare). (2) Acute illness suppresses TSH (euthyroid sick syndrome). (3) Pregnancy, medications (estrogens, dopamine agonists, amiodarone) affect interpretation. (4) Population variation: 10-15% outside standard range without disease. Reco
+
+=== curated-phase2_unit_207 | Hypothyroidism - Hashimoto's and Iodine Deficiency | score=0.782
+Hypothyroidism: elevated TSH, low free T4 (primary). Causes: Hashimoto thyroiditis (90% developed countries, autoimmune, anti-TPO/anti-thyroglobulin antibodies), iodine deficiency (worldwide leading cause of preventable hypothyroidism), medications (amiodarone, lithium, interferon), central causes (pituitary, hypothalamus). Hashimoto: slow progressive destruction, women >men, genetic predisposition. Iodine deficiency: endemic goiter, cretinism if severe in pregnancy. Presentation: fatigue, cold 
+
+=== curated-phase2_unit_208 | Hypothyroidism Treatment - Levothyroxine Dosing and Monitori | score=0.782
+Levothyroxine (synthetic T4): first-line treatment for hypothyroidism. Dosing: 1.6 mcg/kg daily (usually 25-200 mcg depending on baseline TSH/body weight). Start low (25-50 mcg), increase by 25-50 mcg every 4-6 weeks until euthyroid. Take on empty stomach (fasting absorption best, 30-60 min before food/supplements). Recheck TSH 6-8 weeks after dose change (steady state takes 4-6 weeks due to long half-life). Titrate to TSH 0.5-2.5 mIU/L (target patient-specific: lower in post-thyroidectomy/thyro
+
+=== curated-phase2_unit_209 | Levothyroxine - Drug Interactions and Bioavailability Issues | score=0.735
+Levothyroxine interactions: calcium (dairy, supplements), iron (ferrous sulfate), magnesium, aluminum hydroxide (antacids), proton pump inhibitors all decrease absorption (space dosing by 4+ hours). Estrogens (oral contraceptives, HRT) increase clearance; may need higher levothyroxine dose. Amiodarone, salicylates, anticonvulsants affect binding/metabolism. Switching brands: maintain same manufacturer if possible (bioequivalence varies slightly). Adequate dosing indicated by: TSH at goal, sympto
+
+=== curated-phase2_unit_210 | Hyperthyroidism - Graves Disease and Toxic Nodule | score=0.795
+Hyperthyroidism: low TSH, high free T4 (primary). Causes: Graves disease (autoimmune, 70% cases, TSI antibodies), toxic adenoma/multinodular goiter (10-15%), thyroiditis (viral, postpartum, drug-induced), drugs (iodine excess, amiodarone). Graves: women >men, genetic predisposition, associated ophthalmopathy (exophthalmos, diplopia), dermopathy (pretibial myxedema). Presentation: heat intolerance, anxiety, palpitations, weight loss, tremor, hyperdefecation, thyroid bruit (Graves), stare/lid lag.
+
+=== curated-phase2_unit_211 | Thyroid Storm - Life-Threatening Emergency | score=0.685
+Thyroid storm: decompensated hyperthyroidism, mortality 1-5% even treated, >25% if untreated. Triggers: inadequate antithyroid treatment, infection, surgery/anesthesia in untreated hyperthyroid. Presentation: fever (often high, >38.5C), tachycardia (often >140), atrial fibrillation, altered mental status, thyroid enlargement, GI symptoms (diarrhea, nausea), jaundice, hepatomegaly. Pathophysiology: excess thyroid hormone causing sympathomimetic toxicity, altered TH metabolism. Management: urgent 
+
+=== curated-phase2_unit_212 | PTU vs Methimazole - Dosing and Toxicity Profile | score=0.706
+PTU (propylthiouracil): blocks thyroid peroxidase (TPO), reduces T4/T3 synthesis + inhibits T4->T3 conversion (faster symptom improvement). Dosing: 50-100 mg TID (start), taper to 25-50 mg TID maintenance. Risk: hepatotoxicity (0.1-0.3%, can be fulminant), agranulocytosis (rare), rash. Preferred in first trimester pregnancy (crosses placenta less), thyroid storm (faster T4->T3 inhibition). Methimazole: blocks TPO, T4/T3 synthesis only. Dosing: 5-20 mg daily. Risk: agranulocytosis (0.3%), rash, a
+
+=== curated-phase2_unit_213 | Beta-Blockers for Symptom Control in Hyperthyroidism | score=0.795
+Beta-blockers (propranolol, atenolol, metoprolol): treat adrenergic symptoms (palpitations, tremor, anxiety) WITHOUT affecting thyroid hormone production. Used while waiting for PTU/methimazole or radioactive iodine to take effect (weeks). Propranolol preferred (also blocks T4->T3 conversion, reducing hormone activation). Dosing: propranolol 40-120 mg daily (TID-QID), target HR 60-80. Continue during antithyroid treatment until euthyroid (TSH normalized). Monitor: HR, symptoms, hypoglycemia risk
+
+=== curated-phase2_unit_214 | Radioactive Iodine and Thyroidectomy - Definitive Treatment  | score=0.646
+Radioactive iodine (I-131): sodium iodide oral, accumulates in thyroid, destroys hyperactive tissue. Advantages: outpatient, definitive, single dose. Disadvantages: delayed effect (4-12 weeks to euthyroid), radiation exposure (low, contraindicated in pregnancy/breastfeeding), hypothyroidism develops in 80% over lifetime (requires levothyroxine replacement). Pregnancy/lactation absolute contraindication. Thyroidectomy: surgical ablation of thyroid. Advantages: immediate definitive cure, option if
+
+=== curated-phase2_unit_215 | Thyroiditis - Viral, Autoimmune, Drug-Induced | score=0.723
+Thyroiditis: inflammation of thyroid gland, various etiologies. Viral (subacute): self-limited, follows viral URI, presents with thyroid pain, hyperthyroidism phase (T4 release) -> hypothyroid phase (recovery), 3-6 months course. Autoimmune (Hashimoto): progressive destruction (covered under hypothyroidism). Postpartum thyroiditis: autoimmune flare postpartum, 5-10% women, mild hyperthyroid phase then hypothyroid phase, usually self-limited but some develop permanent hypothyroidism. Drug-induced
+
+=== curated-phase2_unit_216 | Postpartum Thyroiditis - Natural History and Management | score=0.735
+Postpartum thyroiditis: autoimmune thyroiditis occurring 3-12 months postpartum. Incidence 5-10% postpartum, higher in women with positive TPO antibodies. Phases: (1) thyrotoxic phase (weeks 1-4 postpartum) - hormone release from damaged thyroid, low TSH, high T4, no iodine uptake. (2) Hypothyroid phase (weeks 4-12) - gland depleted, TSH elevated, low T4, symptoms of hypothyroidism. (3) Recovery phase (weeks 12-52) - most women return to euthyroid but 25% develop permanent hypothyroidism (long-t
+
+=== curated-phase2_unit_217 | Thyroid Nodules and Cancer Screening | score=0.760
+Thyroid nodules: palpable in 5% population, incidental ultrasound findings 16-67% (increased detection). Cancer risk 5-15% of nodules. Worrisome features: hard, fixed, rapid growth, associated lymphadenopathy, dysphagia, dysphonia (recurrent laryngeal nerve involvement), hyperfunctioning (low TSH, high uptake = Plummer's disease, benign but functional). Diagnosis: TSH first (suppress cancer likelihood), then ultrasound (characterize nodule), FNA (fine-needle aspiration) if concerning features or
+
+=== curated-phase2_unit_218 | Thyroid Antibodies and Autoimmune Thyroid Disease | score=0.738
+TPO (thyroid peroxidase) antibodies: present in Hashimoto, Graves, may predict future hypothyroidism (30% positive TPO without overt disease). Thyroglobulin antibodies: often coexist with TPO, associated with autoimmune thyroid disease. TSI (thyroid-stimulating immunoglobulin): specific for Graves disease, activates TSH receptors. TSH receptor antibodies (TRAb): alternative to TSI, confirms Graves. Use: TPO/thyroglobulin antibodies help diagnosis of autoimmune hypothyroidism; TSI/TRAb confirm Gr
+
+=== curated-phase2_unit_219 | Iodine Excess - Jod-Basedow and Wolff-Chaikoff Effect | score=0.782
+Iodine excess sources: iodized salt, seaweed/kelp supplements, amiodarone (high iodine content), radiographic contrast, iodine-containing antiseptics. Acute iodine excess: Wolff-Chaikoff effect (TSH decreases, T4/T3 decrease transiently, self-limited as adaptation occurs). Jod-Basedow phenomenon: hyperthyroidism precipitated by sudden iodine excess in iodine-deficient areas or underlying thyroid disease (Graves, nodule). Amiodarone: high iodine content (75 mg elemental iodine per 200 mg tablet) 
+
+=== curated-phase2_unit_220 | Amiodarone-Induced Thyroid Dysfunction | score=0.782
+Amiodarone (antiarrhythmic): contains high iodine, causes hypo/hyperthyroidism, abnormal TFTs even without overt dysfunction. Hypothyroidism (10% patients): Wolff-Chaikoff effect in predisposed individuals, risk if iodine deficiency, autoimmune thyroiditis history. Hyperthyroidism Type I (5%): iodine excess in underlying Graves or nodule (Jod-Basedow). Hyperthyroidism Type II (5%): thyroiditis with hormone release (different mechanism). Thyroiditis (amiodarone direct toxicity). Monitoring: TSH +
+

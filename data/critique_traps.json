@@ -1,0 +1,153 @@
+{
+  "_comment": "Errorful learning: each topic maps to a list of plausible-wrong reasoning chains. The 'wrong' field is what the user is asked to critique. Hand-curated for high-yield clinical scenarios.",
+  "Hyperkalemia": [
+    {"wrong": "Give magnesium first to stabilize the cardiac membrane.",
+     "why_wrong": "Calcium (gluconate or chloride), not magnesium, stabilizes the cardiac membrane in hyperkalemia.",
+     "right": "Calcium gluconate 1 g IV stabilizes the membrane within minutes."}
+  ],
+  "Sepsis": [
+    {"wrong": "Hold antibiotics until blood cultures result, then narrow.",
+     "why_wrong": "Empiric broad-spectrum antibiotics within 1 hour of recognition save lives; cultures are drawn before antibiotics but you do NOT delay therapy waiting for them.",
+     "right": "Draw cultures, give broad-spectrum antibiotics within 1 hour, fluids 30 mL/kg, lactate."}
+  ],
+  "Anaphylaxis": [
+    {"wrong": "Give IV diphenhydramine first; epinephrine if no response.",
+     "why_wrong": "Epinephrine IM is the first-line treatment for anaphylaxis. H1 blockers and steroids are adjuncts, not primary therapy.",
+     "right": "Epinephrine 0.3-0.5 mg IM into the lateral thigh immediately."}
+  ],
+  "ARDS": [
+    {"wrong": "Use 10 mL/kg tidal volumes to maintain minute ventilation.",
+     "why_wrong": "Low tidal volume ventilation (6 mL/kg of predicted body weight) reduces mortality. High Vt causes volutrauma.",
+     "right": "6 mL/kg PBW, plateau pressure <30, PEEP per ARDSnet table."}
+  ],
+  "Aortic stenosis": [
+    {"wrong": "Give phenylephrine for hypotension to raise SVR.",
+     "why_wrong": "Phenylephrine is actually correct in AS — increases afterload and coronary perfusion. (Trick: this is the right answer; what's WRONG is reflexively reaching for ephedrine or fluid bolus alone in AS hypotension.)",
+     "right": "Maintain afterload (phenylephrine), preload, sinus rhythm, normal HR."}
+  ],
+  "Malignant hyperthermia": [
+    {"wrong": "Stop the volatile, give cooling, and continue surgery.",
+     "why_wrong": "Dantrolene 2.5 mg/kg IV is the definitive treatment and must be given immediately. Stopping volatile and cooling are necessary but not sufficient.",
+     "right": "Stop trigger, dantrolene 2.5 mg/kg IV, hyperventilate 100% O2, cool, treat hyperkalemia."}
+  ],
+  "LAST": [
+    {"wrong": "Bolus epinephrine 1 mg IV like ACLS.",
+     "why_wrong": "In LAST, use SMALLER doses of epinephrine (≤1 mcg/kg) — the 1 mg ACLS dose can worsen arrhythmia. Lipid emulsion is the key.",
+     "right": "Stop the local anesthetic, secure airway, intralipid 1.5 mL/kg bolus then 0.25 mL/kg/min infusion."}
+  ],
+  "Succinylcholine": [
+    {"wrong": "Sux is safe in burn patients within the first 24 hours.",
+     "why_wrong": "Sux is contraindicated in burns >24-48 hours old due to upregulated extrajunctional ACh receptors causing massive K+ efflux. The first 24h window is debatable; safest to avoid.",
+     "right": "Avoid sux in burns >24-48h, denervation injuries, prolonged immobility, MS, ALS, muscular dystrophies."}
+  ],
+  "Hyponatremia": [
+    {"wrong": "Correct rapidly with 3% saline regardless of chronicity.",
+     "why_wrong": "Rapid correction of chronic hyponatremia causes osmotic demyelination (ODS). Limit correction to ≤8-10 mEq/L in 24h.",
+     "right": "Acute symptomatic: 3% saline 100 mL bolus. Chronic: ≤8-10 mEq/L per 24h, fluid restrict, treat cause."}
+  ],
+  "Afib with RVR": [
+    {"wrong": "Cardiovert immediately if HR >150.",
+     "why_wrong": "Cardioversion is for HEMODYNAMICALLY UNSTABLE afib. For stable RVR, rate control with beta blocker or diltiazem first; consider rhythm control after.",
+     "right": "If unstable → cardiovert. If stable → rate control (metoprolol/diltiazem), anticoagulate per CHA2DS2-VASc."}
+  ],
+  "STEMI": [
+    {"wrong": "Tissue plasminogen activator is first-line if PCI is available within 90 minutes.",
+     "why_wrong": "PCI is the preferred reperfusion strategy when available within 90 min door-to-balloon. tPA is for when PCI is NOT available within 120 min.",
+     "right": "PCI within 90 min if available, otherwise tPA. Aspirin + heparin + dual antiplatelet."}
+  ],
+  "DKA": [
+    {"wrong": "Start insulin immediately — fluids can wait.",
+     "why_wrong": "Volume resuscitation with normal saline comes FIRST. Insulin without fluids worsens intracellular potassium shifts. Also check K+ before insulin — replace if <3.3.",
+     "right": "Fluids first (NS), check K+ (replace if low), then insulin drip. Add D5W when glucose <250."}
+  ],
+  "GI bleed": [
+    {"wrong": "Transfuse to hemoglobin >10 g/dL aggressively.",
+     "why_wrong": "Restrictive transfusion (target 7 g/dL) reduces mortality in upper GI bleed. Higher targets worsen rebleeding.",
+     "right": "Restrictive: target 7 g/dL. PPI, octreotide if variceal, urgent endoscopy."}
+  ],
+  "AKI": [
+    {"wrong": "Start CRRT immediately for any AKI with creatinine >3.",
+     "why_wrong": "RRT indications are AEIOU: Acidosis, Electrolyte disturbance (K+), Intoxications, Overload (refractory), Uremia. Creatinine number alone doesn't trigger.",
+     "right": "RRT for refractory hyperkalemia, severe acidosis, fluid overload not responding, uremic complications, dialyzable toxins."}
+  ],
+  "Hypotension after induction": [
+    {"wrong": "Bolus 1L crystalloid first; if no response, start pressors.",
+     "why_wrong": "Most post-induction hypotension is from anesthetic-induced venodilation/myocardial depression, not hypovolemia. Phenylephrine or ephedrine is faster and more appropriate than fluid alone.",
+     "right": "Reduce volatile, bolus phenylephrine or ephedrine, consider fluid only if volume status warrants."}
+  ],
+  "Bronchospasm": [
+    {"wrong": "Switch to TIVA and stop inhalational agents.",
+     "why_wrong": "Volatile agents are bronchodilators (sevo, iso, des). Going DEEPER on volatile is part of the treatment, not stopping it.",
+     "right": "Deepen anesthesia, 100% O2, albuterol via ETT, epinephrine if severe, rule out anaphylaxis."}
+  ],
+  "Difficult airway": [
+    {"wrong": "Give succinylcholine and try direct laryngoscopy first.",
+     "why_wrong": "Anticipated difficult airway → AWAKE intubation (fiberoptic) preserves spontaneous ventilation. Paralyzing first risks 'cannot intubate, cannot ventilate'.",
+     "right": "Awake fiberoptic intubation with topicalization. Have backup (LMA, surgical airway) ready."}
+  ],
+  "Pneumothorax tension": [
+    {"wrong": "Get a chest X-ray to confirm before decompression.",
+     "why_wrong": "Tension pneumothorax is a CLINICAL diagnosis (hypotension, tracheal deviation, absent breath sounds). Decompress immediately; don't wait for imaging.",
+     "right": "Needle decompression in 2nd ICS midclavicular OR 4th-5th ICS midaxillary, then chest tube."}
+  ],
+  "Stroke acute": [
+    {"wrong": "Give aspirin immediately and tPA within 4.5 hours.",
+     "why_wrong": "Aspirin is HELD for 24h after tPA. Order: confirm ischemic (CT no bleed), tPA if window, then aspirin at 24h.",
+     "right": "Non-contrast CT first (rule out bleed), tPA <4.5h if eligible, no aspirin x 24h after tPA."}
+  ],
+  "Status epilepticus": [
+    {"wrong": "Load phenytoin 20 mg/kg as the first agent.",
+     "why_wrong": "Benzodiazepines (lorazepam IV or IM midazolam) are FIRST-line. Phenytoin/levetiracetam are SECOND-line if seizures continue.",
+     "right": "Lorazepam 0.1 mg/kg IV (or IM midazolam if no IV), then levetiracetam or phenytoin if persists."}
+  ],
+  "Code blue": [
+    {"wrong": "High-quality compressions to a depth of 1 inch at 100/min.",
+     "why_wrong": "Compression depth should be 2-2.4 inches (5-6 cm) in adults. 1 inch is grossly insufficient.",
+     "right": "Compressions 2-2.4 inches, rate 100-120/min, allow full recoil, minimize interruptions."}
+  ],
+  "Hypoxemia": [
+    {"wrong": "Increase FiO2 to 100% and the SpO2 will correct in any cause.",
+     "why_wrong": "Shunt physiology (e.g. severe pneumonia, ARDS) does NOT correct fully with O2 because blood bypasses ventilated alveoli entirely.",
+     "right": "Differentiate FiO2 vs V/Q mismatch vs shunt vs diffusion vs hypoventilation. Shunt needs PEEP/recruitment, not just FiO2."}
+  ],
+  "Vasopressor septic shock": [
+    {"wrong": "Start dopamine first — it's the most balanced pressor.",
+     "why_wrong": "Norepinephrine is first-line in septic shock (lower arrhythmia rate vs dopamine, similar mortality benefit).",
+     "right": "Norepinephrine first, add vasopressin or epinephrine if MAP <65 despite norepi."}
+  ],
+  "Massive transfusion": [
+    {"wrong": "Give crystalloid until BP improves, then start blood products.",
+     "why_wrong": "Massive hemorrhage = activate MTP early. Aggressive crystalloid worsens dilutional coagulopathy and hypothermia. 1:1:1 ratio of pRBC:FFP:platelets.",
+     "right": "Activate MTP, 1:1:1 ratio, calcium replacement, keep warm, source control."}
+  ],
+  "PE massive": [
+    {"wrong": "Heparin alone is sufficient for any PE with hypotension.",
+     "why_wrong": "Massive PE (hemodynamic instability) → consider thrombolysis (tPA) or embolectomy. Heparin alone insufficient when patient is crashing.",
+     "right": "Stable PE → heparin. Massive PE with shock → tPA or surgical/catheter embolectomy."}
+  ],
+  "ICU delirium": [
+    {"wrong": "Start scheduled benzodiazepines for any agitation in the ICU.",
+     "why_wrong": "Benzos WORSEN delirium. Treat reversible causes; if pharmacologic needed, consider haloperidol or dexmedetomidine.",
+     "right": "Reverse causes (pain, sleep, sedation interruption), mobilize, minimize benzos, use dexmedetomidine if sedation needed."}
+  ],
+  "Reversal neuromuscular blockade": [
+    {"wrong": "Sugammadex works for all neuromuscular blockers.",
+     "why_wrong": "Sugammadex specifically reverses aminosteroids (rocuronium, vecuronium). It does NOT reverse benzylisoquinolines (cisatracurium, atracurium).",
+     "right": "Sugammadex for roc/vec. Neostigmine + glycopyrrolate for cisatracurium/atracurium."}
+  ],
+  "Spinal high": [
+    {"wrong": "Give vasopressors and hold fluids until BP improves.",
+     "why_wrong": "High spinal causes hypotension AND respiratory failure (phrenic nerve involvement). AIRWAY is the priority — intubate, then vasopressors and fluids.",
+     "right": "Airway/intubate first, IVF, vasopressors (ephedrine/phenylephrine), atropine for bradycardia, supportive care."}
+  ],
+  "Local anesthetic max dose": [
+    {"wrong": "Lidocaine max is 7 mg/kg with or without epinephrine.",
+     "why_wrong": "Lidocaine max is 4 mg/kg WITHOUT epi, 7 mg/kg WITH epi. Don't conflate the two.",
+     "right": "Lidocaine: 4 mg/kg plain, 7 mg/kg with epi. Bupivacaine: 2 mg/kg plain, 3 mg/kg with epi."}
+  ],
+  "Aspiration": [
+    {"wrong": "Lavage with saline through the ETT to clear aspirated material.",
+     "why_wrong": "Saline lavage SPREADS aspirated material distally. Suction only — do not lavage.",
+     "right": "Suction (no lavage), 100% O2, PEEP, bronchoscopy if particulate, supportive care. No prophylactic antibiotics or steroids."}
+  ]
+}

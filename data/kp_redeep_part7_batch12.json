@@ -1,0 +1,250 @@
+[
+  {
+    "id": "labor-pain-neuro-d1",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What three sources generate the pain of labor and delivery?",
+    "answer": "(1) Uterine contractions against cervical/perineal resistance; (2) progressive dilation of the cervix and lower uterine segment; (3) stretching and compression of pelvic and perineal structures.",
+    "rationale": "Different pain mechanisms require different nerve block strategies: visceral uterine pain (T10-L1 sympathetic fibers) is addressed by epidural/spinal; somatic perineal pain (S2-S4 via pudendal nerve) requires lower block level.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "labor-pain-neuro-d2",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Where is pain initially perceived in the first stage of labor, and where does it refer as labor progresses?",
+    "answer": "First-stage pain is initially perceived in the lower abdomen (from uterine contractions and cervical dilation); as labor progresses it is increasingly referred to the lumbosacral area, gluteal region, and thighs.",
+    "rationale": "Visceral pain from uterine contractions travels via sympathetic fibers (T10-L1); referred pain patterns reflect dermatomal overlap between uterine visceral afferents and somatic dermatomes in the lumbosacral region.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "second-stage perineal pain (somatic, more localized and intense; via S2-S4 pudendal nerve)"
+  },
+  {
+    "id": "labor-pain-neuro-d3",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What two factors are directly related to the intensity of first-stage labor pain?",
+    "answer": "Pain intensity increases with progressive cervical dilation (greater dilation = more pain) AND with increasing intensity and frequency of uterine contractions.",
+    "rationale": "Greater cervical stretch activates more mechanoreceptors and nociceptors; stronger/more frequent contractions produce greater uterine wall tension and ischemia, intensifying visceral afferent firing.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "fetal size (influences pain intensity indirectly through resistance to descent, not a direct determinant)"
+  },
+  {
+    "id": "labor-pain-neuro-d4",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What clinical event signals the transition from first to second stage of labor in terms of pain character?",
+    "answer": "The onset of perineal pain at the end of the first stage signals the beginning of fetal descent and the second stage of labor; pain shifts from predominantly visceral (uterine/cervical) to somatic (perineal stretching/compression).",
+    "rationale": "Fetal descent into the lower vagina and perineum activates somatic nociceptors via the pudendal nerve (S2-S4); neuraxial analgesia effective in the first stage must provide adequate sacral coverage for second-stage pain.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "crowning (end of second stage descent, not transition point between stages)"
+  },
+  {
+    "id": "labor-pain-neuro-d5",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What psychological analgesic techniques are used for labor analgesia, and what determines their effectiveness?",
+    "answer": "Bradley, Dick-Read, Lamaze, and LeBoyer techniques use relaxation, breathing exercises, and cognitive refocusing; effectiveness varies considerably from patient to patient, and many patients require additional pharmacological analgesia.",
+    "rationale": "Psychological techniques reduce anxiety-related catecholamine release and activate descending pain inhibitory pathways, but cannot fully counteract the intensity of visceral and somatic pain at advanced dilation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "psychological techniques being universally effective (patient variability means most benefit from pharmacological adjuncts)"
+  },
+  {
+    "id": "labor-pain-neuro-d6",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Stretching and compression of pelvic structures during the second stage of labor is primarily mediated by which nerve?",
+    "answer": "Second-stage perineal pain is primarily mediated by the pudendal nerve (S2-S4 sacral roots), which provides sensory innervation to the perineum, external genitalia, and anal/urethral sphincters.",
+    "rationale": "A pudendal nerve block or adequate sacral coverage from neuraxial anesthesia (requiring S2-S4 block) is needed for second-stage and delivery pain; epidural catheters positioned too high may miss sacral segments.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "T10-L1 nerve roots (mediate first-stage visceral pain, not perineal second-stage pain)"
+  },
+  {
+    "id": "labor-pain-neuro-d7",
+    "topic": "Labor pain neuroanatomy and pathways",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "During early first-stage labor, pain is primarily what type and travels via which spinal segments?",
+    "answer": "Early first-stage pain is primarily visceral (from uterine contractions and cervical dilation) and travels via sympathetic afferent fibers entering the spinal cord at T10-L1.",
+    "rationale": "Uterine visceral nociception enters via the inferior and superior hypogastric plexuses and paracervical ganglia to T10-L1; this is why T10-L1 epidural block provides excellent first-stage analgesia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1388
+      }
+    ],
+    "confusable_with": "somatic pain (occurs later in second stage via S2-S4; different pathway and management)"
+  },
+  {
+    "id": "latex-allergy-d1",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "What is the estimated prevalence of latex allergy in the general surgical population, and which patient population has the highest risk?",
+    "answer": "Approximately 1 in 6500 patients (0.015%) has an allergic reaction to anesthetic agents; latex allergy is higher in spina bifida patients (due to repeated latex exposure from childhood), healthcare workers, and atopic individuals.",
+    "rationale": "Repeated latex exposure through surgical/urological procedures in spina bifida patients sensitizes the immune system; healthcare workers have occupational latex exposure; atopy predisposes to sensitization.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2039
+      }
+    ],
+    "confusable_with": "general drug allergy prevalence (much higher at 1-10% depending on the drug)"
+  },
+  {
+    "id": "latex-allergy-d2",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "Which foods are known to cross-react with latex allergens and should be asked about in the preanesthetic interview?",
+    "answer": "Foods that cross-react with latex include mango, kiwi, chestnut, avocado, passion fruit, and banana; this latex-fruit syndrome occurs due to shared protein homology between natural rubber latex and certain plant proteins.",
+    "rationale": "Latex and these fruits share structurally similar proteins (class I chitinases, beta-1,3-glucanases); a patient allergic to these foods has a higher prior probability of latex sensitization.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2040
+      }
+    ],
+    "confusable_with": "tree nut allergy (different allergen proteins; not cross-reactive with latex)"
+  },
+  {
+    "id": "latex-allergy-d3",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "True anaphylaxis from anesthetic agents is rare. What are the risk factors associated with hypersensitivity to anesthetic agents?",
+    "answer": "Risk factors: female gender, atopic history, preexisting allergies, and previous anesthetic exposures with reactions; these predict IgE-mediated sensitization.",
+    "rationale": "Female patients have higher rates of drug allergy overall; atopy indicates an immune phenotype prone to IgE-mediated responses; prior anesthetic exposure allows sensitization before anaphylaxis occurs.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2039
+      }
+    ],
+    "confusable_with": "anaphylactoid reactions (do not require prior sensitization; can occur on first exposure)"
+  },
+  {
+    "id": "latex-allergy-d4",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "A patient reports egg allergy. Is this a contraindication to propofol administration?",
+    "answer": "A history of egg allergy does NOT contraindicate propofol use; propofol contains egg lecithin (phospholipid derived from egg yolk), not egg white protein. True egg white protein allergy is separate from egg lecithin sensitivity.",
+    "rationale": "Egg allergy in most patients is to egg white proteins (albumin, ovomucoid); egg lecithin in propofol is a phospholipid with different antigenic properties; only documented allergy to soy or egg lecithin specifically requires caution.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 291
+      }
+    ],
+    "confusable_with": "soybean oil allergy (propofol also contains soybean oil; documented soy allergy warrants caution)"
+  },
+  {
+    "id": "latex-allergy-d5",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "How is treatment of angioedema guided by its underlying etiology?",
+    "answer": "Treatment depends on etiology: ACE-inhibitor-induced angioedema requires ACEi cessation and supportive care; hereditary angioedema requires C1 inhibitor replacement or bradykinin antagonist; allergic angioedema requires epinephrine, antihistamines, corticosteroids.",
+    "rationale": "ACEi angioedema is bradykinin-mediated (not histamine); antihistamines are ineffective; hereditary angioedema is also bradykinin-mediated (C1 inhibitor deficiency); distinguishing the mechanism is essential to correct treatment.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2036
+      }
+    ],
+    "confusable_with": "treating all angioedema with epinephrine alone (only effective for histamine/IgE-mediated; not for bradykinin-mediated types)"
+  },
+  {
+    "id": "latex-allergy-d6",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "Anaphylactic reactions to latex may be confused with reactions to other substances given perioperatively. What is the clinical implication?",
+    "answer": "Latex reactions may be confused with reactions to muscle relaxants, antibiotics, colloids, or other agents given at the same time; systematic investigation of timing, route of exposure, and skin testing/RAST is needed to identify the culprit.",
+    "rationale": "Multiple agents are often given simultaneously during induction; clinical diagnosis of the specific allergen requires careful timing analysis and, ultimately, allergy testing to prevent recurrence.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2040
+      }
+    ],
+    "confusable_with": "automatically assuming latex is the cause without investigation (multiple agents are plausible; investigation is required)"
+  },
+  {
+    "id": "latex-allergy-d7",
+    "topic": "Latex allergy and perioperative allergy management",
+    "domain": "Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)",
+    "discipline": "anesthesia",
+    "stem": "Interleukin gene polymorphisms (IL-18 and IL-13 SNPs) may affect latex sensitivity. What is the clinical takeaway regarding genetic predisposition to latex allergy?",
+    "answer": "Genetic polymorphisms in IL-18 and IL-13 influence the degree of sensitization to latex; atopy-related genetic background increases sensitization risk, supporting targeted screening of atopic patients for latex allergy.",
+    "rationale": "IL-13 drives Th2 responses and IgE production; IL-18 promotes Th1/Th2 polarization; SNPs affecting these cytokines modulate the immune response to latex allergens and predict sensitization risk.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2040
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Latex allergy and perioperative allergy management",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Spina bifida (repeated urological/surgical latex exposure from birth), healthcare workers, atopic individuals, history of latex-fruit syndrome, previous unexplained intraoperative anaphylaxis",
+    "pathophysiology": "Type I (IgE-mediated) hypersensitivity to natural rubber latex proteins (Hev b proteins); mast cell/basophil degranulation releases histamine, tryptase, prostaglandins, leukotrienes causing systemic anaphylaxis",
+    "time_course": "Exposure-to-reaction interval: 20-40 minutes for indirect (absorbed) latex exposure vs minutes for direct mucosal contact; peak reaction typically intraoperatively when surgical field has extensive latex contact",
+    "key_features": "Intraoperative anaphylaxis (urticaria, bronchospasm, hypotension, cardiovascular collapse); occurs after initial unremarkable induction; history of latex-fruit cross-reactivity; positive skin test/RAST to latex",
+    "consequence_if_missed": "Unrecognized latex allergy in a non-latex-free environment leads to repeated anaphylactic exposures; potentially fatal cardiovascular collapse; all latex-allergic patients must be scheduled as first case of day in latex-free environment"
+  }
+]

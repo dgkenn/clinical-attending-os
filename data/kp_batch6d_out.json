@@ -1,0 +1,240 @@
+[
+  {
+    "id": "hncancer-1",
+    "topic": "Head and neck cancer resection and reconstruction",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What surgeries are included in head and neck cancer resection procedures requiring anesthetic planning?",
+    "answer": "Laryngectomy, glossectomy, pharyngectomy, parotidectomy, hemimandibulectomy, radical neck dissection",
+    "rationale": "These procedures involve the upper airway and great vessels, requiring careful airway planning and vascular control strategies.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1277
+      }
+    ],
+    "confusable_with": "Thyroidectomy (different airway implications)"
+  },
+  {
+    "id": "hncancer-2",
+    "topic": "Head and neck cancer resection and reconstruction",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What monitoring is typically required for major vascular head and neck cancer resections?",
+    "answer": "Two large-bore IVs, arterial line, and often transesophageal echocardiography for major head/neck resections",
+    "rationale": "Significant hemorrhage risk and potential hemodynamic instability during vessel dissection require invasive beat-to-beat monitoring.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1147
+      }
+    ],
+    "confusable_with": "Peripheral IV only for all head and neck cases"
+  },
+  {
+    "id": "hncancer-3",
+    "topic": "Head and neck cancer resection and reconstruction",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "In microsurgical free-flap reconstruction after head and neck resection, why must even tiny amounts of vasoconstrictors be used with caution?",
+    "answer": "Even small vasoconstrictors can impair microvascular graft perfusion pressure and compromise free-flap viability",
+    "rationale": "The free flap depends on adequate perfusion pressure through its anastomosis; vasoconstriction can thrombose small vessels and cause flap failure.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1287
+      }
+    ],
+    "confusable_with": "Liberal vasopressor use to maintain MAP (may jeopardise flap)"
+  },
+  {
+    "id": "hncancer-4",
+    "topic": "Head and neck cancer resection and reconstruction",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What patient population commonly undergoing head and neck cancer surgery has elevated cardiovascular risk that must be considered?",
+    "answer": "Older adults with long history of heavy tobacco and alcohol use predisposing to cardiovascular disease",
+    "rationale": "Smoking and alcohol are the primary risk factors for head and neck cancers and also cause coronary artery and peripheral vascular disease requiring careful preoperative assessment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1272
+      }
+    ],
+    "confusable_with": "Young patients with HPV-related oropharyngeal cancer (different cardiovascular profile)"
+  },
+  {
+    "id": "hncancer-5",
+    "topic": "Head and neck cancer resection and reconstruction",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What transfusion consideration is specific to cancer surgery regarding blood product administration?",
+    "answer": "Transfusion decisions must balance immediate surgical risk with the possibility of increased cancer recurrence from immunosuppression",
+    "rationale": "Allogeneic transfusion has immunomodulatory effects that may promote tumour recurrence; restrictive transfusion strategies are preferred in oncologic surgery.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1282
+      }
+    ],
+    "confusable_with": "Transfusion having no oncologic implications"
+  },
+  {
+    "id": "transplant-1",
+    "topic": "Heart and lung transplant anesthesia",
+    "domain": "Cardiac anesthesia (valvular, coronary, congenital, aortic surgery, cardiopulmonary bypass, mechanical circulatory support, transplant)",
+    "discipline": "anesthesia",
+    "stem": "In a denervated transplanted heart, drugs that act indirectly on the heart are ineffective. What is the treatment for bradycardia in this setting?",
+    "answer": "Treat bradycardia in the transplanted (denervated) heart with direct-acting agents or pacing (usually 80-100 bpm)",
+    "rationale": "The transplanted heart lacks autonomic innervation; indirect agents (atropine, neostigmine) have no effect; direct-acting agents (isoproterenol) or pacing are required.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 691
+      }
+    ],
+    "confusable_with": "Atropine for bradycardia (ineffective in denervated heart)"
+  },
+  {
+    "id": "transplant-2",
+    "topic": "Heart and lung transplant anesthesia",
+    "domain": "Cardiac anesthesia (valvular, coronary, congenital, aortic surgery, cardiopulmonary bypass, mechanical circulatory support, transplant)",
+    "discipline": "anesthesia",
+    "stem": "In patients with severe pulmonary hypertension undergoing transplant, what hemodynamic problem does positive-pressure ventilation cause?",
+    "answer": "Positive-pressure ventilation decreases venous blood return, worsening hemodynamic instability in severe pulmonary hypertension",
+    "rationale": "Elevated intrathoracic pressure reduces venous preload; in pulmonary hypertension where RV function is already marginal, this can precipitate RV failure.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 692
+      }
+    ],
+    "confusable_with": "Positive-pressure ventilation improving oxygenation and afterload uniformly"
+  },
+  {
+    "id": "transplant-3",
+    "topic": "Heart and lung transplant anesthesia",
+    "domain": "Cardiac anesthesia (valvular, coronary, congenital, aortic surgery, cardiopulmonary bypass, mechanical circulatory support, transplant)",
+    "discipline": "anesthesia",
+    "stem": "What are the criteria for listing a patient for heart transplantation regarding ejection fraction and functional class?",
+    "answer": "Ejection fraction less than 20% and NYHA Class IV / Heart Failure Stage D criteria for transplant listing",
+    "rationale": "Transplantation is reserved for end-stage refractory heart failure not responding to guideline-directed therapy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 765
+      }
+    ],
+    "confusable_with": "EF <35% as the transplant threshold (that is the general HF treatment threshold)"
+  },
+  {
+    "id": "transplant-4",
+    "topic": "Heart and lung transplant anesthesia",
+    "domain": "Cardiac anesthesia (valvular, coronary, congenital, aortic surgery, cardiopulmonary bypass, mechanical circulatory support, transplant)",
+    "discipline": "anesthesia",
+    "stem": "Fibrinolysis detected during liver transplantation (applicable principle in transplant anesthesia) can be treated with what agents?",
+    "answer": "Epsilon-aminocaproic acid or tranexamic acid (antifibrinolytics that inhibit plasmin formation) treat fibrinolysis",
+    "rationale": "Both drugs inhibit the conversion of plasminogen to plasmin, reducing pathological clot breakdown during major surgery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1213
+      }
+    ],
+    "confusable_with": "FFP (treats factor depletion, not excessive fibrinolysis)"
+  },
+  {
+    "id": "transplant-5",
+    "topic": "Heart and lung transplant anesthesia",
+    "domain": "Cardiac anesthesia (valvular, coronary, congenital, aortic surgery, cardiopulmonary bypass, mechanical circulatory support, transplant)",
+    "discipline": "anesthesia",
+    "stem": "What inhaled pulmonary vasodilators can be used intraoperatively for pulmonary hypertension during transplant surgery?",
+    "answer": "Inhaled nitric oxide (10-40 ppm) or nebulized prostacyclin (50 ng/kg/min) as inhaled pulmonary vasodilators",
+    "rationale": "Inhaled delivery targets pulmonary vasculature selectively without systemic hypotension, reducing RV afterload.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 509
+      }
+    ],
+    "confusable_with": "IV sildenafil or epoprostenol (systemic, cause hypotension)"
+  },
+  {
+    "id": "hdmonint-1",
+    "topic": "Hemodynamic Monitoring: Integrated Approach",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What did the pulmonary artery catheter historically attempt to measure as a surrogate for left ventricular preload?",
+    "answer": "PCWP (pulmonary capillary wedge pressure) as a surrogate for LVEDP and, via ventricular compliance, ventricular volume",
+    "rationale": "Wedge pressure equilibrates with pulmonary venous pressure, which in the absence of mitral disease equals LVEDP, an indirect measure of LV preload.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 157
+      }
+    ],
+    "confusable_with": "CVP as equivalent to LVEDP (only approximates RAP, less reliable for LV)"
+  },
+  {
+    "id": "hdmonint-2",
+    "topic": "Hemodynamic Monitoring: Integrated Approach",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "Patients can present concurrently with hypovolemia, sepsis, and heart failure. What integrated monitoring approach replaced the sole use of PA catheter?",
+    "answer": "Goal-directed therapy using PA catheter, arterial pulse wave contour analysis, echocardiography, or non-invasive monitors to guide therapy",
+    "rationale": "Integrated multi-parameter monitoring allows discrimination of co-existing hemodynamic pathologies that single-parameter monitoring misses.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 157
+      }
+    ],
+    "confusable_with": "PA catheter alone as sufficient for all hemodynamic assessment"
+  },
+  {
+    "id": "hdmonint-3",
+    "topic": "Hemodynamic Monitoring: Integrated Approach",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "For obstructive valvular lesions such as aortic stenosis, what hemodynamic goals guide anesthetic management?",
+    "answer": "Avoid hypovolemia, bradycardia, tachycardia, and myocardial depression; maintain optimal heart rate",
+    "rationale": "A fixed cardiac output dependent on heart rate and preload in AS makes bradycardia, tachycardia, and hypovolemia all acutely dangerous.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 761
+      }
+    ],
+    "confusable_with": "Aggressive vasodilation to reduce afterload (causes dangerous hypotension in AS)"
+  },
+  {
+    "id": "hdmonint-4",
+    "topic": "Hemodynamic Monitoring: Integrated Approach",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What less invasive cardiac output devices are increasingly available as alternatives to PAC in the ICU?",
+    "answer": "Arterial pulse wave contour analysis (PiCCO, LiDCO, FloTrac), transpulmonary thermodilution, and echocardiography",
+    "rationale": "Less invasive devices reduce procedure-related complications while providing continuous or intermittent CO estimates to guide hemodynamic therapy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 398
+      }
+    ],
+    "confusable_with": "CVP as adequate substitute for CO monitoring"
+  }
+]

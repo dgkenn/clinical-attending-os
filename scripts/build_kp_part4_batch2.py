@@ -1,0 +1,241 @@
+
+import json, sys
+sys.stdout.reconfigure(encoding='utf-8')
+
+with open('data/_kp_redeepen.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+kps = []
+
+# ── [135] HFpEF ───────────────────────────────────────────────────────────────
+T = 'Heart Failure with Preserved Ejection Fraction (HFpEF)'
+DOM = ('Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, '
+       'valvular disease, hypertension & emergencies, lipids, syncope)')
+DIS = 'medicine'
+kps += [
+  {'id':'hfpef-d1','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'What laboratory marker released from the heart is used to distinguish heart failure from other causes of dyspnea?',
+   'answer':'BNP (B-type natriuretic peptide); elevation is associated with impaired ventricular function',
+   'rationale':'BNP is released in response to ventricular wall stress; elevated BNP points toward HF as cause of dyspnea.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':659}],'confusable_with':'troponin (myocardial injury marker, not volume/pressure overload)'},
+  {'id':'hfpef-d2','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'SGLT2 inhibitors are now indicated for which subset of heart failure, and what was the landmark evidence base?',
+   'answer':'HFpEF (LVEF >=45%); SGLT2 inhibitors reduce HF hospitalisations and CV death in HFpEF trials',
+   'rationale':'SGLT2 inhibitors reduce intracardiac filling pressures through osmotic diuresis and direct cardiac effects, benefiting both HFrEF and HFpEF.',
+   'bloom':'apply','source':[{'book':'StatPearls','page':12}],'confusable_with':'HFrEF (where SGLT2 inhibitors were first established)'},
+  {'id':'hfpef-d3','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'The TOPCAT trial of spironolactone in HFpEF (LVEF >45%) showed what primary result?',
+   'answer':'Spironolactone did not reach significance on primary composite endpoint in TOPCAT; borderline reduction in HF hospitalisations on covariate-adjusted analysis only',
+   'rationale':'TOPCAT raised concern about geographic variation in the study, making MRA use in HFpEF an area of ongoing uncertainty.',
+   'bloom':'analyze','source':[{'book':'StatPearls','page':12}],'confusable_with':'EMPHASIS-HF (eplerenone in HFrEF - positive trial)'},
+  {'id':'hfpef-d4','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'What antihypertensive drug classes are considered reasonable first-line options for HFpEF given existing trial experience?',
+   'answer':'RAAS antagonists (ACEi, ARB, MRA, possibly ARNi) are first-line given experience from HFpEF trials; optimal BP goal is not established',
+   'rationale':'Hypertension is a primary contributor to HFpEF; RAAS antagonism addresses both BP and potential direct cardiac remodelling effects.',
+   'bloom':'apply','source':[{'book':'Society Guideline: Guideline   ACC AHA 2022 Heart Failure','page':67}],'confusable_with':''},
+  {'id':'hfpef-d5','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'The NYHA Classification is an independent predictor of what outcome, and when is it used clinically?',
+   'answer':'Independent predictor of mortality; used to determine suitability of therapeutic interventions for ACC/AHA stage C or D heart failure',
+   'rationale':'NYHA class reflects functional capacity and guides decisions about device therapy, advanced HF therapies, and transplant listing.',
+   'bloom':'recall','source':[{'book':'StatPearls','page':3}],'confusable_with':'ACC/AHA staging (structural progression, not functional symptoms)'},
+  {'id':'hfpef-d6','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'In patients with AF and new-onset HFrEF, what should be done first before diagnosing a primary cardiomyopathy?',
+   'answer':'Assess and treat the arrhythmia first; tachycardia-mediated cardiomyopathy can recover with rhythm/rate control',
+   'rationale':'AF with rapid ventricular response can cause reversible cardiomyopathy; treating AF may restore LVEF without additional HF therapies.',
+   'bloom':'analyze','source':[{'book':'Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation','page':92}],'confusable_with':''},
+  {'id':'hfpef-d7','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'Beta-blockers in HFpEF with concomitant coronary artery disease provide benefit through which mechanism?',
+   'answer':'Patients with HFpEF and CAD benefit from beta-blockers for ischaemia reduction and rate control rather than through LV remodelling reversal',
+   'rationale':'Beta-blocker survival benefit in HFpEF is less established than in HFrEF but is indicated when co-existing CAD or rate control is needed.',
+   'bloom':'analyze','source':[{'book':'StatPearls','page':12}],'confusable_with':'HFrEF (where beta-blockers definitively reduce mortality through anti-remodelling)'},
+  {'id':'hfpef-d8','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'What echocardiographic parameter, besides LVEF, is assessed to characterise diastolic dysfunction in HFpEF?',
+   'answer':'Diastolic function assessment (E/e ratio, left atrial size, pulmonary artery pressure); echocardiography determines LVEF and assesses diastolic function',
+   'rationale':'HFpEF by definition has preserved LVEF but abnormal diastolic function; echocardiographic diastolic parameters are required for diagnosis.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':659}],'confusable_with':''},
+]
+kps.append({'_type':'illness_script','topic':T,'discipline':DIS,
+  'enabling_conditions':'Hypertension, obesity, diabetes, atrial fibrillation, older age, female sex',
+  'pathophysiology':'Concentric LV hypertrophy and fibrosis cause impaired relaxation and increased filling pressures with preserved systolic function',
+  'time_course':'Chronic, progressive; decompensation triggered by AF, hypertensive urgency, fluid overload, or ischaemia',
+  'key_features':'Dyspnea on exertion, elevated BNP, LVEF >=50%, diastolic dysfunction on echo, pulmonary congestion',
+  'consequence_if_missed':'Inappropriate diuresis causing prerenal azotemia; missing treatable precipitants; delayed SGLT2i initiation'})
+
+# ── [136] Heart Rhythm Devices ────────────────────────────────────────────────
+T = 'Heart Rhythm Devices: Pacemakers, ICDs, CRT'
+kps += [
+  {'id':'heart-rhythm-devices-d1','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'Which anesthetic agents are safe in patients who already have pacemakers?',
+   'answer':'All anesthetic agents have been safely used in pacemaker patients; even volatile agents have no effect on pacing electrode thresholds',
+   'rationale':'The concern with pacemaker patients is not anesthetic agent choice but rather electromagnetic interference and inappropriate sensing.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':702}],'confusable_with':''},
+  {'id':'heart-rhythm-devices-d2','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'What is AV sequential (DDD) pacing and why is it preferred over VVI pacing in patients with intact sinus function?',
+   'answer':'AV sequential pacing senses atrial activity and triggers ventricular pacing after a set AV delay, maintaining AV synchrony and atrial contribution to cardiac output',
+   'rationale':'Loss of atrial kick from VVI pacing reduces cardiac output by 20-30% in patients who are pacemaker-dependent.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':700}],'confusable_with':'VOO (asynchronous, no sensing - used when EMI risk is high)'},
+  {'id':'heart-rhythm-devices-d3','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'In a patient with heart failure and wide QRS, AVNA with CRT (APAF-CRT trial) compared to AV nodal ablation alone showed what mortality finding?',
+   'answer':'APAF-CRT showed HR 0.26 for all-cause mortality vs AV nodal ablation alone; trial stopped early for benefit',
+   'rationale':'CRT provides biventricular resynchronisation after AVNA, preventing the pacing-induced cardiomyopathy that can occur with RV-only pacing.',
+   'bloom':'analyze','source':[{'book':'Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation','page':96}],'confusable_with':''},
+  {'id':'heart-rhythm-devices-d4','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'ICDs and CRTs are supported by seminal RCTs; why should subgroup analyses of these trials be interpreted with caution?',
+   'answer':'Subgroup analyses were not primary endpoints of the ICD/CRT trials and should be interpreted with caution; the seminal RCTs are unlikely to be repeated',
+   'rationale':'Post-hoc subgroup analyses are subject to multiple comparisons and lack prospective power; they generate hypotheses rather than definitive evidence.',
+   'bloom':'analyze','source':[{'book':'Society Guideline: Guideline   ACC AHA 2022 Heart Failure','page':57}],'confusable_with':''},
+  {'id':'heart-rhythm-devices-d5','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'Perioperative ventricular fibrillation requires what immediate treatment, and how has post-MI management reduced its incidence?',
+   'answer':'VF requires immediate defibrillation; beta-blockers following MI have reduced post-MI VF incidence',
+   'rationale':'Beta-blockers reduce ischaemia-driven arrhythmias; acute VF management requires defibrillation regardless of device presence.',
+   'bloom':'apply','source':[{'book':'Morgan & Mikhail','page':657}],'confusable_with':''},
+  {'id':'heart-rhythm-devices-d6','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'Torsades de pointes associated with pauses (pause-dependent TdP) may respond to what pacing-based intervention?',
+   'answer':'Pacing (temporary or permanent) at higher rates shortens the QT interval and eliminates the long pauses that trigger TdP',
+   'rationale':'Pause-dependent TdP is driven by bradycardia-induced QT prolongation; rate increase by pacing interrupts this cycle.',
+   'bloom':'apply','source':[{'book':'Morgan & Mikhail','page':657}],'confusable_with':'adrenergic-dependent TdP (treated differently)'},
+  {'id':'heart-rhythm-devices-d7','topic':T,'domain':DOM,'discipline':DIS,
+   'stem':'By altering a pacemaker generator sensing threshold, it can function in what two distinct modes?',
+   'answer':'Fixed (asynchronous/VOO) mode at low sensitivity, or demand mode (inhibited by sensed intrinsic activity) at higher sensitivity',
+   'rationale':'Demand mode prevents pacemaker spikes from falling on the vulnerable T-wave; asynchronous mode is used when external EMI risks inappropriate inhibition.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':700}],'confusable_with':''},
+]
+
+# ── [137] Hemolytic anemias ───────────────────────────────────────────────────
+T = 'Hemolytic anemias: overview and approach'
+DOM3 = ('Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & '
+        'treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever)')
+kps += [
+  {'id':'hemolytic-anemias-d1','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Into what three mechanistic categories are immune hemolytic anemias classified?',
+   'answer':'Autoimmune (warm/cold antibody), alloimmune (transfusion reaction, hemolytic disease of newborn), and drug-induced',
+   'rationale':'Each category has distinct pathophysiology, laboratory findings, and treatment; correct classification directs management.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':2}],'confusable_with':''},
+  {'id':'hemolytic-anemias-d2','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Complete complement activation on the RBC surface results in what structure, and causes which type of hemolysis?',
+   'answer':'Formation of the membrane attack complex (MAC), causing intravascular hemolysis',
+   'rationale':'MAC disrupts RBC membrane integrity, releasing hemoglobin directly into plasma (intravascular), producing hemoglobinuria and renal injury.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':9}],'confusable_with':'extravascular hemolysis (Fc receptor-mediated destruction in spleen/liver, no MAC formation)'},
+  {'id':'hemolytic-anemias-d3','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'What anti-cancer drug classes are common drug-induced causes of immune hemolytic anemia?',
+   'answer':'Fludarabine, platinum compounds, and immune checkpoint inhibitors',
+   'rationale':'Drug-induced immune hemolytic anemia requires recognising the causative agent and discontinuing it; checkpoint inhibitors represent a growing iatrogenic cause.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':7}],'confusable_with':''},
+  {'id':'hemolytic-anemias-d4','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'What is the purpose of a crossmatch before blood transfusion, and what complication does it prevent?',
+   'answer':'Crossmatch ensures compatibility of donor blood with recipient serum to prevent acute hemolytic transfusion reactions and hemolytic disease of the newborn',
+   'rationale':'Alloantibodies from prior transfusion or pregnancy can cause life-threatening acute intravascular hemolysis if incompatible blood is given.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':10}],'confusable_with':'type and screen (identifies antibodies but does not confirm compatibility with specific donor unit)'},
+  {'id':'hemolytic-anemias-d5','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'The biphasic hemolysin test for paroxysmal cold hemoglobinuria has what practical limitations?',
+   'answer':'The Donath-Landsteiner test is time-consuming, resource-intensive, and has low sensitivity; it binds complement at cold temperatures and dissociates on warming',
+   'rationale':'Understanding testing limitations prevents false-negative results from delaying diagnosis of PCH, particularly post-viral in children.',
+   'bloom':'analyze','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':11}],'confusable_with':'cold agglutinin disease (IgM vs IgG Donath-Landsteiner; different temperature range)'},
+  {'id':'hemolytic-anemias-d6','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'An interprofessional team approach to immune hemolytic anemia should include which specialist roles?',
+   'answer':'Hematologists interpret laboratory findings, immunologists assess autoimmune processes; the team devises individualized treatment plans tailored to specific subtype',
+   'rationale':'The complexity of hemolytic anemias (especially auto-immune subtypes with high-titer antibodies) requires subspecialty collaboration for accurate subtyping and treatment.',
+   'bloom':'apply','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':14}],'confusable_with':''},
+  {'id':'hemolytic-anemias-d7','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'What are the three mechanisms by which immune hemolytic anemia can be categorized, and what does each have as a unique etiology?',
+   'answer':'Autoimmune (self-directed antibodies), alloimmune (foreign antigen exposure via transfusion or pregnancy), drug-induced (hapten, immune complex, or drug-adsorption mechanisms)',
+   'rationale':'Distinguishing mechanism guides treatment: autoimmune -> steroids/rituximab; alloimmune -> avoid offending antigen; drug-induced -> stop drug.',
+   'bloom':'analyze','source':[{'book':'StatPearls: StatPearls   Hemolytic anemias  overview and approach','page':2}],'confusable_with':''},
+]
+
+# ── [138] Hemophilia A and B ──────────────────────────────────────────────────
+T = 'Hemophilia A and B'
+kps += [
+  {'id':'hemophilia-ab-d1','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Hemophilia A (factor VIII deficiency) has what estimated prevalence, and how does disease severity correlate with factor activity?',
+   'answer':'Affects ~1:10,000 males; severity is inversely related to factor VIII activity (severe <1%, moderate 1-5%, mild 5-40%)',
+   'rationale':'Factor VIII activity level directly determines frequency and severity of spontaneous bleeding episodes.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':1180}],'confusable_with':'hemophilia B (factor IX deficiency; clinically identical but less common)'},
+  {'id':'hemophilia-ab-d2','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'What is the pattern of coagulation test abnormalities in hemophilia B, and why is PT normal?',
+   'answer':'Prolonged aPTT, normal PT, normal platelets; PT is normal because factor IX is intrinsic pathway; extrinsic (PT) pathway is unaffected',
+   'rationale':'Factor IX functions only in the intrinsic coagulation pathway; extrinsic and common pathway factors remain intact.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemophilia A and B','page':5}],'confusable_with':'factor VII deficiency (isolated prolonged PT with normal aPTT)'},
+  {'id':'hemophilia-ab-d3','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Why can pregnancy and stress falsely elevate factor IX activity in hemophilia B patients?',
+   'answer':'Pregnancy and stress increase factor IX levels as acute-phase reactants, masking true severity and potentially normalising aPTT',
+   'rationale':'Clinicians must interpret factor IX levels in context; baseline (non-stress) levels should guide hemophilia B severity classification.',
+   'bloom':'analyze','source':[{'book':'StatPearls: StatPearls   Hemophilia A and B','page':5}],'confusable_with':''},
+  {'id':'hemophilia-ab-d4','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Cryoprecipitate for hemophilia treatment was discovered by whom, and what does it contain?',
+   'answer':'Judith Graham Pool in 1964 extracted cryoprecipitate from plasma containing high concentrations of factor VIII, fibrinogen, and vWF',
+   'rationale':'Cryoprecipitate was the first concentrated factor source; it enabled home treatment and revolutionised hemophilia management.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemophilia A and B','page':9}],'confusable_with':''},
+  {'id':'hemophilia-ab-d5','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Novel hemophilia therapies beyond factor replacement include which two emerging strategies?',
+   'answer':'Gene therapy (introducing exogenous DNA to produce missing clotting factor) and cellular therapy (gene therapy of cells ex vivo)',
+   'rationale':'Gene therapy offers the prospect of functional cure by restoring endogenous factor production without need for regular infusions.',
+   'bloom':'recall','source':[{'book':'StatPearls: StatPearls   Hemophilia A and B','page':8}],'confusable_with':''},
+  {'id':'hemophilia-ab-d6','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Two lysine-analog antifibrinolytics are available; which was removed from US markets and why?',
+   'answer':'Aprotinin was removed from the US market due to renal and cardiovascular toxicity; epsilon-aminocaproic acid (EACA) and tranexamic acid remain available',
+   'rationale':'Aprotinin is still available in Europe and Canada but is contraindicated in US practice; TXA and EACA are used perioperatively to reduce bleeding.',
+   'bloom':'recall','source':[{'book':'Miller/Baby Miller','page':455}],'confusable_with':''},
+  {'id':'hemophilia-ab-d7','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'In perioperative hemophilia management, what must be evaluated before any invasive procedure?',
+   'answer':'PT, aPTT, and platelet count; and determine factor level to calculate appropriate factor replacement target',
+   'rationale':'Procedure type determines factor target (e.g., >50% for minor surgery, >80-100% for major surgery); baseline testing guides replacement.',
+   'bloom':'apply','source':[{'book':'StatPearls: StatPearls   Hemophilia A and B','page':5}],'confusable_with':''},
+]
+kps.append({'_type':'confusable_pair',
+  'topic_a':'Hemophilia A','topic_b':'Hemophilia B',
+  'discriminator':'Both: prolonged aPTT, normal PT, normal platelets, X-linked recessive in males. Hemophilia A = factor VIII deficiency (more common, 1:10,000); Hemophilia B = factor IX deficiency (1:30,000). Treatment differs: FVIII concentrate vs FIX concentrate'})
+
+# ── [139] HIT ─────────────────────────────────────────────────────────────────
+T = 'Heparin-induced thrombocytopenia (HIT)'
+kps += [
+  {'id':'heparin-hit-d1','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'What antibodies mediate heparin-induced thrombocytopenia, and what is the paradoxical clinical consequence?',
+   'answer':'Heparin-dependent antibodies against platelet factor 4 (PF4-heparin complex) agglutinate platelets, causing thrombocytopenia paradoxically associated with thromboembolism',
+   'rationale':'PF4-heparin antibodies activate platelets (not destroy them), creating a prothrombotic state despite low platelet count.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':'immune thrombocytopenic purpura (ITP; anti-platelet antibodies cause destruction, not activation; bleeding not thrombosis)'},
+  {'id':'heparin-hit-d2','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'If a patient with remote HIT history is antibody-negative on testing and needs heparin for CPB, what is the clinical approach?',
+   'answer':'If remote HIT and antibodies can no longer be demonstrated, heparin may safely be used for CPB',
+   'rationale':'HIT antibodies are transient; confirmed absence of antibodies (seroconversion) permits heparin re-exposure for CPB when alternative anticoagulants are less practical.',
+   'bloom':'apply','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':'active HIT (never use heparin)'},
+  {'id':'heparin-hit-d3','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'When significant HIT antibody titers are detected and surgery requiring anticoagulation is needed, what is used instead of heparin?',
+   'answer':'Alternative anticoagulants should be used (e.g., bivalirudin, argatroban); DOACs are also an acceptable option per current guidelines',
+   'rationale':'Any heparin exposure in a patient with active HIT antibodies can trigger further platelet activation and catastrophic thrombosis.',
+   'bloom':'apply','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':'low-molecular-weight heparin (also cross-reacts with HIT antibodies)'},
+  {'id':'heparin-hit-d4','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Epsilon-aminocaproic acid (EACA) used for bleeding prophylaxis is typically given as what loading dose and maintenance infusion?',
+   'answer':'50-75 mg/kg loading dose, then 20-25 mg/kg/h maintenance (some clinicians use 5-10 g load then 1 g/h)',
+   'rationale':'EACA competitively inhibits plasminogen activation; dosing must maintain plasma concentrations above the therapeutic threshold.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':'tranexamic acid (10 mg/kg then 1 mg/kg/h; more potent per unit dose)'},
+  {'id':'heparin-hit-d5','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'Tranexamic acid for perioperative bleeding prophylaxis is often dosed at what regimen, and what does pharmacokinetic evidence suggest?',
+   'answer':'10 mg/kg bolus followed by 1 mg/kg/h; pharmacokinetic studies suggest larger doses may more reliably maintain effective blood concentrations',
+   'rationale':'Standard TXA dosing may be subtherapeutic in high-turnover situations; higher doses improve fibrinolysis inhibition without proportional toxicity.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':''},
+  {'id':'heparin-hit-d6','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'DOACs used to treat HIT are dosed according to what reference, and what contraindications apply?',
+   'answer':'DOAC dosing for HIT is extrapolated from VTE dosing recommendations; same contraindications as for VTE use apply',
+   'rationale':'DOACs inhibit thrombin or Xa without heparin, bypassing the PF4-heparin immune complex; experience is growing though mostly based on VTE data.',
+   'bloom':'apply','source':[{'book':'StatPearls: StatPearls   Heparin induced thrombocytopenia (HIT)','page':6}],'confusable_with':''},
+  {'id':'heparin-hit-d7','topic':T,'domain':DOM3,'discipline':DIS,
+   'stem':'The 4T score in HIT assessment evaluates which four clinical features?',
+   'answer':'Thrombocytopenia (degree/timing), Timing of platelet fall (days 5-10), Thrombosis, and absence of oTher explanations for thrombocytopenia',
+   'rationale':'The 4T score stratifies HIT probability pre-testing; low score has high NPV and avoids unnecessary testing/anticoagulant switches.',
+   'bloom':'recall','source':[{'book':'Morgan & Mikhail','page':740}],'confusable_with':''},
+]
+kps.append({'_type':'illness_script','topic':T,'discipline':DIS,
+  'enabling_conditions':'Heparin exposure (UFH > LMWH), cardiac surgery, orthopaedic surgery, critically ill patients',
+  'pathophysiology':'IgG antibodies against PF4-heparin complexes bind platelets and endothelium, causing platelet activation, consumption, and paradoxical thrombosis',
+  'time_course':'Platelet fall typically days 5-10 after heparin exposure (earlier if prior sensitisation)',
+  'key_features':'Platelet drop >=50% from baseline, thrombosis (venous > arterial), positive PF4 ELISA and functional assay',
+  'consequence_if_missed':'Catastrophic arterial/venous thrombosis; continued heparin use worsens outcome; failure to switch anticoagulant'})
+kps.append({'_type':'confusable_pair',
+  'topic_a':'HIT','topic_b':'ITP',
+  'discriminator':'HIT: heparin exposure, platelet activation -> thrombosis, PF4 antibodies. ITP: autoimmune platelet destruction -> bleeding, anti-GPIb/IIb antibodies, splenomegaly. Opposite thrombotic vs bleeding tendency'})
+
+print(f'Batch 2 KPs: {len(kps)}')
+with open('data/_part4_batch2.json', 'w', encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print('Batch 2 written OK')

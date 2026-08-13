@@ -1,0 +1,155 @@
+[
+  {
+    "id": "hpv-1",
+    "topic": "Hypoxic pulmonary vasoconstriction: clinical pharmacology",
+    "domain": "Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)",
+    "discipline": "anesthesia",
+    "stem": "What does MAC-amnesia represent in relation to standard MAC for volatile anesthetics?",
+    "answer": "MAC-amnesia is the concentration preventing recall in 50% of patients, which is lower than MAC-immobility (approximately 0.55 MAC)",
+    "rationale": "Amnesia requires lower anesthetic depth than movement suppression; this distinguishes consciousness suppression from anti-nociceptive effects.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 114
+      }
+    ],
+    "confusable_with": "MAC-awake (concentration at which 50% respond to verbal command, also below standard MAC)"
+  },
+  {
+    "id": "hpv-2",
+    "topic": "Hypoxic pulmonary vasoconstriction: clinical pharmacology",
+    "domain": "Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)",
+    "discipline": "anesthesia",
+    "stem": "What five causes of hypoxemia are differentiated by alveolar-arterial (A-a) gradient calculation?",
+    "answer": "Low inspired O2, diffusion impairment, V/Q mismatch, shunt (V/Q=0), hypoventilation - differentiated by A-a gradient and response to supplemental O2",
+    "rationale": "Shunt does not correct with 100% O2 (distinguishing it from V/Q mismatch); diffusion impairment and low FiO2 correct easily; hypoventilation raises CO2.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 54
+      }
+    ],
+    "confusable_with": "Shunt and V/Q mismatch being interchangeable (shunt uniquely unresponsive to O2)"
+  },
+  {
+    "id": "hpv-3",
+    "topic": "Hypoxic pulmonary vasoconstriction: clinical pharmacology",
+    "domain": "Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)",
+    "discipline": "anesthesia",
+    "stem": "In the aged patient, what principal pharmacodynamic change reduces anesthetic requirement?",
+    "answer": "Reduced anesthetic requirement (lower MAC) with aging due to reduced pharmacodynamic sensitivity",
+    "rationale": "Neuronal density decreases with age and CNS sensitivity to anesthetic agents increases, requiring lower concentrations for equivalent effect.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      }
+    ],
+    "confusable_with": "Pharmacokinetic changes as the primary driver of MAC reduction with age (both contribute but pharmacodynamic change is principal)"
+  },
+  {
+    "id": "hpv-4",
+    "topic": "Hypoxic pulmonary vasoconstriction: clinical pharmacology",
+    "domain": "Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)",
+    "discipline": "anesthesia",
+    "stem": "In obstetric patients, why does apnea develop faster than in non-pregnant patients during induction?",
+    "answer": "Decreased FRC and increased oxygen uptake (higher metabolic rate) in pregnancy cause rapid oxygen desaturation during apnea",
+    "rationale": "Reduced FRC means less oxygen reserve, and higher metabolic O2 consumption depletes that reserve faster, narrowing the safe apnea window.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 605
+      }
+    ],
+    "confusable_with": "Pregnancy reducing drug clearance as the primary risk (pharmacokinetics matter but the hypoxemia mechanism is physiological)"
+  },
+  {
+    "id": "icuanalg-1",
+    "topic": "ICU Analgesia",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What is the key principle of sedation vacation (spontaneous awakening trials) in the ICU?",
+    "answer": "Daily sedation interruptions (sedation vacation) improve outcomes by reducing total sedation dose and facilitating earlier liberation from ventilation",
+    "rationale": "Continuous sedation accumulates drug burden and prolongs ICU stay; daily awakening trials allow assessment of neurological status and reduce time on ventilator.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   ICU Sedation",
+        "page": 1
+      }
+    ],
+    "confusable_with": "Continuous deep sedation being safer for all intubated patients"
+  },
+  {
+    "id": "icuanalg-2",
+    "topic": "ICU Analgesia",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What is the general postoperative management principle after pneumonectomy regarding mechanical ventilation?",
+    "answer": "Most patients are extubated shortly after pneumonectomy to decrease postoperative morbidity",
+    "rationale": "Early extubation after pneumonectomy reduces ventilator-associated complications and allows earlier mobilisation, which improves recovery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 914
+      }
+    ],
+    "confusable_with": "Routine prolonged mechanical ventilation after all pneumonectomies"
+  },
+  {
+    "id": "icuanalg-3",
+    "topic": "ICU Analgesia",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What analgesic approach is defined as a broad combination of interventional and systemic techniques that reduce opioid requirements?",
+    "answer": "Multimodal analgesia: combination of regional techniques (epidural, peripheral nerve blocks) plus systemic non-opioid analgesics to reduce opioid burden",
+    "rationale": "Targeting multiple analgesic pathways simultaneously reduces opioid side effects while maintaining or improving pain control.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 744
+      }
+    ],
+    "confusable_with": "High-dose opioid monotherapy as the gold standard for ICU analgesia"
+  },
+  {
+    "id": "icuanalg-4",
+    "topic": "ICU Analgesia",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What unique opioid technique delivers substantially lower total opioid doses with fewer systemic side effects compared to systemic administration?",
+    "answer": "Epidural and intrathecal opioids provide analgesia with substantially lower total doses and fewer systemic side effects than parenteral administration",
+    "rationale": "Spinal delivery of opioids acts directly on dorsal horn receptors with minimal systemic uptake, achieving analgesia at a fraction of the systemic dose.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1764
+      }
+    ],
+    "confusable_with": "IV PCA being equivalent to neuraxial opioids in dose-sparing (neuraxial uses significantly lower doses)"
+  },
+  {
+    "id": "icuanalg-5",
+    "topic": "ICU Analgesia",
+    "domain": "Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)",
+    "discipline": "anesthesia",
+    "stem": "What medication class used in pain management should be withheld preoperatively or used with caution in patients with obstructive sleep apnea due to risk of apnea?",
+    "answer": "Opioids and sedating medications (benzodiazepines) that cause upper airway obstruction or apnea should be withheld or used cautiously in OSA patients",
+    "rationale": "OSA patients have baseline upper airway instability; opioids reduce upper airway muscle tone and blunt hypoxic arousal, dramatically increasing apnea risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 507
+      }
+    ],
+    "confusable_with": "All analgesics being contraindicated in OSA (non-opioid analgesics are safe)"
+  }
+]

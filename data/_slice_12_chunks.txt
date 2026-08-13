@@ -1,0 +1,416 @@
+=== TOPIC: Nontuberculous Mycobacteria | domain=Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA) | discipline=medicine ===
+  BOOK: Morgan & Mikhail, PAGE: 908
+  TEXT: Causes include cigarette smoking; a variety of viruses, bacteria, nontuberculous mycobacteria, and fungi; as well as inhalation of toxic gases, aspiration of gastric acid, and defective mucociliary clearance (cystic fibrosis and disorders of ciliary dysfunction)
+
+  BOOK: Morgan & Mikhail, PAGE: 908
+  TEXT: Section: 2. Infection. of Chest Physicians evidence-based clinical practice guidelines. Chest. 2013 May;143(5 Suppl):e166S-e190S.) 2. Infection Pulmonary infections may present as a solitary nodule or cavitary lesion (necrotizing pneumonitis). VATS may be carried out to exclude malignancy and diagnose the infectious agent. Lung resection is also indicated for cavitary lesions that are refractory to antibiotic treatment, are associated with refractory empyema, or result in massive hemoptysis. Res
+
+  BOOK: Society Guideline: Guideline   IDSA 2014 SSTI, PAGE: 34
+  TEXT: The most common manifestations of nontuberculous mycobacteria (NTM) infection in SOT recipients include cutaneous and pleuropulmonary disease, and, in HSCT recipients, catheter-related infection and bacteremia [228].Disseminated infection with Mycobacterium avium complex occurs preferentially among patients with
+
+  BOOK: StatPearls: StatPearls   Bronchiectasis, PAGE: 3
+  TEXT: [5] [6] [7] [8] Sputum culture to exclude nontuberculous mycobacteria (NTM) and assessment of autoantibodies are also suggested
+
+  BOOK: Society Guideline: Guideline   IDSA 2014 SSTI, PAGE: 34
+  TEXT: Nontuberculous Mycobacteria Although most infections occur after primary inoculation at sites of skin disruption or trauma, hematogenous dissemination does occur
+
+  BOOK: Society Guideline: Guideline   IDSA 2014 SSTI, PAGE: 34
+  TEXT: Section: Trichosporon beigelii is an uncommon but frequently fatal dis-. the patient is thrombocytopenic. Painful myositis can develop as a consequence of hematogenous infection and is most common with Candida tropicalis [218, 219]. Muscle and soft tissue abscess formation is uncommon, but when identiﬁed it has usually oc- curred following marrow recovery. Trichosporon beigelii is an uncommon but frequently fatal dis- seminated fungal infection that often involves the skin [220]. Dermatologic ma
+
+  BOOK: StatPearls: StatPearls   Bronchiectasis, PAGE: 3
+  TEXT: Section: PCD, CF, Young Syndrome: Recurrent sinus disease, infertility. chial obstruction: localized wheezing PCD, CF, Young Syndrome: Recurrent sinus disease, infertility Features of acute exacerbation of bronchiectasis: Change in sputum production, increased dyspnea, increased cough, fever, increased wheezing, and reduced pulmonary function. The recommendations of the British Thoracic Society (BTS) suggest checking for underlying factors involving immunoglobulin tests (IgA, IgM, IgG, and IgE),
+
+  BOOK: MGH Housestaff Manual, PAGE: 195
+  TEXT: Section: Allergy & Immunology. Allergy & Immunology Primary Immunodeficiency Natalia Sutherland P R I M A R Y I M M U N O D E F I C I E N C Y D I S O R D E R S (JACI 2016 1109-1110,) Definition: inherited deficits of immune system → increased incidence/severity/frequency of infections Prevalence: 1/1200-2000 pts Warning signs in adults: ≥4 infection requiring antibiotics/year (ear infxn, sinusitis, bronchitis, PNA, otitis media), infection not responsive to antibiotics, ≥2 severe infections (ost
+
+  BOOK: StatPearls: StatPearls   Tuberculosis (TB), PAGE: 17
+  TEXT: Bacterial pathogens, eg, Bartonella and atypical mycobacteria, can also cause cervical, axillary, and inguinal lymphadenitis; atypical mycobacteria, like M tuberculosis , may produce purplish-red skin discoloration during the progression of the infection
+
+  BOOK: MGH Housestaff Manual, PAGE: 128
+  TEXT: Adeno, BK EBV, HCV, HBV HHV 6,7 HPV, JC/PML, PTLD CMV, community-acquired Endemic fungi Listeria, Nocardia TB, non-TB mycobacteria Toxo, leishmaniasis Strongy, T
+
+
+=== TOPIC: Nutrition in GI & Hepatic Disease | domain=Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy) | discipline=medicine ===
+  BOOK: Morgan & Mikhail, PAGE: 2002
+  TEXT: Section: Many investigators have hypothesized that adverse neurohormonal and inflammatory. Many investigators have hypothesized that adverse neurohormonal and inflammatory responses to surgery and anesthesia can be ameliorated through specific diets. Several clinical trials (and a recent meta-analysis) suggest that the addition of “immunomodulating” nutrients (specifically arginine and “fish” oil) to EN may reduce the risk of infection and reduce the length of hospital stay in high-risk surgical
+
+  BOOK: Morgan & Mikhail, PAGE: 1997
+  TEXT: Section: This chapter cannot provide a complete review of nutrition for the patient. favorable outcomes in patients with critical illness, a large fraction of whom will require procedural services. Severe malnutrition causes widespread organ dysfunction and increases the risk of perioperative morbidity and mortality. Nutritional repletion may improve wound healing, restore immune competence, and reduce morbidity and mortality rates in critically ill patients. Nutritional support is a key element
+
+  BOOK: Morgan & Mikhail, PAGE: 1997
+  TEXT: Hepatic and, to a lesser extent, renal glycogenolysis and gluconeogenesis are enhanced
+
+  BOOK: Morgan & Mikhail, PAGE: 1895
+  TEXT: Section: Hyperphosphatemia is generally treated with phosphate-binding antacids such as. Hyperphosphatemia is generally treated with phosphate-binding antacids such as aluminum hydroxide or aluminum carbonate. Anesthetic Considerations Although specific interactions between hyperphosphatemia and anesthesia have not been described, kidney function should be assessed, and hypocalcemia should be excluded. Hypophosphatemia is usually the result of either a negative phosphorus balance or cellular upt
+
+  BOOK: Morgan & Mikhail, PAGE: 2126
+  TEXT: Section: Scope. nosocomial infections. Systemic pooling of blood and transudation of fluid into tissues result in relative hypovolemia in patients with sepsis. The range of conditions that specialists in critical care medicine must address is extraordinarily broad. Many frequent concerns of the intensivist are covered in other chapters and will not be discussed here to avoid duplication. Therefore, for an overview of critical care medicine, the reader will need to refer to chapters where airway 
+
+  BOOK: Morgan & Mikhail, PAGE: 1448
+  TEXT: Section: Kidney & Gastrointestinal Function. Kidney & Gastrointestinal Function Kidney function usually approaches normal values (corrected for size) by 6 months of age, but this may be delayed until the child is 2 years old. Premature neonates often demonstrate renal immaturity with one or more of the following: decreased creatinine clearance, impaired sodium retention, impaired glucose excretion, impaired bicarbonate reabsorption, reduced diluting ability, and reduced concentrating ability. Th
+
+  BOOK: Morgan & Mikhail, PAGE: 1997
+  TEXT: Excess carbohydrates are stored as glycogen in the liver and skeletal muscle
+
+  BOOK: MGH Housestaff Manual, PAGE: 84
+  TEXT: Section: Nutrition & Feeding. Nutrition & Feeding Shawna Bilton G E N E R A L A P P R O A C H (ACG: AJG 2016;111:315) 1) Assess nutritional status (Clin Nutr ESPEN 2018;26:13) Hx/Exam: dietary intake/tolerance, n/v/d, muscle/fat wasting, weight loss, functional capacity (grip strength, ADLs). Screen for food insecurity (Hunger Vital Sign) Weight loss as indicator of malnutrition: >2% in 1 wk, >5% in 1 month, >7.5% in 3 months, >10% in 6 months, >20% in 1yr Labs: INR prolongation may indicate mal
+
+  BOOK: MGH Housestaff Manual, PAGE: 3
+  TEXT: Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphylaxis Potassium Disorders Mast Cell Disorders Magnesium & Phosphorus Disorders Primary Immunodeficienc
+
+  BOOK: Society Guideline: Guideline   AASLD EASL 2014 Hepatic Encephalopathy, PAGE: 72
+  TEXT: Section: Hepatic Encephalopathy in Chronic Liver Disease:. Hepatic Encephalopathy in Chronic Liver Disease: 2014 Practice Guideline by AASLD and EASL PRACTICE GUIDELINE 111. Riggio O, Masini A, Efrati C, Nicolao F, Angeloni S, Salvatori FM, et al. Pharmacological prophylaxis of hepatic encephalopathy after transjugular intrahepatic portosystemic shunt: a randomized controlled study. J Hepatol 2005;42:674-679. 112. Fanelli F, Salvatori FM, Rabuffi P, Boatta E, Riggio O, Lucatelli P, et al. Manage
+
+
+=== TOPIC: Oncologic emergencies: hyperviscosity syndrome | domain=Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever) | discipline=medicine ===
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK518963 URL: https://www.ncbi.nlm.nih.gov/books/NBK518963/ Topic: Oncologic emergencies: hyperviscosity syndrome Article Title: Hyperviscosity Syndrome License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Hyperviscosity Syndrome Alexis Perez Rogers ; Molly Es
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Source: StatPearls NCBI Bookshelf NBK ID: NBK518963 URL: https://www.ncbi.nlm.nih.gov/books/NBK518963/ Topic: Oncologic emergencies: hyperviscosity syndrome Article Title: Hyperviscosity Syndrome License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Continuing Education Activity Hyperviscosity syndrome (HVS) is an oncologic emergency that classically presents with the triad of neurological deficits, visual changes, and mucosal bleeding
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Hyperviscosity Syndrome Alexis Perez Rogers
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Assess the pathophysiology of hyperviscosity syndrome
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Differentiate the treatment options for hyperviscosity syndrome
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Highlight the significance of improving care coordination within the interprofessional team to ensure accurate evaluation and effective management of hyperviscosity syndrome
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: Objectives: Identify the causes of hyperviscosity syndromes
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 1
+  TEXT: [1] [2] [3] [4] Any pathologic elevation of the cellular components (erythrocytes, leukocytes, or platelets) or acellular components (protein) of blood can cause hyperviscosity
+
+  BOOK: StatPearls: StatPearls   Oncologic emergencies  hyperviscosity syndrome, PAGE: 2
+  TEXT: Rheumatic conditions such as seropositive rheumatoid arthritis, systemic lupus erythematosus, and Sjogren syndrome compromise polyclonal causes of HVS, as well as Castleman disease and HIV infection
+
+
+=== TOPIC: Oncologic emergencies: superior vena cava syndrome | domain=Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever) | discipline=medicine ===
+  BOOK: StatPearls, PAGE: 1
+  TEXT: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK441981 URL: https://www.ncbi.nlm.nih.gov/books/NBK441981/ Topic: Oncologic emergencies: superior vena cava syndrome Article Title: Superior Vena Cava Syndrome License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Superior Vena Cava Syndrome Marc T. Seligson ;
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: Section: What is superior vena cava syndrome?. What is superior vena cava syndrome? Superior vena cava syndrome is the result of progressive enlargement of a mediastinal mass and compression of mediastinal structures, particularly the vena cava. Lymphomas are most commonly responsible, but primary pulmonary or mediastinal neoplasms can also produce the syndrome. Superior vena cava syndrome is often associated with severe airway obstruction and cardiovascular collapse on induction of general anes
+
+  BOOK: StatPearls, PAGE: 1
+  TEXT: Source: StatPearls NCBI Bookshelf NBK ID: NBK441981 URL: https://www.ncbi.nlm.nih.gov/books/NBK441981/ Topic: Oncologic emergencies: superior vena cava syndrome Article Title: Superior Vena Cava Syndrome License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  BOOK: Morgan & Mikhail, PAGE: 904
+  TEXT: Section: Clinical Manifestations. arise from almost any source, but commonly they are from cancers of the kidney, breast, ovary, testis, colon, rectum, head and neck, and uterus. Metastases may be present in lung tissue, lymph nodes, or both. Clinical Manifestations Symptoms may include cough, hemoptysis, wheezing, weight loss, productive sputum, dyspnea, or fever. Pleuritic chest pain or pleural effusion suggests pleural extension. Involvement of mediastinal structures is suggested by hoarsenes
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: Superior vena cava syndrome is the result of progressive enlargement of a mediastinal mass and compression of mediastinal structures, particularly the vena cava
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: Section: What is superior vena cava syndrome?
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: What is superior vena cava syndrome?
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: Superior vena cava syndrome is often associated with severe airway obstruction and cardiovascular collapse on induction of general anesthesia
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: What is the anesthetic of choice for a patient with superior vena cava syndrome?
+
+  BOOK: Morgan & Mikhail, PAGE: 930
+  TEXT: The absence of signs or symptoms of airway compression or superior vena cava syndrome does not preclude potentially life-threatening complications following induction of general anesthesia
+
+
+=== TOPIC: Pituitary Apoplexy | domain=Internal medicine: endocrinology (diabetes & inpatient glucose, DKA & HHS, thyroid disorders & storm, adrenal insufficiency, calcium disorders, pituitary) | discipline=medicine ===
+  BOOK: Morgan & Mikhail, PAGE: 994
+  TEXT: Section: What type of tumor does this patient have?. cavernous sinus or the internal carotid artery, (4) cranial nerve damage, and (5) pituitary hypofunction. Prophylactic administration of glucocorticoids is routinely used in most centers. Diabetes insipidus develops postoperatively in up to 40% of patients but is usually transient. Less commonly, the diabetes insipidus presents intraoperatively. The supine and slightly head-up position used for this procedure may also predispose to venous air 
+
+  BOOK: Morgan & Mikhail, PAGE: 994
+  TEXT: Rarely, hemorrhage into the pituitary results in acute panhypopituitarism (pituitary apoplexy) with signs of a rapidly expanding mass, hemodynamic instability, and hypoglycemia
+
+  BOOK: Morgan & Mikhail, PAGE: 2315
+  TEXT: Section: Phencyclidine, 171. Phencyclidine, 171 Phenelzine, 634 Phenobarbital, 166, 166f, 627t, 909t Phenothiazines, 686–687 Phenoxybenzamine, 248, 770 Phentolamine, 248, 771, 909t Phenylephrine, 241t, 241–242, 328, 379, 395, 419, 472t, 781t, 851, 857, 909t, 974, 989t Phenytoin, 627t, 909t, 1102t Pheochromocytoma, 247–248, 278, 770 Phosphate, 1189t Phospholipase C, 182, 274, 1081f hyperphosphatemia, 1185 hypophosphatemia, 1185–1186 normal plasma concentration of, 1185 Phrenic nerve, 268, 974 pH-
+
+  BOOK: StatPearls: StatPearls   Pituitary Apoplexy, PAGE: 2
+  TEXT: y, surgical decompression, and conservative management using clinical and imaging parameters. Strategize interprofessional team plans for improving care coordination and communication to advance the care of patients with pituitary apoplexy. Access free multiple choice questions on this topic. Apply evidence-based emergency management strategies to stabilize patients with pituitary apoplexy and reduce life-threatening complications, including rapid initiation of corticosteroid therapy to prevent 
+
+  BOOK: MGH Housestaff Manual, PAGE: 186
+  TEXT: Section: Pituitary Disorders. Pituitary Disorders Bryan Holtzman H Y P O P I T U I T A R I S M Definition: pituitary hormone production/release resulting from diseases of pituitary (1°) or hypothalamus/stalk (2°) Causes: surgery, radiation, infection (TB, fungal, meningitis), infiltration (sarcoid, hemochromatosis, Langerhans cell histiocytosis, lymphocytosis), TBI, genetic, tumors (1°: pituitary tumors, mets; 2°: external stalk compression [e.g., craniopharyngioma, meningioma, mets]) 1° only: 
+
+  BOOK: StatPearls: StatPearls   Pituitary Apoplexy, PAGE: 7
+  TEXT: Section: The following can be complications of pituitary apoplexy:. al predictors of improved postoperative headaches. [55] Hormonal replacement therapy is required in 80% of patients. [1] [23] [54] In some cases that are treated conservatively, spontaneous remission of the tumor has occurred, and surgery was not required. [56] [57] This may be the result of ischemic necrosis of the tumoral tissue. The following can be complications of pituitary apoplexy: Increased intracranial pressure Bilatera
+
+  BOOK: StatPearls: StatPearls   Pituitary Apoplexy, PAGE: 5
+  TEXT: Section: Treatment / Management. is very sensitive for detecting deposits of hemosiderin. [2] A brain MRI is performed to define better the full extent of the mass in multiple scan projections, making MRI the diagnostic imaging modality of choice. [2] [25] MRI can easily identify hemorrhagic and necrotic areas (see Image. Magnetic Resonance Imaging of Pituitary Apoplexy). The characteristic brain MRI findings in pituitary apoplexy are an enlarged sellar/suprasellar mass with variable degrees of 
+
+  BOOK: StatPearls: StatPearls   Pituitary Apoplexy, PAGE: 1
+  TEXT: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK559222 URL: https://www.ncbi.nlm.nih.gov/books/NBK559222/ Topic: Pituitary Apoplexy Article Title: Pituitary Apoplexy License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Walter A. Hall ; Orlando De Jesus . Authors Walter A. Hall 1 ; Orlando De Jesus 2 . Las
+
+  BOOK: StatPearls: StatPearls   Pituitary Apoplexy, PAGE: 3
+  TEXT: nce approaches 10%. [2] [21] [22] [23] If neuroimaging studies detect a nonsymptomatic intratumoral hemorrhage, the incidence increases to 26%. Apoplexy in pituitary adenomas is rare and is estimated to be 0.2% annually. Tumors larger than 10 mm have a higher risk of hemorrhage, as do those tumors where rapid growth has been documented. [24] Most patients range in age from 37 to 58 years. [25] There is a male-to-female ratio approaching 2:1. [23] [25] [26] Hemorrhage results in acute tumor expan
+
+  BOOK: MGH Housestaff Manual, PAGE: 123
+  TEXT: Section: Infectious Disease. Infectious Disease Meningitis & Encephalitis Justine Enns B A C T E R I A L M E N I N G I T I S Clinical Features History: 95% have ≥2 of: fever, neck stiffness, AMS, HA (NEJM 2004;351:1849). Lethargy, hypothermia may be common in elderly. Abd pain, peritonitis can be seen w/ VP shunts. Can also cause seizures, stroke (infectious vasculitis), hydrocephalus, CN deficits (esp TB and fungal) (Continuum 2021;27:836). Exam: most findings more Sp than Sn. Nuchal rigidity 3
+
+
+=== TOPIC: Primary Hyperaldosteronism (Conn Syndrome) | domain=Internal medicine: endocrinology (diabetes & inpatient glucose, DKA & HHS, thyroid disorders & storm, adrenal insufficiency, calcium disorders, pituitary) | discipline=medicine ===
+  BOOK: Morgan & Mikhail, PAGE: 1878
+  TEXT: Primary hyperaldosteronism (Conn syndrome) Glucocorticoid-remediable hyperaldosteronism Renin excess Renovascular hypertension Bartter syndrome Liddle syndrome Chronic metabolic alkalosis Amphotericin B Renal tubular acidosis Distal, gradient-limited Gastrointestinal losses Diarrhea, particularly secretory diarrheas ECF → ICF shifts Acute alkalosis
+
+  BOOK: Morgan & Mikhail, PAGE: 1878
+  TEXT: Section: Primary hyperaldosteronism (Conn syndrome). Primary hyperaldosteronism (Conn syndrome) Glucocorticoid-remediable hyperaldosteronism Renin excess Renovascular hypertension Bartter syndrome Liddle syndrome Chronic metabolic alkalosis Amphotericin B Renal tubular acidosis Distal, gradient-limited Gastrointestinal losses Diarrhea, particularly secretory diarrheas ECF → ICF shifts Acute alkalosis Hypokalemic periodic paralysis Barium ingestion Insulin therapy Vitamin B12 therapy Thyrotoxicos
+
+  BOOK: Morgan & Mikhail, PAGE: 1878
+  TEXT: Section: Primary hyperaldosteronism (Conn syndrome)
+
+  BOOK: Morgan & Mikhail, PAGE: 1235
+  TEXT: Section: MINERALOCORTICOID EXCESS. MINERALOCORTICOID EXCESS Clinical Manifestations Hypersecretion of aldosterone by the adrenal cortex (primary aldosteronism) can be due to a unilateral adenoma (aldosteronoma or Conn syndrome), bilateral hyperplasia, or in very rare cases, carcinoma of the adrenal gland. Some disease states stimulate aldosterone secretion by affecting the renin–angiotensin system. For example, congestive heart failure, hepatic cirrhosis with ascites, nephrotic syndrome, and som
+
+  BOOK: Morgan & Mikhail, PAGE: 1878
+  TEXT: Cellular K+ uptake by red blood cells and platelets
+
+  BOOK: Morgan & Mikhail, PAGE: 1934
+  TEXT: Gastric drainage Chloride diarrhea Villous adenoma Low chloride intake Cystic fibrosis Increased mineralocorticoid activity Primary hyperaldosteronism Edematous disorders (secondary hyperaldosteronism) Cushing syndrome Licorice ingestion Bartter syndrome Severe hypokalemia Massive blood transfusion Acetate-containing colloid solutions Alkaline administration
+
+  BOOK: Miller/Baby Miller, PAGE: 550
+  TEXT: Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS of an aldosterone antagonist (e.g., spironolactone) or restricting sodium intake. Hypokalemia is associated with increased myocardial excitability and an increased risk of arrhythmias.36 Careful potassium repletion may be required to restore intracellular and extracellular potas- sium balance. Glucocorticoid Excess Glucocorticoid excess may be related to hyperfunction of the adrenal cortex (primar
+
+  BOOK: StatPearls: StatPearls   Metabolic Alkalosis, PAGE: 4
+  TEXT: Section: Primary Hyperaldosteronism. at electrical charges in this segment were responsible for this effect. [12] Aggressive sodium reabsorption regulated by the renin-angiotensinogen aldosterone system (RAAS) leaves a negative charge in the lumen and so traps other positively charged ions, including protons and potassium. Potassium itself is highly regulated by aldosterone, which, upon binding to its intracellular receptor, induces increased expression of epithelial sodium channels (ENaC) and p
+
+  BOOK: Morgan & Mikhail, PAGE: 1934
+  TEXT: Section: Chloride-sensitive. TABLE 50–6 Differential diagnosis of metabolic alkalosis. Gastric drainage Chloride diarrhea Villous adenoma Low chloride intake Cystic fibrosis Increased mineralocorticoid activity Primary hyperaldosteronism Edematous disorders (secondary hyperaldosteronism) Cushing syndrome Licorice ingestion Bartter syndrome Severe hypokalemia Massive blood transfusion Acetate-containing colloid solutions Alkaline administration with renal insufficiency Alkali therapy Combined ant
+
+  BOOK: Morgan & Mikhail, PAGE: 1235
+  TEXT: MINERALOCORTICOID EXCESS Clinical Manifestations Hypersecretion of aldosterone by the adrenal cortex (primary aldosteronism) can be due to a unilateral adenoma (aldosteronoma or Conn syndrome), bilateral hyperplasia, or in very rare cases, carcinoma of the adrenal gland
+
+
+=== TOPIC: Pulmonary Function Testing Interpretation | domain=Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA) | discipline=medicine ===
+  BOOK: StatPearls: StatPearls   Sarcoidosis, PAGE: 1
+  TEXT: Assess patients with suspected sarcoidosis using a systematic diagnostic approach that includes laboratory evaluation, pulmonary function testing, radiographic staging, and biopsy interpretation to confirm the diagnosis and determine disease extent
+
+  BOOK: Morgan & Mikhail, PAGE: 906
+  TEXT: Section: Patients considered at greater risk of perioperative complications (predicted FEV1. functioning surface area of the alveolar–capillary interface. Predictive postoperative DLCO can be calculated in the same fashion as postoperative FEV1. If both the predicted DLCO and FEV1 are greater than 60%, the patient is generally at lower risk for lung resection. Cardiopulmonary exercise testing is warranted when either of the tests is less than 30%. Ventilation/perfusion scintigraphy provides the 
+
+  BOOK: StatPearls, PAGE: 20
+  TEXT: , implementation of sepsis bundles, and ongoing monitoring [16] . Timely intervention significantly improves outcomes by reducing the risk of complications and death [16] . Nutritional support during postoperative recovery helps optimize immune function and wound healing. Adequate protein intake supports wound healing and immune function, helping patients mount appropriate inflammatory responses while recovering efficiently. Hydration status requires careful monitoring, as adequate fluid intake 
+
+  BOOK: Morgan & Mikhail, PAGE: 2165
+  TEXT: Section: A higher incidence of pulmonary barotrauma is observed with excessive PEEP or. Compared with a VT of 12 mL/kg, a VT of 6 mL/kg and plateau pressure (Pplt) less than 30 cm H2O have been associated with reduced mortality in patients with acute respiratory distress syndrome. A higher incidence of pulmonary barotrauma is observed with excessive PEEP or CPAP at levels greater than 20 cm H2O. Maneuvers that produce sustained maximum lung inflation, such as the use of an incentive spirometer, 
+
+  BOOK: StatPearls: StatPearls   Sarcoidosis, PAGE: 1
+  TEXT: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK430687 URL: https://www.ncbi.nlm.nih.gov/books/NBK430687/ Topic: Sarcoidosis Article Title: Sarcoidosis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Syed Rizwan A. Bokhari ; Ahlam Safdar ; Preeti Rout . Authors Syed Rizwan A. Bokhari 1 ; Ahlam Safdar
+
+  BOOK: StatPearls: StatPearls   Sarcoidosis, PAGE: 2
+  TEXT: approach that includes laboratory evaluation, pulmonary function testing, radiographic staging, and biopsy interpretation to confirm the diagnosis and determine disease extent. Select evidence-based pharmacologic treatment strategies for sarcoidosis, including appropriate initiation, tapering, and discontinuation of corticosteroids, and determine when corticosteroid-sparing agents or biologic therapies are indicated. Collaborate with an interdisciplinary team including pulmonology, cardiology, n
+
+  BOOK: Morgan & Mikhail, PAGE: 1961
+  TEXT: Section: ABO-compatible platelet transfusions are desirable but not necessary. Transfused. 109/L. Administration of a single unit of platelets may be expected to increase the platelet count by 5000 to 10,000 × 109/L, and with administration of a platelet apheresis unit, by 30,000 to 60,000 × 109/L. ABO-compatible platelet transfusions are desirable but not necessary. Transfused platelets generally survive only 1 to 7 days following transfusion. ABO compatibility may increase platelet survival. R
+
+  BOOK: Morgan & Mikhail, PAGE: 907
+  TEXT: (c) For patients with a positive high-risk cardiac evaluation deemed to be stable to proceed to surgery, we suggest performing both pulmonary function tests and cardiopulmonary exercise testing (CPET) for a more precise definition of risk
+
+  BOOK: Morgan & Mikhail, PAGE: 722
+  TEXT: Section: D. Urinary Output. inflated slowly. Whenever the catheter wedges with less than 1.5 mL of air in the balloon, it should be withdrawn farther. D. Urinary Output Once the patient is anesthetized, an indwelling urinary catheter is inserted to monitor the output. Bladder temperature is often monitored as a measure of core temperature but may not track core temperature well with reduced urinary flow. The sudden appearance of reddish urine may indicate excessive red cell hemolysis caused by C
+
+  BOOK: Morgan & Mikhail, PAGE: 881
+  TEXT: Section: Anesthesia and SARS-CoV-2 (COVID-19). improve ventricular function. Anesthesia and SARS-CoV-2 (COVID-19) At the time of this writing, COVID-19 continues to be a major public health emergency. The pandemic has produced morbidity and mortality worldwide. Anesthesia staff are heavily engaged in combating the pandemic in both intensive care units and operating rooms. Asymptomatic patients with COVID-19 are commonly identified during preoperative testing for surgery unrelated to COVID-19. Pa
+
+
+=== TOPIC: Sarcoidosis | domain=Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA) | discipline=medicine ===
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: Section: D intoxication, milk-alkali syndrome, lithium therapy, sarcoidosis, and prolonged. D intoxication, milk-alkali syndrome, lithium therapy, sarcoidosis, and prolonged immobilization. The treatment of hyperparathyroidism depends on the cause, but surgical removal of all four glands is often required in the setting of parathyroid hyperplasia. When there is a single adenoma, its removal cures many patients with sporadic primary hyperparathyroidism. TABLE 35–7 Effects of hyperparathyroidism. 
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: Section: D intoxication, milk-alkali syndrome, lithium therapy, sarcoidosis, and prolonged
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: D intoxication, milk-alkali syndrome, lithium therapy, sarcoidosis, and prolonged immobilization
+
+  BOOK: Morgan & Mikhail, PAGE: 875
+  TEXT: Causes include hypersensitivity pneumonitis from occupational and environmental pollutants, drug toxicity (bleomycin and nitrofurantoin), radiation pneumonitis, idiopathic pulmonary fibrosis, autoimmune diseases, and sarcoidosis
+
+  BOOK: Morgan & Mikhail, PAGE: 1889
+  TEXT: Excessive vitamin D intake Paget disease of bone Granulomatous disorders (sarcoidosis, tuberculosis) Chronic immobilization Milk-alkali syndrome Adrenal insufficiency Thiazide diuretics Patients with cancer can present with hypercalcemia whether or not bone metastases are present
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: 2The QT interval may be prolonged at serum calcium concentrations >16 mg/dL
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: The treatment of hyperparathyroidism depends on the cause, but surgical removal of all four glands is often required in the setting of parathyroid hyperplasia
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: When there is a single adenoma, its removal cures many patients with sporadic primary hyperparathyroidism
+
+  BOOK: Morgan & Mikhail, PAGE: 1231
+  TEXT: Ventricular arrhythmias ECG1 changes (shortened QT interval,2 widened T wave) Impaired renal concentrating ability Kidney stones Hyperchloremic metabolic acidosis Kidney failure Nausea and vomiting Peptic ulcer disease Muscle weakness Mental status change (eg, delirium, psychosis, coma)
+
+  BOOK: Morgan & Mikhail, PAGE: 875
+  TEXT: Section: B. Intraoperative Management. failure may also require treatment. Large pleural effusions usually require drainage before anesthesia. Similarly, massive abdominal distention should be relieved by nasogastric suction or drainage of ascites. Persistent hypoxemia may require mechanical ventilation. B. Intraoperative Management Selection of anesthetic agents should be tailored to each patient. Surgical patients with acute pulmonary disorders, such as ARDS, cardiogenic pulmonary edema, or pn
+
+
+=== TOPIC: Thalassemia syndromes | domain=Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever) | discipline=medicine ===
+  BOOK: MGH Housestaff Manual, PAGE: 153
+  TEXT: Section: Hematopoietic Stem Cell Transplantation. Hematopoietic Stem Cell Transplantation Lucy Gao T Y P E S O F T R A N S P L A N T Allogeneic Transplant Autologous Transplant Transplant of non-self (donor) hematopoietic cells Transplant of self (patient) hematopoietic cells Reconstitute hematopoiesis after conditioning chemo and graft-versus-tumor (GVT) effect to kill malignant cells. Also used for bone marrow failure syndromes. Always curative intent. Reconstitute hematopoiesis after high-dos
+
+  BOOK: MGH Housestaff Manual, PAGE: 147
+  TEXT: Section: Peripheral Smear Interpretation. Peripheral Smear Interpretation Catherine Gutierrez Moore G E N E R A L A P P R O A C H (NEJM 2005;353:498; MGH Slide Rounds) Special slide: 5th floor Bigelow building, first left off elevators, then another left, proceed down the hall past the Core lab, then second door on your left is the heme lab. Inside heme lab, second enclave on the right has the microscope and special slides next to it. Low power (20x): scan slide for WBC distribution. Identify th
+
+  BOOK: Miller/Baby Miller, PAGE: 303
+  TEXT: Section: Chapter 16 Airway Management. Chapter 16 Airway Management direct laryngoscopy. In infants and small children it is often necessary to lift the epiglottis with the tip of the blade of the laryngoscope to visualize the vocal cords in order to successfully intubate the trachea. An infant's airway is funnel-shaped, with a relatively large thyroid cartilage above and a relatively narrow cricoid cartilage below. The cricoid cartilage is the nar- rowest portion of an infant's airway, whereas 
+
+  BOOK: Miller/Baby Miller, PAGE: 364
+  TEXT: Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT causing a transient increase in cardiac output. In addi- tion, the lithotomy position causes the abdominal viscera to displace the diaphragm cephalad, reducing lung com- pliance and potentially resulting in a decreased tidal vol- ume. Again, the normal lordotic curvature of the lumbar spine is lost in this position, potentially aggravating any previous l
+
+  BOOK: Miller/Baby Miller, PAGE: 645
+  TEXT: Section: Chapter 34 Pediatrics. Chapter 34 Pediatrics Difficult Pediatric Airway The difficult airway in children can be challenging because of a lack of patient cooperation in most age groups, which makes awake endotracheal intubation vir- tually impossible. Most techniques are performed under deep sedation or general anesthesia. A difficult airway should be anticipated in patients with craniofacial abnor- malities or syndromes including Pierre Robin, Treacher Collins, and Goldenhar syndromes. 
+
+  BOOK: Miller/Baby Miller, PAGE: 681
+  TEXT: Section: Chapter 35 Geriatrics. Chapter 35 Geriatrics (TCAs) and serotonin–norepinephrine reuptake inhibitors (SNRIs) can be effective adjuncts for many chronic pain syndromes, and it is important to continue these medi- cations throughout the perioperative period whenever possible to avoid withdrawal symptoms.42 The disadvan- tage of TCAs are their anticholinergic effects, which can potentiate cognitive dysfunction, and their tendency to cause orthostatic hypotension and potentially lead to fal
+
+  BOOK: MGH Housestaff Manual, PAGE: 152
+  TEXT: Section: MDS & MPN. MDS & MPN Nicolas Trad M Y E L O D Y S P L A S T I C N E O P L A S M S/S Y N D R O M E S (MPN/MDS) Pathophys: clonal mutation  ineffective/dysmorphic hematopoiesis  cytopenias, risk of transf. to AML, and reduced survival Presentation: median age 65-75; s/sx include fatigue (55%), fever/infection (15%), and bleeding (8%) RF: old age, male, exposures (benzene, tobacco, chemotherapy, XRT), autoimmune disorders (rheumatic heart dz, RA), PNH Diagnosis: 1+ cytopenia, BMBx with d
+
+  BOOK: MGH Housestaff Manual, PAGE: 37
+  TEXT: Section: Andrea Martinez. Andrea Martinez O V E R V I E W Definition: transient (self-limited) loss of consciousness due to cerebral hypoperfusion that is associated with loss of postural tone, followed by complete spontaneous recovery; excludes metabolic causes (e.g. hypoglycemia, hypoxia, intoxication) Risk assessment and need for hospitalization: High-risk symptoms: preceding palpitations, exertional syncope, bleeding, syncope while supine, lack of prodrome, trauma High-risk features: angina,
+
+  BOOK: MGH Housestaff Manual, PAGE: 148
+  TEXT: Section: Acute Leukemia. Acute Leukemia Dan Ikeda G E N E R A L A D M I S S I O N A P P R O A C H History: sibling status (for donor search), family history (for inherited syndromes), and if pre/peri menopausal, obtain date of LMP Peripheral smear: anemia, thrombocytopenia, variable WBC, circulating blasts (“other cells”), Auer rods (indicates myeloid origin) Peripheral flow cytometry: Collect in yellow top. In Epic, order “Flow cytometry labs (blood)”  fill in Clinical hx; select “Leukemia Pan
+
+  BOOK: MGH Housestaff Manual, PAGE: 181
+  TEXT: Section: Outpatient Type 2 Diabetes Mellitus. Outpatient Type 2 Diabetes Mellitus Adriana Saavedra-Simmons S C R E E N I N G (Diab Care 2024:47;S26) ADA recs: Begin at age ≥35 years, repeat q3y if normal. Repeat q1y if pre-DM. All adults at higher risk = 1) BMI ≥25 (≥23 in Asian- Americans) + RF (1st degree relative with T2DM, nonwhite, history of CVD, HTN, HDL<35, triglycerides >250, PCOS, sedentary lifestyle, acanthosis nigricans) or 2) History of gestational DM or pancreatitis or 3) HIV prior
+
+
+=== TOPIC: Thrombotic Microangiopathy (TMA) Syndromes | domain=Internal medicine: nephrology, fluids & electrolytes | discipline=medicine ===
+  BOOK: StatPearls: StatPearls   Thrombotic microangiopathies (TMA), PAGE: 1
+  TEXT: Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK611985 URL: https://www.ncbi.nlm.nih.gov/books/NBK611985/ Topic: Thrombotic microangiopathies (TMA) Article Title: Thrombotic Microangiopathy and the Kidney License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Thrombotic Microangiopathy and the Kidney Abdull
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 11
+  TEXT: Differential Diagnosis of TMA below
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 1
+  TEXT: However, this nomenclature is imprecise, as the term atypical HUS is broadly used to describe heterogeneous disorders with distinct pathophysiology and treatments
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 9
+  TEXT: tial triggering factors: Recent illnesses or infections Newly prescribed medications or illicit substance use Newly diagnosed or exacerbation of previously well-controlled hypertension Exacerbations of chronic illnesses (particularly autoimmune disorders, ie, lupus or antiphospholipid syndrome) History of
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 10
+  TEXT: brane cofactor protein, cluster of differentiation 46 using flow cytometry) Complement functional assays: 50% hemolytic complement (classical), alternative pathway method (alternative), hemolytic assays, recombinant production of the variant followed by in vitro functional assays Genetic testing
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 12
+  TEXT: A strategic approach is equally crucial, involving evidence-based strategies to optimize treatment plans and minimize adverse effects
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 13
+  TEXT: clares no relevant financial relationships with ineligible companies
+
+  BOOK: StatPearls: StatPearls   Thrombotic Microangiopathy (TMA) Syndromes, PAGE: 13
+  TEXT: You are not required to obtain permission to distribute this article, provided that you credit the author and journal
+
+  BOOK: StatPearls: StatPearls   Thrombotic microangiopathies (TMA), PAGE: 11
+  TEXT: Section: Table. Differential Diagnosis of TMA. t. These disorders and specific investigations to differentiate them from TMA are summarized in Table. Differential Diagnosis of TMA below. Table. Differential Diagnosis of TMA Differential diagnosis Investigation TMA was previously associated with very high rates of morbidity and mortality. However, the introduction of anti-complement therapy, therapeutic plasmapheresis (TPE), and immunosuppressive therapies have led to significant decreases in the
+
+  BOOK: StatPearls: StatPearls   Thrombotic microangiopathies (TMA), PAGE: 10
+  TEXT: Section: Testing for acquired factors (commonly factor H autoantibody). factor protein, cluster of differentiation 46 using flow cytometry) Complement functional assays: 50% hemolytic complement (classical), alternative pathway method (alternative), hemolytic assays, recombinant production of the variant followed by in vitro functional assays Genetic testing for complement variants (confirms a diagnosis of TMA and provides prognostic information regarding the risk of progression to end-stage ren
+
+
+=== TOPIC: Transplant Nephrology Basics | domain=Internal medicine: nephrology, fluids & electrolytes | discipline=medicine ===
+  BOOK: MGH Housestaff Manual, PAGE: 103
+  TEXT: Section: Dialysis & Transplant. Dialysis & Transplant Beth Gay O V E R V I E W (NEJM 2022;386(10):964) Diffusion: concentration gradient drives small molecules (e.g. urea, creatinine) across selectively permeable membrane Convection: hydrostatic pressure forces medium-weight molecules across membrane Ultrafiltration (UF): volume removal, removal of plasma water by hydrostatic pressure I M P O R T A N T C O N S I D E R A T I O N S Timing: controversial, most recent studies suggest no benefit to e
+
+  BOOK: Stanford CA-1, PAGE: 40
+  TEXT: Section: Recommended Dosages. Recommended Dosages Cannot intubate, cannot ventilate 16 mg/kg Deep reversal (1 twitch OR, if recovery has reached at least post tetanic count of 2) 4 mg/kg Standard reversal (1-2 twitches in TOF) 2 mg/kg After inadequate neostigmine reversal sugammadex dose depends on TOF (same as indicated in the above table). Sugammadex (cont.) Patients using hormonal contraceptives must use an additional, non-hormonal method of contraception for the next 7 days Not recommended i
+
+  BOOK: Society Guideline: Guideline   KDIGO 2012 AKI, PAGE: 120
+  TEXT: Section: International Society of Nephrology, and the Distinguished. his noted achievements include the International Award from the NKF (USA), the Roscoe Robinson Award from the International Society of Nephrology, and the Distinguished Researcher Award from Cairo University. Advisor/Consultant: Wyeth Novartis; Roche; Wyeth Emmanuel A Burdmann, MD, PhD, is Head of Intensive Care Unit and Associate Professor, Division of Nephrology at University of Sa˜o Paulo Medical School. He received his medi
+
+  BOOK: Society Guideline: Guideline   KDIGO 2021 Blood Pressure CKD, PAGE: 8
+  TEXT: Section: SBP arm in SPRINT. It is conceivable that the potential loss of. mm Hg in Chapter 3 for the general CKD population are two-fold. Foremost is the exclusion of transplant recipients in large randomized trials on BP targets, such as SPRINT, that demonstrated cardiovascular and survival beneﬁts. Second is the concern about the higher, albeit modest, incidence of acute kidney injury and rate of loss in eGFR in the arm randomized to SBP <120 mm Hg, compared to the higher SBP arm in SPRINT. It
+
+  BOOK: MGH Housestaff Manual, PAGE: 69
+  TEXT: Section: Pulmonary & Critical Care. Pulmonary & Critical Care Rachel Ancar & Sanjeethan Baksh (Pharmacotherapy 2015;35:189; Chest 2011;140:795; Crit Care Clin 2012;28:479; Circulation 2023;148:149); see Nephrology for alcohols D E C O N T A M I N A T I O N T H E R A P I E S Activated Charcoal Most effective if given when substance is still in stomach (usually considered to be within 1h of ingestion, but data is lacking) Not useful for: cyanide, lithium, ethanol/methanol, glycols, mineral acids (
+
+  BOOK: Society Guideline: Guideline   KDIGO 2024 CKD, PAGE: 170
+  TEXT: Section: Durham. practices nephrology at the Healthcare System, leading a geriatric nephrology clinic. This innovative clinic incorporates geriatric assessment to inform CKD management and dialysis decision-making conversations. Her research focuses on the integration of geriatric principles into kidney care settings. Her research has also included observational cohort studies of physical function, frailty, and resilience; qualitative studies on quality of life and geriatric care, pharmacoepidem
+
+  BOOK: MGH Housestaff Manual, PAGE: 102
+  TEXT: Section: Chronic Kidney Disease. Chronic Kidney Disease Natalia Sutherland CKD definition: GFR <60mL/min OR kidney damage (albuminuria ≥30mg/d for ≥3mo (JAMA 2015;313: 837) Estimating GFR: 2021 CKD-EPI (NEJM 2021;385:1737) (race omitted). Race in eGFR calc can lead to undertreatment and transplant inequity for Black pts (NEJM 2020;383:874) Role for Cystatin C: protein excreted by cells, less affected than Cr by gender, age, body size, nutritional status (Expert Rev Mol Diagn. 2020; 20(10): 1019)
+
+  BOOK: MGH Housestaff Manual, PAGE: 103
+  TEXT: LDKT > DDKT; racial disparities exist in transplant access Listing: refer EARLY (GFR <30), pts can be listed when GFR <20; pt & graft survival are improved if transplant occurs PRIOR to HD Contraindications: short life
+
+  BOOK: Society Guideline: Guideline   KDIGO 2012 AKI, PAGE: 123
+  TEXT: Section: International Society of Peritoneal Dialysis. He is a member. International Society of Peritoneal Dialysis. He is a member of several editorial boards and serves as Section Editor for Nephrology Dialysis Transplantation and Pediatric Nephrology. Dr Schaefer reported no relevant ﬁnancial relationships. graduated from the faculty of Medicine of the Catholic University of Leuven, Belgium, after which she specialized in anesthesiology and later in intensive care medicine. Since 1981 she is 
+
+  BOOK: Society Guideline: Guideline   KDIGO 2021 Blood Pressure CKD, PAGE: 1
+  TEXT: Section: Executive summary of the KDIGO 2021 Clinical. Executive summary of the KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease Alfred K. Cheung1, Tara I. Chang2, William C. Cushman3, Susan L. Furth4,5, Fan Fan Hou6, Joachim H. Ix7,8, Gregory A. Knoll9, Paul Muntner10, Roberto Pecoits-Filho11,12, Mark J. Sarnak13, Sheldon W. Tobe14,15, Charles R.V. Tomson16, Lyubov Lytvyn17,18, Jonathan C. Craig19,20, David J. Tunnicliffe20,21, Martin Howell2
+
+
+=== TOPIC: Human Factors & Cognitive Error in Clinical Practice | domain=Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness) | discipline=anesthesia ===
+  BOOK: Society Guideline: Guideline   KDIGO 2024 CKD, PAGE: 36
+  TEXT: Section: Initial test – eGFRcr*. 1.2.2 Guidance to physicians and other healthcare providers Practice Point 1.2.2.1: Use serum creatinine (SCr) and an estimating equation for initial assessment of GFR (Figure 11). Recommendation 1.2.2.1: We recommend using eGFRcr-cys in clinical situations when eGFRcr is less accurate and GFR affects clinical decision-making (Table 8127-142) (1C). Practice Point 1.2.2.2: Where more accurate ascertainment of GFR will impact treatment decisions, measure GFR using 
+
+  BOOK: Miller/Baby Miller, PAGE: 854
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE It is easy to see how quality and safety do not always overlap. As an example, a process can always be made incrementally safer by installing an additional check or adding extra equipment. In anesthesia practice, for example, an anesthesia provider is arguably not fully safe unless a fiber-optic scope is present in the operating room to facilitate difficult airway management. Another extreme example is 
+
+  BOOK: Society Guideline: Guideline   IDSA 2014 SSTI, PAGE: 37
+  TEXT: Section: The priorities for further research are as follows:. inclusion criteria, is necessary for enrollment in the clinical trial. The priorities for further research are as follows: 1. Rapid and speciﬁc diagnostic assays are needed for iden- tiﬁcation of microbes that cause cellulitis. 2. Inexpensive agents are needed that are effective against groups A, B, C, and G streptococci as well as staphylococci in- cluding MRSA. 3. Investigations are needed to determine the pathogenesis of soft tissu
+
+  BOOK: Society Guideline, PAGE: 66
+  TEXT: Section: 198. Hajjeh RA, Conn LA, Stephens DS, et al: Cryptococcosis:. 198. Hajjeh RA, Conn LA, Stephens DS, et al: Cryptococcosis: Population-based multistate active surveillance and risk factors in human immunodeficiency virus-infected persons. Cryptococcal Active Surveillance Group. J Infect Dis 1999; 199. Maziarz EK, Perfect JR: Cryptococcosis. Infect Dis Clin North Am 2016; 30:179–206 200. McCarthy KM, Morgan J, Wannemuehler KA, et al: Population-based surveillance for cryptococcosis in an 
+
+  BOOK: Miller/Baby Miller, PAGE: 212
+  TEXT: Section: Section II PHARMACOLOGY AND PHYSIOLOGY. Section II PHARMACOLOGY AND PHYSIOLOGY children. Several nonspecific drugs that have neuroprotec- tive properties (lithium, melatonin, estrogen, erythropoietin, estradiol, and dexmedetomidine) alleviate AIDN. Dexme- detomidine mitigates isoflurane-induced neuroapoptosis and behavioral impairment.36 However, high doses of dex- medetomidine can induce neuroapoptosis.37 The neuropro- tective effect of dexmedetomidine probably induces cell survival si
+
+  BOOK: Miller/Baby Miller, PAGE: 790
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE sleep apnoea and postoperative out- come. Br J Anaesth. 2012;109(6): 897–906. 52. Chung F, Yang Y, Brown R, Liao P. Alternative scoring models of STOP- bang questionnaire improve specificity to detect undiagnosed obstructive sleep apnea. J Clin Sleep Med. 2014;10(9):951– 958. 53. Fernandez-Bustamante A, Bartels K, Clavijo C, Scott BK, Kacmar R, Bul- lard K, etal. Preoperatively screened obstructive sle
+
+  BOOK: Society Guideline: Guideline   KDIGO 2024 CKD, PAGE: 78
+  TEXT: Section: Signiﬁcant. better characterize proteinuria. albuminuria generally reﬂects glomerular damage.304 Importantly, in the context of screening for children with diabetes, ACR remains the standard, in line with adult guidelines. The same considerations of using ﬁrst morning samples (because of orthostatic proteinuria) and considering tran- siently increased proteinuria during intercurrent illness or after exercise apply to children as well as adults. Orthostatic proteinuria is estimated to af
+
+  BOOK: Society Guideline: Guideline   KDIGO 2024 CKD, PAGE: 76
+  TEXT: Section: Practice Point 1.3.1.2: Use more accurate methods when. Practice Point 1.3.1.2: Use more accurate methods when albuminuria is detected using less accurate methods.  Conﬁrm reagent strip positive albuminuria and/or pro- teinuria by quantitative laboratory measurement and express as a ratio to urine creatinine wherever possible (i.e., quantify the ACR or PCR if initial semiquantitative tests are positive).  Conﬁrm ACR ‡30 mg/g (‡3 mg/mmol) on a random untimed urine with a subsequent ﬁrs
+
+  BOOK: Miller/Baby Miller, PAGE: 886
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Box 48.1 Obstructive Sleep Apnea Diagnosis and Severity Based on Apnea-Hypopnea Index (AHI) •Mild: 5–15 events per hour •Moderate: ≥15–30 events per hour •Severe ≥30 events per hour AHI is defined as the average number of abnormal breathing events per hour of sleep. The clinical diagnosis of OSA requires either an AHI of 15 or more or AHI greater than or equal to 5, with symptoms such as excessive da
+
+  BOOK: Society Guideline: Guideline   AASLD EASL 2014 Hepatic Encephalopathy, PAGE: 43
+  TEXT: Section: Hepatic Encephalopathy in Chronic Liver Disease:. Hepatic Encephalopathy in Chronic Liver Disease: 2014 Practice Guideline by AASLD and EASL PRACTICE GUIDELINE LITERATURE REVIEW AND ANALYSIS The literature databases and search strategies are outlined below. The resulting literature database was available to all members of the writing group (i.e., the authors). They selected references within their field of expertise and experience and graded the references according to the GRADE system.
+
+
+=== TOPIC: Peer Review, Performance Improvement & Accountability | domain=Patient safety, ethics, professionalism & quality (closed-claims lessons, never events, root-cause analysis, informed consent, communication, handoffs, wellness) | discipline=anesthesia ===
+  BOOK: Morgan & Mikhail, PAGE: 2041
+  TEXT: Section: QUALITY MANAGEMENT. administration. Vancomycin can also produce true anaphylactic or anaphylactoid reactions. Protamine commonly causes vasodilatory hypotension and less commonly presents as an anaphylactoid reaction with pulmonary hypertension and systemic hypotension. Immunological mechanisms are associated with other perioperative pathologies. Transfusion-related lung injury may be secondary to the activity of antibodies in the donor plasma, producing a hypersensitivity reaction that
+
+  BOOK: Society Guideline, PAGE: 60
+  TEXT: Section: Framing the question and deciding on important outcomes. J. 16. Guyatt GH, Oxman AD, Kunz R, et al: GRADE guidelines: 2. Framing the question and deciding on important outcomes. J Clin Epidemiol 2011; 64:395–400 17. Akl EA, Johnston BC, Alonso-Coello P, et al: Addressing di- chotomous data for participants excluded from trial analysis: A guide for systematic reviewers. PLoS One 2013; 8:e57132 18. DerSimonian R, Laird N: Meta-analysis in clinical trials. Control Clin Trials 1986; 7:177–1
+
+  BOOK: Society Guideline, PAGE: 78
+  TEXT: Section: 552. McPeake J, Hirshberg EL, Christie LM, et al: Models of peer. 552. McPeake J, Hirshberg EL, Christie LM, et al: Models of peer support to remediate post-intensive care syndrome: A report developed by the society of critical care medicine thrive in- ternational peer support collaborative. Crit Care Med 2019; 47:e21–e27 553. Mikkelsen ME, Jackson JC, Hopkins RO, et al: Peer support as a novel strategy to mitigate post-intensive care syndrome. AACN Adv Crit Care 2016; 27:221–229 554. H
+
+  BOOK: Society Guideline, PAGE: 77
+  TEXT: Section: Curr Opin Anaesthesiol 2018; 31:55–60. 520. Kuhn SO, Meissner K, Mayes LM, et al: Vitamin C in sepsis. Curr Opin Anaesthesiol 2018; 31:55–60 521. Marik PE, Khangoora V, Rivera R, et al: Hydrocortisone, vi- tamin C, and thiamine for the treatment of severe sepsis and septic shock: A retrospective before-after study. Chest 2017; 151:1229–1238 522. Putzu A, Daems AM, Lopez-Delgado JC, et al: The effect of vitamin C on clinical outcome in critically ill patients: A sys- tematic review with 
+
+  BOOK: Miller/Baby Miller, PAGE: 790
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE sleep apnoea and postoperative out- come. Br J Anaesth. 2012;109(6): 897–906. 52. Chung F, Yang Y, Brown R, Liao P. Alternative scoring models of STOP- bang questionnaire improve specificity to detect undiagnosed obstructive sleep apnea. J Clin Sleep Med. 2014;10(9):951– 958. 53. Fernandez-Bustamante A, Bartels K, Clavijo C, Scott BK, Kacmar R, Bul- lard K, etal. Preoperatively screened obstructive sle
+
+  BOOK: Miller/Baby Miller, PAGE: 850
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE posterior spine surgery, and endobronchial laser pro- cedures. The initial management includes cessation of the offending cause (i.e., halt insufflation), occlusion of open veins, and flooding of the surgical field with saline. Patients should be placed in the Trendelenburg posi- tion with the left side down to keep the gas in the apex of the right ventricle and allow for filling with blood. Complete ci
+
+  BOOK: Society Guideline, PAGE: 61
+  TEXT: Section: 50. Contenti J, Corraze H, Lemoël F, et al: Effectiveness of arterial,. 50. Contenti J, Corraze H, Lemoël F, et al: Effectiveness of arterial, venous, and capillary blood lactate as a sepsis triage tool in ED patients. Am J Emerg Med 2015; 33:167–172 51. Karon BS, Tolan NV, Wockenfus AM, et al: Evaluation of lac- tate, white blood cell count, neutrophil count, procalcitonin and immature granulocyte count as biomarkers for sepsis in emergency department patients. Clin Biochem 2017; 50: 9
+
+  BOOK: Society Guideline: Guideline   GOLD 2024 COPD Full Report, PAGE: 98
+  TEXT: Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 87 In some cultures, other alternatives such as Tai Chi practice, emphasizing the use of ‘mind’ or concentration for control of breathing and circular body movement, has been shown to improve exercise capacity in comparison to usual care in COPD patients.(986) However from this meta-analysis, the effects of Tai Chi in reducing dyspnea level and improving quality of life remain inconclusive. Future stud
+
+  BOOK: Society Guideline: Guideline   ACC AHA 2022 Heart Failure, PAGE: 112
+  TEXT: Section: 4.1.1. Initial Laboratory and. associated cardiomyopathy: state-of-the-art review. J Am Heart Assoc. 2020;9:e016704. 4.1.1. Initial Laboratory and Electrocardiographic Testing 1. Cardinale D, Colombo A, Bacchiani G, et al. Early detection of anthracycline cardiotoxicity and improvement with heart failure therapy. Circulation. 2015;131:1981–1988. 2. Cardinale D, Sandri MT, Colombo A, et al. Prognostic value of troponin I in cardiac risk stratiﬁcation of cancer patients undergoing high-do
+
+  BOOK: Miller/Baby Miller, PAGE: 862
+  TEXT: Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE 1. Kohn KT, Corrigan JM, Donaldson MS. Committee on Quality Health Care in America. Washington, DC: Institute of Medicine: National Academy Press; 2. Lagasse RS. Anesthesia safety: Model or myth? A review of the published litera- ture and analysis of current original data. Anesthesiology. 2002;97:1609–1617. 3. Brass P, Hellmich M, Kolodziej L, etal. Ultrasound guidance versus anatomi- cal landmarks for
+
+

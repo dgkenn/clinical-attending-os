@@ -1,0 +1,2001 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Clinical Attending OS",
+    "version": "0.2.0"
+  },
+  "paths": {
+    "/system_instructions": {
+      "get": {
+        "summary": "System Instructions",
+        "description": "Returns current GPT instructions text. Call once at conversation start.",
+        "operationId": "getSystemInstructions",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SystemInstructionsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/submit_answer": {
+      "post": {
+        "summary": "Submit Answer",
+        "operationId": "submitAnswer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnswerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnswerResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/due_reviews": {
+      "get": {
+        "summary": "Due Reviews",
+        "operationId": "getDueReviews",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Getduereviews"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/student_dashboard": {
+      "get": {
+        "summary": "Student Dashboard",
+        "operationId": "getStudentDashboard",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentDashboardResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/ca1_coverage": {
+      "get": {
+        "summary": "Ca1 Coverage",
+        "operationId": "getCA1Coverage",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CA1CoverageResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/source_coverage": {
+      "get": {
+        "summary": "Source Coverage",
+        "operationId": "getSourceCoverage",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SourceCoverageResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/mark_mastered": {
+      "post": {
+        "summary": "Mastered",
+        "operationId": "markMastered",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MarkTopicRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OkResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/mark_weak": {
+      "post": {
+        "summary": "Weak",
+        "operationId": "markWeak",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MarkTopicRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OkResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/set_default_phase": {
+      "post": {
+        "summary": "Set Default Phase",
+        "operationId": "setDefaultPhase",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetDefaultPhaseRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SetDefaultPhaseResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/next_lesson": {
+      "post": {
+        "summary": "Next Lesson",
+        "operationId": "nextLesson",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NextLessonRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NextLessonResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/progress": {
+      "get": {
+        "summary": "Progress",
+        "operationId": "getProgress",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgressResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/case_prep": {
+      "post": {
+        "summary": "Case Prep Endpoint",
+        "operationId": "casePrep",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CasePrepRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CasePrepResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/teaching_mode": {
+      "post": {
+        "summary": "Teaching Mode Endpoint",
+        "description": "User teaches the GPT (prot\u00e9g\u00e9 effect). Returns probe seeds + grounded sources + rubric.",
+        "operationId": "startTeachingMode",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TeachingModeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeachingModeResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/follow_up": {
+      "post": {
+        "summary": "Follow Up Endpoint",
+        "operationId": "followUp",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FollowUpRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FollowUpResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/weak_patterns": {
+      "get": {
+        "summary": "Weak Patterns Endpoint",
+        "operationId": "getWeakPatterns",
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "window_days",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 30,
+              "title": "Window Days"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WeakPatternsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "post": {
+        "summary": "Search",
+        "operationId": "searchSources",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnswerRequest": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "title": "Session Id",
+            "default": "voice"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "user_answer": {
+            "type": "string",
+            "title": "User Answer"
+          },
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "phase": {
+            "type": "string",
+            "title": "Phase",
+            "default": "warm_up_retrieval"
+          },
+          "subtopic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Subtopic"
+          },
+          "result": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "partial",
+                  "incorrect"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Result"
+          },
+          "mistake_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "recall",
+                  "mechanism",
+                  "prioritization",
+                  "drug_dosing",
+                  "monitoring",
+                  "crisis_algorithm",
+                  "oral_boards_framing",
+                  "oral_presentation",
+                  "incomplete_answer",
+                  "overconfident_wrong",
+                  "failure_to_escalate",
+                  "differential_too_narrow",
+                  "pretest_unstudied",
+                  "critique_caught",
+                  "critique_missed",
+                  "other"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mistake Type"
+          },
+          "ideal_answer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ideal Answer"
+          },
+          "difficulty": {
+            "type": "string",
+            "title": "Difficulty",
+            "default": "medium"
+          },
+          "hints_used": {
+            "type": "integer",
+            "title": "Hints Used",
+            "default": 0
+          },
+          "confidence_reported": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence Reported"
+          },
+          "retrieval_sources": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retrieval Sources"
+          },
+          "source_citations": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Citations"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Notes"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question",
+          "user_answer",
+          "topic"
+        ],
+        "title": "AnswerRequest"
+      },
+      "AnswerResponse": {
+        "properties": {
+          "evaluation": {
+            "type": "string",
+            "title": "Evaluation"
+          },
+          "feedback": {
+            "type": "string",
+            "title": "Feedback"
+          },
+          "ideal_answer": {
+            "type": "string",
+            "title": "Ideal Answer"
+          },
+          "ideal_answer_key_points": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Ideal Answer Key Points"
+          },
+          "mistake_type": {
+            "type": "string",
+            "title": "Mistake Type"
+          },
+          "updated_mastery": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated Mastery"
+          },
+          "next_review_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Review Date"
+          },
+          "source_snippets": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Source Snippets"
+          },
+          "next_question": {
+            "type": "string",
+            "title": "Next Question"
+          },
+          "mini_teach": {
+            "type": "string",
+            "title": "Mini Teach",
+            "default": ""
+          },
+          "teachback_prompt": {
+            "type": "string",
+            "title": "Teachback Prompt",
+            "default": ""
+          },
+          "citation": {
+            "type": "string",
+            "title": "Citation",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "evaluation",
+          "feedback",
+          "ideal_answer",
+          "mistake_type",
+          "next_question"
+        ],
+        "title": "AnswerResponse"
+      },
+      "CA1CoverageResponse": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": "Stanford CA-1"
+          },
+          "granularity": {
+            "type": "string",
+            "title": "Granularity",
+            "default": "fact"
+          },
+          "total_topics": {
+            "type": "integer",
+            "title": "Total Topics",
+            "default": 0
+          },
+          "total_facts": {
+            "type": "integer",
+            "title": "Total Facts",
+            "default": 0
+          },
+          "covered_topics": {
+            "type": "integer",
+            "title": "Covered Topics",
+            "default": 0
+          },
+          "remaining_topics": {
+            "type": "integer",
+            "title": "Remaining Topics",
+            "default": 0
+          },
+          "covered_facts": {
+            "type": "integer",
+            "title": "Covered Facts",
+            "default": 0
+          },
+          "remaining_facts": {
+            "type": "integer",
+            "title": "Remaining Facts",
+            "default": 0
+          },
+          "coverage_percent": {
+            "type": "number",
+            "title": "Coverage Percent",
+            "default": 0.0
+          },
+          "next_targets": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageTarget"
+            },
+            "type": "array",
+            "title": "Next Targets"
+          },
+          "targets": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageTarget"
+            },
+            "type": "array",
+            "title": "Targets"
+          }
+        },
+        "type": "object",
+        "title": "CA1CoverageResponse"
+      },
+      "CasePrepRequest": {
+        "properties": {
+          "case_stem": {
+            "type": "string",
+            "title": "Case Stem"
+          },
+          "duration_minutes": {
+            "type": "integer",
+            "title": "Duration Minutes",
+            "default": 5
+          }
+        },
+        "type": "object",
+        "required": [
+          "case_stem"
+        ],
+        "title": "CasePrepRequest"
+      },
+      "CasePrepResponse": {
+        "properties": {
+          "case_stem": {
+            "type": "string",
+            "title": "Case Stem"
+          },
+          "review_topics": {
+            "items": {
+              "$ref": "#/components/schemas/CasePrepTopic"
+            },
+            "type": "array",
+            "title": "Review Topics"
+          },
+          "rationale": {
+            "type": "string",
+            "title": "Rationale",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "case_stem",
+          "review_topics"
+        ],
+        "title": "CasePrepResponse"
+      },
+      "CasePrepTopic": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "why": {
+            "type": "string",
+            "title": "Why"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Sources"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "why"
+        ],
+        "title": "CasePrepTopic"
+      },
+      "CoverageTarget": {
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "title": "Target Id",
+            "default": ""
+          },
+          "topic": {
+            "type": "string",
+            "title": "Topic",
+            "default": ""
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic",
+            "default": ""
+          },
+          "fact": {
+            "type": "string",
+            "title": "Fact",
+            "default": ""
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status",
+            "default": "new"
+          },
+          "mastery_score": {
+            "type": "number",
+            "title": "Mastery Score",
+            "default": 0.0
+          },
+          "times_seen": {
+            "type": "integer",
+            "title": "Times Seen",
+            "default": 0
+          },
+          "next_review_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Review Date"
+          },
+          "covered": {
+            "type": "boolean",
+            "title": "Covered",
+            "default": false
+          }
+        },
+        "type": "object",
+        "title": "CoverageTarget"
+      },
+      "FollowUpAnswerSentence": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "book": {
+            "type": "string",
+            "title": "Book"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          },
+          "matched_terms": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Matched Terms"
+          }
+        },
+        "type": "object",
+        "required": [
+          "text",
+          "book"
+        ],
+        "title": "FollowUpAnswerSentence"
+      },
+      "FollowUpRequest": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "lesson_topic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lesson Topic"
+          },
+          "mode_hint": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mode Hint"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "FollowUpRequest"
+      },
+      "FollowUpResponse": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "lesson_topic": {
+            "type": "string",
+            "title": "Lesson Topic",
+            "default": ""
+          },
+          "queries_tried": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Queries Tried"
+          },
+          "modes_tried": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Modes Tried"
+          },
+          "answer_sentences": {
+            "items": {
+              "$ref": "#/components/schemas/FollowUpAnswerSentence"
+            },
+            "type": "array",
+            "title": "Answer Sentences"
+          },
+          "top_chunks": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Top Chunks"
+          },
+          "confidence": {
+            "type": "string",
+            "title": "Confidence",
+            "default": "low"
+          },
+          "insufficient_context": {
+            "type": "boolean",
+            "title": "Insufficient Context",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "FollowUpResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "title": "Ok"
+          },
+          "service": {
+            "type": "string",
+            "title": "Service"
+          },
+          "backend_mode": {
+            "type": "string",
+            "title": "Backend Mode"
+          },
+          "free_local_mode": {
+            "type": "boolean",
+            "title": "Free Local Mode"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ok",
+          "service",
+          "backend_mode",
+          "free_local_mode"
+        ],
+        "title": "HealthResponse"
+      },
+      "MarkTopicRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "MarkTopicRequest"
+      },
+      "NextLessonRequest": {
+        "properties": {
+          "session": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Session"
+          },
+          "voice_mode": {
+            "type": "boolean",
+            "title": "Voice Mode",
+            "default": true
+          }
+        },
+        "type": "object",
+        "title": "NextLessonRequest"
+      },
+      "NextLessonResponse": {
+        "properties": {
+          "lesson": {
+            "$ref": "#/components/schemas/VoiceLesson"
+          },
+          "session": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Session"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lesson"
+        ],
+        "title": "NextLessonResponse"
+      },
+      "OkResponse": {
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "title": "Ok",
+            "default": true
+          },
+          "detail": {
+            "type": "string",
+            "title": "Detail",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "title": "OkResponse"
+      },
+      "ProgressResponse": {
+        "properties": {
+          "n_units": {
+            "type": "integer",
+            "title": "N Units"
+          },
+          "n_completed": {
+            "type": "integer",
+            "title": "N Completed"
+          },
+          "pct_complete": {
+            "type": "number",
+            "title": "Pct Complete"
+          },
+          "by_band": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            "type": "object",
+            "title": "By Band"
+          },
+          "weakest_topics": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Weakest Topics"
+          }
+        },
+        "type": "object",
+        "required": [
+          "n_units",
+          "n_completed",
+          "pct_complete",
+          "by_band"
+        ],
+        "title": "ProgressResponse"
+      },
+      "SearchRequest": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "library_filter": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Library Filter"
+          },
+          "source_filter": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Filter"
+          },
+          "topic_filter": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Topic Filter"
+          },
+          "training_phase": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Training Phase"
+          },
+          "clinical_context": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Clinical Context"
+          },
+          "mode": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mode"
+          },
+          "max_results": {
+            "type": "integer",
+            "title": "Max Results",
+            "default": 8
+          }
+        },
+        "type": "object",
+        "required": [
+          "query"
+        ],
+        "title": "SearchRequest"
+      },
+      "SearchResponse": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query",
+            "default": ""
+          },
+          "retrieval_confidence": {
+            "type": "string",
+            "title": "Retrieval Confidence",
+            "default": "low"
+          },
+          "insufficient_context": {
+            "type": "boolean",
+            "title": "Insufficient Context",
+            "default": false
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Results"
+          }
+        },
+        "type": "object",
+        "required": [
+          "results"
+        ],
+        "title": "SearchResponse"
+      },
+      "SetDefaultPhaseRequest": {
+        "properties": {
+          "default_training_phase": {
+            "type": "string",
+            "enum": [
+              "intern_year",
+              "ICU",
+              "anesthesia_transition",
+              "anesthesia_boards"
+            ],
+            "title": "Default Training Phase"
+          }
+        },
+        "type": "object",
+        "required": [
+          "default_training_phase"
+        ],
+        "title": "SetDefaultPhaseRequest"
+      },
+      "SetDefaultPhaseResponse": {
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "title": "Ok",
+            "default": true
+          },
+          "default_training_phase": {
+            "type": "string",
+            "title": "Default Training Phase"
+          }
+        },
+        "type": "object",
+        "required": [
+          "default_training_phase"
+        ],
+        "title": "SetDefaultPhaseResponse"
+      },
+      "SourceChunk": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "excerpt": {
+            "type": "string",
+            "title": "Excerpt",
+            "default": ""
+          },
+          "book": {
+            "type": "string",
+            "title": "Book",
+            "default": ""
+          },
+          "source_name": {
+            "type": "string",
+            "title": "Source Name",
+            "default": ""
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": ""
+          },
+          "library": {
+            "type": "string",
+            "title": "Library",
+            "default": ""
+          },
+          "training_phase": {
+            "type": "string",
+            "title": "Training Phase",
+            "default": ""
+          },
+          "clinical_context": {
+            "type": "string",
+            "title": "Clinical Context",
+            "default": ""
+          },
+          "filename": {
+            "type": "string",
+            "title": "Filename",
+            "default": ""
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          },
+          "section": {
+            "type": "string",
+            "title": "Section",
+            "default": ""
+          },
+          "topic_tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Topic Tags"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score",
+            "default": 0.0
+          },
+          "retrieval_method": {
+            "type": "string",
+            "title": "Retrieval Method",
+            "default": ""
+          },
+          "vector_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Vector Score"
+          },
+          "bm25_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bm25 Score"
+          },
+          "reranker_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reranker Score"
+          },
+          "chunk_id": {
+            "type": "string",
+            "title": "Chunk Id",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "SourceChunk"
+      },
+      "SourceCoverageResponse": {
+        "properties": {
+          "granularity": {
+            "type": "string",
+            "title": "Granularity",
+            "default": "fact"
+          },
+          "source_summaries": {
+            "items": {
+              "$ref": "#/components/schemas/SourceCoverageSummary"
+            },
+            "type": "array",
+            "title": "Source Summaries"
+          },
+          "next_targets": {
+            "items": {
+              "$ref": "#/components/schemas/CoverageTarget"
+            },
+            "type": "array",
+            "title": "Next Targets"
+          }
+        },
+        "type": "object",
+        "title": "SourceCoverageResponse"
+      },
+      "SourceCoverageSummary": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "total_facts": {
+            "type": "integer",
+            "title": "Total Facts",
+            "default": 0
+          },
+          "covered_facts": {
+            "type": "integer",
+            "title": "Covered Facts",
+            "default": 0
+          },
+          "remaining_facts": {
+            "type": "integer",
+            "title": "Remaining Facts",
+            "default": 0
+          },
+          "coverage_percent": {
+            "type": "number",
+            "title": "Coverage Percent",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "source"
+        ],
+        "title": "SourceCoverageSummary"
+      },
+      "StudentDashboardResponse": {
+        "properties": {
+          "summary": {
+            "items": {
+              "$ref": "#/components/schemas/TopicSummary"
+            },
+            "type": "array",
+            "title": "Summary"
+          },
+          "weakest_topics": {
+            "items": {
+              "$ref": "#/components/schemas/WeakTopic"
+            },
+            "type": "array",
+            "title": "Weakest Topics"
+          }
+        },
+        "type": "object",
+        "title": "StudentDashboardResponse"
+      },
+      "SystemInstructionsResponse": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "instructions": {
+            "type": "string",
+            "title": "Instructions"
+          }
+        },
+        "type": "object",
+        "required": [
+          "version",
+          "instructions"
+        ],
+        "title": "SystemInstructionsResponse",
+        "description": "Full GPT-side instruction text + a stable version hash. The Custom GPT\ncalls this on every NEW conversation to get the latest behavior, instead\nof having to re-paste the markdown into ChatGPT every time we change it."
+      },
+      "TeachingModeRequest": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "mode_hint": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mode Hint"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "TeachingModeRequest"
+      },
+      "TeachingModeResponse": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "probe_seeds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Probe Seeds"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/SourceChunk"
+            },
+            "type": "array",
+            "title": "Sources"
+          },
+          "coverage_rubric": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Coverage Rubric"
+          },
+          "instructions_for_gpt": {
+            "type": "string",
+            "title": "Instructions For Gpt"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "instructions_for_gpt"
+        ],
+        "title": "TeachingModeResponse",
+        "description": "Prot\u00e9g\u00e9-mode scaffolding: the GPT plays a confused MS3 asking probing\nquestions while the user teaches the topic. Source-grounded so the GPT's\nquestions stay anchored in real material."
+      },
+      "TopicSummary": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status",
+            "default": ""
+          },
+          "n": {
+            "type": "integer",
+            "title": "N",
+            "default": 0
+          },
+          "avg_mastery": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Mastery"
+          }
+        },
+        "type": "object",
+        "title": "TopicSummary"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "VoiceLesson": {
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "title": "Unit Id"
+          },
+          "phase": {
+            "type": "string",
+            "title": "Phase"
+          },
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "expected_answer_short": {
+            "type": "string",
+            "title": "Expected Answer Short"
+          },
+          "mini_teach": {
+            "type": "string",
+            "title": "Mini Teach"
+          },
+          "teachback_prompt": {
+            "type": "string",
+            "title": "Teachback Prompt"
+          },
+          "citation": {
+            "type": "string",
+            "title": "Citation"
+          },
+          "book": {
+            "type": "string",
+            "title": "Book"
+          },
+          "page": {
+            "type": "integer",
+            "title": "Page",
+            "default": 0
+          },
+          "relevance_hook": {
+            "type": "string",
+            "title": "Relevance Hook",
+            "default": ""
+          },
+          "confidence_check": {
+            "type": "string",
+            "title": "Confidence Check",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "unit_id",
+          "phase",
+          "topic",
+          "question",
+          "expected_answer_short",
+          "mini_teach",
+          "teachback_prompt",
+          "citation",
+          "book"
+        ],
+        "title": "VoiceLesson"
+      },
+      "WeakPatternEntry": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "mistake_type": {
+            "type": "string",
+            "title": "Mistake Type"
+          },
+          "failures": {
+            "type": "integer",
+            "title": "Failures"
+          },
+          "last_seen": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Seen"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "mistake_type",
+          "failures"
+        ],
+        "title": "WeakPatternEntry"
+      },
+      "WeakPatternsResponse": {
+        "properties": {
+          "by_mistake_type": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "By Mistake Type"
+          },
+          "repeat_offenders": {
+            "items": {
+              "$ref": "#/components/schemas/WeakPatternEntry"
+            },
+            "type": "array",
+            "title": "Repeat Offenders"
+          },
+          "rolling_30d_attempts": {
+            "type": "integer",
+            "title": "Rolling 30D Attempts",
+            "default": 0
+          },
+          "overconfidence_rate": {
+            "type": "number",
+            "title": "Overconfidence Rate",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "title": "WeakPatternsResponse"
+      },
+      "WeakTopic": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "subtopic": {
+            "type": "string",
+            "title": "Subtopic",
+            "default": ""
+          },
+          "mastery_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mastery Score"
+          },
+          "next_review_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Review Date"
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic"
+        ],
+        "title": "WeakTopic"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://deanslaptop.tail712dd4.ts.net"
+    }
+  ]
+}

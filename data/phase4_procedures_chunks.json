@@ -1,0 +1,299 @@
+[
+  {
+    "topic": "Central Venous Catheter (CVC) - Indications",
+    "subtopic": "cvc_indications",
+    "content": "CVC indications: (1) difficulty obtaining peripheral IV access; (2) need for hemodynamic monitoring (CVP/right atrial pressure); (3) frequent blood draws; (4) vesicant medications (chemotherapy, vasopressors, hypertonic solutions); (5) renal replacement therapy vascular access; (6) temporary transvenous pacing; (7) hemodialysis access. Sites: internal jugular vein (IJV, central location, landmark-based or US-guided), subclavian vein (SC, hidden, landmark-based), femoral vein (easiest to access, high infection risk). Triple-lumen, quad-lumen common; specialized lines (Swan-Ganz, PICC) alternatives.",
+    "tags": [
+      "cvc",
+      "central_line",
+      "indications",
+      "vascular_access"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_0",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Placement - Technique (IJV) & Landmark Approach",
+    "subtopic": "cvc_placement",
+    "content": "IJV anatomy: runs between sternal and clavicular heads of sternocleidomastoid. Landmark technique: palpate carotid pulse medially, aim for space between muscle heads at angle of mandible (neck junction). Insert at 30-45\u00b0 angle (medial to lateral), advance until blood return (dark, non-pulsatile). Ultrasound-guided preferred (higher success, fewer complications): place probe perpendicular to IJV, identify vein (compressible, lateral to carotid artery), enter under direct visualization. Wire technique: over-the-wire placement (Seldinger technique): needle, guidewire through needle, dilator, then catheter over wire. Withdraw wire, flush catheter, suture in place, apply sterile dressing.",
+    "tags": [
+      "cvc",
+      "ijv",
+      "placement",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_1",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Complications - Mechanical, Infectious, Thrombotic",
+    "subtopic": "cvc_complications",
+    "content": "Mechanical: arterial puncture (bright pulsatile blood, stop immediately), pneumothorax (dyspnea, decreased breath sounds, CXR), hemothorax (from inadvertent vessel tear), cardiac perforation (can cause tamponade), venous thrombosis. Infectious: catheter-related bloodstream infection (CLABSI, fever + positive blood culture), sepsis. Reduced by: chlorhexidine skin prep, sterile technique, transparent dressing change q5-7 days, prompt removal when no longer needed. Thrombotic: clotting around catheter (prevents blood return), DVT of access vein (rare). Diagnosis: clinical assessment (no blood return, swelling at site), imaging (CXR, ultrasound). Management: removal if infected or non-functional, anticoagulation if thrombosis.",
+    "tags": [
+      "cvc",
+      "complications",
+      "infection",
+      "mechanical"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_2",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Positioning & Line Care",
+    "subtopic": "cvc_management",
+    "content": "Correct position: tip at junction of superior vena cava and right atrium (confirmed on CXR), ideally 2-3 cm above right atrial border. Too proximal (in brachiocephalic/subclavian): CVP reading invalid, risk of perforation. Dressing: transparent (allows visualization), replaced every 5-7 days. Tubing: labeled for central line, separate from peripheral lines to prevent contamination. Flushing: normal saline between medications, heparin locks (10 U/mL saline) if not continuous infusion. CVP waveform: a (atrial contraction), c (ventricular contraction transmitted back), v (passive venous filling). Normal CVP 2-8 mmHg (approximately 5-12 cm H2O). Elevated CVP suggests right heart failure, volume overload, or tamponade.",
+    "tags": [
+      "cvc",
+      "positioning",
+      "care",
+      "cvp"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_3",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line - Indications & Site Selection",
+    "subtopic": "aline_indications",
+    "content": "Arterial line (A-line) indications: (1) continuous blood pressure monitoring (hemodynamically unstable patients); (2) frequent arterial blood gas sampling; (3) cardiac surgery, major trauma; (4) vasopressor use requiring beat-to-beat BP. Sites: radial (most common, distal to brachial, superficial), femoral (proximal, less distal ischemia risk), brachial (retrograde flow risk, less preferred), dorsalis pedis (terminal vessel, ischemia risk). Allen test: assess collateral circulation to hand (brachial/radial). Compress both arteries, release radial, observe color return (normal <5 sec). Delayed color = inadequate collateral, avoid radial line.",
+    "tags": [
+      "arterial_line",
+      "aline",
+      "indications",
+      "sites"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_4",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line Placement Technique",
+    "subtopic": "aline_placement",
+    "content": "Radial approach: palpate artery at wrist (distal to brachial bifurcation), prepare skin (chlorhexidine), infiltrate with 1% lidocaine. Insert 20G catheter-over-needle at 30-45\u00b0 angle, aimed proximal along artery direction. Flashback signals vein (too proximal), withdraw and reattempt. Advance catheter off needle, thread guidewire (if using), secure with sutures, connect to pressure transducer and heparinized saline flush system. Ultrasound-guided: place probe longitudinal over artery, visualize entry under direct guidance. Femoral approach: palpate femoral pulse (midpoint between ASIS and pubic symphysis), enter arterially at 45\u00b0 angle, advance similarly.",
+    "tags": [
+      "arterial_line",
+      "placement",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_5",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Waveform Interpretation",
+    "subtopic": "aline_waveform",
+    "content": "Normal arterial waveform: steep systolic upstroke, dicrotic notch (aortic valve closure) dividing systole and diastole, gradual diastolic decline. SBP systolic peak, DBP at nadir, MAP calculated by integrating area under curve (roughly DBP + 1/3 pulse pressure). Abnormal patterns: damped waveform (loss of detail, appears flat) from kinks, clots, air bubbles; check tubing, flush gently, replace if clotted. Pulsus paradoxus (>10 mmHg drop in SBP during inspiration) seen in tamponade, severe asthma, COPD exacerbation. Pulsus alternans (alternating tall/short beats) in severe heart failure. Anacrotic notch (double systolic peak) in aortic stenosis.",
+    "tags": [
+      "arterial_waveform",
+      "aline",
+      "interpretation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_6",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line Complications & Contraindications",
+    "subtopic": "aline_complications",
+    "content": "Complications: thrombosis (from intimal damage, prolonged use), distal ischemia (manifest as cool hand, cyanosis, pain), infection (from contamination), pseudoaneurysm (pulsatile swelling at site). Radial: <1% clinically significant distal ischemia if Allen test normal. Femoral: higher infection, thromboembolism risk. Brachial/dorsalis pedis: high ischemia risk, avoid if possible. Removal: typically within 3-5 days. Signs requiring removal: fever, erythema, no blood return, ischemia. Contraindications: inadequate collateral flow (failed Allen test), evidence of distal ischemia, infection at site, coagulopathy (relative, not absolute if critical need).",
+    "tags": [
+      "arterial_line",
+      "complications",
+      "removal"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_7",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Pericardiocentesis - Technique & Approach",
+    "subtopic": "pericardiocentesis_technique",
+    "content": "Approach: subxiphoid (most common, anterior to pericardium avoiding diaphragm). Prep: ultrasound probe placed at subxiphoid to localize fluid, identify safe entry. Technique: infiltrate with 1% lidocaine, insert 18G needle at 45\u00b0 angle toward left shoulder, advance slowly (patient may feel substernal pressure). When needle tip enters pericardial space (resistance drops), fluid (usually clear/serous/hemorrhagic) aspirated. Guidewire/catheter technique: insert wire, dilate tract, place pigtail catheter for continued drainage if large effusion. Send fluid for analysis (cell count, culture, glucose, LDH, protein, Gram stain, cytology).",
+    "tags": [
+      "pericardiocentesis",
+      "tamponade",
+      "technique",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_8",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Pericardiocentesis - Complications & When NOT To Attempt",
+    "subtopic": "pericardiocentesis_complications",
+    "content": "Complications: perforation of myocardium/coronary artery (hemorrhagic pericardium), ventricular rupture, arrhythmias, worsening hypotension (if relieving tamponade too quickly, increases venous return suddenly). Avoid pericardiocentesis: aortic dissection with hemopericardium (needs surgical repair), loculated effusion (catheter may not reach fluid), small effusion (hard to tap). If dissection suspected, obtain CT before attempting. Loculation diagnosed on ultrasound (multiple fluid pockets). Pericardiocentesis temporizing measure in tamponade; definitive = pericardial window (surgical drainage) or antibiotics/NSAIDs if pericarditis.",
+    "tags": [
+      "pericardiocentesis",
+      "complications",
+      "contraindications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_9",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Cricothyrotomy - Indications & Emergency Airway",
+    "subtopic": "cricothyrotomy_indications",
+    "content": "Cricothyrotomy = emergency surgical airway through cricothyroid membrane (between cricoid and thyroid cartilages). Indications: 'cannot intubate, cannot oxygenate' scenario where endotracheal intubation impossible (massive facial trauma, airway obstruction, anaphylaxis with airway edema) AND mask ventilation ineffective. NOT for routine intubation (reserved for true emergencies). Landmark: palpate thyroid cartilage prominence, move distally to first notch (cricothyroid space), locate cricoid cartilage below. Airway already difficult from whatever caused obstruction, so act quickly.",
+    "tags": [
+      "cricothyrotomy",
+      "airway",
+      "emergency",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_10",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Cricothyrotomy Technique - Rapid Execution",
+    "subtopic": "cricothyrotomy_technique",
+    "content": "Technique (percutaneous emergency): minimal prep (aqueous antiseptic if time), stabilize larynx with nondominant hand, insert 14G needle through cricothyroid membrane at 45\u00b0 angle caudad, withdraw stylet leaving catheter. Thread guidewire (if kit available), dilate with dilator, advance endotracheal tube (size 6.0-7.0) over dilator. Alternatively, scalpel approach (surgical): vertical incision through skin/subcutaneous tissue, horizontal incision through cricothyroid membrane, insert tube. Confirm placement (bilateral breath sounds, CO2 on capnography). Complications: tracheal stenosis (long-term sequela of prolonged tube), perforation, infection. Convert to standard endotracheal tube intubation or tracheostomy when emergency resolved.",
+    "tags": [
+      "cricothyrotomy",
+      "surgical_airway",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_11",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Emergency Transvenous Pacing - Indications",
+    "subtopic": "pacing_indications",
+    "content": "Emergency transvenous pacing indicated for: symptomatic bradycardia (HR <40 with hypotension, altered mentation, shock) unresponsive to atropine; complete heart block; severe sinus node dysfunction with symptoms; asystole (controversial, some data suggests poor outcomes). Temporary measure while awaiting underlying cause resolution or permanent pacemaker. Route: central line placement (IJV, subclavian, femoral) with advancing balloon-tipped pacing catheter into right ventricle.",
+    "tags": [
+      "pacing",
+      "transvenous",
+      "indications",
+      "emergency"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_12",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Transvenous Pacing - Technique & Troubleshooting",
+    "subtopic": "pacing_technique",
+    "content": "Technique: place central line (see CVC section), advance pacing catheter through to right atrium (appear on monitor as atrial-sized deflection), continue advancing into right ventricle (larger deflection, ST elevation on ECG can occur). Inflate balloon at catheter tip to float into RV. Connect to pacer box, set rate (60-80 bpm), start at high output (10 mA), gradually decrease until capture noted (widened QRS following pacing spike). Then increase by 2-5 mA above capture threshold = safety margin. Issues: no capture (reposition catheter, increase output), sensing problems (catheter touching wall), perforation (rare, presents as tamponade). Monitor continuous ECG and vital response to pacing.",
+    "tags": [
+      "pacing",
+      "technique",
+      "capture",
+      "troubleshooting"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_13",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Point-of-Care Ultrasound (POCUS) - Basics",
+    "subtopic": "pocus_basics",
+    "content": "POCUS = bedside ultrasound to guide clinical decisions in real-time. Probe types: linear (high frequency 8-14 MHz, superficial structures like vessels, nerves), curvilinear (2-5 MHz, deeper organs). Basic physics: sound reflects differently depending on tissue density/acoustic impedance. Hyperechoic (white): bone, fat, air (reflects many waves). Hypoechoic (gray): fluid, muscle. Anechoic (black): pure fluid. Training: varies by institution; ACEP recommends minimum hours/supervised exams per application (IV placement 25h, thorax 25h, abdomen 25h, cardiac 25h).",
+    "tags": [
+      "ultrasound",
+      "pocus",
+      "basics",
+      "probe"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_14",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Ultrasound-Guided IV Access",
+    "subtopic": "ultrasound_iv_access",
+    "content": "Ultrasound improves success rate of difficult IV access from ~50% (landmark) to >90%. Technique: place linear probe over vessel perpendicular (short axis, appear as circles) or longitudinal (long axis, appear as tubes). Vein compresses with pressure, artery pulsates; target veins. Insert needle at 30-45\u00b0 angle under direct visualization (needle appears as echogenic line advancing through tissue). Confirm tip enters vessel (sudden loss of resistance, blood flashback). Advance catheter over needle. Basilic/brachial veins in upper arm preferred (deeper, less collapse). Can also guide central lines, arterial lines (see relevant sections).",
+    "tags": [
+      "ultrasound",
+      "iv_access",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_15",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Ultrasound-Guided Regional Anesthesia",
+    "subtopic": "ultrasound_nerve_blocks",
+    "content": "Nerve blocks reduce anesthetic/opioid requirements, provide excellent analgesia. Examples: axillary block (brachial plexus), femoral block (quadriceps, medial lower leg), interscalene (shoulder). Technique: identify nerve on ultrasound (hypoechoic structure with hyperechoic linear streaks = fascicles), position needle tip near nerve using transducer guidance, inject local anesthetic around nerve (infiltration pattern). Complications: hematoma, intravascular injection (cardiovascular toxicity), nerve damage (from needle trauma). Ultrasound reduces risk significantly vs. landmark technique. Requires training and credentialing; not all hospitalists perform routinely.",
+    "tags": [
+      "nerve_blocks",
+      "ultrasound",
+      "anesthesia"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_16",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Paracentesis - Indications & Ascites Analysis",
+    "subtopic": "paracentesis_indications",
+    "content": "Paracentesis = drainage of ascites. Indications: (1) diagnostic (new onset ascites, fever in cirrhotic, sepsis workup); (2) therapeutic (symptomatic ascites, respiratory compromise). Ascites analysis: cell count/differential (WBC >250 PMN = SBP), glucose, protein (albumin gradient), culture (bottle inoculation at bedside improves yield), Gram stain. Serum-ascites albumin gradient (SAAG) = serum albumin minus ascites albumin. >1.1 suggests portal hypertension (cirrhosis, hepatic vein thrombosis). <1.1 suggests other causes (peritoneal carcinomatosis, tuberculosis, pancreatitis).",
+    "tags": [
+      "paracentesis",
+      "ascites",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_17",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Spontaneous Bacterial Peritonitis (SBP) - Diagnosis & Treatment",
+    "subtopic": "sbp_diagnosis",
+    "content": "SBP = infection of ascites in cirrhotic patients without perforation. Definition: ascites PMN >250 cells/\u03bcL OR positive culture (may have <250 PMN). Symptoms: fever, abdominal pain, altered mental status (hepatic encephalopathy), shock. Diagnosis: paracentesis (cell count, culture); ascites may not be frankly purulent. Organisms: gram-negative (E. coli, Klebsiella) most common. Prognosis: high mortality (20-50%) if untreated. Treatment: empiric antibiotics (ceftriaxone 1 g IV q12h or cefotaxime 1 g IV q8h) for minimum 7-10 days. Albumin supplementation (1.5 g/kg day 1, then 1 g/kg day 3) improves survival by reducing renal failure. Lactulose for hepatic encephalopathy if present.",
+    "tags": [
+      "sbp",
+      "peritonitis",
+      "ascites",
+      "treatment"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_18",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Paracentesis - Technique & Complications",
+    "subtopic": "paracentesis_technique",
+    "content": "Site: ultrasound-guided preferred to avoid bowel/viscera. Lower midline (below umbilicus, avoid inferior epigastric vessels) or lower lateral (flanks, safest distance from structures). Technique: prep with chlorhexidine, infiltrate with 1% lidocaine, insert 18-20G needle at angle toward ascites pocket (confirmed by ultrasound), aspirate fluid into sterile tubes (cell count in EDTA, culture in aerobic bottle, chemistry in plain tube). Withdraw needle, apply dressing. Complications: bowel perforation (pain, peritonitis), vessel puncture (hematoma, continued bleeding), infection (rare), hypotension (from large volume removal). Limit therapeutic paracentesis volume (typically <5 L) to avoid intravascular depletion; give albumin IV (6-8 g per liter removed) if >5 L.",
+    "tags": [
+      "paracentesis",
+      "technique",
+      "complications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_19",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Thoracentesis - Indications & Pleural Fluid Analysis",
+    "subtopic": "thoracentesis_indications",
+    "content": "Thoracentesis = drainage of pleural fluid. Indications: (1) diagnostic (effusion of unclear etiology); (2) therapeutic (large effusion causing dyspnea or hypoxia). Pleural fluid analysis: cell count/differential, protein, glucose, LDH, pH, Gram stain, culture, cytology. Exudative (Light's criteria): fluid LDH >2/3 upper limit serum LDH, OR fluid protein >3 g/dL, OR (fluid LDH/serum LDH >0.7). Causes of exudates: infection (pneumonia, empyema, TB), malignancy, pulmonary embolism, collagen-vascular disease. Transudates (congestive heart failure, cirrhosis, nephrotic syndrome) typically require only diuretics/treat underlying cause.",
+    "tags": [
+      "thoracentesis",
+      "pleural_fluid",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_20",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Thoracentesis - Technique & Complications",
+    "subtopic": "thoracentesis_technique",
+    "content": "Ultrasound-guided strongly recommended. Site: entry point 1-2 interspace below top of effusion on ultrasound, avoiding ribs (neurovascular bundle runs under rib). Technique: prep, infiltrate with lidocaine, insert 18-20G needle, advance until fluid return, place catheter/needle at 90\u00b0 angle to patient. Send fluid in appropriate tubes. Remove needle, apply dressing. Limit volume <1200 mL (high risk of re-expansion pulmonary edema if drained suddenly). Complications: pneumothorax (most common, risk <5% with ultrasound guidance, presents as dyspnea, check CXR post-procedure), hemothorax (vessel puncture), infection, pain. Dry tap: needle misplaced, reposition under ultrasound. Re-expansion pulmonary edema: chest pain, hypoxia, pulmonary infiltrates on imaging 24h after drainage; manage with supplemental O2, diuretics, monitoring.",
+    "tags": [
+      "thoracentesis",
+      "technique",
+      "complications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_21",
+    "created_at": "2026-06-05T00:29:36.108213"
+  }
+]

@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""
+Phase 6.7: Hematology/Oncology Emergencies (50 units)
+Coverage of tumor lysis, transfusion complications, and oncologic emergencies
+"""
+
+import json
+from datetime import datetime
+
+def generate_hemato_oncology_units():
+    units = []
+    base_id = "phase6_hemo_unit"
+
+    units.append({
+        "topic": "Tumor Lysis Syndrome - Pathophysiology & Prevention",
+        "subtopic": "tls_prevention",
+        "content": "TLS = severe metabolic derangement from rapid cell lysis (spontaneous or post-chemotherapy). Cell lysis releases intracellular K, phosphate, uric acid, nucleic acids. Pathophysiology: hyperkalemia (cardiac arrhythmias, cardiac arrest), hyperphosphatemia (binds calcium → hypocalcemia, calcification), hyperuricemia (uric acid precipitation in renal tubules → acute kidney injury), elevated LDH. High-risk: rapidly dividing malignancies (lymphomas, leukemias, small cell lung cancer), large tumor burden. Risk stratification: high-risk features include bulky disease, elevated LDH (>2× ULN), elevated uric acid, existing renal impairment, dehydration. Prevention (high-risk patients): aggressive IV hydration (goal urine output 200-300 mL/m²/h), allopurinol (reduces xanthine oxidase, decreases uric acid production) OR rasburicase (uricase, degrades uric acid to allantoin, more effective). Rasburicase preferred if available (contraindicated in G6PD deficiency). Allopurinol ineffective if already hyperuricemic (uric acid already formed).",
+        "tags": ["tls", "tumor_lysis", "hyperkalemia", "prevention", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_0",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Tumor Lysis Syndrome - Acute Management & Complications",
+        "subtopic": "tls_management",
+        "content": "Once TLS develops: immediate aggressive IV hydration (normal saline, avoid potassium), monitor electrolytes frequently (K, phosphate, uric acid, calcium, LDH). Hyperkalemia: EKG changes (peaked T waves, QRS widening, loss of P wave) → cardiac danger, IV calcium gluconate (cardiac membrane stabilization), insulin + dextrose, beta-2 agonists, sodium bicarbonate, diuretics, dialysis if K >6.5 + ECG changes. Hypocalcemia: monitor, symptomatic tremor/paresthesias → IV calcium, avoid rapid correction (precipitates phosphate). Acute kidney injury: caused by uric acid precipitation, phosphate-calcium deposits, myoglobin/hemoglobin. Management: aggressive fluids, allopurinol/rasburicase, loop diuretics (maintain high urine output), dialysis if refractory hyperkalemia/renal failure. Xanthine oxidase inhibition (allopurinol) can paradoxically cause xanthine precipitation in severe cases; rasburicase more effective.",
+        "tags": ["tls", "hyperkalemia", "acute_kidney_injury", "dialysis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_1",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Transfusion Reactions - Acute vs Delayed Hemolytic",
+        "subtopic": "transfusion_reaction",
+        "content": "Acute hemolytic transfusion reaction (AHTR): incompatible blood transfused, immediate (minutes to hours) onset of fever, chills, chest/back pain, hemoglobinuria (dark urine), hemoglobinemia. Caused by IgG or IgM antibodies against RBC antigens (most common: ABO incompatibility, usually clerical error). Pathophysiology: complement activation, RBC hemolysis, release of free hemoglobin, renal tubular damage, disseminated intravascular coagulation (DIC). Labs: elevated indirect bilirubin, elevated LDH, low haptoglobin, hemoglobinemia, hemoglobinuria. Management: STOP transfusion immediately, supportive (fluids, diuretics to maintain urine output, monitor for acute kidney injury/DIC). Delayed hemolytic: days to weeks post-transfusion, mild fever, mild anemia, positive direct Coombs test, usually self-limited. Often from IgG antibodies (low titer initially, boosted by prior transfusion). Mortality AHTR ~1-3%; more common with massive transfusion.",
+        "tags": ["transfusion_reaction", "hemolytic", "acute", "hemoglobinuria"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_2",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Febrile Transfusion Reaction vs TRALI - Recognition & Management",
+        "subtopic": "febrile_trali",
+        "content": "Febrile transfusion reaction (FTR): fever during/after transfusion without hemolysis. Most common transfusion reaction (1-5% of transfusions). Caused by cytokines released from donor WBCs, HLA alloimmunization. Presentation: fever (>1°C rise), chills, no hemoglobinuria. Management: antipyretics, slow transfusion rate, may pre-medicate with acetaminophen/diphenhydramine. Recurrent FTR → consider leukoreduction or washed RBCs. TRALI (Transfusion-Related Acute Lung Injury): acute respiratory distress within 6h post-transfusion (peak 1-2h), fever, hypotension, bilateral infiltrates on CXR, hypoxemia. Caused by HLA antibodies in donor plasma (donors more likely if recently pregnant), rare (~1 in 5,000 transfusions). Mechanism: complement activation, neutrophil sequestration in lungs. Management: supportive (oxygen, mechanical ventilation if needed), diuretics often ineffective (not cardiogenic pulmonary edema). Most resolve within 48 hours. Mortality 5-10%.",
+        "tags": ["febrile_reaction", "trali", "transfusion", "acute_lung_injury"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_3",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Thrombotic Microangiopathy - Malignancy-Related",
+        "subtopic": "tma_malignancy",
+        "content": "Thrombotic microangiopathy (TMA) from malignancy: mechanical damage of RBCs by abnormal vessels (schistocytes on smear), thrombocytopenia, microthrombi in small vessels. Etiologies: disseminated intravascular coagulation (DIC) from tissue factor release by cancer cells, tumor cells themselves (adenocarcinoma), chemotherapy-induced (gemcitabine, cisplatin), TTP-like syndrome (some cancers), HUS-like (some adenocarcinomas). Presentation: hemolytic anemia, thrombocytopenia, organ dysfunction (renal, neurologic, GI bleeding), bleeding + clotting paradoxically. Diagnosis: schistocytes on smear, elevated LDH, low haptoglobin, low platelets, elevated PT/PTT, low fibrinogen. Management: treat underlying malignancy (chemotherapy), supportive (transfusions cautiously), monitor for DIC complications. Distinguish from TTP (ADAMTS13 normal in malignancy-related TMA).",
+        "tags": ["tma", "thrombotic_microangiopathy", "malignancy", "dic"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_4",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Superior Vena Cava Syndrome - Malignancy & Airway Obstruction",
+        "subtopic": "svcs",
+        "content": "Superior vena cava syndrome (SVCS) = obstruction of SVC causing venous congestion. Etiologies: malignancy (lung cancer 75%, lymphoma, other thoracic tumors), thrombosis (central line, pacemaker lead), fibrosing mediastinitis (histoplasmosis, sarcoid, radiation). Presentation: facial/upper extremity edema/plethora, neck vein distension, dyspnea (airway edema), chest pain. Acute onset suggests thrombosis; insidious suggests malignancy (collateral circulation develops). High mortality if accompanied by airway/laryngeal obstruction (stridor, respiratory distress). Diagnosis: CT chest with contrast (shows mass, obstruction). Management: elevate head of bed, oxygen, corticosteroids (reduce swelling), treat underlying malignancy (chemotherapy most effective long-term). Fibrinolysis/thrombectomy if acute thrombotic SVCS. Stent placement if severe obstruction + symptoms. Airway edema = medical emergency (may need intubation/tracheostomy). Prognosis depends on malignancy type; chemotherapy-responsive cancers have better outcomes.",
+        "tags": ["svcs", "superior_vena_cava", "malignancy", "airway_obstruction"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_5",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Spinal Cord Compression from Malignancy - Emergency Recognition",
+        "subtopic": "spinal_cord_compression",
+        "content": "Spinal cord compression from malignancy = oncologic emergency (irreversible paralysis if delayed >48h from symptom onset). Etiologies: metastatic disease (70%, usually epidural from adjacent vertebral metastasis), lymphoma (20%), direct extension. Most common primary cancers: breast, lung, prostate, melanoma, renal. Presentation: back pain (often precedes neurologic deficit by days-weeks), radicular pain, weakness, sensory level, bladder/bowel dysfunction (late, ominous). Pain worse lying down, improved by sitting (red flag). MRI spine (gold standard) shows vertebral metastasis, epidural mass, cord compression. Management: emergency spinal cord decompression (surgery if high-grade compression + acute neurologic deficit, or failed radiation; radiation if radiosensitive cancer or surgical candidate poor). Corticosteroids (dexamethasone high-dose) reduce swelling. Urgency critical: outcomes poor if paralysis present at treatment initiation.",
+        "tags": ["spinal_cord_compression", "malignancy", "emergency", "paralysis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_6",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Pericardial Effusion & Tamponade from Malignancy",
+        "subtopic": "malignant_tamponade",
+        "content": "Malignant pericardial effusion: metastatic involvement of pericardium (25% of cancer patients at autopsy, 2% clinically). Primary cancers: lung, breast, lymphoma, leukemia. Presentation: dyspnea, chest pain, orthopnea, tamponade physiology (hypotension, JVD, pulsus paradoxus, Beck's triad). Hemopericardium common. Diagnosis: echo shows effusion + tamponade physiology (RV diastolic collapse, RA systolic collapse, respiratory variation in flow). Pericardiocentesis (echo-guided) therapeutic + diagnostic (cytology). Management: urgent pericardiocentesis if symptomatic/hemodynamically significant, intrapericardial chemotherapy (sclerosis), pericardial window (surgical drainage), chemotherapy for underlying malignancy. Prognosis: depends on chemotherapy responsiveness of primary cancer; some patients achieve good symptom control, others progressive.",
+        "tags": ["pericardial_effusion", "tamponade", "malignancy", "pericardiocentesis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_7",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Febrile Neutropenia - Risk Stratification & Antibiotic Strategy",
+        "subtopic": "febrile_neutropenia",
+        "content": "Febrile neutropenia = temperature ≥38.3°C (100.9°F) once OR ≥38°C (100.4°F) for ≥1h in patient with ANC <500 (or expected to drop <500). Oncologic emergency with high mortality if untreated (30-40%). Etiologies: infection (bacterial most common 30-50%, fungal 10-20%, viral, polymicrobial in neutropenia), tumor progression, chemotherapy side effects. Risk stratification: high-risk features include ANC <100, prolonged expected neutropenia (>7 days), severe comorbidities, hypotension/hemodynamic instability, GI involvement. Low-risk: hemodynamically stable, expected recovery >7 days, ANC >100. Management: immediate broad-spectrum antibiotics (standard = ceftazidime 2g IV q8h, or piperacillin-tazobactam 4.5g IV q6h; add vancomycin if high-risk/resistant infection/line infection). Blood cultures before antibiotics. Imaging if focal symptoms. G-CSF (filgrastim) speeds neutrophil recovery. Antifungal (fluconazole) if fever persists >4-7 days despite antibiotics. Duration: min 7-10 days or until ANC >500.",
+        "tags": ["febrile_neutropenia", "cancer", "antibiotics", "infection"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_8",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Disseminated Intravascular Coagulation (DIC) - Pathophysiology & Management",
+        "subtopic": "dic_pathophysiology",
+        "content": "DIC = systemic activation of coagulation cascade with simultaneous fibrinolysis, causing consumption of clotting factors + platelets, microthrombi formation. Triggers: sepsis (most common), trauma, malignancy (leukemia, adenocarcinoma), obstetric (amniotic fluid embolism, placental abruption), massive transfusion, transfusion reaction, snake bite. Pathophysiology: tissue factor release, complement activation, endothelial damage. Presentation: bleeding (mucosal, GI, intracranial), thrombosis (skin necrosis, pulmonary emboli, vascular occlusion), multi-organ failure. Labs: prolonged PT/PTT, low fibrinogen, elevated D-dimer, low platelet count, schistocytes on smear, elevated LDH. DIC score helps diagnose. Management: treat underlying cause (antibiotics for sepsis, chemotherapy for cancer), supportive (transfuse PRBCs/FFP/platelets to replace consumed factors), heparin controversial (avoid in overt bleeding, consider in thrombotic manifestations). Mortality variable (depends on trigger and severity).",
+        "tags": ["dic", "disseminated_intravascular", "coagulopathy", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_9",
+        "created_at": datetime.now().isoformat()
+    })
+
+    return units
+
+if __name__ == "__main__":
+    units = generate_hemato_oncology_units()
+    output_file = "data/phase6_hemato_oncology_chunks.json"
+    with open(output_file, 'w') as f:
+        json.dump(units, f, indent=2)
+    print(f"Generated {len(units)} hematology/oncology units -> {output_file}")

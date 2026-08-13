@@ -1,0 +1,104 @@
+[
+  {
+    "topic": "Hypertensive Urgency vs Emergency Distinction",
+    "subtopic": "hypertensive_crisis",
+    "content": "Hypertensive urgency: markedly elevated BP (SBP ≥180 OR DBP ≥120) WITHOUT acute end-organ damage. Hypertensive emergency: SBP ≥180 AND DBP ≥120 WITH acute end-organ manifestations (stroke, MI, encephalopathy, pulmonary edema, eclampsia, acute aortic dissection, AKI). Urgency can be managed with oral agents; emergency requires IV medications + hospitalization. Pseudohypertension risk: white coat effect, take manual cuff reading to confirm. Up to 30% presenting with extreme BP have no true emergency (normal organs/labs).",
+    "tags": [
+      "hypertension",
+      "hypertensive_crisis",
+      "emergency_urgency"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Hypertensive Encephalopathy - Recognition & Pathophysiology",
+    "subtopic": "hypertensive_emergency",
+    "content": "Hypertensive encephalopathy = severe HTN (>180/120) + reversible neurologic dysfunction (headache, confusion, visual disturbance, seizure, coma). Pathophysiology: loss of cerebral autoregulation → breakthrough capillary perfusion injury, vasogenic edema, microinfarcts. Imaging: PRES (Posterior Reversible Encephalopathy Syndrome) on MRI = white matter edema in parietal/occipital regions (often bilateral, symmetric). EEG: generalized slowing, sometimes epileptiform activity. Distinguishing from stroke: encephalopathy is reversible with BP control; stroke causes permanent infarction. Management: IV agents (labetalol, nicardipine), cautious BP reduction (lower by 10-15% first hour) to avoid stroke.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "encephalopathy",
+      "pres"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Ischemic Stroke & Hypertensive Emergency Management",
+    "subtopic": "hypertensive_emergency_scenarios",
+    "content": "Acute ischemic stroke with severe HTN: critical decision on BP management. Thrombolysis/thrombectomy candidates: control BP to SBP <185, DBP <110 BEFORE intervention (high BP increases hemorrhage risk). After thrombolysis: target SBP <180 (to avoid intracerebral hemorrhage). IV agents: labetalol, nicardipine preferred (gradual, titratable). Avoid nitroprusside (causes intracranial steal in ischemic tissue). If patient not thrombolysis candidate: modest BP reduction acceptable (lower by 10-15% first hour). Overly aggressive treatment worsens ischemic stroke (reduces perfusion pressure). Close neuro checks q15min, troponin, ECG (MI risk).",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "stroke"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Intracerebral Hemorrhage & Hypertension Management",
+    "subtopic": "hypertensive_emergency_scenarios",
+    "content": "Intracerebral hemorrhage (ICH) + severe HTN: aggressive BP control reduces hematoma expansion risk. Target: SBP <140 mmHg (INTERACT2 trial: intensive SBP <140 reduced hematoma expansion vs SBP <180). IV agents: labetalol 10-20 mg IV q10-20 min, nicardipine 5-15 mg/h infusion. Avoid: nitroprusside (increases intracranial pressure), hydralazine (unpredictable BP reduction). Supportive: ICU monitoring, coagulation reversal if on warfarin (INR >1.4 reversal recommended), neurosurgery consult for evacuation if large/accessible ICH. Mortality high (30-50%); rapid treatment critical.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "ich"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Aortic Dissection - Diagnosis & Urgent BP Control",
+    "subtopic": "hypertensive_emergency_scenarios",
+    "content": "Aortic dissection = tear in aortic media, can extend distally causing branch vessel involvement. Presentation: sudden severe chest/back pain, BP differential between arms (>20 mmHg suggests dissection), focal neurologic deficit (carotid involvement). Diagnosis: CT angiography (gold standard), TEE if CT unavailable, MRI (slower). Management: aggressive BP + HR reduction (target SBP 100-120, HR 60). Agents: (1) Beta-blocker FIRST (esmolol IV, target HR 60) to reduce dP/dt (contractility); (2) Then vasodilator if BP still high (nitroprusside, nicardipine). Labetalol alone inadequate (beta effect too weak without pre-blockade). Type A dissection (ascending aorta) = emergency surgery. Type B (descending aorta) = medical management if uncomplicated.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "aortic_dissection"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Eclampsia & Pre-eclampsia - Hypertension in Pregnancy",
+    "subtopic": "hypertensive_emergency_scenarios",
+    "content": "Pre-eclampsia: HTN (BP ≥140/90 twice, 4h apart) after 20 weeks gestation + proteinuria ≥0.3 g/day OR signs end-organ dysfunction (elevated transaminases, thrombocytopenia, renal insufficiency, pulmonary edema, cerebral/visual symptoms). Eclampsia = pre-eclampsia + seizures. Management: (1) Delivery (definitive treatment); (2) Seizure prophylaxis: magnesium sulfate 4-6 g IV loading, then 1-2 g/h infusion (decreases seizure risk 50%); (3) BP control: goal SBP 140-150 (avoid overly aggressive, preserve placental perfusion). IV agents: labetalol, hydralazine, nifedipine. Avoid ACE inhibitors (teratogenic). HELLP syndrome (hemolysis, elevated LFTs, low platelets) = severe pre-eclampsia variant with higher mortality.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "eclampsia",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "IV Antihypertensive Agents - Pharmacology & Dosing",
+    "subtopic": "hypertensive_emergency_treatment",
+    "content": "(1) Labetalol: combined alpha/beta blockade. IV bolus 10-20 mg, repeat q10-20 min (max 300 mg), OR infusion 1-2 mg/min titrated. Onset 5-10 min, duration 2-4h. (2) Nicardipine: calcium channel blocker. Infusion 5-15 mg/h, titrate q5-15 min. Onset 15-30 min, duration 30 min post-infusion. (3) Hydralazine: direct arterial vasodilator. IV bolus 5-20 mg q30 min, onset 10-20 min. (4) Esmolol: short-acting beta blocker. IV bolus 80-500 mcg/kg, then infusion 50-300 mcg/kg/min. (5) Nitroprusside: potent balanced vasodilator. IV infusion 0.3-10 mcg/kg/min, AVOID >4 mcg/kg/min >4h (cyanide toxicity). (6) Immediate-release nifedipine: oral sublingual 10-20 mg, unpredictable absorption, outdated.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "iv_agents"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Target BP Reduction in Hypertensive Emergency",
+    "subtopic": "hypertensive_emergency_treatment",
+    "content": "Principle: cautious reduction to avoid stroke/MI. Goal: reduce MAP by 10-15% in first hour, then slower titration. Exception: acute pulmonary edema (more aggressive reduction acceptable). Exceptions requiring careful reduction: acute ischemic stroke (avoid <180/110 before thrombolysis, then <180 after), acute MI (avoid excessive reduction), aortic dissection (require beta-blockade first, then reduction to SBP 100-120). Monitor: BP q5-15 min initially, cardiac symptoms, neurologic status, urine output, renal function. Avoid: rapid SBP drop >20-30 mmHg (risk AKI, stroke, MI).",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "target_reduction"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Catecholamine Excess Hypertensive Emergency",
+    "subtopic": "hypertensive_emergency_scenarios",
+    "content": "Pheochromocytoma: catecholamine-secreting adrenal tumor, presents with severe HTN + paroxysmal symptoms (headache, diaphoresis, palpitations, anxiety). Diagnosis: elevated plasma metanephrines/24h urine catecholamines. Acute presentation (pheochromocytoma crisis): severe HTN + altered MS, pulmonary edema, arrhythmia. Management: (1) Alpha-blockade FIRST: phentolamine IV 5 mg bolus, repeat q5-15 min (prevents catecholamine surge from surgical manipulation); then phenoxybenzamine oral 10-20 mg TID (blocks alpha receptors). (2) Beta-blockade (after alpha blockade established): propranolol, esmolol. (3) Supportive: sedation, cooling if hyperthermic. Surgery (adrenalectomy) when stabilized. Cocaine/amphetamine toxicity: similar presentation; avoid beta-blockers alone (unopposed alpha effects); use alpha-blocker + beta-blocker.",
+    "tags": [
+      "hypertension",
+      "hypertensive_emergency",
+      "catecholamine",
+      "pheochromocytoma"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

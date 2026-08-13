@@ -1,0 +1,240 @@
+[
+  {
+    "id": "iv-anesthetic-pharm-d1",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What is target-controlled infusion (TCI) and what does the clinician set on a TCI device for propofol?",
+    "answer": "TCI uses computerized infusion pumps with pharmacokinetic modeling software to achieve a desired effect-site concentration; the clinician sets the target plasma or effect-site concentration rather than an infusion rate.",
+    "rationale": "TCI accounts for distribution and elimination kinetics to continuously adjust infusion rate, producing more stable effect-site concentrations than manually calculated rate changes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 737
+      }
+    ],
+    "confusable_with": "manually calculated weight-based infusion (does not account for dynamic PK changes during infusion)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d2",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Remifentanil is used in IV anesthetic regimens for cardiac surgery at what dosing range, and what property makes it suitable for this use?",
+    "answer": "Remifentanil is used as a 0-1 mcg/kg bolus followed by 0.25-1 mcg/kg/min infusion; its ester linkage allows rapid metabolism by non-specific plasma and tissue esterases, giving a context-sensitive half-life of approximately 3-4 minutes regardless of infusion duration.",
+    "rationale": "Ultra-short action from ester hydrolysis makes remifentanil ideal for procedures requiring immediate postoperative neurological assessment or rapidly adjustable analgesia without context-sensitive accumulation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 737
+      }
+    ],
+    "confusable_with": "fentanyl (context-sensitive half-life increases significantly with prolonged infusion; accumulates)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d3",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "In older adult patients, what is the principal pharmacodynamic change that affects IV anesthetic dosing?",
+    "answer": "The principal pharmacodynamic change with aging is reduced anesthetic requirement; older adults require lower doses of propofol, etomidate, opioids, benzodiazepines, and barbiturates due to altered CNS sensitivity and reduced volume of distribution.",
+    "rationale": "Reduced CNS neuronal density, altered receptor populations, decreased plasma protein binding, and reduced cardiac output together lower required doses and prolong effect duration in elderly patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      }
+    ],
+    "confusable_with": "pharmacokinetic changes only (pharmacodynamic sensitivity also increases, not just slower clearance)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d4",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Naltrexone is a pure opioid antagonist used for maintenance treatment of addiction. How does its pharmacological profile differ from naloxone?",
+    "answer": "Both are pure mu-opioid receptor antagonists, but naltrexone has a significantly longer half-life (half-life approximately 4-10 hours vs. naloxone 1-2 hours); naltrexone is given orally for addiction maintenance, naloxone IV/IM for acute opioid reversal.",
+    "rationale": "The longer duration of naltrexone prevents patients from overcoming the block with additional opioids; naloxone is shorter-acting and requires redosing for long-acting opioid overdose.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 466
+      }
+    ],
+    "confusable_with": "methylnaltrexone (peripherally acting, used for opioid-induced constipation, crosses blood-brain barrier minimally)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d5",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "When combining opioids and benzodiazepines for cardiac surgery induction, what hemodynamic effect should the anesthesiologist anticipate?",
+    "answer": "The combination of opioids and benzodiazepines markedly reduces arterial blood pressure and peripheral vascular resistance in a synergistic manner; this effect is more pronounced than with either drug class alone.",
+    "rationale": "Both drug classes reduce sympathetic tone; their combined effect is synergistic and particularly hazardous in patients with reduced ventricular function who depend on compensatory sympathetic activity to maintain cardiac output.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 284
+      }
+    ],
+    "confusable_with": "additive effect (actually synergistic - more hemodynamic depression than simple addition would predict)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d6",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Antiparkinsonian drugs and tricyclic antidepressants with anticholinergic side effects augment sedation from which other IV anesthetic drug class?",
+    "answer": "Anticholinergic antiparkinsonian drugs and TCAs augment sedation produced by scopolamine (anticholinergic premedication) through additive CNS anticholinergic effects.",
+    "rationale": "Multiple anticholinergic agents acting together produce additive or synergistic central anticholinergic syndrome (confusion, sedation, hallucinations); this is especially problematic in elderly patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 352
+      }
+    ],
+    "confusable_with": "augmenting benzodiazepine sedation (different mechanism; benzodiazepines act via GABA-A not cholinergic receptors)"
+  },
+  {
+    "id": "iv-anesthetic-pharm-d7",
+    "topic": "Intravenous Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "During liver transplantation, what are the venous access requirements for IV anesthetic delivery given the hemorrhagic risk?",
+    "answer": "Several large-bore (14-gauge or larger) IV catheters placed above the diaphragm are required; specialized 8.5F catheters can be placed in an introducer sheath; IVC clamping during anhepatic phase impairs venous return from lower body, making above-diaphragm access essential.",
+    "rationale": "During the anhepatic and caval cross-clamp phases, venous return from below the diaphragm is interrupted; IV access above this level ensures drug and volume delivery reaches the central circulation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1211
+      }
+    ],
+    "confusable_with": "routine 18-gauge peripheral IV (inadequate bore size and location for rapid transfusion and drug delivery in liver transplant)"
+  },
+  {
+    "id": "isoflurane-pharm-d1",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Isoflurane is a halogenated ether. What is its approximate blood:gas partition coefficient relative to sevoflurane and desflurane, and what is the clinical implication?",
+    "answer": "Isoflurane blood:gas coefficient approximately 1.4 (vs. sevoflurane 0.65, desflurane 0.45); higher solubility means slower onset and offset compared to newer volatile agents.",
+    "rationale": "The blood:gas coefficient determines the rate of equilibration between alveoli and blood; less soluble agents (sevoflurane, desflurane) reach equilibrium faster, allowing more rapid induction and emergence.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 114
+      }
+    ],
+    "confusable_with": "desflurane (lowest blood:gas coefficient = fastest onset/offset of all modern volatile agents)"
+  },
+  {
+    "id": "isoflurane-pharm-d2",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "MAC-amnesia is the concentration that prevents recall in 50% of a population. How does it compare to MAC and MAC-awake?",
+    "answer": "MAC-amnesia < MAC-awake < standard MAC (1.0); MAC-amnesia is likely less than MAC-awake (approximately 0.25 MAC or less); amnesia is achieved at sub-hypnotic concentrations of inhaled agents.",
+    "rationale": "Amnesia and unconsciousness occur at lower partial pressures than immobility to surgical stimulus; this is why patients may not respond to verbal stimuli but still have recall without adequate amnestic concentrations.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 114
+      }
+    ],
+    "confusable_with": "MAC-awake (approximately 0.3-0.4 MAC; consciousness, not amnesia threshold)"
+  },
+  {
+    "id": "isoflurane-pharm-d3",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Isoflurane is the preferred volatile agent in some anesthesiologists approach to preventing awareness. What minimum concentration of inhalation agent is recommended to reduce awareness risk during high-opioid cardiac anesthesia?",
+    "answer": "At least 0.5-0.7 MAC of the inhalation agent should be maintained to reduce awareness risk; setting an alarm for low anesthetic gas concentration is also recommended.",
+    "rationale": "Sub-0.5 MAC concentrations of volatile agents may not reliably prevent awareness, especially when combined with opioids and benzodiazepines that can lower MAC; monitoring and alarming for low concentrations is essential.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 204
+      }
+    ],
+    "confusable_with": "relying on BIS alone without gas concentration monitoring (inadequate safeguard during CPB)"
+  },
+  {
+    "id": "isoflurane-pharm-d4",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "How does the immature cardiovascular system of infants respond differently to volatile anesthetics compared to older children and adults?",
+    "answer": "The immature heart is more sensitive to depression by volatile anesthetics; infants also show opioid-induced bradycardia more readily and are less able to respond to hypovolemia with compensatory vasoconstriction.",
+    "rationale": "Neonatal myocardium has a higher percentage of non-contractile elements, less developed sarcoplasmic reticulum, and limited Frank-Starling reserve, making it more susceptible to volatile-agent-induced depression.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1447
+      }
+    ],
+    "confusable_with": "adult response to volatile agents (can compensate via increased SVR and HR; neonates cannot)"
+  },
+  {
+    "id": "isoflurane-pharm-d5",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Isoflurane causes some degree of coronary vasodilation. What debate surrounds isoflurane use in patients with CAD related to this property?",
+    "answer": "The coronary steal hypothesis proposed that isoflurane-induced vasodilation of normal coronary vessels diverts blood away from areas supplied by fixed stenotic vessels; subsequent clinical evidence suggests steal is clinically rare if hemodynamics are well controlled.",
+    "rationale": "Coronary steal requires specific coronary anatomy (steal-prone anatomy); in practice, avoiding tachycardia and hypotension with isoflurane prevents ischemia; the clinical significance of steal has been largely refuted.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 204
+      }
+    ],
+    "confusable_with": "sevoflurane and desflurane (also cause coronary vasodilation; steal risk similarly minimal with hemodynamic control)"
+  },
+  {
+    "id": "isoflurane-pharm-d6",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Emergence from general anesthesia ideally involves smooth and gradual awakening. What common emergence problems should the anesthesiologist anticipate?",
+    "answer": "Common emergence problems: airway obstruction, shivering, agitation/emergence delirium, pain, nausea and vomiting, hypothermia, and autonomic lability; spinal opioids may delay return of motor function.",
+    "rationale": "Each represents a distinct pathophysiological mechanism requiring targeted management; emergence agitation may indicate residual volatile anesthetic effects, inadequate analgesia, or bladder distension.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2098
+      }
+    ],
+    "confusable_with": "PACU complications (overlap with emergence problems but PACU events are post-extubation in recovery area)"
+  },
+  {
+    "id": "isoflurane-pharm-d7",
+    "topic": "Isoflurane: clinical pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary mechanism by which halogenated volatile anesthetics produce general anesthesia at the molecular level?",
+    "answer": "Halogenated ethers primarily potentiate inhibitory GABA-A receptors and inhibit excitatory channels (NMDA, nAChR, HCN channels); the resulting CNS depression produces the components of anesthesia (unconsciousness, amnesia, immobility).",
+    "rationale": "A unifying molecular theory of anesthesia remains elusive; the current evidence points to GABA-A potentiation as the dominant mechanism for halogenated ethers, distinct from NMDA inhibition by nitrous oxide and xenon.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 249
+      }
+    ],
+    "confusable_with": "lipid theory (Meyer-Overton hypothesis; now considered insufficient to explain mechanistic diversity)"
+  }
+]

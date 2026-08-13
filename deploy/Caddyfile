@@ -1,0 +1,5 @@
+HOSTNAME {
+    handle /health { reverse_proxy 127.0.0.1:8000 }
+    handle /mcp* { reverse_proxy 127.0.0.1:8000 }
+    handle { respond "Clinical Attending OS" 200 }
+}

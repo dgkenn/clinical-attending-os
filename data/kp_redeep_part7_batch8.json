@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ic-aneurysm-clip-d1",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are the two primary anesthetic goals during intracranial aneurysm clipping surgery?",
+    "answer": "(1) Prevent aneurysm rupture/rebleeding by avoiding sudden increases in systemic BP (which increase transmural pressure); (2) avoid factors promoting cerebral ischemia or vasospasm.",
+    "rationale": "Transmural pressure = MAP - ICP; increases in MAP directly increase aneurysm wall tension; vasospasm is a leading cause of delayed neurological deterioration after subarachnoid hemorrhage.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": "endovascular coiling goals (similar but temporary occlusion not used; clipping requires more controlled hypotension)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d2",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Why is intraarterial pressure monitoring particularly useful during intracranial aneurysm surgery?",
+    "answer": "Intraarterial monitoring allows beat-to-beat detection and immediate treatment of sudden BP increases (during laryngoscopy, surgical stimulation, or temporary clipping) that could cause aneurysm rupture or rebleeding.",
+    "rationale": "Blood pressure spikes during intubation or surgical manipulation can transiently double MAP; real-time arterial monitoring enables immediate pharmacological response to prevent transmural pressure surges.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": "NIBP (too slow for detection and response to acute BP spikes)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d3",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Decreasing mean arterial blood pressure reduces the transmural tension across an aneurysm. What is the physiological relationship between MAP, ICP, and aneurysm rupture risk?",
+    "answer": "Transmural tension (wall stress) = MAP - ICP; reducing MAP or increasing ICP reduces the pressure gradient across the aneurysm wall; during temporary clip application, controlled hypotension reduces the risk of rupture.",
+    "rationale": "Laplace law applied to spherical vessels: wall tension proportional to pressure times radius; reducing transmural pressure during clip application allows safer surgical manipulation of the aneurysm.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 988
+      }
+    ],
+    "confusable_with": "always reducing MAP to low levels (risks cerebral ischemia; selective controlled hypotension only during critical moments)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d4",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are the major complications of aneurysmal subarachnoid hemorrhage (SAH) that cause early mortality?",
+    "answer": "Major SAH complications: initial bleeding and early rebleeding, cerebral vasospasm and delayed cerebral ischemia (DCI, peaks days 4-14), hydrocephalus, elevated ICP, seizures, and cardiac complications (troponin elevation, arrhythmias).",
+    "rationale": "Vasospasm after SAH causes DCI in up to 30% of patients; nimodipine remains the only pharmacological intervention proven to improve neurological outcomes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Subarachnoid Hemorrhage (SAH)",
+        "page": 12
+      }
+    ],
+    "confusable_with": "ischemic stroke complications (different pathophysiology; no vasospasm phase)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d5",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What induction agent choices are preferred for aneurysm clipping, and on what pharmacological basis?",
+    "answer": "Propofol and etomidate are popular choices for induction because they reduce cerebral metabolic rate proportionately more than cerebral blood flow, lowering ICP and cerebral blood volume while maintaining CPP.",
+    "rationale": "Reducing CMRO2 > CBF decreases cerebral blood volume and ICP without causing steal phenomenon; this creates favorable intracranial conditions before surgical manipulation of the aneurysm.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 783
+      }
+    ],
+    "confusable_with": "ketamine (contraindicated in elevated ICP; increases CMRO2 and CBF)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d6",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the current evidence on clazosentan and statins for preventing vasospasm after aneurysmal SAH?",
+    "answer": "Subsequent studies with clazosentan showed no clinical benefit; statin therapy also lacks efficacy for vasospasm treatment and shows no improvement in short or long-term outcomes in aSAH; nimodipine (calcium channel blocker) remains the only pharmacological treatment proven to improve outcomes.",
+    "rationale": "Despite promising mechanistic rationale, both clazosentan (endothelin antagonist) and statins have failed in clinical trials for SAH vasospasm, highlighting the importance of evidence-based prescribing.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Subarachnoid Hemorrhage (SAH)",
+        "page": 10
+      }
+    ],
+    "confusable_with": "nimodipine (proven benefit in aSAH for neurological outcome even if vasospasm rate not clearly reduced)"
+  },
+  {
+    "id": "ic-aneurysm-clip-d7",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "In terms of outcomes, how do surgical clipping and endovascular coiling compare for intracranial aneurysm treatment?",
+    "answer": "Short-to-medium-term outcomes are similar between surgical clipping and endovascular coiling; long-term benefits of one technique over the other continue to be studied; patient anatomy and aneurysm characteristics guide selection.",
+    "rationale": "The ISAT trial showed similar 1-year mortality/dependency but higher rebleed rate with coiling; some aneurysms are anatomically unsuitable for coiling (wide neck, complex geometry), requiring surgical clipping.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 567
+      }
+    ],
+    "confusable_with": "coiling universally superior (not true; clipping remains the preferred option for many aneurysm configurations)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Intracranial Aneurysm: Surgical Clipping",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Unruptured aneurysm on surveillance imaging; ruptured aneurysm presenting as thunderclap headache (worst headache of life); family history of intracranial aneurysm or SAH",
+    "pathophysiology": "Saccular aneurysm (congenital weakness at arterial bifurcation) or fusiform (atherosclerotic); rupture causes sudden pressure equalization between SAH and intracranial pressure, global ischemia at moment of rupture",
+    "time_course": "Initial SAH causes thunderclap headache, LOC, meningismus; rebleeding risk highest in first 24 hours; vasospasm/DCI peaks days 4-14; hydrocephalus develops subacutely",
+    "key_features": "Thunderclap headache, meningismus, xanthochromia on LP, aneurysm on CTA/MRA/DSA, elevated troponin (cardiac stunning), ECG changes",
+    "consequence_if_missed": "Unrecognized SAH (misdiagnosed as tension headache) leads to delayed clipping, untreated rebleeding risk, and missed opportunity to prevent vasospasm; 30-day mortality 30-40% for ruptured aneurysms"
+  },
+  {
+    "id": "ic-htn-medical-d1",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the mechanism by which osmotic therapy such as mannitol reduces intracranial pressure and brain edema?",
+    "answer": "Mannitol creates an osmotic gradient across the blood-brain barrier, drawing water from brain parenchyma into the circulation, thereby reducing brain water content, volume, and ICP; it also reduces blood viscosity and improves CBF.",
+    "rationale": "The BBB is relatively impermeable to mannitol; the osmotic gradient it creates moves free water from the interstitium/ICF into plasma, reducing brain volume and ICP within minutes.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 558
+      }
+    ],
+    "confusable_with": "loop diuretics (reduce intravascular volume more than brain water; less potent and slower for acute ICP reduction)"
+  },
+  {
+    "id": "ic-htn-medical-d2",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "In what conditions is the blood-brain barrier disrupted, allowing osmotic therapy to be less effective or potentially worsen edema?",
+    "answer": "BBB disruption occurs with hypertensive crisis, trauma, infection, arterial hypoxemia, severe hypercapnia, tumors, and sustained seizure activity; disrupted BBB allows mannitol to enter brain parenchyma, potentially worsening edema.",
+    "rationale": "When the BBB is disrupted, mannitol distributes into the brain interstitium, creating a reverse osmotic gradient on resolution that can worsen cerebral edema.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 558
+      }
+    ],
+    "confusable_with": "intact BBB setting (where osmotic therapy is reliably effective)"
+  },
+  {
+    "id": "ic-htn-medical-d3",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the principal strategy for choosing between operative and medical management of head trauma, and what imaging studies guide this decision?",
+    "answer": "Decision is based on radiographic findings (CT showing hematoma size, midline shift, cistern compression) and clinical findings (GCS, neurological deficits); CT is the primary imaging tool for this triage.",
+    "rationale": "Surgical evacuation is indicated for hematomas causing significant mass effect (typically >5 mm midline shift, epidural >30 mL, subdural with significant deficit); medical management targets ICP control and cerebral perfusion.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 983
+      }
+    ],
+    "confusable_with": "MRI being preferred for acute TBI (CT is faster and standard for acute management)"
+  },
+  {
+    "id": "ic-htn-medical-d4",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Hypertension is a major global cause of death and acts as a perioperative risk factor. When is hypertension most significant as a perioperative risk?",
+    "answer": "Hypertension is most significant perioperatively when end-organ damage is present (left ventricular hypertrophy, CAD, renal dysfunction, prior stroke); stage 1-2 hypertension alone without end-organ damage is not an independent predictor of adverse perioperative outcomes.",
+    "rationale": "End-organ damage indicates established arterial disease increasing ischemia risk; isolated blood pressure elevation without end-organ changes shows inconsistent association with perioperative outcomes in clinical studies.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 226
+      }
+    ],
+    "confusable_with": "any hypertension requiring cancellation of elective surgery (only severe hypertension >180/110 with end-organ damage warrants cancellation)"
+  },
+  {
+    "id": "ic-htn-medical-d5",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "During neuromonitoring cases, what specific blood pressure management principle is applied to protect the brain from ischemia?",
+    "answer": "During intracranial procedures, arterial blood pressure should be maintained at or slightly above the patients usual range; sudden decreases in MAP can compromise CPP (CPP = MAP - ICP), causing ischemia.",
+    "rationale": "Patients with intracranial hypertension or reduced cerebrovascular reserve have impaired autoregulation; their brains depend on adequate MAP to maintain CPP, unlike healthy individuals who can tolerate wider MAP variations.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 783
+      }
+    ],
+    "confusable_with": "allowing permissive hypotension (appropriate for hemorrhagic trauma but not elevated ICP)"
+  },
+  {
+    "id": "ic-htn-medical-d6",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Dexmedetomidine is used for sedation in neuromonitoring and ICU procedures. What property makes it particularly useful for procedures over 1 hour?",
+    "answer": "Dexmedetomidine causes less respiratory depression than propofol, making it especially useful for prolonged sedation procedures (>1 hour) where respiratory compromise is a concern, particularly in non-intubated patients.",
+    "rationale": "Alpha-2 agonist-mediated sedation is qualitatively different from propofol/benzodiazepine sedation; patients remain arousable and airway reflexes are better preserved, reducing the risk of airway obstruction.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 707
+      }
+    ],
+    "confusable_with": "propofol (causes dose-dependent respiratory depression; requires closer airway monitoring)"
+  },
+  {
+    "id": "ic-htn-medical-d7",
+    "topic": "Intracranial Hypertension: Medical Management",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What is the clinical triad associated with hormonally active pheochromocytomas and paragangliomas that can mimic hypertensive crises requiring neurointensive care workup?",
+    "answer": "Classic triad: episodic hypertension, headache, and diaphoresis (also palpitations) from catecholamine surges; these symptoms can mimic hypertensive emergencies or intracranial events and require biochemical confirmation (plasma/urine metanephrines).",
+    "rationale": "Pheo/paraganglioma-related catecholamine release causes massive sympathetic activation; misidentifying a pheo crisis as essential hypertension and using beta-blockers alone (without alpha-blockade first) can cause paradoxical hypertensive crisis.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 551
+      }
+    ],
+    "confusable_with": "hypertensive emergency from essential hypertension (no catecholamine surge; treat with IV antihypertensives directly)"
+  }
+]

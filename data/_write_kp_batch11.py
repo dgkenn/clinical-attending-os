@@ -1,0 +1,196 @@
+import json
+
+kps = []
+dom_em = 'Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)'
+dom_id = 'Internal medicine: infectious disease (sepsis & septic shock, pneumonia, UTI/pyelonephritis, cellulitis & necrotizing infections, endocarditis, meningitis, C. diff, HIV, antimicrobial selection & stewardship)'
+dom_pulm = 'Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)'
+dom_neuro = 'Internal medicine: neurology (ischemic & hemorrhagic stroke, seizures & status epilepticus, altered mental status & delirium, headache, neuromuscular weakness, spinal cord syndromes)'
+dis = 'medicine'
+
+# ============================================================
+# [67] Bacterial Meningitis
+# ============================================================
+t = 'Bacterial Meningitis'
+kps += [
+  {
+    'id': 'bacterial-meningitis-1',
+    'topic': t, 'domain': dom_neuro, 'discipline': dis,
+    'stem': 'What percentage of bacterial meningitis patients have at least 2 of the 4 classic symptoms, and what are they?',
+    'answer': '95% have >=2 of: fever, neck stiffness, altered mental status, and headache. Absence of all 4 effectively excludes bacterial meningitis.',
+    'rationale': 'The classic triad (fever, neck stiffness, AMS) has good sensitivity in combination; individual signs like Kernig (5% Sn, 95% Sp) and Brudzinski (5% Sn, 95% Sp) are specific but not sensitive.',
+    'bloom': 'recall',
+    'source': [{'book': 'MGH Housestaff Manual', 'page': 123}],
+    'confusable_with': 'Viral meningitis — also causes meningismus but with lymphocytic pleocytosis and lower protein; usually less acutely ill'
+  },
+  {
+    'id': 'bacterial-meningitis-2',
+    'topic': t, 'domain': dom_neuro, 'discipline': dis,
+    'stem': 'What are the CSF findings that distinguish bacterial from viral meningitis?',
+    'answer': 'Bacterial: opening pressure 20-50 cmH2O, WBC <100 to >10k with >80% PMNs, protein >80 mg/dL, glucose <40 mg/dL, positive Gram stain/culture. Viral: lymphocytic pleocytosis 50-1000, protein <200, glucose >45.',
+    'rationale': 'Bacterial infection causes neutrophilic inflammation, elevated protein from BBB disruption, and hypoglycorrhachia from bacterial glucose consumption; viral causes lymphocytic (adaptive immune) response.',
+    'bloom': 'analyze',
+    'source': [{'book': 'MGH Housestaff Manual', 'page': 263}],
+    'confusable_with': 'Early viral meningitis — can have PMN-predominant CSF in the first 24-48 hours (especially HSV); repeat LP or HSV PCR clarifies'
+  },
+  {
+    'id': 'bacterial-meningitis-3',
+    'topic': t, 'domain': dom_neuro, 'discipline': dis,
+    'stem': 'In the US 2003-2007 surveillance, what was the most common organism causing bacterial meningitis?',
+    'answer': 'S. pneumoniae (58%), followed by Group B Streptococcus (18.1%), N. meningitidis (13.9%), H. influenzae (6.7%), and L. monocytogenes (3.4%).',
+    'rationale': 'Widespread H. influenzae type B vaccination dramatically reduced Hib meningitis; S. pneumoniae now predominates, especially in adults and the elderly.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 2}],
+    'confusable_with': 'Neonatal meningitis organisms — Group B Streptococcus and E. coli predominate in neonates'
+  },
+  {
+    'id': 'bacterial-meningitis-4',
+    'topic': t, 'domain': dom_neuro, 'discipline': dis,
+    'stem': 'Beyond fever and neck stiffness, what CNS and vascular complications can bacterial meningitis cause?',
+    'answer': 'Seizures, stroke (infectious vasculitis), hydrocephalus, cranial nerve deficits (especially CN VII; more common with TB and fungal meningitis), and in VP shunt patients: abdominal pain and peritonitis.',
+    'rationale': 'Meningeal inflammation extends to adjacent brain parenchyma, cranial nerves, and cerebral vessels; vascular inflammation causes thrombosis and ischemic stroke.',
+    'bloom': 'recall',
+    'source': [{'book': 'MGH Housestaff Manual', 'page': 123}],
+    'confusable_with': 'Viral encephalitis — also causes seizures and AMS but lacks meningismus and CSF bacterial features'
+  },
+  {
+    'id': 'bacterial-meningitis-5',
+    'topic': t, 'domain': dom_neuro, 'discipline': dis,
+    'stem': 'Nosocomial bacterial meningitis has a different causative organism spectrum. What organisms predominate?',
+    'answer': 'Nosocomial meningitis is caused by S. pneumoniae, Staphylococcus aureus, Staphylococcus albus (coagulase-negative), and gram-negative bacilli — unlike community-acquired which is predominantly S. pneumoniae and N. meningitidis.',
+    'rationale': 'Nosocomial meningitis follows neurosurgery, lumbar puncture, or VP shunt implantation; skin flora (staph species) and hospital gram-negatives dominate.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 2}],
+    'confusable_with': 'Community-acquired meningitis empiric coverage (ceftriaxone + vancomycin +/- ampicillin) — nosocomial requires anti-staph and anti-gram-negative broadening'
+  },
+]
+
+kps.append({
+    '_type': 'illness_script',
+    'topic': 'Bacterial Meningitis',
+    'discipline': 'medicine',
+    'enabling_conditions': 'Extremes of age; asplenia; complement deficiency; CSF leak; neurosurgical procedures; crowded living (N. meningitidis); immunosuppression',
+    'pathophysiology': 'Bacterial invasion of subarachnoid space causes neutrophilic inflammation, cerebral edema, increased ICP, BBB disruption, and vasculitis',
+    'time_course': 'Hours — acute onset with rapid progression to coma; meningococcemia can cause purpuric rash and sepsis within hours',
+    'key_features': 'Fever + headache + neck stiffness (+/- AMS) in 95%; Kernig/Brudzinski specific but insensitive; purpuric rash = meningococcemia; LP CSF confirms',
+    'consequence_if_missed': 'Death or permanent neurological deficit; meningococcal meningitis has 5-10% mortality even with treatment; hearing loss in survivors (pneumococcal)'
+})
+
+# ============================================================
+# [68] Basic Life Support (BLS) & Chain of Survival
+# ============================================================
+t = 'Basic Life Support (BLS) & Chain of Survival'
+kps += [
+  {
+    'id': 'bls-chain-of-survival-1',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'What is the cornerstone of neurologically intact survival in cardiac arrest?',
+    'answer': 'High-quality chest compressions — performed at the correct rate and depth, with complete recoil and minimal interruptions. ACLS delivery relies heavily on BLS principles.',
+    'rationale': 'Even brief pauses in compressions cause coronary and cerebral perfusion pressure to drop precipitously; consistency of compressions determines oxygen delivery to vital organs.',
+    'bloom': 'recall',
+    'source': [{'book': 'StatPearls', 'page': 2}],
+    'confusable_with': 'Early defibrillation — equally important for shockable rhythms but requires functioning compressions to maintain perfusion between shocks'
+  },
+  {
+    'id': 'bls-chain-of-survival-2',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'The 2010 AHA guidelines changed BLS sequencing from ABC to CAB. What was the specific change and rationale?',
+    'answer': 'Changed from Airway-Breathing-Compressions to Compressions-Airway-Breathing. Reason: most cardiac arrest victims have sufficient residual O2 for several minutes; delaying compressions for airway management worsens outcomes.',
+    'rationale': 'Time to first compression is the most predictive factor for ROSC; airway management can follow once compressions are established.',
+    'bloom': 'recall',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 2056}],
+    'confusable_with': 'Respiratory arrest (drowning, OD) — airway management IS the first priority; CAB applies to cardiac arrest, not primary respiratory arrest'
+  },
+  {
+    'id': 'bls-chain-of-survival-3',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'For traumatic cardiovascular collapse during mechanical ventilation, what bilateral procedure should NEVER be omitted?',
+    'answer': 'Bilateral needle thoracostomies (14-gauge IV catheter in 2nd intercostal space midclavicular line, then formal thoracostomy in midaxillary line): no trauma patient should die without having potential tension pneumothorax ruled out.',
+    'rationale': 'Tension pneumothorax causes PEA by impeding venous return; mechanical ventilation can convert a simple pneumothorax to tension; bilateral treatment prevents missing the contralateral side.',
+    'bloom': 'apply',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 1324}],
+    'confusable_with': 'Unilateral thoracostomy only — bilateral is required in trauma arrest to avoid missing contralateral tension pneumothorax'
+  },
+  {
+    'id': 'bls-chain-of-survival-4',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Chest compression-only (without rescue breathing) CPR: when is this associated with better long-term survival?',
+    'answer': 'Chest compression-alone CPR is associated with better long-term survival compared with standard CPR in some studies of OHCA, particularly for witnessed VF/VT arrest where bystander CPR by untrained rescuers is the alternative.',
+    'rationale': 'Untrained bystanders are more likely to provide compressions if not required to perform mouth-to-mouth; passive oxygenation from gasping provides some O2 during early compression-only CPR.',
+    'bloom': 'analyze',
+    'source': [{'book': 'Miller/Baby Miller', 'page': 852}],
+    'confusable_with': 'Asphyxial cardiac arrest (drowning, pediatric) — ventilation is critical and compression-only CPR is inferior'
+  },
+]
+
+# ============================================================
+# [69] Bowel Obstruction
+# ============================================================
+t = 'Bowel Obstruction'
+kps += [
+  {
+    'id': 'bowel-obstruction-1',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'What are the most common causes of small bowel obstruction in adults?',
+    'answer': 'Adhesions from any prior abdominal surgery (most common), hernias, cancer; less common: intussusception, volvulus, foreign bodies, stricture.',
+    'rationale': 'Post-surgical adhesive bands mechanically tether and kink bowel; hernias trap bowel through abdominal wall defects causing strangulation risk.',
+    'bloom': 'recall',
+    'source': [{'book': 'MGH Housestaff Manual', 'page': 241}],
+    'confusable_with': 'Large bowel obstruction — usually from colon cancer (sigmoid), diverticular stricture, or volvulus; different surgical priority'
+  },
+  {
+    'id': 'bowel-obstruction-2',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'What lab abnormalities and clinical signs suggest ischemia from bowel strangulation in SBO?',
+    'answer': 'Elevated lactate, leukocytosis (WBC rise), severe pain disproportionate to exam, peritoneal signs; consider ischemia from strangulation urgently.',
+    'rationale': 'Bowel wall ischemia causes lactate from anaerobic metabolism and WBC from inflammatory response; peritoneal signs indicate transmural necrosis with peritonitis.',
+    'bloom': 'apply',
+    'source': [{'book': 'MGH Housestaff Manual', 'page': 241}],
+    'confusable_with': 'Uncomplicated SBO — pain relieved by NGT decompression; strangulation is a surgical emergency'
+  },
+  {
+    'id': 'bowel-obstruction-3',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Why must nitrous oxide be avoided during anesthesia for bowel obstruction?',
+    'answer': 'N2O is 35x more soluble than nitrogen; it diffuses into gas-filled bowel loops faster than N2 is absorbed, worsening distension and increasing perforation risk.',
+    'rationale': 'Distended bowel loops are air-filled spaces where N2O equilibration leads to volume expansion; in an already obstructed bowel this can be catastrophic.',
+    'bloom': 'apply',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 260}],
+    'confusable_with': 'N2O avoidance in pneumothorax only — the same principle applies to any closed gas-containing space'
+  },
+  {
+    'id': 'bowel-obstruction-4',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'For a patient with volvulus going to the OR, what two preoperative characteristics predict anesthetic risk?',
+    'answer': 'Volvulus patients are usually hypovolemic (from third-spacing and vomiting) and acidotic; prone to hypotension at induction, making an opioid-based or ketamine-based induction preferable.',
+    'rationale': 'Induction agents cause vasodilation that is poorly tolerated in hypovolemic, acidotic patients; high-dose opioid or ketamine inductions maintain sympathetic tone and systemic vascular resistance.',
+    'bloom': 'apply',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 1478}],
+    'confusable_with': 'Elective bowel surgery induction — hemodynamically stable; standard induction appropriate'
+  },
+  {
+    'id': 'bowel-obstruction-5',
+    'topic': t, 'domain': dom_em, 'discipline': dis,
+    'stem': 'Risk factors for intraabdominal hypertension and abdominal compartment syndrome include what respiratory and surgical factors?',
+    'answer': 'Acute respiratory failure with high mean airway pressure (high PEEP), abdominal surgery with primary fascial/tight closure, major trauma/burns, prone positioning, head of bed >30 degrees, high BMI, and central obesity.',
+    'rationale': 'High PEEP transmits intrathoracic pressure to the abdomen; tight closure after bowel distension increases intraabdominal pressure impairing visceral perfusion.',
+    'bloom': 'recall',
+    'source': [{'book': 'Morgan & Mikhail', 'page': 1077}],
+    'confusable_with': 'Tension pneumothorax hemodynamics — similar cardiovascular collapse from elevated intrathoracic (not intraabdominal) pressure'
+  },
+]
+
+kps.append({
+    '_type': 'illness_script',
+    'topic': 'Bowel Obstruction',
+    'discipline': 'medicine',
+    'enabling_conditions': 'Prior abdominal surgery (adhesions); hernia; prior abdominal cancer; Crohn disease (stricture); elderly (volvulus)',
+    'pathophysiology': 'Mechanical blockage causes proximal dilation, fluid sequestration (third spacing), vomiting, and if strangulation: ischemic necrosis with bacterial translocation and peritonitis',
+    'time_course': 'Hours to days; strangulation can develop within hours of complete closed-loop obstruction',
+    'key_features': 'Colicky abdominal pain; nausea/vomiting (early = bilious, late = feculent); obstipation; abdominal distension; high-pitched tinkling bowel sounds early, absent late; KUB shows air-fluid levels',
+    'consequence_if_missed': 'Strangulation and bowel necrosis leading to perforation, peritonitis, septic shock, and death'
+})
+
+print('Batch 11 KPs:', len(kps))
+with open('data/_kp_part2_batch11.json', 'w', encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print('Written.')

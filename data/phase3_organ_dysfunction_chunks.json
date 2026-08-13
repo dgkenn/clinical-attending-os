@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "MOF/MODS Definition & SOFA Scoring",
+    "subtopic": "mof_definition",
+    "content": "Multiple organ failure (MOF) / Multiple organ dysfunction syndrome (MODS): dysfunction affecting ≥2 organ systems. SOFA (Sequential Organ Failure Assessment) score: tracks organ dysfunction over time, each organ 0-4 points (total 0-24). Organs: (1) Respiratory: PaO2/FiO2 ratio; (2) Coagulation: platelets; (3) Hepatic: bilirubin; (4) Cardiovascular: hypotension/vasopressor need; (5) Renal: creatinine/urine output; (6) CNS: GCS. SOFA ≥2 indicates sepsis (sepsis-3 definition). SOFA ≥11 predicts >40% hospital mortality. Prognostic value: increasing SOFA over 24-48h = worsening prognosis; improving SOFA = good sign.",
+    "tags": [
+      "mof",
+      "mods",
+      "sofa",
+      "organ_failure"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Typical Sequence of Organ Failure in Critical Illness",
+    "subtopic": "mof_sequence",
+    "content": "Classic pattern (though variable): (1) Respiratory system first (ARDS, hypoxemia) — occurs in 30-50% of sepsis; (2) Cardiovascular (septic shock, hypotension) — 30-40%; (3) Renal (AKI, oliguria) — 30%; (4) Hepatic (hyperbilirubinemia, coagulopathy) — less common initially; (5) CNS (encephalopathy, ARDS-related hypoxemia). Coagulation failure (DIC) may appear early if sepsis source particularly high tissue factor (trauma, malignancy, placental). Mortality increases with organ count: 1 organ = 30%, 2 organs = 50%, 3+ organs = >80%. Early recognition + intervention per organ system critical to slow progression.",
+    "tags": [
+      "mof",
+      "sequence"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Critical Illness Polyneuropathy (CIP) & Myopathy (CIM)",
+    "subtopic": "icu_acquired_weakness",
+    "content": "CIP: peripheral nerve damage from critical illness (sepsis, MODS), presents with distal > proximal leg weakness, difficulty weaning ventilator. CIM: skeletal muscle injury (myositis, denervation), presents with proximal weakness, high CK. ICUAW (ICU-acquired weakness): umbrella term. Incidence: 40-50% of ICU stays >7 days, especially sepsis/MODS. Risk factors: sepsis, hyperglycemia, immobility, corticosteroids, neuromuscular blockade, female sex. Diagnosis: clinical weakness + EMG/NCS (reduced CMAP voltage = CIP; myopathic changes = CIM), muscle biopsy if diagnosis unclear. Prognosis: variable, some recover weeks-months, others have residual dysfunction.",
+    "tags": [
+      "icuaw",
+      "cip",
+      "cim"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Prevention & Management of ICUAW",
+    "subtopic": "icu_acquired_weakness",
+    "content": "Prevention: (1) Early mobilization (passive ROM → sitting → standing → walking as tolerated); (2) Minimize sedation (RASS -1 to 0 preferred); (3) Tight glucose control (140-180 target, avoid hypoglycemia); (4) Minimize corticosteroids (avoid prolonged high-dose); (5) Avoid prolonged NMB (if used, monitor depth, wean quickly). Treatment: (1) Aggressive physical/occupational therapy; (2) Nutritional support (adequate protein, avoid underfeeding); (3) Rehabilitation (post-ICU recovery programs). Outcomes: 30-50% of ICUAW resolve within months, 30-50% have persistent weakness at 1 year. Monitoring: manual muscle testing (0-5 scale), handgrip dynamometry, 6-minute walk distance post-ICU discharge.",
+    "tags": [
+      "icuaw",
+      "prevention",
+      "rehabilitation"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Sepsis-Induced Cardiomyopathy",
+    "subtopic": "mof_cardiac",
+    "content": "Transient myocardial depression in 20-40% of septic shock. Echo: reduced EF (often 20-35%), dilated LV, normal valves. Mechanism: cytokine-mediated (TNF-α, IL-1, IL-6 directly depress contractility), endotoxin, oxidative stress. Troponin often elevated (myocardial injury). BNP/NT-proBNP elevated. Recovery: EF normalizes in 7-10 days if patient survives (unlike acute MI). Management: adequate fluid resuscitation (goal LAV >65), vasopressors (norepinephrine preferred), inotropes (dobutamine, milrinone) if low CO persists despite adequate MAP. Outcome: sepsis-induced cardio better prognosis than acute MI (full recovery expected).",
+    "tags": [
+      "mof",
+      "cardiomyopathy",
+      "septic_shock"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Acute Kidney Injury in Critical Illness",
+    "subtopic": "mof_renal",
+    "content": "AKI in ICU = increased creatinine >0.3 mg/dL or ≥50% rise, OR urine output <0.5 mL/kg/h x 6h. Etiologies: (1) Sepsis-induced (renal hypoperfusion, endotoxin); (2) Cardiogenic shock (reduced CO); (3) Medications (aminoglycosides, ACE-I during shock, NSAIDs); (4) Rhabdomyolysis (myoglobin precipitation in tubules); (5) Hepatorenal syndrome. Staging (KDIGO): Stage 1 (Cr 1.5-1.9x or UO 0.5-0.9 mL/kg/h x 6-12h) to Stage 3 (Cr ≥3x or UO <0.3 mL/kg/h x ≥24h). Management: optimize perfusion (fluids, vasopressors), avoid nephrotoxins, RRT indications (K >6, pH <7.15, fluid overload, Cr >4, uremia). Prognosis: 40-60% mortality if AKI in setting MODS; recovery variable (days to weeks).",
+    "tags": [
+      "mof",
+      "aki",
+      "renal_failure"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Gastrointestinal Dysfunction in Critical Illness",
+    "subtopic": "mof_gi",
+    "content": "GI complications: (1) Ileus (absent bowel sounds, abdominal distension, feeding intolerance) — from sepsis, opioids, electrolyte abnormalities; (2) Stress ulceration (mucosal erosion from ischemia, acidosis) → GI bleeding; (3) Ischemic colitis (mesenteric hypoperfusion, high mortality if transmural); (4) Clostridium difficile infection (antibiotic-associated); (5) Acalculous cholecystitis. Prevention: (1) Early enteral nutrition (maintain gut integrity); (2) PPI or H2-blocker prophylaxis for stress ulcer (especially if coagulopathy, steroids); (3) Bowel regimen (metoclopramide, lactulose, docusate); (4) Antibiotic stewardship. Treatment: NPO, NG tube if ileus, supportive care, surgery for perforation/ischemia.",
+    "tags": [
+      "mof",
+      "gi_dysfunction"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Hepatic Dysfunction in Critical Illness",
+    "subtopic": "mof_hepatic",
+    "content": "Ischemic hepatitis: transient hepatic dysfunction from shock (reduced hepatic perfusion), presents with elevated transaminases (AST often >2000), elevated bilirubin, coagulopathy. Usually recovers quickly once perfusion restored. Cholestasis: elevated bilirubin + alkaline phosphatase, from sepsis inflammation (prolonged ICU stay), parenteral nutrition. Drug-induced hepatotoxicity: acetaminophen, INH, NSAIDs. Management: maintain perfusion, discontinue offending agents, supportive care (transfuse platelets/FFP if coagulopathy). Monitoring: LFTs, bilirubin, INR, albumin. Most ICU hepatic dysfunction resolves; true hepatic failure rare (requires pre-existing cirrhosis + massive insult).",
+    "tags": [
+      "mof",
+      "hepatic_dysfunction"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "ICU-Acquired Infections (VAP, CLABSI, CAUTI)",
+    "subtopic": "mof_infections",
+    "content": "Ventilator-associated pneumonia (VAP): lower respiratory infection in intubated patients; risk factors prolonged ventilation, supine position, reintubation. Diagnosis: fever + new infiltrate + positive sputum culture (BAL thresholds ≥10^4). Central line-associated bloodstream infection (CLABSI): bloodstream infection related to CVC; prevention: chlorhexidine skin prep, aseptic technique, minimize line days. Catheter-associated UTI (CAUTI): bacteriuria from indwelling catheter; prevention: remove catheter ASAP, aseptic insertion. Management: appropriate antibiotics (culture-directed), source removal (line removal if CLABSI, catheter removal if CAUTI), supportive care. Prevention bundles (VAP, CLABSI, CAUTI) reduce infection rates 20-50%.",
+    "tags": [
+      "mof",
+      "icu_infections",
+      "prevention"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "ICU Delirium - CAM-ICU Screening & Management",
+    "subtopic": "mof_delirium",
+    "content": "Delirium: acute alteration in mental status, fluctuating, inattention ± disorganized thinking. Incidence: 20-80% of ICU patients. CAM-ICU screening (Confusion Assessment Method): (1) Acute onset + fluctuating, AND (2) Inattention, AND (3) Disorganized thinking OR altered consciousness = POSITIVE. Risk factors: sepsis, hypoxemia, medications (sedatives, opioids), immobility, sleep deprivation. Management: treat underlying cause (infection, metabolic abnormality, medication), minimize sedation, optimize sleep environment, early mobilization, reorientation. Pharmacotherapy: antipsychotics (haloperidol) NOT recommended for prevention, may use for severe agitation if non-pharm failed. Outcomes: delirium associated with longer ICU stay, higher mortality, worse post-ICU cognitive outcomes.",
+    "tags": [
+      "mof",
+      "delirium",
+      "cam_icu"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

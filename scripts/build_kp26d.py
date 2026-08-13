@@ -1,0 +1,191 @@
+import json, sys
+sys.stdout.reconfigure(encoding='utf-8')
+
+kps = []
+
+# ── Topic 27: TEE Advanced & Intraoperative Applications ────────────────────
+kps += [
+  {"id":"tee-advanced-intraop-1","topic":"TEE - Advanced & Intraoperative Applications","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"TEE detection of new regional wall motion abnormalities during surgery is described as a more sensitive and earlier indicator of myocardial ischemia compared to what other monitor?",
+   "answer":"Detection of new regional wall motion abnormalities (RWMAs) by TEE is more sensitive and earlier than ECG changes for detecting myocardial ischemia intraoperatively.",
+   "rationale":"Ischemia causes regional wall motion abnormalities before ECG changes because reduced perfusion disrupts regional contractility before electrical conduction is affected.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":652}],"confusable_with":"PA catheter (detects global hemodynamic effects of ischemia, not regional myocardial dysfunction)"},
+  {"id":"tee-advanced-intraop-2","topic":"TEE - Advanced & Intraoperative Applications","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"What does intraoperative TEE assess for valvular function?",
+   "answer":"TEE assesses valvular morphology, pressure gradients, stenotic area, severity of regurgitation, and can use multiplane and 3D imaging to quantify valvular disease intraoperatively.",
+   "rationale":"Intraoperative TEE provides real-time hemodynamic data about valve repair or replacement adequacy; pressure half-time, vena contracta, and regurgitant fraction are calculated from Doppler data.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":727}],"confusable_with":"TTE (transthoracic echo; lower image quality in intubated patients; TEE gives better posterior structures)"},
+  {"id":"tee-advanced-intraop-3","topic":"TEE - Advanced & Intraoperative Applications","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"TEE is an invasive procedure with potential for what life-threatening complication that distinguishes it from TTE?",
+   "answer":"TEE is invasive with potential for life-threatening esophageal perforation; other risks include esophageal laceration, upper GI bleeding, and dental injury.",
+   "rationale":"The transesophageal probe must pass through the pharynx and esophagus; pre-existing esophageal pathology (varices, stricture, Zenker diverticulum) dramatically increases perforation risk.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":177}],"confusable_with":"TTE complications (no esophageal risk; external probe with minimal risk)"},
+  {"id":"tee-advanced-intraop-4","topic":"TEE - Advanced & Intraoperative Applications","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"Intraoperative TEE was recommended to assess successful closure in what cardiac procedure?",
+   "answer":"Intraoperative TEE is recommended to assess successful left atrial appendage (LAA) closure after LAA occlusion procedures.",
+   "rationale":"Complete LAA closure without residual leak or device malposition requires real-time imaging; TEE provides direct visualization of the LAA, adjacent pulmonary veins, and the mitral valve during and after device deployment.",
+   "bloom":"recall","source":[{"book":"Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation","page":44}],"confusable_with":""},
+  {"id":"tee-advanced-intraop-5","topic":"TEE - Advanced & Intraoperative Applications","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"IVC examination by TEE or TTE has important limitations. When is it most useful?",
+   "answer":"IVC examination is most useful at extremes (very small/collapsing IVC suggesting hypovolemia) and when repeated over time and after an intervention; it must be interpreted in context of the entire clinical picture.",
+   "rationale":"IVC diameter and collapsibility correlate with right atrial pressure but are confounded by mechanical ventilation, RV dysfunction, and tricuspid regurgitation; isolated IVC assessment can mislead.",
+   "bloom":"analyze","source":[{"book":"Miller/Baby Miller","page":414}],"confusable_with":"CVP (also unreliable predictor of fluid responsiveness; IVC adds dynamic assessment but same limitations)"}
+]
+
+# ── Topic 28: Thyroid disease perioperative management ───────────────────────
+kps += [
+  {"id":"thyroid-disease-periop-1","topic":"Thyroid disease perioperative management","domain":"Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)","discipline":"anesthesia",
+   "stem":"Thyroid storm presents with what clinical features, and what is specifically NOT recommended for fever management?",
+   "answer":"Thyroid storm: high fever, tachycardia, tachypnea, hypertension, metabolic acidosis, and altered mental status. Aspirin is NOT recommended for fever (displaces thyroid hormone from plasma carrier proteins, worsening thyrotoxicosis); use acetaminophen and cooling blankets.",
+   "rationale":"Aspirin displaces T3/T4 from thyroid-binding globulin, acutely increasing free thyroid hormone levels and worsening the storm; acetaminophen has no such interaction.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":2123}],"confusable_with":"Neuroleptic malignant syndrome (high fever + rigidity, normal EtCO2; not caused by thyroid excess)"},
+  {"id":"thyroid-disease-periop-2","topic":"Thyroid disease perioperative management","domain":"Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)","discipline":"anesthesia",
+   "stem":"In thyroid storm management, what is used for ventricular rate control in patients with atrial fibrillation?",
+   "answer":"Ventricular rate control in thyroid storm with AF is achieved with IV beta-blockers (propranolol or esmolol); vasopressors may be needed for blood pressure support.",
+   "rationale":"Thyroid hormone sensitizes the heart to catecholamines; beta-blockade reduces heart rate and catecholamine-mediated cardiac effects while the hypermetabolic state is addressed.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":2123}],"confusable_with":"Cardioversion (less effective while thyroid storm persists; rate control preferred until euthyroid)"},
+  {"id":"thyroid-disease-periop-3","topic":"Thyroid disease perioperative management","domain":"Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)","discipline":"anesthesia",
+   "stem":"Thyrotoxic periodic paralysis occurs most commonly in what demographic group and is associated with what electrolyte abnormality?",
+   "answer":"Thyrotoxic periodic paralysis occurs most commonly in Asian men and is associated with hypokalemia during episodes of weakness.",
+   "rationale":"Hyperthyroidism increases Na/K-ATPase activity, driving potassium intracellularly; episodes of muscle inexcitability correlate with acute hypokalemia, treated with potassium replacement.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1046}],"confusable_with":"Hypokalemic periodic paralysis (non-thyroid form; similar mechanism but different etiology)"},
+  {"id":"thyroid-disease-periop-4","topic":"Thyroid disease perioperative management","domain":"Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)","discipline":"anesthesia",
+   "stem":"Thyroid hormones regulate what baseline physiologic parameters important for anesthetic management?",
+   "answer":"Thyroid hormones regulate basal metabolic rate (oxygen consumption), heart rate, respiratory rate, body temperature, and are essential for normal growth and brain development.",
+   "rationale":"Both hypo- and hyperthyroidism alter these parameters in opposite directions; hypothyroid patients have reduced MAC and drug metabolism while hyperthyroid patients have increased requirements.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":548}],"confusable_with":""},
+  {"id":"thyroid-disease-periop-5","topic":"Thyroid disease perioperative management","domain":"Preoperative evaluation & perioperative medicine (risk stratification, cardiac/pulmonary/endocrine optimization, NPO & aspiration risk, chronic medication management, frailty, consent)","discipline":"anesthesia",
+   "stem":"What anesthetic agents and techniques should be avoided in patients with carcinoid syndrome perioperatively?",
+   "answer":"Avoid agents causing tumor to release vasoactive substances: histamine-releasing drugs (morphine, atracurium), neuromuscular stimulation; regional anesthesia may limit stress hormone release.",
+   "rationale":"Carcinoid tumors secrete serotonin, histamine, and other vasoactive substances when stimulated; avoiding triggers prevents carcinoid crisis (severe bronchospasm, hemodynamic instability).",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1243}],"confusable_with":"Thyroid storm management (different vasoactive crisis; different triggers and treatments)"}
+]
+kps += [{"_type":"confusable_pair","topic_a":"Thyroid Storm","topic_b":"Neuroleptic Malignant Syndrome (NMS)","discriminator":"Thyroid storm: thyrotoxicosis-triggered, EtCO2 elevated (hypermetabolic), no rigidity, aspirin contraindicated; NMS: antidopaminergic drug-related, lead-pipe rigidity, elevated CK, treated with dantrolene/bromocriptine"}]
+
+# ── Topic 29: Total intravenous anesthesia (TIVA) pharmacology ────────────────
+kps += [
+  {"id":"tiva-pharmacology-1","topic":"Total intravenous anesthesia (TIVA) pharmacology","domain":"Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)","discipline":"anesthesia",
+   "stem":"Studies comparing volatile anesthesia versus TIVA show what cognitive outcome difference in the first postoperative week?",
+   "answer":"Volatile anesthesia is associated with worse cognitive function within the first week postoperatively compared to intravenous anesthesia; rates are similar at 3 months.",
+   "rationale":"Volatile agents may have more prolonged CNS effects in the early postoperative period through residual effects on synaptic function; long-term outcomes converge regardless of technique.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":124}],"confusable_with":"Neuraxial vs GA cognitive comparison (similar at 3 months as well; technique choice rarely alters long-term POCD)"},
+  {"id":"tiva-pharmacology-2","topic":"Total intravenous anesthesia (TIVA) pharmacology","domain":"Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)","discipline":"anesthesia",
+   "stem":"To reduce risk of awareness under TIVA, what practice recommendations apply?",
+   "answer":"Consider using isolated forearm technique; choose potent inhalation agents rather than TIVA if possible; if TIVA, ensure TCI targets are correct; monitor EEG depth if available; note that awareness risk may be higher with TIVA than with volatile agents.",
+   "rationale":"TIVA lacks the continuous end-tidal concentration monitoring available for inhaled agents; EEG-based depth monitoring is particularly important during TIVA to detect inadequate depth.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":204}],"confusable_with":""},
+  {"id":"tiva-pharmacology-3","topic":"Total intravenous anesthesia (TIVA) pharmacology","domain":"Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)","discipline":"anesthesia",
+   "stem":"Target-controlled infusion (TCI) employs what principle to deliver a drug in TIVA?",
+   "answer":"TCI uses software and computerized infusion pump to deliver a drug and achieve a set concentration at the effect site based on pharmacokinetic modeling; the clinician sets the target effect-site concentration.",
+   "rationale":"PK models predict drug distribution and elimination; TCI automatically adjusts infusion rates to maintain target effect-site concentration, reducing pharmacokinetic variability compared to fixed infusions.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":737}],"confusable_with":"Fixed-rate infusion (does not account for pharmacokinetic distribution phases; leads to over- or underdosing)"},
+  {"id":"tiva-pharmacology-4","topic":"Total intravenous anesthesia (TIVA) pharmacology","domain":"Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)","discipline":"anesthesia",
+   "stem":"Emergence from TIVA anesthesia is described as ideally what, and what problems are frequently encountered?",
+   "answer":"Ideal emergence is smooth and gradual in a controlled environment; frequently encountered problems include airway obstruction, shivering, agitation, delirium, pain, PONV, hypothermia, and autonomic lability.",
+   "rationale":"TIVA using short-acting agents (propofol, remifentanil) can produce faster awakening but without the analgesic bridge of residual volatile agents; these emergence problems require anticipation and treatment.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":2098}],"confusable_with":""},
+  {"id":"tiva-pharmacology-5","topic":"Total intravenous anesthesia (TIVA) pharmacology","domain":"Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)","discipline":"anesthesia",
+   "stem":"How does aging affect TIVA drug requirements for propofol, opioids, and benzodiazepines?",
+   "answer":"Older adults require lower doses of propofol, etomidate, opioids, and benzodiazepines; pharmacodynamic sensitivity is increased and clearance reduced with age.",
+   "rationale":"Age reduces receptor density, alters CNS sensitivity, and diminishes hepatic/renal clearance; the same blood concentration produces greater drug effect in older patients.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1490}],"confusable_with":""}
+]
+
+# ── Topic 30: TEE Basic Examination ──────────────────────────────────────────
+kps += [
+  {"id":"tee-basic-exam-1","topic":"Transesophageal Echocardiography (TEE) - Basic Examination","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"The TEE probe must never be forced during insertion. What is the consequence of resistance, and how should it be managed?",
+   "answer":"Never force the TEE probe if resistance is encountered; resistance may indicate esophageal pathology (stricture, diverticulum, tumor) requiring probe withdrawal and reassessment.",
+   "rationale":"Forced probe insertion against resistance risks esophageal perforation, the most serious complication of TEE; the probe should only advance with easy passage.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":179}],"confusable_with":""},
+  {"id":"tee-basic-exam-2","topic":"Transesophageal Echocardiography (TEE) - Basic Examination","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"The transgastric TEE view is obtained at what anatomical position, and what cardiac structure does it best visualize?",
+   "answer":"The transgastric view is obtained at the lower esophageal/transgastric level looking up at the left ventricle at the level of the papillary muscles, providing the best cross-sectional assessment of LV function and wall motion.",
+   "rationale":"The transgastric position places the probe in the stomach, angling it to image the LV in short axis; papillary muscle level is the standard reference for regional wall motion assessment.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":727}],"confusable_with":"Mid-esophageal four-chamber view (2D view of all four chambers; less optimal for LV short-axis wall motion)"},
+  {"id":"tee-basic-exam-3","topic":"Transesophageal Echocardiography (TEE) - Basic Examination","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"Regional wall motion abnormalities (RWMAs) by TEE are characterized by what failure of normal wall behavior?",
+   "answer":"RWMAs are characterized by failure of the heart walls to thicken during systole or abnormal dyskinetic motion; they indicate myocardial ischemia in the corresponding coronary territory.",
+   "rationale":"Normal myocardium thickens approximately 30-50% during systole; ischemic myocardium fails to thicken (hypokinesis), moves abnormally (dyskinesis), or bulges outward (paradoxical motion).",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":179}],"confusable_with":""},
+  {"id":"tee-basic-exam-4","topic":"Transesophageal Echocardiography (TEE) - Basic Examination","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"The Fick principle is used to calculate cardiac output from TEE-assisted oxygen data. What is the equation?",
+   "answer":"Oxygen consumption (VO2) = (CaO2 - CvO2) x cardiac output; CO = VO2 / (CaO2 - CvO2). Mixed venous blood from PA catheter and arterial sample provide the oxygen content difference.",
+   "rationale":"The Fick equation requires VO2 and arteriovenous O2 content difference; TEE provides structural information while arterial and mixed venous catheters provide the blood gas values for the calculation.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":173}],"confusable_with":"Thermodilution CO (from PA catheter; more commonly used clinically; less dependent on Hgb and O2 measurements)"},
+  {"id":"tee-basic-exam-5","topic":"Transesophageal Echocardiography (TEE) - Basic Examination","domain":"Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)","discipline":"anesthesia",
+   "stem":"The diagnostic criteria for portopulmonary hypertension (POPH) include what pressure and resistance thresholds measurable by TEE/RHC?",
+   "answer":"POPH: mean PAP >25 mmHg at rest AND PVR >240 dyn.s.cm-5 AND transpulmonary gradient >12 mmHg (mPAP minus PAOP), reflecting obstruction to flow.",
+   "rationale":"Differentiating POPH from pulmonary venous hypertension (passive congestion from left heart disease) requires the transpulmonary gradient; only true POPH has elevated PVR and gradient.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1198}],"confusable_with":"Pulmonary venous hypertension (elevated PAP from left heart failure; PAOP also elevated, transpulmonary gradient normal)"}
+]
+
+# ── Topic 31: Transsphenoidal Surgery (Pituitary) ────────────────────────────
+kps += [
+  {"id":"transsphenoidal-pituitary-1","topic":"Transsphenoidal Surgery (Pituitary)","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Diabetes insipidus (DI) develops after transsphenoidal surgery in up to 40% of patients. What is its typical course?",
+   "answer":"Postoperative DI is usually transient after transsphenoidal surgery; it presents immediately or within days as polyuria with dilute urine; intraoperative DI also occurs in some cases.",
+   "rationale":"Surgical manipulation of the posterior pituitary or pituitary stalk disrupts ADH secretion; most cases resolve as the stalk recovers, though permanent DI occurs in a minority.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":994}],"confusable_with":"SIADH (opposite: concentrated urine with hyponatremia; can occur after the DI phase in triphasic response)"},
+  {"id":"transsphenoidal-pituitary-2","topic":"Transsphenoidal Surgery (Pituitary)","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Prophylactic glucocorticoid administration is routinely used in most centers for transsphenoidal pituitary surgery. Why?",
+   "answer":"Prophylactic glucocorticoids are given because manipulation or resection of the pituitary can cause temporary or permanent pituitary hypofunction (hypopituitarism), particularly ACTH deficiency leading to adrenal insufficiency.",
+   "rationale":"Surgical stress requires intact HPA axis response; perioperative glucocorticoid supplementation prevents adrenal crisis from pituitary-adrenal axis disruption during and after surgery.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":994}],"confusable_with":"Dexamethasone for ICP (used in brain tumor surgery; different indication from pituitary steroid supplementation)"},
+  {"id":"transsphenoidal-pituitary-3","topic":"Transsphenoidal Surgery (Pituitary)","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"For acromegaly patients undergoing transsphenoidal surgery, what screening studies are required preoperatively?",
+   "answer":"Acromegaly requires: HbA1c (screen for diabetes), lipid panel, sleep study referral if OSA symptoms, cardiac evaluation if heart failure symptoms, and GH/IGF-1 levels to confirm disease activity.",
+   "rationale":"GH excess causes insulin resistance (diabetes), dyslipidemia, cardiomegaly, and obstructive sleep apnea from macroglossia/jaw changes; each comorbidity requires targeted preoperative assessment.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Acromegaly","page":4}],"confusable_with":""},
+  {"id":"transsphenoidal-pituitary-4","topic":"Transsphenoidal Surgery (Pituitary)","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Central diabetes insipidus is characterized by decreased ADH production. What are the clinical features and management?",
+   "answer":"Central DI: polyuria (dilute urine, osmolality <300), polydipsia, hypernatremia; treat with DDAVP (desmopressin) and fluid replacement matching urinary losses.",
+   "rationale":"ADH deficiency prevents renal water reabsorption in the collecting duct; massive free water loss leads to hypernatremia; desmopressin provides synthetic ADH replacement.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":553}],"confusable_with":"Nephrogenic DI (normal or elevated ADH; kidneys unresponsive; desmopressin ineffective)"},
+  {"id":"transsphenoidal-pituitary-5","topic":"Transsphenoidal Surgery (Pituitary)","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"What are the surgical risks specific to transsphenoidal surgery?",
+   "answer":"Transsphenoidal surgery risks include: cavernous sinus or internal carotid artery injury, cranial nerve damage, pituitary hypofunction, and postoperative diabetes insipidus (up to 40%).",
+   "rationale":"The pituitary gland lies adjacent to cavernous sinuses containing CN III, IV, V1, V2, VI, and the internal carotid artery; endoscopic approach reduces but does not eliminate these risks.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":994}],"confusable_with":""}
+]
+kps += [{"_type":"illness_script","topic":"Transsphenoidal Surgery (Pituitary)","discipline":"anesthesia",
+  "enabling_conditions":"Pituitary adenoma (micro <1cm, macro >1cm); Cushing's disease, acromegaly, prolactinoma, or non-functioning adenoma",
+  "pathophysiology":"Mass effect on optic chiasm (bitemporal hemianopia), cavernous sinus invasion; hormone hypersecretion or deficiency from mass effect; apoplexy = acute hemorrhage/infarction",
+  "time_course":"Usually chronic hormone effects; pituitary apoplexy is acute (sudden headache, visual loss, diplopia, altered consciousness)",
+  "key_features":"Preop: airway assessment (acromegaly = difficult), steroid supplementation, DI management. Intraop: avoid nasal intubation (alternative surgical field), pack nose at end. Postop: monitor for DI, hyponatremia (SIADH), visual changes",
+  "consequence_if_missed":"Untreated pituitary hypofunction causes adrenal crisis; unrecognized intraoperative carotid injury causes catastrophic hemorrhage"}]
+
+# ── Topic 32: Traumatic Brain Injury Acute Anesthetic Management ─────────────
+kps += [
+  {"id":"tbi-anesthetic-management-1","topic":"Traumatic Brain Injury: Acute Anesthetic Management","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Why should nasal airways and nasogastric tubes be avoided in TBI patients with suspected skull base fractures?",
+   "answer":"Nasal airways and NGTs must be avoided in TBI with suspected skull base fractures (especially cribriform plate fractures) due to risk of intracranial insertion through the fracture.",
+   "rationale":"Cribriform plate fractures create a communication between nasal passages and intracranial space; nasal tubes can penetrate the brain or meninges causing infection, hemorrhage, or direct injury.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":808}],"confusable_with":""},
+  {"id":"tbi-anesthetic-management-2","topic":"Traumatic Brain Injury: Acute Anesthetic Management","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Rapid deceleration TBI produces what pattern of brain lesions?",
+   "answer":"Rapid deceleration produces both coup (frontal) and contrecoup (occipital) lesions; epidural and subdural hematomas can occur as isolated lesions or with cerebral contusions.",
+   "rationale":"The brain decelerates after impact; coup injury occurs at the impact site; contrecoup injury occurs at the opposite pole from rebound against the skull; both must be assessed radiographically.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":981}],"confusable_with":"Penetrating TBI (focal injury at entry/exit point; no contrecoup pattern)"},
+  {"id":"tbi-anesthetic-management-3","topic":"Traumatic Brain Injury: Acute Anesthetic Management","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"A TBI patient requires intubation and transport to CT scan. What equipment must be available at non-OR locations?",
+   "answer":"At non-OR locations (CT, MRI, IR), emergency airway equipment and medications for anesthetic induction and hemodynamic support plus suction must be available; equipment should be functionally equivalent to OR.",
+   "rationale":"TBI patients deteriorate rapidly; non-OR locations present challenges of limited space, poor lighting, and delayed help; pre-positioning all necessary equipment prevents catastrophic delays.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":816}],"confusable_with":""},
+  {"id":"tbi-anesthetic-management-4","topic":"Traumatic Brain Injury: Acute Anesthetic Management","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"Dexmedetomidine is especially useful for procedures longer than 1 hour requiring sedation. What is its advantage over propofol in this context?",
+   "answer":"Dexmedetomidine is less likely to cause respiratory depression compared to propofol, making it especially useful for procedures lasting more than an hour where spontaneous ventilation is preferred.",
+   "rationale":"Alpha-2 agonist sedation with dexmedetomidine produces a cooperative, arousable patient with preserved respiratory drive; propofol causes dose-dependent respiratory depression.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":707}],"confusable_with":"Midazolam infusion (longer-acting, causes respiratory depression, more unpredictable depth)"},
+  {"id":"tbi-anesthetic-management-5","topic":"Traumatic Brain Injury: Acute Anesthetic Management","domain":"Neuroanesthesia (intracranial pressure & cerebral perfusion, craniotomy, spine surgery, evoked potentials, awake craniotomy, neuromonitoring)","discipline":"anesthesia",
+   "stem":"The FACTT trial showed that conservative fluid management in ALI patients improved what outcomes?",
+   "answer":"Conservative (minimal) fluid management in acute lung injury improved lung function and ventilator-free days without increasing renal failure compared to liberal fluid strategy.",
+   "rationale":"Excessive IV fluids in ALI worsens alveolar flooding and oxygenation; conservative fluid management reduces pulmonary edema without compromising end-organ perfusion when done carefully.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":764}],"confusable_with":"Liberal fluids in TBI (traumatic brain injury requires optimizing CPP; fluid restriction may worsen CPP)"}
+]
+kps += [{"_type":"confusable_pair","topic_a":"Epidural Hematoma (EDH)","topic_b":"Subdural Hematoma (SDH)","discriminator":"EDH: arterial (middle meningeal artery), biconvex on CT, lucid interval then rapid deterioration; SDH: venous/bridging veins, crescentic on CT, slower accumulation, higher mortality due to underlying cortical injury"}]
+
+print('Topics 27-32 done:', len(kps))
+with open('data/kp_part26_batch4.json', 'w', encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print('Batch 4 written')

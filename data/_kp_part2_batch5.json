@@ -1,0 +1,358 @@
+[
+  {
+    "id": "bzt-1",
+    "topic": "Sedative-Hypnotic & Benzodiazepine Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What are the clinical features of benzodiazepine overdose and how do pupils differ from opioid toxicity?",
+    "answer": "BZD overdose: sedation, ataxia, dysarthria, CNS depression, respiratory depression, hypotension; pupils NORMAL (not pinpointed as in opioid toxicity)",
+    "rationale": "BZDs do not activate mu-opioid receptors responsible for miosis; normal pupils in comatose patient should prompt consideration of BZD or other non-opioid sedative overdose.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Opioid toxicity"
+  },
+  {
+    "id": "bzt-2",
+    "topic": "Sedative-Hypnotic & Benzodiazepine Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What empiric treatment regimen is given to all obtunded or comatose patients before toxidrome diagnosis is confirmed?",
+    "answer": "Naloxone (up to 2 mg IV), dextrose 50% (50 mL IV), and thiamine (100 mg IV) empirically to all obtunded/comatose patients",
+    "rationale": "This coma cocktail addresses the three most common reversible causes of altered consciousness: opioid toxicity, hypoglycemia, and Wernicke encephalopathy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2160
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "bzt-3",
+    "topic": "Sedative-Hypnotic & Benzodiazepine Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What withdrawal syndrome can occur after abrupt termination of prolonged benzodiazepine use?",
+    "answer": "Agitation, disorientation, hallucinations, and seizures; risk difficult to predict; drug interactions (diazepam, midazolam) further complicate management",
+    "rationale": "BZD dependence develops with chronic use; abrupt discontinuation causes rebound CNS hyperexcitability via GABA receptor down-regulation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Marino ICU Book",
+        "page": 678
+      }
+    ],
+    "confusable_with": "Alcohol withdrawal"
+  },
+  {
+    "id": "bzt-4",
+    "topic": "Sedative-Hypnotic & Benzodiazepine Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "What is the appropriate ventilatory management for a comatose patient with BZD overdose?",
+    "answer": "Maintain normal arterial saturation with supplemental O2; hypoventilation and obtunded airway reflexes require tracheal intubation and mechanical ventilation",
+    "rationale": "BZDs cause dose-dependent respiratory depression and loss of airway protective reflexes; airway management is the priority.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2160
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "bzt-5",
+    "topic": "Sedative-Hypnotic & Benzodiazepine Toxicity",
+    "domain": "Internal medicine: emergency & acute care",
+    "discipline": "medicine",
+    "stem": "When is flumazenil useful in benzodiazepine toxicity, and what caution applies?",
+    "answer": "Flumazenil may confirm reversibility of altered consciousness when BZD toxicity is suspected (diagnostic use); caution: can precipitate seizures in BZD-dependent patients or those with mixed TCA ingestion",
+    "rationale": "Flumazenil is a competitive BZD antagonist; abrupt reversal in dependent patients unmasks seizure threshold lowered by chronic BZD use.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   AASLD EASL 2014 Hepatic Encephalopathy",
+        "page": 56
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Benzodiazepine Toxicity",
+    "topic_b": "Opioid Toxicity",
+    "discriminator": "BZD: CNS depression, normal pupils, respiratory depression, no clonus, reversed by flumazenil; Opioids: miosis (pinpoint pupils), respiratory depression, coma, reversed by naloxone"
+  },
+  {
+    "id": "sz-1",
+    "topic": "Seizure Classification & Epilepsy Syndromes",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "What is the clinical definition of epilepsy vs an isolated seizure?",
+    "answer": "Epilepsy: disorder characterized by recurrent paroxysmal seizure activity; isolated nonrecurrent seizure is NOT epilepsy",
+    "rationale": "Epilepsy requires the predisposition to recurrent unprovoked seizures; a single provoked or unprovoked event is managed differently.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1001
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sz-2",
+    "topic": "Seizure Classification & Epilepsy Syndromes",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "How are seizures classified by onset?",
+    "answer": "Focal onset (unilateral, one hemisphere; +/- impaired awareness; may evolve to bilateral tonic-clonic) vs. Generalized onset (rapidly engages bilateral distributed networks) vs. Unknown onset",
+    "rationale": "ILAE 2017 classification replaces partial/generalized with onset-based terminology; focal seizures with impaired awareness replace complex partial.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 202
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sz-3",
+    "topic": "Seizure Classification & Epilepsy Syndromes",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "What anesthetic drug should be avoided in patients with a history of epilepsy due to reports of seizure activity?",
+    "answer": "Etomidate should be avoided in epileptic patients; reports of seizure activity following its administration",
+    "rationale": "Etomidate has pro-convulsant properties via complex GABA modulation and should not be used in patients with seizure disorders.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 951
+      }
+    ],
+    "confusable_with": "Propofol"
+  },
+  {
+    "id": "sz-4",
+    "topic": "Seizure Classification & Epilepsy Syndromes",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "What CNS effects of barbiturates make them effective anticonvulsants in status epilepticus?",
+    "answer": "Barbiturates produce dose-dependent decreases in CMR and CBF and have anticonvulsant activity; at isoelectric EEG, maximum CMR reduction of ~50% is achieved",
+    "rationale": "Barbiturate-induced metabolic suppression reduces neuronal excitability; burst-suppression provides seizure control in refractory SE.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 951
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sz-5",
+    "topic": "Seizure Classification & Epilepsy Syndromes",
+    "domain": "Internal medicine: neurology",
+    "discipline": "medicine",
+    "stem": "Can a focal seizure become generalized, and what is the clinical significance?",
+    "answer": "Yes; focal seizures can subsequently spread and become generalized (focal to bilateral tonic-clonic); this secondary generalization indicates focal onset and influences treatment selection",
+    "rationale": "Secondary generalization confirms focal rather than primary generalized epilepsy, directing workup toward structural lesion identification.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1002
+      }
+    ],
+    "confusable_with": "Primary generalized seizure"
+  },
+  {
+    "id": "sep-1",
+    "topic": "Sepsis and Septic Shock",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What definition did the 2016 Third International Consensus (Sepsis-3) use for sepsis, and what did it de-emphasize?",
+    "answer": "Sepsis-3 definition emphasizes organ dysfunction as diagnostic criterion; de-emphasizes role of systemic inflammation (SIRS criteria no longer required)",
+    "rationale": "SIRS-based definitions were non-specific; organ dysfunction (SOFA score) better captures the life-threatening nature of the host response.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2153
+      }
+    ],
+    "confusable_with": "SIRS"
+  },
+  {
+    "id": "sep-2",
+    "topic": "Sepsis and Septic Shock",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What hemodynamic and biochemical criteria define septic shock?",
+    "answer": "Sepsis with hypotension requiring vasopressors to maintain MAP >=65 mmHg despite adequate volume AND serum lactate >2 mmol/L",
+    "rationale": "The dual criterion (vasopressor requirement + lactate) identifies the subset with greatest mortality; lactate reflects cellular hypoperfusion beyond what MAP alone captures.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2153
+      }
+    ],
+    "confusable_with": "Sepsis without shock"
+  },
+  {
+    "id": "sep-3",
+    "topic": "Sepsis and Septic Shock",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "When is vasopressor therapy initiated in septic shock?",
+    "answer": "When hypotension (MAP <65 mmHg) or elevated lactate persists following adequate IV fluid administration",
+    "rationale": "Fluid resuscitation addresses the distributive component first; persistent hypoperfusion despite fluids indicates vasopressor need.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2155
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sep-4",
+    "topic": "Sepsis and Septic Shock",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What clinical trials of immunomodulatory agents have been uniformly disappointing in septic shock?",
+    "answer": "Naloxone, fibronectin, coagulation cascade inhibitors, and anti-LPS monoclonal antibodies have all failed to improve outcomes in septic shock",
+    "rationale": "The complexity of the sepsis inflammatory cascade has frustrated attempts at targeted immunomodulation; no single mediator inhibition has proven beneficial.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2156
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "sep-5",
+    "topic": "Sepsis and Septic Shock",
+    "domain": "ICU Critical Care",
+    "discipline": "medicine",
+    "stem": "What MAP target is used in septic shock vasopressor management, and what permissive alternative may apply?",
+    "answer": "Standard MAP target >=65 mmHg; permissive hypotension (MAP goal >60 mmHg) reduces vasopressor use and may be appropriate in select patients",
+    "rationale": "JAMA 2020 data suggest MAP >60 is non-inferior in select patients, potentially reducing vasopressor-associated adverse effects.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 66
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Sepsis and Septic Shock",
+    "discipline": "medicine",
+    "enabling_conditions": "Infection (pneumonia, UTI, bacteremia, intra-abdominal); extremes of age; immunocompromise; indwelling devices",
+    "pathophysiology": "Pathogen recognition triggers cytokine cascade -> vasodilation, capillary leak, myocardial depression, microvascular thrombosis -> organ hypoperfusion",
+    "time_course": "Hours to days; septic shock may develop rapidly; organ failure accumulates over days",
+    "key_features": "Fever or hypothermia, tachycardia, altered mental status, hypotension, elevated lactate, positive cultures; SOFA score >=2 for sepsis; vasopressor requirement for shock",
+    "consequence_if_missed": "Septic shock mortality 25-50%; delay in antibiotics or source control worsens outcomes"
+  },
+  {
+    "id": "ss-adj-1",
+    "topic": "Septic Shock: Adjunctive & Advanced Therapies",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What norepinephrine role in renal function was established in severe septic shock?",
+    "answer": "Norepinephrine improves hemodynamics and renal function in severe septic shock states by restoring renal perfusion pressure",
+    "rationale": "In distributive shock, low SVR reduces renal perfusion; norepinephrine increases MAP and restores glomerular filtration.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2012 AKI",
+        "page": 129
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ss-adj-2",
+    "topic": "Septic Shock: Adjunctive & Advanced Therapies",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What does the Fluid and Catheter Treatment Trial (FACTT) in sepsis-related ALI demonstrate about fluid management?",
+    "answer": "Conservative fluid management improved lung function and central hemodynamics compared to liberal fluid strategy in ALI/ARDS from pneumonia or sepsis",
+    "rationale": "Excess fluid in capillary leak states worsens pulmonary edema; conservative strategy reduces ventilator days without increasing renal failure.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 764
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ss-adj-3",
+    "topic": "Septic Shock: Adjunctive & Advanced Therapies",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What adjunctive combination (hydrocortisone + vitamin C + thiamine) was studied for severe sepsis and what is the evidence status?",
+    "answer": "Marik et al. 2017 retrospective study showed benefit of hydrocortisone + vitamin C + thiamine for severe sepsis/septic shock; subsequent RCTs have not consistently confirmed benefit",
+    "rationale": "The initial observational signal prompted multiple RCTs; the evidence base remains mixed and this combination is not standard of care.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 77
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ss-adj-4",
+    "topic": "Septic Shock: Adjunctive & Advanced Therapies",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What vasopressor blood pressure target recommendations exist for critically ill adults with hypotension?",
+    "answer": "Standard MAP target >=65 mmHg; systematic reviews and RCTs support this as primary target; higher targets (>80 mmHg) do not improve outcomes and may increase atrial fibrillation",
+    "rationale": "Higher MAP targets increase vasoconstriction and cardiac work without improving end-organ perfusion outcomes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline",
+        "page": 62
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ss-adj-5",
+    "topic": "Septic Shock: Adjunctive & Advanced Therapies",
+    "domain": "Internal medicine: infectious disease",
+    "discipline": "medicine",
+    "stem": "What shivering effect is clinically significant in post-arrest and post-operative critically ill patients?",
+    "answer": "Shivering increases metabolic oxygen demand 100-200% and CO2 production; requires increased cardiac output and minute ventilation, poorly tolerated in limited cardiopulmonary reserve",
+    "rationale": "Uncontrolled shivering imposes severe metabolic stress on an already compromised cardiovascular and respiratory system.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1152
+      }
+    ],
+    "confusable_with": ""
+  }
+]

@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""
+Phase 6.9: Clinical Edge Cases & Pearls (60 units)
+Coverage of diagnostic and clinical pearls, atypical presentations
+"""
+
+import json
+from datetime import datetime
+
+def generate_edge_cases_units():
+    units = []
+    base_id = "phase6_edge_unit"
+
+    units.append({
+        "topic": "Occult Shock - Source Unknown & Diagnostic Approach",
+        "subtopic": "occult_shock",
+        "content": "Occult shock = shock state where source not immediately apparent. Patient appears compensated initially but deteriorating (lactate rising, low urine output, narrow pulse pressure). Etiologies often include: sepsis (cryptic infection), acute myocardial infarction (silent in diabetics, elderly), massive pulmonary embolism (subtle presentation), hemorrhage (internal bleeding not obvious), cardiogenic (acute valvular disease, cardiomyopathy), endocrine (adrenal crisis). Diagnostic approach: systematic exam for source (fever? localized infection? chest pain? dyspnea? leg swelling?), lactate trend (normalizing vs persisting?), hemodynamic parameters (cardiac output low? peripheral resistance?), imaging (CXR, ultrasound POCUS, CT if stable). Management: empiric antibiotics if sepsis suspected, aggressive fluid resuscitation while investigating, vasopressors/inotropes as needed. Key: recognize shock early (lactate >2, base deficit), start resuscitation, then pursue diagnosis aggressively (not delay for imaging if critically ill).",
+        "tags": ["shock", "occult", "sepsis", "diagnostic_dilemma", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_0",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Paradoxical Embolism - Patent Foramen Ovale (PFO) & Stroke",
+        "subtopic": "paradoxical_embolism",
+        "content": "Paradoxical embolism = venous thrombus crosses to systemic circulation via PFO (or other shunt), causing arterial embolism (stroke, mesenteric ischemia, limb ischemia). PFO occurs in ~25% population; most asymptomatic. Mechanism: right-to-left shunting (increased with Valsalva, bearing down, breathing against resistance, coughing). PFO + thrombophilia or immobility = high risk stroke. Classic presentation: young patient with cryptogenic stroke (no atherosclerosis, normal workup), + hx DVT/PE, or + thrombophilia. Diagnosis: bubble study (agitated saline IV, shaken to create microbubbles, passed through right heart to left if PFO present = positive), TEE (directly visualizes PFO). Management: antiplatelet therapy (aspirin) for PFO-related stroke. Closure intervention controversial: PFO closure device for recurrent strokes despite antiplatelet therapy, or if large shunt. Anticoagulation if associated hypercoagulable state.",
+        "tags": ["pfo", "paradoxical_embolism", "cryptogenic_stroke", "shunt"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_1",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Posterior Reversible Encephalopathy Syndrome (PRES)",
+        "subtopic": "pres",
+        "content": "PRES = acute neurologic syndrome with hypertension, seizures, visual disturbances, headache, altered mental status + MRI findings (white matter edema, especially posterior parietal/occipital/temporal). Pathophysiology: hypertensive breakthrough (severe HTN overwhelms autoregulation), endothelial dysfunction, vasogenic edema. Triggers: malignancy-related (most common), preeclampsia/eclampsia, immunosuppressants (calcineurin inhibitors, anti-VEGF), autoimmune disease, sepsis, transfusion reaction. Classic presentation: eclamptic patient with seizures, MRI shows posterior white matter edema. Diagnosis: MRI (DWI/FLAIR edema, reversible vs restricted diffusion), clinical context. Management: treat hypertension (labetalol, nicardipine, magnesium sulfate if eclampsia), seizure prophylaxis (magnesium, benzodiazepines), address underlying cause. Most reversible if recognized/treated; neurologic recovery expected within days-weeks. Mortality <5% if treated.",
+        "tags": ["pres", "posterior_reversible", "encephalopathy", "seizures", "hypertension"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_2",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Reversible Cerebral Vasoconstriction Syndrome (RCVS)",
+        "subtopic": "rcvs",
+        "content": "RCVS = recurrent thunderclap headaches + reversible cerebral artery vasoconstriction. Triggers: subarachnoid hemorrhage (most common), vasopressor drugs (phenylephrine, decongestants), SSRI/SNRI, illicit drugs (cocaine, amphetamines), immunosuppressants, postpartum period. Presentation: recurrent severe headaches (thunderclap quality) over days-weeks, sometimes with focal neurologic deficits (stroke), seizures. Angiography shows multifocal cerebral artery narrowing (affects large conductance vessels: ICA, MCA, ACA, vertebrals). Diagnosis: clinical (thunderclap headaches + risk factors) + angiography. Management: treat underlying cause, nimodipine (calcium channel blocker) for vasospasm, avoid vasoconstrictors, goal is time (vasculature normalizes over weeks). Prognosis: headaches resolve, vasculature normalizes, but stroke risk during course ~5-10%. Mortality ~2-5%.",
+        "tags": ["rcvs", "thunderclap", "vasoconstriction", "headache", "stroke"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_3",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Stevens-Johnson Syndrome & Toxic Epidermal Necrolysis (SJS/TEN)",
+        "subtopic": "sjsten",
+        "content": "SJS/TEN = severe mucocutaneous reactions with blistering + epidermal necrolysis. SJS: <10% BSA detachment; TEN: >30% (10-30% = overlap). Drug triggers (90%): anticonvulsants (phenytoin, carbamazepine, allopurinol, NSAIDs, antibiotics (sulfonamides, fluoroquinolones), antiretrovirals. Pathophysiology: T-cell mediated attack on keratinocytes. Presentation: prodrome (fever, malaise, arthralgias) 1-3 weeks post-drug, then mucosal involvement (painful erosions, oral/genital/ocular), followed by skin rash (papules → vesicles → confluent erythema → blistering/epidermal necrolysis). Systemic involvement: hepatitis, pneumonitis, GI involvement. Diagnosis: clinical + biopsy (full-thickness epidermal necrosis, sparse inflammation, subepidermal blistering). Management: STOP OFFENDING DRUG immediately, supportive (skin care, infection prevention), fluid/electrolyte management, nutritional support, IVIG (immunoglobulin) controversial but used, avoid systemic corticosteroids if possible (worsen outcomes per some studies). Mortality 5-15% (SJS) to 25-50% (TEN). Sequelae: ocular (scarring, blindness), esophageal strictures.",
+        "tags": ["sjs", "ten", "drug_reaction", "epidermal_necrolysis", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_4",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Charcot's Triad in Multiple Sclerosis - Scanning Speech & Intention Tremor",
+        "subtopic": "charcots_triad_ms",
+        "content": "Charcot's triad in MS = classic triad of: nystagmus (optic nerve involvement, cerebellar dysfunction), intention tremor (cerebellar dysfunction, worse as hand approaches target), scanning speech (dysarthric, irregular pauses = cerebellar speech). Present in ~10% MS patients, but highly specific for demyelinating disease. Other MS manifestations: optic neuritis (vision loss, pain with eye movement, afferent pupillary defect), transverse myelitis (paraplegia, sensory level), brainstem involvement (diplopia, facial weakness). Diagnosis: MRI (demyelinating lesions in white matter, disseminated in time/space), CSF (oligoclonal bands, elevated IgG), visual evoked potentials (VEP, prolonged latency). Management: disease-modifying therapy (interferon-beta, natalizumab, fingolimod, others), symptomatic treatment (tremor with propranolol, weakness/spasticity with baclofen/tizanidine). Prognosis: variable (some benign, others progressive disability).",
+        "tags": ["charcots_triad", "multiple_sclerosis", "ms", "demyelination"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_5",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Sentinel Bleed & Thunderclap Headache Mimics",
+        "subtopic": "sentinel_bleed",
+        "content": "Sentinel bleed = small subarachnoid hemorrhage preceding major SAH. Patient has warning headache days before catastrophic bleed. Misdiagnosis common (headache attributed to migraine, tension headache). Classic presentation: patient describes 'worst headache of life' days ago (often dismissed/treated as migraine), now returns with worse headache (sentinel bleed recognized too late). 5-10% SAH cases have sentinel bleeding; missed diagnosis increases mortality/morbidity substantially. Diagnostic challenge: non-contrast head CT may miss small bleeds if timing right; LP shows xanthochromia. Thunderclap headache mimics: PRES, RCVS, carotid/vertebral dissection, intracranial hypotension (CSF leak), pituitary apoplexy, meningitis/encephalitis, lobar intracerebral hemorrhage. Key: any thunderclap headache demands imaging (CT ± LP if negative and high suspicion); misses risk re-hemorrhage.",
+        "tags": ["sentinel_bleed", "thunderclap", "sah", "differential_diagnosis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_6",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Occult Septic Emboli - Endocarditis Mimics",
+        "subtopic": "septic_emboli",
+        "content": "Septic emboli = bacteremia with septic particle emboli (from infected valve, intravascular catheter, infected thrombus). Presentation varies by location: CNS (acute stroke in young patient, multiple infarcts), lungs (pulmonary nodules, cavitation, septic pulmonary emboli = 'cannonball' lesions), spleen (infarcts, abscesses), kidneys (hematuria, infarcts), extremities (painful nodules, splinter hemorrhages). Classic with endocarditis (infected valve sheds septic material), but also: osteomyelitis with septic emboli, infected IV catheters, thrombophlebitis. Diagnosis can be missed if endocarditis not considered (no murmur doesn't exclude; no fever rare but possible). Blood cultures essential. Management: antibiotics (prolonged course, usually IV), source control (valve replacement if endocarditis, line removal if catheter). Monitoring: repeat imaging (emboli resolve, infarcts organize), monitor for new septic emboli (recurrent strokes, nodular infiltrates).",
+        "tags": ["septic_emboli", "endocarditis", "stroke", "pulmonary_infarct"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_7",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Pituitary Apoplexy - Hemorrhage into Adenoma",
+        "subtopic": "pituitary_apoplexy",
+        "content": "Pituitary apoplexy = acute hemorrhage/infarction into pituitary gland (usually pre-existing adenoma). Presents as thunderclap headache (worst headache of life), sudden visual loss (optic chiasm compression), ophthalmoplegia (CN III, IV, VI palsies from cavernous sinus involvement), hypotension, confusion/altered mental status. Triggers: Valsalva, head trauma, surgery, anticoagulation, bromocriptine (dopamine agonist for prolactinomas, paradoxically can cause apoplexy). Diagnosis: MRI (shows blood in sella, mass effect), clinical context. Management: URGENT surgical decompression (neurosurgery) if visual loss/neurologic deficit (decompression within 24h improves outcomes), steroid replacement (acute cortisol deficiency life-threatening), supportive care. Endocrinology involvement (hormone replacement long-term post-surgery). Prognosis: visual improvement excellent if decompressed early; motor improvement varies. Mortality <5% if treated.",
+        "tags": ["pituitary_apoplexy", "hemorrhage", "thunderclap", "ophthalmoplegia"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_8",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Hemolytic Uremic Syndrome in Children - Diarrhea-Associated",
+        "subtopic": "hus_pediatric",
+        "content": "Pediatric HUS (Shiga toxin-producing E. coli O157:H7, Shigella): prodrome of bloody diarrhea 5-7 days, then microangiopathic hemolytic anemia (schistocytes, elevated LDH, low haptoglobin), thrombocytopenia (mild-moderate, <100k usually), acute kidney injury (can be severe, requiring dialysis). Different from adult mortality patterns: pediatric HUS generally better prognosis than adult. Mechanism: toxin damages GI endothelium + releases Shiga toxin systemically, targets kidney/CNS. Complications: hypertension, seizures (from hypertension or HUS encephalopathy), pulmonary edema, colitis with perforation. Management: supportive (fluid management cautious - avoid overload from renal failure, dialysis if needed), NOT antibiotics (may increase toxin release, worsen outcomes). Plasma exchange NOT routinely used (unlike TTP). Most pediatric cases recover renal function. Mortality 3-5% (lower than atypical HUS or adult HUS).",
+        "tags": ["hus", "pediatric", "shiga_toxin", "acute_kidney_injury"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_9",
+        "created_at": datetime.now().isoformat()
+    })
+
+    return units
+
+if __name__ == "__main__":
+    units = generate_edge_cases_units()
+    output_file = "data/phase6_edge_cases_chunks.json"
+    with open(output_file, 'w') as f:
+        json.dump(units, f, indent=2)
+    print(f"Generated {len(units)} edge cases units -> {output_file}")

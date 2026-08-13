@@ -1,0 +1,380 @@
+import json, sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+kps = []
+
+# ============================================================
+# ITEM 0: Large-vessel vasculitis: Takayasu arteritis
+# ============================================================
+topic = "Large-vessel vasculitis: Takayasu arteritis"
+domain = "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)"
+disc = "medicine"
+
+kps += [
+  {"id":"takayasu-arteritis-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"A young Asian woman presents with arm claudication, absent radial pulses, and asymmetric blood pressures. What is the classic name for this condition and what vessel size does it affect?",
+   "answer":"Takayasu arteritis ('pulseless disease') — granulomatous inflammation of the aorta and its major branches (large vessels).",
+   "rationale":"Takayasu targets the aorta and branch vessels, producing limb ischemia and pulse deficits by granulomatous arterial wall inflammation.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Giant cell arteritis (GCA)"},
+  {"id":"takayasu-arteritis-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What imaging modality is preferred for initial evaluation of suspected large-vessel vasculitis such as Takayasu arteritis or GCA?",
+   "answer":"PET scan is preferred for Takayasu arteritis and GCA; catheter-based angiogram is used for chest/limb vessel delineation.",
+   "rationale":"PET detects active vascular wall inflammation before luminal changes occur; angiography delineates stenoses and aneurysms in established disease.",
+   "bloom":"apply","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":""},
+  {"id":"takayasu-arteritis-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What clinical features at the bedside suggest large-vessel rather than small-vessel vasculitis?",
+   "answer":"Limb claudication, arterial bruits, asymmetric blood pressures, absent pulses, headache, and vision loss point to large-vessel involvement.",
+   "rationale":"Large-vessel vasculitis affects the aorta and named branches, so ischemic symptoms in extremities and cranial territory dominate the presentation.",
+   "bloom":"apply","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Peripheral arterial disease"},
+  {"id":"takayasu-arteritis-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Giant cell arteritis predominantly affects patients over what age, and what percentage of those with polymyalgia rheumatica will develop GCA?",
+   "answer":"GCA affects individuals older than 50; approximately 10% of patients with PMR develop GCA.",
+   "rationale":"GCA and PMR share overlapping pathophysiology; recognizing the overlap prompts vigilance for vision-threatening cranial GCA in PMR patients.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Takayasu arteritis (younger patients)"},
+  {"id":"takayasu-arteritis-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What histological finding on arterial biopsy distinguishes Takayasu arteritis from polyarteritis nodosa?",
+   "answer":"Takayasu arteritis shows granulomatous inflammation of the vessel wall; PAN shows necrotizing inflammation WITHOUT granulomas.",
+   "rationale":"The granuloma is the pathological hallmark of large-vessel vasculitides (Takayasu, GCA) whereas medium-vessel PAN is granuloma-negative.",
+   "bloom":"analyze","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Polyarteritis nodosa"},
+  {"id":"takayasu-arteritis-d6","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Which medications are NOT recommended as primary treatment for giant cell arteritis despite being used for other rheumatological conditions?",
+   "answer":"TNF inhibitors, antimalarial agents, and cytotoxic agents have not shown efficacy in GCA; statins are also not recommended unless there is another indication.",
+   "rationale":"GCA is driven by IL-6 and CD4+ T-cell pathways rather than TNF, explaining why anti-TNF agents fail; tocilizumab (anti-IL-6R) has proven efficacy.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Large vessel vasculitis  giant cell arteritis","page":11}],"confusable_with":""},
+  {"id":"takayasu-arteritis-d7","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"When GCA relapses during steroid tapering, what is the most frequent presenting symptom cluster?",
+   "answer":"Polymyalgia rheumatica symptoms (shoulder/hip girdle aching, elevated inflammatory markers) are the most frequent relapse presentation; headache and cranial features are less common at relapse.",
+   "rationale":"PMR symptoms often recur before frank cranial vasculitis during taper, providing an early warning sign to escalate therapy before vision loss occurs.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Large vessel vasculitis  giant cell arteritis","page":11}],"confusable_with":""},
+  {"id":"takayasu-arteritis-d8","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Aortic regurgitation detected in a young woman with large-vessel vasculitis should raise suspicion for which underlying condition?",
+   "answer":"Takayasu arteritis can cause aortic root dilation and AR; ascending aorta inflammation leads to annular dilation and leaflet malcoaptation.",
+   "rationale":"Aortic root granulomatous inflammation in Takayasu leads to dilation; any young woman with large-vessel disease and AR should be evaluated for this diagnosis.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Aortic Regurgitation","page":2}],"confusable_with":"Marfan syndrome"},
+]
+kps.append({"_type":"illness_script","topic":topic,"discipline":disc,
+  "enabling_conditions":"Young Asian woman (peak age 10-40), female predominance 8:1",
+  "pathophysiology":"Granulomatous inflammation of aorta and major branches → intimal hyperplasia, stenosis, aneurysm formation",
+  "time_course":"Months; early inflammatory phase (fever, weight loss, elevated ESR/CRP) followed by occlusive phase (pulse deficits, claudication, BP asymmetry)",
+  "key_features":"Pulseless disease: absent/asymmetric pulses, limb claudication, bruits, hypertension (renal artery stenosis), aortic regurgitation; PET or angiography confirms",
+  "consequence_if_missed":"Stroke, limb ischemia, aortic aneurysm rupture, heart failure from AR, renovascular hypertension"})
+
+# ============================================================
+# ITEM 1: Lightning & Electrical Injuries
+# ============================================================
+topic = "Lightning & Electrical Injuries"
+domain = "Internal medicine: emergency & acute care (cardiopulmonary resuscitation, trauma primary survey, toxicology & overdoses, environmental emergencies, anaphylaxis, acute abdomen)"
+disc = "medicine"
+
+kps += [
+  {"id":"lightning-electrical-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the approximate annual US death toll from electrical injuries, and how many are from lightning versus high-voltage power sources?",
+   "answer":"~1000 deaths/year; ~50-300 from lightning; ~400 from high-voltage injuries; additionally ~30,000 nonfatal shocks annually.",
+   "rationale":"Lightning carries 100-150 million volts but very brief contact time; power line contact causes the majority of electrical deaths due to prolonged exposure.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":3}],"confusable_with":""},
+  {"id":"lightning-electrical-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"At what electrical frequency does household current most efficiently cause muscle tetany, and what is the dangerous consequence for a hand grasping an energized source?",
+   "answer":"40-110 Hz (the frequency of most household currents) causes tetany; flexor-dominant hand tetany causes the individual to grasp rather than release the source, prolonging contact and energy delivery.",
+   "rationale":"Sustained tetanic contraction of flexors (stronger than extensors) prevents voluntary release, converting brief shock to sustained high-energy injury.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":5}],"confusable_with":""},
+  {"id":"lightning-electrical-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the 'let-go current' in electrical injury physiology?",
+   "answer":"The maximum current an individual can tolerate while still able to voluntarily release the electrical source despite ongoing muscle contraction; varies by individual.",
+   "rationale":"Above let-go threshold, tetanic contraction prevents disengagement, converting brief shock to sustained high-energy injury with greater tissue damage.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":5}],"confusable_with":""},
+  {"id":"lightning-electrical-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What four major complications drive morbidity in high-voltage electrical injuries, and what is the associated mortality range?",
+   "answer":"Compartment syndrome, rhabdomyolysis, acute renal failure, and limb amputation; mortality 5-30% for high-voltage vs <1-3% for low-voltage.",
+   "rationale":"High voltage deposits massive energy deep in tissues causing coagulation necrosis, massive edema, and myoglobinuria precipitating renal injury.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":7}],"confusable_with":""},
+  {"id":"lightning-electrical-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What temperature do electrical arc flash discharges reach, and how does flash burn differ mechanically from true electrical conduction injury?",
+   "answer":"Arc flash temperatures reach approximately 19,000 degrees C; flash burns are thermal surface injuries from radiated heat WITHOUT current flowing through the body.",
+   "rationale":"Arc flash ionizes surrounding gases creating plasma; thermal radiation burns skin at distance, distinct from the deep coagulation necrosis of true electrical conduction.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":8}],"confusable_with":"True electrical injury"},
+  {"id":"lightning-electrical-d6","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What adjunctive therapy may be considered for severe electrical injuries with extensive tissue damage to promote angiogenesis and improve skin graft viability?",
+   "answer":"Hyperbaric oxygen therapy delivers pure O2 under pressure, enhancing tissue oxygenation, reducing inflammation, stimulating angiogenesis, and improving viability of skin grafts.",
+   "rationale":"Hyperbaric oxygen raises dissolved O2 in plasma, reaching ischemic zones where hemoglobin-based delivery is impaired by vascular thrombosis from electrical injury.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":12}],"confusable_with":""},
+  {"id":"lightning-electrical-d7","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"How does skin resistance modify the tissue injury pattern in electrical injury?",
+   "answer":"High skin resistance causes greater energy dissipation at the skin surface (more extensive superficial burns); low resistance (wet skin) allows more current to penetrate deeper structures causing less surface but more deep injury.",
+   "rationale":"Resistance determines the fraction of electrical energy converted to heat at each tissue layer; skin acts as the first and principal resistor.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":3}],"confusable_with":""},
+  {"id":"lightning-electrical-d8","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"High-voltage tetanic injuries of the shoulder most commonly produce what specific orthopedic injury?",
+   "answer":"Posterior shoulder dislocation, with the arm adducted and internally rotated; highest risk in those with high-voltage or tetanic low-voltage injuries.",
+   "rationale":"Violent simultaneous contraction of the stronger internal rotators and adductors during tetany overcomes the anterior shoulder capsule, driving the humeral head posteriorly.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Lightning & Electrical Injuries","page":8}],"confusable_with":"Anterior shoulder dislocation"},
+]
+kps.append({"_type":"illness_script","topic":topic,"discipline":disc,
+  "enabling_conditions":"Occupational (power line workers, electricians), lightning strike, household current exposure",
+  "pathophysiology":"Electrical energy converted to heat: coagulation necrosis, hemolysis, thrombosis, myoglobinuria; arc flash causes separate thermal surface burns",
+  "time_course":"Immediate cardiac arrest/arrhythmia; delayed rhabdomyolysis and renal failure over hours; delayed neuropathy weeks-months",
+  "key_features":"Entry/exit wounds (may be absent in lightning), posterior shoulder dislocation, cardiac arrhythmia, compartment syndrome, myoglobinuria (dark urine)",
+  "consequence_if_missed":"Missed compartment syndrome leading to limb loss, delayed renal failure from rhabdomyolysis, cardiac arrhythmia fatality"})
+
+# ============================================================
+# ITEM 2: Medium-vessel vasculitis: Kawasaki disease
+# Chunks are almost entirely AKI content — produce 4 grounded KPs
+# ============================================================
+topic = "Medium-vessel vasculitis: Kawasaki disease"
+domain = "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)"
+disc = "medicine"
+
+kps += [
+  {"id":"kawasaki-disease-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Medium-vessel vasculitis in a febrile child that includes coronary artery involvement — what vessel classification does this represent and what is the most feared long-term cardiac complication?",
+   "answer":"Medium-vessel vasculitis (named visceral arteries including coronary arteries); coronary artery aneurysms are the most feared complication, occurring in ~25% of untreated children.",
+   "rationale":"Kawasaki disease targets medium-caliber vessels; coronary aneurysms result from uncontrolled arterial wall inflammation and can cause myocardial infarction.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Polyarteritis nodosa"},
+  {"id":"kawasaki-disease-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"How does the clinical presentation of medium-vessel vasculitis differ from large-vessel vasculitis at the bedside?",
+   "answer":"Large-vessel: limb claudication, absent pulses, bruits, asymmetric BP; medium-vessel: cutaneous nodules, punched-out ulcers, organ ischemia (mesenteric/renal), no large-artery pulselessness.",
+   "rationale":"The caliber of affected vessel determines the ischemic territory; medium vessels supply specific organs rather than causing limb-level pulse deficits.",
+   "bloom":"analyze","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Large-vessel vasculitis"},
+  {"id":"kawasaki-disease-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"AKI in the context of vasculitis with hematuria and red cell casts most strongly suggests involvement of which vessel size?",
+   "answer":"Small vessels (glomerular capillaries) — red cell casts indicate glomerulonephritis, which is a small-vessel process (ANCA-associated) and NOT typical of medium-vessel vasculitis.",
+   "rationale":"Red cell casts are pathognomonic of glomerular bleeding; medium-vessel PAN causes renal AKI via renal artery stenosis/ischemia, not glomerulitis.",
+   "bloom":"analyze","source":[{"book":"MGH Housestaff Manual","page":99}],"confusable_with":"Medium-vessel vasculitis with renal involvement"},
+  {"id":"kawasaki-disease-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"AKI is defined by KDIGO 2012 criteria as a rise in serum creatinine of what amount within 48 hours, or what percentage rise within 7 days?",
+   "answer":"AKI: Cr rise >/= 0.3 mg/dL within 48 hours OR >/= 50% increase from baseline within 7 days OR urine output < 0.5 mL/kg/h for > 6 hours.",
+   "rationale":"KDIGO staging standardizes AKI diagnosis across diverse etiologies including vasculitis-associated nephritis.",
+   "bloom":"recall","source":[{"book":"Society Guideline: Guideline   KDIGO 2012 AKI","page":22}],"confusable_with":""},
+]
+
+# ============================================================
+# ITEM 3: Medium-vessel vasculitis: polyarteritis nodosa
+# ============================================================
+topic = "Medium-vessel vasculitis: polyarteritis nodosa"
+domain = "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)"
+disc = "medicine"
+
+kps += [
+  {"id":"polyarteritis-nodosa-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What organ system does polyarteritis nodosa consistently spare, distinguishing it from ANCA-associated vasculitides?",
+   "answer":"PAN consistently spares the lungs (pulmonary vasculature) and glomeruli; it primarily affects kidneys (renal arteries), skin, muscles, nerves, GI, and joints.",
+   "rationale":"Unlike ANCA-associated vasculitides that cause pulmonary-renal syndrome, PAN targets medium-vessel renal arteries causing renovascular HTN rather than glomerulonephritis.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":"Microscopic polyangiitis"},
+  {"id":"polyarteritis-nodosa-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What are the key clinical features of polyarteritis nodosa at presentation?",
+   "answer":"Constitutional symptoms (fever, weight loss), mononeuritis multiplex (~70%), GI distress/mesenteric ischemia, AKI from renal artery involvement (not GN), HTN, skin lesions (erythematous nodules, purpura, livedo), gonadal pain (>10%).",
+   "rationale":"Multisystem organ involvement driven by segmental necrotizing medium-vessel arteritis produces the wide clinical spectrum; absence of pulmonary and glomerular disease is a key negative feature.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":177}],"confusable_with":""},
+  {"id":"polyarteritis-nodosa-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the gold-standard diagnostic test for PAN and what histological feature is absent distinguishing it from granulomatous vasculitides?",
+   "answer":"Biopsy showing segmental necrotizing vasculitis with fibrinoid necrosis and inflammatory infiltrates WITHOUT granulomas; CTA/MRA showing microaneurysms or focal stenoses also supports the diagnosis.",
+   "rationale":"PAN is non-granulomatous by definition; granuloma formation should prompt consideration of GPA or Takayasu arteritis instead.",
+   "bloom":"analyze","source":[{"book":"MGH Housestaff Manual","page":177}],"confusable_with":"Granulomatosis with polyangiitis (GPA)"},
+  {"id":"polyarteritis-nodosa-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What infectious etiology must be excluded before treating polyarteritis nodosa with prolonged immunosuppression?",
+   "answer":"Hepatitis B virus — HBV-associated PAN is driven by immune complex deposition; treatment is antivirals (not prolonged cyclophosphamide) to clear viral antigen and prevent viral replication.",
+   "rationale":"HBV-related PAN requires antiviral therapy as the definitive treatment; immunosuppression alone without antivirals allows unchecked viral replication while suppressing immune control.",
+   "bloom":"apply","source":[{"book":"MGH Housestaff Manual","page":177}],"confusable_with":""},
+  {"id":"polyarteritis-nodosa-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"PAN is a rare cause of what acute neurological spinal cord syndrome caused by arteritis of spinal feeders?",
+   "answer":"Anterior spinal artery syndrome — PAN-associated vasculitis can occlude the anterior spinal artery, causing acute paraplegia with preserved posterior column function.",
+   "rationale":"Medium-vessel arteritis affecting spinal arterial feeders interrupts anterior spinal artery flow to the ventral cord, sparing dorsal columns (vibration/proprioception preserved).",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Acute Spinal Cord Injury & Syndromes","page":4}],"confusable_with":""},
+  {"id":"polyarteritis-nodosa-d6","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"How does ANCA status differentiate PAN from cryoglobulinemic vasculitis in a patient with mononeuritis multiplex?",
+   "answer":"PAN is ANCA-negative; ANCA positivity (anti-MPO or anti-PR3) indicates MPA or other ANCA-associated vasculitis; cryoglobulinemic vasculitis is also ANCA-negative but shows cryoglobulins and is often HCV-linked.",
+   "rationale":"ANCA testing is a critical bifurcation point in the medium/small-vessel vasculitis workup; absence of ANCA and absence of cryoglobulins supports PAN.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Cryoglobulinemic vasculitis","page":10}],"confusable_with":"Microscopic polyangiitis"},
+  {"id":"polyarteritis-nodosa-d7","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the treatment regimen for severe PAN, and what second-line agents are used for chronic symptoms?",
+   "answer":"Prednisone 1 mg/kg/day +/- MTX or AZA; IV steroids and cyclophosphamide for severe disease; antivirals if HBV-related; ~50% of patients need a second agent for chronic symptoms (MTX, AZA, TNFi preferred over tocilizumab).",
+   "rationale":"High-dose steroids achieve initial remission; steroid-sparing agents prevent cumulative corticosteroid toxicity in a disease requiring months of therapy.",
+   "bloom":"apply","source":[{"book":"MGH Housestaff Manual","page":176}],"confusable_with":""},
+]
+kps.append({"_type":"illness_script","topic":topic,"discipline":disc,
+  "enabling_conditions":"Adults 40-60 years; male predominance; HBV infection in up to 30%; ANCA-negative",
+  "pathophysiology":"Segmental necrotizing arteritis of medium vessels (no granulomas, no lung/glomerular involvement) -> microaneurysms, stenoses, organ ischemia",
+  "time_course":"Subacute weeks-months; constitutional symptoms precede organ manifestations",
+  "key_features":"Mononeuritis multiplex, renovascular HTN, mesenteric ischemia, livedo reticularis, testicular pain; ANCA-negative; CTA shows microaneurysms; biopsy confirms no granulomas",
+  "consequence_if_missed":"Bowel infarction, renal failure, stroke from renovascular HTN, limb/digit ischemia"})
+kps.append({"_type":"confusable_pair","topic_a":"Polyarteritis nodosa","topic_b":"Microscopic polyangiitis",
+  "discriminator":"PAN: medium vessels, ANCA-negative, spares lungs/glomeruli, microaneurysms on imaging; MPA: small vessels, ANCA-positive (anti-MPO), causes pulmonary-renal syndrome with GN"})
+
+# ============================================================
+# ITEM 4: Microscopic polyangiitis (MPA)
+# ============================================================
+topic = "Microscopic polyangiitis (MPA)"
+domain = "Internal medicine: rheumatology, immunology & allergy (gout & crystal arthropathy, SLE, RA, vasculitides, anaphylaxis & angioedema, drug reactions)"
+disc = "medicine"
+
+kps += [
+  {"id":"mpa-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What ANCA serotype predominates in microscopic polyangiitis and what percentage of patients are ANCA-negative?",
+   "answer":"Anti-MPO in ~70%; anti-PR3 in ~20%; ANCA-negative in ~10%.",
+   "rationale":"Anti-MPO activates primed neutrophils to damage small-vessel endothelium; p-ANCA pattern on immunofluorescence is the clinical surrogate.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":4}],"confusable_with":"GPA (predominantly anti-PR3)"},
+  {"id":"mpa-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"MPA is more prevalent in which geographic populations compared to GPA?",
+   "answer":"MPA is more common in China and Japan; GPA is more prevalent in populations of European descent.",
+   "rationale":"Geographic/genetic differences in ANCA-associated vasculitis likely reflect HLA alleles influencing autoantibody specificity (anti-MPO vs anti-PR3).",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":4}],"confusable_with":""},
+  {"id":"mpa-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Plasma exchange is recommended as salvage therapy in MPA glomerulonephritis — at what serum creatinine threshold?",
+   "answer":"Creatinine >5.7 mg/dL (500 micromol/L) is the threshold for salvage plasmapheresis; routine use for alveolar hemorrhage is NOT recommended.",
+   "rationale":"Meta-analysis shows plasmapheresis reduces ESRD risk at very high creatinine but increases infection risk in year 1; not indicated for moderate renal disease or lung hemorrhage routinely.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":8}],"confusable_with":""},
+  {"id":"mpa-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What FDA-approved complement C5a receptor inhibitor was approved in 2021 for severe ANCA-associated vasculitis?",
+   "answer":"Avacopan — reduces steroid burden while maintaining remission; blocks C5a receptor on neutrophils, limiting vascular injury without prolonged high-dose steroid toxicity.",
+   "rationale":"Neutrophil activation in MPA is partly C5a-mediated; avacopan targets this pathway specifically rather than broad immunosuppression.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":8}],"confusable_with":""},
+  {"id":"mpa-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Explain the two-hit mechanism by which ANCA causes small-vessel endothelial damage in MPA.",
+   "answer":"Hit 1: cytokines (TNF, IL-1) prime neutrophils to express MPO on their surface. Hit 2: ANCA IgG cross-links surface MPO, triggering full neutrophil activation with release of reactive oxygen species and proteolytic enzymes -> endothelial damage and necrosis.",
+   "rationale":"Priming is required first; ANCA alone (without primed neutrophils) does not cause vasculitis, explaining why ANCA titers do not always correlate with disease activity.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":3}],"confusable_with":""},
+  {"id":"mpa-d6","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the classic cutaneous manifestation of small-vessel vasculitis including MPA?",
+   "answer":"Palpable purpura (non-blanching, palpable lesions from leukocytoclastic vasculitis of dermal capillaries and post-capillary venules).",
+   "rationale":"Palpable purpura reflects small-vessel hemorrhage into the dermis; its presence in the appropriate clinical context should prompt ANCA testing.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":5}],"confusable_with":"IgA vasculitis"},
+  {"id":"mpa-d7","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the median age of onset for MPA and is there a sex predilection?",
+   "answer":"Median onset 50-60 years; approximately equal male-to-female prevalence.",
+   "rationale":"Unlike Takayasu (young women) or GCA (>50, female predominance), MPA affects middle-aged adults of both sexes equally, which is a useful differentiating epidemiological point.",
+   "bloom":"recall","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":4}],"confusable_with":""},
+  {"id":"mpa-d8","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What pulmonary manifestation of MPA represents a life-threatening emergency and requires aggressive immunosuppression?",
+   "answer":"Diffuse alveolar hemorrhage (pulmonary capillaritis) presenting as hemoptysis, hypoxia, and bilateral infiltrates; requires immediate high-dose steroids and typically cyclophosphamide or rituximab.",
+   "rationale":"Pulmonary capillaritis in MPA/GPA can cause fatal hemorrhage; rituximab is non-inferior to CYC for induction and may be preferred in relapsing disease.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Microscopic polyangiitis (MPA)","page":5}],"confusable_with":""},
+]
+kps.append({"_type":"illness_script","topic":topic,"discipline":disc,
+  "enabling_conditions":"Middle-aged adults 50-60, male=female; anti-MPO positive ~70%; more common in East Asian populations",
+  "pathophysiology":"ANCA (anti-MPO) activates primed neutrophils -> pauci-immune necrotizing small-vessel vasculitis -> crescentic GN, pulmonary capillaritis, skin purpura",
+  "time_course":"Subacute weeks-months; insidious constitutional symptoms, then rapidly progressive GN",
+  "key_features":"Pulmonary-renal syndrome (hemoptysis + hematuria/red cell casts), palpable purpura, mononeuritis multiplex; ANCA-positive (anti-MPO); biopsy pauci-immune (no immune deposits)",
+  "consequence_if_missed":"ESRD from rapidly progressive GN, fatal pulmonary hemorrhage"})
+
+# ============================================================
+# ITEM 5: Motor Neuron Disease
+# ============================================================
+topic = "Motor Neuron Disease"
+domain = "Internal medicine: neurology (ischemic & hemorrhagic stroke, seizures & status epilepticus, altered mental status & delirium, headache, neuromuscular weakness, spinal cord syndromes)"
+disc = "medicine"
+
+kps += [
+  {"id":"motor-neuron-disease-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the most prevalent motor neuron neurodegenerative disease, and why is succinylcholine absolutely contraindicated?",
+   "answer":"ALS (amyotrophic lateral sclerosis); succinylcholine is contraindicated due to life-threatening hyperkalemia from upregulation of extrajunctional acetylcholine receptors in lower motor neuron disease.",
+   "rationale":"Denervation causes proliferation of extrajunctional ACh receptors throughout muscle membrane; succinylcholine triggers massive simultaneous K+ efflux from all receptors.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1009}],"confusable_with":""},
+  {"id":"motor-neuron-disease-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"ALS is characterized by progressive painless weakness from motor neuron degeneration at which two levels of the neuraxis?",
+   "answer":"Motor cortex (upper motor neurons) AND spinal cord/brainstem (lower motor neurons) simultaneously; the co-occurrence of UMN and LMN signs is pathognomonic.",
+   "rationale":"Simultaneous UMN signs (spasticity, hyperreflexia, Babinski) and LMN signs (fasciculations, wasting, hyporeflexia) in the same patient defines ALS diagnostically.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1040}],"confusable_with":"Primary lateral sclerosis (UMN only)"},
+  {"id":"motor-neuron-disease-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"In ICU differential diagnosis of acute neuromuscular respiratory failure, which reversible conditions mimic motor neuron disease?",
+   "answer":"West Nile myelopathy, organophosphate/sarin poisoning, paraneoplastic neuropathy, endocrine myopathies (thyroid), hypo/hyperkalemia, mitochondrial myopathies, tick paralysis, fish poisoning, acute porphyria.",
+   "rationale":"Many causes of acute flaccid weakness are reversible if identified early; a systematic toxic/metabolic/autoimmune/infectious search must precede assumption of neurodegenerative disease.",
+   "bloom":"analyze","source":[{"book":"Morgan & Mikhail","page":1026}],"confusable_with":"Guillain-Barre syndrome"},
+  {"id":"motor-neuron-disease-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the mechanism and magnitude of survival benefit from riluzole in ALS, and does it benefit primary lateral sclerosis?",
+   "answer":"Riluzole reduces glutamate excitotoxicity at motor neuron synapses, providing a modest survival benefit of a few months in ALS; it has NOT shown benefit in PLS and is not recommended for PLS.",
+   "rationale":"ALS and PLS differ in motor neuron involvement; anti-glutamate therapy benefits LMN-involved ALS but not pure UMN primary lateral sclerosis.",
+   "bloom":"recall","source":[{"book":"StatPearls","page":7}],"confusable_with":""},
+  {"id":"motor-neuron-disease-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What preoperative counseling is required and what anesthetic concern is specific to ALS regarding muscle relaxants?",
+   "answer":"Counsel that surgery/anesthesia stress may worsen symptoms; succinylcholine is contraindicated (hyperkalemia); use non-depolarizing NMBs with caution given sensitivity; avoid elective surgery during relapse.",
+   "rationale":"Lower motor neuron denervation upregulates extrajunctional receptors making succinylcholine lethal; non-depolarizing NMBs are safer but response is unpredictable.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1009}],"confusable_with":""},
+  {"id":"motor-neuron-disease-d6","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the most common subtype of Guillain-Barre syndrome and what autonomic complication must be anticipated during anesthetic management?",
+   "answer":"AIDP (acute inflammatory demyelinating polyneuropathy) ~75%; autonomic lability (wild BP swings, arrhythmias, ileus) complicates anesthetic management and can be fatal if not anticipated.",
+   "rationale":"GBS autonomic dysfunction results from demyelination of autonomic nerves; vasopressors and volatile agents must be used cautiously due to exaggerated or paradoxical cardiovascular responses.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1010}],"confusable_with":""},
+]
+kps.append({"_type":"illness_script","topic":topic,"discipline":disc,
+  "enabling_conditions":"Adults typically >50 (ALS); sporadic or familial (SOD1 mutation in ~20%)",
+  "pathophysiology":"Progressive degeneration of UMN (motor cortex) and LMN (anterior horn, brainstem nuclei) -> muscle denervation, wasting, fasciculations, spasticity",
+  "time_course":"Gradual progressive over months-years; bulbar involvement heralds respiratory failure",
+  "key_features":"Co-existent UMN + LMN signs; painless weakness; fasciculations; bulbar symptoms (dysarthria, dysphagia); EMG: chronic denervation; succinylcholine contraindicated",
+  "consequence_if_missed":"Respiratory failure from delayed recognition; fatal hyperkalemia from succinylcholine administration"})
+
+# ============================================================
+# ITEM 6: Movement Disorders: Parkinson's Disease & Mimics
+# CHUNKS are very thin (Periodic Limb Movement Disorder metadata, sleep, back pain)
+# Produce 4-5 KPs grounded in available content
+# ============================================================
+topic = "Movement Disorders: Parkinson's Disease & Mimics"
+domain = "Internal medicine: neurology (ischemic & hemorrhagic stroke, seizures & status epilepticus, altered mental status & delirium, headache, neuromuscular weakness, spinal cord syndromes)"
+disc = "medicine"
+
+kps += [
+  {"id":"parkinsons-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What sleep disorder is bidirectionally associated with neurodegenerative movement disorders, and through what mechanisms does sleep disturbance accelerate neurodegeneration?",
+   "answer":"Sleep disorders (RBD, insomnia, EDS) are common in Parkinson disease; sleep disturbance accelerates neurodegeneration by impairing protein clearance (alpha-synuclein) and increasing oxidative stress.",
+   "rationale":"The bidirectional relationship between sleep and neurodegeneration means treating sleep disorders in PD patients is both symptomatic and potentially neuroprotective.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Obstructive Sleep Apnea  Diagnosis","page":2}],"confusable_with":""},
+  {"id":"parkinsons-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Excessive daytime sleepiness in Parkinson disease may respond to what agent studied in open-label trials, and what concern limits its use?",
+   "answer":"Modafinil improved subjective sleepiness (Epworth Sleepiness Scale) in Parkinson disease-associated hypersomnia in small open-label trials; concern about interaction with dopaminergic agents limits widespread use.",
+   "rationale":"PD hypersomnia is multifactorial (disease, dopaminergic therapy, sleep fragmentation); modafinil acts on non-dopaminergic wakefulness pathways but has limited evidence in this population.",
+   "bloom":"apply","source":[{"book":"StatPearls: StatPearls   Obstructive Sleep Apnea  Diagnosis","page":11}],"confusable_with":""},
+  {"id":"parkinsons-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"In patients with movement disorder emergencies, what intraoperative concern is created by chronic antiseizure therapy co-prescribed for movement disorders?",
+   "answer":"Hepatic microsomal enzyme induction from antiseizure drugs increases dose requirements for IV anesthetics and non-depolarizing NMBs, and increases risk of hepatotoxicity from halothane.",
+   "rationale":"Chronic enzyme inducers (phenytoin, carbamazepine, phenobarbital) upregulate CYP450 enzymes, accelerating metabolism of anesthetic agents and requiring higher doses.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1005}],"confusable_with":""},
+  {"id":"parkinsons-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What specific precaution is needed if a patient with Parkinson disease has a pacemaker and requires electroconvulsive therapy?",
+   "answer":"A magnet should be readily available to convert the pacemaker to fixed-rate mode during ECT if needed; ECT can be performed safely in pacemaker patients.",
+   "rationale":"ECT-induced cardiac activity changes may confuse rate-responsive pacemakers; fixed-rate conversion prevents pacemaker-mediated tachycardia during the procedure.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1022}],"confusable_with":""},
+  {"id":"parkinsons-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Parkinson disease is listed as a key consideration when managing what important perioperative domain in movement disorder patients?",
+   "answer":"Movement disorder emergencies and perioperative management require specific planning: continuation of dopaminergic medications, avoidance of dopamine-blocking antiemetics (metoclopramide, droperidol), and attention to autonomic lability.",
+   "rationale":"Abrupt cessation of dopaminergic therapy perioperatively can precipitate Parkinsonism-hyperpyrexia syndrome; dopamine antagonists exacerbate motor symptoms.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1023}],"confusable_with":""},
+]
+
+# ============================================================
+# ITEM 7: Multiple Sclerosis: Clinical Features & Diagnosis
+# CHUNKS are thin (metadata + other topics); extract from Morgan/Mikhail MS content
+# ============================================================
+topic = "Multiple Sclerosis: Clinical Features & Diagnosis"
+domain = "Internal medicine: neurology (ischemic & hemorrhagic stroke, seizures & status epilepticus, altered mental status & delirium, headache, neuromuscular weakness, spinal cord syndromes)"
+disc = "medicine"
+
+kps += [
+  {"id":"multiple-sclerosis-d1","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Multiple sclerosis is characterized by demyelination at multiple sites in the CNS — what is the key anesthetic principle regarding elective surgery timing?",
+   "answer":"Elective surgery should be avoided during an MS relapse, regardless of anesthetic technique; the stress of surgery/anesthesia may worsen or trigger symptoms.",
+   "rationale":"Surgical stress, fever, and anesthetic agents all have unpredictable effects on demyelinated neural conduction; relapse avoidance reduces the risk of postoperative neurological deterioration.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1008}],"confusable_with":""},
+  {"id":"multiple-sclerosis-d2","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"Spinal anesthesia in multiple sclerosis has been associated with what adverse outcome, and what regional technique carries less concern?",
+   "answer":"Spinal anesthesia has been associated with exacerbation of MS; peripheral nerve blocks are less of a concern because the local anesthetic effect is on the peripheral nervous system rather than directly on demyelinated central pathways.",
+   "rationale":"High concentrations of local anesthetic delivered to demyelinated spinal cord via intrathecal route may worsen conduction impairment; peripheral blocks avoid CNS exposure.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1009}],"confusable_with":""},
+  {"id":"multiple-sclerosis-d3","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What key distinction separates motor neuron disease (ALS) from multiple sclerosis in terms of the nervous system involved?",
+   "answer":"ALS affects both UMN and LMN (motor cortex + spinal anterior horn cells); MS involves CNS demyelination at multiple sites and can mimic UMN disease but causes sensory, visual, and autonomic symptoms in addition to motor.",
+   "rationale":"ALS is purely motor (UMN+LMN); MS causes multifocal demyelination producing variable sensory, motor, visual, cerebellar, and autonomic symptoms.",
+   "bloom":"analyze","source":[{"book":"Morgan & Mikhail","page":1009},{"book":"StatPearls: StatPearls   Motor Neuron Disease","page":1}],"confusable_with":"ALS"},
+  {"id":"multiple-sclerosis-d4","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What is the key differentiating feature between MS-related aspiration risk and the usual aspiration risk factors for a surgical patient?",
+   "answer":"MS causes neurogenic dysphagia from demyelination of corticobulbar/cerebellar-brainstem pathways, putting patients at aspiration risk independent of sedation or opioids; aspiration pneumonia in MS is a major cause of mortality.",
+   "rationale":"Neurogenic dysphagia from central demyelination is distinct from drug-induced suppression of airway reflexes; it persists and may worsen with surgical stress.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis","page":2}],"confusable_with":""},
+  {"id":"multiple-sclerosis-d5","topic":topic,"domain":domain,"discipline":disc,
+   "stem":"What autoimmune condition should be considered in the differential of MS that affects skin, GI tract, lungs, kidneys, and pericardium and produces ANA positivity?",
+   "answer":"Systemic sclerosis (scleroderma) — ANA positive >90%, with anti-centromere and anti-Scl-70 as more specific antibodies; affects skin, GI, lungs, kidneys, and pericardium but does not cause demyelinating CNS lesions.",
+   "rationale":"Several autoimmune conditions can mimic MS with overlapping features; scleroderma manifests organ-specific fibrosis rather than episodic demyelination.",
+   "bloom":"analyze","source":[{"book":"StatPearls: StatPearls   Systemic sclerosis (scleroderma)","page":3}],"confusable_with":"MS"},
+]
+
+print("Total KPs so far:", len(kps))
+with open("C:/Users/Dean/anesthesia_attending/scripts/kp_batch1.json", "w", encoding="utf-8") as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print("Saved batch1 with", len(kps), "items")

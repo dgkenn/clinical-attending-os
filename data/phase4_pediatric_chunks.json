@@ -1,0 +1,161 @@
+[
+  {
+    "topic": "Pediatric Resuscitation - CPR Compression Depth & Rate",
+    "subtopic": "pediatric_cpr",
+    "content": "Pediatric CPR differs by age. Infants (<1 year): 100-120 compressions/min, compression depth 1.5 inches (4 cm), two-finger technique (preferred) or two-hand encircling technique. Children (1-8 years): 100-120 compressions/min, depth \u22652 inches (5 cm, or 1/3 chest depth), one- or two-hand technique. Children >8 years: adult parameters (100-120/min, 2-2.4 inches depth). Ventilation: 2 breaths after every 30 compressions (30:2 ratio). Defibrillation energy: infants 2 J/kg, children 2-4 J/kg (max 360 J). Early access to defibrillator critical in witnessed VF/pulseless VT (arrests in children rare but when occur, usually from primary cardiac cause or asphyxia). Continue high-quality CPR throughout resuscitation.",
+    "tags": [
+      "pediatric",
+      "cpr",
+      "resuscitation",
+      "compression"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_0",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Airway - Anatomy & Differences",
+    "subtopic": "pediatric_airway_anatomy",
+    "content": "Pediatric airway anatomically different. Head proportionally larger, larynx positioned more superior/anterior (at C3 in infants vs C4-C5 in adults), epiglottis larger, arytenoids more posteriorly positioned, subglottis narrower (cricoid ring), trachea softer/more compressible. Implications: sniffing position less helpful (neutral position preferred); straight blade preferred to visualize epiglottis and arytenoids; smaller tubes needed. Tube sizing: cuffed ETT ID (mm) \u2248 (age + 3.5)/4; uncuffed \u2248 (age + 3)/4. Length (cm, at teeth): 10 + age/2. Example: 4-year-old cuffed 3.5 mm, uncuffed 4.0 mm, length ~12 cm.",
+    "tags": [
+      "pediatric",
+      "airway",
+      "anatomy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_1",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric RSI (Rapid Sequence Intubation)",
+    "subtopic": "pediatric_rsi",
+    "content": "RSI in children: preoxygenation (100% FiO2 \u00d7 3-5 min or 8 vital capacity breaths), then cricoid pressure (modified recently due to aspiration data, but still used at many centers), induction agents (propofol 2-3 mg/kg, etomidate 0.2-0.3 mg/kg, ketamine 1-2 mg/kg), paralytic (succinylcholine 1-2 mg/kg or rocuronium 1-1.2 mg/kg), intubate. Succinylcholine risk: hyperkalemia (especially in denervation injuries, crush, spinal cord injury), malignant hyperthermia. Rocuronium preferred if hyperkalemia risk. Avoid blind nasal intubation in children (epistaxis risk, adenoid hypertrophy).",
+    "tags": [
+      "pediatric",
+      "rsi",
+      "intubation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_2",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Dehydration Assessment - Clinical Dehydration Scale",
+    "subtopic": "dehydration_assessment",
+    "content": "Mild dehydration (5% loss): alert, normal cap refill, normal mucous membranes, dry, slightly decreased urine. Moderate (10%): alert or slightly drowsy, cap refill 2 sec, dry mucous membranes, decreased skin turgor (skin pinch goes down slowly), oliguria. Severe (\u226515%): lethargic/unresponsive, cap refill >2 sec, very dry mucous membranes, poor skin turgor (skin tents), minimal/absent urine, weak pulses, hypotension. Clinical dehydration scale (WHO-based): assesses presence/absence of thirst, mucous membranes, tears, skin turgor, urine output. Mild-moderate: oral/IV rehydration. Severe: IV fluids + admission.",
+    "tags": [
+      "dehydration",
+      "assessment",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_3",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Oral vs. IV Rehydration in Children",
+    "subtopic": "rehydration_routes",
+    "content": "Oral rehydration therapy (ORT): preferred for mild-moderate dehydration, better for maintaining ongoing losses (diarrhea). Solutions: WHO-recommended (75 mEq Na, 20 mEq K, 65 mEq Cl, 20 g glucose/L), examples Pedialyte, WHO-ORS. Give 50 mL/kg over 4 hours (mild), 100 mL/kg over 4 hours (moderate) for replacement + ongoing maintenance. Small frequent sips/feeds reduce vomiting. IV rehydration: severe dehydration, vomiting refractory to ORT, altered consciousness. Solutions: 0.9% NaCl (isotonic, safer), boluses 20 mL/kg over 15-30 min, repeat if hypotensive. Dextrose-containing fluids avoided acutely (risk hyperglycemia, cerebral edema in severe dehydration). Transition to half-normal saline once stable + maintenance fluids.",
+    "tags": [
+      "rehydration",
+      "diarrhea",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_4",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Sepsis - SIRS Criteria Differ",
+    "subtopic": "pediatric_sepsis",
+    "content": "SIRS in children: differs by age. Infants: temp >38.5 or <36\u00b0C, HR >180, RR >50 (normal higher), WBC >17.5k or <5k. Young children: HR >110, RR >40 (depends on age). Sepsis = SIRS + confirmed/suspected infection. Early recognition critical (children compensate well, decompensate rapidly). High suspicion needed for non-specific signs (fever, lethargy, poor intake). Blood cultures before antibiotics. Broad-spectrum antibiotics early (ceftriaxone \u00b1 vancomycin \u00b1 gentamicin depending on age/risk). IV fluids 20 mL/kg bolus if hypotensive/poor perfusion. Vasopressors if hypotensive despite fluids. Source control (drain abscess, remove infected line, etc.).",
+    "tags": [
+      "sepsis",
+      "pediatric",
+      "sirs"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_5",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Shock - Types & Recognition",
+    "subtopic": "pediatric_shock",
+    "content": "Shock = inadequate tissue perfusion. Cardiogenic: poor cardiac output (myocarditis, heart failure). Distributive: peripheral vasodilation (sepsis, anaphylaxis). Hypovolemic: blood/fluid loss (hemorrhage, diarrhea, burns). Obstructive: tamponade, tension pneumothorax. Recognition: tachycardia, prolonged cap refill (>2 sec), oliguria, cool extremities, altered mental status. Early: compensated (normal BP, tachycardia). Late: hypotensive (BP falls late). Children maintain BP longer than adults; hypotension = LATE sign, indicates severe shock. Management: IV access, fluid boluses 20 mL/kg crystalloid (septic, hypovolemic), inotropes if cardiogenic, specific therapy (antibiotics for sepsis, epinephrine for anaphylaxis).",
+    "tags": [
+      "shock",
+      "pediatric",
+      "recognition"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_6",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Febrile Seizures - Definition, Prognosis, Workup",
+    "subtopic": "febrile_seizures",
+    "content": "Febrile seizure = seizure in child 6 months - 5 years with fever (>38.5\u00b0C) without CNS infection. Simple seizure: generalized tonic-clonic, <15 min, single episode in 24h, normal post-ictal period. Complex: focal features, >15 min, >1 seizure in 24h, prolonged post-ictal state. Prognosis: excellent; ~3-5% develop epilepsy later (higher if complex features, developmental delay, family history). Workup: lumbar puncture if <18 months (meningitis signs), or if toxins/ingestion concern, or if return to normal slow. Otherwise, clinical exam + fever source identification sufficient. EEG not routinely needed (findings don't predict recurrence). Antiepileptic prophylaxis not recommended (valproic acid, phenobarbital) except in select cases (frequent recurrences, parental anxiety).",
+    "tags": [
+      "febrile_seizures",
+      "seizure",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_7",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Status Epilepticus in Children - First/Second/Third-Line Therapy",
+    "subtopic": "status_epilepticus_pediatric",
+    "content": "Status epilepticus = seizures >5 min (or \u22652 seizures without return to baseline). First-line: lorazepam 0.1 mg/kg IV bolus (max 4 mg), repeat once if needed. Alternatives: diazepam 0.3 mg/kg IV (onset slower), intranasal midazolam 0.2 mg/kg if no IV access. Second-line (if first-line fails): fosphenytoin 20 PE/kg IV (or phenytoin 20 mg/kg), or levetiracepam 30-60 mg/kg IV. Third-line (refractory): phenobarbital 15-20 mg/kg IV, propofol infusion (ICU setting), or induction coma + intubation if prolonged/life-threatening status. Supportive: airway/oxygenation, place on side (prevent aspiration), monitor glucose (hypoglycemia risk), treat seizure cause (fever, infection, metabolic derangement). Prognosis depends on duration (longer = more morbidity), age, underlying etiology.",
+    "tags": [
+      "status_epilepticus",
+      "seizure",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_8",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Epiglottitis vs Croup - Clinical Differentiation",
+    "subtopic": "epiglottitis_vs_croup",
+    "content": "Epiglottitis: supraglottic inflammation, medical emergency, more common in unvaccinated. Presentation: high fever (>39\u00b0C), tripod position (leaning forward, avoiding neck flexion), drooling, difficulty swallowing, muffled voice ('hot potato voice'), stridor less prominent than croup. X-ray: 'thumb sign' (enlarged epiglottis). Croup: subglottic inflammation, less severe, viral. Presentation: gradual onset, low-grade fever, barky/seal-like cough, inspiratory stridor (worse at night), hoarseness, not toxic appearing. X-ray: 'steeple sign' (subglottic narrowing). Epiglottitis more rapidly progressive, higher risk of airway obstruction. Management: epiglottitis = immediate airway assessment (prepared for intubation), antibiotics (ceftriaxone), keep child calm. Croup = supportive care (dexamethasone, racemic epinephrine for severe).",
+    "tags": [
+      "epiglottitis",
+      "croup",
+      "stridor",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_9",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Anaphylaxis in Children - Epinephrine IM Dosing",
+    "subtopic": "anaphylaxis_pediatric",
+    "content": "Anaphylaxis = severe allergic reaction. Signs: urticaria, angioedema, bronchospasm (wheeze, dyspnea), hypotension, loss of consciousness. Epinephrine IM FIRST-LINE, intramuscular preferred over IV (safer, absorbed predictably). Dosing by weight: <15 kg = 0.15 mg (auto-injector dose), 15-30 kg = 0.3 mg, >30 kg = 0.3-0.5 mg (adult dose). Site: anterolateral thigh (fastest absorption, deeper than arm). Repeat every 5-15 min if symptoms persist. IV access, antihistamines (diphenhydramine 1 mg/kg), corticosteroids (methylprednisolone 1-2 mg/kg) adjuncts but NOT replacements for epinenephrine. Monitor for biphasic reaction (symptoms recur hours later; admit all for observation). Discharge with auto-injectors (EpiPen), educate on use, allergy alerts.",
+    "tags": [
+      "anaphylaxis",
+      "epinephrine",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_10",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Accidental Ingestions - Antidotes & Management",
+    "subtopic": "accidental_ingestions",
+    "content": "Common pediatric ingestions: acetaminophen (liver injury, NAC if >150 mg/kg), iron (GI hemorrhage, chelation with deferoxamine), anticholinergics (agitation, seizures, physostigmine), aspirin (metabolic acidosis, alkalinization), sedatives (respiratory depression, supportive care). Activated charcoal: 1 g/kg (max 50 g) if ingestion <1h ago, orally or via NG tube, binds many drugs (not iron, heavy metals, organic solvents). Gastric decontamination less commonly done now (risks aspiration). Whole-bowel irrigation: polyethylene glycol 25 mL/kg/h for sustained-release tablets, heavy metal ingestions. Specific antidotes: naloxone (opioids), flumazenil (benzodiazepines, use cautiously), fomepizole (toxic alcohols). Poison control call helpful (1-800-222-1222 in US) for specific guidance.",
+    "tags": [
+      "ingestion",
+      "toxin",
+      "pediatric",
+      "antidotes"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_11",
+    "created_at": "2026-06-05T00:30:00.265123"
+  }
+]

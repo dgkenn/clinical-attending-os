@@ -1,0 +1,250 @@
+[
+  {
+    "id": "hcm-anesthesia-d1",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What are the common presenting symptoms of HCM and the most feared acute presentation in young adults?",
+    "answer": "Common symptoms include angina, dyspnea, exercise intolerance, dizziness, and syncope; HCM is the most common cause of sudden cardiac death in young adults despite patients being asymptomatic for decades.",
+    "rationale": "LVOTO and diastolic dysfunction impair cardiac output during exertion; life-threatening arrhythmias (VF) from myocardial disarray can occur without warning, explaining sudden death in young athletes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 494
+      }
+    ],
+    "confusable_with": "aortic stenosis (also causes syncope/angina/dyspnea but is fixed obstruction in older patients)"
+  },
+  {
+    "id": "hcm-anesthesia-d2",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What is the pharmacological first-line treatment for symptom management in HCM and what is its mechanism of benefit?",
+    "answer": "Beta-blockers are first-line for HCM symptom management; they slow heart rate, increase diastolic filling time, reduce LVOTO by decreasing contractility, and limit outflow obstruction during exercise.",
+    "rationale": "LVOTO in HCM worsens with tachycardia (less filling time) and increased contractility; beta-blockers counteract both by reducing HR and inotropy, improving symptoms and preventing dynamic obstruction.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 494
+      }
+    ],
+    "confusable_with": "vasodilators (contraindicated in HCM; reduce afterload and worsen LVOTO)"
+  },
+  {
+    "id": "hcm-anesthesia-d3",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "In the midesophageal long-axis TEE view, what abnormal phenomenon involving the anterior mitral valve leaflet can be seen in HCM with LVOTO?",
+    "answer": "Systolic anterior motion (SAM) of the anterior mitral leaflet is drawn into the LVOT during systole by the Venturi effect from accelerated flow, causing dynamic obstruction and mitral regurgitation.",
+    "rationale": "The hypertrophied septum creates high-velocity flow through the narrowed LVOT; this Venturi effect pulls the anterior mitral leaflet anteriorly, worsening obstruction and causing SAM-related MR.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 661
+      }
+    ],
+    "confusable_with": "prolapsing mitral valve (posterior motion, not anteriorly into LVOT)"
+  },
+  {
+    "id": "hcm-anesthesia-d4",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What are the two catheter-based septal reduction therapies available for HCM with significant LVOTO refractory to medical therapy?",
+    "answer": "Alcohol septal ablation (selective ethanol injection into the first septal perforator coronary artery to produce controlled infarction) and surgical myectomy (Morrow procedure) are the two options; patient selection distinguishes appropriate candidates.",
+    "rationale": "Both reduce septal mass and LVOTO; alcohol septal ablation is less invasive but requires suitable coronary anatomy, while surgical myectomy provides more controlled and lasting relief especially in young patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypertrophic Cardiomyopathy (HCM)",
+        "page": 2
+      }
+    ],
+    "confusable_with": "ICD implantation (used for sudden death prevention, not to relieve obstruction)"
+  },
+  {
+    "id": "hcm-anesthesia-d5",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Anesthetic goals for HCM center on avoiding four physiological changes that worsen LVOTO. What are they?",
+    "answer": "Avoid: tachycardia (reduces filling time), hypovolemia (reduces preload and LVOT dimension), vasodilation (reduces afterload worsening gradient), and increased contractility (worsens SAM and obstruction).",
+    "rationale": "Dynamic LVOTO in HCM worsens when the outflow tract narrows from any combination of these factors; goals are sinus rhythm, adequate preload/afterload, and controlled contractility.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 494
+      }
+    ],
+    "confusable_with": "HFrEF goals (increase CO via contractility - opposite of HCM)"
+  },
+  {
+    "id": "hcm-anesthesia-d6",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "In preexcited atrial fibrillation (WPW with AF), why is immediate electrical cardioversion required when hemodynamic instability develops?",
+    "answer": "Preexcited AF can conduct extremely rapidly over the accessory pathway bypassing the AV node, potentially causing ventricular rates >300 bpm and degeneration to VF; electrical cardioversion is the only safe acute treatment when hemodynamically unstable.",
+    "rationale": "AV nodal blocking agents (verapamil, diltiazem, digoxin, adenosine) are contraindicated in preexcited AF as they may increase accessory pathway conduction, precipitating VF.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation",
+        "page": 100
+      }
+    ],
+    "confusable_with": "rate control with AV nodal agents (dangerous in preexcited AF - can cause VF)"
+  },
+  {
+    "id": "hcm-anesthesia-d7",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary hemodynamic characteristic distinguishing HCM-related heart failure from dilated cardiomyopathy?",
+    "answer": "HCM causes diastolic dysfunction from a stiff, hypertrophied ventricle with preserved (or hyperdynamic) EF and dynamic LVOTO; dilated cardiomyopathy causes systolic dysfunction with reduced EF and dilated chambers.",
+    "rationale": "Management is opposite: HCM requires volume loading, negative inotropy, and vasoconstriction; DCM requires diuresis, positive inotropy where appropriate, and afterload reduction.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 660
+      }
+    ],
+    "confusable_with": "restrictive cardiomyopathy (diastolic dysfunction but no LVOTO and different etiology)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypertrophic Cardiomyopathy (HCM) - Anesthetic Management",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Young patient with family history of sudden cardiac death, genetic mutation (sarcomere protein); exertional symptoms; athlete presenting for pre-participation screening",
+    "pathophysiology": "Autosomal dominant mutation in sarcomere proteins causes asymmetric septal hypertrophy; diastolic dysfunction plus dynamic LVOTO (worsened by SAM of anterior mitral leaflet); myocardial disarray predisposes to VT/VF",
+    "time_course": "Often asymptomatic for decades; sudden cardiac death can be first presentation; symptoms develop insidiously with progressive hypertrophy and diastolic dysfunction",
+    "key_features": "Systolic murmur that increases with Valsalva/standing (worsening LVOTO); SAM on TEE; LVH on echo without alternative cause; family history SCD",
+    "consequence_if_missed": "Unrecognized HCM with inappropriate anesthetic management (vasodilators, tachycardia, hypovolemia) causes catastrophic hemodynamic collapse from acute severe LVOTO; sudden death risk unaddressed without ICD evaluation"
+  },
+  {
+    "id": "ionm-anesthesia-d1",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Which anesthetic agent class has the least suppressive effect on intraoperative neurophysiological monitoring signals and is therefore preferred for procedures requiring IONM?",
+    "answer": "Total intravenous anesthesia (TIVA) with propofol and opioids is preferred over volatile agents for IONM as it causes less signal suppression, particularly for motor evoked potentials and cortical SSEPs.",
+    "rationale": "Volatile anesthetics dose-dependently suppress cortical and subcortical signals; at clinically used concentrations they can eliminate MEP signals entirely, making IONM unreliable.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 564
+      }
+    ],
+    "confusable_with": "nitrous oxide (also suppresses MEPs, should be avoided during IONM)"
+  },
+  {
+    "id": "ionm-anesthesia-d2",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What adverse effects of deep anesthesia are particularly problematic during neuromonitoring cases?",
+    "answer": "Deep anesthesia adversely affects quality of neurophysiologic monitoring (signal suppression) and prolongs emergence; targeting optimal (lighter) anesthetic depth balances patient immobility with monitoring quality.",
+    "rationale": "IONM requires detectable cortical and subcortical signals; deeper anesthesia suppresses these signals, preventing detection of neural injury; lighter planes allow adequate signal amplitude for interpretation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 564
+      }
+    ],
+    "confusable_with": "awareness risk (addressed by using adequate propofol TIVA, not by adding volatile agents)"
+  },
+  {
+    "id": "ionm-anesthesia-d3",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "A patient requiring IONM for spine surgery develops intraoperative opioid-induced ventilatory depression. What are the clear risk factors for this complication?",
+    "answer": "Large opioid dose, advanced age, concomitant CNS depressant use, sleep apnea history, and opioid-naive status are clear risk factors for opioid-induced ventilatory depression.",
+    "rationale": "Respiratory rate and tidal volume progressively decrease with increasing opioid dose; multiple CNS depressants have synergistic respiratory effects; opioid-naive patients lack tolerance to respiratory depression.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 155
+      }
+    ],
+    "confusable_with": "opioid-related sedation (separate from respiratory depression, which is more dangerous)"
+  },
+  {
+    "id": "ionm-anesthesia-d4",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "During an IONM case a spontaneous intraoperative increase in blood pressure with tachycardia suggests what should be checked?",
+    "answer": "Sudden tachycardia and hypertension after uneventful induction should prompt evaluation for inadequate anesthetic depth (awareness/recall risk), particularly when high concentrations of sevoflurane fail to maintain hemodynamic control.",
+    "rationale": "Sevoflurane plus tachycardia and mild hypertension may indicate inadequate anesthetic depth; isoflurane concentration should be verified and supplemental agents considered.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 86
+      }
+    ],
+    "confusable_with": "malignant hyperthermia (tachycardia + hyperthermia + rising EtCO2, more acute and extreme)"
+  },
+  {
+    "id": "ionm-anesthesia-d5",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What alternative sedation technique uses video or audio distraction rather than pharmacological agents during procedures requiring an alert patient?",
+    "answer": "Non-pharmacological approaches such as video or audio distraction or verbal reassurance can serve as alternatives or supplements to pharmacological sedation in monitored anesthesia care (MAC) cases.",
+    "rationale": "These techniques reduce anxiety without the dose-dependent cognitive and respiratory side effects of sedatives, maintaining patient cooperation and communication during procedures requiring neurological assessment.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 251
+      }
+    ],
+    "confusable_with": "minimal sedation with anxiolytics only (also valid, but combines pharmacological and non-pharmacological elements)"
+  },
+  {
+    "id": "ionm-anesthesia-d6",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What intraoperative MAP threshold was associated with increased adverse outcomes in a large 2009 prospective study relevant to neuromonitoring cases?",
+    "answer": "An intraoperative MAP below 50 mmHg OR a 40% decrease from preoperative baseline for more than 10 minutes was associated with increased adverse outcomes.",
+    "rationale": "Cerebral perfusion pressure = MAP - ICP; hypotension reduces CPP and increases risk of cerebral ischemia during procedures with elevated ICP or critical perfusion requirements.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 390
+      }
+    ],
+    "confusable_with": "ICP threshold (normal ICP <20 mmHg, separate from MAP threshold)"
+  },
+  {
+    "id": "ionm-anesthesia-d7",
+    "topic": "IONM: Anesthetic Optimization & Alert Response",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are the key anesthesia-related factors that must be optimized to obtain interpretable IONM signals?",
+    "answer": "Key factors: avoid or minimize volatile agents (use TIVA), maintain adequate MAP (>50-55 mmHg), avoid neuromuscular blockade during MEP monitoring, maintain normothermia, and ensure stable anesthetic depth without abrupt changes during critical signal monitoring.",
+    "rationale": "Each factor independently affects signal amplitude and latency; volatile agents, hypotension, hypothermia, and NMBDs are the most suppressant; TIVA with propofol/opioids provides stable signal conditions.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 204
+      }
+    ],
+    "confusable_with": ""
+  }
+]

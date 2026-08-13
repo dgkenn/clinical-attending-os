@@ -1,0 +1,99 @@
+[
+  {
+    "topic": "ICP Physiology - Monro-Kellie Doctrine",
+    "subtopic": "icp_physiology",
+    "content": "Cranium = rigid box containing: brain (80%), CSF (10%), blood (10%). Total volume fixed. Monro-Kellie doctrine: increase in one component must be compensated by decrease in another to maintain stable ICP. Normal ICP 5-15 mmHg. Pathology increases ICP: mass (hemorrhage, tumor, abscess), cerebral edema (cytotoxic, vasogenic), increased CSF (obstruction), increased venous pressure. Compensatory mechanisms: CSF displacement downward into spinal canal (limited), increased CSF absorption, reduced blood volume (cerebral vasoconstriction). Once compensation exhausted, small volume increase = large ICP rise (steep compliance curve).",
+    "tags": [
+      "icp",
+      "physiology",
+      "monro_kellie"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Causes of Elevated ICP",
+    "subtopic": "icp_etiology",
+    "content": "Mass effect: epidural/subdural hematoma, ICH, space-occupying lesion (tumor, abscess). Cerebral edema (cytotoxic: cell swelling from hypoxia/ischemia; vasogenic: capillary leak from inflammation/trauma). CSF obstruction: intraventricular hemorrhage, tumor, hydrocephalus. Venous congestion: impaired cerebral venous return (patient position, ventilation, mass effect compressing veins). Metabolic: hypoxia, hypercapnia (CO2 vasodilation), hyperthermia. Seizures: increased CMRO2, hyperemia. Traumatic brain injury. Subarachnoid hemorrhage. Ischemic stroke with brain swelling. Hypoxic-ischemic encephalopathy.",
+    "tags": [
+      "icp",
+      "etiology"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Clinical Signs of Elevated ICP",
+    "subtopic": "icp_presentation",
+    "content": "Early signs: headache, vomiting (projectile, without nausea), drowsiness. Progressive: hypertension, bradycardia, respiratory changes (Cheyne-Stokes breathing, central neurogenic hyperventilation). Cushing's triad (late, ominous sign): hypertension + bradycardia + irregular respirations = brainstem compression. Pupil changes: ipsilateral pupil dilation (oculomotor nerve compression from uncal herniation), later bilateral dilation (brainstem involvement). Posturing: decorticate (arms flexed, legs extended = cerebral lesion) vs. decerebrate (all limbs extended = brainstem), both grave signs. Seizures common with increased ICP.",
+    "tags": [
+      "icp",
+      "presentation",
+      "signs"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Herniation Syndromes",
+    "subtopic": "icp_complications",
+    "content": "Uncal (transtentorial) herniation: superior temporal lobe herniates through tentorial notch. Presents: ipsilateral dilated pupil (oculomotor nerve CN III compression), contralateral weakness (cerebral peduncle compression). Central herniation: both hemispheres shift downward through foramen magnum. Presents: bilateral pupil dilation, loss of brainstem reflexes, death. Tonsillar herniation: cerebellar tonsils herniate into foramen magnum. Presents: neck stiffness (meningeal sign), apnea (respiratory center compression), rapid deterioration. All herniation syndromes medical emergencies requiring immediate intervention.",
+    "tags": [
+      "icp",
+      "complications",
+      "herniation"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Cerebral Perfusion Pressure (CPP) & Autoregulation",
+    "subtopic": "icp_physiology",
+    "content": "CPP = MAP - ICP (normal ≥60-70 mmHg). Goal: maintain CPP >60 to ensure adequate brain perfusion. If ICP rises, need to increase MAP to maintain CPP. Cerebral autoregulation: normally, brain maintains constant cerebral blood flow across MAP range 50-150 mmHg (via vasoconstriction/dilation). Severe injury (TBI, stroke): autoregulation lost, CBF becomes pressure-dependent (low MAP = ischemia, high MAP = hyperemia/edema). Management: maintain MAP >65 (via vasopressors if needed) + control ICP (avoid hypotension which worsens outcome).",
+    "tags": [
+      "icp",
+      "cpp",
+      "autoregulation"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "ICP Monitoring - Intraventricular Catheter, Bolt, Epidural",
+    "subtopic": "icp_monitoring",
+    "content": "Intraventricular catheter (ventriculostomy, gold standard): small catheter inserted into lateral ventricle, connected to external ventricular drain (EVD). Advantage: most accurate ICP measurement, allows CSF drainage (therapeutic + diagnostic samples), allows intrathecal medication delivery. Complication: 5-10% ventriculitis, catheter malposition. Subarachnoid bolt: less invasive, but less accurate if blood/debris obstructs. Epidural sensor: non-invasive, placed under dura, good accuracy but can't drain CSF. No monitoring modality reduces mortality, but guides treatment decisions. Indications for ICP monitoring: GCS ≤8 (TBI, other causes), abnormal CT, age >40, motor deficits, hypotension episodes.",
+    "tags": [
+      "icp",
+      "monitoring",
+      "ventriculostomy"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "First-Line ICP Management - Positioning, Oxygenation, Temperature",
+    "subtopic": "icp_treatment",
+    "content": "(1) Head of bed 30° (improves venous drainage, CSF absorption, reduces ICP); (2) Neck neutral (avoid compression of jugular veins); (3) Avoid hypoxia (SpO2 >94%, PaO2 >60); (4) Avoid hypercarbia (PaCO2 >45 causes vasodilation → increased ICP); mild hypocapnia acceptable (PaCO2 35-40, but excessive <30 risks ischemia); (5) Temperature: fever increases CMRO2 → worsens edema, maintain normothermia; therapeutic hypothermia (33-35°C) may help acute phase, controversial. (6) Sedation (propofol, midazolam) reduces CMRO2; avoid fentanyl alone (doesn't reduce CMRO2). (7) Avoid hyperthermia, maintain glucose 140-180.",
+    "tags": [
+      "icp",
+      "treatment",
+      "first_line"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Osmotic Therapy for Cerebral Edema",
+    "subtopic": "icp_treatment",
+    "content": "Mannitol 20%: osmotic diuretic, draws fluid from brain interstitium into vasculature, lowers ICP. Dose: 0.5-1 g/kg IV over 15-30 min, repeat q6-8h. Onset 20-30 min, duration 4-6h. Monitoring: osmolality (limit <320 mOsm/kg risk organ failure), renal function, serum Na. Complication: rebound increase in ICP if mannitol crosses disrupted BBB. Hypertonic saline (3%): sodium draws fluid osmotically. Dose: 30 mL bolus or 0.1-1 mL/kg/h infusion. Advantage: no renal side effects, may improve immune function. Both equally effective; choice often institutional. Avoid both agents if severe hyperchloremic acidosis. Limit osmolality <320.",
+    "tags": [
+      "icp",
+      "osmotic_therapy"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Decompressive Craniectomy for Refractory ICP",
+    "subtopic": "icp_treatment",
+    "content": "Surgical removal of bone flap (frontal, parietal, or bifrontal) to allow brain swelling without ICP constraint. Indications: refractory elevated ICP (>20 mmHg despite medical management) in TBI, ischemic stroke, ICH if life-threatening herniation. Outcome: decreases mortality ~23% (study of TBI, DECRA trial), but increases severe disability (trading death for vegetative state in some). Timing: early (within 72h) may be beneficial. Complications: infection, CSF leak, need for cranioplasty later. Mortality reduction NOT proportional to improvement in outcome (paradox). Discussed as last resort when prognosis dire.",
+    "tags": [
+      "icp",
+      "surgery",
+      "decompressive_craniectomy"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

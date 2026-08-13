@@ -1,0 +1,21 @@
+# Keep the tutor's Hugging Face Space awake (independent of your laptop/Claude).
+# Put this in a GitHub repo at:  .github/workflows/keepwarm.yml
+name: keep-warm
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours (HF free Spaces sleep after ~48h idle)
+  workflow_dispatch:         # lets you run it manually to test
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping HF Space /health
+        run: |
+          for i in 1 2 3; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -m 30 \
+              https://deankennedy-clinical-attending-os.hf.space/health) || true
+            echo "attempt $i -> HTTP $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 20
+          done
+          echo "health check failed after 3 attempts"; exit 1

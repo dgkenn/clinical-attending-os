@@ -1,0 +1,369 @@
+[
+  {
+    "id": "hyperphosphatemia-d1",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "In patients with CKD, vascular calcification detected by CT occurs in what proportion of dialysis patients, and what is the primary cardiac consequence?",
+    "answer": "Vascular calcification detected in >80% of dialysis patients by CT; primary cardiac consequence is cardiovascular disease, the most common cause of death in CKD",
+    "rationale": "Hyperphosphataemia, along with hypercalcaemia and high PTH, induces smooth muscle cell transformation into osteoblast-like cells causing medial calcification.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 10
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d2",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Where is 75% of filtered phosphate reabsorbed, and what is the primary transporter at this site?",
+    "answer": "75% reabsorbed in the proximal tubule via Type II Na/Pi co-transporter (NaPi2a, NaPi2c); PTH inhibits this transporter to increase phosphaturia",
+    "rationale": "Understanding proximal tubule phosphate reabsorption explains why PTH and FGF23 act here to regulate serum phosphate.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d3",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Pseudohyperphosphataemia from laboratory interference occurs in which three conditions?",
+    "answer": "Hyperglobulinaemia, hyperlipidaemia, and hyperbilirubinaemia cause interference in phosphate assay resulting in falsely elevated readings",
+    "rationale": "Recognition of this artefact prevents unnecessary treatment of laboratory values that do not reflect true hyperphosphataemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 4
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d4",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "How can rhabdomyolysis be biochemically distinguished from tumour lysis syndrome as causes of hyperphosphataemia?",
+    "answer": "Rhabdomyolysis: markedly elevated CK and normal/mildly elevated uric acid. TLS: normal or marginal CK elevation but markedly elevated uric acid",
+    "rationale": "Both release intracellular phosphate but through different mechanisms; the biochemical profile guides specific treatment (allopurinol/rasburicase for TLS vs hydration for rhabdo).",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 7
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d5",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "In CKD patients, what is the recommended daily phosphate intake, and why is severe protein restriction problematic?",
+    "answer": "Limit phosphate to 800-1000 mg/day with protein intake of 1.2 g/kg/day; severe protein restriction causes malnutrition and poorer outcomes",
+    "rationale": "Most dietary phosphate is protein-bound; restricting protein dramatically reduces phosphate but at the cost of malnutrition in CKD patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 8
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d6",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Iron-based phosphate binders have what advantage over calcium-based binders, and what is their key safety advantage?",
+    "answer": "Iron-based binders do not cause iron overload (excreted as the phosphate-iron complex) and avoid the hypercalcaemia risk of calcium-based binders",
+    "rationale": "Calcium-based binders contribute to positive calcium balance and vascular calcification; iron-based binders are calcium-free and do not cause iron overload.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 9
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "hyperphosphatemia-d7",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Pseudohypoparathyroidism type 1 (PHP) presents with hyperphosphataemia and hypocalcaemia; what is the underlying mechanism?",
+    "answer": "End-organ resistance to PTH (Gs-alpha protein mutation); PTH levels are elevated but kidneys and bones cannot respond, causing phosphate retention and hypocalcaemia",
+    "rationale": "PHP patients have the Albright hereditary osteodystrophy (AHO) phenotype with PTH resistance; treatment targets serum calcium, not PTH level.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 6
+      }
+    ],
+    "confusable_with": "hypoparathyroidism (low PTH; hyperphosphatemia from reduced PTH secretion, not resistance)"
+  },
+  {
+    "id": "htn-kidney-d1",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Hypertension causes which three major end-organ complications relevant to anaesthesia planning?",
+    "answer": "Intravascular volume depletion (increased haematocrit), kidney failure, and cerebral haemorrhage; also increases myocardial work predisposing to ischaemia",
+    "rationale": "Chronic hypertension causes structural vascular damage; volume depletion from pressure natriuresis makes induction-related hypotension more severe.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 400
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-kidney-d2",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Cirrhotic liver disease and chronic kidney failure cause what pharmacokinetic change that affects muscle relaxant dosing?",
+    "answer": "Increased volume of distribution and lower plasma concentrations for water-soluble drugs (e.g., muscle relaxants); drugs dependent on hepatic/renal excretion show prolonged clearance",
+    "rationale": "Combined effects of ascites (increased Vd for water-soluble drugs) and impaired clearance require dose adjustment of renally/hepatically cleared relaxants.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 318
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-kidney-d3",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Fenoldopam for hypertensive crisis: what receptor does it act on, and what are its renal effects?",
+    "answer": "Fenoldopam is a selective dopamine-1 (DA1) receptor agonist; decreases systolic and diastolic BP; clearance unaltered in kidney or hepatic failure; increases renal blood flow",
+    "rationale": "DA1 agonism causes renal vasodilation and natriuresis, making fenoldopam potentially renoprotective in hypertensive emergencies with kidney involvement.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 412
+      }
+    ],
+    "confusable_with": "low-dose dopamine (non-selective, DA1+DA2+adrenergic; tachydysrhythmias; not renoprotective)"
+  },
+  {
+    "id": "htn-kidney-d4",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Hydralazine lowers peripheral vascular resistance; what compensatory cardiovascular responses are triggered and why are they detrimental?",
+    "answer": "Reflexive tachycardia, increased myocardial contractility, and increased cardiac output; detrimental in patients with coronary artery disease by increasing myocardial oxygen demand",
+    "rationale": "Reflex sympathetic activation counteracts the antihypertensive effect and risks myocardial ischaemia; co-prescription of a beta-blocker prevents this.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 411
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-kidney-d5",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Nitroprusside administration causes renin release; how can this be prevented, and what is the clinical significance?",
+    "answer": "Renin release can be inhibited by co-administration of beta-blockers; without inhibition, reactive renin release may cause rebound hypertension when nitroprusside is stopped",
+    "rationale": "Renin-angiotensin activation during nitroprusside therapy opposes its antihypertensive effect and causes rebound hypertension on discontinuation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 409
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-kidney-d6",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Pancuronium is primarily excreted by which route, and what happens to its duration in kidney failure?",
+    "answer": "40% renal excretion; kidney failure prolongs neuromuscular blockade; pancuronium is also deacetylated by liver (10% biliary)",
+    "rationale": "Renally-cleared NMBDs accumulate in kidney failure, requiring dose reduction and increased monitoring; cisatracurium (Hofmann elimination) is preferred in combined organ failure.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 347
+      }
+    ],
+    "confusable_with": "cisatracurium (Hofmann elimination; organ-independent clearance)"
+  },
+  {
+    "id": "htn-kidney-d7",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "A CKD patient has their medications reviewed before surgery. KDIGO 2024 recommends what broad treatment strategy?",
+    "answer": "Comprehensive treatment strategy addressing all risk factors for CKD progression and its complications (Figure 17 of KDIGO 2024)",
+    "rationale": "CKD management requires multi-modal risk reduction (BP control, RAAS blockade, SGLT2 inhibitors, dietary modification) to slow progression and reduce CV mortality.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2024 CKD",
+        "page": 90
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d1",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "What BP threshold and clinical feature distinguish a hypertensive emergency from a hypertensive urgency?",
+    "answer": "Emergency: BP >180/120 mmHg WITH evidence of acute target organ dysfunction (encephalopathy, ICH, ACS, acute LV failure, aortic dissection, eclampsia). Urgency: severe BP elevation WITHOUT target organ damage",
+    "rationale": "Organ damage drives the urgency; identical BP levels without organ involvement are urgencies requiring slower oral management over 24-48h.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 70
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d2",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "What is the initial BP reduction target in a hypertensive emergency, over what timeframe, and what is the subsequent 2-6 hour target?",
+    "answer": "Reduce MAP by no more than 25% within minutes to 1 hour; then if stable reduce to 160/100-110 mmHg within the next 2-6 hours",
+    "rationale": "Overly rapid BP reduction risks cerebral, coronary, and renal ischaemia from loss of autoregulation; staged reduction minimises this risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 70
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d3",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "Short-acting nifedipine is no longer used in hypertensive emergencies; why?",
+    "answer": "Short-acting nifedipine causes unpredictable precipitous BP drops, reflex tachycardia, and increased risk of stroke and MI; no longer considered acceptable",
+    "rationale": "Rapid uncontrolled BP reduction with short-acting nifedipine eliminates cerebral autoregulation and causes end-organ ischaemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 70
+      }
+    ],
+    "confusable_with": "long-acting dihydropyridines (amlodipine; safe chronic use, not for acute emergencies)"
+  },
+  {
+    "id": "htn-emergency-d4",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "What proportion of patients with severely elevated BP suffer from hypertensive emergencies vs urgencies, based on retrospective data?",
+    "answer": "57.5% had hypertensive emergencies; 98% of emergency patients were hospitalised; median survival was 14 days for neurovascular emergencies and 50 days for cardiovascular emergencies",
+    "rationale": "The poor prognosis highlights that hypertensive emergencies are not benign presentations and require ICU-level monitoring and treatment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypertensive Urgency and Emergency",
+        "page": 6
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d5",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "What are the most common precipitants of hypertensive urgency in a previously hypertensive patient?",
+    "answer": "Noncompliance with antihypertensive therapy, use of sympathomimetics, thyroid dysfunction; also anxiety, pain, and poor equipment/technique causing falsely elevated readings",
+    "rationale": "Most hypertensive urgencies are preventable; identifying and correcting the precipitant (medication compliance) is as important as acute BP treatment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypertensive Urgency and Emergency",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d6",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "Aortic dissection as a hypertensive emergency requires what specific BP and heart rate management targets?",
+    "answer": "Target systolic BP <120 mmHg and heart rate <60 bpm urgently; beta-blockers first to reduce dP/dt, then vasodilators if needed",
+    "rationale": "Reducing shear stress on the aortic wall requires simultaneous BP reduction and heart rate control; vasodilators alone cause reflex tachycardia worsening dissection.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 70
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "htn-emergency-d7",
+    "topic": "Hypertensive emergencies & urgencies",
+    "domain": "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)",
+    "discipline": "medicine",
+    "stem": "1-2% of hypertensive patients will experience a hypertensive crisis in their lifetime; what does this term encompass?",
+    "answer": "Hypertensive crisis encompasses both hypertensive urgencies and emergencies; it affects 1-2% of the ~1 billion people globally with hypertension",
+    "rationale": "Understanding lifetime risk helps frame patient education about medication adherence as a primary prevention strategy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypertensive Urgency and Emergency",
+        "page": 2
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypertensive emergencies & urgencies",
+    "discipline": "medicine",
+    "enabling_conditions": "Underlying hypertension, medication non-compliance, sympathomimetic use, pregnancy (eclampsia), renal artery stenosis",
+    "pathophysiology": "Severely elevated BP causes mechanical stress and endothelial dysfunction leading to fibrinoid necrosis, ischaemia, and end-organ damage",
+    "time_course": "Emergency: minutes to hours of organ damage; urgency: no acute damage, can be managed over 24-48h",
+    "key_features": "BP >180/120 with headache, vision change, chest pain, dyspnea, altered mental status; examine fundus (papilloedema)",
+    "consequence_if_missed": "Stroke, MI, acute pulmonary oedema, aortic dissection, AKI, hypertensive encephalopathy, eclampsia"
+  }
+]

@@ -1,0 +1,144 @@
+=== [384] Idiopathic Pulmonary Fibrosis ===
+  [0] book=Morgan & Mikhail, page=875
+       Section: B. Intraoperative Management. failure may also require treatment. Large pleural effusions usually require drainage before anesthesia. Similarly, massive abdominal distention should be relieved by nasogastric suction or drainage of ascites. Persistent hypoxemia may require mechanical ventilation. B. Intraoperative Management Selection of anesthetic agents should be tailored to each patient
+  [1] book=Morgan & Mikhail, page=925
+       Cystic fibrosis Chronic obstructive pulmonary disease α1-Antitrypsin deficiency Pulmonary lymphangiomatosis Idiopathic pulmonary fibrosis Primary pulmonary hypertension ANESTHETIC CONSIDERATIONS
+  [2] book=Morgan & Mikhail, page=925
+       Section: Cystic fibrosis. retention is also very common. Patients may be ventilator dependent or may be supported by extracorporeal membrane oxygenation (ECMO). TABLE 25–3 Indications for isolated lung transplantation. Cystic fibrosis Chronic obstructive pulmonary disease α1-Antitrypsin deficiency Pulmonary lymphangiomatosis Idiopathic pulmonary fibrosis Primary pulmonary hypertension ANESTHETIC C
+  [3] book=Morgan & Mikhail, page=1486
+       Section: CYSTIC FIBROSIS. are common. Neck flexion during laryngoscopy and intubation may result in atlantooccipital dislocation because of the congenital laxity of these ligaments. The possibility of associated congenital diseases must always be considered. As in all pediatric patients, care must be taken to avoid air bubbles in the intravenous line because of possible right-to-left shunts and pa
+  [4] book=Morgan & Mikhail, page=875
+       Causes include hypersensitivity pneumonitis from occupational and environmental pollutants, drug toxicity (bleomycin and nitrofurantoin), radiation pneumonitis, idiopathic pulmonary fibrosis, autoimmune diseases, and sarcoidosis
+
+=== [385] Immune checkpoint inhibitor toxicities (immune-related adverse events) ===
+  [0] book=StatPearls, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK611983 URL: https://www.ncbi.nlm.nih.gov/books/NBK611983/ Topic: Immune checkpoint inhibitor toxicities (immune-related adverse events) Article Title: Immune Checkpoint Inhibitor–Associated Acute Kidney Injury License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  [1] book=StatPearls: StatPearls   Acute Kidney Injury (AKI) in ICU, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK611983 URL: https://www.ncbi.nlm.nih.gov/books/NBK611983/ Topic: Acute Kidney Injury (AKI) in ICU Article Title: Immune Checkpoint Inhibitor–Associated Acute Kidney Injury License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Isl
+  [2] book=Morgan & Mikhail, page=1028
+       In addition, acute seronegative myasthenia gravis has been associated with infusion of immune checkpoint inhibitor cancer chemotherapeutic agents, including nivolumab, pembrolizumab, and ipilimumab
+  [3] book=Morgan & Mikhail, page=1152
+       Section: How can the shivering be stopped?. How can the shivering be stopped? Regardless of its cause, shivering has the undesirable effects of markedly increasing metabolic oxygen demand (100–200%) and CO2 production. Both cardiac output and minute ventilation must therefore increase, and these effects are often poorly tolerated by patients with limited cardiac or pulmonary reserve. Although the 
+  [4] book=StatPearls: StatPearls   Diabetic Ketoacidosis (DKA), page=3
+       Section: Substance abuse-induced diabetic ketoacidosis. ding use of immune checkpoint inhibitors (ICIs) in oncology has improved cancer outcomes but introduced new immune-related adverse events. Endocrinopathies represent the most frequent of these, with a subset presenting as immune checkpoint inhibitor diabetes mellitus (ICI-DM). Patients with ICI-DM typically have no prior history of diabetes a
+
+=== [386] Interstitial Lung Disease: Connective Tissue Disease ===
+  [0] book=Morgan & Mikhail, page=603
+       Section: Sympathetic activation increases the release of norepinephrine from nerve endings in. Sympathetic activation increases the release of norepinephrine from nerve endings in the heart and secretion of epinephrine from the adrenal glands into the circulation. Although enhanced sympathetic outflow can initially maintain cardiac output by increasing heart rate and contractility, worsening ventr
+  [1] book=StatPearls, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK572061 URL: https://www.ncbi.nlm.nih.gov/books/NBK572061/ Topic: Interstitial Lung Disease: Connective Tissue Disease Article Title: Undifferentiated Connective Tissue Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure
+  [2] book=StatPearls, page=7
+       be similar to those with systemic lupus erythematosus and rheumatoid arthritis. [11] [30] [9] [31] [32] [14] [33] It is mentioned in a recent study which was published in 2019 that clinical practice guidelines or recommendations were not defined yet, and potential areas of intervention and a precise definition of undifferentiated connective tissue disease are still absent. This uncertainty regardi
+  [3] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK541084 URL: https://www.ncbi.nlm.nih.gov/books/NBK541084/ Topic: Non-IPF Interstitial Lung Diseases Article Title: Interstitial Lung Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing
+  [4] book=MGH Housestaff Manual, page=53
+       Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interstitial Lung Disease Christina Shincovich O V E R V I E W Heterogeneous group of lung diseases involving the replacement of normal lung parenchyma with varying degrees of inflammation and fibrosis (scarring), can involve any part of the lung parenchyma Presentation: progressive dyspnea, non-prod. cough, hypoxemia (esp. w/exercise);
+
+=== [387] Kidney Stones (Nephrolithiasis) ===
+  [0] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=7
+       Section: Plain Abdominal X-ray. Plain Abdominal X-ray A kidney, ureter, and bladder (KUB) x-ray is readily available and is often used initially to evaluate abdominal pain to rule out peritonitis. Uric acid stones are radiolucent, while calcium-based stones are radioopaque. Ultrasonography is readily available, free from harmful ionizing radiation, and can be performed easily at the bedside. Ultra
+  [1] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK560726 URL: https://www.ncbi.nlm.nih.gov/books/NBK560726/ Topic: Kidney Stones (Nephrolithiasis) Article Title: Uric Acid Nephrolithiasis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2
+  [2] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=2
+       care and follow-up with primary care providers to ensure patients with uric acid nephrolithiasis receive ongoing preventive measures and management in a multidisciplinary healthcare approach. Uric acid nephrolithiasis, a form of kidney stone disease, results from the accumulation of uric acid crystals in the kidneys. These crystals can aggregate into stones, leading to painful and potentially recu
+  [3] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=10
+       Section: Differential Diagnosis. is used when medical treatment fails or when associated with severe urinary tract infection. [79] [80] A urinary tract infection with a blocked kidney from a stone is a surgical emergency and should be addressed urgently. It may require emergent drainage by a double J stent placed cystoscopically or a percutaneous nephrostomy. See the companion StatPearls reference
+  [4] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=11
+       Section: Deterrence and Patient Education. by adopting good dietary habits, avoiding dehydration, treating elevated serum and urinary uric acid levels, and correctly using alkalinizing agents. Uric acid stones can be associated with complications such as urinary tract obstruction, leading to renal failure and sepsis. Treatment-related complications with extracorporeal shock wave lithotripsy includ
+
+=== [388] Liver Transplantation: Indications & Perioperative Care ===
+  [0] book=Morgan & Mikhail, page=1203
+       Section: Hypotensive anesthesia should be avoided because of its potentially deleterious. Doppler or TEE probe in a patient with esophageal variceal disease. Hypotensive anesthesia should be avoided because of its potentially deleterious effects on liver function. Administration of antifibrinolytics, such as ε-aminocaproic acid or tranexamic acid, may reduce operative blood loss, especially if fib
+  [1] book=Morgan & Mikhail, page=1536
+       Section: CASE DISCUSSION. along with muscle relaxants. When anesthesia for bedside tracheostomy is performed, it is important that the endotracheal tube not be withdrawn from the trachea until end-tidal CO2 is measured from the newly placed tracheostomy tube. CASE DISCUSSION Acute Hypoxia After TIPS Procedure in the Radiology Suite A 58-year-old woman with decompensated cryptogenic cirrhosis and r
+  [2] book=Miller/Baby Miller, page=688
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS Patients with liver failure have no alternatives to liver transplantation. Currently the median time to transplant for waiting list candidates is 11 months. For the highest- acuity recipients, those with Model for End-stage Liver Disease (MELD) scores of 35 or more (a group accounting for a fifth of
+  [3] book=StatPearls, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK559161 URL: https://www.ncbi.nlm.nih.gov/books/NBK559161/ Topic: Liver Transplantation: Indications & Perioperative Care Article Title: Liver Transplantation License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): Stat
+  [4] book=Morgan & Mikhail, page=1203
+       This team should have a thorough understanding of the indications for and contraindications to liver transplantation (Tables 34–9 and 34–10), as well as the perioperative implications of associated comorbidities such as coronary artery disease, cirrhotic cardiomyopathy
+
+=== [389] Lung Cancer: Screening and Diagnosis ===
+  [0] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=128
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 117 Several studies involving the use of low-dose chest computed tomography (LDCT) screening have shown improved survival.(395,396,1329) The United States Preventive Services Task Force (USPSTF) updated its recommendation for lung cancer screening in 2021.(1330) Their recommendation was based on a system
+  [1] book=StatPearls: StatPearls   Lung Cancer  Screening and Diagnosi, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK537283 URL: https://www.ncbi.nlm.nih.gov/books/NBK537283/ Topic: Lung Cancer: Screening and Diagnosis Article Title: Lung Cancer Screening License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 
+  [2] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=40
+       Section: COPD and other chronic conditions later in life merits future investigation.(41). Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 29 questionnaire was also found to be an effective way to identify undiagnosed COPD patients.(378) The potential use of spirometry in children, adolescents and young adults to identify individuals with poor lung de
+  [3] book=StatPearls: StatPearls   Lung Cancer  Screening and Diagnosi, page=2
+       Section: Screening Recommendations. considerations for lung cancer screening and outline the role of the interprofessional team in considering the limited screen tools available for patients at higher risk. Worldwide lung cancer has the highest rate of mortality and is the leading cause of cancer deaths. The incidence of lung cancer is approximately equal to its mortality. There are approximately 
+  [4] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=41
+       Section: Leveraging incidental lung imaging abnormalities for COPD screening. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 30 Quantitative analysis of density can also be used to detect COPD with varying sensitivity and specificity depending on the threshold chosen. In the National Lung Cancer Screening Trial (NLST), among individuals > 65 years, a
+
+=== [390] Lymphoma: Hodgkin and non-Hodgkin approach ===
+  [0] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK589677 URL: https://www.ncbi.nlm.nih.gov/books/NBK589677/ Topic: Lymphoma: Hodgkin and non-Hodgkin approach Article Title: Relapsed and Refractory Follicular Lymphoma License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (
+  [1] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=7
+       Section: Differential Diagnosis. ] . Lenalidomide with rituximab or obinutuzumab are other alternatives. AUGMENT trial evaluated the addition of lenalidomide to rituximab, resulting in improved PFS (39 months versus 14 months); OS data was immature. Patients on lenalidomide plus rituximab had higher rates of infections, cutaneous reactions, and cytopenia. [39] After 2 prior systemic therapies, the
+  [2] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       As the most prevalent indolent lymphoma and the second most common non-Hodgkin lymphoma (NHL), it has a relapsing and remitting course with the potential to progress to aggressive disease
+  [3] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       Continuing Education Activity Follicular lymphoma is the second most common subtype of non-Hodgkin lymphoma (NHL) and the most common among clinically indolent NHLs
+  [4] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=7
+       CHRONOS-3 trial randomly assigned 458 patients with relapsed clinically indolent non-Hodgkin lymphoma (275 with follicular lymphoma) in a 2:1 ratio to receive copanlisib plus rituximab versus placebo plus rituximab
+
+=== [391] MEN Syndromes (Multiple Endocrine Neoplasia) ===
+  [0] book=Morgan & Mikhail, page=1244
+       Section: Multiple endocrine neoplasia (MEN) is characterized by tumors in several. What could be the cause of this patient’s hypertensive crisis during induction of general anesthesia? Multiple endocrine neoplasia (MEN) is characterized by tumors in several endocrine organs. MEN type 1 consists of pancreatic (gastrinomas, insulinomas), pituitary, and parathyroid tumors. MEN type 2 consists of medu
+  [1] book=Morgan & Mikhail, page=1244
+       Because MEN syndromes are hereditary, family members should be screened for early signs of pheochromocytoma, thyroid cancer, and hyperparathyroidism
+  [2] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK599550 URL: https://www.ncbi.nlm.nih.gov/books/NBK599550/ Topic: MEN Syndromes (Multiple Endocrine Neoplasia) Article Title: Chronic Prostatitis and Chronic Pelvic Pain Syndrome in Men License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet].
+  [3] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       Continuing Education Activity Chronic prostatitis is a prevalent yet frequently underdiagnosed and mismanaged condition that significantly impacts men's health, with an estimated 2 million outpatient consultations in the United States annually
+  [4] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       This syndrome is the third most commonly diagnosed urological disease in men and becomes even more predominant among those younger than 50, constituting the most common urological pathology in this demographic
+
+=== [392] Malignant Pleural Effusion ===
+  [0] book=Morgan & Mikhail, page=1923
+       Section: Pleural effusion. Pleural effusion Airway obstruction Upper airway Foreign body Sleep disorders Lower airway Severe asthma Chronic obstructive pulmonary disease Parenchymal lung disease Pulmonary edema Pulmonary emboli Interstitial lung disease Ventilator malfunction Increased CO2 production Large caloric loads Malignant hyperthermia Intensive shivering Prolonged seizure activity Thyroid 
+  [1] book=Morgan & Mikhail, page=904
+       Section: Clinical Manifestations. arise from almost any source, but commonly they are from cancers of the kidney, breast, ovary, testis, colon, rectum, head and neck, and uterus. Metastases may be present in lung tissue, lymph nodes, or both. Clinical Manifestations Symptoms may include cough, hemoptysis, wheezing, weight loss, productive sputum, dyspnea, or fever. Pleuritic chest pain or pleural 
+  [2] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=2
+       o educate, treat, and monitor patients with malignant pleural effusion to improve outcomes. Access free multiple choice questions on this topic. Differentiate malignant pleural effusion from other causes of pleural effusion using cytological examination and molecular testing. Screen for poor prognostic factors, such as loculations, to better stratify patients for appropriate interventions in those
+  [3] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK574541 URL: https://www.ncbi.nlm.nih.gov/books/NBK574541/ Topic: Malignant Pleural Effusion Article Title: Malignant Pleural Effusion License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 
+  [4] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=9
+       Section: Summary of physical findings. oquy is the increased voice resonance while passing through the lung structures. A whispered sound is heard clearly after placing a stethoscope over the patient's chest. Both whispered pectoriloquy and egophony may be appreciated at the upper border of the pleural effusion. Summary of physical findings Findings of dullness to percussion and decreased vocal fr
+
+=== [393] Microscopic Colitis ===
+  [0] book=StatPearls: StatPearls   Microscopic Colitis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK534213 URL: https://www.ncbi.nlm.nih.gov/books/NBK534213/ Topic: Microscopic Colitis Article Title: Gross and Microscopic Hematuria License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Ja
+  [1] book=StatPearls: StatPearls   Microscopic Colitis, page=2
+       Section: Hematuria Evaluation and Referral. the most commonly diagnosed urological disorders, accounting for over 20% of all urological evaluations. [1] [2] While hematuria can be classified in multiple ways—eg, intermittent or constant, glomerular or nonglomerular, and symptomatic or asymptomatic—the most clinically useful distinction separates cases into gross (visible) and microscopic (invisibl
+  [2] book=MGH Housestaff Manual, page=81
+       Section: Inflammatory Bowel Disease. Inflammatory Bowel Disease May Saito C L I N I C A L P R E S E N T A T I O N Epidemiology: ~1.3% USA prevalence, onset 15-30y, bimodal w/ 2nd peak 50-80y. Genetic predisposition (↑risk: +FamHx, other autoimmune dz; female (Crohn’s); ↑incidence in Jewish, white, however increasing dx rate in non-white) + environment (↑risk: Western diet, abx, NSAIDs, sleep depri
+  [3] book=StatPearls: StatPearls   Microscopic Colitis, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK534213 URL: https://www.ncbi.nlm.nih.gov/books/NBK534213/ Topic: Microscopic Colitis Article Title: Gross and Microscopic Hematuria License: CC BY-NC-ND 4.0 NCBI Bookshelf
+  [4] book=MGH Housestaff Manual, page=124
+       diff abx-associated diarrhea, infectious diarrhea, post-infectious IBS, IBD, microscopic colitis, Celiac disease Severity: see table below; severe colitis may be c/b hypovolemia, AKI, marked leukocytosis, lactic acidosis, protein-losing enteropathy; fulminant colitis characterized by hypotension/shock, ileus, toxic
+
+=== [394] Nephrotic Syndrome ===
+  [0] book=Morgan & Mikhail, page=1865
+       Section: Congestive heart failure. Congestive heart failure Nephrotic syndrome Hyponatremia & Low Total Body Sodium Progressive losses of both sodium and water eventually lead to extracellular volume depletion. As the intravascular volume deficit approaches 5% to 10%, nonosmotic ADH secretion is activated (see earlier discussion). With further volume depletion, the stimuli for nonosmotic ADH relea
+  [1] book=Morgan & Mikhail, page=1235
+       Section: MINERALOCORTICOID EXCESS. MINERALOCORTICOID EXCESS Clinical Manifestations Hypersecretion of aldosterone by the adrenal cortex (primary aldosteronism) can be due to a unilateral adenoma (aldosteronoma or Conn syndrome), bilateral hyperplasia, or in very rare cases, carcinoma of the adrenal gland. Some disease states stimulate aldosterone secretion by affecting the renin–angiotensin system
+  [2] book=Morgan & Mikhail, page=1080
+       Edematous States (Sodium Overload) These disorders include heart failure, cirrhosis, nephrotic syndrome, and kidney disease
+  [3] book=Morgan & Mikhail, page=1101
+       flow (eg, congestive heart failure, cirrhosis, nephrotic syndrome) as well as in obstructive uropathies
+  [4] book=Morgan & Mikhail, page=1101
+       Section: URINALYSIS. flow (eg, congestive heart failure, cirrhosis, nephrotic syndrome) as well as in obstructive uropathies. Increases in protein catabolism can also increase this ratio. Urinalysis continues to be routinely performed for evaluating kidney function. Although its utility and cost-effectiveness for this purpose are questionable, urinalysis can be helpful in identifying some disorder
+
+=== [395] Non-IPF Interstitial Lung Diseases ===
+  [0] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK541084 URL: https://www.ncbi.nlm.nih.gov/books/NBK541084/ Topic: Non-IPF Interstitial Lung Diseases Article Title: Interstitial Lung Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing
+  [1] book=MGH Housestaff Manual, page=53
+       Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interstitial Lung Disease Christina Shincovich O V E R V I E W Heterogeneous group of lung diseases involving the replacement of normal lung parenchyma with varying degrees of inflammation and fibrosis (scarring), can involve any part of the lung parenchyma Presentation: progressive dyspnea, non-prod. cough, hypoxemia (esp. w/exercise);
+  [2] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=25
+       Section: Enhancing Healthcare Team Outcomes. nction matters: fibrotic hypersensitivity pneumonitis may respond to antigen avoidance and immunosuppression, whereas IPF is treated with antifibrotic therapy. Tocilizumab is not a standard treatment for SSc-ILD. Despite being listed in some secondary sources, tocilizumab did not meet the primary endpoint (skin score) in the focuSSced phase 3 trial, and
+  [3] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=16
+       rotic options in IPF. [76] SENSCIS trial (nintedanib, SSc-ILD): Results from this phase 3 randomized controlled trial of 576 patients with SSc-ILD (Safety and Efficacy of Nintednib in Systemic Sclerosis [SENCIS] showed nintedanib reduced annual FVC decline by 44% versus placebo (-52.4 versus -93.3 mL/year; P < .04). This trial established nintedanib as the first pharmacological therapy with demons
+  [4] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=4
+       [16] For non-IPF ILD subtypes, an even wider range of estimated incidence and prevalence exists across regions
+

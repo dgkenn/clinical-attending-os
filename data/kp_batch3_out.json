@@ -1,0 +1,793 @@
+[
+  {
+    "id": "hypercalcemia-d1",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "How is hypercalcemia categorized by severity and what is the prevalence of mild hypercalcemia in hospitalized patients (excluding ESRD/AKI)?",
+    "answer": "Mild: just above normal to <12 mg/dL; moderate: 12-14 mg/dL; severe: >14 mg/dL; incidence approximately 12% in all patients at admission to a tertiary care hospital (excluding ESRD/AKI).",
+    "rationale": "Severity guides urgency of treatment; severe hypercalcemia is a medical emergency requiring immediate IV fluids and bisphosphonates.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 2
+      }
+    ],
+    "confusable_with": "ionized calcium levels (total calcium must be corrected for albumin before severity classification)"
+  },
+  {
+    "id": "hypercalcemia-d2",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "How is total serum calcium corrected for hypoalbuminemia, and why is this correction necessary?",
+    "answer": "Corrected Ca = measured total Ca (mg/dL) + [4.0 - serum albumin (g/dL)] x 0.8; low albumin falsely lowers reported total calcium, masking true hypercalcemia.",
+    "rationale": "Approximately 40% of circulating calcium is bound to albumin; hypoalbuminemia reduces total calcium without changing the physiologically active ionized fraction.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypercalcemia  Causes and Management",
+        "page": 2
+      }
+    ],
+    "confusable_with": "ionized calcium measurement (gold standard; corrected total Ca is an estimate)"
+  },
+  {
+    "id": "hypercalcemia-d3",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What mnemonic captures the classic symptoms of hypercalcemia and what does each component represent?",
+    "answer": "'Bones, Groans, Stones, Moans': bone pain/fractures; GI symptoms (nausea, vomiting); kidney stones; malaise/weakness.",
+    "rationale": "Hypercalcemia affects multiple systems by altering membrane excitability, impairing smooth and cardiac muscle, precipitating renal calculi, and depressing neuromuscular function.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypercalcemia  Causes and Management",
+        "page": 4
+      }
+    ],
+    "confusable_with": "hypocalcemia symptoms (Chvostek, Trousseau, tetany -- opposite direction of calcium disturbance)"
+  },
+  {
+    "id": "hypercalcemia-d4",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "When PTH is elevated or inappropriately non-suppressed in hypercalcemia, what is the most important next test to distinguish primary hyperparathyroidism from familial hypocalciuric hypercalcemia?",
+    "answer": "24-hour urinary calcium excretion; low urinary calcium (calcium/creatinine clearance ratio <0.01) favors FHH; elevated urinary calcium (>400 mg/day) favors primary hyperparathyroidism.",
+    "rationale": "FHH is a benign calcium-sensing receptor mutation causing high renal calcium reabsorption; unlike primary HPT, it does not require parathyroidectomy.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypercalcemia",
+        "page": 5
+      }
+    ],
+    "confusable_with": "primary hyperparathyroidism (both have elevated or non-suppressed PTH; urine calcium distinguishes them)"
+  },
+  {
+    "id": "hypercalcemia-d5",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What granulomatous diseases cause hypercalcemia and through what mechanism?",
+    "answer": "Sarcoidosis, Wegener's granulomatosis, CMV, HIV, and other granulomatous infections cause extrarenal 1,25-dihydroxyvitamin D production by activated macrophages.",
+    "rationale": "Macrophages in granulomas express 1-alpha-hydroxylase, producing calcitriol independent of PTH regulation, leading to increased GI calcium absorption and hypercalcemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypercalcemia  Causes and Management",
+        "page": 3
+      }
+    ],
+    "confusable_with": "vitamin D toxicity (elevated 25-OH vitamin D level; granulomatous disease elevates 1,25-dihydroxy vitamin D)"
+  },
+  {
+    "id": "hypercalcemia-d6",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Cancer-related hypercalcemia carries what prognostic implication, and which cancers most commonly cause it via PTHrP?",
+    "answer": "Cancer-related hypercalcemia portends a bleak prognosis (patients rarely survive >1 year); PTHrP-mediated hypercalcemia (humoral hypercalcemia of malignancy) is caused by squamous cell lung, head and neck, GU, and GYN malignancies, and multiple myeloma.",
+    "rationale": "Elevated PTHrP mimics PTH actions on kidney and bone, causing hypercalcemia; it signals advanced disease and predicts short survival.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypercalcemia  Causes and Management",
+        "page": 7
+      }
+    ],
+    "confusable_with": "PTH-mediated hypercalcemia (PTH elevated; PTHrP level is what to check in malignancy-associated hypercalcemia)"
+  },
+  {
+    "id": "hypercalcemia-d7",
+    "topic": "Hypercalcemia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Why should short-acting nifedipine be avoided in the treatment of hypertensive emergencies, and what class is appropriate instead?",
+    "answer": "Short-acting nifedipine causes uncontrolled rapid BP reduction with reflex tachycardia and can worsen ischemia; IV labetalol, nicardipine, or clevidipine are preferred for hypertensive emergencies.",
+    "rationale": "Rapid uncontrolled BP reduction with short-acting nifedipine can precipitate myocardial or cerebral ischemia from hypoperfusion of autoregulation-dependent organs.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 70
+      }
+    ],
+    "confusable_with": "long-acting CCBs (amlodipine -- safe for chronic hypertension management, not acute emergencies)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypercalcemia: Causes and Management",
+    "discipline": "medicine",
+    "enabling_conditions": "Primary hyperparathyroidism (#1 outpatient), malignancy (#1 inpatient), granulomatous disease, vitamin D toxicity, immobilization, thiazide diuretics",
+    "pathophysiology": "Excess PTH, PTHrP, or 1,25-dihydroxyvitamin D increases GI calcium absorption, bone resorption, and/or renal calcium reabsorption, raising serum calcium above normal range",
+    "time_course": "Primary HPT: chronic/indolent; malignancy HHM: acute, rapidly progressive; granulomatous: variable",
+    "key_features": "Bones/groans/stones/moans; ECG: short QT interval; fatigue, confusion; corrected calcium >10.5 mg/dL",
+    "consequence_if_missed": "Nephrolithiasis, nephrogenic DI, cardiac arrhythmias, altered mental status, coma in severe cases (>14 mg/dL)"
+  },
+  {
+    "id": "hypercapnic-rf-d1",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "What are the two physiologic mechanisms causing hypercapnic respiratory failure?",
+    "answer": "Hypoventilation (reduced minute ventilation, e.g., from drug intoxication or neuromuscular weakness) and increased dead space ventilation (e.g., COPD or asthma).",
+    "rationale": "CO2 clearance requires adequate alveolar ventilation; both reduced respiratory drive/effort and ventilation-perfusion mismatch with dead space increase can impair CO2 elimination.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 767
+      }
+    ],
+    "confusable_with": "hypoxemic respiratory failure (impaired O2 exchange, not primarily CO2 retention)"
+  },
+  {
+    "id": "hypercapnic-rf-d2",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "What supplemental oxygen SpO2 target should be used in patients at risk for hypercapnic respiratory failure, and why?",
+    "answer": "Target SpO2 88-92% in patients at risk for hypercapnia (COPD, OHS, OSA, decreased central respiratory drive, neuromuscular respiratory disease); higher targets may worsen hypercapnia.",
+    "rationale": "In chronic hypercapnic patients, excessive supplemental oxygen abolishes hypoxic respiratory drive and worsens V/Q mismatch by reversing hypoxic pulmonary vasoconstriction, increasing alveolar dead space.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 48
+      }
+    ],
+    "confusable_with": "SpO2 target >=94% (appropriate for most patients without hypercapnia risk)"
+  },
+  {
+    "id": "hypercapnic-rf-d3",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "BiPAP is effective for hypercapnic respiratory failure from COPD exacerbation. What does the pressure support component achieve?",
+    "answer": "The inspiratory positive airway pressure (IPAP) provides pressure support that augments tidal volume and reduces work of breathing, improving alveolar ventilation and CO2 clearance.",
+    "rationale": "BiPAP provides both IPAP (pressure support for ventilation) and EPAP (positive end-expiratory pressure to stent open airways and reduce dynamic hyperinflation), addressing both hypercapnia and hypoxemia in COPD.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 767
+      }
+    ],
+    "confusable_with": "CPAP (single continuous pressure level; does not provide inspiratory pressure support for CO2 elimination)"
+  },
+  {
+    "id": "hypercapnic-rf-d4",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "High-flow nasal therapy (HFNC) in hypercapnic COPD patients -- what do small studies suggest about its benefit versus limitation?",
+    "answer": "HFNC may improve health-related QoL and reduce acute hypercapnia in selected stable hypercapnic COPD patients, but evidence is limited by small sample sizes, population heterogeneity, and short follow-up.",
+    "rationale": "HFNC washout of nasopharyngeal dead space and delivery of controlled FiO2 may reduce work of breathing, but it does not provide as much ventilatory augmentation as NIPPV.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   GOLD 2024 COPD Full Report",
+        "page": 120
+      }
+    ],
+    "confusable_with": "HFNC as equivalent to BiPAP in hypercapnic failure (NIPPV remains the standard for significant hypercapnia)"
+  },
+  {
+    "id": "hypercapnic-rf-d5",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "What are the major complications of NIPPV that require careful patient selection?",
+    "answer": "Aspiration (major complication requiring careful patient selection), pressure-related discomfort (ear pain, sinus pain, gastric insufflation), and rare serious complications including pneumothorax and pneumomediastinum.",
+    "rationale": "NIPPV bypasses upper airway defenses; patients unable to protect their airway, with impaired consciousness, or with excessive secretions are at high aspiration risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Noninvasive Ventilation (NIV)",
+        "page": 8
+      }
+    ],
+    "confusable_with": "invasive mechanical ventilation complications (NIPPV avoids intubation-related complications but carries its own risk profile)"
+  },
+  {
+    "id": "hypercapnic-rf-d6",
+    "topic": "Hypercapnic Respiratory Failure",
+    "domain": "Internal medicine: pulmonology",
+    "discipline": "medicine",
+    "stem": "'Normalization' of PaCO2 to 40 mmHg in a patient with chronic hypercapnia can cause what problem?",
+    "answer": "It produces a relative respiratory alkalosis and can precipitate severe hypoventilation if the patient's respiratory drive is hypoxemia-dependent; normalization is equivalent to iatrogenic respiratory alkalosis in these patients.",
+    "rationale": "Chronic hypercapnic patients have metabolic compensation (elevated HCO3) for their baseline CO2 of 50-60 mmHg; targeting PaCO2 40 mmHg removes their respiratory stimulus and risks apnea.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1925
+      }
+    ],
+    "confusable_with": "normalizing PaCO2 to 40 mmHg in acute hypercapnia (appropriate initial target when there is no chronic baseline elevation)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypercapnic Respiratory Failure",
+    "discipline": "medicine",
+    "enabling_conditions": "COPD, obesity hypoventilation syndrome, neuromuscular disease, opioid/sedative overdose, severe asthma, chest wall deformity",
+    "pathophysiology": "Alveolar ventilation falls below CO2 production (hypoventilation) or dead space fraction increases (COPD), causing PaCO2 to rise; chronic hypercapnia is compensated by renal HCO3 retention",
+    "time_course": "Acute: rapid rise in PaCO2 with acidosis; chronic: compensated hypercapnia (normal pH, elevated HCO3); COPD exacerbation: acute-on-chronic",
+    "key_features": "PaCO2 >45 mmHg, respiratory acidosis (unless compensated), accessory muscle use, altered consciousness in severe cases",
+    "consequence_if_missed": "CO2 narcosis, respiratory arrest, unnecessary intubation when BiPAP could have been used first"
+  },
+  {
+    "id": "trousseau-d1",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Cancer-associated DIC is most commonly seen in what clinical setting, and what is the treatment controversy?",
+    "answer": "DIC in malignancy is often chronic and low-grade; anticoagulation with heparin remains controversial and is recommended only when thrombotic risk is highest; antifibrinolytics are generally contraindicated in DIC due to catastrophic thrombotic complications.",
+    "rationale": "DIC in cancer involves simultaneous clotting and fibrinolysis; heparin is selectively used for high thrombotic-risk states (like mucinous adenocarcinoma Trousseau), while antifibrinolytics risk worsening the thrombotic component.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 446
+      }
+    ],
+    "confusable_with": "acute DIC in sepsis (requires more aggressive support; treatment principles differ from chronic cancer-associated DIC)"
+  },
+  {
+    "id": "trousseau-d2",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Budd-Chiari syndrome (hepatic vein thrombosis) is associated with malignancy through what mechanism?",
+    "answer": "Secondary Budd-Chiari syndrome from malignancy occurs via compression or invasion of hepatic veins or IVC by tumor; additionally malignancy-associated hypercoagulability from JAK2 mutations (myeloproliferative neoplasms) causes primary hepatic vein thrombosis.",
+    "rationale": "Myeloproliferative neoplasms (especially JAK2 V617F) are the most common underlying prothrombotic cause of Budd-Chiari syndrome; solid tumors can cause it by direct vascular invasion.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Budd Chiari Syndrome",
+        "page": 2
+      }
+    ],
+    "confusable_with": "portal vein thrombosis (different vessel; Budd-Chiari is specifically hepatic vein occlusion)"
+  },
+  {
+    "id": "trousseau-d3",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Which hypercoagulable states are responsible for Budd-Chiari syndrome beyond myeloproliferative neoplasms?",
+    "answer": "Factor V Leiden mutation (protein C resistance), antiphospholipid antibody syndrome, antithrombin deficiency, and paroxysmal nocturnal hemoglobinuria.",
+    "rationale": "Budd-Chiari is a rare but serious thrombotic complication; approximately 80% of cases have an identifiable underlying prothrombotic condition requiring targeted treatment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Budd Chiari Syndrome",
+        "page": 2
+      }
+    ],
+    "confusable_with": "portal vein thrombosis (presents similarly but in different vessel; evaluation overlaps)"
+  },
+  {
+    "id": "trousseau-d4",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Superior vena cava syndrome in cancer is most commonly caused by which malignancies?",
+    "answer": "Small-cell bronchogenic carcinoma is the most common malignant cause, followed by non-Hodgkin's lymphoma and metastatic tumors.",
+    "rationale": "The mediastinum is anatomically narrow and lung/lymphoma tumors in this region compress the SVC readily, causing facial and upper extremity venous hypertension.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 2
+      }
+    ],
+    "confusable_with": "benign causes of SVC syndrome (now comprise a significant minority due to central venous catheters and pacemaker leads)"
+  },
+  {
+    "id": "trousseau-d5",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "Tumor lysis syndrome causes hypercoagulability and renal injury via what electrolyte-crystal mechanism?",
+    "answer": "TLS causes deposition of uric acid, calcium phosphate, and xanthine crystals in distal kidney tubules; uric acid crystals also accumulate in tubular epithelial cells and medulla; low urine flow and high solute concentrations promote crystal formation.",
+    "rationale": "Rapid tumor cell lysis releases intracellular contents (potassium, phosphate, nucleic acids); purine metabolism produces uric acid while hyperphosphatemia drives calcium phosphate precipitation in renal tubules.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Oncologic emergencies  tumor lysis syndrome",
+        "page": 6
+      }
+    ],
+    "confusable_with": "rhabdomyolysis-associated AKI (myoglobin-mediated tubular injury, not crystal deposition)"
+  },
+  {
+    "id": "trousseau-d6",
+    "topic": "Hypercoagulable states in malignancy (Trousseau syndrome)",
+    "domain": "Internal medicine: hematology & oncology",
+    "discipline": "medicine",
+    "stem": "A nephrotic patient develops a DVT. Which specific prothrombotic mechanism explains increased clotting risk in nephrotic syndrome?",
+    "answer": "Loss of antithrombin and plasminogen in urine increases thrombotic risk; nephrotic syndrome carries 10-40% VTE risk.",
+    "rationale": "Glomerular proteinuria in nephrotic syndrome is not specific to albumin; small molecular weight proteins including antithrombin III and plasminogen are also lost, creating a prothrombotic state.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 101
+      }
+    ],
+    "confusable_with": "protein C deficiency (not primarily lost through glomerular filtration)"
+  },
+  {
+    "id": "hyperkalemia-d1",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "What ECG changes occur with progressively worsening hyperkalemia and in what order?",
+    "answer": "Mild K+ 5.5-6.5 mEq/L: peaked T waves; moderate 6.6-7.5 mEq/L: PR prolongation, QRS widening, P wave flattening; severe >7.5 mEq/L: sine wave pattern, VF risk.",
+    "rationale": "Potassium progressively depolarizes the resting membrane potential; repolarization changes (T waves) precede conduction delays, which precede fatal arrhythmias.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 58
+      }
+    ],
+    "confusable_with": "hyperacute STEMI T waves (peaked but asymmetric; hyperkalemia T waves are symmetric and diffuse)"
+  },
+  {
+    "id": "hyperkalemia-d2",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "What is the physiologic mechanism by which beta-2 adrenergic agonists acutely lower serum potassium?",
+    "answer": "Beta-2 agonists activate Na+-K+-ATPase via cyclic AMP, promoting cellular uptake of potassium into muscle and liver, acutely shifting K+ intracellularly.",
+    "rationale": "The Na+-K+-ATPase pump moves 3 Na+ out and 2 K+ in per cycle; beta-2 stimulation upregulates this activity, lowering plasma K+ within minutes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1877
+      }
+    ],
+    "confusable_with": "alpha-adrenergic stimulation (impairs intracellular K+ movement, potentially worsening hyperkalemia)"
+  },
+  {
+    "id": "hyperkalemia-d3",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "Acute increases in plasma osmolality (hypernatremia, hyperglycemia, or mannitol) can increase plasma potassium through what mechanism?",
+    "answer": "Hyperosmolality drives water out of cells, concentrating intracellular K+; water efflux creates a potassium concentration gradient favoring K+ movement out of cells, raising plasma K+.",
+    "rationale": "Osmotic shift of water from intracellular to extracellular space secondarily shifts potassium outward as well, a clinically relevant mechanism in DKA (hyperglycemia-driven pseudohyperkalemia).",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1877
+      }
+    ],
+    "confusable_with": "pseudohyperkalemia from hemolysis (in vitro artifact; osmolality mechanism is in vivo)"
+  },
+  {
+    "id": "hyperkalemia-d4",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "What is the mechanism by which succinylcholine causes hyperkalemia, and in which patient populations is it most dangerous?",
+    "answer": "Succinylcholine stimulates all ACh receptors causing potassium efflux from muscle cells; particularly dangerous in patients with burns, denervation injuries, immobility, or prolonged ICU stays where up-regulated extrajunctional ACh receptors amplify K+ release.",
+    "rationale": "Depolarizing neuromuscular blockade releases K+ from skeletal muscle; in patients with extrajunctional receptor proliferation, K+ release can be 5-10 mEq/L and fatal.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 333
+      }
+    ],
+    "confusable_with": "routine hyperkalemia risk (1-2 week post-injury window is when K+ rise is most dangerous from succinylcholine)"
+  },
+  {
+    "id": "hyperkalemia-d5",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "In AKI, what metabolic abnormality pattern accompanies hyperkalemia?",
+    "answer": "Multiple metabolic abnormalities develop including hyperkalemia, hyperphosphatemia, hypocalcemia, hypermagnesemia, hyperuricemia, hypoalbuminemia, and an elevated anion gap metabolic acidosis from nonvolatile acid retention.",
+    "rationale": "Failed renal excretion accumulates all renally cleared electrolytes and organic acids; metabolic acidosis further worsens hyperkalemia by driving H+/K+ exchange across cell membranes.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1110
+      }
+    ],
+    "confusable_with": "hyperkalemia as an isolated finding in AKI (multiple electrolyte disturbances typically coexist)"
+  },
+  {
+    "id": "hyperkalemia-d6",
+    "topic": "Hyperkalemia",
+    "domain": "Internal Medicine",
+    "discipline": "medicine",
+    "stem": "Significant hyperkalemia (>5.5 mEq/L) is a concern for proceeding with CPB weaning. What is the initial management step?",
+    "answer": "Treat hyperkalemia (>5.5 mEq/L) and correct significant acidosis (pH <7.20) and hypocalcemia (ionized) before weaning from CPB; the hematocrit should ideally exceed 22%.",
+    "rationale": "Hyperkalemia impairs myocardial conduction and contractility; correcting electrolytes optimizes cardiac function before weaning from bypass to maximize success.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 749
+      }
+    ],
+    "confusable_with": "transfusing immediately for hematocrit <22% (hematocrit <22% alone should not trigger transfusion without other clinical indications)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hyperkalemia",
+    "discipline": "medicine",
+    "enabling_conditions": "CKD/ESRD, ACEi/ARB/spironolactone use, massive tissue injury (rhabdo, burns, TLS), acidosis, insulin deficiency, succinylcholine in at-risk patients",
+    "pathophysiology": "Impaired renal K+ excretion or transcellular shift from intracellular to extracellular space (acidosis, osmolality, beta-blockade); raises resting membrane potential and depresses myocardial conduction",
+    "time_course": "Can develop within hours in acute settings (rhabdo, TLS, AKI); chronic in CKD",
+    "key_features": "ECG progression (peaked T -> QRS widening -> sine wave); muscle weakness; K+ >5.5 mEq/L",
+    "consequence_if_missed": "Ventricular fibrillation; respiratory arrest from neuromuscular failure; cardiac arrest in perioperative succinylcholine use"
+  },
+  {
+    "id": "hypernatremia-d1",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What are the major categories of free water loss causing hypernatremia?",
+    "answer": "Insensible losses (fever, exercise, heat exposure), renal losses (diabetes insipidus, osmotic diuresis from hyperglycemia or mannitol, loop diuretics), and GI losses; also inadequate free water intake.",
+    "rationale": "Hypernatremia always reflects hyperosmolality and free water deficit; the cause determines the treatment approach (replacing free water vs treating DI).",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypernatremia  Causes and Management",
+        "page": 2
+      }
+    ],
+    "confusable_with": "hypernatremia from sodium loading (less common; e.g., IV sodium bicarbonate excess or hypertonic saline)"
+  },
+  {
+    "id": "hypernatremia-d2",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What is the most serious neurological complication of hypernatremia, and what does overly rapid correction risk?",
+    "answer": "Subarachnoid or subdural hemorrhage from rupture of bridging veins and dural sinus thrombosis; rapid correction risks osmotic cerebral edema (brain swelling as cells re-equilibrate).",
+    "rationale": "The brain adapts to hypernatremia by generating idiogenic osmoles; rapid correction lowers plasma osmolality faster than the brain can eliminate these osmoles, causing water influx and cerebral edema.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypernatremia  Causes and Management",
+        "page": 4
+      }
+    ],
+    "confusable_with": "rapid correction of hyponatremia (risks osmotic demyelination; correction direction is opposite but both require controlled speed)"
+  },
+  {
+    "id": "hypernatremia-d3",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Central DI is characterized by which triad and what is the perioperative management priority?",
+    "answer": "Central DI: decreased ADH production causing polyuria, hypernatremia, and dehydration; perioperatively, monitor urine output closely and replace losses with water or desmopressin.",
+    "rationale": "Central DI from head trauma or pituitary surgery can present acutely perioperatively; massive hypotonic urine output with rising serum Na requires urgent intervention.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 553
+      }
+    ],
+    "confusable_with": "nephrogenic DI (renal insensitivity to ADH; does not respond to desmopressin)"
+  },
+  {
+    "id": "hypernatremia-d4",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Why can the degree of dehydration be underestimated in children with hypernatremia?",
+    "answer": "In hypernatremia, water shifts from intracellular to extravascular space, partially maintaining intravascular volume and masking the true total body water deficit.",
+    "rationale": "The osmotic shift from ICF to ECF preserves circulating volume, so clinical signs of dehydration (poor skin turgor, sunken eyes) may underrepresent actual total free water deficit.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypernatremia  Causes and Management",
+        "page": 3
+      }
+    ],
+    "confusable_with": "isotonic dehydration (direct intravascular volume depletion without the ICF-to-ECF shift)"
+  },
+  {
+    "id": "hypernatremia-d5",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What adverse effect limits desmopressin use in central DI treatment?",
+    "answer": "Desmopressin can cause water intoxication and hyponatremia if free water intake is not restricted; it is available in intranasal and oral formulations.",
+    "rationale": "Desmopressin is a potent ADH analog that dramatically reduces free water excretion; if the patient continues drinking freely, dilutional hyponatremia can develop.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hypernatremia  Causes and Management",
+        "page": 4
+      }
+    ],
+    "confusable_with": "lithium-induced nephrogenic DI (does not respond to desmopressin)"
+  },
+  {
+    "id": "hypernatremia-d6",
+    "topic": "Hypernatremia: Causes and Management",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Hyponatremia or hypovolemia in SIADH vs cerebral salt wasting (CSW) -- how does volume status distinguish them?",
+    "answer": "SIADH: euvolemic or mildly hypervolemic from free water retention; CSW: hypovolemic from natriuresis-driven volume depletion; distinguishing is essential as SIADH is treated with fluid restriction while CSW requires sodium and volume replacement.",
+    "rationale": "Both conditions cause low serum sodium with elevated urine sodium, but the volume status is opposite; misidentifying CSW as SIADH and restricting fluids causes dangerous volume depletion.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   SIADH (Syndrome of Inappropriate ADH)",
+        "page": 4
+      }
+    ],
+    "confusable_with": "SIADH (similar lab pattern but opposite volume status from CSW)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypernatremia: Causes and Management",
+    "discipline": "medicine",
+    "enabling_conditions": "Elderly/infants (impaired thirst), ICU/ventilated patients unable to access water, DI, hyperglycemia, hypotonic fluid losses without replacement",
+    "pathophysiology": "Net free water deficit raises plasma osmolality; brain adapts by generating idiogenic osmoles; chronic adaptation means rapid correction risks cerebral edema",
+    "time_course": "Acute: hours (may present with seizures); chronic (>48h): idiogenic osmoles generated, correction must be slow (<10-12 mEq/L/day)",
+    "key_features": "Serum Na >145 mEq/L, concentrated urine (unless DI), thirst (if conscious), neurologic changes; increased tone, hyperreflexia, myoclonus",
+    "consequence_if_missed": "Bridging vein rupture causing intracranial hemorrhage; too-rapid correction causing cerebral edema and herniation"
+  },
+  {
+    "id": "hyperphosphatemia-d1",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What is the predominant cardiovascular complication of hyperphosphatemia in CKD patients and what is its mechanism?",
+    "answer": "Vascular calcification (detected in >80% of dialysis patients by CT); hyperphosphatemia plus hypercalcemia and high PTH induces a phenotypic switch of vascular smooth muscle cells to osteoblast-like cells, causing medial calcification.",
+    "rationale": "Elevated phosphate stimulates vascular smooth muscle cell transdifferentiation and local inflammation, leading to medial arterial calcification that increases cardiovascular mortality.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 10
+      }
+    ],
+    "confusable_with": "intimal atherosclerotic calcification (different mechanism and location; medial calcification in CKD is hyperphosphatemia-driven)"
+  },
+  {
+    "id": "hyperphosphatemia-d2",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "How does FGF23 regulate phosphate and why does it fail in advanced CKD?",
+    "answer": "FGF23 (secreted by osteocytes) promotes phosphaturia and suppresses 1-alpha-hydroxylase, reducing calcitriol production; in advanced CKD, resistance to FGF23 develops and GFR is too low to excrete phosphate despite high FGF23 levels.",
+    "rationale": "FGF23 is the primary phosphaturic hormone; its failure in CKD leads to hyperphosphatemia and secondary hyperparathyroidism.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 3
+      }
+    ],
+    "confusable_with": "PTH (secondary phosphaturic hormone; FGF23 is the primary regulator)"
+  },
+  {
+    "id": "hyperphosphatemia-d3",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Rhabdomyolysis and tumor lysis syndrome both cause hyperphosphatemia. What laboratory finding distinguishes rhabdomyolysis from TLS?",
+    "answer": "Rhabdomyolysis: markedly elevated creatine phosphokinase (CPK) with normal or marginally elevated serum uric acid; TLS: normal or minimal CPK elevation with markedly elevated serum uric acid.",
+    "rationale": "Rhabdomyolysis releases muscle cell CPK; TLS releases purine nucleotides that are metabolized to uric acid by xanthine oxidase, causing hyperuricemia without proportional CPK elevation.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 7
+      }
+    ],
+    "confusable_with": "confusing cause of AKI in both (both cause AKI but through different mechanisms: myoglobin vs uric acid/crystal deposition)"
+  },
+  {
+    "id": "hyperphosphatemia-d4",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "What are the main classes of oral phosphate binders used in CKD, and what is a key advantage of iron-based binders?",
+    "answer": "Classes include calcium-based (calcium carbonate, calcium acetate), non-calcium non-aluminum (sevelamer, lanthanum carbonate), and iron-based binders (sucroferric oxyhydroxide); iron-based binders do not cause calcium loading or iron overload as the iron is excreted with the phosphate complex.",
+    "rationale": "Calcium-based binders risk hypercalcemia and vascular calcification; iron-based binders avoid calcium loading while providing phosphate binding.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 9
+      }
+    ],
+    "confusable_with": "aluminum-based binders (now avoided due to aluminum toxicity -- encephalopathy and osteomalacia)"
+  },
+  {
+    "id": "hyperphosphatemia-d5",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Pseudohyperparathyroidism (PHP) type 1 causes hyperphosphatemia and hypocalcemia with what phenotypic features?",
+    "answer": "PHP type 1 (Albright hereditary osteodystrophy -- AHO): short 4th/5th metacarpals, rounded face, obesity, dental hypoplasia, soft tissue calcifications, cognitive impairment; caused by end-organ PTH resistance with elevated PTH and low calcium.",
+    "rationale": "PHP type 1 is characterized by PTH resistance in target organs (kidney, bone); high PTH fails to lower phosphate or raise calcium, producing the metabolic pattern of hypoparathyroidism despite elevated PTH.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 6
+      }
+    ],
+    "confusable_with": "hypoparathyroidism (also hyperphosphatemia + hypocalcemia but PTH is low, not elevated with resistance)"
+  },
+  {
+    "id": "hyperphosphatemia-d6",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "The incidence of hyperphosphatemia (excluding ESRD/AKI) in tertiary care hospital admissions is approximately what percentage?",
+    "answer": "Approximately 12% of all patients admitted (excluding ESRD and AKI patients with unmeasured phosphate).",
+    "rationale": "Hyperphosphatemia is common in hospitalized patients due to the high prevalence of CKD, rhabdomyolysis, and phosphate-containing cathartics; systematic screening identifies many cases.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hyperphosphatemia  Causes and Consequences",
+        "page": 4
+      }
+    ],
+    "confusable_with": "hyperphosphatemia being exclusively a CKD/ESRD problem (multiple acute causes exist)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hyperphosphatemia: Causes and Consequences",
+    "discipline": "medicine",
+    "enabling_conditions": "CKD (GFR <30 mL/min), rhabdomyolysis, tumor lysis syndrome, hypoparathyroidism, PHP type 1, excessive phosphate intake (enemas, TPN)",
+    "pathophysiology": "Impaired renal excretion (CKD), massive cellular release (TLS/rhabdo), or reduced PTH activity (hypoparathyroidism/PHP) raises serum phosphate; high phosphate chelates calcium causing hypocalcemia and soft tissue/vascular calcification",
+    "time_course": "Chronic in CKD (progressive); acute in TLS/rhabdo (hours after precipitating event)",
+    "key_features": "Serum phosphate >4.5 mg/dL; hypocalcemia symptoms (tetany, seizures); vascular calcification on imaging in CKD; AKI from crystal deposition",
+    "consequence_if_missed": "Vascular calcification accelerating CVD mortality in CKD; hypocalcemia-related tetany; renal failure from calcium phosphate precipitation"
+  },
+  {
+    "id": "htn-kidney-d1",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Prolonged hypertension can lead to what spectrum of kidney complications?",
+    "answer": "Intravascular volume depletion (elevated hematocrit), kidney failure, cerebral hemorrhage, myocardial ischemia and ventricular hypertrophy, and congestive heart failure from increased peripheral vascular resistance.",
+    "rationale": "Sustained hypertension damages the glomerular vasculature (hypertensive nephrosclerosis) and overloads the heart; renal damage further impairs BP regulation, creating a vicious cycle.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 400
+      }
+    ],
+    "confusable_with": "renovascular hypertension (renal artery stenosis causes hypertension through RAAS; hypertensive nephropathy is the consequence of HTN damaging the kidney)"
+  },
+  {
+    "id": "htn-kidney-d2",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Fenoldopam (dopamine D1 receptor agonist) has what unique advantage over other IV antihypertensives regarding renal function?",
+    "answer": "Fenoldopam's clearance is unaltered in kidney or hepatic failure (no dose adjustment needed); it selectively reduces systemic vascular resistance while maintaining or improving renal blood flow via DA1-mediated renal vasodilation.",
+    "rationale": "DA1 agonism in the renal vasculature preferentially dilates renal afferent arterioles, potentially protecting renal perfusion during BP reduction in hypertensive emergencies.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 412
+      }
+    ],
+    "confusable_with": "nitroprusside (requires dose reduction in renal failure due to thiocyanate accumulation)"
+  },
+  {
+    "id": "htn-kidney-d3",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Kidney function is generally preserved during sodium nitroprusside infusion despite moderate BP drops. What phenomenon explains this, and what is a risk with high doses?",
+    "answer": "Renal blood flow is generally maintained during nitroprusside due to autoregulation; high doses release renin and catecholamines (blunted by beta-blockers); cyanide toxicity and thiocyanate accumulation occur with prolonged high-dose infusion, especially in renal failure.",
+    "rationale": "Thiocyanate is the primary metabolite of cyanide and is renally cleared; it accumulates in renal failure causing toxicity (nausea, tinnitus, altered mental status, lactic acidosis at high levels).",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 409
+      }
+    ],
+    "confusable_with": "cyanide toxicity (immediate; from nitroprusside itself before hepatic conversion) vs thiocyanate toxicity (delayed; from accumulation in renal failure)"
+  },
+  {
+    "id": "htn-kidney-d4",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "In CKD patients with proteinuria and hypertension, what is the first-line antihypertensive class and why?",
+    "answer": "ACEi or ARB are first-line in CKD with proteinuria (albuminuria); they reduce intraglomerular pressure and albuminuria, slowing CKD progression independent of BP lowering.",
+    "rationale": "RAAS blockade reduces efferent arteriolar tone, decreasing glomerular filtration pressure and proteinuria, with both renoprotective and antihypertensive effects.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 42
+      }
+    ],
+    "confusable_with": "CCBs as first-line in CKD (appropriate for BP but do not have the same proteinuria reduction as ACEi/ARB)"
+  },
+  {
+    "id": "htn-kidney-d5",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "Hydralazine-induced BP reduction causes compensatory reflex cardiovascular responses. What are these and why are they detrimental in coronary artery disease?",
+    "answer": "Hydralazine lowers PVR, triggering reflex tachycardia, increased myocardial contractility, and increased cardiac output; in CAD, this increases myocardial oxygen demand and worsens ischemia.",
+    "rationale": "The reflex sympathetic activation compensating for vasodilation increases heart rate and contractility, raising myocardial oxygen consumption in patients with fixed coronary stenoses.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 411
+      }
+    ],
+    "confusable_with": "beta-blocker use with hydralazine (combination blunts the reflex tachycardia, making hydralazine safer in CAD)"
+  },
+  {
+    "id": "htn-kidney-d6",
+    "topic": "Hypertension and the Kidney",
+    "domain": "Internal medicine: nephrology, fluids & electrolytes",
+    "discipline": "medicine",
+    "stem": "KDIGO 2024 recommends what protein intake in CKD patients (G3-G5) and why are very high protein diets harmful?",
+    "answer": "0.8 g/kg/day protein intake in CKD G3-G5; avoid >1.3 g/kg/day as high protein intake promotes CKD progression through increased glomerular hyperfiltration, proteinuria, and uremic solute generation.",
+    "rationale": "High protein intake increases renal workload through hyperfiltration, accelerating glomerular damage; very low protein diets (<0.6 g/kg/day) under supervision may further slow progression in selected patients.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2024 CKD",
+        "page": 93
+      }
+    ],
+    "confusable_with": "high protein for muscle preservation (appropriate in healthy elderly but contraindicated in progressive CKD)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hypertension and the Kidney",
+    "discipline": "medicine",
+    "enabling_conditions": "Chronic uncontrolled hypertension, CKD (bidirectional relationship), renovascular disease, primary aldosteronism",
+    "pathophysiology": "Sustained elevated BP damages glomerular vasculature (hypertensive nephrosclerosis); CKD impairs sodium excretion and RAAS regulation, further worsening HTN; a vicious cycle of mutual injury",
+    "time_course": "Hypertensive nephrosclerosis develops over years of inadequately controlled HTN; acute HTN can cause rapidly progressive renal failure",
+    "key_features": "Proteinuria, rising creatinine, small bilateral kidneys on imaging; BP uncontrolled despite multiple agents; unequal kidneys suggest renovascular hypertension",
+    "consequence_if_missed": "Accelerated CKD progression to ESRD; hypertensive emergency causing AKI; LVH and subsequent HF"
+  }
+]

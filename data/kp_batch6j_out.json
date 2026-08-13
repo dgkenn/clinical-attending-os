@@ -1,0 +1,172 @@
+[
+  {
+    "id": "neuroinduct-1",
+    "topic": "Induction & Airway Management in Neurosurgical Patients",
+    "domain": "Neuroanesthesia (craniotomy, ICP, cerebral protection, neuromonitoring, awake craniotomy, spine surgery)",
+    "discipline": "anesthesia",
+    "stem": "When is airway management typically indicated in a deteriorating traumatic brain injury patient?",
+    "answer": "Airway management is usually indicated when GCS falls to 8 or below or with concurrent injuries requiring airway protection",
+    "rationale": "GCS of 8 or less indicates inability to protect the airway from aspiration and impending respiratory failure, requiring immediate intubation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 808
+      }
+    ],
+    "confusable_with": "Waiting for GCS to reach 3 before intubating"
+  },
+  {
+    "id": "neuroinduct-2",
+    "topic": "Induction & Airway Management in Neurosurgical Patients",
+    "domain": "Neuroanesthesia (craniotomy, ICP, cerebral protection, neuromonitoring, awake craniotomy, spine surgery)",
+    "discipline": "anesthesia",
+    "stem": "Why should nasal airways and nasogastric tubes be avoided in patients with suspected basal skull fracture?",
+    "answer": "Nasal airways and NGTs should be avoided with suspected basal skull fracture due to risk of intracranial placement",
+    "rationale": "A fracture at the base of the skull allows passage of nasally inserted devices through the fracture into the intracranial compartment.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 808
+      }
+    ],
+    "confusable_with": "Nasal airways being safe if no visible facial trauma"
+  },
+  {
+    "id": "neuroinduct-3",
+    "topic": "Induction & Airway Management in Neurosurgical Patients",
+    "domain": "Neuroanesthesia (craniotomy, ICP, cerebral protection, neuromonitoring, awake craniotomy, spine surgery)",
+    "discipline": "anesthesia",
+    "stem": "What TBI management principle regarding airway pressure is applied during RSI?",
+    "answer": "During RSI for TBI, positive pressure less than 20 cmH2O is used if mask ventilation is necessary to limit ICP elevation",
+    "rationale": "High positive pressure during bag-mask ventilation impairs venous return, raising ICP; limiting pressure minimises secondary brain injury.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 808
+      }
+    ],
+    "confusable_with": "High-pressure mask ventilation being necessary to prevent hypoxia in TBI"
+  },
+  {
+    "id": "neuroinduct-4",
+    "topic": "Induction & Airway Management in Neurosurgical Patients",
+    "domain": "Neuroanesthesia (craniotomy, ICP, cerebral protection, neuromonitoring, awake craniotomy, spine surgery)",
+    "discipline": "anesthesia",
+    "stem": "Propofol has what clinically useful property in patients with COPD relevant to induction?",
+    "answer": "Propofol can produce bronchodilation in patients with COPD (and inhibits pulmonary vasoconstriction)",
+    "rationale": "Propofol reduces airway reactivity by inhibiting vagal-mediated bronchoconstriction, making it advantageous for induction in COPD and reactive airway disease.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 26
+      }
+    ],
+    "confusable_with": "Propofol being contraindicated in COPD"
+  },
+  {
+    "id": "neuroinduct-5",
+    "topic": "Induction & Airway Management in Neurosurgical Patients",
+    "domain": "Neuroanesthesia (craniotomy, ICP, cerebral protection, neuromonitoring, awake craniotomy, spine surgery)",
+    "discipline": "anesthesia",
+    "stem": "What laryngoscopic grading system classifies intubation difficulty based on the view obtained?",
+    "answer": "Cormack and Lehane classification (Grades I-IV); Grades III and IV are associated with difficult intubation",
+    "rationale": "Grade III (only epiglottis visible) and Grade IV (no glottic structures visible) predict failed direct laryngoscopy and trigger advanced airway techniques.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 291
+      }
+    ],
+    "confusable_with": "Mallampati score (pharyngeal view with mouth open, before laryngoscopy)"
+  },
+  {
+    "id": "axblockup-1",
+    "topic": "Infraclavicular and axillary brachial plexus blocks",
+    "domain": "Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)",
+    "discipline": "anesthesia",
+    "stem": "For surgeries distal to the mid-humerus, which brachial plexus block approaches are recommended?",
+    "answer": "Supraclavicular, infraclavicular, and axillary approaches are recommended for surgeries distal to the mid-humerus",
+    "rationale": "These distal brachial plexus approaches block the terminal nerve branches more reliably for forearm and hand surgery than more proximal interscalene block.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1621
+      }
+    ],
+    "confusable_with": "Interscalene block for all upper extremity surgeries (misses ulnar nerve distribution)"
+  },
+  {
+    "id": "axblockup-2",
+    "topic": "Infraclavicular and axillary brachial plexus blocks",
+    "domain": "Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)",
+    "discipline": "anesthesia",
+    "stem": "What are the few contraindications to axillary brachial plexus block?",
+    "answer": "Local infection at the injection site is a contraindication to axillary brachial plexus block",
+    "rationale": "Injecting through infected tissue risks seeding the perineural sheath with bacteria; other contraindications include patient refusal and coagulopathy.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1635
+      }
+    ],
+    "confusable_with": "Anticoagulation being an absolute contraindication to all peripheral blocks"
+  },
+  {
+    "id": "axblockup-3",
+    "topic": "Infraclavicular and axillary brachial plexus blocks",
+    "domain": "Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)",
+    "discipline": "anesthesia",
+    "stem": "Why is the axilla a suboptimal site for a perineural catheter compared to infraclavicular placement?",
+    "answer": "Axillary perineural catheters provide inferior analgesia and have increased infection and displacement risks compared to infraclavicular catheters",
+    "rationale": "The axilla is mobile with skin folds promoting bacterial colonisation and catheter movement; infraclavicular position is more anatomically stable.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1635
+      }
+    ],
+    "confusable_with": "Axillary catheter being equivalent to infraclavicular for continuous block"
+  },
+  {
+    "id": "axblockup-4",
+    "topic": "Infraclavicular and axillary brachial plexus blocks",
+    "domain": "Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)",
+    "discipline": "anesthesia",
+    "stem": "What ultrasound-guided approaches are most recommended for brachial plexus blocks due to ease of ultrasound guidance?",
+    "answer": "Axillary, supraclavicular, and infraclavicular blocks are most readily performed using ultrasound guidance",
+    "rationale": "These approaches have superficial nerve locations with consistent sonographic anatomy, making ultrasound guidance reliable and reducing complication rates.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1472
+      }
+    ],
+    "confusable_with": "Interscalene block being the easiest to guide with ultrasound (deeper, more variable anatomy)"
+  },
+  {
+    "id": "axblockup-5",
+    "topic": "Infraclavicular and axillary brachial plexus blocks",
+    "domain": "Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)",
+    "discipline": "anesthesia",
+    "stem": "What property of regional anesthesia in addition to potent analgesia may benefit patients beyond pain control?",
+    "answer": "Regional anesthesia may reduce the neuroendocrine stress response, systemic opioid requirements, and associated opioid-related adverse effects",
+    "rationale": "Blocking afferent nociceptive signals attenuates cortisol/catecholamine release, reducing cardiac stress and improving postoperative recovery.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1608
+      }
+    ],
+    "confusable_with": "Regional anesthesia benefiting only pain scores without systemic effects"
+  }
+]

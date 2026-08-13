@@ -1,0 +1,174 @@
+# src/mastery_gates.py
+
+from typing import Dict, List
+import statistics
+
+def compute_mastery_vector(attempts: List[Dict]) -> Dict[str, float]:
+    """
+    Compute 6-dimensional mastery vector from attempt history.
+
+    Returns:
+        {
+            'accuracy': float (0-1),
+            'transfer_auc': float (0-1),
+            'mechanism_quality': float (0-1),
+            'calibration_icc': float (0-1),
+            'retention_6mo': float (0-1),
+            'integration_score': float (0-1),
+            'overconfident_rate': float (0-1),
+        }
+    """
+    if not attempts:
+        return {
+            'accuracy': 0.0,
+            'transfer_auc': 0.0,
+            'mechanism_quality': 0.0,
+            'calibration_icc': 0.0,
+            'retention_6mo': 0.0,
+            'integration_score': 0.0,
+            'overconfident_rate': 0.0,
+        }
+
+    # Accuracy: % correct
+    correct = sum(1 for a in attempts if a.get('correct'))
+    accuracy = correct / len(attempts)
+
+    # Overconfident rate: confident + wrong / total
+    overconfident = sum(1 for a in attempts if a.get('confidence_reported', 0) >= 4 and not a.get('correct'))
+    overconfident_rate = overconfident / len(attempts) if attempts else 0.0
+
+    # Transfer AUC: % of attempts marked transfer_success (novel case test)
+    transfer_attempts = [a for a in attempts if 'transfer_success' in a]
+    if transfer_attempts:
+        transfer_success = sum(1 for a in transfer_attempts if a.get('transfer_success'))
+        transfer_auc = transfer_success / len(transfer_attempts)
+    else:
+        transfer_auc = 0.0
+
+    # Mechanism quality: % of teach-back attempts with rubric >= 0.75
+    mechanism_attempts = [a for a in attempts if 'mechanism_quality' in a]
+    if mechanism_attempts:
+        mechanism_quality = sum(1 for a in mechanism_attempts if a.get('mechanism_quality', 0) >= 0.75) / len(mechanism_attempts)
+    else:
+        # If no explicit mechanism_quality, assume 1.0 if mechanism_articulated
+        mechanism_attempts = [a for a in attempts if 'mechanism_articulated' in a]
+        if mechanism_attempts:
+            mechanism_quality = sum(1 for a in mechanism_attempts if a.get('mechanism_articulated')) / len(mechanism_attempts)
+        else:
+            mechanism_quality = 0.0
+
+    # Calibration ICC: correlation between reported confidence and actual correctness
+    confidence_reported = [a.get('confidence_reported', 3) / 5.0 for a in attempts]  # Normalize 1-5 to 0-1
+    correctness = [1.0 if a.get('correct') else 0.0 for a in attempts]
+    calibration_icc = _compute_icc(confidence_reported, correctness)
+
+    # Retention 6mo: assume 0.0 for now (no 6-month data yet); will be populated on follow-up quiz
+    retention_6mo = 0.0
+
+    # Integration score: assume 0.0 for now (no cross-topic tests yet)
+    integration_score = 0.0
+
+    return {
+        'accuracy': accuracy,
+        'transfer_auc': transfer_auc,
+        'mechanism_quality': mechanism_quality,
+        'calibration_icc': calibration_icc,
+        'retention_6mo': retention_6mo,
+        'integration_score': integration_score,
+        'overconfident_rate': overconfident_rate,
+    }
+
+def _compute_icc(list1: List[float], list2: List[float]) -> float:
+    """
+    Compute Intraclass Correlation Coefficient (ICC) between two lists.
+    Simplified: Pearson correlation between reported confidence and actual correctness.
+
+    Special case: if both lists are constant, check if they represent perfect calibration
+    (high confidence + all correct) = 1.0, otherwise 0.0.
+    """
+    if len(list1) < 2 or len(list2) < 2:
+        return 0.0
+
+    mean1, mean2 = statistics.mean(list1), statistics.mean(list2)
+
+    numerator = sum((list1[i] - mean1) * (list2[i] - mean2) for i in range(len(list1)))
+    denom1 = sum((list1[i] - mean1) ** 2 for i in range(len(list1))) ** 0.5
+    denom2 = sum((list2[i] - mean2) ** 2 for i in range(len(list2))) ** 0.5
+
+    # Special case: no variance in one or both lists
+    if denom1 == 0 and denom2 == 0:
+        # Both constant: if all correct and high confidence, perfect calibration
+        if mean2 == 1.0 and mean1 >= 0.6:
+            return 1.0
+        else:
+            return 0.0
+
+    if denom1 == 0 or denom2 == 0:
+        return 0.0
+
+    return numerator / (denom1 * denom2)
+
+def check_mastery(vector: Dict[str, float], level: str = 'baseline') -> bool:
+    """
+    Determine if mastery criteria are met at the specified level.
+
+    Args:
+        vector: mastery_vector dict from compute_mastery_vector()
+        level: 'baseline' | 'intermediate' | 'advanced'
+
+    Returns:
+        bool: True if all criteria met for this level
+    """
+    if level == 'baseline':
+        # Accuracy >= 70% + calibration_icc >= 0.60 + mechanism_quality > 0
+        return (
+            vector['accuracy'] >= 0.70 and
+            vector['calibration_icc'] >= 0.60 and
+            vector['mechanism_quality'] > 0.0
+        )
+
+    elif level == 'intermediate':
+        # Accuracy >= 80% + overconf_rate < 0.40 + transfer_auc >= 0.70
+        return (
+            vector['accuracy'] >= 0.80 and
+            vector['overconfident_rate'] < 0.40 and
+            vector['transfer_auc'] >= 0.70
+        )
+
+    elif level == 'advanced':
+        # Accuracy >= 90% + overconf_rate < 15% + transfer_auc >= 0.80 + mechanism >= 0.95 + calibration >= 0.70
+        return (
+            vector['accuracy'] >= 0.90 and
+            vector['overconfident_rate'] < 0.15 and
+            vector['transfer_auc'] >= 0.80 and
+            vector['mechanism_quality'] >= 0.95 and
+            vector['calibration_icc'] >= 0.70
+        )
+
+    return False
+
+def update_mastery_in_db(topic_id: int, vector: Dict[str, float], conn) -> None:
+    """Update mastery_vector table in SQLite with computed values."""
+    cursor = conn.cursor()
+    cursor.execute("""
+        UPDATE mastery_vector
+        SET accuracy = ?,
+            transfer_auc = ?,
+            mechanism_quality = ?,
+            calibration_icc = ?,
+            retention_6mo = ?,
+            integration_score = ?,
+            mastery_achieved = ?,
+            last_updated = CURRENT_TIMESTAMP
+        WHERE topic_id = ?
+    """, (
+        vector['accuracy'],
+        vector['transfer_auc'],
+        vector['mechanism_quality'],
+        vector['calibration_icc'],
+        vector['retention_6mo'],
+        vector['integration_score'],
+        check_mastery(vector, level='advanced'),  # Mark as mastered if advanced level met
+        topic_id,
+    ))
+    conn.commit()

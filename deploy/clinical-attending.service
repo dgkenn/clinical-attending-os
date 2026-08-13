@@ -1,0 +1,16 @@
+[Unit]
+Description=Clinical Attending OS MCP server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/anesthesia_attending
+EnvironmentFile=-/home/ubuntu/anesthesia_attending/.env
+ExecStart=/home/ubuntu/anesthesia_attending/.venv/bin/python -m src.mcp_server
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

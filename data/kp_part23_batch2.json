@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "la-pharm-moa-1",
+    "topic": "Local anesthetic pharmacology: mechanism of action",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Which ion channel do local anesthetics primarily target to produce nerve block, and from which side of the membrane do they act?",
+    "answer": "Voltage-gated Na+ channels; local anesthetics bind the inner (intracellular) aspect of the channel in the open or inactivated state, blocking Na+ influx.",
+    "rationale": "Blockade of Na+ conductance prevents depolarization propagation; binding is use-dependent because the channel must open for the drug to access the binding site.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 432
+      }
+    ],
+    "confusable_with": "K+ channel blockers (e.g., dofetilide) which prolong repolarization"
+  },
+  {
+    "id": "la-pharm-moa-2",
+    "topic": "Local anesthetic pharmacology: mechanism of action",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Why does adding epinephrine to a local anesthetic solution reduce systemic toxicity risk?",
+    "answer": "Epinephrine causes local vasoconstriction, slowing systemic absorption and reducing peak plasma local anesthetic concentration.",
+    "rationale": "Reduced blood flow prolongs local anesthetic dwell time at the nerve and lowers the rate of vascular uptake; perineural dexamethasone similarly prolongs block duration.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 343
+      }
+    ],
+    "confusable_with": "alkalinization with bicarbonate (speeds onset but does not reduce peak plasma level)"
+  },
+  {
+    "id": "la-pharm-moa-3",
+    "topic": "Local anesthetic pharmacology: mechanism of action",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "A manufacturer-prepared local anesthetic with epinephrine has a lower pH than a plain solution. What is the clinical consequence regarding onset?",
+    "answer": "More acidic pH shifts local anesthetic toward the ionized (charged) form, which cannot cross nerve membranes as readily, slowing onset.",
+    "rationale": "Local anesthetics are weak bases; at lower pH equilibrium favors the ionized cationic form that is membrane-impermeant; the uncharged base form penetrates the axon membrane to reach the intracellular binding site.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1590
+      }
+    ],
+    "confusable_with": "Adding bicarbonate (alkalinizes solution, shifts toward uncharged form, speeds onset)"
+  },
+  {
+    "id": "la-pharm-moa-4",
+    "topic": "Local anesthetic pharmacology: mechanism of action",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Which optical isomer of bupivacaine is more cardiotoxic and why?",
+    "answer": "The R(+) isomer of bupivacaine binds more avidly and dissociates more slowly from cardiac Na+ channels than the S(-) isomer (levobupivacaine/ropivacaine), making it far more cardiotoxic.",
+    "rationale": "Slow dissociation prolongs diastolic Na channel blockade in cardiac tissue, facilitating re-entrant arrhythmias and resistant cardiac arrest that is difficult to resuscitate.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 432
+      }
+    ],
+    "confusable_with": "lidocaine (fast-on/fast-off kinetics, minimal cardiac accumulation)"
+  },
+  {
+    "id": "la-pharm-moa-5",
+    "topic": "Local anesthetic pharmacology: mechanism of action",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Both respiratory and metabolic acidosis worsen local anesthetic CNS toxicity. What is the mechanism?",
+    "answer": "Acidosis lowers the seizure threshold and causes ion trapping of local anesthetic in neural tissue (more ionized form cannot exit cells), amplifying CNS and cardiac toxicity.",
+    "rationale": "Intracellular acidosis shifts LA equilibrium toward ionized form inside the neuron; the drug cannot redistribute out, concentrating toxic levels within the cell.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 430
+      }
+    ],
+    "confusable_with": "alkalosis (raises seizure threshold, reduces ion trapping)"
+  },
+  {
+    "id": "last-1",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Immediately after injecting lidocaine via an epidural catheter, a patient develops circumoral numbness and heart rate rises from 85 to 105 bpm. What is the diagnosis and what does the tachycardia specifically indicate?",
+    "answer": "LAST from intravascular injection; the tachycardia indicates the epinephrine test-dose component was injected intravascularly (raises HR 20-30 bpm within 30-60 s).",
+    "rationale": "Co-injection of 15 mcg epinephrine intravenously produces a reliably detectable transient tachycardia, serving as the marker for inadvertent intravascular catheter placement.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 434
+      }
+    ],
+    "confusable_with": "High spinal block (causes bradycardia, not tachycardia; no circumoral numbness)"
+  },
+  {
+    "id": "last-2",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is the definitive antidote for bupivacaine-induced cardiac arrest from LAST and what dose is used?",
+    "answer": "20% lipid emulsion (Intralipid) 1.5 mL/kg IV bolus; must be available whenever epidural blocks are performed.",
+    "rationale": "Lipid emulsion acts as a lipid sink sequestering bupivacaine away from cardiac Na channels; standard resuscitation drugs are often ineffective against bupivacaine cardiac toxicity.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 432
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1588
+      }
+    ],
+    "confusable_with": "Sodium bicarbonate (used for TCA overdose cardiac toxicity, not first-line for LAST)"
+  },
+  {
+    "id": "last-3",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "List four strategies to minimize intravascular injection risk during epidural block.",
+    "answer": "(1) Aspirate before each injection; (2) use an epinephrine-containing test dose; (3) inject in small incremental aliquots (every dose is a test dose); (4) observe for early CNS signs: tinnitus, metallic taste, perioral numbness.",
+    "rationale": "Fractionated dosing ensures that if intravascular injection occurs, the absorbed dose remains below the threshold for catastrophic toxicity.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1598
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 435
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "last-4",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Why is the epinephrine test dose less reliable for detecting intravascular epidural catheter placement in laboring patients?",
+    "answer": "Parturients have marked spontaneous baseline heart rate variability with uterine contractions, making epinephrine-induced tachycardia difficult to distinguish from contraction-related HR rises.",
+    "rationale": "Uterine contractions cause transient catecholamine surges that mimic the test-dose response, reducing the specificity of the epinephrine tachycardia sign in obstetric patients.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1399
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "last-5",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Propofol terminates LAST-induced seizures but is problematic when cardiac toxicity coexists. Why?",
+    "answer": "Propofol (0.5-2 mg/kg) reliably terminates seizures but is a cardiovascular depressant; it should not substitute for lipid emulsion when cardiac collapse from LAST is present.",
+    "rationale": "In bupivacaine cardiac arrest, additional myocardial depression from propofol worsens an already refractory situation; lipid emulsion remains the definitive antidote.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 430
+      }
+    ],
+    "confusable_with": "Benzodiazepines (also treat seizures with less cardiac depression but still not equivalent to lipid emulsion)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Local anesthetic systemic toxicity (LAST)",
+    "discipline": "anesthesia",
+    "enabling_conditions": "High-volume LA injection (epidural, peripheral nerve block), accidental intravascular injection, use of bupivacaine (highest cardiac risk vs lidocaine/ropivacaine), pregnancy (increased epidural vein engorgement)",
+    "pathophysiology": "Systemic absorption or direct IV injection causes Na+ channel blockade in CNS neurons (excitatory then inhibitory) and cardiac conduction tissue; bupivacaine's slow cardiac channel dissociation makes resuscitation resistant to ACLS drugs",
+    "time_course": "CNS prodrome (tinnitus, perioral numbness, apprehension) within seconds to minutes; seizures then cardiac collapse follow without intervention",
+    "key_features": "Circumoral numbness, tinnitus, metallic taste -> seizures -> ventricular arrhythmias/arrest; test-dose tachycardia signals intravascular placement",
+    "consequence_if_missed": "Refractory cardiac arrest and death; bupivacaine cardiac toxicity unresponsive to standard ACLS without lipid emulsion"
+  },
+  {
+    "id": "last-ob-1",
+    "topic": "Local anesthetic systemic toxicity (LAST) in obstetrics",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Why is 0.75% bupivacaine contraindicated for obstetric epidural anesthesia?",
+    "answer": "0.75% bupivacaine is contraindicated in obstetric epidural use because accidental intravascular injection causes rapid, refractory cardiac arrest that is difficult to resuscitate, especially in pregnant patients.",
+    "rationale": "Engorged epidural veins in pregnancy increase intravascular injection risk; at high doses the R(+) bupivacaine isomer produces slow-dissociation Na channel blockade in cardiac tissue.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 435
+      }
+    ],
+    "confusable_with": "0.5% bupivacaine (acceptable for spinal or epidural in obstetrics)"
+  },
+  {
+    "id": "last-ob-2",
+    "topic": "Local anesthetic systemic toxicity (LAST) in obstetrics",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "How does uterine compression of the IVC in late pregnancy increase LAST risk during epidural placement?",
+    "answer": "IVC compression raises epidural venous pressure and engorgement, increasing the probability that the epidural needle or catheter enters an epidural vein.",
+    "rationale": "Engorged veins are more likely to be entered inadvertently; reduced epidural space volume also means smaller total LA doses can spread further and absorb faster.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 329
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "last-ob-3",
+    "topic": "Local anesthetic systemic toxicity (LAST) in obstetrics",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "A parturient develops seizures followed by wide-complex tachycardia after epidural top-up for cesarean delivery. What is the immediate management priority?",
+    "answer": "Stop LA injection, call for help, give 20% lipid emulsion 1.5 mL/kg IV bolus, initiate ACLS; perimortem cesarean if cardiac arrest is not reversed within 4-5 minutes.",
+    "rationale": "Lipid emulsion is the definitive antidote for LA cardiac toxicity; perimortem cesarean at 4-5 min of arrest both improves maternal resuscitation and fetal outcomes.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1588
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 615
+      }
+    ],
+    "confusable_with": "Eclampsia (seizures but no wide-complex arrhythmia; no LA exposure)"
+  },
+  {
+    "id": "last-ob-4",
+    "topic": "Local anesthetic systemic toxicity (LAST) in obstetrics",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Pregnancy reduces the minimum local analgesic concentration (MLAC). How does this affect LAST risk management?",
+    "answer": "Reduced MLAC means smaller LA doses achieve equivalent analgesia; however, it does not proportionally reduce LAST risk because the margin between analgesic and toxic plasma concentrations depends on intravascular injection, not dose alone.",
+    "rationale": "Enhanced neural sensitivity means dose reductions are appropriate, but accidental intravascular injection of even a reduced dose still delivers toxic systemic levels rapidly.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1358
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "last-ob-5",
+    "topic": "Local anesthetic systemic toxicity (LAST) in obstetrics",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "After an epidural test dose in a laboring patient, heart rate rises 25 bpm during a contraction. How do you distinguish test-dose positivity from contraction-related tachycardia?",
+    "answer": "Time the HR change: test-dose tachycardia from epinephrine appears within 30-60 s and persists briefly regardless of contraction; contraction-related tachycardia correlates with contraction onset/offset. Also monitor for CNS signs (tinnitus, metallic taste).",
+    "rationale": "Epinephrine tachycardia onset and pattern differ from contraction-mediated sympathetic surges; CNS symptoms confirm intravascular injection independent of HR changes.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1399
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lqt-periop-1",
+    "topic": "Long QT Syndrome & Channelopathies - Perioperative Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "A patient with known long QT syndrome develops torsades de pointes intraoperatively. What is the treatment?",
+    "answer": "Defibrillation if hemodynamically unstable; IV magnesium sulfate; correct electrolytes (K+, Mg2+) and discontinue QT-prolonging drugs.",
+    "rationale": "Torsades arises from early afterdepolarizations in the setting of QT prolongation; magnesium suppresses afterdepolarizations and shortens effective refractory period dispersion.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "Monomorphic VT (treat with amiodarone/cardioversion; magnesium less effective)"
+  },
+  {
+    "id": "lqt-periop-2",
+    "topic": "Long QT Syndrome & Channelopathies - Perioperative Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Procainamide is infusing at 30 mg/min for an arrhythmia. What ECG change mandates stopping the infusion?",
+    "answer": "Further QRS widening (>50% of baseline) or hypotension; maximum dose is 16 mg/kg.",
+    "rationale": "Procainamide blocks Na channels; excessive QRS widening signals conduction system toxicity, and hypotension indicates negative inotropy; continuing risks fatal arrhythmia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & Asystole)",
+        "page": 18
+      }
+    ],
+    "confusable_with": "Amiodarone infusion monitoring (watch for bradycardia and hypotension, not QRS widening as the primary endpoint)"
+  },
+  {
+    "id": "lqt-periop-3",
+    "topic": "Long QT Syndrome & Channelopathies - Perioperative Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "List four perioperative factors that can prolong QT interval and trigger torsades in a susceptible patient.",
+    "answer": "QT-prolonging drugs (ondansetron, droperidol, haloperidol, certain antibiotics), hypokalemia, hypomagnesemia, bradycardia, and hypothermia.",
+    "rationale": "Multiple concurrent QT-prolonging factors have additive effects; repolarization reserve is exhausted, generating the early afterdepolarizations that initiate torsades.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lqt-periop-4",
+    "topic": "Long QT Syndrome & Channelopathies - Perioperative Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "A patient with congenital LQTS on chronic beta-blocker therapy is scheduled for elective surgery. What is the perioperative plan regarding this medication?",
+    "answer": "Continue beta-blocker perioperatively; abrupt withdrawal risks life-threatening rebound tachycardia and arrhythmia in congenital LQTS.",
+    "rationale": "Beta-blockers are the cornerstone of congenital LQTS management, reducing sympathetic-triggered early afterdepolarizations; sympathetic stimulation during laryngoscopy/intubation is especially dangerous.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lqt-periop-5",
+    "topic": "Long QT Syndrome & Channelopathies - Perioperative Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "A patient with an ICD for channelopathy undergoes surgery with monopolar electrocautery. What is the key device management step?",
+    "answer": "Apply a magnet over the ICD to disable tachyarrhythmia detection/shock therapy (converts to asynchronous mode) and have external defibrillation immediately available; use bipolar cautery when possible.",
+    "rationale": "Electrocautery signals can be misinterpreted as VF by the ICD, triggering inappropriate shocks or inhibiting pacing; magnet application temporarily disables shock therapy.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "Pacemaker-dependent patient (magnet converts pacemaker to asynchronous, not inhibited — effect differs from ICD magnet application)"
+  },
+  {
+    "id": "low-back-pain-1",
+    "topic": "Low Back Pain and Spine-Related Pain",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "What are the three most common causes of low back pain?",
+    "answer": "Lumbosacral strain (sprain), degenerative disc disease, and myofascial syndromes account for the majority of low back pain cases.",
+    "rationale": "Approximately 80-90% of low back pain arises from sprain or strain; degenerative disc and myofascial causes make up most of the remainder; serious pathology (fracture, malignancy, infection) is a minority.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1735
+      }
+    ],
+    "confusable_with": "Radiculopathy from disc herniation (a distinct subtype with dermatomal radiation)"
+  },
+  {
+    "id": "low-back-pain-2",
+    "topic": "Low Back Pain and Spine-Related Pain",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "What distinguishes a lumbar sprain from a lumbar strain in clinical terminology?",
+    "answer": "Sprain is used when pain is related to a well-defined acute injury (ligament); strain is used for a more diffuse muscular injury without a single well-defined event.",
+    "rationale": "Both represent musculoligamentous injuries from lifting, falls, or sudden movements; distinction is largely clinical and does not change initial management.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1736
+      }
+    ],
+    "confusable_with": "Disc herniation (structural pathology with neurological signs)"
+  },
+  {
+    "id": "low-back-pain-3",
+    "topic": "Low Back Pain and Spine-Related Pain",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "A patient with sciatica and MRI-confirmed disc herniation has failed conservative therapy. What interventional approach may provide benefit?",
+    "answer": "Epidural steroid injection via transforaminal, interlaminar, or caudal approach can provide relief for radicular pain from disc herniation or lumbar stenosis.",
+    "rationale": "Steroids reduce perineural inflammation and edema around compressed nerve roots; patients with mild-to-moderate stenosis and radicular symptoms derive the most benefit.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1743
+      }
+    ],
+    "confusable_with": "Facet joint injection (targets zygapophyseal joints for axial pain, not radicular pain)"
+  },
+  {
+    "id": "low-back-pain-4",
+    "topic": "Low Back Pain and Spine-Related Pain",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "Describe the nucleus pulposus and what happens to it with aging relevant to disc disease.",
+    "answer": "The nucleus pulposus is the gelatinous central portion of the intervertebral disc that degenerates and becomes fibrotic with advancing age, losing hydration and height, predisposing to herniation.",
+    "rationale": "Intervertebral discs bear at least one-third of spinal column weight; loss of nucleus pulposus hydration reduces its shock-absorbing capacity and increases risk of annular tears and disc herniation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1737
+      }
+    ],
+    "confusable_with": "Annulus fibrosus tears (outer ring; provides structural containment of the nucleus pulposus)"
+  },
+  {
+    "id": "low-back-pain-5",
+    "topic": "Low Back Pain and Spine-Related Pain",
+    "domain": "Pain medicine (acute perioperative pain, multimodal & opioid management, chronic pain syndromes, interventional techniques, opioid pharmacology & safety)",
+    "discipline": "anesthesia",
+    "stem": "A myofascial pain patient has trigger points. What is a trigger point and what sustains the pain cycle?",
+    "answer": "Trigger points are discrete areas of muscle tenderness that develop after acute injury; stimulation produces pain and reflex muscle spasm, which then sustains the pain cycle even after the initial injury subsides.",
+    "rationale": "Muscle spasm from trigger point stimulation reduces blood flow and perpetuates ischemic pain; the cycle can persist as latent trigger points long after the acute episode.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1734
+      }
+    ],
+    "confusable_with": "Fibromyalgia (diffuse tender points without discrete trigger points or referred pain pattern)"
+  },
+  {
+    "id": "lumbar-psoas-1",
+    "topic": "Lumbar plexus anatomy and psoas compartment block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Which three peripheral nerves are anesthetized by a posterior lumbar plexus (psoas compartment) block?",
+    "answer": "Femoral nerve, lateral femoral cutaneous nerve, and obturator nerve are the three main branches of the lumbar plexus anesthetized by the psoas compartment block.",
+    "rationale": "The lumbar plexus forms within the psoas muscle from L1-L4 roots; a single injection into the psoas compartment can block all three branches, providing anesthesia for hip and anterior thigh procedures.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1662
+      }
+    ],
+    "confusable_with": "Femoral nerve block alone (only anesthetizes femoral territory, not lateral femoral cutaneous or obturator)"
+  },
+  {
+    "id": "lumbar-psoas-2",
+    "topic": "Lumbar plexus anatomy and psoas compartment block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "The posterior lumbar plexus block has one of the highest complication rates of any peripheral nerve block. Name four serious complications.",
+    "answer": "Retroperitoneal hematoma, intravascular local anesthetic injection with systemic toxicity, intrathecal injection (total spinal), and renal capsular puncture.",
+    "rationale": "The lumbar plexus is in close proximity to the retroperitoneal vasculature, epidural/subarachnoid space, and kidney; reaching it requires a long needle traversing multiple tissue planes.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1662
+      }
+    ],
+    "confusable_with": "Femoral nerve block (far lower complication rate; more superficial and easily compressible site)"
+  },
+  {
+    "id": "lumbar-psoas-3",
+    "topic": "Lumbar plexus anatomy and psoas compartment block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "Where do the lumbar spinal nerves enter the psoas compartment?",
+    "answer": "After exiting the intervertebral foramina beneath the pedicles and transverse processes, the lumbar spinal nerves enter the psoas compartment to form the lumbar plexus within the psoas muscle.",
+    "rationale": "Understanding this anatomy explains both the single-injection access to multiple lumbar plexus branches and the risk of epidural/intrathecal spread from proximal injection.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1778
+      }
+    ],
+    "confusable_with": "Sacral plexus (forms caudal to the psoas in the pelvis from L4-S4 roots)"
+  },
+  {
+    "id": "lumbar-psoas-4",
+    "topic": "Lumbar plexus anatomy and psoas compartment block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What surgical procedures are posterior lumbar plexus (psoas compartment) blocks most useful for?",
+    "answer": "Procedures involving the femoral, lateral femoral cutaneous, and obturator nerve territories: hip surgery, anterior thigh procedures, and as part of combined lumbar-sciatic block for total leg anesthesia.",
+    "rationale": "The psoas compartment block anesthetizes all three major lumbar plexus branches with one injection, making it effective for hip arthroplasty and femur fractures when combined with a sciatic block.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1662
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lumbar-psoas-5",
+    "topic": "Lumbar plexus anatomy and psoas compartment block",
+    "domain": "Regional & neuraxial anesthesia (spinal, epidural, combined, upper & lower extremity peripheral nerve blocks, truncal blocks, local anesthetic pharmacology, complications)",
+    "discipline": "anesthesia",
+    "stem": "What is the obturator nerve's terminal division point relevant to obturator nerve block technique?",
+    "answer": "The obturator nerve divides into anterior and posterior branches between the adductor brevis and adductor magnus muscles; local anesthetic (8-10 mL) is injected between these layers to anesthetize both branches.",
+    "rationale": "Accurate injection between the adductor brevis and magnus ensures coverage of both branches; this is the target for distal obturator nerve block when psoas compartment block is not appropriate.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1662
+      }
+    ],
+    "confusable_with": "Femoral nerve block at the inguinal ligament (different anatomical target; does not cover obturator territory)"
+  },
+  {
+    "id": "mh-1",
+    "topic": "Malignant Hyperthermia",
+    "domain": "Anesthesia",
+    "discipline": "anesthesia",
+    "stem": "What are the two most immediate actions when malignant hyperthermia is suspected intraoperatively?",
+    "answer": "(1) Discontinue the triggering volatile anesthetic and succinylcholine; (2) administer dantrolene 2.5 mg/kg IV immediately (repeat every 5 min up to 10 mg/kg).",
+    "rationale": "Removing the trigger stops ongoing calcium release; dantrolene blocks RyR1 receptor to inhibit calcium release from the sarcoplasmic reticulum, directly treating the hypermetabolic state.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1989
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1990
+      }
+    ],
+    "confusable_with": "Neuroleptic malignant syndrome treatment (uses dopaminergic agonists, dantrolene optional; develops over days not minutes)"
+  },
+  {
+    "id": "mh-2",
+    "topic": "Malignant Hyperthermia",
+    "domain": "Anesthesia",
+    "discipline": "anesthesia",
+    "stem": "What is dantrolene's mechanism of action in treating malignant hyperthermia?",
+    "answer": "Dantrolene binds the RyR1 (ryanodine receptor 1) channel in the sarcoplasmic reticulum, inhibiting calcium ion release and directly interrupting the hypermetabolic cycle.",
+    "rationale": "MH is caused by uncontrolled Ca2+ release from the SR via a mutant RyR1; dantrolene is the only pharmacological agent that acts at this specific pathophysiological step.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1990
+      }
+    ],
+    "confusable_with": "Calcium channel blockers (block cell-membrane Ca2+ entry, not SR release; not effective for MH)"
+  },
+  {
+    "id": "mh-3",
+    "topic": "Malignant Hyperthermia",
+    "domain": "Anesthesia",
+    "discipline": "anesthesia",
+    "stem": "The mortality from MH even with prompt treatment ranges from 5% to 30%. Why does treatment delay worsen outcomes?",
+    "answer": "Delayed dantrolene administration allows continued uncontrolled muscle metabolism, producing progressive hyperthermia, severe acidosis, hyperkalemia, rhabdomyolysis, and multi-organ failure including renal failure.",
+    "rationale": "The hypermetabolic cascade of MH generates massive CO2 and lactate production, heat, and cellular breakdown products; each minute of delay amplifies organ injury.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1989
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mh-4",
+    "topic": "Malignant Hyperthermia",
+    "domain": "Anesthesia",
+    "discipline": "anesthesia",
+    "stem": "How does malignant hyperthermia differ from neuroleptic malignant syndrome in time course and triggering agents?",
+    "answer": "MH is triggered by volatile anesthetics and succinylcholine, developing within minutes to hours intraoperatively. NMS is triggered by antidopaminergic drugs (or dopamine withdrawal), developing over days.",
+    "rationale": "The distinction is clinically important because initial management differs: MH requires dantrolene immediately, while NMS is managed with drug withdrawal, dopaminergic agonists, and supportive care.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 85
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1994
+      }
+    ],
+    "confusable_with": "Serotonin syndrome (also causes hyperthermia but from serotonergic drug interactions; treated with cyproheptadine)"
+  },
+  {
+    "id": "mh-5",
+    "topic": "Malignant Hyperthermia",
+    "domain": "Anesthesia",
+    "discipline": "anesthesia",
+    "stem": "Children are more susceptible than adults to succinylcholine-associated MH and rhabdomyolysis. What immediate treatment is required if a child arrests after succinylcholine?",
+    "answer": "Immediate treatment for hyperkalemia (calcium gluconate/chloride, bicarbonate, insulin/glucose, Kayexalate); prolonged resuscitative efforts including cardiopulmonary bypass may be required.",
+    "rationale": "Succinylcholine in children (especially those with undiagnosed myopathies) can cause acute massive hyperkalemia and rhabdomyolysis leading to cardiac arrest; standard ACLS alone is often insufficient.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1458
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Malignant Hyperthermia",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Volatile anesthetic (halothane, sevoflurane, desflurane, isoflurane) or succinylcholine exposure; autosomal dominant RyR1 or DHPR mutation; pediatric patients at higher risk; family history of MH or unexplained anesthetic death",
+    "pathophysiology": "Mutant RyR1 receptor releases uncontrolled Ca2+ from sarcoplasmic reticulum -> unregulated muscle contraction and hypermetabolism -> CO2 production, lactic acidosis, hyperthermia, rhabdomyolysis, hyperkalemia",
+    "time_course": "Typically minutes to hours after exposure to trigger; rigidity (especially masseter) and rising EtCO2 are early signs",
+    "key_features": "Rising EtCO2 (earliest sign), muscle rigidity, tachycardia, hyperthermia, metabolic acidosis, myoglobinuria; masseter spasm after succinylcholine is a warning sign",
+    "consequence_if_missed": "Hyperthermia >40C, multi-organ failure, cardiac arrest; mortality 5-30% even with treatment"
+  },
+  {
+    "_type": "confusable_pair",
+    "topic_a": "Malignant Hyperthermia",
+    "topic_b": "Neuroleptic Malignant Syndrome",
+    "discriminator": "MH: triggered by volatile anesthetics/succinylcholine, onset minutes-hours, treat with dantrolene + trigger removal. NMS: triggered by antidopaminergic drugs or dopamine withdrawal, onset days-weeks, treat with drug withdrawal + dopamine agonist; dantrolene used adjunctively in severe cases."
+  },
+  {
+    "id": "mh-pharm-1",
+    "topic": "Malignant hyperthermia: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Which commonly used inhalation anesthetic does NOT trigger malignant hyperthermia and what is a key characteristic of this agent?",
+    "answer": "Nitrous oxide does not trigger MH; it is inert, has no metabolism, minimal cardiovascular effects, low blood solubility, and does not trigger malignant hyperthermia.",
+    "rationale": "Nitrous oxide lacks the halogenated structure that causes the RyR1 mutation to release calcium; it is safe in MH-susceptible patients unlike volatile halogenated agents.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 257
+      }
+    ],
+    "confusable_with": "Desflurane, sevoflurane, isoflurane, halothane (all halogenated volatiles that trigger MH)"
+  },
+  {
+    "id": "mh-pharm-2",
+    "topic": "Malignant hyperthermia: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Dantrolene is packaged as lyophilized powder requiring reconstitution. What is the standard vial formulation and why is reconstitution time clinically significant?",
+    "answer": "Conventional dantrolene: 20 mg lyophilized powder per vial requiring 60 mL sterile water to dissolve; reconstitution of the initial 2.5 mg/kg dose for a 70 kg patient (requiring approximately nine vials) can be time-consuming, delaying treatment.",
+    "rationale": "Each minute of delay worsens hypermetabolic crisis; newer formulations (Ryanodex) offer 250 mg per vial with faster reconstitution but are more expensive.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1990
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mh-pharm-3",
+    "topic": "Malignant hyperthermia: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "For an MH-susceptible patient requiring general anesthesia, what is a safe anesthetic plan?",
+    "answer": "Use total intravenous anesthesia (propofol infusion) with non-depolarizing neuromuscular blockers (avoid succinylcholine); avoid all volatile halogenated agents. Prepare a clean (vapor-free) machine or use a dedicated TIVA machine.",
+    "rationale": "Propofol, opioids, benzodiazepines, and non-depolarizing NMBs do not trigger MH; the anesthetic machine should be flushed of volatile agents per institutional protocol.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1982
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 257
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mh-pharm-4",
+    "topic": "Malignant hyperthermia: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "After the initial 2.5 mg/kg dantrolene dose, a patient's EtCO2 remains elevated and temperature continues rising. What is the next pharmacological step?",
+    "answer": "Repeat dantrolene 2.5 mg/kg IV every 5 minutes until the episode is terminated, up to a maximum of 10 mg/kg total.",
+    "rationale": "The MH episode requires sustained RyR1 blockade; initial dosing may be insufficient to overcome the degree of SR calcium release in severe episodes; escalating to 10 mg/kg is evidence-based.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1990
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mh-pharm-5",
+    "topic": "Malignant hyperthermia: pharmacology",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Volatile anesthetics, including desflurane, are degraded by desiccated CO2 absorbents to produce potentially toxic compounds. What is produced and why is it difficult to diagnose?",
+    "answer": "Desflurane (and other volatiles) degraded by desiccated barium hydroxide lime or NaOH/KOH-containing absorbents produce carbon monoxide; CO poisoning is difficult to diagnose under anesthesia because carboxyhemoglobin causes falsely high pulse oximetry readings.",
+    "rationale": "Standard pulse oximeters cannot distinguish oxyhemoglobin from carboxyhemoglobin; arterial blood gas co-oximetry is required to detect elevated carboxyhemoglobin.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 268
+      }
+    ],
+    "confusable_with": "Compound A production from sevoflurane (different metabolite, potential renal toxicity, not CO)"
+  },
+  {
+    "id": "mat-ca-1",
+    "topic": "Maternal cardiac arrest and perimortem cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "A term parturient develops cardiac arrest. Why is standard CPR less effective in a pregnant patient and what immediate positional maneuver is required?",
+    "answer": "The gravid uterus compresses the inferior vena cava reducing venous return; lateral uterine displacement (manual left uterine displacement or left lateral tilt) must be applied immediately to relieve aortocaval compression during CPR.",
+    "rationale": "Aortocaval compression can reduce cardiac output by 30-40%; relieving it dramatically improves the effectiveness of chest compressions by restoring venous return.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2078
+      }
+    ],
+    "confusable_with": "Trendelenburg position (worsens diaphragm elevation and respiratory compromise in pregnancy)"
+  },
+  {
+    "id": "mat-ca-2",
+    "topic": "Maternal cardiac arrest and perimortem cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "If a term parturient is not resuscitated within how many minutes of cardiac arrest should perimortem cesarean delivery be performed, and what is the rationale?",
+    "answer": "Perimortem cesarean should be performed within 4-5 minutes of maternal cardiac arrest (delivery within 5 minutes of arrest onset).",
+    "rationale": "Delivery relieves aortocaval compression, improves venous return and cardiac output during resuscitation, and provides the best chance of fetal neurological survival; fetal monitoring should NOT be attempted during CPR.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2078
+      },
+      {
+        "book": "Miller/Baby Miller",
+        "page": 615
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-ca-3",
+    "topic": "Maternal cardiac arrest and perimortem cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Why does the pregnant patient desaturate more rapidly than non-pregnant adults during apnea?",
+    "answer": "Pregnant patients have decreased FRC combined with 30% increased oxygen consumption, providing a much smaller oxygen reserve and faster desaturation during apnea.",
+    "rationale": "Reduced FRC (from elevated diaphragm) means less oxygen stored in the lungs at the onset of apnea; concurrent increased consumption depletes this reserve more rapidly.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2078
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1359
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-ca-4",
+    "topic": "Maternal cardiac arrest and perimortem cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Amniotic fluid embolism classically presents with sudden tachypnea, cyanosis, and shock. What is the current preferred terminology for this condition and why?",
+    "answer": "Anaphylactoid syndrome of pregnancy is the preferred term, emphasizing the role of chemical mediators in the systemic reaction rather than simple mechanical embolism.",
+    "rationale": "The syndrome appears to involve an anaphylactoid immune response to fetal antigens entering maternal circulation, explaining multi-system involvement beyond simple vascular obstruction.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1424
+      }
+    ],
+    "confusable_with": "Pulmonary thromboembolism (gradual onset, no DIC pattern, responds to anticoagulation)"
+  },
+  {
+    "id": "mat-ca-5",
+    "topic": "Maternal cardiac arrest and perimortem cesarean delivery",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "During a parturient's difficult airway attempt, massive aspiration occurs. What anatomical and physiologic factors unique to pregnancy increase this risk?",
+    "answer": "Increased soft tissue edema (pharyngeal/laryngeal), enlarged breasts affecting positioning, decreased gastric emptying, lower esophageal sphincter incompetence, and elevated intragastric pressure from the gravid uterus all increase aspiration risk.",
+    "rationale": "Pregnancy causes hormonal, anatomical, and positional changes that simultaneously impair airway access, reduce airway protective reflexes, and increase gastric content volume and acidity.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 815
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-cv-1",
+    "topic": "Maternal cardiovascular physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "By approximately how much does cardiac output increase at term pregnancy and when are the greatest increases seen?",
+    "answer": "Cardiac output increases approximately 40-50% at term; the greatest increases are seen during labor (each contraction adds 300-500 mL autotransfusion) and immediately after delivery (cardiac output rises 45% over third-trimester values).",
+    "rationale": "Uterine contractions displace blood into central circulation; delivery removes IVC compression and rapidly increases venous return, dramatically increasing cardiac output.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1360
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1371
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-cv-2",
+    "topic": "Maternal cardiovascular physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is supine hypotension syndrome in pregnancy and after what gestational age does it typically occur?",
+    "answer": "After approximately week 20 of pregnancy, the enlarging uterus compresses the inferior vena cava in the supine position, decreasing venous return and cardiac output; approximately 5% of women develop frank hypotension (supine hypotension syndrome/aortocaval compression).",
+    "rationale": "IVC compression reduces preload; the degree of hypotension depends on the extent of compression and the adequacy of collateral venous return via the azygos and paravertebral veins.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1360
+      }
+    ],
+    "confusable_with": "Orthostatic hypotension (positional change from sitting/standing to lying; different mechanism)"
+  },
+  {
+    "id": "mat-cv-3",
+    "topic": "Maternal cardiovascular physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "How long after delivery does cardiac output return to pre-pregnancy values?",
+    "answer": "Cardiac output often does not return to normal until approximately 2 weeks after delivery.",
+    "rationale": "Post-delivery fluid mobilization, hormonal changes, and resolution of the hyperdynamic state take days to weeks; this has implications for parturients with cardiac disease who may decompensate postpartum.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1360
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-cv-4",
+    "topic": "Maternal cardiovascular physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Excessive maternal hyperventilation during labor can harm the fetus. What is the mechanism?",
+    "answer": "Marked hypocapnia from hyperventilation reduces uterine blood flow, promotes fetal acidosis, and causes periods of maternal hypoventilation with transient maternal and fetal hypoxemia between contractions.",
+    "rationale": "Hypocapnia causes uterine and placental vasoconstriction, directly reducing oxygen delivery to the fetus; the compensatory apneic periods between contractions further impair oxygen exchange.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1371
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-cv-5",
+    "topic": "Maternal cardiovascular physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "How does pregnancy change intravascular volume and plasma volume specifically?",
+    "answer": "Total intravascular fluid volume increases 35-45%; plasma volume increases 45-55%; erythrocyte volume increases only 20-30%, creating a dilutional (physiological) anemia of pregnancy.",
+    "rationale": "The disproportionate plasma expansion relative to red cell mass reduces hematocrit; this physiological anemia is important when interpreting preoperative hemoglobin values in parturients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 602
+      }
+    ],
+    "confusable_with": "Iron deficiency anemia (pathological reduction in RBC production; hemoglobin typically <10 g/dL in severe cases)"
+  },
+  {
+    "id": "mat-gi-1",
+    "topic": "Maternal gastrointestinal and aspiration risk",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What changes in pregnancy increase the risk of pulmonary aspiration during general anesthesia?",
+    "answer": "Progesterone-mediated decreased lower esophageal sphincter tone, delayed gastric emptying (especially during labor), increased intragastric pressure from the gravid uterus, and high-acidity gastric contents all combine to increase aspiration risk.",
+    "rationale": "These changes persist into the postpartum period; a parturient 12 hours after delivery still has delayed gastric emptying and should be treated as having full stomach.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1379
+      }
+    ],
+    "confusable_with": "Non-pregnant adult at risk (gastroparesis, obesity — similar mechanisms but pregnancy-specific hormonal component)"
+  },
+  {
+    "id": "mat-gi-2",
+    "topic": "Maternal gastrointestinal and aspiration risk",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "How does metoclopramide help reduce aspiration risk in obstetric patients undergoing general anesthesia?",
+    "answer": "Metoclopramide acts as a prokinetic via peripheral cholinomimetic action and central dopamine antagonism, accelerating gastric emptying and increasing lower esophageal sphincter tone.",
+    "rationale": "Faster gastric emptying reduces residual volume; increased LES tone reduces regurgitation risk; metoclopramide also has antiemetic properties via central dopamine blockade.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 446
+      }
+    ],
+    "confusable_with": "Ondansetron (5-HT3 antagonist antiemetic; no prokinetic effect; may prolong QT)"
+  },
+  {
+    "id": "mat-gi-3",
+    "topic": "Maternal gastrointestinal and aspiration risk",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "When is a postpartum patient scheduled for tubal ligation still considered to have aspiration risk comparable to an actively pregnant patient?",
+    "answer": "For approximately 12-24 hours after delivery; gastric motility remains delayed and the patient should be managed with aspiration precautions (rapid sequence induction).",
+    "rationale": "Hormonal and mechanical factors that impair gastric emptying normalize gradually after delivery; at 12 hours postpartum GI physiology has not fully returned to baseline.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1379
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-gi-4",
+    "topic": "Maternal gastrointestinal and aspiration risk",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "For elective cesarean under general anesthesia, what pharmacological aspiration prophylaxis regimen is used preoperatively?",
+    "answer": "Non-particulate antacid (sodium citrate 30 mL PO) to neutralize gastric acid; H2 blocker (ranitidine) or PPI to reduce acid production; metoclopramide to accelerate gastric emptying.",
+    "rationale": "Non-particulate antacid works immediately; H2 blockers and PPIs require time to reduce acid production; metoclopramide's prokinetic effect reduces residual gastric volume.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 446
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-gi-5",
+    "topic": "Maternal gastrointestinal and aspiration risk",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Succinylcholine causes a rise in intragastric pressure from fasciculations. Does this increase the clinical risk of aspiration in obstetric RSI?",
+    "answer": "No; the rise in intragastric pressure from succinylcholine fasciculations is offset by a simultaneous equivalent increase in lower esophageal sphincter tone, so there is no net increase in aspiration risk.",
+    "rationale": "This pharmacological balance means succinylcholine remains acceptable for RSI in parturients despite concerns about fasciculation-related intragastric pressure increases.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 335
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-heme-1",
+    "topic": "Maternal hematologic and metabolic physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Plasma volume in pregnancy increases by 45-55% while erythrocyte volume increases by only 20-30%. What is the clinical consequence for laboratory values?",
+    "answer": "The disproportionate plasma expansion produces a physiological dilutional anemia of pregnancy, with hematocrit typically decreasing to the mid-30s despite absolute increases in total red cell mass.",
+    "rationale": "This dilutional anemia must be distinguished from true iron deficiency anemia; the enlarged plasma volume also affects drug distribution volumes and pharmacokinetics.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 602
+      }
+    ],
+    "confusable_with": "Iron deficiency anemia (pathological; MCV low, ferritin low; requires iron supplementation)"
+  },
+  {
+    "id": "mat-heme-2",
+    "topic": "Maternal hematologic and metabolic physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Pregnancy is associated with a hypercoagulable state. How does this affect perioperative thromboembolic risk?",
+    "answer": "Pregnancy increases fibrinogen and clotting factors (except factors XI and XIII), decreases natural anticoagulants, and increases platelet activation, creating a net hypercoagulable state that persists 6-12 weeks postpartum; VTE prophylaxis is critical perioperatively.",
+    "rationale": "The hypercoagulability serves to limit hemorrhage at delivery but increases VTE risk; this is the leading non-obstetric cause of maternal mortality in developed countries.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 602
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-heme-3",
+    "topic": "Maternal hematologic and metabolic physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Cardiac output and blood volume increase in pregnancy. What is the primary physiological driver?",
+    "answer": "Cardiac output and blood volume increase to meet increased maternal and fetal metabolic demands.",
+    "rationale": "The developing feto-placental unit requires substantial oxygen and nutrient delivery; maternal cardiovascular expansion is the adaptive response driven by progesterone and placental hormones.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1359
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-heme-4",
+    "topic": "Maternal hematologic and metabolic physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What specific pharmacokinetic consequence of the expanded plasma volume in pregnancy is important for drug dosing?",
+    "answer": "Increased volume of distribution in pregnancy means that water-soluble drugs have larger distribution volumes, potentially requiring higher loading doses to achieve target plasma concentrations, while the dilutional effect can reduce free drug concentrations for protein-bound drugs.",
+    "rationale": "The 35-45% increase in intravascular volume distributes drugs into a larger compartment; concurrent changes in plasma protein concentrations further alter free drug fractions.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1359
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-heme-5",
+    "topic": "Maternal hematologic and metabolic physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Oxygen consumption is elevated by approximately 30% in pregnant patients at term. What is the anesthetic implication during induction of general anesthesia?",
+    "answer": "Elevated O2 consumption combined with decreased FRC means preoxygenation denitrogenation time is shorter effective and patients desaturate far more rapidly during apnea; adequate preoxygenation and rapid sequence induction are essential.",
+    "rationale": "The functional oxygen reserve at apnea onset is smaller (reduced FRC) while the rate of O2 consumption is higher; this combination sharply shortens safe apnea time.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2078
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-neuro-1",
+    "topic": "Maternal neurological and pharmacological physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "By how much does the minimum alveolar concentration (MAC) for volatile anesthetics decrease at term pregnancy, and when does it return to normal?",
+    "answer": "MAC decreases progressively during pregnancy, by as much as 40% at term; it returns to normal by the third day after delivery.",
+    "rationale": "Progesterone, endorphins, and neuraxial changes reduce anesthetic requirements; the mechanism is multifactorial but progesterone's CNS depressant effect and endorphin surge during labor contribute.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1355
+      }
+    ],
+    "confusable_with": "MAC reduction in elderly (due to reduced neural density, not hormonal; permanent and progressive)"
+  },
+  {
+    "id": "mat-neuro-2",
+    "topic": "Maternal neurological and pharmacological physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Why do pregnant patients require less local anesthetic for equivalent neuraxial block levels compared to non-pregnant patients?",
+    "answer": "Pregnancy enhances sensitivity to local anesthetics due to progesterone-related changes in nerve membrane properties and mechanical factors (engorged epidural veins reducing epidural space volume), so smaller doses achieve the same block height.",
+    "rationale": "Progesterone increases nerve sensitivity; the smaller epidural space means a given volume of LA spreads over more segments; both factors reduce the required dose.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1358
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-neuro-3",
+    "topic": "Maternal neurological and pharmacological physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "A surge in beta-endorphin levels during labor contributes to reduced anesthetic requirements. What is the minimum local analgesic concentration (MLAC) and its clinical utility?",
+    "answer": "MLAC is the local anesthetic concentration that provides adequate analgesia in 50% of parturients; it is used in obstetric anesthesia to compare relative LA potencies and the analgesic effects of additives (e.g., fentanyl, clonidine).",
+    "rationale": "MLAC is an obstetric-specific analog of MAC; just as MAC compares volatile anesthetic potencies for surgical anesthesia, MLAC compares epidural LA concentrations for labor analgesia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1358
+      }
+    ],
+    "confusable_with": "ED50 (dose achieving 50% effect in pharmacological models; MLAC is the obstetric-specific regional anesthesia equivalent)"
+  },
+  {
+    "id": "mat-neuro-4",
+    "topic": "Maternal neurological and pharmacological physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Why do older adult patients require lower doses of most anesthetic drugs, and does a similar mechanism apply in pregnancy?",
+    "answer": "In older adults, reduced anesthetic requirement (lower MAC) results from decreased neural density and altered pharmacokinetics (reduced clearance, higher free drug). In pregnancy, MAC reduction is primarily hormonal (progesterone, endorphins) — a different mechanism but similar clinical implication of dose reduction.",
+    "rationale": "Both populations have reduced anesthetic requirements but via distinct mechanisms; recognizing the mechanism helps predict duration of action and emergence kinetics.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1355
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-neuro-5",
+    "topic": "Maternal neurological and pharmacological physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Magnesium sulfate used for eclampsia prophylaxis interacts with neuromuscular blocking agents. What is the clinical implication?",
+    "answer": "Magnesium potentiates non-depolarizing neuromuscular blockers; doses should be reduced and titrated by peripheral nerve stimulator in patients receiving magnesium therapy.",
+    "rationale": "Magnesium competes with calcium at the neuromuscular junction presynaptically (reducing ACh release) and postsynaptically (stabilizing the membrane), amplifying non-depolarizing NMB effect.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1423
+      }
+    ],
+    "confusable_with": "Magnesium effect on succinylcholine (modestly prolongs depolarizing block, less clinically significant)"
+  },
+  {
+    "id": "mat-resp-1",
+    "topic": "Maternal respiratory physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What changes in FRC and oxygen consumption occur in pregnancy and what is the combined anesthetic significance?",
+    "answer": "FRC decreases (primarily ERV decreases due to elevated diaphragm) while oxygen consumption increases by approximately 30%; together these severely limit the safe apnea time during induction of general anesthesia.",
+    "rationale": "Smaller oxygen reserve plus higher consumption rate means parturients desaturate far faster than non-pregnant adults; FRC returns to baseline within 48 hours postpartum.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 100
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1359
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "mat-resp-2",
+    "topic": "Maternal respiratory physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What respiratory parameter increases by 50% in pregnancy and how is it achieved?",
+    "answer": "Minute ventilation increases by approximately 50%, achieved primarily by increased tidal volume (not respiratory rate); this produces a compensated respiratory alkalosis.",
+    "rationale": "Progesterone stimulates the respiratory center, increasing tidal volume; the resulting hypocapnia (PaCO2 falls to 28-32 mmHg) is compensated by renal bicarbonate excretion.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 100
+      }
+    ],
+    "confusable_with": "Metabolic alkalosis (different acid-base; normal anion gap; not present in pregnancy)"
+  },
+  {
+    "id": "mat-resp-3",
+    "topic": "Maternal respiratory physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Vital capacity and closing capacity are unchanged in pregnancy, but what lung volumes DO change?",
+    "answer": "FRC decreases (primarily due to decreased expiratory reserve volume from diaphragm elevation); dead space decreases; flow-volume loops are unaffected; airway resistance decreases.",
+    "rationale": "The elevated diaphragm reduces ERV and thus FRC; despite a larger AP chest diameter compensating somewhat, the net effect is reduced FRC by about 15-20%.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 100
+      },
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1359
+      }
+    ],
+    "confusable_with": "COPD (also reduces FRC but via airtrapping/hyperinflation; airway resistance increased, not decreased)"
+  },
+  {
+    "id": "mat-resp-4",
+    "topic": "Maternal respiratory physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "Upper airway edema increases in pregnancy and worsens during labor. What are the practical airway management implications?",
+    "answer": "Increased upper airway edema narrows the glottic aperture and pharyngeal inlet, increasing the risk of difficult laryngoscopy and intubation; a smaller endotracheal tube (6.0-6.5 mm ID) should be available and multiple intubation attempts increase edema.",
+    "rationale": "Progesterone and fluid retention cause mucosal engorgement throughout pregnancy, worsening especially with Valsalva during pushing; nasal airways are relatively contraindicated due to bleeding risk.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 100
+      }
+    ],
+    "confusable_with": "Mallampati class change in non-pregnant obese patient (also worsens with positioning but without the mucosal engorgement component)"
+  },
+  {
+    "id": "mat-resp-5",
+    "topic": "Maternal respiratory physiology",
+    "domain": "Obstetric anesthesia (maternal physiology, labor analgesia, cesarean anesthesia, preeclampsia/eclampsia, obstetric hemorrhage, emergencies, fetal considerations)",
+    "discipline": "anesthesia",
+    "stem": "What is the normal PaCO2 in a term parturient and why is it important to understand when interpreting ABG results?",
+    "answer": "Normal PaCO2 in a term parturient is approximately 28-32 mmHg (compared to 40 mmHg in non-pregnant adults); a 'normal' CO2 of 40 mmHg in a parturient represents hypoventilation.",
+    "rationale": "Pregnancy-induced hyperventilation creates a lower PaCO2 baseline; failing to recognize this means misinterpreting CO2 retention as normal when it actually signals respiratory compromise.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 100
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lung-mech-1",
+    "topic": "Mechanics of Breathing and Lung Volumes",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "For a patient with increased elastic resistance (e.g., pulmonary fibrosis), what respiratory rate minimizes the work of breathing and why?",
+    "answer": "Patients with increased elastic resistance minimize work of breathing by breathing faster with smaller tidal volumes; in contrast, patients with increased airway resistance (e.g., COPD) minimize work by breathing slower with larger tidal volumes.",
+    "rationale": "Work against elastic resistance is minimized with high frequency/low volume (less elastic recoil work per cycle); work against resistive forces is minimized by slowing flow rate (flow resistance rises with velocity).",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 817
+      }
+    ],
+    "confusable_with": "Obstructive lung disease breathing pattern (slow, deep breathing to minimize resistive work — opposite of restrictive)"
+  },
+  {
+    "id": "lung-mech-2",
+    "topic": "Mechanics of Breathing and Lung Volumes",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What are the principal effects of general anesthesia on pulmonary mechanics?",
+    "answer": "General anesthesia decreases FRC (by approximately 15-20%), reduces lung compliance, increases airway resistance, impairs hypoxic pulmonary vasoconstriction, and increases the alveolar-arterial O2 gradient.",
+    "rationale": "Supine position and loss of respiratory muscle tone cause cephalad diaphragm displacement, reducing FRC; this promotes atelectasis and V/Q mismatch, the primary cause of perioperative hypoxemia.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 817
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lung-mech-3",
+    "topic": "Mechanics of Breathing and Lung Volumes",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What are the components of lung compliance as a measure of pulmonary mechanics?",
+    "answer": "Lung compliance (change in volume per unit change in pressure) has two components: elastic resistance of the lung parenchyma and surface tension forces from alveolar fluid interface; total respiratory compliance includes chest wall compliance.",
+    "rationale": "Surfactant reduces surface tension forces; conditions reducing surfactant (ARDS, neonatal RDS) or increasing stiffness (fibrosis, pulmonary edema) reduce compliance and increase work of breathing.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 817
+      }
+    ],
+    "confusable_with": "Airway resistance (related to flow, not volume/pressure relationship of lung parenchyma)"
+  },
+  {
+    "id": "lung-mech-4",
+    "topic": "Mechanics of Breathing and Lung Volumes",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What is the hazard of heated humidifiers in the anesthesia breathing circuit regarding inhaled gas temperature?",
+    "answer": "Inhaled gas temperature from heated humidifiers should not exceed 41 degrees C; temperatures above this risk thermal lung injury (airway burns).",
+    "rationale": "Heated humidifiers can cause water condensation in the circuit (increasing airway resistance), nosocomial infection risks, and at excessive temperatures direct thermal damage to airway mucosa.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 113
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "lung-mech-5",
+    "topic": "Mechanics of Breathing and Lung Volumes",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "A patient with pulmonary hypertension has mPAP 28 mmHg and PVR 260 dyn.s.cm-5. What additional value distinguishes portopulmonary hypertension (POPH) from volume-overload pulmonary hypertension?",
+    "answer": "Transpulmonary gradient (mPAP minus PAOP) greater than 12 mmHg confirms POPH by demonstrating obstructed flow rather than simply elevated left-sided filling pressures; POPH requires mPAP >25 mmHg, PVR >240 and TPG >12.",
+    "rationale": "Elevated PAOP with normal TPG indicates volume overload or LV failure rather than true pulmonary vascular disease; the TPG isolates the contribution of pulmonary vascular resistance.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1198
+      }
+    ],
+    "confusable_with": "Pulmonary arterial hypertension (idiopathic; also elevated TPG but without the hepatic context of POPH)"
+  }
+]

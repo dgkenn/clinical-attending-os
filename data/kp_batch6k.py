@@ -1,0 +1,90 @@
+import json
+
+kps = []
+
+# TOPIC 30: Infusion Devices & Drug Delivery Systems
+kps += [
+  {"id":"infusiondev-1","topic":"Infusion Devices & Drug Delivery Systems","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What technique described for cardiac surgery used high-dose opioid as the primary anesthetic and is associated with what opioid class?",
+   "answer":"High-dose opioid anesthesia technique originally described for morphine in open heart surgery, later associated with fentanyl congeners",
+   "rationale":"High-dose opioids blunt the stress response during cardiac surgery when hemodynamic stability is paramount, though respiratory depression requires prolonged ventilation.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":161}],"confusable_with":"Balanced anesthesia as equivalent to high-dose opioid technique"},
+  {"id":"infusiondev-2","topic":"Infusion Devices & Drug Delivery Systems","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What monitoring is important in patients receiving opioid therapy postoperatively in non-monitored settings?",
+   "answer":"Capnography is the specific monitor for respiratory depression in opioid-treated patients, though not universally available outside ICU",
+   "rationale":"End-tidal CO2 monitoring detects hypoventilation before SpO2 falls on supplemental oxygen, giving earlier warning of opioid-induced respiratory depression.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":746}],"confusable_with":"Pulse oximetry alone being adequate to detect opioid respiratory depression"},
+  {"id":"infusiondev-3","topic":"Infusion Devices & Drug Delivery Systems","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What drug delivery approach to epidural opioids offers pain relief with substantially lower total opioid doses and fewer systemic side effects?",
+   "answer":"Epidural and intrathecal opioid delivery provides analgesia with substantially lower total doses and fewer systemic side effects than IV administration",
+   "rationale":"Neuraxial delivery targets dorsal horn opioid receptors directly, achieving analgesia at a fraction of the systemic dose with minimal blood levels.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1764}],"confusable_with":"IV PCA being equivalent to epidural in dose-sparing"},
+  {"id":"infusiondev-4","topic":"Infusion Devices & Drug Delivery Systems","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What is the primary CNS target of intravenous anesthetic agents and what is its physiological role?",
+   "answer":"GABA receptors (primary target); GABA is the primary inhibitory neurotransmitter in the CNS; activation increases chloride conductance causing hyperpolarization",
+   "rationale":"Most IV anesthetics (propofol, barbiturates, benzodiazepines) enhance GABA-A receptor function, increasing inhibitory tone and producing sedation, hypnosis, and amnesia.",
+   "bloom":"recall","source":[{"book":"Stanford CA-1","page":25}],"confusable_with":"NMDA receptor as primary target (ketamine acts here; most IV agents act at GABA)"},
+  {"id":"infusiondev-5","topic":"Infusion Devices & Drug Delivery Systems","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"Rocuronium is considered what type of agent and what is its primary clinical advantage over succinylcholine for RSI?",
+   "answer":"Rocuronium is a non-depolarizing agent; at high dose (1.2 mg/kg) provides intubating conditions as rapidly as succinylcholine without depolarization side effects",
+   "rationale":"High-dose rocuronium provides comparable RSI onset without the fasciculations, hyperkalemia risk, and contraindications of succinylcholine; reversible with sugammadex.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":607}],"confusable_with":"Rocuronium causing fetal paralysis during cesarean (it does not readily cross the placenta at clinical doses)"},
+]
+
+# TOPIC 31: Intercostal nerve blocks and cryoanalgesia
+kps += [
+  {"id":"icblock-1","topic":"Intercostal nerve blocks and cryoanalgesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What are the two principal risks of intercostal nerve blocks?",
+   "answer":"Pneumothorax and local anesthetic systemic toxicity (LAST) are the principal risks of intercostal nerve blocks",
+   "rationale":"The intercostal space is adjacent to the pleura; inadvertent pleural puncture causes pneumothorax. High vascular uptake from intercostal vessels makes LAST a particular risk.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1797}],"confusable_with":"Infection being the primary risk of intercostal blocks"},
+  {"id":"icblock-2","topic":"Intercostal nerve blocks and cryoanalgesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What is cryoanalgesia and what is the duration of analgesia it provides?",
+   "answer":"Cryoanalgesia (cryoneurolysis) applies extreme cold (-60 to -90 degrees C) to ablate nerve function producing temporary analgesia for weeks",
+   "rationale":"Controlled freezing disrupts the myelin sheath and axon without causing permanent nerve damage, providing weeks of pain relief without deafferentation.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1797}],"confusable_with":"Radiofrequency ablation (heat-based, different mechanism)"},
+  {"id":"icblock-3","topic":"Intercostal nerve blocks and cryoanalgesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"What diagnostic use do intercostal nerve blocks have beyond acute analgesia?",
+   "answer":"Diagnostic intercostal nerve blocks with local anesthetic identify which nerve(s) contribute to chronic thoracic or abdominal pain",
+   "rationale":"If blocking a specific intercostal nerve abolishes pain, it confirms that nerve as the primary pain generator and guides definitive treatment.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1797}],"confusable_with":"Intercostal blocks having only therapeutic (not diagnostic) utility"},
+  {"id":"icblock-4","topic":"Intercostal nerve blocks and cryoanalgesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"Why is duration of intercostal nerve blocks impressively short compared to other peripheral nerve blocks?",
+   "answer":"High vascular flow in the intercostal space causes rapid local anesthetic uptake and removal, shortening block duration",
+   "rationale":"The intercostal space has abundant blood supply; rapid systemic absorption both shortens block duration and increases LAST risk per unit of LA administered.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1685}],"confusable_with":"Intercostal blocks lasting as long as femoral nerve blocks"},
+  {"id":"icblock-5","topic":"Intercostal nerve blocks and cryoanalgesia","domain":"Regional anesthesia & acute pain (neuraxial, peripheral nerve blocks, ultrasound guidance, acute pain service, multimodal analgesia, LAST, complications)","discipline":"anesthesia",
+   "stem":"Thoracic paravertebral nerve block is an alternative to intercostal blocks. What type of steroid must NOT be used with cervical paravertebral blocks?",
+   "answer":"Particulate steroid must not be used with cervical paravertebral nerve blocks due to possible anomalous vertebral artery anatomy and risk of vertebral artery injection",
+   "rationale":"Particulate steroid injected into the vertebral artery causes cerebellar or brainstem infarction; non-particulate steroid or no steroid is safer at cervical levels.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1778}],"confusable_with":"Any steroid being safe for all paravertebral injections"},
+]
+
+# TOPIC 32: Intraoperative Awareness: Incidence, Risk Factors & Detection
+kps += [
+  {"id":"awareness-1","topic":"Intraoperative Awareness: Incidence, Risk Factors & Detection","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"Without prophylactic intervention, approximately what proportion of patients receiving inhalational anesthesia develop postoperative nausea and vomiting?",
+   "answer":"Roughly one-third of patients undergoing inhalational anesthesia develop PONV without prophylaxis",
+   "rationale":"Volatile agents stimulate the chemoreceptor trigger zone and vestibular apparatus; PONV is one of the most common postoperative complications of general anesthesia.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":734}],"confusable_with":"PONV being rare without prophylaxis"},
+  {"id":"awareness-2","topic":"Intraoperative Awareness: Incidence, Risk Factors & Detection","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What MAC of inhaled anesthetic reduces the risk of intraoperative awareness, and which anesthetic approach is associated with higher awareness risk?",
+   "answer":"At least 0.5-0.7 MAC of inhaled agent; total intravenous anesthesia (TIVA) carries higher awareness risk than volatile agent anesthesia",
+   "rationale":"TIVA lacks end-tidal gas monitoring; drug delivery failure is not immediately detected. Volatile agents provide a continuous, monitorable surrogate of anesthetic depth.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":204}],"confusable_with":"TIVA being safer than volatile agents for awareness prevention"},
+  {"id":"awareness-3","topic":"Intraoperative Awareness: Incidence, Risk Factors & Detection","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What is the isolated forearm technique and what does it detect?",
+   "answer":"Tourniquet applied to one arm before NMB administration preserves neuromuscular function in that limb to allow volitional hand movement as a signal of awareness",
+   "rationale":"The isolated limb escapes paralysis, allowing the patient to signal consciousness despite full-body neuromuscular block.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":204}],"confusable_with":"BIS monitoring (electroencephalographic surrogate, not direct consciousness test)"},
+  {"id":"awareness-4","topic":"Intraoperative Awareness: Incidence, Risk Factors & Detection","domain":"Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)","discipline":"anesthesia",
+   "stem":"What is a major risk factor that increases intraoperative awareness risk during general anesthesia?",
+   "answer":"Neuromuscular blockade without adequate anesthetic depth, TIVA without gas monitoring, history of awareness, cardiac/obstetric surgery with light anesthesia",
+   "rationale":"Paralysis prevents movement as the classic sign of awareness; without movement, inadequate depth goes undetected unless depth monitoring is used.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":204}],"confusable_with":"High volatile agent concentration as a risk factor (the opposite - it protects)"},
+]
+
+print(f"Batch K: {len(kps)} entries")
+with open('C:/Users/Dean/anesthesia_attending/data/kp_batch6k_out.json','w',encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print("OK")

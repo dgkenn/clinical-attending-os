@@ -1,0 +1,240 @@
+[
+  {
+    "id": "icd-anesthesia-d1",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What is the key anesthetic consideration for a patient with an ICD undergoing a surgical procedure using monopolar electrocautery?",
+    "answer": "Monopolar electrocautery can be detected by the ICD as ventricular fibrillation and trigger inappropriate shocks; the ICD sensing/therapy function must be deactivated (programmed off or magnet-suspended) before surgery and reactivated after.",
+    "rationale": "ICD algorithms sense high-frequency electrical signals; monopolar cautery creates signals indistinguishable from VF, leading to inappropriate therapy delivery that can cause hemodynamic collapse.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1537
+      }
+    ],
+    "confusable_with": "bipolar electrocautery (localized field, safer with ICDs but precautions still apply)"
+  },
+  {
+    "id": "icd-anesthesia-d2",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "An ICD patient requires tracheal intubation for emergency surgery. What induction agents are used and what is the primary concern unique to ICD patients?",
+    "answer": "Standard induction (etomidate, fentanyl, succinylcholine for RSI) is used; the primary unique concern is electromagnetic interference from surgical equipment triggering inappropriate ICD shocks, requiring device deactivation or magnet application.",
+    "rationale": "ICD function per se does not change induction agent choices, but device management is critical; altered pharmacokinetics (e.g., from liver failure) affect agent dosing more than the ICD itself.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1537
+      }
+    ],
+    "confusable_with": "pacemaker-dependent patients (the concern is loss of pacing, not inappropriate shock)"
+  },
+  {
+    "id": "icd-anesthesia-d3",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary indication for ICD implantation, and through what mechanism does an ICD terminate ventricular fibrillation?",
+    "answer": "ICDs are implanted for primary or secondary prevention of sudden cardiac death from VT/VF; they terminate VF by delivering a high-energy shock (synchronized or unsynchronized) that depolarizes the entire myocardium simultaneously, allowing normal pacemaking to resume.",
+    "rationale": "VF arises from multiple re-entrant circuits; simultaneous depolarization of all myocardial cells terminates all circuits at once, allowing the sinus node to resume control.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "antitachycardia pacing (ATP - used for monomorphic VT, not VF)"
+  },
+  {
+    "id": "icd-anesthesia-d4",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Patients presenting for ambulatory procedures may have cardiac resynchronization therapy (CRT) devices, ICDs, or stents. What is the overarching preoperative management principle?",
+    "answer": "All cardiac implantable electronic devices (CIEDs) should be identified preoperatively with device type, underlying rhythm, rate response settings, and magnet behavior documented; perioperative management is individualized based on device type and surgical procedure.",
+    "rationale": "CRT pacemakers have different magnet responses than ICDs; programming needs differ by surgery location (above vs. below umbilicus) and cautery type; generic approach risks inappropriate management.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1522
+      }
+    ],
+    "confusable_with": "treating all devices the same way (unsafe; ICDs and pacemakers have different perioperative protocols)"
+  },
+  {
+    "id": "icd-anesthesia-d5",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Perioperative ventricular fibrillation that develops intraoperatively requires what immediate intervention, and what drug reduces risk of post-MI VF?",
+    "answer": "Perioperative VF requires immediate defibrillation; beta-blockers given after MI have been shown to reduce the incidence of post-MI ventricular fibrillation.",
+    "rationale": "VF is rapidly fatal without defibrillation; beta-blockers reduce post-MI VF risk by suppressing adrenergically-triggered ectopy and reducing heterogeneity of myocardial refractoriness.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "amiodarone (used for hemodynamically stable VT and recurrent VF, not primary VF prevention post-MI)"
+  },
+  {
+    "id": "icd-anesthesia-d6",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Anesthetic management for ICD placement or electrophysiology procedures depends on what key factors?",
+    "answer": "Anesthetic management depends on the underlying cardiac condition, anticipated procedure duration and complexity, patient comorbidities, and the need for patient immobility versus cooperation during mapping.",
+    "rationale": "EP procedures range from simple ICD implant under sedation/local to complex ablation requiring general anesthesia for prolonged immobility; the anesthetic plan must match the procedural and patient requirements.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "one-size-fits-all MAC approach (inappropriate for complex EP ablation procedures)"
+  },
+  {
+    "id": "icd-anesthesia-d7",
+    "topic": "Implantable Cardioverter-Defibrillators (ICDs) - Anesthetic Management",
+    "domain": "Cardiovascular & cardiac anesthesia (CABG, valvular, cardiopulmonary bypass, TEE basics, cardiac physiology, hemodynamic & vasoactive management, ICDs/pacemakers)",
+    "discipline": "anesthesia",
+    "stem": "Torsades de pointes is associated with QT prolongation. What non-pharmacological treatment can be effective when the arrhythmia develops in association with pauses?",
+    "answer": "Torsades de pointes associated with pauses can be effectively treated with pacing (temporary or permanent) to increase heart rate and shorten the QT interval; some patients may require ICD implantation.",
+    "rationale": "Bradycardia-dependent torsades (pause-dependent QT prolongation) is driven by long RR intervals that extend QT duration; overdrive pacing shortens the RR interval and QT, suppressing torsades triggers.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 657
+      }
+    ],
+    "confusable_with": "magnesium sulfate alone (treats acute episodes but does not prevent recurrence in pause-dependent torsades)"
+  },
+  {
+    "id": "inhaled-mac-d1",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "What is MAC-awake and how does it relate to standard MAC?",
+    "answer": "MAC-awake is the concentration at which 50% of patients open their eyes on command; it is approximately 0.3-0.4 MAC for most agents (lower than standard MAC 1.0 which prevents movement to incision in 50% of patients).",
+    "rationale": "MAC-awake is the clinical transition point for loss of consciousness; standard MAC is defined by movement to surgical incision; the ratio helps predict when patients will regain consciousness during emergence.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 114
+      }
+    ],
+    "confusable_with": "MAC-amnesia (even lower concentration, prevents recall in 50% of patients)"
+  },
+  {
+    "id": "inhaled-mac-d2",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Nitrous oxide and xenon act through which specific molecular mechanism, distinct from halogenated ethers?",
+    "answer": "Nitrous oxide and xenon are believed to primarily inhibit N-methyl-D-aspartate (NMDA) glutamate receptors, whereas halogenated ethers (isoflurane, sevoflurane, desflurane) act mainly on GABA-A receptors and potassium channels.",
+    "rationale": "The diverse molecular structures that produce anesthesia (halothanes, ethers, propofol, ketamine) suggest multiple molecular mechanisms; the unifying theory remains elusive, supporting the concept of mechanism-specific drug effects.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 249
+      }
+    ],
+    "confusable_with": "propofol and barbiturates (GABA-A potentiation, similar to halogenated ethers)"
+  },
+  {
+    "id": "inhaled-mac-d3",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "MAC is reduced with aging. By how much does MAC decrease in older adult patients compared to young adults?",
+    "answer": "The principal pharmacodynamic change of aging is reduced anesthetic requirement; MAC decreases progressively with age, and older adults also display lower dose requirements for propofol, opioids, benzodiazepines, and barbiturates.",
+    "rationale": "Age-related CNS changes including reduced neuronal density, altered receptor sensitivity, and decreased cerebral metabolic rate reduce anesthetic requirements; this necessitates dose reduction to avoid overdose.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1490
+      }
+    ],
+    "confusable_with": "MAC increase with fever (opposite effect; hyperthermia increases MAC)"
+  },
+  {
+    "id": "inhaled-mac-d4",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "MAC is higher in infants and neonates compared to older children and adults for halogenated agents. What pharmacokinetic factor accelerates inhalation induction in this age group?",
+    "answer": "Neonates and infants have a greater minute ventilation-to-FRC ratio, which speeds the rise in alveolar anesthetic concentration; combined with greater brain blood flow, this accelerates inhalation induction.",
+    "rationale": "The rate of rise of alveolar concentration (FA/FI) is faster when minute ventilation is high relative to FRC; greater CNS blood flow delivers higher partial pressures to the brain more rapidly.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1443
+      }
+    ],
+    "confusable_with": "blood:gas solubility (lower solubility also speeds induction but is agent-specific, not age-specific)"
+  },
+  {
+    "id": "inhaled-mac-d5",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "Inhaled anesthetics have been shown to have immunomodulatory effects. In what clinical context is this effect potentially harmful?",
+    "answer": "Inhaled anesthetics have immunosuppressive effects; this may be deleterious in patients undergoing cancer surgery, where preserved immune function is important for tumor surveillance; avoidance of inhalational agents in favor of TIVA has been suggested.",
+    "rationale": "Immunosuppression by volatile agents could theoretically impair cancer-cell killing by NK cells and T lymphocytes; several retrospective studies suggest lower cancer recurrence with TIVA, though prospective evidence is still emerging.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 253
+      }
+    ],
+    "confusable_with": "immunosuppression being universally harmful (may be beneficial in inflammatory lung disease)"
+  },
+  {
+    "id": "inhaled-mac-d6",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "During cardiopulmonary bypass, what specific precautions should be taken to reduce the risk of intraoperative awareness?",
+    "answer": "Administer at least 0.5-0.7 MAC of inhalation agent; set an alarm for low anesthetic gas concentration; monitor gas concentration from the bypass circuit oxygenator; consider IV agent supplements during rewarming when volatile delivery may be unreliable.",
+    "rationale": "During CPB the pump oxygenator delivers volatile agent; low-flow states, circuit absorption, and rewarming reduce delivered agent concentrations; supplemental midazolam or propofol at rewarming addresses this gap.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 204
+      }
+    ],
+    "confusable_with": "relying on BIS alone during CPB (BIS suppression during hypothermia does not reliably predict awareness)"
+  },
+  {
+    "id": "inhaled-mac-d7",
+    "topic": "Inhaled anesthetic mechanisms & MAC",
+    "domain": "Anesthetic pharmacology (inhaled agents, IV induction agents, opioids, neuromuscular blockers & reversal, local anesthetics, benzodiazepines, vasoactive/adjunct drugs)",
+    "discipline": "anesthesia",
+    "stem": "MAC decreases progressively during pregnancy, reaching what magnitude at term, and when does it return to baseline?",
+    "answer": "MAC decreases by as much as 40% at term pregnancy for all general anesthetic agents; MAC returns to normal by the third day after delivery.",
+    "rationale": "Elevated progesterone, endorphins, and changes in CNS excitability during pregnancy reduce anesthetic requirements; this must be accounted for to avoid overdose in obstetric patients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1355
+      }
+    ],
+    "confusable_with": "spinal/epidural sensitivity change in pregnancy (local anesthetics also have enhanced spread, different mechanism)"
+  }
+]

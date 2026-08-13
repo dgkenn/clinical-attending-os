@@ -1,0 +1,447 @@
+[
+  {
+    "id": "hemodynamic-monitoring-d1",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "A pulmonary artery catheter (PAC) is a 110-cm balloon-tipped catheter placed from right atrium through right ventricle into what final position, and what is the key measurement derived from the wedge position?",
+    "answer": "Wedge position (PCWP) in the pulmonary artery; PCWP serves as an estimate of left atrial pressure/LV preload.",
+    "rationale": "By temporarily occluding flow with the balloon inflated, PCWP reflects pressure transmitted back from the pulmonary venous system, estimating LV filling pressure.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 397
+      }
+    ],
+    "confusable_with": "CVP (reflects RV preload, not LV)"
+  },
+  {
+    "id": "hemodynamic-monitoring-d2",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "What are the normal values for cardiac output (CO) and cardiac index (CI)?",
+    "answer": "Normal CO = 4-6 L/min; normal CI = 2.5-4 L/min/m2 (indexed to body surface area).",
+    "rationale": "CI normalizes CO for body size, allowing comparison across patients of different sizes; values below 2.2 L/min/m2 indicate cardiogenic shock.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "stroke volume index (different parameter)"
+  },
+  {
+    "id": "hemodynamic-monitoring-d3",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "Thermodilution CO measurement uses what principle, and what volume/temperature of injectate is standard?",
+    "answer": "Inject 10 mL cold (0 deg C) normal saline into the RA; measure temperature change downstream in PA. CO = volume x temp change / area under the curve.",
+    "rationale": "Greater CO dilutes the cold bolus more quickly, producing a smaller, narrower thermodilution curve; CO is inversely related to area under the curve.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "Fick method CO calculation"
+  },
+  {
+    "id": "hemodynamic-monitoring-d4",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "Esophageal Doppler measures cardiac output by what principle?",
+    "answer": "Uses continuous-wave ultrasound directed through the esophagus into the descending aorta; Doppler shift of reflected signal measures blood velocity, from which SV and CO are calculated.",
+    "rationale": "The Doppler frequency shift is proportional to blood velocity; combined with aortic cross-sectional area estimate, flow volume per beat is calculated.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 398
+      }
+    ],
+    "confusable_with": "transthoracic echocardiography (different approach)"
+  },
+  {
+    "id": "hemodynamic-monitoring-d5",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "Thoracic electrical impedance cardiography provides estimates of what hemodynamic parameters, and what are its key limitations?",
+    "answer": "Provides SV, CO, SVR, and fluid status estimates; less accurate than invasive or NICOM methods; subject to positioning artifacts and patient-specific factors (obesity, arrhythmias).",
+    "rationale": "Impedance changes reflect thoracic blood volume changes; accuracy is compromised by factors altering thoracic impedance independently of cardiac output.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Curated Units",
+        "page": 0
+      }
+    ],
+    "confusable_with": "pulse-contour CO methods"
+  },
+  {
+    "id": "hemodynamic-monitoring-d6",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "Placing an introducer sheath for a PAC has what important implication for fluid resuscitation?",
+    "answer": "Catheter placement into an introducer sheath can significantly reduce fluid flow rate through the sheath, limiting its utility for rapid fluid delivery.",
+    "rationale": "The PAC occupies the sheath lumen and creates resistance; if rapid volume resuscitation is needed, a separate large-bore IV must be used.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 397
+      }
+    ],
+    "confusable_with": "sheath alone without PAC"
+  },
+  {
+    "id": "hemodynamic-monitoring-d7",
+    "topic": "Hemodynamic Monitoring - Invasive & Advanced",
+    "domain": "Monitoring, safety & equipment (standards of care, monitors, equipment checks, fire safety, MRI safety)",
+    "discipline": "anesthesia",
+    "stem": "In a transplanted heart, what is the hemodynamic monitoring implication of cardiac denervation?",
+    "answer": "Heart rate response to hemodynamic changes is absent; drugs acting indirectly on the heart (atropine, indirect sympathomimetics) are ineffective. Bradycardia requires direct-acting chronotropes (isoproterenol) or pacing.",
+    "rationale": "Surgical denervation removes autonomic regulation; only direct-acting agents affecting cardiac receptors are effective.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 691
+      }
+    ],
+    "confusable_with": "normal cardiac innervation"
+  },
+  {
+    "id": "hit-cardiac-surgery-d1",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "What antibody type causes HIT, and what is its clinical consequence?",
+    "answer": "HIT antibodies are heparin-dependent anti-platelet factor 4 (PF4) IgG antibodies that agglutinate platelets, causing thrombocytopenia and paradoxically INCREASED thromboembolism risk (not bleeding).",
+    "rationale": "Platelet activation by PF4 complexes generates a prothrombotic state; despite low platelets, clotting risk dominates, making it critical not to withhold anticoagulation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "ITP (immune thrombocytopenic purpura, bleeding risk)"
+  },
+  {
+    "id": "hit-cardiac-surgery-d2",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "A patient with remote history of HIT is scheduled for cardiac surgery requiring CPB. Under what condition can heparin still be used for bypass?",
+    "answer": "If the HIT is remote and antibodies can no longer be demonstrated (HIT antibody titer negative), heparin may safely be used for CPB.",
+    "rationale": "HIT antibodies are transient; once undetectable, the heparin-PF4 antibody-mediated platelet activation mechanism is absent and heparin is safe to use.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "active HIT (requires alternative anticoagulant)"
+  },
+  {
+    "id": "hit-cardiac-surgery-d3",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "Low-dose subcutaneous heparin thromboprophylaxis: what is the recommended time interval before performing neuraxial anesthesia?",
+    "answer": "Neuraxial anesthesia should occur at least 4-6 hours after dosing with 5000 units SC heparin; catheter removal also requires 4-6 hour interval after the last dose.",
+    "rationale": "Adequate time allows heparin levels to fall, reducing epidural hematoma risk; higher doses require longer intervals.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1563
+      }
+    ],
+    "confusable_with": "IV heparin (different interval requirements)"
+  },
+  {
+    "id": "hit-cardiac-surgery-d4",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "What is the 4T scoring system used for in HIT evaluation?",
+    "answer": "The 4T score (Thrombocytopenia, Timing of platelet fall, Thrombosis/sequelae, other causes of Thrombocytopenia) stratifies pre-test probability of HIT as low (0-3), intermediate (4-5), or high (6-8).",
+    "rationale": "Only intermediate/high probability scores warrant empirical anticoagulation switch and immunoassay testing; low probability scores effectively exclude HIT.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Heparin induced thrombocytopenia (HIT)",
+        "page": 5
+      }
+    ],
+    "confusable_with": "PLASMIC score (for TTP)"
+  },
+  {
+    "id": "hit-cardiac-surgery-d5",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "Intraoperative collection of platelet-rich plasma by pheresis prior to CPB serves what purpose?",
+    "answer": "Pre-CPB pheresis of platelet-rich plasma, with reinfusion following bypass, may decrease post-CPB bleeding and reduce transfusion requirements.",
+    "rationale": "CPB damages platelets through mechanical shear and activation; removing platelets beforehand and reinfusing fresh platelets after bypass preserves platelet function.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 740
+      }
+    ],
+    "confusable_with": "post-CPB platelet transfusion"
+  },
+  {
+    "id": "hit-cardiac-surgery-d6",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "domain": "Hematology, coagulation & transfusion medicine",
+    "discipline": "anesthesia",
+    "stem": "At what platelet count do patients face spontaneous bleeding risk without trauma or procedural trigger?",
+    "answer": "Platelet count < 10,000/microL is associated with risk of spontaneous bleeding; < 30,000/microL with mild trauma risk; < 50,000/microL with surgery or active bleeding.",
+    "rationale": "Platelet thresholds are procedurally and clinically contextual; HIT patients may fall into these ranges while remaining paradoxically prothrombotic.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 139
+      }
+    ],
+    "confusable_with": "HIT thrombotic threshold"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Heparin-Induced Thrombocytopenia (HIT) & Cardiac Surgery",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Heparin exposure (IV or SC) 5-14 days prior; cardiac surgery patients, ICU patients on heparin drips, postoperative VTE prophylaxis",
+    "pathophysiology": "Anti-PF4/heparin IgG antibodies activate platelets via FcgammaRIIa, consuming platelets and generating thrombin; paradoxical thrombosis despite thrombocytopenia",
+    "time_course": "Typical: platelet fall day 5-10 after first heparin exposure; earlier (< 24h) if re-exposed within 3 months",
+    "key_features": "Platelet drop > 50% from baseline; thrombosis (venous > arterial); no other cause; 4T score intermediate-high; positive PF4-heparin immunoassay",
+    "consequence_if_missed": "Continued heparin exposure perpetuates platelet activation; life-threatening thrombosis (DVT, PE, limb gangrene, stroke)"
+  },
+  {
+    "id": "hepatic-disease-d1",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "Splanchnic nerve stimulation (pain, arterial hypoxemia, surgical stress) affects hepatic blood flow in what direction?",
+    "answer": "Sympathetic/splanchnic stimulation reduces hepatic blood flow by causing hepatic artery and portal venous vasoconstriction.",
+    "rationale": "The liver receives dual supply (portal vein 75%, hepatic artery 25%); sympathetic stimulation reduces both, threatening hepatic oxygenation during surgical stress in cirrhotic patients.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 530
+      }
+    ],
+    "confusable_with": "hepatic artery vasodilation (opposite direction)"
+  },
+  {
+    "id": "hepatic-disease-d2",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "In cirrhotic patients with hepatic encephalopathy, what precipitating factors commonly trigger overt encephalopathy?",
+    "answer": "Upper GI bleeding (blood as nitrogen source), infection/sepsis, constipation, hypokalemia, dehydration, renal failure, sedatives/opioids, and dietary protein excess.",
+    "rationale": "Cirrhosis impairs ammonia clearance; any event that increases NH3 production or decreases hepatic clearance tips patients into encephalopathy.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatic Encephalopathy",
+        "page": 14
+      }
+    ],
+    "confusable_with": "hepatic encephalopathy in non-cirrhotic liver disease"
+  },
+  {
+    "id": "hepatic-disease-d3",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "Minimal hepatic encephalopathy is clinically characterized by what, and what is its functional significance?",
+    "answer": "No overt cognitive dysfunction; subtle cognitive deficits only detectable on neuropsychological testing. Functionally: impairs quality of life, workability, and increases risk of motor vehicle accidents.",
+    "rationale": "Minimal HE reflects impaired psychomotor speed and attention even when clinically 'silent'; relevant to anesthesia consent and driving safety discussions.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Hepatic Encephalopathy",
+        "page": 14
+      }
+    ],
+    "confusable_with": "overt hepatic encephalopathy"
+  },
+  {
+    "id": "hepatic-disease-d4",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "Intermediate-duration NMB agents metabolized by the liver have what pharmacokinetic implication in cirrhotic patients?",
+    "answer": "Prolonged duration of action due to impaired hepatic metabolism; cisatracurium (Hofmann elimination) or succinylcholine (plasma cholinesterase) are preferred alternatives.",
+    "rationale": "Cirrhosis reduces hepatic blood flow and cytochrome P450 function; hepatically metabolized NMBs (vecuronium, rocuronium) accumulate with prolonged block.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 689
+      }
+    ],
+    "confusable_with": "renal failure (also prolongs some NMBs)"
+  },
+  {
+    "id": "hepatic-disease-d5",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "In patients with cirrhosis who have hypokalemia from aldosterone excess or diuretic use, what is the specific cardiac risk?",
+    "answer": "Hypokalemia increases myocardial excitability and risk of arrhythmias; requires careful potassium repletion to restore intracellular-extracellular balance before surgery.",
+    "rationale": "Cirrhosis causes secondary hyperaldosteronism; aldosterone promotes K+ excretion; low K+ destabilizes resting membrane potential, promoting ectopy and arrhythmias.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 550
+      }
+    ],
+    "confusable_with": "hypomagnesemia (also arrhythmogenic)"
+  },
+  {
+    "id": "hepatic-disease-d6",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "domain": "Perioperative medicine, preoperative evaluation, risk stratification & optimization",
+    "discipline": "anesthesia",
+    "stem": "HCC surveillance is recommended for cirrhotic patients except in which circumstance?",
+    "answer": "HCC surveillance is not recommended in Child-Pugh Class C cirrhotic patients who are NOT on the transplant list, due to limited survival benefit.",
+    "rationale": "Surveillance for HCC only benefits patients who could receive curative treatment; advanced cirrhotic patients not awaiting transplant cannot benefit from early HCC detection.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "MGH Housestaff Manual",
+        "page": 96
+      }
+    ],
+    "confusable_with": "Child-Pugh B (still warrants surveillance)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Hepatic disease and cirrhosis risk assessment",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Chronic liver disease (alcoholic, NAFLD, viral hepatitis); prior hepatic procedures; upper GI bleeding; use of hepatotoxic drugs/herbals",
+    "pathophysiology": "Portal hypertension + synthetic dysfunction + impaired drug metabolism + coagulopathy; splanchnic vasoconstriction from surgical stress further reduces hepatic blood flow",
+    "time_course": "Chronic decompensation punctuated by acute events; MELD/Child-Pugh scores predict 30-day/1-year mortality",
+    "key_features": "MELD > 15 substantially elevates perioperative mortality for elective surgery; Child-Pugh C = prohibitive surgical risk; coagulopathy, ascites, encephalopathy are red flags",
+    "consequence_if_missed": "Post-hepatectomy liver failure; decompensated HE; hepatorenal syndrome; coagulopathy-driven exsanguination"
+  },
+  {
+    "id": "herbal-supplements-d1",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "OTC analgesic NSAIDs taken chronically are associated with what specific renal complications?",
+    "answer": "Interstitial nephritis, analgesic nephropathy, and hypertension; indiscriminate chronic NSAID use is associated with higher risk of kidney failure compared with nonuse.",
+    "rationale": "NSAIDs inhibit prostaglandin-mediated afferent arteriolar dilation, reducing renal blood flow; chronically this causes tubulointerstitial nephritis and progressive CKD.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2024 CKD",
+        "page": 132
+      }
+    ],
+    "confusable_with": "acute NSAID-related AKI"
+  },
+  {
+    "id": "herbal-supplements-d2",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "Herbal supplements that modulate the serotonergic system include which commonly used agent, and what is the mechanism?",
+    "answer": "St. John's Wort inhibits reuptake of serotonin, norepinephrine, and dopamine; MDMA, LSD, and some herbs also increase serotonin activity by various mechanisms (MAO-I effects, increased release, receptor agonism).",
+    "rationale": "Serotonin syndrome can result from combining serotonergic herbs with SSRIs, SNRIs, TCAs, or MAOIs; awareness prevents life-threatening interactions.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Serotonin Syndrome",
+        "page": 5
+      }
+    ],
+    "confusable_with": "NMS (dopamine-related)"
+  },
+  {
+    "id": "herbal-supplements-d3",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "Acetaminophen is present in many nonprescription products; what education should be provided to reduce unintentional toxic ingestion in adults?",
+    "answer": "Educate patients about all nonprescription products containing acetaminophen (cold medicines, sleep aids) to avoid inadvertent supratherapeutic dosing; total daily dose should not exceed 4g (or 2g in at-risk groups).",
+    "rationale": "Accidental acetaminophen toxicity from overlapping OTC products is a leading cause of acute liver failure; many patients do not recognize acetaminophen content in combination products.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Acute Liver Failure (ALF)",
+        "page": 18
+      }
+    ],
+    "confusable_with": "intentional acetaminophen overdose"
+  },
+  {
+    "id": "herbal-supplements-d4",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "Over-the-counter and herbal agents that can elevate blood pressure include which categories that should be specifically sought in the hypertensive patient history?",
+    "answer": "NSAIDs, sympathomimetics (decongestants: pseudoephedrine, phenylephrine), licorice root, ma huang (ephedra), caffeine, and many herbal supplements can raise BP; identifying them may reveal 'secondary' hypertension component.",
+    "rationale": "These agents cause vasoconstriction or sodium retention, counteracting antihypertensive therapy; identifying them may negate need for additional antihypertensive drugs.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   JNC7 2003 Hypertension Full Report",
+        "page": 75
+      }
+    ],
+    "confusable_with": "true essential hypertension"
+  },
+  {
+    "id": "herbal-supplements-d5",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "Herbal remedies and dietary supplements can induce or accelerate kidney disease; what is the most commonly used OTC analgesic class implicated?",
+    "answer": "NSAIDs are the most commonly used OTC analgesic class causing kidney disease (interstitial nephritis, analgesic nephropathy, hypertension); should be avoided in CKD patients.",
+    "rationale": "Prostaglandin inhibition reduces renal perfusion; in CKD patients already dependent on prostaglandins for renal blood flow, NSAIDs may precipitate acute decompensation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Society Guideline: Guideline   KDIGO 2024 CKD",
+        "page": 132
+      }
+    ],
+    "confusable_with": "aminoglycosides (prescriptions)"
+  },
+  {
+    "id": "herbal-supplements-d6",
+    "topic": "Herbal supplements and nonprescription drug interactions",
+    "domain": "Pharmacology, drug interactions & toxicology",
+    "discipline": "anesthesia",
+    "stem": "Drug hypersensitivity reactions from side effects (e.g., gastritis from NSAIDs, nephrotoxicity from aminoglycosides) differ from true drug hypersensitivity in what key way?",
+    "answer": "Side effects are dose-dependent, predictable, and related to pharmacological action; true hypersensitivity reactions are immune-mediated, unpredictable, and independent of dose (within therapeutic range).",
+    "rationale": "This distinction matters for risk counseling: side effects are manageable by dose adjustment, while true hypersensitivity may require drug class avoidance.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "StatPearls: StatPearls   Drug hypersensitivity reactions  classification",
+        "page": 3
+      }
+    ],
+    "confusable_with": "pseudoallergic reactions (anaphylactoid)"
+  }
+]

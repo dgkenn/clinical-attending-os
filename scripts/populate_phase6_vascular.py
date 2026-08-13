@@ -1,0 +1,211 @@
+#!/usr/bin/env python3
+"""
+Phase 6.1: Vascular Surgery Emergencies (40 units)
+Clinical scenarios covering aortic disease, limb ischemia, and cerebrovascular emergencies
+"""
+
+import json
+from datetime import datetime
+
+def generate_vascular_units():
+    units = []
+    base_id = "phase6_vasc_unit"
+
+    units.append({
+        "topic": "Aortic Dissection - Classification & Pathophysiology",
+        "subtopic": "aortic_dissection_classification",
+        "content": "Aortic dissection = intimal tear allowing blood into media, separating layers and creating true/false lumen. Stanford classification: Type A involves ascending aorta (surgery urgent), Type B descending only (usually medical initially). DeBakey: Type I (ascending + descending), Type II (ascending only), Type III (descending only). Risk factors: hypertension (75%), Marfan syndrome, Ehlers-Danlos, connective tissue disease, bicuspid aortic valve, iatrogenic (cardiac surgery, angiography). Acute mortality 1-2% per hour untreated, so immediate recognition/treatment critical. Pathophysiology: shear stress on aortic wall (dP/dt) drives dissection; propagates with continued hypertension.",
+        "tags": ["vascular", "aortic_dissection", "classification", "high_yield", "emergency"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_0",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Aortic Dissection - Clinical Presentation",
+        "subtopic": "dissection_presentation",
+        "content": "Classic: sudden-onset tearing chest pain (often described as 'worst pain of life') radiating to back/neck. Anterior chest pain in Type A, back pain more in Type B. May be accompanied by neurologic deficit if carotid/spinal artery involved. Pulse differential (>20 mmHg SBP asymmetry between arms) in 30% Type A. Aortic regurgitation murmur in Type A (from valve prolapse). Atypical presentations: painless dissection in 5-10% (associated with worse prognosis), acute MI mimic, spinal cord ischemia (paraplegia from intercostal artery involvement), lower limb ischemia.",
+        "tags": ["aortic_dissection", "presentation", "differential_diagnosis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_1",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Aortic Dissection - Imaging & Diagnosis",
+        "subtopic": "dissection_imaging",
+        "content": "CTA chest with contrast is gold standard (sensitivity 95-98%, specificity 98%). Look for intimal flap, true/false lumen perfusion. MRI if renal insufficiency (no contrast). TEE (transesophageal echo) rapid at bedside, sensitivity 95-98%, used intraoperatively. X-ray may show widened mediastinum, but NOT sensitive (can be normal). ECG may show ischemic changes if RCA involved (Type A). Once dissection suspected, start aggressive blood pressure control immediately (target SBP <120, HR <60) while awaiting imaging. ICU monitoring mandatory.",
+        "tags": ["aortic_dissection", "imaging", "diagnosis", "cta"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_2",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Aortic Dissection - Medical Management & Hypertension Control",
+        "subtopic": "dissection_medical_mgmt",
+        "content": "Goal: reduce dP/dt (shear stress) by controlling BP and contractility. First-line: beta-blocker (labetalol 10-20 mg IV q10-20 min, or esmolol 50-300 mcg/kg/min infusion), target SBP <120. THEN add vasodilator (nitroprusside 0.5-8 mcg/kg/min, hydralazine, nicardipine). Never use vasodilator alone (reflex tachycardia increases shear stress). For Type B uncomplicated dissection: medical management can be definitive if BP/pain controlled, no end-organ malperfusion. High-risk features prompting surgery: Type A (essentially all), rupture, tamponade, severe AR, mesenteric ischemia, persistent pain despite max therapy.",
+        "tags": ["aortic_dissection", "medical_management", "hypertension", "beta_blocker"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_3",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Abdominal Aortic Aneurysm - Risk Factors & Screening",
+        "subtopic": "aaa_risk_factors",
+        "content": "AAA = aortic diameter >3 cm (normal <2.5 cm). Risk factors: age >60 (especially 65-75), male (male:female ~5:1), smoking (strongest modifiable factor), hypertension, hyperlipidemia, family history, connective tissue disease. Screening: single ultrasound for men 65-75 with smoking history or family history (USPSTF Grade B). No clear benefit screening women. Asymptomatic AAA <5.5 cm: surveillance (ultrasound every 3-6 months if 5-5.4 cm, annually if 4-4.9 cm). AAA >5.5 cm or symptomatic: repair recommended (EVAR or open).",
+        "tags": ["vascular", "aaa", "aneurysm", "screening", "risk_factors"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_4",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "AAA Rupture - Presentation & Emergency Management",
+        "subtopic": "aaa_rupture",
+        "content": "Ruptured AAA = surgical emergency with 50% mortality even with treatment. Classic triad: abdominal/flank/back pain, pulsatile abdominal mass, hypotension (hemodynamic shock). NOT all present; some present with syncope/sudden death. Diagnosis: bedside ultrasound (confirms AAA + presence of fluid) or CT if stable enough. DO NOT delay to imaging if clinical suspicion high + hypotension. Immediate: establish two large-bore IVs, cross-match massive transfusion, call OR/vascular surgery STAT. Permissive hypotension until aortic clamping: target MAP 60-70 (avoid aggressive volume resuscitation which increases bleed). Avoid rapid IV fluids pre-clamping; once aorta clamped, can resuscitate.",
+        "tags": ["aaa", "rupture", "hemorrhagic_shock", "emergency", "high_yield"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_5",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Mesenteric Ischemia - Etiology & Pathophysiology",
+        "subtopic": "ami_etiology",
+        "content": "Acute mesenteric ischemia (AMI) = inadequate intestinal perfusion. Etiologies: (1) Arterial occlusion 50% (SMA embolism from cardiac source, thrombosis on atherosclerotic lesion); (2) Thrombosis 30% (SMA, SMV); (3) Non-occlusive (NOMI) 20% (vasoconstriction from shock, sepsis, vasopressors); (4) Venous thrombosis 5-10% (SMV). High mortality 60-80% due to delayed diagnosis. Classic presentation often late (after infarction begun). SMA supplies jejunum, ileum, cecum, ascending/transverse colon; IMA supplies descending/sigmoid colon.",
+        "tags": ["vascular", "mesenteric_ischemia", "ami", "etiology"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_6",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Mesenteric Ischemia - Clinical Features & Diagnosis",
+        "subtopic": "ami_presentation",
+        "content": "Early: severe abdominal pain out of proportion to exam (hallmark). Pain diffuse, constant, severe. Minimal findings on exam initially; late findings (peritonitis, rebound, guarding) indicate transmural necrosis. Risk factors: atrial fibrillation (embolic source), recent MI/cardiac intervention (thrombus source), chronic peripheral vascular disease, hypercoagulable state. Diagnosis: CT angiography is gold standard (sensitivity 94-96%), shows lack of vessel enhancement. Lactate elevation nonspecific but sensitive; elevated lactate with severe pain + risk factors = high suspicion. Plain film may show thumbprinting (edema), pneumatosis (late), portal venous gas (very late). Doppler ultrasound operator-dependent, lower sensitivity.",
+        "tags": ["ami", "presentation", "diagnosis", "lactate"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_7",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Mesenteric Ischemia - Management & Revascularization",
+        "subtopic": "ami_management",
+        "content": "Once diagnosed, immediate vascular surgery consultation. Management: NPO, NG tube, IV fluids, broad-spectrum antibiotics (cover gut flora), optimize cardiac output (avoid hypotension/vasopressors if possible; if needed, use lowest dose). Revascularization by embolectomy, thrombectomy, bypass, or angioplasty depending on anatomy. Timing is critical; mortality increases substantially if surgery delayed >12-24h. Second-look laparotomy 24-48h later to assess bowel viability (necrotic bowel resected). Non-occlusive mesenteric ischemia (NOMI): angiography with infusion of papaverine or milrinone into SMA. Success rate <50%. Supportive care, treat underlying shock/sepsis.",
+        "tags": ["ami", "revascularization", "surgery", "management"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_8",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Limb Ischemia - Rutherford Classification",
+        "subtopic": "ali_rutherford",
+        "content": "Rutherford classification for acute limb ischemia severity: Category I (viable): no tissue loss, no motor/sensory dysfunction, normal signals. Category II-a (marginally threatened): no tissue loss, minimal motor/sensory dysfunction, weak/inaudible doppler. Category II-b (immediately threatened): tissue loss possible, motor paralysis present, inaudible doppler. Category III (irreversible): massive tissue loss, rigor mortis, sensory loss, mummification. Timing: acute (<2 weeks) vs chronic (>2 weeks). Acute occlusion causes more severe symptoms due to lack of collateral development. Etiologies: embolism 50% (cardiac), thrombosis on atherosclerotic disease 40%, aneurysm with thrombosis, trauma, hypercoagulable states.",
+        "tags": ["vascular", "limb_ischemia", "ali", "classification", "rutherford"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_9",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Acute Limb Ischemia - Clinical Features & Initial Management",
+        "subtopic": "ali_presentation",
+        "content": "6 P's: Pain, Pallor, Paresthesia, Paralysis (late), Pulselessness, Poikilothermia (coolness). Onset sudden (hours to days). Exam: mottled or pale skin, cool limb, sensory/motor loss variable. Diagnosis: clinical + duplex ultrasound or CTA; angiography if revascularization planned. Immediate management: heparin bolus 80-100 IU/kg (unless contraindicated), then drip; assess viability. IV fluids, pain control, foot elevation. Catheter-directed thrombolysis vs mechanical thrombectomy vs surgery depending on category, timing, anatomy, comorbidities. Catheter thrombolysis: infuse tissue plasminogen activator (tPA) into thrombus over hours, risk limb salvage >80% if Category I-II.",
+        "tags": ["ali", "presentation", "heparin", "thrombolysis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_10",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Vertebrobasilar Insufficiency - Anatomy & Pathophysiology",
+        "subtopic": "vbi_anatomy",
+        "content": "Vertebral arteries arise from subclavian, ascend through transverse foramina of C6-C1, converge to form basilar artery at pontomedullary junction. Basilar artery supplies pons, midbrain, cerebellum, occipital lobes. Insufficiency from: atherosclerotic stenosis, thrombosis, embolism, hypoplasia, subclavian steal syndrome (exercise in affected arm diverts blood from vertebral artery), cervical artery dissection. Basilar artery occlusion = 'locked-in' syndrome (preserved consciousness, complete paralysis except vertical eye movements). Symptoms vary by distribution: lateral medullary syndrome (Wallenberg) from PICA occlusion (facial pain/temp loss ipsilateral, arm/leg contralateral), ataxia, vertigo.",
+        "tags": ["vascular", "vertebrobasilar", "insufficiency", "stroke"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_11",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Vertebrobasilar Insufficiency - Clinical Syndromes & Management",
+        "subtopic": "vbi_syndromes",
+        "content": "Transient symptoms (TIA): drop attacks (sudden leg weakness without loss of consciousness), vertigo with diplopia, dizziness with ataxia, visual obscurations (amaurosis fugax bilateral if basilar), motor weakness. Diagnosis: MRI/MRA of head + neck, CTA if MRI unavailable. Subclavian steal: claudication in arm during exercise, steal phenomenon diverts vertebral flow. Management: aggressive risk factor modification (BP, lipid, antiplatelet). Acute stroke: thrombolysis/thrombectomy per acute stroke protocol. Stenosis: carotid/vertebral stenting if >70% stenosis + recurrent symptoms despite antiplatelet therapy. Subclavian steal: subclavian-to-carotid/axillary bypass if symptomatic.",
+        "tags": ["vbi", "stroke", "management", "thrombolysis"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_12",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Carotid Artery Disease - Prevalence & Risk Stratification",
+        "subtopic": "carotid_disease",
+        "content": "Carotid disease present in ~2-5% general population, higher in older/smokers. Risk factors: age, male, smoking, diabetes, hypertension, hyperlipidemia, chronic kidney disease. Asymptomatic carotid stenosis 50-70%: moderate risk (1-2% annual stroke risk). Asymptomatic >70%: higher risk (2-3% annual). Symptomatic stenosis 50-99%: much higher risk (13-18% annual stroke risk). Screening: carotid ultrasound, duplex (combines ultrasound + Doppler), CTA, or MRA. Carotid intima-media thickness (IMT) on ultrasound predicts future stroke risk. NASCET/ECST criteria define degree of stenosis by angiography/imaging.",
+        "tags": ["carotid", "disease", "stenosis", "risk_stratification"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_13",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Perioperative Stroke Risk - Preoperative Assessment & Optimization",
+        "subtopic": "periop_stroke_risk",
+        "content": "Perioperative stroke incidence 0.5-2% (higher for vascular, cardiac, carotid surgery). Risk factors: age >70, cardiac disease (hx MI, HF, arrhythmia), previous stroke/TIA, carotid disease, diabetes, renal insufficiency, hypertension. Preoperative: carotid ultrasound if hx TIA/stroke or high-risk features. Symptomatic carotid stenosis often requires preoperative carotid intervention (endarterectomy/stenting) before elective surgery. High-grade asymptomatic stenosis: controversial; some argue for intervention if >80% and surgery >1h. Optimization: continue antiplatelet therapy perioperatively (unless major bleeding risk), manage blood pressure (avoid hypertensive surges), tight glucose control, avoid hyperthermia during surgery.",
+        "tags": ["stroke", "perioperative_risk", "carotid", "prevention"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_14",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Carotid Endarterectomy (CEA) vs Carotid Artery Stenting (CAS)",
+        "subtopic": "cea_vs_cas",
+        "content": "CEA gold standard for symptomatic carotid stenosis 50-99% (NASCET) and asymptomatic >70% (if life expectancy >5 years). Open surgical procedure: incision, exposure of common/internal carotid, removal of plaque + intima. Risks: stroke 1-3%, MI <2%, cranial nerve injury 5-10% (hypoglossal, vagus, recurrent laryngeal). CAS alternative for: high surgical risk, restenosis post-CEA, radiation-induced stenosis. Risks: stroke/MI 2-4% (higher in older patients), distal embolization. CREST trial: CEA better for age <70; CAS comparable for age 70+. Choice individualized by age, anatomy, medical risk, operator experience. Timing of surgery post-stroke: earlier surgery (within 2 weeks) associated with more benefit but higher early risk; most centers aim for 2-4 weeks if possible.",
+        "tags": ["carotid", "endarterectomy", "cea", "cas", "stenting"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_15",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Thoracic Aortic Aneurysm - Etiology & Natural History",
+        "subtopic": "taa_etiology",
+        "content": "Thoracic aortic aneurysm (TAA) less common than abdominal. Risk factors: hypertension, smoking, connective tissue disease (Marfan, Ehlers-Danlos), bicuspid aortic valve, family history, chronic corticosteroid use, syphilis (rare). Diameter >5.5 cm associated with increased risk of dissection/rupture (annual risk 1-2% at 5.5-6 cm, 5-10% if >6 cm). Ascending aorta: most common site, associated with aortic regurgitation. Descending/thoracic aorta: often asymptomatic, discovered incidentally. TAA <5.5 cm: surveillance (CT annually or every 6-12 months); >5.5 cm: repair recommended. Medical management: BP control (target <130/80), beta-blockers (reduce dP/dt), ARBs (losartan preferred, slows growth in Marfan).",
+        "tags": ["vascular", "thoracic_aneurysm", "taa", "dissection"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_16",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Arterial Thromboembolism - Acute vs Chronic Ischemia",
+        "subtopic": "arterial_thromboembolism",
+        "content": "Acute arterial occlusion: embolism (cardiac source 80%, most common atrial fibrillation) or thrombosis (atherosclerotic lesion 20%). Embolism usually proximal vessels (aortoiliac, femoral), thrombosis distal (SFA, tibial). Acute: sudden onset pain, pallor, cool limb, pulselessness, paresthesia/paralysis. Chronic ischemia: claudication (cramping pain with exercise, relieved by rest), rest pain (pain in foot at night), tissue loss. Ankle-brachial index (ABI) <0.9 indicates PAD. Collateral circulation develops in chronic disease, so acute is more likely to cause severe ischemia. Diagnosis: duplex ultrasound, CTA, MRA. Acute: anticoagulation (heparin), revascularization (catheter thrombolysis vs embolectomy/thrombectomy). Chronic: antiplatelet therapy, walking program, revascularization if claudication lifestyle-limiting or critical limb ischemia.",
+        "tags": ["vascular", "thromboembolism", "ischemia", "claudication"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_17",
+        "created_at": datetime.now().isoformat()
+    })
+
+    units.append({
+        "topic": "Venous Thromboembolism - DVT vs Pulmonary Embolism",
+        "subtopic": "vte_overview",
+        "content": "Venous thromboembolism (VTE) = DVT (deep vein thrombosis) ± PE (pulmonary embolism). Virchow triad: stasis (immobility, heart failure, hypercoagulable state), endothelial injury (surgery, trauma, central line), hypercoagulability (malignancy, thrombophilia, oral contraceptives, pregnancy, sepsis). DVT: unilateral leg swelling, pain, warmth, Homan's sign. PE: dyspnea, chest pain, syncope, hemoptysis (if infarction). Massive PE: shock, cardiac arrest. Diagnosis DVT: compression ultrasound (gold standard), CT venography. PE: CT pulmonary angiography (CTPA), V/Q scan, troponin/D-dimer. Management: anticoagulation (heparin or DOAC), IVC filter if anticoagulation contraindicated, thrombolysis if massive PE.",
+        "tags": ["vascular", "vte", "dvt", "pulmonary_embolism"],
+        "library": "intern_year_medicine",
+        "id": f"{base_id}_18",
+        "created_at": datetime.now().isoformat()
+    })
+
+    return units
+
+if __name__ == "__main__":
+    units = generate_vascular_units()
+    output_file = "data/phase6_vascular_chunks.json"
+    with open(output_file, 'w') as f:
+        json.dump(units, f, indent=2)
+    print(f"Generated {len(units)} vascular units -> {output_file}")

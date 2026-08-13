@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "curated-phase2_unit_198",
+    "verdict": "KEEP",
+    "reason": "RRT indications accurate (AEIOU + refractory lytes); CRRT preference for instability correct; adds value corpus doesn't fully cover."
+  },
+  {
+    "id": "curated-phase2_unit_199",
+    "verdict": "KEEP",
+    "reason": "Hyperkalemia algorithm accurate: Ca-gluconate dose, insulin/dextrose doses, albuterol 10-20 mg nebulized (high-dose for hyperK) all correct."
+  },
+  {
+    "id": "curated-phase2_unit_200",
+    "verdict": "KEEP",
+    "reason": "Hyponatremia osmolality classification and SIADH criteria correct; urine Na >40 for SIADH is standard; adds structured approach."
+  },
+  {
+    "id": "curated-phase2_unit_201",
+    "verdict": "FIX",
+    "reason": "Dangerous phrasing: 'aim for 4-6 mEq/L rise per hour' implies sustained hourly rate; correct target is 4-6 mEq/L total over acute phase.",
+    "corrected_text": "Symptomatic hyponatremia: nausea, headache, confusion, lethargy, seizures (Na+ <120), coma, death (if severe <110). Acute hyponatremia (<48h): cells haven't adapted, increased intracellular fluid volume -> cerebral edema risk at lower Na+ levels. Chronic hyponatremia (>48h): osmolytes extruded from cells, cerebral edema less likely even if Na+ very low. Correction rate critical: too-rapid correction (>12 mEq/L in 24h) risks central pontine myelinolysis (demyelination, locked-in syndrome, death). Acute symptomatic: 3% hypertonic saline (NaCl 3%, 1 mL/kg IV bolus, repeat once if still seizing), aim for 4-6 mEq/L total rise in the first few hours (not a sustained per-hour rate), then reassess and slow. Chronic asymptomatic: fluid restriction (SIADH), slow correction 4-8 mEq/L per 24h."
+  },
+  {
+    "id": "curated-phase2_unit_202",
+    "verdict": "KEEP",
+    "reason": "3% saline dosing (1-2 mL/kg bolus), Adrogue-Madias formula, fluid restriction targets, vaptan cautions all accurate. Score 0.795."
+  },
+  {
+    "id": "curated-phase2_unit_203",
+    "verdict": "KEEP",
+    "reason": "Hypernatremia causes and FWD formula correct (0.6 x wt x [Na/140-1]); DI types and treatment accurate. Adds value not redundant."
+  },
+  {
+    "id": "curated-phase2_unit_204",
+    "verdict": "KEEP",
+    "reason": "ODS prevention limits accurate (4-8 mEq/24h chronic, 10-12 acute); dextrose re-lowering strategy correct; adds clinical value."
+  },
+  {
+    "id": "curated-phase2_unit_205",
+    "verdict": "KEEP",
+    "reason": "Thyroid physiology: TSH/T3/T4/rT3 relationships accurate; protein binding, half-life, free fraction teaching correct. Score 0.707, not dup."
+  },
+  {
+    "id": "curated-phase2_unit_206",
+    "verdict": "KEEP",
+    "reason": "TSH screening strengths/limitations accurate; central hypo/hyperthyroidism caveats, euthyroid sick syndrome correct. Adds diagnostic nuance."
+  },
+  {
+    "id": "curated-phase2_unit_207",
+    "verdict": "KEEP",
+    "reason": "Hypothyroidism causes, Hashimoto pathophysiology, iodine deficiency accurate. In scope for intern-level endocrine review."
+  },
+  {
+    "id": "curated-phase2_unit_208",
+    "verdict": "KEEP",
+    "reason": "Levothyroxine dosing (1.6 mcg/kg), titration interval (q4-6wk), TSH target (0.5-2.5) accurate. Adds actionable intern-level guidance."
+  },
+  {
+    "id": "curated-phase2_unit_209",
+    "verdict": "KEEP",
+    "reason": "LT4 drug interactions (Ca, Fe, PPIs, estrogens, amiodarone) accurate; timing guidance correct. Adds practical prescribing value."
+  },
+  {
+    "id": "curated-phase2_unit_210",
+    "verdict": "KEEP",
+    "reason": "Hyperthyroidism etiology (Graves 70%, toxic adenoma, thyroiditis), TSI antibodies, ophthalmopathy accurate. Score 0.795, adds structure."
+  },
+  {
+    "id": "curated-phase2_unit_211",
+    "verdict": "KEEP",
+    "reason": "Thyroid storm management accurate: mortality range, propranolol (also blocks T4->T3), PTU dosing, Lugol's after PTU timing all correct."
+  },
+  {
+    "id": "curated-phase2_unit_212",
+    "verdict": "KEEP",
+    "reason": "PTU vs methimazole comparison accurate: dosing, hepatotoxicity risk, first-trimester preference for PTU, pregnancy switch guidance correct."
+  },
+  {
+    "id": "curated-phase2_unit_213",
+    "verdict": "KEEP",
+    "reason": "Beta-blockers in hyperthyroidism: propranolol T4->T3 inhibition, HR target 60-80, dosing range accurate. Adds mechanistic teaching."
+  },
+  {
+    "id": "curated-phase2_unit_214",
+    "verdict": "KEEP",
+    "reason": "RAI and thyroidectomy overview accurate; RAI pregnancy contraindication absolute; hypothyroidism post-RAI ~80% lifetime correct."
+  },
+  {
+    "id": "curated-phase2_unit_215",
+    "verdict": "KEEP",
+    "reason": "Thyroiditis classification (viral, autoimmune, postpartum, drug-induced) and natural history accurate. Adds differential structure."
+  },
+  {
+    "id": "curated-phase2_unit_216",
+    "verdict": "KEEP",
+    "reason": "Postpartum thyroiditis phases, incidence (5-10%), permanent hypothyroidism risk (25%), timing accurate. Low corpus coverage, adds value."
+  },
+  {
+    "id": "curated-phase2_unit_217",
+    "verdict": "KEEP",
+    "reason": "Thyroid nodule approach: TSH first, then US, then FNA; cancer risk 5-15%; malignancy features accurate. Structured algorithm adds value."
+  },
+  {
+    "id": "curated-phase2_unit_218",
+    "verdict": "KEEP",
+    "reason": "Thyroid antibodies: TPO, thyroglobulin, TSI, TRAb roles accurate; clinical utility of each correctly described."
+  },
+  {
+    "id": "curated-phase2_unit_219",
+    "verdict": "KEEP",
+    "reason": "Wolff-Chaikoff (iodine excess suppresses thyroid) and Jod-Basedow (excess precipitates hyperthyroid) correctly distinguished."
+  },
+  {
+    "id": "curated-phase2_unit_220",
+    "verdict": "KEEP",
+    "reason": "Amiodarone thyroid dysfunction types (Type I iodine-driven, Type II thyroiditis) accurately distinguished; monitoring guidance correct."
+  },
+  {
+    "id": "curated-phase3_unit_0",
+    "verdict": "KEEP",
+    "reason": "Sepsis-3 definition (life-threatening organ dysfunction from dysregulated host response to infection) accurate. Score moderate, adds value."
+  },
+  {
+    "id": "curated-phase3_unit_1",
+    "verdict": "KEEP",
+    "reason": "Septic shock definition (vasopressor + lactate >2 mmol/L despite fluid resuscitation) is SSC/Sepsis-3 accurate."
+  },
+  {
+    "id": "curated-phase3_unit_2",
+    "verdict": "KEEP",
+    "reason": "qSOFA (RR>=22, AMS, SBP<=100) accurate screening tool; caveats about ICU non-applicability appropriate."
+  },
+  {
+    "id": "curated-phase3_unit_3",
+    "verdict": "KEEP",
+    "reason": "SOFA score components and cutoff (>=2 point increase for sepsis) accurate per Sepsis-3."
+  },
+  {
+    "id": "curated-phase3_unit_4",
+    "verdict": "FIX",
+    "reason": "SSC 2021 does not recommend '3-drug combination' broadly; empiric regimen is tailored, typically 2-3 agents for immunocompromised.",
+    "corrected_text": "Time-critical interventions within 60 minutes of sepsis recognition: (1) Measure lactate; (2) Obtain blood cultures before antibiotics; (3) Administer broad-spectrum antibiotics empirically (coverage tailored to source; combination therapy for immunocompromised or high-resistance-risk patients); (4) Initiate IV fluid resuscitation (30 mL/kg crystalloid bolus if hypotensive or lactate >=4 mmol/L); (5) Apply vasopressors if MAP inadequate after fluids; (6) Reassess lactate if initially elevated. Mortality improves dramatically with each hour of delay, especially for antibiotics."
+  },
+  {
+    "id": "curated-phase3_unit_5",
+    "verdict": "KEEP",
+    "reason": "Lactate clearance goal (>=10-20% over 2h), serial measurement, clearance predicts mortality accurate per SSC guidelines."
+  },
+  {
+    "id": "curated-phase3_unit_6",
+    "verdict": "KEEP",
+    "reason": "Blood culture timing (before antibiotics, 2 sets), do not delay antibiotics >45 min to obtain cultures accurate SSC teaching."
+  },
+  {
+    "id": "curated-phase3_unit_7",
+    "verdict": "KEEP",
+    "reason": "Source control principles (drain abscess, remove infected hardware) accurate; timing within 6-12h of recognition correct."
+  },
+  {
+    "id": "curated-phase3_unit_8",
+    "verdict": "KEEP",
+    "reason": "Infected CVC management (remove vs salvage, CRBSI definition, line timing) accurate. Adds practical intern guidance."
+  },
+  {
+    "id": "curated-phase3_unit_9",
+    "verdict": "KEEP",
+    "reason": "CAUTI management (early Foley removal, clean technique) and IDSA definitions accurate. Adds relevant ICU teaching."
+  },
+  {
+    "id": "curated-phase3_unit_10",
+    "verdict": "KEEP",
+    "reason": "Empiric antibiotic principles (source-based, local antibiogram, MRSA coverage when indicated) accurate and in scope."
+  },
+  {
+    "id": "curated-phase3_unit_11",
+    "verdict": "KEEP",
+    "reason": "De-escalation at 48-72h based on cultures, procalcitonin guidance accurate per antimicrobial stewardship guidelines."
+  },
+  {
+    "id": "curated-phase3_unit_12",
+    "verdict": "KEEP",
+    "reason": "Source-based antibiotic selection (CAP vs HAP, intra-abdominal, UTI, skin) accurate high-level teaching."
+  },
+  {
+    "id": "curated-phase3_unit_13",
+    "verdict": "KEEP",
+    "reason": "30 mL/kg crystalloid bolus, fluid responsiveness assessment (PPV <13%, IVC collapsibility) accurate per SSC 2021."
+  },
+  {
+    "id": "curated-phase3_unit_14",
+    "verdict": "FIX",
+    "reason": "Phenylephrine indication misstated; SSC recommends it when NE causes tachyarrhythmia, not specifically for ACS. Otherwise accurate.",
+    "corrected_text": "After fluid resuscitation, if MAP <65 mmHg despite fluids, initiate vasopressor: (1) Norepinephrine (Levophed) = first-line agent (alpha + beta effects, improves mortality vs. dopamine). Dose 0.01-0.5 mcg/kg/min; target MAP >=65. (2) Epinephrine = added if norepinephrine insufficient or low cardiac output state. (3) Dopamine = NO LONGER RECOMMENDED as first-line (increased arrhythmia risk vs. NE); may use in select bradycardic patients. (4) Phenylephrine = pure alpha-agonist, use when norepinephrine causes severe tachyarrhythmia or as adjunct in refractory shock. (5) Vasopressin 0.03 units/min = adjunct to catecholamines in refractory shock, may reduce NE dose. Tie to arterial line for continuous monitoring; reassess after each dose change. Wean as MAP/perfusion improves."
+  },
+  {
+    "id": "curated-phase3_unit_15",
+    "verdict": "KEEP",
+    "reason": "Colloid vs crystalloid: SAFE trial, albumin not superior to NS in general sepsis, accurate summary of evidence."
+  },
+  {
+    "id": "curated-phase3_unit_16",
+    "verdict": "FIX",
+    "reason": "CORTICUS trial did NOT show mortality benefit — actually showed slower shock reversal without mortality benefit. APROCCHSS/ADRENAL showed modest benefit.",
+    "corrected_text": "Role of corticosteroids in sepsis remains controversial. Evidence: low-dose hydrocortisone (50 mg q6h or 200 mg/day continuous) benefits vasopressor-dependent refractory septic shock. APROCCHSS trial (2018) and ADRENAL trial (2018): hydrocortisone shortens time to shock reversal and vasopressor weaning; APROCCHSS showed 90-day mortality benefit, ADRENAL did not. CORTICUS trial (2008) showed NO mortality benefit and no routine use benefit. Mechanism: restore vascular tone, improve myocardial contractility. Typical approach: if vasopressor requirement escalating or prolonged (>24-48h despite adequate resuscitation), consider hydrocortisone 200 mg/day IV (50 mg q6h or continuous) for 7 days. Avoid steroids in early sepsis without refractory shock. Screen for adrenal insufficiency (ACTH stimulation) if prolonged ICU stay."
+  },
+  {
+    "id": "curated-phase3_unit_17",
+    "verdict": "KEEP",
+    "reason": "Inotropes in sepsis: dobutamine for cardiogenic component, milrinone alternative, indications (low CO despite fluids/vasopressors) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_18",
+    "verdict": "KEEP",
+    "reason": "Glucose control target 140-180 mg/dL (NICE-SUGAR), avoid hypoglycemia; insulin protocol guidance accurate per SSC."
+  },
+  {
+    "id": "curated-phase3_unit_19",
+    "verdict": "KEEP",
+    "reason": "Perfusion endpoints (lactate clearance, cap refill, mottling score) and ScvO2 target accurate; matches current evidence."
+  },
+  {
+    "id": "curated-phase3_unit_20",
+    "verdict": "KEEP",
+    "reason": "CVC monitoring (CVP limitations, ScvO2 >70%, dynamic assessments preferred) accurate. In scope for ICU interns."
+  },
+  {
+    "id": "curated-phase3_unit_21",
+    "verdict": "KEEP",
+    "reason": "Urine output monitoring (UOP <0.5 mL/kg/h = oliguria, AKI criteria) accurate and clinically relevant."
+  },
+  {
+    "id": "curated-phase3_unit_22",
+    "verdict": "KEEP",
+    "reason": "ARDS in sepsis (diffuse alveolar damage, LPV strategy, PEEP) pathophysiology and management accurate."
+  },
+  {
+    "id": "curated-phase3_unit_23",
+    "verdict": "KEEP",
+    "reason": "AKI in sepsis (prerenal + intrinsic, KDIGO staging, early RRT indications) accurate and adds value."
+  },
+  {
+    "id": "curated-phase3_unit_24",
+    "verdict": "KEEP",
+    "reason": "DIC in sepsis pathophysiology (activation of coagulation cascade, microvascular thrombosis) and management priorities accurate."
+  },
+  {
+    "id": "curated-phase3_unit_25",
+    "verdict": "KEEP",
+    "reason": "Sepsis-induced cardiomyopathy: reversible systolic dysfunction, stress response, echo for diagnosis, inotrope use accurate."
+  },
+  {
+    "id": "curated-phase3_unit_26",
+    "verdict": "KEEP",
+    "reason": "Hyperglycemia/hypoglycemia in sepsis: tight control harm (NICE-SUGAR), target 140-180 mg/dL, monitoring frequency accurate."
+  },
+  {
+    "id": "curated-phase3_unit_27",
+    "verdict": "KEEP",
+    "reason": "Sepsis mortality risk factors (age, comorbidities, lactate, qSOFA, source) accurately summarized with prognostic context."
+  },
+  {
+    "id": "curated-phase3_unit_28",
+    "verdict": "KEEP",
+    "reason": "Post-sepsis syndrome (cognitive impairment, PTSD, physical deconditioning) accurate; newer evidence, adds value not in corpus."
+  },
+  {
+    "id": "curated-phase3_unit_29",
+    "verdict": "KEEP",
+    "reason": "Neutropenic sepsis: febrile neutropenia definition, immediate broad-spectrum coverage, antifungal threshold accurate."
+  },
+  {
+    "id": "curated-phase3_unit_30",
+    "verdict": "KEEP",
+    "reason": "Sepsis in cirrhosis: SBP/TIPS complication, albumin for SBP, unique antibiotic considerations accurate."
+  },
+  {
+    "id": "curated-phase3_unit_31",
+    "verdict": "KEEP",
+    "reason": "Urosepsis recognition and management (urine culture, drainage of obstruction, antibiotics) accurate. Practical teaching."
+  },
+  {
+    "id": "curated-phase3_unit_32",
+    "verdict": "KEEP",
+    "reason": "Pneumonia-derived sepsis: CAP vs HAP antibiotic selection, respiratory support escalation accurate."
+  },
+  {
+    "id": "curated-phase3_unit_33",
+    "verdict": "KEEP",
+    "reason": "Abdominal sepsis: perforated viscus source control within 6-12h, anti-anaerobic coverage, laparotomy considerations accurate."
+  },
+  {
+    "id": "curated-phase3_unit_34",
+    "verdict": "KEEP",
+    "reason": "Peripartum sepsis: Group B strep, Group A strep (toxic shock), early delivery if needed, antibiotic selection accurate."
+  },
+  {
+    "id": "curated-phase3_unit_35",
+    "verdict": "KEEP",
+    "reason": "Meningococcal sepsis: petechiae/purpura recognition, immediate penicillin/ceftriaxone, droplet precautions accurate."
+  },
+  {
+    "id": "curated-phase3_unit_36",
+    "verdict": "KEEP",
+    "reason": "SSC 2021 guidelines summary accurate; 1-hour bundle, de-escalation, steroid indications correctly represented."
+  },
+  {
+    "id": "curated-phase3_unit_37",
+    "verdict": "KEEP",
+    "reason": "Sepsis screening implementation (qSOFA triggers, order sets, time-to-antibiotics audit) accurate and in scope."
+  },
+  {
+    "id": "curated-phase3_unit_38",
+    "verdict": "KEEP",
+    "reason": "Antimicrobial stewardship (PK/PD optimization, de-escalation, duration of therapy) principles accurate."
+  },
+  {
+    "id": "curated-phase3_unit_39",
+    "verdict": "KEEP",
+    "reason": "Repeat blood cultures: when to repeat (Staph aureus bacteremia, persistent fever) and when not accurate per IDSA."
+  },
+  {
+    "id": "curated-phase3_unit_40",
+    "verdict": "KEEP",
+    "reason": "Berlin 2012 ARDS definition (4 criteria: timing, bilateral opacities, non-cardiac, P/F ratio with PEEP) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_41",
+    "verdict": "KEEP",
+    "reason": "ARDS risk factors (sepsis, aspiration, trauma, transfusion, pneumonia) and etiology classification accurate."
+  },
+  {
+    "id": "curated-phase3_unit_42",
+    "verdict": "KEEP",
+    "reason": "ARDS phases (exudative, fibroproliferative, resolution) and pathophysiology (diffuse alveolar damage) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_43",
+    "verdict": "KEEP",
+    "reason": "CXR findings in ARDS (bilateral opacities, no cardiomegaly, lag in resolution) accurate. Adds imaging teaching."
+  },
+  {
+    "id": "curated-phase3_unit_44",
+    "verdict": "KEEP",
+    "reason": "HRCT findings in ARDS (dense consolidation dependent, ground-glass non-dependent) accurate. Adds diagnostic value."
+  },
+  {
+    "id": "curated-phase3_unit_45",
+    "verdict": "KEEP",
+    "reason": "P/F ratio severity thresholds (mild 201-300, moderate 101-200, severe ≤100) and mortality estimates accurate per Berlin."
+  },
+  {
+    "id": "curated-phase3_unit_46",
+    "verdict": "KEEP",
+    "reason": "BAL in ARDS (neutrophil predominance, DAD pattern) and role in diagnosis vs infection accurate."
+  },
+  {
+    "id": "curated-phase3_unit_47",
+    "verdict": "FIX",
+    "reason": "IBW formula error: female IBW should be 45.5 kg + 2.3 kg/inch over 5 ft, not 50 kg. Male = 50 kg. TV range for female at 45.5 kg IBW differs.",
+    "corrected_text": "Cornerstone of ARDS management: low tidal volumes + adequate PEEP. Goal: minimize ventilator-induced lung injury (VILI). Strategy: (1) Set IBW (ideal body weight): Male = 50 kg + 2.3 kg/inch >5ft; Female = 45.5 kg + 2.3 kg/inch >5ft; (2) Tidal volume 6-8 mL/kg IBW (NOT actual body weight); (3) Plateau pressure <30 cmH2O (measure at end-inspiration after 0.5s hold); (4) If plateau >30, reduce TV to 5 mL/kg IBW; (5) RR 20-30 to maintain minute ventilation. Example: 70 kg woman (IBW ~53 kg) → TV 318-424 mL. Monitor compliance (TV / [plateau pressure - PEEP]); decreasing compliance suggests further lung recruitment needed."
+  },
+  {
+    "id": "curated-phase3_unit_48",
+    "verdict": "KEEP",
+    "reason": "PEEP strategy in ARDS: low vs high PEEP trials, ARDSNet tables, individualization accurate. Score 0.775."
+  },
+  {
+    "id": "curated-phase3_unit_49",
+    "verdict": "KEEP",
+    "reason": "Permissive hypercapnia rationale, PaCO2 targets (45-80), contraindications (elevated ICP) accurate per ARDSNet."
+  },
+  {
+    "id": "curated-phase3_unit_50",
+    "verdict": "KEEP",
+    "reason": "Ventilator modes in ARDS: AC vs SIMV vs PC comparison accurate; key teaching is settings not mode selection."
+  },
+  {
+    "id": "curated-phase3_unit_51",
+    "verdict": "KEEP",
+    "reason": "Prone positioning: PROSEVA trial survival benefit (severe ARDS, P/F <150), duration ≥16h/day, complications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_52",
+    "verdict": "KEEP",
+    "reason": "NMB (cisatracurium) in ARDS: ACURASYS trial context, modest benefit in severe ARDS, limited to first 48h accurate."
+  },
+  {
+    "id": "curated-phase3_unit_53",
+    "verdict": "KEEP",
+    "reason": "Sedation in ARDS: light sedation preferred (ABCDEF bundle), SAT/SBT protocol, RASS scoring accurate."
+  },
+  {
+    "id": "curated-phase3_unit_54",
+    "verdict": "KEEP",
+    "reason": "Fluid management in ARDS: conservative strategy (FACTT trial), negative fluid balance after resuscitation accurate."
+  },
+  {
+    "id": "curated-phase3_unit_55",
+    "verdict": "KEEP",
+    "reason": "Corticosteroids in ARDS: controversial, avoid routine use, consider in fibro-proliferative phase, methylprednisolone 1 mg/kg accurate."
+  },
+  {
+    "id": "curated-phase3_unit_56",
+    "verdict": "KEEP",
+    "reason": "Inhaled NO in ARDS: improves oxygenation but no mortality benefit; bridge to ECMO/prone, not routine. Accurate."
+  },
+  {
+    "id": "curated-phase3_unit_57",
+    "verdict": "KEEP",
+    "reason": "ECMO in ARDS: VV-ECMO for refractory hypoxemia, CESAR/EOLIA trial evidence, center expertise required accurate."
+  },
+  {
+    "id": "curated-phase3_unit_58",
+    "verdict": "KEEP",
+    "reason": "VILI mechanisms (barotrauma, volutrauma, atelectrauma, biotrauma) and prevention strategies accurate."
+  },
+  {
+    "id": "curated-phase3_unit_59",
+    "verdict": "KEEP",
+    "reason": "Pneumothorax in ARDS: tension PTX recognition, chest tube management, how to distinguish from ARDS worsening accurate."
+  },
+  {
+    "id": "curated-phase3_unit_60",
+    "verdict": "KEEP",
+    "reason": "VAP/HAP in ARDS: clinical diagnosis criteria, anti-pseudomonal coverage, de-escalation principles accurate."
+  },
+  {
+    "id": "curated-phase3_unit_61",
+    "verdict": "KEEP",
+    "reason": "AKI in ARDS (shared pathophysiology, fluid overload worsens ARDS, RRT timing) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_62",
+    "verdict": "KEEP",
+    "reason": "Weaning in ARDS: SBT criteria (P/F >150, PEEP <8, FiO2 <0.4, hemodynamic stability) accurate per ARDSNet."
+  },
+  {
+    "id": "curated-phase3_unit_63",
+    "verdict": "KEEP",
+    "reason": "ARDS outcomes: mortality ranges by severity, ICU-acquired weakness, cognitive impairment, PTSD post-ARDS accurate."
+  },
+  {
+    "id": "curated-phase3_unit_64",
+    "verdict": "KEEP",
+    "reason": "ARDS recovery trajectory: CXR lags clinical recovery, lung function may be abnormal at 1 year accurate."
+  },
+  {
+    "id": "curated-phase3_unit_65",
+    "verdict": "KEEP",
+    "reason": "Sepsis-derived ARDS management (same LPV principles, treat underlying sepsis) accurate. Adds source-specific context."
+  },
+  {
+    "id": "curated-phase3_unit_66",
+    "verdict": "KEEP",
+    "reason": "Aspiration ARDS: prevention strategies (HOB 30-45°, gastric emptying), bronchoscopy for large aspiration accurate."
+  },
+  {
+    "id": "curated-phase3_unit_67",
+    "verdict": "KEEP",
+    "reason": "TRALI definition (within 6h of transfusion, bilateral infiltrates, not cardiac), management (stop transfusion, LPV) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_68",
+    "verdict": "KEEP",
+    "reason": "PE causing ARDS: right heart strain, anticoagulation/thrombolysis, rare true ARDS phenotype. Accurate nuanced teaching."
+  },
+  {
+    "id": "curated-phase3_unit_69",
+    "verdict": "KEEP",
+    "reason": "HFrEF/HFmrEF/HFpEF classification (EF <40/40-49/≥50) and treatment differences accurate per 2022 AHA/ACC. Score low but KEEP (weak corpus match)."
+  },
+  {
+    "id": "curated-phase3_unit_70",
+    "verdict": "KEEP",
+    "reason": "ADHF precipitants (dietary noncompliance, med changes, infection, AF, ACS) accurate. In scope for intern-level HF management."
+  },
+  {
+    "id": "curated-phase3_unit_71",
+    "verdict": "KEEP",
+    "reason": "Acute decompensated HF presentation (dyspnea, orthopnea, PND, JVD, crackles, S3) accurate clinical teaching."
+  },
+  {
+    "id": "curated-phase3_unit_72",
+    "verdict": "FIX",
+    "reason": "BNP cutoffs: BNP >400 pg/mL is the rule-in threshold, but the standard teaching is >100 pg/mL (sensitive) for rule-out not rule-in.",
+    "corrected_text": "B-type natriuretic peptide (BNP) & NT-proBNP (N-terminal fragment) = neurohormone markers released from ventricular myocytes in response to stretch. Elevated in HF decompensation, but NOT diagnostic (elevated in renal failure, sepsis, PE, AFib, LVH). Cutoffs: BNP >100 pg/mL is the standard decision threshold (rule-out: <100 pg/mL makes HF unlikely; BNP >400 pg/mL strongly suggests HF); NT-proBNP thresholds are age-adjusted (>450 pg/mL if <50y, >900 pg/mL if 50-74y, >1800 pg/mL if ≥75y). Serial BNP trends guide therapy: decreasing BNP with diuretics = good response. Resistance to diuretics + persistently elevated BNP = ongoing decompensation, need therapy escalation."
+  },
+  {
+    "id": "curated-phase3_unit_73",
+    "verdict": "KEEP",
+    "reason": "Echo in acute HF: EF assessment, wall motion, diastolic dysfunction grading, pericardial effusion accurate."
+  },
+  {
+    "id": "curated-phase3_unit_74",
+    "verdict": "KEEP",
+    "reason": "IV loop diuretic dosing (40-120 mg IV, 50-100% dose escalation for resistance), combination therapy accurate."
+  },
+  {
+    "id": "curated-phase3_unit_75",
+    "verdict": "KEEP",
+    "reason": "IV vasodilators in HF: nitroglycerin (venodilator, preload), nitroprusside (balanced, avoid with ACS) indications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_76",
+    "verdict": "KEEP",
+    "reason": "ACE/ARB in HF: mortality benefit in HFrEF, contraindications (pregnancy, angioedema, severe renal failure) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_77",
+    "verdict": "KEEP",
+    "reason": "Beta-blockers in acute HF: avoid initiation in decompensation, can continue if already on and hemodynamically stable. Accurate."
+  },
+  {
+    "id": "curated-phase3_unit_78",
+    "verdict": "KEEP",
+    "reason": "Aldosterone antagonists (spironolactone/eplerenone): mortality benefit in HFrEF, hyperkalemia monitoring, contraindications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_79",
+    "verdict": "KEEP",
+    "reason": "Inotropes vs inodilators: dobutamine (inotrope), milrinone (inodilator/PDE3i), levosimendan (not US), indications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_80",
+    "verdict": "KEEP",
+    "reason": "BiPAP/CPAP in cardiogenic pulmonary edema: reduces intubation, PEEP improves oxygenation, CPAP acceptable first-line. Accurate."
+  },
+  {
+    "id": "curated-phase3_unit_81",
+    "verdict": "KEEP",
+    "reason": "Mechanical circulatory support (IABP, Impella, ECMO) indications, limitations, escalation ladder accurate."
+  },
+  {
+    "id": "curated-phase3_unit_82",
+    "verdict": "KEEP",
+    "reason": "Cardiogenic shock definition (CI <2.2, PAOP >15), management algorithm (inotropes, vasopressors, MCS) accurate. 'IABAP' typo is minor."
+  },
+  {
+    "id": "curated-phase3_unit_83",
+    "verdict": "KEEP",
+    "reason": "HTN urgency (no end-organ damage, SBP >180/120) vs emergency (end-organ damage) distinction accurate per JNC/ACC guidelines."
+  },
+  {
+    "id": "curated-phase3_unit_84",
+    "verdict": "KEEP",
+    "reason": "Hypertensive encephalopathy (headache, confusion, papilledema, reversible with BP control) vs stroke distinction accurate."
+  },
+  {
+    "id": "curated-phase3_unit_85",
+    "verdict": "KEEP",
+    "reason": "Ischemic stroke: permissive HTN (SBP <220/120 if no tPA), tPA candidates lower to <185/110. Accurate AHA guideline teaching."
+  },
+  {
+    "id": "curated-phase3_unit_86",
+    "verdict": "KEEP",
+    "reason": "ICH management: SBP target <160 mmHg (INTERACT2), reversal of anticoagulation, ICP management principles accurate."
+  },
+  {
+    "id": "curated-phase3_unit_87",
+    "verdict": "KEEP",
+    "reason": "Aortic dissection: target HR <60 and SBP <120 mmHg (esmolol or labetalol first), CT/TEE diagnosis, surgery Type A accurate."
+  },
+  {
+    "id": "curated-phase3_unit_88",
+    "verdict": "FIX",
+    "reason": "BP goal in pre-eclampsia should be to treat severe HTN (SBP>=160 or DBP>=110); 'goal SBP 140-150' implies routine targeting that may harm.",
+    "corrected_text": "Pre-eclampsia: HTN (BP >=140/90 twice, 4h apart) after 20 weeks gestation + proteinuria >=0.3 g/day OR signs end-organ dysfunction (elevated transaminases, thrombocytopenia, renal insufficiency, pulmonary edema, cerebral/visual symptoms). Eclampsia = pre-eclampsia + seizures. Management: (1) Delivery (definitive treatment); (2) Seizure prophylaxis: magnesium sulfate 4-6 g IV loading, then 1-2 g/h infusion (decreases seizure risk ~50%); (3) Antihypertensive therapy: ACOG recommends treating severe HTN (SBP >=160 or DBP >=110 on two occasions 15 min apart) to prevent maternal stroke; target SBP 130-160 mmHg and DBP 80-105 mmHg — avoid overly aggressive lowering to protect placental perfusion. IV agents: labetalol (first-line), hydralazine, oral nifedipine. Avoid ACE inhibitors and ARBs (teratogenic). HELLP syndrome (hemolysis, elevated LFTs, low platelets) = severe pre-eclampsia variant with higher maternal/fetal mortality."
+  },
+  {
+    "id": "curated-phase3_unit_89",
+    "verdict": "KEEP",
+    "reason": "IV antihypertensives: labetalol, nicardipine, hydralazine, esmolol, nitroprusside dosing ranges accurate. Nifedipine SL appropriately flagged as outdated."
+  },
+  {
+    "id": "curated-phase3_unit_90",
+    "verdict": "KEEP",
+    "reason": "Target BP reduction in hypertensive emergency: max 20-25% in first hour (not to normal), then gradual accurate per JNC teaching."
+  },
+  {
+    "id": "curated-phase3_unit_91",
+    "verdict": "KEEP",
+    "reason": "Pheo crisis management: alpha-blockade before beta (phentolamine IV), then beta; phenoxybenzamine for preoperative prep accurate."
+  },
+  {
+    "id": "curated-phase3_unit_92",
+    "verdict": "KEEP",
+    "reason": "DIC definition (simultaneous activation of coagulation and fibrinolysis, microvascular thrombosis and bleeding) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_93",
+    "verdict": "KEEP",
+    "reason": "DIC triggers (sepsis, malignancy, obstetric emergencies, trauma, transfusion reactions) accurate and comprehensive."
+  },
+  {
+    "id": "curated-phase3_unit_94",
+    "verdict": "FIX",
+    "reason": "Typo: '(1) Thrombocytopenia (decreased platelet consumption)' should read 'increased platelet consumption'. Clinically misleading.",
+    "corrected_text": "Classic findings: (1) Thrombocytopenia (increased platelet consumption by thrombi); (2) Elevated PT/INR & aPTT (factor consumption); (3) Hypofibrinogenemia (<100 mg/dL, normal 200-400); (4) Elevated d-dimer & FDP (fibrin degradation products, elevated 100-1000x normal); (5) Schistocytes on blood smear (microangiopathic hemolytic anemia from fibrin strands). ISTH DIC scoring: platelets + PT prolongation + fibrinogen level + d-dimer/FDP (score >=5 compatible with overt DIC). No single test diagnostic; combination + clinical context essential. Serial measurements more useful than single values (declining platelets, declining fibrinogen = worsening DIC)."
+  },
+  {
+    "id": "curated-phase3_unit_95",
+    "verdict": "KEEP",
+    "reason": "DIC differential (TTP, HUS, HELLP, liver disease, dilutional coagulopathy) with distinguishing features accurate."
+  },
+  {
+    "id": "curated-phase3_unit_96",
+    "verdict": "KEEP",
+    "reason": "DIC management: treat underlying cause first, transfuse for bleeding (FFP, cryo, platelets), not prophylactically accurate."
+  },
+  {
+    "id": "curated-phase3_unit_97",
+    "verdict": "KEEP",
+    "reason": "Heparin in DIC: controversial, limited to thrombotic phenotype, unfractionated heparin dosing stated, appropriate caveats."
+  },
+  {
+    "id": "curated-phase3_unit_98",
+    "verdict": "KEEP",
+    "reason": "Antifibrinolytics (TXA) in DIC: limited evidence, contraindicated in thrombotic DIC, 1g IV q6-8h dosing accurate."
+  },
+  {
+    "id": "curated-phase3_unit_99",
+    "verdict": "KEEP",
+    "reason": "Natural anticoagulants in DIC (APC, antithrombin, TFPI): research phase, not standard of care, accurate summary."
+  },
+  {
+    "id": "curated-phase3_unit_100",
+    "verdict": "KEEP",
+    "reason": "Chronic vs acute DIC distinction (malignancy, VTE vs obstetric, sepsis) and different lab patterns accurate."
+  },
+  {
+    "id": "curated-phase3_unit_101",
+    "verdict": "KEEP",
+    "reason": "ALF definition (INR >1.5, encephalopathy <26 weeks, no prior liver disease) and etiology (acetaminophen #1 US) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_102",
+    "verdict": "KEEP",
+    "reason": "Hepatic encephalopathy grading (West-Haven I-IV) and pathophysiology (ammonia, false neurotransmitters) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_103",
+    "verdict": "KEEP",
+    "reason": "Cerebral edema in ALF: mechanism (cytotoxic), ICP monitoring criteria, mannitol/hypertonic saline treatment accurate."
+  },
+  {
+    "id": "curated-phase3_unit_104",
+    "verdict": "KEEP",
+    "reason": "Coagulopathy in ALF: synthetic failure (PT/INR), thrombocytopenia, platelet dysfunction; TEG/ROTEM guidance accurate."
+  },
+  {
+    "id": "curated-phase3_unit_105",
+    "verdict": "KEEP",
+    "reason": "Metabolic complications in ALF (hypoglycemia, metabolic acidosis, hyponatremia, hypophosphatemia) and monitoring accurate."
+  },
+  {
+    "id": "curated-phase3_unit_106",
+    "verdict": "KEEP",
+    "reason": "Infection prevention in ALF (SBP prophylaxis, antifungal thresholds, surveillance cultures) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_107",
+    "verdict": "KEEP",
+    "reason": "HRS in ALF: terlipressin/norepinephrine + albumin, TIPS contraindicated, RRT bridging accurate per AASLD guidelines."
+  },
+  {
+    "id": "curated-phase3_unit_108",
+    "verdict": "KEEP",
+    "reason": "Liver transplant for ALF: Kings College Criteria as listing trigger, contraindications, timing accurate."
+  },
+  {
+    "id": "curated-phase3_unit_109",
+    "verdict": "KEEP",
+    "reason": "NAC in acetaminophen ALF: dosing (150/50/100 mg/kg), window of efficacy, benefit even in late presentation accurate."
+  },
+  {
+    "id": "curated-phase3_unit_110",
+    "verdict": "KEEP",
+    "reason": "Lactulose (15-30 mL q6-8h, titrate to 2-3 stools/day) and rifaximin (550 mg BID) doses and mechanisms accurate."
+  },
+  {
+    "id": "curated-phase3_unit_111",
+    "verdict": "KEEP",
+    "reason": "Acute pancreatitis definition (Revised Atlanta: 2 of 3 criteria: pain, lipase >3x ULN, imaging) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_112",
+    "verdict": "KEEP",
+    "reason": "Pancreatitis etiology (gallstones 40%, alcohol 30%, hypertriglyceridemia, ERCP, medications) accurate distribution."
+  },
+  {
+    "id": "curated-phase3_unit_113",
+    "verdict": "KEEP",
+    "reason": "Severity assessment: Ranson, BISAP, CTSI scores and definitions of mild/moderate/severe accurate."
+  },
+  {
+    "id": "curated-phase3_unit_114",
+    "verdict": "KEEP",
+    "reason": "Pancreatitis imaging: US (gallstones), CT (necrosis at 48-72h), MRCP (ductal anatomy) timing and indications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_115",
+    "verdict": "KEEP",
+    "reason": "Pancreatitis management: aggressive IV fluids (LR preferred, 250-500 mL/h), early enteral nutrition, analgesia accurate."
+  },
+  {
+    "id": "curated-phase3_unit_116",
+    "verdict": "KEEP",
+    "reason": "Antibiotics in pancreatitis: NOT routine; only for proven infected necrosis; imipenem/meropenem first-line accurate per ACG."
+  },
+  {
+    "id": "curated-phase3_unit_117",
+    "verdict": "KEEP",
+    "reason": "Pancreatitis complications (pseudocyst, necrosis, fistula, SIRS, ARDS, AKI) management accurate."
+  },
+  {
+    "id": "curated-phase3_unit_118",
+    "verdict": "KEEP",
+    "reason": "ERCP in gallstone pancreatitis with obstruction (cholangitis within 24-48h, biliary obstruction): timing accurate per ACG."
+  },
+  {
+    "id": "curated-phase3_unit_119",
+    "verdict": "KEEP",
+    "reason": "Hypertriglyceridemia pancreatitis (TG >1000 mg/dL trigger): insulin infusion, plasmapheresis, fibrates accurate."
+  },
+  {
+    "id": "curated-phase3_unit_120",
+    "verdict": "KEEP",
+    "reason": "Monro-Kellie doctrine, ICP components (brain 80%/CSF 10%/blood 10%), normal ICP 5-15 mmHg accurate. Score 0.54 but no corpus dup."
+  },
+  {
+    "id": "curated-phase3_unit_121",
+    "verdict": "KEEP",
+    "reason": "ICP causes (mass, edema, CSF obstruction, venous HTN) and classification accurate. Adds structured teaching."
+  },
+  {
+    "id": "curated-phase3_unit_122",
+    "verdict": "KEEP",
+    "reason": "ICP signs: Cushing's triad (HTN+brady+irregular respirations), papilledema, pupil changes accurate. Score 0.627 weak match, KEEP."
+  },
+  {
+    "id": "curated-phase3_unit_123",
+    "verdict": "KEEP",
+    "reason": "Herniation syndromes (uncal, central, tonsillar, upward) clinical features and emergency management accurate."
+  },
+  {
+    "id": "curated-phase3_unit_124",
+    "verdict": "KEEP",
+    "reason": "CPP = MAP - ICP, target >60 mmHg, autoregulation range 50-150 mmHg (lost in severe TBI) accurate. Score 0.554, no dup, KEEP."
+  },
+  {
+    "id": "curated-phase3_unit_125",
+    "verdict": "KEEP",
+    "reason": "ICP monitoring: EVD (gold standard, 5-10% ventriculitis), subarachnoid bolt, parenchymal monitors accurate. KEEP."
+  },
+  {
+    "id": "curated-phase3_unit_126",
+    "verdict": "KEEP",
+    "reason": "First-line ICP management: HOB 30°, neck neutral, SpO2 >94%, PaCO2 35-40, normothermia accurate."
+  },
+  {
+    "id": "curated-phase3_unit_127",
+    "verdict": "KEEP",
+    "reason": "Osmotic therapy: mannitol 0.5-1 g/kg, hypertonic saline 30 mL bolus, osmolality cap <320 mOsm/kg accurate."
+  },
+  {
+    "id": "curated-phase3_unit_128",
+    "verdict": "FLAG",
+    "reason": "DECRA trial was in severe TBI (not generally refractory ICP); mortality reduction stated as '23%' needs source verification; clinical claim unverifiable here."
+  },
+  {
+    "id": "curated-phase3_unit_129",
+    "verdict": "KEEP",
+    "reason": "Status epilepticus definition (seizure >5 min or 2+ without return to baseline), GCSE vs NCSE distinction accurate."
+  },
+  {
+    "id": "curated-phase3_unit_130",
+    "verdict": "KEEP",
+    "reason": "SE etiologies (AED non-compliance, metabolic, structural, toxic, autoimmune) accurate and comprehensive."
+  },
+  {
+    "id": "curated-phase3_unit_131",
+    "verdict": "KEEP",
+    "reason": "First-line SE treatment: lorazepam 4 mg IV (repeat once, max 8 mg), midazolam 10 mg IM (RAMPART trial) accurate per AES guidelines."
+  },
+  {
+    "id": "curated-phase3_unit_132",
+    "verdict": "FIX",
+    "reason": "Levetiracetam described as '500-2000 mg IV q12h' — conflates loading dose (1000-3000 mg IV once) with maintenance dosing.",
+    "corrected_text": "If seizures persist >5 min after benzodiazepine: (1) Fosphenytoin (Cerebyx): 20 mg PE/kg IV at 100-150 mg PE/min; onset 30-60 min, long half-life (24h); then maintenance 5 mg PE/kg/day divided. Phenytoin (Dilantin): older formulation, IV irritating, same loading dose at slower rate. (2) Levetiracetam (Keppra): loading dose 1000-3000 mg IV over 15 min (single bolus); onset 15-30 min; maintenance 500-1500 mg BID. Fewer drug interactions, well-tolerated. (3) Valproic acid: 20-40 mg/kg IV over 5-10 min; onset 15-30 min; effective but risk hepatotoxicity (avoid in liver disease, pregnancy). (4) Lacosamide: 200-400 mg IV; limited but growing experience. Any agent acceptable; no clear superiority per ESETT trial. Combination sometimes used for refractory cases."
+  },
+  {
+    "id": "curated-phase3_unit_133",
+    "verdict": "KEEP",
+    "reason": "Anesthetic induction for refractory SE: propofol, midazolam, pentobarbital, ketamine dosing and PRIS risk accurate."
+  },
+  {
+    "id": "curated-phase3_unit_134",
+    "verdict": "KEEP",
+    "reason": "Airway management in SE: early intubation criteria, RSI drug selection, ketamine rationale accurate."
+  },
+  {
+    "id": "curated-phase3_unit_135",
+    "verdict": "KEEP",
+    "reason": "Continuous EEG monitoring in SE: required for NCSE diagnosis, burst suppression target, duration accurate."
+  },
+  {
+    "id": "curated-phase3_unit_136",
+    "verdict": "KEEP",
+    "reason": "SE complications (aspiration, metabolic acidosis, rhabdomyolysis, NCSE, autonomic instability) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_137",
+    "verdict": "KEEP",
+    "reason": "Seizure prophylaxis post-SE: continue AED for 3-6 months minimum, adjust per etiology; accurate clinical guidance."
+  },
+  {
+    "id": "curated-phase3_unit_138",
+    "verdict": "KEEP",
+    "reason": "MOF/MODS definition and SOFA scoring (6 organs, 0-4 each) accurate. High clinical relevance for ICU interns."
+  },
+  {
+    "id": "curated-phase3_unit_139",
+    "verdict": "KEEP",
+    "reason": "Typical organ failure sequence (lungs first, then kidneys, liver, gut, CNS) accurate per critical illness physiology."
+  },
+  {
+    "id": "curated-phase3_unit_140",
+    "verdict": "KEEP",
+    "reason": "CIP (polyneuropathy) and CIM (myopathy): EMG differentiation, risk factors (corticosteroids+NMB, sepsis), prognosis accurate."
+  },
+  {
+    "id": "curated-phase3_unit_141",
+    "verdict": "KEEP",
+    "reason": "ICUAW prevention: early mobilization, minimizing NMB and corticosteroids, nutritional support accurate."
+  },
+  {
+    "id": "curated-phase3_unit_142",
+    "verdict": "KEEP",
+    "reason": "Sepsis-induced cardiomyopathy: reversible LV dysfunction, echo for diagnosis, dobutamine or IABP accurate."
+  },
+  {
+    "id": "curated-phase3_unit_143",
+    "verdict": "KEEP",
+    "reason": "AKI in critical illness: KDIGO staging, prerenal vs intrinsic distinction, biomarkers (NGAL, KIM-1) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_144",
+    "verdict": "KEEP",
+    "reason": "GI dysfunction in critical illness: ileus, translocation, stress ulcer prophylaxis indications accurate."
+  },
+  {
+    "id": "curated-phase3_unit_145",
+    "verdict": "KEEP",
+    "reason": "Hepatic dysfunction in critical illness: cholestatic pattern, DILI, hypoxic hepatitis (shock liver) accurate."
+  },
+  {
+    "id": "curated-phase3_unit_146",
+    "verdict": "KEEP",
+    "reason": "ICU-acquired infections: VAP (clinical criteria, CPIS), CLABSI (definition, prevention bundle), CAUTI accurate."
+  },
+  {
+    "id": "curated-phase3_unit_147",
+    "verdict": "KEEP",
+    "reason": "CAM-ICU screening (4 features, 3 criteria), delirium risk factors, management (halt deliriogenic meds, reorient) accurate. Score 0.596 weak match, adds value."
+  },
+  {
+    "id": "curated-phase4_tox_unit_0",
+    "verdict": "KEEP",
+    "reason": "Acetaminophen toxicity stages and toxic dose thresholds (>150 mg/kg or >6g single dose) accurate per standard teaching."
+  },
+  {
+    "id": "curated-phase4_tox_unit_1",
+    "verdict": "KEEP",
+    "reason": "Rumack-Matthew nomogram: obtain level at 4h minimum, treatment line, extended-release caveats accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_2",
+    "verdict": "KEEP",
+    "reason": "NAC 3-phase IV protocol (150/50/100 mg/kg over 1h/4h/16h = 300 mg/kg total) accurate per standard labeling."
+  },
+  {
+    "id": "curated-phase4_tox_unit_3",
+    "verdict": "KEEP",
+    "reason": "NAC anaphylactoid reactions (1-2%), management (slow rate, diphenhydramine), monitoring parameters accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_4",
+    "verdict": "DROP_INACCURATE",
+    "reason": "Kings College Criteria: PT threshold stated as >30s (INR>1.8) — WRONG. Correct is PT>100s (INR>6.5). This is a critical transplant-listing error."
+  },
+  {
+    "id": "curated-phase4_tox_unit_5",
+    "verdict": "KEEP",
+    "reason": "Opioid toxidrome triad (miosis, respiratory depression, depressed MS), fentanyl patch delayed toxicity accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_6",
+    "verdict": "KEEP",
+    "reason": "Naloxone dosing (0.4-2 mg IV/IM, repeat q2-3 min, max 10 mg; intranasal 4 mg), short half-life monitoring accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_7",
+    "verdict": "KEEP",
+    "reason": "Naloxone withdrawal (sympathomimetic surge, not life-threatening), flash pulmonary edema (rare) accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_8",
+    "verdict": "KEEP",
+    "reason": "Opioid OD supportive care: avoid reflexive intubation, ketamine RSI rationale, CPAP/BiPAP for pulmonary edema accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_9",
+    "verdict": "KEEP",
+    "reason": "Benzodiazepine toxidrome (sedation, respiratory depression, normal pupils), long vs short half-life differences accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_10",
+    "verdict": "FLAG",
+    "reason": "Flumazenil dosing 'repeat 0.1 mg q30-60 sec' differs from standard titration (0.2 then 0.3 then 0.5 mg); increments should be verified. Key contraindications co"
+  },
+  {
+    "id": "curated-phase4_tox_unit_11",
+    "verdict": "KEEP",
+    "reason": "BZD OD supportive management (O2, BiPAP, avoid flumazenil, observe, aspiration precautions) accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_12",
+    "verdict": "KEEP",
+    "reason": "Anticholinergic toxidrome mnemonic ('red/dry/hot/mad'), agents, CNS/peripheral features accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_13",
+    "verdict": "FLAG",
+    "reason": "Physostigmine total dose 'up to 6 mg total' exceeds standard limit (2-4 mg total per most toxicology references); needs expert verification."
+  },
+  {
+    "id": "curated-phase4_tox_unit_14",
+    "verdict": "KEEP",
+    "reason": "Anticholinergic management: cooling, BZD for agitation, Foley for retention, no empiric physostigmine accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_15",
+    "verdict": "KEEP",
+    "reason": "Sympathomimetic toxidrome (cocaine/amphetamine): mydriasis, tachycardia, HTN, hyperthermia, paranoia accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_16",
+    "verdict": "KEEP",
+    "reason": "Sympathomimetic management: BZD first-line, avoid beta-blockers (unopposed alpha), phentolamine for severe HTN accurate. Score 0.488 — weak corpus match, not du"
+  },
+  {
+    "id": "curated-phase4_tox_unit_17",
+    "verdict": "KEEP",
+    "reason": "Cocaine MI: coronary vasoconstriction, aspirin/nitrates/BZD, avoid beta-blockers; thrombolytics cautiously if STEMI accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_18",
+    "verdict": "KEEP",
+    "reason": "Alcohol withdrawal timeline (tremor 6-24h, hallucinations 12-48h, seizures 6-48h, DTs 48-96h), CIWA-Ar accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_19",
+    "verdict": "KEEP",
+    "reason": "Alcohol withdrawal BZD protocol: lorazepam 2-4 mg IV, diazepam alternative, phenobarbital adjunct, thiamine IV accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_20",
+    "verdict": "KEEP",
+    "reason": "BZD withdrawal: similar to alcohol, timing by half-life, taper 10%/week, seizure risk, lorazepam bridge accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_21",
+    "verdict": "KEEP",
+    "reason": "Opioid withdrawal: COWS scale, buprenorphine/methadone for MAT, symptomatic relief (clonidine, loperamide) accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_22",
+    "verdict": "KEEP",
+    "reason": "Methanol/ethylene glycol: anion-gap metabolic acidosis, osmolar gap, organ-specific toxicity (optic nerve/renal) accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_23",
+    "verdict": "KEEP",
+    "reason": "Fomepizole protocol: loading 15 mg/kg, maintenance 10 mg/kg q12h x4, then 15 mg/kg q12h; HD dosing accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_24",
+    "verdict": "KEEP",
+    "reason": "HD indications for toxic alcohol: pH <7.15, renal failure, level >25 mg/dL (methanol) />20 mg/dL (EG), visual symptoms accurate."
+  },
+  {
+    "id": "curated-phase4_tox_unit_25",
+    "verdict": "KEEP",
+    "reason": "Organophosphate mechanism (AChE inhibition), SLUDGE muscarinic effects, nicotinic paralysis, pralidoxime timing accurate. Score 0.533 weak match, not dup, KEEP."
+  },
+  {
+    "id": "curated-phase4_tox_unit_26",
+    "verdict": "KEEP",
+    "reason": "Atropine in OP toxicity: dosing (0.5-1 mg IV, double q5-10 min), atropinization endpoint (dry secretions, not HR/pupils) accurate."
+  }
+]

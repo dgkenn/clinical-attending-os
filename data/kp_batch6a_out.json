@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cico-1",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "In a CICO scenario after failed intubation and failed supraglottic airway, what is the definitive rescue intervention?",
+    "answer": "Front-of-neck airway (FONA): surgical or needle cricothyrotomy or surgical tracheostomy",
+    "rationale": "FONA bypasses the obstructed upper airway and provides definitive oxygenation when mask ventilation, SAD, and intubation have all failed.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 539
+      }
+    ],
+    "confusable_with": "Back-up LMA rescue (not definitive in true CICO)"
+  },
+  {
+    "id": "cico-2",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "According to the DAS difficult airway guidelines, what device is attempted before declaring CICO?",
+    "answer": "SAD (supraglottic airway device) is the final non-surgical rescue step before FONA",
+    "rationale": "The DAS algorithm places SAD insertion as the last option before surgical airway is required.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 535
+      }
+    ],
+    "confusable_with": "ETT as primary rescue device"
+  },
+  {
+    "id": "cico-3",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "For a patient with anticipated difficult intubation, what awake airway strategy is conventionally recommended first?",
+    "answer": "Awake fiberoptic intubation after topicalisation of the airway",
+    "rationale": "Topicalisation preserves spontaneous ventilation and airway reflexes, enabling repeated attempts without risk of losing the airway.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 44
+      }
+    ],
+    "confusable_with": "Asleep video laryngoscopy first"
+  },
+  {
+    "id": "cico-4",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What sugammadex dose is used in a cannot-intubate, cannot-ventilate emergency to maximally reverse neuromuscular blockade?",
+    "answer": "Sugammadex 16 mg/kg IV for emergency reversal in CICV crisis",
+    "rationale": "16 mg/kg reverses even the deepest rocuronium-induced paralysis rapidly, potentially restoring spontaneous ventilation.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 40
+      }
+    ],
+    "confusable_with": "Standard reversal 2 mg/kg or deep reversal 4 mg/kg"
+  },
+  {
+    "id": "cico-5",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "domain": "Airway management (assessment & prediction, supraglottic & ETT devices, laryngoscopy/video, awake intubation, difficult & failed airway algorithm, extubation, complications)",
+    "discipline": "anesthesia",
+    "stem": "What FONA options are available in a CICO emergency?",
+    "answer": "Surgical tracheostomy, cricothyrotomy (surgical or needle), transtracheal catheter with jet ventilation, retrograde intubation",
+    "rationale": "Multiple FONA techniques exist; provider experience and available equipment determine the optimal approach.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 539
+      }
+    ],
+    "confusable_with": "Retrograde intubation as primary CICO rescue"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Failed airway and cannot-intubate-cannot-oxygenate (CICO)",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Unanticipated difficult airway; obesity; distorted anatomy; laryngospasm; failed SAD and intubation attempts",
+    "pathophysiology": "Progressive hypoxia from inability to oxygenate via any supra-glottic route",
+    "time_course": "Minutes to death from hypoxic cardiac arrest if FONA not achieved promptly",
+    "key_features": "SpO2 falling despite all rescue attempts; no capnography waveform; no chest rise with BVM",
+    "consequence_if_missed": "Hypoxic brain injury or death"
+  },
+  {
+    "id": "fasttrack-1",
+    "topic": "Fast-track and day-case anesthetic technique",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "Which short-acting opioids are preferentially used during fast-track anesthesia to minimise recovery time?",
+    "answer": "Fentanyl, alfentanil, or remifentanil used in combination with inhalation agents or propofol during fast-track surgery",
+    "rationale": "Their rapid elimination or metabolism avoids prolonged postoperative respiratory depression and sedation, facilitating early recovery.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1827
+      }
+    ],
+    "confusable_with": "Morphine or hydromorphone (long-acting, delay recovery)"
+  },
+  {
+    "id": "fasttrack-2",
+    "topic": "Fast-track and day-case anesthetic technique",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "Compared with systemic opioid analgesia, thoracic epidural analgesia offers which specific advantages in fast-track surgical recovery?",
+    "answer": "Blunts neuroendocrine stress response, decreases postoperative morbidity, attenuates catabolism, accelerates postoperative functional recovery",
+    "rationale": "Epidural blockade of afferent nociceptive signals suppresses the surgical stress axis more completely than systemic opioids.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1834
+      }
+    ],
+    "confusable_with": "Epidural causing prolonged motor block that delays fast-track"
+  },
+  {
+    "id": "fasttrack-3",
+    "topic": "Fast-track and day-case anesthetic technique",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What adjuvant added to intrathecal local anesthetic prolongs spinal block without intrathecal opioid side effects?",
+    "answer": "Clonidine (alpha-2 agonist) prolongs sensory and motor blockade without opioid-related nausea or urinary retention",
+    "rationale": "Clonidine activates alpha-2 receptors causing hyperpolarisation and extended nerve blockade independent of opioid receptors.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1825
+      }
+    ],
+    "confusable_with": "Epinephrine (also prolongs block via vasoconstriction, different mechanism)"
+  },
+  {
+    "id": "fasttrack-4",
+    "topic": "Fast-track and day-case anesthetic technique",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "In day-case anesthesia, what two mechanisms commonly cause post-induction hypotension before surgical stimulation?",
+    "answer": "Vasodilation with decreased sympathetic tone from the anesthetized state, plus absence of surgical stimulation",
+    "rationale": "Without nociceptive stimulus to maintain sympathetic drive, anesthetic-induced vasodilation lowers SVR and blood pressure.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 736
+      }
+    ],
+    "confusable_with": "Pure hypovolemia as primary cause"
+  },
+  {
+    "id": "fasttrack-5",
+    "topic": "Fast-track and day-case anesthetic technique",
+    "domain": "Subspecialty & out-of-OR anesthesia (ENT/shared airway, ophthalmology, orthopedics, transplant, vascular, ambulatory/office, non-operating-room anesthesia, robotic, laser)",
+    "discipline": "anesthesia",
+    "stem": "What is the mechanism by which epinephrine or phenylephrine added to peripheral nerve block local anesthetic prolongs block duration?",
+    "answer": "Causes local vasoconstriction, reducing systemic absorption of local anesthetic and extending nerve exposure",
+    "rationale": "Vasoconstrictors decrease washout of local anesthetic from the nerve sheath, extending block duration.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 326
+      }
+    ],
+    "confusable_with": "Dexamethasone (also prolongs block via anti-inflammatory mechanism)"
+  },
+  {
+    "id": "fes-1",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "domain": "Perioperative crises & complications (malignant hyperthermia, anaphylaxis, local anesthetic systemic toxicity, cannot-intubate-cannot-oxygenate, intraoperative awareness, massive hemorrhage, air/PE embolism, cardiac arrest)",
+    "discipline": "anesthesia",
+    "stem": "A patient develops dyspnea, confusion, and petechiae 48 hours after a femur fracture. What is the classic diagnostic triad of this condition?",
+    "answer": "Dyspnea + confusion + petechiae on chest/upper extremities/axillae/conjunctiva within 72 h of long-bone or pelvic fracture",
+    "rationale": "Fat globules lodge in pulmonary and cerebral capillaries producing cardiorespiratory, neurological, and cutaneous manifestations.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1293
+      }
+    ],
+    "confusable_with": "Pulmonary embolism (no petechiae), ARDS (no petechiae)"
+  },
+  {
+    "id": "fes-2",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "domain": "Perioperative crises & complications (malignant hyperthermia, anaphylaxis, local anesthetic systemic toxicity, cannot-intubate-cannot-oxygenate, intraoperative awareness, massive hemorrhage, air/PE embolism, cardiac arrest)",
+    "discipline": "anesthesia",
+    "stem": "What is the mortality rate of clinically apparent fat embolism syndrome?",
+    "answer": "10-20% mortality",
+    "rationale": "FES is less frequent than subclinical fat embolism but carries significant mortality from pulmonary and cerebral injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1297
+      }
+    ],
+    "confusable_with": "Subclinical fat embolism (occurs with virtually all long-bone fractures, usually benign)"
+  },
+  {
+    "id": "fes-3",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "domain": "Perioperative crises & complications (malignant hyperthermia, anaphylaxis, local anesthetic systemic toxicity, cannot-intubate-cannot-oxygenate, intraoperative awareness, massive hemorrhage, air/PE embolism, cardiac arrest)",
+    "discipline": "anesthesia",
+    "stem": "What ECG abnormality is classically seen in fat embolism syndrome?",
+    "answer": "Ischemic ST-segment changes and a right heart strain pattern on ECG",
+    "rationale": "Fat emboli occlude pulmonary capillaries, acutely raising RV afterload and causing right heart strain pattern.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1298
+      }
+    ],
+    "confusable_with": "STEMI pattern (different context)"
+  },
+  {
+    "id": "fes-4",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "domain": "Perioperative crises & complications (malignant hyperthermia, anaphylaxis, local anesthetic systemic toxicity, cannot-intubate-cannot-oxygenate, intraoperative awareness, massive hemorrhage, air/PE embolism, cardiac arrest)",
+    "discipline": "anesthesia",
+    "stem": "What is the primary preventive orthopedic intervention that reduces the risk of FES?",
+    "answer": "Early fracture stabilization decreases likelihood of FES and pulmonary complications",
+    "rationale": "Immobilising fracture fragments prevents repeated fat globule release into venous circulation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1298
+      }
+    ],
+    "confusable_with": "Prophylactic anticoagulation (reduces VTE not FES)"
+  },
+  {
+    "id": "fes-5",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "domain": "Perioperative crises & complications (malignant hyperthermia, anaphylaxis, local anesthetic systemic toxicity, cannot-intubate-cannot-oxygenate, intraoperative awareness, massive hemorrhage, air/PE embolism, cardiac arrest)",
+    "discipline": "anesthesia",
+    "stem": "How soon after a precipitating long-bone fracture do most classic signs of FES appear?",
+    "answer": "1 to 3 days after the precipitating event (within 72 hours)",
+    "rationale": "Delayed presentation reflects time needed for fat globule migration, free fatty acid hydrolysis, and inflammatory cascade.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1298
+      }
+    ],
+    "confusable_with": "Immediate intraoperative embolism during nailing (different timing)"
+  },
+  {
+    "_type": "illness_script",
+    "topic": "Fat Embolism Syndrome (FES)",
+    "discipline": "anesthesia",
+    "enabling_conditions": "Long-bone or pelvic fracture; intramedullary reaming/nailing; liposuction; bone marrow harvest",
+    "pathophysiology": "Fat globules enter venous circulation and lodge in pulmonary capillaries causing hypoxia and RV strain; free fatty acids trigger local inflammatory cascade; cerebral microemboli cause encephalopathy",
+    "time_course": "1-72 h after precipitating event; peak at 24-48 h",
+    "key_features": "Triad: dyspnea + encephalopathy + petechiae; ECG right-heart strain; fat globules in urine or retina",
+    "consequence_if_missed": "Respiratory failure, death; 10-20% mortality"
+  },
+  {
+    "id": "fiberoptic-1",
+    "topic": "Fiberoptic & Advanced Airway Equipment",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What advanced airway equipment must be immediately available wherever difficult airways may be managed?",
+    "answer": "Difficult airway cart with bronchoscope and video laryngoscope must be immediately available",
+    "rationale": "Immediate access to advanced airway tools allows rapid escalation when standard laryngoscopy fails.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2097
+      }
+    ],
+    "confusable_with": "Only having direct laryngoscopy backup"
+  },
+  {
+    "id": "fiberoptic-2",
+    "topic": "Fiberoptic & Advanced Airway Equipment",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What minimal set of airway equipment should be routinely available at every anesthetising location?",
+    "answer": "Oxygen source, bag-mask ventilation equipment, laryngoscopes (direct and video), ETTs, supraglottic airways, adequate suction",
+    "rationale": "This set ensures every patient can be oxygenated and intubated by standard or backup means.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 502
+      }
+    ],
+    "confusable_with": "Only LMA as backup airway"
+  },
+  {
+    "id": "fiberoptic-3",
+    "topic": "Fiberoptic & Advanced Airway Equipment",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "In head and neck cancer surgery, what airway assessment is often performed after induction before definitive intubation?",
+    "answer": "Endoscopic examination after induction to assess extent of tumour before committing to an intubation technique",
+    "rationale": "Pre-intubation endoscopy allows direct visualisation of laryngeal/pharyngeal tumour to guide the safest intubation strategy.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1277
+      }
+    ],
+    "confusable_with": "Proceeding directly to RSI without airway assessment"
+  },
+  {
+    "id": "fiberoptic-4",
+    "topic": "Fiberoptic & Advanced Airway Equipment",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "What complication is always possible when instrumenting the airway of a non-paralyzed patient even if awake?",
+    "answer": "Laryngospasm is always a potential complication of intubation in the non-paralyzed patient even if awake",
+    "rationale": "Airway instrumentation stimulates laryngeal reflexes which can trigger glottic closure even under topical anaesthesia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 553
+      }
+    ],
+    "confusable_with": "Bronchospasm (lower airway)"
+  },
+  {
+    "id": "fiberoptic-5",
+    "topic": "Fiberoptic & Advanced Airway Equipment",
+    "domain": "Anesthesia monitoring & equipment (anesthesia machine & circuits, ventilators, capnography & gas analysis, pulse oximetry, depth of anesthesia, neuromuscular monitoring, alarms & safety checks)",
+    "discipline": "anesthesia",
+    "stem": "During CPR of an intubated patient, what end-tidal CO2 value after 20 minutes indicates reduced likelihood of ROSC?",
+    "answer": "PETco2 less than 10 mmHg after 20 minutes of intubated resuscitation predicts low likelihood of ROSC",
+    "rationale": "Low end-tidal CO2 reflects minimal pulmonary blood flow indicating inadequate cardiac output during CPR.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 2057
+      }
+    ],
+    "confusable_with": "Normal ventilation PETco2 target 35-45 mmHg"
+  }
+]

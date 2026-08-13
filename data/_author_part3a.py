@@ -1,0 +1,805 @@
+"""Author KPs for topics 99-110 (slice items 0-11)."""
+import json, sys
+sys.stdout.reconfigure(encoding='utf-8')
+
+kps = []
+
+# ── 99: Adrenal insufficiency & thyroid emergencies ──────────────────────────
+T = "Adrenal insufficiency & thyroid emergencies"
+DOM = "General internal medicine, preventive care & geriatrics (admission & cross-cover problems, perioperative medicine, screening & vaccination, polypharmacy & deprescribing, frailty, delirium prevention, goals of care)"
+DISC = "medicine"
+
+kps += [
+  {"id":"adrenal-insuff-thyroid-emerg-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient with known autoimmune adrenal disease undergoes elective surgery and becomes refractory hypotensive intraoperatively despite adequate fluid resuscitation. What condition must be considered and what is the immediate treatment?",
+   "answer":"Adrenal crisis; give IV hydrocortisone 100 mg bolus immediately.",
+   "rationale":"Surgical stress triggers acute glucocorticoid deficiency in patients with primary adrenal insufficiency, causing refractory hypotension unresponsive to fluids alone.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":1229},{"book":"StatPearls: StatPearls   Adrenal Crisis","page":4}],
+   "confusable_with":"septic shock"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What anesthetic induction agents are preferred when coexistent primary adrenal insufficiency is suspected in a hypotensive patient?",
+   "answer":"Ketamine or etomidate are recommended for induction in the setting of suspected adrenal insufficiency with hemodynamic instability.",
+   "rationale":"Both agents preserve sympathetic tone better than propofol; etomidate specifically has minimal cardiovascular depression, though a single dose transiently inhibits cortisol synthesis.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":1229}],
+   "confusable_with":"propofol induction"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the most common cause of primary adrenal insufficiency in developed countries, and what autoantibody confirms the diagnosis?",
+   "answer":"Autoimmune adrenalitis (80-90% of cases); anti-21-hydroxylase antibodies are positive in 86%.",
+   "rationale":"Autoimmune destruction of the adrenal cortex selectively targets the steroidogenic enzyme 21-hydroxylase, impairing both cortisol and aldosterone synthesis.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":185}],
+   "confusable_with":"tuberculosis-related adrenal destruction"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient with known adrenal insufficiency is found to have hypokalemia requiring repletion. What additional electrolyte and hemodynamic abnormality is characteristically associated, and which medication class can worsen it?",
+   "answer":"Hypokalemia in adrenal disease increases myocardial excitability; aldosterone antagonists (e.g., spironolactone) or sodium restriction can worsen potassium balance.",
+   "rationale":"Primary adrenal insufficiency impairs aldosterone secretion causing sodium wasting and potassium retention, but when an aldosterone antagonist is added it exacerbates hypokalemia if the underlying deficit is not corrected.",
+   "bloom":"analyze",
+   "source":[{"book":"Miller/Baby Miller","page":550}],
+   "confusable_with":"primary hyperaldosteronism"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What precipitants of adrenal crisis must be counselled to patients on chronic glucocorticoid replacement?",
+   "answer":"Surgery, trauma, infection (including COVID-19), pregnancy/childbirth, strenuous exercise, extreme temperature exposure, emotional distress, and abrupt cessation of glucocorticoid therapy.",
+   "rationale":"Any physiological stressor outstrips the fixed replacement dose, requiring a 'sick-day rule' doubling or tripling of oral glucocorticoids and IV hydrocortisone if unable to take orally.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Adrenal Crisis","page":4}],
+   "confusable_with":""},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient appears hypermetabolic with fever, excessive adrenergic activity, and worsening mental status. The differential includes thyroid storm. What specific findings help exclude malignant hyperthermia in this scenario?",
+   "answer":"Absence of major metabolic acidosis and no known triggering agent (volatile anesthetic or succinylcholine) effectively exclude malignant hyperthermia.",
+   "rationale":"Thyroid storm and malignant hyperthermia share hyperthermia and sympathetic excess; MH requires an anesthetic trigger and produces profound metabolic/lactic acidosis, whereas thyroid storm does not.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":2122}],
+   "confusable_with":"malignant hyperthermia"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Thyroid hormones have which fundamental effects on the cardiovascular and metabolic systems that make uncontrolled hyperthyroidism dangerous perioperatively?",
+   "answer":"Thyroid hormones increase heart rate, respiratory rate, and oxygen consumption; they are essential for normal growth and brain development, and excess causes a hypermetabolic, hyperadrenergic state.",
+   "rationale":"T3/T4 upregulate beta-adrenergic receptors and mitochondrial uncoupling, driving tachycardia, increased cardiac output, and heightened oxygen demand that can precipitate high-output heart failure.",
+   "bloom":"recall",
+   "source":[{"book":"Miller/Baby Miller","page":548}],
+   "confusable_with":"pheochromocytoma"},
+
+  {"id":"adrenal-insuff-thyroid-emerg-d8","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient with myotonic dystrophy is found incidentally to have adrenal insufficiency. What other endocrine organs may be simultaneously dysfunctional in this disease?",
+   "answer":"Myotonic dystrophy causes endocrine dysfunction involving the pancreas, adrenals, thyroid, and gonads (hypogonadism) — all may be affected simultaneously.",
+   "rationale":"Myotonic dystrophy is a systemic trinucleotide repeat disorder causing multisystem organ damage including endocrine glands via CTG-repeat-mediated RNA toxicity.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":1042}],
+   "confusable_with":"polyglandular autoimmune syndrome"},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Autoimmune disease (most common), TB, metastases, abrupt steroid withdrawal, bilateral adrenal hemorrhage; surgery/infection as precipitant",
+  "pathophysiology":"Loss of cortisol (and aldosterone in primary) → sodium wasting, hypotension, hypoglycemia, impaired stress response",
+  "time_course":"Acute crisis within hours of stressor; chronic AI insidious over months",
+  "key_features":"Refractory hypotension, hyponatremia, hyperkalemia (primary), hypoglycemia, hyperpigmentation (primary only), eosinophilia",
+  "consequence_if_missed":"Death from circulatory collapse if hydrocortisone not given immediately"})
+
+# ── 100: Anorectal Sources of Bleeding ──────────────────────────────────────
+T = "Anorectal Sources of Bleeding"
+DOM = "Internal medicine: gastroenterology & hepatology (upper & lower GI bleed, acute liver failure, cirrhosis & its complications, pancreatitis, IBD, bowel obstruction, hepatic encephalopathy)"
+DISC = "medicine"
+
+kps += [
+  {"id":"anorectal-bleeding-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient presents with painless bright red blood per rectum coating toilet paper and dripping into the bowl. What is the most likely anorectal source?",
+   "answer":"Internal hemorrhoids — the most common cause of painless bright red rectal bleeding, typically arising from the superior hemorrhoidal venous plexus.",
+   "rationale":"Internal hemorrhoids lie above the dentate line (no somatic innervation), so they bleed without pain; the bright-red color indicates arterial-ized blood from venous plexus connections.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":2157}],
+   "confusable_with":"anal fissure (which causes painful bleeding)"},
+
+  {"id":"anorectal-bleeding-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the common lower gastrointestinal causes of rectal bleeding that must be distinguished from anorectal sources on colonoscopy?",
+   "answer":"Diverticular disease, angiodysplasia, neoplasms, inflammatory bowel disease, ischemic colitis, infectious colitis — in addition to anorectal disease (hemorrhoids, fissure, fistula).",
+   "rationale":"Distinguishing anorectal from colonic sources is critical because management differs: anorectal lesions are treated endoscopically or surgically at the anorectal level, while colonic sources may require IR embolization or resection.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":2157}],
+   "confusable_with":""},
+
+  {"id":"anorectal-bleeding-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In a massive lower GI bleed that does not stop with endoscopic therapy, what two procedural modalities can be employed?",
+   "answer":"Interventional endoscopy (colonoscopic hemostasis) and interventional arteriography (angioembolization) are both options.",
+   "rationale":"Arteriography can identify and embolize a bleeding vessel when endoscopic visualization is poor due to rapid blood loss; both require a hemodynamically stable patient or initial resuscitation.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":2157}],
+   "confusable_with":""},
+
+  {"id":"anorectal-bleeding-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Why is it important to remain vigilant for occult sources of bleeding beyond the obvious anorectal site in a patient with rectal bleeding?",
+   "answer":"Occult proximal sources (e.g., upper GI bleed presenting as hematochezia in brisk bleeding) may coexist; early identification and intervention are essential to prevent hemodynamic deterioration.",
+   "rationale":"Up to 10-15% of apparent lower GI bleeds originate proximal to the ligament of Treitz; missing an upper GI source delays treatment of potentially life-threatening hemorrhage.",
+   "bloom":"analyze",
+   "source":[{"book":"Miller/Baby Miller","page":813}],
+   "confusable_with":""},
+
+  {"id":"anorectal-bleeding-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Factor XI deficiency (hemophilia C) presents with isolated aPTT prolongation. How does its bleeding risk differ from hemophilias A and B?",
+   "answer":"Factor XI activity levels do not correlate with bleeding severity; most patients do not experience spontaneous bleeding or hemarthrosis, unlike hemophilias A and B.",
+   "rationale":"Factor XI is involved in contact activation (intrinsic pathway) rather than the main amplification loop; bleeding occurs mainly with surgery or trauma rather than spontaneously.",
+   "bloom":"analyze",
+   "source":[{"book":"Miller/Baby Miller","page":443}],
+   "confusable_with":"hemophilia A (factor VIII deficiency)"},
+
+  {"id":"anorectal-bleeding-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In a child with rectal bleeding requiring surgery, how is maximum allowable blood loss (MABL) calculated?",
+   "answer":"MABL = EBV × (patient Hct – minimum acceptable Hct) / patient Hct; initial volume loss is replaced with crystalloid or colloid, then RBCs when Hct reaches threshold.",
+   "rationale":"Children have age-dependent estimated blood volumes and smaller absolute blood reserves, making precise MABL calculation critical to avoid unnecessary transfusion while preventing anaemia.",
+   "bloom":"apply",
+   "source":[{"book":"Miller/Baby Miller","page":643}],
+   "confusable_with":""},
+]
+
+# ── 101: Aortic Diseases ──────────────────────────────────────────────────────
+T = "Aortic Diseases"
+DOM = "Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)"
+DISC = "medicine"
+
+kps += [
+  {"id":"aortic-diseases-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Where do aortic aneurysms most commonly occur anatomically, and what is the predominant underlying pathology?",
+   "answer":"Abdominal aorta is more common than thoracic; atherosclerosis causes the vast majority, while cystic medial necrosis is an important cause of thoracic aneurysms.",
+   "rationale":"Abdominal aorta lacks vasa vasorum in its inner wall, making it more susceptible to atherosclerotic degeneration and medial weakening leading to aneurysmal dilation.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":774}],
+   "confusable_with":"aortic dissection"},
+
+  {"id":"aortic-diseases-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Which specific segment of the aorta is characteristically involved in syphilitic aneurysms?",
+   "answer":"Ascending aorta — syphilitic aneurysms characteristically involve the ascending aorta due to endarteritis obliterans of the vasa vasorum.",
+   "rationale":"Treponema pallidum causes obliteration of the vasa vasorum of the ascending aorta, leading to medial ischemia, fibrosis, and aneurysmal dilation that can extend to the aortic root.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":774}],
+   "confusable_with":"Marfan-associated aneurysm (also ascending but due to cystic medial necrosis)"},
+
+  {"id":"aortic-diseases-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What connective tissue diseases are associated with thoracic aortic aneurysm formation?",
+   "answer":"Marfan syndrome (cystic medial necrosis), ankylosing spondylitis, rheumatoid and psoriatic arthritis, and various other connective tissue diseases; trauma is an additional etiology.",
+   "rationale":"These conditions weaken the medial layer of the aortic wall through inflammation, matrix metalloproteinase activation, or structural protein defects, predisposing to aneurysm formation.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":774}],
+   "confusable_with":""},
+
+  {"id":"aortic-diseases-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What echocardiographic modalities answer the key questions during preoperative assessment of a patient with suspected valvular or aortic disease?",
+   "answer":"TEE/TTE addresses: which valvular abnormality is most hemodynamically significant, severity of the lesion, degree of ventricular dysfunction, and presence of aortic disease or shunts.",
+   "rationale":"Echocardiography provides real-time structural and functional assessment that guides surgical planning and anesthetic management, often obviating cardiac catheterization.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":663}],
+   "confusable_with":""},
+
+  {"id":"aortic-diseases-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"During aortic arch surgery with established CPB, where should the arterial inflow cannula be placed if there is an aortic dissection, and what precaution is needed if sternotomy may rupture an aneurysm?",
+   "answer":"Arterial inflow cannula should go in the femoral artery for dissections; if sternotomy risks rupturing an aneurysm, establish partial CPB (femoral artery + femoral vein) prior to sternotomy.",
+   "rationale":"Placing the cannula femoral avoids cannulating the false lumen; preemptive CPB provides circulatory support before the potentially catastrophic aortic disruption occurs.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":776}],
+   "confusable_with":""},
+
+  {"id":"aortic-diseases-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the pericardium's normal fluid volume and physiological role relevant to acute aortic dissection extending to the pericardium?",
+   "answer":"The pericardium normally contains 20-50 mL of fluid and limits acute dilation of the heart; aortic dissection extending to the pericardium can cause tamponade by rapidly filling this fixed space.",
+   "rationale":"The inelastic fibrous pericardium means even small additions of blood (from dissection) dramatically increase intrapericardial pressure, compressing cardiac chambers and reducing output.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":769}],
+   "confusable_with":"myopericarditis"},
+
+  {"id":"aortic-diseases-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How does echocardiography guide surgical intervention in structural aortic disease intraoperatively?",
+   "answer":"Intraoperative TEE guides surgical intervention by assessing valvular morphology and function, estimating SV/CO and intracavitary pressures, diagnosing shunts and aortic disease, and confirming repair adequacy.",
+   "rationale":"Real-time TEE feedback enables the surgeon to assess repair quality before separating from CPB and to identify residual lesions requiring further correction.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":174}],
+   "confusable_with":""},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Atherosclerosis, hypertension, connective tissue disease (Marfan), syphilis, bicuspid aortic valve, trauma, inflammatory arthropathies",
+  "pathophysiology":"Medial degeneration (cystic necrosis, atherosclerosis) weakens aortic wall integrity → aneurysm or dissection; intimal tear in dissection creates false lumen",
+  "time_course":"Aneurysm: chronic, years; Dissection: acute onset with tearing pain",
+  "key_features":"Tearing/ripping chest-back pain (dissection), pulsatile abdominal mass (AAA), pulse differentials, aortic regurgitation murmur in ascending involvement",
+  "consequence_if_missed":"Rupture with exsanguination; tamponade; end-organ ischemia (stroke, mesenteric, renal)"})
+
+# ── 102: Aortic Regurgitation ──────────────────────────────────────────────────
+T = "Aortic Regurgitation"
+DOM = "Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)"
+DISC = "medicine"
+
+kps += [
+  {"id":"aortic-regurg-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How does the clinical presentation of acute aortic regurgitation differ from chronic?",
+   "answer":"Acute AR presents as sudden-onset pulmonary edema and hypotension; chronic AR manifests as congestive heart failure only after the regurgitant volume exceeds ~40% of stroke volume.",
+   "rationale":"In chronic AR the LV gradually dilates to accommodate the regurgitant volume (eccentric hypertrophy); in acute AR the non-dilated LV cannot compensate, causing rapid pressure elevation and pulmonary edema.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":677}],
+   "confusable_with":"acute aortic stenosis"},
+
+  {"id":"aortic-regurg-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What causes chronic aortic regurgitation originating from the aortic root rather than the valve itself?",
+   "answer":"Diseases dilating the aortic annulus: syphilis, annuloaortic ectasia, cystic medial necrosis (with or without Marfan), ankylosing spondylitis, rheumatoid and psoriatic arthritis.",
+   "rationale":"Annular dilation stretches the cusps apart so they cannot coapt during diastole, causing regurgitation despite morphologically normal valve leaflets.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":676}],
+   "confusable_with":"rheumatic aortic regurgitation (valve-level)"},
+
+  {"id":"aortic-regurg-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What physical examination finding is characteristic of moderate-to-severe aortic regurgitation and what generates it?",
+   "answer":"Pulsus bisferiens — a double-peaked arterial pulse — from rapid ejection of a large stroke volume; very wide pulse pressure is also characteristic.",
+   "rationale":"The hyperdynamic, high-stroke-volume LV ejects blood rapidly into a low-resistance circuit; rebound from the aortic wall creates the double peak, and low diastolic pressure from regurgitation widens the pulse pressure.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":678}],
+   "confusable_with":"hypertrophic obstructive cardiomyopathy (also has abnormal pulse)"},
+
+  {"id":"aortic-regurg-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Why should bradycardia be avoided intraoperatively in a patient with aortic regurgitation?",
+   "answer":"Bradycardia increases diastolic filling time, worsening the regurgitant volume per beat and increasing LV volume overload.",
+   "rationale":"In AR, a faster heart rate shortens diastole, reducing the time available for regurgitation; bradycardia conversely lengthens diastole and markedly increases regurgitant fraction.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":776}],
+   "confusable_with":"aortic stenosis (where tachycardia is also detrimental)"},
+
+  {"id":"aortic-regurg-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"On TEE color-flow Doppler, what measurement quantifies the severity of aortic regurgitation at the valve level?",
+   "answer":"The vena contracta — the smallest diameter of the regurgitant jet at the aortic valve level; a vena contracta ≥6 mm indicates severe aortic regurgitation.",
+   "rationale":"Vena contracta reflects the effective regurgitant orifice area independent of flow rate and is more reproducible than jet area for grading severity.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":183}],
+   "confusable_with":"PISA (proximal isovelocity surface area) method"},
+
+  {"id":"aortic-regurg-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Chronic aortic regurgitation is most commonly caused by what valve-level and root-level pathologies?",
+   "answer":"Valve-level: congenital bicuspid valve or rheumatic fever; root-level: annuloaortic ectasia, cystic medial necrosis, Marfan syndrome, syphilis, inflammatory arthropathies.",
+   "rationale":"Both mechanisms impair leaflet coaptation in diastole — either by deforming the cusps directly (rheumatic, congenital) or by dilating the annulus so normal leaflets cannot meet.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":676}],
+   "confusable_with":""},
+
+  {"id":"aortic-regurg-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"When does the LV in chronic AR begin to decompensate and what structural change occurs first?",
+   "answer":"LV begins to fail when regurgitant volume remains above 40% of stroke volume chronically; eccentric hypertrophy (dilation + proportional wall thickening) is the compensatory mechanism that eventually exhausts.",
+   "rationale":"Volume overload triggers sarcomere replication in series (eccentric hypertrophy), increasing end-diastolic volume and stroke volume to maintain forward flow; decompensation occurs when myocardial contractility falls.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":677}],
+   "confusable_with":"pressure-overload concentric hypertrophy of aortic stenosis"},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Bicuspid aortic valve, rheumatic fever, Marfan syndrome, annuloaortic ectasia, syphilis, ankylosing spondylitis, infective endocarditis (acute)",
+  "pathophysiology":"Diastolic back-flow from aorta to LV → volume overload → eccentric hypertrophy → eventual LV dysfunction",
+  "time_course":"Chronic: years; Acute (endocarditis/dissection): hours to days",
+  "key_features":"Wide pulse pressure, pulsus bisferiens, diastolic decrescendo murmur, displaced PMI, water-hammer pulse",
+  "consequence_if_missed":"Progressive LV failure; sudden decompensation in acute AR with flash pulmonary edema and cardiovascular collapse"})
+
+kps.append({"_type":"confusable_pair","topic_a":"Aortic Regurgitation","topic_b":"Aortic Stenosis",
+  "discriminator":"AR: volume overload, wide pulse pressure, diastolic murmur, bradycardia worsens; AS: pressure overload, narrow pulse pressure, systolic murmur, tachycardia worsens"})
+
+# ── 103: Aortic Stenosis ──────────────────────────────────────────────────────
+T = "Aortic Stenosis"
+DOM = "Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)"
+DISC = "medicine"
+
+kps += [
+  {"id":"aortic-stenosis-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the three main etiologies of valvular aortic stenosis?",
+   "answer":"Congenital (most commonly bicuspid valve), rheumatic fever, and degenerative/calcific stenosis.",
+   "rationale":"Bicuspid valve causes turbulence that traumatizes the leaflets over decades; rheumatic disease causes leaflet fusion; degenerative stenosis results from calcium deposition on a normal trileaflet valve in the elderly.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":673}],
+   "confusable_with":"subaortic (HOCM) or supravalvular stenosis"},
+
+  {"id":"aortic-stenosis-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"When the left ventricle is subjected to pressure overload (as in aortic stenosis), how does ventricular hypertrophy develop and what is its effect on compliance?",
+   "answer":"Pressure overload → concentric hypertrophy (increased wall thickness without dilation); this increases LV mass but significantly impairs diastolic compliance (stiff ventricle).",
+   "rationale":"New sarcomeres are added in parallel in response to increased systolic wall stress; the thickened, non-compliant LV becomes heavily dependent on atrial contraction for diastolic filling.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":604},{"book":"Morgan & Mikhail","page":578}],
+   "confusable_with":"volume-overload eccentric hypertrophy"},
+
+  {"id":"aortic-stenosis-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Why does left ventricular end-systolic pressure not approximate systolic arterial blood pressure in a patient with severe aortic stenosis?",
+   "answer":"In aortic stenosis, the pressure gradient across the valve means LV end-systolic pressure markedly exceeds the systolic arterial blood pressure measured peripherally.",
+   "rationale":"The normal relationship (peak LV pressure ≈ SBP) only holds with a non-obstructed aortic valve; stenosis creates a systolic transvalvular gradient that elevates LV pressure above aortic root pressure.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":133}],
+   "confusable_with":""},
+
+  {"id":"aortic-stenosis-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In terms of continuous-wave Doppler echocardiography, what parameter best quantifies aortic stenosis severity?",
+   "answer":"The time-velocity integral (TVI) of the aortic valve measured by continuous-wave Doppler aligned with valve flow, used to calculate peak and mean gradients and valve area via the continuity equation.",
+   "rationale":"Peak jet velocity >4 m/s or mean gradient >40 mmHg with AVA <1 cm² defines severe AS; CW Doppler must be aligned parallel to flow to avoid underestimation.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":181}],
+   "confusable_with":"pulsed-wave Doppler (used for lower velocities, not suitable for AS)"},
+
+  {"id":"aortic-stenosis-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Rheumatic aortic stenosis is rarely isolated — what associated valvular lesion is typically present?",
+   "answer":"Rheumatic aortic stenosis is typically associated with aortic regurgitation or mitral valve disease.",
+   "rationale":"Rheumatic fever causes commissural fusion and leaflet thickening affecting all valve levels; when the aortic valve is involved, the mitral valve is nearly always affected simultaneously.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":673}],
+   "confusable_with":""},
+
+  {"id":"aortic-stenosis-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How do volatile anesthetics affect the compensatory mechanisms of pressure-overloaded left ventricular hypertrophy?",
+   "answer":"Volatile anesthetics decrease myocardial contractility; however, at moderate concentrations they provide myocardial protection via KATP channel activation and may help recovery of stunned myocardium.",
+   "rationale":"The stiff, hypertrophied LV in AS has reduced contractile reserve, making it vulnerable to volatile-anesthetic-induced depression; however, ischemic preconditioning via volatiles can be protective.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":600}],
+   "confusable_with":""},
+
+  {"id":"aortic-stenosis-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the classic triad of symptoms indicating severe aortic stenosis and advanced disease?",
+   "answer":"Angina, syncope (exertional), and heart failure (dyspnea); median survival after onset is 5, 3, and 2 years respectively.",
+   "rationale":"Angina results from demand-supply mismatch in the hypertrophied LV; syncope from inability to augment cardiac output under exertion; heart failure marks end-stage LV dysfunction.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":578}],
+   "confusable_with":""},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Bicuspid valve (young-middle age), degenerative calcification (elderly >65), rheumatic fever",
+  "pathophysiology":"Fixed LV outflow obstruction → LV pressure overload → concentric hypertrophy → diastolic dysfunction → eventual systolic failure",
+  "time_course":"Decades of compensated hypertrophy; rapid decline once symptomatic triad develops",
+  "key_features":"Harsh systolic ejection murmur at RUSB radiating to carotids, pulsus parvus et tardus, narrow pulse pressure, exertional syncope/angina/dyspnea",
+  "consequence_if_missed":"Sudden cardiac death (10-20%/year in symptomatic severe AS without intervention); fatal arrhythmia during anesthesia"})
+
+# ── 104: Aspiration Pneumonia and Pneumonitis ──────────────────────────────────
+T = "Aspiration Pneumonia and Pneumonitis"
+DOM = "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)"
+DISC = "medicine"
+
+kps += [
+  {"id":"aspiration-pneumonia-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the key pathophysiological difference between aspiration pneumonitis and aspiration pneumonia?",
+   "answer":"Pneumonitis is a chemical injury from sterile acidic gastric contents (pH <2.5); pneumonia is an infectious process from aspiration of bacteria-rich oropharyngeal or gastric secretions.",
+   "rationale":"Mendelson syndrome (pneumonitis) causes rapid inflammatory injury directly from acid; pneumonia develops over 24-72 hours as aspirated bacteria colonize and infect the lower airway.",
+   "bloom":"analyze",
+   "source":[{"book":"StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis","page":2}],
+   "confusable_with":""},
+
+  {"id":"aspiration-pneumonia-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What microbiology is typical of aspiration pneumonia and which organisms predominate?",
+   "answer":"Aspiration pneumonia is polymicrobial; aerobic gram-negative bacilli are the predominant pathogens, with aerobic gram-positive organisms as the second most common.",
+   "rationale":"Oropharyngeal flora (mixed aerobic/anaerobic) causes aspiration pneumonia; in hospitalized patients gram-negatives (e.g., Pseudomonas, Klebsiella) predominate due to oropharyngeal colonization shift.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis","page":5}],
+   "confusable_with":"community-acquired pneumonia (predominantly Streptococcus pneumoniae)"},
+
+  {"id":"aspiration-pneumonia-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What measures should be taken preoperatively in high-risk patients (e.g., full stomach, GERD) to reduce aspiration pneumonitis risk?",
+   "answer":"Use metoclopramide, H2-blockers, and antacids; consider awake/regional anesthetic; leave NGT to suction; apply cricoid pressure until ETT confirmed; RSI for general anesthesia.",
+   "rationale":"These measures reduce gastric volume and acidity (H2-blockers, antacids), accelerate gastric emptying (metoclopramide), and protect the airway mechanically during induction.",
+   "bloom":"apply",
+   "source":[{"book":"Stanford CA-1","page":74}],
+   "confusable_with":""},
+
+  {"id":"aspiration-pneumonia-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Aspiration pneumonia primarily affects which population and what are its key risk factors?",
+   "answer":"Primarily older adults; key risk factors include cerebrovascular disease (post-stroke), dysphagia, impaired consciousness, mechanical ventilation, and institutionalization.",
+   "rationale":"Stroke impairs the swallowing reflex; impaired consciousness reduces cough and gag reflexes; mechanical ventilation bypasses normal airway defenses, all facilitating bacterial aspiration.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis","page":2}],
+   "confusable_with":""},
+
+  {"id":"aspiration-pneumonia-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the mortality implications of aspiration pneumonia in adults over 80 compared to age-matched controls with non-aspiration pneumonia?",
+   "answer":"Older adults over 80 with aspiration pneumonia have higher mortality, elevated sodium levels, and poorer renal function compared to age-matched controls with community-acquired pneumonia.",
+   "rationale":"Aspiration pneumonia in the very elderly reflects severe underlying neurological or functional impairment; the co-morbid burden drives excess mortality beyond the infection itself.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Aspiration Pneumonia and Pneumonitis","page":12}],
+   "confusable_with":""},
+
+  {"id":"aspiration-pneumonia-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How does hospital-acquired pneumonia (HAP) differ from ventilator-associated pneumonia (VAP) by timing definition?",
+   "answer":"HAP: pneumonia developing ≥48h after hospital admission (not intubated); VAP: pneumonia developing ≥48h after endotracheal intubation.",
+   "rationale":"The distinction matters for empirical antibiotic selection: VAP pathogens (especially MDR gram-negatives) differ from non-ventilated HAP and require broader-spectrum coverage.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":117}],
+   "confusable_with":"community-acquired pneumonia"},
+
+  {"id":"aspiration-pneumonia-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"When a difficult intubation is anticipated in a patient at high aspiration risk, what airway management strategy should be favored over RSII?",
+   "answer":"Awake intubation should be favored — RSII is appropriate only when intubation is expected to be straightforward, because a failed RSII attempt in a patient who cannot be ventilated is catastrophic.",
+   "rationale":"RSII relies on achieving intubation within the apneic window after succinylcholine; if the airway is difficult, the complete loss of airway reflexes during RSII creates immediate risk of failed intubation and aspiration simultaneously.",
+   "bloom":"apply",
+   "source":[{"book":"Miller/Baby Miller","page":545}],
+   "confusable_with":""},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Impaired consciousness (stroke, anesthesia, alcohol), dysphagia, GERD, NG tube, mechanical ventilation, elderly/nursing home",
+  "pathophysiology":"Pneumonitis: acid chemical injury → neutrophilic inflammation within hours; Pneumonia: bacterial colonization of lower airways → infection 24-72h later",
+  "time_course":"Pneumonitis: rapid onset 2-6h; Pneumonia: 24-72h after aspiration event",
+  "key_features":"Fever, cough, hypoxemia, new infiltrate (typically right lower lobe); Pneumonitis may resolve without antibiotics if sterile",
+  "consequence_if_missed":"ARDS, respiratory failure, sepsis; missed aspiration event leads to untreated pneumonia with high mortality"})
+
+# ── 105: Asthma: Chronic Management ──────────────────────────────────────────
+T = "Asthma: Chronic Management"
+DOM = "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)"
+DISC = "medicine"
+
+kps += [
+  {"id":"asthma-chronic-mgmt-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What clinical history finding in a patient with asthma indicates they are at significantly increased risk of major pulmonary complications from anesthesia?",
+   "answer":"A history of severe or life-threatening exacerbations requiring endotracheal intubation or ICU admission indicates the highest perioperative pulmonary risk.",
+   "rationale":"Prior intubation for asthma reflects a patient whose disease has overcome all rescue therapy; such patients have exhausted physiological reserve and are at extreme risk of bronchospasm under anesthesia.",
+   "bloom":"apply",
+   "source":[{"book":"Miller/Baby Miller","page":503}],
+   "confusable_with":""},
+
+  {"id":"asthma-chronic-mgmt-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Peak expiratory flow (PEF) is a simple bedside measurement. What is its utility in managing the asthmatic patient before and during anesthesia?",
+   "answer":"PEF rate is a simple and useful measure of airway obstruction severity that should be measured pre- and post-bronchodilator to guide optimization; post-bronchodilator PEF guides readiness for anesthesia.",
+   "rationale":"PEF reflects the caliber of large to medium airways; a PEF >80% predicted after bronchodilator suggests optimal pre-anesthetic airway preparation has been achieved.",
+   "bloom":"apply",
+   "source":[{"book":"Miller/Baby Miller","page":503}],
+   "confusable_with":"FEV1 (also useful but requires spirometry)"},
+
+  {"id":"asthma-chronic-mgmt-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"An intubated asthmatic patient develops a sudden acute rise in peak inspiratory pressure with decreasing SpO2. How do you distinguish bronchospasm from anaphylaxis?",
+   "answer":"Anaphylaxis presents with additional features: hypotension, flushing, rash, or angioedema in addition to bronchospasm; pure bronchospasm lacks these systemic manifestations.",
+   "rationale":"Both cause bronchospasm and increased airway pressures, but anaphylaxis also involves mast cell/basophil-mediated systemic mediator release causing vasodilation, urticaria, and cardiovascular collapse.",
+   "bloom":"analyze",
+   "source":[{"book":"StatPearls: StatPearls   Asthma  Chronic Management","page":3}],
+   "confusable_with":"anaphylaxis"},
+
+  {"id":"asthma-chronic-mgmt-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"For patients with COPD undergoing elective surgery, what pre-operative optimization mirrors that of asthma patients?",
+   "answer":"COPD patients should be assessed for recent changes in dyspnea, sputum, and wheezing; those with FEV1 <50% predicted require further optimization before elective surgery.",
+   "rationale":"Both asthma and COPD patients benefit from pre-operative maximization of bronchodilator therapy, treatment of infections, and smoking cessation to reduce post-operative pulmonary complications.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":872}],
+   "confusable_with":""},
+
+  {"id":"asthma-chronic-mgmt-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Patients with an FEV1 below 50% of predicted who undergo upper abdominal or thoracic surgery are likely to need what post-operative intervention?",
+   "answer":"A period of postoperative mechanical ventilation is likely required, given the severely compromised respiratory reserve.",
+   "rationale":"Upper abdominal and thoracic incisions reduce functional residual capacity and impair cough mechanics; patients with FEV1 <50% cannot generate sufficient respiratory effort for adequate gas exchange post-extubation.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":874}],
+   "confusable_with":""},
+
+  {"id":"asthma-chronic-mgmt-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Gastroesophageal reflux is a known asthma trigger. When is surgery indicated for GERD-triggered asthma?",
+   "answer":"Surgery (antireflux operation such as Nissen fundoplication) is indicated when esophagitis is refractory to medical management or results in complications such as stricture, recurrent pulmonary aspiration, or Barrett esophagus.",
+   "rationale":"Chronic acid micro-aspiration worsens airway inflammation and triggers bronchospasm; fundoplication eliminates reflux as an ongoing asthma trigger in medically refractory cases.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":928}],
+   "confusable_with":""},
+]
+
+# ── 106: Asthma: Diagnosis ──────────────────────────────────────────────────
+T = "Asthma: Diagnosis"
+DOM = "Internal medicine: pulmonology (COPD, asthma, pulmonary embolism, pneumonia, ILD, pleural effusion, pneumothorax, hypoxemic & hypercapnic respiratory failure, OSA)"
+DISC = "medicine"
+
+kps += [
+  {"id":"asthma-diagnosis-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the three most common causes of chronic cough (>8 weeks) in adults, which together account for approximately 90% of cases?",
+   "answer":"Upper airway cough syndrome (UACS), asthma, and GERD — often co-existing in up to 62% of patients.",
+   "rationale":"All three conditions produce airway irritation or reflex cough via different mechanisms (post-nasal drip, airway hyperreactivity, acid micro-aspiration) and must be systematically excluded before other diagnoses.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":226}],
+   "confusable_with":""},
+
+  {"id":"asthma-diagnosis-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What features confirm the diagnosis of asthma beyond intermittent symptoms and wheezing on examination?",
+   "answer":"Confirmation requires exclusion of alternative diagnoses AND demonstration of variable airflow limitation (reversible obstruction on spirometry or peak flow variability).",
+   "rationale":"Asthma is defined by episodic, reversible airway obstruction; demonstration of >12% and >200 mL improvement in FEV1 after bronchodilator, or peak flow diurnal variability >20%, satisfies the variability criterion.",
+   "bloom":"apply",
+   "source":[{"book":"StatPearls: StatPearls   Angioedema  classification & management","page":8}],
+   "confusable_with":"COPD (irreversible obstruction), vocal cord dysfunction"},
+
+  {"id":"asthma-diagnosis-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A viral upper respiratory tract infection occurring within 2-4 weeks before general anesthesia with endotracheal intubation places a child at increased risk for which perioperative complication?",
+   "answer":"Perioperative pulmonary complications, including wheezing — at a rate approximately 10-fold higher than in children without a recent URI.",
+   "rationale":"Recent viral URI causes transient airway hyperreactivity lasting 4-6 weeks due to epithelial damage and inflammatory cell influx; endotracheal intubation provides maximal airway stimulation.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":1461}],
+   "confusable_with":""},
+
+  {"id":"asthma-diagnosis-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient with cough and possible asthma also takes an ACE inhibitor. What must be excluded first in the diagnostic workup?",
+   "answer":"ACE inhibitor-induced cough — this affects 5-20% of patients and typically occurs as a dry, persistent cough that resolves within weeks of discontinuing the medication.",
+   "rationale":"ACE inhibitors prevent bradykinin degradation, causing bradykinin accumulation in the airways that triggers a reflex cough; this must be excluded before attributing cough to asthma and initiating asthma therapy.",
+   "bloom":"apply",
+   "source":[{"book":"MGH Housestaff Manual","page":226}],
+   "confusable_with":"asthma, GERD"},
+
+  {"id":"asthma-diagnosis-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Combustion of synthetic materials in fires can produce toxic gases that mimic reactive airway disease. What specific toxin inhibits cytochrome enzymes and causes cellular ATP depletion?",
+   "answer":"Cyanide — produced from combustion of polyurethane-containing synthetic materials; it binds cytochrome enzymes and inhibits cellular production of ATP.",
+   "rationale":"Cyanide toxicity causes histotoxic hypoxia (normal PaO2, cellular inability to use oxygen), causing lactic acidosis and cardiovascular collapse distinct from bronchospasm.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":2136}],
+   "confusable_with":"carbon monoxide poisoning"},
+
+  {"id":"asthma-diagnosis-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In a patient with latex allergy being evaluated for possible asthma, what food allergies should raise suspicion for latex sensitization?",
+   "answer":"Tropical fruits: mango, kiwi, avocado, passion fruit, bananas, plus fig and chestnut — latex-fruit syndrome due to cross-reactive proteins.",
+   "rationale":"Plant defense proteins (chitinases, profilins) in latex cross-react with similar proteins in these foods; a patient allergic to tropical fruits should be screened for latex allergy before any procedure.",
+   "bloom":"recall",
+   "source":[{"book":"Stanford CA-1","page":79}],
+   "confusable_with":"isolated food allergy"},
+]
+
+# ── 107: Atrial Fibrillation ─────────────────────────────────────────────────
+T = "Atrial Fibrillation"
+DOM = "Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)"
+DISC = "medicine"
+
+kps += [
+  {"id":"afib-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the major modifiable and non-modifiable risk factors for atrial fibrillation?",
+   "answer":"Modifiable: obesity, hypertension, smoking, alcohol, diabetes, OSA; Non-modifiable: age, previous MI or HF; secondary precipitants include surgery, infection, MI, thyrotoxicosis, acute alcohol, and PE.",
+   "rationale":"AF recurs in the majority of cases via secondary precipitants that must be identified and treated; addressing modifiable risks is the cornerstone of long-term rhythm control strategy.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":13}],
+   "confusable_with":""},
+
+  {"id":"afib-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"When amiodarone, sotalol, and Class IC agents are compared for maintaining sinus rhythm in AF, which is most effective and what is the critical safety concern for sotalol?",
+   "answer":"Low-dose amiodarone is more effective than sotalol and Class IC agents; sotalol is associated with increased all-cause mortality (RR 2.23, 95% CI 1.03-4.81) from a Cochrane meta-analysis.",
+   "rationale":"Sotalol's Class III effect (QT prolongation) creates risk of torsades de pointes, particularly in patients with structural heart disease, electrolyte abnormalities, or renal impairment.",
+   "bloom":"analyze",
+   "source":[{"book":"Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation","page":77}],
+   "confusable_with":""},
+
+  {"id":"afib-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the 'pill in the pocket' (PITP) strategy for AF and in whom is it appropriate?",
+   "answer":"High-dose Class IC agent (flecainide 200-300 mg or propafenone 450-600 mg with an AV nodal blocker) taken as needed for infrequent AF episodes in patients without structural heart disease who prefer not to take daily antiarrhythmics.",
+   "rationale":"Class IC agents slow conduction and terminate AF rapidly; an AV nodal blocker is co-administered to prevent fast ventricular response if atrial flutter develops from the IC drug.",
+   "bloom":"apply",
+   "source":[{"book":"Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation","page":81}],
+   "confusable_with":"chronic antiarrhythmic therapy"},
+
+  {"id":"afib-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In a patient with AF and HFrEF who remains symptomatic despite rate control, what treatment improves mortality and HF hospitalization?",
+   "answer":"Catheter ablation is associated with significant improvement in mortality rate and HF hospitalization in patients with AF and HFrEF.",
+   "rationale":"Tachycardia-mediated cardiomyopathy is reversible with rate/rhythm control; ablation restores sinus rhythm and removes the ongoing insult to myocardial function.",
+   "bloom":"apply",
+   "source":[{"book":"Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation","page":93}],
+   "confusable_with":"rate-control only strategy"},
+
+  {"id":"afib-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What does the HAS-BLED score assess in AF management and what components comprise it?",
+   "answer":"HAS-BLED estimates bleeding risk with oral anticoagulation: Hypertension (SBP>160); abnormal renal function (CrCl<50); liver disease; Stroke history; Bleeding history; labile INR (<60% time in range); Elderly (>65); Drugs (antiplatelet/NSAID) or alcohol.",
+   "rationale":"HAS-BLED risk stratification identifies patients who need modifiable bleeding risk factors addressed before anticoagulation rather than withholding anticoagulation entirely.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":14}],
+   "confusable_with":"CHA2DS2-VASc (stroke risk, not bleeding risk)"},
+
+  {"id":"afib-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the first-line approach for prevention of AF after cardiac surgery?",
+   "answer":"Pre-operative beta-blockade continuation and amiodarone prophylaxis are recommended; post-operative AF prevention guidelines from ACC/AHA 2023 recommend these strategies.",
+   "rationale":"Post-operative AF occurs in 20-50% of cardiac surgery patients due to pericardial inflammation, sympathetic activation, and atrial stretch; prophylaxis significantly reduces its incidence.",
+   "bloom":"recall",
+   "source":[{"book":"Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillation","page":102}],
+   "confusable_with":""},
+
+  {"id":"afib-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Theoretically, why are selective beta1-blockers preferred over non-selective beta-blockers for rate control in AF patients with concurrent COPD or peripheral vascular disease?",
+   "answer":"Selective beta1-blockers have less inhibitory effect on beta2-receptors, potentially avoiding bronchospasm in COPD and reducing peripheral vasoconstriction in PVD.",
+   "rationale":"Beta2 receptors mediate bronchodilation and peripheral vasodilation; non-selective beta-blockade impairs these protective mechanisms, though the clinical difference in modern cardioselective agents is modest at usual doses.",
+   "bloom":"analyze",
+   "source":[{"book":"Morgan & Mikhail","page":396}],
+   "confusable_with":""},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Age >65, hypertension, structural heart disease (HF, valvular disease), OSA, obesity, diabetes, alcohol, thyrotoxicosis, post-cardiac surgery",
+  "pathophysiology":"Disorganized rapid atrial electrical activity → loss of atrial kick → irregular ventricular response → hemodynamic compromise and thromboembolic risk from LAA stasis",
+  "time_course":"Paroxysmal (<7d), persistent (>7d), or permanent; recurs in majority",
+  "key_features":"Irregularly irregular pulse, palpitations, dyspnea, fatigue; CHA2DS2-VASc guides stroke prophylaxis",
+  "consequence_if_missed":"Stroke/systemic embolism; tachycardia-induced cardiomyopathy; hemodynamic collapse in decompensated HF"})
+
+# ── 108: Autoimmune Hemolytic Anemia (AIHA) ──────────────────────────────────
+T = "Autoimmune hemolytic anemia (AIHA)"
+DOM = "Internal medicine: hematology & oncology (anemias, anticoagulation & reversal, VTE prophylaxis & treatment, thrombocytopenia & DIC, transfusion medicine, oncologic emergencies, neutropenic fever)"
+DISC = "medicine"
+
+kps += [
+  {"id":"aiha-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How does the temperature at which antibodies optimally bind red blood cells distinguish warm from cold AIHA?",
+   "answer":"Warm AIHA: IgG antibodies bind RBCs at body temperature (37°C); Cold AIHA: IgM antibodies bind at cold temperatures (<37°C, typically <4°C) and dissociate on rewarming.",
+   "rationale":"The thermal amplitude of the antibody determines the clinical phenotype: warm AIHA causes predominantly extravascular hemolysis via splenic macrophages; cold AIHA causes intravascular hemolysis via complement activation.",
+   "bloom":"analyze",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":2}],
+   "confusable_with":"paroxysmal cold hemoglobinuria (IgG biphasic hemolysin, different mechanism)"},
+
+  {"id":"aiha-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is paroxysmal cold hemoglobinuria and what type of antibody mediates it?",
+   "answer":"Paroxysmal cold hemoglobinuria is acquired hemolytic anemia from a polyclonal IgG autoantibody (Donath-Landsteiner antibody) targeting the P antigen; it activates complement at cold temperatures causing intravascular hemolysis and hemoglobinuria upon rewarming.",
+   "rationale":"The biphasic mechanism ('biphasic hemolysin') — antibody binds in cold, complement activates on warming — distinguishes it from typical cold agglutinin disease (IgM).",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":3},{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":6}],
+   "confusable_with":"cold agglutinin disease (IgM-mediated)"},
+
+  {"id":"aiha-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the first-line treatment for warm AIHA and how does it differ from first-line treatment for cold AIHA?",
+   "answer":"Warm AIHA: glucocorticoids ± rituximab; Cold AIHA (IgM-mediated): cold avoidance ± rituximab (glucocorticoids are largely ineffective in cold AIHA).",
+   "rationale":"IgM cold agglutinins are produced by B-cell clones that do not respond well to steroids (which suppress IgG-producing cells more effectively); rituximab targets CD20+ B cells producing the pathological antibody.",
+   "bloom":"apply",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":13}],
+   "confusable_with":""},
+
+  {"id":"aiha-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Drug-induced hemolytic anemia can mimic AIHA. What are the two mechanisms by which drugs cause immune-mediated red cell destruction?",
+   "answer":"(1) Drug-dependent reactions: drug binds RBCs as part of an antigen-antibody complex; (2) Alteration of RBC surface antigens causing autoantibody formation against modified self-antigens.",
+   "rationale":"In drug-dependent reactions the drug acts as a hapten; in autoantibody induction (e.g., methyldopa) the drug modifies RBC membrane proteins triggering true autoimmunity — the drug itself may not be present at time of hemolysis.",
+   "bloom":"analyze",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":7}],
+   "confusable_with":"warm AIHA (indistinguishable on DAT)"},
+
+  {"id":"aiha-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Why is the Donath-Landsteiner test in paroxysmal cold hemoglobinuria time-consuming and prone to inaccuracy?",
+   "answer":"It can be time-consuming, resource-intensive, and prone to inaccuracy due to low sensitivity; results may only be positive during the brief period around a hemolytic episode, and high-titer antibodies are needed for detection.",
+   "rationale":"The biphasic IgG antibody is transient and present in low titers outside of active hemolysis; the test requires controlled temperature manipulation and may miss the diagnosis if performed too late.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":11}],
+   "confusable_with":""},
+
+  {"id":"aiha-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In Rh hemolytic disease of the newborn, why does it generally not occur in the first pregnancy?",
+   "answer":"In the absence of a prior transfusion history, the first RhD-negative pregnancy with an RhD-positive fetus does not sensitize until delivery (or fetomaternal hemorrhage); the second pregnancy then elicits an anamnestic IgG response that crosses the placenta.",
+   "rationale":"Primary sensitization produces IgM (does not cross placenta); the secondary IgG response during subsequent pregnancies crosses the placental barrier and causes fetal red cell hemolysis.",
+   "bloom":"analyze",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":8}],
+   "confusable_with":"ABO incompatibility (can occur in first pregnancy because anti-A/B IgG pre-exists)"},
+
+  {"id":"aiha-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Mixed AIHA exhibits features of both warm and cold antibody-mediated hemolysis. What clinical implication does this have for treatment?",
+   "answer":"Treatment selection must address both the IgG-mediated (warm) and IgM-mediated (cold) components; typically requires rituximab targeting both B-cell populations, and cold avoidance plus steroids.",
+   "rationale":"Monotherapy targeting only one mechanism (steroids alone or cold avoidance alone) will leave the other hemolytic pathway active; dual-mechanism recognition guides more complete immunosuppressive treatment.",
+   "bloom":"apply",
+   "source":[{"book":"StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA)","page":3}],
+   "confusable_with":""},
+]
+
+kps.append({"_type":"illness_script","topic":T,"discipline":DISC,
+  "enabling_conditions":"Primary (idiopathic) or secondary to lymphoma, CLL, SLE, infections (EBV, Mycoplasma for cold), drugs (methyldopa, penicillin)",
+  "pathophysiology":"Autoantibody-coated RBCs destroyed by splenic macrophages (extravascular, warm IgG) or complement-mediated intravascular lysis (cold IgM)",
+  "time_course":"Acute or chronic; cold AIHA often triggered by cold exposure",
+  "key_features":"Anemia, jaundice, splenomegaly; positive direct antiglobulin test (DAT); spherocytes on smear; elevated LDH/bilirubin, low haptoglobin",
+  "consequence_if_missed":"Severe hemolytic crisis; transfusion complications (cross-matching difficult); renal failure from hemoglobinuria"})
+
+kps.append({"_type":"confusable_pair","topic_a":"Warm AIHA (IgG)","topic_b":"Cold AIHA (IgM)",
+  "discriminator":"Warm AIHA: IgG, extravascular hemolysis, responds to steroids; Cold AIHA: IgM, intravascular hemolysis, triggered by cold, glucocorticoids ineffective, needs rituximab"})
+
+# ── 109: Bradyarrhythmias and Conduction Disease ──────────────────────────────
+T = "Bradyarrhythmias and Conduction Disease"
+DOM = "Internal medicine: cardiology (ACS, stable & unstable angina, heart failure, brady/tachyarrhythmias, valvular disease, hypertension & emergencies, lipids, syncope)"
+DISC = "medicine"
+
+kps += [
+  {"id":"bradyarrhythmia-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the two anatomical origins of bradyarrhythmias?",
+   "answer":"Bradyarrhythmias arise from either SA node dysfunction or abnormal AV conduction; a delay or block can occur anywhere between the SA node and the bundle branches.",
+   "rationale":"SA node dysfunction causes sinus bradycardia, sinus pauses, or sick sinus syndrome; AV conduction disease causes first-, second-, or third-degree AV block at the AV node or His-Purkinje level.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":696}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"A patient with a symptomatic bifascicular block on ECG requires urgent hip fracture repair. What perioperative cardiac evaluation is necessary and can surgery proceed?",
+   "answer":"Cardiac evaluation is required for symptomatic bifascicular block; however, hip fractures must be repaired promptly and intracardiac electrophysiology recordings would be needed to confirm the site of block. Temporary pacing may be necessary.",
+   "rationale":"Bifascicular block (RBBB + left hemiblock) carries risk of complete heart block; symptomatic presentations require evaluation and possible prophylactic temporary pacing before surgery.",
+   "bloom":"apply",
+   "source":[{"book":"Morgan & Mikhail","page":699}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the common causes of bradyarrhythmia encountered during anesthesia or in the perioperative period?",
+   "answer":"Carotid sinus hypersensitivity, postural hypotension, autonomic dysfunction, sustained Valsalva, cerebrovascular disease, marked hypocapnia.",
+   "rationale":"Each of these conditions reduces sympathetic outflow or increases vagal tone; hypocapnia causes cerebral vasoconstriction and directly depresses SA node automaticity.",
+   "bloom":"recall",
+   "source":[{"book":"Morgan & Mikhail","page":696}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What are the types of permanent pacemakers and how are they categorized by lead placement?",
+   "answer":"Single chamber (RA or RV lead), dual chamber (RA + RV leads), biventricular/CRT (RV + coronary sinus ± RA leads). ICDs also incorporate defibrillation capability.",
+   "rationale":"CRT devices resynchronize interventricular conduction delay (e.g., LBBB) in HF patients; ICD devices both pace and defibrillate; understanding device type guides perioperative management (e.g., magnet effects).",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":31}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"In the cardiac action potential, what ion channels are responsible for diastolic depolarization in SA node pacemaker cells versus ventricular muscle fibers?",
+   "answer":"SA node: slow inward ICa (L-type and T-type calcium channels) drives diastolic depolarization (spontaneous phase 4). Ventricular muscle: resting potential is stable; no spontaneous phase 4 depolarization under normal conditions.",
+   "rationale":"Pacemaker automaticity in the SA node depends on the 'funny current' (If) and slow calcium inward current; ventricular muscle maintains a stable resting potential via inward IK rectification.",
+   "bloom":"recall",
+   "source":[{"book":"Stanford CA-1","page":58}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the clinical significance of a QTc interval between 460-479 ms in an adult female, and above what value should concern for torsades be highest?",
+   "answer":"460-479 ms is borderline prolonged in females (normal ≤460); QTc >500 ms carries the highest risk of torsades de pointes.",
+   "rationale":"The QTc correlates with ventricular repolarization time; excessive prolongation creates dispersion of repolarization allowing early afterdepolarizations to trigger life-threatening polymorphic VT.",
+   "bloom":"apply",
+   "source":[{"book":"MGH Housestaff Manual","page":15}],
+   "confusable_with":""},
+
+  {"id":"bradyarrhythmia-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"The ACC/AHA guideline notes that starting beta-blockade 1 day or less before noncardiac surgery in high-risk patients prevents nonfatal MI but has what serious adverse effect?",
+   "answer":"Starting beta-blockade ≤1 day before noncardiac surgery increases the rate of stroke and overall mortality, despite preventing nonfatal MI.",
+   "rationale":"Acute beta-blockade lowers heart rate and blood pressure precipitously without time for physiological adaptation, increasing the risk of hypotension-driven cerebrovascular events.",
+   "bloom":"analyze",
+   "source":[{"book":"Miller/Baby Miller","page":102}],
+   "confusable_with":""},
+]
+
+# ── 110: CKD: Complications — Anemia ──────────────────────────────────────────
+T = "CKD: Complications — Anemia"
+DOM = "Internal medicine: nephrology, fluids & electrolytes"
+DISC = "medicine"
+
+kps += [
+  {"id":"ckd-anemia-d1","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What is the most common cause of anemia in patients with CKD and what is the primary mechanism?",
+   "answer":"Anemia of CKD is primarily caused by reduced erythropoietin production by the fibrotic kidney, supplemented by shortened RBC survival, iron deficiency, and uremic inhibition of erythropoiesis.",
+   "rationale":"Peritubular interstitial cells in the kidney sense hypoxia and produce EPO; as nephrons are lost in CKD, EPO production falls disproportionately, reducing bone marrow RBC output.",
+   "bloom":"recall",
+   "source":[{"book":"MGH Housestaff Manual","page":102}],
+   "confusable_with":"iron deficiency anemia, anemia of chronic inflammation"},
+
+  {"id":"ckd-anemia-d2","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What bone metabolic complication (CKD-MBD) must be monitored alongside anemia in CKD and what lab abnormalities characterize it?",
+   "answer":"CKD-Mineral Bone Disorder (CKD-MBD) — serum imbalances of calcium (hypocalcemia), phosphorus (hyperphosphatemia), PTH (elevated secondary hyperparathyroidism), and vitamin D (deficiency).",
+   "rationale":"Impaired 1-alpha-hydroxylation of vitamin D reduces calcium absorption; hyperphosphatemia and hypocalcemia stimulate PTH, causing osteitis fibrosa cystica and increased fracture/cardiovascular calcification risk.",
+   "bloom":"recall",
+   "source":[{"book":"StatPearls: StatPearls   CKD  Complications — Anemia","page":2}],
+   "confusable_with":"primary hyperparathyroidism"},
+
+  {"id":"ckd-anemia-d3","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"KDIGO 2024 recommends using an externally validated risk equation for patients with CKD G3-G5. What 5-year kidney failure risk threshold triggers consideration of nephrology referral?",
+   "answer":"A 5-year kidney failure risk of 3-5% can be used to determine the need for nephrology referral in addition to criteria based on eGFR or urine ACR.",
+   "rationale":"Risk-based referral supplements traditional eGFR/ACR thresholds by incorporating individual patient characteristics (age, sex, comorbidities) for more personalized nephrology care.",
+   "bloom":"recall",
+   "source":[{"book":"Society Guideline: Guideline   KDIGO 2024 CKD","page":41}],
+   "confusable_with":""},
+
+  {"id":"ckd-anemia-d4","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"What daily protein intake is recommended for adults with CKD G3-G5 who are not on dialysis, and what level should be actively avoided?",
+   "answer":"Maintain protein intake of 0.8 g/kg/day; avoid high protein intake >1.3 g/kg/day in CKD patients at risk of progression.",
+   "rationale":"Low protein intake reduces uremia and uremic toxin generation and lowers intraglomerular pressure by constricting afferent arterioles, slowing CKD progression.",
+   "bloom":"recall",
+   "source":[{"book":"Society Guideline: Guideline   KDIGO 2024 CKD","page":93}],
+   "confusable_with":""},
+
+  {"id":"ckd-anemia-d5","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"How does metabolic acidosis develop in CKD and when in the disease course does it become clinically apparent?",
+   "answer":"As GFR decreases, the kidney's ability to excrete hydrogen ions and generate bicarbonate decreases; metabolic acidosis becomes observationally significant as GFR falls (typically G4-G5).",
+   "rationale":"The failing kidney cannot produce sufficient ammonium buffer to excrete the daily acid load; bicarbonate supplementation is indicated to slow progression and reduce catabolism.",
+   "bloom":"analyze",
+   "source":[{"book":"Society Guideline: Guideline   KDIGO 2024 CKD","page":107}],
+   "confusable_with":""},
+
+  {"id":"ckd-anemia-d6","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"Why does the 2021 CKD-EPI equation no longer include race as a variable, and what alternative marker can improve GFR estimation?",
+   "answer":"Race was removed because it led to undertreatment and transplant inequity for Black patients; Cystatin C is a race-independent protein excreted by all nucleated cells that improves GFR estimation accuracy.",
+   "rationale":"Cystatin C is not affected by muscle mass (unlike creatinine) and is not modulated by dietary protein or race, providing a more equitable and accurate estimate of glomerular filtration.",
+   "bloom":"analyze",
+   "source":[{"book":"MGH Housestaff Manual","page":102}],
+   "confusable_with":""},
+
+  {"id":"ckd-anemia-d7","topic":T,"domain":DOM,"discipline":DISC,
+   "stem":"KDIGO 2024 recommends that a comprehensive treatment strategy for CKD should address what two concurrent goals beyond CKD progression?",
+   "answer":"Reduce risks of CKD progression AND reduce risks of cardiovascular disease (CVD) and other CKD complications simultaneously.",
+   "rationale":"CVD is the leading cause of death in CKD patients; integrated treatment with RAAS inhibitors, SGLT2 inhibitors, and finerenone simultaneously slows progression and reduces cardiovascular events.",
+   "bloom":"recall",
+   "source":[{"book":"Society Guideline: Guideline   KDIGO 2024 CKD","page":90}],
+   "confusable_with":""},
+]
+
+print(f"Topics 99-110 complete: {len(kps)} KP objects (including scripts/pairs)")
+with open('data/_kps_part3a.json', 'w', encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print("Saved to data/_kps_part3a.json")

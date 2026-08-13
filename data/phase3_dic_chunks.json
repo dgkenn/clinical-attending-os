@@ -1,0 +1,102 @@
+[
+  {
+    "topic": "DIC (Disseminated Intravascular Coagulation) Definition",
+    "subtopic": "dic_definition",
+    "content": "DIC = acquired syndrome of uncontrolled thrombin generation + consumption of platelets + clotting factors + secondary fibrinolysis. Pathophysiology: tissue factor release (from damaged endothelium, tumor, placenta) activates extrinsic pathway → massive thrombin generation → fibrin deposition in microvasculature (thrombosis, organ ischemia) + simultaneous consumption of platelets/fibrinogen/factors II, V, VIII, X (bleeding risk). Presentation: bleeding from multiple sites (mucous membranes, skin, surgical sites) + thrombosis (DVT, PE, microvascular occlusion) + organ dysfunction (AKI, ARDS, encephalopathy). Mortality 40-50% depending on underlying cause.",
+    "tags": [
+      "dic",
+      "definition",
+      "coagulopathy"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "DIC Triggers & Common Etiologies",
+    "subtopic": "dic_etiology",
+    "content": "Obstetric: placental abruption, amniotic fluid embolism (most common DIC precipitants). Sepsis: especially Gram-negative/meningococcal (tissue factor release from endotoxin). Acute leukemia: release of procoagulant from blasts. Massive trauma: tissue factor from damaged tissues. Heat stroke: endothelial injury. Transfusion reactions: complement activation. Malignancy: lung, prostate, breast cancers produce tissue factor. Venom (snake, insect): direct proteolytic activation. Severe liver disease: loss of natural anticoagulants.",
+    "tags": [
+      "dic",
+      "etiology",
+      "triggers"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "DIC Laboratory Findings & Diagnosis",
+    "subtopic": "dic_diagnostics",
+    "content": "Classic findings: (1) Thrombocytopenia (decreased platelet consumption); (2) Elevated PT/INR & aPTT (factor consumption); (3) Hypofibrinogenemia (<100 mg/dL, normal 200-400); (4) Elevated d-dimer & FDP (fibrin degradation products, elevated 100-1000x normal); (5) Schistocytes on blood smear (microangiopathic hemolytic anemia from fibrin strands). ISTH DIC scoring: platelets + PT prolongation + fibrinogen level + d-dimer/FDP (score ≥5 compatible with overt DIC). No single test diagnostic; combination + clinical context essential. Serial measurements more useful than single values (declining platelets, declining fibrinogen = worsening DIC).",
+    "tags": [
+      "dic",
+      "diagnostics",
+      "labs"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "DIC Differential Diagnosis - Mimics",
+    "subtopic": "dic_diagnostics",
+    "content": "Conditions mimicking DIC: (1) Thrombotic thrombocytopenic purpura (TTP): severe thrombocytopenia + microangiopathic hemolysis + neurologic symptoms + fever; normal PT/INR/fibrinogen (unlike DIC); treated with plasma exchange NOT transfusions; (2) Hemolytic-uremic syndrome (HUS): similar to TTP, more renal involvement; (3) Severe sepsis without DIC: elevated d-dimer, normal/only mildly low platelets, normal PT/fibrinogen; (4) Liver disease: elevated PT/INR, low fibrinogen, but INCREASED platelets (unlike DIC). Key distinction: DIC = multi-system coagulopathy, HIT/TTP/HUS more isolated hematologic.",
+    "tags": [
+      "dic",
+      "diagnostics",
+      "differential"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "DIC Management - Treat Underlying Cause First",
+    "subtopic": "dic_treatment",
+    "content": "MOST IMPORTANT: address precipitant. Placental abruption → urgent delivery. Sepsis → antibiotics + source control. Acute leukemia → chemotherapy. Transfusion reaction → stop transfusion. Supportive care: platelet transfusion if <10k or <20k + invasive procedure (target 10-20k for maintenance). Fresh frozen plasma (FFP) replaces multiple factors; dose 10-15 mL/kg q6-12h as needed. Cryoprecipitate (fibrinogen replacement): 10 units if fibrinogen <100, repeat until >100. Avoid over-transfusion (volume overload, worsens microvascular thrombosis). Monitor: CBC, PT/aPTT, fibrinogen q6-12h; titrate transfusions to values not labs.",
+    "tags": [
+      "dic",
+      "treatment",
+      "supportive_care"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Heparin & Anticoagulation in DIC - Controversial",
+    "subtopic": "dic_treatment",
+    "content": "Role of heparin in DIC remains debated. Theoretical benefit: heparin blocks thrombin generation, may preserve natural anticoagulants. Practical problems: increased bleeding risk (especially if fibrinogen <100), no RCT evidence of benefit, expense. Current consensus: heparin NOT recommended for routine DIC. Exception: thrombotic DIC (manifesting more with thrombosis than bleeding, e.g., arterial thrombosis, mesenteric infarction) + failing other measures → consider heparin cautiously. Use: unfractionated heparin 80 units/kg bolus, then 18 units/kg/h infusion, target aPTT 1.5-2.5x normal. Monitor: aPTT, fibrinogen, platelet count closely.",
+    "tags": [
+      "dic",
+      "treatment",
+      "anticoagulation"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Antifibrinolytic Therapy in DIC",
+    "subtopic": "dic_treatment",
+    "content": "Tranexamic acid (TXA, Cyklokapron): plasmin inhibitor, prevents fibrin breakdown. Dose: 1 g IV q6-8h (max 5 g/day), or 10-15 mg/kg IV bolus. Use: DIC with predominantly bleeding phenotype (vs. thrombotic). Evidence: limited; may reduce bleeding transfusion requirement. Risk: thrombotic complications (increased thrombosis if used in thrombotic DIC). Epsilon-aminocaproic acid (EACA): similar agent, less commonly used. Current recommendation: antifibrinolytics reserved for bleeding refractory to transfusion, with careful monitoring.",
+    "tags": [
+      "dic",
+      "treatment",
+      "antifibrinolytic"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Natural Anticoagulants in DIC - Research Phase",
+    "subtopic": "dic_treatment",
+    "content": "Protein C: naturally occurring anticoagulant, severely depleted in DIC. Activated protein C (drotrecogin, Xigris) showed promise in sepsis-related DIC (PROWESS trial), but later shown to increase bleeding without mortality benefit; withdrawn from market. Antithrombin: naturally occurring inhibitor, depleted in DIC; replacement studied, no clear benefit. Future agents: tissue factor pathway inhibitor, thrombin-activatable fibrinolysis inhibitor (TAFI) still in research. Current practice: supportive transfusion management remains standard pending better biomarker-driven therapies.",
+    "tags": [
+      "dic",
+      "treatment",
+      "natural_anticoagulants",
+      "research"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Chronic DIC vs Acute DIC",
+    "subtopic": "dic_variants",
+    "content": "Acute DIC: fulminant presentation, rapid platelet decline, profound hypofibrinogenemia, high mortality. Chronic DIC: indolent, compensated, seen in malignancy (especially lung cancer), retained dead fetus syndrome. Chronic DIC: mildly low platelets (usually >50k), elevated d-dimer with normal/near-normal PT/fibrinogen (compensation by liver synthesis). May be asymptomatic (found on routine labs). Risk: acute transformation if trigger escalates. Management chronic DIC: treat underlying cancer, avoid unnecessary treatments if asymptomatic.",
+    "tags": [
+      "dic",
+      "variants",
+      "chronic"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

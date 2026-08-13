@@ -1,0 +1,240 @@
+[
+  {
+    "id": "icp-physiology-d1",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are the three components of the Monro-Kellie doctrine, and what is its clinical implication for ICP?",
+    "answer": "The skull is a rigid box containing brain parenchyma (80%), CSF (10%), and blood (10%); an increase in any one component must be offset by a decrease in another to maintain normal ICP; when compensation is exhausted, small volume increases cause exponential ICP rise.",
+    "rationale": "The volume-pressure relationship is non-linear; in the compensated phase small volume changes have little effect, but after compensatory mechanisms (CSF displacement, venous outflow) are exhausted, ICP rises steeply.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 564
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "icp-physiology-d2",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What monitors are available for ICP measurement in neuroanesthesia/neuroICU, and what is the gold standard method?",
+    "answer": "ICP can be measured via intraventricular catheter (gold standard - allows CSF drainage as treatment), intraparenchymal probe, or epidural/subdural devices; normal ICP is 5-15 mmHg; treatment threshold is typically >20-22 mmHg.",
+    "rationale": "Intraventricular catheters are the gold standard because they allow direct CSF pressure measurement and therapeutic drainage; intraparenchymal probes are less accurate but easier to place.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 17
+      }
+    ],
+    "confusable_with": "cerebral oximetry (NIRS; measures cerebral oxygenation saturation, not ICP)"
+  },
+  {
+    "id": "icp-physiology-d3",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Hypothermia confers neuroprotection by what primary mechanism, and at what rate does it decrease cerebral metabolic rate?",
+    "answer": "Hypothermia reduces cerebral metabolic rate for oxygen (CMRO2) by approximately 8% per 1 degree C decrease in temperature; targeted cooling improves neurological outcomes in cardiac arrest survivors.",
+    "rationale": "Reducing CMRO2 extends the tolerable duration of ischemia; at 28-32 degrees C, CMRO2 is halved, providing substantial protection against ischemic neuronal injury.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 64
+      }
+    ],
+    "confusable_with": "Q10 effect (50% reduction per 10 degrees C - consistent with 8% per 1 degree C)"
+  },
+  {
+    "id": "icp-physiology-d4",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What normal hemodynamic values are monitored in the neuroanesthetic patient, and what MAP range is targeted to maintain adequate CPP?",
+    "answer": "Normal MAP 70-105 mmHg; CPP = MAP - ICP; target CPP >60 mmHg (some protocols >70 mmHg); MAP is adjusted upward when ICP is elevated to maintain adequate CPP.",
+    "rationale": "CPP below 50-60 mmHg is associated with ischemic neurological injury; precise MAP targets depend on the underlying pathology (TBI, SAH, tumor) and degree of ICP elevation.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 387
+      }
+    ],
+    "confusable_with": "CVP target (unrelated to CPP; CVP measures right atrial filling pressure)"
+  },
+  {
+    "id": "icp-physiology-d5",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Age-adjusted MAC calculations are incorporated in decision support displays. At what age-adjusted MAC value is postoperative recall a concern, and what combined parameters trigger alarm?",
+    "answer": "Earlier data suggested that the combination of low BIS (<40), low blood pressure, and low MAC (below 0.7 age-adjusted) is associated with postoperative recall risk; decision support displays now alert providers to anesthetic levels potentially associated with recall.",
+    "rationale": "No single monitor reliably predicts awareness; combining age-adjusted MAC with BIS and hemodynamic data improves sensitivity for identifying under-anesthesia states.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 399
+      }
+    ],
+    "confusable_with": "BIS alone being sufficient to prevent awareness (it is a monitoring aid, not a guarantee)"
+  },
+  {
+    "id": "icp-physiology-d6",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Benzodiazepines display minimal cardiovascular depressant effects. What potentially dangerous cardiovascular interaction occurs when opioids and benzodiazepines are combined?",
+    "answer": "Combination of opioids and benzodiazepines markedly reduces arterial blood pressure and peripheral vascular resistance in a synergistic manner, commonly observed in cardiac surgery patients; this is more pronounced than with either drug alone.",
+    "rationale": "Both classes reduce sympathetic tone and vasomotor activity; their combined effect is synergistic rather than additive, particularly in patients with already-impaired cardiovascular reserve.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 284
+      }
+    ],
+    "confusable_with": "additive effect (the interaction is synergistic, producing greater hemodynamic depression than expected from simple addition)"
+  },
+  {
+    "id": "icp-physiology-d7",
+    "topic": "Intracranial Pressure: Physiology & Monitoring",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Liver transplant recipients receiving cisatracurium have consistent drug metabolism compared to other NMBDs. What property of cisatracurium explains this?",
+    "answer": "Cisatracurium undergoes Hofmann elimination (spontaneous pH- and temperature-dependent degradation) independent of hepatic or renal function; this makes its duration of action predictable in liver failure patients.",
+    "rationale": "Other intermediate-acting NMBDs depend on hepatic metabolism (vecuronium, rocuronium); in severe liver disease their duration extends unpredictably; cisatracurium avoids this organ-dependent variability.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 689
+      }
+    ],
+    "confusable_with": "succinylcholine (plasma cholinesterase metabolism; prolonged in liver failure from reduced pseudocholinesterase production)"
+  },
+  {
+    "id": "ionm-general-d1",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What are the four main modalities used in intraoperative neurophysiological monitoring (IONM) and what neural structures does each assess?",
+    "answer": "(1) SSEPs: somatosensory evoked potentials assess dorsal column (sensory) pathways; (2) MEPs: motor evoked potentials assess corticospinal (motor) tracts; (3) EMG: spontaneous or triggered for nerve root integrity; (4) BAEPs: brainstem auditory evoked potentials for auditory/brainstem pathways.",
+    "rationale": "Different neural structures are at risk in different surgeries; using multiple modalities provides comprehensive monitoring of all at-risk pathways during spine, cranial, and vascular procedures.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 564
+      }
+    ],
+    "confusable_with": "EEG monitoring (measures cortical electrographic activity for depth of anesthesia/seizure, not pathway integrity)"
+  },
+  {
+    "id": "ionm-general-d2",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Volatile anesthetic agents dose-dependently suppress evoked potentials. Which IONM modality is most sensitive to this suppression?",
+    "answer": "Motor evoked potentials (MEPs) are the most sensitive to volatile anesthetic suppression and are the most likely to be eliminated at clinically used concentrations of volatile agents; SSEPs are less affected.",
+    "rationale": "MEPs are generated in the motor cortex; high-threshold cortical neurons are particularly suppressed by GABAergic agents like volatile anesthetics, often eliminating MEP signals at >0.5-0.7 MAC.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 204
+      }
+    ],
+    "confusable_with": "SSEPs (more robust to volatile agents; can often be monitored at 0.5 MAC volatile)"
+  },
+  {
+    "id": "ionm-general-d3",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "During IONM a pulmonary embolism is detected by a sudden increase in alveolar dead space. What specific monitoring finding indicates this?",
+    "answer": "Acute increase in alveolar dead space from PE causes a sudden widening of the PaCO2-EtCO2 gradient (acute fall in EtCO2 without ventilator change); the plateau of the capnogram becomes sloped rather than flat.",
+    "rationale": "PE occludes pulmonary capillaries, creating ventilated but unperfused alveoli; these units have zero CO2 exchange, diluting the exhaled CO2 and reducing EtCO2 while PaCO2 rises.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 386
+      }
+    ],
+    "confusable_with": "esophageal intubation (also causes EtCO2 to fall rapidly, but from zero ventilation not dead space increase)"
+  },
+  {
+    "id": "ionm-general-d4",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "Non-invasive blood pressure measured by oscillometry most accurately determines which of the three BP values (SBP, DBP, MAP)?",
+    "answer": "MAP is the most accurate value produced by oscillometric NIBP; SBP and DBP are calculated by proprietary algorithms and are less reliable, particularly in arrhythmias, obesity, and peripheral vascular disease.",
+    "rationale": "Oscillometric devices measure oscillation amplitude directly; maximal oscillation corresponds to MAP; SBP and DBP are extrapolated by proprietary algorithms that vary across manufacturers.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 35
+      }
+    ],
+    "confusable_with": "SBP being the most accurately measured (it is the least accurate; derived from algorithm)"
+  },
+  {
+    "id": "ionm-general-d5",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "During spine surgery with IONM, neuromuscular blockade must be avoided for which monitoring modality and why?",
+    "answer": "Neuromuscular blockade must be avoided or minimized for MEP monitoring because NMBDs block the neuromuscular junction, preventing the motor evoked potential from generating a measurable muscle response.",
+    "rationale": "MEPs are recorded from peripheral muscles; NMBDs competitively block ACh receptors at the NMJ, eliminating the muscle response that is the final readout of MEP monitoring.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 37
+      }
+    ],
+    "confusable_with": "SSEP monitoring (does not require muscle response; NMBDs do not affect SSEP recording)"
+  },
+  {
+    "id": "ionm-general-d6",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "In IONM cases, how does the anesthesiologist process multiple simultaneous information streams to manage the patient effectively?",
+    "answer": "The anesthesiologist must continuously evaluate IONM signals, vital signs, ventilator parameters, surgical field, and IV access status simultaneously; a systematic cycle of assessing each information pathway prevents cognitive fixation on any single source.",
+    "rationale": "Cognitive load in IONM cases is high; systematic information processing prevents fixation errors (tunnel vision on one abnormal parameter while missing another developing problem).",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 38
+      }
+    ],
+    "confusable_with": ""
+  },
+  {
+    "id": "ionm-general-d7",
+    "topic": "Intraoperative Neurophysiological Monitoring (IONM)",
+    "domain": "Neuroanesthesia (intracranial pressure & cerebral physiology, craniotomy, awake craniotomy, spine surgery, neuromonitoring, TBI, aneurysm)",
+    "discipline": "anesthesia",
+    "stem": "What pre-operative evaluation elements are recommended for all patients regardless of age before any procedure, according to the preoperative evaluation guidelines?",
+    "answer": "A minimum preoperative evaluation of cardiac, pulmonary, and renal systems is recommended before any procedure; no specific laboratory tests are recommended solely on the basis of age.",
+    "rationale": "Evidence-based preoperative evaluation targets the organ systems most relevant to perioperative risk and the planned anesthetic; age alone does not predict which tests will yield actionable information.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 678
+      }
+    ],
+    "confusable_with": "ordering comprehensive labs for all elderly patients regardless of history (not supported by evidence)"
+  }
+]

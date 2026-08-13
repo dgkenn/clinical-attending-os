@@ -1,0 +1,408 @@
+[
+  {
+    "id": "curated-phase1_unit_0",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus covers H&P broadly but lacks this crisp chief-complaint framing."
+  },
+  {
+    "id": "curated-phase1_unit_1",
+    "verdict": "KEEP",
+    "reason": "Accurate OPQRST mnemonic; corpus lacks a dedicated HPI framework unit at this level."
+  },
+  {
+    "id": "curated-phase1_unit_2",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus polypharmacy section tangential; no dedicated PMH-taking unit."
+  },
+  {
+    "id": "curated-phase1_unit_3",
+    "verdict": "KEEP",
+    "reason": "Accurate PSH documentation standard; not a standalone unit in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_4",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus polypharmacy covers risks, not medication-history-taking method."
+  },
+  {
+    "id": "curated-phase1_unit_5",
+    "verdict": "DROP_DUP",
+    "reason": "MGH corpus Allergy section covers allergy vs intolerance distinction with penicillin examples in detail."
+  },
+  {
+    "id": "curated-phase1_unit_6",
+    "verdict": "KEEP",
+    "reason": "Accurate systematic ROS framework; not duplicated in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_7",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus does not cover routine vital sign documentation in H&P context as a teaching unit."
+  },
+  {
+    "id": "curated-phase1_unit_8",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus HEENT is ophthalmology-specific, not a full HEENT exam overview."
+  },
+  {
+    "id": "curated-phase1_unit_9",
+    "verdict": "KEEP",
+    "reason": "Accurate CV exam approach; corpus valvular section gives pathology, not exam technique."
+  },
+  {
+    "id": "curated-phase1_unit_10",
+    "verdict": "KEEP",
+    "reason": "Accurate pulmonary exam; not covered at this pedagogical level in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_11",
+    "verdict": "KEEP",
+    "reason": "Accurate abdominal exam; corpus covers DDx by location, not exam technique."
+  },
+  {
+    "id": "curated-phase1_unit_12",
+    "verdict": "KEEP",
+    "reason": "Accurate neuro exam overview; corpus AMS section addresses causes, not technique."
+  },
+  {
+    "id": "curated-phase1_unit_13",
+    "verdict": "KEEP",
+    "reason": "Accurate; lists Homans sign as exam element to check, not as conclusive diagnostic test."
+  },
+  {
+    "id": "curated-phase1_unit_14",
+    "verdict": "KEEP",
+    "reason": "Accurate skin exam; not covered at this level in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_15",
+    "verdict": "KEEP",
+    "reason": "Accurate problem-focused A&P teaching; not duplicated as a standalone unit in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_16",
+    "verdict": "KEEP",
+    "reason": "Accurate Bayesian DDx framework; not covered at this pedagogical level in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_17",
+    "verdict": "KEEP",
+    "reason": "Accurate documentation standards; corpus Rounding section brief, lacks these specifics."
+  },
+  {
+    "id": "curated-phase1_unit_18",
+    "verdict": "KEEP",
+    "reason": "Accurate sick-patient recognition; corpus covers individual conditions, not this unified approach."
+  },
+  {
+    "id": "curated-phase1_unit_19",
+    "verdict": "KEEP",
+    "reason": "Accurate dyspnea DDx; adds Hgb <7 threshold and metabolic causes not prominent in corpus SOB snippet."
+  },
+  {
+    "id": "curated-phase1_unit_20",
+    "verdict": "KEEP",
+    "reason": "Accurate; corpus chest pain has algorithm; curated unit adds discriminating features per diagnosis."
+  },
+  {
+    "id": "curated-phase1_unit_21",
+    "verdict": "KEEP",
+    "reason": "Accurate 3D framework; corpus AMS lists causes but not this delirium/dementia/depression distinction."
+  },
+  {
+    "id": "curated-phase1_unit_22",
+    "verdict": "KEEP",
+    "reason": "Accurate comprehensive fever DDx; corpus infection sections are disease-specific, not DDx-organized."
+  },
+  {
+    "id": "curated-phase1_unit_23",
+    "verdict": "DROP_DUP",
+    "reason": "MGH abdominal pain section covers RUQ DDx including cholangitis triad, Murphy sign, LFTs, RUQ US."
+  },
+  {
+    "id": "curated-phase1_unit_24",
+    "verdict": "KEEP",
+    "reason": "Accurate; LUQ-specific DDx not covered in corpus abdominal pain section."
+  },
+  {
+    "id": "curated-phase1_unit_25",
+    "verdict": "KEEP",
+    "reason": "Accurate; crisp epigastric DDx with distinguishing questions not replicated in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_26",
+    "verdict": "KEEP",
+    "reason": "Accurate; periumbilical DDx including AAA and pain-out-of-proportion not in corpus as teaching unit."
+  },
+  {
+    "id": "curated-phase1_unit_27",
+    "verdict": "KEEP",
+    "reason": "Accurate RLQ DDx with correct McBurney point description; adds ovarian torsion for females."
+  },
+  {
+    "id": "curated-phase1_unit_28",
+    "verdict": "KEEP",
+    "reason": "Accurate LLQ DDx; acute colonoscopy contraindication in diverticulitis is correct teaching."
+  },
+  {
+    "id": "curated-phase1_unit_29",
+    "verdict": "KEEP",
+    "reason": "Accurate; adds metabolic/endocrine causes to weakness DDx, complementing corpus neurologic focus."
+  },
+  {
+    "id": "curated-phase1_unit_30",
+    "verdict": "DROP_DUP",
+    "reason": "MGH corpus respiratory distress section covers acute SOB stabilization and fast assessment approach."
+  },
+  {
+    "id": "curated-phase1_unit_31",
+    "verdict": "KEEP",
+    "reason": "Accurate; RCT fundamentals with clinical examples are appropriate EBM teaching for interns."
+  },
+  {
+    "id": "curated-phase1_unit_32",
+    "verdict": "KEEP",
+    "reason": "Accurate cohort study explanation; appropriate EBM curriculum for intern year."
+  },
+  {
+    "id": "curated-phase1_unit_33",
+    "verdict": "KEEP",
+    "reason": "Accurate case-control study explanation; appropriate EBM teaching."
+  },
+  {
+    "id": "curated-phase1_unit_34",
+    "verdict": "KEEP",
+    "reason": "Accurate cross-sectional study fundamentals; appropriate intern EBM curriculum."
+  },
+  {
+    "id": "curated-phase1_unit_35",
+    "verdict": "KEEP",
+    "reason": "Accurate; meta-analysis fundamentals with PRISMA reference; not in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_36",
+    "verdict": "KEEP",
+    "reason": "Accurate GRADE framework description; not covered in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_37",
+    "verdict": "KEEP",
+    "reason": "Accurate SnNout/SpPin teaching with PPV/NPV and prevalence effects; not in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_38",
+    "verdict": "KEEP",
+    "reason": "Accurate p-value and CI interpretation with clinical significance distinction."
+  },
+  {
+    "id": "curated-phase1_unit_39",
+    "verdict": "KEEP",
+    "reason": "Accurate NNT calculation and interpretation with worked example."
+  },
+  {
+    "id": "curated-phase1_unit_40",
+    "verdict": "KEEP",
+    "reason": "Accurate RR vs OR distinction; OR approximation valid for rare outcomes (<10%); correct."
+  },
+  {
+    "id": "curated-phase1_unit_41",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS 1a scoring; corpus covers stroke management without granular NIHSS item detail."
+  },
+  {
+    "id": "curated-phase1_unit_42",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS 1b/1c scoring with administration detail not in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_43",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS gaze and visual field scoring."
+  },
+  {
+    "id": "curated-phase1_unit_44",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS facial palsy scoring including forehead-sparing in central palsy."
+  },
+  {
+    "id": "curated-phase1_unit_45",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS arm motor scoring with 10-second hold and pronation drift criteria."
+  },
+  {
+    "id": "curated-phase1_unit_46",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS leg motor scoring; 5-second (vs 10 for arm) criterion correctly noted."
+  },
+  {
+    "id": "curated-phase1_unit_47",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS ataxia scoring; weakness-exclusion rule (score 0 if weakness) correctly stated."
+  },
+  {
+    "id": "curated-phase1_unit_48",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS sensory scoring; observation-of-withdrawal rule for altered patients correct."
+  },
+  {
+    "id": "curated-phase1_unit_49",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS language scoring; dysarthria vs aphasia distinction correctly made."
+  },
+  {
+    "id": "curated-phase1_unit_50",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS dysarthria scoring with intubated patient guidance."
+  },
+  {
+    "id": "curated-phase1_unit_51",
+    "verdict": "KEEP",
+    "reason": "Accurate NIHSS extinction/neglect scoring."
+  },
+  {
+    "id": "curated-phase1_unit_52",
+    "verdict": "FIX",
+    "reason": "Alteplase dose 0.9mg/kg correct, but 4.5h window is AHA guideline, not FDA-approved (FDA label=3h).",
+    "corrected_text": "tPA (alteplase) for ischemic stroke: Door-to-needle goal <60 minutes (ideally <30 min). Window: <3 hours per FDA labeling; AHA/ASA guidelines support use up to 4.5 hours from symptom onset with relative exclusion criteria (age >80, on anticoagulation, NIHSS >25, combined prior stroke+DM2). Last known well = symptom onset time. Non-contrast CT head required to rule out hemorrhage before tPA. Alteplase dose: 0.9 mg/kg (max 90 mg), 10% as bolus over 1 min, remainder over 60 min. Note: Tenecteplase (TNK) 0.25 mg/kg IV bolus (max 25 mg) is an alternative increasingly preferred. Concurrent antiplatelet agents generally avoided first 24 hrs."
+  },
+  {
+    "id": "curated-phase1_unit_53",
+    "verdict": "KEEP",
+    "reason": "Accurate tPA absolute contraindications per AHA; BP, INR, platelet thresholds correct."
+  },
+  {
+    "id": "curated-phase1_unit_54",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus MGH stroke section covers MT with DAWN/DEFUSE-3 up to 24h, LVO on CTA, IAT criteria."
+  },
+  {
+    "id": "curated-phase1_unit_55",
+    "verdict": "KEEP",
+    "reason": "Accurate stroke imaging overview; corpus covers briefly; curated adds DWI/PWI and perfusion detail."
+  },
+  {
+    "id": "curated-phase1_unit_56",
+    "verdict": "FIX",
+    "reason": "Post-tPA BP target \"SBP <180-230\" is wrong; AHA post-tPA goal is SBP <180, DBP <105 for 24 hours.",
+    "corrected_text": "After tPA: no anticoagulation or antiplatelet for 24 hours. Neuro checks every 15 min x 2 hours, then q30 min x 6 hours, then hourly x 16 hours. ICU admission typical. Repeat CT 24 hours after tPA to rule out hemorrhagic transformation (10-15% of tPA cases; usually asymptomatic). Monitor for symptomatic ICH (volume hemorrhage with clinical deterioration). Hypertension management post-tPA: maintain SBP <180 mmHg AND DBP <105 mmHg for first 24 hours; treat promptly with labetalol IV or nicardipine infusion if above threshold."
+  },
+  {
+    "id": "curated-phase1_unit_57",
+    "verdict": "KEEP",
+    "reason": "Accurate ICH etiology/location; HTN=basal ganglia/thalamus, amyloid=lobar are correct associations."
+  },
+  {
+    "id": "curated-phase1_unit_58",
+    "verdict": "FIX",
+    "reason": "SBP 140-160 partially outdated; AHA 2022 recommends SBP <140 for ICH patients with SBP 150-220.",
+    "corrected_text": "ICH management: admit to ICU, frequent neuro checks, reverse anticoagulation if present. Blood pressure: for SBP 150-220, target SBP <140 mmHg (AHA 2022 guidelines); avoid excessive lowering (ischemia risk; do not lower if SBP <150). Avoid hypoxia, hypercarbia, fever (treat aggressively), hyperglycemia (target 140-180). DVT prophylaxis delayed while ICH active. Surgical consultation if mass effect, lobar hemorrhage with herniation risk, or posterior fossa hemorrhage. Medications for BP control: labetalol or nicardipine IV infusion. Mannitol or hypertonic saline for elevated ICP/herniation. Repeat CT head after 6h to assess for hematoma expansion."
+  },
+  {
+    "id": "curated-phase1_unit_59",
+    "verdict": "DROP_DUP",
+    "reason": "MGH stroke section covers antiplatelet, statin, BP <130, AF screening, anticoagulation for cardioembolism."
+  },
+  {
+    "id": "curated-phase1_unit_60",
+    "verdict": "KEEP",
+    "reason": "Accurate SE definition (>5 min, recurrent without return to baseline); convulsive/non-convulsive distinction correct."
+  },
+  {
+    "id": "curated-phase1_unit_61",
+    "verdict": "KEEP",
+    "reason": "Accurate SE stabilization; glucose check, collateral history, recovery position teaching points not duplicated."
+  },
+  {
+    "id": "curated-phase1_unit_62",
+    "verdict": "KEEP",
+    "reason": "Accurate first-line SE dosing; lorazepam 4mg and IM midazolam 10mg confirmed by corpus/RAMPART trial."
+  },
+  {
+    "id": "curated-phase1_unit_63",
+    "verdict": "FIX",
+    "reason": "Two errors: (1) fosphenytoin cannot infuse at any rate—max 150 PE/min due to cardiac risk; (2) levetiracetam SE dose is 60 mg/kg (max 4500 mg), not 500-2000 mg.",
+    "corrected_text": "Second-line (administer concurrently with benzos): Fosphenytoin 15-20 PE/kg IV at maximum rate 150 PE/min (faster and safer than phenytoin but NOT cardiac-risk-free—requires ECG and BP monitoring; hypotension and arrhythmia occur with excessive infusion rate). OR Levetiracetam 60 mg/kg IV (max 4500 mg per dose; typically 1500-4500 mg)—no drug interactions, no cardiac toxicity, increasingly preferred as first-choice second-line agent. Valproate 20-40 mg/kg IV is an alternative. If seizure continues after first AND second agent: prepare for intubation and refractory SE third-line agents."
+  },
+  {
+    "id": "curated-phase1_unit_64",
+    "verdict": "KEEP",
+    "reason": "Accurate third-line refractory SE; propofol and pentobarbital doses correct; ICU/intubation requirement stated."
+  },
+  {
+    "id": "curated-phase1_unit_65",
+    "verdict": "KEEP",
+    "reason": "Accurate first-seizure workup; AAN guidance on not automatically starting AEDs after single event correct."
+  },
+  {
+    "id": "curated-phase1_unit_66",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus AMS and seizure sections cover structural, metabolic, infectious, and withdrawal etiologies."
+  },
+  {
+    "id": "curated-phase1_unit_67",
+    "verdict": "KEEP",
+    "reason": "Accurate AED overview with key clinical properties; not covered as a teaching unit in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_68",
+    "verdict": "KEEP",
+    "reason": "Accurate provoked vs unprovoked distinction with management implications; not in corpus at this level."
+  },
+  {
+    "id": "curated-phase1_unit_69",
+    "verdict": "KEEP",
+    "reason": "Accurate; 5mg folic acid appropriate for AED-exposed pregnancies; levetiracetam safety profile correct."
+  },
+  {
+    "id": "curated-phase1_unit_70",
+    "verdict": "KEEP",
+    "reason": "Accurate epidemiology; serogroup B currently predominant in US; Listeria age criteria correct."
+  },
+  {
+    "id": "curated-phase1_unit_71",
+    "verdict": "KEEP",
+    "reason": "Accurate; triad present ~50% is correct. Adds petechial rash teaching for meningococcemia."
+  },
+  {
+    "id": "curated-phase1_unit_72",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus LP interpretation table covers cell counts, protein, glucose thresholds for bacterial/viral/fungal."
+  },
+  {
+    "id": "curated-phase1_unit_73",
+    "verdict": "KEEP",
+    "reason": "Accurate; procalcitonin discrimination and blood culture sensitivity (50-70%) add teaching value."
+  },
+  {
+    "id": "curated-phase1_unit_74",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus meningitis section covers CT before LP indications: papilledema, focal deficits, immunocompromise."
+  },
+  {
+    "id": "curated-phase1_unit_75",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus MGH empiric antibiotic section covers ceftriaxone+vanco, ampicillin for Listeria, dexamethasone."
+  },
+  {
+    "id": "curated-phase1_unit_76",
+    "verdict": "FIX",
+    "reason": "Ceftriaxone is contraindicated in neonates <28 days (bilirubin displacement→kernicterus); cefotaxime is preferred.",
+    "corrected_text": "Empiric neonatal meningitis antibiotics: Cefotaxime 50 mg/kg IV q6-8h (PREFERRED over ceftriaxone in neonates <28 days—ceftriaxone displaces bilirubin and can cause kernicterus) + Ampicillin 50 mg/kg IV q6h. If cefotaxime unavailable in neonates >28 days, ceftriaxone 50 mg/kg IV q12h can be used. Dexamethasone controversial in neonates (limited evidence). Pathogens: Group B Streptococcus, E. coli (K1 antigen), Listeria monocytogenes. Close neurology follow-up important (sensorineural hearing loss common complication)."
+  },
+  {
+    "id": "curated-phase1_unit_77",
+    "verdict": "KEEP",
+    "reason": "Accurate; SIADH management and complication spectrum (hydrocephalus, hearing loss, EVD) not in corpus."
+  },
+  {
+    "id": "curated-phase1_unit_78",
+    "verdict": "FIX",
+    "reason": "Error: droplet precautions use surgical mask, NOT N95; N95 is for airborne precautions (TB, measles).",
+    "corrected_text": "Droplet precautions for suspected/confirmed bacterial meningitis: surgical mask (NOT N95—N95 is for airborne precautions such as TB, measles, varicella), isolation room preferred, contact precautions for secretions. Duration: until 24 hours after first effective antibiotic dose AND clinical improvement. Meningococcal meningitis particularly contagious—notify public health; consider chemoprophylaxis for close contacts (household members, healthcare workers with mouth-to-mouth contact): rifampin 600 mg PO BID x 2 days, OR single-dose ciprofloxacin 500 mg PO, OR ceftriaxone 250 mg IM x1."
+  },
+  {
+    "id": "curated-phase1_unit_79",
+    "verdict": "DROP_DUP",
+    "reason": "Corpus meningitis section covers prognosis with mortality figures, hearing loss, and neurologic sequelae."
+  }
+]

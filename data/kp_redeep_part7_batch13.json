@@ -1,0 +1,240 @@
+[
+  {
+    "id": "liver-phys-drug-d1",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Amide local anesthetics are primarily metabolized by the liver. What enzymatic processes are involved?",
+    "answer": "Amide LAs undergo hepatic N-dealkylation and aromatic hydroxylation (Phase I oxidative reactions via CYP450 enzymes); amide hydrolysis is also a minor route; metabolites are excreted renally.",
+    "rationale": "In contrast, ester LAs are rapidly hydrolyzed by plasma pseudocholinesterase (non-hepatic); amide metabolism depends on hepatic blood flow and CYP450 function, making liver disease clinically relevant for amide LA toxicity risk.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Stanford CA-1",
+        "page": 82
+      }
+    ],
+    "confusable_with": "ester LA metabolism (plasma pseudocholinesterase, not hepatic CYP450)"
+  },
+  {
+    "id": "liver-phys-drug-d2",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Propofol undergoes extrahepatic metabolism. What organs contribute and what percentage of propofol clearance is extrahepatic?",
+    "answer": "The kidney, small intestine, and lungs are major extrahepatic sites accounting for approximately 40% of plasma propofol clearance; the liver handles the remaining 60%.",
+    "rationale": "Propofol clearance exceeds hepatic blood flow (first-pass effect), proving extrahepatic metabolism; this was confirmed during the anhepatic phase of liver transplantation where propofol metabolism continues.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 134
+      }
+    ],
+    "confusable_with": "propofol being solely hepatically cleared (extrahepatic clearance is substantial and clinically relevant in liver failure)"
+  },
+  {
+    "id": "liver-phys-drug-d3",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "The liver has a dual blood supply. What percentage of hepatic blood flow is portal venous versus hepatic arterial?",
+    "answer": "The liver receives approximately 75% of its blood supply via the portal vein and 25% via the hepatic artery; portal blood is nutrient-rich but relatively deoxygenated, while hepatic arterial blood provides the majority of oxygen.",
+    "rationale": "Despite lower oxygen content, the portal vein provides most of total flow; oxygen delivery depends on both flow and content; the hepatic artery compensates for decreased portal flow via the hepatic arterial buffer response.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 3
+      }
+    ],
+    "confusable_with": "50/50 split (portal is 75%; hepatic arterial 25%)"
+  },
+  {
+    "id": "liver-phys-drug-d4",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Barbiturates should not be used in patients with acute intermittent porphyria. Why?",
+    "answer": "Barbiturates stimulate aminolevulinic acid synthetase, increasing porphyrin production and precipitating acute porphyria attacks; they are absolutely contraindicated in AIP.",
+    "rationale": "Barbiturates induce hepatic microsomal oxidative enzymes (CYP induction); this simultaneously stimulates the heme synthesis pathway, causing accumulation of porphyrin precursors (ALA, PBG) that are neurotoxic.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 138
+      }
+    ],
+    "confusable_with": "propofol in porphyria (propofol is generally safe; barbiturates are the specifically contraindicated agents)"
+  },
+  {
+    "id": "liver-phys-drug-d5",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Cisatracurium is the preferred neuromuscular blocker for liver transplant patients. What is the metabolic basis?",
+    "answer": "Cisatracurium undergoes Hofmann elimination (pH- and temperature-dependent spontaneous degradation) independent of hepatic or renal function; duration of action is predictable regardless of liver disease severity.",
+    "rationale": "Other NMBDs rely on hepatic metabolism (vecuronium, rocuronium) or renal excretion; in severe liver disease these agents accumulate unpredictably; cisatracurium provides consistent reversal timing.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Miller/Baby Miller",
+        "page": 689
+      }
+    ],
+    "confusable_with": "atracurium (also Hofmann but generates laudanosine, a CNS stimulant; cisatracurium preferred for this reason)"
+  },
+  {
+    "id": "liver-phys-drug-d6",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Surgical stress and laparoscopic procedures can reduce hepatic blood flow. What magnitude of reduction occurs with operative procedures near the liver?",
+    "answer": "Surgical procedures near the liver can reduce hepatic blood flow by up to 60%, primarily through sympathetic activation and local reflex mechanisms increasing splanchnic vascular resistance.",
+    "rationale": "Sympathetic-mediated splanchnic vasoconstriction reduces both portal venous flow and hepatic arterial perfusion, creating a risk of hepatic ischemia during prolonged high-risk procedures.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1173
+      }
+    ],
+    "confusable_with": "hepatic flow reduction from halothane (approximately 25-30% reduction; less than surgical stress)"
+  },
+  {
+    "id": "liver-phys-drug-d7",
+    "topic": "Liver Physiology and Hepatic Drug Metabolism",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "The liver is divided anatomically by the falciform ligament but how is it divided functionally?",
+    "answer": "Functionally, the liver is divided into right and left lobes by the Cantlie line (from the gallbladder fossa to the IVC); this functional division guides surgical resection and transplant anatomy and does not correspond to the anatomical falciform ligament division.",
+    "rationale": "The Cantlie line defines right and left hepatic lobe based on the right and left branches of the portal vein, hepatic artery, and bile ducts; surgeons resect along functional rather than anatomical boundaries to preserve adequate hepatic reserve.",
+    "bloom": "recall",
+    "source": [
+      {
+        "book": "StatPearls",
+        "page": 3
+      }
+    ],
+    "confusable_with": "falciform ligament dividing functional lobes (it divides anatomical left and right but NOT functional lobes)"
+  },
+  {
+    "id": "la-pharm-d1",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What factors affect the level of epidural anesthesia, and how do they compare in predictability to spinal anesthesia?",
+    "answer": "Factors affecting epidural level include volume of LA, patient position, rate of injection, site of injection, and drug baricity; epidural levels are LESS predictable than spinal anesthesia levels.",
+    "rationale": "Epidural LA spreads through loose areolar tissue with variable resistance, patient anatomy, and catheter placement; spinal anesthesia in a defined CSF space provides more predictable spread governed by baricity and patient positioning.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1588
+      }
+    ],
+    "confusable_with": "spinal level predictability (more predictable; governed by baricity, posture, and volume)"
+  },
+  {
+    "id": "la-pharm-d2",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Why must 20% Intralipid (1.5 mL/kg) be available wherever epidural blocks are performed?",
+    "answer": "Lipid emulsion (Intralipid 20%) is the rescue treatment for local anesthetic systemic toxicity (LAST); its availability is mandatory because LAST from accidental intravascular injection can cause cardiovascular collapse requiring immediate lipid emulsion therapy.",
+    "rationale": "Lipid emulsion acts as a lipid sink partitioning LA away from cardiac and CNS sodium channels; early administration in LAST has dramatically improved survival compared to conventional ACLS alone.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1588
+      }
+    ],
+    "confusable_with": "standard ACLS alone for LAST (insufficient for bupivacaine-induced cardiac arrest; lipid emulsion is specifically required)"
+  },
+  {
+    "id": "la-pharm-d3",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "For cesarean delivery requiring spinal anesthesia, what are the two LA choices, and when should bupivacaine be selected over lidocaine?",
+    "answer": "Hyperbaric lidocaine (50-60 mg) or bupivacaine (10-15 mg) intrathecally; bupivacaine should be chosen when surgery is unlikely to be completed in 45 minutes or less, given its longer duration of action.",
+    "rationale": "Lidocaine provides 60-90 minute duration; bupivacaine provides 2-3 hours; for prolonged surgery (placenta previa, complicated cesarean) or uncertain duration, bupivacaine prevents the need for supplemental anesthesia.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1405
+      }
+    ],
+    "confusable_with": "lidocaine for all cesarean delivery (too short duration for complex procedures)"
+  },
+  {
+    "id": "la-pharm-d4",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Distribution and elimination of drugs are affected by aging. What pharmacokinetic changes in the elderly affect LA toxicity risk?",
+    "answer": "Reductions in kidney and liver function with aging prolong clearance and duration of action of amide LAs; reduced plasma protein binding increases free drug concentration; reduced volume of distribution increases initial peak concentrations.",
+    "rationale": "These combined pharmacokinetic changes mean the same dose of amide LA produces higher and more prolonged plasma concentrations in elderly patients, increasing LAST risk.",
+    "bloom": "analyze",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1506
+      }
+    ],
+    "confusable_with": "ester LA aging effects (plasma cholinesterase also decreases with age, but liver/renal changes dominate for amides)"
+  },
+  {
+    "id": "la-pharm-d5",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "What techniques minimize the risk of intravascular injection during epidural procedures?",
+    "answer": "Techniques to minimize intravascular injection: careful aspiration before every injection; use of a test dose (containing 15 mcg epinephrine - causes HR increase >20 bpm if intravascular); always inject in incremental doses (3-5 mL at a time); observe closely for early systemic toxicity signs.",
+    "rationale": "Incremental injection limits the total LA dose delivered intravascularly before detection; test dose epinephrine identifies intravascular placement reliably; aspiration alone has 2% false-negative rate.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1598
+      }
+    ],
+    "confusable_with": "aspiration alone as sufficient safety check (approximately 2% false-negative rate; incremental injection is essential)"
+  },
+  {
+    "id": "la-pharm-d6",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Epidural blockade with LA and opioid combination provides what analgesic advantage over systemic opioids, and what additional benefit does it provide?",
+    "answer": "Epidural LA+opioid provides better analgesia at rest AND with movement compared to systemic opioids; it also reduces ileus incidence and promotes earlier mobilization through its sympatholytic effects.",
+    "rationale": "Epidural analgesia blocks nociceptive afferents and sympathetic efferents; inhibiting the stress response and sympathetic-mediated ileus allows faster return of bowel function compared to systemic opioids.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1812
+      }
+    ],
+    "confusable_with": "systemic opioids providing equivalent dynamic analgesia (epidural is superior for movement-evoked pain)"
+  },
+  {
+    "id": "la-pharm-d7",
+    "topic": "Local Anesthetic Pharmacology",
+    "domain": "Anesthesia: basic & clinical sciences (relevant anatomy, respiratory/cardiac/renal/neuro physiology, pharmacokinetics/dynamics principles, physics of gases & flow, statistics)",
+    "discipline": "anesthesia",
+    "stem": "Local anesthetic diagnostic blocks can identify pain mechanisms. What does pain relief following diagnostic nerve blockade indicate prognostically?",
+    "answer": "Pain relief following diagnostic nerve block carries favorable prognostic implications for a subsequent therapeutic series of nerve blocks, indicating the targeted nerve is responsible for the pain syndrome.",
+    "rationale": "Diagnostic blocks identify the neural pathway mediating pain; a positive response (significant relief proportional to block duration) confirms the nerve as a pain generator and predicts therapeutic block efficacy.",
+    "bloom": "apply",
+    "source": [
+      {
+        "book": "Morgan & Mikhail",
+        "page": 1767
+      }
+    ],
+    "confusable_with": "placebo response (requires sham-controlled design to exclude; however clinical benefit from diagnostic block still guides therapeutic decision-making)"
+  }
+]

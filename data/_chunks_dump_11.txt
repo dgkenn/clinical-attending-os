@@ -1,0 +1,1056 @@
+=== [363] CKD: Slowing Progression — Disease-Modifying Therapy ===
+  [0] book=StatPearls, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK560742 URL: https://www.ncbi.nlm.nih.gov/books/NBK560742/ Topic: CKD: Slowing Progression — Disease-Modifying Therapy Article Title: Chronic Kidney Disease-Mineral Bone Disorder (CKD-MBD) License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  [1] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=191
+       Section: Pitt B, Filippatos G, Agarwal R, et al. Cardiovascular events with. 533. Bakris GL, Agarwal R, Anker SD, et al. Effect of ﬁnerenone on chronic kidney disease outcomes in type 2 diabetes. N Engl J Med. 2020;383:2219–2229. 534. Pitt B, Filippatos G, Agarwal R, et al. Cardiovascular events with ﬁnerenone in kidney disease and type 2 diabetes. N Engl J Med. 2021;385:2252–2263. 535. Agarwal R, Filippatos G, Pitt B, et al. Cardiovascular and kidney outcomes with ﬁnerenone in patients with typ
+
+  [2] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=140
+       Section: Chapter 5: Optimal models of care. Chapter 5: Optimal models of care 5.1 Referral to specialist kidney care services Early identiﬁcation and referral to specialist kidney care ser- vices for people with CKD has the potential to reverse, delay, or prevent progression of disease and is a key focus of in- ternational initiatives in the context of the global “epidemic” of kidney disease. The goals of early identiﬁcation and referral to specialist kidney care services are several-fold and in
+
+  [3] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=55
+       Section: The possible harm of early detection of CKD is that the. and transplantation).56 A public health approach toward CKD detection and treatment could reduce inequities in the burden of kidney failure by slowing the rate of progression and the risk of CVD for everyone.57 The possible harm of early detection of CKD is that the new diagnosis may cause anxiety in some people, particularly if the testing is not discussed in advance of the results. Dis- cussions around disease detection are comm
+
+  [4] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=88
+       Section: CKD G3. People with CKD identiﬁed as intermediate risk. intermediate CKD progression outcome, 3 recent publica- tions present models for people with or without diabetes, using both regression and machine learning–based methods, with or without biomarkers (Table 20).8,424,425 Given the potential utility of these new models to identify high-risk people for early intervention, they should be used to predict disease progression in people with CKD G1–G2 and may supplement established risk eq
+
+  [5] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=86
+       Section: Simpler equations can be implemented and reported when. (mobile apps). These should aid clinical workﬂow and deci- sion-making and even patient understanding. Where possible, laboratories should report the results from a validated risk equation speciﬁc to the region automatically for individuals with CKD G3–G5 when the required variables are available. Simpler equations can be implemented and reported when minimal data are available and more complex equations, requiring additional varia
+
+  [6] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=192
+       Section: National Health and Nutrition Examination Survey, 2007-2016. Arthritis. Examination Survey, 2007-2016. Arthritis Rheumatol. 2019;71:991–999. 609. Sampson AL, Singer RF, Walters GD. Uric acid lowering therapies for preventing or delaying the progression of chronic kidney disease. Cochrane Database Syst Rev. 2017;10:CD009460. 610. Yu X, Gu M, Zhu Y, et al. Efﬁcacy of urate-lowering therapy in patients with chronic kidney disease: a network meta-analysis of randomized controlled trials. Cl
+
+  [7] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=93
+       Section: Recommendation 3.3.1.1: We suggest maintaining a. 3.3.1 Protein intake Recommendation 3.3.1.1: We suggest maintaining a protein intake of 0.8 g/kg body weight/d in adults with CKD G3–G5 (2C). Practice Point 3.3.1.1: Avoid high protein intake (>1.3 g/kg body weight/d) in adults with CKD at risk of progression. Practice Point 3.3.1.2: In adults with CKD who are willing and able, and who are at risk of kidney failure, consider prescribing, under close supervision, a very low–protein diet (
+
+  [8] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=87
+       Section: Discussion of risk should also consider the individual. referral wait times, particularly for high-risk individuals. In other clinical settings with relatively scarce access to nephrology care, these thresholds should be adjusted to ensure that wait times are acceptable for local standards.421 Discussion of risk should also consider the individual person, their comorbidities, and their risk of death from other causes. Practice Point 2.2.2: A 2-year kidney failure risk of >10% can be use
+
+  [9] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=24
+       Section: Use of a simple algorithm such as that shown above in. Use of a simple algorithm such as that shown above in settings such as primary care, cardiology, and endocrinology could signiﬁcantly improve the early identiﬁcation and treatment of CKD (Figure 3).28 There are no current evidence-based recommendations regarding the frequency of screening in people at risk of CKD. In the setting of diabetes, a consensus report from the Amer- ican Diabetes Association (ADA) and KDIGO recommends annua
+
+---
+=== [364] COPD: Advanced and Surgical Interventions ===
+  [0] book=Miller/Baby Miller, page=784
+       Section: Section VI CONSULTANT ANESTHETIC PRACTICE. Section VI CONSULTANT ANESTHETIC PRACTICE Obstructive Sleep Apnea and Chronic Obstructive Pulmonary Disease (also see Chapters 48 and 27) Preventing postoperative pulmonary complications (PPCs) is an important goal in the perioperative period. PPCs are dangerous to the patient and costly to the health system, adding an average of $25,000+ per episode for significant complications (e.g., pneumonia, pleural effusion, reintu- bation, prolonged int
+
+  [1] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=179
+       Section: Monograph 2009; 43: 327-53. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 168 689. Disler RT, Green A, Luckett T, et al. Experience of advanced chronic obstructive pulmonary disease: metasynthesis of qualitative research. J Pain Symptom Manage 2014; 48(6): 1182-99 https://pubmed.ncbi.nlm.nih.gov/24780181. 690. Halpin DMG, Seamark DA, Seamark CJ. Palliative and end-of-life care for patients with respiratory diseases. Eur Respir Monograph 2
+
+  [2] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=178
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 167 666. Marciniuk DD, Goodridge D, Hernandez P, et al. Managing dyspnea in patients with advanced chronic obstructive pulmonary disease: a Canadian Thoracic Society clinical practice guideline. Can Respir J 2011; 18(2): 69-78 https://pubmed.ncbi.nlm.nih.gov/21499589. 667. Vieira PJ, Chiappa AM, Cipriano G, Jr., Umpierre D, Arena R, Chiappa GR. Neuromuscular electrical stimulation improves clinical and
+
+  [3] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=177
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 166 643. Wilson ME, Dobler CC, Morrow AS, et al. Association of Home Noninvasive Positive Pressure Ventilation With Clinical Outcomes in Chronic Obstructive Pulmonary Disease: A Systematic Review and Meta-analysis. JAMA 2020; 323(5): 455- 65 https://pubmed.ncbi.nlm.nih.gov/32016309. 644. Murphy PB, Rehal S, Arbane G, et al. Effect of Home Noninvasive Ventilation With Oxygen Therapy vs Oxygen Therapy Al
+
+  [4] book=Miller/Baby Miller, page=508
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS Obesity Hypoventilation Syndrome Obesity hypoventilation syndrome (OHS) is defined by chronic daytime hypoxemia (Pao2 <65 mm Hg) and hypoventilation (Paco2 >45 mm Hg) in an obese patient without coexisting COPD. It results from an interaction of sleep-disordered breathing, decreased respiratory drive, and obesity-related respiratory impairment. Patients exhibit signs of central sleep apnea (apnea 
+
+  [5] book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillat, page=22
+       Section: Screening for AF has been investigated, mostly in. e22 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation thyroid disease [hyperthyroidism, 1 point]) was derived and validated in Asian cohorts (Table 7).3,4 Screening for AF has been investigated, mostly in patients >65 years of age, using various protocols that include both 1-time electrocardiographic recordings, recurring intermittent ECGs (including consumer-based devices), or continuous electrocardiographic extern
+
+  [6] book=Miller/Baby Miller, page=779
+       Section: Chapter 42 Perioperative Medicine. Chapter 42 Perioperative Medicine Instead, a history and physical examination that is focused through the lens of the perioperative special- ist serves as the basis of the preoperative evaluation. Those foundational elements are enhanced when used alongside validated screening tools to identify relevant, potentially modifiable clinical conditions such as the STOP-BANG for obstructive sleep apnea, preoperative nutrition screening (PONS) for malnutrition
+
+  [7] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=194
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 183 1045. Marchetti N, Criner KT, Keresztury MF, Furukawa S, Criner GJ. The acute and chronic effects of bullectomy on cardiovascular function at rest and during exercise. J Thorac Cardiovasc Surg 2008; 135(1): 205-6, 6 e1 https://pubmed.ncbi.nlm.nih.gov/18179944. 1046. Kanoh S, Kobayashi H, Motoyoshi K. Intrabullous blood injection for lung volume reduction. Thorax 2008; 63(6): 564-5 https://pubmed.nc
+
+  [8] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=196
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 185 1094. Herth FJ, Valipour A, Shah PL, et al. Segmental volume reduction using thermal vapour ablation in patients with severe emphysema: 6-month results of the multicentre, parallel-group, open-label, randomised controlled STEP-UP trial. Lancet Respir Med 2016; 4(3): 185-93 https://pubmed.ncbi.nlm.nih.gov/26899390. 1095. Kemp SV, Slebos DJ, Kirk A, et al. A Multicenter Randomized Controlled Trial of
+
+  [9] book=StatPearls: StatPearls   Idiopathic Pulmonary Fibrosis, page=9
+       Section: Supportive Treatments. sess long-term prognosis. A higher GAP score indicates worse mortality. This scoring system is particularly valuable when evaluating patients for lung transplant referrals. [44] [45] [46] Additionally, objective assessment of functional status and screening for hypoxic respiratory failure is essential. The 6-minute walk test is commonly used in ILD specialty centers to achieve these goals. [47] Supportive Treatments Recommended supportive measures include tobacco 
+
+---
+=== [365] Carcinoid Tumors & Neuroendocrine Tumors (NETs) ===
+  [0] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=2
+       the extent of surgery and adjuvant treatment options. Implement therapeutic interventions, including surgical resection and adjuvant therapies, according to the features and stage of pulmonary neuroendocrine tumors. Collaborate with multidisciplinary teams, including pathologists, radiologists, and oncologists, to ensure comprehensive and coordinated care for patients with pulmonary neuroendocrine tumors. Access free multiple choice questions on this topic. Differentiate pulmonary neuroendocrine
+
+  [1] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK537080 URL: https://www.ncbi.nlm.nih.gov/books/NBK537080/ Topic: Carcinoid Tumors & Neuroendocrine Tumors (NETs) Article Title: Thoracic Neuroendocrine Tumors License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Thoracic Neuroendocrine Tumors Tony Boualoy ; 
+
+  [2] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=4
+       nicity and women than men. [13] In recent decades, the incidence of NETs, including pulmonary NETs, has demonstrated an upward trend. This increase can be attributed to several factors, such as advancements in medical investigations and improved detection rates. [14] The precise mechanisms underlying the development and progression of NETs are not fully understood. However, in some cases, it is believed that these tumors may arise from proliferating pulmonary neuroendocrine cells through a condi
+
+  [3] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=6
+       Section: The most common presenting symptoms of bronchopulmonary NETs are:. in A, synaptophysin, and CD56. However, none of these markers can differentiate between typical and atypical carcinoids. Additionally, most NETs react to pan-cytokeratin antibodies, commonly used to identify epithelial cells. Some peripheral tumors may also exhibit staining with thyroid transcription factor 1, although this marker is less specific for NETs. In evaluating biopsy or cytology samples, the Ki-67 labeling ind
+
+  [4] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=3
+       lection of paraneoplastic symptoms resulting from bioactive chemicals released by the tumor—such as serotonin, histamine, chromogranin, and somatostatin—can occur. [4] Symptoms may include flushing, asthma, diarrhea, and right-sided valvular heart disease. However, carcinoid syndrome is uncommon in pulmonary NETs, with an estimated incidence of 2% to 12% among patients, and typically arises only in cases with extensive hepatic or extrahepatic metastasis. This is due to first-pass metabolism, whi
+
+  [5] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=11
+       Section: Metastatic or Recurrent Disease. for ACs with positive lymph nodes, but not for TCs. [2] Official guidelines for treating thymic NETs are unavailable, as data from prospective trials are lacking and are mainly based on case reports and case series. Complete surgical resection with negative margins, which remains the therapy of choice, entails the resection of the entire anterior mediastinal compartment, including hilar and mediastinal lymph nodes, given the high rate of nodal metastasis
+
+  [6] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=13
+       Section: Mammalian Target of Rapamycin-Directed Therapy (mTOR). moradiotherapy is recommended. Chemotherapy forms the backbone of metastatic stage IV NET treatment, although efficacy data are lacking due to the rarity of these cases. Independent trials of pulmonary NETs are rare. NCCN guidelines recommend close radiological surveillance with chest CT with IV contrast and multiphasic abdominal and pelvic CT or MRI every 3 to 6 months for cases with low tumor burden and low-grade NETs. Systemic th
+
+  [7] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=2
+       Neuroendocrine tumors (NETs) are a diverse group of neoplasms that arise from neuroendocrine cells and can develop in various organs, including the gastrointestinal (GI) tract, lungs, ovaries, adrenal glands, and thyroid
+
+  [8] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=8
+       n receptors using indium-111-labeled octreotide may increase sensitivity for the diagnosis, staging, and follow-up of recurrence. [38] Thymic NETs pose a diagnostic challenge as symptoms at presentation are typically equivocal. Therefore, clinicians must attain a high level of suspicion. Occasionally, thymic NETs may be found incidentally during workup for other conditions. Initial evaluation with CT of the chest, using intravenous (IV) contrast, is the test of choice for assessing anterior medi
+
+  [9] book=StatPearls: StatPearls   Carcinoid Tumors & Neuroendocrine T, page=2
+       The terms “carcinoid tumor” and “carcinoid” historically refer to well-differentiated NETs, particularly those originating in the GI tract and lungs, and have often been used interchangeably with “NETs.” For clarity and consistency, this course discussion will
+
+---
+=== [366] Cardiac Amyloidosis ===
+  [0] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=132
+       Section: 40. Lumbers RT, Martin N, Manoharan K, et al. Do. 40. Lumbers RT, Martin N, Manoharan K, et al. Do beta-blockers and inhibitors of the renin-angiotensin aldosterone system improve outcomes in patients with heart failure and left ventricular ejection fraction >40. Heart. 2019;105:1533–1535. 41. Martin N, Manoharan K, Thomas J, et al. Beta- blockers and inhibitors of the renin-angiotensin aldo- sterone system for chronic heart failure with preserved ejection fraction. Cochrane Database Sy
+
+  [1] book=StatPearls: StatPearls   Cardiac Amyloidosis, page=2
+       us Decision Pathway on cardiac amyloidosis to aid in risk stratification and treatment planning. Implement individualized management strategies for cardiac amyloidosis. Implement effective collaboration and communication among interprofessional team members to improve outcomes and treatment efficacy for patients with cardiac amyloidosis. Amyloidosis is a systemic disease characterized by the extracellular deposition of insoluble proteins. In cardiac amyloidosis, or amyloid cardiomyopathy, amyloi
+
+  [2] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=69
+       Section: 7.8. Cardiac Amyloidosis. 7.8. Cardiac Amyloidosis 7.8.1. Diagnosis of Cardiac Amyloidosis Cardiac amyloidosis is a restrictive cardiomyopathy with extracellular myocardial protein deposition, most commonly monoclonal immunoglobulin light chains (amyloid cardiomyopathy or transthyretin amyloidosis (ATTR-CM). ATTR can be caused by patho- genic variants in the transthyretin gene TTR (variant transthyretin amyloidosis, ATTRv) or wild-type trans- thyretin (wild-type transthyretin amyloidosi
+
+  [3] book=StatPearls: StatPearls   Cardiac Amyloidosis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK580521 URL: https://www.ncbi.nlm.nih.gov/books/NBK580521/ Topic: Cardiac Amyloidosis Article Title: Cardiac Amyloidosis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Pirbhat Shams ; Intisar Ahmed . Authors Pirbhat Shams ; Intisar Ahmed 1 . Last Update
+
+  [4] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=70
+       Section: 7.8.2. Treatment of Cardiac Amyloidosis. 7.8.2. Treatment of Cardiac Amyloidosis For patients with ATTR-CM and EF #40%, GDMT may be poorly tolerated. The vasodilating effects of ARNi, ACEi, and ARB may exacerbate hypotension, especially with amyloid-associated autonomic dysfunction. Beta blockers may worsen HF symptoms as patients with ATTR-CM rely on heart rate response to maintain cardiac output. The beneﬁt of ICDs in ATTR-CM has not been studied in randomized trials, and a case-contr
+
+  [5] book=MGH Housestaff Manual, page=98
+       Section: Liver Transplant. Liver Transplant Enoch Chung I N D I C A T I ON S F OR L I V ER T R A N S PL A N T (AASLD: Hepatology 2014;59:1144) Acute liver failure: see Acute Liver Injury & Failure Cirrhosis with MELD ≥15 or complication (e.g., ascites, HE, EV bleed, HRS, chronic gastropathy bleed). (AJT 2005;5:307) Child B cirrhosis w/ portal HTN and low MELD can be considered also. Start/refer for evaluation at MELD >10 (to give time for education/evaluation). HCC: first-line option within Mila
+
+  [6] book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillat, page=23
+       e23 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation and right ventricular (RV) pressure. Left ventricular ejection fraction (LVEF) impacts decisions for anti- arrhythmic drug therapy and whether to prioritize other rhythm control therapies, including catheter ablation. Additionally, strain imaging may suggest an underlying infiltrative cardiomyopathy, such as amyloidosis.1 Echocardiography also provides information on LA size and function. Altered LA compliance is known to
+
+  [7] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=112
+       Section: 4.1.1. Initial Laboratory and. associated cardiomyopathy: state-of-the-art review. J Am Heart Assoc. 2020;9:e016704. 4.1.1. Initial Laboratory and Electrocardiographic Testing 1. Cardinale D, Colombo A, Bacchiani G, et al. Early detection of anthracycline cardiotoxicity and improvement with heart failure therapy. Circulation. 2015;131:1981–1988. 2. Cardinale D, Sandri MT, Colombo A, et al. Prognostic value of troponin I in cardiac risk stratiﬁcation of cancer patients undergoing high-do
+
+  [8] book=MGH Housestaff Manual, page=87
+       Section: Liver Chemistry Tests. Liver Chemistry Tests Lauren Smith Upper Limit of Normal (ULN): ALT (IU/L): 33 (males), 25 (females); ALK-P: 115 (males), 100 (females) (ACG: AJG 2017;112:18) Hepatocellular markers: Released from hepatocytes in response to injury ALT: Expressed primarily in liver, more specific AST: Expressed in liver. Also cardiac muscle, skeletal muscle, kidney, brain, and RBCs Magnitude of ALT and AST elevation: Extreme elevation (>15x ULN or >1,000 U/L): Most c/w acute liver 
+
+  [9] book=MGH Housestaff Manual, page=25
+       Section: Heart Failure. Heart Failure Christian Andersen I N I T I A L W O R K U P - N E W H E A R T F A I L U R E D I A G N O S I S Clinical syndrome with signs/symptoms consistent with impaired cardiac function ± cardiomyopathy Echocardiography: TTE for all new presentations; obtain thereafter only if concern for clinical/functional change HFrEF (EF ≤40%), HFmrEF (“mid-range” EF 41- 49%), HFpEF (EF ≥50%), HFrecEF (“recovered”) Ischemic workup: FHx, ECG, TnT, noninvasive or invasive cardiac tes
+
+---
+=== [367] Cardiovascular Risk in Systemic and Inflammatory Diseases ===
+  [0] book=Miller/Baby Miller, page=547
+       Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease severe, can result in permanent brain damage. Hypergly- cemia can result in decreased immune function, increased oxidative stress, endothelial dysfunction, increased inflammatory factors, procoagulant state, fluid shifts, and electrolyte fluxes.29 This may subsequently result in poor wound healing, increased infections, delayed recovery, and further end-organ 
+
+  [1] book=StatPearls: StatPearls   Osteoporosis  screening, diagnosis , page=20
+       Section: Differential Diagnosis. osuvastatin levels can increase by 5to 7-fold when it is used concomitantly with lopinavir-ritonavir or ritonavir-boosted atazanavir. If used with these ART regimens, rosuvastatin should be started at a low dose of 5 or 10 mg. Atorvastatin is partially metabolized through CYP3A4; atorvastatin levels can double when used with PIs. If atorvastatin is to be used in conjunction with PIs, it should be started at a lower dose, and dosages of 80 mg/d should be avoided. 
+
+  [2] book=Morgan & Mikhail, page=1499
+       Ultimately, cardiovascular diseases, including heart failure, stroke, arrhythmias, and hypertension, and frailty contribute to an increased risk of morbidity and mortality and increased cost of care in older adult patients
+
+  [3] book=Morgan & Mikhail, page=1499
+       Section: Marked diastolic dysfunction may be seen with systemic hypertension, coronary. FIGURE 43–2 A: In this Doppler study of diastolic inflow, the E wave is seen with a peak velocity of 90.9 cm/s. This Doppler study reflects the velocity of blood as it fills the left ventricle early in diastole. B: In tissue Doppler, the velocity of the movement of the lateral annulus of the mitral valve is measured. The E′ wave in this image is 6.95 cm/s. This corresponds to the movement of the myocardium du
+
+  [4] book=Morgan & Mikhail, page=1514
+       Section: Factors considered in selecting patients for ambulatory procedures include. provided that their diseases are well controlled. Ultimately, the surgeon and anesthesia provider must identify patients for whom an ambulatory or office-based setting is likely to provide benefits (eg, convenience, reduced costs and charges) that outweigh risks (eg, the lack of immediate availability of all hospital services, such as a cardiac catheterization laboratory, emergency cardiovascular stents, assista
+
+  [5] book=Society Guideline: Guideline   KDIGO 2012 AKI, page=26
+       Section: Chapter 2.2: Risk assessment. Chapter 2.2: Risk assessment The kidney is a fairly robust organ that can tolerate exposure to several insults without suffering signiﬁcant structural or functional change. For this reason, any acute change in kidney function often indicates severe systemic derangement and predicts a poor prognosis. Risk for AKI is increased by exposure to factors that cause AKI or the presence of factors that increase susceptibility to AKI. Factors that determine susceptib
+
+  [6] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=27
+       Section: Socioeconomic status. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 16 Socioeconomic status Poverty is consistently associated with airflow obstruction(240) and lower socioeconomic status is associated with an increased risk of developing COPD.(241,242) It is not clear, however, whether this pattern reflects exposures to household and outdoor air pollutants, crowding, poor nutrition, infections, or other factors related to low socioeconom
+
+  [7] book=Society Guideline: Guideline   GOLD 2024 COPD Pocket Guide, page=14
+       Section: Multimorbidity. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 10 Cohort studies have produced differing results with regard to the ability of blood eosinophils to predict future exacerbation outcomes, with either no relationship(73) or a positive relationship reported.(74,75) Differences between studies are likely to be related to different previous exacerbation histories and ICS use. There is insufficient evidence to recommend that blood
+
+  [8] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=56
+       Section: Persistent. transient hematuria. hematuria may indicate glomerular disease, other kidney diseases, or urologic disease including genitourinary malignancy. Thus, persistent hematuria should prompt further investigation.66,67 Special considerations Pediatric considerations. People who are born preterm, especially if also small for gestational age, are at increased risk for CKD and kidney failure. This is largely related to decreased nephron number.68–70 Additional insults after birth such
+
+  [9] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=45
+       Section: Blood eosinophil count. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 34 frequent exacerbations (defined as two or more exacerbations per year) is the previous history of exacerbations.(439) Worsening of airflow obstruction is associated with an increasing prevalence of exacerbations, hospitalization(377,441) and risk of death.(168,442) Blood eosinophil count A number of studies have shown that blood eosinophil counts predict the magnitud
+
+---
+=== [368] Chemotherapy toxicities and monitoring ===
+  [0] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK570563 URL: https://www.ncbi.nlm.nih.gov/books/NBK570563/ Topic: Chemotherapy toxicities and monitoring Article Title: Cytoreduction (CRS) and Hyperthermic Intraperitoneal Chemotherapy (HIPEC) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Cytoreductio
+
+  [1] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=8
+       Section: Prehabilitation and Optimization. all relevant specialties. [34] Prehabilitation and Optimization Prehabilitation should commence once surgery is planned and continue throughout the recovery period. This approach enhances functional capacity and postoperative outcomes. [38] [39] Key modifiable factors to optimize: Nutrition Poor nutritional status is associated with worse HIPEC outcomes; nutritional status should be optimized preoperatively. Poor nutritional status is associated with wo
+
+  [2] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=14
+       Section: Enhancing Healthcare Team Outcomes. e, controlling micrometastatic disease, and potentially reducing peritoneal tumor burden to facilitate complete cytoreduction. Adjuvant systemic therapy following CRS-HIPEC targets distant micrometastatic disease and may reduce the risk of peritoneal recurrence, although optimal regimens and durations remain areas of active investigation. The expanding role of targeted therapies and immunotherapy in peritoneal malignancies presents opportunities for i
+
+  [3] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=2
+       Section: Anatomy and Physiology. ering select patients with these historically devastating diseases the potential for long-term survival and durable disease control. [1] Peritoneal surface malignancies arise either primarily from the peritoneum or through direct spread from gastrointestinal and gynecologic malignancies, typically presenting with diffuse nodular or mucinous involvement across multiple sites within the peritoneal cavity. [2] Patients with untreated peritoneal disease often experie
+
+  [4] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=7
+       oxic agent within the abdominal cavity. Temperature probes for monitoring temperatures within both the extracorporeal circuit and the peritoneal cavity. A roller pump to sustain the extracorporeal circulation of the cytotoxic agent. A reservoir for the cytotoxic agent. A computer system to regulate the heat exchanger and drainage pumps based on feedback from thermal probes. A timer to monitor the duration of infusion. Cytotoxic drugs for intra-abdominal chemotherapy, with mitomycin C, cisplatin,
+
+  [5] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=3
+       Section: Mechanism of Action of CRS-HIPEC. within the peritoneal cavity, adhesion to mesothelial surfaces, and invasion of the submesothelial stroma. Increased tumor stiffness and elevated interstitial fluid pressure facilitate the release of cancer cells by disrupting cell–cell junctions and inducing epithelial-to-mesenchymal transition, thereby increasing cell motility and resistance to anoikis (detachment-induced cell death). Tumor rupture, surgical manipulation, or leakage of bile and blood 
+
+  [6] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=6
+       ith epithelioid peritoneal mesothelioma and unicavitary disease confined to the peritoneal cavity. Epithelioid histology is associated with significantly better outcomes compared to sarcomatoid or biphasic subtypes, with 5-year survival rates of 50% to 60% achievable at experienced centers. Optimal candidates have a peritoneal cancer index of less than 17, adequate performance status, and no pleural or extraperitoneal involvement. Cisplatin-based HIPEC regimens are most commonly employed, includ
+
+  [7] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=11
+       Section: Completeness of Cytoreduction Scoring. n current achieves hemostasis. Argon beam coagulation provides superficial tissue destruction in areas of minimal residual disease and aids hemostasis on raw peritonectomy surfaces. Careful attention to tissue planes minimizes blood loss and facilitates identification of residual tumor deposits. Systematic exploration of all abdominopelvic regions ensures comprehensive tumor assessment. Adhesiolysis is performed to expose all peritoneal surfaces, a
+
+  [8] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=10
+       Section: Technical Considerations. enchyma. Cholecystectomy is routinely performed to facilitate access and remove a common site of occult disease. Left upper quadrant peritonectomy addresses the left hemidiaphragm, splenic hilum, and greater curvature of the stomach. Splenectomy is frequently required when the tumor involves the splenic hilum or capsule, and is performed en bloc with greater omentectomy. The greater omentum is resected from the transverse colon and the gastric greater curvature
+
+  [9] book=StatPearls: StatPearls   Chemotherapy toxicities and monitor, page=13
+       to 80%, representing a dramatic improvement over historical outcomes with debulking surgery alone. [52] Peritoneal mesothelioma, previously uniformly fatal, demonstrates 5-year survival rates of 50% to 60% following CRS-HIPEC in patients with epithelioid histology and limited disease burden. [53] Women with ovarian cancer undergoing interval CRS-HIPEC following neoadjuvant chemotherapy experience improved recurrence-free and overall survival compared to surgery alone, as demonstrated in the OVHI
+
+---
+=== [369] Chronic Pancreatitis ===
+  [0] book=Morgan & Mikhail, page=1810
+       Long Y, Yi W, Yang D. Advances in vertebral augmentation systems for osteoporotic vertebral compression fractures. Pain Res Manag. 2020;2020:3947368. Meng L, Tseng CH, Shivkumar K, Ajijola O. Efficacy of stellate ganglion blockade in managing electrical storm: a systematic review. JACC Clin Electrophysiol. 2017;3:942. Ni Y, Yang L, Han R, et al. Implantable peripheral nerve stimulation for trigeminal neuropathic pain: a systematic review and meta-analysis. Neuromodulation. 2021;24:983. Niraj G, 
+
+  [1] book=Morgan & Mikhail, page=1708
+       Section: A. Acute Pain. Neuropathic pain is the result of injury or acquired abnormalities of peripheral or central neural structures. A. Acute Pain Acute pain is caused by noxious stimulation due to injury, a disease process, or the abnormal function of muscle or viscera. It is almost always nociceptive. Nociceptive pain serves to detect, localize, and limit tissue damage. Four physiological processes are involved: transduction, transmission, modulation, and perception. Acute pain is typically 
+
+  [2] book=Morgan & Mikhail, page=1892
+       Section: Hypocalcemia following rhabdomyolysis results from the precipitation of calcium in. associated with hypomagnesemia. Magnesium deficiency may impair the secretion of PTH and antagonize the effects of PTH on bone. Sepsis is often accompanied by suppressed PTH release, resulting in hypocalcemia. Hyperphosphatemia (see later discussion) is also a relatively common cause of hypocalcemia, particularly in patients with chronic kidney failure. Hypocalcemia due to vitamin D deficiency may be the
+
+  [3] book=MGH Housestaff Manual, page=90
+       Section: Viral Hepatitis. Viral Hepatitis Christian Bonilla H E P A T I T I S A (CDC 2020) Fecal-oral transmission from personal contact or contam. food/water, international travel. Sx: abrupt n/v, anorexia, malaise, fever, jaundice, RUQ/abd pain, ALT>AST (often >1000), bilirubin/ALP. 70% of adults have sx, lasts 2-8w (often self-limited), jaundice peaks after 2w. Dx: ⊕ anti-HAV IgM, persists 3-6mo, or RNA. Anti-HAV IgG forms at 2-3w, confers immunity. Tx: Care is supportive unless ALF (rare,<
+
+  [4] book=StatPearls: StatPearls   Acute Pancreatitis, page=4
+       Section: Metabolic and Nonalcohol-Related Toxic Causes. through both oxidative (involving acetaldehyde accumulation and disruption in the nicotinamide adenine dinucleotide redox equilibrium) and nonoxidative (fatty acid ethyl ester formation) pathways, ultimately leading to acinar injury and inflammation. Fewer than 5% of chronic heavy drinkers develop pancreatitis. Still, those who do are at risk for recurrent episodes and progression to chronic pancreatitis with endocrine and exocrine insuffic
+
+  [5] book=StatPearls: StatPearls   Acute Pancreatitis, page=5
+       ns in PRSS1 (hereditary pancreatitis) and CFTR (cystic fibrosis), as well as α1-antitrypsin deficiency. These genetic variants are often associated with early-onset or recurrent disease. Genetic testing may be appropriate in patients younger than 30 with recurrent or idiopathic pancreatitis and a positive family history. Despite appropriate diagnostic evaluation, no clear etiology is identified in 10% to 20% of patients. These cases are classified as idiopathic acute pancreatitis. Advanced imagi
+
+  [6] book=StatPearls: StatPearls   Acute Pancreatitis, page=3
+       Section: Alcohol-Induced Pancreatitis. operitoneal gland extending from the duodenum to the splenic hilum between the L1 and L2 vertebrae. This organ has 4 regions—the head, neck, body, and tail—and lies transversely along the posterior abdominal wall. The pancreas serves both exocrine and endocrine functions, with digestive enzymes delivered via the pancreatic ducts to the duodenum and hormonal products such as insulin, glucagon, and somatostatin secreted by the islets of Langerhans. [6] Thorou
+
+  [7] book=MGH Housestaff Manual, page=85
+       Section: Pancreatitis and Pancreatic Mass. Pancreatitis and Pancreatic Mass Hailey Harris E T I O L O G Y (NEJM 2014;317:1983) Gallstones/sludge (40-75%): #1 in female sex Alcohol (30%): #1 in male sex Hypertriglyceridemia (10%): #3; suspect if TG>1000 Anatomic: ampullary diverticula/stenosis, duodenal stricture, tumor, divisum, parasites, foreign body Post-ERCP: 4.5% of ECRP; rectal NSAIDs risk (Endoscopy 2020; Endosc Int Open 2019;7:477) Autoimmune: IgG4, +ANA (Am J Gastro Acute hypercalcemi
+
+  [8] book=MGH Housestaff Manual, page=72
+       Lower quadrant/pelvic, b-hCG+: pelvic and transvaginal US Chronic Abdominal Pain – Etiologies Adapted from Chronic Abdominal Pain (2015) Chronic pancreatitis, IBD, mesenteric ischemia, adhesions, cancer, pelvic etiologies Anterior cutaneous nerve entrapment (PE: Carnett sign), myofascial pain
+
+  [9] book=StatPearls: StatPearls   Acute Pancreatitis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK482468 URL: https://www.ncbi.nlm.nih.gov/books/NBK482468/ Topic: Acute Pancreatitis Article Title: Acute Pancreatitis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Cecily F. Wang ; Amina Tariq ; Subhash Chandra . Authors Cecily F. Wang 1 ; Amina Tariq
+
+---
+=== [370] Colorectal Cancer Screening & Surveillance ===
+  [0] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=2
+       mline and optimize colorectal cancer surveillance programs. Colorectal cancer is the fourth-deadliest cancer in the world and causes approximately 900,000 deaths annually. [1] Early detection of colorectal cancer through effective screening programmes has the potential to reduce the incidence and mortality associated with the disease. Within the United Kingdom (UK) National Health Service (NHS), evidence-based screening and surveillance strategies aim to reduce morbidity and mortality secondary 
+
+  [1] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=5
+       management with curative intent for colorectal cancer. These surveillance recommendations comprise serum carcinoembryonic antigen (CEA) testing every 6 months for 3 years, computed tomography (CT) scans at 1 and 2 years, and colonoscopy at 1 and 3 years. Carcinoembryonic antigen: Carcinoembryonic antigen (CEA) is the most commonly used tumour marker in colorectal cancer surveillance. Serum CEA is elevated in as many as 75% of patients with recurrent colorectal cancer, and CEA is often the first 
+
+  [2] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=4
+       Section: Hereditary Colorectal Cancer Guidelines. T has a sensitivity of 79% and a specificity of 94%, both higher than FOBT. [21] [22] Patient uptake rates for FITs are rising; the most recent data reveals 69.6% uptake in England, 62.1% in Northern Ireland, 66.7% in Scotland, and 67.1% in Wales. The results of FIT are reported in micrograms of haemoglobin per gram of faeces (µg/g), and the decision threshold is 120 µg/g. Patients whose results fall above this value are referred to a specialist 
+
+  [3] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK599509 URL: https://www.ncbi.nlm.nih.gov/books/NBK599509/ Topic: Colorectal Cancer Screening & Surveillance Article Title: UK Screening and Surveillance For Bowel Cancers License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. UK Screening and Surveillance For 
+
+  [4] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=6
+       te FIT testing being generally risk-free, patients decline screening invitations. Efforts to increase patient uptake and reduce inequalities throughout the UK are ongoing. Individuals have the right to refuse screening or surveillance for any reason. However, screening and surveillance for colorectal cancer may not be advisable in specific circumstances. The circumstances include but are not limited to: Patients 75 years or older, for whom the procedural risks or burden may not outweigh the bene
+
+  [5] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=3
+       Section: Clinical Significance. s younger than 50 years at the time of diagnosis. [8] Hereditary cancer syndromes such as hereditary nonpolyposis cancer syndrome or familial adenomatous polyposis account for 5% to 10% of all colorectal cancer diagnoses. [9] Approximately 1% of all colorectal cancers are due to chronic inflammation due to inflammatory bowel disease. [10] Environmental factors significantly contribute to the pathogenesis of colorectal cancer. Consuming a diet high in red and proce
+
+  [6] book=Intern Notes / Survival Guide, page=40
+       • Lower: below ligament of Trietz o Sx: diarrhea, tenesmus, BRBPR, hematochezia, melena (R colon) o DDX: Diverticular, polyp/tumor, colitis, vascular/AVMs, anorectal disorder, vasculitis • Management: o Assess severity: tachycardia, orthostatic vitals, hypotension, drop in Hct 6% or Hgb 2g/dL, or >/= 2u PRBC o Vitals, 2 large bore IVs in AC fossa o Volume resuscitate: IVF until normal MS, VS, UOP o Can anticoagulation/antiplatelet be stopped safely? o Labs (draw in pediatric tubes): CBC, coags, 
+
+  [7] book=StatPearls: StatPearls   Colorectal Cancer Screening & Surve, page=7
+       Section: Enhancing Healthcare Team Outcomes. a follow-up colonoscopy is typically recommended for biopsy confirmation and treatment. [34] A barium enema is a radiologic procedure during which the colon is filled with barium contrast material. Barium enemas were historically the preferred screening modality for colorectal cancer but are infrequently performed for this purpose in current clinical practice due to the availability of other, more accurate screening methods. Capsule endoscopy utilises
+
+  [8] book=StatPearls, page=11
+       Section: Lymphedema and Obesity. ," for additional information. [15] A 28-year-old woman with obesity (BMI 39 kg/m²) presents with persistent headaches that have worsened over 3 months, along with episodes of visual blurring and "whooshing" sounds in her ears. She denies fever, neck stiffness, or recent trauma. (more...) Lymphedema and Obesity Obesity contributes to the development and progression of lymphedema and presents significant challenges in its management. This association is particular
+
+  [9] book=Intern Notes / Survival Guide, page=40
+       ACS, ACG recommends screening at age 45, USPFTF: 50 o Refer to ACG clinical guidelines: colorectal cancer screening 2012 ACG Recs for Surveillance
+
+---
+=== [371] Coronary Artery Disease in Special Populations ===
+  [0] book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillat, page=33
+       Section: Direct oral anticoagulants. e33 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation patients with AF and moderate-severe rheumatic mi- tral stenosis or mechanical heart valves. Clinical stud- ies show that the target INR is between 2 and 3, and risk of bleeding becomes mostly apparent when INR exceeds 4. OAC use in special populations will be dis- cussed in separate sections. Direct oral anticoagulants DOACs were developed to address the disadvantages of warfarin and 
+
+  [1] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=123
+       Section: Note that these analyses did not distinguish. but the magnitude of the RR was consistent with the data from general populations (RR: 1.35; 95% CI: 1.10–1.65).686 Note that these analyses did not distinguish between primary and secondary prevention settings.686 The 2009 Anti-thrombotic Treatment Trialists’ collaboration meta- analysis and results from 3 more recent large trials (A Study of Cardiovascular Events in Diabetes [ASCEND],687 Aspirin in Reducing Events in the Elderly [ASPREE],6
+
+  [2] book=MGH Housestaff Manual, page=218
+       Section: Primary Care. Primary Care Health Screening & Maintenance Miriam Singer G E N E R A L S C R E E N I N G G U I D E L I N E S [Evidence Grade] (aUSPSTF, bADA, cAACE, dACC/AHA, eACCP, fACS) *If ASCVD borderline risk (5%-7.5%), use risk-enhancing factors [FHx, LDL-C ≥160, metabolic syndrome, CKD, S. Asian race/ethnicity, chronic inflammatory disease including HIV, menopause <40y, pre-eclampsia or pre-term delivery, abn biomarkers (e.g. hsCRP, Lp(a), apoB, ABI)] or coronary artery calcium sc
+
+  [3] book=Miller/Baby Miller, page=934
+       Section: Pediatric airway, 620. Pediatric airway, 620 Pediatric cardiac arrest algorithm, 821f Pediatric trauma, 788, 789b Pediatrics, injuries in, 789b PEEP. See Positive end-expiratory pressure (PEEP) Percutaneous coronary intervention (PCI), 687–688 Performance orientation, versus learning orientation, 16 Perfusion, inadequate, monitoring for, Periodic breathing, 67 Perioperative bleeding, 430 Perioperative eye injury, visual loss and, 348 Perioperative uid, strategies, 442, Perioperative Is
+
+  [4] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=4
+       Section: 9.5. Evaluation and Management of Cardiogenic. 9.4a. Parenteral Vasodilation Therapy in Patients Hospitalized With HF . . . . . . . . . . . . . . . . . . . . e345 9.4b. VTE Prophylaxis in Hospitalized Patients . . . e346 9.5. Evaluation and Management of Cardiogenic Shock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e346 9.6. Integration of Care: Transitions and Team- Based Approaches . . . . . . . . . . . . . . . . . . . . . . e349 10. COMORBIDITIES IN PATIENTS WIT
+
+  [5] book=Morgan & Mikhail, page=476
+       Section: The preoperative evaluation serves multiple purposes. One purpose is to identify. The preoperative evaluation serves multiple purposes. One purpose is to identify those patients whose outcomes likely will be improved by implementation of a specific medical treatment (which rarely may require that planned surgery be rescheduled). For example, a 60-year-old patient scheduled for elective total hip arthroplasty who also has unstable angina from left main coronary artery disease would more 
+
+  [6] book=Morgan & Mikhail, page=960
+       Section: How is a patient undergoing CEA evaluated preoperatively?. How is a patient undergoing CEA evaluated preoperatively? Since atherosclerosis is a systemic disease, patients with carotid stenosis are at a greatly increased risk of coexisting coronary artery and peripheral arterial disease. It would be unusual for a patient to have carotid stenosis who did not have evidence of atherosclerosis elsewhere. Patients undergoing CEA, therefore, require a preoperative cardiac evaluation, according
+
+  [7] book=Morgan & Mikhail, page=928
+       Section: Gastroesophageal reflux is treated surgically when the esophagitis is refractory to. Gastroesophageal reflux is treated surgically when the esophagitis is refractory to medical management or results in complications such as stricture, recurrent pulmonary aspiration, or a Barrett esophagus (columnar epithelium). A variety of antireflux operations may be performed (Nissen, Belsey, Hill, or Collis–Nissen) via thoracic or abdominal approaches, often laparoscopically. Achalasia and systemic 
+
+  [8] book=Morgan & Mikhail, page=994
+       Section: What type of tumor does this patient have?. cavernous sinus or the internal carotid artery, (4) cranial nerve damage, and (5) pituitary hypofunction. Prophylactic administration of glucocorticoids is routinely used in most centers. Diabetes insipidus develops postoperatively in up to 40% of patients but is usually transient. Less commonly, the diabetes insipidus presents intraoperatively. The supine and slightly head-up position used for this procedure may also predispose to venous air 
+
+  [9] book=Miller/Baby Miller, page=692
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS hemodynamic instability. Positive-pressure ventilation can cause a decreased venous blood return. Patients with severe pulmonary hypertension are at risk of car- diac arrest during induction of anesthesia. Emergent cardiopulmonary bypass is established in this situation. Positive-pressure ventilation can cause further damage to diseased lungs and worsen hypoxia and hypercarbia. Air trapping and ba
+
+---
+=== [372] Crohn's Disease: Medical Management ===
+  [0] book=Miller/Baby Miller, page=554
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS postoperatively. Other common premedications include benzodiazepines (anxiolysis), antihistamines, and ondan- setron (antiserotonin). Intraoperative management aims to minimize anxiety, noxious stimuli, hypercapnia, and hypothermia, all of which may stimulate vasoactive substance release. Hypo- tension can be treated with fluid bolus, octreotide, phe- nylephrine, and/or vasopressin. Sympathomimeti
+
+  [1] book=Miller/Baby Miller, page=543
+       Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease GASTROINTESTINAL DISORDERS Inflammatory Bowel Disease Inflammatory bowel disease (IBD) is a group of inflam- matory disorders of the small intestine and colon. The two principal types are ulcerative colitis (UC) and Crohn disease (CD). UC primarily affects the colon and rec- tum and results in relapsing and remitting episodes of mucosal inflammation. CD may in
+
+  [2] book=MGH Housestaff Manual, page=73
+       Section: Treatment for H. pylori (AJG 2017;112:2)(Gastro 2016;151:51). or NSAIDs (idiopathic becoming more common). Others: meds (bisphosphonates, clopidogrel, sirolimus), ZES, mastocytosis, HSV, CMV, EBV, fungal infxn, post-surgical, XRT, ischemia (cocaine), Crohn’s, sarcoid, critical illness Ddx: other causes of dyspepsia: biliary disease, gastric CA, celiac, chronic pancreatitis, drug-induced, functional dyspepsia Evaluation: H. pylori testing in all w/ dyspepsia; if >60  EGD to exclude CA (
+
+  [3] book=MGH Housestaff Manual, page=73
+       Section: GERD & Peptic Ulcer Disease. GERD & Peptic Ulcer Disease Shawna Bilton G A S T R O E S O P H A G E A L R E F L U X D I S E A S E (GERD) (ACG: AJG 2022;117:1 ; AGA: Gastro 2008;135:4) Signs & Sx: “heartburn” w/ food (i.e. spicy foods, coffee, soda, chocolate, EtOH) or position (reclining), regurgitation, sour taste after awakening, sore throat, dysphagia, globus sensation, chronic cough/throat clearing, hoarseness, asthma exacerbation, chest pain Alarm symptoms: dysphagia/odynophagia, wt
+
+  [4] book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Cla, page=4
+       Section: An endoscopy (colonoscopy) must be done at some point which will reveal:. produce clinical findings indistinguishable from idiopathic ulcerative colitis, microbiologic studies for bacterial infection and parasitic infestation should be included in the initial evaluation. [10] [11] Radiologic examinations are not critical for the diagnosis but may be useful. Patients with longstanding ulcerative colitis may show a "stove-pipe" sign on double-contrast barium enema (DCBE). Colonoscopy or p
+
+  [5] book=MGH Housestaff Manual, page=82
+       Section: Inflammatory Bowel Disease. Inflammatory Bowel Disease May Saito Step-up therapy: No longer the standard of care for IBD treatment. Treatment instead is guided by risk factors and prognosis. (AGA: Gastro 2021;160:2496). Poor prognostic factors in CD: Young age at diagnosis, initial extensive bowel involvement, ileal/ileocolonic involvement, perianal/severe rectal disease, deep ulceration, and patients with penetrating or stenosisng disease phenotype (AJG 2018;113:481). Poor prognistic f
+
+  [6] book=StatPearls: StatPearls   Bowel Obstruction, page=14
+       Section: Functional Postoperative ileus Ogilvie syndrome Neuromuscular disorders Medications. bute to its clinical presentation. Differentiating among these conditions is critical for accurate diagnosis and appropriate management. The primary categories of differential diagnoses include: Mechanical Adhesions Hernias Neoplasms Gallstone ileus Volvulus Intussusception Foreign bodies Crohn disease Functional Postoperative ileus Ogilvie syndrome Neuromuscular disorders Medications Neuromuscular diso
+
+  [7] book=StatPearls: StatPearls   Bowel Obstruction, page=17
+       Section: Postoperative and Rehabilitation Care. Postoperative and Rehabilitation Care Attention is given to ongoing correction of fluid and electrolytes, as well as intestinal decompression, until adequate bowel function returns during the postoperative period. Patients are monitored clinically for complications relating to the surgical intervention and with laboratory and radiology as needed. Contrast imaging may be used if there is concern for intestinal leaks or ongoing obstruction. Weaning o
+
+  [8] book=Miller/Baby Miller, page=222
+       Section: Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT. Section III PREOPERATIVE PREPARATION AND INTRAOPERATIVE MANAGEMENT encountered in preoperative evaluation, organized by organ system. Many conditions are addressed by evidence- based clinical practice guidelines from anesthesiology and other specialties. However, substantial clinical judgment is still required to determine how guidelines apply to an individual patient. In many instances clinical practice guidelines prov
+
+  [9] book=MGH Housestaff Manual, page=32
+       Section: Valvular Heart Disease. Valvular Heart Disease David Iskhakov A O R T I C S T E N O S I S Etiology: Aortic sclerosis (calcification of the valve; increasingly common with age), bicuspid valve (most common cause <70yo), rheumatic heart disease (leaflets fuse, often with concurrent MV disease), radiation-induced Clinical Manifestations: most important determinant of prognosis = sxs: 50% mortality at 5y if angina, 3y if syncope, 2y if HF Angina: afterload  LV pressures  LVH  O2 deman
+
+---
+=== [373] Depression & anxiety screening in primary care & inpatients ===
+  [0] book=MGH Housestaff Manual, page=211
+       Section: Anxiety Disorders. Anxiety Disorders Rosa Ahn-Horst G EN E R A L I Z ED A N X I ET Y D I S O R D ER (GAD) Epi: US lifetime prevalence 8%, 2-3x more prevalent among F vs M. (AFP 2022;106:157).90% will meet criteria for at least 1 co- morbid psych condition in their lifetime (MDD, dysthymia, AUD, simple phobia, social anxiety) (Arch Gen Psych 1994;51:355) Excessive worry associated w/ poor CV health, CAD, CV mortality (Nat Rev 2012;9:360) Screening: USPSTF recommends screening of adult 
+
+  [1] book=Miller/Baby Miller, page=785
+       Section: Chapter 42 Perioperative Medicine. Chapter 42 Perioperative Medicine patients because of a wide variety in the heterogeneity of possible interventions.56,57 However, patients in specific surgical populations such as colorectal,58,59 esophageal, prostate,60 and some orthopedic surgeries may benefit. Ongoing trials may indicate whether prehabilitation has definitive benefit in high-risk surgical patients. Physical Exercise Regimen The patient’s mobility may be assessed in the preoperative
+
+  [2] book=MGH Housestaff Manual, page=225
+       Section: Primary Care. Primary Care Sleep Medicine Allen Hodge I N S O M N I A (PCOI) 35-50% of population; chronic insomnia >3mo. difficulty initiating or maintaining sleep and compromised daytime function (UTD) Hx: evaluate chronicity, stressors, effect on fxn/mood, # awakenings and triggers, sleep hygiene; meds, PMH, sleep log for 1w Ddx: Medical: r/o pain, primary medical condition (e.g., PSYCH: PTSD, mood d/o; PULM: COPD, asthma; CV: CHF; GI: GERD; GU: nocturia), SUDs, medications (e.g., st
+
+  [3] book=MGH Housestaff Manual, page=210
+       Section: Francisco Barrera. Francisco Barrera M A J O R D E P R E S S I V E D I S O R D E R (MDD) Epidemiology: common in general population. U.S. lifetime prevalence ~20%, F>M (JAMA Psych 2018;75:336) Screening: USPSTF recommends universal screening of adult primary care patients including pregnant and postpartum women (Grade B): Use PHQ-2: to begin screening (AFP 2012;85:139); PHQ-9 to complete screening (AFP 2012;85:139) DSM-5-TR criteria: (mnemonic SIGECAPS): must have depressed mood and/or 
+
+  [4] book=Society Guideline, page=52
+       Section: Given the wide variety of hospital staffing models,. e1114 recommendation in favor of structured handoff pro- cesses at transitions of care. Of the structured hand- over tools studied, none specifically applies to sepsis. Given the wide variety of hospital staffing models, medical records, and discharge processes, along with the lack of evidence to recommend any one tool over another, the panel chose to make no recommendation for a specific structured handover tool. Screening for Econom
+
+  [5] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=22
+       Section: Deterrence and Patient Education. Consideration of antireflux intervention in refractory cases is appropriate. Clinical pharmacist: For medication reconciliation (drug-ILD screening of all medications using pneumotox.com), monitoring of immunosuppressive drug adverse effects (cyclophosphamide bladder toxicity, mycophenolate gastrointestinal tract toxicity, azathioprine myelosuppression), dose adjustments for renal and hepatic impairment, and drug-drug interaction review. Specialist resp
+
+  [6] book=StatPearls: StatPearls   Type 1 Diabetes Mellitus, page=11
+       Section: Enhancing Healthcare Team Outcomes. ecialists and educators are critical factors in preventing complications. At every patient encounter, the pharmacist, nurse, and clinician should emphasize the importance of blood glucose control, screening for long-term complications, and diabetes management goals. The patient should be encouraged to modify their lifestyle to reduce the risk of complications. All individuals with diabetes should also be made aware of the signs and symptoms of hypogly
+
+  [7] book=StatPearls: StatPearls   Acute Spinal Cord Injury & Syndrome, page=14
+       Section: Deterrence and Patient Education. Deterrence and Patient Education Although anterior spinal artery syndrome is unpreventable and typically nonreversible, the most common underlying causes, such as aortic aneurysm or dissection and atherosclerotic disease, that lead to the development of anterior spinal artery syndrome are preventable. The patient's education should focus on primary disease prevention, especially on preventing major risk factors, such as hypertension, dyslipidemia, diabe
+
+  [8] book=Society Guideline, page=79
+       Section: 583. Azoulay E, Pochard F, Chevret S, et al: Impact of a family. 583. Azoulay E, Pochard F, Chevret S, et al: Impact of a family information leaflet on effectiveness of information provided to family members of intensive care unit patients: A multi- center, prospective, randomized, controlled trial. Am J Respir Crit Care Med 2002; 165:438–442 584. Bench S, Day T, Heelas K, et al: Evaluating the feasibility and effectiveness of a critical care discharge information pack for patients and 
+
+  [9] book=Society Guideline, page=49
+       Section: Rationale. Patients with sepsis or septic shock are at high risk of multi-organ failure, long-term functional sequelae, and death. Some patients may accept any and all treat- ments for their condition, but others may consider limitations depending on prognosis, invasiveness of interventions, and predicted quality of life (QoL). A discussion of goals of care and prognosis is essen- tial to determine which treatments are acceptable and those interventions that are not desired (536). There
+
+---
+=== [374] Dialysis: Peritoneal Dialysis ===
+  [0] book=Morgan & Mikhail, page=1107
+       Patients with GFR less than 10 mL/min are dependent upon RRT for survival in the form of hemodialysis, hemofiltration, or peritoneal dialysis
+
+  [1] book=Morgan & Mikhail, page=1077
+       Section: TABLE 30–5 Risk factors for intraabdominal hypertension and abdominal. comorbid problems, with similar adverse impact on kidney function via the same mechanisms (Table 30–5; see Chapters 31 and 39). TABLE 30–5 Risk factors for intraabdominal hypertension and abdominal compartment syndrome. Diminished abdominal well compliance Acute respiratory failure, especially mechanical ventilation with high mean airway pressure (ie, high positive end-expiratory pressure) Abdominal surgery with prim
+
+  [2] book=Morgan & Mikhail, page=1107
+       Section: The course of intrinsic acute kidney failure varies widely, but oliguria typically. The course of intrinsic acute kidney failure varies widely, but oliguria typically lasts for 2 weeks and is followed by a diuretic phase marked by a progressive increase in urinary output. This diuretic phase often results in very large urinary outputs and is usually absent in nonoliguric kidney failure. Kidney function improves over the course of several weeks but may not return to normal for up to 1 ye
+
+  [3] book=Morgan & Mikhail, page=1112
+       Hemodialysis is more effective than peritoneal dialysis and can be readily accomplished via a temporary internal jugular, subclavian, or femoral dialysis catheter
+
+  [4] book=Morgan & Mikhail, page=1112
+       Section: Secondary hyperparathyroidism in patients with chronic kidney failure can produce. insulin resistance (type 2 diabetes mellitus is one of the most common causes of CKD). Secondary hyperparathyroidism in patients with chronic kidney failure can produce metabolic bone disease, predisposing them to fractures. Abnormalities in lipid metabolism frequently lead to hypertriglyceridemia and contribute to accelerated atherosclerosis. Increased circulating levels of proteins and polypeptides norm
+
+  [5] book=StatPearls: StatPearls   Dialysis  Peritoneal Dialysis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK532979 URL: https://www.ncbi.nlm.nih.gov/books/NBK532979/ Topic: Dialysis: Peritoneal Dialysis Article Title: Peritoneal Dialysis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Bharat Sachdeva ; Hassam Zulfiqar ; Narothama R. Aeddula . Authors Bharat S
+
+  [6] book=Society Guideline: Guideline   KDIGO 2024 CKD, page=151
+       Section: Multidisciplinary young adult clinics including youth. enhanced monitoring of a group at high risk of adverse outcomes. Although young adults must have an opportunity to meet their care providers alone, many will continue to desire and need involvement of parents or signiﬁcant others in their care. This is a normal part of development, is associated with better outcomes, and should be encouraged.895 Multidisciplinary young adult clinics including youth workers, social workers, pharmacis
+
+  [7] book=MGH Housestaff Manual, page=103
+       Section: Dialysis & Transplant. Dialysis & Transplant Beth Gay O V E R V I E W (NEJM 2022;386(10):964) Diffusion: concentration gradient drives small molecules (e.g. urea, creatinine) across selectively permeable membrane Convection: hydrostatic pressure forces medium-weight molecules across membrane Ultrafiltration (UF): volume removal, removal of plasma water by hydrostatic pressure I M P O R T A N T C O N S I D E R A T I O N S Timing: controversial, most recent studies suggest no benefit to e
+
+  [8] book=Society Guideline: Guideline   KDIGO 2012 AKI, page=141
+       Section: Schortgen F, Soubrier N, Delclaux C, et al. Hemodynamic tolerance of. 732. Ronco C, Bellomo R, Brendolan A, et al. Brain density changes during renal replacement in critically ill patients with acute renal failure. Continuous hemoﬁltration versus intermittent hemodialysis. J Nephrol 1999; 12: 173–178. 733. Paganini EP, Sandy D, Moreno L, et al. The effect of sodium and ultraﬁltration modelling on plasma volume changes and haemodynamic stability in intensive care patients receiving haemo
+
+  [9] book=StatPearls: StatPearls   Dialysis  CRRT in the ICU, page=3
+       rate of less than 30 ml/min) or have an imminent need for maintenance dialysis at the time of initial assessment. This includes a discussion about the options for treatment, such as kidney transplantation, peritoneal dialysis, hemodialysis, or conservative treatment. [2] Patients with chronic kidney disease stage 5 (GFR 10 to 15 ml/min) require maintenance dialysis in order to regulate metabolic derangements such as hyperkalemia, metabolic acidosis, hypervolemia, and uremic symptoms. [2] [8] The
+
+---
+=== [375] Dilated Cardiomyopathy ===
+  [0] book=Morgan & Mikhail, page=1024
+       Degeneration of cardiac muscle in patients with muscular dystrophy is common but results in dilated or hypertrophic cardiomyopathy in only 10% of patients
+
+  [1] book=Morgan & Mikhail, page=1041
+       Degeneration of cardiac muscle in patients with muscular dystrophy is also common but results in dilated or hypertrophic cardiomyopathy in only 10% of patients
+
+  [2] book=Morgan & Mikhail, page=1041
+       Section: Respiratory muscle degeneration in patients with muscular dystrophy interferes with. (pseudohypertrophy) of muscles, particularly the calves. Progressive weakness and contractures eventually result in kyphoscoliosis. Many patients are confined to wheelchairs by age 12. Disease progression may be delayed by up to 2 to 3 years with glucocorticoid therapy in some patients. Intellectual impairment is common but generally nonprogressive. Plasma creatine kinase (CK) levels are 10 to 100 times
+
+  [3] book=Morgan & Mikhail, page=1024
+       Section: CHAPTER 29. CHAPTER 29 Anesthesia for Patients with Neuromuscular KEY CONCEPTS Weakness associated with myasthenia gravis is due to autoimmune destruction or inactivation of postsynaptic acetylcholine receptors at the neuromuscular junction, leading to reduced numbers of receptors and degradation of their function and to complement-mediated damage to the postsynaptic membrane. Patients who have myasthenia gravis with respiratory muscle or bulbar involvement are at increased risk for pul
+
+  [4] book=Morgan & Mikhail, page=672
+       Section: The overwhelming majority of patients with mitral valve prolapse are. dilated. Pathologically, most patients have redundancy or some myxomatous degeneration of the valve leaflets. Most cases of mitral valve prolapse are sporadic or familial, affecting otherwise normal persons. A high incidence of mitral valve prolapse is found in patients with connective tissue disorders (particularly Marfan syndrome). The overwhelming majority of patients with mitral valve prolapse are asymptomatic, bu
+
+  [5] book=Stanford CA-1, page=100
+       Section: Maternal Physiology of. Maternal Physiology of • Respiratory – Decreased FRC, Increase O2 consumption leads to poor oxygen reserve and rapid desaturation • Sharp decrease in ERV • FRC returns to baseline by 48h postpartum – Increased minute ventilation (50%) • Increased Tidal Volume and Increased RR – Decreased PaCO2 due to hyperventilation • Respiratory alkalosis compensation with LOWER bicarb – Elevated diaphragm but larger AP diameter of chest – NO CHANGE in vital capacity and closin
+
+  [6] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=145
+       Section: 107. Goserelin (Zoladex) [package insert]. Wilmington,. 107. Goserelin (Zoladex) [package insert]. Wilmington, DE: AstraZeneca Pharmaceuticals LP; 2015. 108. Leuprolide (Lupron) [package insert]. North Chi- cago, IL: AbbVie Inc; 2014. 109. Flutamide [package insert]. Schering Corp; 2001. 110. Bicalutamide [package insert]. Wilmington, DE: AstraZeneca Pharmaceuticals LP; 2015. 111. Nilutamide [package insert]. Baudette, MN: ANI Pharmaceuticals, Inc; 2015. 112. Tisagenlecleucel (Kymriah) 
+
+  [7] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=145
+       Section: 30. Davis MB, Jarvie J, Gambahaya E, et al. Risk pre-. MR, McFarlin BL, et al. Heart failure in pregnant women: a concern across the pregnancy continuum. Fail. 2018;11: e004005. 25. Kolte D, Khera S, Aronow WS, et al. Temporal trends in incidence and outcomes of peripartum car- diomyopathy in the United States: a nationwide population-based study. J Am Heart Assoc. 2014;3: e001056. 26. Afana M, Brinjikji W, Kao D, et al. Characteristics and in-hospital outcomes of peripartum cardiomyop-
+
+  [8] book=Society Guideline: Guideline   ACC AHA 2022 Heart Failure, page=18
+       Section: Synopsis. history and physical examination remain cornerstone in the assessment of patients with HF. The history and physical examination provide information about the cause of an underlying cardiomyopathy, including the possibility of an inherited cardiomyopathy as ascertained by a family history or a condition requiring disease-speciﬁc therapy like amyloid heart disease, as well as reasons why a previously stable patient developed acutely decompensated HF. A critical component of the 
+
+  [9] book=MGH Housestaff Manual, page=25
+       Section: Heart Failure. Heart Failure Christian Andersen I N I T I A L W O R K U P - N E W H E A R T F A I L U R E D I A G N O S I S Clinical syndrome with signs/symptoms consistent with impaired cardiac function ± cardiomyopathy Echocardiography: TTE for all new presentations; obtain thereafter only if concern for clinical/functional change HFrEF (EF ≤40%), HFmrEF (“mid-range” EF 41- 49%), HFpEF (EF ≥50%), HFrecEF (“recovered”) Ischemic workup: FHx, ECG, TnT, noninvasive or invasive cardiac tes
+
+---
+=== [376] Functional GI Disorders & IBS ===
+  [0] book=MGH Housestaff Manual, page=3
+       Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphylaxis Potassium Disorders Mast Cell Disorders Magnesium & Phosphorus Disorders Primary Immunodeficienc
+
+  [1] book=Morgan & Mikhail, page=1168
+       Section: LIVER TESTS. FIGURE 33–6 The biliary system. (Modified with permission from Guyton AC. Textbook of Medical Physiology. 7th ed. Philadelphia, PA: WB Saunders; 1986.) Bilirubin is primarily the end product of hemoglobin metabolism, and it is formed from the degradation of the heme ring in Kupffer cells. Bilirubin is then released into the blood, where it readily binds to albumin. Hepatic uptake of bilirubin from the circulation is passive, but binding to intracellular proteins traps the b
+
+  [2] book=Morgan & Mikhail, page=1730
+       Section: MPQ attempts to define the pain in three major dimensions: (1) sensory–discriminative. The MPQ is a checklist of words describing symptoms. Unlike other pain rating methods that assume pain is one-dimensional and describe intensity but not quality, the MPQ attempts to define the pain in three major dimensions: (1) sensory–discriminative (nociceptive pathways), (2) motivational–affective (reticular and limbic structures), and (3) cognitive–evaluative (cerebral cortex). It contains 20 set
+
+  [3] book=Morgan & Mikhail, page=787
+       Section: What are the minimum monitors and anesthetic equipment required?. immediately afterward to confirm the new rhythm. Preoperative laboratory values should be within normal limits because metabolic disorders, particularly electrolyte and acid–base abnormalities, may contribute to the arrhythmia. If not corrected preoperatively, they can reinitiate the tachycardia following cardioversion. An antiarrhythmic agent is often started in patients with atrial fibrillation 1 to 2 days prior to the 
+
+  [4] book=Morgan & Mikhail, page=1179
+       Section: A prolonged bleeding time with a normal platelet count implies a qualitative. one of two categories of destruction: immune or nonimmune. Nonimmune destruction includes vasculitis or DIC. A prolonged bleeding time with a normal platelet count implies a qualitative platelet defect. Although the bleeding time is somewhat dependent on the technique employed, values longer than 9 min are generally considered abnormal. Significant intraoperative and postoperative bleeding may be expected when
+
+  [5] book=Morgan & Mikhail, page=1364
+       Section: Pregnancy maximally dilates the uterine vasculature so that autoregulation is absent but. mL/min (compared with 50 mL/min in the nonpregnant uterus). Eighty percent of uterine blood flow normally supplies the placenta; the remainder goes to the myometrium. Pregnancy maximally dilates the uterine vasculature so that autoregulation is absent but the uterine vasculature remains sensitive to α-adrenergic agonists. Uterine blood flow is not usually significantly affected by respiratory gas t
+
+  [6] book=Morgan & Mikhail, page=1731
+       Section: ELECTROMYOGRAPHY & NERVE CONDUCTION. ELECTROMYOGRAPHY & NERVE CONDUCTION Electromyography and nerve conduction studies complement one another and are useful for confirming the diagnosis of entrapment syndromes, radicular syndromes, neural trauma, and polyneuropathies. They can often distinguish between neurogenic and myogenic disorders. Patterns of abnormalities can localize a lesion to the spinal cord, nerve root, limb plexus, or peripheral nerve. In addition, they may also be useful i
+
+  [7] book=Morgan & Mikhail, page=618
+       Section: The ACC/AHA Task Force Report guidelines state that the patient’s medical history. arrhythmias, stroke, and thromboembolism are the most common diagnoses in patients with preexisting cardiovascular disease. The relatively high prevalence of cardiovascular disorders in surgical patients has given rise to attempts to define cardiac risk or the likelihood of intraoperative or postoperative fatal or life-threatening cardiac complications. The ACC/AHA Task Force Report guidelines state that 
+
+  [8] book=Morgan & Mikhail, page=978
+       Section: The ability to rapidly provide controlled ventilation and general anesthesia for. amnesia. Sedation should be omitted, however, if the patient already has increased ICP. The ability to rapidly provide controlled ventilation and general anesthesia for emergency craniotomy is mandatory but is complicated by the platform and localizing frame that is attached to the patient’s head for the procedure. Although mask ventilation or ventilation through a laryngeal mask airway (LMA) or orotrachea
+
+  [9] book=Morgan & Mikhail, page=1013
+       Section: B. Chronic Transection. with an unstable cervical spine is discussed in Chapter 19. Patients with high transections often have impaired airway reflexes and are further predisposed to hypoxemia because of a decrease in functional residual capacity and atelectasis. Spinal shock can lead to hypotension and bradycardia prior to any anesthetic administration. Direct arterial pressure monitoring is helpful. An intravenous fluid bolus and the use of ketamine for anesthesia may help prevent fur
+
+---
+=== [377] Hepatopulmonary Syndrome & Portopulmonary Hypertension ===
+  [0] book=Morgan & Mikhail, page=1197
+       Section: Presence of liver disease, usually with portal hypertension and cirrhosis. Presence of liver disease, usually with portal hypertension and cirrhosis An alveolar to arterial oxygen gradient of >15 mm Hg Pulmonary arteriovenous connections demonstrated by: • A delayed contrast-enhanced (agitated saline) echocardiogram showing contrast in the left heart chambers 4–6 heartbeats after contrast appears in the right heart chambers • Brain uptake >6% following technetium-99m macroaggregated alb
+
+  [1] book=Morgan & Mikhail, page=1203
+       Section: Hypotensive anesthesia should be avoided because of its potentially deleterious. Doppler or TEE probe in a patient with esophageal variceal disease. Hypotensive anesthesia should be avoided because of its potentially deleterious effects on liver function. Administration of antifibrinolytics, such as ε-aminocaproic acid or tranexamic acid, may reduce operative blood loss, especially if fibrinolysis can be demonstrated by viscoelastic coagulation monitoring. Hypoglycemia, coagulopathy, an
+
+  [2] book=Morgan & Mikhail, page=1214
+       Section: Khemichian S, Francoz C, Durand F, Karvellas CJ, Nadim MK. Hepatorenal. Groose MK, Aldred BW, Mezrich JD, et al. Risk factors for intracardiac thrombus during liver transplantation. Liver Transplantation 2019;25:1682. Im GY, Lubezky N, Facciuto ME, et al. Surgery in patients with portal hypertension. A pre-operative checklist and strategies for attenuating risk. Clin Liver Dis. 2014;18:477. Khemichian S, Francoz C, Durand F, Karvellas CJ, Nadim MK. Hepatorenal syndrome. Crit Care Clin. 
+
+  [3] book=Morgan & Mikhail, page=1195
+       Section: C. Circulatory Manifestations. C. Circulatory Manifestations End-stage liver disease and, in particular, cirrhosis of the liver may be associated with disorders of all major organ systems (see Table 34–3 and Table 34–5). Cardiovascular changes observed in cirrhotic patients are usually those of a hyperdynamic circulation, though clinically significant cirrhotic cardiomyopathy is often present and not recognized (Table 34–6). There may be a reduced cardiac contractile response to stress,
+
+  [4] book=Morgan & Mikhail, page=2284
+       Section: Lightening, 855. Lightening, 855 Limb-girdle muscular dystrophy, 649 Limbic encephalitis, 645 Lindegaard ratio, 587, 616 Line isolation monitor, 18, 20, 20f Line pressure, 11 Lingual nerve block, 1111f Lipid-soluble barbiturates, 167 Lipid-soluble opioids, 184 Liquid oxygen storage system, 11, 12f Lissauer tract, 1076 Lithium, 635 Lithotomy position, 700–702, 701f abnormalities, 727 blood flow of, 720–721, 722f, 974 encephalopathy, 747 enzymes of, 172 function tests of, 160 metabolic fu
+
+  [5] book=Miller/Baby Miller, page=532
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS to urea, which is readily excreted by the kidney. Severe hepatic dysfunction, such as that which occurs in end- stage liver disease (ESLD), leads to accumulation of ammonia in the serum resulting in hepatic encephalopa- thy (HE). Pathophysiology of End-Stage Liver Disease Cardiovascular Complications Severe parenchymal disease that has advanced to the point of cirrhosis usually results in a hyperd
+
+  [6] book=StatPearls, page=10
+       he prognosis of transplant in patients older than 70 is not as good as in younger patients, older age is not a contraindication to LT in patients without or with controlled comorbidities. [59] Recently, it has been demonstrated that carefully selected older adult candidates can benefit from LT, thereby restoring their expected lifespan. [60] Although the prognosis of transplant in patients older than 70 is not as good as in younger patients, older age is not a contraindication to LT in patients 
+
+  [7] book=Morgan & Mikhail, page=1192
+       Portal hypertension Esophageal varices Gastrointestinal bleeding Hyperdynamic state (high cardiac output) Systemic arteriovenous shunts Low systemic vascular resistance Cirrhotic cardiomyopathy; pulmonary hypertension Increased intrapulmonary shunting; hepatopulmonary syndrome Decreased functional residual capacity Pleural effusions Restrictive ventilatory defect
+
+  [8] book=Morgan & Mikhail, page=1196
+       Section: Increased cardiac output. Increased cardiac output Increased heart rate Decreased systemic vascular resistance Increased circulating volume Coronary artery disease Cirrhotic cardiomyopathy (often unrecognized) Low systemic vascular resistance conceals poor left ventricular function Reduced responsiveness to β-agonists Echocardiographic examination of cardiac function may initially be interpreted as normal because of significant afterload reduction caused by low systemic vascular resista
+
+  [9] book=Morgan & Mikhail, page=1536
+       Section: CASE DISCUSSION. along with muscle relaxants. When anesthesia for bedside tracheostomy is performed, it is important that the endotracheal tube not be withdrawn from the trachea until end-tidal CO2 is measured from the newly placed tracheostomy tube. CASE DISCUSSION Acute Hypoxia After TIPS Procedure in the Radiology Suite A 58-year-old woman with decompensated cryptogenic cirrhosis and refractory ascites, currently on the liver transplant list, is scheduled for an urgent TIPS procedure
+
+---
+=== [378] Hereditary & Metabolic Liver Diseases ===
+  [0] book=Morgan & Mikhail, page=1191
+       Section: Cirrhosis. Liver cirrhosis refers to the damaging effects to the liver of inflammation, hepatocellular injury, and the resulting fibrosis and regeneration of hepatocytes. Cirrhosis is a progressive disease that eventually results in hepatic failure. The most common cause of cirrhosis in the United States was chronic alcohol abuse, but that has now been overtaken by nonalcoholic steatohepatitis (NASH, fatty liver) accompanying the massive increase in morbid obesity prevalence. Other caus
+
+  [1] book=StatPearls, page=4
+       Section: Specific Indications for LT. D to include serum sodium (eg, MELD-Na), as hyponatremia is a common and important marker of cirrhosis severity. A strong indication for LT evaluation arises when individuals with cirrhosis develop complications such as ascites, variceal bleeding, hepatic encephalopathy, or hepatocellular dysfunction, typically reflected by a MELD score 15 or greater. However, MELD has known limitations, as it does not account for complications like refractory ascites, recur
+
+  [2] book=StatPearls, page=2
+       ng patient-centered care, safety, and transplant outcomes. Objectives: Identify clinical scenarios and disease states that warrant evaluation for liver transplantation, including acute liver failure, acute-on-chronic liver failure, cirrhosis with high model for end-stage liver disease or hepatocellular carcinoma, and metabolic liver diseases. Assess liver transplant candidates for liver health using validated prognostic scoring systems such as the model for end-stage liver disease (MELD), MELD-s
+
+  [3] book=StatPearls, page=4
+       To address these gaps, MELD exception points are granted for conditions such as hepatocellular carcinoma, Budd-Chiari syndrome, familial amyloidotic polyneuropathy, cystic fibrosis, hereditary hemorrhagic telangiectasia, polycystic liver disease, primary hyperoxaluria, recurrent cholangitis, rare metabolic diseases, and
+
+  [4] book=StatPearls, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK559161 URL: https://www.ncbi.nlm.nih.gov/books/NBK559161/ Topic: Liver Transplantation: Indications & Perioperative Care Article Title: Liver Transplantation License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Liver Transplantation Vishnu Girish ; Omar Y. M
+
+  [5] book=StatPearls, page=8
+       Section: Glycogen storage diseases. ereditary renal amyloidosis inherited as an autosomal dominant gene usually benefit from liver and renal transplantation. LT doesn't seem to affect the ocular or cardiac effects of amyloidosis. [51] Primary hyperoxaluria type I This is an autosomal recessive defect that results in a deficiency of alanine: glyoxylate aminotransferase in the liver, impairing the metabolism of glyoxylate and leading to the overproduction of oxalate. [52] This disease usually lead
+
+  [6] book=StatPearls, page=2
+       Objectives: Identify clinical scenarios and disease states that warrant evaluation for liver transplantation, including acute liver failure, acute-on-chronic liver failure, cirrhosis with high model for end-stage liver disease or hepatocellular carcinoma, and metabolic liver diseases
+
+  [7] book=StatPearls: StatPearls   Acute Liver Failure (ALF), page=3
+       Section: Complementary and alternative medicines. antoin Immune checkpoint inhibitors Yellow phosphorus Complementary and alternative medicines Immune checkpoint inhibitors Viral causes Hepatotropic viruses Hepatitis A virus Hepatitis E virus Hepatitis B virus (with or without hepatitis D virus) Non-hepatotropic viruses Epstein-Barr virus Herpes simplex virus Cytomegalovirus Varicella zoster virus Dengue virus Adeno virus COVID-19 virus Hepatotropic viruses Hepatitis A virus Hepatitis E virus He
+
+  [8] book=StatPearls, page=5
+       Section: Metabolic dysfunction-associated steatohepatitis. re LT improves survival. [21] The timing of LT is critical, with study results suggesting optimal outcomes when performed within 7 to 15 days of ICU admission. Pretransplant infection with multidrug-resistant organisms, active sepsis, and profound leukopenia (<500/mm³) are absolute contraindications. Several risk models, such as the transplantation for acute-on-chronic liver failure (ACLF) grade 3 model and the Sundaram ACLF-LT-mortality
+
+  [9] book=Society Guideline: Guideline   ACC AHA 2023 Atrial Fibrillat, page=46
+       Section: However, the meta-analysis had more significant. e46 2023 Guideline for the Diagnosis and Management of Atrial Fibrillation inhibitors.7 It showed that mean hemostatic effec- tiveness for andexanet alfa was 82% at 12 hours and 71% at 24 hours versus 88% at 12 hours and 76% at 24 hours for PCC. Mean 30-day venous thromboembolism rate was 5.0% in the andex- anet alfa group versus 1.9% in the PCC group. However, the meta-analysis had more significant methodological issues than the ANNEXA 4
+
+---
+=== [379] Hereditary hemolytic anemias ===
+  [0] book=StatPearls: StatPearls   Thrombophilia  inherited and acquir, page=26
+       Section: Clinical Correlations. protein C resistance; factor V Leiden; and FII G20210A mutations. Testing for antiphospholipid syndrome is reserved for patients with unprovoked venous thromboembolism, unexplained arterial thrombosis, obstetric complications, and other clinical criteria of microvascular thrombosis. [119] Quantitative disorders of FVIII, FIX, FXI, and FXII, and mutations in fibrinogen genes ( FGG , FGA , FGB ), PAI-1 (4G/5G), and the protective gene of factor XIII (Val24Leu) are n
+
+  [1] book=Morgan & Mikhail, page=1970
+       Sickle cell anemia is a hereditary hemolytic anemia resulting from the formation of an abnormal hemoglobin (HbS)
+
+  [2] book=Morgan & Mikhail, page=1970
+       Section: DONOR-DIRECTED TRANSFUSIONS. moreover, cardiac output remains normal because intravascular volume is maintained. One or 2 units of blood are typically removed just prior to surgery from a large-bore intravenous catheter and replaced with crystalloid and colloids so that the patient remains normovolemic but has a hematocrit of 21% to 25%. The blood that is removed is stored in a CPD bag at room temperature (up to 6 h) to preserve platelet function; the blood is given back to the patient 
+
+  [3] book=Morgan & Mikhail, page=1975
+       Section: What is hemoglobin C disease?. Thalassemia is a hereditary defect in the production of one or more of the normal subunits of hemoglobin. Patients with thalassemia may be able to produce normal HbA but have reduced amounts of αor β-chain production; the severity of this defect depends on the subunit affected and the degree to which hemoglobin production is affected. Symptoms range from absent to severe. Patients with α-thalassemia produce reduced amounts of the α subunit, whereas patient
+
+  [4] book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA), page=3
+       exhibits features of both warm and cold antibody-mediated hemolysis. Paroxysmal cold hemoglobinuria is an acquired hemolytic anemia characterized by an IgG autoantibody that activates complement at cold temperatures, leading to intravascular hemolysis upon rewarming, accompanied by hemoglobinuria (see Table 1. Common Secondary Conditions Associated With Various Autoimmune Hemolytic Anemias). [1] Alloimmune hemolytic anemia: Alloimmune hemolytic anemia arises from the production of alloantibodies
+
+  [5] book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA), page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK606096 URL: https://www.ncbi.nlm.nih.gov/books/NBK606096/ Topic: Autoimmune hemolytic anemia (AIHA) Article Title: Autoimmune hemolytic anemia (AIHA) License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Laboratory Evaluation of Immune Hemolytic Anemias Alok 
+
+  [6] book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA), page=2
+       Section: Etiology and Epidemiology. sults and patient-specific factors. Collaborate with multidisciplinary healthcare providers, including hematologists and immunologists, to interpret complex laboratory findings in immune hemolytic anemias. Immune hemolytic anemias are disorders characterized by the immune system targeting and destroying red blood cells (RBCs). These conditions are classified based on factors such as the type of antibody involved, the temperature when hemolysis occurs, and whet
+
+  [7] book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA), page=8
+       Section: Lactate Dehydrogenase. tus and newborn, maternal sensitization in an RhD-negative individual occurs due to previous exposure to the Rh antigen, either through transfusion with Rh-positive RBCs or pregnancy with an Rh-positive offspring. Consequently, Rh hemolytic disease of the newborn generally does not occur in the first pregnancy in the absence of a transfusion history. Immunologically, antibody secretion begins with IgM, which cannot cross the placental barrier. This is later follow
+
+  [8] book=StatPearls: StatPearls   Hemolytic anemias  overview and app, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK606096 URL: https://www.ncbi.nlm.nih.gov/books/NBK606096/ Topic: Hemolytic anemias: overview and approach Article Title: Laboratory Evaluation of Immune Hemolytic Anemias License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  [9] book=StatPearls: StatPearls   Autoimmune hemolytic anemia (AIHA), page=12
+       Section: Underlying Medical Conditions. um, leading to false-positive results on serological tests. Therefore, it is important to consider the patient's transfusion history and perform compatibility testing when interpreting test results. [54] Underlying Medical Conditions Underlying medical conditions, such as infections, autoimmune diseases, or malignancies, can affect a patient's immune system and antibody production, thereby influencing serological test results for immune hemolytic anemia. E
+
+---
+=== [380] Hypermagnesemia: Causes and Management ===
+  [0] book=Morgan & Mikhail, page=2099
+       Section: Less common causes of delayed emergence include hypothermia, marked metabolic. benzodiazepine, respectively. Intravenous physostigmine (1–2 mg) may partially reverse the effect of other agents. A nerve stimulator can be used to exclude persisting neuromuscular blockade in poorly responsive patients on a mechanical ventilator who have inadequate spontaneous tidal volumes. Less common causes of delayed emergence include hypothermia, marked metabolic disturbances, and perioperative stroke.
+
+  [1] book=Morgan & Mikhail, page=1898
+       Section: Anesthetic Considerations. [Mg2+] should be obtained, a urinary catheter is required, and goal-directed hemodynamic and fluid management should be considered. Dialysis will be necessary for patients with significant kidney impairment or kidney failure. Ventilatory or circulatory support, or both, may be necessary. Anesthetic Considerations Hypermagnesemia requires close monitoring of the ECG, blood pressure, and neuromuscular function. Potentiation of the vasodilatory and negative inotr
+
+  [2] book=Morgan & Mikhail, page=1905
+       Section: Rossignole P, Legrand M, Kosiborod M, et al. Emergency management of severe. Rossignole P, Legrand M, Kosiborod M, et al. Emergency management of severe hyperkalemia: guideline for best practice and opportunities for the future. Pharmacol Res. 2016;113:585. Sarwar CMS, Papadimitriou L, Pitt B, et al. Hyperkalemia in heart failure. J Am Coll Cardiol. 2016;68:1575. Schaefer JA, Gales MA. Potassium-binding agents to facilitate renin–angiotensin– aldosterone system inhibitor therapy. Ann Ph
+
+  [3] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=4
+       Section: Evaluation of a patient suspected of having hypermagnesemia includes:. h diet alone in conditions of perfect renal health. However, the odds of hypermagnesemia can increase by taking mega-doses of magnesium. The pathophysiology of hypermagnesemia related to excess laxative use is different. In this case, the huge amount of magnesium given through the digestive tract can lead to overwhelming the excretory mechanism, especially in cases with underlying subclinical renal failure. Magnesium
+
+  [4] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK549811 URL: https://www.ncbi.nlm.nih.gov/books/NBK549811/ Topic: Hypermagnesemia: Causes and Management Article Title: Hypermagnesemia License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Marco Cascella ; Sarosh Vaqar . Authors Marco Cascella 1 ; Sarosh Vaqa
+
+  [5] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=2
+       Section: Decreased renal excretion. Magnesium is an essential element for the life of plants as it is part of chlorophyll. Moreover, it is abundant in animal tissues, where it is fundamental for enzymatic action, transporters, and the synthesis of nucleic acids. It influences other electrolytes such as sodium, calcium, and potassium. Together with calcium, extracellular magnesium is of paramount importance for neuromuscular functions as well as for electrical activity of the myocardium and vascu
+
+  [6] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=6
+       Section: Deterrence and Patient Education. es that are not excessively high (mild hypermagnesemia) and in the absence of triggering and aggravating conditions (e.g., renal insufficiency) are benign conditions. On the contrary, high values (severe hypermagnesemia) expose the patient to high risks and high mortality. Severe hypermagnesemia (levels greater than 12 mg/dL) can lead to cardiovascular complications (hypotension, and arrhythmias) and neurological disorder (confusion and lethargy). Highe
+
+  [7] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=5
+       Section: Clinical evaluation of renal function with urinary output. rate (GFR), blood urea nitrogen, creatinine, glucose, urine specific gravity Clinical evaluation of renal function with urinary output Potassium, phosphate, calcium levels (plasma and urinalysis) During the high dose magnesium therapy for eclampsia, it is necessary to measure serum magnesium levels periodically to prevent hypermagnesemia. Treatment / Management Patients with normal renal function (GFR over 60 ml/min) and mild as
+
+  [8] book=StatPearls: StatPearls   Hypermagnesemia  Causes and Managem, page=3
+       Section: Compartment shift or leak. tion is a recommendation in geriatric patients treated with magnesium oxide for extended periods. Nevertheless, magnesium oxide intake under 1000 mg/day seems to be relatively safe. [9] Severe hypermagnesemia has also been described after the administration of bowel preparation agents (e.g., sodium picosulphate magnesium citrate). [10] Moreover, excessive oral intake can lead to hypermagnesemia in patients on hemodialysis, as ingestion primarily influences pla
+
+  [9] book=StatPearls: StatPearls   ACLS  Non Shockable Rhythms (PEA & , page=18
+       Section: Clinical Significance. as an IV infusion of 20 to 50 mg/min up to a maximum of 16 mg/kg. The initial dose should be continued until the arrhythmia is suppressed. The medication should be discontinued if the patient shows signs of hypotension or further QRS widening or has been given the maximum dose. Once arrhythmia suppression is achieved, a maintenance IV infusion should be started at a rate of 1 to 4 mg/min. Procainamide should be avoided in patients with QTc prolongation or heart fa
+
+---
+=== [381] Hypopituitarism ===
+  [0] book=StatPearls: StatPearls   Hypopituitarism, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK470414 URL: https://www.ncbi.nlm.nih.gov/books/NBK470414/ Topic: Hypopituitarism Article Title: Hypopituitarism License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Verena Gounden ; Catherine Anastasopoulou ; Ishwarlal Jialal . Authors Verena Gounden 1 ; Cat
+
+  [1] book=StatPearls: StatPearls   Hypopituitarism, page=2
+       re for hypopituitarism patients. The pituitary gland plays a significant role in producing and secreting various hormones that regulate the body's endocrine functions. This gland is anatomically divided into 2 main lobes—the anterior and the posterior. The anterior lobe of the pituitary gland is responsible for synthesizing and releasing several essential hormones, including growth hormone (GH), thyroid-stimulating hormone (TSH), luteinizing hormone (LH), follicular-stimulating hormone (FSH), ad
+
+  [2] book=StatPearls: StatPearls   Hypopituitarism, page=4
+       Section: The symptoms associated with hormonal deficiencies are listed below. [20]. s hyposmia or anosmia, and hypogonadotropic hypogonadism, marked by decreased FSH, LH, testosterone, or estradiol levels. This syndrome results from a mutation in the Kal1 gene, which is the most frequently observed genetic abnormality in males affected by this condition. Hypopituitarism is categorized as a rare disorder by the National Institute of Health (NIH), with limited data available on the incidence and p
+
+  [3] book=StatPearls: StatPearls   Hypopituitarism, page=8
+       Section: Enhancing Healthcare Team Outcomes. lways carry a form of identification, such as a medical alert bracelet or necklace, that provides details about their medical condition to ensure an efficient and prompt medical response during emergencies. In addition, patients may also require access to a vial of hydrocortisone 100 mg and a syringe, both at home and while traveling, to help them manage their condition during emergencies. These precautions are essential to mitigate potential complica
+
+  [4] book=Miller/Baby Miller, page=553
+       Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease (confusion, seizures, coma), 3% hypertonic saline should be used cautiously. A risk of over-rapid correction of serum sodium levels is osmotic demyelination syndrome. Central Diabetes Insipidus Central DI is characterized by decreased ADH production resulting in polyuria, hypernatremia, hypokalemia, and dehydration. Perioperatively, it is important to moni- to
+
+  [5] book=StatPearls: StatPearls   Hypopituitarism, page=3
+       hocytic hypophysitis is a specific inflammatory condition often observed in the postpartum period. This condition responds well to steroid therapy and manifests as a mass lesion on magnetic resonance imaging (MRI) due to the infiltration of lymphocytes and plasma cells within the pituitary. The latest immunotherapy category involving immune checkpoint inhibitors, including cytotoxic T-lymphocytes antigen-4 (CTLA-4), programmed cell death 1 (PD-1), and programmed cell death ligand 1 (PDL-1), can 
+
+  [6] book=StatPearls: StatPearls   Hypopituitarism, page=7
+       Section: Differential Diagnosis. ating GH deficiency–related short stature in children, the role of GH replacement therapy for adults with GH deficiency has not been firmly established. In pediatric cases, synthetic GH treatments, such as somatotropin, are utilized, and the therapy is adjusted according to insulin-like growth factor 1 (IGF-1) levels. The objective of the treatment is to attain the individual's complete adult stature. Further evaluation is conducted after puberty to determine whe
+
+  [7] book=StatPearls: StatPearls   Hypopituitarism, page=6
+       Section: Treatment / Management. and TRH 200 µg. However, it is noteworthy that this test rarely applies in clinical practice due to its infrequent necessity. Radiological investigations: Imaging studies of the pituitary involve using MRI with gadolinium enhancement, which is the preferred method for visualizing the pituitary, primarily to detect the presence of a mass lesion. Visual field defects must be assessed if a pituitary mass is suspected to be the underlying cause of hypopituitarism. Tr
+
+  [8] book=MGH Housestaff Manual, page=159
+       Section: Immune Checkpoint Inhibitors. Immune Checkpoint Inhibitors Sahar Shahamatdar I M M U N E C H E C K P O I N T I N H I B I T O R S (ICI) Mechanism of Action: Block receptors that down-regulate T cell activation  CTLA-4, PD-1 (on T-cell) or its ligand PD-L1 (on cancer cell)  antitumor immune response (Nat Rev Clin Oncol 2016;13:473; NEJM 2018; 378:158; NEJM 2016;375:1767) Indications: >20 cancers. PD-1i FDA-approved for any microsatellite instability-high (MSI-H) or mismatch-repair defi
+
+  [9] book=MGH Housestaff Manual, page=185
+       Section: Adrenal Insufficiency. Adrenal Insufficiency Unyime Eyobio E T I O L O G Y (Lancet 2014;383:2152; NEJM 2009;360:2328) Primary AI (Addison’s disease): all adrenal hormones  ACTH. Lesion localizes to bilateral adrenal glands Causes: autoimmune (80-90% cases in developed countries; anti-21-hydroxylase Ab+ in 86%, autoimmune polyglandular syndromes) >> infection (TB, HIV, CMV, meningococcus, histo > all fungi except Candida; most common cause worldwide), bilateral adrenal hemorrhage (inf
+
+---
+=== [382] IBD Complications & Special Situations ===
+  [0] book=Miller/Baby Miller, page=554
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS postoperatively. Other common premedications include benzodiazepines (anxiolysis), antihistamines, and ondan- setron (antiserotonin). Intraoperative management aims to minimize anxiety, noxious stimuli, hypercapnia, and hypothermia, all of which may stimulate vasoactive substance release. Hypo- tension can be treated with fluid bolus, octreotide, phe- nylephrine, and/or vasopressin. Sympathomimeti
+
+  [1] book=Miller/Baby Miller, page=543
+       Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease GASTROINTESTINAL DISORDERS Inflammatory Bowel Disease Inflammatory bowel disease (IBD) is a group of inflam- matory disorders of the small intestine and colon. The two principal types are ulcerative colitis (UC) and Crohn disease (CD). UC primarily affects the colon and rec- tum and results in relapsing and remitting episodes of mucosal inflammation. CD may in
+
+  [2] book=MGH Housestaff Manual, page=77
+       Section: May Saito. May Saito A C U T E D I A R R H E A : ≥3 loose stools/d for <14d (ACG: AJG 2016;111:602; IDSA: CID 2017;65:e45; NEJM 2014;370:1532) Evaluation: small bowel (absorbs ~10L) = watery, large vol., +cramping/bloating; large bowel (absorbs 1L) = freq., small vol., painful, ± fever, blood, mucus. Most acute diarrhea is infectious/viral. Exposure hx: travel, abx, hospitalization, food, sick contact, daycare “High Risk”: immunocomp/HIV, IBD, age >70, CAD, pregnant “Severe”: fever > 10
+
+  [3] book=Miller/Baby Miller, page=544
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS heartburn (burning retrosternal sensation) and regurgita- tion (perception of flow of refluxed gastric contents into the hypopharynx or mouth). The prevalence of heartburn and/or regurgitation symptoms is between 10% and 30% worldwide.20 Other nonspecific manifestations of GERD include dysphagia, globus sensation, chest pain, laryn- gitis, hoarseness, cough, dental erosions, adult-onset asthma, an
+
+  [4] book=Morgan & Mikhail, page=1207
+       Section: In the neohepatic phase, two pathophysiological events may occur on opening the. require aggressive intervention with diuresis, transfusion of only washed packed red blood cells, or CVVHD. Citrate toxicity (hypocalcemia) may occur if blood is transfused; therefore, ionized calcium should be closely monitored, and calcium salts should be administered as necessary. A low CVP is helpful to minimize blood loss while systemic arterial pressure is maintained. The anhepatic phase begins with v
+
+  [5] book=StatPearls: StatPearls   Primary Sclerosing Cholangitis (PSC, page=2
+       ucts, leading to multifocal strictures and eventual biliary cirrhosis. [1] Classification includes 3 subtypes: classic or large-duct PSC involving both intrahepatic and extrahepatic ducts (approximately 90% of cases), small-duct PSC confined to the small intrahepatic ducts (approximately 5% of cases), and PSC with autoimmune hepatitis (AIH) overlap (approximately 5% of cases). A strong association exists with inflammatory bowel disease (IBD), particularly ulcerative colitis, which occurs in 60% 
+
+  [6] book=MGH Housestaff Manual, page=140
+       Section: Eashwar Somasundaram. Eashwar Somasundaram O V E R V I E W (Am J Hematol 2022; 97:129; Hematology 2015;2015:92) Eosinophilia: AEC >500. Hypereosinophilia: AEC >1500. Hypereosinophilic syndromes (HES): AEC >1500 + organ dysfunction Eosinophils are quickly eliminated by steroids  eosinophilia may be unmasked as pts taper off chronic glucocorticoids Primary = due to clonal expansion (HES/leukemia). Secondary (reactive) = due to infection, atopy, meds, rheum dz, etc Helminthic: strongyloid
+
+  [7] book=Stanford CA-1, page=47
+       Section: (mEq/L) K+ (mEq/L). (mEq/L) K+ (mEq/L) (g/L) NS LR 28 (lactate) 27 (acetate) • Preferred in brain injury/swelling • Preferred for diluting pRBCs • In large volumes produces hyperchloremic metabolic acidosis • Hyperchloremia ➔low GFR and risk AKI • More physiologic (“balanced • Lactate is converted to HCO3 - by liver • Watch K+ in renal patients • Ca2+ may interfere with citrate’s chelating properties of pRBCs (debated if this is clinically relevant) Initial intravascular volume resuscit
+
+  [8] book=StatPearls: StatPearls   Primary Sclerosing Cholangitis (PSC, page=7
+       Section: Deterrence and Patient Education. omitant PSC and IBD) Management of PSC typically involves consultation with specialists in gastroenterology and transplant hepatology. Deterrence and Patient Education PSC is a chronic liver condition with no definitive cure. Early detection and regular medical follow-up are crucial for reducing the risk of complications, eg, cholangiocarcinoma and liver failure. Ongoing surveillance with liver function tests, imaging (eg, MRCP), and cancer screening is
+
+  [9] book=MGH Housestaff Manual, page=71
+       Section: Lower GI Bleeding. Lower GI Bleeding May Saito A C U T E L O W E R GI B L E E D (NEJM 2017;376:1054; Gut 2019;68:776) Definition: distal to ligament of Treitz S/Sx: hematochezia (maroon or bright red blood, blood clots; Note: BRBPR can be seen in brisk UGIB); rarely melena (requires blood spend 14hr in GI tract); BUN/Cr typically <20 w/ normal renal fxn Risk stratification: Risk scores: ABC score predicts 30d mortality (Gut 2021; 70:707); Oakland score <8 may predict safe discharge (JAM
+
+---
+=== [383] IBD Extraintestinal Manifestations ===
+  [0] book=Miller/Baby Miller, page=543
+       Section: Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease. Chapter 29 Nutritional, Gastrointestinal, and Endocrine Disease GASTROINTESTINAL DISORDERS Inflammatory Bowel Disease Inflammatory bowel disease (IBD) is a group of inflam- matory disorders of the small intestine and colon. The two principal types are ulcerative colitis (UC) and Crohn disease (CD). UC primarily affects the colon and rec- tum and results in relapsing and remitting episodes of mucosal inflammation. CD may in
+
+  [1] book=Morgan & Mikhail, page=1745
+       Patients with Reiter syndrome, psoriatic arthritis, or inflammatory bowel disease may also present with low back pain, but extraspinal manifestations are usually more prominent
+
+  [2] book=Morgan & Mikhail, page=1745
+       Section: Patients with Reiter syndrome, psoriatic arthritis, or inflammatory bowel disease. morning stiffness. Anti–tumor necrosis factor-α agents, including infliximab (Remicade), etanercept (Enbrel), adalimumab (Humira), and golimumab (Simponi), decrease the progression of ankylosing spondylitis when administered early in the course of therapy. However, patients treated with these medications may be at increased risk for infection and development of lymphoma. Patients with Reiter syndrome, pso
+
+  [3] book=StatPearls: StatPearls   Ulcerative Colitis  Diagnosis & Cla, page=3
+       role in the pathophysiology of ulcerative colitis include tumor necrosis factor-alpha (TNF-alpha), interleukin 13, and natural killer T-cells. Levels of IgM, IgA, and IgG are elevated in inflammatory bowel disease; however, a disproportionate increase in IgG1 antibodies is found in patients diagnosed with ulcerative colitis. Leukocyte recruitment is affected on two fronts. There is an upregulated release of the chemoattractant CXCL8 in ulcerative colitis so that leukocytes are recruited to the m
+
+  [4] book=StatPearls, page=5
+       Section: Travel history for patients with a history consistent with colitis or gastroenteritis. for possible liver disease Travel history for patients with a history consistent with colitis or gastroenteritis Potential Causes of Pain Based on Location The location of abdominal pain can provide valuable clues for clinicians in identifying the underlying cause. Pain from different parts of the abdomen often corresponds to specific organs or conditions, allowing healthcare providers to narrow down 
+
+  [5] book=StatPearls, page=5
+       Evidence of extraintestinal manifestations can indicate the presence of inflammatory bowel disease
+
+  [6] book=StatPearls: StatPearls   Behcet disease, page=10
+       Section: Infliximab and adalimumab have been used successfully. [45]. by 50 mg every four weeks. The target dose is 2.5 mg/kg/day. Complete blood count (CBC) is monitored every two weeks initially till the maximum required dose is achieved and then every 6 to 12 weeks. Severe or refractory disease: Infliximab and adalimumab have been used successfully. [45] The initial dose of infliximab is 5 mg/kg at 0, 4, 8, 16, and 24 weeks or 0, 2, 6, and every eight weeks. Adalimumab is given at a loading d
+
+  [7] book=StatPearls: StatPearls   Behcet disease, page=5
+       Section: Other Systemic Manifestations. he terminal ileum, cecum, colon, and esophagus. Extensive ulcerations, especially ileocecal lesions, may lead to perforation. Inflammatory bowel disease can present with similar gastrointestinal features in addition to extragastrointestinal features, including uveitis, erythema nodosum, oral ulcers, inflammatory arthritis, and pyoderma gangrenosum; and needs to be ruled out before confirming a diagnosis of Behcet disease. Other Systemic Manifestations Card
+
+  [8] book=MGH Housestaff Manual, page=81
+       Section: Inflammatory Bowel Disease. Inflammatory Bowel Disease May Saito C L I N I C A L P R E S E N T A T I O N Epidemiology: ~1.3% USA prevalence, onset 15-30y, bimodal w/ 2nd peak 50-80y. Genetic predisposition (↑risk: +FamHx, other autoimmune dz; female (Crohn’s); ↑incidence in Jewish, white, however increasing dx rate in non-white) + environment (↑risk: Western diet, abx, NSAIDs, sleep deprivation, OCPs; smoking ↑risk for CD & ↓ risk for UC) Pathophysiology: Inappropriate immune response l
+
+  [9] book=MGH Housestaff Manual, page=77
+       Section: May Saito. May Saito A C U T E D I A R R H E A : ≥3 loose stools/d for <14d (ACG: AJG 2016;111:602; IDSA: CID 2017;65:e45; NEJM 2014;370:1532) Evaluation: small bowel (absorbs ~10L) = watery, large vol., +cramping/bloating; large bowel (absorbs 1L) = freq., small vol., painful, ± fever, blood, mucus. Most acute diarrhea is infectious/viral. Exposure hx: travel, abx, hospitalization, food, sick contact, daycare “High Risk”: immunocomp/HIV, IBD, age >70, CAD, pregnant “Severe”: fever > 10
+
+---
+=== [384] Idiopathic Pulmonary Fibrosis ===
+  [0] book=Morgan & Mikhail, page=875
+       Section: B. Intraoperative Management. failure may also require treatment. Large pleural effusions usually require drainage before anesthesia. Similarly, massive abdominal distention should be relieved by nasogastric suction or drainage of ascites. Persistent hypoxemia may require mechanical ventilation. B. Intraoperative Management Selection of anesthetic agents should be tailored to each patient. Surgical patients with acute pulmonary disorders, such as ARDS, cardiogenic pulmonary edema, or pn
+
+  [1] book=Morgan & Mikhail, page=925
+       Cystic fibrosis Chronic obstructive pulmonary disease α1-Antitrypsin deficiency Pulmonary lymphangiomatosis Idiopathic pulmonary fibrosis Primary pulmonary hypertension ANESTHETIC CONSIDERATIONS
+
+  [2] book=Morgan & Mikhail, page=925
+       Section: Cystic fibrosis. retention is also very common. Patients may be ventilator dependent or may be supported by extracorporeal membrane oxygenation (ECMO). TABLE 25–3 Indications for isolated lung transplantation. Cystic fibrosis Chronic obstructive pulmonary disease α1-Antitrypsin deficiency Pulmonary lymphangiomatosis Idiopathic pulmonary fibrosis Primary pulmonary hypertension ANESTHETIC CONSIDERATIONS 1. Preoperative Management Effective coordination between the organ-retrieval team and
+
+  [3] book=Morgan & Mikhail, page=1486
+       Section: CYSTIC FIBROSIS. are common. Neck flexion during laryngoscopy and intubation may result in atlantooccipital dislocation because of the congenital laxity of these ligaments. The possibility of associated congenital diseases must always be considered. As in all pediatric patients, care must be taken to avoid air bubbles in the intravenous line because of possible right-to-left shunts and paradoxical air emboli. CYSTIC FIBROSIS Cystic fibrosis is a genetic disease of the exocrine glands pr
+
+  [4] book=Morgan & Mikhail, page=875
+       Causes include hypersensitivity pneumonitis from occupational and environmental pollutants, drug toxicity (bleomycin and nitrofurantoin), radiation pneumonitis, idiopathic pulmonary fibrosis, autoimmune diseases, and sarcoidosis
+
+  [5] book=StatPearls: StatPearls   Idiopathic Pulmonary Fibrosis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK448162 URL: https://www.ncbi.nlm.nih.gov/books/NBK448162/ Topic: Idiopathic Pulmonary Fibrosis Article Title: Idiopathic Pulmonary Fibrosis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Idiopathic Pulmonary Fibrosis Abdulghani Sankari ; Kyle Chapman ;
+
+  [6] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=2
+       multiple choice questions on this topic. Differentiate among major interstitial lung disease subtypes, including idiopathic pulmonary fibrosis, connective tissue disease-associated interstitial lung disease, hypersensitivity pneumonitis, and sarcoidosis, based on clinical, radiological, and histopathological findings. Identify high-resolution computed tomography and histopathological patterns, including usual interstitial pneumonia, nonspecific interstitial pneumonia, and organizing pneumonia, a
+
+  [7] book=StatPearls: StatPearls   Idiopathic Pulmonary Fibrosis, page=13
+       moking cessation, allergen avoidance, and medication adherence is crucial to reduce morbidity associated with IPF. Engaging in physical therapy can aid in preserving lung function and enhancing quality of life. Early referral for a lung transplant and completion of the necessary work-up are essential components of management. A strategic approach involving evidence-based strategies to optimize treatment plans and minimize adverse effects is equally crucial in managing IPF. Ethical considerations
+
+  [8] book=StatPearls: StatPearls   Idiopathic Pulmonary Fibrosis, page=2
+       symptoms of idiopathic pulmonary fibrosis in patients presenting with gradual onset of dyspnea and nonproductive cough. Implement evidence-based diagnostic algorithms to facilitate timely diagnosis and management of idiopathic pulmonary fibrosis. Apply appropriate treatment modalities based on individual patient needs and disease stage, including antifibrotic medications and supportive measures. Collaborate with multidisciplinary healthcare teams to provide comprehensive care, optimize long-term
+
+  [9] book=MGH Housestaff Manual, page=53
+       Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interstitial Lung Disease Christina Shincovich O V E R V I E W Heterogeneous group of lung diseases involving the replacement of normal lung parenchyma with varying degrees of inflammation and fibrosis (scarring), can involve any part of the lung parenchyma Presentation: progressive dyspnea, non-prod. cough, hypoxemia (esp. w/exercise); some w/ constitutional sx (AIP, HSP, COP) History: tempo, hx CTD/IBD/malig/thoracic XRT, rheum dz, 
+
+---
+=== [385] Immune checkpoint inhibitor toxicities (immune-related adverse events) ===
+  [0] book=StatPearls, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK611983 URL: https://www.ncbi.nlm.nih.gov/books/NBK611983/ Topic: Immune checkpoint inhibitor toxicities (immune-related adverse events) Article Title: Immune Checkpoint Inhibitor–Associated Acute Kidney Injury License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  [1] book=StatPearls: StatPearls   Acute Kidney Injury (AKI) in ICU, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK611983 URL: https://www.ncbi.nlm.nih.gov/books/NBK611983/ Topic: Acute Kidney Injury (AKI) in ICU Article Title: Immune Checkpoint Inhibitor–Associated Acute Kidney Injury License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Immune Checkpoint Inhibitor–Assoc
+
+  [2] book=Morgan & Mikhail, page=1028
+       In addition, acute seronegative myasthenia gravis has been associated with infusion of immune checkpoint inhibitor cancer chemotherapeutic agents, including nivolumab, pembrolizumab, and ipilimumab
+
+  [3] book=Morgan & Mikhail, page=1152
+       Section: How can the shivering be stopped?. How can the shivering be stopped? Regardless of its cause, shivering has the undesirable effects of markedly increasing metabolic oxygen demand (100–200%) and CO2 production. Both cardiac output and minute ventilation must therefore increase, and these effects are often poorly tolerated by patients with limited cardiac or pulmonary reserve. Although the ultimate therapeutic goal is to correct the underlying problem, additional measures are indicated in
+
+  [4] book=StatPearls: StatPearls   Diabetic Ketoacidosis (DKA), page=3
+       Section: Substance abuse-induced diabetic ketoacidosis. ding use of immune checkpoint inhibitors (ICIs) in oncology has improved cancer outcomes but introduced new immune-related adverse events. Endocrinopathies represent the most frequent of these, with a subset presenting as immune checkpoint inhibitor diabetes mellitus (ICI-DM). Patients with ICI-DM typically have no prior history of diabetes and often present with DKA. Substance abuse-induced diabetic ketoacidosis Substance use also increase
+
+  [5] book=Morgan & Mikhail, page=1028
+       Section: Weakness from myasthenia gravis is due to autoimmune destruction or. Weakness from myasthenia gravis is due to autoimmune destruction or inactivation of postsynaptic acetylcholine receptors at the neuromuscular junction, leading to reduced numbers of receptors and degradation of their function and to complement-mediated damage to the postsynaptic end-plate. IgG antibodies against the nicotinic acetylcholine receptor in neuromuscular junctions are found in 85% to 90% of patients with gen
+
+  [6] book=StatPearls: StatPearls   Diabetic Ketoacidosis (DKA), page=3
+       ding use of immune checkpoint inhibitors (ICIs) in oncology has improved cancer outcomes but introduced new immune-related adverse events
+
+  [7] book=StatPearls: StatPearls   Drug induced lupus, page=3
+       [9] Immune checkpoint inhibitors, such as programmed cell death protein-1 and programmed cell death ligand-1 inhibitors, can cause immune-related adverse events, including subacute cutaneous lupus erythematosus and SLE
+
+  [8] book=StatPearls: StatPearls   Drug induced lupus, page=3
+       in, methyldopa, chlorpromazine, penicillamine, carbamazepine, ethosuximide, propylthiouracil, sulfasalazine, and interferon-α. However, many of these drugs are now used less frequently than in the past. [6] More recently, biologic therapies have expanded the spectrum of medications implicated in the development of DIL. All tumor necrosis factor-α inhibitors (etanercept, infliximab, adalimumab, golimumab, and certolizumab) have been linked to lupus-like presentations, typically manifesting as mil
+
+  [9] book=StatPearls: StatPearls   Acute Kidney Injury (AKI) in ICU, page=3
+       with anti-CTLA-4 and 70% of patients treated with anti-PD-1 or PD-L1. Although these adverse events vary in severity, the most common include skin itching or rash. The second most frequent irAEs involve gastrointestinal disturbance, usually presenting as diarrhea or colitis. The third most common irAEs affect the endocrine system, including thyroid dysfunction (both hypothyroidism and hyperthyroidism), pituitary inflammation, and adrenal insufficiency. Other common manifestations include musculo
+
+---
+=== [386] Interstitial Lung Disease: Connective Tissue Disease ===
+  [0] book=Morgan & Mikhail, page=603
+       Section: Sympathetic activation increases the release of norepinephrine from nerve endings in. Sympathetic activation increases the release of norepinephrine from nerve endings in the heart and secretion of epinephrine from the adrenal glands into the circulation. Although enhanced sympathetic outflow can initially maintain cardiac output by increasing heart rate and contractility, worsening ventricular function elicits increasing degrees of vasoconstriction in an effort to maintain arterial blo
+
+  [1] book=StatPearls, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK572061 URL: https://www.ncbi.nlm.nih.gov/books/NBK572061/ Topic: Interstitial Lung Disease: Connective Tissue Disease Article Title: Undifferentiated Connective Tissue Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Undifferentiated Connective T
+
+  [2] book=StatPearls, page=7
+       be similar to those with systemic lupus erythematosus and rheumatoid arthritis. [11] [30] [9] [31] [32] [14] [33] It is mentioned in a recent study which was published in 2019 that clinical practice guidelines or recommendations were not defined yet, and potential areas of intervention and a precise definition of undifferentiated connective tissue disease are still absent. This uncertainty regarding the name of the disease makes patients feel uncertain about the education and understanding of th
+
+  [3] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK541084 URL: https://www.ncbi.nlm.nih.gov/books/NBK541084/ Topic: Non-IPF Interstitial Lung Diseases Article Title: Interstitial Lung Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Interstitial Lung Disease Venkatkiran Kanchustambham ; Abdulghan
+
+  [4] book=MGH Housestaff Manual, page=53
+       Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interstitial Lung Disease Christina Shincovich O V E R V I E W Heterogeneous group of lung diseases involving the replacement of normal lung parenchyma with varying degrees of inflammation and fibrosis (scarring), can involve any part of the lung parenchyma Presentation: progressive dyspnea, non-prod. cough, hypoxemia (esp. w/exercise); some w/ constitutional sx (AIP, HSP, COP) History: tempo, hx CTD/IBD/malig/thoracic XRT, rheum dz, 
+
+  [5] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=26
+       cess free multiple choice questions on this topic. Click here for a simplified version. Comment on this article. Uveitis Associated With Interstitial Lung Disease. Erythema surrounding the iris (left) and a collection of purulent material known as a hypopyon (right) can be signs of uveitis. Contributed by StatPearls Lupus Pérnio. Violaceous plaques on the nose and cheeks can be a manifestation of sarcoidosis. Contributed by StatPearls Usual Interstitial Pneumonia. This computed tomography scan d
+
+  [6] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=2
+       multiple choice questions on this topic. Differentiate among major interstitial lung disease subtypes, including idiopathic pulmonary fibrosis, connective tissue disease-associated interstitial lung disease, hypersensitivity pneumonitis, and sarcoidosis, based on clinical, radiological, and histopathological findings. Identify high-resolution computed tomography and histopathological patterns, including usual interstitial pneumonia, nonspecific interstitial pneumonia, and organizing pneumonia, a
+
+  [7] book=MGH Housestaff Manual, page=3
+       Section: MGH Housestaff Manual. MGH Housestaff Manual Table of Contents Adrenal Insufficiency Acute Kidney Injury Pituitary Disorders Glomerular Disease Calcium Disorders Chronic Kidney Disease Osteoporosis & Vitamin D Dialysis & Transplant Thyroid Disorders & Male Hypogonadism Advanced Diuresis ALLERGY & IMMUNOLOGY Acid-Base Disorders Drug & Contrast Allergy Sodium Disorders Angioedema & Anaphylaxis Potassium Disorders Mast Cell Disorders Magnesium & Phosphorus Disorders Primary Immunodeficienc
+
+  [8] book=MGH Housestaff Manual, page=172
+       Section: Approach to Rheumatologic Disease. Approach to Rheumatologic Disease Michael Hendrickson O V ER V I E W: rheumatologic diseases may be roughly separated into 4 categories **Nuances of treatment not encapsulated by this figure – see following pages R H EU M A T OL O G I C ROS Fevers, arthritis, rashes/photosensitivity, alopecia, nail/nailfold Δ, sicca symptoms, conjunctivitis, uveitis, episcleritis/scleritis, Raynaud's, acrocyanosis, oral/genital ulcers, polychondritis, enthesitis, seros
+
+  [9] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=3
+       ditions such as sarcoidosis, cryptogenic organizing pneumonia, and idiopathic interstitial pneumonia, which includes desquamative interstitial pneumonia (or newly named alveolar macrophage pneumonia [AMP]), idiopathic pulmonary fibrosis (IPF), nonspecific interstitial pneumonitis, acute interstitial pneumonia, and idiopathic interstitial pneumonia with autoimmune features. [4] Please see StatPearls' companion references, " Desquamative Interstitial Pneumonia ," " Idiopathic Interstitial Pneumoni
+
+---
+=== [387] Kidney Stones (Nephrolithiasis) ===
+  [0] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=7
+       Section: Plain Abdominal X-ray. Plain Abdominal X-ray A kidney, ureter, and bladder (KUB) x-ray is readily available and is often used initially to evaluate abdominal pain to rule out peritonitis. Uric acid stones are radiolucent, while calcium-based stones are radioopaque. Ultrasonography is readily available, free from harmful ionizing radiation, and can be performed easily at the bedside. Ultrasonography aids in the diagnosis of kidney stones when they reach a specific size (>0.4 cm) and in i
+
+  [1] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK560726 URL: https://www.ncbi.nlm.nih.gov/books/NBK560726/ Topic: Kidney Stones (Nephrolithiasis) Article Title: Uric Acid Nephrolithiasis License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Uric Acid Nephrolithiasis Manish KC ; Stephen W. Leslie . Authors M
+
+  [2] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=2
+       care and follow-up with primary care providers to ensure patients with uric acid nephrolithiasis receive ongoing preventive measures and management in a multidisciplinary healthcare approach. Uric acid nephrolithiasis, a form of kidney stone disease, results from the accumulation of uric acid crystals in the kidneys. These crystals can aggregate into stones, leading to painful and potentially recurrent urinary tract obstructions. This condition often correlates with elevated uric acid levels in 
+
+  [3] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=10
+       Section: Differential Diagnosis. is used when medical treatment fails or when associated with severe urinary tract infection. [79] [80] A urinary tract infection with a blocked kidney from a stone is a surgical emergency and should be addressed urgently. It may require emergent drainage by a double J stent placed cystoscopically or a percutaneous nephrostomy. See the companion StatPearls reference article on "Complicated Urinary Tract Infections." [81] Extracorporeal shock wave lithotripsy: for 
+
+  [4] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=11
+       Section: Deterrence and Patient Education. by adopting good dietary habits, avoiding dehydration, treating elevated serum and urinary uric acid levels, and correctly using alkalinizing agents. Uric acid stones can be associated with complications such as urinary tract obstruction, leading to renal failure and sepsis. Treatment-related complications with extracorporeal shock wave lithotripsy include the need for retreatment, urinary tract infections, hematoma, and sepsis. Complications of uretero
+
+  [5] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=4
+       e, the morning is when uric acid crystals are most likely to form. [10] Gout and hyperuricemia are associated with uric acid uropathy in 15% to 25% of patients. [22] [23] [24] [25] Under normal physiological conditions, uric acid is secreted 70% by the kidneys and 30% by the intestine, but this proportion can change with renal insufficiency. [7] Of note, in addition to uric acid nephrolithiasis, uric acid itself is nephrotoxic. It can cause acute kidney injury by stimulating renal vasoconstricti
+
+  [6] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=8
+       Section: Medical Management [14]. acid stone formation, so this must be considered. [66] Recommendations to reduce obesity, appropriate management of hypertension, and high blood sugar are also helpful in reducing the burden of uric acid kidney stones. Medical Management [14] Urinary alkalinization helps dissolve and prevent uric acid stones. The goal is a urinary pH that is consistently above 6.5. Ultrasound and CT scans can be used to monitor the response to treatment. Potassium citrate is usu
+
+  [7] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=5
+       Section: Decreased Urine Output. ers laboring in hot environmental conditions. In contrast, it was only 0.9% among people working the same job at standard room temperature. [38] [34] Factors related to the formation of uric acid stones include a persistently low urine pH, hypovolemia, and hyperuricosuria (defined as 24-hour urinary excretion of uric acid more than 750 mg/d in females and 800 mg/day in males). [37] [39] Notably, these values derive from statistical analyses of numerous 24-hour ur
+
+  [8] book=StatPearls: StatPearls   Kidney Stones (Nephrolithiasis), page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK560726 URL: https://www.ncbi.nlm.nih.gov/books/NBK560726/ Topic: Kidney Stones (Nephrolithiasis) Article Title: Uric Acid Nephrolithiasis License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  [9] book=MGH Housestaff Manual, page=111
+       Section: Urinalysis & Nephrolithiasis. Urinalysis & Nephrolithiasis Giovana Jaen U R I N A L Y S I S URINE DIPSTICK – urine should be analyzed within 2-4h Can help approximate urine osm: decimal of SG x 30 (e.g. SG 1.020  20 x 30  ~ 600mosms) SG <1.010: post-ATN (concentrating defect), diuretics, DI, polydipsia, hypovolemic hypoNa after resuscitation SG 1.010 – 1.025: normal; SG >1.025: prerenal, contrast (esp >1.030), EABV, glycosuria (DM), proteinuria, SIADH pH Normal 4.5 - 8, but strongly 
+
+---
+=== [388] Liver Transplantation: Indications & Perioperative Care ===
+  [0] book=Morgan & Mikhail, page=1203
+       Section: Hypotensive anesthesia should be avoided because of its potentially deleterious. Doppler or TEE probe in a patient with esophageal variceal disease. Hypotensive anesthesia should be avoided because of its potentially deleterious effects on liver function. Administration of antifibrinolytics, such as ε-aminocaproic acid or tranexamic acid, may reduce operative blood loss, especially if fibrinolysis can be demonstrated by viscoelastic coagulation monitoring. Hypoglycemia, coagulopathy, an
+
+  [1] book=Morgan & Mikhail, page=1536
+       Section: CASE DISCUSSION. along with muscle relaxants. When anesthesia for bedside tracheostomy is performed, it is important that the endotracheal tube not be withdrawn from the trachea until end-tidal CO2 is measured from the newly placed tracheostomy tube. CASE DISCUSSION Acute Hypoxia After TIPS Procedure in the Radiology Suite A 58-year-old woman with decompensated cryptogenic cirrhosis and refractory ascites, currently on the liver transplant list, is scheduled for an urgent TIPS procedure
+
+  [2] book=Miller/Baby Miller, page=688
+       Section: Section IV SPECIAL ANESTHETIC CONSIDERATIONS. Section IV SPECIAL ANESTHETIC CONSIDERATIONS Patients with liver failure have no alternatives to liver transplantation. Currently the median time to transplant for waiting list candidates is 11 months. For the highest- acuity recipients, those with Model for End-stage Liver Disease (MELD) scores of 35 or more (a group accounting for a fifth of transplants), median wait time is 7 days.17 The MELD score is used to allocate grafts to the highes
+
+  [3] book=StatPearls, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK559161 URL: https://www.ncbi.nlm.nih.gov/books/NBK559161/ Topic: Liver Transplantation: Indications & Perioperative Care Article Title: Liver Transplantation License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Liver Transplantation Vishnu Girish ; Omar Y. M
+
+  [4] book=Morgan & Mikhail, page=1203
+       This team should have a thorough understanding of the indications for and contraindications to liver transplantation (Tables 34–9 and 34–10), as well as the perioperative implications of associated comorbidities such as coronary artery disease, cirrhotic cardiomyopathy
+
+  [5] book=Morgan & Mikhail, page=1213
+       Section: What problems are encountered postoperatively?. phase. Fibrinolysis can be detected by point-of-care viscoelastic coagulation analysis. ε-Aminocaproic acid or tranexamic acid, which inhibit the formation of plasmin, may be indicated in those instances but should not be used prophylactically. What problems are encountered postoperatively? Patients often have an uncomplicated postoperative course and, after sufficient observation in the intensive care unit, may be transferred directly to 
+
+  [6] book=Morgan & Mikhail, page=1199
+       Section: E. Renal Manifestations and Fluid Balance. lead to circulatory collapse. E. Renal Manifestations and Fluid Balance Derangements of fluid and electrolyte balance may manifest as ascites, edema, electrolyte disturbances, and hepatorenal syndrome (see below). Important mechanisms responsible for ascites include (1) portal hypertension, which increases hydrostatic pressure and favors transudation of fluid across the intestine into the peritoneal cavity; (2) hypoalbuminemia, which decreases 
+
+  [7] book=Morgan & Mikhail, page=1202
+       Section: Most patients are sodium-restricted preoperatively, but preservation of. Most patients are sodium-restricted preoperatively, but preservation of intravascular volume and urinary output takes intraoperative priority. The use of predominantly colloid intravenous fluids (albumin) may be preferable to avoid sodium overload and to increase plasma oncotic pressure. Intravenous fluid replacement should take into account the excessive bleeding and fluid shifts that often occur in these patients
+
+  [8] book=Morgan & Mikhail, page=1208
+       Section: • CVVHD. include the following: • ICP less than 20 mm Hg • CPP greater than 50 mm Hg • Mean arterial pressure greater than 60 mm Hg • Proper bed position (elevate the head of the bed by 20–25°) • Controlled airway and ventilation • Controlled sedation (eg, propofol) • Vasopressor support (eg, vasopressin, norepinephrine) when necessary • Controlled hypothermia (32–33°C) • Glycemic control • Aggressive treatment of metabolic acidosis and coagulopathy • CVVHD Pediatric Liver Transplantati
+
+  [9] book=StatPearls, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK559161 URL: https://www.ncbi.nlm.nih.gov/books/NBK559161/ Topic: Liver Transplantation: Indications & Perioperative Care Article Title: Liver Transplantation License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+---
+=== [389] Lung Cancer: Screening and Diagnosis ===
+  [0] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=128
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 117 Several studies involving the use of low-dose chest computed tomography (LDCT) screening have shown improved survival.(395,396,1329) The United States Preventive Services Task Force (USPSTF) updated its recommendation for lung cancer screening in 2021.(1330) Their recommendation was based on a systematic review that examined the accuracy of screening for lung cancer considering the benefits and har
+
+  [1] book=StatPearls: StatPearls   Lung Cancer  Screening and Diagnosi, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK537283 URL: https://www.ncbi.nlm.nih.gov/books/NBK537283/ Topic: Lung Cancer: Screening and Diagnosis Article Title: Lung Cancer Screening License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Lung Cancer Screening Laila Babar ; Pranav Modi ; Fatima Anjum . A
+
+  [2] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=40
+       Section: COPD and other chronic conditions later in life merits future investigation.(41). Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 29 questionnaire was also found to be an effective way to identify undiagnosed COPD patients.(378) The potential use of spirometry in children, adolescents and young adults to identify individuals with poor lung development at risk of COPD and other chronic conditions later in life merits future investigation.(41
+
+  [3] book=StatPearls: StatPearls   Lung Cancer  Screening and Diagnosi, page=2
+       Section: Screening Recommendations. considerations for lung cancer screening and outline the role of the interprofessional team in considering the limited screen tools available for patients at higher risk. Worldwide lung cancer has the highest rate of mortality and is the leading cause of cancer deaths. The incidence of lung cancer is approximately equal to its mortality. There are approximately 1.8 million new cases of lung cancer every year globally and over 1.6 million deaths secondary to th
+
+  [4] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=41
+       Section: Leveraging incidental lung imaging abnormalities for COPD screening. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 30 Quantitative analysis of density can also be used to detect COPD with varying sensitivity and specificity depending on the threshold chosen. In the National Lung Cancer Screening Trial (NLST), among individuals > 65 years, a threshold of 1% quantitative emphysema was associated with a sensitivity of around 65% for women an
+
+  [5] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=166
+       Section: Screening Instruments in 3 Lowand Middle-Income Country Settings. JAMA 2022; 327(2): 151-6. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 155 382. Zhou J, Li X, Wang X, Yu N, Wang W. Accuracy of portable spirometers in the diagnosis of chronic obstructive pulmonary disease A meta-analysis. NPJ Prim Care Respir Med 2022; 32(1): 15 https://pubmed.ncbi.nlm.nih.gov/35440665. 383. Siddharthan T, Pollard SL, Quaderi SA, et al. Discriminative Ac
+
+  [6] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=165
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 154 358. Schermer TR, Robberts B, Crockett AJ, et al. Should the diagnosis of COPD be based on a single spirometry test? NPJ Prim Care Respir Med 2016; 26: 16059 https://pubmed.ncbi.nlm.nih.gov/27684728. 359. Albert P, Agusti A, Edwards L, et al. Bronchodilator responsiveness as a phenotypic characteristic of established chronic obstructive pulmonary disease. Thorax 2012; 67(8): 701-8 https://pubmed.nc
+
+  [7] book=StatPearls: StatPearls   Lung Cancer  Screening and Diagnosi, page=3
+       this study showed a mortality benefit in a subset of the general population. It showed a decrease in lung cancer deaths in heavy smokers or people with a history of heavy smoking. The low dose CT scan (LDCT), when used for screening, led to approximately 3 fewer deaths per 1000. [10] Overall, the use of LDCT when compared to chest x-ray reduced lung cancer-related deaths by 20%. [11] The United States Preventative Services Task Force (USPSTF) based their recommendations on the findings from the 
+
+  [8] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=167
+       Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 156 405. Kishi K, Gurney JW, Schroeder DR, Scanlon PD, Swensen SJ, Jett JR. The correlation of emphysema or airway obstruction with the risk of lung cancer: a matched case-controlled study. Eur Respir J 2002; 19(6): 1093-8 https://pubmed.ncbi.nlm.nih.gov/12108862. 406. Wilson DO, Weissfeld JL, Balkan A, et al. Association of radiographic emphysema and airflow obstruction with lung cancer. Am J Respir C
+
+  [9] book=Society Guideline: Guideline   GOLD 2024 COPD Full Report, page=125
+       Section: CHAPTER 5: COPD AND COMORBIDITIES. Be sure to read and understand the paragraph entitled Important Purpose & Liability Disclaimer 114 CHAPTER 5: COPD AND COMORBIDITIES KEY POINTS: COPD often coexists with other diseases (comorbidities) that may have a significant impact on disease course. In general, the presence of comorbidities should not alter COPD treatment and comorbidities should be treated per usual standards regardless of the presence of COPD. Cardiovascular diseases are common 
+
+---
+=== [390] Lymphoma: Hodgkin and non-Hodgkin approach ===
+  [0] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK589677 URL: https://www.ncbi.nlm.nih.gov/books/NBK589677/ Topic: Lymphoma: Hodgkin and non-Hodgkin approach Article Title: Relapsed and Refractory Follicular Lymphoma License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Relapsed and Refractory Follicular Lym
+
+  [1] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=7
+       Section: Differential Diagnosis. ] . Lenalidomide with rituximab or obinutuzumab are other alternatives. AUGMENT trial evaluated the addition of lenalidomide to rituximab, resulting in improved PFS (39 months versus 14 months); OS data was immature. Patients on lenalidomide plus rituximab had higher rates of infections, cutaneous reactions, and cytopenia. [39] After 2 prior systemic therapies, the phosphoinositide 3'-kinase (PI3K) inhibitor copanlisib is approved by the FDA for use in relapsed o
+
+  [2] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       As the most prevalent indolent lymphoma and the second most common non-Hodgkin lymphoma (NHL), it has a relapsing and remitting course with the potential to progress to aggressive disease
+
+  [3] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=1
+       Continuing Education Activity Follicular lymphoma is the second most common subtype of non-Hodgkin lymphoma (NHL) and the most common among clinically indolent NHLs
+
+  [4] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=7
+       CHRONOS-3 trial randomly assigned 458 patients with relapsed clinically indolent non-Hodgkin lymphoma (275 with follicular lymphoma) in a 2:1 ratio to receive copanlisib plus rituximab versus placebo plus rituximab
+
+  [5] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=8
+       Section: Deterrence and Patient Education. tion, a small group of follicular lymphoma patients undergo histologic transformation to more aggressive lymphomas. Patients with histologic transformation generally have a worse prognosis and require more aggressive therapy. As mentioned above, about 20% of patients with follicular lymphoma have an aggressive course of disease with shorter remissions, frequent relapses, and reduced overall survival. Deterrence and Patient Education Patients should be e
+
+  [6] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=2
+       rituximab are reported to have a poor prognosis. [1] [2] While anti-CD20-based chemoimmunotherapy remains an essential standard of treatment, more biologically active agents are increasingly used. This review explores diagnostic and therapeutic strategies for relapsed/refractory follicular lymphoma. Follicular lymphoma is believed to originate from germinal center B-cells, including both centrocytes and centroblasts. [3] Although the pathophysiology of follicular lymphoma is not well understood,
+
+  [7] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=3
+       oblasts are noncleaved follicular center cells with round or oval nuclei, vesicular chromatin, often multiple peripheral nucleoli, and a narrow rim of basophilic cytoplasm. Centrocytes typically predominate in follicular lymphoma, and centroblasts are usually in the minority. WHO classifies follicular lymphoma into grades 1,2 and 3a/3b based on the cell counting method of centroblasts. [19] Malignant follicles include T-cells and densely structured networks of follicular dendritic cells, similar
+
+  [8] book=StatPearls: StatPearls   Lymphoma  Hodgkin and non Hodgkin a, page=5
+       dministration (FDA). [30] [31] Axi-cel – Among the 86 patients with follicular lymphoma treated with axi-cel in ZUMA-5, the overall response rate (ORR) was 94% (79% complete remission [CR], 15% partial remission [PR]) with a median time to first response of 1 month. Response rates were similar in patients with and without high-risk features, including early treatment failure. The estimated progression-free survival (PFS) at 18 months was 73% (95% CI 64-80 percent), and the estimated OS at 18 mon
+
+  [9] book=StatPearls: StatPearls   Guillain Barré Syndrome (GBS), page=7
+       Section: Absent diminished reflexes but no muscle weakness. [37]. symptoms without muscle weakness. Numbness and paresthesias peak within 4 weeks, with sensory loss of pain, temperature, and proprioception. Absent diminished reflexes but no muscle weakness. [37] Acute small fiber neuropathy Burning dysethesias and numbness with loss of pain and temperature sensation. Proprioception, vibration, and muscle strength are intact. Normal or brisk deep tendon reflexes. [38] Acute autonomic neuropathy/a
+
+---
+=== [391] MEN Syndromes (Multiple Endocrine Neoplasia) ===
+  [0] book=Morgan & Mikhail, page=1244
+       Section: Multiple endocrine neoplasia (MEN) is characterized by tumors in several. What could be the cause of this patient’s hypertensive crisis during induction of general anesthesia? Multiple endocrine neoplasia (MEN) is characterized by tumors in several endocrine organs. MEN type 1 consists of pancreatic (gastrinomas, insulinomas), pituitary, and parathyroid tumors. MEN type 2 consists of medullary thyroid carcinoma, pheochromocytoma, and hyperparathyroidism (type 2a) or multiple mucosal neu
+
+  [1] book=Morgan & Mikhail, page=1244
+       Because MEN syndromes are hereditary, family members should be screened for early signs of pheochromocytoma, thyroid cancer, and hyperparathyroidism
+
+  [2] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK599550 URL: https://www.ncbi.nlm.nih.gov/books/NBK599550/ Topic: MEN Syndromes (Multiple Endocrine Neoplasia) Article Title: Chronic Prostatitis and Chronic Pelvic Pain Syndrome in Men License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Chronic Prostatitis 
+
+  [3] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       Continuing Education Activity Chronic prostatitis is a prevalent yet frequently underdiagnosed and mismanaged condition that significantly impacts men's health, with an estimated 2 million outpatient consultations in the United States annually
+
+  [4] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       This syndrome is the third most commonly diagnosed urological disease in men and becomes even more predominant among those younger than 50, constituting the most common urological pathology in this demographic
+
+  [5] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       Chronic prostatitis poses a considerable challenge in clinical practice, classified into acute bacterial prostatitis and various chronic types, including inflammatory, infectious, histological, or idiopathic syndromes
+
+  [6] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=1
+       This comprehensive activity delves into the epidemiology, pathophysiology, and etiology of chronic prostatitis and chronic pelvic pain syndrome in men
+
+  [7] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=4
+       ical factors. Chronic pain is the common factor across these conditions. [17] [18] An inflammatory response provides a logical basis for the subclassification of chronic prostatitis/chronic pelvic pain syndrome (NIH Category III) based on the assumption that symptoms associated with infection or inflammation represent a different etiology. On this basis, CP/CPPS is subdivided into inflammatory and non-inflammatory categories based on the presence or absence of significant leukocytes in the urine
+
+  [8] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=2
+       resenting clinical phenotype of chronic bacterial prostatitis and chronic prostatitis/chronic pelvic pain syndrome and be able to implement an initial management approach based on this. Implement collaborative strategies with the broader healthcare team to optimally manage patients with chronic prostatitis. Symptomatic inflammatory conditions of the prostate are quite common, accounting for about 2 million outpatient visits annually in the United States. [1] These visits are evenly split between
+
+  [9] book=StatPearls: StatPearls   MEN Syndromes (Multiple Endocrine N, page=6
+       Section: Chronic Prostatitis/Chronic Pelvic Pain Syndrome (NIH Category III). ass, EPS) studies will likely demonstrate positive cultures in the expressed prostatic secretions, VB3, or semen. [39] (See the 4-glass test described below under "Evaluation.") Chronic bacterial prostatitis (NIH Category II) is frequently found with 10 or more WBCs/HPF on urinalysis, but this is a very non-specific finding and not considered definitive. Among all the men with symptoms of chronic prostatitis, only abou
+
+---
+=== [392] Malignant Pleural Effusion ===
+  [0] book=Morgan & Mikhail, page=1923
+       Section: Pleural effusion. Pleural effusion Airway obstruction Upper airway Foreign body Sleep disorders Lower airway Severe asthma Chronic obstructive pulmonary disease Parenchymal lung disease Pulmonary edema Pulmonary emboli Interstitial lung disease Ventilator malfunction Increased CO2 production Large caloric loads Malignant hyperthermia Intensive shivering Prolonged seizure activity Thyroid storm Extensive thermal injury (burns) Acute Respiratory Acidosis The compensatory response to acute
+
+  [1] book=Morgan & Mikhail, page=904
+       Section: Clinical Manifestations. arise from almost any source, but commonly they are from cancers of the kidney, breast, ovary, testis, colon, rectum, head and neck, and uterus. Metastases may be present in lung tissue, lymph nodes, or both. Clinical Manifestations Symptoms may include cough, hemoptysis, wheezing, weight loss, productive sputum, dyspnea, or fever. Pleuritic chest pain or pleural effusion suggests pleural extension. Involvement of mediastinal structures is suggested by hoarsenes
+
+  [2] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=2
+       o educate, treat, and monitor patients with malignant pleural effusion to improve outcomes. Access free multiple choice questions on this topic. Differentiate malignant pleural effusion from other causes of pleural effusion using cytological examination and molecular testing. Screen for poor prognostic factors, such as loculations, to better stratify patients for appropriate interventions in those with malignant pleural effusion. Apply evidence-based guidelines for therapeutic thoracentesis, ple
+
+  [3] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK574541 URL: https://www.ncbi.nlm.nih.gov/books/NBK574541/ Topic: Malignant Pleural Effusion Article Title: Malignant Pleural Effusion License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Malignant Pleural Effusion Sanjeev Sharma ; Rahul D Arora ; Joshua Bost
+
+  [4] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=9
+       Section: Summary of physical findings. oquy is the increased voice resonance while passing through the lung structures. A whispered sound is heard clearly after placing a stethoscope over the patient's chest. Both whispered pectoriloquy and egophony may be appreciated at the upper border of the pleural effusion. Summary of physical findings Findings of dullness to percussion and decreased vocal fremitus have been used clinically to diagnose pleural effusion. Percussive dullness makes the diagnos
+
+  [5] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=11
+       Section: Positron emission tomography/dynamic imaging. g has a high specificity and poor sensitivity. Other potential limitations include the inability to distinguish between malignant pleural mesothelioma and pleural metastasis. Nodular pleural thickening, mediastinal pleural thickening, circumferential thickening encasing the lung, and thickening of parietal pleura over 1 cm may also be useful markers in identifying malignant pleural involvement. [102] A CT scan scoring system proposed by Poce
+
+  [6] book=MGH Housestaff Manual, page=34
+       Section: Pericardial Disease. Pericardial Disease Sarah Ferreira C A R D I A C T A M P O N A D E Definition: hemodynamic insufficiency caused by impaired cardiac filling due to pericardial pressure due to effusion, leading to intracardiac chamber pressures & eventually equalization of diastolic pressure in all 4 heart chambers Etiologies of pericardial effusion: idiopathic (20%), iatrogenic (16%), malignant (13%), uremic, infectious, HF, autoimmune (Am J Med 2000;109:95). Tamponade more likely
+
+  [7] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=12
+       Section: Diagnostic thoracentesis. racoscopic biopsies, enhance diagnostic accuracy. Despite challenges like low yield and difficulty distinguishing cell types, advancements in histopathological methods and immunohistochemistry significantly improve the detection and characterization of MPE, guiding effective treatment strategies. Diagnostic thoracentesis The standard panel of tests that must be performed on a pleural fluid sample includes pleural fluid protein, glucose, pH, lactate dehydrogenas
+
+  [8] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=22
+       Section: Septated pleural effusion. s a definitive diagnostic modality, the measurement of pleural fluid elastance using pleural manometry also represents a promising approach. Pleural fluid elastance is measured by the decrease in pleural fluid pressures in cm H2O after 500 mL of fluid is removed by thoracentesis. In a trapped lung with MPE, the pleural pressure is low and tends to drop significantly as fluid is removed. Pleural fluid elastance of more than 14.5 cm H2O per liter has been shown 
+
+  [9] book=StatPearls: StatPearls   Malignant Pleural Effusion, page=18
+       g the procedure to avoid interference with the fibrotic pleural response to the sclerosant. [173] Greater than 150 mL/day aspirate, radiograph demonstrating residual fluid, suspicion of pleural infection, and a lack of informed consent are contraindications to the procedure. Lung inflation should be confirmed by auscultation and chest radiograph. Specific risks of bleeding, pain, and procedure failure rates (approaching 20%) should be explained to the patient. The risk of acute respiratory distr
+
+---
+=== [393] Microscopic Colitis ===
+  [0] book=StatPearls: StatPearls   Microscopic Colitis, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK534213 URL: https://www.ncbi.nlm.nih.gov/books/NBK534213/ Topic: Microscopic Colitis Article Title: Gross and Microscopic Hematuria License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Gross and Microscopic Hematuria Stephen W. Leslie ; Karim Hamawy ; Muhamm
+
+  [1] book=StatPearls: StatPearls   Microscopic Colitis, page=2
+       Section: Hematuria Evaluation and Referral. the most commonly diagnosed urological disorders, accounting for over 20% of all urological evaluations. [1] [2] While hematuria can be classified in multiple ways—eg, intermittent or constant, glomerular or nonglomerular, and symptomatic or asymptomatic—the most clinically useful distinction separates cases into gross (visible) and microscopic (invisible) hematuria. Microhematuria is defined as the detection of 3 or more urinary red blood cells (RBCs)
+
+  [2] book=MGH Housestaff Manual, page=81
+       Section: Inflammatory Bowel Disease. Inflammatory Bowel Disease May Saito C L I N I C A L P R E S E N T A T I O N Epidemiology: ~1.3% USA prevalence, onset 15-30y, bimodal w/ 2nd peak 50-80y. Genetic predisposition (↑risk: +FamHx, other autoimmune dz; female (Crohn’s); ↑incidence in Jewish, white, however increasing dx rate in non-white) + environment (↑risk: Western diet, abx, NSAIDs, sleep deprivation, OCPs; smoking ↑risk for CD & ↓ risk for UC) Pathophysiology: Inappropriate immune response l
+
+  [3] book=StatPearls: StatPearls   Microscopic Colitis, page=1
+       Source: StatPearls NCBI Bookshelf NBK ID: NBK534213 URL: https://www.ncbi.nlm.nih.gov/books/NBK534213/ Topic: Microscopic Colitis Article Title: Gross and Microscopic Hematuria License: CC BY-NC-ND 4.0 NCBI Bookshelf
+
+  [4] book=MGH Housestaff Manual, page=124
+       diff abx-associated diarrhea, infectious diarrhea, post-infectious IBS, IBD, microscopic colitis, Celiac disease Severity: see table below; severe colitis may be c/b hypovolemia, AKI, marked leukocytosis, lactic acidosis, protein-losing enteropathy; fulminant colitis characterized by hypotension/shock, ileus, toxic
+
+  [5] book=MGH Housestaff Manual, page=124
+       Section: Infectious Disease. Infectious Disease C. Difficile Infection Matthew Adan O V ER V I E W (IDSA 2021 update: CID 2021;73:1029; CID 2018;66:987) Definition: C. difficile infection (CDI): acute-onset sx (usually ≥3 episodes/d of watery diarrhea) + e/o toxin-producing C. difficile or histopathology c/w pseudomembranous colitis RFs: abx w/in 3mo (particularly associated with penicillins, 2nd/3rd/4th gen ceph, FQ, carbapenems, clinda), age (≥65yo), recent hosp or LOS, severe comorbid illne
+
+  [6] book=StatPearls: StatPearls   Microscopic Colitis, page=25
+       Section: Deterrence and Patient Education. ssible urinary tract neoplasms. Deterrence and Patient Education Hematuria is a common problem that may portend possible pathology, eg, urinary calculi or urinary tract malignancies. Most of the time, the evaluation is negative, which should be considered reassuring. The recommended criteria of 3 RBC/HPF or more on microscopic urinalysis must be followed after every unexplained positive dipstick hematuria result to avoid unnecessary testing and patient 
+
+  [7] book=MGH Housestaff Manual, page=77
+       Section: May Saito. May Saito A C U T E D I A R R H E A : ≥3 loose stools/d for <14d (ACG: AJG 2016;111:602; IDSA: CID 2017;65:e45; NEJM 2014;370:1532) Evaluation: small bowel (absorbs ~10L) = watery, large vol., +cramping/bloating; large bowel (absorbs 1L) = freq., small vol., painful, ± fever, blood, mucus. Most acute diarrhea is infectious/viral. Exposure hx: travel, abx, hospitalization, food, sick contact, daycare “High Risk”: immunocomp/HIV, IBD, age >70, CAD, pregnant “Severe”: fever > 10
+
+  [8] book=StatPearls: StatPearls   Microscopic Colitis, page=7
+       Section: Microscopic Hematuria. cal disease, regardless of the presence or absence of accompanying symptoms. A detailed patient history may reveal the underlying cause, such as recent urological surgery or instrumentation, a urinary tract infection, or passage of a kidney stone. When no clear explanation exists, gross hematuria typically warrants additional evaluation, including imaging studies, cytology, and cystoscopy, to rule out urological malignancy—particularly in individuals older than 35
+
+  [9] book=StatPearls: StatPearls   Microscopic Colitis, page=13
+       Section: Cytology and Urinary Biomarkers. f the result remains negative, the patient can return to routine surveillance. Follow-up urine cytology evaluations may be considered in individuals with risk factors for carcinoma in situ. [5] Patients who experience a significant increase in microscopic hematuria, develop unexplained gross hematuria, or develop new urologic symptoms should be considered for further evaluation after shared decision-making. Patients with persistent or recurrent microscop
+
+---
+=== [394] Nephrotic Syndrome ===
+  [0] book=Morgan & Mikhail, page=1865
+       Section: Congestive heart failure. Congestive heart failure Nephrotic syndrome Hyponatremia & Low Total Body Sodium Progressive losses of both sodium and water eventually lead to extracellular volume depletion. As the intravascular volume deficit approaches 5% to 10%, nonosmotic ADH secretion is activated (see earlier discussion). With further volume depletion, the stimuli for nonosmotic ADH release overcome any hyponatremia-induced suppression of ADH, and preservation of circulatory volume take
+
+  [1] book=Morgan & Mikhail, page=1235
+       Section: MINERALOCORTICOID EXCESS. MINERALOCORTICOID EXCESS Clinical Manifestations Hypersecretion of aldosterone by the adrenal cortex (primary aldosteronism) can be due to a unilateral adenoma (aldosteronoma or Conn syndrome), bilateral hyperplasia, or in very rare cases, carcinoma of the adrenal gland. Some disease states stimulate aldosterone secretion by affecting the renin–angiotensin system. For example, congestive heart failure, hepatic cirrhosis with ascites, nephrotic syndrome, and som
+
+  [2] book=Morgan & Mikhail, page=1080
+       Edematous States (Sodium Overload) These disorders include heart failure, cirrhosis, nephrotic syndrome, and kidney disease
+
+  [3] book=Morgan & Mikhail, page=1101
+       flow (eg, congestive heart failure, cirrhosis, nephrotic syndrome) as well as in obstructive uropathies
+
+  [4] book=Morgan & Mikhail, page=1101
+       Section: URINALYSIS. flow (eg, congestive heart failure, cirrhosis, nephrotic syndrome) as well as in obstructive uropathies. Increases in protein catabolism can also increase this ratio. Urinalysis continues to be routinely performed for evaluating kidney function. Although its utility and cost-effectiveness for this purpose are questionable, urinalysis can be helpful in identifying some disorders of renal tubular dysfunction as well as some nonrenal disturbances. A routine urinalysis typically
+
+  [5] book=Morgan & Mikhail, page=1170
+       Section: Serum Aminotransferases (Transaminases). Serum Aminotransferases (Transaminases) These enzymes are released into the circulation as a result of hepatocellular injury or death. Two aminotransferases are most commonly measured: aspartate aminotransferase (AST), also known as serum glutamic-oxaloacetic transaminase (SGOT), and alanine aminotransferase (ALT), also known as serum glutamic pyruvic-transferase (SGPT). Serum Alkaline Phosphatase Alkaline phosphatase is produced by the liver, bo
+
+  [6] book=Morgan & Mikhail, page=1080
+       Section: LOOP DIURETICS. kidney function. LOOP DIURETICS The loop diuretics include furosemide (Lasix), bumetanide (Bumex), ethacrynic acid (Edecrin), and torsemide (Demadex). All loop diuretics inhibit Na+ and Cl- reabsorption in the thick ascending limb. Sodium reabsorption at that site requires that all four sites on the Na+–K+–2Clluminal carrier protein be occupied. Loop diuretics compete with Clfor its binding site on the carrier protein (see Figure 30–4). With a maximal effect, they can pr
+
+  [7] book=Morgan & Mikhail, page=1155
+       Section: CHAPTER 33. CHAPTER 33 Hepatic Physiology & Anesthesia Michael Ramsay, MD, FRCA KEY CONCEPTS The hepatic artery, coming directly off the celiac trunk, supplies approximately 30% of the blood supply and 50% to 70% of the liver’s oxygen requirements, and the portal vein supplies 70% of the blood supply and the remaining 50% or less of oxygen requirements. All coagulation factors, with the exception of factor VIII and von Willebrand factor, are produced by the liver. Vitamin K is a necessa
+
+  [8] book=Morgan & Mikhail, page=2295
+       Section: Negative-pressure pulmonary edema, 1326, 1337–1338. Negative-pressure pulmonary edema, 1326, 1337–1338 Negligence, 303 Neobladder, 710 Neohepatic phase, 751, 753 Neonatal resuscitation chest compressions, guidelines, 897 depressed neonate, 895–896 epinephrine in, 898 general care of, 892–893, 895 meconium-stained neonates, 895 naloxone in, 898 vascular access, 898 ventilation, guidelines, 896–897 volume resuscitation, 898 central nervous system depression in, 868 chest compressions, 897
+
+  [9] book=MGH Housestaff Manual, page=110
+       Max 3 days) Hepatorenal syndrome: see Hepatorenal Syndrome Other: ECMO chatter, mechanical circulatory support, burns, nephrotic syndrome, acute hemorrhagic shock, intra-dialysis NOT helpful in decompensated cirrhosis unless for the above indications (NEJM 2021;384:808) E L E
+
+---
+=== [395] Non-IPF Interstitial Lung Diseases ===
+  [0] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=1
+       Section: Source: StatPearls. Source: StatPearls NCBI Bookshelf NBK ID: NBK541084 URL: https://www.ncbi.nlm.nih.gov/books/NBK541084/ Topic: Non-IPF Interstitial Lung Diseases Article Title: Interstitial Lung Disease License: CC BY-NC-ND 4.0 NCBI Bookshelf. A service of the National Library of Medicine, National Institutes of Health. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. StatPearls [Internet]. Interstitial Lung Disease Venkatkiran Kanchustambham ; Abdulghan
+
+  [1] book=MGH Housestaff Manual, page=53
+       Section: Pulmonary & Critical Care. Pulmonary & Critical Care Interstitial Lung Disease Christina Shincovich O V E R V I E W Heterogeneous group of lung diseases involving the replacement of normal lung parenchyma with varying degrees of inflammation and fibrosis (scarring), can involve any part of the lung parenchyma Presentation: progressive dyspnea, non-prod. cough, hypoxemia (esp. w/exercise); some w/ constitutional sx (AIP, HSP, COP) History: tempo, hx CTD/IBD/malig/thoracic XRT, rheum dz, 
+
+  [2] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=25
+       Section: Enhancing Healthcare Team Outcomes. nction matters: fibrotic hypersensitivity pneumonitis may respond to antigen avoidance and immunosuppression, whereas IPF is treated with antifibrotic therapy. Tocilizumab is not a standard treatment for SSc-ILD. Despite being listed in some secondary sources, tocilizumab did not meet the primary endpoint (skin score) in the focuSSced phase 3 trial, and the FVC attenuation data were a secondary endpoint that did not reach statistical significance. Toc
+
+  [3] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=16
+       rotic options in IPF. [76] SENSCIS trial (nintedanib, SSc-ILD): Results from this phase 3 randomized controlled trial of 576 patients with SSc-ILD (Safety and Efficacy of Nintednib in Systemic Sclerosis [SENCIS] showed nintedanib reduced annual FVC decline by 44% versus placebo (-52.4 versus -93.3 mL/year; P < .04). This trial established nintedanib as the first pharmacological therapy with demonstrated benefit in SSc-ILD, leading to the United States Food and Drug Administration approval in 201
+
+  [4] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=4
+       [16] For non-IPF ILD subtypes, an even wider range of estimated incidence and prevalence exists across regions
+
+  [5] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=4
+       Sarcoidosis is the most common non-IPF ILD, particularly among those younger than 45 years of age
+
+  [6] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=16
+       This landmark trial established nintedanib as the first antifibrotic approved for PPF across multiple non-IPF fibrotic ILD subtypes, representing a major paradigm shift in the treatment of progressive fibrosis
+
+  [7] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=25
+       When a patient with non-IPF ILD meets PPF criteria, nintedanib should be considered regardless of the underlying etiology
+
+  [8] book=StatPearls: StatPearls   Non IPF Interstitial Lung Diseases, page=4
+       y complications, either through the generation of reactive metabolites or as part of a broader physiological response. [10] [11] Furthermore, genetic predisposition plays a role in a subset of ILD cases. Familial pulmonary fibrosis, defined as IPF in 2 or more first-degree relatives, accounts for up to 20% of IPF cases, with mutations in telomere-related genes ( TERT , TERC ) and surfactant protein genes ( SFTPC , SFTPA2 ) being most commonly implicated. [12] ILD incidence rates in the United St
+
+  [9] book=Morgan & Mikhail, page=875
+       Section: B. Intraoperative Management. failure may also require treatment. Large pleural effusions usually require drainage before anesthesia. Similarly, massive abdominal distention should be relieved by nasogastric suction or drainage of ascites. Persistent hypoxemia may require mechanical ventilation. B. Intraoperative Management Selection of anesthetic agents should be tailored to each patient. Surgical patients with acute pulmonary disorders, such as ARDS, cardiogenic pulmonary edema, or pn
+
+---

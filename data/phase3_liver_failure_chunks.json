@@ -1,0 +1,113 @@
+[
+  {
+    "topic": "Acute Liver Failure (ALF) Definition & Etiology",
+    "subtopic": "alf_definition",
+    "content": "Acute liver failure = severe hepatic dysfunction (INR ≥1.5 from any cause) + hepatic encephalopathy + illness <26 weeks duration + no pre-existing cirrhosis. Fulminant hepatic failure = encephalopathy grade III-IV. Leading etiologies: (1) Acetaminophen overdose (~50% in US); (2) Viral hepatitis (A, B, E); (3) Autoimmune hepatitis; (4) Drug-induced (INH, NSAIDs, chemotherapy); (5) Toxins (Amanita mushrooms, Wilson's disease); (6) Hyperthermia, shock, massive PE. Hyperacute (<7 days): acetaminophen toxicity (coma common, DIC, renal failure, cerebral edema). Acute (7-21 days): viral, drug-induced (encephalopathy less common early). Subacute (21-26 weeks): autoimmune, drug-induced (insidious presentation). Prognosis: 80% mortality without transplant; 60% with transplant.",
+    "tags": [
+      "liver_failure",
+      "alf",
+      "acute",
+      "etiology"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Hepatic Encephalopathy - Pathophysiology & Grading",
+    "subtopic": "hepatic_encephalopathy",
+    "content": "Hepatic encephalopathy (HE) = reversible neuropsychiatric syndrome in liver failure. Pathophysiology: accumulation of neurotoxic substances (ammonia, manganese, false neurotransmitters, endogenous benzodiazepines) due to impaired liver clearance + shunting of portal blood away from liver. Grading: Grade I (subtle: personality change, sleep inversion); Grade II (inappropriate behavior, lethargy, confusion); Grade III (incoherent speech, somnolence); Grade IV (coma, unresponsive to pain). Asterixis = flapping tremor (classic but not required). Risk factors: infection (SBP, UTI, pneumonia), renal failure, electrolyte abnormalities (hypokalemia worsens ammonia production), GI bleeding, sedative overdose. Grade III-IV = medical emergency requiring ICU.",
+    "tags": [
+      "liver_failure",
+      "encephalopathy",
+      "grading"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Cerebral Edema in Acute Liver Failure",
+    "subtopic": "liver_failure_complications",
+    "content": "Cerebral edema = major cause of death in ALF (present in ~80% of Grade III-IV encephalopathy). Mechanism: osmotic shift (hyperammonemia draws fluid into neurons), increased intracranial blood volume, impaired autoregulation. Presentation: headache, hypertension, bradycardia, respiratory depression (Cushing's triad = late sign), seizures, posturing, brain death. Diagnosis: CT (not sensitive early; edema becomes evident with brain swelling), ICP monitoring (intracranial pressure >20 mmHg abnormal). Prevention/management: (1) Head of bed 30°, neck neutral, avoid hypoxia/hypercarbia; (2) Osmotic therapy (mannitol 20% 0.5-1 g/kg IV, hypertonic saline 3% 30 mL bolus); (3) Sedation (propofol, minimize CMRO2); (4) Tight glucose control (avoid both hypo/hyperglycemia); (5) Therapeutic hypothermia (33-35°C) in some centers, controversial; (6) Transplant urgency increases with Grade III-IV.",
+    "tags": [
+      "liver_failure",
+      "cerebral_edema",
+      "complications"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Coagulopathy in Acute Liver Failure",
+    "subtopic": "liver_failure_complications",
+    "content": "ALF causes severe coagulopathy: ↓synthesis of all clotting factors (except factor VIII, produced extrahepatically), ↓synthesis of natural anticoagulants (protein C, S, antithrombin). INR >1.5 is diagnostic criterion. Platelet dysfunction + thrombocytopenia may occur. Bleeding risk HIGH, especially GI hemorrhage, epidural hematoma (if ICP monitoring). Management: (1) AVOID routine correction with FFP unless active bleeding or before invasive procedure (FFP causes volume overload, worsens cerebral edema); (2) Platelets if <50k + bleeding/procedure; (3) Vitamin K 10 mg IV (rarely helpful if INR >3, but try anyway); (4) Cryoprecipitate if fibrinogen <100. Monitor: PT/INR, platelets, fibrinogen daily. Risk of thrombotic events (paradoxically, low anticoagulants can cause microvascular thrombosis).",
+    "tags": [
+      "liver_failure",
+      "coagulopathy",
+      "bleeding"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Metabolic Complications in Acute Liver Failure",
+    "subtopic": "liver_failure_complications",
+    "content": "Hypoglycemia: impaired gluconeogenesis, glycogen depletion. Frequent monitoring (q1-4h), aggressive correction (dextrose boluses, continuous infusions). Hyperammonemia: impaired urea cycle, contributes to encephalopathy. Check serum ammonia; >200 μmol/L associated with Grade III-IV encephalopathy. Lactulose + rifaxomicin lower ammonia. Lactic acidosis: from shock, anaerobic metabolism. Monitor arterial pH/lactate. Hypokalemia: enhanced renal excretion, alkalosis. Aggressive replacement needed (target K >3.5). Hyponatremia: dilutional from fluid retention, SIADH-like. Correct slowly (hypertonic saline if symptomatic seizures). Hypophosphatemia, hypomagnesemia: monitor + replace.",
+    "tags": [
+      "liver_failure",
+      "metabolic",
+      "complications"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Infection Prevention & Treatment in ALF",
+    "subtopic": "liver_failure_complications",
+    "content": "Infection occurs in 80% of ALF hospitalization (bacterial, fungal, viral). Risk: immunosuppression from liver failure, invasive lines, aspiration. Common: bacteremia (spontaneous, line-related), SBP (if ascites), UTI, pneumonia, fungal sepsis (Candida, Aspergillus). Prophylaxis: selective intestinal decontamination (SID) with fluoroquinolone ± antifungal (fluconazole) in Grade III-IV. Empiric treatment: broad-spectrum antibiotics (cefepime, meropenem) + vancomycin (adjust for renal function). Antifungal (fluconazole or caspofungin) if prolonged ICU stay, persistent fever, repeated broad-spectrum antibiotic use. Cultures (blood, urine, ascitic fluid if ascites) before antibiotics. Prognosis: infection presence increases mortality; early aggressive treatment critical.",
+    "tags": [
+      "liver_failure",
+      "infection",
+      "prophylaxis"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Hepatorenal Syndrome & AKI in Acute Liver Failure",
+    "subtopic": "liver_failure_complications",
+    "content": "Hepatorenal syndrome (HRS): functional renal failure in advanced liver disease (splanchnic vasodilation → systemic hypotension → renal vasoconstriction). Type 1 HRS: rapid renal failure (SCr doubles to >2.5 in <2 weeks), high mortality. Type 2 HRS: gradual, associated with refractory ascites. ALF can cause acute tubular necrosis (true structural kidney damage) or HRS-like functional failure. Diagnosis: serum creatinine rise + oliguria + low urinary Na (<10), normal urine sediment. Management: aggressive fluid resuscitation (risk fluid overload in ALF with ascites), vasoconstrictors (norepinephrine, terlipressin — vasopressin analog), albumin infusion. RRT indication: K >6, pH <7.15, pulmonary edema refractory to diuretics, or symptomatic uremia. Prognosis: HRS + ALF = very high mortality (>80%).",
+    "tags": [
+      "liver_failure",
+      "hepatorenal_syndrome",
+      "aki"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Liver Transplantation for Acute Liver Failure",
+    "subtopic": "liver_failure_treatment",
+    "content": "Urgent transplantation = only definitive treatment for fulminant ALF. Transplant evaluation: determine urgency, identify transplant candidates (exclude active infection/malignancy/irreversible brain injury). King's College criteria (prognostic model for transplant need): acetaminophen OD with INR >6.5 OR non-acetaminophen ALF with any 3 of: age >40, INR >6.5, bilirubin >18, PT >100 (or >7 days). Listing: status 1A (highest priority, medical urgency) or 1B. Pre-transplant: maximize medical management (lactulose, N-acetylcysteine for acetaminophen toxicity, infection prophylaxis, cerebral edema prevention), ICP monitoring consideration, continuous review for transplant contraindications. Outcomes: ~75% 1-year survival post-transplant (excellent for urgent indication). Timing: delay transplant assessment = worsening odds; early referral critical.",
+    "tags": [
+      "liver_failure",
+      "transplantation",
+      "treatment"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "N-Acetylcysteine in Acetaminophen-Induced ALF",
+    "subtopic": "liver_failure_treatment",
+    "content": "Acetaminophen (Tylenol) toxicity = leading cause ALF in US. Overdose depletes hepatic glutathione, allowing toxic metabolite (NAPQI) to accumulate → hepatocyte necrosis. N-acetylcysteine (NAC): replenishes glutathione, supports cellular antioxidant defenses. Dosing: loading 150 mg/kg IV over 1h (typical 11.25 g for 75 kg), then 50 mg/kg over 4h, then 100 mg/kg over 16h (or high-dose continuous 300 mg/kg over 20h). Efficacy: most benefit if given within 8-12h of overdose (taurine NAC can be effective even later). Benefit: NAC improves survival from 25% → 40% if transplant not available. Also indicated for acetaminophen levels >200 μg/mL at 4h post-ingestion (use Rumack-Matthew nomogram). Side effects: flushing, nausea, rare anaphylaxis (slow infusion reduces risk).",
+    "tags": [
+      "liver_failure",
+      "acetaminophen",
+      "nac"
+    ],
+    "library": "intern_year_medicine"
+  },
+  {
+    "topic": "Lactulose & Rifaxomicin for Hepatic Encephalopathy",
+    "subtopic": "liver_failure_treatment",
+    "content": "Lactulose: non-absorbable disaccharide, fermented by colonic bacteria → lactic acid, lowers colonic pH (prevents ammonia absorption), osmotic effect (diarrhea). Dose: start 15-30 mL PO q6-8h, titrate to 2-3 loose stools/day. Risk: severe diarrhea → dehydration. Rifaxomicin: non-absorbed antibiotic, alters gut flora (reduces ammonia-producing bacteria). Dose: 550 mg PO BID. Evidence: equivalent efficacy to lactulose, fewer side effects. Both agents: slow onset (days), not for acute encephalopathy treatment. Branched-chain amino acids (BCAA): theoretical benefit (compete with aromatic amino acids), no strong evidence. Zinc supplementation: some benefit in chronic HE, less data for acute ALF. Combination therapy (lactulose + rifaxomicin) sometimes used.",
+    "tags": [
+      "liver_failure",
+      "encephalopathy",
+      "treatment"
+    ],
+    "library": "intern_year_medicine"
+  }
+]

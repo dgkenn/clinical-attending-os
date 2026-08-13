@@ -1,0 +1,33 @@
+=== curated-phase3_unit_120 | ICP Physiology - Monro-Kellie Doctrine | score=0.540
+Cranium = rigid box containing: brain (80%), CSF (10%), blood (10%). Total volume fixed. Monro-Kellie doctrine: increase in one component must be compensated by decrease in another to maintain stable ICP. Normal ICP 5-15 mmHg. Pathology increases ICP: mass (hemorrhage, tumor, abscess), cerebral edema (cytotoxic, vasogenic), increased CSF (obstruction), increased venous pressure. Compensatory mecha
+
+=== curated-phase3_unit_124 | Cerebral Perfusion Pressure (CPP) & Autoregulation | score=0.554
+CPP = MAP - ICP (normal â‰¥60-70 mmHg). Goal: maintain CPP >60 to ensure adequate brain perfusion. If ICP rises, need to increase MAP to maintain CPP. Cerebral autoregulation: normally, brain maintains constant cerebral blood flow across MAP range 50-150 mmHg (via vasoconstriction/dilation). Severe injury (TBI, stroke): autoregulation lost, CBF becomes pressure-dependent (low MAP = ischemia, high 
+
+=== curated-phase3_unit_72 | BNP & NT-proBNP in Heart Failure | score=0.559
+B-type natriuretic peptide (BNP) & NT-proBNP (N-terminal fragment) = neurohormone markers released from ventricular myocytes in response to stretch. Elevated in HF decompensation, but NOT diagnostic (elevated in renal failure, sepsis, PE, AFib, LVH). Cutoffs: BNP >400 pg/mL or NT-proBNP >900 pg/mL suggest HF; lower values make HF unlikely (good negative predictive value). Serial BNP trends guide t
+
+=== curated-phase3_unit_125 | ICP Monitoring - Intraventricular Catheter, Bolt, Epidural | score=0.577
+Intraventricular catheter (ventriculostomy, gold standard): small catheter inserted into lateral ventricle, connected to external ventricular drain (EVD). Advantage: most accurate ICP measurement, allows CSF drainage (therapeutic + diagnostic samples), allows intrathecal medication delivery. Complication: 5-10% ventriculitis, catheter malposition. Subarachnoid bolt: less invasive, but less accurat
+
+=== curated-phase3_unit_147 | ICU Delirium - CAM-ICU Screening & Management | score=0.596
+Delirium: acute alteration in mental status, fluctuating, inattention Â± disorganized thinking. Incidence: 20-80% of ICU patients. CAM-ICU screening (Confusion Assessment Method): (1) Acute onset + fluctuating, AND (2) Inattention, AND (3) Disorganized thinking OR altered consciousness = POSITIVE. Risk factors: sepsis, hypoxemia, medications (sedatives, opioids), immobility, sleep deprivation. Man
+
+=== curated-phase3_unit_102 | Hepatic Encephalopathy - Pathophysiology & Grading | score=0.609
+Hepatic encephalopathy (HE) = reversible neuropsychiatric syndrome in liver failure. Pathophysiology: accumulation of neurotoxic substances (ammonia, manganese, false neurotransmitters, endogenous benzodiazepines) due to impaired liver clearance + shunting of portal blood away from liver. Grading: Grade I (subtle: personality change, sleep inversion); Grade II (inappropriate behavior, lethargy, co
+
+=== curated-phase3_unit_91 | Catecholamine Excess Hypertensive Emergency | score=0.617
+Pheochromocytoma: catecholamine-secreting adrenal tumor, presents with severe HTN + paroxysmal symptoms (headache, diaphoresis, palpitations, anxiety). Diagnosis: elevated plasma metanephrines/24h urine catecholamines. Acute presentation (pheochromocytoma crisis): severe HTN + altered MS, pulmonary edema, arrhythmia. Management: (1) Alpha-blockade FIRST: phentolamine IV 5 mg bolus, repeat q5-15 mi
+
+=== curated-phase3_unit_69 | Heart Failure Phenotypes - EF Classification | score=0.617
+Heart failure classified by ejection fraction: HFrEF (reduced EF) = EF <40%, HFmrEF (mildly reduced) = EF 40-49%, HFpEF (preserved EF) = EF â‰¥50%. HFrEF typically systolic dysfunction (dilated chambers, reduced contractility); HFmrEF mixed; HFpEF typically diastolic dysfunction (stiff LV, impaired filling). ACE inhibitors/ARBs, beta-blockers, aldosterone antagonists proven mortality benefit in HF
+
+=== curated-phase3_unit_94 | DIC Laboratory Findings & Diagnosis | score=0.620
+Classic findings: (1) Thrombocytopenia (decreased platelet consumption); (2) Elevated PT/INR & aPTT (factor consumption); (3) Hypofibrinogenemia (<100 mg/dL, normal 200-400); (4) Elevated d-dimer & FDP (fibrin degradation products, elevated 100-1000x normal); (5) Schistocytes on blood smear (microangiopathic hemolytic anemia from fibrin strands). ISTH DIC scoring: platelets + PT prolongation + fib
+
+=== curated-phase3_unit_122 | Clinical Signs of Elevated ICP | score=0.627
+Early signs: headache, vomiting (projectile, without nausea), drowsiness. Progressive: hypertension, bradycardia, respiratory changes (Cheyne-Stokes breathing, central neurogenic hyperventilation). Cushing's triad (late, ominous sign): hypertension + bradycardia + irregular respirations = brainstem compression. Pupil changes: ipsilateral pupil dilation (oculomotor nerve compression from uncal hern
+
+=== curated-phase3_unit_126 | First-Line ICP Management - Positioning, Oxygenation, Temper | score=0.608
+(1) Head of bed 30Â° (improves venous drainage, CSF absorption, reduces ICP); (2) Neck neutral (avoid compression of jugular veins); (3) Avoid hypoxia (SpO2 >94%, PaO2 >60); (4) Avoid hypercarbia (PaCO2 >45 causes vasodilation â†’ increased ICP); mild hypocapnia acceptable (PaCO2 35-40, but excessive <30 risks ischemia); (5) Temperature: fever increases CMRO2 â†’ worsens edema, maintain normotherm
+

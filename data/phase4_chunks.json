@@ -1,0 +1,2006 @@
+[
+  {
+    "topic": "Acetaminophen Toxicity - Stages",
+    "subtopic": "acetaminophen_overview",
+    "content": "Acetaminophen overdose causes predictable organ toxicity through depletion of hepatic glutathione. Stage 1 (0-24h): nausea, vomiting, anorexia, abdominal pain; appears mild. Stage 2 (24-72h): RUQ pain, elevated transaminases (ALT/AST rising), normal PT initially. Stage 3 (72h-5 days): peak hepatotoxicity, encephalopathy, coagulopathy, hypoglycemia, acute kidney injury. Stage 4 (>5 days): recovery or death from hepatic failure. Toxic dose >150 mg/kg or >6g in single dose; chronic overdose (>4g/day for days) also causes harm. Rumack nomogram guides N-acetylcysteine (NAC) therapy based on 4-hour serum level.",
+    "tags": [
+      "toxicology",
+      "acetaminophen",
+      "hepatotoxicity",
+      "stage",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_0",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Acetaminophen Rumack Nomogram",
+    "subtopic": "acetaminophen_nomogram",
+    "content": "NAC indicated if serum acetaminophen level falls above nomogram line (plotted as log serum concentration vs. hours post-ingestion). Treatment line set conservatively to account for delayed absorption. Obtain level 4 hours post-ingestion (minimum to avoid falsely low reading). For acute single ingestion: 200 \u03bcg/mL at 4h, 50 \u03bcg/mL at 12h, 10 \u03bcg/mL at 24h approximately. For unknown timing or extended-release formulation, start NAC if ANY risk. Level <5 \u03bcg/mL at 24h generally safe, but if encephalopathy develops, NAC continued regardless of level.",
+    "tags": [
+      "acetaminophen",
+      "nomogram",
+      "nac_protocol",
+      "dosing"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_1",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "N-Acetylcysteine (NAC) Protocol - Dosing & Regimen",
+    "subtopic": "nac_protocol",
+    "content": "NAC given in 3-phase protocol. Loading dose: 150 mg/kg IV over 60 minutes (or PO 140 mg/kg; slower onset). Second phase: 50 mg/kg IV over 4 hours. Third phase: 100 mg/kg IV over 16 hours. Total dose over 20-21 hours = 300 mg/kg. Earlier administration (within 8-10 hours) markedly more effective; efficacy ~100% if given <8h, declining to ~40% by 24h, but still used up to 36+ hours. PO route (140 mg/kg load, then 70 mg/kg q4h \u00d7 17 doses) used if no IV access, slower but effective. Repeat loading dose if patient vomits within 1 hour of PO dose.",
+    "tags": [
+      "acetaminophen",
+      "nac",
+      "dosing",
+      "protocol"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_2",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "NAC Side Effects & Monitoring",
+    "subtopic": "nac_adverse_effects",
+    "content": "IV NAC causes flushing, pruritus, anaphylactoid reactions (1-2%), angioedema rare. Reactions NOT true IgE-mediated anaphylaxis but direct mast cell activation. Management: slow infusion rate, give antihistamine (diphenhydramine 25-50 mg IV) before NAC, consider acetaminophen-free analgesic alternatives. Rarely, reaction severe enough to discontinue NAC, but mortality risk from untreated toxicity > NAC risk. Monitor: LFTs (ALT/AST, bilirubin), PT/INR, glucose, renal function, arterial blood gas if altered mental status. Target improvement in PT/INR and trend in transaminases by 24-48h.",
+    "tags": [
+      "nac",
+      "adverse_effects",
+      "anaphylaxis",
+      "monitoring"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_3",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Fulminant Hepatic Failure from Acetaminophen - Transplant Criteria",
+    "subtopic": "acetaminophen_transplant",
+    "content": "Kings College Criteria for transplantation in acetaminophen-induced fulminant hepatic failure: (1) PT >30s (INR >1.8) PLUS pH <7.3 OR (2) PT >30s PLUS three of: age <10 or >40 years, encephalopathy >3 days, creatinine >3.4 mg/dL, bilirubin >17.5 mg/dL, non-A non-B hepatitis. If criteria met, call transplant immediately; mortality without transplant >80%. Continuous glucose monitoring (maintain >80 mg/dL), maintain platelets >50k, MAP >60 (vasopressors), keep ammonia checked regularly. Encephalopathy with hypertension suggests cerebral edema; treat with osmotic therapy (mannitol 0.25-1 g/kg IV, target osmolality 310-320 mOsm/kg).",
+    "tags": [
+      "acetaminophen",
+      "fulminant_failure",
+      "transplant",
+      "criteria"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_4",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Opioid Overdose - Clinical Features",
+    "subtopic": "opioid_toxidrome",
+    "content": "Opioid toxidrome = triad: respiratory depression (RR <12), miosis (pinpoint pupils <2mm), depressed mental status/coma. Additional: bradycardia, hypotension, hypothermia, pulmonary edema (white foamy sputum from fluid transudation into lungs, not necessarily cardiogenic). Onset: heroin minutes (IV), 15-30 min (IV methadone), 30-60 min (PO oxycodone). Severe toxicity: apnea requiring intubation, aspiration risk high. Chronic users may tolerate higher doses; acute users at greater risk. Fentanyl patches & long-acting opioids cause delayed toxicity (6-24h lag).",
+    "tags": [
+      "opioid",
+      "overdose",
+      "toxidrome",
+      "respiratory_depression",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_5",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Naloxone (Narcan) - Dosing & Administration",
+    "subtopic": "naloxone_protocol",
+    "content": "Naloxone = competitive opioid antagonist, short half-life 30-90 min. IM/IV/intranasal routes. Dosing: 0.4-2 mg IV/IM push (repeat q2-3 min if no response, max 10 mg); intranasal spray 4 mg per nostril (can use both). IV preferred (rapid onset <2 min); IM used if no IV access (onset 5-10 min). Intranasal (naloxone nasal spray, Narcan) is public-facing rescue option, slow onset but convenient. Key: naloxone is SHORT-acting; must monitor 2-4 hours post-reversal because as naloxone wears off, opioid redistributes and respiratory depression recurs. Continuous IV naloxone drip (starting 0.0025 mg/kg/min, titrate to respiratory rate >12) used for long-acting opioids (methadone, buprenorphine, fentanyl patches).",
+    "tags": [
+      "opioid",
+      "naloxone",
+      "dosing",
+      "administration"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_6",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Naloxone Complications & Withdrawal",
+    "subtopic": "naloxone_complications",
+    "content": "Acute opioid withdrawal from naloxone causes sympathomimetic surge: hypertension, tachycardia, diaphoresis, agitation, aching joints, but NOT life-threatening. Withdraw naloxone dose if patient becomes overly agitated or if severe hypertension develops; reduce intranasal or lower IV drip rate. Rare: acute pulmonary edema (flash pulmonary edema, mechanism unclear, possibly catecholamine surge or opioid-related noncardiogenic pulmonary edema unmasking). If pulmonary edema develops post-naloxone, support with CPAP/BiPAP, consider IV diuretics cautiously. Buprenorphine users: partial antagonism by naloxone; may need higher/repeated doses.",
+    "tags": [
+      "naloxone",
+      "withdrawal",
+      "complications",
+      "pulmonary_edema"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_7",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Supportive Care in Opioid Overdose",
+    "subtopic": "opioid_supportive_care",
+    "content": "Airway management critical. Do NOT intubate reflexively unless absolutely necessary (apnea, inability to protect airway, severe hypoxemia refractory to supplemental O2). If intubating, use ketamine induction (slower push, 1-2 mg/kg) to avoid rapid naloxone requirement post-intubation. Maintain SpO2 >90% with nasal cannula, bag-mask, or BiPAP. Pulmonary edema: elevate head, restrict fluids, PEEP 5-10 cm H2O, cautious diuretics (furosemide 40 mg IV). Monitor for aspiration pneumonia; consider prophylactic ABX if vomitus inhaled. Observe minimum 4 hours post-naloxone; longer for sustained-release opioids (oxycontin, methadone). Arrange addiction medicine consult for outpatient MAT (buprenorphine, methadone) or 12-step referral.",
+    "tags": [
+      "opioid",
+      "supportive_care",
+      "airway",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_8",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Benzodiazepine Toxicity - Clinical Presentation",
+    "subtopic": "benzodiazepine_toxidrome",
+    "content": "Benzodiazepine overdose causes CNS depression: sedation, ataxia, dysarthria, depressed respiratory drive, hypotension. Onset varies (diazepam 15-45 min, lorazepam 5-10 min, midazolam 1-3 min depending on route). Severe: loss of consciousness, respiratory depression requiring intubation, aspiration risk. Unlike opioids, pupils normal (not pinpointed). Benzodiazepines with long half-lives (diazepam 24-48h) cause prolonged toxicity; short-acting agents (midazolam, triazolam) clear faster. Chronic use develops tolerance; acute ingestion or withdrawal rebound seizures are risk.",
+    "tags": [
+      "benzodiazepine",
+      "overdose",
+      "cns_depression",
+      "toxidrome"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_9",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Flumazenil - Mechanism & Cautions",
+    "subtopic": "flumazenil_protocol",
+    "content": "Flumazenil = competitive GABA antagonist, rapidly reverses benzodiazepine effects. Dosing: 0.2 mg IV push over 30 sec; repeat 0.1 mg q30-60 sec until awake (typical total 0.6-1 mg). NOT recommended as first-line because risk of seizures, especially in chronic benzodiazepine users or mixed overdoses. Use ONLY if: (1) isolated benzodiazepine ingestion confirmed, (2) no chronic benzodiazepine use, (3) no history of seizures, (4) no concurrent tricyclic antidepressants. CONTRAINDICATED: tricyclic copoisoning, seizure disorder, benzodiazepine withdrawal, chronic benzodiazepine dependence. If doubt exists, use supportive care instead. Half-life short (40-80 min), so redose or continuous infusion may needed (0.1-0.4 mg/h).",
+    "tags": [
+      "flumazenil",
+      "benzodiazepine",
+      "reversal",
+      "cautions"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_10",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Benzodiazepine Overdose - Supportive Management",
+    "subtopic": "benzodiazepine_supportive",
+    "content": "Mainstay of therapy is supportive care (like opioids). Supplemental O2, maintain SpO2 >90%. BiPAP or bag-mask if hypoventilation. Intubation only if unable to protect airway or severe hypoxemia. Monitor for aspiration. Flumazenil generally avoided given seizure risk; instead, observe and wait for metabolism. Benzodiazepines cause no direct organ toxicity except CNS, so labs (LFTs, renal function) usually normal. Monitor vital signs q1h initially. Keep patient NPO until fully alert due to aspiration risk. Discharge criteria: alert, normal respiratory rate, no signs of recurrence (especially important for long-acting agents where rebound drowsiness can occur hours later).",
+    "tags": [
+      "benzodiazepine",
+      "supportive_care",
+      "monitoring"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_11",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Anticholinergic Toxidrome - Clinical Features",
+    "subtopic": "anticholinergic_toxidrome",
+    "content": "Classic phrase: 'Red as a beet, dry as a bone, hot as a pistol, mad as a hatter' (flushed skin, dry mucous membranes, fever, altered mentation). Anticholinergic toxidrome: mydriasis (dilated pupils), tachycardia, hypertension, hyperthermia, agitation, confusion, urinary retention, ileus, decreased sweating. Central effects: delirium, seizures, hallucinations (may be terrifying). Sympathomimetic phase early; later depression possible. Agents: atropine (intentional or accidental, eye drops), scopolamine, antihistamines (diphenhydramine), tricyclic antidepressants (TCA), antipsychotics (phenothiazines), muscle relaxants (cyclobenzaprine). Onset typically 30-120 min depending on route.",
+    "tags": [
+      "anticholinergic",
+      "toxidrome",
+      "toxicity",
+      "delirium"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_12",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Physostigmine - Use in Anticholinergic Toxicity",
+    "subtopic": "physostigmine_protocol",
+    "content": "Physostigmine = acetylcholinesterase inhibitor, crosses blood-brain barrier (unlike neostigmine). Reverses anticholinergic effects including CNS symptoms (delirium). Dosing: 1-2 mg IV over 3-5 min; may repeat q10-15 min up to 6 mg total. Effective for pure anticholinergic toxicity but CONTRAINDICATED in: tricyclic antidepressant copoisoning (risk of severe arrhythmias, seizures due to TCA effects), cardiac dysrhythmias. Main side effect: cholinergic crisis (bronchoconstriction, bradycardia, bronchorrhea). Give atropine 0.5-1 mg IV concurrently or on standby to reverse cholinergic excess. Used less commonly now; supportive care (cooling, benzodiazepines for agitation/seizures) preferred unless severe delirium.",
+    "tags": [
+      "physostigmine",
+      "anticholinergic",
+      "reversal"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_13",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Anticholinergic Overdose - Management Approach",
+    "subtopic": "anticholinergic_management",
+    "content": "Priority: rule out life-threatening diagnoses (closed-angle glaucoma, thyroid storm masquerading as anticholinergic, severe infection). Supportive care: cooling for fever (iv fluids, ice packs, intubation with paralysis if severe hyperthermia), benzodiazepines (lorazepam 2-4 mg IV) for agitation/seizures, foley catheter for urinary retention. Cardiac monitoring for arrhythmias (especially with TCAs). Do NOT give physostigmine empirically; confirm anticholinergic source first (careful history, examination of ingested pills, urine toxicology if available). Avoid anticholinergic copoisoning drugs (TCAs present contraindication). IV hydration helpful for preventing rhabdomyolysis from hyperthermia. Most cases resolve within 24-48 hours.",
+    "tags": [
+      "anticholinergic",
+      "management",
+      "supportive_care"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_14",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Sympathomimetic Overdose - Cocaine & Amphetamines",
+    "subtopic": "sympathomimetic_toxidrome",
+    "content": "Cocaine & amphetamine toxidrome: mydriasis, tachycardia (may severe >160 bpm), hypertension (often extreme, >200 systolic), hyperthermia, agitation, paranoia, tactile hallucinations ('cocaine bugs'). Cocaine additional effects: coronary vasoconstriction (can cause MI even in young healthy users), arrhythmias (including ventricular fibrillation), nasal damage if snorted. Amphetamines longer half-life; methamphetamine especially neurotoxic. Psychiatric effects prominent: psychosis, violence. Physical complications: rhabdomyolysis, acute kidney injury, stroke, seizures. Death may occur from cardiac arrhythmia, hypertensive emergency, seizure, or hyperthermia.",
+    "tags": [
+      "sympathomimetic",
+      "cocaine",
+      "amphetamine",
+      "toxidrome",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_15",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Sympathomimetic Overdose - Acute Management",
+    "subtopic": "sympathomimetic_management",
+    "content": "Benzodiazepines are FIRST-LINE (lorazepam 2-4 mg IV, titrate; midazolam 5-10 mg IV if needed). Beta-blockers controversial and avoided by some (risk of unopposed alpha vasoconstriction worsening hypertension). Phentolamine (alpha blocker) used for severe hypertension (5-15 mg IV); labetolol acceptable if bradycardia absent. Cooling for hyperthermia (ice, iv fluids, intubation with paralysis if severe). Continuous cardiac monitoring (risk of arrhythmias). IV fluids cautiously (maintain UOP 0.5-1 mL/kg/h to prevent rhabdo-related AKI). Urine alkalinization with sodium bicarbonate (target pH >7.45) reduces renal reabsorption of cocaine/amphetamine metabolites, may decrease toxicity duration slightly. Seizures: benzodiazepines first line; phenytoin second line if refractory.",
+    "tags": [
+      "sympathomimetic",
+      "management",
+      "benzodiazepines",
+      "cooling"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_16",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Cocaine-Induced Myocardial Infarction",
+    "subtopic": "cocaine_mi",
+    "content": "Cocaine causes coronary vasoconstriction via alpha-adrenergic effects and direct endothelial damage. MI can occur minutes to hours after use; may present with chest pain, ST elevation on ECG (usually LAD territory if STEMI). Troponin elevation confirms MI. Management: aspirin (325 mg chewed), nitrates (sublingual NTG 0.3-0.6 mg or IV NTG) for vasodilation, benzodiazepines for anxiety/agitation. Avoid beta-blockers unless absolutely necessary (unopposed alpha effects worse). Thrombolytics typically offered if STEMI criteria met, though some centers prefer conservative management given high recurrence. Percutaneous coronary intervention (PCI) preferred if available. Long-term: address cocaine addiction (cardiology + addiction medicine follow-up).",
+    "tags": [
+      "cocaine",
+      "myocardial_infarction",
+      "coronary",
+      "vasospasm"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_17",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Alcohol Withdrawal - Stages & Progression",
+    "subtopic": "alcohol_withdrawal_stages",
+    "content": "Alcohol withdrawal = hyperadrenergic state from loss of CNS depressant effect. Timeline: tremor, diaphoresis, tachycardia (6-24h post-cessation); alcoholic hallucinosis 12-48h (auditory hallucinations, visual intact); withdrawal seizures 6-48h (brief, typically generalized); delirium tremens (DTs) 48-96h (autonomic hyperactivity, confusion, hallucinations, fever). Mortality of untreated DTs ~5-15%. CIWA-Ar score (Clinical Institute Withdrawal Assessment for Alcohol scale) guides severity: <8 mild, 8-15 moderate, >15 severe. Score >15 should receive benzodiazepines.",
+    "tags": [
+      "alcohol",
+      "withdrawal",
+      "stages",
+      "progression",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_18",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Alcohol Withdrawal - Benzodiazepine Protocol",
+    "subtopic": "alcohol_withdrawal_treatment",
+    "content": "Lorazepam preferred (shorter half-life, metabolized via glucuronidation, not affected by liver disease). Dosing: 2-4 mg IV q0.5-1h, titrate to CIWA-Ar score <8. Diazepam alternative (5-10 mg IV q1h), longer half-life requires monitoring for oversedation. Chlordiazepoxide (Librium) oral 50-100 mg q6h if mild withdrawal, not for severe/acute DTs. Phenobarbital used as adjunct or if benzodiazepine-refractory. Goal: prevent seizures and manage autonomic hyperactivity. Long-term: naltrexone 50 mg daily or acamprosate 666 mg TID for relapse prevention; thiamine 100 mg IV (severe withdrawal can precipitate Wernicke's encephalopathy if glucose given without thiamine).",
+    "tags": [
+      "alcohol",
+      "withdrawal",
+      "benzodiazepines",
+      "protocol"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_19",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Benzodiazepine Withdrawal - Acute Syndrome",
+    "subtopic": "benzodiazepine_withdrawal",
+    "content": "Withdrawal after chronic benzodiazepine use causes serious symptoms similar to alcohol withdrawal. Timing depends on half-life: short-acting agents (triazolam, midazolam) withdraw within 24-48h; long-acting (diazepam) withdraw over days to weeks. Symptoms: tremor, diaphoresis, agitation, anxiety, insomnia, seizures (can be life-threatening), hallucinations. Risk factors: high dose, long duration of use, abrupt cessation. Management: gradual taper (reduce dose 10% per week, slower if seizures occurred). Lorazepam bridge if needed during taper. Seizures managed with benzodiazepines (lorazepam 2-4 mg IV). Admission to ICU if severe withdrawal or seizures. Outpatient taper acceptable if mild, reliable patient, close follow-up.",
+    "tags": [
+      "benzodiazepine",
+      "withdrawal",
+      "seizures",
+      "taper"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_20",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Opioid Withdrawal - Clinical Features & Treatment",
+    "subtopic": "opioid_withdrawal",
+    "content": "Opioid withdrawal NOT life-threatening but severely uncomfortable. Timeline: anxiety, restlessness (6-12h post-cessation); peak symptoms (24-72h) including myalgias, GI cramping, diarrhea, insomnia, pupil dilation, yawning, sweating, goosebumps. Duration 5-7 days (short-acting) to 2+ weeks (methadone). COWS (Clinical Opiate Withdrawal Scale) score guides management. Treatment: methadone (long-acting maintenance) or buprenorphine (partial agonist, ceiling effect on respiratory depression). Acute symptomatic relief: NSAIDs for myalgias, loperamide for diarrhea, ondansetron for nausea, trazodone for insomnia (not benzodiazepines, which increase overdose risk). Cold turkey not recommended; drives relapse.",
+    "tags": [
+      "opioid",
+      "withdrawal",
+      "methadone",
+      "buprenorphine"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_21",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Methanol & Ethylene Glycol Toxicity - Overview",
+    "subtopic": "toxic_alcohol_toxidrome",
+    "content": "Both methanol (windshield washer fluid, paint thinners) and ethylene glycol (antifreeze, hydraulic fluid) cause similar toxicity via metabolic acidosis. Initial phase: CNS depression, inebriation, nausea. Metabolic phase (6-24h): anion-gap metabolic acidosis, altered mentation, Kussmaul breathing. Methanol: optic nerve damage (blindness), hyperemia of optic disc. Ethylene glycol: crystalluria, renal failure. Both require aggressive treatment to prevent irreversible organ damage. Serum osmolality increased (osmolar gap). Key: early fomepizole administration blocks metabolism and prevents serious morbidity/mortality.",
+    "tags": [
+      "methanol",
+      "ethylene_glycol",
+      "toxic_alcohol",
+      "acidosis"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_22",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Fomepizole Protocol for Toxic Alcohol Poisoning",
+    "subtopic": "fomepizole_protocol",
+    "content": "Fomepizole (4-methylpyrazole) = alcohol dehydrogenase inhibitor, blocks conversion of methanol/ethylene glycol to toxic metabolites. Loading dose: 15 mg/kg IV bolus (dilute to 250 mL normal saline, infuse over 30 min). Maintenance: 10 mg/kg IV q12h \u00d7 4 doses, then 15 mg/kg q12h if patient on hemodialysis. Continue until methanol/ethylene glycol undetectable or <10 mg/dL and no metabolic acidosis. Fomepizole dramatically improves outcomes; mortality drops from 20-25% to <3%. May cause hypoglycemia, IV site erythema. Cost significant but justifies early use if high clinical suspicion.",
+    "tags": [
+      "fomepizole",
+      "toxic_alcohol",
+      "protocol",
+      "dosing"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_23",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Hemodialysis in Toxic Alcohol Poisoning",
+    "subtopic": "toxic_alcohol_dialysis",
+    "content": "Hemodialysis indicated for: (1) severe metabolic acidosis (pH <7.15), (2) renal failure/hyperkalemia, (3) altered mental status, (4) serum level >25 mg/dL methanol or >20 mg/dL ethylene glycol, (5) visual symptoms (methanol). Dialysis removes both parent compound and toxic metabolites (formate, glycolate). Continue dialysis until visual symptoms resolve and acidosis cleared. Combined with fomepizole (which prevents further metabolism), dialysis provides complete clearance. Prognosis with early fomepizole + dialysis excellent; mortality <3-5%. Without treatment, mortality 20-40%.",
+    "tags": [
+      "toxic_alcohol",
+      "dialysis",
+      "hemodialysis"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_24",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Organophosphate Poisoning - Mechanism & Presentation",
+    "subtopic": "organophosphate_toxidrome",
+    "content": "Organophosphates = pesticides, nerve agents; irreversibly inhibit acetylcholinesterase. Result: cholinergic crisis (excessive acetylcholine at synapses). Muscarinic effects: miosis (pinpoint pupils), bronchospasm, bradycardia, salivation, lacrimation, urination, defecation ('SLUDGE'). Nicotinic effects: muscle fasciculations, paralysis, weakness. CNS: altered mentation, seizures, respiratory depression. Exposure: pesticide ingestion, dermal contact, inhalation. Onset: minutes to hours depending on route. Severe: apnea, pulmonary edema, cardiovascular collapse. Pralidoxime must be given quickly (within 24-48h ideally) to restore cholinesterase activity.",
+    "tags": [
+      "organophosphate",
+      "poisoning",
+      "cholinergic_crisis",
+      "nerve_agent"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_25",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Atropine in Organophosphate Toxicity",
+    "subtopic": "organophosphate_atropine",
+    "content": "Atropine = muscarinic antagonist, relieves SLUDGE symptoms. Dosing: 0.5-1 mg IV push; double dose q5-10 min until atropinization (dry mouth, dilated pupils, HR >90). May require large total doses (100+ mg). Goal: reverse bronchospasm, bradycardia, salivation; does NOT reverse nicotinic paralysis (muscle weakness/fasciculations). Give atropine early and often; titrate to drying of secretions. Adverse effects: tachycardia if overdosed, but in acute poisoning, atropine side effects acceptable. Continue atropine drip (initial bolus followed by continuous infusion 2-15 mg/h) for hours to days depending on severity and organophosphate persistence.",
+    "tags": [
+      "atropine",
+      "organophosphate",
+      "muscarinic",
+      "dosing"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_26",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Pralidoxime (2-PAM) Protocol",
+    "subtopic": "pralidoxime_protocol",
+    "content": "Pralidoxime = oxime, reactivates cholinesterase by removing phosphate group from enzyme (only effective before 'aging' of phosphate bond, typically 24-48h). Dosing: 1-2 g IV bolus over 15-30 min, may repeat q30-60 min if muscle weakness persists. Maximum 12 g/day. Pralidoxime alone inadequate; must combine with atropine (pralidoxime doesn't treat CNS effects or nicotinic symptoms directly). Timing critical: give within 24-48h of exposure; efficacy declines after aging occurs. Continuous infusion (1 g/h) used for sustained poisoning. Side effects: transient visual disturbance, headache, nausea, dizziness.",
+    "tags": [
+      "pralidoxime",
+      "organophosphate",
+      "cholinesterase",
+      "protocol"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_27",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Organophosphate Poisoning - Supportive Care",
+    "subtopic": "organophosphate_supportive",
+    "content": "Intubation and mechanical ventilation if respiratory depression severe; maintain aggressive airway suctioning (massive bronchorrhea). Seizures: benzodiazepines first-line (lorazepam 2-4 mg IV). Continuous cardiac monitoring (bradycardia/arrhythmias common). Decontamination: remove clothing, wash skin with soap and water. Do NOT use alcohol-based cleaners (may increase absorption). Supportive fluids, treat hyperkalemia if present. Prolonged ICU stays common; may remain symptomatic for days to weeks. Prognosis depends on exposure severity and time to treatment; early treatment improves survival significantly.",
+    "tags": [
+      "organophosphate",
+      "supportive_care",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_28",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Heavy Metal Poisoning - Overview & Chelation Agents",
+    "subtopic": "heavy_metal_overview",
+    "content": "Heavy metals (lead, mercury, arsenic, iron, copper) cause multiorgan toxicity. Lead: encephalopathy, renal failure, abdominal pain. Mercury: tremor, psychological effects, renal failure. Arsenic: GI symptoms, peripheral neuropathy, cardiac arrhythmias. Iron: GI hemorrhage, metabolic acidosis, hepatotoxicity. Copper: hemolysis, hepatotoxicity. Chelation = binding agent that prevents metal reabsorption, enhancing renal or biliary excretion. Common agents: EDTA (calcium EDTA for lead), BAL (dimercaprol for arsenic/mercury/lead), DMSA (succimer, oral, lead/arsenic), penicillamine (copper/iron), deferoxamine (iron).",
+    "tags": [
+      "heavy_metal",
+      "poisoning",
+      "chelation",
+      "toxicity"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_29",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Lead Poisoning & Chelation",
+    "subtopic": "lead_toxicity",
+    "content": "Lead causes anemia (microcytic), abdominal pain ('lead colic'), encephalopathy (confusion, seizures, coma), nephropathy, and developmental delays in children. Blood lead level diagnostic (>10 \u03bcg/dL concerning). Chelation indications: symptomatic toxicity (encephalopathy) OR asymptomatic with lead >100 \u03bcg/dL (children) or >80 \u03bcg/dL (adults). Agents: calcium EDTA (25-50 mg/kg/day IV infusion for 5-7 days); DMSA (succimer, oral, 350 mg TID \u00d7 5 days, then BID \u00d7 2 weeks for milder cases). DMSA preferred if no symptoms (less toxic). Recheck lead level after course; multiple rounds may needed.",
+    "tags": [
+      "lead",
+      "chelation",
+      "EDTA",
+      "DMSA"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_30",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Iron Overdose & Deferoxamine Therapy",
+    "subtopic": "iron_toxicity",
+    "content": "Iron overdose (often accidental in children) causes GI hemorrhage, metabolic acidosis, shock, hepatotoxicity, and cardiogenic shock. Phases: (1) GI (nausea, vomiting, diarrhea, abdominal pain); (2) apparent recovery; (3) shock, acidosis, liver failure. Serum iron >300 \u03bcg/dL requires treatment. Deferoxamine = iron chelator, forms water-soluble complex excreted in urine (pink/red color). Dosing: 15 mg/kg/h IV infusion, titrate by response (may increase to 125 mg/kg/h if severe toxicity). Duration: until iron level <100 \u03bcg/dL and acidosis resolved. Side effects: rapid IV can cause hypotension, Yersinia infection (rare). GI decontamination: whole-bowel irrigation if tablets visible on abdominal X-ray.",
+    "tags": [
+      "iron",
+      "overdose",
+      "deferoxamine",
+      "chelation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_31",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Salicylate Toxicity - Pathophysiology & Presentation",
+    "subtopic": "salicylate_toxidrome",
+    "content": "Salicylate (aspirin) toxicity = aspirin (>150 mg/kg single dose or chronic high-dose use). Mechanism: uncouples oxidative phosphorylation, stimulates respiratory center. Early: tinnitus (ringing ears), altered mentation, hyperventilation (respiratory alkalosis), hyperthermia. Late: pulmonary edema (noncardiogenic), metabolic acidosis (mixed respiratory alkalosis + metabolic acidosis = mixed picture). Serum salicylate >60 mg/dL symptomatic; >100 mg/dL severe. Chronic toxicity insidious; may present with encephalopathy in elderly. pH and serum level guide severity.",
+    "tags": [
+      "salicylate",
+      "aspirin",
+      "toxicity",
+      "toxidrome",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_32",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Salicylate Management - Urine Alkalinization",
+    "subtopic": "salicylate_management",
+    "content": "Urine alkalinization ESSENTIAL. Target urine pH 7.5-8.5 (alkaline urine 'traps' salicylate as anion, preventing reabsorption). Method: sodium bicarbonate 50 mEq IV bolus, then continuous infusion (target serum bicarbonate 25-30 mEq/L, serum pH 7.4-7.5). Monitor serum K+ closely (hypokalemia worsens alkalosis; give KCl 20-40 mEq/L IV if K+ <3.5). Hemodialysis indicated if: salicylate level >100 mg/dL, CNS toxicity (encephalopathy, pulmonary edema), metabolic acidosis refractory to alkalinization, or renal failure. Salicylate has small molecular weight, easily dialyzable; hemodialysis removes drug faster than renal excretion even with alkalinization.",
+    "tags": [
+      "salicylate",
+      "alkalinization",
+      "urine_ph",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_33",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Salicylate Toxicity - Pulmonary Edema & ICU Care",
+    "subtopic": "salicylate_pulmonary_edema",
+    "content": "Noncardiogenic pulmonary edema (ARDS-like picture) common in moderate-severe salicylate toxicity. Mechanism: direct lung toxicity + fluid overload during aggressive alkalinization. Management: restrict free water, use hypertonic saline (3%) for alkalinization instead of normal saline, judicious diuretics if necessary. PEEP 5-10 cm H2O if intubated. Continuous monitoring of mixed venous oxygen saturation, lactate. Renal function: salicylate can cause acute tubular necrosis; monitor creatinine, BUN. Most cases resolve within 24-48 hours with aggressive support and removal of salicylate via hemodialysis.",
+    "tags": [
+      "salicylate",
+      "pulmonary_edema",
+      "ards",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_tox_unit_34",
+    "created_at": "2026-06-05T00:29:35.732875"
+  },
+  {
+    "topic": "Trauma Primary Survey - ABCDE Approach",
+    "subtopic": "primary_survey",
+    "content": "ABCDE = systematic approach to life-threatening injuries. A (Airway): assess patency, stridor, obvious obstruction; protect C-spine if mechanism high-risk. B (Breathing): check for breath sounds, work of breathing, respiratory rate, hypoxia; treat tension pneumothorax/hemothorax immediately. C (Circulation): assess pulse, perfusion, gross hemorrhage, bleeding control. D (Disability): GCS score, pupils, focal neuro deficits. E (Exposure): undress patient, examine for hidden injuries, prevent hypothermia. Simultaneous assessment + intervention: do not delay treatment for complete survey. Activate trauma team early if high mechanism (MVA >40 mph, penetrating truncal injury, fall >10 ft).",
+    "tags": [
+      "trauma",
+      "abcde",
+      "primary_survey",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_0",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Airway Management in Trauma - C-Spine Precautions",
+    "subtopic": "trauma_airway",
+    "content": "C-spine immobilization mandatory until cleared (imaging or exam). Do NOT remove collar until imaging rules out fracture (unless patient deteriorating). Intubation technique: avoid hyperextension; in-line stabilization (manual by second provider holding head/neck stable). Avoid blind nasal intubation (possible basilar skull fracture with epidural placement risk). Options: direct laryngoscopy (with in-line stab), video laryngoscopy (better visualization, easier), fiberoptic if time permits. Rapid sequence intubation (RSI) with cricoid pressure controversial (may not prevent aspiration, impairs intubation view); gentle pressure better if used. Assume full stomach; use etomidate/ketamine, succinylcholine or rocuronium, consider delayed sequence if severe maxillofacial trauma.",
+    "tags": [
+      "trauma",
+      "airway",
+      "c_spine",
+      "intubation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_1",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Hemorrhage Control - Direct Pressure & Tourniquets",
+    "subtopic": "hemorrhage_control",
+    "content": "Direct pressure for bleeding is first-line. Apply pressure for 5-10 min without peeking; if bleeding continues, add more gauze (don't remove first layer). Topical hemostatics (QuikClot, Celox, gauze with thrombin) used increasingly in prehospital, reasonable in ED. Tourniquets: apply proximal to wound, above joint if possible. Indications: life-threatening extremity hemorrhage uncontrolled by pressure, amputation, time-critical transfer. Technique: place above wound as proximal as possible, tighten until bleeding stops, mark time applied. Do NOT apply directly over joints. Tourniquet time <2 hours safe; >2 hours risk of tissue damage increases. Document tourniquet time on patient (write on skin with marker or tourniquet label). Plan for vascular surgery if not controlled.",
+    "tags": [
+      "hemorrhage",
+      "control",
+      "tourniquet",
+      "first_aid"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_2",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Fluid Resuscitation - Endpoints & Massive Transfusion Protocol",
+    "subtopic": "trauma_resuscitation",
+    "content": "Permissive hypotension (target SBP 90-100 mmHg initially) preferred in hemorrhagic shock pending surgical control; aggressive fluids increase bleeding by disrupting clots (dilution, coagulopathy). 'Damage control resuscitation': balanced transfusion of RBCs, FFP, platelets at 1:1:1 ratio (instead of massive crystalloid). Endpoints: SBP >90, urine output 0.5-1 mL/kg/h, normal lactate. Massive Transfusion Protocol (MTP): activate if anticipated need for >4 units PRBCs/24h. Deliver 1:1:1 PRBC:FFP:platelets (typically 6 U PRBC, 6 U FFP, 6 U platelets per 'cooler'). Tranexamic acid (TXA) 1 g IV bolus within 3h of injury reduces mortality ~15% (controversial beyond 3h window). Monitor coagulation labs (PT/INR, aPTT, fibrinogen, platelets).",
+    "tags": [
+      "trauma",
+      "resuscitation",
+      "hemorrhage",
+      "transfusion"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_3",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Trauma Secondary Survey - Systematic Examination",
+    "subtopic": "secondary_survey",
+    "content": "HEADSHEADD mnemonic: Head (scalp lacerations, facial fractures, eye/nose/mouth). ENT (airway injury, C-spine tenderness). Chest (inspect/palpate ribs, listen for breath sounds, check for crepitus, JP tube if hemothorax). Abdomen (distension, tenderness, rebound, guarding; FAST exam). Pelvis (rock gently for pain, look for bleeding from perineum). Extremities (deformity, open fractures, distal pulses). Neurological (GCS components, focal deficits, pupils). Skin (rashes, petechiae, deformities). Secondary survey occurs after primary survey stabilized, is more thorough.",
+    "tags": [
+      "trauma",
+      "secondary_survey",
+      "examination"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_4",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Tension Pneumothorax - Recognition & Needle Decompression",
+    "subtopic": "tension_pneumothorax",
+    "content": "Tension pneumothorax = life-threatening collapse of lung with mediastinal shift. Clinical: hypotension, hypoxia, unilateral absent breath sounds, deviated trachea, JVD, shock. Diagnosis clinical, NOT by imaging (CXR/CT takes time). Needle decompression FIRST: 14G needle into 2nd intercostal space, midclavicular line (before x-ray). Landmark: palpate sternal notch, travel down ~5 cm, insert needle perpendicular, withdraw catheter, leave in place. Listen for air rush. Temporary measure (may need needle q5-10 min) until tube thoracostomy. NEVER delay for confirmation imaging if high suspicion.",
+    "tags": [
+      "pneumothorax",
+      "tension",
+      "decompression",
+      "emergency"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_5",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Tube Thoracostomy (Chest Tube) - Indications & Placement",
+    "subtopic": "chest_tube",
+    "content": "Indications: pneumothorax (>2 cm or symptoms), hemothorax, empyema, chylothorax. Technique: 5th intercostal space (nipple line), anterior-axillary line, just above rib (avoid neurovascular bundle below rib). Prepare area (chlorhexidine), infiltrate with 1% lidocaine. Incision, blunt dissection, palpate pleural space (breath/air appreciated), insert tube (curved toward apex for air, base for fluid). Connect to 20 cm H2O suction initially, then 5-10 cm if stable. Check for air leak (bubbling in water seal with cough/breathing). Size: 28-32 Fr for hemothorax, 24-28 Fr for pneumothorax. Tube output monitored (ml/h). Remove when air leak stopped and output <200 ml/day (pneumothorax) or <50-75 ml/day (fluid).",
+    "tags": [
+      "thoracostomy",
+      "chest_tube",
+      "placement",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_6",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Flail Chest - Definition & Management",
+    "subtopic": "flail_chest",
+    "content": "Flail chest = \u22653 consecutive ribs broken in \u22652 places (or similar injury sternal/costal). Results in 'paradoxical' movement (segment moves inward on inspiration, outward on expiration). Pain severe, limiting respiratory effort; leads to hypoventilation, atelectasis, pneumonia. Risk of underlying pulmonary contusion. Management: adequate analgesia (epidural, intercostal blocks, or systemic analgesics), pulmonary hygiene (incentive spirometry, coughing, chest physiotherapy), supplemental O2 to maintain SpO2 >90%. Avoid excessive strapping (restricts movement, increases infection risk). Mechanical stabilization (taping, binders) not recommended. Surgical fixation reserved for severe cases with multiple flail segments. Prognosis generally good with supportive care; mortality from underlying lung injury, not flail chest itself.",
+    "tags": [
+      "flail_chest",
+      "rib_fractures",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_7",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Hemothorax - Diagnosis & Management",
+    "subtopic": "hemothorax",
+    "content": "Hemothorax = blood in pleural space from trauma. Presentation: hypoxia, breath sound absence, dullness to percussion, shock if large. CXR shows opacification (may need decubitus or ultrasound to differentiate blood vs. air). FAST exam for fluid. Most hemothorax stops bleeding spontaneously; surgery needed if initial output >1500 mL/h or ongoing bleeding >200 mL/h. Tube thoracostomy standard (see chest tube technique). Monitor output hourly. Massive hemothorax (>1500-2000 mL initial output): activate massive transfusion protocol, call surgery immediately. Complications: retained hemothorax (clotted blood limiting drainage), fibrothorax (adhesions). May need VATS (video-assisted thoracic surgery) for evacuation if retained.",
+    "tags": [
+      "hemothorax",
+      "trauma",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_8",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Cardiac Tamponade - Beck's Triad & Pericardiocentesis",
+    "subtopic": "cardiac_tamponade",
+    "content": "Cardiac tamponade = pericardial fluid compressing heart. Beck's triad: JVD, muffled heart sounds, hypotension. Additional signs: pulsus paradoxus (SBP drops >10 mmHg with inspiration), shock, clear lungs (differentiates from cardiogenic shock). Causes: penetrating trauma (knife, bullet), blunt trauma (rare but lethal), pericarditis with effusion. Diagnosis: bedside ultrasound (fluid around heart, RV/RA collapse). Pericardiocentesis: 18G needle at 5th intercostal space, subxiphoid, angled 45\u00b0 toward left shoulder. Insert until 'give' felt, withdraw fluid (even small amount improves pressure), send for analysis. Temporary measure; definitive = pericardial window or thoracotomy. CPR may be ongoing during pericardiocentesis.",
+    "tags": [
+      "tamponade",
+      "pericardiocentesis",
+      "trauma",
+      "emergency"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_9",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "FAST Exam (Focused Assessment with Sonography for Trauma)",
+    "subtopic": "fast_exam",
+    "content": "FAST = ultrasound exam performed in trauma bay, identifies free abdominal fluid (blood). Four views: (1) Perihepatic (Morrison pouch): probe at right midaxillary line between ribs 9-11, look for fluid between liver and kidney; (2) Perisplenic: left midaxillary line, fluid between spleen and kidney; (3) Pelvic: transverse probe above pubic symphysis, look for free fluid in pelvis; (4) Pericardial: already described for tamponade. Positive FAST (free fluid detected) + hypotension = indication for urgent surgery (blunt abdominal trauma). Negative FAST does not rule out injury (sensitivity ~86%, specificity ~97% for bleeding). Repeat FAST if persistent hemodynamic instability. Operator-dependent; training essential.",
+    "tags": [
+      "fast",
+      "ultrasound",
+      "abdominal_trauma",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_10",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Exploratory Laparotomy Indications",
+    "subtopic": "exploratory_laparotomy",
+    "content": "Indications for urgent/emergent laparotomy: (1) blunt or penetrating trauma with peritoneal signs (distension, rebound, guarding); (2) positive FAST + hemodynamic instability unresponsive to 2-4 L fluid/O neg blood; (3) gunshot wound to abdomen (always explore, high risk of visceral injury); (4) stab wounds with peritoneal penetration (either clinically evident or imaging shows penetration); (5) gross evisceration; (6) unstable patient with suspicion of intra-abdominal bleeding. Approach: midline incision (allows exploration of all quadrants). Damage control surgery: control bleeding with temporary measures (clamps, packing), address worst injuries, close abdomen and transfer to ICU; definitive repair planned for 24-48h after resuscitation.",
+    "tags": [
+      "laparotomy",
+      "abdominal_trauma",
+      "indications",
+      "surgery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_11",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Pelvic Fractures - Hemorrhage Risk & Massive Transfusion",
+    "subtopic": "pelvic_fractures",
+    "content": "Pelvic fractures carry high hemorrhage risk (pelvic vessels/venous plexus bleeding). Classification: Tile A (stable), B (rotationally unstable), C (vertically unstable, highest mortality). Clinical exam: pelvic rock (gently rock pelvis side-to-side for pain), check for perineal bleeding. Imaging: pelvic X-ray (AP, inlet, outlet views). Hemorrhage may be massive (>2000 mL blood in pelvis); stabilization essential. Pelvic binder/wrap applied ASAP (before moving patient, reduces pelvic volume). Indications for massive transfusion: persistently unstable despite fluids. Angiographic embolization offered by interventional radiology for arterial bleeding. Surgical fixation (ORIF) delayed until stable.",
+    "tags": [
+      "pelvic",
+      "fractures",
+      "hemorrhage",
+      "trauma"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_12",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Pelvic Binder Application",
+    "subtopic": "pelvic_binder",
+    "content": "Pelvic binder (or rolled bedsheet/pelvic wrap) reduces pelvic volume, tamponades bleeding, stabilizes fracture. Technique: wrap placed around pelvis at level of ASIS (anterior superior iliac spine) and greater trochanters; tighten to indent skin slightly (fingers should fit under strap). Mark location if applied prehospital so not removed/reapplied multiple times. Timing: apply immediately in suspected pelvic fracture (before moving if possible). Keep on until imaging confirms no fracture OR until patient operating room-bound. Remove only under controlled circumstances (can worsen bleeding if abruptly released). Complications: skin breakdown, urinary issues; overall benefits outweigh risks.",
+    "tags": [
+      "pelvic_binder",
+      "trauma",
+      "hemorrhage_control"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_13",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Crush Injury & Rhabdomyolysis - Pathophysiology",
+    "subtopic": "crush_injury",
+    "content": "Crush injury = prolonged compression of tissue (entrapped limb, collapsed building, heavy weight). Ischemia + reperfusion injury (upon release) causes massive myonecrosis. Rhabdomyolysis = muscle breakdown, releasing myoglobin. Complications: acute kidney injury (myoglobin precipitation in renal tubules, especially in acidic/low flow states), hyperkalemia (K+ released from dead muscle), hypocalcemia (calcium deposits in necrotic muscle), disseminated intravascular coagulation (DIC). Creatine kinase (CK) markedly elevated (often >5000, may reach millions). Urine myoglobin positive (dipstick positive for blood but few RBCs = myoglobinuria). Timeline: complications develop within hours to days post-crush.",
+    "tags": [
+      "crush_injury",
+      "rhabdomyolysis",
+      "myonecrosis",
+      "trauma"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_14",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Rhabdomyolysis Management - Aggressive Hydration & Urine Alkalinization",
+    "subtopic": "rhabdo_management",
+    "content": "Aggressive IV hydration = cornerstone. Target urine output 200-300 mL/h (via foley catheter placed initially). Use normal saline 1 L/h initially, titrate to urine output. Sodium bicarbonate added to fluids (target urine pH >6.5, ideally >7) to alkalinize urine and prevent myoglobin precipitation. Typically 150 mEq NaHCO3 in 1 L D5W at rate to maintain pH; monitor closely for hypokalemia and hypernatremia. Monitor serum potassium frequently (every 1-2h initially); give calcium chloride if K+ >6 and ECG changes. Loop diuretics (furosemide 40 mg IV q4-6h) sometimes used to increase urine flow, though controversial (risk of worsening hypovolemia). Dialysis for acute kidney injury if creatinine rises rapidly or hyperkalemia refractory to medical management.",
+    "tags": [
+      "rhabdo",
+      "hydration",
+      "alkalinization",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_15",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Burn Classification - Depth & Total Body Surface Area (TBSA)",
+    "subtopic": "burn_classification",
+    "content": "Burn depth: 1st degree = erythema only (sunburn, not counted in %TBSA); 2nd degree = partial thickness, blistered, painless (dermis partially damaged); 3rd degree = full thickness, charred/white, painless, leathery. 4th degree = deep tissue (muscle, bone). Estimation of %TBSA: Rule of 9s in adults (head 9%, anterior/posterior trunk 18% each, each arm 9%, each leg 18%, perineum 1%); children have larger head (18%) and smaller legs (14% each). Circumferential burns = risk of compartment syndrome; may need escharotomy (incision through eschar to relieve pressure).",
+    "tags": [
+      "burn",
+      "classification",
+      "tbsa",
+      "depth"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_16",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Parkland Formula - Fluid Resuscitation in Burns",
+    "subtopic": "parkland_formula",
+    "content": "Parkland formula = 4 mL \u00d7 %TBSA \u00d7 body weight (kg) of lactated Ringer solution. Given over first 24h, with first half given over first 8h, second half over next 16h. Example: 70 kg patient, 40% TBSA = 4 \u00d7 40 \u00d7 70 = 11,200 mL total; 5,600 mL over 8h = 700 mL/h first 8h. Titrate to urine output endpoint: 0.5 mL/kg/h (adults), 1 mL/kg/h (children <30 kg) via foley catheter. Inadequate fluid \u2192 oliguria, acute kidney injury, death. Excessive fluid \u2192 compartment syndrome, pulmonary edema, abdominal compartment syndrome. IV access: large-bore lines (peripheral burns through unburned skin OR central line if no options).",
+    "tags": [
+      "parkland",
+      "burn",
+      "resuscitation",
+      "formula"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_17",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Burn Management - Airway, Infection Prevention, Transfer",
+    "subtopic": "burn_acute_management",
+    "content": "Airway: high suspicion for inhalation injury if enclosed space, carbonaceous sputum, singed nasal hairs, altered voice, stridor. Early intubation (before edema worsens) encouraged; difficult to intubate after swelling. Infection prevention: topical antimicrobials (silver sulfadiazine, mafenide acetate) applied to burns 2-3 times daily. Systemic antibiotics NOT given prophylactically (risk of resistant organisms). Pain management: IV opioids (morphine titrated); local/regional anesthesia adjuncts. Fluid balance: monitor insensible losses (high from burn surface). Transfer to burn center for: >10% TBSA 2nd degree (children), >15% TBSA 2nd degree (adults), any 3rd degree, circumferential burns, inhalation injury, electrical/chemical burns.",
+    "tags": [
+      "burn",
+      "management",
+      "airway",
+      "infection"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_18",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Hypothermia - Stages & Recognition",
+    "subtopic": "hypothermia_stages",
+    "content": "Hypothermia = core temperature <32\u00b0C (90\u00b0F). Mild (32-35\u00b0C): shivering, confusion, lethargy. Moderate (28-32\u00b0C): amnesia, dysarthria, ataxia, slow pulse. Severe (<28\u00b0C): coma, no shivering, slow/weak pulse, may appear dead ('no one is dead until warm and dead'). Diagnosis: esophageal or core temperature probe (regular thermometer insufficient). Paradoxical undressing: confused patient removes clothing despite cold (thermoregulation malfunction). Afterdrop: core temperature continues to drop even after removal from cold environment.",
+    "tags": [
+      "hypothermia",
+      "stages",
+      "recognition"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_19",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Hypothermia Management - Rewarming Strategies",
+    "subtopic": "hypothermia_rewarming",
+    "content": "Mild hypothermia (>32\u00b0C): passive external rewarming (blankets, warm environment). Moderate (28-32\u00b0C): active external rewarming (heat lamps, warm IV fluids, external heating pads) + active core rewarming. Severe (<28\u00b0C): extracorporeal rewarming (ECMO, cardiopulmonary bypass) preferred; achieves rapid core rewarming, maintains perfusion. Resuscitation: handle gently (arrhythmias risk, especially with jostling), do not give CPR unless core temp <30\u00b0C (CPR deferred if monitored asystole and severely hypothermic). Continue CPR during rewarming; outcome depends on duration of exposure and ambient temperature. Medications (epinephrine, amiodarone) deferred until core temp >30\u00b0C. Prognosis: good for mild-moderate hypothermia with rewarming. Severe cases with prolonged submersion poor unless rapid ECMO access.",
+    "tags": [
+      "hypothermia",
+      "rewarming",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_20",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Acute Surgical Abdomen - Overview",
+    "subtopic": "acute_abd_overview",
+    "content": "Acute surgical abdomen = abdominal condition requiring urgent surgical intervention. Key features: pain (acute onset, severe), peritoneal signs (rebound, guarding, rigidity), altered bowel sounds (silent in peritonitis, high-pitched in obstruction). Common causes: appendicitis, perforated viscus, bowel obstruction, mesenteric ischemia, acute pancreatitis, cholecystitis. Diagnosis approach: history + physical + labs (CBC, CMP, lipase) + imaging (CT abdomen/pelvis with IV contrast preferred; plain films less sensitive). Red flags: severe unremitting pain, hypotension, fever, marked leukocytosis (>15k), acidosis.",
+    "tags": [
+      "acute_abdomen",
+      "surgical_emergency",
+      "overview"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_21",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Acute Appendicitis - Diagnosis & Management",
+    "subtopic": "appendicitis",
+    "content": "Appendicitis = inflammation of appendix (bacterial infection). Classic presentation: periumbilical pain migrating to RLQ, anorexia, nausea, vomiting, fever. Physical exam: McBurney's point tenderness (point 1/3 distance from ASIS to umbilicus on RLQ), Rovsing sign (pain on palpation of LLQ refers to RLQ). Labs: elevated WBC, CRP. Imaging: CT abdomen/pelvis (sensitivity ~98%); ultrasound reasonable if low suspicion. Diagnosis often clinical. Management: NPO, IV fluids, antibiotics (cefoxitin or combination gram-neg + anaerobic coverage). Appendectomy (open or laparoscopic) definitive treatment. Uncomplicated appendicitis: straight to OR. Perforated appendicitis with abscess: percutaneous drainage (interventional radiology) + antibiotics \u00d7 6 weeks often successful, allowing elective appendectomy later.",
+    "tags": [
+      "appendicitis",
+      "acute_abdomen",
+      "surgery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_22",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Bowel Obstruction - Presentation & Imaging",
+    "subtopic": "bowel_obstruction",
+    "content": "Bowel obstruction = blockage of intestinal flow. Mechanical (physical block): adhesions, hernia, tumor, volvulus. Functional (ileus): post-operative, sepsis, medications, metabolic. Presentation: abdominal pain (colicky if mechanical), distension, nausea, vomiting, constipation (not passing flatus/stool). Small bowel obstruction: early bilious vomiting, high-pitched bowel sounds. Large bowel obstruction: more distension, later vomiting. Imaging: plain films (supine + upright) show air-fluid levels, dilated bowel. CT more sensitive; shows transition point (narrow segment). Labs: electrolyte abnormalities (from vomiting), elevated lactate if ischemic.",
+    "tags": [
+      "obstruction",
+      "bowel",
+      "imaging",
+      "acute_abdomen"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_23",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Bowel Obstruction - Conservative vs. Surgical Management",
+    "subtopic": "obstruction_management",
+    "content": "Partial small bowel obstruction (patient tolerating some oral intake, mild symptoms): trial of conservative management (NG tube, NPO, IV fluids, electrolyte correction) for 48-72h; often resolves. Complete obstruction or lack of improvement: surgical exploration (laparotomy or laparoscopy) to relieve blockage (adhesiolysis, hernia repair, resection if ischemic). Large bowel obstruction: higher risk of ischemia (perforation, sepsis); generally surgical unless obvious reversible cause (ileus from recent surgery). Adhesions (most common cause after abdominal surgery): divided during exploratory surgery. Volvulus: detorsion or resection depending on viability of bowel. Prognosis: good with early recognition and surgery; mortality increases with delay and perforation.",
+    "tags": [
+      "obstruction",
+      "management",
+      "surgery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_24",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Perforated Viscus - Diagnosis & Urgent Management",
+    "subtopic": "perforated_viscus",
+    "content": "Perforation = rupture of hollow organ, spillage of contents into peritoneal cavity. Causes: peptic ulcer perforation (most common), trauma, malignancy, inflammatory bowel disease, diverticulitis. Presentation: acute severe pain (often described as 'worst of life'), rigid abdomen, peritonitis signs, shock. Pneumoperitoneum: free air visible on upright CXR or CT (see under diaphragm on CXR). Diagnosis: clinical + imaging (CT preferred, shows perforation site). Management: urgent surgical exploration (resection, repair, or drainage). Preoperative: NPO, IV fluids, broad-spectrum antibiotics (cefoxitin or gentamicin + clindamycin), NG tube for decompression. Mortality highest if >24h delay to surgery. Peptic ulcer perforations: may attempt conservative management (NPO, NG tube, antibiotics, H2 blockers/PPI) in selected stable patients, but surgery preferred in most.",
+    "tags": [
+      "perforation",
+      "viscus",
+      "acute_abdomen",
+      "surgery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_trauma_unit_25",
+    "created_at": "2026-06-05T00:29:35.959174"
+  },
+  {
+    "topic": "Central Venous Catheter (CVC) - Indications",
+    "subtopic": "cvc_indications",
+    "content": "CVC indications: (1) difficulty obtaining peripheral IV access; (2) need for hemodynamic monitoring (CVP/right atrial pressure); (3) frequent blood draws; (4) vesicant medications (chemotherapy, vasopressors, hypertonic solutions); (5) renal replacement therapy vascular access; (6) temporary transvenous pacing; (7) hemodialysis access. Sites: internal jugular vein (IJV, central location, landmark-based or US-guided), subclavian vein (SC, hidden, landmark-based), femoral vein (easiest to access, high infection risk). Triple-lumen, quad-lumen common; specialized lines (Swan-Ganz, PICC) alternatives.",
+    "tags": [
+      "cvc",
+      "central_line",
+      "indications",
+      "vascular_access"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_0",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Placement - Technique (IJV) & Landmark Approach",
+    "subtopic": "cvc_placement",
+    "content": "IJV anatomy: runs between sternal and clavicular heads of sternocleidomastoid. Landmark technique: palpate carotid pulse medially, aim for space between muscle heads at angle of mandible (neck junction). Insert at 30-45\u00b0 angle (medial to lateral), advance until blood return (dark, non-pulsatile). Ultrasound-guided preferred (higher success, fewer complications): place probe perpendicular to IJV, identify vein (compressible, lateral to carotid artery), enter under direct visualization. Wire technique: over-the-wire placement (Seldinger technique): needle, guidewire through needle, dilator, then catheter over wire. Withdraw wire, flush catheter, suture in place, apply sterile dressing.",
+    "tags": [
+      "cvc",
+      "ijv",
+      "placement",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_1",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Complications - Mechanical, Infectious, Thrombotic",
+    "subtopic": "cvc_complications",
+    "content": "Mechanical: arterial puncture (bright pulsatile blood, stop immediately), pneumothorax (dyspnea, decreased breath sounds, CXR), hemothorax (from inadvertent vessel tear), cardiac perforation (can cause tamponade), venous thrombosis. Infectious: catheter-related bloodstream infection (CLABSI, fever + positive blood culture), sepsis. Reduced by: chlorhexidine skin prep, sterile technique, transparent dressing change q5-7 days, prompt removal when no longer needed. Thrombotic: clotting around catheter (prevents blood return), DVT of access vein (rare). Diagnosis: clinical assessment (no blood return, swelling at site), imaging (CXR, ultrasound). Management: removal if infected or non-functional, anticoagulation if thrombosis.",
+    "tags": [
+      "cvc",
+      "complications",
+      "infection",
+      "mechanical"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_2",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "CVC Positioning & Line Care",
+    "subtopic": "cvc_management",
+    "content": "Correct position: tip at junction of superior vena cava and right atrium (confirmed on CXR), ideally 2-3 cm above right atrial border. Too proximal (in brachiocephalic/subclavian): CVP reading invalid, risk of perforation. Dressing: transparent (allows visualization), replaced every 5-7 days. Tubing: labeled for central line, separate from peripheral lines to prevent contamination. Flushing: normal saline between medications, heparin locks (10 U/mL saline) if not continuous infusion. CVP waveform: a (atrial contraction), c (ventricular contraction transmitted back), v (passive venous filling). Normal CVP 2-8 mmHg (approximately 5-12 cm H2O). Elevated CVP suggests right heart failure, volume overload, or tamponade.",
+    "tags": [
+      "cvc",
+      "positioning",
+      "care",
+      "cvp"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_3",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line - Indications & Site Selection",
+    "subtopic": "aline_indications",
+    "content": "Arterial line (A-line) indications: (1) continuous blood pressure monitoring (hemodynamically unstable patients); (2) frequent arterial blood gas sampling; (3) cardiac surgery, major trauma; (4) vasopressor use requiring beat-to-beat BP. Sites: radial (most common, distal to brachial, superficial), femoral (proximal, less distal ischemia risk), brachial (retrograde flow risk, less preferred), dorsalis pedis (terminal vessel, ischemia risk). Allen test: assess collateral circulation to hand (brachial/radial). Compress both arteries, release radial, observe color return (normal <5 sec). Delayed color = inadequate collateral, avoid radial line.",
+    "tags": [
+      "arterial_line",
+      "aline",
+      "indications",
+      "sites"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_4",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line Placement Technique",
+    "subtopic": "aline_placement",
+    "content": "Radial approach: palpate artery at wrist (distal to brachial bifurcation), prepare skin (chlorhexidine), infiltrate with 1% lidocaine. Insert 20G catheter-over-needle at 30-45\u00b0 angle, aimed proximal along artery direction. Flashback signals vein (too proximal), withdraw and reattempt. Advance catheter off needle, thread guidewire (if using), secure with sutures, connect to pressure transducer and heparinized saline flush system. Ultrasound-guided: place probe longitudinal over artery, visualize entry under direct guidance. Femoral approach: palpate femoral pulse (midpoint between ASIS and pubic symphysis), enter arterially at 45\u00b0 angle, advance similarly.",
+    "tags": [
+      "arterial_line",
+      "placement",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_5",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Waveform Interpretation",
+    "subtopic": "aline_waveform",
+    "content": "Normal arterial waveform: steep systolic upstroke, dicrotic notch (aortic valve closure) dividing systole and diastole, gradual diastolic decline. SBP systolic peak, DBP at nadir, MAP calculated by integrating area under curve (roughly DBP + 1/3 pulse pressure). Abnormal patterns: damped waveform (loss of detail, appears flat) from kinks, clots, air bubbles; check tubing, flush gently, replace if clotted. Pulsus paradoxus (>10 mmHg drop in SBP during inspiration) seen in tamponade, severe asthma, COPD exacerbation. Pulsus alternans (alternating tall/short beats) in severe heart failure. Anacrotic notch (double systolic peak) in aortic stenosis.",
+    "tags": [
+      "arterial_waveform",
+      "aline",
+      "interpretation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_6",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Arterial Line Complications & Contraindications",
+    "subtopic": "aline_complications",
+    "content": "Complications: thrombosis (from intimal damage, prolonged use), distal ischemia (manifest as cool hand, cyanosis, pain), infection (from contamination), pseudoaneurysm (pulsatile swelling at site). Radial: <1% clinically significant distal ischemia if Allen test normal. Femoral: higher infection, thromboembolism risk. Brachial/dorsalis pedis: high ischemia risk, avoid if possible. Removal: typically within 3-5 days. Signs requiring removal: fever, erythema, no blood return, ischemia. Contraindications: inadequate collateral flow (failed Allen test), evidence of distal ischemia, infection at site, coagulopathy (relative, not absolute if critical need).",
+    "tags": [
+      "arterial_line",
+      "complications",
+      "removal"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_7",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Pericardiocentesis - Technique & Approach",
+    "subtopic": "pericardiocentesis_technique",
+    "content": "Approach: subxiphoid (most common, anterior to pericardium avoiding diaphragm). Prep: ultrasound probe placed at subxiphoid to localize fluid, identify safe entry. Technique: infiltrate with 1% lidocaine, insert 18G needle at 45\u00b0 angle toward left shoulder, advance slowly (patient may feel substernal pressure). When needle tip enters pericardial space (resistance drops), fluid (usually clear/serous/hemorrhagic) aspirated. Guidewire/catheter technique: insert wire, dilate tract, place pigtail catheter for continued drainage if large effusion. Send fluid for analysis (cell count, culture, glucose, LDH, protein, Gram stain, cytology).",
+    "tags": [
+      "pericardiocentesis",
+      "tamponade",
+      "technique",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_8",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Pericardiocentesis - Complications & When NOT To Attempt",
+    "subtopic": "pericardiocentesis_complications",
+    "content": "Complications: perforation of myocardium/coronary artery (hemorrhagic pericardium), ventricular rupture, arrhythmias, worsening hypotension (if relieving tamponade too quickly, increases venous return suddenly). Avoid pericardiocentesis: aortic dissection with hemopericardium (needs surgical repair), loculated effusion (catheter may not reach fluid), small effusion (hard to tap). If dissection suspected, obtain CT before attempting. Loculation diagnosed on ultrasound (multiple fluid pockets). Pericardiocentesis temporizing measure in tamponade; definitive = pericardial window (surgical drainage) or antibiotics/NSAIDs if pericarditis.",
+    "tags": [
+      "pericardiocentesis",
+      "complications",
+      "contraindications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_9",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Cricothyrotomy - Indications & Emergency Airway",
+    "subtopic": "cricothyrotomy_indications",
+    "content": "Cricothyrotomy = emergency surgical airway through cricothyroid membrane (between cricoid and thyroid cartilages). Indications: 'cannot intubate, cannot oxygenate' scenario where endotracheal intubation impossible (massive facial trauma, airway obstruction, anaphylaxis with airway edema) AND mask ventilation ineffective. NOT for routine intubation (reserved for true emergencies). Landmark: palpate thyroid cartilage prominence, move distally to first notch (cricothyroid space), locate cricoid cartilage below. Airway already difficult from whatever caused obstruction, so act quickly.",
+    "tags": [
+      "cricothyrotomy",
+      "airway",
+      "emergency",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_10",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Cricothyrotomy Technique - Rapid Execution",
+    "subtopic": "cricothyrotomy_technique",
+    "content": "Technique (percutaneous emergency): minimal prep (aqueous antiseptic if time), stabilize larynx with nondominant hand, insert 14G needle through cricothyroid membrane at 45\u00b0 angle caudad, withdraw stylet leaving catheter. Thread guidewire (if kit available), dilate with dilator, advance endotracheal tube (size 6.0-7.0) over dilator. Alternatively, scalpel approach (surgical): vertical incision through skin/subcutaneous tissue, horizontal incision through cricothyroid membrane, insert tube. Confirm placement (bilateral breath sounds, CO2 on capnography). Complications: tracheal stenosis (long-term sequela of prolonged tube), perforation, infection. Convert to standard endotracheal tube intubation or tracheostomy when emergency resolved.",
+    "tags": [
+      "cricothyrotomy",
+      "surgical_airway",
+      "technique"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_11",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Emergency Transvenous Pacing - Indications",
+    "subtopic": "pacing_indications",
+    "content": "Emergency transvenous pacing indicated for: symptomatic bradycardia (HR <40 with hypotension, altered mentation, shock) unresponsive to atropine; complete heart block; severe sinus node dysfunction with symptoms; asystole (controversial, some data suggests poor outcomes). Temporary measure while awaiting underlying cause resolution or permanent pacemaker. Route: central line placement (IJV, subclavian, femoral) with advancing balloon-tipped pacing catheter into right ventricle.",
+    "tags": [
+      "pacing",
+      "transvenous",
+      "indications",
+      "emergency"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_12",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Transvenous Pacing - Technique & Troubleshooting",
+    "subtopic": "pacing_technique",
+    "content": "Technique: place central line (see CVC section), advance pacing catheter through to right atrium (appear on monitor as atrial-sized deflection), continue advancing into right ventricle (larger deflection, ST elevation on ECG can occur). Inflate balloon at catheter tip to float into RV. Connect to pacer box, set rate (60-80 bpm), start at high output (10 mA), gradually decrease until capture noted (widened QRS following pacing spike). Then increase by 2-5 mA above capture threshold = safety margin. Issues: no capture (reposition catheter, increase output), sensing problems (catheter touching wall), perforation (rare, presents as tamponade). Monitor continuous ECG and vital response to pacing.",
+    "tags": [
+      "pacing",
+      "technique",
+      "capture",
+      "troubleshooting"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_13",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Point-of-Care Ultrasound (POCUS) - Basics",
+    "subtopic": "pocus_basics",
+    "content": "POCUS = bedside ultrasound to guide clinical decisions in real-time. Probe types: linear (high frequency 8-14 MHz, superficial structures like vessels, nerves), curvilinear (2-5 MHz, deeper organs). Basic physics: sound reflects differently depending on tissue density/acoustic impedance. Hyperechoic (white): bone, fat, air (reflects many waves). Hypoechoic (gray): fluid, muscle. Anechoic (black): pure fluid. Training: varies by institution; ACEP recommends minimum hours/supervised exams per application (IV placement 25h, thorax 25h, abdomen 25h, cardiac 25h).",
+    "tags": [
+      "ultrasound",
+      "pocus",
+      "basics",
+      "probe"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_14",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Ultrasound-Guided IV Access",
+    "subtopic": "ultrasound_iv_access",
+    "content": "Ultrasound improves success rate of difficult IV access from ~50% (landmark) to >90%. Technique: place linear probe over vessel perpendicular (short axis, appear as circles) or longitudinal (long axis, appear as tubes). Vein compresses with pressure, artery pulsates; target veins. Insert needle at 30-45\u00b0 angle under direct visualization (needle appears as echogenic line advancing through tissue). Confirm tip enters vessel (sudden loss of resistance, blood flashback). Advance catheter over needle. Basilic/brachial veins in upper arm preferred (deeper, less collapse). Can also guide central lines, arterial lines (see relevant sections).",
+    "tags": [
+      "ultrasound",
+      "iv_access",
+      "procedure"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_15",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Ultrasound-Guided Regional Anesthesia",
+    "subtopic": "ultrasound_nerve_blocks",
+    "content": "Nerve blocks reduce anesthetic/opioid requirements, provide excellent analgesia. Examples: axillary block (brachial plexus), femoral block (quadriceps, medial lower leg), interscalene (shoulder). Technique: identify nerve on ultrasound (hypoechoic structure with hyperechoic linear streaks = fascicles), position needle tip near nerve using transducer guidance, inject local anesthetic around nerve (infiltration pattern). Complications: hematoma, intravascular injection (cardiovascular toxicity), nerve damage (from needle trauma). Ultrasound reduces risk significantly vs. landmark technique. Requires training and credentialing; not all hospitalists perform routinely.",
+    "tags": [
+      "nerve_blocks",
+      "ultrasound",
+      "anesthesia"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_16",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Paracentesis - Indications & Ascites Analysis",
+    "subtopic": "paracentesis_indications",
+    "content": "Paracentesis = drainage of ascites. Indications: (1) diagnostic (new onset ascites, fever in cirrhotic, sepsis workup); (2) therapeutic (symptomatic ascites, respiratory compromise). Ascites analysis: cell count/differential (WBC >250 PMN = SBP), glucose, protein (albumin gradient), culture (bottle inoculation at bedside improves yield), Gram stain. Serum-ascites albumin gradient (SAAG) = serum albumin minus ascites albumin. >1.1 suggests portal hypertension (cirrhosis, hepatic vein thrombosis). <1.1 suggests other causes (peritoneal carcinomatosis, tuberculosis, pancreatitis).",
+    "tags": [
+      "paracentesis",
+      "ascites",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_17",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Spontaneous Bacterial Peritonitis (SBP) - Diagnosis & Treatment",
+    "subtopic": "sbp_diagnosis",
+    "content": "SBP = infection of ascites in cirrhotic patients without perforation. Definition: ascites PMN >250 cells/\u03bcL OR positive culture (may have <250 PMN). Symptoms: fever, abdominal pain, altered mental status (hepatic encephalopathy), shock. Diagnosis: paracentesis (cell count, culture); ascites may not be frankly purulent. Organisms: gram-negative (E. coli, Klebsiella) most common. Prognosis: high mortality (20-50%) if untreated. Treatment: empiric antibiotics (ceftriaxone 1 g IV q12h or cefotaxime 1 g IV q8h) for minimum 7-10 days. Albumin supplementation (1.5 g/kg day 1, then 1 g/kg day 3) improves survival by reducing renal failure. Lactulose for hepatic encephalopathy if present.",
+    "tags": [
+      "sbp",
+      "peritonitis",
+      "ascites",
+      "treatment"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_18",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Paracentesis - Technique & Complications",
+    "subtopic": "paracentesis_technique",
+    "content": "Site: ultrasound-guided preferred to avoid bowel/viscera. Lower midline (below umbilicus, avoid inferior epigastric vessels) or lower lateral (flanks, safest distance from structures). Technique: prep with chlorhexidine, infiltrate with 1% lidocaine, insert 18-20G needle at angle toward ascites pocket (confirmed by ultrasound), aspirate fluid into sterile tubes (cell count in EDTA, culture in aerobic bottle, chemistry in plain tube). Withdraw needle, apply dressing. Complications: bowel perforation (pain, peritonitis), vessel puncture (hematoma, continued bleeding), infection (rare), hypotension (from large volume removal). Limit therapeutic paracentesis volume (typically <5 L) to avoid intravascular depletion; give albumin IV (6-8 g per liter removed) if >5 L.",
+    "tags": [
+      "paracentesis",
+      "technique",
+      "complications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_19",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Thoracentesis - Indications & Pleural Fluid Analysis",
+    "subtopic": "thoracentesis_indications",
+    "content": "Thoracentesis = drainage of pleural fluid. Indications: (1) diagnostic (effusion of unclear etiology); (2) therapeutic (large effusion causing dyspnea or hypoxia). Pleural fluid analysis: cell count/differential, protein, glucose, LDH, pH, Gram stain, culture, cytology. Exudative (Light's criteria): fluid LDH >2/3 upper limit serum LDH, OR fluid protein >3 g/dL, OR (fluid LDH/serum LDH >0.7). Causes of exudates: infection (pneumonia, empyema, TB), malignancy, pulmonary embolism, collagen-vascular disease. Transudates (congestive heart failure, cirrhosis, nephrotic syndrome) typically require only diuretics/treat underlying cause.",
+    "tags": [
+      "thoracentesis",
+      "pleural_fluid",
+      "diagnostics"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_20",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Thoracentesis - Technique & Complications",
+    "subtopic": "thoracentesis_technique",
+    "content": "Ultrasound-guided strongly recommended. Site: entry point 1-2 interspace below top of effusion on ultrasound, avoiding ribs (neurovascular bundle runs under rib). Technique: prep, infiltrate with lidocaine, insert 18-20G needle, advance until fluid return, place catheter/needle at 90\u00b0 angle to patient. Send fluid in appropriate tubes. Remove needle, apply dressing. Limit volume <1200 mL (high risk of re-expansion pulmonary edema if drained suddenly). Complications: pneumothorax (most common, risk <5% with ultrasound guidance, presents as dyspnea, check CXR post-procedure), hemothorax (vessel puncture), infection, pain. Dry tap: needle misplaced, reposition under ultrasound. Re-expansion pulmonary edema: chest pain, hypoxia, pulmonary infiltrates on imaging 24h after drainage; manage with supplemental O2, diuretics, monitoring.",
+    "tags": [
+      "thoracentesis",
+      "technique",
+      "complications"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_proc_unit_21",
+    "created_at": "2026-06-05T00:29:36.108213"
+  },
+  {
+    "topic": "Preeclampsia - Definition & Risk Factors",
+    "subtopic": "preeclampsia_overview",
+    "content": "Preeclampsia = new-onset hypertension (SBP \u2265140 or DBP \u226590) after 20 weeks gestation + proteinuria (\u22650.3 g/24h or \u22651+ on dipstick) OR new end-organ dysfunction without proteinuria (liver injury, creatinine >1.1, thrombocytopenia <100k, pulmonary edema, cerebral symptoms). Onset typically 2nd-3rd trimester; early-onset <34 weeks (more severe). Risk factors: first pregnancy, age >35 or <18, obesity, chronic hypertension, diabetes, prior preeclampsia. Pathophysiology: placental ischemia, abnormal trophoblastic invasion, endothelial dysfunction.",
+    "tags": [
+      "preeclampsia",
+      "pregnancy",
+      "hypertension",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_0",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Eclampsia - Seizures & Management",
+    "subtopic": "eclampsia",
+    "content": "Eclampsia = preeclampsia + seizures (tonic-clonic, generalized). Seizures may occur without warning, antecedent symptoms may be absent. Presentation: headache, visual changes, epigastric pain (are warning signs but eclampsia can present suddenly). Seizure management: ensure airway safety (position on side, prevent aspiration), give oxygen, apply fetal monitoring. Magnesium sulfate FIRST-LINE: 4-6 g IV bolus over 15-20 min (loading), then 1-2 g/h infusion. Prevents recurrent seizures (prevents ~60% of seizures in preeclampsia). Anticonvulsants (lorazepam, phenytoin) second-line if continued seizures despite magnesium.",
+    "tags": [
+      "eclampsia",
+      "seizures",
+      "magnesium",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_1",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Magnesium Sulfate Dosing & Toxicity",
+    "subtopic": "magnesium_protocol",
+    "content": "Loading: 4-6 g IV slow push (or 10-14 g IM divided, less common now). Maintenance: 1-2 g/h IV infusion for seizure prophylaxis and treatment (typically continued 12-24h post-delivery or after last seizure). Monitoring: deep tendon reflexes (hypermagnesemia abolishes reflexes), respiratory depression (magnesium depresses respiratory drive). Therapeutic level 4-7 mg/dL; toxicity begins >10 mg/dL. Signs of excess: loss of deep tendon reflexes (loss indicates severe toxicity), respiratory depression. Discontinue if reflexes lost, monitor closely. Fetal effects: minimal (not teratogenic); used in preeclampsia for seizure prevention and in preterm labor. Hypocalcemia can occur; have calcium gluconate available as antidote if severe toxicity.",
+    "tags": [
+      "magnesium",
+      "dosing",
+      "toxicity",
+      "preeclampsia"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_2",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Hypertension Management in Preeclampsia - Antihypertensive Choice",
+    "subtopic": "preeclampsia_antihypertensives",
+    "content": "Severe range hypertension in preeclampsia: SBP \u2265160 or DBP \u2265110. Goal: reduce by 15-25% (NOT to normotension, which may compromise placental perfusion). First-line agents: IV labetalol (20 mg initial, then 40-80 mg q10 min, max 220 mg) or IV hydralazine (5-10 mg initial, q20 min). Oral nifedipine (immediate-release 10-20 mg q20 min, avoid extended-release) alternative if IV unavailable. Avoid ACE inhibitors, ARBs (teratogenic in pregnancy). Methyldopa safe but slow-acting (30 min). Goal SBP 140-150 (permissive hypertension to maintain placental perfusion). Delivery definitive treatment.",
+    "tags": [
+      "preeclampsia",
+      "hypertension",
+      "antihypertensives"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_3",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "HELLP Syndrome - Hemolysis, Elevated Liver Enzymes, Low Platelets",
+    "subtopic": "hellp_syndrome",
+    "content": "HELLP = life-threatening variant of preeclampsia. Hemolysis: schistocytes on blood smear, elevated indirect bilirubin (>1.2), elevated LDH (>600). Elevated liver enzymes: AST >70 U/L (often >1000), indicative of liver ischemia/infarction. Low platelets: <100k (often <50k), risk of bleeding. Onset: 3rd trimester (30-36 weeks) or postpartum (72h post-delivery, 'late HELLP'). Presentation: malaise, RUQ pain, nausea; may be mistaken for gastroenteritis. Complications: DIC, acute liver failure, placental abruption, pulmonary edema. Mortality 1-3% despite optimal management; fetal mortality 5-15%.",
+    "tags": [
+      "hellp",
+      "hemolysis",
+      "liver",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_4",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "HELLP Management & Delivery",
+    "subtopic": "hellp_management",
+    "content": "Immediate management: magnesium sulfate (seizure prophylaxis), control hypertension (labetalol/hydralazine), IV fluids cautiously (risk of pulmonary edema). Platelet transfusion: indicated if <50k or active bleeding; prophylactic transfusion before procedures if <50k. Fresh frozen plasma if coagulopathy (PT prolonged, low fibrinogen). Corticosteroids: betamethasone 12 mg IM \u00d7 2 doses (48h apart) to accelerate fetal lung maturity if <34 weeks. Deliver urgently: vaginal delivery if no contraindications (spontaneous labor, favorable cervix), cesarean if failed labor or fetal distress. Timing: consider expectant management 24-48h if <32 weeks and mother/fetus stable to gain fetal maturity benefit, but monitor intensively.",
+    "tags": [
+      "hellp",
+      "management",
+      "delivery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_5",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Gestational Diabetes Mellitus (GDM) - Screening & Diagnosis",
+    "subtopic": "gdm_overview",
+    "content": "GDM = glucose intolerance first recognized during pregnancy (typically 2nd-3rd trimester). Screening: 50 g oral glucose tolerance test (OGTT) at 24-28 weeks (fasting not required). If result >140 mg/dL, proceed to 3-hour 100 g OGTT. Diagnosis: \u22652 abnormal values on 3-hour test (fasting >95, 1-h >180, 2-h >155, 3-h >140 mg/dL). Risk factors: maternal age >25, obesity, family history diabetes, prior GDM, polycystic ovary syndrome. Complications: maternal (preeclampsia risk increases), fetal (macrosomia, birth injury, neonatal hypoglycemia), long-term (both mother and infant at risk for type 2 diabetes).",
+    "tags": [
+      "gdm",
+      "gestational_diabetes",
+      "screening"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_6",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "GDM Management - Diet, Monitoring, Insulin",
+    "subtopic": "gdm_management",
+    "content": "First-line: medical nutrition therapy (30-33 kcal/kg/day, 45-50% carbs, emphasis on complex carbs/fiber). Self-monitored blood glucose (fasting <95, 1-h post-prandial <140 mg/dL targets). Home glucose monitoring 3-4 times daily (fasting + 1h after main meals). Insulin: if glucose targets not met with diet (25-40% of women). Insulin types: NPH (basal, longer-acting, 0.5-1 U/kg/day divided), regular or rapid-acting (bolus with meals). Metformin: some data support use (500-2000 mg daily divided) as alternative/adjunct to insulin; fewer hypoglycemia episodes. Glyburide: second-generation sulfonylurea, controversial (higher rates of neonatal hypoglycemia in some studies). Monitor fetal growth with ultrasound (monthly at diagnosis, q2w if insulin-requiring).",
+    "tags": [
+      "gdm",
+      "management",
+      "insulin",
+      "monitoring"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_7",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Placental Abruption - Presentation & Severity",
+    "subtopic": "abruption_overview",
+    "content": "Placental abruption = premature separation of placenta from uterine wall. Presentation: vaginal bleeding (may be concealed behind placenta), abdominal/back pain (may be severe), uterine tenderness/contractions, fetal distress on monitoring. Severity: mild (small area, mother stable, fetus reassuring), moderate (moderate bleeding, maternal tachycardia/tachypnea, fetal distress), severe (massive bleeding, maternal shock, fetal demise). Risk factors: trauma (motor vehicle accident, fall, intimate partner violence), hypertension, smoking, cocaine use, prior abruption. Complications: hemorrhagic shock, DIC (from thromboplastin release), acute renal failure, fetal death.",
+    "tags": [
+      "abruption",
+      "placental",
+      "hemorrhage",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_8",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Placental Abruption - Management & Delivery",
+    "subtopic": "abruption_management",
+    "content": "Immediate: two large-bore IVs, type & cross, CBC, coagulation panel (PT, aPTT, fibrinogen, D-dimer), initiate fetal monitoring (continuous). IV fluids, blood products as needed (maintain Hgb >7 g/dL). Magnesium sulfate if <34 weeks (neuroprotection). Delivery urgent: vaginal acceptable if mother/fetus stable, cervix favorable; cesarean if fetal distress, maternal shock, failed labor, or incomplete dilation after reasonable trial. Massive transfusion protocol if hemorrhage refractory (1:1:1 RBC:FFP:platelets). Monitor closely for DIC (consumption of platelets, fibrinogen, prolonged PT/aPTT); manage with appropriate blood products. Fetal prognosis depends on severity and timing to delivery.",
+    "tags": [
+      "abruption",
+      "management",
+      "delivery"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_9",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Placenta Previa - Definition & Management",
+    "subtopic": "placenta_previa",
+    "content": "Placenta previa = placental implantation covering cervical os (complete) or near it (partial/low-lying). Risk: vaginal bleeding (painless) in 2nd-3rd trimester. Diagnosis: ultrasound (transvaginal more accurate). At delivery: vaginal delivery impossible if complete/partial previa (placenta would deliver before baby). Management in pregnancy: pelvic rest (avoid sexual intercourse, strenuous activity), avoid tampons. Anticipate delivery: planned cesarean section at 39 weeks (or earlier if bleeding complicates). Major complications: massive bleeding at delivery (especially if placenta accreta coexisting), need massive transfusion, ICU care. Maternal morbidity significant with previa + accreta.",
+    "tags": [
+      "placenta_previa",
+      "bleeding",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_10",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Amniotic Fluid Embolism (AFE) - Pathophysiology & Presentation",
+    "subtopic": "afe_overview",
+    "content": "AFE = rare but catastrophic entry of amniotic fluid into maternal circulation during labor/delivery/postpartum. Pathophysiology: fetal fluid enters maternal venous system (from uterine vein trauma), triggers inflammatory cascade (similar to anaphylaxis), pulmonary vasospasm, right heart failure. Presentation: sudden onset dyspnea, hypotension, loss of consciousness, seizures, cardiac arrest (often during labor or immediately post-delivery). May have rash (fetal squames in skin), fever, coagulopathy, pink frothy sputum (pulmonary edema). Incidence ~1 per 30,000 deliveries; mortality 60-80% despite aggressive resuscitation. Risk factors: operative delivery (induction, cesarean, forceps), maternal age >35, placental abruption.",
+    "tags": [
+      "afe",
+      "amniotic_fluid",
+      "embolism",
+      "emergency"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_11",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "AFE Management - Resuscitation & Supportive Care",
+    "subtopic": "afe_management",
+    "content": "Management: immediate resuscitation (ACLS protocol), high-flow O2 (100%), intubation if respiratory failure. IV access \u00d7 2, aggressive fluid resuscitation (crystalloid + PRBCs). Pulmonary artery catheter (Swan-Ganz) may help guide management if available. Vasopressor support (dopamine, dobutamine, norepinephrine) for shock. Treat coagulopathy: FFP, cryoprecipitate for low fibrinogen, platelets if <50k. ECMO consideration if refractory cardiac arrest (some centers use ECMO-assisted resuscitation in AFE). No specific antidotes; supportive care + time are mainstay. Maternal mortality ~60%; fetal survival depends on timing (those delivered during initial resuscitation have better fetal outcomes). Antihistamines, steroids sometimes used though evidence limited.",
+    "tags": [
+      "afe",
+      "resuscitation",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_12",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Peripartum Cardiomyopathy - Definition & Diagnosis",
+    "subtopic": "ppcardiomyopathy",
+    "content": "Peripartum cardiomyopathy = dilated cardiomyopathy occurring in pregnancy or early postpartum (typically within 5 months post-delivery). Presentation: dyspnea, orthopnea, edema, fatigue (may be mistaken for normal pregnancy changes). Diagnosis: EKG (nonspecific changes), echocardiogram (dilated LV, reduced ejection fraction <45%), elevated troponin/BNP. Etiology unclear (autoimmune? viral? pregnancy-related hemodynamic stress?). Risk factors: advanced maternal age, multiparity, hypertension, preeclampsia. Prognosis: variable; ~50% recover LV function with optimal medical management, 25% have persistent dysfunction, 25% fatal or need transplant.",
+    "tags": [
+      "cardiomyopathy",
+      "peripartum",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_13",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Peripartum Cardiomyopathy Management",
+    "subtopic": "ppcardiomyopathy_management",
+    "content": "Medical management: ACE inhibitors (lisinopril, enalapril; teratogenic in pregnancy so avoid 1st trimester but used postpartum), beta-blockers (labetalol safe in pregnancy, carvedilol/metoprolol postpartum), diuretics (furosemide for volume overload), aldosterone antagonist (spironolactone). Anticoagulation: warfarin or heparin if EF <35% (risk of thrombus/stroke). Inotropic support if hemodynamically unstable (dobutamine, milrinone for acute decompensation). Mechanical support (IABP, LVAD) bridge to recovery or transplant if refractory heart failure. Delivery: vaginal preferred if stable; cesarean if maternal deterioration. Avoid NSAIDs, avoid pregnancy recurrence (high risk of recurrent cardiomyopathy with subsequent pregnancies; counseling needed).",
+    "tags": [
+      "cardiomyopathy",
+      "management",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_14",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Maternal Sepsis - Recognition in Pregnancy",
+    "subtopic": "maternal_sepsis",
+    "content": "Sepsis in pregnancy often presents atypically. SIRS criteria differ: tachycardia baseline higher in pregnancy (>100 might be normal); tachypnea >20; temperature extremes. Sources: chorioamnionitis (intrauterine infection), postpartum endometritis, UTI/pyelonephritis, surgical site infection (post-cesarean), pneumonia. Recognition challenging: pregnancy symptoms overlap (fatigue, nausea). Key: maintain high suspicion, obtain blood cultures early, broad-spectrum antibiotics early. Aggressive fluid resuscitation; vasopressors if hypotensive. Source control (delivery if intrauterine infection, antibiotics for UTI, wound drainage if needed).",
+    "tags": [
+      "sepsis",
+      "maternal",
+      "pregnancy",
+      "infection"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_15",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Chorioamnionitis - Diagnosis & Treatment",
+    "subtopic": "chorioamnionitis",
+    "content": "Chorioamnionitis = intrauterine infection (bacteria ascend through cervix). Diagnosis: fever (>38.0\u00b0C) + \u22652: maternal tachycardia (>100), fetal tachycardia (>160), fundal tenderness, foul-smelling amniotic fluid, elevated maternal WBC (>15k). Amniotic fluid gram stain/culture definitive but delivery often urgent. Treatment: immediate delivery (induction if favorable cervix, cesarean if unfavorable/failed induction) + antibiotics. Regimen: ampicillin 2 g IV q6h + gentamicin 5 mg/kg IV q24h + clindamycin 900 mg IV q8h (if cesarean or suspected anaerobes). Continue antibiotics 24h post-delivery (total 48h minimum). Maternal outcomes generally good with prompt antibiotics + delivery. Fetal/neonatal sepsis risk; neonates given sepsis workup.",
+    "tags": [
+      "chorioamnionitis",
+      "infection",
+      "pregnancy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_16",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Postpartum Hemorrhage (PPH) - Definition & Etiology",
+    "subtopic": "pph_overview",
+    "content": "PPH = blood loss >500 mL vaginal delivery, >1000 mL cesarean delivery in first 24h. Major risk factors: uterine atony (60%), placenta previa/accreta (15%), retained placenta (5%), coagulopathy (5%), other (lacerations, uterine rupture) (10%). 4Ts mnemonic: Tone (atony), Tissue (retained products), Thrombin (coagulopathy), Trauma (lacerations). Early PPH (first 24h) vs. late PPH (24h-12 weeks). Presentation: heavy vaginal bleeding, passage of clots, signs of shock (tachycardia, hypotension). Massive transfusion protocol if refractory bleeding.",
+    "tags": [
+      "pph",
+      "postpartum_hemorrhage",
+      "bleeding",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_17",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Uterine Atony - Management",
+    "subtopic": "uterine_atony",
+    "content": "Uterine atony = inadequate uterine muscle contraction post-delivery, most common cause of PPH. Management: immediate uterine massage (vigorous external massage through abdominal wall, stimulates contraction), IV oxytocin bolus (10 U IV push, then continuous infusion 10-80 mL/h), then methylergonovine (Methergine) 0.2 mg IM/IV q2-4h (NOT if hypertensive, contraindicated in preeclampsia). If refractory: misoprostol 1000 \u03bcg rectal (slow onset but no contraindications), carboprost (Hemabate) 250 \u03bcg IM q15 min (max 8 doses) - potent uterotonic, use cautiously. Intervention radiology: angiographic embolization if medical management fails. Surgery: uterine compression (B-Lynch suture), hysterectomy last resort (high morbidity).",
+    "tags": [
+      "atony",
+      "uterine",
+      "hemorrhage",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_18",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Retained Placenta - Diagnosis & Management",
+    "subtopic": "retained_placenta",
+    "content": "Retained placenta = placenta not delivered within 30-60 min of fetal delivery. Diagnosis clinical (failure to deliver, bleeding continuing). Risk: manual removal needed (increased infection, hemorrhage). Complications: placenta accreta (abnormal invasion, high bleeding/hysterectomy risk). Management: oxytocin bolus first (may stimulate contraction/delivery). Manual removal: controlled cord traction, fundal support, hand inserted to separate placenta from uterus (requires anesthesia/analgesia). Ensure placenta completely delivered (retained fragments \u2192 infection, hemorrhage). Send for pathology. If placenta accreta suspected, prepare for possible hysterectomy (embolization alternative at some centers).",
+    "tags": [
+      "retained_placenta",
+      "hemorrhage",
+      "management"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_19",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Shoulder Dystocia - Recognition & Risk Factors",
+    "subtopic": "shoulder_dystocia",
+    "content": "Shoulder dystocia = fetal anterior shoulder impacted behind maternal pubic symphysis after fetal head delivered (rare but perinatal emergency). Presentation: head delivers, face retracts ('turtle sign'), body does not follow. Risk factors: fetal macrosomia (GDM), maternal obesity, prolonged 2nd stage, operative delivery. Fetal complication: brachial plexus injury (Erb palsy, 5-15% if dystocia occurs), hypoxia, death if not resolved quickly. Maternal: lacerations, hemorrhage.",
+    "tags": [
+      "shoulder_dystocia",
+      "obstetric_emergency",
+      "high_yield"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_20",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Shoulder Dystocia Resolution - McRoberts Maneuver & Techniques",
+    "subtopic": "dystocia_resolution",
+    "content": "Immediate recognition critical; call for help (obstetrics, pediatrics, anesthesia). McRoberts maneuver FIRST: sharply hyperabduct maternal hips/thighs to flatten sacral promontory, increases pelvic outlet (resolves ~60% of cases). If unsuccessful: suprapubic pressure (NOT fundal pressure, worsens impaction) applied above pubic symphysis posterior-downward to dislodge anterior shoulder. Posterior shoulder delivery: reach posteriorly, deliver posterior shoulder first (sweeping mechanism), often allows anterior shoulder to follow. Zavanelli maneuver (last resort): replace fetal head back into vagina, proceed to emergent cesarean (high maternal/fetal morbidity). Prognosis: most resolve with McRoberts + suprapubic pressure; brachial plexus injury rates low with rapid management.",
+    "tags": [
+      "dystocia",
+      "maneuvrs",
+      "resolution"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_obs_unit_21",
+    "created_at": "2026-06-05T00:29:36.256322"
+  },
+  {
+    "topic": "Pediatric Resuscitation - CPR Compression Depth & Rate",
+    "subtopic": "pediatric_cpr",
+    "content": "Pediatric CPR differs by age. Infants (<1 year): 100-120 compressions/min, compression depth 1.5 inches (4 cm), two-finger technique (preferred) or two-hand encircling technique. Children (1-8 years): 100-120 compressions/min, depth \u22652 inches (5 cm, or 1/3 chest depth), one- or two-hand technique. Children >8 years: adult parameters (100-120/min, 2-2.4 inches depth). Ventilation: 2 breaths after every 30 compressions (30:2 ratio). Defibrillation energy: infants 2 J/kg, children 2-4 J/kg (max 360 J). Early access to defibrillator critical in witnessed VF/pulseless VT (arrests in children rare but when occur, usually from primary cardiac cause or asphyxia). Continue high-quality CPR throughout resuscitation.",
+    "tags": [
+      "pediatric",
+      "cpr",
+      "resuscitation",
+      "compression"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_0",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Airway - Anatomy & Differences",
+    "subtopic": "pediatric_airway_anatomy",
+    "content": "Pediatric airway anatomically different. Head proportionally larger, larynx positioned more superior/anterior (at C3 in infants vs C4-C5 in adults), epiglottis larger, arytenoids more posteriorly positioned, subglottis narrower (cricoid ring), trachea softer/more compressible. Implications: sniffing position less helpful (neutral position preferred); straight blade preferred to visualize epiglottis and arytenoids; smaller tubes needed. Tube sizing: cuffed ETT ID (mm) \u2248 (age + 3.5)/4; uncuffed \u2248 (age + 3)/4. Length (cm, at teeth): 10 + age/2. Example: 4-year-old cuffed 3.5 mm, uncuffed 4.0 mm, length ~12 cm.",
+    "tags": [
+      "pediatric",
+      "airway",
+      "anatomy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_1",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric RSI (Rapid Sequence Intubation)",
+    "subtopic": "pediatric_rsi",
+    "content": "RSI in children: preoxygenation (100% FiO2 \u00d7 3-5 min or 8 vital capacity breaths), then cricoid pressure (modified recently due to aspiration data, but still used at many centers), induction agents (propofol 2-3 mg/kg, etomidate 0.2-0.3 mg/kg, ketamine 1-2 mg/kg), paralytic (succinylcholine 1-2 mg/kg or rocuronium 1-1.2 mg/kg), intubate. Succinylcholine risk: hyperkalemia (especially in denervation injuries, crush, spinal cord injury), malignant hyperthermia. Rocuronium preferred if hyperkalemia risk. Avoid blind nasal intubation in children (epistaxis risk, adenoid hypertrophy).",
+    "tags": [
+      "pediatric",
+      "rsi",
+      "intubation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_2",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Dehydration Assessment - Clinical Dehydration Scale",
+    "subtopic": "dehydration_assessment",
+    "content": "Mild dehydration (5% loss): alert, normal cap refill, normal mucous membranes, dry, slightly decreased urine. Moderate (10%): alert or slightly drowsy, cap refill 2 sec, dry mucous membranes, decreased skin turgor (skin pinch goes down slowly), oliguria. Severe (\u226515%): lethargic/unresponsive, cap refill >2 sec, very dry mucous membranes, poor skin turgor (skin tents), minimal/absent urine, weak pulses, hypotension. Clinical dehydration scale (WHO-based): assesses presence/absence of thirst, mucous membranes, tears, skin turgor, urine output. Mild-moderate: oral/IV rehydration. Severe: IV fluids + admission.",
+    "tags": [
+      "dehydration",
+      "assessment",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_3",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Oral vs. IV Rehydration in Children",
+    "subtopic": "rehydration_routes",
+    "content": "Oral rehydration therapy (ORT): preferred for mild-moderate dehydration, better for maintaining ongoing losses (diarrhea). Solutions: WHO-recommended (75 mEq Na, 20 mEq K, 65 mEq Cl, 20 g glucose/L), examples Pedialyte, WHO-ORS. Give 50 mL/kg over 4 hours (mild), 100 mL/kg over 4 hours (moderate) for replacement + ongoing maintenance. Small frequent sips/feeds reduce vomiting. IV rehydration: severe dehydration, vomiting refractory to ORT, altered consciousness. Solutions: 0.9% NaCl (isotonic, safer), boluses 20 mL/kg over 15-30 min, repeat if hypotensive. Dextrose-containing fluids avoided acutely (risk hyperglycemia, cerebral edema in severe dehydration). Transition to half-normal saline once stable + maintenance fluids.",
+    "tags": [
+      "rehydration",
+      "diarrhea",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_4",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Sepsis - SIRS Criteria Differ",
+    "subtopic": "pediatric_sepsis",
+    "content": "SIRS in children: differs by age. Infants: temp >38.5 or <36\u00b0C, HR >180, RR >50 (normal higher), WBC >17.5k or <5k. Young children: HR >110, RR >40 (depends on age). Sepsis = SIRS + confirmed/suspected infection. Early recognition critical (children compensate well, decompensate rapidly). High suspicion needed for non-specific signs (fever, lethargy, poor intake). Blood cultures before antibiotics. Broad-spectrum antibiotics early (ceftriaxone \u00b1 vancomycin \u00b1 gentamicin depending on age/risk). IV fluids 20 mL/kg bolus if hypotensive/poor perfusion. Vasopressors if hypotensive despite fluids. Source control (drain abscess, remove infected line, etc.).",
+    "tags": [
+      "sepsis",
+      "pediatric",
+      "sirs"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_5",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Pediatric Shock - Types & Recognition",
+    "subtopic": "pediatric_shock",
+    "content": "Shock = inadequate tissue perfusion. Cardiogenic: poor cardiac output (myocarditis, heart failure). Distributive: peripheral vasodilation (sepsis, anaphylaxis). Hypovolemic: blood/fluid loss (hemorrhage, diarrhea, burns). Obstructive: tamponade, tension pneumothorax. Recognition: tachycardia, prolonged cap refill (>2 sec), oliguria, cool extremities, altered mental status. Early: compensated (normal BP, tachycardia). Late: hypotensive (BP falls late). Children maintain BP longer than adults; hypotension = LATE sign, indicates severe shock. Management: IV access, fluid boluses 20 mL/kg crystalloid (septic, hypovolemic), inotropes if cardiogenic, specific therapy (antibiotics for sepsis, epinephrine for anaphylaxis).",
+    "tags": [
+      "shock",
+      "pediatric",
+      "recognition"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_6",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Febrile Seizures - Definition, Prognosis, Workup",
+    "subtopic": "febrile_seizures",
+    "content": "Febrile seizure = seizure in child 6 months - 5 years with fever (>38.5\u00b0C) without CNS infection. Simple seizure: generalized tonic-clonic, <15 min, single episode in 24h, normal post-ictal period. Complex: focal features, >15 min, >1 seizure in 24h, prolonged post-ictal state. Prognosis: excellent; ~3-5% develop epilepsy later (higher if complex features, developmental delay, family history). Workup: lumbar puncture if <18 months (meningitis signs), or if toxins/ingestion concern, or if return to normal slow. Otherwise, clinical exam + fever source identification sufficient. EEG not routinely needed (findings don't predict recurrence). Antiepileptic prophylaxis not recommended (valproic acid, phenobarbital) except in select cases (frequent recurrences, parental anxiety).",
+    "tags": [
+      "febrile_seizures",
+      "seizure",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_7",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Status Epilepticus in Children - First/Second/Third-Line Therapy",
+    "subtopic": "status_epilepticus_pediatric",
+    "content": "Status epilepticus = seizures >5 min (or \u22652 seizures without return to baseline). First-line: lorazepam 0.1 mg/kg IV bolus (max 4 mg), repeat once if needed. Alternatives: diazepam 0.3 mg/kg IV (onset slower), intranasal midazolam 0.2 mg/kg if no IV access. Second-line (if first-line fails): fosphenytoin 20 PE/kg IV (or phenytoin 20 mg/kg), or levetiracepam 30-60 mg/kg IV. Third-line (refractory): phenobarbital 15-20 mg/kg IV, propofol infusion (ICU setting), or induction coma + intubation if prolonged/life-threatening status. Supportive: airway/oxygenation, place on side (prevent aspiration), monitor glucose (hypoglycemia risk), treat seizure cause (fever, infection, metabolic derangement). Prognosis depends on duration (longer = more morbidity), age, underlying etiology.",
+    "tags": [
+      "status_epilepticus",
+      "seizure",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_8",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Epiglottitis vs Croup - Clinical Differentiation",
+    "subtopic": "epiglottitis_vs_croup",
+    "content": "Epiglottitis: supraglottic inflammation, medical emergency, more common in unvaccinated. Presentation: high fever (>39\u00b0C), tripod position (leaning forward, avoiding neck flexion), drooling, difficulty swallowing, muffled voice ('hot potato voice'), stridor less prominent than croup. X-ray: 'thumb sign' (enlarged epiglottis). Croup: subglottic inflammation, less severe, viral. Presentation: gradual onset, low-grade fever, barky/seal-like cough, inspiratory stridor (worse at night), hoarseness, not toxic appearing. X-ray: 'steeple sign' (subglottic narrowing). Epiglottitis more rapidly progressive, higher risk of airway obstruction. Management: epiglottitis = immediate airway assessment (prepared for intubation), antibiotics (ceftriaxone), keep child calm. Croup = supportive care (dexamethasone, racemic epinephrine for severe).",
+    "tags": [
+      "epiglottitis",
+      "croup",
+      "stridor",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_9",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Anaphylaxis in Children - Epinephrine IM Dosing",
+    "subtopic": "anaphylaxis_pediatric",
+    "content": "Anaphylaxis = severe allergic reaction. Signs: urticaria, angioedema, bronchospasm (wheeze, dyspnea), hypotension, loss of consciousness. Epinephrine IM FIRST-LINE, intramuscular preferred over IV (safer, absorbed predictably). Dosing by weight: <15 kg = 0.15 mg (auto-injector dose), 15-30 kg = 0.3 mg, >30 kg = 0.3-0.5 mg (adult dose). Site: anterolateral thigh (fastest absorption, deeper than arm). Repeat every 5-15 min if symptoms persist. IV access, antihistamines (diphenhydramine 1 mg/kg), corticosteroids (methylprednisolone 1-2 mg/kg) adjuncts but NOT replacements for epinenephrine. Monitor for biphasic reaction (symptoms recur hours later; admit all for observation). Discharge with auto-injectors (EpiPen), educate on use, allergy alerts.",
+    "tags": [
+      "anaphylaxis",
+      "epinephrine",
+      "pediatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_10",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Accidental Ingestions - Antidotes & Management",
+    "subtopic": "accidental_ingestions",
+    "content": "Common pediatric ingestions: acetaminophen (liver injury, NAC if >150 mg/kg), iron (GI hemorrhage, chelation with deferoxamine), anticholinergics (agitation, seizures, physostigmine), aspirin (metabolic acidosis, alkalinization), sedatives (respiratory depression, supportive care). Activated charcoal: 1 g/kg (max 50 g) if ingestion <1h ago, orally or via NG tube, binds many drugs (not iron, heavy metals, organic solvents). Gastric decontamination less commonly done now (risks aspiration). Whole-bowel irrigation: polyethylene glycol 25 mL/kg/h for sustained-release tablets, heavy metal ingestions. Specific antidotes: naloxone (opioids), flumazenil (benzodiazepines, use cautiously), fomepizole (toxic alcohols). Poison control call helpful (1-800-222-1222 in US) for specific guidance.",
+    "tags": [
+      "ingestion",
+      "toxin",
+      "pediatric",
+      "antidotes"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_peds_unit_11",
+    "created_at": "2026-06-05T00:30:00.265123"
+  },
+  {
+    "topic": "Atypical Presentations in Elderly - Silent MI, Falls, Sepsis",
+    "subtopic": "elderly_atypical_presentation",
+    "content": "Elderly present atypically. MI: may have no chest pain (silent MI, especially diabetics); present with dyspnea, fatigue, syncope, acute confusion. Sepsis: may be afebrile or hypothermic; confusion/delirium often only sign. Falls: commonly from syncope, MI, arrhythmia, stroke (not always 'trip'); often high risk for serious injury (head trauma, fracture) despite low-energy mechanism. Acute abdomen: pain may be minimized, peritoneal signs blunted (risk of missed serious pathology like perforation). CNS infection (meningitis): may lack stiff neck; confusion/altered mental status key sign. High suspicion needed; threshold for imaging/workup should be low.",
+    "tags": [
+      "geriatric",
+      "atypical_presentation",
+      "elderly"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_0",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Polypharmacy & Drug Interactions - CYP450, Renal Clearance",
+    "subtopic": "polypharmacy",
+    "content": "Elderly often on 5+ medications (polypharmacy). Age-related changes: reduced hepatic metabolism (CYP450 activity \u2193), reduced renal clearance (creatinine clearance <60 mL/min/1.73m\u00b2), increased volume of distribution (fat-soluble drugs accumulate), altered protein binding. Common interactions: NSAIDs + ACE inhibitor + diuretic = AKI ('triple whammy'), warfarin interactions (NSAIDs \u2191 bleeding, antibiotics \u2191 INR), statins + clarithromycin (myopathy), metformin + contrast dye (lactic acidosis). Medications to avoid: Beers Criteria (deprescribing guide) - anticholinergics (confusion), benzodiazepines (falls), NSAIDs (GI bleed/renal failure), meperidine (neurotoxicity). Drug-disease interactions: beta-blockers in asthma/COPD, NSAIDs in heart failure/renal disease.",
+    "tags": [
+      "polypharmacy",
+      "drug_interactions",
+      "geriatric"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_1",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Delirium vs Dementia - CAM-ICU, Recognition, Causes",
+    "subtopic": "delirium_vs_dementia",
+    "content": "Delirium = acute confusion with fluctuating course, inattention, disorganized thinking. Onset hours-days. Causes: infection (UTI, pneumonia), medications (anticholinergics, benzodiazepines, opioids), metabolic (hypoxia, hypoglycemia, hyponatremia), CNS (stroke, bleeding, seizure). CAM-ICU: Confusion Assessment Method for ICU, 4 features: (1) acute onset + fluctuating, (2) inattention, PLUS (3) altered mental level OR (4) disorganized thinking. If \u22653/4, delirium present. Dementia = chronic cognitive decline over years, insidious onset, memory loss primary. Delirium superimposed on dementia common (demented patients at high delirium risk). Management: treat underlying cause (UTI = antibiotics, hypoglycemia = glucose), avoid delirium-inducing drugs, reorient patient, mobilize early, maintain sleep/wake cycle.",
+    "tags": [
+      "delirium",
+      "dementia",
+      "cam_icu",
+      "confusion"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_2",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Falls in Elderly - Syncope, Orthostatic Hypotension, Arrhythmias",
+    "subtopic": "falls_and_syncope",
+    "content": "Falls common cause of morbidity/mortality in elderly (1/4 will fall annually after age 65). Etiologies: syncope (cardiac arrhythmia, orthostatic hypotension, vasovagal), neurogenic (stroke, parkinsonism), mechanical (visual impairment, weakness), medication-induced (antihypertensives, diuretics). Orthostatic hypotension: SBP drop >20 mmHg or DBP >10 mmHg within 3 min standing. Causes: dehydration, antihypertensives, autonomic dysfunction. Assessment: vital signs lying/sitting/standing, ECG (arrhythmia?), orthostatic vital signs, gait assessment (Balance/Romberg test). Tilt-table test for suspected vasovagal. Falls prevention: remove hazards, vitamin D/calcium supplementation, physical therapy, orthostatic vital sign management (compression stockings, fluid, raising head of bed).",
+    "tags": [
+      "falls",
+      "syncope",
+      "elderly",
+      "orthostatic"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_3",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Frailty Assessment - Physical Frailty Phenotype",
+    "subtopic": "frailty",
+    "content": "Frailty = vulnerability to stressors, decline in reserve capacity. Physical frailty phenotype (Fried): \u22653 of (1) unintentional weight loss (\u22655% in year), (2) weakness (grip strength <25th%), (3) slow gait (>7 sec for 15 ft walk), (4) low activity (kcal expenditure <lowest quintile), (5) exhaustion (fatigue reported). Frail elderly at high risk for falls, hospitalization, mortality. Assessment: history (weight loss, fatigue), grip strength dynamometer, gait speed, physical activity. Comprehensive geriatric assessment: medical, functional, cognitive, social domains. Interventions: physical therapy/resistance training, nutritional support, cognitive stimulation, social engagement.",
+    "tags": [
+      "frailty",
+      "assessment",
+      "elderly"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_4",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Cognitive Impairment & Informed Consent - Decisional Capacity",
+    "subtopic": "cognitive_consent",
+    "content": "Informed consent requires: (1) decisional capacity (understand info, retain it, appreciate relevance to own situation, reason about options), (2) voluntary decision (no coercion), (3) adequate disclosure of risks/benefits/alternatives. Assessment: ask patient to explain condition/proposed treatment/alternatives in own words, confirm understanding. If capacity questionable: psychiatry consult, formal capacity evaluation. Surrogate decision-makers: if patient lacks capacity, use healthcare power of attorney, then spouse/adult child/parent, then court-appointed guardian. Advance directive: legal document specifying patient's wishes if incapacitated (DNR, code status, organ donation, end-of-life preferences). POLST (Physician Orders for Life-Sustaining Treatment) = portable medical order, honored across settings. Dementia/delirium = presumed incapacity unless demonstrates clear understanding.",
+    "tags": [
+      "capacity",
+      "consent",
+      "elderly",
+      "advance_directive"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_5",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Advanced Directives - Living Wills, POLST, Healthcare Power of Attorney",
+    "subtopic": "advance_directives",
+    "content": "Living will = document specifying end-of-life preferences (resuscitation wishes, mechanical ventilation, feeding tube, comfort care). Varies by state/region. Healthcare power of attorney (proxy/agent) = designated person to make decisions if patient incapacitated. POLST form = standardized medical order (signed by MD/DO/NP/PA), portable across settings, more specific than living will (indicates interventions patient wants/doesn't want: CPR, intubation, antibiotics, hospitalization, comfort-focused care). DNR (Do Not Resuscitate) order = specific instruction against CPR. Full code = all resuscitation measures. Time-outs for goals of care: discuss early in serious illness, use frameworks like RSVP (Respectful, Support, Values, Plan).",
+    "tags": [
+      "advance_directive",
+      "polst",
+      "dnr",
+      "goals_of_care"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_6",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Medication Deprescribing - Benzodiazepines, Anticholinergics, NSAIDs",
+    "subtopic": "deprescribing",
+    "content": "Deprescribing = systematic withdrawal of medications no longer needed/beneficial. Common candidates (Beers Criteria): benzodiazepines (\u2191 falls, cognitive impairment; taper 0.25 mg equivalent q3-4 days), anticholinergics (confusion, urinary retention; taper gradually), NSAIDs (GI bleed, renal disease; discontinue abruptly if possible). Statins: if no prior cardiovascular event + limited life expectancy (<10 years), limited benefit. Aspirin: if primary prevention + no CVD, deprescribe (bleeding risk >benefit in elderly). PPI: if on >1 year without indication, taper (\u2191 hip fracture, C. difficile risk). Process: identify potentially harmful meds, assess risk/benefit in individual, communicate with patient/family, create tapering schedule (slow taper preferred to prevent withdrawal), monitor. Improves quality of life, reduces ADRs, may improve cognition/mobility.",
+    "tags": [
+      "deprescribing",
+      "elderly",
+      "medication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_7",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Urinary Incontinence - Types & Management",
+    "subtopic": "urinary_incontinence",
+    "content": "Incontinence types: stress (leak with cough/sneeze/exercise, pelvic floor weakness), urgency (sudden urge, overactive bladder), mixed, overflow (retention with leakage, BPH, diabetes). Assessment: urinalysis (UTI?), post-void residual (ultrasound or cath), sphincter function. Management: stress = pelvic floor physical therapy, weight loss, limit caffeine/fluids; urgency = limit fluids, toileting schedule, anticholinergics (tolterodine, solifenacin) if pelvic floor therapy fails. Catheter management: indwelling catheters increase infection risk (CAUTI). Remove if possible; intermittent cath preferred if retention. If chronic catheter needed: clean technique, regular catheter changes (q4-6 weeks), asymptomatic bacteriuria NOT treated (avoid unnecessary antibiotics).",
+    "tags": [
+      "incontinence",
+      "catheter",
+      "elderly"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_8",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Pressure Ulcer Prevention & Staging",
+    "subtopic": "pressure_ulcers",
+    "content": "Pressure ulcers = tissue damage from sustained pressure over bony prominence. Prevention: frequent repositioning (q2h), pressure-relief surfaces (foam/gel mattress, air mattress), skin care (keep clean/dry, avoid harsh soaps), nutrition optimization, early mobilization. Risk assessment: Braden scale (nutrition, mobility, activity, sensory, moisture, friction-shear). Staging: Stage 1 (intact skin with erythema, non-blanching), Stage 2 (partial thickness, blister/open area), Stage 3 (full thickness skin loss, subcutaneous visible), Stage 4 (full thickness + muscle/bone visible), Unstageable (eschar covers). Suspected deep tissue injury = purple/maroon area, may precede visible ulcer. Management: offload pressure, d\u00e9bride necrotic tissue, moist dressing (hydrogel for stage 2), assess for infection (culture if purulent). Specialist (wound care, plastics) if extensive/not healing.",
+    "tags": [
+      "pressure_ulcer",
+      "prevention",
+      "staging"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_geri_unit_9",
+    "created_at": "2026-06-05T00:30:00.477542"
+  },
+  {
+    "topic": "Breaking Bad News - SPIKES Framework",
+    "subtopic": "spikes_framework",
+    "content": "SPIKES = systematic approach to delivering bad news. S (Setting): private, no interruptions, sit down, allow time. P (Perception): ask what patient/family understands ('What have you heard?'). I (Invitation): ask what they want to know ('Would you like to know the results?'). K (Knowledge): deliver information clearly, avoid jargon, give time to absorb. E (Emotions): acknowledge emotional response, support (provide tissues, offer presence). S (Strategy/Summary): discuss next steps, treatment options, reassure ongoing support. Timing: allow silence, permit questions, offer follow-up meeting. Don't rush; expect tears/anger/disbelief. Avoid phrases like 'nothing more we can do' (there is always comfort care); instead 'We will focus on comfort and controlling symptoms.'",
+    "tags": [
+      "communication",
+      "bad_news",
+      "spikes"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_0",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Goals-of-Care Conversations - Prognosis Discussion",
+    "subtopic": "goals_of_care",
+    "content": "Goals-of-care = understanding patient values, what's important to them if condition worsens. Trigger: serious/progressive illness, admission to ICU, major decline in function. Approach: start with patient understanding of prognosis ('What do you understand about your condition?'), clarify medical facts (realistic time frame for serious illness), explore values ('What does quality of life mean to you?', 'What are you worried about?'). Then discuss realistic goals given prognosis (cure unlikely, focus on comfort; not all medical interventions may align with values). Document preferences (code status, mechanical ventilation, feeding tube, site of care). Revisit as condition changes. Avoid 'Do you want to be a DNR?' (too abrupt); instead 'If your heart were to stop, would you want us to do CPR?' then explore reasoning.",
+    "tags": [
+      "goals_of_care",
+      "conversation",
+      "communication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_1",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "DNR Orders - Code Status, Duration, Reversibility",
+    "subtopic": "dnr_orders",
+    "content": "DNR (Do Not Resuscitate) = specific instruction against CPR if cardiac arrest occurs. Variants: DNR/DNI (also no intubation), DNR/CMO (comfort measures only, no life-prolonging interventions). Duration: can be time-limited (e.g., trial period) or permanent. Reversible: can be changed if patient/surrogate changes mind. Scope: applies to CPR but NOT necessarily to other interventions (can be DNR but continue antibiotics, chemotherapy). Medical futility: if CPR unlikely to restore meaningful function (terminal illness, irreversible coma), physician can recommend DNR unilaterally but should discuss. Documentation: must be in chart, on arm band, on POLST form (portable). Triggers for discussion: admission to ICU, serious/terminal diagnosis, significant decline, patient request.",
+    "tags": [
+      "dnr",
+      "code_status",
+      "orders"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_2",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Shared Decision-Making - Integrating Patient Values & Medical Expertise",
+    "subtopic": "shared_decision_making",
+    "content": "Shared decision-making (SDM) = collaborative process. Steps: (1) establish that decision needed, (2) present options with pros/cons in plain language, (3) explore patient values/preferences, (4) support patient deliberation, (5) reach decision together. Requires: physician expertise (medical facts, evidence), patient expertise (values, life context, preferences). Avoids paternalism ('I recommend you get chemo, full stop') and consumerism ('Whatever you want, I'll do'). Example: advanced cancer, treatment options (comfort-focused, palliative chemo, hospice); explore what matters most to patient (time with family, symptom control, prolonging life), discuss realistic outcomes for each option, decide together. Improves satisfaction, adherence, outcomes. Takes time initially but saves time long-term (fewer regrets, fewer conflicts).",
+    "tags": [
+      "shared_decision_making",
+      "patient_autonomy"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_3",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Palliative Pain Management - Opioid Dosing & Tolerance",
+    "subtopic": "palliative_pain",
+    "content": "Pain management in palliative care: focus on comfort, not rigid morphine equivalent guidelines. Approach: assess pain (location, character, severity 0-10), cause (treatable vs. not), psychosocial factors. Non-opioid: acetaminophen, NSAIDs (if not contraindicated), adjuvants (gabapentin for neuropathic, trazodone for anxiety-related). Opioid dosing: start low, titrate to effect. Long-acting (morphine ER, methadone, fentanyl patch) for baseline pain; short-acting (oxycodone IR, morphine liquid) for breakthrough/titration. Tolerance: as pain medication is continued, higher doses needed for same effect; NOT addiction (psychological dependence, compulsive use). Don't withhold opioids from dying patients (fear of addiction misplaced; focus on comfort). Monitor: constipation (universal with opioids, use laxatives prophylactically), nausea (antiemetics), confusion (consider lower dose/different agent).",
+    "tags": [
+      "pain_management",
+      "opioids",
+      "palliative"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_4",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Symptom Management - Dyspnea, Nausea, Constipation",
+    "subtopic": "symptom_management",
+    "content": "Dyspnea: oxygen if hypoxic (SpO2 <90%), fan for air movement, opioids (morphine 5-10 mg SC/IV relieves dyspnea sensation), anxiolytics (lorazepam if anxiety-driven), position upright. Pulmonary edema: diuretics (furosemide), morphine, monitor volume status. Nausea: antiemetics (metoclopramide, ondansetron, haloperidol), address cause (opioids = tolerance/dose reduction; constipation = bowel regimen). Constipation: universal with opioids, prevent with stool softeners + osmotic laxatives (docusate + senna, or MiraLAX) started at opioid initiation; can titrate dose. If severe: manual disimpaction rarely needed. Anorexia/cachexia: address underlying cause if possible (depression = antidepressants), optimize nutrition per patient wishes (not forced feeding; many prefer less/no food as comfort measures). Other symptoms: pain (opioids), cough (codeine, morphine), hiccups (baclofen, chlorpromazine), agitation (haloperidol, benzodiazepines).",
+    "tags": [
+      "symptoms",
+      "dyspnea",
+      "nausea",
+      "constipation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_5",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Withdrawing Life Support - Ethical Framework & Symptom Management",
+    "subtopic": "withdrawal_life_support",
+    "content": "Withdrawal of life support = discontinuing mechanical ventilation, pressors, dialysis, feeding tubes when pursuing comfort care. Ethical basis: patient autonomy (respects wishes), medical futility (if treatment not achieving goals), proportionality (burdens > benefits). Process: confirm goals of care, ensure comfort medications in place (morphine, lorazepam), prepare family for what to expect (breathing patterns change, color changes, body cooling), allow family presence, support with chaplaincy/social work. Medication: opioids titrated (goal: comfortable breathing, not rapid respiratory depression; 'titrate to comfort'), benzodiazepines (lorazepam SC for agitation/air hunger), anticholinergics (atropine/scopolamine patches to reduce secretions, though no evidence reduces distress). After extubation: patient may breathe spontaneously hours-days or stop breathing immediately; both normal. Do NOT hasten death; goal is comfort, not acceleration. Reassure family: patient receiving comfort, not being abandoned.",
+    "tags": [
+      "withdrawal",
+      "life_support",
+      "comfort_care"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_6",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Addressing Patient/Family Expectations - Hope vs. Realism",
+    "subtopic": "expectations",
+    "content": "Hope = forward-looking positive emotion. In advanced illness, maintain hope for comfort, meaning, time together (rather than cure). Realistic hope = acknowledging likelihood of death while hoping for good death. When family hopes for cure despite poor prognosis: listen, acknowledge (\"I understand you hope for improvement\"), gently provide medical reality (\"The cancer is not responding to treatment; lab values worsen daily\"), offer alternative hopes (\"We can hope for comfort, good days together, no pain\"). Avoid creating false hope (overstating survival odds, unnecessary tests), but don't extinguish hope entirely. Reframe: \"We won't be fighting the cancer anymore, but we will be fighting for your [loved one's] comfort and dignity.\" Allow time for processing; may take multiple conversations. Involve palliative care team early (not just when cure exhausted; palliative care can run concurrently with curative).",
+    "tags": [
+      "expectations",
+      "hope",
+      "communication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_7",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Physician Self-Care & Burnout Prevention",
+    "subtopic": "physician_wellbeing",
+    "content": "Burnout = emotional exhaustion, depersonalization, reduced sense of accomplishment. Causes: workload, lack of autonomy, administrative burden, moral distress (caring for very sick patients, difficult families, system failures). Signs: cynicism, detachment, decreased empathy, fatigue, using substances, depression. Prevention: set boundaries (limit email after hours, take days off), peer support (debrief with colleagues), reflect on meaning (why you became a doctor, patient stories that made difference), practice mindfulness/meditation, exercise, hobbies outside medicine, consider mentorship/coaching. Resources: employee assistance programs (EAP), physician wellness committees, mental health providers (therapy). Culture shift needed: normalize mental health conversations, reduce stigma, ensure adequate staffing/resources. Self-care NOT selfishness; taking care of yourself enables taking care of patients. Ask for help early if struggling; waiting makes it harder.",
+    "tags": [
+      "burnout",
+      "self_care",
+      "wellness"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_8",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Documentation of Conversations & Code Status",
+    "subtopic": "documentation",
+    "content": "Document: date/time, who present (patient, family, healthcare team), chief concern/reason for conversation, assessment (patient/family understanding of diagnosis/prognosis), patient values/wishes (in own words when possible), decision made (code status, goals of care, plan). Example: 'Patient and daughter discuss Mr. X's advanced COPD, prognosis ~3-6 months. Patient states \"I don't want machines to keep me alive. I want to be comfortable.\" Daughter agrees. Discussed CPR unlikely to work given age/illness. Code status set to DNR/DNI, goals of care = comfort/quality of life. Palliative care consult arranged. Plan: continue current medications, morphine prescribed for dyspnea, discuss hospice at next visit.' Clear documentation prevents miscommunication, legal protection, guides future care. Share with entire team (nursing, specialists); update periodically or if change in wishes.",
+    "tags": [
+      "documentation",
+      "code_status",
+      "records"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_comm_unit_9",
+    "created_at": "2026-06-05T00:30:00.615546"
+  },
+  {
+    "topic": "Patient Safety - Never Events & Serious Reportable Events",
+    "subtopic": "never_events",
+    "content": "Never events = preventable serious errors that should never occur: wrong-site surgery, wrong-patient surgery, operating on wrong body part, retained surgical objects, fatal air embolism from IV infusion, mismatched transfusion (incompatible blood), severe pressure ulcer acquired in hospital, fall with serious injury, electric shock, Hospital-acquired infection, medication error resulting in death (wrong dose/route/patient). Near-miss = potential adverse event detected before reaching patient (caught and corrected). Reporting: institutions required to report never events to state/accrediting agencies, often result in no reimbursement from CMS. Culture shift needed from blame to systems thinking (most errors = system failures, not individual incompetence). Reporting system (incident reports) should be non-punitive to encourage reporting; focus on learning and prevention.",
+    "tags": [
+      "never_events",
+      "patient_safety",
+      "quality"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_0",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Root Cause Analysis - 5 Whys & Fishbone Diagram",
+    "subtopic": "root_cause_analysis",
+    "content": "RCA = systematic approach to finding underlying cause(s) of error/adverse event (vs. superficial cause). 5 Whys: ask 'Why?' repeatedly until root cause identified. Example: Patient fell in hospital (event). Why? Siderail not up. Why? Nurse didn't know patient high fall risk. Why? Fall risk assessment not completed at admission. Why? Admission process missing fall risk screening. Why? No standard process in place. Root cause = missing institutional process. Fishbone diagram: visualizes multiple contributing factors (categories: people, process, equipment, environment, communication). Brainstorm all potential factors under each, identify which contributed. Leads to systems-level interventions (process change, education, equipment, policy) rather than blaming individual.",
+    "tags": [
+      "rca",
+      "root_cause_analysis",
+      "quality"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_1",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Medical Error Disclosure & Sorry Laws",
+    "subtopic": "error_disclosure",
+    "content": "Disclosure = truthfully communicating error to patient/family. Benefits: rebuilds trust, reduces litigation (counterintuitive), improves outcomes (allows early intervention), ethical (patient autonomy). Process: disclose promptly (within days if possible), provide full account of what happened, explain impact/consequences, apologize ('I'm sorry this happened'), provide plan for moving forward (additional monitoring, compensation if warranted). 'Sorry laws' = state legislation protecting apology/expressions of regret from being used as admission of fault in malpractice suit. ~36 US states have some form. Permits saying 'I'm sorry' without legal consequence (admission of liability). Risk management should be involved (legal review before disclosure in some institutions). Avoid: excuses, blaming others, defensive language. Say: 'We made an error, here's what we learned, here's how we'll prevent it.' Many patients/families who experience error + good disclosure do NOT sue.",
+    "tags": [
+      "disclosure",
+      "error",
+      "communication"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_2",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Infection Prevention - Hand Hygiene, Isolation Precautions",
+    "subtopic": "infection_prevention",
+    "content": "HAI (hospital-acquired infection) prevention. Hand hygiene = most effective; 5 moments: before patient contact, before aseptic procedure, after body fluid exposure, after patient contact, after touching patient environment. Technique: soap/water OR alcohol hand sanitizer (60-80% alcohol), rub for 20 seconds. Isolation precautions: standard precautions (treat all blood/bodily fluids as potentially infectious), then patient-specific (contact, droplet, airborne) based on transmission route. Contact isolation (gloves, gown): MRSA, C. difficile, scabies. Droplet isolation (mask): influenza, pertussis, meningitis (within 24h antibiotics). Airborne isolation (N95 respirator): measles, tuberculosis, varicella. Equipment: dedicate patient care equipment to room when possible (avoid sharing BP cuff, thermometer). Clean environment: disinfect high-touch surfaces (bed rail, light switch, phone) daily.",
+    "tags": [
+      "infection_prevention",
+      "hand_hygiene",
+      "isolation"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_3",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "CLABSI Prevention - Central Line-Associated Bloodstream Infection",
+    "subtopic": "clabsi_prevention",
+    "content": "CLABSI = infection related to central venous catheter. Prevention bundle: (1) hand hygiene, (2) chlorhexidine skin antisepsis, (3) maximal sterile barrier (full body drape, sterile gown/gloves/mask), (4) avoid femoral site (higher infection risk), (5) prompt removal of line when no longer needed. Maintenance: assess daily for need continuation, remove if not essential. Dressing: transparent (allows visualization), changed q5-7 days or if soiled/loose. Flushing: normal saline between medications, heparin lock (10 U/mL) if not continuous infusion. Tracking: some institutions report CLABSI rates publicly, performance data linked to reimbursement (CMS reduces payment if excess CLABSIs). Unit-level accountability/competition drives improvement. Many hospitals achieved zero CLABSIs for months/years with commitment to bundle adherence.",
+    "tags": [
+      "clabsi",
+      "central_line",
+      "infection"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_4",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Hospital-Acquired Complications - Falls, Pressure Ulcers, HAI",
+    "subtopic": "hospital_complications",
+    "content": "Common hospital-acquired complications: falls (1-5% of admissions, majority preventable), pressure ulcers (5-15% of admissions, stage 3+ rare), HAI (CLABSI, CAUTI, SSI, pneumonia), delirium, deconditioning. Risk factors overlap: immobility (pain, sedation, weakness), cognitive impairment (delirium, dementia), advanced age, comorbidities. Prevention: multifactorial intervention (not single modality). Falls: environment (remove hazards), equipment (proper bed height), staff (frequent rounds, respond to call light), patient (orientation, non-slip socks, walker if needed). Pressure ulcers: turn q2h, pressure relief surfaces, skin care, nutrition. HAI: asepsis, hand hygiene, early line removal. Delirium: avoid anticholinergics/benzodiazepines when possible, orientation aids, maintain sleep/wake cycle, early mobility. Tracking: incident reports, audits identify high-risk units; targeted interventions.",
+    "tags": [
+      "hospital_complications",
+      "quality",
+      "safety"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_5",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Rapid Response Teams (RRT) - Calling Criteria & Composition",
+    "subtopic": "rrt",
+    "content": "RRT = interdisciplinary team (ICU nurse, physician, respiratory therapist, social work) that responds to deteriorating patients on general floors. Criteria to call: concern for life/limb (vital sign abnormalities, decreased responsiveness, chest pain, difficulty breathing, etc.), or simply 'worried' (patient/family can call). Goals: prevent cardiac arrest (intervene early), provide escalated care, avoid ICU admission if appropriate intervention (e.g., supplemental O2, fluid bolus) sufficient. Composition: typically ICU resident/fellow, ICU nurse, respiratory therapy, chaplaincy/social work. Timing: respond within minutes (reduce time from deterioration to intervention). Data: RRT activation associated with ~17% reduction in mortality, decrease in arrests outside ICU. Barriers: staff reluctant to call (fear of being 'wrong'), lack of awareness of criteria. Culture change: emphasize RRT as resource, not punishment; normalize calling for 'worry' without objective findings.",
+    "tags": [
+      "rrt",
+      "rapid_response",
+      "quality"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_6",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Mortality & Morbidity (M&M) Conferences - Learning from Adverse Events",
+    "subtopic": "m_and_m",
+    "content": "M&M = regular departmental case review (usually weekly/biweekly) discussing adverse outcomes/near-misses. Agenda: present case (demographics, clinical course, outcome), discuss what happened (timeline), identify preventable factors, discuss learning points, recommend systems changes. Tone critical: non-punitive (focus on learning, not blame), open discussion encouraged, psychological safety (staff not afraid to speak). Facilitation: senior faculty guides discussion, prevents scapegoating, reinforces systems thinking. Documentation: outcomes summarized, recommendations captured, action items assigned with ownership/timeline. Effectiveness: improves awareness of common pitfalls, normalizes discussion of errors, identifies patterns (e.g., multiple cases of missed diagnosis of meningitis \u2192 implement clinical rule). Participation: all team members (physicians, nurses, residents, staff) attend; hearing frontline perspectives valuable.",
+    "tags": [
+      "m_and_m",
+      "morbidity_mortality",
+      "learning"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_7",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Quality Metrics - Mortality, Readmission, Patient Satisfaction, Length of Stay",
+    "subtopic": "quality_metrics",
+    "content": "Key metrics: mortality rate (risk-adjusted by case mix), readmission rate (30-day, 90-day; risk-adjusted), patient satisfaction (HCAHPS survey), length of stay (average days hospitalized), complication rates (mortality, infection, readmission by condition). Risk adjustment = accounting for patient factors beyond hospital control (age, comorbidities, severity). Risk-standardized mortality rate (RSMR) = how many more/fewer deaths observed vs. expected given case mix. Targets: reduce readmissions 20%, mortality 5%, improve satisfaction to >85%. Tracked by: CMS (publicly reported on Hospital Compare/CMS.gov), state regulators, private insurers, accreditors. Reimbursement: penalties for high readmissions/mortality (CMS HRRP, HVBP programs reduce payment 0.5-3%). Competition: patients/physicians review metrics, consider hospital reputation. Improvement: multidisciplinary teams analyze root causes, test interventions (e.g., reduce readmission via post-discharge phone calls).",
+    "tags": [
+      "quality_metrics",
+      "outcomes",
+      "public_reporting"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_8",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Lean/Six Sigma - Process Improvement Methodologies",
+    "subtopic": "lean_six_sigma",
+    "content": "Lean = eliminate waste (steps not adding value to patient care). Examples of waste: delays in medication delivery, duplicate testing, waiting for x-ray, unnecessary intermediate approvals. Tools: process mapping (document current state), identify waste (delays, redundancy, overproduction), redesign (streamline steps), implement, measure improvement. Rapid-cycle testing: Plan-Do-Study-Act (PDSA) cycles, test small change, measure effect, refine, roll out if successful. Six Sigma = reduce variation/defects (target 3.4 defects per million opportunities, near zero error). Tools: DMAIC (Define problem, Measure baseline, Analyze root causes, Improve, Control/sustain). Data-driven: use statistical methods to identify high-impact changes. Examples: reduce time from ED arrival to CAD lab door 30% by eliminating unnecessary approvals; reduce medication errors 50% by changing order process.",
+    "tags": [
+      "lean",
+      "six_sigma",
+      "process_improvement"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_9",
+    "created_at": "2026-06-05T00:30:00.767624"
+  },
+  {
+    "topic": "Documentation & Compliance - Accurate Coding, Fraud Prevention",
+    "subtopic": "documentation_compliance",
+    "content": "Documentation = legal record, guides billing/reimbursement, supports quality metrics. Accurate documentation: legible (electronic preferred), timely (within 24h of event), objective (facts, not impressions), complete (addresses all active problems, assessment/plan). Affects reimbursement: DRG (diagnosis-related group) assignment drives payment; accurate coding of all diagnoses/procedures ensures appropriate reimbursement. Fraud = intentionally submitting false claims (upcoding severity, billing for services not provided, billing personal services as billable). Examples: billing for 99215 (complex visit, 40+ minutes) when visit was 15 minutes straightforward, billing for consultant fee when no consultation occurred, billing CT when only plain film done. Penalties: restitution (repay monies), fines, exclusion from Medicare/Medicaid, prison. Compliance: read current diagnosis codes (ICD-10, regularly updated), work with coders (ensure accurate documentation supports assigned codes), audit (chart reviews to detect patterns), education (staff training on appropriate coding), self-reporting if identified coding errors.",
+    "tags": [
+      "documentation",
+      "compliance",
+      "coding"
+    ],
+    "library": "intern_year_medicine",
+    "id": "phase4_qual_unit_10",
+    "created_at": "2026-06-05T00:30:00.767624"
+  }
+]

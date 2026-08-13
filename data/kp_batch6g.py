@@ -1,0 +1,91 @@
+import json
+
+kps = []
+
+# TOPIC 20: Hyperkalemia: Perioperative Recognition & Management
+kps += [
+  {"id":"hyperkal-1","topic":"Hyperkalemia: Perioperative Recognition & Management","domain":"Perioperative medicine & critical care (hemodynamic crises, electrolytes, glycemic control, renal, hepatic, endocrine, hematologic disorders)","discipline":"anesthesia",
+   "stem":"What cardiovascular effects does succinylcholine cause through stimulation of nicotinic receptors that are relevant in hyperkalemia?",
+   "answer":"Succinylcholine stimulates all acetylcholine receptors including nicotinic, causing complex cardiovascular actions including potassium efflux that can worsen hyperkalemia",
+   "rationale":"Succinylcholine-induced fasciculations release K+ from skeletal muscle; in burn, denervation, or crush injury patients this rise can cause fatal cardiac arrest.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":333}],"confusable_with":"Rocuronium causing hyperkalemia (non-depolarizing agents do not cause K+ release)"},
+  {"id":"hyperkal-2","topic":"Hyperkalemia: Perioperative Recognition & Management","domain":"Perioperative medicine & critical care (hemodynamic crises, electrolytes, glycemic control, renal, hepatic, endocrine, hematologic disorders)","discipline":"anesthesia",
+   "stem":"Beta-agonists can acutely lower plasma potassium in hyperkalemia by what mechanism?",
+   "answer":"Beta-agonists promote cellular uptake of potassium via Na/K-ATPase stimulation; useful for acute hyperkalemia including massive transfusion",
+   "rationale":"Beta-2 receptor activation increases intracellular cAMP, stimulating Na/K-ATPase to drive K+ into cells and rapidly lower plasma levels.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":1887}],"confusable_with":"Calcium gluconate lowering potassium (it stabilises membrane but does not shift K+)"},
+  {"id":"hyperkal-3","topic":"Hyperkalemia: Perioperative Recognition & Management","domain":"Perioperative medicine & critical care (hemodynamic crises, electrolytes, glycemic control, renal, hepatic, endocrine, hematologic disorders)","discipline":"anesthesia",
+   "stem":"Thyrotoxic periodic paralysis most commonly affects what demographic and involves what potassium pattern?",
+   "answer":"Most common in Asian men; occurs with low potassium levels during episodes of weakness (hypokalemia causes muscle membrane inexcitability)",
+   "rationale":"Thyrotoxic periodic paralysis involves intracellular K+ shifts causing transient hypokalemia and reversible muscle paralysis.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1046}],"confusable_with":"Hyperkalemic periodic paralysis (different etiology and K+ direction)"},
+  {"id":"hyperkal-4","topic":"Hyperkalemia: Perioperative Recognition & Management","domain":"Perioperative medicine & critical care (hemodynamic crises, electrolytes, glycemic control, renal, hepatic, endocrine, hematologic disorders)","discipline":"anesthesia",
+   "stem":"What maximum IV replacement rate for potassium applies to peripheral venous access?",
+   "answer":"Peripheral IV potassium replacement should not exceed 8 mEq/h due to vein irritation",
+   "rationale":"Higher rates cause pain, phlebitis, and risk of hyperkalaemia overshoot; central access is required for faster replacement rates.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":1882}],"confusable_with":"No rate limitation for peripheral K+ infusion"},
+  {"id":"hyperkal-5","topic":"Hyperkalemia: Perioperative Recognition & Management","domain":"Perioperative medicine & critical care (hemodynamic crises, electrolytes, glycemic control, renal, hepatic, endocrine, hematologic disorders)","discipline":"anesthesia",
+   "stem":"In AKI, what pathophysiologic factor makes the kidney particularly sensitive to injury?",
+   "answer":"Very high metabolic rate and ability to concentrate potentially toxic substances make kidneys particularly sensitive to injury",
+   "rationale":"Renal tubular cells have high oxygen consumption; ischemia or nephrotoxin concentration causes disproportionate tubular injury relative to other organs.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":2144}],"confusable_with":"Kidneys being resistant to injury due to high blood flow"},
+]
+
+# TOPIC 21: Hypovolemic Shock and Hemorrhagic Resuscitation
+kps += [
+  {"id":"hypovolshock-1","topic":"Hypovolemic Shock and Hemorrhagic Resuscitation","domain":"Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)","discipline":"anesthesia",
+   "stem":"What is the pathophysiologic definition of shock?",
+   "answer":"Shock is a state of tissue hypoxia due to decreased or dysregulated oxygen delivery or extraction, resulting in end-organ damage",
+   "rationale":"Shock encompasses all causes of cellular oxygen debt, unifying the diverse etiologies of cardiovascular failure under one physiological framework.",
+   "bloom":"recall","source":[{"book":"MGH Housestaff Manual","page":64}],"confusable_with":"Hypotension as the definition of shock (hypotension is common but not the defining feature)"},
+  {"id":"hypovolshock-2","topic":"Hypovolemic Shock and Hemorrhagic Resuscitation","domain":"Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)","discipline":"anesthesia",
+   "stem":"What classic clinical signs are present in patients with hypovolemic shock?",
+   "answer":"Tachycardia, hypotension, cool/clammy skin, decreased urine output, altered mental status",
+   "rationale":"Sympathetic activation in response to volume depletion causes tachycardia and vasoconstriction; decreased renal perfusion causes oliguria.",
+   "bloom":"recall","source":[{"book":"Miller/Baby Miller","page":729}],"confusable_with":"Septic shock signs (warm/flushed skin initially in sepsis, opposite from hypovolemic)"},
+  {"id":"hypovolshock-3","topic":"Hypovolemic Shock and Hemorrhagic Resuscitation","domain":"Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)","discipline":"anesthesia",
+   "stem":"In acute blood loss, why does the hematocrit not immediately reflect the degree of hemorrhage?",
+   "answer":"In acute blood loss there is insufficient time for extravascular fluid to shift into the intravascular space, so hematocrit is not immediately decreased",
+   "rationale":"Haemodilution from extravascular fluid redistribution takes hours; acute hemorrhage presents with normal hematocrit despite significant volume loss.",
+   "bloom":"analyze","source":[{"book":"Morgan & Mikhail","page":1946}],"confusable_with":"Hematocrit immediately falling with acute hemorrhage"},
+  {"id":"hypovolshock-4","topic":"Hypovolemic Shock and Hemorrhagic Resuscitation","domain":"Anesthesia critical care (shock & resuscitation, sepsis, ARDS & mechanical ventilation, hemodynamic monitoring, AKI, sedation/delirium, nutrition, end-of-life)","discipline":"anesthesia",
+   "stem":"Loss of sympathetic nervous system tone after neuraxial blockade in a previously hypovolemic patient causes what hemodynamic consequence?",
+   "answer":"Neuraxial blockade in a hypovolemic patient causes profound hypotension from combined sympathectomy and hypovolemia",
+   "rationale":"Neuraxial anesthesia abolishes sympathetic vasoconstriction that was compensating for hypovolemia, unmasking severe hypotension.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":729}],"confusable_with":"Neuraxial hypotension being mild and easily corrected in euvolaemic patients (hypovolemia dramatically worsens severity)"},
+  {"_type":"illness_script","topic":"Hypovolemic Shock and Hemorrhagic Resuscitation","discipline":"anesthesia",
+   "enabling_conditions":"Trauma, GI hemorrhage, surgical blood loss, severe dehydration, third spacing",
+   "pathophysiology":"Reduced intravascular volume decreases cardiac preload and CO; sympathetic activation causes tachycardia and vasoconstriction; tissue hypoxia develops when compensation fails",
+   "time_course":"Minutes to hours depending on rate of loss; Class III-IV shock (>30% volume loss) requires immediate intervention",
+   "key_features":"Tachycardia, hypotension (late), cool/clammy skin, decreased urine output, altered mental status; IVC collapse on US",
+   "consequence_if_missed":"Multi-organ failure, coagulopathy of trauma, cardiac arrest"},
+]
+
+# TOPIC 22: Hypoxemia during OLV: diagnosis and management
+kps += [
+  {"id":"olvhypox-1","topic":"Hypoxemia during OLV: diagnosis and management","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"What is the first step to address hypoxemia during one-lung ventilation?",
+   "answer":"Confirm adequate position of the endobronchial tube or bronchial blocker first, as malposition is the most correctable cause",
+   "rationale":"An improperly positioned DLT or bronchial blocker can obstruct the ventilated lung, causing iatrogenic hypoxemia that is immediately reversible.",
+   "bloom":"apply","source":[{"book":"Morgan & Mikhail","page":913}],"confusable_with":"Immediately applying CPAP to the non-ventilated lung before confirming tube position"},
+  {"id":"olvhypox-2","topic":"Hypoxemia during OLV: diagnosis and management","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"What inhaled agents can be applied to the non-ventilated lung to improve oxygenation during OLV?",
+   "answer":"Inhaled nitric oxide (10-40 ppm) or nebulized prostacyclin (50 ng/kg/min) selectively dilate ventilated lung vessels, improving V/Q matching",
+   "rationale":"These inhaled vasodilators reach only ventilated lung areas, reducing HPV in the ventilated lung and redirecting blood flow from the collapsed lung.",
+   "bloom":"apply","source":[{"book":"Miller/Baby Miller","page":509}],"confusable_with":"IV vasodilators which cause systemic hypotension and worsen HPV globally"},
+  {"id":"olvhypox-3","topic":"Hypoxemia during OLV: diagnosis and management","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"After lobectomy, the bronchial stump is tested for air leak under water at what airway pressure?",
+   "answer":"Bronchial stump tested for air leak under water by transiently sustaining 30 cmH2O positive pressure to the airway",
+   "rationale":"30 cmH2O simulates a physiological Valsalva-type pressure to detect any stump leak before wound closure.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":912}],"confusable_with":"Testing at 10 cmH2O (insufficient to detect significant leaks)"},
+  {"id":"olvhypox-4","topic":"Hypoxemia during OLV: diagnosis and management","domain":"Thoracic anesthesia (one-lung ventilation, thoracic epidural, hypoxia during OLV, pneumonectomy/lobectomy, mediastinal mass, HPV)","discipline":"anesthesia",
+   "stem":"High-frequency jet ventilation delivers gas via what mechanism and at what frequency range?",
+   "answer":"HFJV uses a small cannula delivering pulsed high-pressure gas at 60-120 breaths/min (some systems up to higher frequencies)",
+   "rationale":"HFJV maintains alveolar ventilation with very small tidal volumes and constant positive airway pressure, useful in shared-airway or airway surgery.",
+   "bloom":"recall","source":[{"book":"Morgan & Mikhail","page":2191}],"confusable_with":"Standard mechanical ventilation (large tidal volumes, low rates)"},
+]
+
+print(f"Batch G: {len(kps)} entries")
+with open('C:/Users/Dean/anesthesia_attending/data/kp_batch6g_out.json','w',encoding='utf-8') as f:
+    json.dump(kps, f, ensure_ascii=False, indent=2)
+print("OK")

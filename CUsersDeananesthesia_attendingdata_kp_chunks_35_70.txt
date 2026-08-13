@@ -1,0 +1,14 @@
+=== [35] Approach to Hypernatremia ===
+  CHUNK 0: Morgan & Mikhail p1079
+    Section: A. Prophylaxis Against Acute Kidney Injury in High-Risk Patients. A. Prophylaxis Against Acute Kidney Injury in High-Risk Patients Many clinicians continue to administer mannitol for kidney protection and, less frequently, to convert oliguric acute kidney failure to nonoliguric kidney failure, with the goal of lowering associated morbidity and mortality. However, there is no clinical evidence that such use of mannitol provides kidney protection, lessens the severity of AKI, or lessens the morbidity or mortality associated with AKI when compared with correction of hypovolemia and prese
+  CHUNK 1: Marino ICU Book p438
+    Diagnostic Approach As is the case with hypernatremia, the extracellular volume (ECV) can be high, normal, or low in hyponatremia (see Table 26.1), and the status of the ECV can be used to organ­ ize the
+  CHUNK 2: StatPearls: StatPearls   Metabolic Acidosis  Approach and Anion Gap p10
+    [50] The cautious use of sodium bicarbonate stems from its potential adverse effects, including hypernatremia, hypocalcemia, intracellular acidification, increased lactate production, and reduced myocardial contractility
+  CHUNK 3: MGH Housestaff Manual p104
+Traceback (most recent call last):
+  File "<string>", line 15, in <module>
+  File "C:\Users\Dean\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\uf023' in position 327: character maps to <undefined>
