@@ -58,6 +58,11 @@ class Settings:
     sqlite_db_path: Path = _path(os.getenv("SQLITE_DB_PATH"), "storage/sqlite/student_model.db")
     log_dir: Path = _path(os.getenv("LOG_DIR"), "storage/logs")
     api_key: str = os.getenv("API_KEY", "")
+    # Public HTTPS base URL this API is reachable at (e.g. a Tailscale Funnel
+    # hostname). Injected as the OpenAPI `servers` entry so the ChatGPT Custom
+    # GPT can import the schema straight from /openapi.json and know where to
+    # send requests. Empty = omit servers (local-only use).
+    public_base_url: str = os.getenv("PUBLIC_BASE_URL", "").rstrip("/")
     collection_name: str = os.getenv("CHROMA_COLLECTION", "anesthesia_sources")
     mcp_transport: str = os.getenv("MCP_TRANSPORT", "stdio")
     mcp_host: str = os.getenv("MCP_HOST", "127.0.0.1")

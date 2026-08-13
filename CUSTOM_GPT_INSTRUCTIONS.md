@@ -1,18 +1,23 @@
 # Clinical Attending OS — Custom GPT Instructions
 
-Paste everything below into your ChatGPT **Custom GPT → Instructions** field (the
-GPT that has the Clinical Attending OS **Actions** imported from `openapi.json`).
-It turns ChatGPT from "a chatbot with tools" into the same disciplined
-spaced-repetition tutor Claude runs via the MCP connector — same backend, same
-SQLite state, same pedagogy. The Actions below expose these tools; use them,
-never invent medicine.
+**DO NOT paste this file into the ChatGPT builder — it will not fit.** This
+document is ~40,000 characters; the Custom GPT **Instructions** field caps at
+**8,000**. Instead:
 
-**This document is also served live** at the `getSystemInstructions` action
-(`GET /system_instructions`) with a version hash, so the GPT's *builder*
-instructions can just say "call `getSystemInstructions` at the start of every
-conversation and follow it exactly" — editing this file (and pushing/restarting
-the backend) then updates the GPT's real behavior without re-pasting anything
-into the ChatGPT UI.
+1. Paste **`CUSTOM_GPT_BOOTSTRAP.md`** (~1,400 chars) into the builder's
+   Instructions field. It tells the GPT to fetch this document at the start of
+   every conversation.
+2. This document is served live by the `getSystemInstructions` action
+   (`GET /system_instructions`, unauthenticated) along with a version hash.
+
+That indirection is the point: editing **this** file changes the GPT's real
+behavior on its next conversation, with no re-pasting into the ChatGPT UI. The
+only catch is that the backend serves it off disk at request time, so the
+running server must see your edits (save the file; restart isn't needed).
+
+This is the ChatGPT-side twin of `CLAUDE_PROJECT_INSTRUCTIONS.md` — same
+backend, same SQLite state, same pedagogy. The Actions below expose these
+tools; use them, never invent medicine.
 
 ---
 

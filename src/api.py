@@ -136,6 +136,27 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Clinical Attending OS", version="0.2.0", lifespan=lifespan)
 
 
+def _custom_openapi() -> dict:
+    """Serve the OpenAPI schema with a `servers` entry pointing at the public
+    base URL. Without this, FastAPI emits no `servers` block and a Custom GPT
+    that imported the schema from /openapi.json has no idea what host to call,
+    so every action fails. Mirrors the committed openapi.json."""
+    if app.openapi_schema:
+        return app.openapi_schema
+    from fastapi.openapi.utils import get_openapi
+    schema = get_openapi(
+        title=app.title, version=app.version, routes=app.routes,
+        description=app.description or None,
+    )
+    if settings.public_base_url:
+        schema["servers"] = [{"url": settings.public_base_url}]
+    app.openapi_schema = schema
+    return schema
+
+
+app.openapi = _custom_openapi  # type: ignore[method-assign]
+
+
 @app.get("/system_instructions", response_model=SystemInstructionsResponse, operation_id="getSystemInstructions")
 def system_instructions() -> SystemInstructionsResponse:
     """Returns current GPT instructions text. Call once at conversation start."""
