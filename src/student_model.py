@@ -1495,6 +1495,13 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
     """
     initialize_database()
     today = datetime.now(timezone.utc).date()
+    # The car filter runs in Python, so the SQL LIMIT must not be the caller's
+    # limit when car=True: taking the top N and *then* discarding the long ones
+    # returns fewer than N — and returns ZERO whenever the N most-overdue points
+    # all happen to be long, which is exactly what happened in practice
+    # (limit=5 -> 0 results while 65 car-safe points were due). Over-fetch, then
+    # filter, then truncate.
+    fetch_limit = max(limit * 20, 200) if car else limit
     with conn() as db:
         rows = db.execute(
             """SELECT * FROM knowledge_points
@@ -1503,7 +1510,7 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
                ORDER BY CASE status WHEN 'weak' THEN 0 WHEN 'learning' THEN 1 ELSE 2 END,
                         next_review_date ASC
                LIMIT ?""",
-            (today.isoformat(), limit),
+            (today.isoformat(), fetch_limit),
         ).fetchall()
     results = [_kp_row_to_dict(r, today) for r in rows]
     if car:
@@ -1511,7 +1518,7 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
             p for p in results
             if len(p.get("point", "")) <= 120
             and (p.get("point", "").count(",") + p.get("point", "").count(";")) < 3
-        ]
+        ][:limit]
     return results
 
 

@@ -427,3 +427,24 @@ class SubmitDosingAnswerRequest(BaseModel):
     confidence: int = 3
     calc_type: str = ""
     mode: str = "recall"
+
+
+class CarAnsweredInput(BaseModel):
+    """The item just answered, submitted together with the request for the next
+    one so a hands-free turn costs a single round trip."""
+    topic: str
+    point: str
+    correct: bool
+    confidence: int = 3
+    mistake_type: MistakeType = "other"
+    user_answer: str = ""
+
+
+class CarNextRequest(BaseModel):
+    answered: CarAnsweredInput | None = None
+    # Also advance the parent topic's schedule, not just the knowledge point's.
+    # These are two independent schedules, so doing both is correct — unlike
+    # calling submit_answer and submit_study_answer, which both advance the
+    # TOPIC schedule and double-count.
+    record_topic_level: bool = True
+    include_dosing: bool = True

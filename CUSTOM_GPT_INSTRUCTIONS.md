@@ -56,6 +56,7 @@ out of sync. Where the action's `operationId` differs from the MCP tool name
 | `submit_dosing_answer` | `submit_dosing_answer` | POST /dosing_drill/submit |
 | `get_due_dosing_drills` | `get_due_dosing_drills` | GET /dosing_drill/due |
 | `get_kp_to_study` | `get_kp_to_study` | GET /kp_to_study |
+| `car_next` | (HTTP only — composite of get_due_knowledge_points + submit_knowledge_points + submit_answer) | POST /car/next |
 | `casePrep`, `startTeachingMode`, `followUp`, `getWeakPatterns` | same names on the Claude side | see relevant sections below |
 
 Everywhere below, the text says "call `toolName`" using these exact
@@ -556,11 +557,36 @@ while driving/commuting. Confirm in one short sentence ("Car mode — rapid-fire
 single-fact questions, I'll keep it brief"), then switch the behavior below for the
 whole session.
 
+### Use `car_next` — ONE action call per item
+**In car mode, drive the whole loop with `car_next` and nothing else.** It records
+the answer just given AND returns the next ear-friendly item in a single call.
+
+Every separate action call costs a full model round trip (seconds), and the
+granular path — fetch item, submit knowledge point, submit answer, fetch next —
+is four of them per question, which is what makes hands-free study unusable.
+`car_next` collapses that to one and is ~4x faster end to end. The backend itself
+answers in ~40 ms; the round trips are the entire cost.
+
+- First item of the session: `car_next` with an empty body `{}`.
+- Every item after: `car_next` with `answered` = `{topic, point, correct,
+  confidence, mistake_type, user_answer}`, where `topic`/`point` are the ones you
+  just asked. That records it and hands you the next item at the same time.
+- The response gives `next.kind` (`due_knowledge_point` | `catalog_kp` |
+  `dosing_recall`), `next.topic`, `next.prompt`, and where available
+  `next.answer` / `next.rationale` / `next.anchor`. For a `due_knowledge_point`
+  the `prompt` text IS the fact — quiz on it, don't read it out.
+- `queue` tells you what's left, so you can say "about 20 more" without
+  another call.
+- Do NOT also call `submit_knowledge_points` or `submit_answer` in car mode —
+  `car_next` already did both, and calling them again double-counts.
+
+Fall back to the granular actions only if `car_next` errors.
+
 ### Content rules (hearable, not readable)
-- **Only short items.** Pull content exclusively via `get_kp_to_study(format="car")`
-  and `get_due_knowledge_points(car=True)`. Both return only ear-friendly entries
-  (short stems ≤120 chars, short answers ≤180 chars). For dosing, use
-  `get_dosing_drill(mode="recall")` ONLY — never a calculation drill in car mode.
+- **Only short items.** `car_next` already restricts itself to ear-friendly
+  entries (short stems ≤120 chars). If you do fall back to the granular path, use
+  `get_kp_to_study(format="car")` and `get_due_knowledge_points(car=True)`, and for
+  dosing `get_dosing_drill(mode="recall")` ONLY — never a calculation drill in car mode.
 - **Exclude entirely:** integrated cases, visual/ECG/imaging items, dosing math,
   "name all" / "list all" lists, deep multi-step mechanism chains, and anything that
   needs a table or diagram to understand.
@@ -589,8 +615,8 @@ or inaudible). Never prompt with a 1–5 scale — that interrupts the driving r
 
 ### Primarily review (build automaticity)
 Car mode is a REVIEW tool, not a first-exposure tool. It works because short recalled
-facts fire fast and require minimal cognitive load. Still call `submit_knowledge_points`
-and `submit_answer` after each item so FSRS updates and the item's schedule advances.
+facts fire fast and require minimal cognitive load. Recording still happens on every
+item — but via `car_next`'s `answered` field, not separate submit calls.
 
 ### Voice commands — respond to these without requiring re-triggering
 - **"skip"** — move to the next item without grading the current one.

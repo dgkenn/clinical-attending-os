@@ -13,6 +13,7 @@ from .follow_up import answer_follow_up
 from .retrieval import hybrid_search, retrieval_confidence
 from .schemas import (
     AddConfusablePairRequest,
+    CarNextRequest,
     AnswerRequest,
     AnswerResponse,
     CA1CoverageResponse,
@@ -209,6 +210,7 @@ _RESPONSE_SHAPES: dict[str, dict] = {
         "error": _S,
     },
     "get_due_dosing_drills": {"due_dosing_points": _A, "count": _I},
+    "car_next": {"recorded": _O, "next": _O, "queue": _O},
 }
 
 
@@ -586,3 +588,92 @@ def dosing_drill_submit(req: SubmitDosingAnswerRequest) -> dict:
 @app.get("/dosing_drill/due", dependencies=[Depends(require_api_key)], operation_id="get_due_dosing_drills")
 def dosing_drill_due(limit: int = 10) -> dict:
     return _get_due_dosing_drills(limit=limit)
+
+
+@app.post("/car/next", dependencies=[Depends(require_api_key)], operation_id="car_next")
+def car_next(req: CarNextRequest) -> dict:
+    """ONE round trip per hands-free item: records the answer just given AND
+    returns the next ear-friendly item.
+
+    Latency, not backend speed, is what kills car mode. The backend answers a
+    car-mode query in ~40 ms over the network, but each separate tool call costs
+    a full model round trip (seconds). Doing this the granular way —
+    get_due_knowledge_points -> submit_knowledge_points -> submit_answer ->
+    get_kp_to_study — is four of those per question. This collapses them to one.
+
+    It also makes the always-submit rule structural rather than advisory: the
+    answer is recorded by the same call that fetches the next item, so a tutor
+    that keeps asking questions cannot silently stop recording them.
+
+    Selection order mirrors the car-mode rules: overdue knowledge points first
+    (they decay), then unseen catalog KPs, then a dosing recall drill.
+    """
+    recorded = None
+    if req.answered is not None:
+        a = req.answered
+        recorded = _submit_knowledge_points(
+            a.topic,
+            [{"point": a.point, "correct": a.correct,
+              "confidence": a.confidence, "mistake_type": a.mistake_type}],
+        )
+        if req.record_topic_level:
+            try:
+                recorded["topic_level"] = _submit_answer_fsrs(
+                    topic=a.topic,
+                    user_answer=a.user_answer or ("correct" if a.correct else "incorrect"),
+                    is_correct=a.correct,
+                    confidence_reported=a.confidence,
+                    mistake_type=a.mistake_type,
+                )
+            except Exception as exc:  # never lose the KP record over a topic-level failure
+                recorded["topic_level_error"] = str(exc)[:200]
+
+    nxt = None
+    # 1. Overdue knowledge points, car-safe only.
+    due = _get_due_knowledge_points(limit=5, car=True).get("due_points", [])
+    if due:
+        p = due[0]
+        nxt = {
+            "kind": "due_knowledge_point",
+            "topic": p.get("topic", ""),
+            "prompt": p.get("point", ""),
+            "answer": "",  # the point text IS the fact; quiz on it directly
+            "days_overdue": p.get("days_overdue", 0),
+            "calibration": p.get("calibration"),
+            "status": p.get("status"),
+        }
+    # 2. Otherwise a fresh catalog KP.
+    if nxt is None:
+        cat = _get_kp_to_study(limit=1, format="car")
+        if cat:
+            k = cat[0]
+            nxt = {
+                "kind": "catalog_kp",
+                "topic": k.get("topic", ""),
+                "prompt": k.get("stem", ""),
+                "answer": k.get("answer", ""),
+                "rationale": k.get("rationale", ""),
+                "source": k.get("source", ""),
+                "bloom": k.get("bloom", ""),
+            }
+    # 3. Otherwise a dosing recall drill (never a calculation in car mode).
+    if nxt is None and req.include_dosing:
+        d = _get_dosing_drill(mode="recall")
+        if isinstance(d, dict) and not d.get("error"):
+            nxt = {
+                "kind": "dosing_recall",
+                "topic": d.get("drug", ""),
+                "prompt": d.get("question", ""),
+                "answer": d.get("answer", ""),
+                "anchor": d.get("anchor", ""),
+                "source": d.get("source", ""),
+            }
+
+    return {
+        "recorded": recorded,
+        "next": nxt,
+        "queue": {
+            "due_knowledge_points": _get_due_knowledge_points(limit=200, car=True).get("count", 0),
+            "due_dosing": _get_due_dosing_drills(limit=100).get("count", 0),
+        },
+    }

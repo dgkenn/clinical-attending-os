@@ -636,30 +636,43 @@ def submit_answer(
                 for r in attempt_rows
             ]
             vector = compute_mastery_vector(attempts_for_vector)
-            # Upsert into mastery_vector table
-            db.execute(
-                """INSERT INTO mastery_vector
-                       (topic_id, topic_name, accuracy, transfer_auc, mechanism_quality,
-                        calibration_icc, retention_6mo, integration_score,
-                        mastery_achieved, last_updated)
-                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
-                   ON CONFLICT(topic_id) DO UPDATE SET
-                       accuracy=excluded.accuracy,
-                       transfer_auc=excluded.transfer_auc,
-                       mechanism_quality=excluded.mechanism_quality,
-                       calibration_icc=excluded.calibration_icc,
-                       retention_6mo=excluded.retention_6mo,
-                       integration_score=excluded.integration_score,
-                       mastery_achieved=excluded.mastery_achieved,
-                       last_updated=CURRENT_TIMESTAMP""",
-                (
-                    topic_id, topic,
-                    vector["accuracy"], vector["transfer_auc"],
-                    vector["mechanism_quality"], vector["calibration_icc"],
-                    vector["retention_6mo"], vector["integration_score"],
-                    int(vector["accuracy"] >= 0.70 and vector["mechanism_quality"] > 0.0),
-                ),
+            # Upsert keyed on topic_NAME, not topic_id.
+            #
+            # mastery_vector.topic_id is the PK but topic_name is also UNIQUE, while
+            # topics has one row per (topic, subtopic) — so a single topic name owns
+            # many topic_ids ("Electrolytes" has 17). The previous
+            # `ON CONFLICT(topic_id)` therefore hit the topic_name UNIQUE constraint
+            # for every subtopic after the first and the whole submit_answer failed
+            # with "UNIQUE constraint failed: mastery_vector.topic_name", returning
+            # ok=False and mastery_updated=False. The mastery vector silently stopped
+            # updating for exactly the most-studied topics, on the MCP path too.
+            #
+            # The vector is computed from all attempts WHERE topic=<name>, so the name
+            # is the correct key. UPDATE-then-INSERT rather than a multi-target
+            # ON CONFLICT so behaviour does not depend on the SQLite version.
+            vector_row = (
+                vector["accuracy"], vector["transfer_auc"],
+                vector["mechanism_quality"], vector["calibration_icc"],
+                vector["retention_6mo"], vector["integration_score"],
+                int(vector["accuracy"] >= 0.70 and vector["mechanism_quality"] > 0.0),
             )
+            cur = db.execute(
+                """UPDATE mastery_vector
+                      SET accuracy=?, transfer_auc=?, mechanism_quality=?,
+                          calibration_icc=?, retention_6mo=?, integration_score=?,
+                          mastery_achieved=?, last_updated=CURRENT_TIMESTAMP
+                    WHERE topic_name=?""",
+                (*vector_row, topic),
+            )
+            if cur.rowcount == 0:
+                db.execute(
+                    """INSERT INTO mastery_vector
+                           (topic_id, topic_name, accuracy, transfer_auc, mechanism_quality,
+                            calibration_icc, retention_6mo, integration_score,
+                            mastery_achieved, last_updated)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)""",
+                    (topic_id, topic, *vector_row),
+                )
 
         # Determine strategy for next question
         accuracy_rate = summary.get("accuracy", float(is_correct))

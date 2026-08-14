@@ -1689,6 +1689,62 @@
           }
         }
       }
+    },
+    "/car/next": {
+      "post": {
+        "summary": "Car Next",
+        "description": "ONE round trip per hands-free item: records the answer just given AND\nreturns the next ear-friendly item.\n\nLatency, not backend speed, is what kills car mode. The backend answers a\ncar-mode query in ~40 ms over the network, but each separate tool call costs\na full model round trip (seconds). Doing this the granular way \u2014\nget_due_knowledge_points -> submit_knowledge_points -> submit_answer ->\nget_kp_to_study \u2014 is four of those per question. This collapses them to one.\n\nIt also makes the always-submit rule structural rather than advisory: the\nanswer is recorded by the same call that fetches the next item, so a tutor\nthat keeps asking questions cannot silently stop recording them.\n\nSelection order mirrors the car-mode rules: overdue knowledge points first\n(they decay), then unseen catalog KPs, then a dosing recall drill.",
+        "operationId": "car_next",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CarNextRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "recorded": {
+                      "type": "object"
+                    },
+                    "next": {
+                      "type": "object"
+                    },
+                    "queue": {
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
     }
   },
   "components": {
@@ -1953,6 +2009,89 @@
           "next_question"
         ],
         "title": "AnswerResponse"
+      },
+      "CarAnsweredInput": {
+        "properties": {
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "point": {
+            "type": "string",
+            "title": "Point"
+          },
+          "correct": {
+            "type": "boolean",
+            "title": "Correct"
+          },
+          "confidence": {
+            "type": "integer",
+            "title": "Confidence",
+            "default": 3
+          },
+          "mistake_type": {
+            "type": "string",
+            "enum": [
+              "recall",
+              "mechanism",
+              "prioritization",
+              "drug_dosing",
+              "monitoring",
+              "crisis_algorithm",
+              "oral_boards_framing",
+              "oral_presentation",
+              "incomplete_answer",
+              "overconfident_wrong",
+              "failure_to_escalate",
+              "differential_too_narrow",
+              "pretest_unstudied",
+              "critique_caught",
+              "critique_missed",
+              "other"
+            ],
+            "title": "Mistake Type",
+            "default": "other"
+          },
+          "user_answer": {
+            "type": "string",
+            "title": "User Answer",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "topic",
+          "point",
+          "correct"
+        ],
+        "title": "CarAnsweredInput",
+        "description": "The item just answered, submitted together with the request for the next\none so a hands-free turn costs a single round trip."
+      },
+      "CarNextRequest": {
+        "properties": {
+          "answered": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CarAnsweredInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "record_topic_level": {
+            "type": "boolean",
+            "title": "Record Topic Level",
+            "default": true
+          },
+          "include_dosing": {
+            "type": "boolean",
+            "title": "Include Dosing",
+            "default": true
+          }
+        },
+        "type": "object",
+        "title": "CarNextRequest"
       },
       "CasePrepRequest": {
         "properties": {
