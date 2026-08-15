@@ -1359,6 +1359,12 @@ def get_kp_to_study(
       topic (exact match) — restrict to a single topic.
       format ('car') — restrict to car_safe=1 entries only (short/ear-friendly
           KPs suitable for hands-free voice study while driving).
+      format ('triage') — GAP-DISCOVERY ordering: breadth-first over the least-
+          probed topics (0 probes first, then 1, ...), so a fixed time budget
+          maps the widest possible area of unknown-unknowns instead of
+          deepening already-visited topics. Submit triage answers with
+          triage=true per point: one confident correct parks the fact as known
+          for 60 days; a miss or hesitant correct enters normal FSRS.
 
     Returns a list of dicts with keys:
       id, topic, stem, answer, rationale, bloom, source, discipline, tier,
@@ -1377,7 +1383,28 @@ def get_kp_to_study(
         if format == "car":
             clauses.append("kp.car_safe = 1")
         where = " AND ".join(clauses)
-        params.append(limit)
+        # Triage over-fetches so the per-topic cap below can still fill the
+        # requested batch after discarding same-topic extras.
+        params.append(limit * 6 if format == "triage" else limit)
+        if format == "triage":
+            # Breadth-first: topics with the FEWEST probes first, tier-1 and
+            # critical care breaking ties. Two probes per topic before moving
+            # on (times_seen < 2 filter) — a topic that splits (one right, one
+            # wrong) will keep surfacing through the normal due queues anyway.
+            order_sql = """
+                (SELECT COUNT(*) FROM knowledge_points kx WHERE kx.topic = kp.topic) ASC,
+                kp.times_seen ASC,
+                kp.tier ASC,
+                kp.is_critical_care DESC,
+                kp.topic ASC"""
+        else:
+            order_sql = """
+                kp.times_seen ASC,                                          -- least-served first: ADVANCE, don't repeat
+                CASE WHEN kp.category = 'presentation' THEN 0 ELSE 1 END ASC,
+                kp.is_critical_care DESC,
+                kp.tier ASC,
+                CASE WHEN kp.discipline = 'medicine' THEN 0 ELSE 1 END ASC,
+                kp.topic ASC"""
         rows = db.execute(
             f"""
             SELECT kp.id, kp.topic, kp.stem, kp.answer, kp.rationale,
@@ -1388,17 +1415,25 @@ def get_kp_to_study(
                    ON kpp.topic = kp.topic AND kpp.point = kp.stem
             WHERE {where}
               AND (kpp.id IS NULL OR kpp.status != 'mastered')
-            ORDER BY
-                kp.times_seen ASC,                                          -- least-served first: ADVANCE, don't repeat
-                CASE WHEN kp.category = 'presentation' THEN 0 ELSE 1 END ASC,
-                kp.is_critical_care DESC,
-                kp.tier ASC,
-                CASE WHEN kp.discipline = 'medicine' THEN 0 ELSE 1 END ASC,
-                kp.topic ASC
+            ORDER BY {order_sql}
             LIMIT ?
             """,
             params,
         ).fetchall()
+        if format == "triage":
+            # Round-robin: max 2 probes per topic per batch — the point of
+            # triage is MAPPING the unknown area, not exhausting one topic.
+            capped, seen_topics = [], {}
+            for r in rows:
+                t = r["topic"]
+                if seen_topics.get(t, 0) >= 2:
+                    continue
+                seen_topics[t] = seen_topics.get(t, 0) + 1
+                capped.append(r)
+                if len(capped) >= limit:
+                    break
+            rows = capped
+
         # Mark these as served so the next call moves on to fresh material
         # (the stem-text join above is fragile because the tutor paraphrases points;
         # times_seen guarantees forward progress regardless).

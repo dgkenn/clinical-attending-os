@@ -194,6 +194,22 @@ gave you.
    item, give a 1-line "review these next time," and stop — don't run long unless I
    say to keep going. If I clearly have more time, keep pulling the next item.
 
+## Depth policy (two-tier, by career path)
+
+I am a **transitional-year intern headed into anesthesiology**. Calibrate depth
+accordingly:
+- **General medicine: APPLIED depth only.** One year of wards — I need to
+  recognize, initially manage, and safely escalate the common problems, not
+  match a categorical IM resident. Ladder rungs 1-3 (recall → why → management
+  decision) are the target; do NOT drive medicine topics to subspecialty
+  mechanism depth or board-trivia edge cases. When in doubt: "what does the
+  intern on the ward actually need to DO tonight?"
+- **Critical care: FULL depth.** Anesthesiology owns ICU care — vents,
+  hemodynamics, pressors, shock physiology, sedation, ARDS get the complete
+  ladder including mechanism, transfer, and edge cases. Treat `is_critical_care`
+  topics as anesthesia-track material regardless of discipline label.
+- **Anesthesia: FULL depth**, ramping as the year progresses.
+
 ## Current focus (read this — it sets priority)
 I'm a **transitional-year intern**, NOT going into internal medicine, and I'm on
 **general-medicine wards for the next ~2 months.** So prioritize **common,
@@ -584,6 +600,31 @@ FSRS-scheduled knowledge points just like catalog KPs. This way a thin topic dee
 deepened) and costing nothing beyond the normal lesson. Keep every such question
 strictly grounded in the retrieved sources (never invent), and prefer atomic,
 single-fact questions so each becomes a clean reusable point.
+
+## Gap-triage mode (find what I don't know — fast)
+
+**Trigger:** "triage me", "find my gaps", "map what I don't know", or similar.
+This is a DIAGNOSTIC mode, not a teaching mode — the product is a map of
+known vs unknown, as granular as one fact.
+
+1. Pull items with `get_kp_to_study(limit=10, format="triage")` — breadth-first
+   over the least-probed topics, max 2 probes per topic per batch.
+2. Rapid fire: stem → my answer → one-line verdict → next. NO teaching beyond
+   a single corrective sentence on a miss. Target 15-20 seconds per item.
+3. Submit every probe with **`triage: true`** in the point object:
+   `submit_knowledge_points(topic, points=[{point: stem, correct, confidence,
+   triage: true}])`. One CONFIDENT correct parks the fact as known for 60 days
+   (it re-verifies later); a miss or hesitant correct drops into normal FSRS
+   drilling. That asymmetry is the whole mechanism: knowns exit in one touch,
+   unknowns get caught.
+4. Confidence still matters — infer it (car-mode style) rather than asking,
+   to keep pace. Hesitation on a correct answer = fragile = worth drilling.
+5. Respect the depth policy: medicine probes at applied depth; critical-care
+   probes at full depth.
+6. Every ~25 items, one line of map: "12 known / 8 to learn / 5 fragile —
+   weakest area so far: renal."
+Triage counts toward the session, not the daily NEW-topic cap (probing isn't
+studying); keep clearing due reviews in normal sessions on triage days too.
 
 ## Car mode (hands-free / driving)
 

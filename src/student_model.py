@@ -1444,6 +1444,7 @@ def record_knowledge_point(
     is_correct: bool,
     confidence: Optional[int] = None,
     mistake_type: str = "other",
+    triage: bool = False,
 ) -> Optional[dict[str, Any]]:
     """Record one attempt on an atomic knowledge point: updates correctness history,
     per-point confidence, mastery status, and the independent SRS schedule. Deduped
@@ -1491,6 +1492,20 @@ def record_knowledge_point(
             nrd = (today + timedelta(days=int(round(interval)))).isoformat()
         if not is_correct:
             status = "weak"
+        elif triage and (confidence or 0) >= 4 and consec >= 1:
+            # Gap-triage mode: ONE confident correct classifies the fact as
+            # known and parks it on a long verification interval (it resurfaces
+            # when due — mastered-but-due points are served). Without this, a
+            # fact the student already knew cold still cost 2-3 touches to exit
+            # the queue, which makes triaging a 6,200-fact catalog ~3x slower
+            # than it needs to be. A hesitant correct (conf <= 3) stays in the
+            # normal ladder — hesitation IS information about fragility.
+            status = "mastered"
+            try:
+                nrd = (today + timedelta(days=60)).isoformat()
+                interval = 60.0
+            except Exception:
+                pass
         elif consec >= 2:
             status = "mastered"
         else:

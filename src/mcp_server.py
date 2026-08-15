@@ -126,6 +126,7 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
             is_correct=bool(p.get("correct", p.get("is_correct", False))),
             confidence=p.get("confidence"),
             mistake_type=str(p.get("mistake_type", "other")),
+            triage=bool(p.get("triage", False)),
         )
         if r:
             results.append(r)
