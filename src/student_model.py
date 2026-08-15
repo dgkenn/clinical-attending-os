@@ -645,10 +645,21 @@ def get_daily_review_budget() -> int:
     return get_int_setting("daily_review_budget", 200)
 
 
+def local_day_start_utc_iso() -> str:
+    """Start of the STUDENT'S current local day, expressed as a UTC ISO string
+    (attempt timestamps are stored in UTC). Day-boundary counters must use
+    this: comparing against the UTC date string made "today" begin at 8pm the
+    previous evening for a US-Eastern user — the daily new-item cap reset
+    mid-evening and one evening session was split across two "days"."""
+    local_midnight = datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0)
+    return local_midnight.astimezone(timezone.utc).isoformat()
+
+
 def count_new_topics_today() -> int:
-    """Distinct curriculum topics introduced (first-ever attempt) today (UTC)."""
+    """Distinct curriculum topics introduced (first-ever attempt) in the
+    student's current LOCAL day."""
     initialize_database()
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today = local_day_start_utc_iso()
     with conn() as db:
         row = db.execute(
             """SELECT COUNT(*) FROM (

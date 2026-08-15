@@ -220,9 +220,10 @@ def get_session_state() -> Dict[str, Any]:
                 except Exception:
                     pass
             try:
-                today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+                from .student_model import local_day_start_utc_iso
                 attempts_today = db.execute(
-                    "SELECT COUNT(*) FROM question_attempts WHERE date >= ?", (today_utc,)
+                    "SELECT COUNT(*) FROM question_attempts WHERE date >= ?",
+                    (local_day_start_utc_iso(),),
                 ).fetchone()[0]
             except Exception:
                 attempts_today = 0

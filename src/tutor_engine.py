@@ -13,7 +13,12 @@ from .student_model import log_attempt, select_next_question, training_phase_for
 
 CONCEPT_GRADING_RULES = [
     {
-        "match": ["last", "local anesthetic"],
+        # "last" the acronym is only trusted in the TOPIC/SUBTOPIC fields
+        # (match_topic) — as a bare substring of the question it hijacked
+        # grading of ANY prompt containing the common word ("when did the
+        # patient last eat?" was graded as a lipid-emulsion crisis).
+        "match": ["local anesthetic", "last protocol", "lipid emulsion", "intralipid"],
+        "match_topic": ["last"],
         "concepts": [
             ["lipid", "intralipid", "emulsion"],
             ["stop", "discontinue"],
@@ -350,9 +355,17 @@ def _contains_any(text: str, variants: list[str]) -> bool:
 
 def grade_user_answer(question: str, user_answer: str, ideal_answer: str, topic: str, subtopic: str = "") -> tuple[str, str]:
     combined_prompt = f" {question} {topic} {subtopic} ".lower()
+    topic_fields = f" {topic} {subtopic} ".lower()
     answer = user_answer.lower()
     for rule in CONCEPT_GRADING_RULES:
-        if not any(key in combined_prompt for key in rule["match"]):
+        # match: phrases anywhere in the prompt. match_topic: tokens trusted
+        # only in the topic/subtopic fields (for acronyms that collide with
+        # common words — see the LAST rule).
+        hit = any(key in combined_prompt for key in rule["match"]) or any(
+            f" {key} " in topic_fields or topic_fields.strip() == key
+            for key in rule.get("match_topic", ())
+        )
+        if not hit:
             continue
         concept_hits = sum(1 for concept in rule["concepts"] if _contains_any(answer, concept))
         critical_hits = sum(1 for concept in rule["critical"] if _contains_any(answer, concept))
@@ -491,6 +504,14 @@ def record_evaluated_answer(
             citation = shaped.citation
         except Exception:
             pass
+
+    # Pretests withhold EVERYTHING that reveals the answer — not just
+    # mini_teach. The response used to ship ideal_answer, its key points and
+    # the retrieved source snippets even for phase == "pretest", handing the
+    # GPT the content the forward-testing phase exists to withhold.
+    if phase == "pretest":
+        ideal_answer = ""
+        snippets = []
 
     return {
         "evaluation": result,

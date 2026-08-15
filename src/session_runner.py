@@ -235,7 +235,26 @@ def next_lesson(session: dict[str, Any]) -> tuple[VoiceLesson, dict[str, Any]]:
 
     # Reuse current_unit_id mid-pass (phases 1-4 stick to the unit set at phase 0)
     sticky_unit_id = session.get("current_unit_id") if phase_index > 0 else None
-    if sticky_unit_id and not sticky_unit_id.startswith("due:"):
+    if sticky_unit_id and sticky_unit_id.startswith("due:"):
+        # Phase 0 served an FSRS-due topic: phases 1-4 continue drilling THAT
+        # topic. Previously this fell through to _next_unmastered_unit, which
+        # consumed a brand-new curriculum unit mid-pass — marked served
+        # (times_seen=1 => "completed") without ever getting its pretest or
+        # warm_up, then permanently skipped by the walker.
+        due_topic_name = sticky_unit_id[len("due:"):]
+        row = next((r for r in due_topics if r.get("topic") == due_topic_name), None)
+        if row is None:
+            with conn() as db:
+                _r = db.execute(
+                    "SELECT topic_id, topic, subtopic, mastery_score, fsrs_state, "
+                    "library, training_phase, source FROM topics WHERE topic=? LIMIT 1",
+                    (due_topic_name,),
+                ).fetchone()
+                row = dict(_r) if _r else None
+        if row is not None:
+            unit = _topic_record_to_unit_stub(row)
+            sources = _retrieve_for_due_topic(row)
+    elif sticky_unit_id and not sticky_unit_id.startswith("due:"):
         # Force-advance if this unit has been served 5+ times — even mid-pass we
         # bail rather than serve a 6th time.
         if unit_serve_counts.get(sticky_unit_id, 0) >= 5:
@@ -249,7 +268,10 @@ def next_lesson(session: dict[str, Any]) -> tuple[VoiceLesson, dict[str, Any]]:
     # Phase 0: choose between FSRS-due review vs fresh curriculum unit.
     # Force a fresh unit every 3rd pass to break the due-review lock.
     force_fresh = since_last_new_unit >= 2
-    if unit is None and phase == "warm_up_retrieval" and not force_fresh:
+    if unit is None and phase in ("warm_up_retrieval", "weak_topic_drilling") and not force_fresh:
+        # warm_up takes the most-due topic; weak_topic_drilling takes the
+        # WEAKEST due topic (that branch of _pick_due_topic_for_phase was
+        # previously unreachable — the only call site gated on warm_up).
         topic_row = _pick_due_topic_for_phase(phase, due_topics)
         if topic_row:
             unit = _topic_record_to_unit_stub(topic_row)
@@ -270,7 +292,17 @@ def next_lesson(session: dict[str, Any]) -> tuple[VoiceLesson, dict[str, Any]]:
     if is_real_unit and unit.unit_id not in pretests_done and phase_index == 0:
         phase = "pretest"
 
-    # Resolve adaptive difficulty target from rolling window
+    # Resolve adaptive difficulty target from the last 5 recorded answers.
+    # The session dict's recent_results was read here but nothing ever wrote
+    # to it (answers flow through /answer, which doesn't touch the client-held
+    # session), so difficulty was permanently 'default'. The attempts table is
+    # the source of truth — read the rolling window from it.
+    if not recent_results:
+        with conn() as db:
+            _rows = db.execute(
+                "SELECT result FROM question_attempts ORDER BY attempt_id DESC LIMIT 5"
+            ).fetchall()
+        recent_results = [r["result"] for r in reversed(_rows)]
     difficulty_target = _difficulty_from(recent_results)
 
     # Look up topic_times_seen for cloze rotation
