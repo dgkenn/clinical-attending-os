@@ -23,6 +23,7 @@ from .student_model import (
 )
 from .tutor_engine import answer_query, record_evaluated_answer, start_session
 from .mcp_endpoints import (
+    get_calibration_report,
     retrieval as mcp_retrieval,
     get_session_state,
     get_next_topic,
@@ -83,6 +84,8 @@ def log_missed_topic(topic: str, subtopic: str = "", gap_note: str = "", mistake
     as the gap note. The parent topic gets the FSRS weak signal; the gap is stored
     structured/deduped in knowledge_gaps (no junk pseudo-topic rows).
     """
+    from .topic_resolver import resolve_topic
+    topic, _ = resolve_topic(topic)
     note = (gap_note or subtopic or "").strip()
     mark_topic_weak(topic, "")  # weak signal on the parent topic only
     if note:
@@ -102,6 +105,8 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     confident on some parts and unsure on others, and each part is scheduled on its
     own. Use this alongside the topic-level `submit_answer`.
     """
+    from .topic_resolver import resolve_topic
+    topic, _topic_resolved = resolve_topic(topic)
     results = []
     skipped = []
     for p in points or []:
@@ -129,6 +134,8 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     return {
         "ok": True,
         "recorded": len(results),
+        "canonical_topic": topic,
+        "topic_was_canonicalized": _topic_resolved,
         "skipped": skipped,
         "points": results,
         "weak_or_learning": [r["point"] for r in results if r["status"] != "mastered"],
@@ -412,6 +419,7 @@ def build_server():
     mcp.tool(name="get_progress")(get_progress)
     # Curriculum coverage tools
     mcp.tool(name="get_mastery_map")(get_mastery_map)
+    mcp.tool(name="get_calibration_report")(get_calibration_report)
     mcp.tool(name="set_medicine_weight")(set_medicine_weight_tool)
     # Dosing-drill tools (CPU-only calc engine — no corpus/Chroma access)
     mcp.tool(name="get_dosing_drill")(get_dosing_drill)

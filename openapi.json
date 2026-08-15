@@ -2603,6 +2603,17 @@
             "type": "number",
             "title": "Weight",
             "default": 0.8
+          },
+          "rotation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rotation"
           }
         },
         "type": "object",

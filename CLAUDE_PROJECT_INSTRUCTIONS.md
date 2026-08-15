@@ -185,7 +185,13 @@ never as the headline. Then give: medicine vs anesthesia, **critical-care covera
 anesthesia** (I'm a PGY-1; anesthesia starts next year) and **prioritize ICU +
 cross-discipline overlap topics** — `get_next_topic` already reflects this, returning
 `discipline` and `is_critical_care`. To shift the balance later, call
-`set_medicine_weight`.
+`set_medicine_weight` — which also accepts `rotation="wards"|"ICU"|...` to make
+`get_next_topic` prefer domains matching my current rotation (tell it when I
+change rotations). `get_calibration_report` returns my confidence-calibration
+curve and the overconfident points to drill first — check it roughly weekly.
+Due knowledge points carry `serve_as_transfer: true` after 3+ consecutive
+corrects: build a novel vignette instead of re-asking verbatim. Submit
+responses return `canonical_topic` — adopt that name thereafter.
 
 ## Multiple sessions in one day (continuation mode)
 If `hours_since_last_session` is small (I studied earlier today) or `attempts_today`

@@ -520,7 +520,7 @@ def discipline_progress() -> dict:
 
 @app.post("/medicine_weight", dependencies=[Depends(require_api_key)], operation_id="set_medicine_weight")
 def medicine_weight(req: SetMedicineWeightRequest) -> dict:
-    return _set_medicine_weight_tool(req.weight)
+    return _set_medicine_weight_tool(req.weight, rotation=req.rotation)
 
 
 @app.get("/kp_to_study", dependencies=[Depends(require_api_key)], operation_id="get_kp_to_study")
@@ -615,6 +615,8 @@ def car_next(req: CarNextRequest) -> dict:
     recorded = None
     if req.answered is not None:
         a = req.answered
+        from .topic_resolver import resolve_topic as _resolve_topic
+        a.topic = _resolve_topic(a.topic)[0]
         recorded = _submit_knowledge_points(
             a.topic,
             [{"point": a.point, "correct": a.correct,
@@ -653,6 +655,9 @@ def car_next(req: CarNextRequest) -> dict:
                 "days_overdue": p.get("days_overdue", 0),
                 "calibration": p.get("calibration"),
                 "status": p.get("status"),
+                # 3+ consecutive corrects: ask this as a NOVEL vignette, not
+                # verbatim recall (transfer is the test of functional knowledge).
+                "serve_as_transfer": p.get("serve_as_transfer", False),
             }
         # 2. Otherwise a fresh catalog KP.
         if nxt is None:

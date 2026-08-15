@@ -395,6 +395,11 @@ class SubmitKnowledgePointsRequest(BaseModel):
 
 class SetMedicineWeightRequest(BaseModel):
     weight: float = 0.8
+    # Optional: also set the current rotation ("wards", "ICU", "cardiology",
+    # "anesthesia", ...) — new-topic picks then prefer matching domains.
+    # "" clears it; omit to leave unchanged. Shares this endpoint to stay
+    # under ChatGPT's 30-operation Actions cap.
+    rotation: str | None = None
 
 
 class LogMissedTopicRequest(BaseModel):

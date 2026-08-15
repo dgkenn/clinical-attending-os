@@ -1,119 +1,146 @@
-"""Fidelity audit for data/kp_catalog.json — structural + grounding checks.
+"""Audit the generated KP catalog's grounding against the retrieval corpus.
 
-Checks:
-  A. Schema: required fields present, valid bloom, source format.
-  B. Duplicates: duplicate ids; near-duplicate stems within a topic.
-  C. Empties: blank answer/stem/rationale.
-  D. Telegraphing: disease-topic stems that name the diagnosis.
-  E. Source fidelity: cited book must be a real corpus book.
-  F. Grounding: for topics we still have a retrieval dump for, the KP's cited
-     book must appear among that topic's retrieved chunks.
-  G. Coverage: per-topic KP counts; thin topics (<3).
-Prints a report and writes flagged items to data/_kp_audit_flags.json.
+The 946 curated units are human-fact-checked; the other ~5,250 catalog KPs are
+generated. For a system used to treat patients, "probably right" isn't a
+standard. This audit retrieves each KP's own topic+answer against the corpus
+and scores how well the sources support the answer's load-bearing terms
+(numbers, doses, named drugs/thresholds get extra weight).
+
+It CANNOT prove a fact wrong — only flag weak grounding for physician review.
+Output: storage/logs/kp_audit.jsonl (every KP, resumable) and
+storage/logs/kp_audit_flagged.md (the review queue, worst first).
+
+Run in batches (it's retrieval-bound, ~0.3s/KP):
+    .venv\\Scripts\\python.exe scripts\\audit_kp_catalog.py --limit 500
+Re-running resumes: already-audited KP ids are skipped.
 """
-import json, re, glob, os, sys
-from collections import Counter, defaultdict
+from __future__ import annotations
 
-CAT = "data/kp_catalog.json"
-DUMPS = ["data/_kp_retrieval.json", "data/_kp_retrieval_full.json"]
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
 
-REQ = ["id", "topic", "stem", "answer", "rationale", "bloom", "source", "discipline"]
-BLOOM_OK = {"recall", "apply", "analyze", "evaluate", "transfer"}
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
-def norm(s): return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+from src.config import settings  # noqa: E402
+from src.student_model import conn, initialize_database  # noqa: E402
+from src.retrieval import hybrid_search  # noqa: E402
 
-def main():
-    cat = json.load(open(CAT, encoding="utf-8"))
-    kps = [e for e in cat if not e.get("_type")]
-    scripts = [e for e in cat if e.get("_type") == "illness_script"]
-    pairs = [e for e in cat if e.get("_type") == "confusable_pair"]
+OUT_JSONL = Path(settings.log_dir) / "kp_audit.jsonl"
+OUT_FLAGGED = Path(settings.log_dir) / "kp_audit_flagged.md"
 
-    # Build per-topic chunk-book map + global book set from any dumps present
-    topic_books = {}      # topic -> set(books)
-    all_books = set()
-    for d in DUMPS:
-        if os.path.exists(d):
-            for t in json.load(open(d, encoding="utf-8")):
-                bs = {c.get("book", "") for c in t.get("chunks", [])}
-                topic_books.setdefault(t["topic"], set()).update(bs)
-                all_books.update(bs)
+_NUM = re.compile(r"\d+(?:\.\d+)?")
+_WORD = re.compile(r"[a-zA-Z]{4,}")
+_STOP = {
+    "with", "that", "this", "from", "into", "than", "then", "when", "which",
+    "should", "must", "does", "have", "been", "were", "will", "only", "most",
+    "more", "less", "very", "also", "each", "them", "they", "their", "because",
+}
 
-    flags = defaultdict(list)
-    ids = Counter()
-    by_topic = defaultdict(list)
 
-    for k in kps:
-        ids[k.get("id")] += 1
-        by_topic[k.get("topic")].append(k)
-        # A. schema
-        miss = [f for f in REQ if not k.get(f)]
-        if miss: flags["missing_fields"].append({"id": k.get("id"), "missing": miss})
-        if k.get("bloom") not in BLOOM_OK: flags["bad_bloom"].append({"id": k.get("id"), "bloom": k.get("bloom")})
-        src = k.get("source")
-        if not (isinstance(src, list) and src and isinstance(src[0], dict) and src[0].get("book")):
-            flags["bad_source_format"].append({"id": k.get("id"), "source": src})
-        # C. empties
-        for f in ("answer", "stem", "rationale"):
-            if not (k.get(f) or "").strip(): flags["empty_"+f].append(k.get("id"))
-        # E. source fidelity (cited book exists in corpus book set)
-        if all_books and isinstance(src, list) and src and src[0].get("book"):
-            b = src[0]["book"]
-            if b not in all_books:
-                flags["unknown_source_book"].append({"id": k.get("id"), "book": b})
-        # F. grounding: cited book among this topic's retrieved chunk books
-        tb = topic_books.get(k.get("topic"))
-        if tb and isinstance(src, list) and src and src[0].get("book"):
-            if src[0]["book"] not in tb:
-                flags["source_not_in_topic_chunks"].append({"id": k.get("id"), "topic": k.get("topic"), "book": src[0]["book"]})
-        # D. telegraphing — disease topics only (skip 'Approach to' presentations)
-        topic = k.get("topic", "")
-        if not topic.lower().startswith("approach to"):
-            tnorm = norm(topic)
-            head = tnorm.split()[0] if tnorm else ""
-            # flag if a distinctive topic word (>=5 chars) appears verbatim in the stem
-            distinctive = [w for w in tnorm.split() if len(w) >= 6][:2]
-            stem = norm(k.get("stem"))
-            if distinctive and any(w in stem for w in distinctive):
-                flags["possible_telegraph"].append({"id": k.get("id"), "topic": topic})
+def _key_terms(text: str) -> tuple[set[str], set[str]]:
+    """(numbers, salient words) — numbers are the load-bearing clinical content."""
+    nums = set(_NUM.findall(text))
+    words = {w.lower() for w in _WORD.findall(text)} - _STOP
+    return nums, words
 
-    # B. duplicate ids
-    dup_ids = {i: n for i, n in ids.items() if n > 1}
-    # near-duplicate stems within topic
-    for t, ks in by_topic.items():
-        seen = {}
-        for k in ks:
-            ns = norm(k.get("stem"))
-            if ns in seen: flags["dup_stem_in_topic"].append({"topic": t, "ids": [seen[ns], k.get("id")]})
-            else: seen[ns] = k.get("id")
 
-    # G. coverage
-    counts = {t: len(ks) for t, ks in by_topic.items()}
-    thin = sorted([t for t, n in counts.items() if n < 3])
+def audit_one(kp: dict) -> dict:
+    query = f"{kp['topic']} {kp['stem']}"[:300]
+    try:
+        sources, insufficient = hybrid_search(
+            query, mode="intern_teach", max_results=5, use_cross_encoder=False
+        )
+    except Exception as exc:
+        return {"id": kp["id"], "score": None, "error": str(exc)[:120]}
+    corpus_text = " ".join(s.text.lower() for s in sources)
+    nums, words = _key_terms(kp["answer"])
+    num_hits = sum(1 for n in nums if n in corpus_text)
+    word_hits = sum(1 for w in words if w in corpus_text)
+    # Numbers weigh 3x: a dose or threshold unsupported by the sources is the
+    # dangerous case; prose overlap alone is cheap.
+    denom = 3 * len(nums) + len(words)
+    score = round((3 * num_hits + word_hits) / denom, 3) if denom else None
+    return {
+        "id": kp["id"], "topic": kp["topic"], "score": score,
+        "numbers_total": len(nums), "numbers_supported": num_hits,
+        "insufficient_context": insufficient,
+        "source": kp.get("source", ""),
+    }
 
-    print("="*64)
-    print(f"KP CATALOG AUDIT — {len(kps)} KPs | {len(scripts)} illness scripts | {len(pairs)} confusable pairs")
-    print(f"topics with KPs: {len(by_topic)} | median KPs/topic: {sorted(counts.values())[len(counts)//2] if counts else 0}")
-    print("="*64)
-    def rate(n): return f"{n} ({100*n/max(1,len(kps)):.1f}%)"
-    print(f"  duplicate ids:            {len(dup_ids)}")
-    print(f"  missing required fields:  {rate(len(flags['missing_fields']))}")
-    print(f"  invalid bloom:            {rate(len(flags['bad_bloom']))}")
-    print(f"  bad source format:        {rate(len(flags['bad_source_format']))}")
-    print(f"  empty answer/stem/rat:    {len(flags['empty_answer'])}/{len(flags['empty_stem'])}/{len(flags['empty_rationale'])}")
-    print(f"  unknown source book:      {rate(len(flags['unknown_source_book']))}")
-    print(f"  source not in topic chunks: {rate(len(flags['source_not_in_topic_chunks']))}  (grounding flag)")
-    print(f"  possible telegraph:       {rate(len(flags['possible_telegraph']))}")
-    print(f"  dup stems within topic:   {len(flags['dup_stem_in_topic'])}")
-    print(f"  thin topics (<3 KPs):     {len(thin)}")
-    print(f"  known corpus books:       {len(all_books)}")
-    if all_books:
-        print("  source-book distribution (top):")
-        bc = Counter(k['source'][0]['book'] for k in kps if isinstance(k.get('source'), list) and k['source'] and k['source'][0].get('book'))
-        for b, n in bc.most_common(8): print(f"    {n:>5}  {b[:48]}")
-    print("\n  sample flagged (grounding):", [f['id'] for f in flags['source_not_in_topic_chunks'][:5]])
-    print("  sample thin topics:", thin[:8])
-    json.dump({k: v for k, v in flags.items()}, open("data/_kp_audit_flags.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print("\n  full flags -> data/_kp_audit_flags.json")
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--limit", type=int, default=200, help="KPs to audit this run")
+    ap.add_argument("--flag-below", type=float, default=0.45)
+    args = ap.parse_args()
+
+    initialize_database()
+    OUT_JSONL.parent.mkdir(parents=True, exist_ok=True)
+    done: set = set()
+    if OUT_JSONL.exists():
+        for line in OUT_JSONL.read_text(encoding="utf-8").splitlines():
+            try:
+                done.add(json.loads(line)["id"])
+            except Exception:
+                pass
+
+    with conn() as db:
+        rows = [dict(r) for r in db.execute(
+            "SELECT id, topic, stem, answer, source FROM kp_catalog ORDER BY tier ASC, id ASC"
+        ).fetchall()]
+    todo = [r for r in rows if r["id"] not in done][: args.limit]
+    print(f"catalog: {len(rows)} | audited: {len(done)} | this run: {len(todo)}")
+
+    with OUT_JSONL.open("a", encoding="utf-8") as f:
+        for i, kp in enumerate(todo, 1):
+            res = audit_one(kp)
+            f.write(json.dumps(res) + "\n")
+            if i % 50 == 0:
+                print(f"  {i}/{len(todo)}")
+
+    # Rebuild the flagged review queue from the full JSONL.
+    flagged = []
+    for line in OUT_JSONL.read_text(encoding="utf-8").splitlines():
+        try:
+            r = json.loads(line)
+        except Exception:
+            continue
+        s = r.get("score")
+        unsupported_numbers = (r.get("numbers_total") or 0) > 0 and (
+            r.get("numbers_supported", 0) < r.get("numbers_total", 0)
+        )
+        if (s is not None and s < args.flag_below) or unsupported_numbers:
+            flagged.append(r)
+    flagged.sort(key=lambda r: (r.get("score") if r.get("score") is not None else 0))
+
+    by_id = {r["id"]: r for r in rows}
+    lines = [
+        "# KP catalog — flagged for physician review",
+        "",
+        f"{len(flagged)} of {len(done) + len(todo)} audited KPs have weak retrieval "
+        f"grounding (score < {args.flag_below}) or numeric claims the top-5 sources "
+        "don't contain. **Weak grounding is a review flag, not a verdict of wrong** — "
+        "check each against the cited source; fix or delete bad ones in "
+        "data/kp_catalog.json and re-seed.",
+        "",
+    ]
+    for r in flagged[:200]:
+        kp = by_id.get(r["id"], {})
+        lines.append(
+            f"## [ ] {r.get('topic','?')} (id {r['id']}, score {r.get('score')}, "
+            f"numbers {r.get('numbers_supported',0)}/{r.get('numbers_total',0)})"
+        )
+        lines.append(f"- **Stem:** {kp.get('stem','?')}")
+        lines.append(f"- **Answer:** {kp.get('answer','?')}")
+        lines.append(f"- **Cites:** {r.get('source','')}")
+        lines.append("")
+    OUT_FLAGGED.write_text("\n".join(lines), encoding="utf-8")
+    print(f"flagged: {len(flagged)} -> {OUT_FLAGGED}")
+
 
 if __name__ == "__main__":
     main()

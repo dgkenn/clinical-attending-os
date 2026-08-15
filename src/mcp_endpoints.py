@@ -21,8 +21,49 @@ from .question_strategy import decide_question_strategy, select_question_layer, 
 from .lesson_planner import generate_lesson_plan, LessonMode
 from .drill_decision import decide_drill_action, DrillContext, DrillDecision, estimate_mastery_time
 from .student_model import conn, get_topic_summary, log_attempt, get_or_create_topic, get_due_reviews as _get_due_reviews, get_medicine_weight, set_medicine_weight as _set_medicine_weight, get_knowledge_points as _get_knowledge_points, get_due_knowledge_points as _get_due_knowledge_points, get_daily_new_item_cap, get_daily_review_budget, count_new_topics_today, initialize_database
+from .student_model import get_current_rotation, set_current_rotation
 from .fsrs import fsrs_review, deserialize, serialize, next_review_date_from_state
 from .mastery_gates import compute_mastery_vector, update_mastery_in_db
+
+
+
+
+# Rotation name fragments -> curriculum domain LIKE patterns. Matched
+# case-insensitively against the freeform rotation string, so "gen med wards",
+# "wards", "medicine" all hit the wards entry.
+ROTATION_DOMAIN_HINTS: list[tuple[str, list[str]]] = [
+    ("ward", ["%cardiology%", "%infectious%", "%nephrology%", "%pulmonolog%",
+              "%gastroenterolog%", "%endocrinolog%", "%hematology%",
+              "%on-call%", "%general internal%"]),
+    ("medicine", ["%cardiology%", "%infectious%", "%nephrology%", "%pulmonolog%",
+                  "%on-call%", "%general internal%"]),
+    ("icu", ["%icu%", "%critical care%"]),
+    ("cards", ["%cardiology%", "%cardiovascular%"]),
+    ("cardiology", ["%cardiology%", "%cardiovascular%"]),
+    ("anesthesia", ["%anesthe%", "%airway%", "%perioperative%", "%crises%"]),
+    ("ob", ["%obstetric%"]),
+    ("peds", ["%pediatric%"]),
+    ("pain", ["%pain%", "%regional%"]),
+    ("neuro", ["%neurolog%", "%neuroanesthesia%"]),
+    ("emergency", ["%emergency%", "%crises%"]),
+    ("ed", ["%emergency%"]),
+]
+
+
+def _rotation_domain_patterns() -> list[str]:
+    rot = (get_current_rotation() or "").lower()
+    if not rot:
+        return []
+    # Whole-word matching: bare substring matching let the "ed" fragment fire
+    # inside "gen mED wards" and pulled emergency-medicine domains into a
+    # wards rotation. Tokenize and compare words (with a simple plural strip).
+    words = {w.strip("s") for w in rot.replace("/", " ").replace("-", " ").split()}
+    words |= {w for w in rot.replace("/", " ").replace("-", " ").split()}
+    pats: list[str] = []
+    for frag, patterns in ROTATION_DOMAIN_HINTS:
+        if frag in words:
+            pats.extend(p for p in patterns if p not in pats)
+    return pats
 
 
 # ============================================================================
@@ -465,8 +506,41 @@ def get_next_topic(session_id: Optional[str] = None) -> Dict[str, Any]:
                         "is_nested": False,
                     }
 
-                # 2b. Discipline-weighted non-CC untouched topic
+                # 2b-0. Rotation-aligned pick: if a current_rotation is set,
+                # prefer untouched topics from domains matching it — studying
+                # what this week's patients have is the strongest encoding
+                # context there is. Falls through when exhausted or unset.
                 preferred_discipline = "anesthesia" if is_anesthesia_slot else "medicine"
+                rot_pats = _rotation_domain_patterns()
+                if rot_pats:
+                    likes = " OR ".join("domain LIKE ?" for _ in rot_pats)
+                    rot_row = db.execute(
+                        f"""SELECT topic, domain, discipline, is_critical_care, subtopics, priority_tier, category
+                           FROM curriculum
+                           WHERE ({likes})
+                             AND topic NOT IN (SELECT topic FROM topics WHERE times_seen > 0)
+                           ORDER BY high_yield DESC, priority_tier ASC, topic ASC
+                           LIMIT 1""",
+                        rot_pats,
+                    ).fetchone()
+                    if rot_row:
+                        row = rot_row
+                        return {
+                            "topic": row["topic"],
+                            "domain": row["domain"] or "",
+                            "discipline": row["discipline"] or "medicine",
+                            "is_critical_care": bool(row["is_critical_care"]),
+                            "priority_tier": int(row["priority_tier"] or 2),
+                            "category": row["category"] or "topic",
+                            "subtopics": json.loads(row["subtopics"] or "[]"),
+                            "reason": "rotation_aligned",
+                            "rotation": get_current_rotation(),
+                            "retrieval_query": row["topic"],
+                            "suggested_phase": "new_material",
+                            "is_nested": False,
+                        }
+
+                # 2b. Discipline-weighted non-CC untouched topic
                 untouched_row = db.execute(
                     """SELECT topic, domain, discipline, is_critical_care, subtopics, priority_tier, category
                        FROM curriculum
@@ -580,6 +654,12 @@ def submit_answer(
         }
     """
     try:
+        # Canonicalize the topic onto the curriculum blueprint (exact/alias/
+        # unique-containment only — never fuzzy). Freeform names fragmented
+        # history across spellings and made coverage tracking fiction.
+        from .topic_resolver import resolve_topic
+        topic, _topic_resolved = resolve_topic(topic)
+
         # Clamp confidence to 1-5 range
         confidence = max(1, min(5, confidence_reported))
 
@@ -727,6 +807,8 @@ def submit_answer(
             "mastery_score": round(summary.get("mastery_score", 0.0), 3),
             "status": current_status,
             "strategy_for_next": strategy.value,
+            "canonical_topic": topic,
+            "topic_was_canonicalized": _topic_resolved,
             "confidence_calibration": "good" if confidence == 3 else ("low" if confidence <= 2 else "high")
         }
     except Exception as e:
@@ -1036,6 +1118,7 @@ def get_mastery_map() -> Dict[str, Any]:
             "total_curriculum_topics": total_curriculum,
             "topics_studied": topics_studied,
             "topics_studied_off_blueprint": studied_offblueprint,
+            "calibration": get_calibration_report(30),
             "coverage_pct": coverage_pct,
             "mastery_levels": mastery_levels,
             "knowledge_points": knowledge_points,
@@ -1156,28 +1239,94 @@ def get_progress() -> Dict[str, Any]:
         }
 
 
+
+
+def get_calibration_report(window_days: int = 30) -> Dict[str, Any]:
+    """How well the student's stated confidence predicts being right.
+
+    Confidence started actually reaching the scheduler on 2026-08-15 (before
+    that a unit bug pinned it at 5), so this report is the feedback loop that
+    makes honest 1-5 ratings worth giving. Overconfidence — high confidence,
+    wrong answer — is the dangerous quadrant in clinical practice; surface it.
+
+    Returns accuracy per confidence bucket, the overconfidence gap, and the
+    currently-overconfident knowledge points to drill first.
+    """
+    try:
+        with conn() as db:
+            rows = db.execute(
+                """SELECT confidence_reported conf, result FROM question_attempts
+                   WHERE confidence_reported IS NOT NULL
+                     AND date >= datetime('now', ?)""",
+                (f"-{int(window_days)} days",),
+            ).fetchall()
+        buckets = {"low_1_2": [0, 0], "mid_3": [0, 0], "high_4_5": [0, 0]}
+        for r in rows:
+            conf = float(r["conf"] or 3)
+            key = "low_1_2" if conf <= 2 else ("high_4_5" if conf >= 4 else "mid_3")
+            buckets[key][1] += 1
+            if r["result"] == "correct":
+                buckets[key][0] += 1
+        out = {
+            k: {
+                "n": n,
+                "accuracy": round(c / n, 3) if n else None,
+            }
+            for k, (c, n) in buckets.items()
+        }
+        hi = out["high_4_5"]
+        # A well-calibrated high-confidence bucket should approach ~0.9 accuracy.
+        overconfidence_gap = (
+            round(0.9 - hi["accuracy"], 3) if hi["accuracy"] is not None else None
+        )
+        overconfident_points = [
+            {"topic": p["topic"], "point": p["point"],
+             "avg_confidence": p.get("avg_confidence"), "accuracy": p.get("accuracy")}
+            for p in _get_knowledge_points(status="", limit=500)
+            if p.get("calibration") == "overconfident"
+        ][:15]
+        return {
+            "window_days": window_days,
+            "attempts_with_confidence": len(rows),
+            "by_confidence": out,
+            "overconfidence_gap": overconfidence_gap,
+            "overconfident_points": overconfident_points,
+            "reading": (
+                "insufficient data" if len(rows) < 20 else
+                "overconfident — drill the listed points first"
+                if (overconfidence_gap or 0) > 0.15 else "reasonably calibrated"
+            ),
+        }
+    except Exception as e:
+        return {"error": str(e), "window_days": window_days}
+
+
 # ============================================================================
 # TOOL 5c: SET MEDICINE WEIGHT - Flip the discipline study bias
 # ============================================================================
 
-def set_medicine_weight_tool(weight: float) -> Dict[str, Any]:
+def set_medicine_weight_tool(weight: float, rotation: Optional[str] = None) -> Dict[str, Any]:
     """
-    Set the fraction of new study picks that come from medicine (vs anesthesia).
-
-    Args:
-        weight: Float 0.0–1.0. Default 0.8 means ~80% medicine, 20% anesthesia.
-                Critical-care / overlap topics always jump the queue regardless.
+    Set the fraction of new study picks that come from medicine (vs anesthesia),
+    and optionally the CURRENT ROTATION ("wards", "ICU", "cardiology",
+    "anesthesia", ...) — new-topic selection then prefers matching domains.
+    Pass rotation="" to clear it. (Shares this tool to stay under ChatGPT's
+    30-operation Actions cap.)
 
     Returns:
-        {"ok": bool, "medicine_weight": float, "anesthesia_weight": float}
+        {"ok": bool, "medicine_weight": float, "anesthesia_weight": float,
+         "current_rotation": str}
     """
     try:
         _set_medicine_weight(weight)
+        if rotation is not None:
+            set_current_rotation(rotation)
         clamped = max(0.0, min(1.0, float(weight)))
         return {
             "ok": True,
             "medicine_weight": round(clamped, 3),
             "anesthesia_weight": round(1.0 - clamped, 3),
+            "current_rotation": get_current_rotation(),
         }
     except Exception as e:
         return {"ok": False, "error": str(e)}

@@ -613,6 +613,26 @@ def set_medicine_weight(weight: float) -> None:
 
 # --- Daily load economics (spaced-repetition needs a bounded daily intake) ---
 
+def get_current_rotation() -> str:
+    """The rotation the student is currently on ('' = none set). New-topic
+    selection biases toward matching curriculum domains so study lands the
+    same week the patients do — the strongest encoding context available."""
+    initialize_database()
+    with conn() as db:
+        row = db.execute("SELECT value FROM settings WHERE key='current_rotation'").fetchone()
+    return (row["value"] or "") if row else ""
+
+
+def set_current_rotation(rotation: str) -> None:
+    initialize_database()
+    with conn() as db:
+        db.execute(
+            "INSERT INTO settings(key, value, updated_at) VALUES('current_rotation', ?, ?) "
+            "ON CONFLICT(key) DO UPDATE SET value=excluded.value, updated_at=excluded.updated_at",
+            ((rotation or "").strip(), now()),
+        )
+
+
 def get_int_setting(key: str, default: int) -> int:
     """Read an integer setting, falling back to default."""
     initialize_database()
@@ -1512,6 +1532,13 @@ def _kp_row_to_dict(r: sqlite3.Row, today=None) -> dict[str, Any]:
     d["avg_confidence"] = round(avg_conf, 2) if avg_conf is not None else None
     d["accuracy"] = round(acc, 2) if acc is not None else None
     d["calibration"] = _kp_calibration(avg_conf, acc)
+    # Transfer scheduling: after 3+ consecutive corrects, straight recall stops
+    # discriminating functional from inert knowledge — the tutor should reframe
+    # this point as a NOVEL presentation (different patient/context) instead of
+    # re-asking it verbatim. Computed, not stored, so no migration.
+    d["serve_as_transfer"] = bool(
+        (d.get("consecutive_correct") or 0) >= 3 and d.get("status") != "weak"
+    )
     if today is not None:
         nrd = d.get("next_review_date")
         try:
