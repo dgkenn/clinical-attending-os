@@ -406,6 +406,12 @@ class KnowledgePointInput(BaseModel):
     correct: bool
     confidence: int | None = None
     mistake_type: MistakeType = "other"
+    # Gap-triage probe: one CONFIDENT correct parks the fact as known for 60
+    # days instead of requiring the usual 2-3 touches. Without this field
+    # declared, Pydantic silently dropped it from HTTP requests and every
+    # ChatGPT triage probe was recorded as an ordinary answer — the ambient
+    # triage speedup did not exist on that platform at all.
+    triage: bool = False
 
 
 class SubmitKnowledgePointsRequest(BaseModel):

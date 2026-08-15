@@ -371,6 +371,22 @@ def get_due_dosing_drills(limit: int = 10) -> dict:
     }
 
 
+def car_next(answered: dict | None = None, mode: str = "full",
+             record_topic_level: bool = True, include_dosing: bool = True) -> dict:
+    """ONE call per hands-free item: records the answer just given AND returns
+    the next item. `answered` = {topic, point (echo the previous item's
+    point_key), correct, confidence, mistake_type, user_answer, also_covered:
+    [{point, topic?, correct, confidence?, mistake_type?}]}. mode="full"
+    (default) serves the whole due queue + breadth-first new material;
+    "lite" = short facts only. Same implementation as the HTTP /car/next."""
+    from .api import car_next as _http_car_next
+    from .schemas import CarNextRequest
+    req = CarNextRequest(answered=answered, mode=mode,
+                         record_topic_level=record_topic_level,
+                         include_dosing=include_dosing)
+    return _http_car_next(req)
+
+
 def get_mistake_review(window_days: int = 30) -> dict:
     """Weak patterns + the last 7 days of misses WITH their original questions.
     Monday ritual: re-ask recent_misses (shuffled, lightly reworded) before any
@@ -430,6 +446,7 @@ def build_server():
     mcp.tool(name="get_mastery_map")(get_mastery_map)
     mcp.tool(name="get_calibration_report")(get_calibration_report)
     mcp.tool(name="get_mistake_review")(get_mistake_review)
+    mcp.tool(name="car_next")(car_next)
     mcp.tool(name="set_medicine_weight")(set_medicine_weight_tool)
     # Dosing-drill tools (CPU-only calc engine — no corpus/Chroma access)
     mcp.tool(name="get_dosing_drill")(get_dosing_drill)

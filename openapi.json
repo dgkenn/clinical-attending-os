@@ -2409,6 +2409,11 @@
             ],
             "title": "Mistake Type",
             "default": "other"
+          },
+          "triage": {
+            "type": "boolean",
+            "title": "Triage",
+            "default": false
           }
         },
         "type": "object",
