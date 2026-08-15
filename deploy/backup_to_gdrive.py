@@ -192,6 +192,26 @@ def main() -> None:
     print(f"\nBacked up -> {REMOTE_LATEST}")
     print(f"Previous generation kept at {REMOTE_PREV}")
 
+    # Also bundle the git repo (ALL branches, including unpushed commits) to
+    # Drive. The study DB has daily backups but until the push credential is
+    # fixed the code exists on exactly one disk — a 12 MB bundle removes that
+    # single point of failure. Best-effort: never fails the DB backup.
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            bundle = Path(td) / "repo.bundle"
+            r = subprocess.run(["git", "-C", str(ROOT), "bundle", "create",
+                                str(bundle), "--all"],
+                               capture_output=True, text=True, timeout=300)
+            if r.returncode == 0 and bundle.exists():
+                subprocess.run([rclone, "copyto", str(bundle),
+                                f"{REMOTE_DIR}/clinical-attending-os-latest.bundle"],
+                               capture_output=True, text=True, timeout=600)
+                print(f"Repo bundle -> {REMOTE_DIR}/clinical-attending-os-latest.bundle")
+            else:
+                print(f"(repo bundle skipped: {(r.stderr or '')[:120]})")
+    except Exception as exc:
+        print(f"(repo bundle skipped: {exc})")
+
 
 if __name__ == "__main__":
     try:
