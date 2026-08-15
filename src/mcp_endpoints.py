@@ -885,6 +885,15 @@ def get_mastery_map() -> Dict[str, Any]:
                 studied_set |= {r["topic"] for r in kp_topic_rows}
             except Exception:
                 pass
+            # Coverage is (studied CURRICULUM topics) / (curriculum total): the
+            # numerator must be intersected with the blueprint, or freeform
+            # topic names and unit:% bookkeeping rows inflate it (and can push
+            # untouched_count negative). Freeform study is still real learning —
+            # it is reported via knowledge_points below — it just isn't
+            # blueprint coverage.
+            curriculum_names = {r[0] for r in db.execute("SELECT topic FROM curriculum").fetchall()}
+            studied_offblueprint = len(studied_set - curriculum_names)
+            studied_set &= curriculum_names
             topics_studied = len(studied_set)
 
             coverage_pct = round((topics_studied / total_curriculum * 100), 1) if total_curriculum > 0 else 0.0
@@ -1025,6 +1034,7 @@ def get_mastery_map() -> Dict[str, Any]:
         return {
             "total_curriculum_topics": total_curriculum,
             "topics_studied": topics_studied,
+            "topics_studied_off_blueprint": studied_offblueprint,
             "coverage_pct": coverage_pct,
             "mastery_levels": mastery_levels,
             "knowledge_points": knowledge_points,
