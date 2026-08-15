@@ -2010,6 +2010,35 @@
         ],
         "title": "AnswerResponse"
       },
+      "CarAlsoCovered": {
+        "properties": {
+          "point": {
+            "type": "string",
+            "title": "Point"
+          },
+          "topic": {
+            "type": "string",
+            "title": "Topic",
+            "default": ""
+          },
+          "correct": {
+            "type": "boolean",
+            "title": "Correct",
+            "default": true
+          },
+          "confidence": {
+            "type": "integer",
+            "title": "Confidence",
+            "default": 3
+          }
+        },
+        "type": "object",
+        "required": [
+          "point"
+        ],
+        "title": "CarAlsoCovered",
+        "description": "An ADDITIONAL fact the same open-ended verbal answer covered (or\nconspicuously missed). Open-ended spoken prompts (\"talk me through the\nreversible causes of PEA\") routinely resolve several knowledge points in\none breath \u2014 each deserves its own credit and its own schedule."
+      },
       "CarAnsweredInput": {
         "properties": {
           "topic": {
@@ -2056,6 +2085,13 @@
             "type": "string",
             "title": "User Answer",
             "default": ""
+          },
+          "also_covered": {
+            "items": {
+              "$ref": "#/components/schemas/CarAlsoCovered"
+            },
+            "type": "array",
+            "title": "Also Covered"
           }
         },
         "type": "object",

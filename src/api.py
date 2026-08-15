@@ -623,6 +623,20 @@ def car_next(req: CarNextRequest) -> dict:
             [{"point": a.point, "correct": a.correct,
               "confidence": a.confidence, "mistake_type": a.mistake_type}],
         )
+        # Credit every other fact the same verbal answer covered or missed —
+        # an open-ended spoken response is usually a compound answer.
+        for extra in (a.also_covered or []):
+            try:
+                r_extra = _submit_knowledge_points(
+                    (extra.topic or a.topic),
+                    [{"point": extra.point, "correct": extra.correct,
+                      "confidence": extra.confidence, "mistake_type": a.mistake_type}],
+                )
+                recorded.setdefault("also_recorded", []).append(
+                    {"point": extra.point[:80], "ok": r_extra.get("ok", False)})
+            except Exception as exc:
+                recorded.setdefault("also_recorded", []).append(
+                    {"point": extra.point[:80], "error": str(exc)[:100]})
         if req.record_topic_level:
             try:
                 recorded["topic_level"] = _submit_answer_fsrs(
