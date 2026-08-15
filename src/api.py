@@ -641,9 +641,13 @@ def car_next(req: CarNextRequest) -> dict:
     # (two corrects = 'mastered'). Failures degrade to next=None.
     nxt = None
     queue = {"due_knowledge_points": 0, "due_dosing": 0}
+    lite = (req.mode or "full").strip().lower() == "lite"
     try:
-        # 1. Overdue knowledge points, car-safe only.
-        due = _get_due_knowledge_points(limit=5, car=True).get("due_points", [])
+        # 1. Overdue knowledge points. Full mode serves ANY due point — the
+        # tutor rephrases long/enumerated facts for the ear (chunked, signposted)
+        # — so spaced repetition in the car covers the same queue as at a desk.
+        # Lite keeps the old short-facts-only filter.
+        due = _get_due_knowledge_points(limit=5, car=lite).get("due_points", [])
         if due:
             p = due[0]
             nxt = {
@@ -661,9 +665,12 @@ def car_next(req: CarNextRequest) -> dict:
                 # verbatim recall (transfer is the test of functional knowledge).
                 "serve_as_transfer": p.get("serve_as_transfer", False),
             }
-        # 2. Otherwise a fresh catalog KP.
+        # 2. Otherwise NEW material — breadth-first (triage ordering): with no
+        # reviews due, the most valuable next item is one that maps unprobed
+        # territory. Full mode drops the car_safe restriction (tutor verbalizes);
+        # lite keeps it.
         if nxt is None:
-            cat = _get_kp_to_study(limit=1, format="car")
+            cat = _get_kp_to_study(limit=1, format="car" if lite else "triage")
             if cat:
                 k = cat[0]
                 nxt = {
@@ -696,7 +703,7 @@ def car_next(req: CarNextRequest) -> dict:
                     "source": d.get("source", ""),
                 }
         queue = {
-            "due_knowledge_points": _get_due_knowledge_points(limit=200, car=True).get("count", 0),
+            "due_knowledge_points": _get_due_knowledge_points(limit=200, car=lite).get("count", 0),
             "due_dosing": _get_due_dosing_drills(limit=100).get("count", 0),
         }
     except Exception as exc:

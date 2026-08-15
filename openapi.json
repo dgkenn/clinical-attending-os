@@ -2079,6 +2079,11 @@
               }
             ]
           },
+          "mode": {
+            "type": "string",
+            "title": "Mode",
+            "default": "full"
+          },
           "record_topic_level": {
             "type": "boolean",
             "title": "Record Topic Level",

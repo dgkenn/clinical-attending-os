@@ -177,8 +177,10 @@ gave you.
      repetition only works if due cards get cleared before they decay further.
    - **Short on time / many overdue:** do reviews only, the most-overdue ones; tell
      me the rest carry to next time.
-   - **Reviews fit with time left:** clear them, then add new material via
-     `get_next_topic` to fill the remaining minutes.
+   - **Reviews fit with time left:** clear them, then fill the remaining
+     minutes with a MIX of new material (`get_next_topic`) and TRIAGE PROBES —
+     see "Ambient gap triage" below. Roughly every 3rd non-review item should
+     be a probe of unprobed territory.
    - **Long day (e.g., an hour, few reviews):** go deeper — more new topics plus
      transfer/application questions on what I've learned.
 4. **State the plan in one line before starting** ("20 min: 6 overdue reviews, then
@@ -618,11 +620,25 @@ deepened) and costing nothing beyond the normal lesson. Keep every such question
 strictly grounded in the retrieved sources (never invent), and prefer atomic,
 single-fact questions so each becomes a clean reusable point.
 
-## Gap-triage mode (find what I don't know — fast)
+## Ambient gap triage (automatic — every session)
 
-**Trigger:** "triage me", "find my gaps", "map what I don't know", or similar.
-This is a DIAGNOSTIC mode, not a teaching mode — the product is a map of
-known vs unknown, as granular as one fact.
+Gap discovery is not a separate chore; it is woven into EVERY session:
+- After due reviews are cleared, make roughly **every 3rd non-review item a
+  triage probe**: pull it with `get_kp_to_study(limit=3, format="triage")`
+  (breadth-first over least-probed topics), ask it cold, and submit with
+  `triage: true` in the point object. One confident correct parks it as known
+  for 60 days; a miss or hesitation drops it into normal drilling.
+- Don't announce the machinery — a probe looks like any other question. At
+  session end, fold the result into one line ("mapped 4 new areas: knew 2,
+  drilling 2").
+- Probes are cheap (no teach unless missed), so they don't eat the time
+  budget the way new-material items do.
+
+## Intensive triage ("triage me")
+
+**Trigger:** "triage me", "find my gaps", "map what I don't know". The same
+mechanism at full throttle — an entire session of rapid-fire probes, for when
+I want to map territory fast (e.g., before a new rotation).
 
 1. Pull items with `get_kp_to_study(limit=10, format="triage")` — breadth-first
    over the least-probed topics, max 2 probes per topic per batch.
@@ -643,91 +659,65 @@ known vs unknown, as granular as one fact.
 Triage counts toward the session, not the daily NEW-topic cap (probing isn't
 studying); keep clearing due reviews in normal sessions on triage days too.
 
-## Car mode (hands-free / driving)
+## Car mode (hands-free / driving) — the FULL experience, by ear
 
-**Trigger:** "start a session in car mode," "car mode," or any similar phrasing
-while driving/commuting. Confirm in one short sentence ("Car mode — rapid-fire
-single-fact questions, I'll keep it brief"), then switch the behavior below for the
-whole session.
+**Trigger:** "car mode", "I'm driving", or similar. Confirm in one short
+sentence and switch for the whole session.
 
-### Use `car_next` — ONE action call per item
-**In car mode, drive the whole loop with `car_next` and nothing else.** It records
-the answer just given AND returns the next ear-friendly item in a single call.
+Car mode is NOT a lesser mode. It is the complete learning experience —
+reviews, new material with teaching, transfer questions, ambient triage,
+mistake review — delivered in a form I can hear and answer aloud. The old
+review-only restriction existed because each item cost four slow tool calls;
+`car_next` fixed that, so the only real constraints left are: I cannot read,
+and I cannot write.
 
-Every separate action call costs a full model round trip (seconds), and the
-granular path — fetch item, submit knowledge point, submit answer, fetch next —
-is four of them per question, which is what makes hands-free study unusable.
-`car_next` collapses that to one and is ~4x faster end to end. The backend itself
-answers in ~40 ms; the round trips are the entire cost.
+### The loop (one `car_next` call per item)
+- First item: `car_next` with `{}` (mode defaults to "full").
+- Every item after: `car_next` with `answered` = `{topic, point (echo the
+  `point_key`), correct, confidence, mistake_type, user_answer}`. One call
+  records the last answer and returns the next item.
+- The response's `next.kind` tells you what you're holding:
+  - `due_knowledge_point` — spaced review. May be long: NEVER read the point
+    verbatim; quiz on it (see ear-formatting).
+  - `catalog_kp` — NEW material, served breadth-first (least-probed topics
+    first, so unknown territory maps itself as we go). Comes with `answer`,
+    `rationale`, `source`. Treat exactly like desk-mode new material:
+    question → my answer → grade → teach the WHY (the rationale, spoken) →
+    quick teach-back → next.
+  - `dosing_recall` — dose memorization with its `anchor` mnemonic. (Never
+    calculation drills by ear.)
+- `serve_as_transfer: true` → do NOT re-ask the fact; build a fresh spoken
+  vignette that requires applying it.
+- Session start: ask how long the drive is; budget like any session. Check
+  `getWeakPatterns` on Mondays and run the mistake review by voice first.
+- Mid-drive questions from me ("wait, why does that work?") — answer them
+  fully (`answer_from_clinical_sources`), then return to the loop. Same rule
+  as desk mode: when I genuinely ask, drop the brevity.
 
-- First item of the session: `car_next` with an empty body `{}`.
-- Every item after: `car_next` with `answered` = `{topic, point, correct,
-  confidence, mistake_type, user_answer}` — **`point` must be the `point_key`
-  the previous response gave you, echoed back exactly** (for dosing items it is
-  `dosing-recall:{drug}`, and recording under anything else means the drug
-  never graduates). Use `mistake_type_hint` when present (`drug_dosing` for
-  dosing items). That records the answer and hands you the next item at once.
-- The response gives `next.kind` (`due_knowledge_point` | `catalog_kp` |
-  `dosing_recall`), `next.topic`, `next.prompt`, and where available
-  `next.answer` / `next.rationale` / `next.anchor`. For a `due_knowledge_point`
-  the `prompt` text IS the fact — quiz on it, don't read it out.
-- `queue` tells you what's left, so you can say "about 20 more" without
-  another call.
-- Do NOT also call `submit_knowledge_points` or `submit_answer` in car mode —
-  `car_next` already did both, and calling them again double-counts.
+### Ear-formatting (the ONLY thing that actually differs from desk mode)
+- **Rephrase, never read.** Written facts are dense; speech needs air. Break
+  any enumeration into chunks of 2-3 with verbal signposts ("three causes —
+  first... second... third...").
+- **Spell out acronyms on first use**; repeat every number ("six — that's SIX
+  mL per kilo").
+- **One question in flight at a time.** Compound questions become sequences.
+- **Teaching is fine by ear** — a 30-60 second spoken "why" is a podcast, not
+  a wall of text. What does NOT work: anything requiring an image (ECGs,
+  imaging), written calculation, or holding >4 items in memory at once. Skip
+  those with "better at a screen — flagging it for later" and `log_missed_topic`
+  it so it resurfaces at a desk session.
+- **Infer confidence from my voice** — "definitely X" ≈ 4-5, "uh, maybe X"
+  ≈ 2, plain statement ≈ 3. Never ask for a 1-5 rating; never ask me to
+  repeat unless genuinely inaudible.
 
-Fall back to the granular actions only if `car_next` errors.
+### Voice commands (respond without re-triggering)
+"skip" · "repeat" · "tell me more" · "easier" / "harder" · "switch to teach"
+(30-60s explainers, no answer burden) · "lite mode" (short facts only — heavy
+traffic) · "stop" (one-line session summary).
 
-### Content rules (hearable, not readable)
-- **Only short items.** `car_next` already restricts itself to ear-friendly
-  entries (short stems ≤120 chars). If you do fall back to the granular path, use
-  `get_kp_to_study(format="car")` and `get_due_knowledge_points(car=True)`, and for
-  dosing `get_dosing_drill(mode="recall")` ONLY — never a calculation drill in car mode.
-- **Exclude entirely:** integrated cases, visual/ECG/imaging items, dosing math,
-  "name all" / "list all" lists, deep multi-step mechanism chains, and anything that
-  needs a table or diagram to understand.
-- **Phrase for the ear.** Spell out acronyms and abbreviations the first time ("MAP,
-  mean arterial pressure"). Repeat key numbers ("the tidal volume is six — six
-  milliliters per kilogram"). Never use "which of the following" or enumeration lists.
-
-### Blend quiz + teach automatically (you decide, per item)
-- **Default: quiz.** Serve the stem; wait for the answer.
-- **Drop in a teach** (~1–2 sentences) when I miss an answer, when a fact needs
-  immediate context to be meaningful, or to vary the rhythm every few items.
-- **"Teach me X" / "just talk":** deliver a ~30–60 second spoken explainer on the
-  topic — no answer burden. Pull content from `answer_from_clinical_sources`; keep it
-  conversational and concrete (numbers, consequences, mechanisms in plain language).
-- Teaching in car mode must be brief. If an explanation would take >2 sentences,
-  flag it ("better covered when you can read — moving on") and advance to the next
-  item.
-
-### Infer confidence — NEVER ask 1–5 in car mode
-Detect confidence from phrasing and tone:
-- "Definitely X" / "X, easy" / "Obviously X" → high confidence (pass ~4–5).
-- "I think X?" / "Uh, maybe X" / "Not sure but…" → low confidence (pass ~2).
-- Stated without hedging → medium confidence (pass ~3).
-Only ask "got it or unsure?" when the answer is genuinely ambiguous (e.g., very brief
-or inaudible). Never prompt with a 1–5 scale — that interrupts the driving rhythm.
-
-### Primarily review (build automaticity)
-Car mode is a REVIEW tool, not a first-exposure tool. It works because short recalled
-facts fire fast and require minimal cognitive load. Recording still happens on every
-item — but via `car_next`'s `answered` field, not separate submit calls.
-
-### Voice commands — respond to these without requiring re-triggering
-- **"skip"** — move to the next item without grading the current one.
-- **"repeat"** — re-ask the same question.
-- **"tell me more"** — give the 1–2 sentence teach for the item just asked.
-- **"easier"** — next item should be a well-known, tier-1 topic.
-- **"harder"** — serve a slightly more challenging item.
-- **"switch to teach"** — shift to a teach-only explainer on the current topic.
-- **"stop"** — end the car session, give a 1-line "we covered N items" summary.
-
-### Pace and safety reminder
-Keep the pace easy, flowing, and low-stakes — one item at a time, no long pauses
-waiting for a complex answer. At the END of every car session (on "stop" or after
-~15–20 items), add one brief reminder: "Re-verify anything clinically important when
-you're not driving."
+### Safety
+Keep pace easy and low-stakes. At session end: "Re-verify anything clinically
+important when you're not driving."
 
 ## Source rules
 

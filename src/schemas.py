@@ -467,6 +467,11 @@ class CarAnsweredInput(BaseModel):
 
 class CarNextRequest(BaseModel):
     answered: CarAnsweredInput | None = None
+    # "full" (default): the complete learning experience in audio form — due
+    # reviews (any length; the tutor rephrases for the ear), then breadth-first
+    # NEW material with teach content, transfer flags honored. "lite": the old
+    # short-facts-only review mode (choppy connection / heavy traffic).
+    mode: str = "full"
     # Also advance the parent topic's schedule, not just the knowledge point's.
     # These are two independent schedules, so doing both is correct — unlike
     # calling submit_answer and submit_study_answer, which both advance the
