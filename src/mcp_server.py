@@ -371,6 +371,14 @@ def get_due_dosing_drills(limit: int = 10) -> dict:
     }
 
 
+def get_mistake_review(window_days: int = 30) -> dict:
+    """Weak patterns + the last 7 days of misses WITH their original questions.
+    Monday ritual: re-ask recent_misses (shuffled, lightly reworded) before any
+    new material — error-focused review has outsized retention returns."""
+    from .weak_patterns import compute_weak_patterns
+    return compute_weak_patterns(window_days=window_days).model_dump()
+
+
 def set_default_training_phase_tool(default_training_phase: str) -> dict:
     set_default_training_phase(default_training_phase)
     return {"ok": True, "default_training_phase": default_training_phase}
@@ -421,6 +429,7 @@ def build_server():
     # Curriculum coverage tools
     mcp.tool(name="get_mastery_map")(get_mastery_map)
     mcp.tool(name="get_calibration_report")(get_calibration_report)
+    mcp.tool(name="get_mistake_review")(get_mistake_review)
     mcp.tool(name="set_medicine_weight")(set_medicine_weight_tool)
     # Dosing-drill tools (CPU-only calc engine — no corpus/Chroma access)
     mcp.tool(name="get_dosing_drill")(get_dosing_drill)

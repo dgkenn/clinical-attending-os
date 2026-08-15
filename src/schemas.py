@@ -335,11 +335,27 @@ class SourceCoverageResponse(BaseModel):
     next_targets: list[CoverageTarget] = Field(default_factory=list)
 
 
+class RecentMiss(BaseModel):
+    """A wrong/partial answer with the ORIGINAL question, for mistake review.
+    (Question text is only available for attempts recorded after 2026-08-15,
+    when the submit path started storing it.)"""
+    date: str
+    topic: str
+    question: str
+    user_answer: str
+    result: str
+    mistake_type: str = "other"
+
+
 class WeakPatternsResponse(BaseModel):
     by_mistake_type: dict[str, int] = Field(default_factory=dict)
     repeat_offenders: list[WeakPatternEntry] = Field(default_factory=list)
     rolling_30d_attempts: int = 0
     overconfidence_rate: float = 0.0
+    # Last 7 days of non-correct attempts, newest first — the Monday
+    # mistake-review queue. Re-ask these (shuffled, reworded) before new
+    # material at the start of the week.
+    recent_misses: list[RecentMiss] = Field(default_factory=list)
 
 
 class NextLessonRequest(BaseModel):
@@ -371,6 +387,10 @@ class ProgressResponse(BaseModel):
 class SubmitAnswerFSRSRequest(BaseModel):
     topic: str
     user_answer: str
+    # The actual question asked — REQUIRED in spirit (kept optional for
+    # backward compat). Without it the attempt log cannot support
+    # mistake-review or bad-question analytics.
+    question: str = ""
     is_correct: bool
     confidence_reported: int = 3
     teach_back_quality: float = 0.5

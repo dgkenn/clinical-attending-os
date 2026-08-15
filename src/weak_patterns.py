@@ -15,7 +15,7 @@ from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from .schemas import WeakPatternEntry, WeakPatternsResponse
+from .schemas import RecentMiss, WeakPatternEntry, WeakPatternsResponse
 from .student_model import conn, initialize_database
 
 
@@ -66,7 +66,27 @@ def compute_weak_patterns(window_days: int = 30) -> WeakPatternsResponse:
     ]
     repeat_offenders.sort(key=lambda e: -e.failures)
     overconfidence_rate = (confident_wrong / confident_total) if confident_total else 0.0
+    # Mistake-review queue: the last 7 days of misses WITH their questions.
+    week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+    with conn() as db:
+        miss_rows = db.execute(
+            """SELECT date, topic, question, user_answer, result, mistake_type
+               FROM question_attempts
+               WHERE result != 'correct' AND date >= ?
+               ORDER BY date DESC LIMIT 40""",
+            (week_ago,),
+        ).fetchall()
+    recent_misses = [
+        RecentMiss(
+            date=r["date"][:16], topic=r["topic"] or "",
+            question=(r["question"] or "")[:300],
+            user_answer=(r["user_answer"] or "")[:200],
+            result=r["result"], mistake_type=r["mistake_type"] or "other",
+        )
+        for r in miss_rows
+    ]
     return WeakPatternsResponse(
+        recent_misses=recent_misses,
         by_mistake_type=by_mistake_type,
         repeat_offenders=repeat_offenders,
         rolling_30d_attempts=len(rows),

@@ -291,6 +291,16 @@ cross-discipline overlap topics** — `get_next_topic` already reflects this, re
 patients. When I tell you I've started a new rotation, set it; rotation=""
 clears it.
 
+## Monday mistake review (weekly ritual)
+
+At the start of the FIRST session each week (or when I say "review my
+mistakes"), call `getWeakPatterns` and work through `recent_misses` — my
+wrong/partial answers from the last 7 days, WITH the original questions —
+BEFORE any new material. Re-ask them shuffled and lightly reworded (same fact,
+fresh phrasing; never verbatim), grade and submit normally. Error-focused
+review has outsized retention returns, and these are by definition my current
+weakest points. Then proceed to the normal due-review flow.
+
 ## Multiple sessions in one day (continuation mode)
 If `hours_since_last_session` is small (I studied earlier today) or `attempts_today`
 > 0, treat this as a CONTINUATION, not a fresh start:
@@ -315,9 +325,11 @@ If `hours_since_last_session` is small (I studied earlier today) or `attempts_to
 3. **Grade** my answer yourself as `correct` / `partial` / `incorrect`, and choose a
    `mistake_type` (recall, mechanism, drug_dosing, prioritization, monitoring,
    crisis_algorithm, failure_to_escalate, overconfident_wrong, other).
-4. **Call `submit_answer`** with: `topic`, `user_answer`, `is_correct` (true only if
-   fully correct), `confidence_reported` (my 1–5), `teach_back_quality` (0–1, how
-   well I explained the mechanism), `transfer_success` (did I apply it to a new
+4. **Call `submit_answer`** with: `topic`, **`question` (the exact question you
+   asked — REQUIRED; without it the mistake-review system has nothing to
+   re-ask)**, `user_answer`, `is_correct` (true only if fully correct),
+   `confidence_reported` (my 1–5), `teach_back_quality` (0–1, how well I
+   explained the mechanism), `transfer_success` (did I apply it to a new
    context), `mistake_type`, and `subtopic` if relevant. This is the ONE call that
    records the attempt — it is the only submit path that accepts my confidence
    rating, which is what drives the calibrated scheduling.

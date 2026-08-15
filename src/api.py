@@ -489,6 +489,7 @@ def submit_answer_fsrs(req: SubmitAnswerFSRSRequest) -> dict:
     return _submit_answer_fsrs(
         topic=req.topic,
         user_answer=req.user_answer,
+        question=req.question,
         is_correct=req.is_correct,
         confidence_reported=req.confidence_reported,
         teach_back_quality=req.teach_back_quality,
@@ -627,6 +628,7 @@ def car_next(req: CarNextRequest) -> dict:
                 recorded["topic_level"] = _submit_answer_fsrs(
                     topic=a.topic,
                     user_answer=a.user_answer or ("correct" if a.correct else "incorrect"),
+                    question=a.point,  # in car mode the point/stem IS the question
                     is_correct=a.correct,
                     confidence_reported=a.confidence,
                     mistake_type=a.mistake_type,

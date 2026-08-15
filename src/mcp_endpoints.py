@@ -629,6 +629,7 @@ def submit_answer(
     subtopic: str = "",
     transfer_success: bool = False,
     bloom_level: str = "",
+    question: str = "",
     session_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
@@ -698,7 +699,11 @@ def submit_answer(
                 session_id="mcp_session",
                 topic=topic,
                 subtopic=subtopic or "",
-                question="MCP submitted answer",
+                # Store the REAL question. The old constant "MCP submitted
+                # answer" threw the question away forever, foreclosing
+                # mistake-review ("what was I asked?"), bad-item detection from
+                # miss patterns, and grading audits. Kept as fallback only.
+                question=(question or "").strip() or "MCP submitted answer",
                 user_answer=user_answer,
                 ideal_answer="",
                 result="correct" if is_correct else "incorrect",

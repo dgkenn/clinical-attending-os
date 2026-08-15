@@ -2434,6 +2434,45 @@
         "type": "object",
         "title": "OkResponse"
       },
+      "RecentMiss": {
+        "properties": {
+          "date": {
+            "type": "string",
+            "title": "Date"
+          },
+          "topic": {
+            "type": "string",
+            "title": "Topic"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "user_answer": {
+            "type": "string",
+            "title": "User Answer"
+          },
+          "result": {
+            "type": "string",
+            "title": "Result"
+          },
+          "mistake_type": {
+            "type": "string",
+            "title": "Mistake Type",
+            "default": "other"
+          }
+        },
+        "type": "object",
+        "required": [
+          "date",
+          "topic",
+          "question",
+          "user_answer",
+          "result"
+        ],
+        "title": "RecentMiss",
+        "description": "A wrong/partial answer with the ORIGINAL question, for mistake review.\n(Question text is only available for attempts recorded after 2026-08-15,\nwhen the submit path started storing it.)"
+      },
       "SearchRequest": {
         "properties": {
           "query": {
@@ -2845,6 +2884,11 @@
             "type": "string",
             "title": "User Answer"
           },
+          "question": {
+            "type": "string",
+            "title": "Question",
+            "default": ""
+          },
           "is_correct": {
             "type": "boolean",
             "title": "Is Correct"
@@ -3255,6 +3299,13 @@
             "type": "number",
             "title": "Overconfidence Rate",
             "default": 0.0
+          },
+          "recent_misses": {
+            "items": {
+              "$ref": "#/components/schemas/RecentMiss"
+            },
+            "type": "array",
+            "title": "Recent Misses"
           }
         },
         "type": "object",
