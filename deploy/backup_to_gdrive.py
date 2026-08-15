@@ -58,9 +58,16 @@ def _rclone() -> str:
 
 
 def _newest_attempt(db_path: Path) -> str:
-    """Newest question_attempts timestamp, or '' if unreadable/empty."""
+    """Newest question_attempts timestamp, or '' if unreadable/empty.
+
+    NOTE: a normal (not mode=ro) connection is required. A read-only URI
+    connection cannot replay the WAL, so on a WAL database it reads the state
+    as of the last CHECKPOINT — observed live: the guard saw 74 attempts /
+    newest 2026-06-29 while the real database held 91 / 2026-08-14. A guard
+    comparing stale local values against the remote can refuse legitimate
+    backups ("remote is newer") until a checkpoint happens to run."""
     try:
-        con = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+        con = sqlite3.connect(str(db_path))
         row = con.execute("SELECT MAX(date) FROM question_attempts").fetchone()
         con.close()
         return (row[0] or "") if row else ""
@@ -70,7 +77,7 @@ def _newest_attempt(db_path: Path) -> str:
 
 def _attempt_count(db_path: Path) -> int:
     try:
-        con = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+        con = sqlite3.connect(str(db_path))  # normal mode: see WAL (see above)
         row = con.execute("SELECT COUNT(*) FROM question_attempts").fetchone()
         con.close()
         return int(row[0]) if row else 0
