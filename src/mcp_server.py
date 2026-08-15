@@ -387,6 +387,23 @@ def car_next(answered: dict | None = None, mode: str = "full",
     return _http_car_next(req)
 
 
+def get_claude_instructions() -> dict:
+    """Full tutor instructions for the Claude side + a version hash. Call once
+    at the start of every conversation and follow the returned `instructions`
+    exactly. This mirrors the GPT's getSystemInstructions: editing
+    CLAUDE_PROJECT_INSTRUCTIONS.md updates behavior on the next conversation,
+    with no re-pasting into the Project UI (the Project keeps only a short
+    bootstrap)."""
+    import hashlib
+    from pathlib import Path
+    md = Path(__file__).resolve().parent.parent / "CLAUDE_PROJECT_INSTRUCTIONS.md"
+    if not md.exists():
+        return {"version": "missing", "instructions": ""}
+    text = md.read_text(encoding="utf-8")
+    return {"version": hashlib.sha1(text.encode()).hexdigest()[:12],
+            "instructions": text}
+
+
 def get_mistake_review(window_days: int = 30) -> dict:
     """Weak patterns + the last 7 days of misses WITH their original questions.
     Monday ritual: re-ask recent_misses (shuffled, lightly reworded) before any
@@ -447,6 +464,7 @@ def build_server():
     mcp.tool(name="get_calibration_report")(get_calibration_report)
     mcp.tool(name="get_mistake_review")(get_mistake_review)
     mcp.tool(name="car_next")(car_next)
+    mcp.tool(name="get_claude_instructions")(get_claude_instructions)
     mcp.tool(name="set_medicine_weight")(set_medicine_weight_tool)
     # Dosing-drill tools (CPU-only calc engine — no corpus/Chroma access)
     mcp.tool(name="get_dosing_drill")(get_dosing_drill)
