@@ -654,10 +654,13 @@ class TestKnowledgePoints:
         assert r["status"] == "weak"
 
     def test_confidence_modulates_interval(self):
-        # First-exposure correct: higher confidence -> higher FSRS rating -> longer interval
+        # Correct answers rate Good regardless of stated confidence; the
+        # confidence signal is the interval weighter, which gives UNSURE-correct
+        # the x1.2 well-calibrated bonus — so low-confidence-correct schedules
+        # at least as far out as high-confidence-correct, never nearer.
         low = record_knowledge_point("T1", "fact-low", is_correct=True, confidence=1)
         high = record_knowledge_point("T2", "fact-high", is_correct=True, confidence=5)
-        assert high["interval_days"] >= low["interval_days"]
+        assert low["interval_days"] >= high["interval_days"]
 
     def test_submit_knowledge_points_compound(self):
         res = submit_knowledge_points("Hyperkalemia", [

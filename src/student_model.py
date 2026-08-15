@@ -904,10 +904,13 @@ def _result_to_fsrs_rating(
             return 2
         if hints_used:
             return 3
-        if conf is not None and conf <= 2:
-            return 4  # unsure-right: real learning, reinforce strongly
-        if conf is not None and conf >= 4:
-            return 3  # confident-right: don't over-space, may be pattern recognition
+        # Unsure-right maps to Good (3), NOT Easy (4): the confidence weighter
+        # already applies the x1.2 well-calibrated interval bonus for
+        # correct+conf<=2 (confidence_weighter.py), so rating it Easy as well
+        # would compound the same signal twice. Confident-right also stays
+        # Good — don't over-space possible pattern recognition. The KP-level
+        # _kp_rating mirrors this mapping; the two layers must agree, since
+        # they grade the identical (correctness, confidence) event.
         return 3
     return 2
 
@@ -953,16 +956,32 @@ def update_mastery_score(
     hints_used: int = 0,
     confidence_reported: float | None = None,
 ) -> float:
+    # Normalize/validate result HERE, before any dict lookup. The MCP path
+    # accepts arbitrary strings; "Correct" (capitalized) previously sailed past
+    # _result_to_fsrs_rating (which tolerates unknowns) and then crashed the
+    # counters-update dict lookup with a bare KeyError mid-transaction.
+    result = (result or "").strip().lower()
+    if result not in ("correct", "partial", "incorrect"):
+        raise ValueError(
+            f"invalid result {result!r}: must be 'correct', 'partial' or 'incorrect'"
+        )
     if _confident_wrong(result, confidence_reported):
         mistake_type = "overconfident_wrong"
     rating = _result_to_fsrs_rating(result, mistake_type, hints_used, confidence_reported)
     with conn() as db:
         row = db.execute("SELECT * FROM topics WHERE topic_id=?", (topic_id,)).fetchone()
         prior = fsrs_deserialize(row["fsrs_state"] if row and "fsrs_state" in row.keys() else None)
-        # Convert confidence_reported (0-1 scale) to 1-5 scale for FSRS weighting
+        # confidence_reported is ALREADY on the 1-5 scale everywhere in this
+        # codebase: mcp_endpoints.submit_answer clamps to 1..5 before log_attempt,
+        # and _result_to_fsrs_rating/_confident_wrong in this very function use
+        # raw thresholds of <=2 / >=4. The old `round(conf * 5)` here assumed
+        # 0-1 input, so every real value (1-5) clamped to 5 — the interval
+        # weighter saw maximum confidence on every answer: the x0.7 overconfident
+        # penalty fired on ALL wrong answers and the x1.2 well-calibrated bonus
+        # was unreachable. Clamp only; do not rescale.
         conf_1_to_5 = None
         if confidence_reported is not None:
-            conf_1_to_5 = max(1, min(5, round(confidence_reported * 5)))
+            conf_1_to_5 = max(1, min(5, round(confidence_reported)))
         new_state, _next_due = fsrs_review(prior, rating=rating, confidence_reported=conf_1_to_5)
         mastery = fsrs_mastery_proxy(new_state)
         status = status_for_mastery(mastery)
@@ -970,12 +989,23 @@ def update_mastery_score(
         # require 2 corrects ≥24h apart before we let a topic claim that
         # status. Otherwise demote to 'learning' so the topic stays in active
         # rotation. This makes "mastered" mean genuine retention.
+        demoted_pending_respacing = False
         if status == "maintenance" and not _two_question_mastery_satisfied(db, topic_id, result):
             status = "learning"
+            demoted_pending_respacing = True
         if result == "incorrect" and mastery < 0.4:
             review_date = datetime.now(timezone.utc).date().isoformat()
         else:
             review_date = next_review_date_from_state(new_state)
+            # The demotion's stated purpose is keeping the topic in active
+            # rotation, but both due queues filter on next_review_date, not
+            # status — so a demotion whose FSRS date is 60+ days out was purely
+            # cosmetic (one lucky 'Easy' pushed the topic months away anyway).
+            # Cap the interval so the confirming 24h-spaced second pass can
+            # actually happen soon.
+            if demoted_pending_respacing:
+                cap = (datetime.now(timezone.utc).date() + timedelta(days=3)).isoformat()
+                review_date = min(review_date, cap)
         fields = {
             "correct": "times_correct=times_correct+1, last_correct=?",
             "partial": "times_partial=times_partial+1, last_partial=?",
@@ -1060,10 +1090,19 @@ def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
         # their review lives in the knowledge-point queue (get_due_knowledge_points),
         # so surfacing the old topic-level card too would double-count and produce the
         # "stale card that never clears" problem. Also skip empty subtopic-only rows.
+        # `topic NOT LIKE 'unit:%'`: those rows are voice-session bookkeeping
+        # (_mark_unit_served), created with default mastery 0.25 / risk 1.0 and
+        # never rescheduled — without the filter they become permanently-due
+        # phantom "topics" that outrank every real review and get served to the
+        # tutor as literal retrieval queries like 'unit:ch05-...'.
+        # `topic != ''`: get_or_create_topic accepts a blank name, and a blank
+        # row otherwise surfaces as a due review with an empty retrieval query.
         rows = db.execute(
             """SELECT * FROM topics
                WHERE (next_review_date IS NULL OR next_review_date <= ?)
                  AND topic NOT IN (SELECT DISTINCT topic FROM knowledge_points)
+                 AND topic NOT LIKE 'unit:%'
+                 AND topic != ''
                ORDER BY mastery_score ASC, forgetting_risk DESC LIMIT ?""",
             (today.isoformat(), limit),
         ).fetchall()
@@ -1298,10 +1337,26 @@ def get_confusable_pairs(topic: str) -> list[dict[str, Any]]:
     return out
 
 
+def _override_fsrs_stability(db, topic_id: int, stability: float) -> None:
+    """Force a topic's FSRS stability to match a manual mastered/weak override.
+
+    mark_topic_mastered/weak used to write mastery_score/status/next_review_date
+    but leave fsrs_state untouched — and update_mastery_score recomputes mastery
+    purely from FSRS state on the next attempt, so the override evaporated: a
+    topic marked weak with stability 90 snapped back to 'strong' after one
+    correct answer, and the manual flag had zero effect on scheduling."""
+    row = db.execute("SELECT fsrs_state FROM topics WHERE topic_id=?", (topic_id,)).fetchone()
+    state = fsrs_deserialize(row["fsrs_state"] if row else None)
+    state["stability"] = stability
+    db.execute("UPDATE topics SET fsrs_state=? WHERE topic_id=?",
+               (fsrs_serialize(state), topic_id))
+
+
 def mark_topic_mastered(topic: str, subtopic: str = "") -> None:
     topic_id = get_or_create_topic(topic, subtopic)
     with conn() as db:
         db.execute("UPDATE topics SET mastery_score=.92, status='maintenance', next_review_date=?, updated_at=? WHERE topic_id=?", (next_review_date(.92), now(), topic_id))
+        _override_fsrs_stability(db, topic_id, 90.0)
     # Demonstrated mastery closes the open granular gaps on this topic.
     resolve_knowledge_gaps(topic)
 
@@ -1310,6 +1365,7 @@ def mark_topic_weak(topic: str, subtopic: str = "") -> None:
     topic_id = get_or_create_topic(topic, subtopic)
     with conn() as db:
         db.execute("UPDATE topics SET mastery_score=.2, status='weak', next_review_date=?, updated_at=? WHERE topic_id=?", (next_review_date(.2), now(), topic_id))
+        _override_fsrs_stability(db, topic_id, 1.0)
 
 
 # ---------------------------------------------------------------------------
@@ -1325,16 +1381,18 @@ _KP_LADDER = [1, 3, 7, 16, 35, 75, 150]
 
 
 def _kp_rating(is_correct: bool, confidence: Optional[int]) -> int:
-    """Map (correctness, 1-5 confidence) to an FSRS rating: 1=again, 2=hard, 3=good,
-    4=easy. A miss is always 'again'; a correct answer's grade scales with confidence."""
+    """Map (correctness, 1-5 confidence) to an FSRS rating: 1=again, 3=good.
+
+    Correct answers rate Good regardless of stated confidence — confidence is
+    handled ONCE, by apply_confidence_weight_to_interval inside fsrs_review
+    (x1.2 for unsure-right, x0.7 for confident-wrong). The old mapping here
+    (unsure-right -> 2=hard, confident-right -> 4=easy) was the exact OPPOSITE
+    of the topic layer's for the same event, and rating unsure-right as 'hard'
+    made fsrs_review classify a genuinely correct answer as wrong
+    (is_correct = rating in (3,4)), so the well-calibrated bonus was
+    unreachable at the KP level. Mirrors _result_to_fsrs_rating."""
     if not is_correct:
         return 1
-    if confidence is None:
-        return 3
-    if confidence <= 2:
-        return 2
-    if confidence >= 4:
-        return 4
     return 3
 
 
@@ -1503,10 +1561,19 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
     # filter, then truncate.
     fetch_limit = max(limit * 20, 200) if car else limit
     with conn() as db:
+        # Mastered points MUST still surface once their FSRS date passes —
+        # that overdue re-test is the only path by which retention gets
+        # re-checked and a decayed 'mastered' can revert to 'weak'. The old
+        # blanket `status != 'mastered'` retired them permanently: two corrects
+        # in one evening and the fact never appeared in any queue again
+        # (get_due_reviews also excludes the whole topic once it has KP rows,
+        # so the topic card never came back either — a scheduling black hole).
+        # Mastered points with NO date are still excluded: those are bulk
+        # mark-as-mastered rows that were deliberately retired.
         rows = db.execute(
             """SELECT * FROM knowledge_points
-               WHERE (next_review_date IS NULL OR next_review_date <= ?)
-                 AND status != 'mastered'
+               WHERE (next_review_date IS NOT NULL AND next_review_date <= ?)
+                  OR (next_review_date IS NULL AND status != 'mastered')
                ORDER BY CASE status WHEN 'weak' THEN 0 WHEN 'learning' THEN 1 ELSE 2 END,
                         next_review_date ASC
                LIMIT ?""",

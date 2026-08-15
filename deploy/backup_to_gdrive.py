@@ -97,6 +97,20 @@ def main() -> None:
     print(f"local : {local}")
     print(f"        newest attempt {local_newest or '(none)'}, {local_count} attempts")
 
+    # A blank or unreadable local DB must never overwrite a good backup: with
+    # local_newest == "" the newest-vs-newest guard below can't fire (it
+    # requires BOTH sides non-empty), which is precisely the
+    # silently-destroy-history case this script exists to prevent.
+    if not local_newest or local_count == 0:
+        if not args.force:
+            sys.exit(
+                "REFUSING TO UPLOAD: local DB has no readable question_attempts "
+                f"(newest={local_newest!r}, count={local_count}). A fresh or "
+                "corrupt local DB must not replace the Drive backup. "
+                "Re-run with --force only if you truly intend to reset it."
+            )
+        print("WARNING: uploading an empty/unreadable local DB because --force was given")
+
     # --- is the remote itself reachable? ---
     # This check must happen BEFORE any judgement about the remote FILE. An
     # unconfigured remote, an expired token or a network blip makes the
@@ -151,8 +165,15 @@ def main() -> None:
         return
 
     # --- rotate one generation, then upload ---
-    subprocess.run([rclone, "copyto", REMOTE_LATEST, REMOTE_PREV, "--quiet"],
-                   capture_output=True, text=True, timeout=300)
+    rot = subprocess.run([rclone, "copyto", REMOTE_LATEST, REMOTE_PREV],
+                         capture_output=True, text=True, timeout=300)
+    if rot.returncode != 0 and remote_exists:
+        # If a latest exists but can't be preserved, uploading would leave us
+        # with NO previous generation — the safety net the docstring promises.
+        sys.exit(
+            "Could not rotate latest -> prev; refusing to overwrite the only "
+            f"remote copy.\nrclone said: {(rot.stderr or rot.stdout).strip()[:300]}"
+        )
 
     # Consistent snapshot (WAL-safe) rather than copying the live file.
     with tempfile.TemporaryDirectory() as td:
@@ -173,4 +194,10 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except subprocess.TimeoutExpired as exc:
+        sys.exit(f"rclone timed out ({exc.cmd[0] if exc.cmd else 'rclone'}): "
+                 "backup NOT completed. Nothing was overwritten unless the "
+                 "upload itself timed out mid-transfer — check with: "
+                 "rclone lsl gdrive:tutor_backups/")

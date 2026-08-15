@@ -25,8 +25,15 @@ from src.mcp_endpoints import (
 )
 from src.student_model import initialize_database, conn as get_db
 
-# Initialize DB once
-initialize_database()
+
+# Initialize once per module — but INSIDE a fixture, never at import time.
+# Module-level initialize_database() ran at pytest COLLECTION, before conftest's
+# session-scoped isolate_student_db could redirect settings.sqlite_db_path, so
+# every test run opened (and migrated, and flipped to WAL) the user's REAL
+# progress database despite the isolation fixture.
+@pytest.fixture(scope="module", autouse=True)
+def _init_db(isolate_student_db):
+    initialize_database()
 
 
 @pytest.fixture

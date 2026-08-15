@@ -70,11 +70,17 @@ You'll see a `<UUID>.cfargotunnel.com` hostname. Save it. Use it in `openapi.jso
 
 ## Auto-start at login (one-time)
 
+The API runs under the `ClinicalAttendingOS-API` scheduled task (at logon,
+restart-on-exit), driven by `deploy/run_api_server.ps1`. Register it with:
+
 ```powershell
-.\setup_autostart.ps1
+$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$PWD\deploy\run_api_server.ps1`"" -WorkingDirectory "$PWD"
+$trigger = New-ScheduledTaskTrigger -AtLogOn
+Register-ScheduledTask -TaskName "ClinicalAttendingOS-API" -Action $action -Trigger $trigger
 ```
 
-This pre-flight checks the previous steps, then registers a Task Scheduler job that runs at every user logon. After this, every Windows login silently starts uvicorn + cloudflared.
+(The old `setup_autostart.ps1` was hardcoded to the previous laptop and lives
+in `docs/archive/` — see `docs/archive/README_ARCHIVED_SCRIPTS.md`.)
 
 ## Custom GPT (one-time)
 

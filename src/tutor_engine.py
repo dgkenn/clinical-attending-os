@@ -405,6 +405,14 @@ def record_evaluated_answer(
     training_phase: str = "",
     phase: str = "warm_up_retrieval",
 ) -> dict:
+    # Pretests are DESIGNED to be failed (forward-testing effect on untaught
+    # material), so tag the miss before logging. The old code re-tagged only
+    # the returned dict AFTER log_attempt had already written the row, so every
+    # pretest on new material was recorded as a genuine failure: weak_patterns
+    # counted it, FSRS applied a lapse, and untaught topics flooded the due
+    # queue — the exact outcomes the tag exists to prevent.
+    if phase == "pretest" and result == "incorrect":
+        mistake_type = "pretest_unstudied"
     log_attempt(
         session_id=session_id,
         topic=topic,
@@ -444,10 +452,7 @@ def record_evaluated_answer(
     # so the user feels productive failure before content is delivered. Skip
     # the cache lookup entirely.
     if phase == "pretest":
-        # Override the mistake_type tag so weak_patterns doesn't count it as
-        # a real failure.
-        if result == "incorrect":
-            mistake_type = "pretest_unstudied"
+        pass  # mistake_type already re-tagged above, BEFORE log_attempt
     elif subtopic:
         try:
             from .lesson_cache import get_cached as _get_cached_lesson

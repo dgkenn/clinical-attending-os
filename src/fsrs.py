@@ -141,7 +141,12 @@ def fsrs_review(
         weighted_interval = apply_confidence_weight_to_interval(
             interval, is_correct, confidence_reported
         )
-        interval = weighted_interval
+        # Re-floor AFTER weighting: _interval_days floors at 1 day, but x0.7 on
+        # a 1-day lapse gives 0.7 days, and date-truncated storage then makes
+        # the item due again the SAME day — each same-day re-fail re-runs the
+        # lapse (elapsed≈0, retrievability≈1), stacking lapses/stability loss
+        # for what is pedagogically a single day's failure.
+        interval = max(1.0, weighted_interval)
 
     next_due = (now + timedelta(days=interval)).isoformat()
     s["last_review"] = now.isoformat()

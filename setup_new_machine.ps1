@@ -25,8 +25,13 @@ function Warn($msg)     { Write-Host "      WARN: $msg" -ForegroundColor Yellow 
 
 # ---------------------------------------------------------------- 1. Python
 Step 1 "Checking Python"
-$py = Get-Command python -ErrorAction SilentlyContinue
-if (-not $py) { throw "Python not found on PATH. Install 3.10+ and re-run." }
+$pyExe = $null
+$cmd = Get-Command python -ErrorAction SilentlyContinue
+if ($cmd) { $pyExe = $cmd.Source }
+elseif (Test-Path (Join-Path $ROOT '.venv\Scripts\python.exe')) { $pyExe = Join-Path $ROOT '.venv\Scripts\python.exe' }
+elseif (Get-Command py -ErrorAction SilentlyContinue) { $pyExe = (& py -3 -c "import sys; print(sys.executable)").Trim() }
+if (-not $pyExe) { throw "Python not found (no 'python' on PATH, no .venv, no 'py' launcher). Install 3.10+ and re-run." }
+Set-Alias -Name python -Value $pyExe -Scope Script
 $ver = (& python --version) -replace '[^\d.]', ''
 $parts = $ver.Split('.')
 if ([int]$parts[0] -lt 3 -or ([int]$parts[0] -eq 3 -and [int]$parts[1] -lt 10)) {
@@ -115,7 +120,7 @@ $needIndex = $true
 if (Test-Path $chromaDb) {
     $sz = (Get-Item $chromaDb).Length / 1GB
     if ($sz -gt 1.5) { Skip ("index already present ({0:N2} GB)" -f $sz); $needIndex = $false }
-    else { Warn ("chroma.sqlite3 is only {0:N2} GB - incomplete, re-downloading" -f $sz) }
+    else { Warn ("chroma.sqlite3 is only {0:N2} GB (expect ~1.64 GB; full dataset ~2.48 GB) - incomplete, re-downloading" -f $sz) }
 }
 if ($needIndex) {
     $dl = @"
@@ -140,7 +145,15 @@ $dbPath = Join-Path $ROOT "storage\sqlite\student_model.db"
 if (Test-Path $dbPath) { Skip "student_model.db already present - NOT overwriting" }
 else {
     New-Item -ItemType Directory (Split-Path $dbPath) -Force | Out-Null
-    $rclone = Get-Command rclone -ErrorAction SilentlyContinue
+    # backup_to_gdrive.py checks the home-dir rclone.exe FIRST - mirror that
+    # discovery, or a machine with only the home-dir copy restores the older HF
+    # snapshot while backups happily use Drive (the stale-restore this repo hit).
+    $rcloneExe = $null
+    if (Test-Path (Join-Path $env:USERPROFILE 'rclone.exe')) { $rcloneExe = Join-Path $env:USERPROFILE 'rclone.exe' }
+    else {
+        $cmd = Get-Command rclone -ErrorAction SilentlyContinue
+        if ($cmd) { $rcloneExe = $cmd.Source }
+    }
     $restored = $false
     if ($rclone) {
         Write-Host "      trying Google Drive (newest copy)..." -ForegroundColor DarkGray

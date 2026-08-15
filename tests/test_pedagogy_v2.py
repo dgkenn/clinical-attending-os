@@ -85,10 +85,16 @@ def test_confident_wrong_promotes_overconfident_mistake_type(tmp_path, monkeypat
     assert row["mistake_type"] == "overconfident_wrong"
 
 
-def test_unsure_right_gets_easy_rating():
+def test_unsure_right_gets_good_rating_with_interval_bonus():
+    # Unsure-right rates Good (3), NOT Easy (4): the confidence weighter applies
+    # the x1.2 well-calibrated interval bonus for the same event, and rating it
+    # Easy as well would compound one signal twice. (The old Easy mapping also
+    # contradicted the KP layer, which rated the identical event Hard.)
     from src.student_model import _result_to_fsrs_rating
-    assert _result_to_fsrs_rating("correct", "other", 0, confidence_reported=1.0) == 4
-    assert _result_to_fsrs_rating("correct", "other", 0, confidence_reported=2.0) == 4
+    assert _result_to_fsrs_rating("correct", "other", 0, confidence_reported=1.0) == 3
+    assert _result_to_fsrs_rating("correct", "other", 0, confidence_reported=2.0) == 3
+    from src.confidence_weighter import apply_confidence_weight_to_interval
+    assert apply_confidence_weight_to_interval(10.0, True, 1) == 12.0  # x1.2 bonus
 
 
 def test_confident_right_normal_rating():

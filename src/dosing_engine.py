@@ -200,9 +200,14 @@ def _calc_infusion_rate(params: dict, inputs: dict) -> tuple[float, list[str]]:
         ]
         return rate, steps
 
-    # Vasopressin fixed dose (not weight-based)
-    if params.get("fixed_rate_units_per_hr") is not None:
-        fixed = float(params["fixed_rate_units_per_hr"])
+    # Vasopressin fixed dose (not weight-based). The value is UNITS PER MINUTE
+    # (0.04 units/min standard) — the old key name said "_per_hr" while the
+    # code multiplied by 60 and printed "units/min", so a future rule storing a
+    # true per-hour value would have been graded 60x too high. Accept the old
+    # key for backward compatibility.
+    _vaso_fixed = params.get("fixed_rate_units_per_min", params.get("fixed_rate_units_per_hr"))
+    if _vaso_fixed is not None:
+        fixed = float(_vaso_fixed)
         steps = [
             "Vasopressin is a FIXED dose (not weight-based).",
             f"Standard dose: {fixed} units/min = {fixed * 60:.3f} units/hr",
@@ -363,11 +368,18 @@ def _sample_inputs(randomize_json: dict) -> dict:
     """Sample physiologic inputs from the rule's randomize spec.
 
     Supported specs per key:
+      - {"choices": [...]} → random choice from an explicit discrete list.
+            Required for 2-option lists: a bare 2-element numeric list is a
+            RANGE, which turned bupivacaine's two marketed concentrations
+            [0.25, 0.5] into fictional 0.3%/0.4% solutions.
       - [min, max]       → uniform float in range (rounded to 1 decimal)
       - [v1, v2, v3, …]  → random choice from discrete list
     """
     sampled: dict[str, float] = {}
     for key, spec in randomize_json.items():
+        if isinstance(spec, dict) and isinstance(spec.get("choices"), list) and spec["choices"]:
+            sampled[key] = random.choice(spec["choices"])
+            continue
         if not isinstance(spec, list) or len(spec) < 2:
             continue
         if len(spec) == 2 and all(isinstance(v, (int, float)) for v in spec):

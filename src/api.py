@@ -105,7 +105,8 @@ LOOPBACK_HOSTS = {"127.0.0.1", "localhost", "::1"}
 def require_api_key(request: Request, x_api_key: str | None = Depends(api_key_header)) -> None:
     """Auth guard. Fail-closed when listening on a non-loopback host without an API_KEY."""
     if settings.api_key:
-        if x_api_key != settings.api_key:
+        import hmac as _hmac
+        if not (x_api_key and _hmac.compare_digest(x_api_key, settings.api_key)):
             raise HTTPException(status_code=401, detail="Invalid API key")
         return
     client_host = (request.client.host if request.client else "") or ""
@@ -298,8 +299,11 @@ def start(req: StartSessionRequest) -> dict:
 @app.post("/answer", response_model=AnswerResponse, dependencies=[Depends(require_api_key)], operation_id="submit_study_answer")
 def answer(req: AnswerRequest) -> dict:
     """Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()
-    call). Use alongside /submit_answer_fsrs (MCP tool `submit_answer`) — the FSRS/mastery
-    engine — just like Claude calls both submit_study_answer and submit_answer."""
+    call). Do NOT also call /submit_answer_fsrs for the same answer: both paths
+    end in log_attempt() -> update_mastery_score(), so the pair writes two
+    attempt rows and advances FSRS twice. They are alternatives, not a pair
+    (a same-answer duplicate within 3 minutes is now dropped server-side as a
+    backstop, but don't rely on it)."""
     if req.result:
         return record_evaluated_answer(
             session_id=req.session_id,
@@ -628,52 +632,68 @@ def car_next(req: CarNextRequest) -> dict:
             except Exception as exc:  # never lose the KP record over a topic-level failure
                 recorded["topic_level_error"] = str(exc)[:200]
 
+    # The answer is already recorded above; nothing past this point may turn
+    # the response into an error, or the client retries and double-records
+    # (two corrects = 'mastered'). Failures degrade to next=None.
     nxt = None
-    # 1. Overdue knowledge points, car-safe only.
-    due = _get_due_knowledge_points(limit=5, car=True).get("due_points", [])
-    if due:
-        p = due[0]
-        nxt = {
-            "kind": "due_knowledge_point",
-            "topic": p.get("topic", ""),
-            "prompt": p.get("point", ""),
-            "answer": "",  # the point text IS the fact; quiz on it directly
-            "days_overdue": p.get("days_overdue", 0),
-            "calibration": p.get("calibration"),
-            "status": p.get("status"),
-        }
-    # 2. Otherwise a fresh catalog KP.
-    if nxt is None:
-        cat = _get_kp_to_study(limit=1, format="car")
-        if cat:
-            k = cat[0]
+    queue = {"due_knowledge_points": 0, "due_dosing": 0}
+    try:
+        # 1. Overdue knowledge points, car-safe only.
+        due = _get_due_knowledge_points(limit=5, car=True).get("due_points", [])
+        if due:
+            p = due[0]
             nxt = {
-                "kind": "catalog_kp",
-                "topic": k.get("topic", ""),
-                "prompt": k.get("stem", ""),
-                "answer": k.get("answer", ""),
-                "rationale": k.get("rationale", ""),
-                "source": k.get("source", ""),
-                "bloom": k.get("bloom", ""),
+                "kind": "due_knowledge_point",
+                "topic": p.get("topic", ""),
+                "prompt": p.get("point", ""),
+                # Echo THIS back as answered.point — for due KPs the point text
+                # is its own key.
+                "point_key": p.get("point", ""),
+                "answer": "",  # the point text IS the fact; quiz on it directly
+                "days_overdue": p.get("days_overdue", 0),
+                "calibration": p.get("calibration"),
+                "status": p.get("status"),
             }
-    # 3. Otherwise a dosing recall drill (never a calculation in car mode).
-    if nxt is None and req.include_dosing:
-        d = _get_dosing_drill(mode="recall")
-        if isinstance(d, dict) and not d.get("error"):
-            nxt = {
-                "kind": "dosing_recall",
-                "topic": d.get("drug", ""),
-                "prompt": d.get("question", ""),
-                "answer": d.get("answer", ""),
-                "anchor": d.get("anchor", ""),
-                "source": d.get("source", ""),
-            }
-
-    return {
-        "recorded": recorded,
-        "next": nxt,
-        "queue": {
+        # 2. Otherwise a fresh catalog KP.
+        if nxt is None:
+            cat = _get_kp_to_study(limit=1, format="car")
+            if cat:
+                k = cat[0]
+                nxt = {
+                    "kind": "catalog_kp",
+                    "topic": k.get("topic", ""),
+                    "prompt": k.get("stem", ""),
+                    "point_key": k.get("stem", ""),  # stem IS the point key
+                    "answer": k.get("answer", ""),
+                    "rationale": k.get("rationale", ""),
+                    "source": k.get("source", ""),
+                    "bloom": k.get("bloom", ""),
+                }
+        # 3. Otherwise a dosing recall drill (never a calculation in car mode).
+        if nxt is None and req.include_dosing:
+            d = _get_dosing_drill(mode="recall")
+            if isinstance(d, dict) and not d.get("error"):
+                drug = d.get("drug", "")
+                nxt = {
+                    "kind": "dosing_recall",
+                    "topic": drug,
+                    "prompt": d.get("question", ""),
+                    # The canonical key the dosing graduation logic reads
+                    # (_recall_status matches exactly 'dosing-recall:{drug}').
+                    # Without it, car-recorded dosing answers landed under the
+                    # question text and the drug stayed "unseen" forever.
+                    "point_key": f"dosing-recall:{drug}",
+                    "mistake_type_hint": "drug_dosing",
+                    "answer": d.get("answer", ""),
+                    "anchor": d.get("anchor", ""),
+                    "source": d.get("source", ""),
+                }
+        queue = {
             "due_knowledge_points": _get_due_knowledge_points(limit=200, car=True).get("count", 0),
             "due_dosing": _get_due_dosing_drills(limit=100).get("count", 0),
-        },
-    }
+        }
+    except Exception as exc:
+        return {"recorded": recorded, "next": None, "queue": queue,
+                "next_error": str(exc)[:200]}
+
+    return {"recorded": recorded, "next": nxt, "queue": queue}

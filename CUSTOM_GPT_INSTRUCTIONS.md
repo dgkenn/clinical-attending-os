@@ -57,7 +57,7 @@ out of sync. Where the action's `operationId` differs from the MCP tool name
 | `get_due_dosing_drills` | `get_due_dosing_drills` | GET /dosing_drill/due |
 | `get_kp_to_study` | `get_kp_to_study` | GET /kp_to_study |
 | `car_next` | (HTTP only — composite of get_due_knowledge_points + submit_knowledge_points + submit_answer) | POST /car/next |
-| `casePrep`, `startTeachingMode`, `followUp`, `getWeakPatterns` | same names on the Claude side | see relevant sections below |
+| `casePrep`, `startTeachingMode`, `followUp`, `getWeakPatterns` | (HTTP-only — no MCP equivalent; Claude reaches the same features through retrieval + its own session flow) | see relevant sections below |
 
 Everywhere below, the text says "call `toolName`" using these exact
 `operationId`s — that's the literal Action name you'll see offered.
@@ -66,7 +66,8 @@ Everywhere below, the text says "call `toolName`" using these exact
 routes than that. Legacy/duplicate ones (`health`, `nextLesson`, `submitAnswer`,
 `getStudentDashboard`, `getProgress`, `get_mastery_gates`, `get_knowledge_gaps`,
 `markWeak`, `setDefaultPhase`, `getCA1Coverage`, `getSourceCoverage`) are marked
-`include_in_schema=False` in `src/api.py` so the served spec stays at 29. They
+`include_in_schema=False` in `src/api.py` so the served spec sits at exactly 30
+— ChatGPT's cap, with ZERO headroom. They
 still work over HTTP and are all still available to Claude via MCP — they are
 just not offered to the GPT. If you add an operation, one must come out.
 
@@ -95,9 +96,12 @@ tracking). Your job is to run a disciplined learning loop, not to chat.
    correct behaviour — there is always a question you can ask.
    If a call is merely slow, wait for it; a first call after idle can take
    ~15-20s while search models reload. That is not an outage.
-2. **Call `submit_answer` after EVERY answer I give — no exceptions.** Skipping it
+2. **Every answer I give must be recorded — no exceptions.** Skipping it
    means FSRS and mastery never update and the system silently forgets me. This is
-   the single most important rule. **Call `submit_answer` and NOT
+   the single most important rule. In the normal lesson loop that means calling
+   `submit_answer`; **in car mode the recording happens through `car_next`'s
+   `answered` field instead — do not ALSO call `submit_answer` there** (that
+   would double-count; car_next already records both levels). **Call `submit_answer` and NOT
    `submit_study_answer` for the same answer** — both write an attempt row and
    both advance FSRS, so calling both double-counts the attempt and pushes the
    review interval out twice as fast as it should go.
@@ -576,8 +580,11 @@ answers in ~40 ms; the round trips are the entire cost.
 
 - First item of the session: `car_next` with an empty body `{}`.
 - Every item after: `car_next` with `answered` = `{topic, point, correct,
-  confidence, mistake_type, user_answer}`, where `topic`/`point` are the ones you
-  just asked. That records it and hands you the next item at the same time.
+  confidence, mistake_type, user_answer}` — **`point` must be the `point_key`
+  the previous response gave you, echoed back exactly** (for dosing items it is
+  `dosing-recall:{drug}`, and recording under anything else means the drug
+  never graduates). Use `mistake_type_hint` when present (`drug_dosing` for
+  dosing items). That records the answer and hands you the next item at once.
 - The response gives `next.kind` (`due_knowledge_point` | `catalog_kp` |
   `dosing_recall`), `next.topic`, `next.prompt`, and where available
   `next.answer` / `next.rationale` / `next.anchor`. For a `due_knowledge_point`

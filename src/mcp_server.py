@@ -103,8 +103,17 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     own. Use this alongside the topic-level `submit_answer`.
     """
     results = []
+    skipped = []
     for p in points or []:
         if not isinstance(p, dict):
+            skipped.append({"point": repr(p)[:80], "reason": "not an object"})
+            continue
+        if "correct" not in p and "is_correct" not in p:
+            # A missing/misspelled correctness key used to default to False and
+            # get recorded as a genuine failure — status weak, streak reset,
+            # FSRS lapse — with ok:true returned. Refuse to guess.
+            skipped.append({"point": str(p.get("point", ""))[:120],
+                            "reason": "missing 'correct' field"})
             continue
         r = _record_kp(
             topic=topic,
@@ -115,9 +124,12 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
         )
         if r:
             results.append(r)
+        else:
+            skipped.append({"point": str(p.get("point", ""))[:120], "reason": "blank topic or point"})
     return {
         "ok": True,
         "recorded": len(results),
+        "skipped": skipped,
         "points": results,
         "weak_or_learning": [r["point"] for r in results if r["status"] != "mastered"],
     }
@@ -244,7 +256,7 @@ def get_dosing_drill(
     # ---- AUTO MODE: mastery-gated selection (tier-1 first, recall before calc) ----
     # Sort: tier ASC is already guaranteed by get_all_rules ORDER BY tier ASC, drug ASC.
     # Within tier, prefer rules whose recall KP is unseen/weak.
-    from src.student_model import get_knowledge_points as _get_kp  # type: ignore[import]
+    from .student_model import get_knowledge_points as _get_kp
 
     def _recall_status(drug_name: str) -> str:
         """Return status of dosing-recall:{drug} KP, or 'unseen' if not found."""
@@ -305,7 +317,11 @@ def submit_dosing_answer(
 
     clean_mode = mode.strip().lower()
     if clean_mode == "calculation":
-        point = f"dosing-calc:{drug}:{calc_type}".rstrip(":") if calc_type else f"dosing-calc:{drug}"
+        # Key on the drug alone. Including calc_type made the key depend on
+        # whether the caller happened to pass it, splitting one drill's FSRS
+        # history across 'dosing-calc:{drug}' and 'dosing-calc:{drug}:{ct}' —
+        # so neither row ever accumulated the consecutive-correct streak.
+        point = f"dosing-calc:{drug}"
     else:
         # Default to recall — covers mode='recall' and legacy calls
         point = f"dosing-recall:{drug}"
@@ -331,7 +347,10 @@ def get_due_dosing_drills(limit: int = 10) -> dict:
 
     Tutor uses these to decide whether to include a dosing drill in the session.
     """
-    all_due = _get_due_kp(limit=100)
+    # Over-fetch: the dosing filter runs in Python, so a small SQL page
+    # hides due dosing points behind non-dosing ones (same failure mode
+    # as the car filter in get_due_knowledge_points).
+    all_due = _get_due_kp(limit=1000)
     dosing_due = [
         p for p in all_due
         if p.get("point", "").startswith("dosing-recall:")

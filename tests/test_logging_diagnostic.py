@@ -390,7 +390,10 @@ def test_unsure_correct_rates_higher_than_confident_correct(tmp_path, monkeypatc
         db.row_factory = sqlite3.Row
         confident = db.execute("SELECT fsrs_state FROM topics WHERE topic='DiagConfident'").fetchone()
         unsure = db.execute("SELECT fsrs_state FROM topics WHERE topic='DiagUnsure'").fetchone()
-    s_confident = json.loads(confident["fsrs_state"])["stability"]
-    s_unsure = json.loads(unsure["fsrs_state"])["stability"]
-    # Unsure-correct should have GREATER stability (FSRS rating 4 = Easy)
-    assert s_unsure > s_confident, f"unsure={s_unsure}, confident={s_confident} — calibration not applied"
+    st_confident = json.loads(confident["fsrs_state"])
+    st_unsure = json.loads(unsure["fsrs_state"])
+    # Both rate Good (3) so stability is equal; the calibration signal is the
+    # x1.2 interval bonus, i.e. the unsure-correct card is scheduled LATER.
+    assert st_unsure["stability"] == st_confident["stability"]
+    assert st_unsure["next_due"] > st_confident["next_due"], (
+        f"unsure={st_unsure['next_due']}, confident={st_confident['next_due']} — calibration not applied")

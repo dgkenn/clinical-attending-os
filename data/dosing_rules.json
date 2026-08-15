@@ -4,8 +4,15 @@
     "drug": "Succinylcholine",
     "context": "RSI intubation",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 1.5},
-    "randomize_json": {"weight_kg": [50, 120]},
+    "params_json": {
+      "mg_per_kg": 1.5
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ]
+    },
     "units": "mg",
     "discipline": "anesthesia",
     "is_critical_care": 1,
@@ -22,8 +29,15 @@
     "drug": "Rocuronium",
     "context": "RSI intubation",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 1.2},
-    "randomize_json": {"weight_kg": [50, 120]},
+    "params_json": {
+      "mg_per_kg": 1.2
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ]
+    },
     "units": "mg",
     "discipline": "anesthesia",
     "is_critical_care": 1,
@@ -40,8 +54,15 @@
     "drug": "Propofol",
     "context": "Induction of general anesthesia",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 2.0},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "mg_per_kg": 2.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mg",
     "discipline": "anesthesia",
     "is_critical_care": 0,
@@ -58,8 +79,15 @@
     "drug": "Dantrolene",
     "context": "Malignant hyperthermia treatment",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 2.5},
-    "randomize_json": {"weight_kg": [50, 120]},
+    "params_json": {
+      "mg_per_kg": 2.5
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ]
+    },
     "units": "mg",
     "discipline": "anesthesia",
     "is_critical_care": 1,
@@ -76,8 +104,22 @@
     "drug": "Lidocaine (without epinephrine)",
     "context": "Regional/local anesthesia maximum dose",
     "calc_type": "max_dose",
-    "params_json": {"mg_per_kg": 4.5, "concentration_mg_mL": 10.0},
-    "randomize_json": {"weight_kg": [50, 100], "concentration_pct": [0.5, 1.0, 1.5, 2.0]},
+    "params_json": {
+      "mg_per_kg": 4.5,
+      "concentration_mg_mL": 10.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ],
+      "concentration_pct": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
     "units": "mL",
     "discipline": "anesthesia",
     "is_critical_care": 0,
@@ -94,8 +136,22 @@
     "drug": "Lidocaine (with epinephrine)",
     "context": "Regional/local anesthesia maximum dose with epinephrine",
     "calc_type": "max_dose",
-    "params_json": {"mg_per_kg": 7.0, "concentration_mg_mL": 10.0},
-    "randomize_json": {"weight_kg": [50, 100], "concentration_pct": [0.5, 1.0, 1.5, 2.0]},
+    "params_json": {
+      "mg_per_kg": 7.0,
+      "concentration_mg_mL": 10.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ],
+      "concentration_pct": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
     "units": "mL",
     "discipline": "anesthesia",
     "is_critical_care": 0,
@@ -112,8 +168,22 @@
     "drug": "Bupivacaine (plain)",
     "context": "Regional/local anesthesia maximum dose",
     "calc_type": "max_dose",
-    "params_json": {"mg_per_kg": 2.5, "concentration_mg_mL": 5.0},
-    "randomize_json": {"weight_kg": [50, 100], "concentration_pct": [0.25, 0.5]},
+    "params_json": {
+      "mg_per_kg": 2.5,
+      "concentration_mg_mL": 5.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ],
+      "concentration_pct": {
+        "choices": [
+          0.25,
+          0.5
+        ]
+      }
+    },
     "units": "mL",
     "discipline": "anesthesia",
     "is_critical_care": 0,
@@ -130,8 +200,21 @@
     "drug": "Ropivacaine",
     "context": "Regional/local anesthesia maximum dose",
     "calc_type": "max_dose",
-    "params_json": {"mg_per_kg": 3.0, "concentration_mg_mL": 7.5},
-    "randomize_json": {"weight_kg": [50, 100], "concentration_pct": [0.2, 0.5, 0.75]},
+    "params_json": {
+      "mg_per_kg": 3.0,
+      "concentration_mg_mL": 7.5
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ],
+      "concentration_pct": [
+        0.2,
+        0.5,
+        0.75
+      ]
+    },
     "units": "mL",
     "discipline": "anesthesia",
     "is_critical_care": 0,
@@ -148,8 +231,21 @@
     "drug": "Norepinephrine",
     "context": "Septic shock vasopressor infusion",
     "calc_type": "infusion_rate",
-    "params_json": {"concentration_mcg_mL": 16.0},
-    "randomize_json": {"weight_kg": [50, 120], "dose_mcg_kg_min": [0.05, 0.1, 0.2, 0.3]},
+    "params_json": {
+      "concentration_mcg_mL": 16.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ],
+      "dose_mcg_kg_min": [
+        0.05,
+        0.1,
+        0.2,
+        0.3
+      ]
+    },
     "units": "mL/hr",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -166,8 +262,21 @@
     "drug": "Phenylephrine",
     "context": "Vasopressor infusion for hypotension",
     "calc_type": "infusion_rate",
-    "params_json": {"concentration_mcg_mL": 100.0},
-    "randomize_json": {"weight_kg": [50, 100], "dose_mcg_kg_min": [0.5, 1.0, 1.5, 2.0]},
+    "params_json": {
+      "concentration_mcg_mL": 100.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ],
+      "dose_mcg_kg_min": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
     "units": "mL/hr",
     "discipline": "anesthesia",
     "is_critical_care": 1,
@@ -184,8 +293,17 @@
     "drug": "Vasopressin",
     "context": "Septic shock adjunct vasopressor",
     "calc_type": "infusion_rate",
-    "params_json": {"concentration_mcg_mL": null, "fixed_rate_units_per_hr": 0.04, "concentration_units_per_mL": 1.0},
-    "randomize_json": {"weight_kg": [60, 100]},
+    "params_json": {
+      "concentration_mcg_mL": null,
+      "concentration_units_per_mL": 1.0,
+      "fixed_rate_units_per_min": 0.04
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ]
+    },
     "units": "units/hr",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -202,8 +320,16 @@
     "drug": "Heparin (STEMI/ACS bolus)",
     "context": "STEMI/ACS weight-based heparin bolus",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 0, "units_per_kg": 60},
-    "randomize_json": {"weight_kg": [60, 110]},
+    "params_json": {
+      "mg_per_kg": 0,
+      "units_per_kg": 60
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        110
+      ]
+    },
     "units": "units",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -220,8 +346,17 @@
     "drug": "Insulin infusion (DKA/HHS)",
     "context": "DKA insulin drip",
     "calc_type": "infusion_rate",
-    "params_json": {"concentration_mcg_mL": null, "concentration_units_per_mL": 1.0, "dose_units_kg_hr": 0.1},
-    "randomize_json": {"weight_kg": [60, 120]},
+    "params_json": {
+      "concentration_mcg_mL": null,
+      "concentration_units_per_mL": 1.0,
+      "dose_units_kg_hr": 0.1
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        120
+      ]
+    },
     "units": "units/hr",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -238,8 +373,16 @@
     "drug": "Magnesium sulfate (eclampsia load)",
     "context": "Eclampsia seizure prophylaxis/treatment loading dose",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 4000, "concentration_mg_mL": 200.0},
-    "randomize_json": {"weight_kg": [60, 90]},
+    "params_json": {
+      "dose_mg": 4000,
+      "concentration_mg_mL": 200.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        90
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -256,8 +399,16 @@
     "drug": "Calcium gluconate (hyperkalemia)",
     "context": "Cardiac membrane stabilization in hyperkalemia",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 1000, "concentration_mg_mL": 100.0},
-    "randomize_json": {"weight_kg": [60, 100]},
+    "params_json": {
+      "dose_mg": 1000,
+      "concentration_mg_mL": 100.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -274,8 +425,16 @@
     "drug": "Dextrose 50% (D50W)",
     "context": "Symptomatic hypoglycemia IV treatment",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 25000, "concentration_mg_mL": 500.0},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "dose_mg": 25000,
+      "concentration_mg_mL": 500.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -292,14 +451,21 @@
     "drug": "Naloxone (opioid reversal)",
     "context": "Opioid-induced respiratory depression",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 0.001},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "mg_per_kg": 0.001
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mg",
     "discipline": "medicine",
     "is_critical_care": 1,
     "tier": 2,
     "source": "UpToDate opioid overdose; SAMHSA guidelines",
-    "explanation": "Naloxone for opioid reversal: 0.4–2 mg IV/IM/IN titrated to adequate respiration (NOT to full reversal — triggers acute withdrawal and pain). Typical: 0.04–0.1 mg IV q2–3 min. Half-life 60–90 min, shorter than most opioids — repeat dosing or infusion often needed. Weight-based guide: ~0.01 mg/kg.",
+    "explanation": "Naloxone for opioid reversal: 0.4–2 mg IV/IM/IN titrated to adequate respiration (NOT to full reversal — triggers acute withdrawal and pain). Typical: 0.04–0.1 mg IV q2–3 min. Half-life 60–90 min, shorter than most opioids — repeat dosing or infusion often needed. Weight-based guide: ~0.001 mg/kg (low-dose titration).",
     "dose_fact": "Naloxone opioid reversal: 0.04–0.1 mg IV q2–3 min, titrate to breathing (not full reversal)",
     "recall_question": "How do you dose naloxone for opioid-induced respiratory depression?",
     "anchor": "Narcan: 'Start LOW — 0.04 mg and go slow.' Full reversal = acute withdrawal + pain crisis. Titrate to respirations, NOT to waking up screaming.",
@@ -310,8 +476,16 @@
     "drug": "Flumazenil (benzodiazepine reversal)",
     "context": "Benzodiazepine-induced respiratory depression",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 0.2, "concentration_mg_mL": 0.1},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "dose_mg": 0.2,
+      "concentration_mg_mL": 0.1
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 0,
@@ -328,8 +502,15 @@
     "drug": "Mannitol (ICP reduction)",
     "context": "Intracranial hypertension / herniation",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 1000},
-    "randomize_json": {"weight_kg": [60, 100]},
+    "params_json": {
+      "mg_per_kg": 1000
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ]
+    },
     "units": "mL (of 20% solution)",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -339,15 +520,28 @@
     "dose_fact": "Mannitol for ICP: 0.5–1 g/kg IV; 20% mannitol = 5 mL/kg per 1 g/kg dose",
     "recall_question": "What is the mannitol dose for ICP crisis/herniation?",
     "anchor": "Mannitol = 1 g/kg for herniation (emergent), 0.5 g/kg for ICP maintenance. 20% = 200 mg/mL = 5 mL per gram. Hold if Osm >320.",
-    "recall_only": false
+    "recall_only": true
   },
   {
     "id": "hypertonic_saline_na_correction",
     "drug": "Hypertonic Saline / Na correction limit",
     "context": "Severe symptomatic hyponatremia — max correction rate",
     "calc_type": "rate_limited_correction",
-    "params_json": {"max_correction_meq_per_24h": 10, "safe_rapid_bolus_meq": 6},
-    "randomize_json": {"weight_kg": [60, 100], "current_na": [115, 125], "target_na_rapid": 121},
+    "params_json": {
+      "max_correction_meq_per_24h": 10,
+      "safe_rapid_bolus_meq": 6
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ],
+      "current_na": [
+        115,
+        125
+      ],
+      "target_na_rapid": 121
+    },
     "units": "mEq/L over 24h",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -364,8 +558,18 @@
     "drug": "Maintenance Fluids (4-2-1 rule)",
     "context": "Pediatric / adult maintenance fluid rate calculation",
     "calc_type": "rate_limited_correction",
-    "params_json": {"rule": "4-2-1", "rate_first_10kg": 4, "rate_next_10kg": 2, "rate_above_20kg": 1},
-    "randomize_json": {"weight_kg": [10, 80]},
+    "params_json": {
+      "rule": "4-2-1",
+      "rate_first_10kg": 4,
+      "rate_next_10kg": 2,
+      "rate_above_20kg": 1
+    },
+    "randomize_json": {
+      "weight_kg": [
+        10,
+        80
+      ]
+    },
     "units": "mL/hr",
     "discipline": "medicine",
     "is_critical_care": 0,
@@ -382,8 +586,16 @@
     "drug": "Pediatric IV Fluid Bolus",
     "context": "Hypovolemia / sepsis fluid resuscitation",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 0, "mL_per_kg": 20},
-    "randomize_json": {"weight_kg": [10, 40]},
+    "params_json": {
+      "mg_per_kg": 0,
+      "mL_per_kg": 20
+    },
+    "randomize_json": {
+      "weight_kg": [
+        10,
+        40
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -400,8 +612,15 @@
     "drug": "Vancomycin (weight-based loading dose)",
     "context": "Serious MRSA infection initial dosing",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 25},
-    "randomize_json": {"weight_kg": [50, 120]},
+    "params_json": {
+      "mg_per_kg": 25
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ]
+    },
     "units": "mg",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -418,8 +637,15 @@
     "drug": "Phenytoin / Fosphenytoin (loading dose)",
     "context": "Status epilepticus second-line agent",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 20},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "mg_per_kg": 20
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mg",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -436,8 +662,16 @@
     "drug": "Amiodarone (ACLS VF/pulseless VT)",
     "context": "Cardiac arrest — pulseless VT / VF",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 300, "concentration_mg_mL": 50.0},
-    "randomize_json": {"weight_kg": [60, 100]},
+    "params_json": {
+      "dose_mg": 300,
+      "concentration_mg_mL": 50.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -454,8 +688,16 @@
     "drug": "Epinephrine (ACLS cardiac arrest)",
     "context": "Cardiac arrest (any rhythm) — vasopressor",
     "calc_type": "mass_to_volume",
-    "params_json": {"dose_mg": 1, "concentration_mg_mL": 0.1},
-    "randomize_json": {"weight_kg": [60, 100]},
+    "params_json": {
+      "dose_mg": 1,
+      "concentration_mg_mL": 0.1
+    },
+    "randomize_json": {
+      "weight_kg": [
+        60,
+        100
+      ]
+    },
     "units": "mL",
     "discipline": "medicine",
     "is_critical_care": 1,
@@ -472,8 +714,15 @@
     "drug": "N-Acetylcysteine (NAC) — acetaminophen overdose",
     "context": "Acetaminophen hepatotoxicity treatment (IV 21h protocol)",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 150},
-    "randomize_json": {"weight_kg": [50, 100]},
+    "params_json": {
+      "mg_per_kg": 150
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        100
+      ]
+    },
     "units": "mg (loading dose)",
     "discipline": "medicine",
     "is_critical_care": 0,
@@ -485,7 +734,6 @@
     "anchor": "NAC = 150-50-100 over 1-4-16h (total 300 mg/kg in 21h). The load is the biggest hit: 150 mg/kg. '150 for the liver.'",
     "recall_only": false
   },
-
   {
     "id": "acetaminophen_adult",
     "drug": "Acetaminophen",
@@ -653,8 +901,15 @@
     "drug": "Enoxaparin (DVT/PE treatment)",
     "context": "VTE treatment — full anticoagulation",
     "calc_type": "weight_based",
-    "params_json": {"mg_per_kg": 1.0},
-    "randomize_json": {"weight_kg": [50, 120]},
+    "params_json": {
+      "mg_per_kg": 1.0
+    },
+    "randomize_json": {
+      "weight_kg": [
+        50,
+        120
+      ]
+    },
     "units": "mg",
     "discipline": "medicine",
     "is_critical_care": 1,

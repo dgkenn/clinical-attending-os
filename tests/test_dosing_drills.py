@@ -573,7 +573,8 @@ class TestSubmitDosingAnswer:
     def test_correct_calc_answer_creates_calc_knowledge_point(self):
         from src.mcp_server import submit_dosing_answer
         from src.student_model import get_knowledge_points
-        # mode='calculation' → point key is 'dosing-calc:{drug}:{calc_type}'
+        # mode='calculation' → point key is 'dosing-calc:{drug}' — keyed on the
+        # drug alone, so history can't split across with/without-calc_type keys.
         result = submit_dosing_answer(
             drug="Norepinephrine",
             is_correct=True,
@@ -583,7 +584,7 @@ class TestSubmitDosingAnswer:
         )
         assert result["ok"] is True
         pts = get_knowledge_points(topic="Norepinephrine")
-        assert any(p["point"] == "dosing-calc:Norepinephrine:infusion_rate" for p in pts)
+        assert any(p["point"] == "dosing-calc:Norepinephrine" for p in pts)
         assert pts[0]["mistake_type"] == "drug_dosing"
 
     def test_incorrect_answer_is_weak(self):

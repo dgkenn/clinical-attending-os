@@ -123,6 +123,14 @@ def get_session_state() -> Dict[str, Any]:
                 {"topic_id": f"topic_{row[0]}", "topic": row[0], "reason": "fsrs_due"}
                 for row in due_rows
             ]
+            # Full backlog count (the list above is a LIMIT-10 page; reporting
+            # its len() as reviews_due_count told the tutor "10 due" when 200
+            # were, so sessions under-budgeted review volume).
+            due_total = db.execute("""
+                SELECT COUNT(DISTINCT topic) FROM topics
+                WHERE next_review_date IS NOT NULL
+                AND next_review_date <= date('now')
+            """).fetchone()[0]
 
             # Get weak topics (error rate > 30% in last 7 days)
             weak_rows = db.execute("""
@@ -183,7 +191,7 @@ def get_session_state() -> Dict[str, Any]:
             # Get overall progress — use `status` column (topics table has no mastery_level)
             mastered_count = db.execute("""
                 SELECT COUNT(DISTINCT topic) FROM topics
-                WHERE status IN ('maintenance', 'learning')
+                WHERE status IN ('maintenance', 'strong', 'learning')
             """).fetchone()[0]
 
             total_count = db.execute(
@@ -253,7 +261,7 @@ def get_session_state() -> Dict[str, Any]:
             "daily_new_item_cap": _new_cap,
             "new_items_remaining_today": max(0, _new_cap - _new_today),
             "daily_review_budget": _review_budget,
-            "reviews_due_count": len(due_topics),
+            "reviews_due_count": due_total,
         }
 
         return {
@@ -322,7 +330,7 @@ def get_next_topic(session_id: Optional[str] = None) -> Dict[str, Any]:
                     "SELECT domain, subtopics FROM curriculum WHERE topic=?", (topic,)
                 ).fetchone()
             domain = crow["domain"] if crow else ""
-            subtopics = json.loads(crow["subtopics"]) if crow else []
+            subtopics = json.loads(crow["subtopics"] or "[]") if crow else []
             # Resurface the SPECIFIC weak knowledge points on this topic so the tutor
             # re-targets them (still without telegraphing) instead of re-asking a
             # generic question. Not-yet-mastered points only.
@@ -580,28 +588,50 @@ def submit_answer(
         # Ensure topic row exists and get its id
         topic_id = get_or_create_topic(topic, subtopic or "")
 
+        # Structural double-submit guard. Both front ends have been observed
+        # calling submit_study_answer AND submit_answer for the same answer
+        # (twice, on different days, despite instructions forbidding it), which
+        # writes two attempt rows and advances FSRS twice — halving intervals.
+        # If an attempt with the same topic + same non-trivial user_answer +
+        # same result already landed in the last 3 minutes, treat this call as
+        # the duplicate leg: skip the second log_attempt (no second FSRS
+        # advance) but still refresh the mastery vector and return normally.
+        # Matching on the answer text keeps false positives implausible —
+        # rapid-fire re-asks of one topic produce different answers.
+        duplicate_of_recent = False
+        if (user_answer or "").strip() and user_answer.strip().lower() not in ("correct", "incorrect"):
+            with conn() as _db:
+                recent = _db.execute(
+                    """SELECT COUNT(*) FROM question_attempts
+                       WHERE topic = ? AND user_answer = ? AND result = ?
+                         AND date >= datetime('now', '-3 minutes')""",
+                    (topic, user_answer, "correct" if is_correct else "incorrect"),
+                ).fetchone()[0]
+            duplicate_of_recent = recent > 0
+
         # Log the attempt — this calls update_mastery_score internally, which
         # advances FSRS once and writes mastery_score + status to topics table.
         # Do NOT do a second fsrs_review call after this; that would double-advance.
-        log_attempt(
-            session_id="mcp_session",
-            topic=topic,
-            subtopic=subtopic or "",
-            question="MCP submitted answer",
-            user_answer=user_answer,
-            ideal_answer="",
-            result="correct" if is_correct else "incorrect",
-            mistake_type=mistake_type,
-            difficulty="medium",
-            hints_used=0,
-            confidence_reported=confidence,
-            retrieval_sources="",
-            source_citations="",
-            notes="",
-            library="",
-            training_phase="intern_year",
-            bloom_level=bloom_level,
-        )
+        if not duplicate_of_recent:
+            log_attempt(
+                session_id="mcp_session",
+                topic=topic,
+                subtopic=subtopic or "",
+                question="MCP submitted answer",
+                user_answer=user_answer,
+                ideal_answer="",
+                result="correct" if is_correct else "incorrect",
+                mistake_type=mistake_type,
+                difficulty="medium",
+                hints_used=0,
+                confidence_reported=confidence,
+                retrieval_sources="",
+                source_citations="",
+                notes="",
+                library="",
+                training_phase="intern_year",
+                bloom_level=bloom_level,
+            )
 
         # Re-read the updated topic row (mastery_score/status written by log_attempt)
         summary = get_topic_summary(topic)
@@ -1051,7 +1081,7 @@ def get_progress() -> Dict[str, Any]:
             # Count mastered topics by domain (use `status` column, not non-existent mastery_level)
             mastered = db.execute("""
                 SELECT COUNT(DISTINCT topic) FROM topics
-                WHERE status IN ('maintenance', 'learning')
+                WHERE status IN ('maintenance', 'strong', 'learning')
             """).fetchone()[0]
 
             total = db.execute(

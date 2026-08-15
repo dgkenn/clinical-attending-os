@@ -43,10 +43,17 @@ def _due_topic_subjects(limit: int = 25) -> list[dict[str, Any]]:
     initialize_database()
     today = datetime.now(timezone.utc).date().isoformat()
     with conn() as db:
+        # Same exclusions as student_model.get_due_reviews, for the same reasons:
+        # unit:% rows are session bookkeeping (never rescheduled -> permanently
+        # due), KP-tracked topics review through the knowledge-point queue (the
+        # "stale card that never clears" problem), blank topics retrieve nothing.
         rows = db.execute(
             """SELECT topic_id, topic, subtopic, mastery_score, fsrs_state, library, training_phase, source
                FROM topics
-               WHERE next_review_date IS NULL OR next_review_date <= ?
+               WHERE (next_review_date IS NULL OR next_review_date <= ?)
+                 AND topic NOT IN (SELECT DISTINCT topic FROM knowledge_points)
+                 AND topic NOT LIKE 'unit:%'
+                 AND topic != ''
                ORDER BY mastery_score ASC LIMIT ?""",
             (today, limit),
         ).fetchall()

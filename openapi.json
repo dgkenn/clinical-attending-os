@@ -115,7 +115,7 @@
     "/answer": {
       "post": {
         "summary": "Answer",
-        "description": "Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()\ncall). Use alongside /submit_answer_fsrs (MCP tool `submit_answer`) \u2014 the FSRS/mastery\nengine \u2014 just like Claude calls both submit_study_answer and submit_answer.",
+        "description": "Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()\ncall). Do NOT also call /submit_answer_fsrs for the same answer: both paths\nend in log_attempt() -> update_mastery_score(), so the pair writes two\nattempt rows and advances FSRS twice. They are alternatives, not a pair\n(a same-answer duplicate within 3 minutes is now dropped server-side as a\nbackstop, but don't rely on it).",
         "operationId": "submit_study_answer",
         "requestBody": {
           "content": {
