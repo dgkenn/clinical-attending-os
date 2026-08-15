@@ -29,6 +29,21 @@ server-log errors. Exit 0 = green, 1 = problems (named in the last line).
 | "It's not calling a tool it should have" | GPT schema stale after an endpoint change | Tell user: delete + re-import the action from `/api/openapi.json`, re-set the `X-API-Key` header |
 | "My progress looks wrong / lost" | check before touching anything | `doctor.py` shows attempt count + newest date; Drive has `student_model_latest.db` and one `_prev` generation |
 
+## Pushing to GitHub
+
+Push uses an **SSH key** (`~/.ssh/id_ed25519_github`, no passphrase, so
+unattended sessions can push), configured in `~/.ssh/config` with the remote
+at `git@github.com:dgkenn/clinical-attending-os.git`. `doctor.py` verifies the
+handshake on every run.
+
+The old HTTPS path is dead and should not be revived: the cached
+`x-access-token` credential authenticates as the user and the REST API even
+reports `push: true` (that field reflects the USER's permissions, not the
+token's), but the token is read-scoped — every push returned 403. If SSH auth
+ever breaks, generate a new key and add the PUBLIC half at
+github.com/settings/ssh/new (`scripts/add_ssh_key_to_github.ps1` copies it to
+the clipboard and opens the page); do not go back to token auth.
+
 ## Standing constraints (do not break)
 
 - **Never let a test write the real DB.** `tests/conftest.py` isolates pytest,

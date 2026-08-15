@@ -179,8 +179,15 @@ def main() -> None:
                          "origin/main..HEAD"], capture_output=True, text=True, timeout=30)
     ahead = (r2.stdout or "0").strip()
     ok("git", f"{ahead} commits unpushed" + (f", {len(dirty)} dirty files" if dirty else ", tree clean"))
-    if int(ahead or 0) > 0:
-        print("       (push still blocked by credential — bundle on Drive covers loss)")
+    # Push path: SSH key (~/.ssh/id_ed25519_github). Verify it still
+    # authenticates — a broken push path is invisible until you need it.
+    ssh_test = subprocess.run(
+        ["ssh", "-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=no",
+         "-T", "git@github.com"], capture_output=True, text=True, timeout=45)
+    if "successfully authenticated" in (ssh_test.stderr + ssh_test.stdout):
+        ok("github push path (SSH)")
+    else:
+        bad("github push path (SSH)", (ssh_test.stderr or "no response")[:120])
 
     # 9. Recent server-log errors
     log = ROOT / "storage" / "logs" / "api_server.log"
