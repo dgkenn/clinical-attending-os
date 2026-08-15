@@ -340,6 +340,12 @@ def initialize_database() -> None:
         """)
         _ensure_column(db, "kp_catalog", "car_safe", "INTEGER DEFAULT 0")
         _ensure_column(db, "kp_catalog", "times_seen", "INTEGER DEFAULT 0")
+        # Corpus-verification status from the two-pass grounding audit:
+        #   1 = fact's content confirmed against the corpus (open retrieval OR
+        #       its own cited page)  0 = no supporting page found anywhere.
+        # Tutors surface unverified facts with a caveat instead of teaching
+        # them as sourced truth.
+        _ensure_column(db, "kp_catalog", "verified", "INTEGER DEFAULT 1")
 
 
 _CRITICAL_CARE_KEYWORDS = (
@@ -557,8 +563,8 @@ def seed_kp_catalog(path: str) -> dict[str, int]:
             db.execute(
                 """INSERT INTO kp_catalog(id, topic, domain, discipline, stem, answer,
                        rationale, bloom, source, confusable_with,
-                       tier, category, is_critical_care, car_safe, added_at)
-                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                       tier, category, is_critical_care, car_safe, verified, added_at)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                    ON CONFLICT(id) DO UPDATE SET
                        topic=excluded.topic,
                        domain=excluded.domain,
@@ -572,7 +578,8 @@ def seed_kp_catalog(path: str) -> dict[str, int]:
                        tier=excluded.tier,
                        category=excluded.category,
                        is_critical_care=excluded.is_critical_care,
-                       car_safe=excluded.car_safe""",
+                       car_safe=excluded.car_safe,
+                       verified=excluded.verified""",
                 (
                     kp_id, topic, domain, discipline, stem,
                     answer_str,
@@ -580,7 +587,8 @@ def seed_kp_catalog(path: str) -> dict[str, int]:
                     str(entry.get("bloom", "")),
                     source_json,
                     str(entry.get("confusable_with", "")),
-                    tier, category, is_critical_care, car_safe, ts,
+                    tier, category, is_critical_care, car_safe,
+                    int(entry.get("verified", 1)), ts,
                 ),
             )
         kps_count += 1

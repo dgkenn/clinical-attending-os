@@ -1409,7 +1409,7 @@ def get_kp_to_study(
             f"""
             SELECT kp.id, kp.topic, kp.stem, kp.answer, kp.rationale,
                    kp.bloom, kp.source, kp.discipline, kp.tier,
-                   kp.category, kp.is_critical_care, kp.car_safe
+                   kp.category, kp.is_critical_care, kp.car_safe, kp.verified
             FROM kp_catalog kp
             LEFT JOIN knowledge_points kpp
                    ON kpp.topic = kp.topic AND kpp.point = kp.stem
@@ -1458,6 +1458,10 @@ def get_kp_to_study(
             "category": r["category"],
             "is_critical_care": bool(r["is_critical_care"]),
             "car_safe": bool(r["car_safe"]),
+            # 0 = the grounding audit found NO corpus page supporting this fact.
+            # Teach it with a caveat ("not verified against the library — worth
+            # double-checking") rather than as sourced truth.
+            "verified": bool(r["verified"]),
         }
         for r in rows
     ]

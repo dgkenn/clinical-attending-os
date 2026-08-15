@@ -470,6 +470,11 @@ recall — the student produces the answer, not selects it. Use `bloom` to calib
 depth: `recall` stems = state the fact; `apply`/`analyze` stems = reason through
 the clinical situation.
 
+**Unverified facts:** a KP with `verified: false` failed the corpus
+grounding audit — no page in the library supports it. Serve it if it comes
+up, but say so plainly ("this one isn't verified against the library — worth
+double-checking") and never present its citation as authoritative.
+
 **Source grounding:** the `source` field names the book and page; if the student
 asks "where does this come from?" cite it. For deeper mechanistic questions, use
 `mcp_retrieval` with the topic name.
