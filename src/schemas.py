@@ -456,13 +456,17 @@ class SubmitDosingAnswerRequest(BaseModel):
 
 class CarAlsoCovered(BaseModel):
     """An ADDITIONAL fact the same open-ended verbal answer covered (or
-    conspicuously missed). Open-ended spoken prompts ("talk me through the
-    reversible causes of PEA") routinely resolve several knowledge points in
-    one breath — each deserves its own credit and its own schedule."""
+    conspicuously missed), OR a misconception it revealed. Open-ended spoken
+    prompts routinely resolve several knowledge points in one breath — each
+    deserves its own credit, its own error type, and its own schedule."""
     point: str
     topic: str = ""  # defaults to the main answered.topic
     correct: bool = True
     confidence: int = 3
+    # For misconceptions caught mid-ramble ("morphine is renally cleared"):
+    # correct=false with the point phrased as the CORRECTED fact, and the
+    # mistake_type that fits (mechanism, drug_dosing, ...).
+    mistake_type: MistakeType = "other"
 
 
 class CarAnsweredInput(BaseModel):

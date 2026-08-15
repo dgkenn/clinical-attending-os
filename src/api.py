@@ -630,7 +630,8 @@ def car_next(req: CarNextRequest) -> dict:
                 r_extra = _submit_knowledge_points(
                     (extra.topic or a.topic),
                     [{"point": extra.point, "correct": extra.correct,
-                      "confidence": extra.confidence, "mistake_type": a.mistake_type}],
+                      "confidence": extra.confidence,
+                      "mistake_type": extra.mistake_type or a.mistake_type}],
                 )
                 recorded.setdefault("also_recorded", []).append(
                     {"point": extra.point[:80], "ok": r_extra.get("ok", False)})
