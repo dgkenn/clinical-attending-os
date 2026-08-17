@@ -327,6 +327,67 @@ def _apply_cross_encoder(query: str, candidates: list[dict[str, Any]], limit: in
         c["reranker_score"] = score
 
 
+# Deliberately modest: enough to lift a treatment passage past a same-topic
+# checklist, not enough to override vector/BM25 relevance and pull in an
+# actionable passage about a different disease.
+_ACTIONABILITY_WEIGHT = 0.12
+# Enough to drop a pure reference list below real content, not enough to bury
+# a genuine passage that happens to carry citations.
+_CITATION_PENALTY = 0.20
+
+_MANAGEMENT_INTENT = re.compile(
+    r'\b(management|manage|treat|treatment|therapy|initial|first[- ]line|'
+    r'next step|what do you (?:do|give)|how do you treat|dose|dosing|'
+    r'resuscitat|stabiliz|stabilis)\w*', re.I,
+)
+
+# What "saying what to do" looks like: a dose, a route, or an imperative
+# clinical action. Counted as a density so a long passage that mentions one
+# drug in passing does not outrank a genuine treatment paragraph.
+_ACTION_SIGNAL = re.compile(
+    r'\b(\d+\s*(?:mg|mcg|g|units?|mL|mEq)(?:/kg)?|'
+    r'IV|IM|PO|subcutaneous|infusion|bolus|drip|'
+    r'start|give|administer|load|titrate|initiate|begin|'
+    r'first[- ]line|indicated|contraindicated)\b', re.I,
+)
+
+
+# A numbered journal citation: "6. Chioncel O, Mebazaa A, Maggioni AP, et al."
+_CITATION = re.compile(r'\d{1,3}\.\s+[A-Z][a-z]+ [A-Z]{1,3},')
+
+
+def _has_management_intent(query: str) -> bool:
+    return bool(_MANAGEMENT_INTENT.search(query or ""))
+
+
+def _citation_density(text: str) -> float:
+    """Fraction of a passage that is bibliography rather than teaching content.
+
+    A reference list ranked FIRST for "heart failure exacerbation management"
+    ("6. Chioncel O, Mebazaa A, Maggioni AP, et al. Acute heart failure...") —
+    it matches every query term while teaching nothing.
+
+    This is a PENALTY, not a filter, and it scales with density: many chunks
+    legitimately end with a citation or two after real content, and dropping
+    those would delete teaching material. Only a passage that is mostly
+    citations is pushed down, and even then it stays retrievable.
+    """
+    t = text or ""
+    if len(t) < 80:
+        return 0.0
+    # ~60 chars is a typical citation; compare that span against the passage.
+    return min(1.0, len(_CITATION.findall(t)) * 60.0 / len(t))
+
+
+def _actionability(text: str) -> float:
+    """Density of do-this signal in a passage, roughly per 100 words."""
+    t = text or ""
+    if not t.strip():
+        return 0.0
+    words = max(1, len(t.split()))
+    return 100.0 * len(_ACTION_SIGNAL.findall(t)) / words
+
+
 def rerank(
     query: str,
     candidates: list[dict[str, Any]],
@@ -374,6 +435,31 @@ def rerank(
             + norms["mode_bonus"][i] * weights["mode_bonus"]
             + c["high_yield"] * weights["high_yield"]
         )
+
+    # When the question asks what to DO, prefer passages that say what to do.
+    #
+    # "STEMI initial management" ranked a chest-pain intake checklist ("Details
+    # of pain: onset, site, nature") above "start heparin drip, aspirin load,
+    # and plavix or brilinta load". Both are topically about chest pain; only
+    # one answers a management question. Intake checklists and
+    # risk-stratification tables are lexically rich and score well on every
+    # other component, so without this they crowd out the actual treatment
+    # steps on exactly the queries where those matter most.
+    #
+    # Applied ONLY to management-intent queries — for "differential of chest
+    # pain" the checklist is genuinely the better passage.
+    if _has_management_intent(query):
+        act = _minmax([_actionability(c.get("text", "")) for c in candidates])
+        for i, c in enumerate(candidates):
+            c["actionability"] = act[i]
+            c["final_score"] += act[i] * _ACTIONABILITY_WEIGHT
+
+    # Push bibliography down, proportionally to how much of it is bibliography.
+    for c in candidates:
+        density = _citation_density(c.get("text", ""))
+        if density > 0.25:
+            c["citation_density"] = density
+            c["final_score"] -= density * _CITATION_PENALTY
 
     initially_ranked = sorted(candidates, key=lambda x: x["final_score"], reverse=True)
     if use_cross_encoder:

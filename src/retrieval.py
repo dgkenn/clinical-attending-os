@@ -13,7 +13,62 @@ from .schemas import SourceChunk
 from .synonyms import expand_with_synonyms
 
 
+# Query expansions are RETRIEVAL HINTS, not clinical claims: they widen which
+# passages are considered, and the tutor still teaches only from what comes
+# back. They matter because the corpus indexes a topic under the vocabulary its
+# authors used, which is often not the vocabulary a question uses — "STEMI
+# initial management" never reached the MGH Housestaff Manual's "Acute Coronary
+# Syndrome" section, because no chunk of it says "STEMI".
+#
+# The original table was written for the anaesthesia/ICU use case and had no
+# entry for STEMI, ACS, chest pain, heart failure, pneumonia, COPD, delirium,
+# DKA, PE, stroke, or alcohol withdrawal — i.e. most of intern-year medicine.
 QUERY_EXPANSIONS = {
+    # --- core internal medicine (intern year) ---
+    "stemi": "ST-segment elevation myocardial infarction acute coronary syndrome ACS "
+             "aspirin heparin ticagrelor clopidogrel percutaneous coronary intervention "
+             "PCI reperfusion fibrinolytic troponin ECG cardiology",
+    "nstemi": "non-ST-segment elevation myocardial infarction acute coronary syndrome ACS "
+              "aspirin heparin antiplatelet risk stratification TIMI GRACE troponin",
+    "acs": "acute coronary syndrome STEMI NSTEMI unstable angina myocardial infarction "
+           "aspirin heparin antiplatelet troponin ECG ischemia",
+    "acute coronary": "acute coronary syndrome STEMI NSTEMI myocardial infarction aspirin "
+                      "heparin antiplatelet troponin ECG",
+    "myocardial infarction": "MI STEMI NSTEMI acute coronary syndrome ischemia troponin "
+                             "ECG aspirin heparin reperfusion",
+    "chest pain": "acute coronary syndrome ACS STEMI angina aortic dissection pulmonary "
+                  "embolism pericarditis troponin ECG differential",
+    "heart failure": "CHF acute decompensated heart failure pulmonary edema diuresis "
+                     "furosemide ejection fraction BNP preload afterload volume overload",
+    "pneumonia": "community-acquired pneumonia CAP ceftriaxone azithromycin CURB-65 "
+                 "consolidation sputum antibiotics hospital-acquired",
+    "copd": "chronic obstructive pulmonary disease exacerbation albuterol ipratropium "
+            "steroids bronchodilator noninvasive ventilation BiPAP hypercapnia",
+    "asthma": "status asthmaticus bronchospasm albuterol steroids magnesium peak flow "
+              "wheezing bronchodilator",
+    "delirium": "altered mental status confusion reversible causes infection medications "
+                "reorientation antipsychotic haloperidol nonpharmacologic CAM-ICU",
+    "alcohol withdrawal": "CIWA benzodiazepine lorazepam diazepam delirium tremens "
+                          "seizure thiamine banana bag",
+    "dka": "diabetic ketoacidosis insulin infusion potassium anion gap fluids bicarbonate "
+           "hyperglycemia ketones",
+    "diabetic ketoacidosis": "DKA insulin infusion potassium anion gap fluids hyperglycemia ketones",
+    "pulmonary embolism": "PE venous thromboembolism anticoagulation heparin DOAC Wells "
+                          "score CT pulmonary angiography thrombolytics right heart strain",
+    "dvt": "deep vein thrombosis venous thromboembolism anticoagulation heparin DOAC "
+           "ultrasound Wells score",
+    "anaphylaxis": "epinephrine intramuscular airway angioedema antihistamine steroids "
+                   "hypotension biphasic reaction",
+    "hypertensive emergency": "malignant hypertension end-organ damage nicardipine labetalol "
+                              "blood pressure lowering rate",
+    "seizure": "status epilepticus benzodiazepine lorazepam levetiracetam phenytoin airway "
+               "postictal",
+    "stroke": "cerebrovascular accident ischemic hemorrhagic tPA thrombectomy NIHSS "
+              "time last known well CT head",
+    "pancreatitis": "lipase fluids Ranson BISAP gallstone alcohol necrotizing pain control",
+    "cellulitis": "skin soft tissue infection cefazolin vancomycin MRSA erysipelas margins",
+    "uti": "urinary tract infection pyelonephritis ceftriaxone nitrofurantoin urinalysis culture",
+    "urinary tract infection": "UTI pyelonephritis ceftriaxone nitrofurantoin urinalysis culture",
     "hypoxemia": "desaturation low SpO2 oxygenation V/Q mismatch shunt hypoventilation diffusion atelectasis",
     "hypotension": "shock hypovolemia sepsis cardiogenic obstructive distributive fluids vasopressor",
     "hyperkalemia": "high potassium ECG changes calcium gluconate insulin dextrose albuterol dialysis",
@@ -263,7 +318,26 @@ def _chunk_term_index(path_str: str, mtime_ns: int, size: int) -> list[tuple[dic
     out: list[tuple[dict[str, Any], frozenset[str]]] = []
     for row in rows:
         text = row.get("search_text") or row.get("text", "")
-        terms_set = frozenset(t.lower() for t in _TERM_RE.findall(text))
+        meta = row.get("metadata") or {}
+        # Add the SOURCE DOCUMENT's identity to the chunk's searchable terms.
+        #
+        # Chunking splits an article into pieces that no longer name their own
+        # subject: the "Treatment / Management" chunks of the StatPearls STEMI
+        # article open mid-sentence ("elevation, is proportional with infarct
+        # size...") and say "STEMI" nowhere — only 3 of 21 carried the word at
+        # all. The management content was therefore unreachable by a query
+        # naming the disease, which is exactly how a reader asks for it.
+        #
+        # The document title is a legitimate relevance signal for every chunk
+        # taken from it, and this costs one extra tokenization at load time —
+        # no re-embedding and no reindex, since this index is built from
+        # chunks.jsonl per process.
+        doc_ident = " ".join(
+            str(meta.get(k, "")) for k in ("source_name", "book", "section", "topic_tags")
+        )
+        terms_set = frozenset(
+            t.lower() for t in _TERM_RE.findall(text + " " + doc_ident)
+        )
         out.append((row, terms_set))
     return out
 
