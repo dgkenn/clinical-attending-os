@@ -115,7 +115,7 @@
     "/answer": {
       "post": {
         "summary": "Answer",
-        "description": "Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()\ncall). Do NOT also call /submit_answer_fsrs for the same answer: both paths\nend in log_attempt() -> update_mastery_score(), so the pair writes two\nattempt rows and advances FSRS twice. They are alternatives, not a pair\n(a same-answer duplicate within 3 minutes is now dropped server-side as a\nbackstop, but don't rely on it).",
+        "description": "Mirrors the MCP tool `submit_study_answer` exactly (same record_evaluated_answer()\ncall). Do NOT also call /submit_answer_fsrs for the same answer: both paths\nend in log_attempt() -> update_mastery_score(), so the pair writes two\nattempt rows and advances FSRS twice.",
         "operationId": "submit_study_answer",
         "requestBody": {
           "content": {
@@ -1693,7 +1693,7 @@
     "/car/next": {
       "post": {
         "summary": "Car Next",
-        "description": "ONE round trip per hands-free item: records the answer just given AND\nreturns the next ear-friendly item.\n\nLatency, not backend speed, is what kills car mode. The backend answers a\ncar-mode query in ~40 ms over the network, but each separate tool call costs\na full model round trip (seconds). Doing this the granular way \u2014\nget_due_knowledge_points -> submit_knowledge_points -> submit_answer ->\nget_kp_to_study \u2014 is four of those per question. This collapses them to one.\n\nIt also makes the always-submit rule structural rather than advisory: the\nanswer is recorded by the same call that fetches the next item, so a tutor\nthat keeps asking questions cannot silently stop recording them.\n\nSelection order mirrors the car-mode rules: overdue knowledge points first\n(they decay), then unseen catalog KPs, then a dosing recall drill.",
+        "description": "ONE round trip per hands-free item: records the answer just given AND\nreturns the next ear-friendly item.\n\nLatency, not backend speed, is what kills car mode. The backend answers a\ncar-mode query in ~40 ms over the network, but each separate tool call costs\na full model round trip (seconds).",
         "operationId": "car_next",
         "requestBody": {
           "content": {

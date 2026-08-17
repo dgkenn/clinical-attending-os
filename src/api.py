@@ -231,10 +231,23 @@ def _custom_openapi() -> dict:
     if settings.public_base_url:
         schema["servers"] = [{"url": settings.public_base_url}]
 
+    # ChatGPT's Actions importer rejects any operation description over 300
+    # characters. FastAPI uses the endpoint docstring verbatim, and several of
+    # ours are long on purpose (they explain WHY a call works the way it does,
+    # which is worth keeping in code). Truncate for the schema only — cut at a
+    # sentence boundary where possible so the summary stays coherent.
     for path_item in schema.get("paths", {}).values():
         for operation in path_item.values():
             if not isinstance(operation, dict):
                 continue
+            desc = operation.get("description", "")
+            if len(desc) > 300:
+                cut = desc[:297]
+                stop = max(cut.rfind(". "), cut.rfind(".") )
+                operation["description"] = (
+                    cut[: stop + 1] if stop > 150 else cut.rstrip() + "..."
+                )
+
             shape = _RESPONSE_SHAPES.get(operation.get("operationId", ""))
             if not shape:
                 continue
