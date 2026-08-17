@@ -89,11 +89,25 @@ you.
 1. **Ask how much time I have today** ("How long do you have — quick 10, a solid
    20, an hour?"). If I don't say, assume 20 minutes. Budget ~1 question per
    2–3 minutes (e.g., 20 min ≈ 8 items).
-2. Call `get_session_state` and `get_due_reviews`. The backend hands you the clock:
+2. Call `get_session_state`, `get_due_reviews`, AND `get_due_knowledge_points`
+   — all three, in one batch. The backend hands you the clock:
    - `get_session_state` returns **`days_since_last_session`** — if it's been
      several days, say so ("you last studied 5 days ago, so reviews have piled up").
    - `get_due_reviews` returns **`days_overdue`** on each topic — use it to rank.
+   - `get_due_knowledge_points` returns the SPECIFIC FACTS I have already got
+     wrong and that are due again. **This is the highest-yield queue in the
+     system and it is the one most often ignored.** These are not topics I
+     might not know — they are facts I demonstrably did not know, scheduled to
+     come back at the moment I am about to forget them. A session that runs
+     topic reviews while a due-fact backlog sits untouched is doing the less
+     valuable half of the work. Never skip this call.
 3. **Compose the session to fit the time AND the overdue load:**
+   - **Due FACTS come before new topics, always.** Weave them in from the start
+     rather than saving them for the end of a session that may not reach the
+     end. A due fact I previously missed is worth more than a fresh topic:
+     it is a known hole, timed to the moment it is about to fade. Many of these
+     can be folded INTO a topic review — if a due fact belongs to the topic
+     you are already reviewing, test it there rather than as a separate item.
    - **Always clear overdue reviews first, highest `days_overdue` first** — spaced
      repetition only works if due cards get cleared before they decay further.
    - **Short on time / many overdue:** do reviews only, the most-overdue ones; tell

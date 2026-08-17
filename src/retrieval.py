@@ -379,6 +379,56 @@ def retrieval_confidence(results: list[SourceChunk]) -> str:
     return "low"
 
 
+# A leading "Section: <title>" header. The title runs to the first period, or to
+# the end of the string when the chunk is nothing BUT a header.
+_SECTION_HEADER = re.compile(r'^\s*Section:\s*[^.]*(?:\.\s*)?', re.I)
+
+
+# "Source: StatPearls NCBI Bookshelf NBK ID: NBK545267 URL: https://... Topic: X"
+# — ingest prepended this to many StatPearls chunks. It is pure provenance.
+_CITATION_HEADER = re.compile(
+    r'^\s*(?:Section:\s*)?(?:Source:\s*)?[\w ]{0,40}?'
+    r'NCBI Bookshelf\s*NBK ID:\s*\w+\s*URL:\s*\S+\s*(?:Topic:\s*)?',
+    re.I,
+)
+
+
+def _strip_citation_header(text: str) -> str:
+    """Remove a leading bibliographic header from a chunk body."""
+    t = (text or "").lstrip()
+    # Collapse the doubled "Section: Source: StatPearls. Source: StatPearls"
+    # that ingest produced before the real header.
+    t = re.sub(r'^\s*Section:\s*Source:\s*[\w ]{0,40}?\.\s*', '', t, flags=re.I)
+    stripped = _CITATION_HEADER.sub('', t).lstrip()
+    # Never strip a chunk down to nothing — if the header WAS the whole chunk,
+    # keep the original and let _is_contentless decide.
+    return stripped if len(stripped) >= 40 else t
+
+
+def _is_contentless(text: str) -> bool:
+    """True for chunks that are pure section headings with no teaching content.
+
+    Ingest emitted ~1,800 of these ("Section: Atrial Fibrillation & Flutter",
+    "Section: Summary of EKG Changes"). They are actively harmful rather than
+    merely useless: BM25 normalises by document length, so a 38-character
+    heading whose every token matches the query outscores the real passage —
+    one of these took a top-3 slot on "afib RVR rate control" with bm25 18.7,
+    displacing content that could actually be taught from.
+
+    Short chunks containing a digit are kept: dose and threshold lines
+    ("Propofol 1.5-2 mg/kg IV") are legitimately terse.
+    """
+    t = (text or "").strip()
+    if not t:
+        return True
+    body = _SECTION_HEADER.sub("", t).strip()
+    if not body:
+        return True
+    if any(ch.isdigit() for ch in body):
+        return False
+    return len(body) < 30
+
+
 def hybrid_search(
     query: str,
     mode: str = "broad_explain",
@@ -423,6 +473,8 @@ def hybrid_search(
     )
     dedup: dict[str, dict[str, Any]] = {}
     for r in raw:
+        if _is_contentless(r.get("text", "")):
+            continue
         dedup.setdefault(r["id"], r)
         if r.get("retrieval_method") != dedup[r["id"]].get("retrieval_method"):
             dedup[r["id"]]["retrieval_method"] = "hybrid"
@@ -432,7 +484,11 @@ def hybrid_search(
         meta = r.get("metadata", {})
         tags = [t for t in meta.get("topic_tags", "").split(",") if t]
         source_name = meta.get("source_name") or meta.get("book", "")
-        excerpt = r["text"][:1000]
+        # Trim the bibliographic header before the 1000-char window, so the
+        # excerpt the tutor teaches from opens on medicine rather than on
+        # "Source: StatPearls NCBI Bookshelf NBK ID: NBK545267 URL: ...".
+        # Provenance is preserved — it travels in source_name/book, not the body.
+        excerpt = _strip_citation_header(r["text"])[:1000]
         results.append(
             SourceChunk(
                 text=excerpt,

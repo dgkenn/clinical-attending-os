@@ -268,6 +268,34 @@ def main() -> None:
         except Exception as exc:
             bad("recording health", str(exc)[:150])
 
+    # 8b-ii. Is the fact-level queue actually being CONSUMED?
+    #
+    # Capture, scheduling and serving are three separate things, and only the
+    # first two are self-evident. The queue can be perfectly maintained while
+    # the tutor never draws from it: 142 due facts sat unserved through a full
+    # session that ran topic reviews instead. Nothing errors — the backlog just
+    # grows, and the most valuable material (facts already known to be missed)
+    # is the part that never gets re-asked.
+    if db_path.exists():
+        try:
+            con = sqlite3.connect(str(db_path))
+            due_kp = con.execute(
+                "SELECT COUNT(*) FROM knowledge_points "
+                "WHERE date(next_review_date) <= date('now')").fetchone()[0]
+            weak_kp = con.execute(
+                "SELECT COUNT(*) FROM knowledge_points WHERE status='weak'").fetchone()[0]
+            served = con.execute(
+                "SELECT COUNT(*) FROM knowledge_points "
+                "WHERE date(updated_at) = (SELECT date(MAX(date)) FROM question_attempts)"
+            ).fetchone()[0]
+            con.close()
+            detail = f"{due_kp} facts due, {weak_kp} weak, {served} touched last session"
+            # A big backlog with nothing touched last session means the tutor is
+            # not calling get_due_knowledge_points.
+            (bad if (due_kp > 40 and served == 0) else ok)("fact queue", detail)
+        except Exception as exc:
+            bad("fact queue", str(exc)[:150])
+
     # 8c. What the tutor actually called (per-tool-name log)
     tool_log = ROOT / "storage" / "logs" / "tool_calls.log"
     if tool_log.exists():

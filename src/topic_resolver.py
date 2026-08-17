@@ -24,6 +24,7 @@ vocabulary over time.
 """
 from __future__ import annotations
 
+import re
 from functools import lru_cache
 
 from .student_model import conn, initialize_database
@@ -75,6 +76,46 @@ def _curriculum_names() -> tuple[tuple[str, str], ...]:
     return _curriculum_names_cached(n)
 
 
+# Words that FRAME a topic without narrowing it. "Approach to Chest Pain" is
+# the same subject as "Chest pain"; "Hypoxemia during OLV" is not the same
+# subject as "Hypoxemia".
+_FRAMING = re.compile(
+    r'^(approach to|evaluation of|assessment of|management of|overview of|'
+    r'introduction to|principles of|diagnosis and management of|'
+    r'recognition of|the)\s+|'
+    r'\s*:\s*(diagnosis and management|management|overview|basics|'
+    r'pathophysiology and classification|classification|principles)\s*$',
+    re.I,
+)
+
+
+def _strip_framing(s: str) -> str:
+    prev = None
+    out = s
+    while prev != out:            # a name may carry both a prefix and a suffix
+        prev = out
+        out = _FRAMING.sub("", out).strip()
+    return out
+
+
+def _same_subject(q: str, norm: str) -> bool:
+    """True when containment is only across framing words, not new clinical scope.
+
+    Plain unique-containment was too permissive: "Hypoxemia" is contained in
+    exactly one blueprint name — "Hypoxemia during OLV: diagnosis and
+    management" — so six attempts of general intern hypoxemia would have been
+    filed under a thoracic-anaesthesia one-lung-ventilation topic. The extra
+    words there ("during OLV") change the subject; the extra words in "Approach
+    to Chest Pain" do not.
+
+    So strip known framing phrases from both sides and require what remains to
+    match exactly. Anything that still differs is a genuinely different (and
+    usually narrower) topic, and is left unresolved — a wrong merge is worse
+    than a missed one.
+    """
+    return _strip_framing(q) == _strip_framing(norm)
+
+
 def resolve_topic(name: str) -> tuple[str, bool]:
     """Return (canonical_or_original_name, was_resolved).
 
@@ -101,9 +142,12 @@ def resolve_topic(name: str) -> tuple[str, bool]:
             if norm == q:
                 return orig, True
 
-    # 3. unique containment (either direction, min length 4 to avoid noise)
+    # 3. unique containment, but ONLY across framing words (min length 4)
     if len(q) >= 4:
-        contains = [orig for norm, orig in names if q in norm or norm in q]
+        contains = [
+            orig for norm, orig in names
+            if (q in norm or norm in q) and _same_subject(q, norm)
+        ]
         if len(contains) == 1:
             return contains[0], True
 
