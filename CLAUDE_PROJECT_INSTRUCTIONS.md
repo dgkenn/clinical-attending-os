@@ -169,10 +169,12 @@ topic. This is how "I know the ARDS diagnosis but not that low TV is the mortali
 move" gets remembered and re-drilled precisely.
 
 **Recording (do this every question, especially compound ones):**
-- After grading, call **`submit_knowledge_points(topic, points=[...])`** where each
+- Pass them **inline on `submit_answer`** as `knowledge_points=[...]`, where each
   point is `{"point": "<canonical fact, stated correctly>", "correct": true/false,
   "confidence": 1–5, "mistake_type": "recall"|...}`. One entry per discrete fact the
-  question tested. This is in ADDITION to the topic-level `submit_answer`.
+  question tested. Same call as the topic-level record, so the two layers cannot
+  drift apart. (`submit_knowledge_points` still exists for facts that surface
+  outside a graded answer.)
 - Decompose compound questions into their points. On "name the 4 shock types + a
   feature of each," that's several points — record each with **its own correctness
   and its own confidence** (see Confidence section). A point I nail confidently gets
@@ -253,17 +255,30 @@ If `hours_since_last_session` is small (I studied earlier today) or `attempts_to
    grade as `correct` / `partial` / `incorrect`, and choose a
    `mistake_type` (recall, mechanism, drug_dosing, prioritization, monitoring,
    crisis_algorithm, failure_to_escalate, overconfident_wrong, other).
-4. **Call `submit_answer`** with: `topic`, **`question` (the exact question you
-   asked — required)**, `user_answer`, `is_correct` (true only if
-   fully correct), `confidence_reported` (my 1–5), `teach_back_quality` (0–1, how
-   well I explained the mechanism), `transfer_success` (did I apply it to a new
-   context), `mistake_type`, and `subtopic` if relevant. Do NOT also call
-   `submit_study_answer` for the same answer — they are alternatives, never a
-   pair (see rule 2).
-4c. **Record each knowledge point.** Call `submit_knowledge_points(topic, points=[…])`
-   with one entry per discrete fact the question tested — each with its own `correct`
-   and its own `confidence` (1–5). This is how the system tracks specific facts and
-   schedules each on its own (see Knowledge points). For a single quick miss,
+4. **Call `submit_answer` — ONE call that records both layers.** Pass: `topic`,
+   **`question` (the exact question you asked — required)**, `user_answer`,
+   `is_correct` (true only if fully correct), `confidence_reported` (my 1–5),
+   `teach_back_quality` (0–1, how well I explained the mechanism),
+   `transfer_success` (did I apply it to a new context), `mistake_type`,
+   `subtopic` if relevant, and:
+
+   **`knowledge_points=[…]` — one entry per discrete fact the question tested**,
+   each with its own `point`, `correct`, and `confidence` (1–5). This is the
+   fact-level layer: it is how the system tracks specific facts and schedules
+   each on its own (see Knowledge points).
+
+   **Never send `knowledge_points=[]` for a substantive question.** Every real
+   question tests at least one fact. Omitting them means that question taught
+   the system nothing at the fact level — the layer that drives targeted
+   review. Check the response: `knowledge_points_recorded` tells you how many
+   landed. If it comes back 0 when you sent some, say so rather than moving on.
+
+   Do NOT also call `submit_study_answer` for the same answer — they are
+   alternatives, never a pair (see rule 2). `submit_knowledge_points` remains
+   available as a separate call for facts surfaced outside a graded answer, but
+   for a graded answer prefer the inline form: two separate calls can silently
+   become one when the second is forgotten, and the fact layer vanishes with no
+   error anywhere. For a single quick miss,
    `log_missed_topic(topic, gap_note="<the exact fact>")` is the shorthand.
 5. **Teach the WHY in 1–2 sentences** using the retrieved sources — mechanism,
    physiology, or the consequence of getting it wrong. Not just the fact.

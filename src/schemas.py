@@ -384,6 +384,19 @@ class ProgressResponse(BaseModel):
 # identical — see CUSTOM_GPT_INSTRUCTIONS.md / CLAUDE_PROJECT_INSTRUCTIONS.md.
 # ---------------------------------------------------------------------------
 
+class KnowledgePointInput(BaseModel):
+    point: str
+    correct: bool
+    confidence: int | None = None
+    mistake_type: MistakeType = "other"
+    # Gap-triage probe: one CONFIDENT correct parks the fact as known for 60
+    # days instead of requiring the usual 2-3 touches. Without this field
+    # declared, Pydantic silently dropped it from HTTP requests and every
+    # ChatGPT triage probe was recorded as an ordinary answer — the ambient
+    # triage speedup did not exist on that platform at all.
+    triage: bool = False
+
+
 class SubmitAnswerFSRSRequest(BaseModel):
     topic: str
     user_answer: str
@@ -399,19 +412,9 @@ class SubmitAnswerFSRSRequest(BaseModel):
     transfer_success: bool = False
     bloom_level: str = ""
     session_id: str | None = None
-
-
-class KnowledgePointInput(BaseModel):
-    point: str
-    correct: bool
-    confidence: int | None = None
-    mistake_type: MistakeType = "other"
-    # Gap-triage probe: one CONFIDENT correct parks the fact as known for 60
-    # days instead of requiring the usual 2-3 touches. Without this field
-    # declared, Pydantic silently dropped it from HTTP requests and every
-    # ChatGPT triage probe was recorded as an ordinary answer — the ambient
-    # triage speedup did not exist on that platform at all.
-    triage: bool = False
+    # Fact-level layer, recorded in the same call. A separate follow-up call is
+    # forgettable — one full session logged 13 attempts and 0 knowledge points.
+    knowledge_points: list[KnowledgePointInput] = Field(default_factory=list)
 
 
 class SubmitKnowledgePointsRequest(BaseModel):

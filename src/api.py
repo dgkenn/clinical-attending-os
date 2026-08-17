@@ -511,6 +511,7 @@ def submit_answer_fsrs(req: SubmitAnswerFSRSRequest) -> dict:
         transfer_success=req.transfer_success,
         bloom_level=req.bloom_level,
         session_id=req.session_id,
+        knowledge_points=[p.model_dump() for p in req.knowledge_points],
     )
 
 

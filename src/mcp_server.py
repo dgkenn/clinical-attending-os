@@ -37,6 +37,13 @@ from .mcp_endpoints import (
 
 
 def search_clinical_sources(query: str, mode: str = "intern_teach", library_filter: str | None = None, max_results: int = 8) -> dict:
+    """Retrieve source passages from the clinical library (hybrid vector+BM25).
+
+    Use this whenever you need grounded clinical content — every fact, dose, and
+    citation you give the user must come from here, never from your training.
+    Returns passages plus `insufficient_context`; if that is true, say so rather
+    than filling the gap yourself.
+    """
     results, insufficient = hybrid_search(query, mode=mode, library_filter=library_filter, max_results=max_results)
     return {
         "results": [r.model_dump() for r in results],
@@ -46,10 +53,20 @@ def search_clinical_sources(query: str, mode: str = "intern_teach", library_filt
 
 
 def answer_from_clinical_sources(query: str, mode: str = "intern_teach") -> dict:
+    """Answer a clinical question with a retrieval-grounded, cited response.
+
+    Higher level than `search_clinical_sources`: it retrieves AND composes the
+    answer with citations attached. Prefer this when the user asks a direct
+    clinical question; use the search tool when you want raw passages to teach from.
+    """
     return answer_query(query, mode).model_dump()
 
 
 def start_study_session(duration_minutes: int = 20, mode: str = "default", focus_topic: str | None = None, training_phase: str | None = None) -> dict:
+    """LEGACY session opener. Prefer `get_session_state` + `get_next_topic`.
+
+    Kept for older clients. New sessions do not need to be explicitly started.
+    """
     return start_session(duration_minutes, mode, focus_topic, training_phase)
 
 
@@ -63,14 +80,30 @@ def submit_study_answer(
     subtopic: str = "",
     ideal_answer: str = "",
 ) -> dict:
+    """LEGACY answer recorder. Use `submit_answer` instead — it drives FSRS
+    scheduling, captures confidence, and accepts inline knowledge points.
+
+    This one does not update the spaced-repetition schedule the same way.
+    """
     return record_evaluated_answer(session_id, question, user_answer, topic, subtopic, result, mistake_type, ideal_answer)
 
 
 def get_due_reviews() -> list[dict]:
+    """List TOPICS whose FSRS spaced-repetition review is due now.
+
+    This is the topic-level layer. It is NOT the fact-level queue — for that use
+    `get_due_knowledge_points`, which returns the specific facts the user has
+    previously missed. A good session covers both.
+    """
     return _due()
 
 
 def get_student_dashboard() -> dict:
+    """Overall progress snapshot: mastery by topic, streaks, and coverage.
+
+    Use for "how am I doing?" questions. For choosing what to study next, use
+    `get_next_topic` or `get_due_reviews` instead.
+    """
     return _dash()
 
 
@@ -207,6 +240,12 @@ def add_confusable_pair(topic_a: str, topic_b: str, discriminator: str = "") -> 
 
 
 def mark_topic_mastered_tool(topic: str, subtopic: str = "") -> dict:
+    """Force a topic to mastered status, pushing its next review far out.
+
+    Only when the user explicitly says they already know it. Do NOT call this
+    just because they answered correctly once — mastery is earned through the
+    normal FSRS schedule, and short-circuiting it hides real gaps.
+    """
     mark_topic_mastered(topic, subtopic)
     return {"ok": True, "knowledge_points_mastered": True}
 
@@ -413,8 +452,52 @@ def get_mistake_review(window_days: int = 30) -> dict:
 
 
 def set_default_training_phase_tool(default_training_phase: str) -> dict:
+    """Set the training phase that shapes question depth and framing
+    (e.g. 'intern_year', 'ca1'). Persists across sessions — change it only when
+    the user says their stage or rotation has actually changed.
+    """
     set_default_training_phase(default_training_phase)
     return {"ok": True, "default_training_phase": default_training_phase}
+
+
+def _log_tool_call(name: str, ok: bool, detail: str = "") -> None:
+    """Append one line per tool call to storage/logs/tool_calls.log.
+
+    The MCP transport log only records 'CallToolRequest' with no tool NAME, so
+    "which tools did the tutor actually call?" — the first question when a
+    session behaves oddly — was unanswerable after the fact. That gap cost a
+    real diagnosis: a session recorded 13 attempts but zero knowledge points,
+    and the logs could not distinguish "the tutor never called
+    submit_knowledge_points" from "the call failed".
+    """
+    try:
+        from pathlib import Path
+        from datetime import datetime, timezone
+        from .config import settings
+        log = Path(settings.log_dir) / "tool_calls.log"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).isoformat()[:19]
+        status = "ok" if ok else "ERROR"
+        with log.open("a", encoding="utf-8") as f:
+            f.write("\t".join([stamp, name, status, detail[:120]]) + "\n")
+    except Exception:
+        pass  # logging must never break a tool call
+
+
+def _logged(fn, name: str):
+    """Wrap a tool fn so every invocation is recorded by name."""
+    import functools
+
+    @functools.wraps(fn)
+    def wrapper(*a, **kw):
+        try:
+            result = fn(*a, **kw)
+            _log_tool_call(name, True)
+            return result
+        except Exception as exc:
+            _log_tool_call(name, False, str(exc))
+            raise
+    return wrapper
 
 
 def build_server():
@@ -435,41 +518,41 @@ def build_server():
 
     mcp = FastMCP("clinical-attending-os")
     # Legacy endpoints
-    mcp.tool()(search_clinical_sources)
-    mcp.tool()(answer_from_clinical_sources)
-    mcp.tool()(start_study_session)
-    mcp.tool()(submit_study_answer)
-    mcp.tool()(get_due_reviews)
-    mcp.tool()(get_student_dashboard)
-    mcp.tool()(log_missed_topic)
-    mcp.tool(name="submit_knowledge_points")(submit_knowledge_points)
-    mcp.tool(name="get_knowledge_points")(get_knowledge_points)
-    mcp.tool(name="get_due_knowledge_points")(get_due_knowledge_points)
-    mcp.tool(name="get_knowledge_gaps")(get_knowledge_gaps)
-    mcp.tool(name="get_illness_script")(get_illness_script)
-    mcp.tool(name="set_illness_script")(set_illness_script)
-    mcp.tool(name="get_contrastive_case")(get_contrastive_case)
-    mcp.tool(name="add_confusable_pair")(add_confusable_pair)
-    mcp.tool(name="mark_topic_mastered")(mark_topic_mastered_tool)
-    mcp.tool(name="set_default_training_phase")(set_default_training_phase_tool)
+    mcp.tool()(_logged(search_clinical_sources, "search_clinical_sources"))
+    mcp.tool()(_logged(answer_from_clinical_sources, "answer_from_clinical_sources"))
+    mcp.tool()(_logged(start_study_session, "start_study_session"))
+    mcp.tool()(_logged(submit_study_answer, "submit_study_answer"))
+    mcp.tool()(_logged(get_due_reviews, "get_due_reviews"))
+    mcp.tool()(_logged(get_student_dashboard, "get_student_dashboard"))
+    mcp.tool()(_logged(log_missed_topic, "log_missed_topic"))
+    mcp.tool(name="submit_knowledge_points")(_logged(submit_knowledge_points, "submit_knowledge_points"))
+    mcp.tool(name="get_knowledge_points")(_logged(get_knowledge_points, "get_knowledge_points"))
+    mcp.tool(name="get_due_knowledge_points")(_logged(get_due_knowledge_points, "get_due_knowledge_points"))
+    mcp.tool(name="get_knowledge_gaps")(_logged(get_knowledge_gaps, "get_knowledge_gaps"))
+    mcp.tool(name="get_illness_script")(_logged(get_illness_script, "get_illness_script"))
+    mcp.tool(name="set_illness_script")(_logged(set_illness_script, "set_illness_script"))
+    mcp.tool(name="get_contrastive_case")(_logged(get_contrastive_case, "get_contrastive_case"))
+    mcp.tool(name="add_confusable_pair")(_logged(add_confusable_pair, "add_confusable_pair"))
+    mcp.tool(name="mark_topic_mastered")(_logged(mark_topic_mastered_tool, "mark_topic_mastered"))
+    mcp.tool(name="set_default_training_phase")(_logged(set_default_training_phase_tool, "set_default_training_phase"))
     # Phase 1: New MCP endpoints
-    mcp.tool(name="mcp_retrieval")(mcp_retrieval)
-    mcp.tool(name="get_session_state")(get_session_state)
-    mcp.tool(name="get_next_topic")(get_next_topic)
-    mcp.tool(name="submit_answer")(submit_answer)
-    mcp.tool(name="get_mastery_gates")(get_mastery_gates)
-    mcp.tool(name="get_progress")(get_progress)
+    mcp.tool(name="mcp_retrieval")(_logged(mcp_retrieval, "mcp_retrieval"))
+    mcp.tool(name="get_session_state")(_logged(get_session_state, "get_session_state"))
+    mcp.tool(name="get_next_topic")(_logged(get_next_topic, "get_next_topic"))
+    mcp.tool(name="submit_answer")(_logged(submit_answer, "submit_answer"))
+    mcp.tool(name="get_mastery_gates")(_logged(get_mastery_gates, "get_mastery_gates"))
+    mcp.tool(name="get_progress")(_logged(get_progress, "get_progress"))
     # Curriculum coverage tools
-    mcp.tool(name="get_mastery_map")(get_mastery_map)
-    mcp.tool(name="get_calibration_report")(get_calibration_report)
-    mcp.tool(name="get_mistake_review")(get_mistake_review)
-    mcp.tool(name="car_next")(car_next)
-    mcp.tool(name="get_claude_instructions")(get_claude_instructions)
-    mcp.tool(name="set_medicine_weight")(set_medicine_weight_tool)
+    mcp.tool(name="get_mastery_map")(_logged(get_mastery_map, "get_mastery_map"))
+    mcp.tool(name="get_calibration_report")(_logged(get_calibration_report, "get_calibration_report"))
+    mcp.tool(name="get_mistake_review")(_logged(get_mistake_review, "get_mistake_review"))
+    mcp.tool(name="car_next")(_logged(car_next, "car_next"))
+    mcp.tool(name="get_claude_instructions")(_logged(get_claude_instructions, "get_claude_instructions"))
+    mcp.tool(name="set_medicine_weight")(_logged(set_medicine_weight_tool, "set_medicine_weight"))
     # Dosing-drill tools (CPU-only calc engine — no corpus/Chroma access)
-    mcp.tool(name="get_dosing_drill")(get_dosing_drill)
-    mcp.tool(name="submit_dosing_answer")(submit_dosing_answer)
-    mcp.tool(name="get_due_dosing_drills")(get_due_dosing_drills)
+    mcp.tool(name="get_dosing_drill")(_logged(get_dosing_drill, "get_dosing_drill"))
+    mcp.tool(name="submit_dosing_answer")(_logged(submit_dosing_answer, "submit_dosing_answer"))
+    mcp.tool(name="get_due_dosing_drills")(_logged(get_due_dosing_drills, "get_due_dosing_drills"))
 
     # Best-effort dosing rules seeding
     _dosing_blueprint = Path(__file__).parent.parent / "data" / "dosing_rules.json"
@@ -481,7 +564,7 @@ def build_server():
             print(f"[startup] dosing rules seed skipped: {_e}", flush=True)
 
     # Best-effort KP catalog seeding (file generated separately — may not exist yet)
-    mcp.tool(name="get_kp_to_study")(get_kp_to_study)
+    mcp.tool(name="get_kp_to_study")(_logged(get_kp_to_study, "get_kp_to_study"))
     _kp_catalog = Path(__file__).parent.parent / "data" / "kp_catalog.json"
     if _kp_catalog.exists():
         try:

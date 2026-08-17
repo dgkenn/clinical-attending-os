@@ -221,6 +221,76 @@ def main() -> None:
     else:
         bad("github push path (SSH)", (ssh_test.stderr or "no response")[:120])
 
+    # 8b. Recording health — is the tutor actually writing BOTH layers?
+    #
+    # A full 13-question session once recorded every topic-level attempt and
+    # zero knowledge points. Nothing errored; the fact-level layer (targeted
+    # review, ambient triage, the miss queue) simply got nothing, and the only
+    # way to notice was to hand-compare table counts afterwards. The failure is
+    # silent by nature, so it needs an explicit check.
+    db_path = Path(settings.sqlite_db_path)
+    if db_path.exists():
+        try:
+            con = sqlite3.connect(str(db_path))
+            # Judge the MOST RECENT study day, not a 7-day blur. "Did my last
+            # session record properly?" is the actual question, and averaging it
+            # with older days both hides a fresh regression and keeps flagging
+            # one that has already been fixed.
+            last_day = con.execute(
+                "SELECT date(MAX(date)) FROM question_attempts").fetchone()[0]
+            if not last_day:
+                ok("recording health", "no sessions recorded yet")
+            else:
+                attempts = con.execute(
+                    "SELECT COUNT(*) FROM question_attempts WHERE date(date) = ?",
+                    (last_day,)).fetchone()[0]
+                kps = con.execute(
+                    "SELECT COUNT(*) FROM knowledge_points WHERE date(updated_at) = ?",
+                    (last_day,)).fetchone()[0]
+                blank_q = con.execute(
+                    "SELECT COUNT(*) FROM question_attempts WHERE date(date) = ? "
+                    "  AND (question IS NULL OR question = '' "
+                    "       OR question = 'MCP submitted answer')",
+                    (last_day,)).fetchone()[0]
+                label = f"recording health ({last_day})"
+                if kps == 0:
+                    bad(label, f"{attempts} attempts but 0 knowledge points — the "
+                               "fact-level layer is not being written")
+                else:
+                    ratio = kps / max(attempts, 1)
+                    # Under ~1 KP per answer means most questions recorded no facts.
+                    (ok if ratio >= 1.0 else bad)(
+                        label, f"{attempts} attempts, {kps} KPs ({ratio:.1f} per answer)")
+                if blank_q:
+                    bad("question text missing",
+                        f"{blank_q}/{attempts} attempts on {last_day} have no question")
+            con.close()
+        except Exception as exc:
+            bad("recording health", str(exc)[:150])
+
+    # 8c. What the tutor actually called (per-tool-name log)
+    tool_log = ROOT / "storage" / "logs" / "tool_calls.log"
+    if tool_log.exists():
+        from collections import Counter
+        lines = tool_log.read_text(encoding="utf-8", errors="replace").splitlines()[-400:]
+        counts, errors = Counter(), Counter()
+        for ln in lines:
+            parts = ln.split("\t")
+            if len(parts) >= 3:
+                counts[parts[1]] += 1
+                if parts[2] == "ERROR":
+                    errors[parts[1]] += 1
+        if counts:
+            top = ", ".join(f"{n}x{c}" for n, c in counts.most_common(5))
+            ok("tool calls (last 400)", top)
+            if errors:
+                bad("tool call errors",
+                    ", ".join(f"{n}: {c}" for n, c in errors.most_common(5)))
+        else:
+            ok("tool calls", "log present, no calls yet")
+    else:
+        ok("tool calls", "no calls logged yet (log is created on first call)")
+
     # 9. Recent server-log errors
     log = ROOT / "storage" / "logs" / "api_server.log"
     if log.exists():

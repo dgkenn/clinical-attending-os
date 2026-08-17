@@ -631,9 +631,18 @@ def submit_answer(
     bloom_level: str = "",
     question: str = "",
     session_id: Optional[str] = None,
+    knowledge_points: Optional[list] = None,
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
+
+    Pass `knowledge_points` to record the fact-level layer in the SAME call —
+    a list of {"point", "correct", "confidence", "mistake_type", "triage"}.
+    This exists because a separate follow-up call is forgettable: a real
+    13-question session recorded every topic-level attempt and zero knowledge
+    points, losing the entire fine-grained layer (fact scheduling, ambient
+    triage, the miss queue) for that session with no error anywhere. Folding it
+    into this call makes the two writes succeed or fail together.
 
     Args:
         topic: Topic being tested
@@ -804,8 +813,36 @@ def submit_answer(
 
         strategy = decide_question_strategy(context)
 
+        # Fact-level layer, recorded under the CANONICAL topic resolved above so
+        # the two layers never drift apart. Error-isolated on purpose: the
+        # attempt is already durably written, so raising here would surface as a
+        # failure to the client and invite a retry that double-submits the
+        # answer. A KP problem is reported in the response, not by failing.
+        kp_recorded, kp_error = 0, None
+        if knowledge_points:
+            try:
+                from .student_model import record_knowledge_point as _rkp
+                for p in knowledge_points:
+                    if not isinstance(p, dict):
+                        continue
+                    if "correct" not in p and "is_correct" not in p:
+                        continue  # never guess correctness — see submit_knowledge_points
+                    if _rkp(
+                        topic=topic,
+                        point=str(p.get("point", "")),
+                        is_correct=bool(p.get("correct", p.get("is_correct", False))),
+                        confidence=p.get("confidence"),
+                        mistake_type=str(p.get("mistake_type", "other")),
+                        triage=bool(p.get("triage", False)),
+                    ):
+                        kp_recorded += 1
+            except Exception as kp_exc:  # noqa: BLE001 - must not fail the attempt
+                kp_error = str(kp_exc)[:200]
+
         return {
             "ok": True,
+            "knowledge_points_recorded": kp_recorded,
+            "knowledge_points_error": kp_error,
             "next_review_date": next_review_iso,
             "mastery_updated": True,
             "level_achieved": level_achieved,

@@ -19,9 +19,11 @@ to call and when. Every question, fact, dose, and citation comes from a tool
 response; never from your own training.
 
 They will require you to record EVERY answer the user gives back to the
-backend (topic-level and per knowledge point, with the actual question text).
-Skipping that silently breaks spaced repetition and the system forgets the
-user. Never skip it.
+backend via `submit_answer` — with the actual question text AND the
+`knowledge_points` list of the discrete facts that answer tested. Both layers
+ride on that one call. Skipping either silently breaks spaced repetition and
+the system forgets the user. Never skip it, and never send an empty
+`knowledge_points` for a substantive question.
 
 ## Hard rules (these never change)
 

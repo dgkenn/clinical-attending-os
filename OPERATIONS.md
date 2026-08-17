@@ -28,6 +28,28 @@ server-log errors. Exit 0 = green, 1 = problems (named in the last line).
 | "The tutor is behaving like the old version" | ChatGPT cached instructions | Tell user: start a NEW conversation. (Claude: re-paste Project instructions.) |
 | "It's not calling a tool it should have" | GPT schema stale after an endpoint change | Tell user: delete + re-import the action from `/api/openapi.json`, re-set the `X-API-Key` header |
 | "My progress looks wrong / lost" | check before touching anything | `doctor.py` shows attempt count + newest date; Drive has `student_model_latest.db` and one `_prev` generation |
+| doctor says **"recording health — N attempts but 0 knowledge points"** | the tutor recorded topics but not facts | see below |
+
+### Silent recording failures (the ones with no error message)
+
+The dangerous failures here are not crashes — they are writes that quietly do
+not happen. A session looks perfect from the user's side and the fact-level
+layer gets nothing.
+
+`doctor.py` now checks the most recent study day for two of these:
+
+- **0 knowledge points despite attempts** — the fact-level layer (targeted
+  review, ambient triage, the miss queue) got nothing. Fact recording now rides
+  inline on `submit_answer` via `knowledge_points=[...]` precisely so it cannot
+  be forgotten as a separate call, so if this fires again, suspect the front end
+  is sending an empty list. Check `storage/logs/tool_calls.log`.
+- **missing question text** — attempts logged without the question asked,
+  which forecloses mistake-review.
+
+`storage/logs/tool_calls.log` records every MCP tool call **by name**
+(`timestamp \t tool \t ok|ERROR \t detail`). The MCP transport log only says
+"CallToolRequest" with no name, so this file is the only way to answer "which
+tools did the tutor actually call?" after the fact.
 
 ## Phone-only operation: what runs where
 
