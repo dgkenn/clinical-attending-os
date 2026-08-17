@@ -406,7 +406,9 @@ class SubmitAnswerFSRSRequest(BaseModel):
     question: str = ""
     is_correct: bool
     confidence_reported: int = 3
-    teach_back_quality: float = 0.5
+    # None = not assessed on this question, which is not the same as a bad
+    # explanation. A numeric default would fabricate an assessment.
+    teach_back_quality: float | None = None
     mistake_type: MistakeType = "other"
     subtopic: str = ""
     transfer_success: bool = False

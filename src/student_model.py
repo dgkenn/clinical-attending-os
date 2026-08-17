@@ -1086,7 +1086,16 @@ def log_attempt(
     library: str = "",
     training_phase: str = "",
     bloom_level: str = "",
+    teach_back_quality: float | None = None,
+    transfer_success: bool = False,
 ) -> int:
+    # These two columns existed and were never written. submit_answer accepted
+    # both from the tutor, used them transiently to pick the next strategy, and
+    # dropped them here — so compute_mastery_vector, which reads them back out
+    # of this table, saw 0.0 forever. mechanism_quality and transfer_auc were
+    # therefore pinned at zero for every topic, and since the mastery gate
+    # requires mechanism_quality > 0, mastery was unreachable by construction:
+    # topics sitting at 100% accuracy still reported mastery_achieved = 0.
     topic_id = get_or_create_topic(topic, subtopic, library=library, training_phase=training_phase)
     if _confident_wrong(result, confidence_reported):
         mistake_type = "overconfident_wrong"
@@ -1094,8 +1103,9 @@ def log_attempt(
     with conn() as db:
         cur = db.execute(
             """INSERT INTO question_attempts(date, session_id, topic_id, library, training_phase, topic, subtopic, question, user_answer, ideal_answer,
-            result, mistake_type, difficulty, hints_used, confidence_reported, retrieval_sources, source_citations, notes, bloom_level)
-            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            result, mistake_type, difficulty, hints_used, confidence_reported, retrieval_sources, source_citations, notes, bloom_level,
+            teach_back_quality, transfer_success)
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 now(),
                 session_id,
@@ -1116,6 +1126,13 @@ def log_attempt(
                 source_citations or retrieval_sources,
                 notes,
                 (bloom_level or "").strip().lower(),
+                # NULL, not 0.0, when the caller said nothing: "not assessed"
+                # and "explained the mechanism badly" are different facts, and
+                # storing 0.0 for the first would drag the mechanism average
+                # down for every question that simply never asked for one.
+                (None if teach_back_quality is None
+                 else max(0.0, min(1.0, float(teach_back_quality)))),
+                1 if transfer_success else 0,
             ),
         )
         return int(cur.lastrowid)

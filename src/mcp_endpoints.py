@@ -624,7 +624,9 @@ def submit_answer(
     user_answer: str,
     is_correct: bool,
     confidence_reported: int = 3,
-    teach_back_quality: float = 0.5,
+    # None = "not assessed this question", which is NOT the same as "explained
+    # it badly". Defaulting to a number would fabricate an assessment.
+    teach_back_quality: Optional[float] = None,
     mistake_type: str = "other",
     subtopic: str = "",
     transfer_success: bool = False,
@@ -673,8 +675,10 @@ def submit_answer(
         # Clamp confidence to 1-5 range
         confidence = max(1, min(5, confidence_reported))
 
-        # Clamp teach_back_quality to 0-1
-        mechanism_quality = max(0.0, min(1.0, teach_back_quality))
+        # Clamp teach_back_quality to 0-1. A neutral 0.5 is used only for the
+        # next-strategy decision below; it is never persisted as an assessment.
+        mechanism_quality = (0.5 if teach_back_quality is None
+                             else max(0.0, min(1.0, teach_back_quality)))
 
         # Ensure topic row exists and get its id
         topic_id = get_or_create_topic(topic, subtopic or "")
@@ -726,6 +730,8 @@ def submit_answer(
                 library="",
                 training_phase="intern_year",
                 bloom_level=bloom_level,
+                teach_back_quality=teach_back_quality,
+                transfer_success=transfer_success,
             )
 
         # Re-read the updated topic row (mastery_score/status written by log_attempt)
@@ -751,15 +757,23 @@ def submit_answer(
                    FROM question_attempts WHERE topic=? ORDER BY attempt_id""",
                 (topic,),
             ).fetchall()
-            attempts_for_vector = [
-                {
+            # Only advertise a dimension when it was actually assessed.
+            # compute_mastery_vector scores a dimension over every attempt that
+            # CARRIES the key, so including an unassessed attempt as 0.0 counted
+            # it as a failed teach-back and held mechanism_quality at zero — the
+            # gate that made mastery unreachable. Omitting the key excludes the
+            # attempt from that dimension's denominator instead.
+            attempts_for_vector = []
+            for r in attempt_rows:
+                entry = {
                     "correct": r["result"] == "correct",
                     "confidence_reported": float(r["confidence_reported"] or 3),
-                    "mechanism_quality": float(r["teach_back_quality"] or 0.0),
-                    "transfer_success": bool(r["transfer_success"]),
                 }
-                for r in attempt_rows
-            ]
+                if r["teach_back_quality"] is not None:
+                    entry["mechanism_quality"] = float(r["teach_back_quality"])
+                if r["transfer_success"] is not None:
+                    entry["transfer_success"] = bool(r["transfer_success"])
+                attempts_for_vector.append(entry)
             vector = compute_mastery_vector(attempts_for_vector)
             # Upsert keyed on topic_NAME, not topic_id.
             #
