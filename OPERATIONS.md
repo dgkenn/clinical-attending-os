@@ -29,6 +29,24 @@ server-log errors. Exit 0 = green, 1 = problems (named in the last line).
 | "It's not calling a tool it should have" | GPT schema stale after an endpoint change | Tell user: delete + re-import the action from `/api/openapi.json`, re-set the `X-API-Key` header |
 | "My progress looks wrong / lost" | check before touching anything | `doctor.py` shows attempt count + newest date; Drive has `student_model_latest.db` and one `_prev` generation |
 
+## Phone-only operation: what runs where
+
+| Surface | Reaches the backend via | Survives a reboot? |
+|---|---|---|
+| **ChatGPT app (phone)** | HTTPS Actions → `https://<host>/api` | yes, once logged in |
+| **claude.ai / Claude app (phone)** | MCP custom connector → `https://<host>/mcp` (bearer) | yes, once logged in |
+| Claude Desktop (this PC) | local stdio MCP | n/a — desktop only |
+| **Claude Code (phone)** | this machine directly | — the ops console |
+
+Claude Desktop is now OPTIONAL. The MCP server runs over HTTP on 8011 behind
+the Funnel, so phone/web Claude gets all 33 tools without the desktop app.
+
+**The one physical-access dependency that remains:** the scheduled tasks are
+AtLogon-triggered, so a reboot that stops at the login screen leaves
+everything down and unreachable. Sleep is already disabled on AC. If this
+becomes a real problem, enable auto-logon once (Sysinternals Autologon, or
+netplwiz) — then reboots self-heal completely.
+
 ## Pushing to GitHub
 
 Push uses an **SSH key** (`~/.ssh/id_ed25519_github`, no passphrase, so

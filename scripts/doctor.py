@@ -91,7 +91,38 @@ def main() -> None:
         ok("public Funnel endpoint")
     else:
         bad("public Funnel endpoint", body)
-        print("       (if local is OK, check: tailscale funnel status)")
+        if args.fix:
+            print("       fixing: re-adding funnel path /api -> 8010")
+            ps('& "C:\Program Files\Tailscale\tailscale.exe" funnel --bg --set-path /api 8010')
+            import time
+            time.sleep(5)
+            if http(f"{PUBLIC}/health", 15)[0] == 200:
+                ok("public Funnel after repair"); PROBLEMS.pop()
+        else:
+            print("       (re-run with --fix, or: tailscale funnel status)")
+
+    # 2b. MCP server (what phone/web Claude connects to)
+    code, body = http("http://127.0.0.1:8011/health", 10)
+    if code == 200:
+        ok("MCP server (8011)")
+    else:
+        bad("MCP server (8011)", body)
+        if args.fix:
+            ps("Stop-ScheduledTask -TaskName ClinicalAttendingOS-MCP -ErrorAction SilentlyContinue; "
+               "Start-ScheduledTask -TaskName ClinicalAttendingOS-MCP")
+            import time
+            for _ in range(24):
+                time.sleep(5)
+                if http("http://127.0.0.1:8011/health", 5)[0] == 200:
+                    ok("MCP server after restart"); PROBLEMS.pop(); break
+    code, _ = http(f"{PUBLIC.replace('/api', '')}/mcp/health", 20)
+    if code == 200:
+        ok("public MCP endpoint")
+    else:
+        bad("public MCP endpoint", f"HTTP {code}")
+        if args.fix:
+            print("       fixing: re-adding funnel path /mcp -> 8011")
+            ps('& "C:\Program Files\Tailscale\tailscale.exe" funnel --bg --set-path /mcp 8011')
 
     # 3. Instructions version (fetch fully — http() truncates for display)
     try:
@@ -111,13 +142,14 @@ def main() -> None:
             seen[name] = state
     for name, want in (("ClinicalAttendingOS-API", ("Running",)),
                        ("ClinicalAttendingOS-WeeklyBackup", ("Ready", "Running")),
+                       ("ClinicalAttendingOS-MCP", ("Running",)),
                        ("ClinicalAttendingOS-WeeklyDigest", ("Ready", "Running"))):
         state = seen.get(name, "MISSING")
         if state in want:
             ok(f"task {name}", state)
         else:
             bad(f"task {name}", state)
-            if args.fix and name == "ClinicalAttendingOS-API" and state != "MISSING":
+            if args.fix and name in ("ClinicalAttendingOS-API", "ClinicalAttendingOS-MCP") and state != "MISSING":
                 ps(f"Start-ScheduledTask -TaskName {name}")
                 print(f"       fix attempted: started {name}")
 

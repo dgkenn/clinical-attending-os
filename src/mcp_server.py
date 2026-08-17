@@ -514,6 +514,11 @@ def build_http_app(server, auth_token: str):
     # for restart-prone / proxied hosting (HF Spaces). Tutor state lives in SQLite,
     # not the MCP session, so this is safe.
     server.settings.stateless_http = True
+    # Mount the MCP endpoint at the app ROOT. Behind the Tailscale Funnel the
+    # public path (/mcp) is stripped before proxying, so the default /mcp mount
+    # would only be reachable at the awkward https://<host>/mcp/mcp. Mounting
+    # at "/" makes the connector URL simply https://<host>/mcp.
+    server.settings.streamable_http_path = "/"
 
     app = server.streamable_http_app()
 
