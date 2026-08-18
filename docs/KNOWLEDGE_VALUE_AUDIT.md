@@ -133,3 +133,36 @@ is arguable — they are genuinely adjacent but distinct workups — so left alo
 3. Merge GI bleed topics + refile id 77 (structural, safe)
 4. Consolidate the redundancy clusters (~29% review-time reduction)
 5. Low-yield items — your call, no urgency
+
+---
+
+## RESOLVED — 2026-08-18
+
+**DKA potassium threshold.** User confirmed 3.3 mEq/L. The three contradictory
+cards were consolidated into one, teaching 3.3, with the combined review
+history preserved. Zero cards now teach 3.5.
+
+**Redundancy consolidation.** 14 near-duplicate cards folded away after
+per-pair clinical judgement, not a blanket similarity rule. Two contrasts were
+preserved by rewriting rather than discarding: the ARDS card now carries BOTH
+"ideal not actual body weight" and "not high PEEP", and the D-dimer card
+carries both the low- and high-probability halves of the rule.
+
+**Deliberately NOT merged** — related but clinically distinct, where merging
+would have destroyed knowledge:
+
+- "FeNa unreliable on diuretics, use FeUrea" vs the <1% / >2% thresholds. The
+  first is the caveat that the number cannot be trusted at all; losing it means
+  misreading a FeNa in exactly the patient where it misleads.
+- "Norepinephrine first-line over dopamine" (the choice) vs "dopamine's
+  arrhythmia risk is beta-1 mediated" (the mechanism). Different questions.
+
+**Original 29% estimate was wrong** and is corrected in the commit history: it
+came from a keyword regex that lumped the AEIOU-TIPS mnemonic and DKA D5 cards
+into a "hypoglycemia treatment" cluster. Measured with the fact-matcher, the
+real figure was 21 near-duplicate pairs, and consolidation removed 14 cards.
+
+**Structural fixes so this does not regrow** (see commit history): the tutor now
+receives `existing_facts` for a topic so it reinforces rather than re-cards,
+instructions forbid splitting one list into per-item cards, and
+record_knowledge_point fuzzy-dedupes at the write layer for every caller.
