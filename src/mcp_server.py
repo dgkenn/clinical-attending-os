@@ -852,6 +852,18 @@ def _log_tool_call(name: str, ok: bool, detail: str = "") -> None:
     real diagnosis: a session recorded 13 attempts but zero knowledge points,
     and the logs could not distinguish "the tutor never called
     submit_knowledge_points" from "the call failed".
+
+    Writes to settings.log_dir, which conftest redirects to a temp directory for
+    the whole test session. This log answers two separate questions — "what did
+    the tutor do this session?" and, via safe_restart, "is a session live right
+    now?" — and test traffic corrupts both. It has happened twice: `_`-prefixed
+    internal markers had to be excluded from the live-session check after test
+    writes made it refuse a restart, and then the new mark_known/mark_unknown
+    tests (no underscore, so not excluded) blocked a restart again by looking
+    like a tutor session four minutes old. Filtering by name treated the
+    symptom; isolating the destination fixes the cause, and unlike simply
+    silencing the call under pytest it keeps the tests that assert this log
+    grows (grounding and source-delivery measurement) meaningful.
     """
     try:
         from pathlib import Path

@@ -21,7 +21,7 @@ import sqlite3
 import subprocess
 import sys
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -306,6 +306,37 @@ def main() -> None:
             (bad if (due_kp > 40 and served == 0) else ok)("fact queue", detail)
         except Exception as exc:
             bad("fact queue", str(exc)[:150])
+
+        # 8b-ii. Currency: has the volatile material been rechecked lately?
+        #
+        # The maintainer's concern, verbatim: "something to watch for is
+        # management as these can change drastically with new studies." A
+        # one-off audit cannot answer that — it is stale the moment a trial
+        # reads out. Facts carry a `volatility` band and a
+        # `last_currency_check` stamp so staleness is measurable instead of
+        # remembered, and the next audit can target the overdue slice rather
+        # than re-reading 6,300 facts that mostly cannot have changed.
+        try:
+            con = sqlite3.connect(str(db_path))
+            cols = {r[1] for r in con.execute("PRAGMA table_info(kp_catalog)")}
+            if "volatility" not in cols:
+                ok("fact currency", "not yet tagged — run scripts/tag_volatility.py")
+            else:
+                cutoff = (datetime.now(timezone.utc) - timedelta(days=365)).isoformat()
+                n_high = con.execute(
+                    "SELECT COUNT(*) FROM kp_catalog WHERE volatility='high'").fetchone()[0]
+                overdue = con.execute(
+                    "SELECT COUNT(*) FROM kp_catalog WHERE volatility='high' AND "
+                    "(last_currency_check IS NULL OR last_currency_check < ?)",
+                    (cutoff,)).fetchone()[0]
+                detail = (f"{n_high} high-volatility (management/dosing/threshold) "
+                          f"facts, {overdue} unchecked in 12 months")
+                # Warn only when most of the volatile deck is unverified; a
+                # trickle going overdue is normal and should not cry wolf.
+                (bad if (n_high and overdue > n_high * 0.75) else ok)("fact currency", detail)
+            con.close()
+        except Exception as exc:
+            bad("fact currency", str(exc)[:150])
 
     # 8b-iii. Does the queue agree with the history?
     #

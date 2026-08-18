@@ -56,3 +56,31 @@ def isolate_student_db(tmp_path_factory):
                 except OSError:
                     pass
         shutil.rmtree(tmp_db.parent, ignore_errors=True)
+
+
+@pytest.fixture(scope="session", autouse=True)
+def isolate_tool_logs(tmp_path_factory):
+    """Send tool-call logging to a throwaway directory for the test session.
+
+    storage/logs/tool_calls.log answers two live questions: "what did the tutor
+    actually call this session?" and, through safe_restart, "is a session running
+    right now?" Test traffic corrupts both, and it has bitten twice. First,
+    `_`-prefixed internal markers had to be excluded from the live-session check
+    because test writes made safe_restart refuse to restart. Then the
+    mark_known/mark_unknown tests — ordinary names, so not excluded — blocked a
+    restart again by looking like a tutor session four minutes old.
+
+    Filtering by name was treating the symptom. Redirecting the destination is
+    the fix, and unlike silencing the logger under pytest it keeps the tests
+    that assert this log GROWS (grounding declaration, source-delivery
+    measurement) doing real work.
+    """
+    from src.config import settings
+
+    tmp_logs = tmp_path_factory.mktemp("tool_logs")
+    original = settings.log_dir
+    settings.log_dir = tmp_logs
+    try:
+        yield tmp_logs
+    finally:
+        settings.log_dir = original
