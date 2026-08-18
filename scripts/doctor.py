@@ -49,6 +49,24 @@ def http(url: str, timeout: int = 15) -> tuple[int, str]:
         return 0, str(exc)[:200]
 
 
+def _server_start_utc() -> str | None:
+    """UTC start time of the running MCP server, as an ISO string to seconds.
+
+    Used to separate live tool errors from ones already fixed by a restart.
+    Returns None if it cannot be determined, in which case every error is
+    treated as current — failing loudly beats silently excusing a real fault.
+    """
+    out = ps("Get-NetTCPConnection -LocalPort 8011 -State Listen -EA SilentlyContinue | "
+             "Select-Object -Expand OwningProcess -Unique | "
+             "ForEach-Object { (Get-Process -Id $_ -EA SilentlyContinue).StartTime."
+             "ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ss') }")
+    for line in out.splitlines():
+        line = line.strip()
+        if len(line) == 19 and line[4] == "-" and line[10] == "T":
+            return line
+    return None
+
+
 def ps(cmd: str) -> str:
     r = subprocess.run(["powershell", "-NoProfile", "-Command", cmd],
                        capture_output=True, text=True, timeout=60)
@@ -403,19 +421,35 @@ def main() -> None:
             parts = ln.split("	")
             if len(parts) >= 2:
                 gcounts[parts[1]] += 1
-        counts, errors = Counter(), Counter()
+        counts, errors, stale_errors = Counter(), Counter(), Counter()
+        # An error is only a PROBLEM if it can still happen. The 400-call window
+        # spans days, so a bug fixed an hour ago keeps failing the check until
+        # 400 fresh calls push it out — car_next's strict-bool validation error
+        # was reported as a live problem for exactly this reason after the
+        # schema had already been widened. Errors from before the running
+        # servers started are history: report them, do not fail on them.
+        boot = _server_start_utc()
         for ln in lines:
             parts = ln.split("\t")
             if len(parts) >= 3:
                 counts[parts[1]] += 1
                 if parts[2] == "ERROR":
-                    errors[parts[1]] += 1
+                    when = parts[0][:19]
+                    if boot and when < boot:
+                        stale_errors[parts[1]] += 1
+                    else:
+                        errors[parts[1]] += 1
         if counts:
             top = ", ".join(f"{n}x{c}" for n, c in counts.most_common(5))
             ok("tool calls (last 400)", top)
             if errors:
-                bad("tool call errors",
+                bad("tool call errors (since restart)",
                     ", ".join(f"{n}: {c}" for n, c in errors.most_common(5)))
+            elif stale_errors:
+                ok("tool call errors",
+                   "none since restart; "
+                   + ", ".join(f"{n}: {c}" for n, c in stale_errors.most_common(3))
+                   + " before it (already addressed)")
 
             # Was the session GROUNDED? The cardinal rule is that every question
             # comes from the corpus, never from model training. A 32-question
