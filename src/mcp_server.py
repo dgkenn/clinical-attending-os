@@ -194,6 +194,95 @@ def _existing_points() -> list:
         return []
 
 
+def mark_known(topic: str, point: str, reason: str = "") -> dict:
+    """The user says they already know a fact — stop drilling it.
+
+    Call this the moment they say any version of "I know this", "stop asking me
+    this", "this one's solid", or decline a card as not worth their time. Pass
+    their reason in their own words.
+
+    This exists because the ledger had no correction path the USER controlled.
+    They declined the "consults" card out loud mid-session — reasoning it was a
+    checklist rather than clinical knowledge — and that judgement reached the
+    backend nowhere, because conversational prose never becomes state unless a
+    tool carries it. They then had to raise it again later and ask whether it
+    had been recorded anywhere. It had not.
+
+    Being drilled on known material is the failure the user says would make
+    them abandon the system, and they are the authority on what they know. The
+    fact is parked on a long verification interval rather than deleted: self-
+    assessment is good but not perfect, so it resurfaces once, far out, to
+    confirm. Use `mark_unknown` for the reverse.
+    """
+    from datetime import timedelta
+    from .student_model import conn, _study_today, now as _now
+    topic, point = (topic or "").strip(), (point or "").strip()
+    if not topic or not point:
+        return {"ok": False, "error": "topic and point are both required"}
+    try:
+        due = (_study_today() + timedelta(days=90)).isoformat()
+        with conn() as db:
+            cur = db.execute(
+                """UPDATE knowledge_points
+                      SET status = 'mastered',
+                          consecutive_correct = MAX(consecutive_correct, 2),
+                          next_review_date = ?, interval_days = 90,
+                          evidence = ?, updated_at = ?
+                    WHERE topic = ? AND point = ?""",
+                (due, f"user states they know this: {(reason or '').strip()[:300]}",
+                 _now(), topic, point))
+            if not cur.rowcount:
+                return {"ok": False,
+                        "error": "no such fact — pass the exact point text served to you"}
+        _log_tool_call("mark_known", True, f"{topic}: {point[:60]}")
+        return {"ok": True, "next_review_date": due,
+                "note": "Parked for 90 days. Confirm to the user that it will "
+                        "stop coming up, and move on."}
+    except Exception as exc:  # noqa: BLE001
+        _log_tool_call("mark_known", False, str(exc)[:120])
+        return {"ok": False, "error": str(exc)[:200]}
+
+
+def mark_unknown(topic: str, point: str, reason: str = "") -> dict:
+    """The user says they do NOT know a fact the system believes they know.
+
+    The mirror of `mark_known`, and the more important half clinically: a fact
+    wrongly marked known is one the system has stopped asking about, so the gap
+    is invisible until it matters on a patient. Parroting produced exactly this
+    state — a restatement of what the tutor had just said was graded correct
+    and the fact advanced on a three-day interval.
+
+    Resets the fact to weak and due tomorrow, and clears any evidence standing
+    behind the old verdict, since that evidence has just been contradicted.
+    """
+    from datetime import timedelta
+    from .student_model import conn, _study_today, now as _now
+    topic, point = (topic or "").strip(), (point or "").strip()
+    if not topic or not point:
+        return {"ok": False, "error": "topic and point are both required"}
+    try:
+        due = (_study_today() + timedelta(days=1)).isoformat()
+        with conn() as db:
+            cur = db.execute(
+                """UPDATE knowledge_points
+                      SET status = 'weak', consecutive_correct = 0,
+                          next_review_date = ?, interval_days = 1,
+                          fsrs_state = NULL, mistake_type = 'self_reported_gap',
+                          evidence = ?, updated_at = ?
+                    WHERE topic = ? AND point = ?""",
+                (due, f"user states they do NOT know this: {(reason or '').strip()[:300]}",
+                 _now(), topic, point))
+            if not cur.rowcount:
+                return {"ok": False,
+                        "error": "no such fact — pass the exact point text served to you"}
+        _log_tool_call("mark_unknown", True, f"{topic}: {point[:60]}")
+        return {"ok": True, "next_review_date": due,
+                "note": "Reset to weak and due tomorrow. Teach it now."}
+    except Exception as exc:  # noqa: BLE001
+        _log_tool_call("mark_unknown", False, str(exc)[:120])
+        return {"ok": False, "error": str(exc)[:200]}
+
+
 def log_user_feedback(message: str, context: str = "") -> dict:
     """Relay something the user said ABOUT THE SYSTEM to the maintainer.
 
@@ -958,6 +1047,34 @@ def _with_setup_check(payload: dict) -> dict:
     return payload
 
 
+# Marino is the maintainer's stated preferred source for ICU material, and the
+# ranking machinery was already set up to honour that — SOURCE_PRIORITY and
+# LIBRARY_PRIORITY both put "Marino ICU Book" / "ICU_critical_care" first under
+# mode "ICU_teach". None of it ever fired, because _attach_sources hardcoded
+# mode="intern_teach" for every topic. Under that mode Marino sits FIFTH of
+# eight, ranked below the Intern Survival Guide and the MGH Housestaff Manual —
+# so critical-care questions were being built from ward-intern references while
+# a 7,134-chunk ICU textbook sat unused. Selecting the mode from the topic is
+# what connects the preference to the retrieval.
+_ICU_MODE_TERMS = (
+    "icu", "critical care", "shock", "vasopressor", "inotrope", "septic",
+    "sepsis", "ards", "ventilat", "peep", "intubat", "extubat", "airway",
+    "hemodynamic", "arterial line", "central line", "swan", "resuscitat",
+    "cardiac arrest", "acls", "rapid response", "sedation", "delirium",
+    "paralytic", "neuromuscular block", "oxygenation", "hypoxem",
+    "respiratory failure", "multiorgan", "crrt", "renal replacement",
+    "dialysis", "lactate",
+    "capnograph", "weaning", "tracheostomy", "prone", "ecmo", "icp",
+    "intracranial", "status epilepticus", "massive transfusion",
+)
+
+
+def _retrieval_mode_for(topic: str) -> str:
+    """Pick the ranking mode from the topic so source preference actually applies."""
+    t = (topic or "").lower()
+    return "ICU_teach" if any(term in t for term in _ICU_MODE_TERMS) else "intern_teach"
+
+
 def _attach_sources(payload: dict, max_results: int = 5) -> dict:
     """Retrieve for the topic being served, and return the passages with it.
 
@@ -980,9 +1097,11 @@ def _attach_sources(payload: dict, max_results: int = 5) -> dict:
     if not query:
         return payload
     try:
+        mode = _retrieval_mode_for(f"{payload.get('topic','')} {query}")
         results, insufficient = hybrid_search(
-            query, mode="intern_teach", max_results=max_results)
+            query, mode=mode, max_results=max_results)
         payload = dict(payload)
+        payload["retrieval_mode"] = mode
         payload["sources"] = [r.model_dump() for r in results]
         payload["retrieval_confidence"] = retrieval_confidence(results)
         payload["insufficient_context"] = insufficient
@@ -1143,6 +1262,11 @@ def build_server():
     mcp.tool(name="submit_knowledge_points")(_logged(submit_knowledge_points, "submit_knowledge_points"))
     mcp.tool(name="log_tangent")(_logged(log_tangent, "log_tangent"))
     mcp.tool(name="log_user_feedback")(_logged(log_user_feedback, "log_user_feedback"))
+    # The user's own correction of the knowledge ledger. Without these, "I
+    # already know this" and "I don't actually know this" stay conversational
+    # and never become state — which is how the declined consults card was lost.
+    mcp.tool(name="mark_known")(_logged(mark_known, "mark_known"))
+    mcp.tool(name="mark_unknown")(_logged(mark_unknown, "mark_unknown"))
     mcp.tool(name="get_knowledge_points")(_logged(get_knowledge_points, "get_knowledge_points"))
     mcp.tool(name="get_due_knowledge_points")(_logged(get_due_knowledge_points, "get_due_knowledge_points"))
     mcp.tool(name="get_knowledge_gaps")(_logged(get_knowledge_gaps, "get_knowledge_gaps"))

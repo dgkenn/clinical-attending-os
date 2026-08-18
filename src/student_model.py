@@ -71,6 +71,13 @@ def _table_columns(db: sqlite3.Connection, table: str) -> set[str]:
 
 
 def _ensure_column(db: sqlite3.Connection, table: str, column: str, definition: str) -> None:
+    # PRAGMA table_info on a table that does not exist returns no rows rather
+    # than raising, so a missing table used to surface here as a confusing
+    # "no such table" from the ALTER. Tables are created in a specific order
+    # inside initialize_database and the migration loop does not run last, so
+    # skipping is the correct behaviour: the CREATE will include the column.
+    if not _table_columns(db, table):
+        return
     if column not in _table_columns(db, table):
         db.execute(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
@@ -149,6 +156,27 @@ def initialize_database() -> None:
                 # was not, because prose never reaches the backend at all.
                 "user_answer_verbatim": "TEXT DEFAULT ''",
                 "tutor_response": "TEXT DEFAULT ''",
+                # The source passage the question was built from. Previously
+                # accepted by submit_answer and written only to the tool log,
+                # never to the row — so an audit that selected it as a column
+                # died with "no such column: grounded_in". Grounding belongs
+                # next to the answer it grounds.
+                "grounded_in": "TEXT DEFAULT ''",
+                # Set when the answer was scored as exposure rather than recall
+                # (a restatement of what the tutor had just said).
+                "graded_as_exposure": "INTEGER DEFAULT 0",
+            },
+            "knowledge_points": {
+                # The user's own words that demonstrate this fact. Stored, not
+                # just checked, so "why am I seeing this again?" is answerable.
+                "evidence": "TEXT DEFAULT ''",
+                # NULL means never actually put to the user. Bulk ingestion
+                # previously wrote facts through the same path an answered
+                # question uses, so 253 facts looked asked-and-failed when they
+                # had never been shown — inflating coverage to 6.6% against a
+                # true 2.4%, poisoning every accuracy figure, and queueing the
+                # lot for the next morning in the top-priority bucket.
+                "first_presented_at": "TEXT",
             },
             "sessions": {
                 "mode": "TEXT",
@@ -228,7 +256,7 @@ def initialize_database() -> None:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 topic TEXT NOT NULL,
                 point TEXT NOT NULL,                 -- atomic canonical fact
-                status TEXT DEFAULT 'weak',          -- 'weak' | 'learning' | 'mastered'
+                status TEXT DEFAULT 'weak',          -- 'weak'|'learning'|'mastered'|'new'
                 times_seen INTEGER DEFAULT 0,
                 times_correct INTEGER DEFAULT 0,
                 consecutive_correct INTEGER DEFAULT 0,
@@ -242,6 +270,17 @@ def initialize_database() -> None:
                 next_review_date TEXT,
                 created_at TEXT,
                 updated_at TEXT,
+                -- The user's own words demonstrating this fact. Stored so that
+                -- "why am I being asked this again?" is answerable from the
+                -- row itself rather than by diffing session transcripts.
+                evidence TEXT DEFAULT '',
+                -- NULL = never actually put to the user. Bulk ingestion once
+                -- wrote facts through the same path an answered question uses,
+                -- so 253 facts read as asked-and-failed without ever being
+                -- shown: coverage reported 6.6% against a true 2.4%, accuracy
+                -- was dragged toward zero by questions never asked, and the
+                -- whole batch queued for the next morning as 'weak'.
+                first_presented_at TEXT,
                 UNIQUE(topic, point)
             )
         """)
@@ -1100,6 +1139,8 @@ def log_attempt(
     transfer_success: bool = False,
     user_answer_verbatim: str = "",
     tutor_response: str = "",
+    grounded_in: str = "",
+    graded_as_exposure: bool = False,
 ) -> int:
     # These two columns existed and were never written. submit_answer accepted
     # both from the tutor, used them transiently to pick the next strategy, and
@@ -1116,8 +1157,9 @@ def log_attempt(
         cur = db.execute(
             """INSERT INTO question_attempts(date, session_id, topic_id, library, training_phase, topic, subtopic, question, user_answer, ideal_answer,
             result, mistake_type, difficulty, hints_used, confidence_reported, retrieval_sources, source_citations, notes, bloom_level,
-            teach_back_quality, transfer_success, user_answer_verbatim, tutor_response)
-            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            teach_back_quality, transfer_success, user_answer_verbatim, tutor_response,
+            grounded_in, graded_as_exposure)
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 now(),
                 session_id,
@@ -1147,6 +1189,8 @@ def log_attempt(
                 1 if transfer_success else 0,
                 (user_answer_verbatim or "")[:4000],
                 (tutor_response or "")[:8000],
+                (grounded_in or "")[:500],
+                1 if graded_as_exposure else 0,
             ),
         )
         return int(cur.lastrowid)
@@ -1616,6 +1660,7 @@ def record_knowledge_point(
     confidence: Optional[int] = None,
     mistake_type: str = "other",
     triage: bool = False,
+    evidence: str = "",
 ) -> Optional[dict[str, Any]]:
     """Record one attempt on an atomic knowledge point: updates correctness history,
     per-point confidence, mastery status, and the independent SRS schedule. Deduped
@@ -1624,7 +1669,14 @@ def record_knowledge_point(
     `is_correct` is True / False / the string "partial". Partial means the user
     had the substance but missed a component — it earns FSRS "Hard" (a smaller
     stability gain, not a lapse) and holds the point at `learning` rather than
-    knocking it back to `weak`."""
+    knocking it back to `weak`.
+
+    `evidence` is the user's own words that demonstrate the fact. It is stored,
+    not merely validated, so that a repeat can always answer "why am I being
+    asked this again?" — the question the maintainer has had to chase by
+    diffing transcripts by hand. A fact marked known with no evidence behind it
+    is exactly the state that produced both failure directions: demonstrated
+    knowledge going unrecorded, and unearned credit accruing from parroting."""
     topic = (topic or "").strip()
     point = (point or "").strip()
     if not topic or not point:
@@ -1744,12 +1796,25 @@ def record_knowledge_point(
         else:
             status = "learning"
         created = row["created_at"] if row else ts
+        # This call IS a presentation — the fact was put to the user and
+        # answered. Stamped once and never overwritten, so it stays the honest
+        # answer to "has he actually seen this?" (see the ghost-fact note on
+        # the column definition). COALESCE keeps the first presentation.
+        first_presented = (
+            (row["first_presented_at"] if row and "first_presented_at" in row.keys() else None)
+            or ts)
+        # Keep the most recent non-empty evidence: a later attempt that
+        # demonstrates the fact should replace an earlier blank, but a blank
+        # must never erase evidence already earned.
+        prior_ev = (row["evidence"] if row and "evidence" in row.keys() else "") or ""
+        ev = (evidence or "").strip() or prior_ev
         db.execute(
             """INSERT INTO knowledge_points
                    (topic, point, status, times_seen, times_correct, consecutive_correct,
                     last_correct, last_confidence, confidence_sum, confidence_n,
-                    mistake_type, interval_days, fsrs_state, next_review_date, created_at, updated_at)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    mistake_type, interval_days, fsrs_state, next_review_date, created_at, updated_at,
+                    evidence, first_presented_at)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(topic, point) DO UPDATE SET
                    status=excluded.status,
                    times_seen=excluded.times_seen,
@@ -1763,10 +1828,14 @@ def record_knowledge_point(
                    interval_days=excluded.interval_days,
                    fsrs_state=excluded.fsrs_state,
                    next_review_date=excluded.next_review_date,
-                   updated_at=excluded.updated_at""",
+                   updated_at=excluded.updated_at,
+                   evidence=excluded.evidence,
+                   first_presented_at=COALESCE(knowledge_points.first_presented_at,
+                                               excluded.first_presented_at)""",
             (topic, point, status, times_seen, times_correct, consec,
              1 if is_correct else 0, conf, confidence_sum, confidence_n,
-             (mistake_type or "other").strip() or "other", interval, fsrs_state_json, nrd, created, ts),
+             (mistake_type or "other").strip() or "other", interval, fsrs_state_json, nrd, created, ts,
+             ev, first_presented),
         )
     return {"topic": topic, "point": point, "status": status,
             "consecutive_correct": consec, "interval_days": interval,

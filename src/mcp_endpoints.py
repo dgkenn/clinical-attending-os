@@ -24,6 +24,41 @@ from .student_model import conn, get_topic_summary, log_attempt, get_or_create_t
 from .student_model import get_current_rotation, set_current_rotation
 from .fsrs import fsrs_review, deserialize, serialize, next_review_date_from_state
 from .mastery_gates import compute_mastery_vector, update_mastery_in_db
+from .answer_evidence import (
+    detect_parroting, evidence_supports, fact_was_covered, looks_like_meta_summary)
+
+
+def _record_untested_fact(topic: str, point: str) -> None:
+    """File real content that this turn did not actually test.
+
+    A knowledge point whose substance appears nowhere in the question, the
+    answer, or the tutor's reply was written ABOUT the topic rather than
+    demonstrated in it — a BiPAP mechanism card was created a minute before the
+    BiPAP question was even asked. The content is usually fine; the claim that
+    the user was tested on it is not.
+
+    So it is kept, as new material: status 'new', never presented, and left off
+    the review schedule (next_review_date NULL) so it enters as something to
+    learn rather than something already failed. Writing it as a miss is what
+    manufactured a backlog of cards nobody had seen.
+    """
+    topic, point = (topic or "").strip(), (point or "").strip()
+    if not topic or not point:
+        return
+    try:
+        with conn() as db:
+            db.execute(
+                """INSERT INTO knowledge_points
+                       (topic, point, status, times_seen, times_correct,
+                        consecutive_correct, interval_days, next_review_date,
+                        created_at, updated_at, first_presented_at)
+                   VALUES (?, ?, 'new', 0, 0, 0, 0, NULL,
+                           CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, NULL)
+                   ON CONFLICT(topic, point) DO NOTHING""",
+                (topic, point),
+            )
+    except Exception:
+        pass  # filing new material must never fail the attempt being graded
 
 
 
@@ -704,6 +739,53 @@ def submit_answer(
         grade = (result or "").strip().lower()
         if grade not in ("correct", "partial", "incorrect"):
             grade = "correct" if is_correct else "incorrect"
+        # --- Evidence checks. See src/answer_evidence.py for the four session
+        # failures these exist to close, and docs/KNOWLEDGE_GRANULARITY.md for
+        # why granularity is the project's load-bearing requirement.
+        kp_downgraded: list[str] = []
+        kp_unbacked: list[str] = []
+        kp_speculative: list[str] = []
+        warnings: list[str] = []
+
+        # The graded summary is written BY the grader about the user, so it is
+        # useless for detecting parroting — the observed case had "you just
+        # told me" scrubbed out of it, deleting the only evidence of echo.
+        # Fall back to it only when no verbatim was supplied at all.
+        verbatim_for_checks = (user_answer_verbatim or "").strip() or (user_answer or "")
+
+        # The tutor turn immediately before this answer is what an echo would
+        # be echoing. Scoped to this topic and the last few minutes so an
+        # unrelated earlier turn cannot trigger it.
+        prior_tutor = ""
+        try:
+            with conn() as _db:
+                _row = _db.execute(
+                    """SELECT tutor_response FROM question_attempts
+                        WHERE topic = ? AND tutor_response IS NOT NULL
+                          AND tutor_response != ''
+                          AND date >= datetime('now', '-10 minutes')
+                        ORDER BY attempt_id DESC LIMIT 1""",
+                    (topic,),
+                ).fetchone()
+            prior_tutor = (_row[0] if _row else "") or ""
+        except Exception:  # detection is a bonus; it must never fail an answer
+            prior_tutor = ""
+
+        parroted, parrot_reason = detect_parroting(verbatim_for_checks, prior_tutor)
+        if parroted:
+            warnings.append(f"scored as exposure, not knowledge: {parrot_reason}")
+            # A restatement of what was just said does not demonstrate recall,
+            # so it must not earn a full FSRS success at the topic level either.
+            if grade == "correct":
+                grade = "partial"
+
+        # (3) A tutor_response that describes the exchange instead of being it
+        # loses the clinical content permanently. Advisory only — never reject
+        # the write, because a summary still beats silence.
+        meta, meta_reason = looks_like_meta_summary(tutor_response)
+        if meta:
+            warnings.append(f"tutor_response {meta_reason}")
+
         is_partial = grade == "partial"
         full_correct = grade == "correct"
 
@@ -769,6 +851,8 @@ def submit_answer(
                 transfer_success=transfer_success,
                 user_answer_verbatim=user_answer_verbatim,
                 tutor_response=tutor_response,
+                grounded_in=grounded_in,
+                graded_as_exposure=parroted,
             )
 
         # Re-read the updated topic row (mastery_score/status written by log_attempt)
@@ -918,15 +1002,48 @@ def submit_answer(
                         continue
                     if "correct" not in p and "is_correct" not in p:
                         continue  # never guess correctness — see submit_knowledge_points
+                    point_text = str(p.get("point", ""))
+                    verdict = (p.get("correct", p.get("is_correct", False))
+                               if p.get("correct") == "partial"
+                               else bool(p.get("correct", p.get("is_correct", False))))
+                    kp_mistake = str(p.get("mistake_type", "other"))
+
+                    # (2) Parroting is exposure, not knowledge — never credit it
+                    # regardless of the declared verdict. The grader marked the
+                    # ARDS restatement correct while itself recording
+                    # teach_back_quality=0.5, so this cannot be left to it.
+                    if parroted and verdict is not False:
+                        verdict, kp_mistake = False, "parroted"
+                        kp_downgraded.append(point_text[:80])
+
+                    # (1) A fact claimed correct must be backed by the user's
+                    # own words. Unbacked credit is what let demonstrated
+                    # knowledge go unrecorded in one direction and unearned
+                    # mastery accrue in the other.
+                    ev = str(p.get("evidence", "")).strip()
+                    if verdict is True and ev and verbatim_for_checks:
+                        if not evidence_supports(ev, verbatim_for_checks):
+                            kp_unbacked.append(point_text[:80])
+
+                    # (4) A fact nothing in this turn actually covered was
+                    # batch-written about the topic, not demonstrated. Record it
+                    # as untested new material instead of a failed review.
+                    covered = fact_was_covered(
+                        point_text, question or "", verbatim_for_checks,
+                        user_answer or "", tutor_response or "")
+                    if not covered and verdict is False:
+                        kp_speculative.append(point_text[:80])
+                        _record_untested_fact(topic, point_text)
+                        continue
+
                     if _rkp(
                         topic=topic,
-                        point=str(p.get("point", "")),
-                        is_correct=(p.get("correct", p.get("is_correct", False))
-                                    if p.get("correct") == "partial"
-                                    else bool(p.get("correct", p.get("is_correct", False)))),
+                        point=point_text,
+                        is_correct=verdict,
                         confidence=p.get("confidence"),
-                        mistake_type=str(p.get("mistake_type", "other")),
+                        mistake_type=kp_mistake,
                         triage=bool(p.get("triage", False)),
+                        evidence=ev,
                     ):
                         kp_recorded += 1
             except Exception as kp_exc:  # noqa: BLE001 - must not fail the attempt
@@ -936,6 +1053,14 @@ def submit_answer(
             "ok": True,
             "knowledge_points_recorded": kp_recorded,
             "knowledge_points_error": kp_error,
+            # Surfaced so the tutor sees the correction in-session and can fix
+            # its next call, and so doctor.py can measure each failure mode
+            # instead of the maintainer having to diff transcripts by hand.
+            "warnings": warnings,
+            "graded_as_exposure": parroted,
+            "facts_downgraded_from_parroting": kp_downgraded,
+            "facts_claimed_correct_without_evidence": kp_unbacked,
+            "facts_not_covered_this_turn": kp_speculative,
             # True when the backend had to fall back to deriving a point from
             # the question. Surfaced so the tutor can see it is being covered
             # for, and so doctor.py can measure how often that happens.

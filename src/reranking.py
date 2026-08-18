@@ -360,6 +360,37 @@ def _has_management_intent(query: str) -> bool:
     return bool(_MANAGEMENT_INTENT.search(query or ""))
 
 
+# Textbooks age unevenly. Physiology, mechanism and bedside approach stay true
+# for decades; numeric targets, drug-of-choice calls and society recommendations
+# move. "The Little ICU Book" is a mid-2000s text and is the maintainer's
+# preferred ICU source, so it was ranked FIRST for ICU queries — after which a
+# probe for "first-line vasopressor in septic shock" returned four Marino
+# passages, one stating "norepinephrine is often used as a second-line
+# vasopressor behind dopamine". That is the reverse of current practice, and the
+# Surviving Sepsis 2021 guideline sitting in the same corpus was pushed off the
+# page. Preferring a source must not mean teaching its expired numbers.
+#
+# So: on queries that ask what the target/threshold/first choice IS, society
+# guidelines outrank the textbook. On mechanism and approach questions —
+# the majority — the preference is untouched.
+_CURRENCY_SENSITIVE = re.compile(
+    r"\b(target|targets|threshold|goal|first[- ]line|drug of choice|recommend\w*|"
+    r"guideline\w*|current|latest|standard of care|indicated|contraindicat\w*|"
+    r"dose|dosing|initiation|when to start|criteria)\b", re.I)
+_GUIDELINE_MARKERS = ("society guideline", "guideline", "surviving sepsis",
+                      "kdigo", "acc aha", "acc/aha", "gold ", "idsa", "jnc")
+_CURRENCY_WEIGHT = 0.18
+
+
+def _has_currency_sensitive_intent(query: str) -> bool:
+    return bool(_CURRENCY_SENSITIVE.search(query or ""))
+
+
+def _is_guideline_source(meta: dict[str, Any]) -> bool:
+    name = f"{meta.get('source_name') or ''} {meta.get('book') or ''} {meta.get('filename') or ''}".lower()
+    return any(m in name for m in _GUIDELINE_MARKERS)
+
+
 def _citation_density(text: str) -> float:
     """Fraction of a passage that is bibliography rather than teaching content.
 
@@ -410,6 +441,14 @@ def rerank(
         c["phrase_score"] = exact_phrase_bonus(query, text)
         c["source_priority"] = source_priority_score(meta.get("source_name") or meta.get("book", ""), mode)
         c["library_priority"] = library_priority_score(meta.get("library", ""), mode)
+        # On "what IS the target / first-line drug" questions, a society
+        # guideline outranks any textbook regardless of the mode's preference
+        # order. Promoting it to top priority is the honest expression of that
+        # rule; an additive nudge would just be a magic number tuned until the
+        # one probe query flipped. See _CURRENCY_SENSITIVE for the failure.
+        if _has_currency_sensitive_intent(query) and _is_guideline_source(meta):
+            c["source_priority"] = 1.0
+            c["library_priority"] = max(c["library_priority"], 1.0)
         c["mode_bonus"] = mode_match_bonus(meta, mode, query, text)
         tags = meta.get("topic_tags", "")
         c["topic_score"] = 1.0 if topic_filter and topic_filter.lower() in tags.lower() else 0.0
@@ -453,6 +492,11 @@ def rerank(
         for i, c in enumerate(candidates):
             c["actionability"] = act[i]
             c["final_score"] += act[i] * _ACTIONABILITY_WEIGHT
+
+    # Marker only — the actual promotion happens above, in source_priority.
+    if _has_currency_sensitive_intent(query):
+        for c in candidates:
+            c["currency_promoted"] = _is_guideline_source(c.get("metadata") or {})
 
     # Push bibliography down, proportionally to how much of it is bibliography.
     for c in candidates:

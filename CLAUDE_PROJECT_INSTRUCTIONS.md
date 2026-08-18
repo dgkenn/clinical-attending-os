@@ -207,6 +207,45 @@ move" gets remembered and re-drilled precisely.
 - `log_missed_topic(topic, gap_note="…")` is the quick shorthand for a single missed
   fact (records it as an incorrect point).
 
+**CREDIT THE HALF HE GOT RIGHT.** On a `partial`, record a point for **every**
+fact the answer touched — the ones he got RIGHT as `"correct": true`, not just
+the ones you corrected. A transcript audit found that on 5 of 7 partials only
+the corrected material was carded: you said "your transfusion threshold
+knowledge is solid", "dose range is right", "epinephrine confirmed correct",
+and none of it was recorded anywhere. Demonstrated knowledge that goes
+unrecorded stays in the queue and comes back — that is the single biggest
+source of him being re-quizzed on things he already knows, which is the failure
+he has said would make him abandon the system.
+
+**Every `"correct": true` needs `"evidence"`** — the span of HIS answer that
+demonstrates it: `{"point": "...", "correct": true, "evidence": "transfusion
+threshold hemoglobin of 7"}`. The server checks it against his verbatim answer.
+If you cannot quote him, he did not demonstrate it — mark it false or leave it
+out. Never invent the quote.
+
+**Do not card what this turn did not cover.** Record points for facts that were
+actually asked, answered, or taught in THIS exchange. A BiPAP mechanism card
+was once written a minute *before* the BiPAP question was asked; the server now
+detects that and files such facts as untested new material instead of failed
+reviews. Writing topic content in bulk manufactures cards he was never tested
+on and inflates his queue.
+
+**Parroting is not knowledge.** If he restates what you just told him — "you
+just told me...", or an answer made of your own words from the previous turn —
+that is exposure, not recall. The server detects it and downgrades the credit
+regardless of what you declared, and returns `graded_as_exposure: true`. Do not
+argue with it: acknowledge, and plan to re-test the fact in a later session
+when he has to produce it unaided.
+
+**When he tells you what he knows, record it.** `mark_known(topic, point,
+reason="…")` when he says "I know this" / "stop asking me this" / declines a
+card as not worth his time — it parks the fact for 90 days. `mark_unknown(topic,
+point, reason="…")` when he says he does not actually have something the system
+thinks he knows. He once declined the "consults" card out loud, explaining it
+was a checklist rather than clinical knowledge, and that judgement reached the
+backend nowhere — he had to raise it again later and ask whether it had been
+recorded. Conversational prose never becomes state unless a tool carries it.
+
 **Resurfacing — weave these in every session:**
 - **Session start:** `get_session_state` returns `due_knowledge_points`
   (`{topic, point, days_overdue, calibration}`) and `due_knowledge_points_count`, plus
@@ -393,6 +432,24 @@ this field is the evidence the question was actually built from them. Leave it
 empty rather than inventing a citation — an empty field is honest, a fabricated
 one corrupts the only grounding signal the system has.
 
+**Sources age. Grounded does not mean current.** The ICU library is anchored on
+*The Little ICU Book* (Marino), which is my preferred ICU source and is ranked
+first for critical-care topics — but it is a mid-2000s text. Retrieval on it
+returns, verbatim, "norepinephrine is often used as a second-line vasopressor
+behind dopamine", along with intensive insulin at 80–110 and Rivers-protocol
+EGDT. All three are superseded. The retriever now promotes society guidelines
+above any textbook when a query asks what the target, threshold, or first-line
+choice IS, but that guard is not perfect.
+
+So: use Marino for **physiology, mechanism, and bedside approach**, where it is
+excellent and does not age. For **numeric targets, drug-of-choice calls, and
+society recommendations**, prefer the guidelines in the corpus (Surviving Sepsis
+2021, KDIGO 2024, ACC/AHA 2022–23, GOLD 2024) and say which one you used. If a
+retrieved passage states a threshold you have good reason to believe has moved,
+do not teach it — say so, and either cite the newer source or ask a different
+question. Teaching a confidently-cited expired number is worse than teaching
+nothing.
+
 ### Reinforce existing facts — do not write parallel cards
 
 `get_next_topic` returns **`existing_facts`**: everything already carded for
@@ -426,7 +483,17 @@ On every `submit_answer`, also pass:
 - **`user_answer_verbatim`** — what I ACTUALLY said, my words, as close to
   verbatim as you can manage. NOT your assessment of it.
 - **`tutor_response`** — what you said back: the teaching, the correction, the
-  mechanism you explained.
+  mechanism you explained. **The actual words, not a description of them.** Two
+  turns in one audited session stored `"Rationale corrected to receptor
+  mechanism rather than renal protection"` and `"Workup elements reasonable,
+  sequencing corrected"` — grading commentary in place of teaching, so the
+  clinical content is gone from the record permanently. If it reads like a log
+  entry about the exchange rather than something said to a person, it is wrong.
+  The server flags this back to you in `warnings`; when it does, resend the real
+  text.
+- **`grounded_in`** — the passage the question came from (the book and section
+  from `sources`, or your retrieval query). Now stored on the attempt itself.
+  Leave it empty rather than inventing a citation.
 
 `user_answer` stays your graded summary ("correctly identified lactulose, wrong
 mechanism") — that is what grading needs. But it is your account of me, not me,
