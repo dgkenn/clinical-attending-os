@@ -48,8 +48,12 @@ def test_partial_holds_the_streak_a_miss_resets_it():
 
 
 def test_partial_earns_a_longer_interval_than_a_miss():
-    a = "interval probe partial: one distinctive clinical fact about thresholds"
-    b = "interval probe miss: another distinctive clinical fact about thresholds"
+    # Genuinely distinct wording: record_knowledge_point now fuzzy-dedupes
+    # near-identical phrasing onto one row (tests/test_record_kp_dedupe.py),
+    # so two probes sharing boilerplate text would merge and defeat this
+    # comparison rather than testing partial-vs-miss scheduling.
+    a = "Naloxone reverses opioid-induced respiratory depression within minutes of IV administration"
+    b = "Ketamine causes emergence reactions more often in adults than in young children"
     for p in (a, b):
         for _ in range(2):
             record_knowledge_point(topic="ProbeB", point=p, is_correct=True, confidence=4)

@@ -1606,6 +1606,42 @@ def record_knowledge_point(
         row = db.execute(
             "SELECT * FROM knowledge_points WHERE topic=? AND point=?", (topic, point)
         ).fetchone()
+        if row is None:
+            # No EXACT match. Before creating a new row, check whether this is
+            # the same fact under different phrasing — the derived-knowledge-
+            # point fallback keys text off the QUESTION asked, and two
+            # different questions routinely probe the same fact ("STEMI:
+            # oxygen only if SpO2 <90%" from one session, "SpO2 less than 90"
+            # from another). This path (submit_answer's normal recording) is
+            # what creates the vast majority of knowledge points, and until
+            # now the fuzzy matcher only ran inside log_tangent — a sweep
+            # found 2 such duplicates had already formed from ordinary graded
+            # answers, not tangents.
+            #
+            # Confident match -> redirect the write onto that row instead of
+            # forking a second history for the same fact. UNCERTAIN is
+            # deliberately NOT blocked here (unlike log_tangent): this path
+            # must always succeed, since a graded answer can never be left
+            # half-recorded waiting on a judgement call. Ambiguous cases
+            # create a new point; the periodic merge script (which asks a
+            # human before merging anything gray) is the backstop.
+            #
+            # O(N) against all existing points per call — fine at today's
+            # scale (~180), worth revisiting if the catalog grows to
+            # thousands of studied points.
+            try:
+                from .fact_matcher import find_matching_point
+                candidates = db.execute(
+                    "SELECT id, topic, point, status, times_seen FROM knowledge_points"
+                ).fetchall()
+                match, _unc = find_matching_point(topic, point, candidates)
+                if match:
+                    row = db.execute(
+                        "SELECT * FROM knowledge_points WHERE topic=? AND point=?",
+                        (match["topic"], match["point"])).fetchone()
+                    topic, point = match["topic"], match["point"]
+            except Exception:
+                pass  # dedupe is best-effort; never block a real answer on it
         is_partial = (is_correct == "partial")
         full_correct = bool(is_correct) and not is_partial
         prev_consec = row["consecutive_correct"] if row else 0
