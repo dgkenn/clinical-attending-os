@@ -504,6 +504,7 @@ def submit_answer_fsrs(req: SubmitAnswerFSRSRequest) -> dict:
         user_answer=req.user_answer,
         question=req.question,
         is_correct=req.is_correct,
+        result=req.result or "",
         confidence_reported=req.confidence_reported,
         teach_back_quality=req.teach_back_quality,
         mistake_type=req.mistake_type,

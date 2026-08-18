@@ -1148,6 +1148,21 @@ _NON_TOPICS = (
     "bibliography", "acknowledgments", "acknowledgements", "preface",
     "foreword", "copyright", "about the authors", "appendix", "abbreviations",
     "introduction", "title page", "colophon",
+    # Named clinical-sounding topics whose actual source content is
+    # administrative/logistical, not testable clinical reasoning. Verified by
+    # checking what a bare-name retrieval query for EACH one actually returns
+    # before excluding it, precisely so this stays evidence-based and does not
+    # sweep in real clinical topics that just happen to share a category
+    # (Shock, Respiratory physiology, IV anesthetics, and Monitoring all
+    # checked out as genuine clinical content and are NOT excluded).
+    #
+    # "Consults" -> MGH Housestaff Manual "Calling Consults": "TIPS FOR
+    #   CALLING CONSULTS: To do BEFORE you call: place order in Epic...".
+    #   Served three times in one session, answered zero — the user named the
+    #   reason directly: "it's just a checklist, not clinical knowledge."
+    # "Cross-cover pages" -> pager numbers and who-to-call logistics
+    #   ("page MGH needlestick consultant, pager #36222"), same defect.
+    "consults", "cross-cover pages",
 )
 
 
@@ -1532,6 +1547,16 @@ def _kp_rating(is_correct: bool, confidence: Optional[int]) -> int:
     made fsrs_review classify a genuinely correct answer as wrong
     (is_correct = rating in (3,4)), so the well-calibrated bonus was
     unreachable at the KP level. Mirrors _result_to_fsrs_rating."""
+    if is_correct == "partial":
+        # FSRS "Hard": a success with a smaller stability gain and a difficulty
+        # bump — NOT a lapse. Grading partials as full misses (the old binary
+        # behaviour) treated "named lactulose, wrong mechanism" identically to
+        # "don't know this one at all", which resets the streak, increments
+        # lapses, and collapses the interval to a day. In one 30-question
+        # session 20 answers were recorded incorrect and most were substantially
+        # right; that both buries the user in false repeats and destroys the
+        # signal that says which facts are actually fragile.
+        return 2
     if not is_correct:
         return 1
     return 3
@@ -1551,14 +1576,19 @@ def _kp_calibration(avg_conf: Optional[float], accuracy: Optional[float]) -> str
 def record_knowledge_point(
     topic: str,
     point: str,
-    is_correct: bool,
+    is_correct,
     confidence: Optional[int] = None,
     mistake_type: str = "other",
     triage: bool = False,
 ) -> Optional[dict[str, Any]]:
     """Record one attempt on an atomic knowledge point: updates correctness history,
     per-point confidence, mastery status, and the independent SRS schedule. Deduped
-    on (topic, point). No-op (returns None) if topic or point is blank."""
+    on (topic, point). No-op (returns None) if topic or point is blank.
+
+    `is_correct` is True / False / the string "partial". Partial means the user
+    had the substance but missed a component — it earns FSRS "Hard" (a smaller
+    stability gain, not a lapse) and holds the point at `learning` rather than
+    knocking it back to `weak`."""
     topic = (topic or "").strip()
     point = (point or "").strip()
     if not topic or not point:
@@ -1576,10 +1606,14 @@ def record_knowledge_point(
         row = db.execute(
             "SELECT * FROM knowledge_points WHERE topic=? AND point=?", (topic, point)
         ).fetchone()
+        is_partial = (is_correct == "partial")
+        full_correct = bool(is_correct) and not is_partial
         prev_consec = row["consecutive_correct"] if row else 0
-        consec = (prev_consec + 1) if is_correct else 0
+        # A partial holds the streak rather than advancing or resetting it:
+        # the user did not demonstrate mastery, but they did not fail either.
+        consec = (prev_consec + 1) if full_correct else (prev_consec if is_partial else 0)
         times_seen = (row["times_seen"] if row else 0) + 1
-        times_correct = (row["times_correct"] if row else 0) + (1 if is_correct else 0)
+        times_correct = (row["times_correct"] if row else 0) + (1 if full_correct else 0)
         confidence_sum = (row["confidence_sum"] if row else 0) + (conf or 0)
         confidence_n = (row["confidence_n"] if row else 0) + (1 if conf is not None else 0)
         # Advance this point's own FSRS-4 state.
@@ -1615,7 +1649,9 @@ def record_knowledge_point(
             fsrs_state_json = row["fsrs_state"] if row else None
             interval = 0.0 if not is_correct else 1.0
             nrd = (today + timedelta(days=int(round(interval)))).isoformat()
-        if not is_correct:
+        if is_partial:
+            status = "learning"
+        elif not is_correct:
             status = "weak"
         elif triage and (confidence or 0) >= 4 and consec >= 1:
             # Gap-triage mode: ONE confident correct classifies the fact as
@@ -1631,7 +1667,7 @@ def record_knowledge_point(
                 interval = 60.0
             except Exception:
                 pass
-        elif consec >= 2:
+        elif full_correct and consec >= 2:
             status = "mastered"
         else:
             status = "learning"

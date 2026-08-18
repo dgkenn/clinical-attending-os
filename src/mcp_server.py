@@ -131,7 +131,7 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     """Record per-knowledge-point results for a (usually compound) question.
 
     `points` is a list of objects, one per atomic fact the question tested:
-        {"point": "<canonical fact>", "correct": true/false,
+        {"point": "<canonical fact>", "correct": true | false | "partial",
          "confidence": 1-5 (optional), "mistake_type": "recall"|... (optional)}
 
     Each point gets its OWN correctness history, confidence/calibration, and
@@ -157,7 +157,11 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
         r = _record_kp(
             topic=topic,
             point=str(p.get("point", "")),
-            is_correct=bool(p.get("correct", p.get("is_correct", False))),
+            # "partial" passes through as the string; anything else coerces to
+            # bool. Flattening partial to False here would undo the three-way
+            # grade at the fact level, which is where it matters most.
+            is_correct=("partial" if p.get("correct") == "partial"
+                        else bool(p.get("correct", p.get("is_correct", False)))),
             confidence=p.get("confidence"),
             mistake_type=str(p.get("mistake_type", "other")),
             triage=bool(p.get("triage", False)),
@@ -986,6 +990,57 @@ def _attach_sources(payload: dict, max_results: int = 5) -> dict:
     return payload
 
 
+_RECENTLY_SERVED: dict[str, float] = {}
+_RESERVE_COOLDOWN_S = 45 * 60
+
+
+def _skip_recently_served(payload: dict) -> dict:
+    """Don't hand back a topic that was just served and not answered.
+
+    get_next_topic is deterministic — the same top card comes back until an
+    attempt clears it. In one session "Consults" was served three times and
+    asked zero times: the tutor evidently found it unusable and re-called
+    hoping for something else, burning three round trips on the same answer.
+
+    A topic served and NOT answered was effectively declined, so it is skipped
+    for a cooldown and the next-best card is offered instead. Recording an
+    attempt clears the mark immediately, so a topic the user actually studies
+    is never suppressed.
+    """
+    import time
+    from .student_model import conn
+
+    topic = (payload or {}).get("topic")
+    if not topic:
+        return payload
+    now = time.time()
+    for t, when in list(_RECENTLY_SERVED.items()):
+        if now - when > _RESERVE_COOLDOWN_S:
+            _RECENTLY_SERVED.pop(t, None)
+
+    served_at = _RECENTLY_SERVED.get(topic)
+    if served_at:
+        try:
+            with conn() as db:
+                answered = db.execute(
+                    "SELECT COUNT(*) FROM question_attempts WHERE topic = ? "
+                    "AND date >= datetime('now', '-45 minutes')", (topic,)).fetchone()[0]
+        except Exception:
+            answered = 1  # never suppress on a lookup failure
+        if not answered:
+            payload = dict(payload)
+            payload["repeat_of_unanswered"] = topic
+            payload["note"] = (
+                f"'{topic}' was already served this session and not answered. "
+                "Either ask it now, or call get_next_topic once more for a "
+                "different card — it will not be offered again for 45 minutes."
+            )
+            _RECENTLY_SERVED[topic] = now
+            return payload
+    _RECENTLY_SERVED[topic] = now
+    return payload
+
+
 @functools.wraps(get_next_topic)
 def get_next_topic_checked(*args, **kwargs) -> dict:
     """Next topic to study, WITH its grounding passages already retrieved.
@@ -996,7 +1051,8 @@ def get_next_topic_checked(*args, **kwargs) -> dict:
     docstring, which FastMCP reads to build the tool schema — without it the
     parameters collapse to (args, kwargs).
     """
-    return _with_setup_check(_attach_sources(get_next_topic(*args, **kwargs)))
+    return _with_setup_check(_attach_sources(_skip_recently_served(
+        get_next_topic(*args, **kwargs))))
 
 
 def build_server():

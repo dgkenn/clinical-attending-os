@@ -623,6 +623,7 @@ def submit_answer(
     topic: str,
     user_answer: str,
     is_correct: bool,
+    result: str = "",
     confidence_reported: int = 3,
     # None = "not assessed this question", which is NOT the same as "explained
     # it badly". Defaulting to a number would fabricate an assessment.
@@ -637,6 +638,14 @@ def submit_answer(
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
+
+    Set `result="partial"` when the user had the substance but missed a
+    component ("named lactulose, wrong mechanism"). Grading was binary until a
+    30-question session recorded 20 answers "incorrect" while most were
+    substantially right — a partial was taking a full FSRS lapse, identical to
+    "I don't know this at all". That buries the user in false repeats and
+    destroys the signal for which facts are genuinely fragile. A partial earns
+    FSRS "Hard": shorter interval, no lapse, no streak reset.
 
     Pass `knowledge_points` to record the fact-level layer in the SAME call —
     a list of {"point", "correct", "confidence", "mistake_type", "triage"}.
@@ -672,6 +681,14 @@ def submit_answer(
         from .topic_resolver import resolve_topic
         topic, _topic_resolved = resolve_topic(topic)
 
+        # Three-way grade. `result` wins when supplied; `is_correct` remains
+        # the back-compat path for callers that never learned about partials.
+        grade = (result or "").strip().lower()
+        if grade not in ("correct", "partial", "incorrect"):
+            grade = "correct" if is_correct else "incorrect"
+        is_partial = grade == "partial"
+        full_correct = grade == "correct"
+
         # Clamp confidence to 1-5 range
         confidence = max(1, min(5, confidence_reported))
 
@@ -700,7 +717,7 @@ def submit_answer(
                     """SELECT COUNT(*) FROM question_attempts
                        WHERE topic = ? AND user_answer = ? AND result = ?
                          AND date >= datetime('now', '-3 minutes')""",
-                    (topic, user_answer, "correct" if is_correct else "incorrect"),
+                    (topic, user_answer, grade),
                 ).fetchone()[0]
             duplicate_of_recent = recent > 0
 
@@ -719,7 +736,7 @@ def submit_answer(
                 question=(question or "").strip() or "MCP submitted answer",
                 user_answer=user_answer,
                 ideal_answer="",
-                result="correct" if is_correct else "incorrect",
+                result=grade,
                 mistake_type=mistake_type,
                 difficulty="medium",
                 hints_used=0,
@@ -814,10 +831,10 @@ def submit_answer(
                 )
 
         # Determine strategy for next question
-        accuracy_rate = summary.get("accuracy", float(is_correct))
+        accuracy_rate = summary.get("accuracy", float(full_correct))
 
         context = PerformanceContext(
-            accuracy=is_correct,
+            accuracy=full_correct,
             confidence_reported=confidence,
             mechanism_quality=mechanism_quality,
             topic=topic,
@@ -858,7 +875,9 @@ def submit_answer(
             if stem and stem != "MCP submitted answer":
                 knowledge_points = [{
                     "point": stem[:300],
-                    "correct": bool(is_correct),
+                    # carry the three-way grade into the derived fact:
+                    # a partial answer must not record its fact as a miss
+                    "correct": "partial" if is_partial else bool(is_correct),
                     "confidence": confidence,
                     "mistake_type": mistake_type,
                 }]
@@ -875,7 +894,9 @@ def submit_answer(
                     if _rkp(
                         topic=topic,
                         point=str(p.get("point", "")),
-                        is_correct=bool(p.get("correct", p.get("is_correct", False))),
+                        is_correct=(p.get("correct", p.get("is_correct", False))
+                                    if p.get("correct") == "partial"
+                                    else bool(p.get("correct", p.get("is_correct", False)))),
                         confidence=p.get("confidence"),
                         mistake_type=str(p.get("mistake_type", "other")),
                         triage=bool(p.get("triage", False)),

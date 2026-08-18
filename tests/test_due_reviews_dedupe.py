@@ -68,10 +68,17 @@ def test_document_artifacts_are_not_offered_as_study_topics():
 
 def test_never_studied_clinical_topics_are_still_offered():
     """The junk filter keys on NAME, not on "has no attempts" — a genuinely new
-    clinical topic also has no attempts and must remain eligible."""
-    assert "consults" not in _NON_TOPICS
+    clinical topic also has no attempts and must remain eligible.
+
+    "Consults" was the original example here; it was later verified (per-topic
+    retrieval check, tests/test_non_testable_topics.py) to be administrative
+    content ("TIPS FOR CALLING CONSULTS") rather than clinical, and moved INTO
+    _NON_TOPICS on that evidence. Swapped for topics that were checked the same
+    way and confirmed genuinely clinical."""
     assert "respiratory physiology" not in _NON_TOPICS
     assert "monitoring" not in _NON_TOPICS
+    assert "shock" not in _NON_TOPICS
+    assert "iv anesthetics" not in _NON_TOPICS
 
 
 def test_limit_counts_topics_not_rows():

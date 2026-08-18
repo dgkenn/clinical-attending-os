@@ -405,6 +405,9 @@ class SubmitAnswerFSRSRequest(BaseModel):
     # mistake-review or bad-question analytics.
     question: str = ""
     is_correct: bool
+    # Three-way grade; "partial" earns FSRS Hard instead of a full lapse.
+    # is_correct stays for callers that predate partials.
+    result: Literal["correct", "partial", "incorrect"] | None = None
     confidence_reported: int = 3
     # None = not assessed on this question, which is not the same as a bad
     # explanation. A numeric default would fabricate an assessment.
