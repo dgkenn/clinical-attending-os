@@ -1197,9 +1197,31 @@ def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
         # row otherwise surfaces as a due review with an empty retrieval query.
         # Over-fetch, because the dedupe below collapses many rows per topic and
         # we still want `limit` distinct topics back.
+        # DUENESS IS DECIDED BY THE PARENT ROW, not by "any row of this topic".
+        #
+        # The earlier fix made the parent the schedule REPRESENTATIVE, but a
+        # topic still qualified as due when any of its rows was overdue. When
+        # the parent was NOT due, it was absent from the candidate set entirely
+        # and a stale legacy subtopic row represented the topic instead —
+        # "Electrolytes" surfaced as 55 days overdue while its parent was
+        # scheduled three days in the FUTURE and it had been answered five
+        # times that same day. The contradiction check caught it.
+        #
+        # A topic with no parent row at all (legacy data) still qualifies on
+        # its subtopic rows, so nothing becomes permanently unreachable.
         rows = db.execute(
             """SELECT * FROM topics
-               WHERE (next_review_date IS NULL OR next_review_date <= ?)
+               WHERE topic IN (
+                     SELECT topic FROM topics
+                      WHERE (subtopic = '' OR subtopic IS NULL)
+                        AND (next_review_date IS NULL OR next_review_date <= ?)
+                     UNION
+                     SELECT topic FROM topics
+                      GROUP BY topic
+                      HAVING SUM(CASE WHEN subtopic = '' OR subtopic IS NULL
+                                      THEN 1 ELSE 0 END) = 0
+                        AND MIN(COALESCE(next_review_date, '0000')) <= ?
+                 )
                  AND topic NOT IN (SELECT DISTINCT topic FROM knowledge_points)
                  AND topic NOT LIKE 'unit:%'
                  AND topic != ''
@@ -1207,7 +1229,7 @@ def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
                ORDER BY mastery_score ASC, forgetting_risk DESC LIMIT ?""".format(
                 placeholders=",".join("?" * len(_NON_TOPICS))
             ),
-            (today.isoformat(), *_NON_TOPICS, max(limit * 12, 200)),
+            (today.isoformat(), today.isoformat(), *_NON_TOPICS, max(limit * 12, 200)),
         ).fetchall()
 
         # Collapse to ONE entry per topic NAME.
