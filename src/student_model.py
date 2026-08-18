@@ -1138,6 +1138,19 @@ def log_attempt(
         return int(cur.lastrowid)
 
 
+# Document-structure artifacts that ingest turned into "topics". "Disclaimer"
+# reached the due queue with five subtopics, all of them the Intern Notes p.2
+# boilerplate, and was offered as study material. These are excluded by NAME
+# rather than by "never answered", because a genuinely new clinical topic
+# (Consults, Respiratory physiology) also has no attempts yet and must stay.
+_NON_TOPICS = (
+    "disclaimer", "table of contents", "contents", "index", "references",
+    "bibliography", "acknowledgments", "acknowledgements", "preface",
+    "foreword", "copyright", "about the authors", "appendix", "abbreviations",
+    "introduction", "title page", "colophon",
+)
+
+
 def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
     initialize_database()
     today = datetime.now(timezone.utc).date()
@@ -1153,16 +1166,50 @@ def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
         # tutor as literal retrieval queries like 'unit:ch05-...'.
         # `topic != ''`: get_or_create_topic accepts a blank name, and a blank
         # row otherwise surfaces as a due review with an empty retrieval query.
+        # Over-fetch, because the dedupe below collapses many rows per topic and
+        # we still want `limit` distinct topics back.
         rows = db.execute(
             """SELECT * FROM topics
                WHERE (next_review_date IS NULL OR next_review_date <= ?)
                  AND topic NOT IN (SELECT DISTINCT topic FROM knowledge_points)
                  AND topic NOT LIKE 'unit:%'
                  AND topic != ''
-               ORDER BY mastery_score ASC, forgetting_risk DESC LIMIT ?""",
-            (today.isoformat(), limit),
+                 AND lower(topic) NOT IN ({placeholders})
+               ORDER BY mastery_score ASC, forgetting_risk DESC LIMIT ?""".format(
+                placeholders=",".join("?" * len(_NON_TOPICS))
+            ),
+            (today.isoformat(), *_NON_TOPICS, max(limit * 12, 200)),
         ).fetchall()
-        result = []
+
+        # Collapse to ONE entry per topic NAME.
+        #
+        # `topics` holds a row per (topic, subtopic), so a single topic owns many
+        # rows — "Electrolytes" has 15, "PE" 7. Returning them all made the tutor
+        # report 32 due reviews for 12 real topics, and 112 "overdue topics" when
+        # only 28 names existed. The user correctly recognised they had never
+        # studied that many; the backlog was mostly the same handful of topics
+        # counted repeatedly, which both misrepresents progress and wastes the
+        # session on duplicates.
+        #
+        # The PARENT row (no subtopic) represents the topic, because that is the
+        # row the topic-level FSRS schedule actually lives on — it is what
+        # advances when the topic is reviewed.
+        #
+        # Ranking by "most overdue row" instead was wrong in a way that made the
+        # queue permanently stuck. 45 of 119 rows are phantoms: fact-level notes
+        # ("Wells PE score: D-dimer only useful if...") written as pseudo-topic
+        # rows by the old log_missed_topic, with times_seen=0, last_seen NULL and
+        # a next_review_date frozen in June. Nothing can ever review them,
+        # because the tutor reviews "PE" — not "Wells PE score: ...". So they sit
+        # overdue forever and drag their parent topic's figure with them: PE
+        # showed 56 days overdue the day after it was studied. The user spotted
+        # this ("I already did PE today"), and left alone it would mean studying
+        # a topic never visibly clears it.
+        #
+        # Those notes are still listed under subtopics_due as useful context for
+        # what the topic covers; they just no longer drive the schedule.
+        best: dict[str, dict[str, Any]] = {}
+        subs: dict[str, list[str]] = {}
         for r in rows:
             d = dict(r)
             nrd = d.get("next_review_date")
@@ -1170,8 +1217,32 @@ def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
                 d["days_overdue"] = max(0, (today - datetime.fromisoformat(nrd).date()).days) if nrd else 0
             except Exception:
                 d["days_overdue"] = 0
-            result.append(d)
-        return result
+            name = d.get("topic") or ""
+            sub = (d.get("subtopic") or "").strip()
+            if sub:
+                subs.setdefault(name, [])
+                if sub not in subs[name]:
+                    subs[name].append(sub)
+            prior = best.get(name)
+            if prior is None:
+                best[name] = d
+                continue
+            prior_is_parent = not (prior.get("subtopic") or "").strip()
+            this_is_parent = not sub
+            if this_is_parent and not prior_is_parent:
+                best[name] = d                      # parent always wins
+            elif this_is_parent == prior_is_parent and d["days_overdue"] > prior["days_overdue"]:
+                best[name] = d                      # tie-break within the same kind
+        for name, d in best.items():
+            d["subtopics_due"] = subs.get(name, [])
+
+        result = sorted(
+            best.values(),
+            key=lambda d: (-d["days_overdue"], d.get("mastery_score") or 0.0),
+        )
+        for d in result:
+            d["subtopic_count"] = len(d.get("subtopics_due", []))
+        return result[:limit]
 
 
 def _library_for_phase(phase: str) -> str:
