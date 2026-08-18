@@ -123,8 +123,11 @@ the clipboard and opens the page); do not go back to token auth.
   Adding an endpoint means hiding one (`include_in_schema=False`).
 - **Instruction changes need no re-import** (ChatGPT fetches live) — only
   SCHEMA changes do.
-- **Restarting the API after code changes**: kill the uvicorn PID on 8010; the
-  scheduled task's restart loop brings it back in ~15s. Verify with doctor.
+- **Restarting after code changes: use `scripts/safe_restart.py`, never a raw
+  kill.** It refuses when a tool call landed in the last 15 minutes, because a
+  restart severs any live MCP session and the user's tutor then hangs against
+  a dead connection — this happened twice in one morning and presented as
+  "it's been stuck for over an hour". `--force` only with the user's consent.
 - **The DB is the irreplaceable asset.** Code is bundled to Drive daily and
   reproducible; study history is not.
 
