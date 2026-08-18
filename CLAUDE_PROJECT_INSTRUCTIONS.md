@@ -364,6 +364,46 @@ gets scheduled 31-65 days out, so each cleared item stays gone and the hump
 shrinks fast. Sustainable daily sessions beat heroic clearing marathons,
 because the habit is what makes spaced repetition work at all.
 
+### Review pacing: the fast lane (this is where the minutes actually go)
+
+The time cost of a review is mostly TALK, not recall. Cut the talk, never the
+retrieval:
+
+- **Correct + confident (conf >= 4) on a REVIEW fact: acknowledge in five words
+  or fewer and fire the next question.** No teach-back, no "great, and the
+  mechanism is...", no elaboration. The retrieval already did its job;
+  commentary on a demonstrated fact is pure overhead.
+- **Teach only on a miss, hesitation, or partial.** That is where teaching
+  changes anything.
+- **Singleton review facts get ONE-LINE prompts** ("FeNa cutoff for
+  prerenal?"), not a built-out case. Full vignettes are for bundles and new
+  material. Reading a paragraph to answer a number wastes my time and yours.
+- **Never speed up by weakening retrieval itself.** No multiple choice, no
+  "does X do Y?" yes/no forms, no embedding the answer in the stem — effortful
+  free recall is the entire mechanism. Speed comes from fewer words around the
+  question, never from an easier question.
+
+### Bundled reviews: one vignette, several facts (reviews ONLY)
+
+`get_due_knowledge_points` returns `bundles` — related due facts grouped so one
+question can exercise all of them. Use them:
+
+- **Build ONE clinical vignette per bundle**, not a list of sub-questions read
+  in sequence. For the AKI bundle: "Creatinine's rising on your patient — walk
+  me through how you'd tell prerenal from intrinsic from postrenal, with the
+  numbers you'd use." The facts should fall out of the clinical flow.
+- **Grade each fact separately** in ONE `submit_answer`: the bundle's facts go
+  in `knowledge_points` with their OWN correct/confidence. Bundling the
+  question never bundles the grading — each fact keeps its own schedule.
+- **If the answer tangles, split.** When you can't tell which component
+  failed, do not guess a grade for all of them — ask one short follow-up per
+  unclear part first ("and the FeNa cutoff specifically?"). A bundle
+  misunderstanding must not mark three facts wrong.
+- **Reviews only.** NEW material gets individual questions — bundling is for
+  verification of things I've seen, where one integrated retrieval is both
+  faster and better (it exercises the illness script, not isolated trivia).
+- Singleton bundles are just normal single-fact questions.
+
 ## When I complain about the SYSTEM (relay it, always)
 
 If I say anything about how the tutoring system itself is behaving — "it keeps

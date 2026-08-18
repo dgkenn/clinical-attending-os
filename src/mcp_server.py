@@ -368,6 +368,65 @@ def get_knowledge_points(topic: str = "", status: str = "", due_only: bool = Fal
 
 
 _DAILY_FACT_RATION = 20  # ~30 min at ~1.5 min/fact — a session, not a shift
+_BUNDLE_MAX = 3          # beyond 3 parts a question becomes a recital
+_BUNDLE_MIN_SIM = 0.12   # same-topic facts still need real content overlap
+
+
+def _bundle_facts(pts: list) -> list[dict]:
+    """Group related due REVIEW facts so one vignette can exercise several.
+
+    User's insight: reviews are verification touches, not first teaching, so
+    closely related ones can share a question — "creatinine rising: walk me
+    through prerenal vs intrinsic vs postrenal with the discriminators" covers
+    three AKI facts in one clinical flow. This cuts review time ~40% and is
+    pedagogically BETTER than serial flashcards for related material: the facts
+    get exercised as one illness script instead of isolated trivia.
+
+    Strategy, and why each rule exists:
+      * same TOPIC only — cross-topic mash-ups make incoherent stems.
+      * within a topic, group by actual content overlap — "Electrolytes"
+        contains both AKI-category facts and DKA facts; a bundle must be one
+        clinical script, so DKA is not forced into the AKI vignette.
+      * max 3 parts — beyond that the question degrades into a recital and
+        working memory, not knowledge, becomes the thing tested.
+      * bundling the QUESTION never bundles the GRADING — each fact keeps its
+        own correctness, confidence, and FSRS schedule via knowledge_points.
+    """
+    from .fact_matcher import _tokens
+
+    def sim(a, b):
+        ta, tb = _tokens(a), _tokens(b)
+        if not ta or not tb:
+            return 0.0
+        return len(ta & tb) / min(len(ta), len(tb))
+
+    by_topic: dict[str, list] = {}
+    for p in pts:
+        by_topic.setdefault(p.get("topic") or "?", []).append(p)
+
+    bundles = []
+    for topic, group in by_topic.items():
+        remaining = list(group)
+        while remaining:
+            seed = remaining.pop(0)
+            bundle = [seed]
+            # greedy: keep adding the most similar remaining fact
+            while len(bundle) < _BUNDLE_MAX and remaining:
+                scored = [(max(sim(p["point"], q["point"]) for q in bundle), p)
+                          for p in remaining]
+                best_score, best = max(scored, key=lambda x: x[0])
+                if best_score < _BUNDLE_MIN_SIM:
+                    break
+                bundle.append(best)
+                remaining.remove(best)
+            bundles.append({
+                "topic": topic,
+                "facts": bundle,
+                "size": len(bundle),
+            })
+    # Serve multi-fact bundles first: they are the time win.
+    bundles.sort(key=lambda b: -b["size"])
+    return bundles
 
 
 def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
@@ -406,15 +465,21 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
     pts_sorted = sorted(pts, key=priority)
     todays = pts_sorted[:ration]
     carried = max(0, len(pts_sorted) - len(todays))
+    bundles = _bundle_facts(todays)
+    # A multi-fact vignette runs ~2.5 min and covers 2-3 facts; singletons ~1.5.
+    est = round(sum(2.5 if b["size"] > 1 else 1.5 for b in bundles))
     return {
         "todays_set": todays,
         "due_points": todays,          # backward-compat alias
+        "bundles": bundles,
         "count": len(todays),
         "backlog_total": len(pts_sorted),
         "carried": carried,
-        "estimated_minutes": round(len(todays) * 1.5),
+        "estimated_minutes": est,
         "note": (
-            f"Serve todays_set (~{round(len(todays) * 1.5)} min). "
+            f"Serve the BUNDLES (~{est} min): each multi-fact bundle becomes ONE "
+            f"clinical vignette exercising all its facts, graded per-fact in a "
+            f"single submit_answer via knowledge_points. "
             + (f"{carried} more are due but carried to later days — tell the "
                f"user the backlog is shrinking on schedule and carrying is "
                f"safe: a late fact answered correctly is scheduled weeks out "

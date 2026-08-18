@@ -1033,7 +1033,7 @@ def update_mastery_score(
             status = "learning"
             demoted_pending_respacing = True
         if result == "incorrect" and mastery < 0.4:
-            review_date = datetime.now(timezone.utc).date().isoformat()
+            review_date = _study_today().isoformat()
         else:
             review_date = next_review_date_from_state(new_state)
             # The demotion's stated purpose is keeping the topic in active
@@ -1043,7 +1043,7 @@ def update_mastery_score(
             # Cap the interval so the confirming 24h-spaced second pass can
             # actually happen soon.
             if demoted_pending_respacing:
-                cap = (datetime.now(timezone.utc).date() + timedelta(days=3)).isoformat()
+                cap = (_study_today() + timedelta(days=3)).isoformat()
                 review_date = min(review_date, cap)
         fields = {
             "correct": "times_correct=times_correct+1, last_correct=?",
@@ -1153,7 +1153,7 @@ _NON_TOPICS = (
 
 def get_due_reviews(limit: int = 20) -> list[dict[str, Any]]:
     initialize_database()
-    today = datetime.now(timezone.utc).date()
+    today = _study_today()
     with conn() as db:
         # Exclude topics that are now tracked at the fact (knowledge_point) level —
         # their review lives in the knowledge-point queue (get_due_knowledge_points),
@@ -1507,6 +1507,20 @@ def mark_topic_weak(topic: str, subtopic: str = "") -> None:
 _KP_LADDER = [1, 3, 7, 16, 35, 75, 150]
 
 
+def _study_today():
+    """The user's study day, in THEIR timezone — never UTC.
+
+    All scheduling used _study_today(). The user is in
+    Eastern time, so from 8pm EDT the "day" had already flipped: facts
+    answered in an afternoon session were scheduled "+1 day" from tomorrow's
+    UTC date, and the evening's due query — also running on the new UTC day —
+    served cards back the same evening. The user noticed as "I'm reviewing the
+    same cards multiple times a day". A spaced-repetition day is a human day;
+    the machine runs in the user's local timezone, which is authoritative here.
+    """
+    return datetime.now().astimezone().date()
+
+
 def _kp_rating(is_correct: bool, confidence: Optional[int]) -> int:
     """Map (correctness, 1-5 confidence) to an FSRS rating: 1=again, 3=good.
 
@@ -1551,7 +1565,7 @@ def record_knowledge_point(
         return None
     initialize_database()
     ts = now()
-    today = datetime.now(timezone.utc).date()
+    today = _study_today()
     conf = None
     if confidence is not None:
         try:
@@ -1579,6 +1593,21 @@ def record_knowledge_point(
             nrd = next_due_iso[:10]
             try:
                 interval = max(0.0, (datetime.fromisoformat(nrd).date() - today).days)
+                # Load smoothing: ±10% deterministic jitter on week-plus
+                # intervals. Facts cleared in one sitting otherwise re-arrive
+                # in one sitting — a bulk-cleared backlog reconverged into a
+                # single-day wave that read as "2-3 hours of reviews today".
+                # Seeded by the fact text so the shift is stable per fact
+                # (no retest churn), and centred so it averages out. A ±10%
+                # shift is far inside FSRS's tolerance — the same fact
+                # reviewed a day early or late earns almost identical
+                # stability, so this costs nothing in retention.
+                if interval >= 7:
+                    import hashlib
+                    h = int(hashlib.sha1(point.encode()).hexdigest()[:8], 16)
+                    shift = (h % 21 - 10) / 100.0        # -0.10 .. +0.10
+                    interval = max(1.0, interval * (1 + shift))
+                    nrd = (today + timedelta(days=int(round(interval)))).isoformat()
             except Exception:
                 interval = 1.0
         except Exception:
@@ -1671,7 +1700,7 @@ def get_knowledge_points(
     by default-friendly callers should pass explicitly), and/or due_only (next_review
     <= today). Weakest/most-overdue first."""
     initialize_database()
-    today = datetime.now(timezone.utc).date()
+    today = _study_today()
     with conn() as db:
         q = "SELECT * FROM knowledge_points"
         clauses, params = [], []
@@ -1701,7 +1730,7 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
     This keeps car-mode sessions free of long/enumeration-heavy facts that need reading.
     """
     initialize_database()
-    today = datetime.now(timezone.utc).date()
+    today = _study_today()
     # The car filter runs in Python, so the SQL LIMIT must not be the caller's
     # limit when car=True: taking the top N and *then* discarding the long ones
     # returns fewer than N — and returns ZERO whenever the N most-overdue points
@@ -1719,14 +1748,21 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
         # so the topic card never came back either — a scheduling black hole).
         # Mastered points with NO date are still excluded: those are bulk
         # mark-as-mastered rows that were deliberately retired.
+        #
+        # `date(updated_at,'localtime') < today`: a fact touched today is DONE
+        # for today, whatever its schedule says. This is the hard guard behind
+        # the user's report of seeing the same cards several times a day —
+        # same-day re-review adds nearly nothing to FSRS stability, so a
+        # repeat costs time and teaches nothing. Tomorrow it is eligible again.
         rows = db.execute(
             """SELECT * FROM knowledge_points
-               WHERE (next_review_date IS NOT NULL AND next_review_date <= ?)
-                  OR (next_review_date IS NULL AND status != 'mastered')
+               WHERE ((next_review_date IS NOT NULL AND next_review_date <= ?)
+                  OR (next_review_date IS NULL AND status != 'mastered'))
+                 AND date(updated_at, 'localtime') < ?
                ORDER BY CASE status WHEN 'weak' THEN 0 WHEN 'learning' THEN 1 ELSE 2 END,
                         next_review_date ASC
                LIMIT ?""",
-            (today.isoformat(), fetch_limit),
+            (today.isoformat(), today.isoformat(), fetch_limit),
         ).fetchall()
     results = [_kp_row_to_dict(r, today) for r in rows]
     if car:
@@ -1772,7 +1808,7 @@ def resolve_knowledge_gaps(topic: str, gap_id: Optional[int] = None) -> int:
     Returns count promoted."""
     topic = (topic or "").strip()
     initialize_database()
-    today = datetime.now(timezone.utc).date()
+    today = _study_today()
     far = (today + timedelta(days=_KP_LADDER[-1])).isoformat()
     with conn() as db:
         if gap_id is not None:

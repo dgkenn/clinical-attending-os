@@ -411,8 +411,14 @@ def test_get_kp_to_study_car_format_returns_car_safe_field(fresh_db, priority_ca
 # ---------------------------------------------------------------------------
 
 def _backdate_knowledge_points(db_conn):
-    """Force all knowledge_points next_review_date to the past so they appear in due queue."""
-    db_conn.execute("UPDATE knowledge_points SET next_review_date='2000-01-01'")
+    """Force all knowledge_points into "due yesterday" state.
+
+    Both dates must move: next_review_date puts the fact in the due window, and
+    updated_at must leave TODAY because a fact touched today is deliberately
+    not re-served today (the same-local-day guard — the user was seeing the
+    same cards several times a day)."""
+    db_conn.execute("UPDATE knowledge_points SET next_review_date='2000-01-01', "
+                    "updated_at=datetime(updated_at, '-2 days')")
 
 
 def test_get_due_knowledge_points_car_excludes_long_points(fresh_db):

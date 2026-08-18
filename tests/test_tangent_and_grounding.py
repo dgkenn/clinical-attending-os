@@ -131,3 +131,78 @@ def test_due_facts_are_rationed_not_dumped():
     statuses = [p.get("status") for p in r["todays_set"]]
     if "weak" in statuses and "learning" in statuses:
         assert statuses.index("weak") < statuses.index("learning")
+
+
+def test_bundles_group_related_reviews_without_crossing_topics():
+    """User's proposal: related due REVIEWS share one vignette to cut review
+    time. Rules: same topic only, real content overlap within the topic (the
+    AKI-category facts bundle; DKA is not forced in with them), max 3 parts,
+    and grading stays per-fact."""
+    from src.mcp_server import get_due_knowledge_points
+    r = get_due_knowledge_points()
+    assert "bundles" in r
+    total = sum(b["size"] for b in r["bundles"])
+    assert total == r["count"], "every served fact appears in exactly one bundle"
+    for b in r["bundles"]:
+        assert 1 <= b["size"] <= 3
+        topics = {f.get("topic") for f in b["facts"]}
+        assert len(topics) == 1, f"bundle crosses topics: {topics}"
+    # bundling must reduce the time estimate versus serial single questions
+    assert r["estimated_minutes"] <= round(r["count"] * 1.5)
+
+
+def test_long_intervals_get_deterministic_jitter():
+    """Facts cleared together must not all come due together again — the
+    single-day wave is what produced the '2-3 hours today' scare. Jitter is
+    seeded by fact text: stable per fact, spread across facts."""
+    import json
+    import sqlite3
+    from src.student_model import record_knowledge_point, conn
+
+    # Seed mature cards: high stability so one correct earns a month-plus
+    # interval, where jitter applies. Same-day repeat answers cannot build
+    # that much stability, so the states are planted directly.
+    mature = json.dumps({"stability": 30.0, "difficulty": 5.0, "reps": 4,
+                         "lapses": 0, "state": "review",
+                         "last_review": "2026-07-01T00:00:00+00:00",
+                         "next_due": "2026-08-01T00:00:00+00:00"})
+    with conn() as db:
+        for i in range(8):
+            db.execute(
+                """INSERT INTO knowledge_points
+                       (topic, point, status, times_seen, times_correct,
+                        consecutive_correct, interval_days, fsrs_state,
+                        next_review_date, created_at, updated_at)
+                   VALUES ('JitterProbe', ?, 'learning', 3, 3, 3, 30, ?,
+                           date('now'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)""",
+                (f"jitter probe fact number {i} about a distinct clinical threshold",
+                 mature))
+    for i in range(8):
+        record_knowledge_point(
+            topic="JitterProbe",
+            point=f"jitter probe fact number {i} about a distinct clinical threshold",
+            is_correct=True, confidence=4)
+    with conn() as db:
+        rows = db.execute(
+            "SELECT next_review_date, interval_days FROM knowledge_points "
+            "WHERE topic='JitterProbe'").fetchall()
+    assert all(r[1] >= 7 for r in rows), "cards must have reached jitter range"
+    dates = {str(r[0])[:10] for r in rows}
+    # 8 identical-history facts would land on ONE date without jitter.
+    assert len(dates) >= 3, f"jitter failed to spread due dates: {dates}"
+
+
+def test_a_fact_answered_today_is_not_served_again_today():
+    """User report: "I'm reviewing the same cards multiple times a day."
+    Root causes fixed together: scheduling ran on UTC days (from 8pm EDT the
+    'day' had flipped, so afternoon answers came due the same evening), and
+    nothing stopped a due-today fact from being served twice. Now the study
+    day is the user's LOCAL day and a fact touched today is done for today."""
+    from src.mcp_server import get_due_knowledge_points
+    from src.student_model import record_knowledge_point
+
+    point = "same-day guard probe: a distinctive clinical threshold fact"
+    record_knowledge_point(topic="GuardProbe", point=point,
+                           is_correct=False, confidence=2)  # wrong -> due soon
+    served = {p["point"] for p in get_due_knowledge_points(limit=500)["todays_set"]}
+    assert point not in served, "a fact answered today must not re-serve today"

@@ -624,7 +624,7 @@ class TestSubmitDosingAnswer:
         # simulate a lapsed card (same pattern used in test_curriculum_coverage.py).
         with conn() as db:
             db.execute(
-                "UPDATE knowledge_points SET next_review_date='2000-01-01' "
+                "UPDATE knowledge_points SET next_review_date='2000-01-01', updated_at=datetime(updated_at,'-2 days') "
                 "WHERE point LIKE 'dosing-%:Dantrolene%'"
             )
         due = get_due_knowledge_points(limit=50)
@@ -670,7 +670,7 @@ class TestGetDueDosingDrills:
         # Push the review date back to simulate a lapsed card
         with conn() as db:
             db.execute(
-                "UPDATE knowledge_points SET next_review_date='2000-01-01' "
+                "UPDATE knowledge_points SET next_review_date='2000-01-01', updated_at=datetime(updated_at,'-2 days') "
                 "WHERE point LIKE 'dosing-%:Lidocaine%'"
             )
         result = get_due_dosing_drills()
@@ -920,7 +920,7 @@ class TestAutoModeGating:
         submit_dosing_answer("Furosemide", False, 2, mode="recall")
         with conn() as db:
             db.execute(
-                "UPDATE knowledge_points SET next_review_date='2000-01-01' "
+                "UPDATE knowledge_points SET next_review_date='2000-01-01', updated_at=datetime(updated_at,'-2 days') "
                 "WHERE point LIKE 'dosing-recall:%'"
             )
         result = get_due_dosing_drills()
@@ -935,7 +935,7 @@ class TestAutoModeGating:
                              calc_type="weight_based", mode="calculation")
         with conn() as db:
             db.execute(
-                "UPDATE knowledge_points SET next_review_date='2000-01-01' "
+                "UPDATE knowledge_points SET next_review_date='2000-01-01', updated_at=datetime(updated_at,'-2 days') "
                 "WHERE point LIKE 'dosing-calc:%'"
             )
         result = get_due_dosing_drills()

@@ -681,7 +681,7 @@ class TestKnowledgePoints:
         assert any(p["point"].startswith("subacute SCI") for p in weak["points"])
         # Force the schedule into the past to exercise the due query mechanism.
         with conn() as db:
-            db.execute("UPDATE knowledge_points SET next_review_date='2000-01-01' "
+            db.execute("UPDATE knowledge_points SET next_review_date='2000-01-01', updated_at=datetime(updated_at,'-2 days') "
                        "WHERE point LIKE 'subacute SCI%'")
         due = get_due_knowledge_points_tool()
         assert due["count"] >= 1
