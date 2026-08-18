@@ -72,6 +72,48 @@ def load_confirmed() -> dict[str, dict]:
     return out
 
 
+CATALOG_JSON = ROOT / "data" / "kp_catalog.json"
+
+
+def write_catalog_json(fixes: dict[str, str]) -> int:
+    """Apply the corrections to data/kp_catalog.json as well as the database.
+
+    THE JSON IS THE SOURCE OF TRUTH AND THE DATABASE IS NOT. seed_kp_catalog()
+    runs on every MCP server start and does
+
+        ON CONFLICT(id) DO UPDATE SET answer=excluded.answer,
+                                      rationale=excluded.rationale,
+                                      is_critical_care=excluded.is_critical_care, ...
+
+    so a correction written only to the database is silently reverted by the
+    next restart. This actually happened: all 131 currency corrections and 96
+    ICU re-tags were wiped by a routine restart, while `volatility` and
+    `last_currency_check` survived because they do not appear in that INSERT —
+    leaving the corpus claiming "verified" over restored, dangerous text
+    (idarucizumab gone again, airway-fire card back to "deliver 100% oxygen").
+    A stamp that outlives the fix it certifies is worse than no stamp.
+
+    Returns the number of JSON entries updated.
+    """
+    if not CATALOG_JSON.exists():
+        print(f"WARNING: {CATALOG_JSON} missing — corrections will not survive a restart")
+        return 0
+    items = json.loads(CATALOG_JSON.read_text(encoding="utf-8"))
+    n = 0
+    for entry in items:
+        new = fixes.get(str(entry.get("id")))
+        if new and entry.get("answer") != new:
+            entry["answer"] = new
+            # The rationale was written to justify the OLD answer and keeps
+            # teaching it otherwise — see the DTI-reversal card, whose rationale
+            # carried the error independently of its answer.
+            entry["rationale"] = ""
+            n += 1
+    CATALOG_JSON.write_text(json.dumps(items, ensure_ascii=False, indent=1),
+                            encoding="utf-8")
+    return n
+
+
 def backup(db_path: Path) -> Path:
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     dest = db_path.with_name(f"{db_path.stem}.pre_currency.{stamp}.db")
@@ -169,7 +211,10 @@ def main() -> None:
             WHERE id=?""",
         [(new, now, kid) for kid, _t, _s, _o, new in kp_updates])
     db.commit()
+    # Without this the next server restart reverts everything above.
+    written = write_catalog_json({kid: new for kid, _t, _s, _o, new in cat_updates})
     print(f"updated {len(cat_updates)} catalog facts, {len(kp_updates)} studied facts")
+    print(f"wrote {written} corrections into data/kp_catalog.json (survives restart)")
     if kp_updates:
         print("studied facts were reset to weak and due tomorrow so the corrected "
               "version gets taught rather than inheriting the old schedule")

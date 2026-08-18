@@ -118,6 +118,37 @@ def main() -> None:
         print(f"\ndry run — {total} facts would be flagged critical-care")
         return
     db.commit()
+
+    # Persist to data/curriculum_blueprint.json, which is where this value
+    # actually originates.
+    #
+    # The chain matters and cost a full silent revert to work out:
+    #   curriculum_blueprint.json -> seed_curriculum() -> curriculum table
+    #     -> seed_kp_catalog() reads is_critical_care from THE CURRICULUM ROW
+    #        (student_model.py: `is_critical_care = int(curr["is_critical_care"])`)
+    #        for any topic present there, ignoring the catalog entry entirely
+    #     -> kp_catalog
+    #
+    # Both seeders run on every MCP server start, so a database-only re-tag is
+    # undone by the next restart — which is what happened to the first run of
+    # this script, along with 131 currency corrections. Writing the flag into
+    # kp_catalog.json does NOT help either, because the curriculum row wins.
+    # seed_curriculum honours an explicit is_critical_care when the blueprint
+    # supplies one, so this is the durable place to set it.
+    import json as _json
+    blueprint = ROOT / "data" / "curriculum_blueprint.json"
+    if not blueprint.exists():
+        print("WARNING: curriculum_blueprint.json missing — flags will NOT survive a restart")
+        return
+    wanted = {t for topics in ICU_TOPICS.values() for t in topics}
+    items = _json.loads(blueprint.read_text(encoding="utf-8"))
+    n = 0
+    for entry in items:
+        if entry.get("topic") in wanted and not entry.get("is_critical_care"):
+            entry["is_critical_care"] = 1
+            n += 1
+    blueprint.write_text(_json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"set is_critical_care on {n} blueprint topics (survives restart)")
     after = db.execute(
         "SELECT COUNT(*) FROM kp_catalog WHERE is_critical_care = 1").fetchone()[0]
     print(f"\nflagged {total} additional facts; {after} now critical-care")
