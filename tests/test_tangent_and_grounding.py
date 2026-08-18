@@ -71,9 +71,15 @@ def test_the_users_own_question_is_recorded_as_the_gap():
 
 
 def test_tangent_without_a_question_still_captures_ground_covered():
+    # Deliberately invented probe content. The original fixture used a real
+    # digoxin pharmacology fact, which later became a genuine card when the
+    # Strong Medicine afib video was ingested — the matcher then correctly
+    # refused to write a duplicate and the test failed. A fixture asserting
+    # "a new fact is written" must use content that is not real curriculum.
     result = log_tangent(
-        topic="Digoxin",
-        facts=["Digoxin is renally cleared and has a narrow therapeutic index"],
+        topic="ProbeTangentTopic",
+        facts=["Probe fixture fact: the fictional Zetamine receptor antagonist "
+               "requires dose adjustment in probe-state hepatic clearance"],
     )
     assert result["question_logged"] is False
     assert result["recorded"] == 1
