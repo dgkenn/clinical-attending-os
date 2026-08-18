@@ -337,6 +337,20 @@ def main() -> None:
     except Exception as exc:
         bad("queue vs history", str(exc)[:150])
 
+    # 8b-iv. Did the user tell the tutor about a problem? Feedback named
+    # mid-session used to evaporate — prose never reaches the backend. The
+    # tutor now relays it to user_feedback.log; surface anything present so a
+    # maintenance session cannot miss it.
+    fb = ROOT / "storage" / "logs" / "user_feedback.log"
+    if fb.exists() and fb.stat().st_size > 0:
+        entries = [l for l in fb.read_text(encoding="utf-8", errors="replace").splitlines() if l.strip()]
+        bad("user feedback waiting", f"{len(entries)} message(s) — read storage/logs/user_feedback.log")
+        for e in entries[-3:]:
+            parts = e.split("	")
+            print(f"        {parts[0][:16]}  {parts[1][:90] if len(parts)>1 else e[:90]}")
+    else:
+        ok("user feedback", "none waiting")
+
     # 8c. What the tutor actually called (per-tool-name log)
     tool_log = ROOT / "storage" / "logs" / "tool_calls.log"
     if tool_log.exists():

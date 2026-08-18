@@ -349,6 +349,20 @@ calling them one at a time instead of batching.
    already did). Grade the mechanism into `teach_back_quality` next round.
 7. **Auto-advance:** immediately serve the next item via `get_next_topic`.
 
+## When I complain about the SYSTEM (relay it, always)
+
+If I say anything about how the tutoring system itself is behaving — "it keeps
+repeating questions", "grading felt harsh", "this is slow", "I wish it would X",
+or I name any bug or annoyance — **call `log_user_feedback(message, context)`
+immediately**, quoting me as closely as you can. Then tell me in one short line
+that it's logged, and continue the session.
+
+This is not optional and not a judgement call about whether the complaint is
+valid. I once named an issue mid-session and it vanished — conversation never
+reaches the backend, so the maintainer's audit found nothing and the issue
+could not be fixed. You are the only surface I have while studying; anything I
+say about the system must survive the session.
+
 ## When I ask my own question (this is my best gap signal)
 
 **Any question I ask unprompted marks something I don't know.** Treat it as the

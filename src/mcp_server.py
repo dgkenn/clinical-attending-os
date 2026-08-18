@@ -190,6 +190,40 @@ def _existing_points() -> list:
         return []
 
 
+def log_user_feedback(message: str, context: str = "") -> dict:
+    """Relay something the user said ABOUT THE SYSTEM to the maintainer.
+
+    Call this whenever the user names a problem, annoyance, or wish about the
+    tutoring system itself — "it keeps repeating questions", "grading felt
+    harsh", "this is too slow", "I wish it would X". Quote them as closely as
+    you can in `message`; put what was happening at the time in `context`.
+
+    Why this exists: the user once reported an issue mid-session and it
+    vanished — conversational prose never reaches the backend, so the
+    maintainer's audit found nothing. The tutor is the only surface the user
+    has while studying; anything they say about the system must survive the
+    session. This costs one call and the maintainer reads it directly.
+
+    System feedback only. Clinical content goes through the normal tools.
+    """
+    try:
+        from datetime import datetime, timezone
+        from pathlib import Path as _P
+        from .config import settings
+        log = _P(settings.log_dir) / "user_feedback.log"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).isoformat()[:19]
+        line = "\t".join([stamp, (message or "").strip()[:500],
+                          (context or "").strip()[:200]])
+        with log.open("a", encoding="utf-8") as f:
+            f.write(line + "\n")
+        return {"ok": True,
+                "note": "Relayed to the maintainer. Tell the user it is logged, "
+                        "then continue the session."}
+    except Exception as exc:
+        return {"ok": False, "error": str(exc)[:200]}
+
+
 def log_tangent(topic: str, question_asked: str = "", facts: list | None = None,
                 trigger: str = "") -> dict:
     """Capture a question the USER asked. Their question is a self-identified gap.
@@ -880,6 +914,7 @@ def build_server():
     mcp.tool()(_logged(log_missed_topic, "log_missed_topic"))
     mcp.tool(name="submit_knowledge_points")(_logged(submit_knowledge_points, "submit_knowledge_points"))
     mcp.tool(name="log_tangent")(_logged(log_tangent, "log_tangent"))
+    mcp.tool(name="log_user_feedback")(_logged(log_user_feedback, "log_user_feedback"))
     mcp.tool(name="get_knowledge_points")(_logged(get_knowledge_points, "get_knowledge_points"))
     mcp.tool(name="get_due_knowledge_points")(_logged(get_due_knowledge_points, "get_due_knowledge_points"))
     mcp.tool(name="get_knowledge_gaps")(_logged(get_knowledge_gaps, "get_knowledge_gaps"))
