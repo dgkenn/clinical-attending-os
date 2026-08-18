@@ -314,6 +314,37 @@ def main() -> None:
             if errors:
                 bad("tool call errors",
                     ", ".join(f"{n}: {c}" for n, c in errors.most_common(5)))
+
+            # Was the session GROUNDED? The cardinal rule is that every question
+            # comes from the corpus, never from model training. A 32-question
+            # session once ran with zero retrieval calls: the questions looked
+            # clinically fine, so nothing seemed wrong, but not one was drawn
+            # from the vetted sources and none could be cited.
+            retrieval_calls = sum(
+                counts.get(t, 0) for t in
+                ("search_clinical_sources", "mcp_retrieval",
+                 "answer_from_clinical_sources", "retrieval")
+            )
+            answers = counts.get("submit_answer", 0) + counts.get("car_next", 0)
+            if answers == 0:
+                ok("grounding", "no answers recorded in this window")
+            elif retrieval_calls == 0:
+                bad("grounding",
+                    f"{answers} answers recorded with ZERO retrieval calls — "
+                    "questions were written from model training, not the corpus")
+            else:
+                (ok if retrieval_calls >= answers * 0.5 else bad)(
+                    "grounding",
+                    f"{retrieval_calls} retrieval calls for {answers} answers")
+
+            # Did the tutor load its instructions at all? Everything else
+            # degrades from this one omission.
+            if counts.get("get_claude_instructions", 0) == 0:
+                bad("tutor instructions",
+                    "get_claude_instructions never called — the tutor ran "
+                    "without its instructions (check the Project bootstrap)")
+            else:
+                ok("tutor instructions", "fetched")
         else:
             ok("tool calls", "log present, no calls yet")
     else:

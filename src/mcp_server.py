@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import functools
 import hmac
 
 from .retrieval import hybrid_search, retrieval_confidence
@@ -500,6 +501,75 @@ def _logged(fn, name: str):
     return wrapper
 
 
+_SETUP_NOTICE = (
+    "SETUP PROBLEM — you have not called `get_claude_instructions` in this "
+    "conversation, so you are running WITHOUT the tutor instructions. Call it "
+    "NOW and follow what it returns before asking anything else. Without it a "
+    "session silently degrades: questions get written from your own training "
+    "instead of the retrieval corpus (which is forbidden), due reviews and due "
+    "knowledge points are never fetched, and answers are recorded without "
+    "their knowledge points so the fact-level layer stays empty."
+)
+
+
+def _instructions_loaded_recently(hours: int = 18) -> bool:
+    """Has get_claude_instructions been called in the recent past?
+
+    A whole 32-question session once ran without ever fetching the
+    instructions: the tutor improvised from tool NAMES alone, so it called
+    get_next_topic and submit_answer (self-explanatory) and never called
+    retrieval at all. Every question came from model training rather than the
+    corpus, no due review or fact queue was consulted, and zero knowledge
+    points were written — with no error anywhere, because nothing failed.
+
+    The backend cannot make a client load its instructions, but it can decline
+    to stay quiet about it. Read from the tool-call log rather than process
+    state so a server restart mid-session does not read as "never loaded".
+    A false positive here is harmless: it prompts one extra instruction fetch.
+    """
+    try:
+        from datetime import datetime, timedelta, timezone
+        from pathlib import Path
+        from .config import settings
+        log = Path(settings.log_dir) / "tool_calls.log"
+        if not log.exists():
+            return False
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+        # Only the tail matters; the log is append-only and line-oriented.
+        for line in log.read_text(encoding="utf-8", errors="replace").splitlines()[-2000:]:
+            parts = line.split("\t")
+            if len(parts) >= 2 and parts[1] == "get_claude_instructions":
+                try:
+                    when = datetime.fromisoformat(parts[0]).replace(tzinfo=timezone.utc)
+                except ValueError:
+                    continue
+                if when >= cutoff:
+                    return True
+        return False
+    except Exception:
+        return True  # never let this check break a tool call
+
+
+def _with_setup_check(payload: dict) -> dict:
+    """Attach the setup warning to a response when instructions are missing."""
+    if isinstance(payload, dict) and not _instructions_loaded_recently():
+        payload = dict(payload)
+        payload["setup_warning"] = _SETUP_NOTICE
+    return payload
+
+
+@functools.wraps(get_next_topic)
+def get_next_topic_checked(*args, **kwargs) -> dict:
+    """Next topic to study, with a setup check attached.
+
+    This is the tool a tutor reaches for first and calls most, which makes it
+    the reliable place to surface a missing-instructions state. functools.wraps
+    keeps the real signature and docstring, which FastMCP reads to build the
+    tool schema — without it the parameters collapse to (args, kwargs).
+    """
+    return _with_setup_check(get_next_topic(*args, **kwargs))
+
+
 def build_server():
     """Create and return a configured FastMCP instance with all tools registered."""
     import os
@@ -538,7 +608,7 @@ def build_server():
     # Phase 1: New MCP endpoints
     mcp.tool(name="mcp_retrieval")(_logged(mcp_retrieval, "mcp_retrieval"))
     mcp.tool(name="get_session_state")(_logged(get_session_state, "get_session_state"))
-    mcp.tool(name="get_next_topic")(_logged(get_next_topic, "get_next_topic"))
+    mcp.tool(name="get_next_topic")(_logged(get_next_topic_checked, "get_next_topic"))
     mcp.tool(name="submit_answer")(_logged(submit_answer, "submit_answer"))
     mcp.tool(name="get_mastery_gates")(_logged(get_mastery_gates, "get_mastery_gates"))
     mcp.tool(name="get_progress")(_logged(get_progress, "get_progress"))
