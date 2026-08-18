@@ -177,6 +177,60 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     }
 
 
+def log_tangent(topic: str, facts: list, trigger: str = "") -> dict:
+    """Capture a self-directed tangent so the learning is not lost.
+
+    Use when the user drives the conversation somewhere unplanned — asking
+    about a drug, chasing a mechanism — and real ground gets covered WITHOUT a
+    graded question. A digoxin rabbit hole ran for a whole session and left
+    zero trace: nothing in the attempt log, nothing in the fact queue. That is
+    the most engaged, most curiosity-driven learning in a session, and it was
+    the only kind the system could not see.
+
+    `facts` is a list of strings: the specific things covered, phrased as
+    canonical facts ("Digoxin toxicity is potentiated by hypokalemia").
+
+    These are recorded as EXPOSED-BUT-UNPROVEN — weak status, never counted
+    correct, and scheduled to come back on the next review cycle. Exposure is
+    not knowledge: the user heard it, they did not demonstrate it, and
+    recording discussion as a correct answer would inflate mastery with things
+    they were merely told.
+
+    This does NOT replace asking a question. Prefer closing a tangent with one
+    or two recall questions through `submit_answer` — that is retrieval
+    practice and it produces a real graded record. Use this for ground covered
+    that you did not test.
+    """
+    from .topic_resolver import resolve_topic
+    topic, resolved = resolve_topic(topic)
+    recorded, skipped = [], []
+    for f in facts or []:
+        text = (f if isinstance(f, str) else str(f.get("point", "") if isinstance(f, dict) else f)).strip()
+        if len(text) < 12:
+            skipped.append({"fact": text[:60], "reason": "too short to be a fact"})
+            continue
+        r = _record_kp(
+            topic=topic,
+            point=text[:300],
+            is_correct=False,        # exposure, not demonstrated knowledge
+            confidence=None,
+            mistake_type="pretest_unstudied",
+            triage=False,
+        )
+        (recorded if r else skipped).append(
+            r or {"fact": text[:60], "reason": "blank topic or fact"})
+    return {
+        "ok": True,
+        "recorded": len(recorded),
+        "canonical_topic": topic,
+        "topic_was_canonicalized": resolved,
+        "trigger": trigger,
+        "skipped": skipped,
+        "note": ("Captured as exposed-but-unproven and due for testing. Ask a "
+                 "recall question on at least one of these before moving on."),
+    }
+
+
 def get_knowledge_points(topic: str = "", status: str = "", due_only: bool = False) -> dict:
     """List atomic knowledge points with calibration + schedule. Filter by `topic`,
     `status` ('weak'|'learning'|'mastered'), and/or `due_only` (due on their own
@@ -558,16 +612,58 @@ def _with_setup_check(payload: dict) -> dict:
     return payload
 
 
+def _attach_sources(payload: dict, max_results: int = 5) -> dict:
+    """Retrieve for the topic being served, and return the passages with it.
+
+    Grounding is the cardinal rule — every question must come from the corpus —
+    and it was being skipped almost entirely: 0 retrieval calls across 22
+    answers on 2026-08-17, 1 across 13 on 2026-08-18. The questions that
+    resulted looked clinically sound, which is exactly what makes it dangerous:
+    they came from model training, cited nothing, and no failure was visible.
+
+    Two rounds of instruction changes did not fix it, so stop depending on the
+    tutor making a second call. The backend already computes `retrieval_query`
+    for the topic it is serving; running that retrieval here means the material
+    arrives WITH the topic and grounding costs no extra round trip. The tutor
+    can still call search_clinical_sources for depth, and should — this is a
+    floor, not a ceiling.
+    """
+    if not isinstance(payload, dict):
+        return payload
+    query = (payload.get("retrieval_query") or payload.get("topic") or "").strip()
+    if not query:
+        return payload
+    try:
+        results, insufficient = hybrid_search(
+            query, mode="intern_teach", max_results=max_results)
+        payload = dict(payload)
+        payload["sources"] = [r.model_dump() for r in results]
+        payload["retrieval_confidence"] = retrieval_confidence(results)
+        payload["insufficient_context"] = insufficient
+        payload["sources_note"] = (
+            "Build the question ONLY from these passages. They were retrieved "
+            "for you so grounding needs no extra call. If they are insufficient, "
+            "say so or call search_clinical_sources — never fill the gap from "
+            "your own training."
+        )
+    except Exception as exc:  # retrieval must never break topic selection
+        payload = dict(payload)
+        payload["sources"] = []
+        payload["sources_error"] = str(exc)[:200]
+    return payload
+
+
 @functools.wraps(get_next_topic)
 def get_next_topic_checked(*args, **kwargs) -> dict:
-    """Next topic to study, with a setup check attached.
+    """Next topic to study, WITH its grounding passages already retrieved.
 
     This is the tool a tutor reaches for first and calls most, which makes it
-    the reliable place to surface a missing-instructions state. functools.wraps
-    keeps the real signature and docstring, which FastMCP reads to build the
-    tool schema — without it the parameters collapse to (args, kwargs).
+    the reliable place both to surface a missing-instructions state and to
+    deliver the source material. functools.wraps keeps the real signature and
+    docstring, which FastMCP reads to build the tool schema — without it the
+    parameters collapse to (args, kwargs).
     """
-    return _with_setup_check(get_next_topic(*args, **kwargs))
+    return _with_setup_check(_attach_sources(get_next_topic(*args, **kwargs)))
 
 
 def build_server():
@@ -596,6 +692,7 @@ def build_server():
     mcp.tool()(_logged(get_student_dashboard, "get_student_dashboard"))
     mcp.tool()(_logged(log_missed_topic, "log_missed_topic"))
     mcp.tool(name="submit_knowledge_points")(_logged(submit_knowledge_points, "submit_knowledge_points"))
+    mcp.tool(name="log_tangent")(_logged(log_tangent, "log_tangent"))
     mcp.tool(name="get_knowledge_points")(_logged(get_knowledge_points, "get_knowledge_points"))
     mcp.tool(name="get_due_knowledge_points")(_logged(get_due_knowledge_points, "get_due_knowledge_points"))
     mcp.tool(name="get_knowledge_gaps")(_logged(get_knowledge_gaps, "get_knowledge_gaps"))
