@@ -242,8 +242,7 @@ def cmd_artifacts(_args) -> int:
     asked = list(con.execute(
         "SELECT topic, point, status FROM knowledge_points "
         "WHERE point LIKE '[asked]%' ORDER BY topic"))
-    print(f"
-SELF-IDENTIFIED GAPS (questions YOU asked): {len(asked)}")
+    print(f"\nSELF-IDENTIFIED GAPS (questions YOU asked): {len(asked)}")
     print("   these are the highest-value signal in the record — unprompted,")
     print("   so they reflect what you actually hit, not what was served to you")
     for r in asked[:10]:
