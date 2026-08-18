@@ -32,12 +32,21 @@ def minutes_since_last_call() -> float | None:
     lines = [l for l in log.read_text(encoding="utf-8", errors="replace").splitlines() if l.strip()]
     if not lines:
         return None
-    stamp = lines[-1].split("\t", 1)[0]
-    try:
-        last = datetime.fromisoformat(stamp).replace(tzinfo=timezone.utc)
-    except ValueError:
-        return None
-    return (datetime.now(timezone.utc) - last).total_seconds() / 60
+    # Only REAL tutor tool calls indicate a live session. Names beginning with
+    # "_" are internal markers the server writes about itself
+    # (_sources_delivered, _grounded_declared) and are emitted by the test suite
+    # and maintenance scripts. Counting them made this guard refuse a restart
+    # because of my own testing seconds earlier, with no user session anywhere.
+    for line in reversed(lines):
+        parts = line.split("\t")
+        if len(parts) < 2 or parts[1].startswith("_"):
+            continue
+        try:
+            last = datetime.fromisoformat(parts[0]).replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        return (datetime.now(timezone.utc) - last).total_seconds() / 60
+    return None
 
 
 def main() -> None:

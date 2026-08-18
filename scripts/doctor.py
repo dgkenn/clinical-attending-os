@@ -355,7 +355,23 @@ def main() -> None:
     tool_log = ROOT / "storage" / "logs" / "tool_calls.log"
     if tool_log.exists():
         from collections import Counter
-        lines = tool_log.read_text(encoding="utf-8", errors="replace").splitlines()[-400:]
+        all_lines = tool_log.read_text(encoding="utf-8", errors="replace").splitlines()
+        lines = all_lines[-400:]
+        # Grounding is judged over the MOST RECENT STUDY DAY, not the rolling
+        # 400-call window. The window spans several sessions, so sessions that
+        # predate a behaviour change keep dragging the verdict down and the
+        # check stops describing current behaviour — the same reason the
+        # recording-health check is scoped per-day.
+        study_days = sorted({l.split("	")[0][:10] for l in all_lines
+                             if "	submit_answer	" in l or "	car_next	" in l})
+        last_study_day = study_days[-1] if study_days else None
+        recent = [l for l in all_lines
+                  if last_study_day and l.startswith(last_study_day)]
+        gcounts = Counter()
+        for ln in recent:
+            parts = ln.split("	")
+            if len(parts) >= 2:
+                gcounts[parts[1]] += 1
         counts, errors = Counter(), Counter()
         for ln in lines:
             parts = ln.split("\t")
@@ -375,22 +391,37 @@ def main() -> None:
             # session once ran with zero retrieval calls: the questions looked
             # clinically fine, so nothing seemed wrong, but not one was drawn
             # from the vetted sources and none could be cited.
-            retrieval_calls = sum(
-                counts.get(t, 0) for t in
+            # Grounding now arrives two ways, and the check must count both.
+            # get_next_topic attaches source passages server-side, which removed
+            # the tutor's NEED to call search_clinical_sources — so counting
+            # only explicit calls reported a correctly-grounded session as
+            # "ZERO retrieval calls". The fix had hidden its own evidence.
+            explicit = sum(
+                gcounts.get(t, 0) for t in
                 ("search_clinical_sources", "mcp_retrieval",
                  "answer_from_clinical_sources", "retrieval")
             )
-            answers = counts.get("submit_answer", 0) + counts.get("car_next", 0)
+            delivered = gcounts.get("_sources_delivered", 0)
+            answers = gcounts.get("submit_answer", 0) + gcounts.get("car_next", 0)
+            total = explicit + delivered
+            detail = (f"[{last_study_day}] {delivered} topics served with sources, "
+                      f"{explicit} explicit retrieval calls, {answers} answers")
             if answers == 0:
                 ok("grounding", "no answers recorded in this window")
-            elif retrieval_calls == 0:
+            elif total == 0:
                 bad("grounding",
-                    f"{answers} answers recorded with ZERO retrieval calls — "
-                    "questions were written from model training, not the corpus")
+                    f"{answers} answers with NO sources delivered and NO retrieval "
+                    "calls — questions came from model training, not the corpus")
+            elif total >= answers * 0.5:
+                ok("grounding", detail)
             else:
-                (ok if retrieval_calls >= answers * 0.5 else bad)(
-                    "grounding",
-                    f"{retrieval_calls} retrieval calls for {answers} answers")
+                bad("grounding", detail + " — under half of answers had grounding")
+            # Honest limit: delivery proves the passages reached the tutor, not
+            # that the question was built from them. `grounded_in` on
+            # submit_answer is the field that evidences actual use.
+            cited = gcounts.get("_grounded_declared", 0)
+            if answers:
+                print(f"        (grounding declared on {cited}/{answers} answers)")
 
             # Did the tutor load its instructions at all? Everything else
             # degrades from this one omission.

@@ -637,9 +637,16 @@ def submit_answer(
     knowledge_points: Optional[list] = None,
     user_answer_verbatim: str = "",
     tutor_response: str = "",
+    grounded_in: str = "",
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
+
+    Pass `grounded_in` naming the source passage this question was built from
+    (the book/section from `sources`, or the query if you retrieved separately).
+    Delivery of passages only proves they reached you; this is the field that
+    evidences the question was actually built from them rather than from
+    training. Leave it empty rather than inventing a citation.
 
     Pass `user_answer_verbatim` (what the user ACTUALLY said, their words) and
     `tutor_response` (what you said back — the teaching, the correction) to make
@@ -862,6 +869,13 @@ def submit_answer(
         # attempt is already durably written, so raising here would surface as a
         # failure to the client and invite a retry that double-submits the
         # answer. A KP problem is reported in the response, not by failing.
+        if (grounded_in or "").strip():
+            try:
+                from .mcp_server import _log_tool_call
+                _log_tool_call("_grounded_declared", True, grounded_in[:100])
+            except Exception:
+                pass
+
         kp_recorded, kp_error = 0, None
         kp_derived = False
 

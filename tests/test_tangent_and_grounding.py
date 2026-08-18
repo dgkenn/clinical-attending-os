@@ -212,3 +212,56 @@ def test_a_fact_answered_today_is_not_served_again_today():
                            is_correct=False, confidence=2)  # wrong -> due soon
     served = {p["point"] for p in get_due_knowledge_points(limit=500)["todays_set"]}
     assert point not in served, "a fact answered today must not re-serve today"
+
+
+def test_source_delivery_is_measurable():
+    """Attaching sources automatically removed the tutor's need to call
+    search_clinical_sources, which silently broke the grounding check — it
+    counted only explicit retrieval calls, so a correctly-grounded session
+    reported "ZERO retrieval calls, questions written from model training".
+    The fix had hidden its own evidence. Delivery is now logged so it counts."""
+    import re
+    from pathlib import Path
+    from src.config import settings
+    from src.mcp_server import _attach_sources
+
+    log = Path(settings.log_dir) / "tool_calls.log"
+    before = log.read_text(encoding="utf-8", errors="replace").count("_sources_delivered") \
+        if log.exists() else 0
+    out = _attach_sources({"topic": "Hyperkalemia", "retrieval_query": "hyperkalemia treatment"})
+    if not out.get("sources"):
+        import pytest
+        pytest.skip("corpus not ingested")
+    after = log.read_text(encoding="utf-8", errors="replace").count("_sources_delivered")
+    assert after > before, "source delivery must be logged or grounding is unmeasurable"
+
+
+def test_grounded_in_is_recorded_when_declared():
+    from pathlib import Path
+    from src.config import settings
+    from src.mcp_endpoints import submit_answer
+
+    log = Path(settings.log_dir) / "tool_calls.log"
+    before = log.read_text(encoding="utf-8", errors="replace").count("_grounded_declared") \
+        if log.exists() else 0
+    submit_answer(topic="Hyperkalemia", question="grounding declaration probe",
+                  user_answer="a distinct answer for this probe", is_correct=True,
+                  grounded_in="MGH Housestaff Manual - Hyperkalemia")
+    after = log.read_text(encoding="utf-8", errors="replace").count("_grounded_declared")
+    assert after > before
+
+
+def test_empty_grounded_in_is_not_recorded_as_a_citation():
+    """An empty field must stay empty rather than counting as grounding —
+    otherwise the only signal of actual use becomes meaningless."""
+    from pathlib import Path
+    from src.config import settings
+    from src.mcp_endpoints import submit_answer
+
+    log = Path(settings.log_dir) / "tool_calls.log"
+    before = log.read_text(encoding="utf-8", errors="replace").count("_grounded_declared") \
+        if log.exists() else 0
+    submit_answer(topic="Hyperkalemia", question="no grounding declared probe",
+                  user_answer="another distinct answer body here", is_correct=True)
+    after = log.read_text(encoding="utf-8", errors="replace").count("_grounded_declared")
+    assert after == before

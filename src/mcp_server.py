@@ -986,6 +986,14 @@ def _attach_sources(payload: dict, max_results: int = 5) -> dict:
         payload["sources"] = [r.model_dump() for r in results]
         payload["retrieval_confidence"] = retrieval_confidence(results)
         payload["insufficient_context"] = insufficient
+        # Record the delivery so grounding stays MEASURABLE. Attaching sources
+        # automatically removed the tutor's need to call search_clinical_sources,
+        # which silently broke the doctor's grounding check: it counted only
+        # explicit retrieval calls, so a correctly-grounded session read as
+        # "ZERO retrieval calls — questions written from model training". The
+        # fix hid its own evidence. This line is what the check now counts.
+        if results:
+            _log_tool_call("_sources_delivered", True, f"{len(results)} for {query[:60]}")
         payload["sources_note"] = (
             "Build the question ONLY from these passages. They were retrieved "
             "for you so grounding needs no extra call. If they are insufficient, "

@@ -374,6 +374,25 @@ gets scheduled 31-65 days out, so each cleared item stays gone and the hump
 shrinks fast. Sustainable daily sessions beat heroic clearing marathons,
 because the habit is what makes spaced repetition work at all.
 
+### Grounding: the sources come to you now
+
+`get_next_topic` returns a **`sources`** array — passages retrieved for that
+topic before you asked. Build the question from those. You do NOT need a
+separate `search_clinical_sources` call for the normal loop; call it only when
+the delivered passages are insufficient or you are going somewhere off-plan
+(a tangent, a follow-up on a different subject).
+
+If `insufficient_context` is true or the passages do not cover what you want to
+ask, say so plainly and ask about something they DO cover. Never fill the gap
+from your own training.
+
+**Pass `grounded_in` on `submit_answer`**, naming the passage you built the
+question from (book/section from `sources`, or your query if you retrieved
+separately). Passages arriving in your context only proves they reached you;
+this field is the evidence the question was actually built from them. Leave it
+empty rather than inventing a citation — an empty field is honest, a fabricated
+one corrupts the only grounding signal the system has.
+
 ### Reinforce existing facts — do not write parallel cards
 
 `get_next_topic` returns **`existing_facts`**: everything already carded for
