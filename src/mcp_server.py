@@ -177,6 +177,19 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     }
 
 
+def _existing_points() -> list:
+    """All knowledge points, for duplicate matching at capture time."""
+    try:
+        import sqlite3
+        from .student_model import conn
+        with conn() as db:
+            db.row_factory = sqlite3.Row
+            return list(db.execute(
+                "SELECT id, topic, point, status, times_seen FROM knowledge_points"))
+    except Exception:
+        return []
+
+
 def log_tangent(topic: str, question_asked: str = "", facts: list | None = None,
                 trigger: str = "") -> dict:
     """Capture a question the USER asked. Their question is a self-identified gap.
@@ -222,10 +235,51 @@ def log_tangent(topic: str, question_asked: str = "", facts: list | None = None,
                 else str(f.get("point", "") if isinstance(f, dict) else f)).strip()
         items.append((text[:300], "covered_in_tangent"))
 
+    # Dedupe against the whole existing record before writing anything. Three
+    # verdicts, because the risks are asymmetric: a wrong merge silently
+    # destroys a distinct fact (near-identical clinical strings routinely
+    # carry opposite meanings), while a wrong split just leaves a duplicate.
+    # So confident matches merge, confident non-matches create, and the gray
+    # zone is RETURNED to the tutor to resolve — never silently decided.
+    # The matcher is validated against every pair in the live database in
+    # tests/test_fact_matcher.py: 46/46 true duplicates merged, 0 false merges.
+    from .fact_matcher import find_matching_point
+    existing_rows = _existing_points()
+    merged, needs_review = [], []
+
     for text, kind in items:
         if len(text.replace("[asked] ", "")) < 12:
             skipped.append({"item": text[:60], "reason": "too short to be testable"})
             continue
+
+        match, unsure = find_matching_point(topic, text, existing_rows)
+        if match:
+            # Same fact already tracked (possibly under another topic, possibly
+            # worded better). Touch THAT one — the exposure lands on its real
+            # history instead of a parallel copy — keeping its canonical text.
+            r = _record_kp(
+                topic=match["topic"], point=match["point"],
+                is_correct=False, confidence=None,
+                mistake_type="pretest_unstudied", triage=False,
+            )
+            if r:
+                r["kind"] = kind
+                r["merged_into_existing"] = True
+                r["match_reason"] = match["why"]
+                merged.append(r)
+            continue
+        if unsure:
+            # Do not guess. Hand both texts back for the tutor to decide:
+            # either re-log using the existing wording (which will then merge)
+            # or restate the fact so it is clearly distinct.
+            needs_review.append({
+                "new": text,
+                "existing": unsure["point"],
+                "existing_topic": unsure["topic"],
+                "why": unsure["why"],
+            })
+            continue
+
         r = _record_kp(
             topic=topic,
             point=text,
@@ -243,17 +297,26 @@ def log_tangent(topic: str, question_asked: str = "", facts: list | None = None,
     return {
         "ok": True,
         "recorded": len(recorded),
+        "merged_with_existing": len(merged),
+        "merged": [{"point": m["point"][:120], "why": m.get("match_reason", "")}
+                   for m in merged],
+        "needs_review": needs_review,
         "question_logged": bool(q),
         "canonical_topic": topic,
         "topic_was_canonicalized": resolved,
         "trigger": trigger,
         "skipped": skipped,
-        "note": ("Logged as a self-identified gap, unproven and due for testing. "
-                 "Now ask the user their OWN question back — answering it is the "
-                 "retrieval practice, and it produces a graded record."
-                 if q else
-                 "Captured as exposed-but-unproven. Ask a recall question on at "
-                 "least one of these before moving on."),
+        "note": (("Logged as a self-identified gap, unproven and due for testing. "
+                  "Now ask the user their OWN question back — answering it is the "
+                  "retrieval practice, and it produces a graded record."
+                  if q else
+                  "Captured as exposed-but-unproven. Ask a recall question on at "
+                  "least one of these before moving on.")
+                 + (" NEEDS_REVIEW is non-empty: for each entry, decide whether "
+                    "the new fact is the same as the existing one — if so, "
+                    "re-log using the EXISTING wording; if genuinely distinct, "
+                    "restate it so the difference is explicit and log again."
+                    if needs_review else "")),
     }
 
 
