@@ -635,9 +635,20 @@ def submit_answer(
     question: str = "",
     session_id: Optional[str] = None,
     knowledge_points: Optional[list] = None,
+    user_answer_verbatim: str = "",
+    tutor_response: str = "",
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
+
+    Pass `user_answer_verbatim` (what the user ACTUALLY said, their words) and
+    `tutor_response` (what you said back — the teaching, the correction) to make
+    the session auditable. `user_answer` is your graded summary and is useless
+    for auditing: it is your account of the user, not the user's own words.
+    Repeated audits have stalled on exactly this — the user asked whether their
+    stated reason for declining a topic was recorded anywhere and it was not,
+    because conversational prose never reaches the backend unless a tool
+    carries it. Storage is not a concern (~16 MB/year measured).
 
     Set `result="partial"` when the user had the substance but missed a
     component ("named lactulose, wrong mechanism"). Grading was binary until a
@@ -749,6 +760,8 @@ def submit_answer(
                 bloom_level=bloom_level,
                 teach_back_quality=teach_back_quality,
                 transfer_success=transfer_success,
+                user_answer_verbatim=user_answer_verbatim,
+                tutor_response=tutor_response,
             )
 
         # Re-read the updated topic row (mastery_score/status written by log_attempt)

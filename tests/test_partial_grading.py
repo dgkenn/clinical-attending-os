@@ -91,3 +91,38 @@ def test_a_partial_can_never_confer_mastery():
     for _ in range(4):
         record_knowledge_point(topic="ProbeC", point=point, is_correct="partial", confidence=4)
     assert _state(point)["status"] != "mastered"
+
+
+def test_verbatim_exchange_is_stored_with_the_attempt():
+    """Auditing a session needs what was actually SAID, not the tutor's account
+    of it. `user_answer` is the graded summary ("correctly identified lactulose,
+    wrong mechanism") — the tutor's account of the user, not the user's words.
+    Repeated audits stalled on exactly this: the user asked whether their stated
+    reason for declining a topic was recorded and it was not, because prose
+    never reaches the backend unless a tool carries it."""
+    from src.student_model import conn
+    said = "I'd give calcium first, then insulin and D50. Not sure about kayexalate."
+    taught = "Right sequence — calcium stabilises the membrane but does not lower K."
+    submit_answer(
+        topic="Hyperkalemia",
+        question="K 7.1 with peaked T waves, first move?",
+        user_answer="correctly sequenced calcium then insulin",
+        user_answer_verbatim=said,
+        tutor_response=taught,
+        is_correct=True, result="correct", confidence_reported=4,
+    )
+    with conn() as db:
+        r = db.execute(
+            "SELECT date, user_answer, user_answer_verbatim, tutor_response "
+            "FROM question_attempts ORDER BY attempt_id DESC LIMIT 1").fetchone()
+    assert r["user_answer_verbatim"] == said, "the user's own words must survive"
+    assert r["tutor_response"] == taught, "the teaching must survive"
+    assert r["user_answer"] != r["user_answer_verbatim"], "graded summary is kept separately"
+    assert r["date"], "every exchange carries a timestamp"
+
+
+def test_verbatim_capture_is_optional_and_back_compatible():
+    """Callers that never learned about it must keep working."""
+    r = submit_answer(topic="Hyperkalemia", question="back-compat verbatim probe",
+                      user_answer="an answer distinct from others here", is_correct=True)
+    assert r["ok"] is True

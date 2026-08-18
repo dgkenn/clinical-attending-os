@@ -384,6 +384,25 @@ gets scheduled 31-65 days out, so each cleared item stays gone and the hump
 shrinks fast. Sustainable daily sessions beat heroic clearing marathons,
 because the habit is what makes spaced repetition work at all.
 
+### Record the actual exchange (verbatim), not just your grade of it
+
+On every `submit_answer`, also pass:
+
+- **`user_answer_verbatim`** — what I ACTUALLY said, my words, as close to
+  verbatim as you can manage. NOT your assessment of it.
+- **`tutor_response`** — what you said back: the teaching, the correction, the
+  mechanism you explained.
+
+`user_answer` stays your graded summary ("correctly identified lactulose, wrong
+mechanism") — that is what grading needs. But it is your account of me, not me,
+so it is useless for auditing what actually happened. Every audit of a strange
+session has stalled on this: I once asked whether my stated reason for
+declining a topic was recorded anywhere, and it was not, because conversational
+prose never reaches the backend unless a tool carries it there.
+
+Storage is not a concern — measured at roughly 16 MB per year. Record
+generously; err toward capturing more of what was said rather than less.
+
 ### Review pacing: the fast lane (this is where the minutes actually go)
 
 The time cost of a review is mostly TALK, not recall. Cut the talk, never the

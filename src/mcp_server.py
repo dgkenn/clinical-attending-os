@@ -786,7 +786,12 @@ _TRANSCRIPT_VERBATIM = {
     "trigger", "query", "gap_note", "knowledge_points", "is_correct",
     "confidence_reported", "mistake_type", "teach_back_quality",
     "transfer_success", "result", "answered",
+    # The actual exchange — the user's own words and the tutor's teaching.
+    # These are the whole point of an audit, so they get a larger allowance
+    # than the generic 1200-char cap below.
+    "user_answer_verbatim", "tutor_response",
 }
+_TRANSCRIPT_LONG_FIELDS = {"user_answer_verbatim": 4000, "tutor_response": 8000}
 # Never echoed into the transcript, however they arrive.
 _TRANSCRIPT_NEVER = {"instructions", "sources", "results", "api_key", "token", "key"}
 _TRANSCRIPT_MAX_BYTES = 8_000_000  # ~8 MB, then rotate to .1
@@ -801,6 +806,10 @@ def _compact(value, depth: int = 0):
         for k, v in value.items():
             if k in _TRANSCRIPT_NEVER:
                 out[k] = f"<{k} omitted>"
+            elif k in _TRANSCRIPT_LONG_FIELDS:
+                sv = str(v)
+                cap = _TRANSCRIPT_LONG_FIELDS[k]
+                out[k] = sv if len(sv) <= cap else sv[:cap] + "..."
             elif k in _TRANSCRIPT_VERBATIM:
                 out[k] = _compact(v, depth + 1)
             else:

@@ -139,6 +139,16 @@ def initialize_database() -> None:
                 "teach_back_quality": "REAL DEFAULT 0.0",
                 "transfer_success": "BOOLEAN DEFAULT 0",
                 "bloom_level": "TEXT DEFAULT ''",  # recall|apply|analyze|evaluate|transfer
+                # Verbatim exchange, for auditing what was actually said.
+                # `user_answer` holds the tutor's GRADED SUMMARY ("correctly
+                # identified lactulose, wrong mechanism") — useful for grading,
+                # useless for auditing, because it is the tutor's account of
+                # the user rather than the user's own words. Repeated audits
+                # stalled on exactly this: the user asked whether their stated
+                # reason for declining a topic was recorded anywhere, and it
+                # was not, because prose never reaches the backend at all.
+                "user_answer_verbatim": "TEXT DEFAULT ''",
+                "tutor_response": "TEXT DEFAULT ''",
             },
             "sessions": {
                 "mode": "TEXT",
@@ -1088,6 +1098,8 @@ def log_attempt(
     bloom_level: str = "",
     teach_back_quality: float | None = None,
     transfer_success: bool = False,
+    user_answer_verbatim: str = "",
+    tutor_response: str = "",
 ) -> int:
     # These two columns existed and were never written. submit_answer accepted
     # both from the tutor, used them transiently to pick the next strategy, and
@@ -1104,8 +1116,8 @@ def log_attempt(
         cur = db.execute(
             """INSERT INTO question_attempts(date, session_id, topic_id, library, training_phase, topic, subtopic, question, user_answer, ideal_answer,
             result, mistake_type, difficulty, hints_used, confidence_reported, retrieval_sources, source_citations, notes, bloom_level,
-            teach_back_quality, transfer_success)
-            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            teach_back_quality, transfer_success, user_answer_verbatim, tutor_response)
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 now(),
                 session_id,
@@ -1133,6 +1145,8 @@ def log_attempt(
                 (None if teach_back_quality is None
                  else max(0.0, min(1.0, float(teach_back_quality)))),
                 1 if transfer_success else 0,
+                (user_answer_verbatim or "")[:4000],
+                (tutor_response or "")[:8000],
             ),
         )
         return int(cur.lastrowid)

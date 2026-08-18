@@ -324,12 +324,51 @@ def cmd_transcript(args) -> int:
     return 0
 
 
+def cmd_conversation(args) -> int:
+    """Replay a session as the ACTUAL conversation, verbatim, with timestamps.
+
+    `session` shows what the tutor recorded; this shows what was really said.
+    The distinction matters because user_answer is the tutor's graded summary
+    ("correctly identified lactulose, wrong mechanism") — its account of the
+    user, not the user's words. Auditing a strange session needs the latter.
+    """
+    con = db()
+    day = args.date or con.execute(
+        "SELECT date(MAX(date)) d FROM question_attempts").fetchone()["d"]
+    rows = list(con.execute(
+        """SELECT time(date,'localtime') t, topic, question, result,
+                  confidence_reported conf, user_answer, user_answer_verbatim,
+                  tutor_response
+           FROM question_attempts WHERE date(date,'localtime') = ?
+           ORDER BY attempt_id""", (day,)))
+    print(f"CONVERSATION — {day}  ({len(rows)} exchanges)\n")
+    have_verbatim = 0
+    for r in rows:
+        print(f"[{r['t']}] {r['topic']}  ({r['result']}, conf {r['conf']})")
+        print(f"  TUTOR ASKED : {(r['question'] or '')[:300]}")
+        if r["user_answer_verbatim"]:
+            have_verbatim += 1
+            print(f"  YOU SAID    : {r['user_answer_verbatim'][:600]}")
+        else:
+            print(f"  (verbatim not captured — graded summary follows)")
+            print(f"  GRADED AS   : {(r['user_answer'] or '')[:300]}")
+        if r["tutor_response"]:
+            print(f"  TUTOR SAID  : {r['tutor_response'][:600]}")
+        print()
+    if rows and not have_verbatim:
+        print("NOTE: no verbatim capture in this session — the tutor is not yet")
+        print("passing user_answer_verbatim/tutor_response on submit_answer.")
+    con.close()
+    return 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("overview").set_defaults(fn=cmd_overview)
     s = sub.add_parser("session"); s.add_argument("date", nargs="?"); s.set_defaults(fn=cmd_session)
     t = sub.add_parser("transcript"); t.add_argument("date", nargs="?"); t.set_defaults(fn=cmd_transcript)
+    v = sub.add_parser("conversation"); v.add_argument("date", nargs="?"); v.set_defaults(fn=cmd_conversation)
     w = sub.add_parser("why"); w.add_argument("topic"); w.set_defaults(fn=cmd_why)
     sub.add_parser("contradictions").set_defaults(fn=cmd_contradictions)
     sub.add_parser("artifacts").set_defaults(fn=cmd_artifacts)
