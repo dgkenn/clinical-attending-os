@@ -252,8 +252,19 @@ def main() -> None:
                     "  AND (question IS NULL OR question = '' "
                     "       OR question = 'MCP submitted answer')",
                     (last_day,)).fetchone()[0]
+                # Count only facts the TUTOR wrote, not ones a migration or
+                # repair script stamped. Reading the raw table made a maintenance
+                # script look like healthy tutor behaviour and reported OK when
+                # the tutor had in fact recorded nothing.
+                kps_from_study = con.execute(
+                    "SELECT COUNT(*) FROM knowledge_points "
+                    "WHERE date(updated_at) = ? AND times_seen > 0",
+                    (last_day,)).fetchone()[0]
                 label = f"recording health ({last_day})"
-                if kps == 0:
+                if kps_from_study == 0 and attempts:
+                    bad(label, f"{attempts} attempts but 0 knowledge points came "
+                               "from answering — the fact-level layer is not being written")
+                elif kps == 0:
                     bad(label, f"{attempts} attempts but 0 knowledge points — the "
                                "fact-level layer is not being written")
                 else:
@@ -295,6 +306,36 @@ def main() -> None:
             (bad if (due_kp > 40 and served == 0) else ok)("fact queue", detail)
         except Exception as exc:
             bad("fact queue", str(exc)[:150])
+
+    # 8b-iii. Does the queue agree with the history?
+    #
+    # Three separate "findings" reported to the user during one debugging
+    # session were artifacts, and the user had to correct each from memory
+    # ("I already did PE today"). Every one of them was the same shape: the
+    # queue asking for something the history says was already done. That is
+    # cheap to check automatically and expensive to notice by hand.
+    try:
+        from src.student_model import get_due_reviews
+        con = sqlite3.connect(str(db_path))
+        clashes = 0
+        for d in get_due_reviews(limit=500):
+            n = con.execute(
+                "SELECT COUNT(*) FROM question_attempts WHERE topic = ? "
+                "AND date >= datetime('now','-3 days')", (d["topic"],)).fetchone()[0]
+            if n and d["days_overdue"] > 3:
+                clashes += 1
+        clashes += con.execute(
+            """SELECT COUNT(*) FROM knowledge_points
+               WHERE date(next_review_date) <= date('now') AND times_correct > 0
+                 AND date(updated_at) >= date('now','-2 days')""").fetchone()[0]
+        con.close()
+        (ok if clashes == 0 else bad)(
+            "queue vs history",
+            "agrees" if clashes == 0 else
+            f"{clashes} items are due despite being answered recently "
+            "(run: inspect_record.py contradictions)")
+    except Exception as exc:
+        bad("queue vs history", str(exc)[:150])
 
     # 8c. What the tutor actually called (per-tool-name log)
     tool_log = ROOT / "storage" / "logs" / "tool_calls.log"

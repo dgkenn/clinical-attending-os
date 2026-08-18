@@ -103,8 +103,15 @@ def test_missing_correctness_is_skipped_not_guessed():
     assert _kp_count() == before_kp
 
 
-def test_omitting_points_entirely_still_works():
-    """Backward compatibility: every existing caller passes no knowledge_points."""
+def test_omitting_points_now_derives_one_from_the_question():
+    """Backward compatible for CALLERS, but no longer silent.
+
+    This test previously asserted that omitting knowledge_points recorded
+    nothing. That contract was the bug: 27 attempts on 2026-06-21 and 30 on
+    2026-08-17 produced zero facts, because the tutor almost never supplies
+    them. The backend now derives one point from the question rather than
+    losing the answer at fact level — see tests/test_derived_knowledge_points.py.
+    """
     result = submit_answer(
         topic="Hyperkalemia",
         question="a question with no points supplied",
@@ -112,4 +119,5 @@ def test_omitting_points_entirely_still_works():
         is_correct=False,
     )
     assert result["ok"] is True
-    assert result["knowledge_points_recorded"] == 0
+    assert result["knowledge_points_recorded"] == 1
+    assert result["knowledge_points_derived"] is True

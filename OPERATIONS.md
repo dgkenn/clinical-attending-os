@@ -46,6 +46,35 @@ layer gets nothing.
 - **missing question text** — attempts logged without the question asked,
   which forecloses mistake-review.
 
+### Troubleshooting the study record itself
+
+`doctor.py` answers "is the system up and behaving?". When the question is
+"does the RECORD match what I actually did?", use:
+
+```
+.venv\Scripts\python.exe scripts\inspect_record.py overview        # counts, with provenance
+.venv\Scripts\python.exe scripts\inspect_record.py session [date]  # what one session did
+.venv\Scripts\python.exe scripts\inspect_record.py why "PE"        # why is this topic in this state
+.venv\Scripts\python.exe scripts\inspect_record.py contradictions  # queue vs history
+.venv\Scripts\python.exe scripts\inspect_record.py artifacts       # what is NOT from studying
+```
+
+**Read this before quoting any number to the user.** Three separate findings
+reported during one debugging session were artifacts, and the user had to
+correct each from memory:
+
+| Reported | Actually |
+|---|---|
+| "112 topics overdue" | 112 ROWS, 28 topic names (`topics` has one row per topic+subtopic) |
+| "PE is 56 days overdue" | 1 day — phantom June rows were driving the schedule |
+| "35 facts are gaps" | 23 had already been answered, most the day before |
+
+All three were the same mistake: reading a number without asking where it came
+from. `contradictions` catches that class automatically and `doctor.py` now runs
+it as "queue vs history". `artifacts` separates imported/repaired rows from
+things the user actually did — a maintenance script's writes can otherwise look
+exactly like healthy tutor behaviour.
+
 `storage/logs/tool_calls.log` records every MCP tool call **by name**
 (`timestamp \t tool \t ok|ERROR \t detail`). The MCP transport log only says
 "CallToolRequest" with no name, so this file is the only way to answer "which

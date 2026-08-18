@@ -833,6 +833,37 @@ def submit_answer(
         # failure to the client and invite a retry that double-submits the
         # answer. A KP problem is reported in the response, not by failing.
         kp_recorded, kp_error = 0, None
+        kp_derived = False
+
+        # If the tutor supplied no knowledge points, derive ONE from the
+        # question itself rather than recording nothing.
+        #
+        # This is the single most persistent failure in the system. Recording a
+        # fact required a second deliberate act — decomposing the answer into
+        # points — on top of recording the attempt, and that second act is
+        # skipped most of the time: 27 attempts on 2026-06-21 produced 0 points,
+        # 30 attempts on 2026-08-17 produced 0. The user's studying registered at
+        # topic level and vanished at fact level, so the fact queue kept
+        # re-serving material they had already covered and they had to keep
+        # correcting the record by hand.
+        #
+        # The backend already holds everything needed: the question, the answer,
+        # the result, the confidence. A question is a proxy for the fact it
+        # tests — coarser than a hand-decomposed point, but it means re-asking
+        # the same question updates the same knowledge point, so the fact-level
+        # schedule becomes real instead of empty. Explicit knowledge_points are
+        # still strictly better and always win when supplied.
+        if not knowledge_points:
+            stem = (question or "").strip()
+            if stem and stem != "MCP submitted answer":
+                knowledge_points = [{
+                    "point": stem[:300],
+                    "correct": bool(is_correct),
+                    "confidence": confidence,
+                    "mistake_type": mistake_type,
+                }]
+                kp_derived = True
+
         if knowledge_points:
             try:
                 from .student_model import record_knowledge_point as _rkp
@@ -857,6 +888,10 @@ def submit_answer(
             "ok": True,
             "knowledge_points_recorded": kp_recorded,
             "knowledge_points_error": kp_error,
+            # True when the backend had to fall back to deriving a point from
+            # the question. Surfaced so the tutor can see it is being covered
+            # for, and so doctor.py can measure how often that happens.
+            "knowledge_points_derived": kp_derived,
             "next_review_date": next_review_iso,
             "mastery_updated": True,
             "level_achieved": level_achieved,
