@@ -380,6 +380,10 @@ _CURRENCY_SENSITIVE = re.compile(
 _GUIDELINE_MARKERS = ("society guideline", "guideline", "surviving sepsis",
                       "kdigo", "acc aha", "acc/aha", "gold ", "idsa", "jnc")
 _CURRENCY_WEIGHT = 0.18
+# How far a non-guideline source is pushed down on a "what is the current
+# target/first-line choice" query. Applies ONLY to those queries — mechanism and
+# approach questions are untouched, and the textbook keeps winning them.
+_NON_GUIDELINE_DAMPING = 0.25
 
 
 def _has_currency_sensitive_intent(query: str) -> bool:
@@ -425,9 +429,19 @@ def rerank(
     mode: str = "broad_explain",
     topic_filter: str | None = None,
     use_cross_encoder: bool = True,
+    # The user's words, before expansion. `query` arrives EXPANDED — synonyms
+    # and related terms are appended to widen recall — and intent must not be
+    # read off that. The expansion for "norepinephrine" appends "first-line",
+    # so a plain lookup of "septic shock vasopressor norepinephrine" was
+    # classified as a what-is-the-current-standard question and had every
+    # textbook demoted, pushing the ICU library out of the top 3. Judging
+    # intent on machine-generated vocabulary means the system infers intent
+    # from itself. Falls back to `query` when not supplied.
+    raw_query: str | None = None,
 ) -> list[dict[str, Any]]:
     if not candidates:
         return []
+    intent_query = raw_query if raw_query is not None else query
     from .fact_extraction import high_yield_score
 
     weights = load_weights()
@@ -446,9 +460,21 @@ def rerank(
         # order. Promoting it to top priority is the honest expression of that
         # rule; an additive nudge would just be a magic number tuned until the
         # one probe query flipped. See _CURRENCY_SENSITIVE for the failure.
-        if _has_currency_sensitive_intent(query) and _is_guideline_source(meta):
-            c["source_priority"] = 1.0
-            c["library_priority"] = max(c["library_priority"], 1.0)
+        if _has_currency_sensitive_intent(intent_query):
+            if _is_guideline_source(meta):
+                c["source_priority"] = 1.0
+                c["library_priority"] = max(c["library_priority"], 1.0)
+            else:
+                # Promotion to PARITY is not enough. Under ICU_teach both Marino
+                # and the guideline then scored the same 0.26 on priority, so
+                # Marino still won on vector/BM25 and took all eight top slots
+                # for "first-line vasopressor in septic shock" — while the
+                # Surviving Sepsis chunk that literally says "we recommend using
+                # norepinephrine as the first-line agent" sat at rank 9, off the
+                # page. A textbook answering a what-is-the-current-standard
+                # question has to be actively out-ranked, not merely matched.
+                c["source_priority"] *= _NON_GUIDELINE_DAMPING
+                c["library_priority"] *= _NON_GUIDELINE_DAMPING
         c["mode_bonus"] = mode_match_bonus(meta, mode, query, text)
         tags = meta.get("topic_tags", "")
         c["topic_score"] = 1.0 if topic_filter and topic_filter.lower() in tags.lower() else 0.0
@@ -494,7 +520,7 @@ def rerank(
             c["final_score"] += act[i] * _ACTIONABILITY_WEIGHT
 
     # Marker only — the actual promotion happens above, in source_priority.
-    if _has_currency_sensitive_intent(query):
+    if _has_currency_sensitive_intent(intent_query):
         for c in candidates:
             c["currency_promoted"] = _is_guideline_source(c.get("metadata") or {})
 

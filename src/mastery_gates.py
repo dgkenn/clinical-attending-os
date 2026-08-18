@@ -37,8 +37,17 @@ def compute_mastery_vector(attempts: List[Dict]) -> Dict[str, float]:
     overconfident = sum(1 for a in attempts if a.get('confidence_reported', 0) >= 4 and not a.get('correct'))
     overconfident_rate = overconfident / len(attempts) if attempts else 0.0
 
-    # Transfer AUC: % of attempts marked transfer_success (novel case test)
+    # Transfer AUC: % of attempts marked transfer_success (novel case test).
+    #
+    # `transfer_assessed` distinguishes "was tested on a novel case and failed"
+    # from "was never tested on one". Without it a 0.0 meaning UNMEASURED was
+    # indistinguishable from a 0.0 meaning FAILED, and since transfer has been
+    # assessed on 1 of 171 real attempts, every topic scored 0.0 and the
+    # intermediate and advanced gates were unreachable by construction.
+    # Identical in shape to the bug that once pinned mechanism_quality at 0.0
+    # and made mastery impossible for topics sitting at 100% accuracy.
     transfer_attempts = [a for a in attempts if 'transfer_success' in a]
+    transfer_assessed = bool(transfer_attempts)
     if transfer_attempts:
         transfer_success = sum(1 for a in transfer_attempts if a.get('transfer_success'))
         transfer_auc = transfer_success / len(transfer_attempts)
@@ -71,12 +80,30 @@ def compute_mastery_vector(attempts: List[Dict]) -> Dict[str, float]:
     return {
         'accuracy': accuracy,
         'transfer_auc': transfer_auc,
+        'transfer_assessed': transfer_assessed,
         'mechanism_quality': mechanism_quality,
         'calibration_icc': calibration_icc,
         'retention_6mo': retention_6mo,
         'integration_score': integration_score,
         'overconfident_rate': overconfident_rate,
     }
+
+
+def mastery_level(vector: Dict[str, float]) -> str:
+    """Highest tier this vector satisfies: 'none'|'baseline'|'intermediate'|'advanced'.
+
+    The database previously stored only `mastery_achieved`, hard-wired to
+    check_mastery(..., level='advanced'). Advanced demands transfer_auc >= 0.80
+    and mechanism_quality >= 0.95, so with transfer effectively never assessed
+    the column was 0 for every topic forever and carried no information — the
+    tutor could not tell a topic answered correctly a dozen times from one never
+    seen. Recording the tier that was actually reached makes the field mean
+    something, and lets a genuinely solid topic stop being drilled like a new one.
+    """
+    for level in ('advanced', 'intermediate', 'baseline'):
+        if check_mastery(vector, level=level):
+            return level
+    return 'none'
 
 def _compute_icc(list1: List[float], list2: List[float]) -> float:
     """
@@ -128,11 +155,19 @@ def check_mastery(vector: Dict[str, float], level: str = 'baseline') -> bool:
         )
 
     elif level == 'intermediate':
-        # Accuracy >= 80% + overconf_rate < 0.40 + transfer_auc >= 0.70
+        # Accuracy >= 80% + overconf_rate < 0.40 + transfer_auc >= 0.70.
+        #
+        # Transfer only gates once it has been ASSESSED. An unmeasured
+        # dimension must not read as a failed one: transfer has been assessed on
+        # 1 of 171 real attempts, so requiring it unconditionally made this tier
+        # unreachable no matter how well the topic was actually known. Advanced
+        # still demands it outright — that is the tier where demonstrating
+        # transfer to a novel case is the whole point.
+        if vector.get('transfer_assessed', True) and vector['transfer_auc'] < 0.70:
+            return False
         return (
             vector['accuracy'] >= 0.80 and
-            vector['overconfident_rate'] < 0.40 and
-            vector['transfer_auc'] >= 0.70
+            vector['overconfident_rate'] < 0.40
         )
 
     elif level == 'advanced':
@@ -148,8 +183,26 @@ def check_mastery(vector: Dict[str, float], level: str = 'baseline') -> bool:
     return False
 
 def update_mastery_in_db(topic_id: int, vector: Dict[str, float], conn) -> None:
-    """Update mastery_vector table in SQLite with computed values."""
+    """Update mastery_vector table in SQLite with computed values.
+
+    Stores the tier actually reached alongside the boolean. `mastery_achieved`
+    was pinned to the ADVANCED gate, which requires transfer_auc >= 0.80 and
+    mechanism_quality >= 0.95 — so with transfer effectively never assessed the
+    column read 0 for every topic regardless of performance, and could not
+    distinguish a topic answered correctly a dozen times from one never seen.
+    """
     cursor = conn.cursor()
+    try:
+        cols = {r[1] for r in cursor.execute("PRAGMA table_info(mastery_vector)")}
+        if "mastery_level" not in cols:
+            cursor.execute("ALTER TABLE mastery_vector ADD COLUMN mastery_level TEXT DEFAULT 'none'")
+    except Exception:
+        pass  # a missing column must not lose the rest of the update
+    try:
+        cursor.execute("UPDATE mastery_vector SET mastery_level = ? WHERE topic_id = ?",
+                       (mastery_level(vector), topic_id))
+    except Exception:
+        pass
     cursor.execute("""
         UPDATE mastery_vector
         SET accuracy = ?,

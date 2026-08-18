@@ -552,7 +552,7 @@ def hybrid_search(
         dedup.setdefault(r["id"], r)
         if r.get("retrieval_method") != dedup[r["id"]].get("retrieval_method"):
             dedup[r["id"]]["retrieval_method"] = "hybrid"
-    ranked = rerank(expanded_query, list(dedup.values()), mode=mode, topic_filter=topic_filter, use_cross_encoder=use_cross_encoder)
+    ranked = rerank(expanded_query, list(dedup.values()), mode=mode, topic_filter=topic_filter, use_cross_encoder=use_cross_encoder, raw_query=query)
     results: list[SourceChunk] = []
     for r in ranked[:max_results]:
         meta = r.get("metadata", {})

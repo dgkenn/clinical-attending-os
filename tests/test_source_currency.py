@@ -75,6 +75,37 @@ class TestGuidelineDetection:
         assert not _is_guideline_source({})
 
 
+class TestIntentIsReadFromTheUserNotTheExpansion:
+    """Intent must come from the user's words, never from the retriever's own.
+
+    Queries are expanded with synonyms before ranking, and the expansion for
+    "norepinephrine" appends the literal phrase "first-line". So a plain lookup
+    of "septic shock vasopressor norepinephrine" — which asks nothing about
+    current standards — was classified as a what-is-the-first-line question,
+    every textbook was demoted, and the ICU library fell out of the top 3. The
+    system was inferring intent from vocabulary it had generated itself.
+    """
+
+    def test_the_expansion_injects_the_trigger_phrase(self):
+        from src.retrieval import expand_query
+        expanded = expand_query("septic shock vasopressor norepinephrine")
+        assert "first-line" in expanded
+        assert _has_currency_sensitive_intent(expanded), (
+            "precondition: the expanded form does look currency-sensitive")
+
+    def test_but_the_raw_query_does_not(self):
+        assert not _has_currency_sensitive_intent(
+            "septic shock vasopressor norepinephrine")
+
+    @pytest.mark.skipif(not HAS_CORPUS, reason="corpus not ingested")
+    def test_a_plain_lookup_keeps_the_icu_library(self):
+        from src.retrieval import hybrid_search
+        res, _ = hybrid_search("septic shock vasopressor norepinephrine",
+                               mode="ICU_teach", max_results=3)
+        libs = [r.model_dump().get("library") for r in res]
+        assert "ICU_critical_care" in libs, f"expansion-driven demotion returned: {libs}"
+
+
 @pytest.mark.skipif(not HAS_CORPUS, reason="corpus not ingested")
 class TestEndToEndRanking:
     def _books(self, query, mode="ICU_teach", n=4):
@@ -89,6 +120,21 @@ class TestEndToEndRanking:
         books = self._books("what is the glucose target for critically ill patients")
         assert any("Guideline" in b for b in books), (
             f"no guideline in top results for a target question: {books}")
+
+    def test_the_vasopressor_question_returns_the_guideline_not_the_textbook(self):
+        """The worst case, and the one promotion-to-parity did not fix.
+
+        Marino states "norepinephrine is often used as a second-line vasopressor
+        behind dopamine" — the reverse of current practice. Ranked first for ICU
+        topics, it took all eight top slots while the Surviving Sepsis chunk
+        that says "we recommend using norepinephrine as the first-line agent"
+        sat at rank 9, off the page. Parity was not enough; the textbook has to
+        be actively out-ranked on this class of question.
+        """
+        books = self._books(
+            "what is the first-line vasopressor recommended in septic shock", n=4)
+        assert any("Guideline" in b for b in books), (
+            f"the guideline lost its own recommendation question: {books}")
 
     def test_a_mechanism_question_still_prefers_the_icu_textbook(self):
         """The guard must not cost us the source preference it was built around."""
