@@ -43,25 +43,51 @@ def test_attaching_sources_never_breaks_topic_selection():
     assert _attach_sources("not a dict") == "not a dict"
 
 
-def test_tangent_is_recorded_as_exposure_not_knowledge():
-    """The whole point: the user heard it, they did not demonstrate it."""
+def test_the_users_own_question_is_recorded_as_the_gap():
+    """An unprompted question is the highest-quality gap signal available.
+
+    A wrong answer only shows the user missed something the tutor chose to ask.
+    A question they raise themselves shows they noticed the hole, cared enough
+    to chase it, and usually met it on a real patient — nothing prompted it, so
+    it reflects what they actually need. Previously it was recorded nowhere.
+    """
     result = log_tangent(
         topic="Digoxin",
-        trigger="asked why heart failure patients need a higher K+",
-        facts=[
-            "Digoxin toxicity is potentiated by hypokalemia because digoxin and "
-            "potassium compete for the same Na/K-ATPase site",
-            "Digoxin is renally cleared and has a narrow therapeutic index, so AKI "
-            "precipitates toxicity",
-        ],
+        question_asked="Why does hypokalemia make digoxin toxicity worse?",
+        trigger="the heart failure potassium question",
+        facts=["Digoxin and potassium compete for the same Na/K-ATPase site"],
     )
     assert result["ok"] is True
-    assert result["recorded"] == 2
+    assert result["question_logged"] is True
+    assert result["recorded"] == 2      # the question itself, plus the fact
+    with conn() as db:
+        asked = db.execute(
+            "SELECT point, times_correct, status FROM knowledge_points "
+            "WHERE topic = 'Digoxin' AND point LIKE '[asked]%'").fetchall()
+    assert asked, "the question the user asked must be recorded as a gap"
+    assert "hypokalemia" in asked[0][0].lower()
+    assert asked[0][1] == 0, "a question they had to ask is not a correct answer"
+    assert asked[0][2] == "weak"
+
+
+def test_tangent_without_a_question_still_captures_ground_covered():
+    result = log_tangent(
+        topic="Digoxin",
+        facts=["Digoxin is renally cleared and has a narrow therapeutic index"],
+    )
+    assert result["question_logged"] is False
+    assert result["recorded"] == 1
+
+
+def test_exposure_is_never_counted_as_knowledge():
+    """The whole point: the user heard it, they did not demonstrate it."""
+    log_tangent(topic="Digoxin",
+                question_asked="What causes bidirectional VT in digoxin toxicity?")
     with conn() as db:
         rows = db.execute(
-            "SELECT times_correct, status FROM knowledge_points WHERE topic = 'Digoxin'"
+            "SELECT times_correct, status FROM knowledge_points WHERE topic='Digoxin'"
         ).fetchall()
-    assert rows, "the tangent must leave a record"
+    assert rows
     assert all(r[0] == 0 for r in rows), "exposure must never be counted correct"
     assert all(r[1] == "weak" for r in rows), "unproven material must be weak"
 

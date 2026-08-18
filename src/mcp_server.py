@@ -177,57 +177,83 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
     }
 
 
-def log_tangent(topic: str, facts: list, trigger: str = "") -> dict:
-    """Capture a self-directed tangent so the learning is not lost.
+def log_tangent(topic: str, question_asked: str = "", facts: list | None = None,
+                trigger: str = "") -> dict:
+    """Capture a question the USER asked. Their question is a self-identified gap.
 
-    Use when the user drives the conversation somewhere unplanned — asking
-    about a drug, chasing a mechanism — and real ground gets covered WITHOUT a
-    graded question. A digoxin rabbit hole ran for a whole session and left
-    zero trace: nothing in the attempt log, nothing in the fact queue. That is
-    the most engaged, most curiosity-driven learning in a session, and it was
-    the only kind the system could not see.
+    Call this whenever the user asks their own clinical question — mid-session,
+    off-plan, or as a rabbit hole. `question_asked` is the important field:
+    record what they actually asked, in their words.
 
-    `facts` is a list of strings: the specific things covered, phrased as
-    canonical facts ("Digoxin toxicity is potentiated by hypokalemia").
+    Why the question matters more than the answer given: an unprompted question
+    is the highest-quality gap signal the system gets. A wrong answer only tells
+    you they missed something you chose to ask. A question they raise themselves
+    tells you they noticed the hole, cared enough to chase it, and usually hit it
+    on a real patient. Nothing prompted it, so it is not an artifact of the
+    curriculum — it is what they actually need.
 
-    These are recorded as EXPOSED-BUT-UNPROVEN — weak status, never counted
-    correct, and scheduled to come back on the next review cycle. Exposure is
-    not knowledge: the user heard it, they did not demonstrate it, and
-    recording discussion as a correct answer would inflate mastery with things
-    they were merely told.
+    `facts` (optional) is what got covered while answering, phrased as canonical
+    facts ("Digoxin toxicity is potentiated by hypokalemia").
 
-    This does NOT replace asking a question. Prefer closing a tangent with one
-    or two recall questions through `submit_answer` — that is retrieval
-    practice and it produces a real graded record. Use this for ground covered
-    that you did not test.
+    Everything here is recorded as EXPOSED-BUT-UNPROVEN — weak, never counted
+    correct, scheduled to come back. Exposure is not knowledge: they were told
+    it, they did not recall it, and marking discussion correct would inflate
+    mastery with material they cannot reproduce.
+
+    This does NOT replace testing. Close the tangent by asking them the very
+    question they asked you, back to them, through `submit_answer` — that turns
+    a question they could not answer into retrieval practice and a graded
+    record. A digoxin rabbit hole once ran a whole session and left no trace at
+    all, which is what this exists to prevent.
     """
     from .topic_resolver import resolve_topic
     topic, resolved = resolve_topic(topic)
     recorded, skipped = [], []
+
+    items: list[tuple[str, str]] = []
+    q = (question_asked or "").strip()
+    if q:
+        # Store the gap as a fact-shaped prompt so it is testable later. The
+        # user asking "why do HF patients need higher K+" means the answer to
+        # that question is the thing to drill.
+        items.append((f"[asked] {q}"[:300], "self_identified_gap"))
     for f in facts or []:
-        text = (f if isinstance(f, str) else str(f.get("point", "") if isinstance(f, dict) else f)).strip()
-        if len(text) < 12:
-            skipped.append({"fact": text[:60], "reason": "too short to be a fact"})
+        text = (f if isinstance(f, str)
+                else str(f.get("point", "") if isinstance(f, dict) else f)).strip()
+        items.append((text[:300], "covered_in_tangent"))
+
+    for text, kind in items:
+        if len(text.replace("[asked] ", "")) < 12:
+            skipped.append({"item": text[:60], "reason": "too short to be testable"})
             continue
         r = _record_kp(
             topic=topic,
-            point=text[:300],
-            is_correct=False,        # exposure, not demonstrated knowledge
+            point=text,
+            is_correct=False,        # exposure/curiosity, not demonstrated knowledge
             confidence=None,
             mistake_type="pretest_unstudied",
             triage=False,
         )
-        (recorded if r else skipped).append(
-            r or {"fact": text[:60], "reason": "blank topic or fact"})
+        if r:
+            r["kind"] = kind
+            recorded.append(r)
+        else:
+            skipped.append({"item": text[:60], "reason": "blank topic or item"})
+
     return {
         "ok": True,
         "recorded": len(recorded),
+        "question_logged": bool(q),
         "canonical_topic": topic,
         "topic_was_canonicalized": resolved,
         "trigger": trigger,
         "skipped": skipped,
-        "note": ("Captured as exposed-but-unproven and due for testing. Ask a "
-                 "recall question on at least one of these before moving on."),
+        "note": ("Logged as a self-identified gap, unproven and due for testing. "
+                 "Now ask the user their OWN question back — answering it is the "
+                 "retrieval practice, and it produces a graded record."
+                 if q else
+                 "Captured as exposed-but-unproven. Ask a recall question on at "
+                 "least one of these before moving on."),
     }
 
 
@@ -539,8 +565,104 @@ def _log_tool_call(name: str, ok: bool, detail: str = "") -> None:
         pass  # logging must never break a tool call
 
 
+# Fields worth keeping verbatim: these ARE the conversation. Everything else is
+# truncated hard, because retrieval results are ~1 kB per passage and would
+# bury the transcript in source text within a session or two.
+_TRANSCRIPT_VERBATIM = {
+    "question", "user_answer", "topic", "subtopic", "point", "points", "facts",
+    "trigger", "query", "gap_note", "knowledge_points", "is_correct",
+    "confidence_reported", "mistake_type", "teach_back_quality",
+    "transfer_success", "result", "answered",
+}
+# Never echoed into the transcript, however they arrive.
+_TRANSCRIPT_NEVER = {"instructions", "sources", "results", "api_key", "token", "key"}
+_TRANSCRIPT_MAX_BYTES = 8_000_000  # ~8 MB, then rotate to .1
+
+
+def _compact(value, depth: int = 0):
+    """Shrink a payload to what a human auditor would actually read."""
+    if depth > 3:
+        return "..."
+    if isinstance(value, dict):
+        out = {}
+        for k, v in value.items():
+            if k in _TRANSCRIPT_NEVER:
+                out[k] = f"<{k} omitted>"
+            elif k in _TRANSCRIPT_VERBATIM:
+                out[k] = _compact(v, depth + 1)
+            else:
+                s = str(v)
+                out[k] = s if len(s) <= 120 else s[:120] + "..."
+        return out
+    if isinstance(value, (list, tuple)):
+        return [_compact(v, depth + 1) for v in value[:12]]
+    if isinstance(value, str):
+        return value if len(value) <= 1200 else value[:1200] + "..."
+    return value
+
+
+def _log_transcript(name: str, args: dict, kwargs: dict, result, error: str = "") -> None:
+    """Append the full substance of a tool call to a JSONL transcript.
+
+    tool_calls.log records only tool NAMES, which answers "what did it call?"
+    but not "what did it ask, and what did I say?". That gap made a real audit
+    impossible: a session went down a digoxin tangent and afterwards there was
+    no way to see any of it — the questions, the answers, the facts covered
+    were nowhere, because only records that reached the database survived.
+
+    Tool arguments carry the substance of the session: every question asked,
+    every answer given, every grade, every retrieval query, every tangent fact.
+    Logging them makes a session auditable after the fact without depending on
+    the chat UI. The tutor's prose between questions is not visible here — it
+    never reaches the backend.
+
+    Local file, the user's own study data, never transmitted. Truncated and
+    rotated so it cannot grow without bound.
+    """
+    try:
+        import json
+        from datetime import datetime, timezone
+        from pathlib import Path
+        from .config import settings
+
+        path = Path(settings.log_dir) / "tool_transcript.jsonl"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if path.exists() and path.stat().st_size > _TRANSCRIPT_MAX_BYTES:
+            path.replace(path.with_suffix(".jsonl.1"))
+
+        payload = dict(kwargs)
+        if args:
+            payload["_positional"] = list(args)
+        entry = {
+            "ts": datetime.now(timezone.utc).isoformat()[:19],
+            "tool": name,
+            "args": _compact(payload),
+        }
+        if error:
+            entry["error"] = error[:300]
+        elif isinstance(result, dict):
+            # Keep the decisions, not the source text.
+            entry["result"] = _compact({
+                k: v for k, v in result.items()
+                if k in ("ok", "recorded", "knowledge_points_recorded",
+                         "knowledge_points_derived", "canonical_topic", "topic",
+                         "status", "reason", "days_overdue", "retrieval_confidence",
+                         "insufficient_context", "next_review_date", "count",
+                         "setup_warning")
+            })
+        with path.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False, default=str) + "\n")
+    except Exception:
+        pass  # auditing must never break a tool call
+
+
 def _logged(fn, name: str):
-    """Wrap a tool fn so every invocation is recorded by name."""
+    """Wrap a tool fn so every invocation is recorded by name AND in full.
+
+    Two logs on purpose: tool_calls.log stays a one-line-per-call ledger that is
+    cheap to scan and grep, and tool_transcript.jsonl carries the substance for
+    replaying a session.
+    """
     import functools
 
     @functools.wraps(fn)
@@ -548,9 +670,11 @@ def _logged(fn, name: str):
         try:
             result = fn(*a, **kw)
             _log_tool_call(name, True)
+            _log_transcript(name, a, kw, result)
             return result
         except Exception as exc:
             _log_tool_call(name, False, str(exc))
+            _log_transcript(name, a, kw, None, error=str(exc))
             raise
     return wrapper
 

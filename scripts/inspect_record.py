@@ -239,6 +239,16 @@ def cmd_artifacts(_args) -> int:
             ",".join("?" * len(_NON_TOPICS))), _NON_TOPICS))
     print(f"\ndocument-structure topics: {len(junk)}  {[r['topic'] for r in junk]}")
 
+    asked = list(con.execute(
+        "SELECT topic, point, status FROM knowledge_points "
+        "WHERE point LIKE '[asked]%' ORDER BY topic"))
+    print(f"
+SELF-IDENTIFIED GAPS (questions YOU asked): {len(asked)}")
+    print("   these are the highest-value signal in the record — unprompted,")
+    print("   so they reflect what you actually hit, not what was served to you")
+    for r in asked[:10]:
+        print(f"   [{r['status']:8}] {r['topic'][:18]:18} {r['point'][:78]}")
+
     unstudied = con.execute(
         "SELECT COUNT(*) n FROM knowledge_points WHERE times_seen = 0").fetchone()["n"]
     print(f"\nknowledge points never answered (imported/repaired): {unstudied}")
@@ -252,11 +262,75 @@ def cmd_artifacts(_args) -> int:
     return 0
 
 
+def cmd_transcript(args) -> int:
+    """Replay a session from the tool transcript, as conversation.
+
+    The database only keeps what was successfully recorded, so anything the
+    tutor did NOT write — a tangent, a question it forgot to submit — was
+    invisible after the fact. A digoxin rabbit hole ran a whole session and
+    left nothing to audit. This reads the raw call log instead, so what
+    happened is legible whether or not it made it into a table.
+    """
+    import json
+    path = Path(settings.log_dir) / "tool_transcript.jsonl"
+    if not path.exists():
+        print("no transcript yet — it starts recording on the next tool call")
+        return 0
+
+    day = args.date
+    rows = []
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        try:
+            e = json.loads(line)
+        except Exception:
+            continue
+        if day and not e.get("ts", "").startswith(day):
+            continue
+        rows.append(e)
+    if not rows:
+        print(f"nothing in the transcript for {day or 'any date'}")
+        return 0
+
+    print(f"TRANSCRIPT — {day or 'all'}   ({len(rows)} calls)\n")
+    for e in rows:
+        ts, tool = e.get("ts", "")[11:19], e.get("tool", "?")
+        a = e.get("args", {}) or {}
+        res = e.get("result", {}) or {}
+        if e.get("error"):
+            print(f"  {ts}  !! {tool} FAILED: {e['error'][:90]}")
+            continue
+        if tool == "submit_answer":
+            print(f"  {ts}  Q [{a.get('topic', '?')}] {str(a.get('question', ''))[:110]}")
+            print(f"           A {str(a.get('user_answer', ''))[:110]}")
+            kp = a.get("knowledge_points")
+            n = len(kp) if isinstance(kp, list) else 0
+            print(f"           graded={'correct' if a.get('is_correct') else 'incorrect'} "
+                  f"conf={a.get('confidence_reported')} teach_back={a.get('teach_back_quality')} "
+                  f"| facts sent={n} recorded={res.get('knowledge_points_recorded')}"
+                  f"{' (DERIVED)' if res.get('knowledge_points_derived') else ''}")
+        elif tool == "log_tangent":
+            facts = a.get("facts") or []
+            print(f"  {ts}  ~~ TANGENT [{a.get('topic')}] trigger={str(a.get('trigger'))[:60]}")
+            for f in facts[:8]:
+                print(f"           - {str(f)[:100]}")
+        elif tool in ("search_clinical_sources", "mcp_retrieval",
+                      "answer_from_clinical_sources"):
+            print(f"  {ts}  >> retrieved: {str(a.get('query', ''))[:90]}")
+        elif tool == "get_next_topic":
+            warn = " [SETUP WARNING]" if res.get("setup_warning") else ""
+            print(f"  {ts}  -> served topic: {res.get('topic', '?')} "
+                  f"({res.get('reason', '')}){warn}")
+        else:
+            print(f"  {ts}     {tool}")
+    return 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("overview").set_defaults(fn=cmd_overview)
     s = sub.add_parser("session"); s.add_argument("date", nargs="?"); s.set_defaults(fn=cmd_session)
+    t = sub.add_parser("transcript"); t.add_argument("date", nargs="?"); t.set_defaults(fn=cmd_transcript)
     w = sub.add_parser("why"); w.add_argument("topic"); w.set_defaults(fn=cmd_why)
     sub.add_parser("contradictions").set_defaults(fn=cmd_contradictions)
     sub.add_parser("artifacts").set_defaults(fn=cmd_artifacts)

@@ -349,31 +349,33 @@ calling them one at a time instead of batching.
    already did). Grade the mechanism into `teach_back_quality` next round.
 7. **Auto-advance:** immediately serve the next item via `get_next_topic`.
 
-## When I go down a rabbit hole (follow it, then bank it)
+## When I ask my own question (this is my best gap signal)
 
-Self-directed tangents are the most valuable learning in a session — I chose
-the question, so I am engaged and the material sticks. **Follow them.** Do not
-drag me back to the plan mid-thought.
+**Any question I ask unprompted marks something I don't know.** Treat it as the
+highest-quality diagnostic signal in the session — higher than a wrong answer.
+A wrong answer only tells you I missed something *you* chose to ask. A question
+I raise myself tells you I noticed the hole, cared enough to chase it, and
+usually hit it on a real patient. Nothing prompted it, so it reflects what I
+actually need rather than what the curriculum happened to serve.
 
-But a tangent that leaves no record is learning the system cannot schedule, and
-that has happened: a digoxin rabbit hole ran a whole session and left zero
-trace — nothing in the attempt log, nothing in the fact queue. So:
+So when I go off-plan — asking about a drug, chasing a mechanism, following a
+rabbit hole:
 
-1. **Retrieve for the tangent too.** An unplanned topic is exactly where you
-   are most tempted to answer from your own training. Call
-   `search_clinical_sources` for the new subject before teaching it. Off-plan
-   is not off-corpus.
-2. **Close it with a question.** Before returning to the plan, ask ONE recall
-   question on what the tangent covered, and record it with `submit_answer`
-   like any other. This is the important step: it converts passive discussion
-   into retrieval practice, and it produces a real graded record instead of a
-   guess about what I absorbed.
-3. **Bank the rest with `log_tangent(topic, facts=[...])`** — the ground we
-   covered but did not test. These are stored as exposed-but-unproven and come
-   back to be tested. Do NOT record them as correct answers: I was told them, I
-   did not demonstrate them, and marking exposure as knowledge inflates mastery
-   with things I cannot actually recall.
-4. **Then return to the plan** and say where we left off in one short line.
+1. **Follow it.** Do not drag me back to the plan mid-thought. Self-directed
+   curiosity is when I am most engaged and the material sticks best.
+2. **Retrieve for it.** An unplanned topic is exactly where you are most
+   tempted to answer from your own training. Call `search_clinical_sources` for
+   the new subject before teaching it. Off-plan is not off-corpus.
+3. **Log it with `log_tangent(topic, question_asked=..., facts=[...])`.** Put my
+   question in `question_asked`, in my words — that is the gap. Put what you
+   covered in `facts`. All of it is stored as unproven and comes back to be
+   tested; none of it counts as correct, because I was told it, not tested on it.
+4. **Then ask me my own question back.** Before returning to the plan, pose the
+   question I just asked you as a real question and record it with
+   `submit_answer`. This is the whole point: it converts a hole I identified
+   into retrieval practice with a graded record, instead of a guess about what
+   I absorbed from your explanation.
+5. **Return to the plan** and say where we left off in one short line.
 
 Judgement: a two-turn aside needs none of this. Apply it when the tangent
 covered real clinical ground — a drug's mechanism, a toxicity, an algorithm.
