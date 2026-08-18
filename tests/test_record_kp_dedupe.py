@@ -66,3 +66,33 @@ def test_dedupe_never_blocks_a_write_even_on_ambiguous_overlap():
     r1 = record_knowledge_point(topic="ProbeDedupe", point=a, is_correct=True, confidence=3)
     r2 = record_knowledge_point(topic="ProbeDedupe", point=b, is_correct=True, confidence=3)
     assert r1 is not None and r2 is not None
+
+
+def test_existing_facts_are_surfaced_with_the_topic():
+    """Root cause of most duplicates: the tutor wrote facts blind.
+
+    11 of 21 near-duplicate pairs in the live database spanned sessions — a
+    June card and an August card for one fact — because the tutor re-taught a
+    topic with no idea what was already tracked. The backend knew and never
+    said so. get_next_topic now ships the existing facts so the tutor can
+    reinforce (reuse the exact wording, which the matcher then merges) instead
+    of forking a parallel history that costs two reviews forever.
+    """
+    from src.mcp_server import _attach_existing_facts
+    from src.student_model import record_knowledge_point
+
+    point = "Existing-facts probe: a distinctive clinical threshold worth reinforcing"
+    record_knowledge_point(topic="ProbeExisting", point=point, is_correct=False, confidence=2)
+
+    out = _attach_existing_facts({"topic": "ProbeExisting"})
+    facts = out.get("existing_facts", [])
+    assert any(f["point"] == point for f in facts), "the tutor must see what already exists"
+    assert "REUSE ITS EXACT WORDING" in out.get("existing_facts_note", "")
+
+
+def test_attaching_existing_facts_never_breaks_topic_selection():
+    from src.mcp_server import _attach_existing_facts
+    assert _attach_existing_facts({}) == {}
+    assert _attach_existing_facts("not a dict") == "not a dict"
+    out = _attach_existing_facts({"topic": "NoSuchTopicAnywhere"})
+    assert out["existing_facts"] == []

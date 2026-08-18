@@ -1050,6 +1050,49 @@ def _skip_recently_served(payload: dict) -> dict:
     return payload
 
 
+def _attach_existing_facts(payload: dict, limit: int = 25) -> dict:
+    """Tell the tutor which facts are ALREADY carded for the topic it is serving.
+
+    Root cause of most duplicate knowledge points: the tutor writes facts
+    blind. It re-teaches a topic months later, has no idea what is already
+    tracked, and writes a fresh card for a fact that already exists under
+    slightly different wording. 11 of 21 near-duplicate pairs in the live
+    database are exactly this — a June card and an August card for one fact.
+
+    The backend knows this and never said so. Passing it at the moment the
+    tutor is planning the question lets it REINFORCE an existing card (reuse
+    its wording, so the fact-matcher merges the write) rather than fork a
+    parallel history that then costs two reviews forever.
+    """
+    if not isinstance(payload, dict):
+        return payload
+    topic = payload.get("topic")
+    if not topic:
+        return payload
+    try:
+        import sqlite3
+        from .student_model import conn
+        with conn() as db:
+            db.row_factory = sqlite3.Row
+            rows = db.execute(
+                "SELECT point, status FROM knowledge_points WHERE topic = ? "
+                "ORDER BY CASE status WHEN 'weak' THEN 0 WHEN 'learning' THEN 1 "
+                "ELSE 2 END LIMIT ?", (topic, limit)).fetchall()
+        payload = dict(payload)
+        payload["existing_facts"] = [
+            {"point": r["point"], "status": r["status"]} for r in rows]
+        if rows:
+            payload["existing_facts_note"] = (
+                f"{len(rows)} fact(s) are already tracked for this topic. If your "
+                "question tests one of them, REUSE ITS EXACT WORDING in "
+                "knowledge_points so the existing card is reinforced instead of "
+                "duplicated. Only write a new fact for genuinely new material."
+            )
+    except Exception:
+        pass  # advisory only; never block topic selection
+    return payload
+
+
 @functools.wraps(get_next_topic)
 def get_next_topic_checked(*args, **kwargs) -> dict:
     """Next topic to study, WITH its grounding passages already retrieved.
@@ -1060,8 +1103,8 @@ def get_next_topic_checked(*args, **kwargs) -> dict:
     docstring, which FastMCP reads to build the tool schema — without it the
     parameters collapse to (args, kwargs).
     """
-    return _with_setup_check(_attach_sources(_skip_recently_served(
-        get_next_topic(*args, **kwargs))))
+    return _with_setup_check(_attach_existing_facts(_attach_sources(
+        _skip_recently_served(get_next_topic(*args, **kwargs)))))
 
 
 def build_server():

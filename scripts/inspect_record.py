@@ -362,6 +362,36 @@ def cmd_conversation(args) -> int:
     return 0
 
 
+def cmd_duplicates(_args) -> int:
+    """Near-duplicate facts the matcher flags UNCERTAIN — the silent accumulator.
+
+    record_knowledge_point deliberately does not block on UNCERTAIN (a graded
+    answer must never be left half-recorded pending a judgement call), so
+    uncertain pairs pile up invisibly. Nothing surfaced them until this
+    existed. These are consolidation candidates for a human to decide on;
+    merge_duplicate_facts.py only ever acts on confident SAME verdicts.
+    """
+    import itertools
+    from src.fact_matcher import compare_facts
+    con = db()
+    rows = list(con.execute("SELECT id, topic, point, date(created_at) cr FROM knowledge_points"))
+    pairs = []
+    for a, b in itertools.combinations(rows, 2):
+        v = compare_facts(a["point"], b["point"])
+        if v.verdict == "uncertain":
+            pairs.append((v, a, b))
+    print(f"{len(rows)} facts | {len(pairs)} near-duplicate pairs needing a human call\n")
+    cross = sum(1 for _, a, b in pairs if a["cr"] != b["cr"])
+    print(f"  {cross} span different sessions (re-teaching wrote a parallel card)")
+    print(f"  {len(pairs)-cross} are same-session rewordings\n")
+    for v, a, b in sorted(pairs, key=lambda x: -x[0].overlap):
+        print(f"[{v.overlap:.0%}] {a['topic']}")
+        print(f"   {a['cr']}  id={a['id']}: {a['point'][:88]}")
+        print(f"   {b['cr']}  id={b['id']}: {b['point'][:88]}\n")
+    con.close()
+    return 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -371,6 +401,7 @@ def main() -> None:
     v = sub.add_parser("conversation"); v.add_argument("date", nargs="?"); v.set_defaults(fn=cmd_conversation)
     w = sub.add_parser("why"); w.add_argument("topic"); w.set_defaults(fn=cmd_why)
     sub.add_parser("contradictions").set_defaults(fn=cmd_contradictions)
+    sub.add_parser("duplicates").set_defaults(fn=cmd_duplicates)
     sub.add_parser("artifacts").set_defaults(fn=cmd_artifacts)
     args = ap.parse_args()
     sys.exit(args.fn(args))

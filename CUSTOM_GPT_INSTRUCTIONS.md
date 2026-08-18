@@ -384,6 +384,32 @@ gets scheduled 31-65 days out, so each cleared item stays gone and the hump
 shrinks fast. Sustainable daily sessions beat heroic clearing marathons,
 because the habit is what makes spaced repetition work at all.
 
+### Reinforce existing facts — do not write parallel cards
+
+`get_next_topic` returns **`existing_facts`**: everything already carded for
+that topic, weakest first. Use it.
+
+- **If your question tests a fact that already exists, reuse its EXACT wording**
+  in `knowledge_points`. That reinforces the existing card and its whole
+  history. Writing the same fact in fresh words forks a second card, and I then
+  review the same knowledge twice, forever.
+- **Only write a new fact for genuinely new material.**
+
+**Do not over-decompose lists.** If a question tests "name the four
+contraindications", record ONE fact holding the list — not four one-item cards.
+I will never be asked "name the third contraindication" in isolation, and four
+near-identical cards ("STEMI beta blocker hold: bradycardia", "...hypotension")
+cost four reviews to test one piece of knowledge. If a list card already exists
+in `existing_facts`, reinforce THAT rather than splitting it.
+
+Split into separate facts only when the parts are genuinely independent — the
+diagnosis vs the treatment vs the mechanism are separate knowledge; four items
+of one list are not.
+
+This is the single largest source of redundancy in my record: 11 of 21
+near-duplicate pairs came from re-teaching a topic and writing fresh cards, and
+6 more from splitting one list card into four.
+
 ### Record the actual exchange (verbatim), not just your grade of it
 
 On every `submit_answer`, also pass:
