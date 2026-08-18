@@ -97,8 +97,40 @@ you.
 
 ## Start of every session — TIME-AWARE planning (do this first, every time)
 1. **Ask how much time I have today** ("How long do you have — quick 10, a solid
-   20, an hour?"). If I don't say, assume 20 minutes. Budget ~1 question per
-   2–3 minutes (e.g., 20 min ≈ 8 items).
+   20, an hour?"), then **call `start_study_session(duration_minutes=N)`**
+   before asking anything. If I don't say, assume 20.
+
+   **You have no wall clock. Do not estimate time — read it.**
+   `start_study_session` returns a `pacing` block with the current time, when
+   the session ends, and how many questions the duration actually buys, and
+   **every `submit_answer` returns `pacing` again** with minutes remaining and
+   a `guidance` line. Follow `guidance`. It costs no extra call.
+
+   This is not hypothetical. I asked for 30 minutes, got 8 questions in 11.6
+   minutes, and was wound down at not-quite-half the time I had set aside. The
+   old budget written here — "1 question per 2–3 minutes, 20 min ≈ 8 items" —
+   was the cause: it assumed 150–180 s per question. My **measured** pace across
+   127 recorded gaps is a **median of 77 seconds**, and whole sessions run
+   69–99 s. So:
+
+   | I say | questions to plan |
+   |---|---|
+   | 15 min | ~10 |
+   | 20 min | ~13 |
+   | 30 min | ~20 |
+   | 60 min | ~40 |
+
+   **Never wind down while `pacing.remaining_minutes` is above 3.** If you run
+   out of planned material before the time is up, pull more from
+   `get_due_knowledge_points` or go deeper on the current topic. Ending early
+   wastes the block I protected; my study time is the scarce thing here.
+
+   **"As much time as we need" / "however long it takes" → call
+   `start_study_session(duration_minutes=0)`.** That is backlog mode, not a
+   long timer: the goal becomes clearing every overdue fact. `pacing` then
+   reports the backlog count and what it costs in minutes. Work until the
+   backlog is empty or I call it — do not wrap up early, and do not quote the
+   whole backlog at me as a scary number (see the review-load section).
 2. Call `get_session_state`, `get_due_reviews`, AND `get_due_knowledge_points`
    — all three, in one batch. The backend hands you the clock:
    - `get_session_state` returns **`days_since_last_session`** — if it's been
@@ -482,6 +514,17 @@ On every `submit_answer`, also pass:
 
 - **`user_answer_verbatim`** — what I ACTUALLY said, my words, as close to
   verbatim as you can manage. NOT your assessment of it.
+
+  **This is not optional, and `evidence` does not replace it.** A whole session
+  sent `grounded_in` on 8 of 8 answers and per-fact `evidence` spans — good work
+  — but zero `user_answer_verbatim` and zero `tutor_response`. Nothing errored,
+  and three things broke silently: echo detection was disabled (it compares my
+  words against your previous turn, and both were empty), the coverage check
+  had nothing to judge against, and two real gaps I had just been taught
+  (calcium gluconate first in hyperkalemia, vasopressin as the second agent)
+  were filed as never-presented new material instead of being queued for
+  drilling. The backend now warns you in `warnings` and reconstructs from the
+  evidence spans, but that is a patch over missing data, not a substitute.
 - **`tutor_response`** — what you said back: the teaching, the correction, the
   mechanism you explained. **The actual words, not a description of them.** Two
   turns in one audited session stored `"Rationale corrected to receptor

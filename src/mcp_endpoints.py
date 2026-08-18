@@ -673,6 +673,15 @@ def submit_answer(
     user_answer_verbatim: str = "",
     tutor_response: str = "",
     grounded_in: str = "",
+    # Set False by callers that have ALREADY written the fact layer themselves.
+    # car_next records the knowledge point, then calls this for the topic-level
+    # schedule passing question=point (in car mode the fact text IS the stem).
+    # The derived-fact fallback below then re-derived that same point and
+    # recorded it a second time, so every hands-free answer advanced its fact's
+    # FSRS state twice — the same double-count that submit_answer and
+    # submit_study_answer once produced at the topic level, which halves
+    # intervals and can reach 'mastered' off a single spoken answer.
+    record_knowledge_points: bool = True,
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
@@ -770,6 +779,38 @@ def submit_answer(
             prior_tutor = (_row[0] if _row else "") or ""
         except Exception:  # detection is a bonus; it must never fail an answer
             prior_tutor = ""
+
+        # Verbatim capture regressed silently: a session recorded 8 of 8 answers
+        # with grounded_in and per-fact evidence but ZERO user_answer_verbatim
+        # and ZERO tutor_response. That disables parroting detection outright
+        # (it compares the user's words against the tutor's previous turn, and
+        # both were empty), and it broke the coverage check above. Nothing
+        # errored, so it would have gone unnoticed until the next hand audit.
+        #
+        # The evidence spans ARE the user's own words, so when verbatim is
+        # missing they are a usable reconstruction — worse than the real thing,
+        # far better than nothing, and enough for echo detection to work.
+        if not (user_answer_verbatim or "").strip():
+            salvaged = " ".join(
+                str(p.get("evidence", "")).strip()
+                for p in (knowledge_points or []) if isinstance(p, dict)
+            ).strip()
+            if salvaged:
+                verbatim_for_checks = salvaged
+                warnings.append(
+                    "user_answer_verbatim was empty — reconstructed from the "
+                    "evidence spans. Send the user's actual words: parroting "
+                    "detection and the audit trail both depend on them.")
+            else:
+                warnings.append(
+                    "user_answer_verbatim was empty and no evidence spans were "
+                    "supplied, so this answer cannot be audited and parroting "
+                    "cannot be detected. Send what the user actually said.")
+        if not (tutor_response or "").strip():
+            warnings.append(
+                "tutor_response was empty — the teaching for this answer is "
+                "lost from the record, and facts cannot be checked against what "
+                "was actually covered this turn.")
 
         parroted, parrot_reason = detect_parroting(verbatim_for_checks, prior_tutor)
         if parroted:
@@ -981,7 +1022,7 @@ def submit_answer(
         # the same question updates the same knowledge point, so the fact-level
         # schedule becomes real instead of empty. Explicit knowledge_points are
         # still strictly better and always win when supplied.
-        if not knowledge_points:
+        if not knowledge_points and record_knowledge_points:
             stem = (question or "").strip()
             if stem and stem != "MCP submitted answer":
                 knowledge_points = [{
@@ -1028,10 +1069,21 @@ def submit_answer(
                     # (4) A fact nothing in this turn actually covered was
                     # batch-written about the topic, not demonstrated. Record it
                     # as untested new material instead of a failed review.
+                    #
+                    # Only judgeable when the turn text is actually present. A
+                    # session that stopped sending tutor_response made this
+                    # check fire on facts that HAD just been taught — the
+                    # hyperkalemia calcium-gluconate gap and the vasopressin
+                    # second-agent gap were both filed as never-presented new
+                    # material when they were live misses that should have been
+                    # queued for drilling. Missing evidence must not be read as
+                    # evidence of absence: without the tutor's words there is
+                    # nothing to judge coverage against, so record normally.
+                    can_judge_coverage = bool((tutor_response or "").strip())
                     covered = fact_was_covered(
                         point_text, question or "", verbatim_for_checks,
                         user_answer or "", tutor_response or "")
-                    if not covered and verdict is False:
+                    if can_judge_coverage and not covered and verdict is False:
                         kp_speculative.append(point_text[:80])
                         _record_untested_fact(topic, point_text)
                         continue
@@ -1049,8 +1101,19 @@ def submit_answer(
             except Exception as kp_exc:  # noqa: BLE001 - must not fail the attempt
                 kp_error = str(kp_exc)[:200]
 
+        # Pacing rides along on every graded answer. A separate call would be
+        # forgettable and would cost a round trip mid-explanation, which is the
+        # latency the maintainer already complained about; folded in here the
+        # tutor cannot be unaware of the clock.
+        try:
+            from .session_clock import pacing as _pacing
+            pacing_block = _pacing()
+        except Exception as exc:  # never fail an answer over the clock
+            pacing_block = {"clock_running": False, "error": str(exc)[:120]}
+
         return {
             "ok": True,
+            "pacing": pacing_block,
             "knowledge_points_recorded": kp_recorded,
             "knowledge_points_error": kp_error,
             # Surfaced so the tutor sees the correction in-session and can fix

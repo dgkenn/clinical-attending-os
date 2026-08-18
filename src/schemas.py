@@ -475,7 +475,9 @@ class CarAlsoCovered(BaseModel):
     deserves its own credit, its own error type, and its own schedule."""
     point: str
     topic: str = ""  # defaults to the main answered.topic
-    correct: bool = True
+    # Three-way for the same reason as CarAnsweredInput.correct: a bundled
+    # answer that half-covers a secondary fact is the normal case, not an edge.
+    correct: bool | Literal["partial"] = True
     confidence: int = 3
     # For misconceptions caught mid-ramble ("morphine is renally cleared"):
     # correct=false with the point phrased as the CORRECTED fact, and the
@@ -488,7 +490,13 @@ class CarAnsweredInput(BaseModel):
     one so a hands-free turn costs a single round trip."""
     topic: str
     point: str
-    correct: bool
+    # Three-way, like every other grading path. This was a strict bool while
+    # submit_answer, record_knowledge_point and the whole fact layer had moved
+    # to True / False / "partial", so a tutor grading a hands-free answer as
+    # partial got a validation error — three failed car_next calls in one
+    # session before it guessed a shape that passed. A schema that rejects the
+    # system's own vocabulary costs round trips and, in car mode, silence.
+    correct: bool | Literal["partial"]
     confidence: int = 3
     mistake_type: MistakeType = "other"
     user_answer: str = ""

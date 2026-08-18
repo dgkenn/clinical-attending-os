@@ -64,11 +64,39 @@ def answer_from_clinical_sources(query: str, mode: str = "intern_teach") -> dict
 
 
 def start_study_session(duration_minutes: int = 20, mode: str = "default", focus_topic: str | None = None, training_phase: str | None = None) -> dict:
-    """LEGACY session opener. Prefer `get_session_state` + `get_next_topic`.
+    """START HERE when the user says how long they have. Starts the session clock.
 
-    Kept for older clients. New sessions do not need to be explicitly started.
+    Pass the minutes they actually stated. `duration_minutes=0` means "as much
+    time as we need": the session then runs to clear the overdue backlog rather
+    than to a deadline, and must NOT be wound down early.
+
+    Returns a `pacing` block with the wall-clock time, when the session ends,
+    and how many questions the stated duration actually buys. Use that number —
+    do not estimate time yourself. A 30-minute session asked for 8 questions and
+    was wrapped up at 11 minutes because the tutor was guessing; at the
+    maintainer's measured pace (~85 s/question) 30 minutes is about 20.
     """
-    return start_session(duration_minutes, mode, focus_topic, training_phase)
+    from .session_clock import start_clock
+    plan = start_session(duration_minutes, mode, focus_topic, training_phase)
+    try:
+        if isinstance(plan, dict):
+            plan["pacing"] = start_clock(duration_minutes)
+    except Exception as exc:  # a clock failure must never block a session
+        if isinstance(plan, dict):
+            plan["pacing_error"] = str(exc)[:200]
+    return plan
+
+
+def get_session_pacing() -> dict:
+    """How much of the session's time is actually left, and what fits in it.
+
+    Call this if you are unsure whether to keep going. You have no wall clock of
+    your own, and the guess costs real study time: a 30-minute session was
+    wound down at 11 minutes. `submit_answer` already returns this inline, so
+    you rarely need a separate call.
+    """
+    from .session_clock import pacing
+    return pacing()
 
 
 def submit_study_answer(
@@ -1279,6 +1307,9 @@ def build_server():
     # and never become state — which is how the declined consults card was lost.
     mcp.tool(name="mark_known")(_logged(mark_known, "mark_known"))
     mcp.tool(name="mark_unknown")(_logged(mark_unknown, "mark_unknown"))
+    # The tutor has no wall clock of its own; without this it invents one and
+    # wraps a 30-minute session up at 11 minutes.
+    mcp.tool(name="get_session_pacing")(_logged(get_session_pacing, "get_session_pacing"))
     mcp.tool(name="get_knowledge_points")(_logged(get_knowledge_points, "get_knowledge_points"))
     mcp.tool(name="get_due_knowledge_points")(_logged(get_due_knowledge_points, "get_due_knowledge_points"))
     mcp.tool(name="get_knowledge_gaps")(_logged(get_knowledge_gaps, "get_knowledge_gaps"))

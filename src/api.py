@@ -659,9 +659,16 @@ def car_next(req: CarNextRequest) -> dict:
                     topic=a.topic,
                     user_answer=a.user_answer or ("correct" if a.correct else "incorrect"),
                     question=a.point,  # in car mode the point/stem IS the question
-                    is_correct=a.correct,
+                    is_correct=a.correct is True,
+                    result=("partial" if a.correct == "partial"
+                            else "correct" if a.correct else "incorrect"),
                     confidence_reported=a.confidence,
                     mistake_type=a.mistake_type,
+                    # The fact was written by _submit_knowledge_points just
+                    # above. Without this, the derived-fact fallback re-derives
+                    # the identical point from question=a.point and advances its
+                    # FSRS state a second time.
+                    record_knowledge_points=False,
                 )
             except Exception as exc:  # never lose the KP record over a topic-level failure
                 recorded["topic_level_error"] = str(exc)[:200]
