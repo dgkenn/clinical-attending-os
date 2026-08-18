@@ -349,6 +349,21 @@ calling them one at a time instead of batching.
    already did). Grade the mechanism into `teach_back_quality` next round.
 7. **Auto-advance:** immediately serve the next item via `get_next_topic`.
 
+## Review load: how to present it (never quote the backlog as today's work)
+
+When the due-fact queue is large, serve `todays_set` from
+`get_due_knowledge_points` and present THAT as today's work (~30 min). Say the
+carried count in one line, framed as safe — e.g. "18 facts today (~25 min);
+64 more are rationed out over the coming days."
+
+Never convert the whole backlog into hours and present it as today's
+obligation. That happened once ("2-3 hours of reviews today") and it was
+arithmetically true but wrong as advice: the backlog was a one-time hump of
+stale items, and FSRS makes carrying safe — a late fact answered correctly
+gets scheduled 31-65 days out, so each cleared item stays gone and the hump
+shrinks fast. Sustainable daily sessions beat heroic clearing marathons,
+because the habit is what makes spaced repetition work at all.
+
 ## When I complain about the SYSTEM (relay it, always)
 
 If I say anything about how the tutoring system itself is behaving — "it keeps

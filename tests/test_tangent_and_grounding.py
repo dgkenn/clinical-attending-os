@@ -111,3 +111,23 @@ def test_fragments_are_rejected():
     result = log_tangent(topic="Digoxin", facts=["short", "", "ok"])
     assert result["recorded"] == 0
     assert len(result["skipped"]) == 3
+
+
+def test_due_facts_are_rationed_not_dumped():
+    """The tutor once converted the whole backlog into '2-3 hours of reviews
+    today'. Arithmetically true, terrible advice: the backlog was a one-time
+    hump, FSRS schedules a late-correct fact weeks out, and a 3-hour demand
+    kills the daily habit that makes spaced repetition work. The serving
+    function now rations."""
+    from src.mcp_server import get_due_knowledge_points
+    r = get_due_knowledge_points()
+    assert r["count"] <= 20, "todays_set must be a session, not a shift"
+    assert r["backlog_total"] >= r["count"]
+    assert r["carried"] == r["backlog_total"] - r["count"]
+    assert r["estimated_minutes"] <= 30
+    if r["carried"]:
+        assert "NEVER quote the whole backlog" in r["note"]
+    # weakest facts must come first — they are the known holes
+    statuses = [p.get("status") for p in r["todays_set"]]
+    if "weak" in statuses and "learning" in statuses:
+        assert statuses.index("weak") < statuses.index("learning")

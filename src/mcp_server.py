@@ -367,15 +367,62 @@ def get_knowledge_points(topic: str = "", status: str = "", due_only: bool = Fal
     }
 
 
-def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
-    """Atomic knowledge points due for review on their OWN spaced-repetition schedule
-    (independent of topic-level reviews). Weave these in as targeted micro-questions.
+_DAILY_FACT_RATION = 20  # ~30 min at ~1.5 min/fact — a session, not a shift
 
-    When car=True, returns only short/ear-friendly points (≤120 chars, no heavy
-    enumerations) suitable for hands-free voice study while driving.
+
+def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
+    """TODAY'S RATION of due facts, with the honest load picture attached.
+
+    Serve `todays_set` and stop. Do NOT present the total backlog as today's
+    obligation: the tutor once told the user their reviews would take 2-3
+    hours, which was arithmetically true of the whole backlog and completely
+    wrong as advice. The backlog was a one-time hump of stale items from
+    before this queue was consulted at all — and FSRS makes carrying it
+    SAFE: answering a late fact correctly schedules it 31-65 days out
+    (measured on this database), so each cleared item stays gone. Rationing
+    beats grinding: ~20/day clears the hump in under a week at ~30 min/day
+    without burning the user out of the habit that makes any of this work.
+
+    Returns:
+        todays_set        — the facts to actually serve (ration-capped)
+        backlog_total     — everything due, for honesty
+        carried           — due items NOT served today (safe to carry)
+        estimated_minutes — for todays_set, not the backlog
+        note              — how to present this to the user
+
+    When car=True, returns only short/ear-friendly points (≤120 chars).
     """
-    pts = _get_due_kp(limit=limit, car=car)
-    return {"due_points": pts, "count": len(pts)}
+    ration = min(limit, _DAILY_FACT_RATION)
+    # Over-fetch so the ration can be chosen by priority, not arrival order.
+    pts = _get_due_kp(limit=500, car=car)
+
+    def priority(p):
+        # Weakest first, then most overdue: a weak fact is a known hole, and
+        # the longest-unseen items are closest to being lost entirely.
+        status_rank = {"weak": 0, "learning": 1, "mastered": 2}
+        return (status_rank.get(p.get("status"), 1),
+                str(p.get("next_review_date") or "9999"))
+
+    pts_sorted = sorted(pts, key=priority)
+    todays = pts_sorted[:ration]
+    carried = max(0, len(pts_sorted) - len(todays))
+    return {
+        "todays_set": todays,
+        "due_points": todays,          # backward-compat alias
+        "count": len(todays),
+        "backlog_total": len(pts_sorted),
+        "carried": carried,
+        "estimated_minutes": round(len(todays) * 1.5),
+        "note": (
+            f"Serve todays_set (~{round(len(todays) * 1.5)} min). "
+            + (f"{carried} more are due but carried to later days — tell the "
+               f"user the backlog is shrinking on schedule and carrying is "
+               f"safe: a late fact answered correctly is scheduled weeks out "
+               f"by FSRS, so it will not come back tomorrow. NEVER quote the "
+               f"whole backlog as today's workload." if carried else
+               "The queue is clear after this set.")
+        ),
+    }
 
 
 def get_knowledge_gaps(topic: str = "", status: str = "open") -> dict:
