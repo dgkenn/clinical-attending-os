@@ -717,6 +717,49 @@ def get_daily_new_item_cap() -> int:
     return get_int_setting("daily_new_item_cap", 20)
 
 
+# Measured on this user's own history, not assumed:
+#   - a fact's review schedule compounds 3 -> 14 -> 50 -> 154 -> 427 days, so it
+#     costs about 6 reviews in its first year, heavily front-loaded
+#   - a review takes ~1.4 minutes
+#   - answers mint ~1.0 new fact each
+# Which makes the steady-state daily review load roughly
+#   new_facts_per_day x 3.4 reviews/day  (at the 90-day mark)
+# So the daily review burden is CHOSEN when the new-material rate is chosen; it
+# is not a backlog that clears. At the observed 15 new facts per study day the
+# steady state is ~51 reviews/day, about 70 minutes EVERY day, forever — which
+# is exactly the "drowning in reviews, never reach new material" experience.
+_REVIEWS_PER_NEW_FACT_PER_DAY = 3.4
+_MINUTES_PER_REVIEW = 1.4
+
+
+def get_daily_review_minutes_target() -> int:
+    """How many minutes a day the user is willing to spend on REVIEWS."""
+    return get_int_setting("daily_review_minutes_target", 30)
+
+
+def sustainable_new_facts_per_day() -> int:
+    """New facts per day whose steady-state review load fits the time budget.
+
+    This is the honest version of "how much new material can I take on?" — the
+    answer is fixed by arithmetic once the daily review budget is chosen, and
+    getting it wrong is invisible for weeks because the review debt arrives
+    later than the learning does.
+    """
+    target = max(5, get_daily_review_minutes_target())
+    reviews = target / _MINUTES_PER_REVIEW
+    return max(1, int(reviews / _REVIEWS_PER_NEW_FACT_PER_DAY))
+
+
+def count_new_facts_today() -> int:
+    """Facts first presented today — the number the cap actually governs."""
+    initialize_database()
+    with conn() as db:
+        return db.execute(
+            "SELECT COUNT(*) FROM knowledge_points "
+            "WHERE date(COALESCE(first_presented_at, created_at), 'localtime') "
+            "      = date('now','localtime')").fetchone()[0]
+
+
 def get_daily_review_budget() -> int:
     """Target max reviews per day (default 200). Advisory load signal for the tutor."""
     return get_int_setting("daily_review_budget", 200)
@@ -1932,10 +1975,23 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> list[dict[st
         # same-day re-review adds nearly nothing to FSRS stability, so a
         # repeat costs time and teaches nothing. Tomorrow it is eligible again.
         rows = db.execute(
+            # `julianday('now') - julianday(updated_at) >= 0.8` is a ROLLING
+            # guard, replacing a calendar-day one. The old rule let a fact
+            # missed at 8pm return at 7am the next morning — eleven hours later
+            # — and the maintainer reported exactly that: "constantly reviewing
+            # information I very recently just reviewed". Measured on his queue,
+            # 11 of the 20 facts about to be served had been touched within the
+            # last 24 hours and 8 more the day before.
+            #
+            # 0.8 days rather than a full 1.0 so an evening session still
+            # follows a morning one on the next day without slipping a day each
+            # time; the point is to stop the same-night and next-dawn repeat,
+            # not to punish studying twice in one day.
             """SELECT * FROM knowledge_points
                WHERE ((next_review_date IS NOT NULL AND next_review_date <= ?)
                   OR (next_review_date IS NULL AND status != 'mastered'))
                  AND date(updated_at, 'localtime') < ?
+                 AND (julianday('now') - julianday(updated_at)) >= 0.8
                ORDER BY CASE status WHEN 'weak' THEN 0 WHEN 'learning' THEN 1 ELSE 2 END,
                         next_review_date ASC
                LIMIT ?""",

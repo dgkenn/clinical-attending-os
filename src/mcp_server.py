@@ -507,6 +507,45 @@ def get_knowledge_points(topic: str = "", status: str = "", due_only: bool = Fal
 
 
 _DAILY_FACT_RATION = 20  # ~30 min at ~1.5 min/fact — a session, not a shift
+
+
+def _intake_budget() -> dict:
+    """How much NEW material today's pace can afford, and whether it is spent.
+
+    Reviews felt like drowning because the daily burden is set by the intake
+    rate, not by a backlog that eventually clears: each new fact costs about 6
+    reviews in its first year, so ~3.4 reviews/day per fact added daily. At the
+    observed 15 new facts per study day that is ~51 reviews/day — roughly 70
+    minutes, every day, indefinitely. Nothing warned about this because the
+    review debt arrives weeks after the learning that created it.
+    """
+    try:
+        from .student_model import (count_new_facts_today,
+                                    get_daily_review_minutes_target,
+                                    sustainable_new_facts_per_day)
+        cap = sustainable_new_facts_per_day()
+        used = count_new_facts_today()
+        target = get_daily_review_minutes_target()
+        remaining = max(0, cap - used)
+        return {
+            "new_facts_today": used,
+            "new_facts_budget": cap,
+            "new_facts_remaining": remaining,
+            "review_minutes_target": target,
+            "intake_note": (
+                f"{used}/{cap} new facts today (budget derived from a "
+                f"{target} min/day review target: each new fact costs ~6 reviews "
+                f"in its first year). "
+                + ("Budget spent — REINFORCE existing facts rather than carding "
+                   "new ones. Teaching new material is fine; minting new "
+                   "knowledge_points is what builds tomorrow's queue."
+                   if remaining <= 0 else
+                   f"Room for {remaining} more before today's intake outruns the "
+                   f"review budget.")
+            ),
+        }
+    except Exception as exc:  # never fail the queue over a projection
+        return {"intake_error": str(exc)[:120]}
 _BUNDLE_MAX = 3          # beyond 3 parts a question becomes a recital
 _BUNDLE_MIN_SIM = 0.12   # same-topic facts still need real content overlap
 
@@ -602,7 +641,28 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
                 str(p.get("next_review_date") or "9999"))
 
     pts_sorted = sorted(pts, key=priority)
-    todays = pts_sorted[:ration]
+    # Interleave rather than serving the hardest material solid.
+    #
+    # Strict weakest-first filled every slot with facts he has NEVER answered
+    # correctly — measured: 20 of 20 — so each session was the same wall of his
+    # worst material, and the ones he was actually consolidating never appeared.
+    # That is demoralising and it is also poor scheduling: a fact missed three
+    # sessions running needs teaching, not a fourth interrogation, and the
+    # near-mastered facts are the cheapest retention wins available.
+    #
+    # Weak material still leads and still dominates — it is the point of the
+    # queue — but a session now closes with things he is getting right, so
+    # progress is visible instead of merely asserted.
+    _WEAK_SHARE = 0.7
+    weak_pool = [p for p in pts_sorted if p.get("status") == "weak"]
+    other_pool = [p for p in pts_sorted if p.get("status") != "weak"]
+    weak_slots = min(len(weak_pool), int(round(ration * _WEAK_SHARE)))
+    todays = weak_pool[:weak_slots] + other_pool[:ration - weak_slots]
+    # Backfill from whichever pool still has material, so a thin queue on one
+    # side never shrinks the session below its ration.
+    if len(todays) < ration:
+        seen_ids = {id(p) for p in todays}
+        todays += [p for p in pts_sorted if id(p) not in seen_ids][:ration - len(todays)]
     carried = max(0, len(pts_sorted) - len(todays))
     # A REVIEW is something already seen and scheduled. Facts with no due date
     # and status 'new' are ingested material never put to the user, and they
@@ -633,6 +693,12 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
         # debt owed.
         "new_material_available": new_material,
         "estimated_minutes": est,
+        # The load-vs-intake arithmetic, surfaced so the tutor can hold the
+        # pace instead of the user discovering the debt weeks later. A fact
+        # costs ~6 reviews in its first year, so today's new material IS
+        # tomorrow's review queue: at 15 new facts a day the steady state is
+        # ~70 minutes of review EVERY day, forever.
+        **_intake_budget(),
         "note": (
             f"Serve the BUNDLES (~{est} min): each multi-fact bundle becomes ONE "
             f"clinical vignette exercising all its facts, graded per-fact in a "
