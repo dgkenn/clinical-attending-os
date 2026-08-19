@@ -25,7 +25,8 @@ from .student_model import get_current_rotation, set_current_rotation
 from .fsrs import fsrs_review, deserialize, serialize, next_review_date_from_state
 from .mastery_gates import compute_mastery_vector, update_mastery_in_db
 from .answer_evidence import (
-    detect_parroting, evidence_supports, fact_was_covered, looks_like_meta_summary)
+    citation_quality, detect_parroting, evidence_supports, fact_was_covered,
+    looks_like_meta_summary)
 
 
 def _record_untested_fact(topic: str, point: str) -> None:
@@ -812,6 +813,16 @@ def submit_answer(
                 "lost from the record, and facts cannot be checked against what "
                 "was actually covered this turn.")
 
+        # Grounding quality, not just presence. A session declared grounding on
+        # every answer while 11 of 17 citations read "<Topic> knowledge point
+        # bank" — the system's own fact table, which is what needed
+        # corroborating. Meanwhile the one answer carrying real page numbers
+        # cited Surviving Sepsis for dose thresholds the guideline does not
+        # contain. Presence was measured; usefulness never was.
+        cite_kind, cite_why = citation_quality(grounded_in)
+        if cite_kind in ("self_referential", "vague"):
+            warnings.append(f"grounded_in {cite_why}")
+
         parroted, parrot_reason = detect_parroting(verbatim_for_checks, prior_tutor)
         if parroted:
             warnings.append(f"scored as exposure, not knowledge: {parrot_reason}")
@@ -1121,6 +1132,7 @@ def submit_answer(
             # instead of the maintainer having to diff transcripts by hand.
             "warnings": warnings,
             "graded_as_exposure": parroted,
+            "citation_quality": cite_kind,
             "facts_downgraded_from_parroting": kp_downgraded,
             "facts_claimed_correct_without_evidence": kp_unbacked,
             "facts_not_covered_this_turn": kp_speculative,

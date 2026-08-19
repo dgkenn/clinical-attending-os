@@ -127,6 +127,26 @@ def pacing(now: datetime | None = None) -> dict[str, Any]:
         ).fetchone()[0]
 
     elapsed_min = (now - started).total_seconds() / 60.0
+
+    # A clock left running is worse than no clock. One session called
+    # start_study_session at 09:29 — five minutes AFTER its last answer at
+    # 09:24 — and never ended it, so the row sat "running" indefinitely and
+    # every later reading was nonsense. Treat a clock that has overrun its plan
+    # by a wide margin, or an unlimited one idle for hours, as expired.
+    stale = (row["ended_at"] is None and (
+        (planned > 0 and elapsed_min > planned + 60)
+        or (planned <= 0 and elapsed_min > 240)))
+    if stale:
+        return {
+            "clock_running": False,
+            "now_local": now.astimezone().strftime("%H:%M"),
+            "stale_clock": True,
+            "note": (f"The last session clock started {elapsed_min/60:.1f} h ago and "
+                     f"was never closed, so it says nothing about now. Call "
+                     f"start_study_session with the minutes the user has before "
+                     f"asking questions."),
+        }
+
     out: dict[str, Any] = {
         "clock_running": row["ended_at"] is None,
         "now_local": now.astimezone().strftime("%H:%M"),

@@ -180,6 +180,51 @@ def looks_like_meta_summary(tutor_response: str) -> tuple[bool, str]:
     return False, ""
 
 
+# A citation has to name something OUTSIDE the system. These phrases name the
+# system's own fact table, which is not a source — the facts in it are exactly
+# what needs corroborating.
+_SELF_REFERENTIAL = re.compile(
+    r"knowledge[ _-]?point[s]?[ _-]?bank|knowledge[ _-]?base|fact[ _-]?bank|"
+    r"fact[ _-]?table|prior session|previous session|earlier session|"
+    r"session context|from memory|internal|my training|the database", re.I)
+# A real citation names a document, and usually a location in it.
+_CITATION_MARKERS = re.compile(
+    r"\bp\.?\s?\d|\bpage\s?\d|\bch(?:apter)?\.?\s?\d|manual|guideline|"
+    r"marino|miller|morgan|mikhail|stanford|statpearls|mgh|kdigo|surviving|"
+    r"acc[/ ]aha|gold|idsa|uptodate|nejm|jama|lancet|handbook|textbook|"
+    r"survival guide|housestaff", re.I)
+
+
+def citation_quality(grounded_in: str) -> tuple[str, str]:
+    """Classify a `grounded_in` value: 'real' | 'self_referential' | 'vague' | 'empty'.
+
+    Grounding had quietly become a rubber stamp. In one audited session 11 of 17
+    answers cited "<Topic> knowledge point bank" — a restatement of "I used the
+    fact table", not a source — and every automated check counted the session as
+    fully grounded because the field was non-empty.
+
+    Worse, the answers that DID carry a real-looking citation were the dangerous
+    ones. A question about vasopressor escalation cited "Surviving Sepsis
+    Campaign 2021, p.7, p.30" for dose thresholds the guideline does not
+    contain. The maintainer checked the source himself and found nothing. A
+    citation nobody verifies does not add rigour, it launders invention — so an
+    unverifiable stamp is worse than an empty field, which at least reports its
+    own absence honestly.
+    """
+    g = (grounded_in or "").strip()
+    if not g:
+        return "empty", "no source declared"
+    if _SELF_REFERENTIAL.search(g):
+        return "self_referential", (
+            "names the system's own fact table rather than a source — the facts "
+            "there are what needs corroborating. Cite the book/guideline and "
+            "location the passage came from, or leave it empty")
+    if _CITATION_MARKERS.search(g):
+        return "real", ""
+    return "vague", ("does not name a document or location — cite the source and "
+                     "page you built the question from")
+
+
 def fact_was_covered(point: str, *turn_texts: str, threshold: float = 0.35) -> bool:
     """Did this turn actually cover the fact being carded?
 

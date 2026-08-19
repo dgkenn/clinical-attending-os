@@ -496,6 +496,34 @@ def main() -> None:
             if answers:
                 print(f"        (grounding declared on {cited}/{answers} answers)")
 
+            # Presence is not usefulness. A session declared grounding on every
+            # answer while 11 of 17 citations read "<Topic> knowledge point
+            # bank" — the system's own fact table, which is precisely what
+            # needed corroborating — and this check called it green. Meanwhile
+            # the one answer with real page numbers cited Surviving Sepsis for
+            # dose thresholds the guideline does not contain. Count what the
+            # citations actually say.
+            try:
+                from src.answer_evidence import citation_quality
+                con2 = sqlite3.connect(str(db_path))
+                con2.row_factory = sqlite3.Row
+                kinds = Counter()
+                for row in con2.execute(
+                        "SELECT grounded_in FROM question_attempts "
+                        "WHERE date(date,'localtime') = ?", (last_study_day,)):
+                    kinds[citation_quality(row["grounded_in"])[0]] += 1
+                con2.close()
+                total_c = sum(kinds.values())
+                if total_c:
+                    real = kinds.get("real", 0)
+                    junk = kinds.get("self_referential", 0) + kinds.get("vague", 0)
+                    detail_c = (f"{real}/{total_c} cite a real source, "
+                                f"{junk} self-referential/vague, "
+                                f"{kinds.get('empty', 0)} empty")
+                    (bad if junk > real else ok)("citation quality", detail_c)
+            except Exception as exc:
+                bad("citation quality", str(exc)[:120])
+
             # Did the tutor load its instructions at all? Everything else
             # degrades from this one omission.
             if counts.get("get_claude_instructions", 0) == 0:

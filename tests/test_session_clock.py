@@ -158,3 +158,46 @@ class TestPacingReachesTheTutor:
             knowledge_points=[{"point": "ClockProbe: an unrelated distinctive threshold fact",
                                "correct": False}])
         assert out["facts_not_covered_this_turn"] == []
+
+
+class TestStaleClocks:
+    """A clock left running is worse than no clock.
+
+    One session called start_study_session at 09:29 — five minutes AFTER its
+    last answer at 09:24 — and never closed it, so the row stayed "running" and
+    every later reading was nonsense. Pacing that confidently reports the wrong
+    time is how a 30-minute session gets wound up at 11 minutes.
+    """
+
+    def _plant(self, started_minutes_ago: int, planned: int):
+        from datetime import datetime, timedelta, timezone
+        from src.student_model import conn
+        started = datetime.now(timezone.utc) - timedelta(minutes=started_minutes_ago)
+        with conn() as db:
+            db.execute("CREATE TABLE IF NOT EXISTS session_clock ("
+                       "id INTEGER PRIMARY KEY CHECK (id=1), started_at TEXT NOT NULL,"
+                       " planned_minutes INTEGER NOT NULL, ended_at TEXT)")
+            db.execute("INSERT INTO session_clock (id, started_at, planned_minutes, ended_at) "
+                       "VALUES (1,?,?,NULL) ON CONFLICT(id) DO UPDATE SET "
+                       "started_at=excluded.started_at, planned_minutes=excluded.planned_minutes, "
+                       "ended_at=NULL", (started.isoformat(), planned))
+
+    def test_a_long_overrun_timed_clock_is_treated_as_expired(self):
+        self._plant(started_minutes_ago=400, planned=20)
+        out = pacing()
+        assert out["clock_running"] is False
+        assert out.get("stale_clock") is True
+        assert "start_study_session" in out["note"]
+
+    def test_an_abandoned_unlimited_clock_expires_too(self):
+        self._plant(started_minutes_ago=600, planned=0)
+        out = pacing()
+        assert out.get("stale_clock") is True
+
+    def test_a_session_running_slightly_long_is_NOT_stale(self):
+        """Overrunning by a few minutes is normal and must still report time."""
+        self._plant(started_minutes_ago=35, planned=30)
+        out = pacing()
+        assert out["clock_running"] is True
+        assert out.get("stale_clock") is None
+        assert out["remaining_minutes"] < 0
