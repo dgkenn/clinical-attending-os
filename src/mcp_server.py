@@ -677,6 +677,23 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
     new_material = len(pts_sorted) - len(reviews)
     review_carried = max(0, len(reviews) - sum(
         1 for p in todays if p.get("next_review_date") and p.get("status") != "new"))
+    # Leeches: repeatedly asked, never once right. Re-testing these a fourth
+    # time is not spaced repetition, it is a loop — the item was never learned,
+    # so there is nothing for the schedule to space. They also generate review
+    # load out of all proportion to what they teach, because failure keeps them
+    # pinned at a 1-day interval. Flag them so the tutor TEACHES the fact
+    # outright (or rewrites a card that turns out to be unanswerable) instead of
+    # asking again and recording another miss.
+    for p in todays:
+        if p.get("times_seen", 0) >= 3 and p.get("times_correct", 0) == 0:
+            p["leech"] = True
+            p["leech_note"] = (
+                "Asked 3+ times, never answered correctly. Do NOT quiz this "
+                "again — teach it directly, check understanding in your own "
+                "words, and consider whether the card itself is unanswerable "
+                "as written.")
+    leeches = [p["point"] for p in todays if p.get("leech")]
+
     bundles = _bundle_facts(todays)
     # A multi-fact vignette runs ~2.5 min and covers 2-3 facts; singletons ~1.5.
     est = round(sum(2.5 if b["size"] > 1 else 1.5 for b in bundles))
@@ -692,6 +709,7 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
         # as a review backlog. This is a supply of new things to learn, not a
         # debt owed.
         "new_material_available": new_material,
+        "leeches": leeches,
         "estimated_minutes": est,
         # The load-vs-intake arithmetic, surfaced so the tutor can hold the
         # pace instead of the user discovering the debt weeks later. A fact
@@ -711,8 +729,13 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
                if review_carried else "The review queue is clear after this set. ")
             + (f"Separately, {new_material} facts have never been presented — "
                f"that is NEW MATERIAL available to learn, not a backlog. Do not "
-               f"add it to the review count or describe it as being behind."
+               f"add it to the review count or describe it as being behind. "
                if new_material else "")
+            + (f"{len(leeches)} item(s) in this set are marked `leech` — asked "
+               f"three or more times and never once answered right. TEACH those "
+               f"outright rather than quizzing again; a fourth miss records "
+               f"nothing useful and keeps them pinned at a one-day interval."
+               if leeches else "")
         ),
     }
 
