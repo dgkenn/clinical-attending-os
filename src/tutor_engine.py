@@ -417,6 +417,15 @@ def record_evaluated_answer(
     library: str = "",
     training_phase: str = "",
     phase: str = "warm_up_retrieval",
+    # Capture parity with submit_answer. This path has never actually been
+    # called (0 uses in the tool log) but it is live over both MCP and HTTP,
+    # and it is what the ChatGPT Actions schema drives — so re-importing that
+    # schema would silently reintroduce verdict-only recording, exactly the
+    # divergence car mode had. Two paths have now drifted this way; closing the
+    # third before it is used is cheaper than auditing another lost session.
+    user_answer_verbatim: str = "",
+    tutor_response: str = "",
+    grounded_in: str = "",
 ) -> dict:
     # Pretests are DESIGNED to be failed (forward-testing effect on untaught
     # material), so tag the miss before logging. The old code re-tagged only
@@ -443,6 +452,9 @@ def record_evaluated_answer(
         notes=notes,
         library=library,
         training_phase=training_phase,
+        user_answer_verbatim=user_answer_verbatim,
+        tutor_response=tutor_response,
+        grounded_in=grounded_in,
     )
     from .student_model import get_topic_summary
 

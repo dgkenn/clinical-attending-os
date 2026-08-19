@@ -202,12 +202,26 @@ def cmd_contradictions(_args) -> int:
             print(f"  TOPIC {d['topic']}: {d['days_overdue']}d overdue, but answered "
                   f"{r['n']}x on {str(r['last'])[:10]}")
 
+    # A fact answered correctly yesterday and due today is NOT a contradiction —
+    # it is spaced repetition working. A first correct on a fragile fact earns a
+    # stability under 1.0 and therefore a one-day interval, which is precisely
+    # the point of the algorithm. The old rule flagged every one of those and
+    # reported four false positives in a single run, which is how a useful
+    # check turns into noise that gets ignored.
+    #
+    # The real defect this exists to catch is a schedule that did not ADVANCE:
+    # a due date on or before the day the fact was last answered, which is what
+    # phantom topic rows produced when they resurrected stale June dates over
+    # same-day corrects. So compare the due date against the answer date rather
+    # than against today.
     for k in con.execute(
-            """SELECT topic, point, times_correct, times_seen, updated_at
+            """SELECT topic, point, times_correct, times_seen, updated_at,
+                      next_review_date
                FROM knowledge_points
                WHERE date(next_review_date) <= date('now')
                  AND times_correct > 0
-                 AND date(updated_at) >= date('now','-2 days')"""):
+                 AND date(updated_at) >= date('now','-2 days')
+                 AND date(next_review_date) <= date(updated_at)"""):
         problems += 1
         print(f"  FACT  [{k['topic']}] answered correctly {k['times_correct']}/"
               f"{k['times_seen']} on {str(k['updated_at'])[:10]} but is due again: "

@@ -374,9 +374,17 @@ def main() -> None:
             if n and d["days_overdue"] > 3:
                 clashes += 1
         clashes += con.execute(
+            # `date(next_review_date) <= date(updated_at)` is the whole test: a
+            # schedule that did not ADVANCE past the answer. A fact answered
+            # correctly yesterday and due today is spaced repetition working —
+            # a first correct on a fragile fact earns stability under 1.0 and a
+            # one-day interval by design. Without that clause this reported
+            # four false positives in one run, which is how a check that exists
+            # to catch real artifacts becomes noise that gets ignored.
             """SELECT COUNT(*) FROM knowledge_points
                WHERE date(next_review_date) <= date('now') AND times_correct > 0
-                 AND date(updated_at) >= date('now','-2 days')""").fetchone()[0]
+                 AND date(updated_at) >= date('now','-2 days')
+                 AND date(next_review_date) <= date(updated_at)""").fetchone()[0]
         con.close()
         (ok if clashes == 0 else bad)(
             "queue vs history",

@@ -108,13 +108,25 @@ def submit_study_answer(
     mistake_type: str = "other",
     subtopic: str = "",
     ideal_answer: str = "",
+    user_answer_verbatim: str = "",
+    tutor_response: str = "",
+    grounded_in: str = "",
 ) -> dict:
     """LEGACY answer recorder. Use `submit_answer` instead — it drives FSRS
     scheduling, captures confidence, and accepts inline knowledge points.
 
     This one does not update the spaced-repetition schedule the same way.
+
+    It does now carry the verbatim exchange, so that if anything does route
+    here the record stays auditable. Two recording paths have already drifted
+    into verdict-only capture without erroring; a third would be a choice.
     """
-    return record_evaluated_answer(session_id, question, user_answer, topic, subtopic, result, mistake_type, ideal_answer)
+    return record_evaluated_answer(
+        session_id, question, user_answer, topic, subtopic, result, mistake_type,
+        ideal_answer,
+        user_answer_verbatim=user_answer_verbatim,
+        tutor_response=tutor_response,
+        grounded_in=grounded_in)
 
 
 def get_due_reviews() -> list[dict]:
@@ -592,6 +604,19 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
     pts_sorted = sorted(pts, key=priority)
     todays = pts_sorted[:ration]
     carried = max(0, len(pts_sorted) - len(todays))
+    # A REVIEW is something already seen and scheduled. Facts with no due date
+    # and status 'new' are ingested material never put to the user, and they
+    # were being counted into `backlog_total` — 252 of 349, so the number the
+    # tutor is told to report honestly was mostly things the user has never
+    # been shown. That is the ghost-fact problem in a new guise: quoting it
+    # produces exactly the demoralising "you are hopelessly behind" figure the
+    # rationing exists to prevent, and it is not even a backlog. Serving order
+    # is unaffected ('new' already sorts last); only the honesty of the count is.
+    reviews = [p for p in pts_sorted
+               if p.get("next_review_date") and p.get("status") != "new"]
+    new_material = len(pts_sorted) - len(reviews)
+    review_carried = max(0, len(reviews) - sum(
+        1 for p in todays if p.get("next_review_date") and p.get("status") != "new"))
     bundles = _bundle_facts(todays)
     # A multi-fact vignette runs ~2.5 min and covers 2-3 facts; singletons ~1.5.
     est = round(sum(2.5 if b["size"] > 1 else 1.5 for b in bundles))
@@ -600,19 +625,28 @@ def get_due_knowledge_points(limit: int = 25, car: bool = False) -> dict:
         "due_points": todays,          # backward-compat alias
         "bundles": bundles,
         "count": len(todays),
-        "backlog_total": len(pts_sorted),
-        "carried": carried,
+        # Genuine reviews only — facts already seen and scheduled.
+        "backlog_total": len(reviews),
+        "carried": review_carried,
+        # Never-presented material, reported separately so it cannot be quoted
+        # as a review backlog. This is a supply of new things to learn, not a
+        # debt owed.
+        "new_material_available": new_material,
         "estimated_minutes": est,
         "note": (
             f"Serve the BUNDLES (~{est} min): each multi-fact bundle becomes ONE "
             f"clinical vignette exercising all its facts, graded per-fact in a "
             f"single submit_answer via knowledge_points. "
-            + (f"{carried} more are due but carried to later days — tell the "
-               f"user the backlog is shrinking on schedule and carrying is "
-               f"safe: a late fact answered correctly is scheduled weeks out "
-               f"by FSRS, so it will not come back tomorrow. NEVER quote the "
-               f"whole backlog as today's workload." if carried else
-               "The queue is clear after this set.")
+            + (f"{review_carried} more REVIEWS are due but carried to later days "
+               f"— tell the user the backlog is shrinking on schedule and "
+               f"carrying is safe: a late fact answered correctly is scheduled "
+               f"weeks out by FSRS, so it will not come back tomorrow. NEVER "
+               f"quote the whole backlog as today's workload. "
+               if review_carried else "The review queue is clear after this set. ")
+            + (f"Separately, {new_material} facts have never been presented — "
+               f"that is NEW MATERIAL available to learn, not a backlog. Do not "
+               f"add it to the review count or describe it as being behind."
+               if new_material else "")
         ),
     }
 
