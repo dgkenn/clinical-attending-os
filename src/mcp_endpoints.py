@@ -1107,6 +1107,12 @@ def submit_answer(
                         mistake_type=kp_mistake,
                         triage=bool(p.get("triage", False)),
                         evidence=ev,
+                        # The question's citation IS the fact's provenance.
+                        # Without this a stored fact has nothing to cite when
+                        # it comes back for review, and grounding decays into
+                        # naming the fact table it came from.
+                        source=(str(p.get("source", "")).strip()
+                                or (grounded_in or "").strip()),
                     ):
                         kp_recorded += 1
             except Exception as kp_exc:  # noqa: BLE001 - must not fail the attempt

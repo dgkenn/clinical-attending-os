@@ -211,6 +211,7 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
             # uses — stored an empty evidence field however carefully the tutor
             # had quoted the answer.
             evidence=str(p.get("evidence", "")),
+            source=str(p.get("source", "")),
         )
         if r:
             results.append(r)

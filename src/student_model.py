@@ -177,6 +177,10 @@ def initialize_database() -> None:
                 # true 2.4%, poisoning every accuracy figure, and queueing the
                 # lot for the next morning in the top-priority bucket.
                 "first_presented_at": "TEXT",
+                # Provenance for the fact itself. Without it the tutor has
+                # nothing to cite when it serves a stored fact, and grounding
+                # degrades into naming the fact table it came from.
+                "source": "TEXT DEFAULT ''",
             },
             "sessions": {
                 "mode": "TEXT",
@@ -281,6 +285,15 @@ def initialize_database() -> None:
                 -- was dragged toward zero by questions never asked, and the
                 -- whole batch queued for the next morning as 'weak'.
                 first_presented_at TEXT,
+                -- Where this fact came from: book/guideline and location.
+                -- Its absence was mistaken for tutor laziness. Reviewing a
+                -- stored fact the tutor had nothing to cite, and honestly wrote
+                -- "<Topic> knowledge point bank" on 11 of 17 answers — which
+                -- reads as a rubber stamp but accurately described a fact table
+                -- that recorded no provenance. A fact you cannot trace is a
+                -- fact you cannot check, which is how an invented vasopressor
+                -- threshold survived being drilled five times.
+                source TEXT DEFAULT '',
                 UNIQUE(topic, point)
             )
         """)
@@ -1704,6 +1717,7 @@ def record_knowledge_point(
     mistake_type: str = "other",
     triage: bool = False,
     evidence: str = "",
+    source: str = "",
 ) -> Optional[dict[str, Any]]:
     """Record one attempt on an atomic knowledge point: updates correctness history,
     per-point confidence, mastery status, and the independent SRS schedule. Deduped
@@ -1851,13 +1865,17 @@ def record_knowledge_point(
         # must never erase evidence already earned.
         prior_ev = (row["evidence"] if row and "evidence" in row.keys() else "") or ""
         ev = (evidence or "").strip() or prior_ev
+        # Provenance is sticky: once a fact knows which book and page it came
+        # from, a later answer that omits the citation must not erase it.
+        prior_src = (row["source"] if row and "source" in row.keys() else "") or ""
+        src_val = prior_src or (source or "").strip()
         db.execute(
             """INSERT INTO knowledge_points
                    (topic, point, status, times_seen, times_correct, consecutive_correct,
                     last_correct, last_confidence, confidence_sum, confidence_n,
                     mistake_type, interval_days, fsrs_state, next_review_date, created_at, updated_at,
-                    evidence, first_presented_at)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    evidence, first_presented_at, source)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(topic, point) DO UPDATE SET
                    status=excluded.status,
                    times_seen=excluded.times_seen,
@@ -1874,11 +1892,13 @@ def record_knowledge_point(
                    updated_at=excluded.updated_at,
                    evidence=excluded.evidence,
                    first_presented_at=COALESCE(knowledge_points.first_presented_at,
-                                               excluded.first_presented_at)""",
+                                               excluded.first_presented_at),
+                   source=CASE WHEN COALESCE(knowledge_points.source,'')=''
+                               THEN excluded.source ELSE knowledge_points.source END""",
             (topic, point, status, times_seen, times_correct, consec,
              1 if is_correct else 0, conf, confidence_sum, confidence_n,
              (mistake_type or "other").strip() or "other", interval, fsrs_state_json, nrd, created, ts,
-             ev, first_presented),
+             ev, first_presented, src_val),
         )
     return {"topic": topic, "point": point, "status": status,
             "consecutive_correct": consec, "interval_days": interval,

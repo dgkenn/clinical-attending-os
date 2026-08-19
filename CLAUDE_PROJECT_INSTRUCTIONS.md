@@ -561,6 +561,22 @@ On every `submit_answer`, also pass:
   classifies this and warns you in `warnings`; an empty field is honest, a
   self-referential one is not.
 
+  **Where to get it when you are reviewing a stored fact.** That failure was
+  partly the backend's fault, not yours: facts carried no provenance, so there
+  was genuinely nothing to cite. Each served fact now has a **`source`** field.
+
+  - `source` is present → cite it verbatim in `grounded_in`.
+  - `source` is empty → the fact predates provenance tracking. Retrieve the
+    passage that supports it (`search_clinical_sources`) and cite THAT, which
+    also re-verifies a fact whose origin nobody can currently check. This is how
+    an invented vasopressor threshold survived being drilled five times.
+  - Retrieval finds nothing supporting it → say so and flag it with
+    `log_user_feedback`. A fact no source supports is exactly what we want to
+    find; do not paper over it with a citation to the fact table.
+
+  Whatever you cite, it becomes that fact's stored `source` for future reviews,
+  so a careful citation now saves the work permanently.
+
   **NEVER attach a citation to a number you did not read in the passage.** The
   worst failure of that session was the opposite of a missing citation: a
   vasopressor question cited "Surviving Sepsis Campaign 2021, p.7, p.30" for
