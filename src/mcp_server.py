@@ -193,6 +193,12 @@ def submit_knowledge_points(topic: str, points: list) -> dict:
             confidence=p.get("confidence"),
             mistake_type=str(p.get("mistake_type", "other")),
             triage=bool(p.get("triage", False)),
+            # The user's own words demonstrating this fact. Accepted by
+            # record_knowledge_point but silently dropped here, so every fact
+            # recorded through this path — which is the ONLY fact path car mode
+            # uses — stored an empty evidence field however carefully the tutor
+            # had quoted the answer.
+            evidence=str(p.get("evidence", "")),
         )
         if r:
             results.append(r)

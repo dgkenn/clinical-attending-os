@@ -479,6 +479,8 @@ class CarAlsoCovered(BaseModel):
     # answer that half-covers a secondary fact is the normal case, not an edge.
     correct: bool | Literal["partial"] = True
     confidence: int = 3
+    # Quote from the spoken answer that demonstrates this secondary fact.
+    evidence: str = ""
     # For misconceptions caught mid-ramble ("morphine is renally cleared"):
     # correct=false with the point phrased as the CORRECTED fact, and the
     # mistake_type that fits (mechanism, drug_dosing, ...).
@@ -500,6 +502,23 @@ class CarAnsweredInput(BaseModel):
     confidence: int = 3
     mistake_type: MistakeType = "other"
     user_answer: str = ""
+    # Car mode had drifted into a second, poorer recording path. A real
+    # hands-free session recorded 5 answers with ZERO verbatim, ZERO tutor
+    # response and ZERO grounding, because these fields simply did not exist
+    # here — every capture improvement built for submit_answer applied to that
+    # path alone. Nothing errored; the session just produced an unauditable
+    # record, and echo detection (which compares the user's words against the
+    # tutor's previous turn) could not run at all.
+    #
+    # Car mode is where verbatim matters MOST: the answer is spoken, there is
+    # no chat log to fall back on, and the maintainer cannot see what was
+    # recorded while driving.
+    user_answer_verbatim: str = ""
+    tutor_response: str = ""
+    grounded_in: str = ""
+    # The user's own words demonstrating this fact — same contract as
+    # submit_answer's per-fact evidence.
+    evidence: str = ""
     # Other facts this same verbal answer demonstrated (correct=true) or
     # conspicuously missed (correct=false). Recorded as knowledge points in
     # the same round trip.

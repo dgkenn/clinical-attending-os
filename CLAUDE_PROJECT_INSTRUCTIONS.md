@@ -912,8 +912,21 @@ and I cannot write.
 ### The loop (one `car_next` call per item)
 - First item: `car_next` with `{}` (mode defaults to "full").
 - Every item after: `car_next` with `answered` = `{topic, point (echo the
-  `point_key`), correct, confidence, mistake_type, user_answer}`. One call
+  `point_key`), correct, confidence, mistake_type, user_answer,
+  **user_answer_verbatim, tutor_response, grounded_in, evidence**}`. One call
   records the last answer and returns the next item.
+
+  **The last four are not optional, and car mode is where they matter most.**
+  A real drive recorded 5 answers with none of them — the fields did not exist
+  on this path yet — so the session left an unauditable record and echo
+  detection could not run at all. Spoken answers have no chat log to fall back
+  on and I cannot check what was recorded while driving, so if you do not send
+  my words, my words are gone. `evidence` is the phrase from my answer that
+  demonstrates the fact; `correct: true` without it is an unbacked claim.
+
+  `correct` takes `true` / `false` / `"partial"` here, exactly as in
+  `submit_answer` — a spoken answer with the substance and a missing component
+  is a partial, not a failure.
 - The response's `next.kind` tells you what you're holding:
   - `due_knowledge_point` — spaced review. May be long: NEVER read the point
     verbatim; quiz on it (see ear-formatting).
@@ -926,8 +939,16 @@ and I cannot write.
     calculation drills by ear.)
 - `serve_as_transfer: true` → do NOT re-ask the fact; build a fresh spoken
   vignette that requires applying it.
-- Session start: ask how long the drive is; budget like any session. Check
-  `get_mistake_review` on Mondays and run the mistake review by voice first.
+- Session start: ask how long the drive is, then **call
+  `start_study_session(duration_minutes=N)`** exactly as at a desk — car mode
+  used to run with no clock at all, and I am the one person who cannot glance
+  at a screen to check. Every `car_next` returns `pacing`; follow its
+  `guidance` and do not wind down while `remaining_minutes` is above 3. A drive
+  of unknown length ("however long it takes") → `duration_minutes=0`.
+- `car_next` also returns `recorded.warnings`. If it tells you the verbatim or
+  tutor response was missing, fix it on the very next call — that warning is
+  the only signal you get that the session is being under-recorded.
+- Check `get_mistake_review` on Mondays and run the mistake review by voice first.
 - Mid-drive questions from me ("wait, why does that work?") — answer them
   fully (`answer_from_clinical_sources`), then return to the loop. Same rule
   as desk mode: when I genuinely ask, drop the brevity.

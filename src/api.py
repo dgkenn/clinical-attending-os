@@ -102,6 +102,22 @@ api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
 LOOPBACK_HOSTS = {"127.0.0.1", "localhost", "::1"}
 
 
+def _car_pacing() -> dict:
+    """Session clock for hands-free mode, returned on every car_next.
+
+    Car mode never touched the clock: `start_study_session` is a chat-path call,
+    so a driving session ran with no notion of how long it had. The driver is
+    the one person who cannot glance at a screen to check, which makes this the
+    mode that needs the time reported out loud most. Never raises — a clock
+    problem must not break an answer being recorded at 70 mph.
+    """
+    try:
+        from .session_clock import pacing
+        return pacing()
+    except Exception as exc:
+        return {"clock_running": False, "error": str(exc)[:120]}
+
+
 def require_api_key(request: Request, x_api_key: str | None = Depends(api_key_header)) -> None:
     """Auth guard. Fail-closed when listening on a non-loopback host without an API_KEY."""
     if settings.api_key:
@@ -636,7 +652,8 @@ def car_next(req: CarNextRequest) -> dict:
         recorded = _submit_knowledge_points(
             a.topic,
             [{"point": a.point, "correct": a.correct,
-              "confidence": a.confidence, "mistake_type": a.mistake_type}],
+              "confidence": a.confidence, "mistake_type": a.mistake_type,
+              "evidence": a.evidence}],
         )
         # Credit every other fact the same verbal answer covered or missed —
         # an open-ended spoken response is usually a compound answer.
@@ -646,7 +663,8 @@ def car_next(req: CarNextRequest) -> dict:
                     (extra.topic or a.topic),
                     [{"point": extra.point, "correct": extra.correct,
                       "confidence": extra.confidence,
-                      "mistake_type": extra.mistake_type or a.mistake_type}],
+                      "mistake_type": extra.mistake_type or a.mistake_type,
+                      "evidence": extra.evidence}],
                 )
                 recorded.setdefault("also_recorded", []).append(
                     {"point": extra.point[:80], "ok": r_extra.get("ok", False)})
@@ -664,6 +682,13 @@ def car_next(req: CarNextRequest) -> dict:
                             else "correct" if a.correct else "incorrect"),
                     confidence_reported=a.confidence,
                     mistake_type=a.mistake_type,
+                    # Route the spoken exchange through the same machinery the
+                    # chat path uses, so car sessions get the audit trail,
+                    # grounding record and echo detection instead of the
+                    # verdict-only record they had.
+                    user_answer_verbatim=a.user_answer_verbatim,
+                    tutor_response=a.tutor_response,
+                    grounded_in=a.grounded_in,
                     # The fact was written by _submit_knowledge_points just
                     # above. Without this, the derived-fact fallback re-derives
                     # the identical point from question=a.point and advances its
@@ -672,6 +697,17 @@ def car_next(req: CarNextRequest) -> dict:
                 )
             except Exception as exc:  # never lose the KP record over a topic-level failure
                 recorded["topic_level_error"] = str(exc)[:200]
+
+        # Surface the capture warnings the chat path already gets. Without
+        # these the tutor has no way to learn it is under-recording: a real
+        # hands-free session logged 5 answers with no verbatim and no tutor
+        # response and returned nothing to say so.
+        tl = recorded.get("topic_level") or {}
+        if isinstance(tl, dict):
+            if tl.get("warnings"):
+                recorded["warnings"] = tl["warnings"]
+            if tl.get("graded_as_exposure"):
+                recorded["graded_as_exposure"] = True
 
     # The answer is already recorded above; nothing past this point may turn
     # the response into an error, or the client retries and double-records
@@ -745,6 +781,7 @@ def car_next(req: CarNextRequest) -> dict:
         }
     except Exception as exc:
         return {"recorded": recorded, "next": None, "queue": queue,
-                "next_error": str(exc)[:200]}
+                "pacing": _car_pacing(), "next_error": str(exc)[:200]}
 
-    return {"recorded": recorded, "next": nxt, "queue": queue}
+    return {"recorded": recorded, "next": nxt, "queue": queue,
+            "pacing": _car_pacing()}
