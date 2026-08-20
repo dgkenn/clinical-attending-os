@@ -230,3 +230,54 @@ class TestEndToEnd:
                 "SELECT grounded_in FROM question_attempts WHERE topic = ? "
                 "ORDER BY attempt_id DESC LIMIT 1", ("EvidenceProbeTopic3",)).fetchone()
         assert row["grounded_in"] == "Marino ICU Book - lung protective ventilation"
+
+
+class TestSummaryMustNotRewriteTheAnswer:
+    """The worst recording failure observed: the graded summary corrected the
+    user's answer, then graded the correction.
+
+    He said naloxone "point one to point three mgs PER KG". The summary recorded
+    "0.1 to 0.3 mg PER DOSE" and the reply called it "a touch conservative". For
+    a 70 kg adult that is 7-21 mg against a correct flat 0.4 mg — 18 to 52 times
+    too high. The day before, the same answer was recorded correctly as "per kg
+    ... should be a flat 0.4 mg", so this was a regression, not a limitation.
+    """
+
+    def test_per_kg_silently_becoming_per_dose_is_caught(self):
+        from src.answer_evidence import summary_contradicts_verbatim
+        hit, why = summary_contradicts_verbatim(
+            "0.1 to 0.3 mg per dose, redose every 2-3 minutes.",
+            "point one to point three mgs per kg and redose every two to three minutes.")
+        assert hit
+        assert "PER KG" in why and "PER DOSE" in why
+
+    def test_dropping_per_kg_entirely_is_caught(self):
+        from src.answer_evidence import summary_contradicts_verbatim
+        hit, _ = summary_contradicts_verbatim(
+            "Said 0.1 to 0.3 mg, redose q2-3 min",
+            "point one to point three mgs per kg")
+        assert hit
+
+    def test_a_summary_that_preserves_the_error_passes(self):
+        """Recording the mistake faithfully is the whole point — that must not
+        itself be flagged."""
+        from src.answer_evidence import summary_contradicts_verbatim
+        hit, _ = summary_contradicts_verbatim(
+            "Said 0.1-0.3 mg per kg, which is weight-based and wrong; correct is a flat 0.4 mg",
+            "point one to point three mgs per kg")
+        assert not hit
+
+    def test_an_answer_with_no_weight_based_dose_is_untouched(self):
+        from src.answer_evidence import summary_contradicts_verbatim
+        assert not summary_contradicts_verbatim(
+            "Gave 0.4 mg flat IV, correct", "zero point four milligrams")[0]
+
+    def test_submit_answer_warns_on_the_contradiction(self):
+        from src.mcp_endpoints import submit_answer
+        out = submit_answer(
+            topic="ContradictProbeTopic", question="naloxone IV dose?",
+            user_answer="0.1 to 0.3 mg per dose", is_correct=False, result="partial",
+            user_answer_verbatim="point one to point three mgs per kg",
+            tutor_response="Close, the standard is 0.4 mg.")
+        assert out["summary_contradicts_verbatim"] is True
+        assert any("contradicts" in w for w in out["warnings"])

@@ -225,6 +225,44 @@ def citation_quality(grounded_in: str) -> tuple[str, str]:
                      "page you built the question from")
 
 
+# Units whose presence or absence changes a dose by orders of magnitude.
+_PER_KG = re.compile(r"\b(?:per\s*kg|/\s*kg|mg\s*/\s*kg|mcg\s*/\s*kg|µg\s*/\s*kg|"
+                     r"per\s*kilo(?:gram)?)\b", re.I)
+_PER_DOSE = re.compile(r"\b(?:per\s*dose|each\s*dose|a\s*dose|flat\s*dose)\b", re.I)
+
+
+def summary_contradicts_verbatim(user_answer: str, verbatim: str) -> tuple[bool, str]:
+    """Catch a graded summary that has quietly corrected what the user said.
+
+    The worst recording failure yet observed. The user said "point one to point
+    three mgs PER KG" of naloxone. The graded summary recorded "0.1 to 0.3 mg
+    PER DOSE" — silently swapping the unit — and the answer was then graded
+    against the rewritten version and called "a touch conservative". For a 70 kg
+    adult 0.1-0.3 mg/kg is 7-21 mg against a correct flat dose of 0.4 mg: 18 to
+    52 times too high, and the kind of error that precipitates violent
+    withdrawal. The day before, the same answer had been recorded correctly as
+    "per kg ... incorrect, should be a flat 0.4 mg".
+
+    A summary that edits the error out does not merely mis-grade one answer; it
+    removes the mistake from the record, so no later audit can find it and the
+    user is told he was nearly right. Weight-based versus flat dosing is the
+    highest-yield instance, so it is checked explicitly.
+    """
+    v, s = (verbatim or ""), (user_answer or "")
+    if not v.strip() or not s.strip():
+        return False, ""
+    if _PER_KG.search(v) and not _PER_KG.search(s):
+        detail = ("the user said a WEIGHT-BASED dose (per kg) and the summary "
+                  "dropped it")
+        if _PER_DOSE.search(s):
+            detail = ("the user said PER KG and the summary recorded PER DOSE — "
+                      "an order-of-magnitude difference")
+        return True, (f"user_answer contradicts user_answer_verbatim: {detail}. "
+                      f"Record what was said and grade THAT; a per-kg answer to a "
+                      f"flat-dose question is wrong, not approximately right.")
+    return False, ""
+
+
 def fact_was_covered(point: str, *turn_texts: str, threshold: float = 0.35) -> bool:
     """Did this turn actually cover the fact being carded?
 

@@ -241,6 +241,72 @@ def _existing_points() -> list:
         return []
 
 
+def revise_last_answer(topic: str, result: str, reason: str = "",
+                       point: str = "") -> dict:
+    """Correct the grade on the answer just given — do NOT re-submit it.
+
+    Use when the user says "that was right, mark it correct", when you realise
+    you mis-graded, or when a speech-to-text slip was graded as a knowledge
+    error. Pass `result` = "correct" | "partial" | "incorrect".
+
+    Calling `submit_answer` again instead writes a SECOND attempt for one
+    answer. That happened: a tamponade answer was graded partial, the user
+    pointed out it was mechanistically complete, and the re-grade appended a new
+    row — so the record shows the question asked twice, the original partial
+    still standing, and the fact's FSRS state advanced twice for a single
+    answer. Two advances halve the interval and can reach 'mastered' off one
+    exchange.
+
+    This amends the existing attempt in place and rewinds the double FSRS
+    advance on the affected fact.
+    """
+    from .student_model import conn, now as _now
+    topic, result = (topic or "").strip(), (result or "").strip().lower()
+    if not topic:
+        return {"ok": False, "error": "topic is required"}
+    if result not in ("correct", "partial", "incorrect"):
+        return {"ok": False, "error": "result must be correct|partial|incorrect"}
+    try:
+        with conn() as db:
+            row = db.execute(
+                """SELECT attempt_id, result, question FROM question_attempts
+                    WHERE topic = ? ORDER BY attempt_id DESC LIMIT 1""",
+                (topic,)).fetchone()
+            if row is None:
+                return {"ok": False, "error": f"no recorded answer for {topic}"}
+            was = row["result"]
+            db.execute(
+                """UPDATE question_attempts
+                      SET result = ?,
+                          notes = TRIM(COALESCE(notes,'') || ' | regraded ' || ?
+                                       || ': ' || ? || ' -> ' || ?)
+                    WHERE attempt_id = ?""",
+                (result, _now()[:19], was, result, row["attempt_id"]))
+
+            # Rewind the fact if the mis-grade already advanced it.
+            fact = None
+            if point.strip():
+                fact = db.execute(
+                    "SELECT id, times_seen, times_correct FROM knowledge_points "
+                    "WHERE topic = ? AND point = ?", (topic, point.strip())).fetchone()
+            if fact is not None:
+                correct_delta = 1 if result == "correct" else 0
+                was_correct = 1 if was == "correct" else 0
+                db.execute(
+                    """UPDATE knowledge_points
+                          SET times_correct = MAX(0, times_correct - ? + ?),
+                              last_correct = ?, updated_at = ?
+                        WHERE id = ?""",
+                    (was_correct, correct_delta, correct_delta, _now(), fact["id"]))
+        _log_tool_call("revise_last_answer", True, f"{topic}: {was} -> {result}")
+        return {"ok": True, "attempt_id": row["attempt_id"], "was": was, "now": result,
+                "note": (f"Amended in place — no second attempt written. Tell the "
+                         f"user it is corrected and carry on.")}
+    except Exception as exc:  # noqa: BLE001
+        _log_tool_call("revise_last_answer", False, str(exc)[:120])
+        return {"ok": False, "error": str(exc)[:200]}
+
+
 def mark_known(topic: str, point: str, reason: str = "") -> dict:
     """The user says they already know a fact — stop drilling it.
 
@@ -1435,6 +1501,9 @@ def build_server():
     # The user's own correction of the knowledge ledger. Without these, "I
     # already know this" and "I don't actually know this" stay conversational
     # and never become state — which is how the declined consults card was lost.
+    # Correcting a grade must amend, not append — a re-submit writes a second
+    # attempt and advances the fact twice for one answer.
+    mcp.tool(name="revise_last_answer")(_logged(revise_last_answer, "revise_last_answer"))
     mcp.tool(name="mark_known")(_logged(mark_known, "mark_known"))
     mcp.tool(name="mark_unknown")(_logged(mark_unknown, "mark_unknown"))
     # The tutor has no wall clock of its own; without this it invents one and

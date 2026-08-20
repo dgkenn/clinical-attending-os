@@ -26,7 +26,7 @@ from .fsrs import fsrs_review, deserialize, serialize, next_review_date_from_sta
 from .mastery_gates import compute_mastery_vector, update_mastery_in_db
 from .answer_evidence import (
     citation_quality, detect_parroting, evidence_supports, fact_was_covered,
-    looks_like_meta_summary)
+    looks_like_meta_summary, summary_contradicts_verbatim)
 
 
 def _record_untested_fact(topic: str, point: str) -> None:
@@ -823,6 +823,15 @@ def submit_answer(
         if cite_kind in ("self_referential", "vague"):
             warnings.append(f"grounded_in {cite_why}")
 
+        # A graded summary that has quietly corrected the user's answer removes
+        # the mistake from the record entirely, so no later audit can find it.
+        # Observed with naloxone: "per kg" became "per dose" and an 18-52x
+        # overdose was graded "a touch conservative".
+        contradicts, contra_why = summary_contradicts_verbatim(
+            user_answer, user_answer_verbatim)
+        if contradicts:
+            warnings.append(contra_why)
+
         parroted, parrot_reason = detect_parroting(verbatim_for_checks, prior_tutor)
         if parroted:
             warnings.append(f"scored as exposure, not knowledge: {parrot_reason}")
@@ -1139,6 +1148,7 @@ def submit_answer(
             "warnings": warnings,
             "graded_as_exposure": parroted,
             "citation_quality": cite_kind,
+            "summary_contradicts_verbatim": contradicts,
             "facts_downgraded_from_parroting": kp_downgraded,
             "facts_claimed_correct_without_evidence": kp_unbacked,
             "facts_not_covered_this_turn": kp_speculative,
