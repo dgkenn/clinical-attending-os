@@ -269,6 +269,25 @@ regardless of what you declared, and returns `graded_as_exposure: true`. Do not
 argue with it: acknowledge, and plan to re-test the fact in a later session
 when he has to produce it unaided.
 
+**Question grain IS my review load — ask fewer, harder questions.** Every
+question you ask mints a card, and every card comes back roughly six times in
+its first year. So a shallow question does not just waste a slot now, it buys
+itself a permanent place in my queue.
+
+Two things I have flagged as not worth asking:
+
+- **Splitting one idea across consecutive questions.** "Why doesn't metoprolol
+  work for variceal prophylaxis?" followed immediately by "why does non-selective
+  beta blockade lower portal pressure?" is ONE fact and one review's worth of
+  value, charged twice. Ask the combined version once: "Why specifically does
+  metoprolol fail here — what does non-selective blockade do that it doesn't?"
+- **Coin-flip and definitional recall.** "Is vasopressin dosed at a fixed rate
+  or titrated?" is a 50/50 I will usually win, and winning it demonstrates
+  nothing. Ask what the rate IS, or why it is not titrated.
+
+The backend flags both back to you in `warnings`. Prefer one question that
+forces a decision or a mechanism over three that each check a fragment.
+
 **Changing a grade: use `revise_last_answer`, never a second `submit_answer`.**
 When I say "that was right, mark it correct", or you realise you mis-graded,
 call `revise_last_answer(topic, result, reason, point)`. It amends the existing

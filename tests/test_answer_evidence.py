@@ -281,3 +281,62 @@ class TestSummaryMustNotRewriteTheAnswer:
             tutor_response="Close, the standard is 0.4 mg.")
         assert out["summary_contradicts_verbatim"] is True
         assert any("contradicts" in w for w in out["warnings"])
+
+
+class TestQuestionQuality:
+    """Question grain IS review load.
+
+    The maintainer flagged several questions in one session as not worth asking,
+    and the pattern is visible in the transcript: one concept split across two
+    consecutive slots ("why doesn't metoprolol work for variceal prophylaxis?"
+    then "why does non-selective beta blockade lower portal pressure?"), and
+    coin-flip recall ("is vasopressin dosed at a fixed rate or titrated?").
+
+    Splitting costs twice: a slot in a rationed session now, and a second card
+    that returns on its own schedule forever. With 214 studied facts and a
+    review load set by how many facts exist, question grain is the lever.
+    """
+
+    def test_the_metoprolol_pair_is_caught_as_one_idea(self):
+        from src.answer_evidence import question_is_redundant
+        prior = ["For variceal bleeding prophylaxis, why specifically does metoprolol "
+                 "not work, even though it is a beta blocker?"]
+        hit, why = question_is_redundant(
+            "Why does non-selective beta blockade specifically lower portal pressure "
+            "in variceal prophylaxis?", prior)
+        assert hit
+        assert "one idea" in why or "splitting" in why
+
+    def test_genuinely_different_questions_are_not_flagged(self):
+        """Measured: the real redundant pair shares 0.44 of its content words,
+        unrelated questions from the same session score 0.00."""
+        from src.answer_evidence import question_is_redundant
+        prior = ["For variceal bleeding prophylaxis, why does metoprolol not work?"]
+        assert not question_is_redundant(
+            "A hypoglycemic patient has altered mental status. What is the right "
+            "sequence?", prior)[0]
+
+    def test_no_prior_questions_means_nothing_to_repeat(self):
+        from src.answer_evidence import question_is_redundant
+        assert not question_is_redundant("any question at all here", [])[0]
+
+    def test_a_coin_flip_question_is_flagged(self):
+        from src.answer_evidence import question_is_low_yield
+        hit, why = question_is_low_yield(
+            "Once vasopressin is added in septic shock, is it dosed as a fixed rate "
+            "or titrated up and down like norepinephrine?")
+        assert hit
+        assert "binary" in why or "slot" in why
+
+    def test_a_definitional_question_is_flagged(self):
+        from src.answer_evidence import question_is_low_yield
+        assert question_is_low_yield(
+            "What two numbers make up the P/F ratio, and what is the cutoff?")[0]
+
+    def test_a_real_reasoning_question_passes(self):
+        from src.answer_evidence import question_is_low_yield
+        for q in ("Septic shock on norepinephrine, MAP short of goal - what do you "
+                  "add next and why not just escalate?",
+                  "A hypoglycemic patient has altered mental status. What is the "
+                  "right sequence and why?"):
+            assert not question_is_low_yield(q)[0], q

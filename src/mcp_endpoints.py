@@ -26,7 +26,8 @@ from .fsrs import fsrs_review, deserialize, serialize, next_review_date_from_sta
 from .mastery_gates import compute_mastery_vector, update_mastery_in_db
 from .answer_evidence import (
     citation_quality, detect_parroting, evidence_supports, fact_was_covered,
-    looks_like_meta_summary, summary_contradicts_verbatim)
+    looks_like_meta_summary, question_is_low_yield, question_is_redundant,
+    summary_contradicts_verbatim)
 
 
 def _record_untested_fact(topic: str, point: str) -> None:
@@ -831,6 +832,25 @@ def submit_answer(
             user_answer, user_answer_verbatim)
         if contradicts:
             warnings.append(contra_why)
+
+        # Question grain IS review load: splitting one idea into two shallow
+        # questions burns two slots in a rationed session AND mints two cards
+        # that then come back on two schedules forever.
+        try:
+            with conn() as _db:
+                _prev = [r[0] for r in _db.execute(
+                    """SELECT question FROM question_attempts
+                        WHERE topic = ? AND date >= datetime('now','-20 minutes')
+                          AND COALESCE(question,'') != ''
+                        ORDER BY attempt_id DESC LIMIT 3""", (topic,)).fetchall()]
+            redundant, redundant_why = question_is_redundant(question or "", _prev)
+            if redundant:
+                warnings.append(redundant_why)
+        except Exception:
+            pass
+        low_yield, low_why = question_is_low_yield(question or "")
+        if low_yield:
+            warnings.append(low_why)
 
         parroted, parrot_reason = detect_parroting(verbatim_for_checks, prior_tutor)
         if parroted:

@@ -263,6 +263,64 @@ def summary_contradicts_verbatim(user_answer: str, verbatim: str) -> tuple[bool,
     return False, ""
 
 
+def question_is_redundant(question: str, prior_questions: list[str],
+                          threshold: float = 0.40) -> tuple[bool, str]:
+    """Was this concept already asked a moment ago, just from another angle?
+
+    One session spent two consecutive slots on the same fact — "why does
+    metoprolol not work for variceal prophylaxis?" and then "why does
+    non-selective beta blockade lower portal pressure?" — which is one idea and
+    one review's worth of value. The maintainer flagged several questions in
+    that session as not worth asking.
+
+    Splitting a concept into shallow parts is expensive twice over: it burns a
+    slot in a rationed session, and it mints a second card, so the same idea
+    then comes back for review on two schedules forever. His review load is set
+    by how many facts exist, so question grain IS review load.
+    """
+    q = content_words(question)
+    if len(q) < 4:
+        return False, ""
+    for prev in prior_questions[-3:]:
+        p = content_words(prev)
+        if not p:
+            continue
+        overlap = len(q & p) / min(len(q), len(p))
+        if overlap >= threshold:
+            return True, (f"{overlap:.0%} of this question repeats one asked moments "
+                          f"ago — ask the harder combined version once instead of "
+                          f"splitting one idea across two slots and two cards")
+    return False, ""
+
+
+# Questions whose answer is a coin flip or a definition carry little information:
+# he is very likely to get them right, so they teach nothing and consume a slot
+# in a rationed session.
+_LOW_YIELD_Q = re.compile(
+    r"^\s*(is|are|does|do|can|should|will|would)\b.*\bor\b|"      # binary either/or
+    r"\bwhat (two|three) (numbers|letters|words|things) (make up|comprise)|"
+    r"\bwhat does [A-Z]{2,6} stand for\b|"
+    r"\bis it .+ or .+\?", re.I)
+
+
+def question_is_low_yield(question: str) -> tuple[bool, str]:
+    """Flag coin-flip and definitional questions.
+
+    "Is vasopressin dosed as a fixed rate or titrated?" is a 50/50 he will win,
+    and winning it demonstrates nothing. Ask what the rate IS, or why it is not
+    titrated — same fact, real retrieval.
+    """
+    q = (question or "").strip()
+    if not q:
+        return False, ""
+    if _LOW_YIELD_Q.search(q):
+        return True, ("this is a binary or definitional recall question — he will "
+                      "usually guess it right, so it consumes a review slot "
+                      "without testing anything. Ask for the value, the "
+                      "mechanism, or the decision it drives instead")
+    return False, ""
+
+
 def fact_was_covered(point: str, *turn_texts: str, threshold: float = 0.35) -> bool:
     """Did this turn actually cover the fact being carded?
 
