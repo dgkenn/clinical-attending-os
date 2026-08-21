@@ -684,6 +684,10 @@ def submit_answer(
     # submit_study_answer once produced at the topic level, which halves
     # intervals and can reach 'mastered' off a single spoken answer.
     record_knowledge_points: bool = True,
+    # Return the next topic and its passages alongside the recording, so one
+    # turn costs ONE round trip. Set False only for backfills and scripts that
+    # are not driving a live session.
+    with_next: bool = True,
 ) -> Dict[str, Any]:
     """
     Submit an answer and update FSRS/mastery tracking.
@@ -1157,9 +1161,33 @@ def submit_answer(
         except Exception as exc:  # never fail an answer over the clock
             pacing_block = {"clock_running": False, "error": str(exc)[:120]}
 
+        # Hand back everything the NEXT turn needs, so a turn costs ONE round
+        # trip instead of two.
+        #
+        # The maintainer studies by voice, and a tool call cuts the audio: the
+        # model stops generating, waits, and restarts, which he hears as the
+        # explanation breaking off mid-sentence. The backend is not the problem
+        # — a warm submit_answer measures 114 ms — the ROUND TRIP is. The
+        # instructions have told the tutor to batch calls at the top of a turn
+        # for weeks and it still interleaves them, because following that rule
+        # requires planning two calls ahead.
+        #
+        # So remove the second call. Recording the last answer and fetching the
+        # next topic with its passages now happen together, which makes "call
+        # once, then speak" the path of least resistance rather than a
+        # discipline. Same pattern car_next has always used.
+        next_block = None
+        if with_next:
+            try:
+                from .mcp_server import get_next_topic_checked
+                next_block = get_next_topic_checked()
+            except Exception as exc:  # never fail the recording over a prefetch
+                next_block = {"error": str(exc)[:160]}
+
         return {
             "ok": True,
             "pacing": pacing_block,
+            "next": next_block,
             "knowledge_points_recorded": kp_recorded,
             "knowledge_points_error": kp_error,
             # Surfaced so the tutor sees the correction in-session and can fix

@@ -22,9 +22,14 @@ def test_a_repeatedly_missed_fact_is_flagged_for_teaching():
     point = "Leech probe: a distinctive fictional threshold never answered right"
     for _ in range(3):
         record_knowledge_point(topic=TOPIC, point=point, is_correct=False, confidence=1)
-    # Make it due despite the same-day guard.
+    # Make it due AND unambiguously top-priority. The served set is rationed to
+    # 20 and ordered weakest-then-most-overdue, so a probe merely "due
+    # yesterday" competes with every other weak fact the suite has created and
+    # its presence depends on test execution order — this assertion passed by
+    # luck until later tests added more facts. Date it far enough back that the
+    # ordering is deterministic.
     with conn() as db:
-        db.execute("UPDATE knowledge_points SET next_review_date=date('now','-1 day'), "
+        db.execute("UPDATE knowledge_points SET next_review_date='2020-01-01', "
                    "updated_at=datetime('now','-2 days') WHERE point=?", (point,))
     served = get_due_knowledge_points(limit=500)
     hit = next((p for p in served["todays_set"] if p["point"] == point), None)
